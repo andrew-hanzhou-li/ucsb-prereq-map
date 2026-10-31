@@ -1,0 +1,1345 @@
+{
+ "id": "BSPHYS",
+ "name": "Physics - BS",
+ "type": "Bachelor's Degree",
+ "departments": [
+  "PHYS"
+ ],
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsb.edu/programs/BSPHYS",
+ "narrative": [
+  "For those students who have not completed AP calculus BC with a score of 5, Physics 8 is strongly recommended before attempting any other physics course.",
+  "MAJOR REGULATIONS\nPREREQUISITES Check the General Catalog for the prerequisites to all listed courses.\nP/NP GRADING OPTION Not allowed for any major course (Prep or UD major), including courses applied to the major from other departments.\nSUBSTITUTIONS In the major requirements permissible only by petition to the department chair and dean.\nG.P.A REQUIREMENTS At least 2.0 overall UC average in all upper-division major courses and all courses (Prep and UD) for the major.\nDOUBLE MAJORS…………………………………...With the approval of each department chairperson, up to a total of 8 units may be applied simultaneously to both UD majors."
+ ],
+ "sections": [
+  {
+   "name": "PREPARATION FOR THE MAJOR",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "PHYS 21",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 22",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 23",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 24",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 25",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "VWbYZOS3",
+      "label": "General Physics"
+     },
+     {
+      "type": "choose",
+      "count": 1,
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "PHYS 20AL",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYS 20BL",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYS 20CL",
+          "status": "active"
+         }
+        ]
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "PHYS 13AL",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYS 13BL",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYS 13CL",
+          "status": "active"
+         }
+        ]
+       }
+      ],
+      "catalog_rule_id": "dXJs8ifx",
+      "label": "Experimental Phyics"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "PHYS 29",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "vMWbBzrs",
+      "label": "Computer Programming"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "MATH 2A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MATH 2B",
+            "status": "active"
+           }
+          ],
+          "catalog_rule_id": "bM0LXXLI",
+          "label": "Math 2 Series"
+         },
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "MATH 3A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MATH 3B",
+            "status": "active"
+           }
+          ],
+          "catalog_rule_id": "TSHgQfmJ",
+          "label": "Math 3 Series"
+         }
+        ],
+        "catalog_rule_id": "PdW7Gxqe",
+        "label": "Calculus"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 4A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 4B",
+          "status": "active"
+         }
+        ],
+        "catalog_rule_id": "CXGeJa9x",
+        "label": "Linear Algebra and Differential Equations"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 6A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 6B",
+          "status": "active"
+         }
+        ],
+        "catalog_rule_id": "SlzmUj9k",
+        "label": "Vector Calculus"
+       }
+      ],
+      "catalog_rule_id": "cZ50DTqn",
+      "label": "Mathematics"
+     },
+     {
+      "type": "choose",
+      "count": 2,
+      "items": [
+       {
+        "type": "course",
+        "code": "ASTRO 1",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTRO 2",
+        "status": "active"
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "CHEM 1A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 2A",
+          "status": "active"
+         }
+        ]
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "CHEM 1B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 2B",
+          "status": "active"
+         }
+        ]
+       },
+       {
+        "type": "course",
+        "code": "EARTH 2",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EARTH 9",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EARTH 11",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EARTH 20",
+        "status": "active"
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "EEMB 22",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MCDB 20",
+          "status": "active"
+         }
+        ]
+       },
+       {
+        "type": "course",
+        "code": "PSTAT 10",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "RxHL5QxC",
+      "label": "Science Electives",
+      "description": "Two science electives, chosen from the following or in consultation with a faculty advisor"
+     }
+    ]
+   }
+  },
+  {
+   "name": "UPPER-DIVISION MAJOR",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "PHYS 100A",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "mgLSCAco",
+      "label": "A."
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "PHYS 103",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 104",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "NvvjrZFk",
+      "label": "B."
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "PHYS 110A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 110B",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "rPaVzdFW",
+      "label": "C."
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "PHYS 115A",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "nhqhXgpg",
+      "label": "D."
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "PHYS 119A",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "yCoOCpTz",
+      "label": "E."
+     },
+     {
+      "type": "choose",
+      "count": 1,
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "PHYS 115B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 134L",
+            "status": "active"
+           }
+          ],
+          "catalog_rule_id": "JZNfGD6T",
+          "label": "ASTROPHYSICS - 1."
+         },
+         {
+          "type": "choose",
+          "count": 1,
+          "items": [
+           {
+            "type": "course",
+            "code": "PHYS 127AL",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 128AL",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 129L",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 199",
+            "status": "active"
+           }
+          ],
+          "catalog_rule_id": "llGybTWO",
+          "label": "ASTROPHYSICS - 2.",
+          "notes": "In order for 199 to count for the requirements of the Astrophysics and Education concentrations, it must consist of 4 units in one quarter and involve the collection/processing of data and/or construction of instrumentation."
+         },
+         {
+          "type": "choose",
+          "count": 3,
+          "items": [
+           {
+            "type": "course",
+            "code": "PHYS 132",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 133",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 136",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 137",
+            "status": "active"
+           }
+          ],
+          "catalog_rule_id": "CKHhO7nJ",
+          "label": "ASTROPHYSICS - 3."
+         }
+        ],
+        "catalog_rule_id": "YXfztyEh",
+        "label": "ASTROPHYSICS"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "PHYS 115B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 119B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 128AL",
+            "status": "active"
+           }
+          ],
+          "catalog_rule_id": "yDnEW49L",
+          "label": "CORE - 1."
+         },
+         {
+          "type": "choose",
+          "count": 1,
+          "items": [
+           {
+            "type": "course",
+            "code": "PHYS 127AL",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 129L",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 134L",
+            "status": "active"
+           }
+          ],
+          "catalog_rule_id": "oo345rFG",
+          "label": "CORE - 2."
+         },
+         {
+          "type": "choose",
+          "count": 1,
+          "items": [
+           {
+            "type": "course",
+            "code": "PSTAT 120A",
+            "status": "active"
+           }
+          ],
+          "catalog_rule_id": "cCprCzIW",
+          "label": "CORE - 3.",
+          "notes": "Or one physics elective"
+         },
+         {
+          "type": "choose",
+          "count": 1,
+          "items": [
+           {
+            "type": "course",
+            "code": "PHYS 100A",
+            "status": "active",
+            "from_list": "Upper Division Physics Courses"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 100B",
+            "status": "active",
+            "from_list": "Upper Division Physics Courses"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 103",
+            "status": "active",
+            "from_list": "Upper Division Physics Courses"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 104",
+            "status": "active",
+            "from_list": "Upper Division Physics Courses"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 106",
+            "status": "active",
+            "from_list": "Upper Division Physics Courses"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 110A",
+            "status": "active",
+            "from_list": "Upper Division Physics Courses"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 110B",
+            "status": "active",
+            "from_list": "Upper Division Physics Courses"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 115A",
+            "status": "active",
+            "from_list": "Upper Division Physics Courses"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 115B",
+            "status": "active",
+            "from_list": "Upper Division Physics Courses"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 115C",
+            "status": "active",
+            "from_list": "Upper Division Physics Courses"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 118",
+            "status": "active",
+            "from_list": "Upper Division Physics Courses"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 118",
+            "status": "active",
+            "from_list": "Upper Division Physics Courses"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 119A",
+            "status": "active",
+            "from_list": "Upper Division Physics Courses"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 119B",
+            "status": "active",
+            "from_list": "Upper Division Physics Courses"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 120",
+            "status": "active",
+            "from_list": "Upper Division Physics Courses"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 123A",
+            "status": "active",
+            "from_list": "Upper Division Physics Courses"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 123B",
+            "status": "active",
+            "from_list": "Upper Division Physics Courses"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 125",
+            "status": "active",
+            "from_list": "Upper Division Physics Courses"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 126L",
+            "status": "active",
+            "from_list": "Upper Division Physics Courses"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 127AL",
+            "status": "active",
+            "from_list": "Upper Division Physics Courses"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 127BL",
+            "status": "active",
+            "from_list": "Upper Division Physics Courses"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 128AL",
+            "status": "active",
+            "from_list": "Upper Division Physics Courses"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 129L",
+            "status": "active",
+            "from_list": "Upper Division Physics Courses"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 131",
+            "status": "active",
+            "from_list": "Upper Division Physics Courses"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 132",
+            "status": "active",
+            "from_list": "Upper Division Physics Courses"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 133",
+            "status": "active",
+            "from_list": "Upper Division Physics Courses"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 134L",
+            "status": "active",
+            "from_list": "Upper Division Physics Courses"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 135",
+            "status": "active",
+            "from_list": "Upper Division Physics Courses"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 136",
+            "status": "active",
+            "from_list": "Upper Division Physics Courses"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 137",
+            "status": "active",
+            "from_list": "Upper Division Physics Courses"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 138",
+            "status": "active",
+            "from_list": "Upper Division Physics Courses"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 139",
+            "status": "active",
+            "from_list": "Upper Division Physics Courses"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 141",
+            "status": "active",
+            "from_list": "Upper Division Physics Courses"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 142L",
+            "status": "active",
+            "from_list": "Upper Division Physics Courses"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 143L",
+            "status": "active",
+            "from_list": "Upper Division Physics Courses"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 144L",
+            "status": "active",
+            "from_list": "Upper Division Physics Courses"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 145L",
+            "status": "active",
+            "from_list": "Upper Division Physics Courses"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 150",
+            "status": "active",
+            "from_list": "Upper Division Physics Courses"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 160K",
+            "status": "active",
+            "from_list": "Upper Division Physics Courses"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 180",
+            "status": "active",
+            "from_list": "Upper Division Physics Courses"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 186",
+            "status": "active",
+            "from_list": "Upper Division Physics Courses"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 198",
+            "status": "active",
+            "from_list": "Upper Division Physics Courses"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 199",
+            "status": "active",
+            "from_list": "Upper Division Physics Courses"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 199RA",
+            "status": "active",
+            "from_list": "Upper Division Physics Courses"
+           }
+          ],
+          "catalog_rule_id": "HkEbd030",
+          "label": "CORE - 4."
+         }
+        ],
+        "catalog_rule_id": "nMvY36He",
+        "label": "CORE"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "PHYS 128AL",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 180",
+            "status": "active"
+           }
+          ],
+          "catalog_rule_id": "lKndK2UY",
+          "label": "EDUCATION - 1."
+         },
+         {
+          "type": "choose",
+          "count": 1,
+          "items": [
+           {
+            "type": "course",
+            "code": "PHYS 134L",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 127AL",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 129L",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 199",
+            "status": "active"
+           }
+          ],
+          "catalog_rule_id": "UKhAvA2x",
+          "label": "EDUCATION - 2.",
+          "notes": "In order for 199 to count for the requirements of the Astrophysics and Education concentrations, it must consist of 4 units in one quarter and involve the collection/processing of data and/or construction of instrumentation."
+         },
+         {
+          "type": "choose",
+          "count": 3,
+          "items": [
+           {
+            "type": "course",
+            "code": "ED 128",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ED 129",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ED 130",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ED 131",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ED 133",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ED 150",
+            "status": "active"
+           }
+          ],
+          "catalog_rule_id": "LqeMl651",
+          "label": "EDUCATION - 3."
+         }
+        ],
+        "catalog_rule_id": "pbF9gU1d",
+        "label": "EDUCATION"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "PHYS 119B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYS 127AL",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYS 128AL",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYS 138",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYS 139",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYS 141",
+          "status": "active"
+         }
+        ],
+        "catalog_rule_id": "U8RsVONl",
+        "label": "SOFT AND LIVING MATTER"
+       }
+      ],
+      "catalog_rule_id": "t6Tk66Q5",
+      "label": "F. CONCENTRATION",
+      "description": "In consultation with undergraduate and faculty advisors."
+     }
+    ],
+    "catalog_rule_id": "ezJ5vu7a",
+    "description": "52 UD Physics units are required, distributed as follows"
+   },
+   "notes": "A grade of C- or above is required in order to continue the sequence of upper division courses."
+  }
+ ],
+ "courses": [
+  {
+   "code": "ASTRO 1",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "ASTRO 2",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "CHEM 1A",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "CHEM 1B",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "CHEM 2A",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "CHEM 2B",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "EARTH 2",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "EARTH 9",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "EARTH 11",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "EARTH 20",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "ED 128",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ED 129",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ED 130",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ED 131",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ED 133",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ED 150",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 22",
+   "status": "inactive",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "MATH 2A",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "MATH 2B",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "MATH 3A",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "MATH 3B",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "MATH 4A",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "MATH 4B",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "MATH 6A",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "MATH 6B",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "MCDB 20",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "PHYS 13AL",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "PHYS 13BL",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "PHYS 13CL",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "PHYS 20AL",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "PHYS 20BL",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "PHYS 20CL",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "PHYS 21",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "PHYS 22",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "PHYS 23",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "PHYS 24",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "PHYS 25",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "PHYS 29",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "PHYS 100A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PHYS 100B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PHYS 103",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PHYS 104",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PHYS 106",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PHYS 110A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PHYS 110B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PHYS 115A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PHYS 115B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PHYS 115C",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PHYS 118",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PHYS 119A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PHYS 119B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PHYS 120",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PHYS 123A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PHYS 123B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PHYS 125",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PHYS 126L",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PHYS 127AL",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PHYS 127BL",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PHYS 128AL",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PHYS 129L",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PHYS 131",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PHYS 132",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PHYS 133",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PHYS 134L",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PHYS 135",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PHYS 136",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PHYS 137",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PHYS 138",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PHYS 139",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PHYS 141",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PHYS 142L",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PHYS 143L",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PHYS 144L",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PHYS 145L",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PHYS 150",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PHYS 160K",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PHYS 180",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PHYS 186",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PHYS 198",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PHYS 199",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PHYS 199RA",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTAT 10",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "PSTAT 120A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  }
+ ]
+}

@@ -1,0 +1,1361 @@
+{
+ "id": "BSCHEM",
+ "name": "Chemistry - BS",
+ "type": "Bachelor's Degree",
+ "departments": [
+  "CHEM"
+ ],
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsb.edu/programs/BSCHEM",
+ "narrative": [
+  "A UC GPA of 2.00 or above in each of the six sequences of courses, listed in Area I, is required for admission to the full Chemistry major. Acceptance into the pre-major does not guarantee admission to full major status. Upon satisfactory completion of the pre-major courses, students must complete a change of major petition, available on the Department of Chemistry and Biochemistry website.",
+  "MAJOR REGULATIONSPREREQUISITES Check the General Catalog for the prerequisites to all listed courses. Completion of the Pre-Chemistry major is required to enroll in upper-division courses required for the major.\nP/NP GRADING OPTION Not allowed for any major course (Prep or UD major), including courses applied to the major from other departments.\nSUBSTITUTIONS In the major requirements permissible only by petition to the department chair and dean.\nG.P.A REQUIREMENTS At least 2.0 overall UC average in all upper-division major courses and all courses (Prep and UD) for the major.\nDOUBLE MAJORS With the approval of each department chairperson, up to a total of 8 units may be applied simultaneously to both UD majors."
+ ],
+ "sections": [
+  {
+   "name": "I. PRE-MAJOR REQUIREMENTS",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "CHEM 3A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 1A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 2A",
+          "status": "active"
+         }
+        ]
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "CHEM 3B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 1B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 2B",
+          "status": "active"
+         }
+        ]
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "CHEM 3C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 1C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 2C",
+          "status": "active"
+         }
+        ]
+       }
+      ],
+      "catalog_rule_id": "C9CHDBtN",
+      "label": "General Chemistry"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 2AL",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 2BL",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 3L",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "GTUFnuAb",
+      "label": "General Chem Labs"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 6AL",
+        "status": "active"
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "CHEM 6BL",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 6BH",
+          "status": "active"
+         }
+        ]
+       }
+      ],
+      "catalog_rule_id": "ocTgmM5B",
+      "label": "Organic Chemistry Labs"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "CHEM 130A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 109A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 109AH",
+          "status": "active"
+         }
+        ]
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "CHEM 130B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 109B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 109BH",
+          "status": "active"
+         }
+        ]
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "CHEM 130C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 109C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 109CH",
+          "status": "active"
+         }
+        ]
+       }
+      ],
+      "catalog_rule_id": "ZdKNDc9Z",
+      "label": "Organic Chemistry"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 2A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 3A",
+          "status": "active"
+         }
+        ]
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 2B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 3B",
+          "status": "active"
+         }
+        ]
+       },
+       {
+        "type": "course",
+        "code": "MATH 4A",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "hKHiNBUG",
+      "label": "Lower-Division Math"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "PHYS 7A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 7B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 7C",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "BS2ID3VQ",
+      "label": "Physics"
+     }
+    ]
+   }
+  },
+  {
+   "name": "II. PREPARATION FOR THE MAJOR",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "count": 1,
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 6CL",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 6CH",
+        "status": "active"
+       }
+      ]
+     },
+     {
+      "type": "course",
+      "code": "MATH 4B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MATH 6A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 7L",
+      "status": "active"
+     }
+    ],
+    "catalog_rule_id": "gI56dSlK",
+    "description": "Math 6A and Phys 7L are required for enrollment in Physical Chemistry (CHEM 113A-B-C) which should be taken in the fall quarter of Year 3."
+   }
+  },
+  {
+   "name": "UPPER-DIVISION MAJOR",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "CHEM 113A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 113B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 113C",
+          "status": "active"
+         }
+        ]
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "CHEM 142A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM W 142A",
+          "status": "active"
+         }
+        ]
+       },
+       {
+        "type": "course",
+        "code": "CHEM 150",
+        "status": "active"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "CHEM 173A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 173B",
+          "status": "active"
+         }
+        ]
+       }
+      ],
+      "catalog_rule_id": "Y3ACq7xh",
+      "label": "A."
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 116AL",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 116BL",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 116CL",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "TYyJ36jG",
+      "label": "B."
+     },
+     {
+      "type": "choose",
+      "count": 1,
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 102",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 104",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 109A",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 109AH",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 109B",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 109BH",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 109C",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 109CH",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 110L",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 111",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 112A",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 112B",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 112C",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 112L",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 113A",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 113AL",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 113B",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 113C",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 114A",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 115A",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 115B",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 115C",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 116AL",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 116BL",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 116CL",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 117A",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 118",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 123",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 124",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 125L",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 126",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 127",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 128",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 129",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 130A",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 130B",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 130C",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 132",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 133",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 134",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 141",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 142A",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 142B",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 142C",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 143",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 145",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 147",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 149",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 150",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 151",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 153",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 161",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 162A",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 162B",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 163",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 171",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 173A",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 173B",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 175",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 176",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 181",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 183",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 184",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 186",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 192",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 193",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 194",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 196",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 198",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 199",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM W 109C",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       },
+       {
+        "type": "course",
+        "code": "CHEM W 142A",
+        "status": "active",
+        "from_list": "Upper Division Chemistry Courses"
+       }
+      ],
+      "catalog_rule_id": "Tzx6GiZQ",
+      "label": "C.",
+      "description": "Upper-Division Chemistry electives, with no more than one course from Chemistry 110 and 123, to bring the total completed units to 53",
+      "notes": "The following courses will not apply toward the major: Chemistry 102, 149, 183, 184, 192, 193, 194, 196, 198, and 199\nBy petition, some of the Area C elective units may be taken in other related departments."
+     }
+    ],
+    "catalog_rule_id": "nlu4UUZu",
+    "description": "53 UD Chemistry units are required, distributed as follows",
+    "notes": "Transfer students receiving subject credit for Chemistry 150 must complete a minimum of 53 UD units in the Department of Chemistry and Biochemistry."
+   }
+  }
+ ],
+ "courses": [
+  {
+   "code": "CHEM 1A",
+   "status": "active",
+   "section": "I. PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "CHEM 1B",
+   "status": "active",
+   "section": "I. PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "CHEM 1C",
+   "status": "active",
+   "section": "I. PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "CHEM 2A",
+   "status": "active",
+   "section": "I. PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "CHEM 2AL",
+   "status": "active",
+   "section": "I. PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "CHEM 2B",
+   "status": "active",
+   "section": "I. PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "CHEM 2BL",
+   "status": "active",
+   "section": "I. PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "CHEM 2C",
+   "status": "active",
+   "section": "I. PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "CHEM 3A",
+   "status": "active",
+   "section": "I. PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "CHEM 3B",
+   "status": "active",
+   "section": "I. PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "CHEM 3C",
+   "status": "active",
+   "section": "I. PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "CHEM 3L",
+   "status": "active",
+   "section": "I. PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "CHEM 6AL",
+   "status": "active",
+   "section": "I. PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "CHEM 6BH",
+   "status": "active",
+   "section": "I. PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "CHEM 6BL",
+   "status": "active",
+   "section": "I. PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "CHEM 6CH",
+   "status": "active",
+   "section": "II. PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "CHEM 6CL",
+   "status": "active",
+   "section": "II. PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "CHEM 102",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM 104",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM 109A",
+   "status": "active",
+   "section": "I. PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "CHEM 109AH",
+   "status": "active",
+   "section": "I. PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "CHEM 109B",
+   "status": "active",
+   "section": "I. PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "CHEM 109BH",
+   "status": "active",
+   "section": "I. PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "CHEM 109C",
+   "status": "active",
+   "section": "I. PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "CHEM 109CH",
+   "status": "active",
+   "section": "I. PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "CHEM 110L",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM 111",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM 112A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM 112B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM 112C",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM 112L",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM 113A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM 113AL",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM 113B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM 113C",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM 114A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM 115A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM 115B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM 115C",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM 116AL",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM 116BL",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM 116CL",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM 117A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM 118",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM 123",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM 124",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM 125L",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM 126",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM 127",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM 128",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM 129",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM 130A",
+   "status": "active",
+   "section": "I. PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "CHEM 130B",
+   "status": "active",
+   "section": "I. PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "CHEM 130C",
+   "status": "active",
+   "section": "I. PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "CHEM 132",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM 133",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM 134",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM 141",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM 142A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM 142B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM 142C",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM 143",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM 145",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM 147",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM 149",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM 150",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM 151",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM 153",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM 161",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM 162A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM 162B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM 163",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM 171",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM 173A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM 173B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM 175",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM 176",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM 181",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM 183",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM 184",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM 186",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM 192",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM 193",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM 194",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM 196",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM 198",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM 199",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM W 109C",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHEM W 142A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MATH 2A",
+   "status": "active",
+   "section": "I. PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "MATH 2B",
+   "status": "active",
+   "section": "I. PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "MATH 3A",
+   "status": "active",
+   "section": "I. PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "MATH 3B",
+   "status": "active",
+   "section": "I. PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "MATH 4A",
+   "status": "active",
+   "section": "I. PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "MATH 4B",
+   "status": "active",
+   "section": "II. PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "MATH 6A",
+   "status": "active",
+   "section": "II. PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "PHYS 7A",
+   "status": "active",
+   "section": "I. PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "PHYS 7B",
+   "status": "active",
+   "section": "I. PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "PHYS 7C",
+   "status": "active",
+   "section": "I. PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "PHYS 7L",
+   "status": "active",
+   "section": "II. PREPARATION FOR THE MAJOR"
+  }
+ ]
+}

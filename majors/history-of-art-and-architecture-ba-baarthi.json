@@ -1,0 +1,1388 @@
+{
+ "id": "BAARTHI",
+ "name": "History of Art and Architecture - BA",
+ "type": "Bachelor's Degree",
+ "departments": [
+  "ARTHI"
+ ],
+ "catalog_year": "2025-26",
+ "source": "https://catalog.ucsb.edu/programs/BAARTHI",
+ "narrative": [
+  "MAJOR REGULATIONS\nPREREQUISITES ........................................Check the General Catalog for the prerequisites to all listed courses.\nP/NP GRADING OPTION ...........................Not allowed for any major course (Prep or UD major), including internships and courses applied to the major from other departments.\nSUBSTITUTIONS .........................................In the major requirements permissible only by petition to the department chair and dean.\nG.P.A REQUIREMENTS .............................At least 2.0 overall UC average in all upper-division major courses and all courses (Prep and UD) for the major.\nDOUBLE MAJORS ......................................With the approval of each department chairperson, up to a total of 8 units may be applied simultaneously to both UD majors."
+ ],
+ "sections": [
+  {
+   "name": "Preparation for the Major",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "count": 2,
+      "items": [
+       {
+        "type": "course",
+        "code": "ARTHI 6B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ARTHI 6C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ARTHI 6M",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ARTHIW 6R",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "SaS2EeYo",
+      "label": "A. Two courses from the European Tradition"
+     },
+     {
+      "type": "choose",
+      "count": 2,
+      "items": [
+       {
+        "type": "course",
+        "code": "ARTHI 6DL",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "ARTHI 6DS",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ARTHI 6DW",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "ARTHI 6E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ARTHI 6H",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ARTHI 6K",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "BRjpsDZO",
+      "label": "B. Two courses from World Cultures"
+     },
+     {
+      "type": "choose",
+      "count": 1,
+      "items": [
+       {
+        "type": "course",
+        "code": "ARTHI 5A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ARTHI 6F",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ARTHI 6J",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ARTHI 5B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ARTHI 6G",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ARTHI 6L",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ARTHI 86",
+        "status": "inactive"
+       }
+      ],
+      "catalog_rule_id": "yaU9ILJs",
+      "label": "C. One Art History course from an additional field"
+     }
+    ],
+    "catalog_rule_id": "PZNiPjf3",
+    "label": "20 units required as follows"
+   }
+  },
+  {
+   "name": "Upper-Division Major",
+   "requirement": {
+    "type": "choose",
+    "count": 9,
+    "items": [
+     {
+      "type": "course",
+      "code": "ARTHI 103D",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 103G",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 105C",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 105O",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 105P",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 105Q",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 105R",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 107A",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 107B",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 107C",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 108",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 109B",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 109C",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 109I",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 111B",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 113B",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 113F",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 115E",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 116",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 117F",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 118",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 119B",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 119G",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 120",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 121B",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 121D",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 121F",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 121G",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 123E",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 127A",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 127B",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 130D",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 130F",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 130G",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 131",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 131CM",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 132A",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 132D",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 132E",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 132I",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 132J",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 133",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 134C",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 134CA",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 134D",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 134E",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 134F",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 134G",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 134H",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 134I",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 134J",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 134K",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 135AA",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 136B",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 136C",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 136E",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 136I",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 136K",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 136M",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 136O",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 136W",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 136Y",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 137",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 137GA",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 139",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 139A",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 141A",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 141D",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 141G",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 141MH",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 142A",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 142C",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 142D",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 142E",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 142F",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 144C",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 148C",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 163",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 185",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 186A",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 186B",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 186C",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 186D",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 186G",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 186H",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 186L",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 186N",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 186P",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 186Q",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 186RW",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 186SR",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 186SV",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 186T",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 187A",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 187B",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 187C",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 187H",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 187Z",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 192A",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 192B",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 192C",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 192D",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 192E",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 199",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     },
+     {
+      "type": "course",
+      "code": "ARTHI 199RA",
+      "status": "active",
+      "from_list": "Upper Division History of Art and Architecture"
+     }
+    ],
+    "catalog_rule_id": "bDqkqUE3",
+    "label": "36 UD units required as follows",
+    "notes": "At least one of which must be 186/187 series.\nNote: Students wishing to pursue an Honors thesis should consult with Faculty Undergraduate Advisor and must take ARTHI 100 prior to beginning their honors thesis.\nConsultation with the Faculty Undergraduate Advisor is recommended when choosing upper-division courses."
+   }
+  }
+ ],
+ "courses": [
+  {
+   "code": "ARTHI 5A",
+   "status": "active",
+   "section": "Preparation for the Major"
+  },
+  {
+   "code": "ARTHI 5B",
+   "status": "active",
+   "section": "Preparation for the Major"
+  },
+  {
+   "code": "ARTHI 6B",
+   "status": "active",
+   "section": "Preparation for the Major"
+  },
+  {
+   "code": "ARTHI 6C",
+   "status": "active",
+   "section": "Preparation for the Major"
+  },
+  {
+   "code": "ARTHI 6DL",
+   "status": "inactive",
+   "section": "Preparation for the Major"
+  },
+  {
+   "code": "ARTHI 6DS",
+   "status": "active",
+   "section": "Preparation for the Major"
+  },
+  {
+   "code": "ARTHI 6DW",
+   "status": "inactive",
+   "section": "Preparation for the Major"
+  },
+  {
+   "code": "ARTHI 6E",
+   "status": "active",
+   "section": "Preparation for the Major"
+  },
+  {
+   "code": "ARTHI 6F",
+   "status": "active",
+   "section": "Preparation for the Major"
+  },
+  {
+   "code": "ARTHI 6G",
+   "status": "active",
+   "section": "Preparation for the Major"
+  },
+  {
+   "code": "ARTHI 6H",
+   "status": "active",
+   "section": "Preparation for the Major"
+  },
+  {
+   "code": "ARTHI 6J",
+   "status": "active",
+   "section": "Preparation for the Major"
+  },
+  {
+   "code": "ARTHI 6K",
+   "status": "active",
+   "section": "Preparation for the Major"
+  },
+  {
+   "code": "ARTHI 6L",
+   "status": "active",
+   "section": "Preparation for the Major"
+  },
+  {
+   "code": "ARTHI 6M",
+   "status": "active",
+   "section": "Preparation for the Major"
+  },
+  {
+   "code": "ARTHI 86",
+   "status": "inactive",
+   "section": "Preparation for the Major"
+  },
+  {
+   "code": "ARTHI 103D",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 103G",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 105C",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 105O",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 105P",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 105Q",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 105R",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 107A",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 107B",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 107C",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 108",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 109B",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 109C",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 109I",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 111B",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 113B",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 113F",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 115E",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 116",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 117F",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 118",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 119B",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 119G",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 120",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 121B",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 121D",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 121F",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 121G",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 123E",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 127A",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 127B",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 130D",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 130F",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 130G",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 131",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 131CM",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 132A",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 132D",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 132E",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 132I",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 132J",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 133",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 134C",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 134CA",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 134D",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 134E",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 134F",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 134G",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 134H",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 134I",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 134J",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 134K",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 135AA",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 136B",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 136C",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 136E",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 136I",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 136K",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 136M",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 136O",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 136W",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 136Y",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 137",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 137GA",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 139",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 139A",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 141A",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 141D",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 141G",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 141MH",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 142A",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 142C",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 142D",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 142E",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 142F",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 144C",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 148C",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 163",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 185",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 186A",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 186B",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 186C",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 186D",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 186G",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 186H",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 186L",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 186N",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 186P",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 186Q",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 186RW",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 186SR",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 186SV",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 186T",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 187A",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 187B",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 187C",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 187H",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 187Z",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 192A",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 192B",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 192C",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 192D",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 192E",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 199",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHI 199RA",
+   "status": "active",
+   "section": "Upper-Division Major"
+  },
+  {
+   "code": "ARTHIW 6R",
+   "status": "active",
+   "section": "Preparation for the Major"
+  }
+ ]
+}

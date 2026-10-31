@@ -1,0 +1,1668 @@
+{
+ "id": "BAPHIL",
+ "name": "Philosophy - BA",
+ "type": "Bachelor's Degree",
+ "departments": [
+  "PHIL"
+ ],
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsb.edu/programs/BAPHIL",
+ "narrative": [
+  "The Philosophy major consists of a total of at least 48 units in Philosophy, at least 36 of which must be upper-division. Students must follow the requirements of one of the two concentrations: Core Philosophy and Ethics and Public Policy. For details, consult the Philosophy Department.",
+  "MAJOR REGULATIONS\nPREREQUISITES.............................................. Check the General Catalog for the prerequisites to all listed courses.\nP/NP GRADING OPTION................................. Not allowed for any course applied to the major (prep or UD), including courses applied to the major from other departments.\nSUBSTITUTIONS.............................................. In the major requirements permissible only by petition to the department chair and dean.\nG.P.A REQUIREMENTS.................................. At least 2.0 overall UC average in all upper-division major courses and all courses (Prep and UD) for the major.\nDOUBLE MAJORS............................................ With the approval of each department chairperson, up to a total of 8 units may be applied simultaneously to both UD majors."
+ ],
+ "sections": [
+  {
+   "name": "Preparation for the Major",
+   "requirement": {
+    "type": "choose",
+    "count": 3,
+    "items": [
+     {
+      "type": "course",
+      "code": "PHIL 1",
+      "status": "active",
+      "from_list": "Lower Division Philosophy Courses"
+     },
+     {
+      "type": "course",
+      "code": "PHIL 3",
+      "status": "active",
+      "from_list": "Lower Division Philosophy Courses"
+     },
+     {
+      "type": "course",
+      "code": "PHIL 4",
+      "status": "active",
+      "from_list": "Lower Division Philosophy Courses"
+     },
+     {
+      "type": "course",
+      "code": "PHIL 7",
+      "status": "active",
+      "from_list": "Lower Division Philosophy Courses"
+     },
+     {
+      "type": "course",
+      "code": "PHIL 20A",
+      "status": "active",
+      "from_list": "Lower Division Philosophy Courses"
+     },
+     {
+      "type": "course",
+      "code": "PHIL 20B",
+      "status": "active",
+      "from_list": "Lower Division Philosophy Courses"
+     },
+     {
+      "type": "course",
+      "code": "PHIL 20C",
+      "status": "active",
+      "from_list": "Lower Division Philosophy Courses"
+     }
+    ],
+    "catalog_rule_id": "HbTqU7UC",
+    "label": "Up to three lower-division courses in Philosophy",
+    "description": "Recommended for Core Concentration: Philosophy 20A-B-C\nRecommended for Ethics and Public Policy Concentration: Philosophy 4 or 7"
+   }
+  },
+  {
+   "name": "Concentration I - Core Philosophy",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "PHIL 183",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "baijuUK0",
+      "label": "A."
+     },
+     {
+      "type": "choose",
+      "count": 3,
+      "items": [
+       {
+        "type": "course",
+        "code": "PHIL 100A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 100B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 100C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 100D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 100E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 100F",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 116",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "cDjZ0cq5",
+      "label": "B."
+     },
+     {
+      "type": "choose",
+      "count": 3,
+      "items": [
+       {
+        "type": "course",
+        "code": "PHIL 133",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 141",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 151",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 152",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 153",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 154",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 156",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 160",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 161",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 162",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 163",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 164",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 165",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 166A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 166B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 167",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 168",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 172",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 173",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 174",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 175A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 175B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 176",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "VvsYdIx9",
+      "label": "C.",
+      "notes": "One course may be selected from Philosophy 20A-B-C but such units will NOT count toward the 36 upper-division units required.)"
+     },
+     {
+      "type": "units",
+      "units": 20,
+      "items": [
+       {
+        "type": "course",
+        "code": "PHIL 100A",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 100B",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 100C",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 100D",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 100E",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 100F",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 116",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 117",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 121",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 124A",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 124C",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 124E",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 124F",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 124G",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 125",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 125",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 126",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 127",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 128",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 130",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 131",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 133",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 134",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 135",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 136",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 138",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 139",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 141",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 143",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 144",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 145",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 146",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 149",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 150A",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 150B",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 150C",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 150D",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 150E",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 151",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 152",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 153",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 156",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 160",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 161",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 163",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 164",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 165",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 166A",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 166B",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 167",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 173",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 175A",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 175B",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 176",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 183",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 184",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 185",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 188",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 189",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 192",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 197A",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 197B",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 197P",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 199",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 199RA",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       }
+      ],
+      "catalog_rule_id": "yQF5PNPt",
+      "label": "D.",
+      "description": "Additional UD philosophy electives to bring total units in major to 48 (which must include at least 36 UD units)",
+      "notes": "By petition, up to 4 units may be taken from courses in a cognate department."
+     }
+    ],
+    "catalog_rule_id": "T8DrxzkW",
+    "label": "Core Concentration",
+    "description": "36 UD units are required (and at least 48 total units are required towards the major overall), distributed as follows:"
+   }
+  },
+  {
+   "name": "Concentration II - Ethics and Public Policy",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "PHIL 183",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "x4gYcBWM",
+      "label": "A."
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "PHIL 100A",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "qoqxkysy",
+      "label": "B."
+     },
+     {
+      "type": "choose",
+      "count": 1,
+      "items": [
+       {
+        "type": "course",
+        "code": "PHIL 100B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 100C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 100D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 100E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 100F",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 116",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "KEoqupL5",
+      "label": "C."
+     },
+     {
+      "type": "choose",
+      "count": 4,
+      "items": [
+       {
+        "type": "course",
+        "code": "PHIL 108",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 121",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 122",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 126",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 128",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 129",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 130",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 131",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 133",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 134",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 136",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 137",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 138",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 139",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 141",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 143",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 144",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 145",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 147",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 149",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 150A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 166B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 188",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 189",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "PqQQVZoE",
+      "label": "D."
+     },
+     {
+      "type": "units",
+      "units": 20,
+      "items": [
+       {
+        "type": "course",
+        "code": "PHIL 100A",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 100B",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 100C",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 100D",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 100E",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 100F",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 116",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 117",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 121",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 124A",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 124C",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 124E",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 124F",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 124G",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 125",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 125",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 126",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 127",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 128",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 130",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 131",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 133",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 134",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 135",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 136",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 138",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 139",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 141",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 143",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 144",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 145",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 146",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 149",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 150A",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 150B",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 150C",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 150D",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 150E",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 151",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 152",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 153",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 156",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 160",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 161",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 163",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 164",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 165",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 166A",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 166B",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 167",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 173",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 175A",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 175B",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 176",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 183",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 184",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 185",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 188",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 189",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 192",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 197A",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 197B",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 197P",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 199",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 199RA",
+        "status": "active",
+        "from_list": "Upper Division Philosophy Courses"
+       }
+      ],
+      "catalog_rule_id": "erjyJZSt",
+      "label": "E.",
+      "description": "36 UD units are required (and at least 48 total units are required towards the major overall), distributed as follows:",
+      "notes": "By petition, up to 8 units may be taken from courses in a cognate department."
+     }
+    ],
+    "catalog_rule_id": "oLjaKzVo",
+    "label": "Ethics and Public Policy Concentration",
+    "description": "36 UD units are required (and at least 48 total units are required towards the major overall), distributed as follows"
+   }
+  }
+ ],
+ "courses": [
+  {
+   "code": "PHIL 1",
+   "status": "active",
+   "section": "Preparation for the Major"
+  },
+  {
+   "code": "PHIL 3",
+   "status": "active",
+   "section": "Preparation for the Major"
+  },
+  {
+   "code": "PHIL 4",
+   "status": "active",
+   "section": "Preparation for the Major"
+  },
+  {
+   "code": "PHIL 7",
+   "status": "active",
+   "section": "Preparation for the Major"
+  },
+  {
+   "code": "PHIL 20A",
+   "status": "active",
+   "section": "Preparation for the Major"
+  },
+  {
+   "code": "PHIL 20B",
+   "status": "active",
+   "section": "Preparation for the Major"
+  },
+  {
+   "code": "PHIL 20C",
+   "status": "active",
+   "section": "Preparation for the Major"
+  },
+  {
+   "code": "PHIL 100A",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 100B",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 100C",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 100D",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 100E",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 100F",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 108",
+   "status": "inactive",
+   "section": "Concentration II - Ethics and Public Policy"
+  },
+  {
+   "code": "PHIL 116",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 117",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 121",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 122",
+   "status": "inactive",
+   "section": "Concentration II - Ethics and Public Policy"
+  },
+  {
+   "code": "PHIL 124A",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 124C",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 124E",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 124F",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 124G",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 125",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 126",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 127",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 128",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 129",
+   "status": "inactive",
+   "section": "Concentration II - Ethics and Public Policy"
+  },
+  {
+   "code": "PHIL 130",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 131",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 133",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 134",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 135",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 136",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 137",
+   "status": "inactive",
+   "section": "Concentration II - Ethics and Public Policy"
+  },
+  {
+   "code": "PHIL 138",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 139",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 141",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 143",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 144",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 145",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 146",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 147",
+   "status": "inactive",
+   "section": "Concentration II - Ethics and Public Policy"
+  },
+  {
+   "code": "PHIL 149",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 150A",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 150B",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 150C",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 150D",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 150E",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 151",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 152",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 153",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 154",
+   "status": "inactive",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 156",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 160",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 161",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 162",
+   "status": "inactive",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 163",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 164",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 165",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 166A",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 166B",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 167",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 168",
+   "status": "inactive",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 172",
+   "status": "inactive",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 173",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 174",
+   "status": "inactive",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 175A",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 175B",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 176",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 183",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 184",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 185",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 188",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 189",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 192",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 197A",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 197B",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 197P",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 199",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  },
+  {
+   "code": "PHIL 199RA",
+   "status": "active",
+   "section": "Concentration I - Core Philosophy"
+  }
+ ]
+}

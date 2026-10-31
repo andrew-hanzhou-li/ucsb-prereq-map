@@ -1,0 +1,198 @@
+{
+ "id": "BAPRECA",
+ "name": "Pre-Economics and Accounting - BA",
+ "type": "Bachelor's Degree",
+ "departments": [
+  "ECON"
+ ],
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsb.edu/programs/BAPRECA",
+ "narrative": [
+  "In order to qualify for admission into the Economics and Accounting major, students must complete Economics 1, 2, 3A, 3B and 10A with a UC grade-point average of 2.85 or above. No grade lower than a C in pre-major courses will be accepted. In addition, students must complete Economics 5 or PSTAT 120A and Math 2A-B or 3A-B or 34A-B with a grade of “C” or higher; the grades in these courses will not be used in computing the pre-major GPA but will apply to the overall major GPA.\nAcceptance into the pre-major does not guarantee admission to full major status.",
+  "MAJOR REGULATIONS\nPREREQUISITES.............................................. Check the General Catalog for the prerequisites to all listed courses.\nP/NP GRADING OPTION................................. Not allowed for any major courses (Prep or UD major), including courses applied to the major from other departments.\nSUBSTITUTIONS.............................................. In the major requirements permissible only by petition to the department chair and dean.\nG.P.A. REQUIREMENTS................................. At least 2.0 overall UC average in all upper-division major courses and all courses (Prep and UD) for the major.\nDOUBLE MAJORS............................................ With the approval of each department chairperson, up to a total of 8 units may be applied simultaneously to both UD majors."
+ ],
+ "sections": [
+  {
+   "name": "PRE-MAJOR REQUIREMENTS",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "ECON 1",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECON 2",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECON 3A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECON 3B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECON 10A",
+      "status": "active"
+     }
+    ],
+    "catalog_rule_id": "dh5OxgWu",
+    "notes": "Econ 10A must be taken at UCSB."
+   }
+  },
+  {
+   "name": "PREPARATION FOR THE MAJOR",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "count": 1,
+      "items": [
+       {
+        "type": "course",
+        "code": "ECON 5",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSTAT 120A",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "obR2ZgtX",
+      "notes": "Econ 5 must be taken at UCSB."
+     },
+     {
+      "type": "choose",
+      "count": 1,
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 2A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 2B",
+          "status": "active"
+         }
+        ]
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 3A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 3B",
+          "status": "active"
+         }
+        ]
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 34A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 34B",
+          "status": "active"
+         }
+        ]
+       }
+      ],
+      "catalog_rule_id": "LM0XTzhC"
+     }
+    ],
+    "catalog_rule_id": "yMvPO9Pi"
+   },
+   "notes": "Upon satisfactory completion of the above courses, students should complete a change of major petition in the Department of Economics, 2121 North Hall, and obtain the appropriate signatures."
+  }
+ ],
+ "courses": [
+  {
+   "code": "ECON 1",
+   "status": "active",
+   "section": "PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "ECON 2",
+   "status": "active",
+   "section": "PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "ECON 3A",
+   "status": "active",
+   "section": "PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "ECON 3B",
+   "status": "active",
+   "section": "PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "ECON 5",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "ECON 10A",
+   "status": "active",
+   "section": "PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "MATH 2A",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "MATH 2B",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "MATH 3A",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "MATH 3B",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "MATH 34A",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "MATH 34B",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "PSTAT 120A",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  }
+ ]
+}

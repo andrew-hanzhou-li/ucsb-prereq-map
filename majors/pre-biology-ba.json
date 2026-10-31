@@ -1,0 +1,414 @@
+{
+ "id": "BAPRBIO",
+ "name": "Pre-Biology - BA",
+ "type": "Bachelor's Degree",
+ "departments": [
+  "EEMB",
+  "MCDB"
+ ],
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsb.edu/programs/BAPRBIO",
+ "narrative": [
+  "Students are not admitted directly to the following majors:\n- Biological Sciences, B.A. or B.S.\n- Aquatic Biology, B.S.\n- Ecology and Evolution, B.S.\n- Physiology, B.S.\n- Zoology, B.S.\n- Molecular and Cellular Biology, B.S. (optional emphases below)\n- Biochemistry-Molecular Biology Emphasis\n- Cell and Developmental Biology Emphasis\n- Microbiology Emphasis\n- Pharmacology Emphasis\nInstead, they are first admitted to the Pre-Biology major, and they may advance to full major standing in one of these majors only after fulfilling the pre-major courses and grade requirements listed below. Students will not be admitted to the pre-biology major after their seventh quarter (or equivalent), and students will only be admitted to the pre-major in their seventh quarter if they have completed introductory biology and most of the required pre-biology major courses.\nNote: Completion of the pre-major does not fully satisfy the Preparation for the Major requirements for any of the majors. Students should review the full requirement sheet for the major they intend to declare and plan their schedules accordingly. Also note, acceptance into the pre-major does not guarantee admission to full major status.\nStudents may petition for advancement to full major status in any one of the majors as soon as they have completed the required minimum of eleven courses with a 2.0 or higher UC GPA in Area B, in Area C, and in Areas A and D combined. At the time of the petition, they must also have a 2.0 or higher grade-point average in all courses attempted toward the major (preparation and upper-division).\nNote: Many upper-division EEMB and all MCDB courses require a C or higher in each of their prerequisite\ncourses. See General Catalog for details.",
+  "MAJOR REGULATIONSPREREQUSITES Check the General Catalog for the prerequisites to all listed courses.\nP/NP GRADING OPTION Not allowed for any pre-major courses. All must be completed on a letter grade basis.\nSUBSTITUTIONS In the major requirements permissible only by petition to the department chair and dean.\nG.P.A. REQUIREMENTS At least 2.0 overall UC average in all upper-division major courses and all courses (Prep and UD) for the major.\nDOUBLE MAJORS With the approval of each department chairperson, up to a total of 8 units may be applied simultaneously to both UD majors."
+ ],
+ "sections": [
+  {
+   "name": "PRE-MAJOR",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "CHEM 1A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 2A",
+          "status": "active"
+         }
+        ]
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "CHEM 1B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 2B",
+          "status": "active"
+         }
+        ]
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "CHEM 1C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 2C",
+          "status": "active"
+         }
+        ]
+       }
+      ],
+      "catalog_rule_id": "LjYckZNp",
+      "label": "A. General Chemistry",
+      "notes": "The entire three-quarter series and laboratories are required for all EEMB and MCDB majors."
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "MCDB 1A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 1B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 2",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 3",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "pkIfhrXu",
+      "label": "B."
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "MCDB 1LL",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 2LL",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "mmWfdkHJ",
+      "label": "C."
+     },
+     {
+      "type": "choose",
+      "count": 2,
+      "items": [
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "CHEM 109A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 109B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 109C",
+            "status": "active"
+           }
+          ]
+         },
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "CHEM 109AH",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 109BH",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 109CH",
+            "status": "active"
+           }
+          ]
+         }
+        ],
+        "catalog_rule_id": "s3zTE8kL",
+        "label": "Organic Chemistry lecture",
+        "notes": "Not required for Ecology and Evolution or Zoology. Other majors add laboratory requirements to lecture. Physiology and the MCDB majors require the entire 109 A-B-C or honors sequence. Aquatic Biology, Biological Science B.A. and B.S. majors require 109A-B or 109AH-BH."
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "choose",
+          "count": 1,
+          "items": [
+           {
+            "type": "course",
+            "code": "MATH 3A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MATH 34A",
+            "status": "active"
+           }
+          ]
+         },
+         {
+          "type": "choose",
+          "count": 1,
+          "items": [
+           {
+            "type": "course",
+            "code": "MATH 3B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MATH 34B",
+            "status": "active"
+           }
+          ]
+         }
+        ],
+        "catalog_rule_id": "gI615VWY",
+        "label": "Calculus",
+        "notes": "MCB Biochemistry-Molecular Biology emphasis requires Math 3A-B and beyond. The other majors give a choice of 3A-B or 34A-B"
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "PSTAT 5LS",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PSTAT 5A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 4A",
+          "status": "active"
+         }
+        ],
+        "catalog_rule_id": "O2VpdhXq",
+        "label": "Statistics or Advanced Calculus",
+        "notes": "PSTAT 5LS or 5A strongly recommended for EEMB majors. MCB Biochemistry-Molecular Biology emphasis requires Math 4A and Math 6A."
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "PHYS 6A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYS 6B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYS 6C",
+          "status": "active"
+         }
+        ],
+        "catalog_rule_id": "CuOEMKua",
+        "label": "Physics",
+        "notes": "Biological Sciences B.A. does not require 6C. Laboratories are required for all majors."
+       }
+      ],
+      "catalog_rule_id": "KN6DrFDo",
+      "label": "D.",
+      "description": "Two courses from the following:"
+     }
+    ]
+   }
+  }
+ ],
+ "courses": [
+  {
+   "code": "CHEM 1A",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "CHEM 1B",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "CHEM 1C",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "CHEM 2A",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "CHEM 2B",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "CHEM 2C",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "CHEM 109A",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "CHEM 109AH",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "CHEM 109B",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "CHEM 109BH",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "CHEM 109C",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "CHEM 109CH",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "EEMB 2",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "EEMB 2LL",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "EEMB 3",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "MATH 3A",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "MATH 3B",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "MATH 4A",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "MATH 34A",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "MATH 34B",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "MCDB 1A",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "MCDB 1B",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "MCDB 1LL",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "PHYS 6A",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "PHYS 6B",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "PHYS 6C",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "PSTAT 5A",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "PSTAT 5LS",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  }
+ ]
+}

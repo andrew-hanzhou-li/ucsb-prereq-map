@@ -1,0 +1,1354 @@
+{
+ "majors": [
+  {
+   "id": "BSACTSC",
+   "name": "Actuarial Science - BS",
+   "file": "actuarial-science-bs.json",
+   "courses_in_major": 61,
+   "outside_prerequisites": 33,
+   "edges": 200,
+   "columns": 8,
+   "upper_division_floor": 2
+  },
+  {
+   "id": "BAANTH",
+   "name": "Anthropology - BA",
+   "file": "anthropology-ba.json",
+   "courses_in_major": 89,
+   "outside_prerequisites": 21,
+   "edges": 91,
+   "columns": 5,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "BAANTHARCHAEOL",
+   "name": "Anthropology - BA - Archaeology Emphasis",
+   "file": "anthropology-ba-archaeology-emphasis.json",
+   "courses_in_major": 110,
+   "outside_prerequisites": 21,
+   "edges": 91,
+   "columns": 5,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "BAANTHBIOLGICL",
+   "name": "Anthropology - BA - Biological Emphasis",
+   "file": "anthropology-ba-biological-emphasis.json",
+   "courses_in_major": 100,
+   "outside_prerequisites": 21,
+   "edges": 91,
+   "columns": 5,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "BAANTHCULTURAL",
+   "name": "Anthropology - BA - Cultural Emphasis",
+   "file": "anthropology-ba-cultural-emphasis.json",
+   "courses_in_major": 98,
+   "outside_prerequisites": 21,
+   "edges": 91,
+   "columns": 5,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "BSAMATH",
+   "name": "Applied Mathematics - BS",
+   "file": "applied-mathematics-bs.json",
+   "courses_in_major": 102,
+   "outside_prerequisites": 28,
+   "edges": 247,
+   "columns": 10,
+   "upper_division_floor": 4
+  },
+  {
+   "id": "BAAQBIO",
+   "name": "Aquatic Biology - BA",
+   "file": "aquatic-biology-ba.json",
+   "courses_in_major": 214,
+   "outside_prerequisites": 44,
+   "edges": 696,
+   "columns": 8,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "BSAQBIO",
+   "name": "Aquatic Biology - BS",
+   "file": "aquatic-biology-bs.json",
+   "courses_in_major": 73,
+   "outside_prerequisites": 30,
+   "edges": 267,
+   "columns": 7,
+   "upper_division_floor": 2
+  },
+  {
+   "id": "BAART",
+   "name": "Art - BA",
+   "file": "art-ba.json",
+   "courses_in_major": 56,
+   "outside_prerequisites": 0,
+   "edges": 63,
+   "columns": 3,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "mcAVHSCZnQkOVw0EAf1m",
+   "name": "Artificial Intelligence - BS",
+   "file": "artificial-intelligence-bs.json",
+   "courses_in_major": 58,
+   "outside_prerequisites": 50,
+   "edges": 185,
+   "columns": 7,
+   "upper_division_floor": 3
+  },
+  {
+   "id": "BAASAM",
+   "name": "Asian American Studies - BA",
+   "file": "asian-american-studies-ba.json",
+   "courses_in_major": 88,
+   "outside_prerequisites": 5,
+   "edges": 14,
+   "columns": 2,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "BSBCHEM",
+   "name": "Biochemistry - BS",
+   "file": "biochemistry-bs.json",
+   "courses_in_major": 96,
+   "outside_prerequisites": 54,
+   "edges": 513,
+   "columns": 11,
+   "upper_division_floor": 3
+  },
+  {
+   "id": "BABIOSC",
+   "name": "Biological Sciences - BA",
+   "file": "biological-sciences-ba.json",
+   "courses_in_major": 103,
+   "outside_prerequisites": 27,
+   "edges": 466,
+   "columns": 7,
+   "upper_division_floor": 4
+  },
+  {
+   "id": "BSBIOSC",
+   "name": "Biological Sciences - BS",
+   "file": "biological-sciences-bs.json",
+   "courses_in_major": 128,
+   "outside_prerequisites": 39,
+   "edges": 588,
+   "columns": 9,
+   "upper_division_floor": 4
+  },
+  {
+   "id": "BSBIPSY",
+   "name": "Biopsychology - BS",
+   "file": "biopsychology-bs.json",
+   "courses_in_major": 117,
+   "outside_prerequisites": 40,
+   "edges": 243,
+   "columns": 6,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "BABLKST",
+   "name": "Black Studies - BA",
+   "file": "black-studies-ba.json",
+   "courses_in_major": 86,
+   "outside_prerequisites": 4,
+   "edges": 15,
+   "columns": 3,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "BSCHEME",
+   "name": "Chemical Engineering - BS",
+   "file": "chemical-engineering-bs.json",
+   "courses_in_major": 106,
+   "outside_prerequisites": 82,
+   "edges": 554,
+   "columns": 9,
+   "upper_division_floor": 2
+  },
+  {
+   "id": "BACHEM",
+   "name": "Chemistry - BA",
+   "file": "chemistry-ba.json",
+   "courses_in_major": 97,
+   "outside_prerequisites": 50,
+   "edges": 494,
+   "columns": 11,
+   "upper_division_floor": 2
+  },
+  {
+   "id": "BSCHEM",
+   "name": "Chemistry - BS",
+   "file": "chemistry-bs.json",
+   "courses_in_major": 100,
+   "outside_prerequisites": 49,
+   "edges": 509,
+   "columns": 11,
+   "upper_division_floor": 2
+  },
+  {
+   "id": "BACHAST",
+   "name": "Chicana and Chicano Studies - BA",
+   "file": "chicana-and-chicano-studies-ba.json",
+   "courses_in_major": 132,
+   "outside_prerequisites": 9,
+   "edges": 79,
+   "columns": 3,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "ABW8eM1cgyNrdxM30jua",
+   "name": "Classics - BA - Ancient Greek and Roman Philosophy Emphasis",
+   "file": "classics-ba-ancient-greek-and-roman-philosophy-emphasis.json",
+   "courses_in_major": 37,
+   "outside_prerequisites": 0,
+   "edges": 8,
+   "columns": 5,
+   "upper_division_floor": 3
+  },
+  {
+   "id": "BACLASSCLASARCH",
+   "name": "Classics - BA - Classical Archaeology Emphasis",
+   "file": "classics-ba-classical-archaeology-emphasis.json",
+   "courses_in_major": 56,
+   "outside_prerequisites": 2,
+   "edges": 18,
+   "columns": 3,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "BACLASSCLASLNLT",
+   "name": "Classics - BA - Classical Language & Literature Emphasis",
+   "file": "classics-ba-classical-language-literature-emphasis.json",
+   "courses_in_major": 70,
+   "outside_prerequisites": 3,
+   "edges": 41,
+   "columns": 7,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "BACLASSGRECOROM",
+   "name": "Classics - BA - Greek and Roman Culture Emphasis",
+   "file": "classics-ba-greek-and-roman-culture-emphasis.json",
+   "courses_in_major": 84,
+   "outside_prerequisites": 14,
+   "edges": 28,
+   "columns": 3,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "BACOMM",
+   "name": "Communication - BA",
+   "file": "communication-ba.json",
+   "courses_in_major": 33,
+   "outside_prerequisites": 17,
+   "edges": 25,
+   "columns": 3,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "BACLITINTERDIS",
+   "name": "Comparative Literature - BA - Interdisciplinary Emphasis",
+   "file": "comparative-literature-ba-interdisciplinary-emphasis.json",
+   "courses_in_major": 79,
+   "outside_prerequisites": 39,
+   "edges": 83,
+   "columns": 7,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "BSCMPEN",
+   "name": "Computer Engineering - BS",
+   "file": "computer-engineering-bs.json",
+   "courses_in_major": 94,
+   "outside_prerequisites": 41,
+   "edges": 201,
+   "columns": 9,
+   "upper_division_floor": 4
+  },
+  {
+   "id": "BSCMPSC",
+   "name": "Computer Science - BS",
+   "file": "computer-science-bs.json",
+   "courses_in_major": 71,
+   "outside_prerequisites": 47,
+   "edges": 214,
+   "columns": 7,
+   "upper_division_floor": 4
+  },
+  {
+   "id": "BADANCE",
+   "name": "Dance - BA",
+   "file": "dance-ba.json",
+   "courses_in_major": 114,
+   "outside_prerequisites": 2,
+   "edges": 41,
+   "columns": 6,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "BFADANCE",
+   "name": "Dance - BFA",
+   "file": "dance-bfa.json",
+   "courses_in_major": 98,
+   "outside_prerequisites": 0,
+   "edges": 41,
+   "columns": 6,
+   "upper_division_floor": 2
+  },
+  {
+   "id": "BAEARTH",
+   "name": "Earth Science - BA",
+   "file": "earth-science-ba.json",
+   "courses_in_major": 161,
+   "outside_prerequisites": 76,
+   "edges": 542,
+   "columns": 6,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "1Y81tx7rjeP3wMSGIBfV",
+   "name": "Earth Science - BS -  Geobiology & Paleobiology Emphasis",
+   "file": "earth-science-bs-geobiology-paleobiology-emphasis.json",
+   "courses_in_major": 63,
+   "outside_prerequisites": 27,
+   "edges": 181,
+   "columns": 5,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "BSEARTHCLIMATE",
+   "name": "Earth Science - BS - Climate and Environment Emphasis",
+   "file": "earth-science-bs-climate-and-environment-emphasis.json",
+   "courses_in_major": 83,
+   "outside_prerequisites": 29,
+   "edges": 242,
+   "columns": 6,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "BSEARTHGEOL",
+   "name": "Earth Science - BS - Geology Emphasis",
+   "file": "earth-science-bs-geology-emphasis.json",
+   "courses_in_major": 41,
+   "outside_prerequisites": 12,
+   "edges": 117,
+   "columns": 5,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "BSEARTHGEOPHYS",
+   "name": "Earth Science - BS - Geophysics Emphasis",
+   "file": "earth-science-bs-geophysics-emphasis.json",
+   "courses_in_major": 127,
+   "outside_prerequisites": 32,
+   "edges": 395,
+   "columns": 7,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "BAASNST",
+   "name": "East Asian Studies - BA",
+   "file": "east-asian-studies-ba.json",
+   "courses_in_major": 187,
+   "outside_prerequisites": 19,
+   "edges": 93,
+   "columns": 11,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "BAECOEV",
+   "name": "Ecology and Evolution - BA",
+   "file": "ecology-and-evolution-ba.json",
+   "courses_in_major": 151,
+   "outside_prerequisites": 44,
+   "edges": 595,
+   "columns": 7,
+   "upper_division_floor": 2
+  },
+  {
+   "id": "BSECOEV",
+   "name": "Ecology and Evolution - BS",
+   "file": "ecology-and-evolution-bs.json",
+   "courses_in_major": 92,
+   "outside_prerequisites": 40,
+   "edges": 503,
+   "columns": 7,
+   "upper_division_floor": 2
+  },
+  {
+   "id": "BAECON",
+   "name": "Economics - BA",
+   "file": "economics-ba.json",
+   "courses_in_major": 77,
+   "outside_prerequisites": 14,
+   "edges": 156,
+   "columns": 7,
+   "upper_division_floor": 3
+  },
+  {
+   "id": "BAECACC",
+   "name": "Economics and Accounting - BA",
+   "file": "economics-and-accounting-ba.json",
+   "courses_in_major": 82,
+   "outside_prerequisites": 12,
+   "edges": 162,
+   "columns": 7,
+   "upper_division_floor": 3
+  },
+  {
+   "id": "BSEE",
+   "name": "Electrical Engineering - BS",
+   "file": "electrical-engineering-bs.json",
+   "courses_in_major": 96,
+   "outside_prerequisites": 57,
+   "edges": 309,
+   "columns": 11,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "BAENGL",
+   "name": "English - BA",
+   "file": "english-ba.json",
+   "courses_in_major": 196,
+   "outside_prerequisites": 9,
+   "edges": 222,
+   "columns": 5,
+   "upper_division_floor": 3
+  },
+  {
+   "id": "BAENVST",
+   "name": "Environmental Studies - BA",
+   "file": "environmental-studies-ba.json",
+   "courses_in_major": 68,
+   "outside_prerequisites": 7,
+   "edges": 87,
+   "columns": 4,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "BSENVST",
+   "name": "Environmental Studies - BS",
+   "file": "environmental-studies-bs.json",
+   "courses_in_major": 122,
+   "outside_prerequisites": 36,
+   "edges": 373,
+   "columns": 6,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "BAFEMST",
+   "name": "Feminist Studies - BA",
+   "file": "feminist-studies-ba.json",
+   "courses_in_major": 10,
+   "outside_prerequisites": 0,
+   "edges": 0,
+   "columns": 1,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "BAFAMST",
+   "name": "Film and Media Studies - BA",
+   "file": "film-and-media-studies-ba.json",
+   "courses_in_major": 167,
+   "outside_prerequisites": 10,
+   "edges": 108,
+   "columns": 3,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "BSFINMS",
+   "name": "Financial Mathematics and Statistics - BS",
+   "file": "financial-mathematics-and-statistics-bs.json",
+   "courses_in_major": 56,
+   "outside_prerequisites": 33,
+   "edges": 206,
+   "columns": 8,
+   "upper_division_floor": 3
+  },
+  {
+   "id": "BAFR",
+   "name": "French - BA",
+   "file": "french-ba.json",
+   "courses_in_major": 70,
+   "outside_prerequisites": 8,
+   "edges": 99,
+   "columns": 5,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "BAGEOG",
+   "name": "Geography - BA",
+   "file": "geography-ba.json",
+   "courses_in_major": 105,
+   "outside_prerequisites": 37,
+   "edges": 207,
+   "columns": 4,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "BAGEOGGEOGISCI",
+   "name": "Geography - BA - Geographic Information Science Emphasis",
+   "file": "geography-ba-geographic-information-science-emphasis.json",
+   "courses_in_major": 104,
+   "outside_prerequisites": 37,
+   "edges": 207,
+   "columns": 4,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "BAGERM",
+   "name": "German - BA",
+   "file": "german-ba.json",
+   "courses_in_major": 68,
+   "outside_prerequisites": 6,
+   "edges": 48,
+   "columns": 8,
+   "upper_division_floor": 6
+  },
+  {
+   "id": "BAHIST",
+   "name": "History - BA",
+   "file": "history-ba.json",
+   "courses_in_major": 290,
+   "outside_prerequisites": 25,
+   "edges": 301,
+   "columns": 3,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "BAARTHI",
+   "name": "History of Art and Architecture - BA",
+   "file": "history-of-art-and-architecture-ba-baarthi.json",
+   "courses_in_major": 17,
+   "outside_prerequisites": 0,
+   "edges": 0,
+   "columns": 1,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "BAHSART",
+   "name": "History of Art and Architecture - BA",
+   "file": "history-of-art-and-architecture-ba-bahsart.json",
+   "courses_in_major": 19,
+   "outside_prerequisites": 0,
+   "edges": 0,
+   "columns": 1,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "BAHSARTARCHENVO",
+   "name": "History of Art and Architecture - BA - Architecture and Environment Emphasis",
+   "file": "history-of-art-and-architecture-ba-architecture-and-environment-emphasis-bahsartarchenvo.json",
+   "courses_in_major": 108,
+   "outside_prerequisites": 44,
+   "edges": 99,
+   "columns": 6,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "BAHSARTMUSEUMST",
+   "name": "History of Art and Architecture - BA - Museum Studies Emphasis",
+   "file": "history-of-art-and-architecture-ba-museum-studies-emphasis-bahsartmuseumst.json",
+   "courses_in_major": 58,
+   "outside_prerequisites": 10,
+   "edges": 15,
+   "columns": 3,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "BAHISPL",
+   "name": "History of Policy, Law, and Governance - BA",
+   "file": "history-of-policy-law-and-governance-ba.json",
+   "courses_in_major": 186,
+   "outside_prerequisites": 45,
+   "edges": 210,
+   "columns": 3,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "BAINTST",
+   "name": "Interdisciplinary Studies - BA",
+   "file": "interdisciplinary-studies-ba.json",
+   "courses_in_major": 0,
+   "outside_prerequisites": 0,
+   "edges": 0,
+   "columns": 1,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "BAITALS",
+   "name": "Italian Studies - BA",
+   "file": "italian-studies-ba.json",
+   "courses_in_major": 82,
+   "outside_prerequisites": 12,
+   "edges": 48,
+   "columns": 5,
+   "upper_division_floor": 3
+  },
+  {
+   "id": "BAITALSTRANSNAT",
+   "name": "Italian Studies - BA - Transnational Emphasis",
+   "file": "italian-studies-ba-transnational-emphasis.json",
+   "courses_in_major": 66,
+   "outside_prerequisites": 10,
+   "edges": 21,
+   "columns": 3,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "BALC&S",
+   "name": "Language, Culture, and Society - BA",
+   "file": "language-culture-and-society-ba.json",
+   "courses_in_major": 91,
+   "outside_prerequisites": 6,
+   "edges": 51,
+   "columns": 3,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "BALAIS",
+   "name": "Latin American and Iberian Studies - BA",
+   "file": "latin-american-and-iberian-studies-ba.json",
+   "courses_in_major": 154,
+   "outside_prerequisites": 47,
+   "edges": 173,
+   "columns": 7,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "BALING",
+   "name": "Linguistics - BA",
+   "file": "linguistics-ba.json",
+   "courses_in_major": 55,
+   "outside_prerequisites": 2,
+   "edges": 45,
+   "columns": 4,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "BALINGCHINESE",
+   "name": "Linguistics - BA - Chinese Emphasis",
+   "file": "linguistics-ba-chinese-emphasis.json",
+   "courses_in_major": 97,
+   "outside_prerequisites": 18,
+   "edges": 73,
+   "columns": 7,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "BALINGENGLISH",
+   "name": "Linguistics - BA - English Emphasis",
+   "file": "linguistics-ba-english-emphasis.json",
+   "courses_in_major": 55,
+   "outside_prerequisites": 2,
+   "edges": 45,
+   "columns": 4,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "BALINGFRENCH",
+   "name": "Linguistics - BA - French Emphasis",
+   "file": "linguistics-ba-french-emphasis.json",
+   "courses_in_major": 108,
+   "outside_prerequisites": 12,
+   "edges": 132,
+   "columns": 5,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "BALINGGERMAN",
+   "name": "Linguistics - BA - German Emphasis",
+   "file": "linguistics-ba-german-emphasis.json",
+   "courses_in_major": 83,
+   "outside_prerequisites": 7,
+   "edges": 80,
+   "columns": 8,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "BALINGJAPANESE",
+   "name": "Linguistics - BA - Japanese Emphasis",
+   "file": "linguistics-ba-japanese-emphasis.json",
+   "courses_in_major": 87,
+   "outside_prerequisites": 9,
+   "edges": 59,
+   "columns": 11,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "BALINGLASPTECH",
+   "name": "Linguistics - BA - Language and Speech Technologies Emphasis",
+   "file": "linguistics-ba-language-and-speech-technologies-emphasis.json",
+   "courses_in_major": 56,
+   "outside_prerequisites": 2,
+   "edges": 45,
+   "columns": 4,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "BALINGSLAVIC",
+   "name": "Linguistics - BA - Slavic Emphasis",
+   "file": "linguistics-ba-slavic-emphasis.json",
+   "courses_in_major": 90,
+   "outside_prerequisites": 7,
+   "edges": 58,
+   "columns": 7,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "BALINGSPANISH",
+   "name": "Linguistics - BA - Spanish Emphasis",
+   "file": "linguistics-ba-spanish-emphasis.json",
+   "courses_in_major": 155,
+   "outside_prerequisites": 19,
+   "edges": 212,
+   "columns": 7,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "BALINGSLDS",
+   "name": "Linguistics - BA - Speech-Language Sciences and Disorders Emphasis",
+   "file": "linguistics-ba-speech-language-sciences-and-disorders-emphasis.json",
+   "courses_in_major": 58,
+   "outside_prerequisites": 1,
+   "edges": 45,
+   "columns": 4,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "BAMATH",
+   "name": "Mathematics - BA",
+   "file": "mathematics-ba.json",
+   "courses_in_major": 100,
+   "outside_prerequisites": 30,
+   "edges": 247,
+   "columns": 9,
+   "upper_division_floor": 3
+  },
+  {
+   "id": "BSMATH",
+   "name": "Mathematics - BS",
+   "file": "mathematics-bs.json",
+   "courses_in_major": 102,
+   "outside_prerequisites": 28,
+   "edges": 247,
+   "columns": 10,
+   "upper_division_floor": 4
+  },
+  {
+   "id": "BSME",
+   "name": "Mechanical Engineering - BS",
+   "file": "mechanical-engineering-bs.json",
+   "courses_in_major": 96,
+   "outside_prerequisites": 49,
+   "edges": 297,
+   "columns": 10,
+   "upper_division_floor": 2
+  },
+  {
+   "id": "BAMDVST",
+   "name": "Medieval Studies - BA",
+   "file": "medieval-studies-ba.json",
+   "courses_in_major": 140,
+   "outside_prerequisites": 36,
+   "edges": 107,
+   "columns": 7,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "BAMESTD",
+   "name": "Middle East Studies - BA",
+   "file": "middle-east-studies-ba.json",
+   "courses_in_major": 138,
+   "outside_prerequisites": 9,
+   "edges": 56,
+   "columns": 9,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "BMMUSICBASSOON",
+   "name": "Music - BM - Bassoon Emphasis",
+   "file": "music-bm-bassoon-emphasis.json",
+   "courses_in_major": 120,
+   "outside_prerequisites": 16,
+   "edges": 74,
+   "columns": 7,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "BMMUSICCELLO",
+   "name": "Music - BM - Cello Emphasis",
+   "file": "music-bm-cello-emphasis.json",
+   "courses_in_major": 112,
+   "outside_prerequisites": 16,
+   "edges": 74,
+   "columns": 7,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "BMMUSICCLARINET",
+   "name": "Music - BM - Clarinet Emphasis",
+   "file": "music-bm-clarinet-emphasis.json",
+   "courses_in_major": 120,
+   "outside_prerequisites": 16,
+   "edges": 74,
+   "columns": 7,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "BMMUSICCOMPOSTN",
+   "name": "Music - BM - Composition Emphasis",
+   "file": "music-bm-composition-emphasis.json",
+   "courses_in_major": 162,
+   "outside_prerequisites": 14,
+   "edges": 71,
+   "columns": 7,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "BMMUSICDBLBASS",
+   "name": "Music - BM - Double Bass Emphasis",
+   "file": "music-bm-double-bass-emphasis.json",
+   "courses_in_major": 113,
+   "outside_prerequisites": 16,
+   "edges": 74,
+   "columns": 7,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "BMMUSICFLUTE",
+   "name": "Music - BM - Flute Emphasis",
+   "file": "music-bm-flute-emphasis.json",
+   "courses_in_major": 120,
+   "outside_prerequisites": 16,
+   "edges": 74,
+   "columns": 7,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "BMMUSICFRHORN",
+   "name": "Music - BM - French Horn Emphasis",
+   "file": "music-bm-french-horn-emphasis.json",
+   "courses_in_major": 126,
+   "outside_prerequisites": 16,
+   "edges": 74,
+   "columns": 7,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "BMMUSICOBOE",
+   "name": "Music - BM - Oboe Emphasis",
+   "file": "music-bm-oboe-emphasis.json",
+   "courses_in_major": 120,
+   "outside_prerequisites": 16,
+   "edges": 74,
+   "columns": 7,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "BMMUSICPERCUSSN",
+   "name": "Music - BM - Percussion Emphasis",
+   "file": "music-bm-percussion-emphasis.json",
+   "courses_in_major": 176,
+   "outside_prerequisites": 10,
+   "edges": 90,
+   "columns": 7,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "BMMUSICPIANO",
+   "name": "Music - BM - Piano Emphasis",
+   "file": "music-bm-piano-emphasis.json",
+   "courses_in_major": 111,
+   "outside_prerequisites": 14,
+   "edges": 74,
+   "columns": 7,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "BMMUSICTROMBONE",
+   "name": "Music - BM - Trombone Emphasis",
+   "file": "music-bm-trombone-emphasis.json",
+   "courses_in_major": 127,
+   "outside_prerequisites": 16,
+   "edges": 74,
+   "columns": 7,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "BMMUSICTRUMPET",
+   "name": "Music - BM - Trumpet Emphasis",
+   "file": "music-bm-trumpet-emphasis.json",
+   "courses_in_major": 126,
+   "outside_prerequisites": 16,
+   "edges": 74,
+   "columns": 7,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "BMMUSICTUBA",
+   "name": "Music - BM - Tuba Emphasis",
+   "file": "music-bm-tuba-emphasis.json",
+   "courses_in_major": 127,
+   "outside_prerequisites": 16,
+   "edges": 74,
+   "columns": 7,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "BMMUSICVIOLA",
+   "name": "Music - BM - Viola Emphasis",
+   "file": "music-bm-viola-emphasis.json",
+   "courses_in_major": 112,
+   "outside_prerequisites": 16,
+   "edges": 74,
+   "columns": 7,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "BMMUSICVIOLIN",
+   "name": "Music - BM - Violin Emphasis",
+   "file": "music-bm-violin-emphasis.json",
+   "courses_in_major": 112,
+   "outside_prerequisites": 16,
+   "edges": 74,
+   "columns": 7,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "BMMUSICVOICE",
+   "name": "Music - BM - Voice Emphasis",
+   "file": "music-bm-voice-emphasis.json",
+   "courses_in_major": 125,
+   "outside_prerequisites": 15,
+   "edges": 80,
+   "columns": 7,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "BAMUSST",
+   "name": "Music Studies - BA",
+   "file": "music-studies-ba.json",
+   "courses_in_major": 167,
+   "outside_prerequisites": 13,
+   "edges": 73,
+   "columns": 7,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "BAMUSSTETHNOMUS",
+   "name": "Music Studies - BA - Ethnomusicology Emphasis",
+   "file": "music-studies-ba-ethnomusicology-emphasis.json",
+   "courses_in_major": 187,
+   "outside_prerequisites": 13,
+   "edges": 75,
+   "columns": 7,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "BAMUSSTINTRDSTD",
+   "name": "Music Studies - BA - Interdisciplinary Studies of Music Emphasis",
+   "file": "music-studies-ba-interdisciplinary-studies-of-music-emphasis.json",
+   "courses_in_major": 187,
+   "outside_prerequisites": 13,
+   "edges": 75,
+   "columns": 7,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "BAMUSSTWESTART",
+   "name": "Music Studies - BA - Western Art Music Emphasis",
+   "file": "music-studies-ba-western-art-music-emphasis.json",
+   "courses_in_major": 188,
+   "outside_prerequisites": 12,
+   "edges": 75,
+   "columns": 7,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "BAPHIL",
+   "name": "Philosophy - BA",
+   "file": "philosophy-ba.json",
+   "courses_in_major": 81,
+   "outside_prerequisites": 1,
+   "edges": 98,
+   "columns": 3,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "BSGEOGP",
+   "name": "Physical Geography - BS",
+   "file": "physical-geography-bs.json",
+   "courses_in_major": 106,
+   "outside_prerequisites": 49,
+   "edges": 319,
+   "columns": 6,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "BSGEOGPOCEANSCI",
+   "name": "Physical Geography - BS - Ocean Science Emphasis",
+   "file": "physical-geography-bs-ocean-science-emphasis.json",
+   "courses_in_major": 89,
+   "outside_prerequisites": 37,
+   "edges": 236,
+   "columns": 6,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "BAPHYS",
+   "name": "Physics - BA",
+   "file": "physics-ba.json",
+   "courses_in_major": 76,
+   "outside_prerequisites": 28,
+   "edges": 182,
+   "columns": 10,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "BSPHYS",
+   "name": "Physics - BS",
+   "file": "physics-bs.json",
+   "courses_in_major": 83,
+   "outside_prerequisites": 30,
+   "edges": 187,
+   "columns": 10,
+   "upper_division_floor": 3
+  },
+  {
+   "id": "BSPHYSY",
+   "name": "Physiology - BS",
+   "file": "physiology-bs.json",
+   "courses_in_major": 70,
+   "outside_prerequisites": 31,
+   "edges": 284,
+   "columns": 7,
+   "upper_division_floor": 2
+  },
+  {
+   "id": "BAPOLS",
+   "name": "Political Science - BA",
+   "file": "political-science-ba.json",
+   "courses_in_major": 90,
+   "outside_prerequisites": 9,
+   "edges": 79,
+   "columns": 2,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "BAPORT",
+   "name": "Portuguese - BA",
+   "file": "portuguese-ba.json",
+   "courses_in_major": 91,
+   "outside_prerequisites": 20,
+   "edges": 133,
+   "columns": 9,
+   "upper_division_floor": 6
+  },
+  {
+   "id": "BSPRACT",
+   "name": "Pre-Actuarial Science - BS",
+   "file": "pre-actuarial-science-bs.json",
+   "courses_in_major": 17,
+   "outside_prerequisites": 31,
+   "edges": 86,
+   "columns": 5,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "BSPRAMA",
+   "name": "Pre-Applied Mathematics - BS",
+   "file": "pre-applied-mathematics-bs.json",
+   "courses_in_major": 17,
+   "outside_prerequisites": 8,
+   "edges": 40,
+   "columns": 5,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "BAPRBIO",
+   "name": "Pre-Biology - BA",
+   "file": "pre-biology-ba.json",
+   "courses_in_major": 28,
+   "outside_prerequisites": 9,
+   "edges": 72,
+   "columns": 5,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "BSPRBIO",
+   "name": "Pre-Biology - BS",
+   "file": "pre-biology-bs.json",
+   "courses_in_major": 28,
+   "outside_prerequisites": 9,
+   "edges": 72,
+   "columns": 5,
+   "upper_division_floor": 2
+  },
+  {
+   "id": "BSPRBPY",
+   "name": "Pre-Biopsychology - BS",
+   "file": "pre-biopsychology-bs.json",
+   "courses_in_major": 32,
+   "outside_prerequisites": 17,
+   "edges": 104,
+   "columns": 5,
+   "upper_division_floor": 2
+  },
+  {
+   "id": "BAPRCHM",
+   "name": "Pre-Chemistry - BA",
+   "file": "pre-chemistry-ba.json",
+   "courses_in_major": 32,
+   "outside_prerequisites": 7,
+   "edges": 109,
+   "columns": 6,
+   "upper_division_floor": 2
+  },
+  {
+   "id": "BSPRCHM",
+   "name": "Pre-Chemistry - BS",
+   "file": "pre-chemistry-bs.json",
+   "courses_in_major": 32,
+   "outside_prerequisites": 7,
+   "edges": 109,
+   "columns": 6,
+   "upper_division_floor": 2
+  },
+  {
+   "id": "BAPRCOM",
+   "name": "Pre-Communication - BA",
+   "file": "pre-communication-ba.json",
+   "courses_in_major": 4,
+   "outside_prerequisites": 0,
+   "edges": 0,
+   "columns": 1,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "BAPRECO",
+   "name": "Pre-Economics - BA",
+   "file": "pre-economics-ba.json",
+   "courses_in_major": 11,
+   "outside_prerequisites": 7,
+   "edges": 33,
+   "columns": 3,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "BAPRECA",
+   "name": "Pre-Economics and Accounting - BA",
+   "file": "pre-economics-and-accounting-ba.json",
+   "courses_in_major": 13,
+   "outside_prerequisites": 7,
+   "edges": 34,
+   "columns": 3,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "BAPRFAM",
+   "name": "Pre-Film and Media Studies - BA",
+   "file": "pre-film-and-media-studies-ba.json",
+   "courses_in_major": 47,
+   "outside_prerequisites": 2,
+   "edges": 5,
+   "columns": 3,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "BSPRFMS",
+   "name": "Pre-Financial Mathematics and Statistics - BS",
+   "file": "pre-financial-mathematics-and-statistics-bs.json",
+   "courses_in_major": 18,
+   "outside_prerequisites": 8,
+   "edges": 43,
+   "columns": 5,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "BAPRGLB",
+   "name": "Pre-Global Studies - BA",
+   "file": "pre-global-studies-ba.json",
+   "courses_in_major": 33,
+   "outside_prerequisites": 0,
+   "edges": 1,
+   "columns": 2,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "BAPRMTH",
+   "name": "Pre-Mathematics - BA",
+   "file": "pre-mathematics-ba.json",
+   "courses_in_major": 15,
+   "outside_prerequisites": 10,
+   "edges": 40,
+   "columns": 5,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "BSPRMTH",
+   "name": "Pre-Mathematics - BS",
+   "file": "pre-mathematics-bs.json",
+   "courses_in_major": 17,
+   "outside_prerequisites": 8,
+   "edges": 40,
+   "columns": 5,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "BAPRPOL",
+   "name": "Pre-Political Science - BA",
+   "file": "pre-political-science-ba.json",
+   "courses_in_major": 8,
+   "outside_prerequisites": 0,
+   "edges": 1,
+   "columns": 2,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "BSPRPBS",
+   "name": "Pre-Psychological & Brain Sciences - BS",
+   "file": "pre-psychological-brain-sciences-bs.json",
+   "courses_in_major": 53,
+   "outside_prerequisites": 14,
+   "edges": 92,
+   "columns": 5,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "BAPRSOC",
+   "name": "Pre-Sociology - BA",
+   "file": "pre-sociology-ba.json",
+   "courses_in_major": 46,
+   "outside_prerequisites": 1,
+   "edges": 2,
+   "columns": 2,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "BAPRSDS",
+   "name": "Pre-Statistics and Data Science - BA",
+   "file": "pre-statistics-and-data-science-ba.json",
+   "courses_in_major": 13,
+   "outside_prerequisites": 16,
+   "edges": 44,
+   "columns": 5,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "BSPRSDS",
+   "name": "Pre-Statistics and Data Science - BS",
+   "file": "pre-statistics-and-data-science-bs.json",
+   "courses_in_major": 13,
+   "outside_prerequisites": 16,
+   "edges": 44,
+   "columns": 5,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "BSPBS",
+   "name": "Psychological & Brain Sciences - BS",
+   "file": "psychological-brain-sciences-bs.json",
+   "courses_in_major": 152,
+   "outside_prerequisites": 51,
+   "edges": 287,
+   "columns": 6,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "BARGSTD",
+   "name": "Religious Studies - BA",
+   "file": "religious-studies-ba.json",
+   "courses_in_major": 189,
+   "outside_prerequisites": 20,
+   "edges": 85,
+   "columns": 9,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "BARUSEU",
+   "name": "Russian and East European Studies - BA",
+   "file": "russian-and-east-european-studies-ba.json",
+   "courses_in_major": 44,
+   "outside_prerequisites": 0,
+   "edges": 13,
+   "columns": 7,
+   "upper_division_floor": 6
+  },
+  {
+   "id": "BASOC",
+   "name": "Sociology - BA",
+   "file": "sociology-ba.json",
+   "courses_in_major": 141,
+   "outside_prerequisites": 1,
+   "edges": 6,
+   "columns": 2,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "BASPAN",
+   "name": "Spanish - BA",
+   "file": "spanish-ba.json",
+   "courses_in_major": 94,
+   "outside_prerequisites": 9,
+   "edges": 154,
+   "columns": 9,
+   "upper_division_floor": 6
+  },
+  {
+   "id": "BASTSDS",
+   "name": "Statistics and Data Science - BA",
+   "file": "statistics-and-data-science-ba.json",
+   "courses_in_major": 56,
+   "outside_prerequisites": 33,
+   "edges": 183,
+   "columns": 9,
+   "upper_division_floor": 3
+  },
+  {
+   "id": "BSSTSDS",
+   "name": "Statistics and Data Science - BS",
+   "file": "statistics-and-data-science-bs.json",
+   "courses_in_major": 59,
+   "outside_prerequisites": 35,
+   "edges": 193,
+   "columns": 9,
+   "upper_division_floor": 3
+  },
+  {
+   "id": "BATHTR",
+   "name": "Theater - BA",
+   "file": "theater-ba.json",
+   "courses_in_major": 129,
+   "outside_prerequisites": 5,
+   "edges": 35,
+   "columns": 7,
+   "upper_division_floor": 2
+  },
+  {
+   "id": "BFATHTRACTING",
+   "name": "Theater - BFA - Acting Emphasis",
+   "file": "theater-bfa-acting-emphasis.json",
+   "courses_in_major": 92,
+   "outside_prerequisites": 0,
+   "edges": 36,
+   "columns": 5,
+   "upper_division_floor": 2
+  },
+  {
+   "id": "BSZOOL",
+   "name": "Zoology - BS",
+   "file": "zoology-bs.json",
+   "courses_in_major": 131,
+   "outside_prerequisites": 34,
+   "edges": 461,
+   "columns": 7,
+   "upper_division_floor": 2
+  }
+ ]
+}

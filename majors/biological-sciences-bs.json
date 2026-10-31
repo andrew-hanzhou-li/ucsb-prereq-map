@@ -1,0 +1,3162 @@
+{
+ "id": "BSBIOSC",
+ "name": "Biological Sciences - BS",
+ "type": "Bachelor's Degree",
+ "departments": [
+  "EEMB",
+  "MCDB"
+ ],
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsb.edu/programs/BSBIOSC",
+ "narrative": [
+  "To be admitted to full major status, students must fulfill the pre-biology course and grade-point average requirements as described in the General Catalog and Pre-Biological Sciences Major Sheet. At minimum, they must complete eleven designated courses from the Preparation for the Major with a 2.0 or higher UC grade-point average. Grades earned must meet grade prerequisites for the full major.\nNotes: Hyphens indicate an entire sequence or combination must be completed as shown to fulfill an area requirement.\nA single course can satisfy only one requirement.",
+  "MAJOR REGULATIONSPREREQUISITES Check the General Catalog for the prerequisites to all listed courses.\nP/NP GRADING OPTION Not allowed for major courses (prep or UD), including courses applied to the major from other departments, except up to 8 units of courses that do not allow letter grades.\nSUBSTITUTIONS In the major requirements permissible only by petition to the department chair and dean.\nG.P.A REQUIREMENTS At least 2.0 overall UC average in all upper-division major courses and all courses (Prep and UD) for the major.\nDOUBLE MAJORS With the approval of each department chairperson, up to a total of 8 units may be applied simultaneously to both UD majors."
+ ],
+ "sections": [
+  {
+   "name": "PREPARATION FOR THE MAJOR",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "count": 1,
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "CHEM 1A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 1B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 1C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 2AL",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 2BL",
+          "status": "active"
+         }
+        ],
+        "catalog_rule_id": "AlZOVXuo",
+        "label": "General Chemistry"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "CHEM 1A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 1AL",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 1B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 1BL",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 1C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 1CL",
+          "status": "inactive"
+         }
+        ],
+        "catalog_rule_id": "OcUcG2qE",
+        "label": "Chemistry 1 Series"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "CHEM 2A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 2AC",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 2B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 2BC",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 2C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 2CC",
+          "status": "inactive"
+         }
+        ],
+        "catalog_rule_id": "pS8fZDb9",
+        "label": "Chemistry 2 Honors Series"
+       }
+      ],
+      "catalog_rule_id": "lsCAEY8t",
+      "label": "Chemistry Requirement"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "MCDB 1A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 1B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 2",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 3",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 1LL",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 2LL",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "psqWawiB",
+      "label": "Lower-Division Biology"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 6AL",
+        "status": "active"
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "CHEM 109A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 109AH",
+          "status": "active"
+         }
+        ]
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "CHEM 109B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 109BH",
+          "status": "active"
+         }
+        ]
+       }
+      ],
+      "catalog_rule_id": "HGCq7633",
+      "label": "Organic Chemistry and Labs"
+     },
+     {
+      "type": "choose",
+      "count": 1,
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 3A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 3B",
+          "status": "active"
+         }
+        ],
+        "catalog_rule_id": "z6rTbWy3",
+        "label": "Calculus with Applications"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 34A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 34B",
+          "status": "active"
+         }
+        ],
+        "catalog_rule_id": "a6iVGv9M",
+        "label": "Calculus for Social and Life Sciences"
+       }
+      ],
+      "catalog_rule_id": "wgm69bin",
+      "label": "Mathematics"
+     },
+     {
+      "type": "choose",
+      "count": 1,
+      "items": [
+       {
+        "type": "course",
+        "code": "PSTAT 5A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSTAT 5LS",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 4A",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "dEm28RGk",
+      "label": "Statistics"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "PHYS 6A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 6AL",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 6B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 6BL",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 6C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 6CL",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "JDrVTpbX",
+      "label": "Physics"
+     }
+    ]
+   }
+  },
+  {
+   "name": "UPPER-DIVISION MAJOR",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "count": 1,
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "MCDB 101A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MCDB 101B",
+          "status": "active"
+         }
+        ]
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "EEMB 129",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EEMB 130",
+          "status": "inactive"
+         }
+        ]
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "EEMB 101",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EEMB 129",
+          "status": "active"
+         }
+        ]
+       }
+      ],
+      "catalog_rule_id": "Bs9GHWoX",
+      "label": "A. Genetics",
+      "description": "Complete one of the following course sequences"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "MCDB 111",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MCDB 126",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MCDB 132",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MCDB 151",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EEMB 157A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EEMB 157B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EEMB 157C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EEMB 165",
+          "status": "active"
+         }
+        ],
+        "catalog_rule_id": "ZN5qSd4o",
+        "label": "B1. Physiology"
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "MCDB 103",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MCDB 112",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MCDB 118",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MCDB 133",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MCDB 135",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MCDB 146",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MCDB 151",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MCDB 152",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MCDB 153",
+          "status": "active"
+         }
+        ],
+        "catalog_rule_id": "gGLER1Fd",
+        "label": "B2. Developmental and Cell Biology"
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "choose",
+          "count": 1,
+          "items": [
+           {
+            "type": "course",
+            "code": "MCDB 108A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MCDB W 108A",
+            "status": "active"
+           }
+          ]
+         },
+         {
+          "type": "course",
+          "code": "MCDB 110",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MCDB 126B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MCDB 133",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MCDB 134",
+          "status": "active"
+         }
+        ],
+        "catalog_rule_id": "EveY1jLL",
+        "label": "B3. Biochemistry and Molecular Biology"
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "EEMB 119",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EEMB 120",
+          "status": "active"
+         },
+         {
+          "type": "choose",
+          "count": 1,
+          "items": [
+           {
+            "type": "course",
+            "code": "EEMB 128",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENV S 128",
+            "status": "active"
+           }
+          ]
+         },
+         {
+          "type": "course",
+          "code": "EEMB 140",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EEMB 142A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EEMB 147",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EEMB 148",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EEMB 153",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EEMB 155CC",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EEMB 158",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EEMB 159",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EEMB 168",
+          "status": "active"
+         },
+         {
+          "type": "choose",
+          "count": 1,
+          "items": [
+           {
+            "type": "course",
+            "code": "EEMB 171",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENV S 171",
+            "status": "active"
+           }
+          ]
+         },
+         {
+          "type": "course",
+          "code": "EEMB 179",
+          "status": "active"
+         }
+        ],
+        "catalog_rule_id": "Q9chS7kb",
+        "label": "B4. Ecology"
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "EEMB 101",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EEMB 102",
+          "status": "active"
+         },
+         {
+          "type": "choose",
+          "count": 1,
+          "items": [
+           {
+            "type": "course",
+            "code": "EEMB 109",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "EARTH 148",
+            "status": "active"
+           }
+          ]
+         },
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "EEMB 113",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EEMB 113L",
+            "status": "active"
+           }
+          ]
+         },
+         {
+          "type": "course",
+          "code": "EEMB 127",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EEMB 130",
+          "status": "inactive"
+         },
+         {
+          "type": "choose",
+          "count": 1,
+          "items": [
+           {
+            "type": "course",
+            "code": "EEMB 131",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EARTH 121",
+            "status": "active"
+           }
+          ]
+         },
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "EEMB 136",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EEMB 136L",
+            "status": "active"
+           }
+          ]
+         },
+         {
+          "type": "choose",
+          "count": 1,
+          "items": [
+           {
+            "type": "course",
+            "code": "EEMB 137",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EARTH 141",
+            "status": "active"
+           }
+          ]
+         },
+         {
+          "type": "course",
+          "code": "EEMB 138",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EEMB 180",
+          "status": "active"
+         }
+        ],
+        "catalog_rule_id": "I1PKIlnH",
+        "label": "B5. Evolution"
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "EEMB 103A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EEMB 106",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EEMB 111",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EEMB 112",
+          "status": "active"
+         },
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "EEMB 113",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EEMB 113L",
+            "status": "active"
+           }
+          ]
+         },
+         {
+          "type": "course",
+          "code": "EEMB 116",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EEMB 118",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "EEMB 127",
+          "status": "active"
+         },
+         {
+          "type": "choose",
+          "count": 1,
+          "items": [
+           {
+            "type": "course",
+            "code": "EEMB 133",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENV S 133",
+            "status": "active"
+           }
+          ]
+         },
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "EEMB 144",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EEMB 144L",
+            "status": "active"
+           }
+          ]
+         },
+         {
+          "type": "course",
+          "code": "EEMB 145",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EEMB 150A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EEMB 150B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EEMB 162",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EEMB 163",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MCDB 131",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MCDB 139",
+          "status": "active"
+         }
+        ],
+        "catalog_rule_id": "f8QiOxMi",
+        "label": "B6. Biodiversity and Systematics"
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "MCDB 101L",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EEMB 103A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MCDB 103L",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EEMB 106",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EEMB 111",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EEMB 112",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MCDB 112L",
+          "status": "active"
+         },
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "EEMB 113",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EEMB 113L",
+            "status": "active"
+           }
+          ]
+         },
+         {
+          "type": "course",
+          "code": "EEMB 116",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EEMB 119",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MCDB 126AL",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MCDB 126BL",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MCDB 131L",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MCDB 132L",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MCDB 133L",
+          "status": "active"
+         },
+         {
+          "type": "choose",
+          "count": 1,
+          "items": [
+           {
+            "type": "course",
+            "code": "EEMB 136",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EARTH 111",
+            "status": "active"
+           }
+          ]
+         },
+         {
+          "type": "choose",
+          "count": 1,
+          "items": [
+           {
+            "type": "course",
+            "code": "EEMB 136L",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EARTH 111L",
+            "status": "active"
+           }
+          ]
+         },
+         {
+          "type": "course",
+          "code": "EEMB 138",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MCDB 140L",
+          "status": "active"
+         },
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "EEMB 144",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EEMB 144L",
+            "status": "active"
+           }
+          ]
+         },
+         {
+          "type": "course",
+          "code": "EEMB 127L",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EEMB 140L",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EEMB 142AL",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EEMB 142BL",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EEMB 142CL",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EEMB 150A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EEMB 157C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EEMB 170",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EEMB 180",
+          "status": "active"
+         }
+        ],
+        "catalog_rule_id": "fHDAEvkx",
+        "label": "B7. Laboratory",
+        "description": "Either a select lab course from sections 1-6 above or one of the following",
+        "notes": "Courses listed in this Area and in Areas B1-B6, will also satisfy the area it is originally listed in."
+       }
+      ],
+      "catalog_rule_id": "ZBa5Wpxm",
+      "label": "B.",
+      "description": "One course or course sequence from each of the following"
+     },
+     {
+      "type": "choose",
+      "count": 1,
+      "items": [
+       {
+        "type": "course",
+        "code": "EEMB 101",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 102",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 102H",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 103A",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 106",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 111",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 111H",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 112",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 113",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 113L",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 116",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 119",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 120",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 120AL",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 120BL",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 125",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 127",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 127L",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 128",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 129",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 131",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 133",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 136",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 136L",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 137",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 137L",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 138",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 140",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 140L",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 142A",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 142AL",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 142B",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 142BL",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 142C",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 142CL",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 144",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 144L",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 145",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 146",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 147",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 148",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 150A",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 150B",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 152",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 153",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 155CC",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 157A",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 157B",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 157C",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 158",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 159",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 162",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 163",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 165",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 167",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 168",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 170",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 171",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 174",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 179",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 179H",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 180",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 183",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 184",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 185",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 188RE",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 190",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 192",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 194",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 194BC",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 194BD",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 194CA",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 194CB",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 194CM",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 194CO",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 194D",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 194EV",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 194GC",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 194GE",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 194M",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 194MM",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 194P",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 194PE",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 194Q",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 194R",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 194RR",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 194RS",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 194T",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 194TE",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 194WG",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 197",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 198",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 199",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "EEMB W 146",
+        "status": "active",
+        "from_list": "Upper Division Ecology, Evolution and Marine Biology Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 101A",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 101AH",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 101B",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 101BH",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 101L",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 103",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 103H",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 103L",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 108A",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 108AH",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 108B",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 108C",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 109L",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 110",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 111",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 111H",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 112",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 112H",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 112L",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 118",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 123",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 126",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 126AL",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 126B",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 126BH",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 126BL",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 131",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 131L",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 132",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 132L",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 133",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 133H",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 133L",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 134",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 134H",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 135",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 135H",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 136H",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 138",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 139",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 139H",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 140L",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 145",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 146",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 151",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 151H",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 152",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 153",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 161L",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 170",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 172",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 187",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 188",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 192",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 194",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 194BG",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 194CE",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 194CM",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 194DV",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 194JS",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 194M",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 194NC",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 194RF",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 194SK",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 194SM",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 194ZM",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 197",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 198",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 199",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB W 108A",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB W 111",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       },
+       {
+        "type": "course",
+        "code": "MCDB W 138",
+        "status": "active",
+        "from_list": "Upper Division Molecular, Cellular and Dev. Bio Courses"
+       }
+      ],
+      "catalog_rule_id": "x7rWppbU",
+      "label": "C. Electives",
+      "description": "Additional upper-division courses in EEMB and MCDB to bring the total to 48 units",
+      "notes": "The following courses do not count toward upper-division major credit: EEMB 182, 183, 184, 189; MCDB 183, 184, 194D, 194KF, 194MO, 194MP, 194MR.\nIn addition, no more than 8 units of the following courses combined will apply to the major: EEMB 185-199; MCDB 185-199."
+     }
+    ],
+    "catalog_rule_id": "WwOwSknS",
+    "label": "Upper-Division Requirements",
+    "description": "48 UD units required, distributed as follows",
+    "notes": "- Courses listed more than once in Areas A through B1-B6 may be applied to only one area.\n- Courses listed in B7 may also satisfy B1-B6 where listed"
+   },
+   "notes": "Courses listed in more than one area, may be applied to only one area."
+  }
+ ],
+ "courses": [
+  {
+   "code": "CHEM 1A",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "CHEM 1AL",
+   "status": "inactive",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "CHEM 1B",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "CHEM 1BL",
+   "status": "inactive",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "CHEM 1C",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "CHEM 1CL",
+   "status": "inactive",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "CHEM 2A",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "CHEM 2AC",
+   "status": "inactive",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "CHEM 2AL",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "CHEM 2B",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "CHEM 2BC",
+   "status": "inactive",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "CHEM 2BL",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "CHEM 2C",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "CHEM 2CC",
+   "status": "inactive",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "CHEM 6AL",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "CHEM 109A",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "CHEM 109AH",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "CHEM 109B",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "CHEM 109BH",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "EARTH 111",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EARTH 111L",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EARTH 121",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EARTH 141",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EARTH 148",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 2",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "EEMB 2LL",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "EEMB 3",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "EEMB 101",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 102",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 102H",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 103A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 106",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 109",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 111",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 111H",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 112",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 113",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 113L",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 116",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 118",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 119",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 120",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 120AL",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 120BL",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 125",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 127",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 127L",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 128",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 129",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 130",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 131",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 133",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 136",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 136L",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 137",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 137L",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 138",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 140",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 140L",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 142A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 142AL",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 142B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 142BL",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 142C",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 142CL",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 144",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 144L",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 145",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 146",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 147",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 148",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 150A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 150B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 152",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 153",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 155CC",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 157A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 157B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 157C",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 158",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 159",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 162",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 163",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 165",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 167",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 168",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 170",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 171",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 174",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 179",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 179H",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 180",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 183",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 184",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 185",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 188RE",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 190",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 192",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 194",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 194BC",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 194BD",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 194CA",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 194CB",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 194CM",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 194CO",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 194D",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 194EV",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 194GC",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 194GE",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 194M",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 194MM",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 194P",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 194PE",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 194Q",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 194R",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 194RR",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 194RS",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 194T",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 194TE",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 194WG",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 197",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 198",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB 199",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EEMB W 146",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENV S 128",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENV S 133",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENV S 171",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MATH 3A",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "MATH 3B",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "MATH 4A",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "MATH 34A",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "MATH 34B",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "MCDB 1A",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "MCDB 1B",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "MCDB 1LL",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "MCDB 101A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 101AH",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 101B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 101BH",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 101L",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 103",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 103H",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 103L",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 108A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 108AH",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 108B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 108C",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 109L",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 110",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 111",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 111H",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 112",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 112H",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 112L",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 118",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 123",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 126",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 126AL",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 126B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 126BH",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 126BL",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 131",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 131L",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 132",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 132L",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 133",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 133H",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 133L",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 134",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 134H",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 135",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 135H",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 136H",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 138",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 139",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 139H",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 140L",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 145",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 146",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 151",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 151H",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 152",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 153",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 161L",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 170",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 172",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 187",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 188",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 192",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 194",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 194BG",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 194CE",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 194CM",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 194DV",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 194JS",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 194M",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 194NC",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 194RF",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 194SK",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 194SM",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 194ZM",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 197",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 198",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB 199",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB W 108A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB W 111",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MCDB W 138",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PHYS 6A",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "PHYS 6AL",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "PHYS 6B",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "PHYS 6BL",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "PHYS 6C",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "PHYS 6CL",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "PSTAT 5A",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "PSTAT 5LS",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  }
+ ]
+}

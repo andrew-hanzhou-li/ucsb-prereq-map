@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UCSB Prerequisite Map</title>
+  <meta name="description" content="Pick a UCSB major and see every course in it, each placed to the right of the courses it needs.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="top">
+    <h1 class="site-name">UCSB Prerequisite Map</h1>
+    <button type="button" class="options-button" id="options-button" aria-expanded="false" aria-controls="more-options">Options</button>
+
+    <div class="pickers">
+      <label class="picker">
+        <span>Major</span>
+        <input id="major-input" list="major-list" placeholder="Type a major, e.g. Economics" autocomplete="off">
+        <datalist id="major-list"></datalist>
+      </label>
+      <label class="picker more-options">
+        <span>Find a course</span>
+        <input id="course-input" list="course-list" placeholder="e.g. PSTAT 120A" autocomplete="off" disabled>
+        <datalist id="course-list"></datalist>
+      </label>
+    </div>
+
+    <div class="options-row more-options" id="more-options">
+      <fieldset class="toggles" id="toggles" disabled>
+        <legend>Show</legend>
+        <label><input type="checkbox" id="show-electives" checked> Electives</label>
+        <label><input type="checkbox" id="show-outside"> Courses from other majors</label>
+        <label><input type="checkbox" id="show-inactive"> Courses not offered now</label>
+      </fieldset>
+      <p class="taken-status" id="taken-status" aria-live="polite"></p>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="map-area" aria-label="Prerequisite map">
+      <div id="map" class="map">
+        <div id="stage" class="stage"></div>
+      </div>
+
+      <div class="zoom-controls" id="zoom-controls" hidden>
+        <button type="button" id="zoom-out" aria-label="Zoom out">−</button>
+        <button type="button" id="zoom-fit">Fit</button>
+        <button type="button" id="zoom-in" aria-label="Zoom in">+</button>
+      </div>
+
+      <div class="empty" id="empty">
+        <h2>Pick a major to see its map</h2>
+        <p>Every course in the major appears as a box, placed to the right of the courses it needs. Click a course to see what it needs and what it unlocks.</p>
+        <p class="quick">Try <a href="#economics-ba">Economics</a>, <a href="#statistics-and-data-science-bs">Statistics and Data Science (BS)</a> or <a href="#computer-engineering-bs">Computer Engineering</a>.</p>
+      </div>
+
+      <details class="legend" id="legend" hidden>
+        <summary>Key</summary>
+        <ul>
+          <li><span class="swatch required"></span>Required</li>
+          <li><span class="swatch choice"></span>Required, take one of the courses listed</li>
+          <li><span class="swatch elective"></span>Elective</li>
+          <li><span class="swatch outside"></span>From another major, needed first</li>
+          <li><span class="swatch inactive"></span>Not offered now</li>
+          <li><span class="swatch group"></span>A list of electives (click to open)</li>
+          <li><span class="swatch taken"></span>You've taken it</li>
+          <li><span class="swatch ready"></span>You can take it next</li>
+        </ul>
+        <p class="legend-note">Arrows point from a course to the courses it unlocks. A dashed arrow is one of several options.</p>
+      </details>
+    </section>
+
+    <aside class="panel" id="panel" aria-live="polite">
+      <button type="button" class="panel-handle" id="panel-handle">Course details</button>
+      <div id="panel-body" class="panel-empty">
+        <p>Click any course to see its prerequisites, what it unlocks and where it counts in the major.</p>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="bottom">
+    <p id="footer-catalog">Built from the UCSB General Catalog.</p>
+    <p>Unofficial student project. Requirements change; confirm your plan with a department advisor.</p>
+    <p id="footer-repo"></p>
+  </footer>
+
+  <script src="lib/dagre.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

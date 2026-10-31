@@ -1,0 +1,443 @@
+{
+ "id": "BSPRCHM",
+ "name": "Pre-Chemistry - BS",
+ "type": "Bachelor's Degree",
+ "departments": [
+  "CHEM"
+ ],
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsb.edu/programs/BSPRCHM",
+ "narrative": [
+  "Students are not admitted directly to the following majors: Biochemistry, B.S., Chemistry, B.S., Chemistry, B.A. Instead, they are first admitted to the Pre-Chemistry major, and they may advance to full major standing in one of these majors only after fulfilling the pre-major courses and grade requirements listed below.\nThe Pre-Chemistry major must be completed to enroll in upper-division courses required for the Biochemistry B.S., Chemistry B.S., and Chemistry B.A. majors.\nA UC GPA of 2.00 or above in each of the six sequences of courses, considered separately, is required for advancement to full-major status. Acceptance into the pre-major does not guarantee admission to full major status. Upon satisfactory completion of the pre-major courses, students must complete a change of major petition, available on the Department of Chemistry and Biochemistry website.\nNote: Completion of the pre-major does not fully satisfy the Preparation for the Major requirements for the Biochemistry B.S., Chemistry B.S. or the Chemistry B.A. Students should review the full requirement sheet for the major they intend to declare and plan their schedules accordingly. At the time of the petition, they must also have a 2.0 or higher grade-point average in all courses attempted toward the major (preparation and upper-division).\nNote: In addition of the Pre-Major requirements, Math 6A and Physics 7L (Preparation for the Major courses) must be completed prior to the start of Year 3 to ensure eligibility into the Physical Chemistry (Chem 113A-B-C) and Biophysical Chemistry (Chem 112A-B-C) sequences. These sequences are only offered once a year.",
+  "MAJOR REGULATIONSPREREQUISITES Check the General Catalog for the prerequisites to all listed courses.\nP/NP GRADING OPTION Not allowed for any major course (Prep or UD major), including courses applied to the major from other departments.\nSUBSTITUTIONS In the major requirements permissible only by petition to the department chair and dean.\nG.P.A REQUIREMENTS At least 2.0 overall UC average in all upper-division major courses and all courses (Prep and UD) for the major.\nDOUBLE MAJORS With the approval of each department chairperson, up to a total of 8 units may be applied simultaneously to both UD majors."
+ ],
+ "sections": [
+  {
+   "name": "PRE-MAJOR REQUIREMENTS",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "CHEM 3A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 1A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 2A",
+          "status": "active"
+         }
+        ]
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "CHEM 3B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 1B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 2B",
+          "status": "active"
+         }
+        ]
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "CHEM 3C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 1C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 2C",
+          "status": "active"
+         }
+        ]
+       }
+      ],
+      "catalog_rule_id": "d3OO3JQZ",
+      "label": "General Chemistry"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 2AL",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 2BL",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 3L",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "Igd7tZRM",
+      "label": "General Chem Labs"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 6AL",
+        "status": "active"
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "CHEM 6BL",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 6BH",
+          "status": "active"
+         }
+        ]
+       }
+      ],
+      "catalog_rule_id": "Wt1DbhcW",
+      "label": "Organic Chemistry Labs"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "CHEM 130A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 109A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 109AH",
+          "status": "active"
+         }
+        ]
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "CHEM 130B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 109B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 109BH",
+          "status": "active"
+         }
+        ]
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "CHEM 130C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 109C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 109CH",
+          "status": "active"
+         }
+        ]
+       }
+      ],
+      "catalog_rule_id": "wcXcueT6",
+      "label": "Organic Chemistry"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 2A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 3A",
+          "status": "active"
+         }
+        ]
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 2B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 3B",
+          "status": "active"
+         }
+        ]
+       },
+       {
+        "type": "course",
+        "code": "MATH 4A",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "IlONeRyJ",
+      "label": "Lower-Division Math"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "PHYS 7A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 7B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 7C",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "hvBLDv1M",
+      "label": "Physics",
+      "notes": "Note: Recommended to complete the Chemistry 3A-B-C and Chemistry 130A-B-C series."
+     }
+    ]
+   }
+  }
+ ],
+ "courses": [
+  {
+   "code": "CHEM 1A",
+   "status": "active",
+   "section": "PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "CHEM 1B",
+   "status": "active",
+   "section": "PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "CHEM 1C",
+   "status": "active",
+   "section": "PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "CHEM 2A",
+   "status": "active",
+   "section": "PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "CHEM 2AL",
+   "status": "active",
+   "section": "PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "CHEM 2B",
+   "status": "active",
+   "section": "PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "CHEM 2BL",
+   "status": "active",
+   "section": "PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "CHEM 2C",
+   "status": "active",
+   "section": "PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "CHEM 3A",
+   "status": "active",
+   "section": "PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "CHEM 3B",
+   "status": "active",
+   "section": "PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "CHEM 3C",
+   "status": "active",
+   "section": "PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "CHEM 3L",
+   "status": "active",
+   "section": "PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "CHEM 6AL",
+   "status": "active",
+   "section": "PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "CHEM 6BH",
+   "status": "active",
+   "section": "PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "CHEM 6BL",
+   "status": "active",
+   "section": "PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "CHEM 109A",
+   "status": "active",
+   "section": "PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "CHEM 109AH",
+   "status": "active",
+   "section": "PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "CHEM 109B",
+   "status": "active",
+   "section": "PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "CHEM 109BH",
+   "status": "active",
+   "section": "PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "CHEM 109C",
+   "status": "active",
+   "section": "PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "CHEM 109CH",
+   "status": "active",
+   "section": "PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "CHEM 130A",
+   "status": "active",
+   "section": "PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "CHEM 130B",
+   "status": "active",
+   "section": "PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "CHEM 130C",
+   "status": "active",
+   "section": "PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "MATH 2A",
+   "status": "active",
+   "section": "PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "MATH 2B",
+   "status": "active",
+   "section": "PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "MATH 3A",
+   "status": "active",
+   "section": "PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "MATH 3B",
+   "status": "active",
+   "section": "PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "MATH 4A",
+   "status": "active",
+   "section": "PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "PHYS 7A",
+   "status": "active",
+   "section": "PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "PHYS 7B",
+   "status": "active",
+   "section": "PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "PHYS 7C",
+   "status": "active",
+   "section": "PRE-MAJOR REQUIREMENTS"
+  }
+ ]
+}

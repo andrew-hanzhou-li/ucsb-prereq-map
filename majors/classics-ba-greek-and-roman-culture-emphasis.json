@@ -1,0 +1,1035 @@
+{
+ "id": "BACLASSGRECOROM",
+ "name": "Classics - BA - Greek and Roman Culture Emphasis",
+ "type": "Bachelor's Degree",
+ "departments": [
+  "CLASS"
+ ],
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsb.edu/programs/BACLASSGRECOROM",
+ "narrative": [
+  "MAJOR REGULATIONS\nPREREQUISITES .................................................... Check the General Catalog for the prerequisites to all listed courses.\nP/NP GRADING OPTION ....................................... Up to 8 units total of Greek 199 and Latin 199 may be taken P/NP for major credit; all other courses\nmust be taken for letter grades, including those applied to the major from other departments.\nSUBSTITUTIONS ..................................................... In the major requirements permissible only by petition to the department chair and dean.\nG.P.A REQUIREMENTS ......................................... At least 2.0 overall UC average in all upper-division major courses and all courses (Prep and UD) for the\nmajor.\nDOUBLE MAJORS ................................................... With the approval of each department chairperson, up to a total of 8 units may be applied\nsimultaneously to both UD majors."
+ ],
+ "sections": [
+  {
+   "name": "PREPARATION FOR THE MAJOR",
+   "requirement": {
+    "type": "choose",
+    "count": 1,
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "GREEK 1",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GREEK 2",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GREEK 3",
+          "status": "active"
+         }
+        ]
+       },
+       {
+        "type": "course",
+        "code": "CLASS 20B",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "LcZ3fJcN",
+      "label": "TRACK 1"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "LATIN 1",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LATIN 2",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LATIN 3",
+          "status": "active"
+         }
+        ]
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "CLASS 20A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CLASS 36",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CLASS 40",
+          "status": "active"
+         }
+        ]
+       }
+      ],
+      "catalog_rule_id": "OWrmcgen",
+      "label": "TRACK 2"
+     }
+    ],
+    "catalog_rule_id": "iUe9eeVt",
+    "label": "Lower-Division",
+    "description": "Complete ONE of the following tracks:",
+    "notes": "- Students may choose TRACK 1 or TRACK 2. However, those completing courses in a second classical language may substitute up to 4 units of such work for Classics 20A, 20B, 36, and 40\n- Greek and Roman Culture majors are also encouraged to use their General Education requirements to take related lower-division courses in Anthropology (2, 3 or 3SS), Classics (36, 39, 40, 50), Comparative Literature (30A), History of Art and Architecture (6A), History (2A, 4A), Philosophy (20A), and Religious Studies (80A)."
+   }
+  },
+  {
+   "name": "UPPER-DIVISION MAJOR",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "count": 8,
+      "items": [
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "CLASS 102",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CLASS 109",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CLASS 110",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CLASS 130",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CLASS 175",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "CLASS 178",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CLASS 190",
+          "status": "active"
+         }
+        ],
+        "catalog_rule_id": "zx7ftBPQ",
+        "label": "1) Literary Traditions and Representations"
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "CLASS 140",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CLASS 145",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CLASS 150",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CLASS 151",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "CLASS 152",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "HIST 111A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "HIST 111B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 111C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 111E",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "HIST 111F",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 111T",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "HIST 112A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 112C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 112D",
+          "status": "inactive"
+         }
+        ],
+        "catalog_rule_id": "YwDCQbQ4",
+        "label": "2) Politics and Society"
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "CLASS 114",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "CLASS 155",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CLASS 165",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CLASS 170",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CLASS 171",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ARTHI 103E",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "ARTHI 103F",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "ARTHI 186B",
+          "status": "active"
+         }
+        ],
+        "catalog_rule_id": "lD4xzWcq",
+        "label": "3) Material Culture"
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "CLASS 101",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CLASS 106",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHIL 151",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHIL 152",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHIL 153",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHIL 154",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PHIL 156",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RG ST 116A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RG ST 116B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RG ST 116C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RG ST 128A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RG ST 137",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RG ST 139A",
+          "status": "inactive"
+         }
+        ],
+        "catalog_rule_id": "s5TpGcnv",
+        "label": "4) Religious and Intellectual Life"
+       }
+      ],
+      "catalog_rule_id": "CHEMwjGV",
+      "label": "A.",
+      "description": "Five courses in at least two areas, of which at least three courses must be Classics courses\nUpper-division courses commonly have prerequisites.",
+      "notes": "Up to 3 upper-division courses in Latin or Greek may be applied to the upper-division major in category A."
+     },
+     {
+      "type": "choose",
+      "count": 1,
+      "items": [
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "ANTH 116A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTH 164",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RG ST 127A",
+          "status": "active"
+         }
+        ],
+        "catalog_rule_id": "y73LrAP8",
+        "label": "1) Cross-Cultural"
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "ANTH 118TS",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "ANTH 138TS",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTH 176TS",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 111F",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RG ST 115A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RG ST 115F",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "RG ST 115G",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RG ST 128C",
+          "status": "active"
+         }
+        ],
+        "catalog_rule_id": "c8Zx6sJK",
+        "label": "2) Ancient Western Asia"
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "HIST 145A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RG ST 149D",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "RG ST 149H",
+          "status": "active"
+         }
+        ],
+        "catalog_rule_id": "IjN3iM6M",
+        "label": "3) Early Islam"
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "RG ST 160A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RG ST 162A",
+          "status": "active"
+         }
+        ],
+        "catalog_rule_id": "ZuqL0MF3",
+        "label": "4) India"
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "ARTHI 134A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "ARTHI 134B",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "JAPAN 149",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "RG ST 167A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 184A",
+          "status": "active"
+         }
+        ],
+        "catalog_rule_id": "JDKc9Nop",
+        "label": "5) East Asia"
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "ANTH 150B",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "ANTH 150C",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "ANTH 175",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ARTHI 130A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "ARTHI 130B",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "ARTHI 130D",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CH ST 117",
+          "status": "active"
+         }
+        ],
+        "catalog_rule_id": "yRJKv14C",
+        "label": "6) The Americas"
+       }
+      ],
+      "catalog_rule_id": "KWmVZo6E",
+      "label": "B.",
+      "description": "One course in comparative ancient and classical culture\nNote that the upper-division courses commonly have prerequisites"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "CLASS 180A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLASS 180B",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "SFXXF6v0",
+      "label": "C."
+     },
+     {
+      "type": "choose",
+      "count": 1,
+      "items": [
+       {
+        "type": "course",
+        "code": "CLASS 185",
+        "status": "active"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "CLASS 195A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CLASS 195B",
+          "status": "active"
+         }
+        ]
+       }
+      ],
+      "catalog_rule_id": "sjTG0WLJ",
+      "label": "D."
+     }
+    ],
+    "catalog_rule_id": "Xc1HFhd1",
+    "description": "36 UD units are required",
+    "notes": "- Other UD courses not listed above that have a strong ancient world studies component may be substituted by petition.\n- In the first quarter of their junior year, all majors must make an appointment with the undergraduate advisor to review their progress towards meeting the requirements of the major."
+   }
+  }
+ ],
+ "courses": [
+  {
+   "code": "ANTH 116A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ANTH 118TS",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ANTH 138TS",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ANTH 150B",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ANTH 150C",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ANTH 164",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ANTH 175",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ANTH 176TS",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ARTHI 103E",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ARTHI 103F",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ARTHI 130A",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ARTHI 130B",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ARTHI 130D",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ARTHI 134A",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ARTHI 134B",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ARTHI 186B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CH ST 117",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CLASS 20A",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "CLASS 20B",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "CLASS 36",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "CLASS 40",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "CLASS 101",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CLASS 102",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CLASS 106",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CLASS 109",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CLASS 110",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CLASS 114",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CLASS 130",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CLASS 140",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CLASS 145",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CLASS 150",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CLASS 151",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CLASS 152",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CLASS 155",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CLASS 165",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CLASS 170",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CLASS 171",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CLASS 175",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CLASS 178",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CLASS 180A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CLASS 180B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CLASS 185",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CLASS 190",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CLASS 195A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CLASS 195B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GREEK 1",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "GREEK 2",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "GREEK 3",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "HIST 111A",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 111B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 111C",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 111E",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 111F",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 111T",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 112A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 112C",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 112D",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 145A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 184A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "JAPAN 149",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "LATIN 1",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "LATIN 2",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "LATIN 3",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "PHIL 151",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PHIL 152",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PHIL 153",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PHIL 154",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PHIL 156",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "RG ST 115A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "RG ST 115F",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "RG ST 115G",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "RG ST 116A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "RG ST 116B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "RG ST 116C",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "RG ST 127A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "RG ST 128A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "RG ST 128C",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "RG ST 137",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "RG ST 139A",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "RG ST 149D",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "RG ST 149H",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "RG ST 160A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "RG ST 162A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "RG ST 167A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  }
+ ]
+}
