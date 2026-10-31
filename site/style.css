@@ -1,26 +1,28 @@
 /*
   style.css for the UCSB Prerequisite Map.
 
-  Colors are defined once here as variables. app.js reads the same variables
-  (see readColors() in app.js) so the map and the page always match.
+  Colors are defined once here as variables and used everywhere below.
 */
 
 :root {
   --fog: #eef2f1;          /* page background */
   --paper: #ffffff;        /* panel and boxes */
   --ink: #17313b;          /* main text */
-  --muted: #5b6e75;        /* secondary text */
+  --muted: #536870;        /* secondary text */
   --line: #c9d3d2;         /* borders */
   --teal: #0e6e73;         /* required courses */
   --teal-soft: #b9dcd8;    /* "pick one of a few" courses */
-  --sand: #e6e0d2;         /* courses from other majors */
-  --amber: #c97d10;        /* the selected course and what it needs */
+  --sand: #ebe4d3;         /* courses from other departments */
+  --amber: #b86e00;        /* the selected course and what it needs */
+  --amber-soft: #fbe7c6;
   --indigo: #3b5ba9;       /* what the selected course unlocks */
+  --indigo-soft: #dfe6f6;
   --done: #d6ead8;         /* courses marked as taken */
   --green: #2e7d32;        /* taken, and "can take next" outline */
 
   --font: "Atkinson Hyperlegible", system-ui, -apple-system, "Segoe UI", sans-serif;
-  --panel-width: 360px;
+  --panel-width: 380px;
+  --box-min: 172px;        /* boxes are at least this wide; the rest of the width is shared out */
 }
 
 * { box-sizing: border-box; }
@@ -45,14 +47,24 @@ a { color: var(--teal); }
   outline-offset: 2px;
 }
 
+kbd {
+  font: inherit;
+  font-size: 0.85em;
+  padding: 0 5px;
+  border: 1px solid var(--line);
+  border-bottom-width: 2px;
+  border-radius: 4px;
+  background: var(--paper);
+}
+
 /* ---------------------------------------------------------------- header */
 
 .top {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
-  gap: 12px 28px;
-  padding: 14px 20px 12px;
+  gap: 10px 24px;
+  padding: 12px 20px 10px;
   border-bottom: 1px solid var(--line);
   background: var(--paper);
 }
@@ -62,15 +74,17 @@ a { color: var(--teal); }
   font-size: 1.35rem;
   line-height: 1.2;
   letter-spacing: -0.01em;
+  align-self: center;
 }
 .site-name a { color: inherit; text-decoration: none; }
 
-.about-link { align-self: center; font-size: 0.92rem; }
+.about-link { align-self: center; font-size: 0.95rem; }
 
 .pickers {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px 16px;
+  align-items: flex-end;
+  gap: 10px 16px;
   flex: 1 1 auto;
 }
 
@@ -78,9 +92,9 @@ a { color: var(--teal); }
   display: flex;
   flex-direction: column;
   gap: 3px;
-  font-size: 0.82rem;
+  font-size: 0.85rem;
   color: var(--muted);
-  width: 300px;
+  width: 320px;
   max-width: 100%;
 }
 
@@ -88,13 +102,16 @@ a { color: var(--teal); }
   font: inherit;
   font-size: 1rem;
   color: var(--ink);
-  padding: 7px 10px;
+  padding: 8px 10px;
   border: 1px solid var(--line);
   border-radius: 6px;
   background: var(--paper);
 }
 
 .picker input:disabled { background: var(--fog); }
+
+.all-link { padding-bottom: 9px; font-size: 0.95rem; white-space: nowrap; }
+.all-link[hidden] { display: none; }
 
 .options-row {
   flex-basis: 100%;
@@ -104,7 +121,7 @@ a { color: var(--teal); }
   gap: 4px 28px;
 }
 
-.taken-status { margin: 0; font-size: 0.88rem; color: var(--muted); }
+.taken-status { margin: 0; font-size: 0.9rem; color: var(--muted); }
 
 .text-button {
   font: inherit;
@@ -120,11 +137,11 @@ a { color: var(--teal); }
 .toggles {
   display: flex;
   flex-wrap: wrap;
-  gap: 4px 16px;
+  gap: 4px 18px;
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 0.88rem;
+  font-size: 0.92rem;
 }
 
 .toggles legend {
@@ -151,107 +168,136 @@ a { color: var(--teal); }
 }
 
 /*
-  The map: a scrollable area holding the "stage", which is as big as the
-  whole drawing. Boxes are HTML buttons placed on the stage with
-  left/top; arrows are an SVG drawing underneath them.
+  The map scrolls down the page. Inside it, the "stage" holds the rows of
+  boxes, with an SVG drawing of the arrows laid over them.
 */
 .map {
   position: absolute;
   inset: 0;
-  overflow: auto;
-  cursor: grab;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
-.map:active { cursor: grabbing; }
 
-.stage { position: relative; }
-
-.arrows { position: absolute; left: 0; top: 0; overflow: visible; }
-
-.arrow {
-  fill: none;
-  stroke: #a9b8b7;
-  stroke-width: 1.5;
-  marker-end: url(#head-plain);
+.stage {
+  position: relative;
+  min-height: 100%;
+  padding: 14px 22px 40px;
 }
-.arrow.alternative { stroke-dasharray: 5 4; }
-#head-plain path { fill: #a9b8b7; }
-#head-needs path { fill: var(--amber); }
+
+.arrows {
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: visible;
+  pointer-events: none;
+  z-index: 0;              /* under the boxes, so lines never cross out a course's text */
+}
+
+.arrow { fill: none; stroke-width: 2.25; }
+.arrow.needs { stroke: var(--amber); marker-end: url(#head-needs); }
+.arrow.chain { stroke: var(--amber); stroke-width: 1.5; opacity: 0.45; marker-end: url(#head-chain); }
+.arrow.unlocks { stroke: var(--indigo); marker-end: url(#head-unlocks); }
+.arrow.alternative { stroke-dasharray: 6 4; }
+#head-needs path, #head-chain path { fill: var(--amber); }
 #head-unlocks path { fill: var(--indigo); }
 
+.map-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 24px;
+  margin-bottom: 6px;
+}
+.map-hint { margin: 0; color: var(--muted); font-size: 0.95rem; }
+.narrow-only { display: none; }
+.key-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.88rem;
+  color: var(--muted);
+}
+.key-row li { display: flex; align-items: center; gap: 6px; }
+.key-line { display: inline-block; width: 22px; height: 0; border-top: 3px solid; }
+.key-line.needs { border-color: var(--amber); }
+.key-line.unlocks { border-color: var(--indigo); }
+
+.row { margin-top: 18px; }
+.row-label {
+  margin: 0 0 8px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--ink);
+}
+.row-count { font-weight: 400; color: var(--muted); }
+.elective-row { margin-top: 30px; padding-top: 14px; border-top: 1px solid var(--line); }
+.elective-row + .elective-row { margin-top: 18px; }
+.map-note { color: var(--muted); }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--box-min), 1fr));
+  gap: 10px;
+}
+
 .box {
-  position: absolute;
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 6px 10px;
+  min-height: 70px;
+  padding: 8px 10px;
   font: inherit;
-  font-size: 0.82rem;
-  line-height: 18px;
+  font-size: 0.9rem;
+  line-height: 1.25;
   text-align: center;
   color: var(--ink);
   background: var(--paper);
   border: 2px solid var(--teal);
   border-radius: 8px;
   cursor: pointer;
-  transition: opacity 120ms;
+  transition: opacity 120ms, box-shadow 120ms;
 }
-.box .line { display: block; max-width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.box .strong { font-weight: 700; }
-.box .small { font-size: 0.72rem; color: var(--muted); }
-.box:hover { box-shadow: 0 2px 8px rgba(23, 49, 59, 0.18); }
+.box .line { display: block; max-width: 100%; }
+.box .strong { font-weight: 700; font-size: 1.05rem; letter-spacing: 0.01em; }
+.box .title {
+  margin-top: 2px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.box .tag { margin-top: 3px; font-size: 0.8rem; color: var(--muted); }
+.box:hover { box-shadow: 0 2px 10px rgba(23, 49, 59, 0.2); }
 
 .box.role-required { background: var(--teal); color: var(--paper); }
+.box.role-required .tag { color: #d9eeec; }
 .box.role-choice { background: var(--teal-soft); }
-.box.role-choice .small { color: var(--ink); }
+.box.role-choice .tag { color: var(--ink); }
 .box.role-prerequisite { background: var(--sand); border: 2px dashed var(--muted); }
-.box.kind-group, .box.kind-pool { border: 4px double var(--teal); }
-.box.inactive { background: var(--paper); color: var(--muted); border: 2px dotted var(--line); }
+.box.kind-pool { border: 4px double var(--teal); }
+.box.inactive { background: var(--paper); color: var(--muted); border: 2px dotted var(--muted); }
 
 /* Progress from "Mark as taken". */
 .box.taken { background: var(--done); color: var(--ink); border: 2px solid var(--green); }
-.box.ready { border: 4px solid var(--green); }
+.box.taken .tag { color: var(--muted); }
+.box.ready { box-shadow: 0 0 0 3px var(--green); }
 
-/* Highlighting after a click: everything else fades. */
-.stage.focused .box { opacity: 0.22; }
-.stage.focused .arrow { opacity: 0.25; }
+/* Highlighting a course: everything else fades. */
+.stage.focused .box { opacity: 0.25; }
 .stage.focused .box.selected,
 .stage.focused .box.needs,
 .stage.focused .box.unlocks { opacity: 1; }
-.box.needs { border: 3px solid var(--amber); }
-.box.unlocks { border: 3px solid var(--indigo); }
-.box.selected { background: var(--amber); color: var(--paper); border: 3px solid var(--amber); }
-.box.selected .small { color: var(--paper); }
-.stage.focused .arrow.needs { opacity: 1; stroke: var(--amber); stroke-width: 2.5; marker-end: url(#head-needs); }
-.stage.focused .arrow.unlocks { opacity: 1; stroke: var(--indigo); stroke-width: 2.5; marker-end: url(#head-unlocks); }
-
-.loose-label {
-  position: absolute;
-  left: 24px;
-  margin: 0;
-  font-size: 0.85rem;
-  color: var(--muted);
-}
-
-.zoom-controls {
-  position: absolute;
-  left: 12px;
-  bottom: 12px;
-  display: flex;
-  gap: 4px;
-}
-.zoom-controls[hidden] { display: none; }
-.zoom-controls button {
-  font: inherit;
-  min-width: 36px;
-  height: 34px;
-  padding: 0 10px;
-  color: var(--ink);
-  background: var(--paper);
-  border: 1px solid var(--line);
-  border-radius: 6px;
-  cursor: pointer;
-}
+.box.needs { box-shadow: 0 0 0 3px var(--amber); }
+.box.unlocks { box-shadow: 0 0 0 3px var(--indigo); }
+.box.selected { background: var(--amber); color: var(--paper); border-color: var(--amber); box-shadow: 0 4px 14px rgba(23, 49, 59, 0.3); }
+.box.selected .tag { color: var(--paper); }
 
 /* The front page: welcome text (or a notice) and lists of every program. */
 .empty {
@@ -260,10 +306,10 @@ a { color: var(--teal); }
   overflow-y: auto;
   background: var(--fog);
 }
-.empty-inner { max-width: 980px; padding: 40px 32px 48px; }
+.empty-inner { max-width: 1100px; padding: 40px 32px 48px; }
 
-.empty h2 { margin: 0 0 12px; font-size: 1.6rem; line-height: 1.2; }
-.empty p { margin: 0 0 12px; max-width: 640px; }
+.empty h2 { margin: 0 0 12px; font-size: 1.7rem; line-height: 1.2; }
+.empty p { margin: 0 0 12px; max-width: 680px; }
 .empty[hidden], .notice[hidden], #welcome[hidden] { display: none; }
 
 .notice {
@@ -283,40 +329,22 @@ a { color: var(--teal); }
   padding-top: 20px;
   border-top: 1px solid var(--line);
 }
-.browse h3 { margin: 0 0 8px; font-size: 1.05rem; }
+.browse h3 { margin: 0 0 8px; font-size: 1.1rem; }
 .browse-list {
   margin: 0;
   padding: 0;
   list-style: none;
-  font-size: 0.92rem;
-  columns: 2 220px;
+  columns: 2 240px;
   column-gap: 24px;
 }
 .browse section:last-child .browse-list { columns: 1; }
-.browse-list li { padding: 2px 0; break-inside: avoid; }
-
-.legend {
-  position: absolute;
-  right: 12px;      /* the right side of a map is usually emptier: fewer courses come last */
-  bottom: 12px;
-  margin: 0;
-  padding: 8px 12px;
-  background: rgba(255, 255, 255, 0.94);
-  border: 1px solid var(--line);
-  border-radius: 6px;
-  font-size: 0.8rem;
-}
-
-.legend summary { cursor: pointer; font-weight: 700; }
-.legend ul { margin: 6px 0 0; padding: 0; list-style: none; }
-.legend li { display: flex; align-items: center; gap: 8px; }
-.legend-note { max-width: 230px; margin: 6px 0 0; color: var(--muted); }
-.legend[hidden] { display: none; }
+.browse-list li { padding: 3px 0; break-inside: avoid; }
 
 .swatch {
   display: inline-block;
-  width: 22px;
-  height: 12px;
+  flex-shrink: 0;
+  width: 24px;
+  height: 14px;
   border-radius: 3px;
   border: 2px solid var(--teal);
 }
@@ -324,10 +352,9 @@ a { color: var(--teal); }
 .swatch.choice { background: var(--teal-soft); }
 .swatch.elective { background: var(--paper); }
 .swatch.outside { background: var(--sand); border: 2px dashed var(--muted); }
-.swatch.inactive { background: var(--paper); border: 2px dotted var(--line); }
-.swatch.group { background: var(--paper); border: 4px double var(--teal); }
+.swatch.inactive { background: var(--paper); border: 2px dotted var(--muted); }
 .swatch.taken { background: var(--done); border-color: var(--green); }
-.swatch.ready { background: var(--paper); border: 3px solid var(--green); }
+.swatch.ready { background: var(--paper); border-color: var(--paper); box-shadow: 0 0 0 3px var(--green); }
 
 /* ----------------------------------------------------------------- panel */
 
@@ -337,36 +364,56 @@ a { color: var(--teal); }
   overflow-y: auto;
   background: var(--paper);
   border-left: 1px solid var(--line);
-  padding: 18px 20px 24px;
+  padding: 16px 20px 24px;
 }
 
 .panel[hidden] { display: none; }
 .panel-empty { color: var(--muted); }
 
+.panel-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px;
+  margin: 0 0 14px;
+}
+.nav-button {
+  font: inherit;
+  font-size: 0.92rem;
+  padding: 5px 12px;
+  color: var(--ink);
+  background: var(--fog);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  cursor: pointer;
+}
+.nav-button:hover { border-color: var(--muted); }
+.nav-button[data-close] { margin-left: auto; }
+
 .panel h2 {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   line-height: 1.15;
 }
 
-.panel .course-title { margin: 2px 0 10px; font-size: 1.05rem; }
-.panel .facts { margin: 0 0 14px; color: var(--muted); font-size: 0.9rem; }
+.panel .course-title { margin: 2px 0 8px; font-size: 1.1rem; }
+.panel .facts { margin: 0 0 14px; color: var(--muted); font-size: 0.92rem; }
 
 .panel h3 {
-  margin: 18px 0 6px;
-  font-size: 0.95rem;
+  margin: 20px 0 6px;
+  font-size: 1rem;
 }
 
 .panel p { margin: 0 0 8px; }
-.panel .catalog-text { font-size: 0.88rem; color: var(--muted); font-style: italic; }
+.panel .catalog-text { font-size: 0.9rem; color: var(--muted); font-style: italic; }
 
 .panel ul { margin: 0 0 8px; padding-left: 20px; }
-.panel li { margin: 2px 0; }
+.panel li { margin: 3px 0; }
 
 /* A prerequisite tree: "All of" / "One of" groups nest with a left rule. */
 .tree { list-style: none; padding-left: 0; }
 .tree .tree { padding-left: 12px; border-left: 2px solid var(--line); margin-left: 2px; }
-.tree-label { color: var(--muted); font-size: 0.88rem; }
+.tree-label { color: var(--muted); font-size: 0.92rem; }
 
 .course-link {
   font: inherit;
@@ -380,7 +427,7 @@ a { color: var(--teal); }
   text-underline-offset: 2px;
 }
 
-.note { font-size: 0.85rem; color: var(--muted); }
+.note { font-size: 0.9rem; color: var(--muted); }
 
 .taken-button {
   font: inherit;
@@ -394,12 +441,7 @@ a { color: var(--teal); }
 }
 .taken-button.is-taken { background: var(--done); }
 .progress-row { margin: 0 0 6px; }
-.ready-note { color: var(--green); font-size: 0.9rem; }
-
-.course-list { list-style: none; padding-left: 0; }
-.course-list li { margin: 4px 0; }
-.flag-taken { background: var(--done); }
-.flag-ready { background: var(--paper); border: 1px solid var(--green); color: var(--green); }
+.ready-note { color: var(--green); font-size: 0.92rem; }
 
 /* Phone-only controls: the panel's handle and the Options button. */
 .panel-handle { display: none; }
@@ -407,7 +449,7 @@ a { color: var(--teal); }
 
 .flag {
   display: inline-block;
-  font-size: 0.8rem;
+  font-size: 0.82rem;
   padding: 1px 6px;
   border-radius: 4px;
   background: var(--sand);
@@ -423,31 +465,72 @@ a { color: var(--teal); }
   flex-wrap: wrap;
   gap: 4px 24px;
   padding: 8px 20px;
-  font-size: 0.8rem;
+  font-size: 0.82rem;
   color: var(--muted);
   border-top: 1px solid var(--line);
   background: var(--paper);
 }
 
 .bottom p { margin: 0; }
+.bottom p[hidden] { display: none; }
+
+/* ------------------------------------------------------------ About box */
+
+.about {
+  width: min(760px, calc(100vw - 32px));
+  max-height: calc(100vh - 48px);
+  padding: 24px 28px 28px;
+  color: var(--ink);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  box-shadow: 0 12px 40px rgba(23, 49, 59, 0.3);
+}
+.about::backdrop { background: rgba(23, 49, 59, 0.45); }
+.about h2 { margin: 0 0 12px; font-size: 1.6rem; line-height: 1.2; }
+.about h3 { margin: 24px 0 8px; font-size: 1.1rem; }
+.about ul { padding-left: 22px; }
+.about li { margin: 5px 0; }
+.about .lede { font-size: 1.08rem; }
+.about .key { list-style: none; padding-left: 0; }
+.about .key li { display: flex; align-items: center; gap: 10px; }
+.about-close { float: right; margin: -6px -8px 0 12px; }
+.about-close .text-button { font-size: 0.95rem; }
+
+/* ------------------------------------------------------------ 404.html */
+
+.page { display: block; height: auto; }
+.page .top { align-items: center; }
+.article { max-width: 720px; margin: 0 auto; padding: 28px 20px 56px; }
+.article h2 { margin: 0 0 12px; font-size: 1.7rem; line-height: 1.2; }
+.article .lede { font-size: 1.1rem; }
 
 /* ------------------------------------------------------------ small screens
    On phones the panel becomes a sheet along the bottom of the screen: a
    handle shows what's selected, and tapping it (or a course) slides the
    sheet up over the lower part of the map. */
 @media (max-width: 800px) {
+  :root { --box-min: 140px; }
   .top { padding: 10px 14px; gap: 8px; align-items: center; }
   .site-name { font-size: 1.1rem; flex: 1; }
+  .picker span { display: none; }      /* the placeholder text says what each box is for */
+  .all-link { padding-bottom: 0; }
+
+  .stage { padding: 10px 12px 24px; }
+  /* Room to scroll the bottom courses up above the open sheet. */
+  .stage::after { content: ""; display: block; height: 62vh; }
+  .map-hint { font-size: 0.88rem; }
+  .wide-only { display: none; }
+  .narrow-only { display: inline; }
+  .key-row { font-size: 0.8rem; gap: 3px 10px; }
+  .box { min-height: 64px; padding: 7px 8px; font-size: 0.85rem; }
+  .box .strong { font-size: 0.98rem; }
 
   .empty-inner { padding: 24px 16px 40px; }
   .empty h2 { font-size: 1.35rem; }
   .browse { grid-template-columns: 1fr; }
   .browse-list, .browse section:last-child .browse-list { columns: 1; }
   .browse-list li { padding: 5px 0; }      /* bigger tap targets */
-  .picker span { display: none; }      /* the placeholder text says what each box is for */
-
-  /* Room to scroll the bottom courses up above the open sheet. */
-  .map::after { content: ""; display: block; height: 62vh; }
 
   /* "Find a course" and the Show checkboxes fold behind an Options button. */
   .options-button {
@@ -464,10 +547,10 @@ a { color: var(--teal); }
   .top.show-options .more-options { display: flex; }
   .picker { width: 100%; }
   .pickers { gap: 8px; }
-  .toggles { font-size: 0.82rem; }
+  .toggles { font-size: 0.85rem; }
 
   .layout { flex-direction: column; }
-  .map-area { flex: 1; min-height: 0; }
+  .map-area { flex: 1; min-height: 0; margin-bottom: 48px; }   /* clear of the closed sheet */
 
   .panel {
     position: fixed;
@@ -491,6 +574,7 @@ a { color: var(--teal); }
     display: block;
     position: sticky;
     top: 0;
+    z-index: 1;
     width: calc(100% + 32px);
     margin: 0 -16px 10px;
     padding: 14px 16px 12px;
@@ -519,28 +603,7 @@ a { color: var(--teal); }
 
   /* No room for a footer; the same notice is in the panel's major summary. */
   .bottom { display: none; }
-  .map-area { margin-bottom: 48px; }   /* keep the map clear of the closed sheet */
-  .legend { bottom: 12px; }
 }
-
-/* ------------------------------------------------- about.html and 404.html
-   Plain reading pages that share the header and colors. */
-.page { display: block; height: auto; }
-.page .top { align-items: center; }
-.article {
-  max-width: 720px;
-  margin: 0 auto;
-  padding: 28px 20px 56px;
-}
-.article h2 { margin: 0 0 12px; font-size: 1.7rem; line-height: 1.2; }
-.article h3 { margin: 32px 0 8px; font-size: 1.15rem; }
-.article p, .article li { max-width: 68ch; }
-.article ul { padding-left: 22px; }
-.article li { margin: 4px 0; }
-.article .lede { font-size: 1.1rem; }
-.article .key { list-style: none; padding-left: 0; }
-.article .key li { display: flex; align-items: center; gap: 10px; }
-.page .bottom { margin-top: 0; }
 
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; }

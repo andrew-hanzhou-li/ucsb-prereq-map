@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>UCSB Prerequisite Map</title>
-  <meta name="description" content="Pick a UCSB major or minor and see every course in it, each placed to the right of the courses it needs.">
+  <meta name="description" content="Pick a UCSB major or minor and see every course in it, in prerequisite order, with the full prerequisites of each one.">
   <meta name="theme-color" content="#0e6e73">
   <!-- How the link looks when shared in a text or on social media -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="UCSB Prerequisite Map">
-  <meta property="og:description" content="Pick a UCSB major or minor and see every course in it, each placed to the right of the courses it needs.">
+  <meta property="og:description" content="Pick a UCSB major or minor and see every course in it, in prerequisite order, with the full prerequisites of each one.">
   <meta name="twitter:card" content="summary">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,8 +20,10 @@
 <body>
 
   <header class="top">
-    <h1 class="site-name"><a href="./" id="home-link">UCSB Prerequisite Map</a></h1>
-    <a class="about-link" href="about.html">About</a>
+    <!-- Links use "#" (not "./") so they also work in the single-file
+         version, opened straight from your computer. -->
+    <h1 class="site-name"><a href="#" id="home-link">UCSB Prerequisite Map</a></h1>
+    <button type="button" class="text-button about-link" id="about-button">About</button>
     <button type="button" class="options-button" id="options-button" aria-expanded="false" aria-controls="more-options">Options</button>
 
     <div class="pickers">
@@ -35,13 +37,14 @@
         <input id="course-input" list="course-list" placeholder="e.g. PSTAT 120A" autocomplete="off" disabled>
         <datalist id="course-list"></datalist>
       </label>
+      <a class="all-link" id="all-link" href="#" hidden>All majors and minors</a>
     </div>
 
     <div class="options-row more-options" id="more-options">
       <fieldset class="toggles" id="toggles" disabled>
         <legend>Show</legend>
         <label><input type="checkbox" id="show-electives" checked> Electives</label>
-        <label><input type="checkbox" id="show-outside"> Prerequisites from outside</label>
+        <label><input type="checkbox" id="show-outside"> Every outside course</label>
         <label><input type="checkbox" id="show-inactive"> Courses not offered now</label>
       </fieldset>
       <p class="taken-status" id="taken-status" aria-live="polite"></p>
@@ -54,12 +57,6 @@
         <div id="stage" class="stage"></div>
       </div>
 
-      <div class="zoom-controls" id="zoom-controls" hidden>
-        <button type="button" id="zoom-out" aria-label="Zoom out">−</button>
-        <button type="button" id="zoom-fit">Fit</button>
-        <button type="button" id="zoom-in" aria-label="Zoom in">+</button>
-      </div>
-
       <div class="empty" id="empty">
         <div class="empty-inner">
           <!-- Shown instead of the welcome text when a link points at a
@@ -68,7 +65,7 @@
 
           <div id="welcome">
             <h2>Pick a major or minor to see its map</h2>
-            <p>Every course appears as a box, placed to the right of the courses it needs. Click a course to see what it needs and what it unlocks.</p>
+            <p>Every course in the program is listed in prerequisite order, with the courses from other departments it needs. Point at or click a course to see everything it needs and everything it unlocks.</p>
             <p class="quick">Try <a href="#economics-ba">Economics</a>, <a href="#statistics-and-data-science-bs">Statistics and Data Science (BS)</a> or <a href="#computer-engineering-bs">Computer Engineering</a>.</p>
           </div>
 
@@ -84,39 +81,68 @@
           </div>
         </div>
       </div>
-
-      <details class="legend" id="legend" hidden>
-        <summary>Key</summary>
-        <ul>
-          <li><span class="swatch required"></span>Required</li>
-          <li><span class="swatch choice"></span>Required, take one of the courses listed</li>
-          <li><span class="swatch elective"></span>Elective</li>
-          <li><span class="swatch outside"></span>From outside this program, needed first</li>
-          <li><span class="swatch inactive"></span>Not offered now</li>
-          <li><span class="swatch group"></span>A list of electives (click to open)</li>
-          <li><span class="swatch taken"></span>You've taken it</li>
-          <li><span class="swatch ready"></span>You can take it next</li>
-        </ul>
-        <p class="legend-note">Arrows point from a course to the courses it unlocks. A dashed arrow is one of several options.</p>
-      </details>
     </section>
 
     <aside class="panel" id="panel" aria-live="polite" hidden>
       <button type="button" class="panel-handle" id="panel-handle">Course details</button>
-      <div id="panel-body" class="panel-empty">
-        <p>Click any course to see its prerequisites, what it unlocks and where it counts in the major.</p>
-      </div>
+      <div id="panel-body" class="panel-empty"></div>
     </aside>
   </main>
 
   <footer class="bottom">
     <p id="footer-catalog">Built from the UCSB General Catalog.</p>
     <p>Unofficial student project. Requirements change; confirm your plan with a department advisor.</p>
-    <p><a href="about.html">About this site</a></p>
+    <p id="footer-download"><a href="ucsb-prereq-map.html" download>Download the whole site as one file</a></p>
     <p id="footer-repo"></p>
   </footer>
 
-  <script src="lib/dagre.min.js"></script>
+  <dialog class="about" id="about">
+    <form method="dialog" class="about-close"><button type="submit" class="text-button">Close</button></form>
+    <h2>About this site</h2>
+    <p class="lede">Pick a UCSB major or minor and see every course in it on one page, in prerequisite order, with what each course needs and what it leads to.</p>
+
+    <h3>How to read the map</h3>
+    <ul>
+      <li><strong>Steps.</strong> The required courses, and the courses from other departments they need, are in rows called steps. A course's prerequisites are in earlier steps. Steps are an order, not a schedule, so they work whether you started as a freshman, transferred or switched majors.</li>
+      <li><strong>Electives</strong> are listed under the steps, one block per elective list, with the rule for that list (for example "complete at least 6").</li>
+      <li><strong>Point at or click a course.</strong> Amber arrows lead to it from everything it needs, all the way back. Blue arrows lead from it to what it unlocks. Everything else fades. Clicking also opens the course's details: prerequisites in full and in the catalog's own words.</li>
+      <li><strong>Getting back:</strong> press <kbd>Esc</kbd> or the panel's Close button to go back to the whole map. Back in the panel returns to the course you looked at before. "All majors and minors" returns to the list.</li>
+      <li><strong>Mark courses as taken</strong> and the ones you can take next get a green outline.</li>
+    </ul>
+
+    <h3>The colors</h3>
+    <ul class="key">
+      <li><span class="swatch required"></span>Required</li>
+      <li><span class="swatch choice"></span>Required, but you pick one of a few</li>
+      <li><span class="swatch elective"></span>Elective</li>
+      <li><span class="swatch outside"></span>From another department, needed first</li>
+      <li><span class="swatch inactive"></span>Listed in the catalog but not offered now</li>
+      <li><span class="swatch taken"></span>You've marked it taken</li>
+      <li><span class="swatch ready"></span>You can take it next</li>
+    </ul>
+
+    <h3>Your marks stay on your device</h3>
+    <p>Courses you mark as taken are saved in your browser on this device only. They're never sent anywhere, and the site has no accounts and no analytics. Clearing your browser's data, or using a private window, removes the marks.</p>
+
+    <h3>Sharing and saving</h3>
+    <p>The address bar names the program and the course you've selected, so you can copy it and send it. The site is also available as one file that opens in any browser, even offline.</p>
+
+    <h3>Where the data comes from</h3>
+    <p>Everything comes from the <a href="https://catalog.ucsb.edu/" target="_blank" rel="noopener">UCSB General Catalog</a>: the course list, each course's prerequisites, and each program's requirements. Course prerequisites are written in plain English in the catalog, so a program reads them into "all of" and "one of" rules. Program requirements are copied from the catalog's structured lists.</p>
+
+    <h3>What it can't check</h3>
+    <ul>
+      <li><strong>Grades.</strong> "C or better" is shown, but marking a course taken assumes you met the grade.</li>
+      <li><strong>Conditions</strong> like class standing, major restrictions or instructor approval are listed, not checked. ECE 139, for example, has no course prerequisites in the catalog, only "open to EE and CE majors", so it sits with the other upper-division core courses.</li>
+      <li><strong>Rules written as notes</strong> (for example "a maximum of 4 units of 199 courses") appear as text in the panel.</li>
+      <li><strong>Some programs have no map.</strong> The catalog doesn't list course requirements for College of Creative Studies majors, the individual major or Undeclared.</li>
+      <li><strong>Unclear wording.</strong> When the catalog mixes "and" and "or" without punctuation, the panel says the reading is a best guess and shows the original wording.</li>
+    </ul>
+
+    <h3>An unofficial student project</h3>
+    <p>It isn't made or endorsed by UC Santa Barbara. Requirements change, and the catalog is the official source. Confirm your plan with your department advisor.</p>
+  </dialog>
+
   <script src="app.js"></script>
 </body>
 </html>

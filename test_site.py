@@ -9,28 +9,28 @@ If port 8000 is taken by something else, pick another number for both:
     py test_site.py 8765
 
 What it checks:
-  1. The front page loads, and the major picker shows the full list even
-     after a major has been chosen.
+  1. The front page lists every major and minor, and hides the empty panel.
   2. Every major in data/majors.json:
-       - shows each current course of the major exactly once (in its own
-         box, a shared "one of" box, or a folded elective list)
-       - draws every box, with no two boxes overlapping
-       - every arrow points left to right (a course is always to the right
-         of the courses it needs)
-       - clicking a box fills the side panel, with no JavaScript errors
-  3. The plan's "done when" test: on Economics, find MATH 3A and see
-     what it unlocks.
-  4. The Show checkboxes hide and show the right courses.
-  5. Folded elective lists open, unfold onto the map and fold back.
-  6. "Find a course" works for a course folded inside a list.
-  7. Mark as taken: taken and "can take next" boxes change, and the marks
-     survive a page reload.
+       - shows each current course of the major exactly once; any other box
+         is a course from another department that the major needs
+       - steps are in order: a course's required prerequisites are in an
+         earlier step (or the same step, if they can be taken at the same time)
+       - nothing is wider than the screen (no sideways scrolling)
+       - clicking a course fills the panel and draws its arrows, with no
+         JavaScript errors
+  3. Computer Engineering: ECE 139 is with the upper-division core (same step
+     as ECE 152A), and ECE 152A's arrows from ECE 15A and ECE 10A are solid.
+  4. Getting around: hovering previews a course; clicking empty space, Esc and
+     Close clear it; Back returns to the course before; "All majors and
+     minors" returns to the front page.
+  5. The Show checkboxes, "Find a course", and Mark as taken (survives a reload).
+  6. Links: the address follows the selected course and a course link opens
+     it; programs with no map and unknown addresses show a notice.
+  7. The About box and the 404 page.
   8. On a phone-sized screen, selecting a course opens the bottom sheet and
      keeps the course visible above it.
-  9. Part 7: the front page lists every major and minor; programs with no
-     course list, and unknown addresses, show a notice instead of a map; the
-     address bar follows the selected course and a course link opens it;
-     a minor's panel says "minor"; the About and 404 pages load.
+  9. The single-file version (site/ucsb-prereq-map.html, from build_single.py)
+     works when opened straight from the disk.
 
 Needs Playwright, a browser-automation library (one-time setup):
     py -m pip install playwright
@@ -38,11 +38,14 @@ Needs Playwright, a browser-automation library (one-time setup):
 """
 
 import json
+import os
+import pathlib
 import sys
 
 from playwright.sync_api import sync_playwright
 
 SITE = "http://localhost:%s/" % (sys.argv[1] if len(sys.argv) > 1 else "8000")
+SINGLE_FILE = pathlib.Path("site", "ucsb-prereq-map.html").resolve()
 passed = 0
 failed = 0
 
@@ -56,8 +59,12 @@ def check(name, condition, detail=""):
         print("FAIL: %s %s" % (name, detail))
 
 
-def box(page, box_id):
-    return page.locator('[data-box="%s"]' % box_id)
+def box(page, code):
+    return page.locator('.box[data-code="%s"]' % code)
+
+
+def classes(page, code):
+    return box(page, code).get_attribute("class") or ""
 
 
 def find_course(page, code):
@@ -66,10 +73,34 @@ def find_course(page, code):
     page.wait_for_timeout(250)
 
 
-def open_major(page, stem, major_id):
-    page.goto(SITE + "#" + stem)
+def open_major(page, base, stem, major_id):
+    page.goto(base + "#" + stem)
     page.wait_for_function("id => graph && graph.major.id === id && document.querySelectorAll('.box').length > 0",
-                           arg=major_id, timeout=10000)
+                           arg=major_id, timeout=15000)
+
+
+def new_page(browser, **options):
+    page = browser.new_page(**options)
+    page.errors = []
+    page.on("pageerror", lambda e: page.errors.append(str(e)))
+    # Skip downloading the web font: not needed for the test, and slow.
+    page.route("**/fonts.googleapis.com/**", lambda route: route.abort())
+    page.route("**/fonts.gstatic.com/**", lambda route: route.abort())
+    return page
+
+
+# Run in the page: courses whose required prerequisite is in a later step.
+STEP_ORDER = """() => {
+    const wrong = [];
+    for (const code of Object.keys(stepOf)) {
+        for (const p of prereqsOnMap(code)) {
+            if (p.type !== 'required' || !stepOf[p.from]) continue;
+            const ok = p.concurrent ? stepOf[p.from] <= stepOf[code] : stepOf[p.from] < stepOf[code];
+            if (!ok) wrong.push(p.from + ' -> ' + code);
+        }
+    }
+    return wrong;
+}"""
 
 
 def main():
@@ -81,17 +112,12 @@ def main():
 
     with sync_playwright() as p:
         browser = p.chromium.launch()
-        page = browser.new_page(viewport={"width": 1400, "height": 900})
-        errors = []
-        page.on("pageerror", lambda e: errors.append(str(e)))
-        # Skip downloading the web font: not needed for the test, and slow.
-        page.route("**/fonts.googleapis.com/**", lambda route: route.abort())
-        page.route("**/fonts.gstatic.com/**", lambda route: route.abort())
+        page = new_page(browser, viewport={"width": 1400, "height": 900})
 
-        # 1. Front page and the major picker
+        # 1. Front page
         page.goto(SITE)
         page.wait_for_timeout(400)
-        check("front page shows the 'pick a major' message", page.is_visible("#empty"))
+        check("front page shows the 'pick a major' message", page.is_visible("#welcome"))
         check("front page hides the empty course panel", not page.is_visible("#panel"))
         check("major picker has every major and minor",
               page.evaluate("document.querySelectorAll('#major-list option').length") == len(listed))
@@ -99,7 +125,7 @@ def main():
             expected = sum(m["kind"] == kind for m in listed)
             shown = page.locator("#browse-%ss li" % kind).count()
             check("front page lists all %d %ss" % (expected, kind), shown == expected, "%d listed" % shown)
-        open_major(page, "economics-ba", "BAECON")
+        open_major(page, SITE, "economics-ba", "BAECON")
         page.focus("#major-input")
         check("clicking into a filled-in picker empties it, so the full list shows",
               page.input_value("#major-input") == "")
@@ -110,169 +136,207 @@ def main():
         # 2. Every major
         for major in majors:
             stem = major["file"][:-5]
-            errors.clear()
-            open_major(page, stem, major["id"])
+            page.errors.clear()
+            open_major(page, SITE, stem, major["id"])
             with open("site/data/" + major["file"], encoding="utf-8") as f:
                 graph = json.load(f)
-            expected = sorted(n["id"] for n in graph["nodes"]
-                              if n["status"] == "active" and n["role"] != "prerequisite")
-            shown = sorted(page.evaluate("Object.keys(standIn)"))
+            expected = sorted(n["id"] for n in graph["nodes"] if n["status"] == "active" and n["in_major"])
+            boxes = page.evaluate("[...document.querySelectorAll('.box[data-code]')].map(b => b.dataset.code)")
+            in_major = sorted(code for code in boxes if code in set(expected))
+            extra = [code for code in boxes if code not in set(expected)]
+            roles = {n["id"]: n["role"] for n in graph["nodes"]}
             check("%s: shows each of its %d current courses exactly once" % (stem, len(expected)),
-                  shown == expected, "%d shown" % len(shown))
+                  in_major == expected, "%d shown" % len(in_major))
+            check("%s: every other box is a course it needs from another department" % stem,
+                  all(roles.get(code) == "prerequisite" for code in extra), extra[:5])
+            wrong = page.evaluate(STEP_ORDER)
+            check("%s: every required prerequisite is in an earlier step" % stem, not wrong, wrong[:5])
+            check("%s: no sideways scrolling" % stem,
+                  page.evaluate("el.map.scrollWidth <= el.map.clientWidth + 1"))
 
-            result = page.evaluate("""() => {
-                const list = Object.values(boxes);
-                const drawn = document.querySelectorAll('.box').length;
-                let overlaps = 0;
-                for (let i = 0; i < list.length; i++) for (let j = i + 1; j < list.length; j++) {
-                    const a = list[i], b = list[j];
-                    if (a.x < b.x + BOX_WIDTH && b.x < a.x + BOX_WIDTH && a.y < b.y + b.height && b.y < a.y + a.height) overlaps++;
-                }
-                const backwards = arrows.filter(a => !(boxes[a.from].x < boxes[a.to].x)).length;
-                const dangling = arrows.filter(a => !boxes[a.from] || !boxes[a.to]).length;
-                return [list.length, drawn, overlaps, backwards, dangling];
-            }""")
-            total, drawn, overlaps, backwards, dangling = result
-            check("%s: draws all %d boxes" % (stem, total), drawn == total, "drew %d" % drawn)
-            check("%s: no two boxes overlap" % stem, overlaps == 0, "%d overlaps" % overlaps)
-            check("%s: every arrow points left to right" % stem, backwards == 0, "%d backwards" % backwards)
-            check("%s: every arrow connects two boxes" % stem, dangling == 0)
+            if boxes:
+                last = boxes[-1]
+                box(page, last).click()
+                page.wait_for_timeout(80)
+                check("%s: clicking a course fills the panel" % stem, page.inner_text("#panel-body h2").strip() == last)
+                arrows = page.evaluate("document.querySelectorAll('.arrow').length")
+                expected_arrows = page.evaluate("code => prereqsOnMap(code).length + unlocksOf(code).length", last)
+                check("%s: its arrows are drawn" % stem, arrows >= expected_arrows, "%d < %d" % (arrows, expected_arrows))
+            check("%s: no JavaScript errors" % stem, not page.errors, page.errors)
 
-            first = page.evaluate("document.querySelector('.box').dataset.box")
-            box(page, first).click()
-            page.wait_for_timeout(100)
-            check("%s: clicking a box fills the panel" % stem, page.inner_text("#panel-body h2").strip() != "")
-            check("%s: no JavaScript errors" % stem, not errors, errors)
+        # 3. Computer Engineering
+        open_major(page, SITE, "computer-engineering-bs", "BSCMPEN")
+        steps = page.evaluate("[stepOf['ECE 139'], stepOf['ECE 152A'], stepOf['ECE 15A']]")
+        check("CE: ECE 139 is in the same step as ECE 152A, not step 1", steps[0] == steps[1] and steps[0] > 1, steps)
+        box(page, "ECE 152A").click()
+        page.wait_for_timeout(150)
+        solid = page.evaluate("prereqsOnMap('ECE 152A').filter(p => p.type === 'required').map(p => p.from)")
+        check("CE: ECE 152A's arrows from ECE 15A and ECE 10A are solid",
+              "ECE 15A" in solid and "ECE 10A" in solid, solid)
+        check("CE: ECE 152A shows ECE 10A as needed", "needs" in classes(page, "ECE 10A"))
+        check("CE: ECE 152A's chain reaches back to MATH 4A", "needs" in classes(page, "MATH 4A"))
+        check("CE: ECE 152A shows ECE 154A as unlocked", "unlocks" in classes(page, "ECE 154A"))
+        check("CE: MATH 4A (needed by ECE 10A) is on the map", box(page, "MATH 4A").count() == 1)
 
-        # 3. The plan's test: what does MATH 3A unlock in Economics?
-        open_major(page, "economics-ba", "BAECON")
-        find_course(page, "MATH 3A")
-        panel = page.inner_text("#panel-body")
-        check("Economics: the panel shows MATH 3A", panel.startswith("MATH 3A"))
-        for code in ("MATH 3B", "ECON 10A"):
-            check("Economics: MATH 3A's panel says it unlocks %s" % code, code in panel.split("Unlocks")[1])
-        check("Economics: ECON 10A's box is highlighted as unlocked",
-              "unlocks" in box(page, "ECON 10A").get_attribute("class"))
+        # 4. Getting around
+        page.click(".row-label >> nth=0")
+        page.wait_for_timeout(100)
+        check("clicking empty space clears the selection", page.evaluate("selected") is None and
+              not page.evaluate("el.stage.classList.contains('focused')"))
+        box(page, "ECE 15A").click()
+        box(page, "ECE 152A").click()
+        box(page, "ECE 154A").click()
+        page.wait_for_timeout(100)
+        check("panel shows a Back button naming the course before", "Back to ECE 152A" in page.inner_text(".panel-nav"))
+        page.click("[data-back]")
+        page.wait_for_timeout(100)
+        check("Back returns to ECE 152A", page.evaluate("selected") == "ECE 152A")
+        page.click("[data-back]")
+        page.wait_for_timeout(100)
+        check("Back again returns to ECE 15A", page.evaluate("selected") == "ECE 15A")
+        page.keyboard.press("Escape")
+        page.wait_for_timeout(100)
+        check("Esc clears the selection", page.evaluate("selected") is None)
+        check("Esc puts the address back to the major", page.evaluate("location.hash") == "#computer-engineering-bs")
+        box(page, "ECE 10A").click()
+        page.click("[data-close]")
+        page.wait_for_timeout(100)
+        check("Close clears the selection", page.evaluate("selected") is None and
+              page.inner_text("#panel-body h2") == "Computer Engineering - BS")
+        box(page, "CMPSC 130A").hover()
+        page.wait_for_timeout(100)
+        check("hovering previews a course's chain",
+              page.evaluate("el.stage.classList.contains('focused') && document.querySelectorAll('.arrow').length > 0"))
+        page.mouse.move(700, 20)
+        page.wait_for_timeout(250)
+        check("moving away from it clears the preview", not page.evaluate("el.stage.classList.contains('focused')"))
+        box(page, "ECE 10A").click()
+        box(page, "CMPSC 130A").hover()
+        page.mouse.move(700, 20)
+        page.wait_for_timeout(250)
+        check("after a preview, the clicked course is back", "selected" in classes(page, "ECE 10A"))
+        page.click("#all-link")
+        page.wait_for_timeout(300)
+        check("'All majors and minors' goes back to the front page",
+              page.is_visible("#welcome") and page.locator(".box").count() == 0)
 
-        # 4. Show checkboxes
+        # 5. Show checkboxes, Find a course, Mark as taken (Economics)
+        open_major(page, SITE, "economics-ba", "BAECON")
         page.uncheck("#show-electives")
         page.wait_for_timeout(150)
-        check("unchecking Electives hides electives and elective lists",
-              page.locator(".role-elective, .kind-group").count() == 0)
+        check("unchecking Electives hides electives", page.locator(".role-elective").count() == 0)
         page.check("#show-electives")
+        before = page.locator(".box").count()
         page.check("#show-outside")
         page.wait_for_timeout(150)
-        check("checking 'courses from other majors' shows them (MATH 4A)", box(page, "MATH 4A").count() == 1)
+        check("'Every outside course' adds more courses", page.locator(".box").count() > before)
         page.uncheck("#show-outside")
         page.check("#show-inactive")
         page.wait_for_timeout(150)
-        check("checking 'not offered now' adds inactive courses (ECON 141)",
-              page.evaluate("'ECON 141' in standIn"))
+        check("'Courses not offered now' adds ECON 141", box(page, "ECON 141").count() == 1)
         page.uncheck("#show-inactive")
-
-        # 5. Folded elective lists (Economics area D)
-        group = page.evaluate("Object.keys(boxes).find(id => boxes[id].kind === 'group' && boxes[id].courses.includes('ECON 100C'))")
-        check("Economics: area D is folded into one box", bool(group))
-        check("Economics: ECON 100C isn't its own box while folded", box(page, "ECON 100C").count() == 0)
-        box(page, group).click()
-        check("clicking the list box shows its rule", "at least 6" in page.inner_text("#panel-body"))
-        page.click("[data-unfold]")
-        page.wait_for_timeout(200)
-        check("'Show these courses on the map' unfolds the list", box(page, "ECON 100C").count() == 1)
-        page.click("[data-fold]")
-        page.wait_for_timeout(200)
-        check("'Fold back' folds it again", box(page, "ECON 100C").count() == 0)
-
-        # 6. Find a course that's folded inside a list
         find_course(page, "ECON 171")
-        check("finding ECON 171 unfolds its list and selects it",
-              box(page, "ECON 171").count() == 1 and "selected" in box(page, "ECON 171").get_attribute("class"))
+        check("finding ECON 171 selects it", "selected" in classes(page, "ECON 171"))
+        find_course(page, "ECON 10A")
+        panel = page.inner_text("#panel-body")
+        check("Economics: ECON 10A's panel names what it needs", "MATH" in panel.split("Needs")[1].split("Unlocks")[0])
 
-        # 7. Mark as taken
         page.evaluate("localStorage.clear()")
         page.reload()
-        open_major(page, "economics-ba", "BAECON")
+        open_major(page, SITE, "economics-ba", "BAECON")
         box(page, "ECON 1").click()
         page.click("[data-taken]")
         page.wait_for_timeout(150)
-        check("marking ECON 1 taken marks its box", "taken" in box(page, "ECON 1").get_attribute("class"))
-        check("ECON 2 (needs only ECON 1) becomes 'can take next'", "ready" in box(page, "ECON 2").get_attribute("class"))
-        check("ECON 10A (needs more than ECON 1) does not",
-              "ready" not in box(page, "ECON 10A").get_attribute("class"))
+        check("marking ECON 1 taken marks its box", "taken" in classes(page, "ECON 1"))
+        check("ECON 2 (needs only ECON 1) becomes 'can take next'", "ready" in classes(page, "ECON 2"))
+        check("ECON 10A (needs more than ECON 1) does not", "ready" not in classes(page, "ECON 10A"))
         page.reload()
-        open_major(page, "economics-ba", "BAECON")
-        check("the mark survives a page reload", "taken" in box(page, "ECON 1").get_attribute("class"))
+        open_major(page, SITE, "economics-ba", "BAECON")
+        check("the mark survives a page reload", "taken" in classes(page, "ECON 1"))
         page.click("#clear-taken")
         page.wait_for_timeout(150)
-        check("'Clear all marks' removes it", "taken" not in box(page, "ECON 1").get_attribute("class"))
+        check("'Clear all marks' removes it", "taken" not in classes(page, "ECON 1"))
 
-        # 9. Part 7
-        # The address bar follows the selection...
+        # 6. Links and notices
         box(page, "ECON 10A").click()
         page.wait_for_timeout(100)
         check("selecting a course puts it in the address", page.evaluate("location.hash") == "#economics-ba/ECON+10A",
               page.evaluate("location.hash"))
-        page.evaluate("clearSelection()")
-        check("clearing the selection takes it back out", page.evaluate("location.hash") == "#economics-ba")
-        # ...and a link with a course opens straight to it, even from another page.
-        page.goto(SITE + "about.html")
+        page.goto(SITE + "404.html")
         page.goto(SITE + "#statistics-and-data-science-bs/PSTAT+120B")
-        page.wait_for_function("selectedCourse === 'PSTAT 120B'", timeout=10000)
+        page.wait_for_function("selected === 'PSTAT 120B'", timeout=15000)
         check("a course link opens the major with that course selected",
-              page.inner_text("#panel-body h2").strip() == "PSTAT 120B" and
-              "selected" in box(page, "PSTAT 120B").get_attribute("class"))
+              page.inner_text("#panel-body h2").strip() == "PSTAT 120B" and "selected" in classes(page, "PSTAT 120B"))
         check("the copy-link button is in the course panel", page.locator("[data-copy-link]").count() == 1)
-
-        # A program with no course list shows a notice and no map.
         ccs = next(m for m in no_map if "Creative Studies" in m["name"])
         page.goto(SITE + "#" + ccs["file"][:-5])
         page.wait_for_timeout(300)
         check("no-list program: notice is shown", page.is_visible("#notice") and "no map" in page.inner_text("#notice"))
         check("no-list program: it links to the catalog", page.locator("#notice a[href*='catalog.ucsb.edu']").count() == 1)
-        check("no-list program: the old map is cleared", page.locator(".box").count() == 0)
-        check("no-list program: the course panel is hidden", not page.is_visible("#panel"))
-        check("no-list program: the picker shows its name", page.input_value("#major-input") == ccs["name"])
-
-        # An address that matches nothing.
+        check("no-list program: no map and no panel", page.locator(".box").count() == 0 and not page.is_visible("#panel"))
         page.goto(SITE + "#geological-sciences-bs")
         page.wait_for_timeout(300)
         check("unknown address: 'no map at that address' notice",
               page.is_visible("#notice") and "No map at that address" in page.inner_text("#notice"))
-        page.goto(SITE + "#")
-        page.wait_for_timeout(300)
-        check("empty address: back to the welcome text", page.is_visible("#welcome") and not page.is_visible("#notice"))
-
-        # A minor's panel says "minor".
         minor = next(m for m in majors if m["kind"] == "minor" and m["courses_in_major"] > 3)
-        open_major(page, minor["file"][:-5], minor["id"])
-        course = page.evaluate("Object.keys(boxes).find(id => boxes[id].kind === 'course')")
-        box(page, course).click()
+        open_major(page, SITE, minor["file"][:-5], minor["id"])
+        page.locator(".box[data-code]").first.click()
         page.wait_for_timeout(100)
-        check("minor: the panel says 'In this minor'", "In this minor" in page.inner_text("#panel-body"))
+        check("minor: the panel says 'in this minor'", "in this minor" in page.inner_text("#panel-body"))
 
-        # About and 404 pages.
-        response = page.goto(SITE + "about.html")
-        check("About page loads", response.ok and page.inner_text("h2") == "About this site")
+        # 7. About box and 404
+        page.click("#about-button")
+        check("About opens", page.is_visible("#about") and "About this site" in page.inner_text("#about h2"))
+        page.keyboard.press("Escape")
+        page.wait_for_timeout(100)
+        check("Esc closes About", not page.is_visible("#about"))
         response = page.goto(SITE + "404.html")
         check("404 page loads", response.ok and page.inner_text("h2") == "Page not found")
-        check("no JavaScript errors in the Part 7 checks", not errors, errors)
+        check("no JavaScript errors in sections 3-7", not page.errors, page.errors)
         browser.close()
 
         # 8. Phone-sized screen
         browser = p.chromium.launch()
-        phone = browser.new_page(viewport={"width": 390, "height": 844}, is_mobile=True, has_touch=True)
-        phone.route("**/fonts.googleapis.com/**", lambda route: route.abort())
-        open_major(phone, "statistics-and-data-science-bs", "BSSTSDS")
+        phone = new_page(browser, viewport={"width": 390, "height": 844}, is_mobile=True, has_touch=True)
+        open_major(phone, SITE, "statistics-and-data-science-bs", "BSSTSDS")
         check("phone: the sheet starts closed", not phone.evaluate("el.panel.classList.contains('open')"))
+        check("phone: no sideways scrolling", phone.evaluate("document.documentElement.scrollWidth <= window.innerWidth"))
         phone.evaluate("selectCourse('PSTAT 120B', true)")
-        phone.wait_for_timeout(800)
+        phone.wait_for_timeout(900)
         check("phone: selecting a course opens the sheet", phone.evaluate("el.panel.classList.contains('open')"))
         box_bottom, sheet_top = phone.evaluate("""() => [
-            document.querySelector('[data-box="PSTAT 120B"]').getBoundingClientRect().bottom,
+            document.querySelector('.box[data-code="PSTAT 120B"]').getBoundingClientRect().bottom,
             el.panel.getBoundingClientRect().top]""")
         check("phone: the selected course stays visible above the sheet", box_bottom < sheet_top,
               "%d vs %d" % (box_bottom, sheet_top))
+        check("phone: no JavaScript errors", not phone.errors, phone.errors)
         browser.close()
+
+        # 9. The single file, opened from the disk
+        if not SINGLE_FILE.exists():
+            check("single file exists (run py build_single.py)", False)
+        else:
+            browser = p.chromium.launch()
+            page = new_page(browser, viewport={"width": 1400, "height": 900})
+            url = SINGLE_FILE.as_uri()
+            page.goto(url)
+            page.wait_for_timeout(1500)
+            check("single file: picker has every major and minor",
+                  page.evaluate("document.querySelectorAll('#major-list option').length") == len(listed))
+            check("single file: no download link to itself", not page.is_visible("#footer-download"))
+            open_major(page, url, "computer-engineering-bs", "BSCMPEN")
+            check("single file: CE shows MATH 4A and ECE 139",
+                  box(page, "MATH 4A").count() == 1 and box(page, "ECE 139").count() == 1)
+            box(page, "ECE 152A").click()
+            page.wait_for_timeout(150)
+            check("single file: clicking shows the course", page.inner_text("#panel-body h2") == "ECE 152A")
+            check("single file: course descriptions are there",
+                  page.locator("#panel-body details").count() == 1)
+            page.click("#all-link")
+            page.wait_for_timeout(300)
+            check("single file: 'All majors and minors' works", page.is_visible("#welcome"))
+            check("single file: no JavaScript errors", not page.errors, page.errors)
+            browser.close()
 
     print("%d checks passed, %d failed" % (passed, failed))
     sys.exit(1 if failed else 0)

@@ -4,7 +4,7 @@ A tool that draws the prerequisite map for any UCSB major or minor, built from t
 
 **Live at https://andrew-hanzhou-li.github.io/ucsb-prereq-map/**
 
-**Status:** Parts 1–7 done (data, prerequisite parser, major requirements, graph, website, mark-as-taken and mobile, launch with minors). Next: test with classmates (end of `PART7.md`).
+**Status:** Parts 1–8 done (data, prerequisite parser, major requirements, graph, website, mark-as-taken and mobile, launch with minors, flowchart layout and single-file version). Next: test with classmates (end of `PART7.md`).
 
 ## Project map
 
@@ -16,7 +16,8 @@ A tool that draws the prerequisite map for any UCSB major or minor, built from t
 | 4 | One ready-to-draw graph per major | `build_graph.py`, `test_graph.py` → `site/data/` | `PART4.md` |
 | 5 | The website | `site/index.html`, `site/style.css`, `site/app.js`, `test_site.py` | `PART5.md` |
 | 6 | Mark as taken, folded elective lists, phone layout; map redesigned (relative layout with dagre, sharp HTML text) | same files, plus `site/lib/dagre.min.js` | `PART6.md` |
-| 7 | Minors, retired programs left out, front-page lists, links to a course, About and 404 pages | same files, plus `site/about.html`, `site/404.html` | `PART7.md` |
+| 7 | Minors, retired programs left out, front-page lists, links to a course, About and 404 pages | same files, plus `site/404.html` | `PART7.md` |
+| 8 | Flowchart layout (every course, in steps; arrows on hover or click), Back/Close/Esc, the whole site as one file | same files, plus `build_single.py` → `site/ucsb-prereq-map.html` | `PART8.md` |
 
 To rebuild everything from scratch (Windows):
 
@@ -28,7 +29,10 @@ py build_majors.py
 py build_graph.py
 py measure.py --quiet
 py test_graph.py
+py build_single.py
 ```
+
+`build_single.py` makes `site/ucsb-prereq-map.html`, the whole site in one file. Run it after changing anything in `site/`.
 
 To see the site, run `py -m http.server 8000 --directory site` and open http://localhost:8000. If port 8000 is already in use, use another number, such as 8765.
 
