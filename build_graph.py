@@ -337,6 +337,7 @@ def build_major(major, prereqs, catalog):
         "major": {
             "id": major["id"],
             "name": major["name"],
+            "kind": major["kind"],
             "catalog_year": major["catalog_year"],
             "source": major["source"],
             "sections": major["sections"],
@@ -417,13 +418,19 @@ def main():
     with open("raw_courses.json", encoding="utf-8") as f:
         catalog = {c["code"]: c for c in json.load(f)["courses"]}
     with open(os.path.join(MAJORS_DIR, "index.json"), encoding="utf-8") as f:
-        index = [m for m in json.load(f)["majors"] if m["structured"]]
+        everything = json.load(f)["majors"]
+    index = [m for m in everything if m["structured"]]
 
     wanted = [a.removesuffix(".json") for a in sys.argv[1:]]
     if wanted:
         index = [m for m in index if m["file"][:-5] in wanted]
 
     os.makedirs(OUTPUT_DIR, exist_ok=True)
+    if not wanted:
+        # Start clean, so graphs for programs that were retired don't linger.
+        for old in os.listdir(OUTPUT_DIR):
+            if old.endswith(".json"):
+                os.remove(os.path.join(OUTPUT_DIR, old))
     listing = []
     for entry in index:
         with open(os.path.join(MAJORS_DIR, entry["file"]), encoding="utf-8") as f:
@@ -431,20 +438,30 @@ def main():
         graph = build_major(major, prereqs, catalog)
         with open(os.path.join(OUTPUT_DIR, entry["file"]), "w", encoding="utf-8") as f:
             json.dump(graph, f, ensure_ascii=False, separators=(",", ":"))
-        listing.append({"id": entry["id"], "name": entry["name"], "file": entry["file"],
-                        **graph["stats"]})
+        listing.append({"id": entry["id"], "name": entry["name"], "kind": entry["kind"],
+                        "file": entry["file"], "structured": True, **graph["stats"]})
+    built = list(listing)
 
     if not wanted:
+        # Programs with no course list still go in the picker, so the site can
+        # say why there's no map instead of leaving them out silently.
+        for entry in everything:
+            if not entry["structured"]:
+                listing.append({"id": entry["id"], "name": entry["name"], "kind": entry["kind"],
+                                "file": entry["file"], "structured": False, "source": entry["source"]})
         with open(os.path.join(OUTPUT_DIR, "majors.json"), "w", encoding="utf-8") as f:
             json.dump({"majors": sorted(listing, key=lambda m: m["name"])}, f, indent=1, ensure_ascii=False)
 
-    print("Built %d major graph(s) in %s" % (len(listing), OUTPUT_DIR))
-    for m in listing[:10] if len(listing) <= 10 else []:
+    print("Built %d graph(s) in %s (%d majors, %d minors)" % (
+        len(built), OUTPUT_DIR, sum(m["kind"] == "major" for m in built), sum(m["kind"] == "minor" for m in built)))
+    if len(listing) > len(built):
+        print("Listed %d more with no course list in the catalog" % (len(listing) - len(built)))
+    for m in built[:10] if len(built) <= 10 else []:
         print("  %-45s %3d courses + %2d outside, %3d edges, %2d columns" % (
             m["name"], m["courses_in_major"], m["outside_prerequisites"], m["edges"], m["columns"]))
 
     loops = []
-    for m in listing:
+    for m in built:
         with open(os.path.join(OUTPUT_DIR, m["file"]), encoding="utf-8") as f:
             for cycle in json.load(f)["loops"]:
                 if cycle not in loops:

@@ -2,9 +2,12 @@
   app.js: the UCSB Prerequisite Map website.
 
   What happens, in order:
-    1. Load the list of majors (data/majors.json) into the major picker.
-    2. When a major is picked, load its graph (data/<major>.json, built by
-       build_graph.py in Part 4).
+    1. Load the list of majors and minors (data/majors.json) into the picker
+       and the lists on the front page.
+    2. When one is picked, load its graph (data/<major>.json, built by
+       build_graph.py in Part 4). The address bar remembers the program and
+       the selected course (#economics-ba/ECON+10A), so any view can be
+       shared as a link. "Major" in the code below means major or minor.
     3. Decide which boxes to draw. To keep the map readable:
          - interchangeable courses ("MATH 2A or 3A") share one box,
          - long elective lists fold into one box,
@@ -43,15 +46,17 @@ const ROLE_NAMES = {
   required: "Required",
   choice: "Required (pick one of a few)",
   elective: "Elective",
-  prerequisite: "Not in this major, but needed for a course that is",
+  prerequisite: "Not in this program, but needed for a course that is",
 };
 
 // ===========================================================================
 // State
 // ===========================================================================
 
-let majors = [];            // from data/majors.json
+let majors = [];            // from data/majors.json (majors and minors)
+let currentMajor = null;    // the entry from majors.json that's on the map
 let graph = null;           // the loaded major's graph file
+let loading = 0;            // counts loads, so a slow one can't replace a newer one
 let nodesById = {};         // course code -> course from the graph file
 let taken = loadTaken();    // course codes marked as taken (shared by all majors)
 let expanded = new Set();   // elective lists the user unfolded on this major
@@ -77,6 +82,10 @@ const el = {
   stage: document.getElementById("stage"),
   zoomControls: document.getElementById("zoom-controls"),
   empty: document.getElementById("empty"),
+  notice: document.getElementById("notice"),
+  welcome: document.getElementById("welcome"),
+  browseMajors: document.getElementById("browse-majors"),
+  browseMinors: document.getElementById("browse-minors"),
   legend: document.getElementById("legend"),
   panel: document.getElementById("panel"),
   panelHandle: document.getElementById("panel-handle"),
@@ -93,14 +102,21 @@ const el = {
 // ===========================================================================
 
 async function start() {
-  const response = await fetch("data/majors.json");
-  majors = (await response.json()).majors;
+  try {
+    const response = await fetch("data/majors.json");
+    majors = (await response.json()).majors;
+  } catch (error) {
+    showNotice("<h2>The list of majors didn't load</h2>" +
+               "<p>Check your internet connection, then refresh the page.</p>");
+    return;
+  }
 
   for (const major of majors) {
     const option = document.createElement("option");
     option.value = major.name;
     el.majorList.appendChild(option);
   }
+  fillBrowseLists();
 
   el.majorInput.addEventListener("change", function () {
     const major = majors.find(m => m.name.toLowerCase() === el.majorInput.value.trim().toLowerCase());
@@ -123,8 +139,8 @@ async function start() {
     box.addEventListener("change", function () { draw(); });
   }
 
-  // The address bar remembers the major (#economics-ba), so a map can be
-  // shared as a link and the back button works.
+  // The address bar remembers the major and course (#economics-ba/ECON+10A),
+  // so a map can be shared as a link and the back button works.
   window.addEventListener("hashchange", loadFromHash);
   loadFromHash();
 
@@ -154,12 +170,155 @@ function stem(fileName) {
   return fileName.replace(/\.json$/, "");
 }
 
+// The front page's lists of every major and minor.
+function fillBrowseLists() {
+  for (const kind of ["major", "minor"]) {
+    const list = kind === "major" ? el.browseMajors : el.browseMinors;
+    const items = majors.filter(m => m.kind === kind);
+    list.innerHTML = items.map(function (m) {
+      const name = kind === "minor" ? m.name.replace(/\s*-\s*Minor\s*$/, "") : m.name;
+      return '<li><a href="#' + escapeHtml(stem(m.file)) + '">' + escapeHtml(name) + "</a>" +
+             (m.structured ? "" : ' <span class="note">(no map)</span>') + "</li>";
+    }).join("");
+    document.getElementById("browse-" + kind + "s-title").textContent =
+      (kind === "major" ? "Majors" : "Minors") + " (" + items.length + ")";
+  }
+}
+
+/*
+  The address: "#economics-ba" is a major; "#economics-ba/ECON+10A" is a
+  major with a course selected ("+" stands for the space in a course code).
+*/
+function readHash() {
+  let raw = "";
+  try {
+    raw = decodeURIComponent(location.hash.slice(1));
+  } catch (error) {
+    // A mangled link: treat it as no address.
+  }
+  const slash = raw.indexOf("/");
+  if (slash < 0) return { stem: raw, course: null };
+  return { stem: raw.slice(0, slash), course: raw.slice(slash + 1).replace(/\+/g, " ").toUpperCase() || null };
+}
+
+function hashFor(major, code) {
+  return "#" + stem(major.file) + (code ? "/" + code.replace(/ /g, "+") : "");
+}
+
+// Keep the address bar in step with the selection, so copying it shares this
+// exact view. replaceState changes the address without adding a Back step
+// for every click, and without firing "hashchange".
+function rememberInAddress() {
+  if (!currentMajor) return;
+  const target = hashFor(currentMajor, selectedCourse);
+  if (location.hash !== target) history.replaceState(null, "", target);
+}
+
 async function loadFromHash() {
-  const major = majors.find(m => stem(m.file) === location.hash.slice(1));
-  if (!major) return;
+  const wanted = readHash();
+  if (!wanted.stem) {
+    showHome();
+    return;
+  }
+  const major = majors.find(m => stem(m.file) === wanted.stem);
+  if (!major) {
+    showHome();
+    showNotice("<h2>No map at that address</h2>" +
+               "<p>That link doesn't match a current major or minor. The program may have been renamed or " +
+               "retired from the catalog. Pick one from the lists below.</p>");
+    return;
+  }
+  if (!major.structured) {
+    showHome();
+    el.majorInput.value = major.name;
+    showNotice(noMapMessage(major));
+    return;
+  }
+  if (!currentMajor || currentMajor.id !== major.id) {
+    if (!(await loadMajor(major))) return;
+  }
+  if (wanted.course && nodesById[wanted.course]) {
+    if (wanted.course !== selectedCourse) selectCourse(wanted.course, true);
+  } else if (selectedBox || selectedCourse) {
+    clearSelection();
+  }
+}
+
+// Programs listed in the catalog with no course list (build_majors.py).
+function noMapMessage(major) {
+  let why = "The UCSB catalog doesn't list required courses for this program, so there's nothing to map.";
+  if (/Creative Studies/.test(major.name)) {
+    why = "The UCSB catalog doesn't list required courses for College of Creative Studies programs. " +
+          'CCS describes its majors on <a href="https://ccs.ucsb.edu/" target="_blank" rel="noopener">its own site</a>.';
+  } else if (/^Undeclared/.test(major.name)) {
+    why = "Undeclared isn't a major with its own courses. Browse the majors below to see what each one takes.";
+  } else if (/^Individual/.test(major.name)) {
+    why = "An individual major is designed with an advisor, so the catalog has no fixed course list for it.";
+  }
+  return "<h2>" + escapeHtml(major.name) + "</h2><p>There's no map for this one. " + why + "</p>" +
+         '<p><a href="' + escapeHtml(major.source) + '" target="_blank" rel="noopener">See it in the UCSB catalog</a></p>';
+}
+
+// A message at the top of the front page, in place of the welcome text.
+function showNotice(html) {
+  el.notice.innerHTML = html;
+  el.notice.hidden = false;
+  el.welcome.hidden = true;
+  el.empty.hidden = false;
+  el.empty.scrollTop = 0;
+}
+
+// Back to the front page: no map, the welcome text and the lists.
+function showHome() {
+  loading += 1;           // any load still in progress is no longer wanted
+  currentMajor = null;
+  graph = null;
+  nodesById = {};
+  boxes = {};
+  standIn = {};
+  arrows = [];
+  selectedBox = null;
+  selectedCourse = null;
+  el.stage.innerHTML = "";
+  el.stage.style.width = "0px";
+  el.stage.style.height = "0px";
+  el.stage.classList.remove("focused");
+  el.courseList.innerHTML = "";
+  el.majorInput.value = "";
+  el.empty.hidden = false;
+  el.notice.hidden = true;
+  el.welcome.hidden = false;
+  el.legend.hidden = true;
+  el.zoomControls.hidden = true;
+  el.toggles.disabled = true;
+  el.courseInput.disabled = true;
+  el.footerCatalog.textContent = "Built from the UCSB General Catalog.";
+  document.title = "UCSB Prerequisite Map";
+  el.panelBody.className = "panel-empty";
+  el.panelBody.innerHTML = "<p>Click any course to see its prerequisites, what it unlocks and where it counts in the major.</p>";
+  el.panelHandle.textContent = "Course details";
+  el.panel.hidden = true;           // nothing to show until a map is open
+  closeSheet();
+}
+
+// Load a major's graph and draw it. Returns false if it didn't load.
+async function loadMajor(major) {
+  const ticket = ++loading;
   el.majorInput.value = major.name;
   el.majorInput.blur();
-  graph = await (await fetch("data/" + major.file)).json();
+  let loaded;
+  try {
+    loaded = await (await fetch("data/" + major.file)).json();
+  } catch (error) {
+    if (ticket !== loading) return false;
+    showHome();
+    showNotice("<h2>" + escapeHtml(major.name) + " didn't load</h2>" +
+               "<p>Check your internet connection, then refresh the page.</p>");
+    return false;
+  }
+  if (ticket !== loading) return false;     // another major was picked meanwhile
+  currentMajor = major;
+  graph = loaded;
 
   nodesById = {};
   for (const node of graph.nodes) nodesById[node.id] = node;
@@ -167,6 +326,8 @@ async function loadFromHash() {
   selectedCourse = null;
   expanded = new Set();
   el.empty.hidden = true;
+  el.notice.hidden = true;
+  el.panel.hidden = false;
   el.legend.hidden = false;
   el.zoomControls.hidden = false;
   el.toggles.disabled = false;
@@ -183,6 +344,7 @@ async function loadFromHash() {
   startView();
   showMajorSummary();
   closeSheet();
+  return true;
 }
 
 // ===========================================================================
@@ -827,6 +989,7 @@ function selectBox(id, scrollToIt) {
   if (scrollToIt) scrollToBox(id);
   showDetails(box.kind === "course" ? id : null, box);
   openSheet();
+  rememberInAddress();
 }
 
 // Select a course by its code (from the finder or a link in the panel). If
@@ -849,6 +1012,7 @@ function selectCourse(code, scrollToIt) {
   }
   showDetails(code);
   openSheet();
+  rememberInAddress();
 }
 
 /*
@@ -893,6 +1057,7 @@ function clearSelection() {
   }
   showMajorSummary();
   closeSheet();
+  rememberInAddress();
 }
 
 function scrollToBox(id) {
@@ -1013,7 +1178,7 @@ function showCourse(course) {
     html += '<p><span class="flag">Not offered now</span> The catalog lists this course but marks it as not currently offered.</p>';
   }
 
-  html += "<h3>In this major</h3><p>" + ROLE_NAMES[course.role] + "</p>";
+  html += "<h3>In this " + programWord() + "</h3><p>" + ROLE_NAMES[course.role] + "</p>";
   if (course.groups.length) {
     html += "<ul>" + course.groups.map(g => "<li>" + escapeHtml(readableGroup(g)) + "</li>").join("") + "</ul>";
   }
@@ -1035,12 +1200,13 @@ function showCourse(course) {
     html += '<p class="catalog-text">Catalog wording: "' + escapeHtml(course.prereq_text) + '"</p>';
   }
 
-  html += '<h3><span class="unlocks-key">Unlocks in this major</span></h3>';
+  html += '<h3><span class="unlocks-key">Unlocks in this ' + programWord() + "</span></h3>";
   html += unlockList.length
     ? "<ul>" + unlockList.map(code => "<li>" + courseLink(code) + "</li>").join("") + "</ul>"
     : "<p>Nothing on this map lists it as a prerequisite.</p>";
 
   html += "<h3>More</h3><ul>";
+  html += '<li><button type="button" class="text-button" data-copy-link>Copy a link to this course</button></li>';
   html += '<li><a href="https://catalog.ucsb.edu/courses/' + encodeURIComponent(course.id) +
           '" target="_blank" rel="noopener">This course in the UCSB catalog</a></li>';
   if (course.level === "lower") {
@@ -1104,7 +1270,7 @@ function showMajorSummary() {
 
   const inMajor = graph.nodes.filter(n => n.in_major);
   const done = inMajor.filter(n => taken.has(n.id)).length;
-  if (done) html += "<p>You've marked " + done + " of this major's " + inMajor.length + " courses as taken.</p>";
+  if (done) html += "<p>You've marked " + done + " of this " + programWord() + "'s " + inMajor.length + " courses as taken.</p>";
 
   if (expanded.size) {
     html += "<h3>Unfolded elective lists</h3><ul>";
@@ -1128,6 +1294,27 @@ function showMajorSummary() {
   setPanel(html, graph.major.name);
 }
 
+// "major" or "minor", for the panel's wording.
+function programWord() {
+  return graph && graph.major.kind === "minor" ? "minor" : "major";
+}
+
+// Copies the address (which names the major and selected course) to the
+// clipboard. Some browsers only allow this on secure (https) pages.
+function copyLink(button) {
+  function done(text) {
+    button.textContent = text;
+    setTimeout(function () { button.textContent = "Copy a link to this course"; }, 2500);
+  }
+  if (!navigator.clipboard) {
+    done("Couldn't copy here; copy the address bar instead");
+    return;
+  }
+  navigator.clipboard.writeText(location.href).then(
+    function () { done("Link copied"); },
+    function () { done("Couldn't copy here; copy the address bar instead"); });
+}
+
 function setPanel(html, handleText) {
   el.panelBody.className = "";
   el.panelBody.innerHTML = html;
@@ -1141,6 +1328,8 @@ el.panelBody.addEventListener("click", function (event) {
   if (!button) return;
   if (button.dataset.code) {
     selectCourse(button.dataset.code, true);
+  } else if ("copyLink" in button.dataset) {
+    copyLink(button);
   } else if (button.dataset.taken) {
     toggleTaken(button.dataset.taken);
   } else if (button.dataset.unfold) {

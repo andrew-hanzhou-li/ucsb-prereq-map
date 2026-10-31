@@ -4,6 +4,10 @@ test_site.py: open the website in a real (headless) browser and check it.
     py -m http.server 8000 -d site      (in one terminal)
     py test_site.py                      (in another)
 
+If port 8000 is taken by something else, pick another number for both:
+    py -m http.server 8765 -d site
+    py test_site.py 8765
+
 What it checks:
   1. The front page loads, and the major picker shows the full list even
      after a major has been chosen.
@@ -23,6 +27,10 @@ What it checks:
      survive a page reload.
   8. On a phone-sized screen, selecting a course opens the bottom sheet and
      keeps the course visible above it.
+  9. Part 7: the front page lists every major and minor; programs with no
+     course list, and unknown addresses, show a notice instead of a map; the
+     address bar follows the selected course and a course link opens it;
+     a minor's panel says "minor"; the About and 404 pages load.
 
 Needs Playwright, a browser-automation library (one-time setup):
     py -m pip install playwright
@@ -34,7 +42,7 @@ import sys
 
 from playwright.sync_api import sync_playwright
 
-SITE = "http://localhost:8000/"
+SITE = "http://localhost:%s/" % (sys.argv[1] if len(sys.argv) > 1 else "8000")
 passed = 0
 failed = 0
 
@@ -67,7 +75,9 @@ def open_major(page, stem, major_id):
 def main():
     sys.stdout.reconfigure(errors="replace")
     with open("site/data/majors.json", encoding="utf-8") as f:
-        majors = json.load(f)["majors"]
+        listed = json.load(f)["majors"]
+    majors = [m for m in listed if m["structured"]]          # the ones with a map
+    no_map = [m for m in listed if not m["structured"]]
 
     with sync_playwright() as p:
         browser = p.chromium.launch()
@@ -82,8 +92,13 @@ def main():
         page.goto(SITE)
         page.wait_for_timeout(400)
         check("front page shows the 'pick a major' message", page.is_visible("#empty"))
-        check("major picker has every major",
-              page.evaluate("document.querySelectorAll('#major-list option').length") == len(majors))
+        check("front page hides the empty course panel", not page.is_visible("#panel"))
+        check("major picker has every major and minor",
+              page.evaluate("document.querySelectorAll('#major-list option').length") == len(listed))
+        for kind in ("major", "minor"):
+            expected = sum(m["kind"] == kind for m in listed)
+            shown = page.locator("#browse-%ss li" % kind).count()
+            check("front page lists all %d %ss" % (expected, kind), shown == expected, "%d listed" % shown)
         open_major(page, "economics-ba", "BAECON")
         page.focus("#major-input")
         check("clicking into a filled-in picker empties it, so the full list shows",
@@ -190,6 +205,57 @@ def main():
         page.click("#clear-taken")
         page.wait_for_timeout(150)
         check("'Clear all marks' removes it", "taken" not in box(page, "ECON 1").get_attribute("class"))
+
+        # 9. Part 7
+        # The address bar follows the selection...
+        box(page, "ECON 10A").click()
+        page.wait_for_timeout(100)
+        check("selecting a course puts it in the address", page.evaluate("location.hash") == "#economics-ba/ECON+10A",
+              page.evaluate("location.hash"))
+        page.evaluate("clearSelection()")
+        check("clearing the selection takes it back out", page.evaluate("location.hash") == "#economics-ba")
+        # ...and a link with a course opens straight to it, even from another page.
+        page.goto(SITE + "about.html")
+        page.goto(SITE + "#statistics-and-data-science-bs/PSTAT+120B")
+        page.wait_for_function("selectedCourse === 'PSTAT 120B'", timeout=10000)
+        check("a course link opens the major with that course selected",
+              page.inner_text("#panel-body h2").strip() == "PSTAT 120B" and
+              "selected" in box(page, "PSTAT 120B").get_attribute("class"))
+        check("the copy-link button is in the course panel", page.locator("[data-copy-link]").count() == 1)
+
+        # A program with no course list shows a notice and no map.
+        ccs = next(m for m in no_map if "Creative Studies" in m["name"])
+        page.goto(SITE + "#" + ccs["file"][:-5])
+        page.wait_for_timeout(300)
+        check("no-list program: notice is shown", page.is_visible("#notice") and "no map" in page.inner_text("#notice"))
+        check("no-list program: it links to the catalog", page.locator("#notice a[href*='catalog.ucsb.edu']").count() == 1)
+        check("no-list program: the old map is cleared", page.locator(".box").count() == 0)
+        check("no-list program: the course panel is hidden", not page.is_visible("#panel"))
+        check("no-list program: the picker shows its name", page.input_value("#major-input") == ccs["name"])
+
+        # An address that matches nothing.
+        page.goto(SITE + "#geological-sciences-bs")
+        page.wait_for_timeout(300)
+        check("unknown address: 'no map at that address' notice",
+              page.is_visible("#notice") and "No map at that address" in page.inner_text("#notice"))
+        page.goto(SITE + "#")
+        page.wait_for_timeout(300)
+        check("empty address: back to the welcome text", page.is_visible("#welcome") and not page.is_visible("#notice"))
+
+        # A minor's panel says "minor".
+        minor = next(m for m in majors if m["kind"] == "minor" and m["courses_in_major"] > 3)
+        open_major(page, minor["file"][:-5], minor["id"])
+        course = page.evaluate("Object.keys(boxes).find(id => boxes[id].kind === 'course')")
+        box(page, course).click()
+        page.wait_for_timeout(100)
+        check("minor: the panel says 'In this minor'", "In this minor" in page.inner_text("#panel-body"))
+
+        # About and 404 pages.
+        response = page.goto(SITE + "about.html")
+        check("About page loads", response.ok and page.inner_text("h2") == "About this site")
+        response = page.goto(SITE + "404.html")
+        check("404 page loads", response.ok and page.inner_text("h2") == "Page not found")
+        check("no JavaScript errors in the Part 7 checks", not errors, errors)
         browser.close()
 
         # 8. Phone-sized screen

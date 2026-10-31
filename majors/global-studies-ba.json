@@ -1,0 +1,4205 @@
+{
+ "id": "BAGLOBL",
+ "name": "Global Studies - BA",
+ "type": "Bachelor's Degree",
+ "kind": "major",
+ "departments": [
+  "GLOBL"
+ ],
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsb.edu/programs/BAGLOBL",
+ "narrative": [
+  "In order to qualify for admission into the Global Studies Major, students must complete Global Studies 1 and 2 with a UC GPA of 2.7 or above. In addition, students must complete two History courses as outlined below with a UC GPA of 2.0 or above.",
+  "MAJOR REGULATIONS\nPREREQUISITES Check the General Catalog for the prerequisites to all listed courses.\nP/NP GRADING OPTION Not allowed for any major course (Prep or UD major), including courses applied to the major from other departments.\nSUBSTITUTIONS In the major requirements permissible only by petition to the department chair and dean.\nG.P.A. REQUIREMENTS At least 2.0 overall average in all upper-division major courses and all courses (Prep and UD) for the major.\nDOUBLE MAJORS With the approval of each department chairperson, up to a total of 8 units may be applied simultaneously to both UD majors."
+ ],
+ "sections": [
+  {
+   "name": "PRE-MAJOR",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "GLOBL 1",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GLOBL 2",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "c3zKGpfQ",
+      "label": "I."
+     },
+     {
+      "type": "choose",
+      "count": 2,
+      "items": [
+       {
+        "type": "course",
+        "code": "HIST 2A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 2B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 2C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 4A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 4B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 4C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 49A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 49B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 49C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 8A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 8B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 17A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 17B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 17C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 46A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 46B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 46MI",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 56",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 80",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 87",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 88",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "tI8DTPRa",
+      "label": "II."
+     }
+    ]
+   }
+  },
+  {
+   "name": "PREPARATION FOR THE MAJOR",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "count": 1,
+      "items": [
+       {
+        "type": "course",
+        "code": "ANTH 2",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 1",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 2",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ENV S 1",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ENV S 3",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "FEMST 20",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "FEMST 30",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GEOG 5",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "POL S 6",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "POL S 7",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "RG ST 1",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SOC 1",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "NrZ79r2C",
+      "label": "I."
+     },
+     {
+      "type": "text",
+      "text": "Completion of quarter six (or equivalent) of a modern foreign language",
+      "catalog_rule_id": "yTwkP8aq",
+      "label": "II.",
+      "description": "Completion of quarter six (or equivalent) of a modern foreign language"
+     }
+    ]
+   }
+  },
+  {
+   "name": "UPPER-DIVISION MAJOR",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "GLOBL 110",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GLOBL 120",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GLOBL 130",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GLOBL 140",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "MRRGoKSG",
+      "label": "I."
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "choose",
+        "count": 2,
+        "items": [
+         {
+          "type": "course",
+          "code": "GLOBL 110",
+          "status": "active",
+          "from_list": "Upper Division Global Studies Courses (up to 189 and includes 197AA-ZZ)"
+         },
+         {
+          "type": "course",
+          "code": "GLOBL 111",
+          "status": "active",
+          "from_list": "Upper Division Global Studies Courses (up to 189 and includes 197AA-ZZ)"
+         },
+         {
+          "type": "course",
+          "code": "GLOBL 112",
+          "status": "active",
+          "from_list": "Upper Division Global Studies Courses (up to 189 and includes 197AA-ZZ)"
+         },
+         {
+          "type": "course",
+          "code": "GLOBL 118",
+          "status": "active",
+          "from_list": "Upper Division Global Studies Courses (up to 189 and includes 197AA-ZZ)"
+         },
+         {
+          "type": "course",
+          "code": "GLOBL 120",
+          "status": "active",
+          "from_list": "Upper Division Global Studies Courses (up to 189 and includes 197AA-ZZ)"
+         },
+         {
+          "type": "course",
+          "code": "GLOBL 123",
+          "status": "active",
+          "from_list": "Upper Division Global Studies Courses (up to 189 and includes 197AA-ZZ)"
+         },
+         {
+          "type": "course",
+          "code": "GLOBL 124",
+          "status": "active",
+          "from_list": "Upper Division Global Studies Courses (up to 189 and includes 197AA-ZZ)"
+         },
+         {
+          "type": "course",
+          "code": "GLOBL 126",
+          "status": "active",
+          "from_list": "Upper Division Global Studies Courses (up to 189 and includes 197AA-ZZ)"
+         },
+         {
+          "type": "course",
+          "code": "GLOBL 130",
+          "status": "active",
+          "from_list": "Upper Division Global Studies Courses (up to 189 and includes 197AA-ZZ)"
+         },
+         {
+          "type": "course",
+          "code": "GLOBL 131",
+          "status": "active",
+          "from_list": "Upper Division Global Studies Courses (up to 189 and includes 197AA-ZZ)"
+         },
+         {
+          "type": "course",
+          "code": "GLOBL 132",
+          "status": "active",
+          "from_list": "Upper Division Global Studies Courses (up to 189 and includes 197AA-ZZ)"
+         },
+         {
+          "type": "course",
+          "code": "GLOBL 133",
+          "status": "active",
+          "from_list": "Upper Division Global Studies Courses (up to 189 and includes 197AA-ZZ)"
+         },
+         {
+          "type": "course",
+          "code": "GLOBL 136",
+          "status": "active",
+          "from_list": "Upper Division Global Studies Courses (up to 189 and includes 197AA-ZZ)"
+         },
+         {
+          "type": "course",
+          "code": "GLOBL 137",
+          "status": "active",
+          "from_list": "Upper Division Global Studies Courses (up to 189 and includes 197AA-ZZ)"
+         },
+         {
+          "type": "course",
+          "code": "GLOBL 140",
+          "status": "active",
+          "from_list": "Upper Division Global Studies Courses (up to 189 and includes 197AA-ZZ)"
+         },
+         {
+          "type": "course",
+          "code": "GLOBL 142",
+          "status": "active",
+          "from_list": "Upper Division Global Studies Courses (up to 189 and includes 197AA-ZZ)"
+         },
+         {
+          "type": "course",
+          "code": "GLOBL 147",
+          "status": "active",
+          "from_list": "Upper Division Global Studies Courses (up to 189 and includes 197AA-ZZ)"
+         },
+         {
+          "type": "course",
+          "code": "GLOBL 148",
+          "status": "active",
+          "from_list": "Upper Division Global Studies Courses (up to 189 and includes 197AA-ZZ)"
+         },
+         {
+          "type": "course",
+          "code": "GLOBL 149",
+          "status": "active",
+          "from_list": "Upper Division Global Studies Courses (up to 189 and includes 197AA-ZZ)"
+         },
+         {
+          "type": "course",
+          "code": "GLOBL 159",
+          "status": "active",
+          "from_list": "Upper Division Global Studies Courses (up to 189 and includes 197AA-ZZ)"
+         },
+         {
+          "type": "course",
+          "code": "GLOBL 161",
+          "status": "active",
+          "from_list": "Upper Division Global Studies Courses (up to 189 and includes 197AA-ZZ)"
+         },
+         {
+          "type": "course",
+          "code": "GLOBL 162",
+          "status": "active",
+          "from_list": "Upper Division Global Studies Courses (up to 189 and includes 197AA-ZZ)"
+         },
+         {
+          "type": "course",
+          "code": "GLOBL 163",
+          "status": "active",
+          "from_list": "Upper Division Global Studies Courses (up to 189 and includes 197AA-ZZ)"
+         },
+         {
+          "type": "course",
+          "code": "GLOBL 165",
+          "status": "active",
+          "from_list": "Upper Division Global Studies Courses (up to 189 and includes 197AA-ZZ)"
+         },
+         {
+          "type": "course",
+          "code": "GLOBL 172",
+          "status": "active",
+          "from_list": "Upper Division Global Studies Courses (up to 189 and includes 197AA-ZZ)"
+         },
+         {
+          "type": "course",
+          "code": "GLOBL 173",
+          "status": "active",
+          "from_list": "Upper Division Global Studies Courses (up to 189 and includes 197AA-ZZ)"
+         },
+         {
+          "type": "course",
+          "code": "GLOBL 174",
+          "status": "active",
+          "from_list": "Upper Division Global Studies Courses (up to 189 and includes 197AA-ZZ)"
+         },
+         {
+          "type": "course",
+          "code": "GLOBL 176",
+          "status": "active",
+          "from_list": "Upper Division Global Studies Courses (up to 189 and includes 197AA-ZZ)"
+         },
+         {
+          "type": "course",
+          "code": "GLOBL 177",
+          "status": "active",
+          "from_list": "Upper Division Global Studies Courses (up to 189 and includes 197AA-ZZ)"
+         },
+         {
+          "type": "course",
+          "code": "GLOBL 178",
+          "status": "active",
+          "from_list": "Upper Division Global Studies Courses (up to 189 and includes 197AA-ZZ)"
+         },
+         {
+          "type": "course",
+          "code": "GLOBL 179",
+          "status": "active",
+          "from_list": "Upper Division Global Studies Courses (up to 189 and includes 197AA-ZZ)"
+         },
+         {
+          "type": "course",
+          "code": "GLOBL 180A",
+          "status": "active",
+          "from_list": "Upper Division Global Studies Courses (up to 189 and includes 197AA-ZZ)"
+         },
+         {
+          "type": "course",
+          "code": "GLOBL 182",
+          "status": "active",
+          "from_list": "Upper Division Global Studies Courses (up to 189 and includes 197AA-ZZ)"
+         },
+         {
+          "type": "course",
+          "code": "GLOBL 183",
+          "status": "active",
+          "from_list": "Upper Division Global Studies Courses (up to 189 and includes 197AA-ZZ)"
+         },
+         {
+          "type": "course",
+          "code": "GLOBL 197",
+          "status": "active",
+          "from_list": "Upper Division Global Studies Courses (up to 189 and includes 197AA-ZZ)"
+         },
+         {
+          "type": "course",
+          "code": "GLOBL 197B",
+          "status": "active",
+          "from_list": "Upper Division Global Studies Courses (up to 189 and includes 197AA-ZZ)"
+         },
+         {
+          "type": "course",
+          "code": "GLOBL 197C",
+          "status": "active",
+          "from_list": "Upper Division Global Studies Courses (up to 189 and includes 197AA-ZZ)"
+         },
+         {
+          "type": "course",
+          "code": "GLOBL 197D",
+          "status": "active",
+          "from_list": "Upper Division Global Studies Courses (up to 189 and includes 197AA-ZZ)"
+         },
+         {
+          "type": "course",
+          "code": "GLOBL 197E",
+          "status": "active",
+          "from_list": "Upper Division Global Studies Courses (up to 189 and includes 197AA-ZZ)"
+         },
+         {
+          "type": "course",
+          "code": "GLOBL 197F",
+          "status": "active",
+          "from_list": "Upper Division Global Studies Courses (up to 189 and includes 197AA-ZZ)"
+         },
+         {
+          "type": "course",
+          "code": "GLOBL 197G",
+          "status": "active",
+          "from_list": "Upper Division Global Studies Courses (up to 189 and includes 197AA-ZZ)"
+         },
+         {
+          "type": "course",
+          "code": "GLOBL 197H",
+          "status": "active",
+          "from_list": "Upper Division Global Studies Courses (up to 189 and includes 197AA-ZZ)"
+         },
+         {
+          "type": "course",
+          "code": "GLOBL 197I",
+          "status": "active",
+          "from_list": "Upper Division Global Studies Courses (up to 189 and includes 197AA-ZZ)"
+         },
+         {
+          "type": "course",
+          "code": "GLOBL 197J",
+          "status": "active",
+          "from_list": "Upper Division Global Studies Courses (up to 189 and includes 197AA-ZZ)"
+         },
+         {
+          "type": "course",
+          "code": "GLOBL 197K",
+          "status": "active",
+          "from_list": "Upper Division Global Studies Courses (up to 189 and includes 197AA-ZZ)"
+         },
+         {
+          "type": "course",
+          "code": "GLOBL 197L",
+          "status": "active",
+          "from_list": "Upper Division Global Studies Courses (up to 189 and includes 197AA-ZZ)"
+         },
+         {
+          "type": "course",
+          "code": "GLOBL 197M",
+          "status": "active",
+          "from_list": "Upper Division Global Studies Courses (up to 189 and includes 197AA-ZZ)"
+         },
+         {
+          "type": "course",
+          "code": "GLOBL 197N",
+          "status": "active",
+          "from_list": "Upper Division Global Studies Courses (up to 189 and includes 197AA-ZZ)"
+         },
+         {
+          "type": "course",
+          "code": "GLOBL 197O",
+          "status": "active",
+          "from_list": "Upper Division Global Studies Courses (up to 189 and includes 197AA-ZZ)"
+         }
+        ],
+        "catalog_rule_id": "x5ELEopD",
+        "label": "A.",
+        "description": "Any additional Global Studies courses from 100-189 and up to 8 units from 197AA-ZZ"
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "ANTH 110",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "ANTH 111",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTH 116B",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "ANTH 125",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTH 139",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "ANTH 146",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "ANTH 147",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTH 148A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "ANTH 172",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "ARTHI 119B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ARTHI 119D",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "ARTHI 136I",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ARTHI 136J",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "AS AM 107",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "AS AM 110",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "AS AM 130",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "BL ST 126",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "BL ST 152",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CH ST 149",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "CH ST 178A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "C LIT 171",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ECON 114A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ECON 114B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ECON 180",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ECON 181",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENV S 112",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "ENV S 116",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENV S 130A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENV S 130B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENV S 130C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENV S 131",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "ENV S 132",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "ENV S 134EC",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "ENV S 149",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENV S 184",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENV S 185",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "ENV S 188",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "FEMST 150",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "FR 154G",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "FR 154K",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "FR 154L",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "GEOG 108",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GEOG 141A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 193F",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LING 130",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "POL S 109",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "POL S 121",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "POL S 124",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "POL S 146",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "POL S 147",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "POL S 172",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "POL S 173",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "POL S 175",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORT 125A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RG ST 102A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RG ST 106",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RG ST 113",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RG ST 131D",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "RG ST 193B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SOC 122GI",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SOC 130GR",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SOC 130SG",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SOC 134CJ",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "SOC 153",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SOC 185DG",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SPAN 149",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "WRIT 107G",
+          "status": "active"
+         }
+        ],
+        "catalog_rule_id": "lOJsJAD6",
+        "label": "B."
+       }
+      ],
+      "catalog_rule_id": "P40t0YMP",
+      "label": "II.",
+      "description": "Two or three courses selected from the following electives in Global Topics (at least TWO from Area A)"
+     },
+     {
+      "type": "choose",
+      "count": 1,
+      "items": [
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "ARTHI 127A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ARTHI 127B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTH 156",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "BL ST 100",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "BL ST 104",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "BL ST 130A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "BL ST 130B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "BL ST 162",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "BL ST 171",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "C LIT 171",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 190AL",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "FR 154G",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GLOBL 149",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 147D",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 147G",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 148AU",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "HIST 148B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ITAL 139CX",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORT 183W",
+          "status": "inactive"
+         }
+        ],
+        "catalog_rule_id": "y3LSTfoT",
+        "label": "A. Africa"
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "ARTHI 132G",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "ARTHI 132J",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "FAMST 122AC",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GLOBL 158",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "GLOBL 183",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 146",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 146T",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "HIST 146W",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 171ME",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "POL S 150A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RG ST 111",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RG ST 119A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RG ST 119B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RG ST 119C",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "RG ST 119D",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "RG ST 131H",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RG ST 140A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RG ST 140B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RG ST 140F",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "RG ST 157CP",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RG ST 157G",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RG ST 157I",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RG ST 157J",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RG ST 181",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "RG ST 185",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SOC 130ME",
+          "status": "active"
+         }
+        ],
+        "catalog_rule_id": "qzABBo1U",
+        "label": "B. The Middle East"
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "ANTH 142",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "ARTHI 136V",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "EACS 140",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 122AP",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 133TL",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 165LP",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "FAMST 124",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 189M",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RG ST 140D",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RG ST 158C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RG ST 162A",
+          "status": "active"
+         }
+        ],
+        "catalog_rule_id": "cauBSjb4",
+        "label": "C. South Asia, Southeast Asia and the Pacific"
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "ARTHI 134D",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHIN 147",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHIN 170",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHIN 172",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHIN 176",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHIN 183B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHIN 185B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EACS 103A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EACS 103B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EACS 103C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "FAMST 120",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "HIST 182B",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "HIST 185B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 187B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 187C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "JAPAN 112",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "JAPAN 159",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "JAPAN 162",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "JAPAN 164",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "JAPAN 165",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "KOR 113",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "KOR 120",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "KOR 139",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "KOR 142",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "KOR 175",
+          "status": "inactive"
+         }
+        ],
+        "catalog_rule_id": "pEHm4F8y",
+        "label": "D. East Asia"
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "ARTHI 121C",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "ARTHI 121D",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "AS AM 118",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "AS AM 122",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "AS AM 127",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "AS AM 128",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "AS AM 137",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "AS AM 156",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "AS AM 164",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "BL ST 127",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "BL ST 169CR",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "BL ST 172",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "BL ST 174",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CH ST 138",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CH ST 168B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CH ST 171",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CH ST 180",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CH ST 183",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CH ST 189",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 104A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 133GC",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 191",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "ENV S 122NE",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GEOG 150",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 159C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 164IB",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 166A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "HIST 166B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 166C",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "HIST 166D",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "HIST 167CB",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 170A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "HIST 170B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 171C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 171D",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 174C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 175A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "HIST 175B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 179B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MUS 114",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "POL S 127",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "POL S 134",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RG ST 140E",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RG ST 147",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RG ST 152",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SPAN 109",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SPAN 139",
+          "status": "active"
+         }
+        ],
+        "catalog_rule_id": "l7Sy48WR",
+        "label": "E. North America",
+        "notes": "- AS AM 100AA-ZZ\n- HIST 168B-ZZ"
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "ANTH 113",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTH 117",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTH 134",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTH 135",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTH 141",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "CH ST 141",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CH ST 177",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "FAMST 126",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "FAMST 127",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "FAMST 127M",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "GEOG 155",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GLOBL 147",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GLOBL 148",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 151B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 151C",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "HIST 151FQ",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "HIST 153L",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "HIST 154LB",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "HIST 156B",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "HIST 158A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LAIS 100",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LAIS 101",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LAIS 102",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LAIS 127E",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "POL S 134",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "POL S 148",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PORT 106",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORT 109",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PORT 115",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORT 125B",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PORT 130",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SOC 130LA",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SPAN 111A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SPAN 111B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SPAN 111C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SPAN 136",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SPAN 138",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SPAN 141",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SPAN 165",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SPAN 171",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SPAN 178",
+          "status": "active"
+         }
+        ],
+        "catalog_rule_id": "kciAVKUT",
+        "label": "F. Latin America",
+        "notes": "- PORT 115AA-ZZ\n- PORT 128AA-ZZ"
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "C LIT 113",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "C LIT 122A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "C LIT 161",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 104B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 150",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 184",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "FR 101A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "FR 101B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "FR 101C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "FR 151G",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "FR 151I",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "FR 151J",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "FR 151K",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "FR 151R",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "FR 154E",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "FR 154F",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "FR 154I",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "FR 156A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "FR 156C",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "FR 156D",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "FR 156E",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "GER 104",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "GER 107A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GER 107B",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "GER 107C",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "GER 108",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GER 151C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GER 179A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "GER 179C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 123A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "HIST 123B",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "HIST 123C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 124B",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "HIST 133B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 133C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 133D",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 133Q",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 135B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 135C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 141B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ITAL 120X",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ITAL 130X",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ITAL 138A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "ITAL 138D",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "ITAL 138N",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "ITAL 139DX",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ITAL 139FX",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ITAL 139GX",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "ITAL 139ZX",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ITAL 144AX",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "ITAL 161X",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ITAL 179X",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ITAL 180X",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ITAL 189X",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "POL S 128",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "POL S 143",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORT 105",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORT 125A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORT 129",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SLAV 123C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SLAV 130A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SLAV 130B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SLAV 130C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SLAV 151C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SLAV 152B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SLAV 152C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SLAV 182",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SPAN 110A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SPAN 110B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SPAN 110C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SPAN 110D",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SPAN 119A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SPAN 126",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SPAN 150",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "SPAN 152",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SPAN 153",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SPAN 153E",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SPAN 174",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SPAN 175",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SPAN 183B",
+          "status": "active"
+         }
+        ],
+        "catalog_rule_id": "vBZwyGJT",
+        "label": "G. Europe & Eurasia"
+       }
+      ],
+      "catalog_rule_id": "vHBI6lCy",
+      "label": "III.",
+      "description": "Two or Three courses selected from one of the following geographic regions",
+      "notes": "Note: See the Global Studies Career Resources page for possible thematic pathways to guide choices in upper division areas II and III."
+     }
+    ],
+    "catalog_rule_id": "kdGaaKLf",
+    "label": "Upper-Division Requirements",
+    "description": "36 UD units distributed as follows (excluding Global Studies courses no more than 12 of the 36 units may be from the same department)"
+   }
+  }
+ ],
+ "courses": [
+  {
+   "code": "ANTH 2",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "ANTH 110",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ANTH 111",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ANTH 113",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ANTH 116B",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ANTH 117",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ANTH 125",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ANTH 134",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ANTH 135",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ANTH 139",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ANTH 141",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ANTH 142",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ANTH 146",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ANTH 147",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ANTH 148A",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ANTH 156",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ANTH 172",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ARTHI 119B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ARTHI 119D",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ARTHI 121C",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ARTHI 121D",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ARTHI 127A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ARTHI 127B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ARTHI 132G",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ARTHI 132J",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ARTHI 134D",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ARTHI 136I",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ARTHI 136J",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ARTHI 136V",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "AS AM 107",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "AS AM 110",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "AS AM 118",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "AS AM 122",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "AS AM 127",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "AS AM 128",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "AS AM 130",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "AS AM 137",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "AS AM 156",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "AS AM 164",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "BL ST 100",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "BL ST 104",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "BL ST 126",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "BL ST 127",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "BL ST 130A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "BL ST 130B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "BL ST 152",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "BL ST 162",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "BL ST 169CR",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "BL ST 171",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "BL ST 172",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "BL ST 174",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "C LIT 113",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "C LIT 122A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "C LIT 161",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "C LIT 171",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CH ST 138",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CH ST 141",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CH ST 149",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CH ST 168B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CH ST 171",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CH ST 177",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CH ST 178A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CH ST 180",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CH ST 183",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CH ST 189",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHIN 147",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHIN 170",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHIN 172",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHIN 176",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHIN 183B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CHIN 185B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EACS 103A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EACS 103B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EACS 103C",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EACS 140",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 1",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "ECON 2",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "ECON 114A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 114B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 180",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 181",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 104A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 104B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 122AP",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 133GC",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 133TL",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 150",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 165LP",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 184",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 190AL",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 191",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENV S 1",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "ENV S 3",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "ENV S 112",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENV S 116",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENV S 122NE",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENV S 130A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENV S 130B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENV S 130C",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENV S 131",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENV S 132",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENV S 134EC",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENV S 149",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENV S 184",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENV S 185",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENV S 188",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "FAMST 120",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "FAMST 122AC",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "FAMST 124",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "FAMST 126",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "FAMST 127",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "FAMST 127M",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "FEMST 20",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "FEMST 30",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "FEMST 150",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "FR 101A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "FR 101B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "FR 101C",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "FR 151G",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "FR 151I",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "FR 151J",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "FR 151K",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "FR 151R",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "FR 154E",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "FR 154F",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "FR 154G",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "FR 154I",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "FR 154K",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "FR 154L",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "FR 156A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "FR 156C",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "FR 156D",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "FR 156E",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GEOG 5",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "GEOG 108",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GEOG 141A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GEOG 150",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GEOG 155",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GER 104",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GER 107A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GER 107B",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GER 107C",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GER 108",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GER 151C",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GER 179A",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GER 179C",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GLOBL 1",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "GLOBL 2",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "GLOBL 110",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GLOBL 111",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GLOBL 112",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GLOBL 118",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GLOBL 120",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GLOBL 123",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GLOBL 124",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GLOBL 126",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GLOBL 130",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GLOBL 131",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GLOBL 132",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GLOBL 133",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GLOBL 136",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GLOBL 137",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GLOBL 140",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GLOBL 142",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GLOBL 147",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GLOBL 148",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GLOBL 149",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GLOBL 158",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GLOBL 159",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GLOBL 161",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GLOBL 162",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GLOBL 163",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GLOBL 165",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GLOBL 172",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GLOBL 173",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GLOBL 174",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GLOBL 176",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GLOBL 177",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GLOBL 178",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GLOBL 179",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GLOBL 180A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GLOBL 182",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GLOBL 183",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GLOBL 197",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GLOBL 197B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GLOBL 197C",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GLOBL 197D",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GLOBL 197E",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GLOBL 197F",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GLOBL 197G",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GLOBL 197H",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GLOBL 197I",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GLOBL 197J",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GLOBL 197K",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GLOBL 197L",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GLOBL 197M",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GLOBL 197N",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GLOBL 197O",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 2A",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "HIST 2B",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "HIST 2C",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "HIST 4A",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "HIST 4B",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "HIST 4C",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "HIST 8A",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "HIST 8B",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "HIST 17A",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "HIST 17B",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "HIST 17C",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "HIST 46A",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "HIST 46B",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "HIST 46MI",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "HIST 49A",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "HIST 49B",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "HIST 49C",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "HIST 56",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "HIST 80",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "HIST 87",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "HIST 88",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "HIST 123A",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 123B",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 123C",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 124B",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 133B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 133C",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 133D",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 133Q",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 135B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 135C",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 141B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 146",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 146T",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 146W",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 147D",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 147G",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 148AU",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 148B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 151B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 151C",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 151FQ",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 153L",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 154LB",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 156B",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 158A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 159C",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 164IB",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 166A",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 166B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 166C",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 166D",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 167CB",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 170A",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 170B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 171C",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 171D",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 171ME",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 174C",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 175A",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 175B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 179B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 182B",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 185B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 187B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 187C",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 189M",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 193F",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ITAL 120X",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ITAL 130X",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ITAL 138A",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ITAL 138D",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ITAL 138N",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ITAL 139CX",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ITAL 139DX",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ITAL 139FX",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ITAL 139GX",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ITAL 139ZX",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ITAL 144AX",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ITAL 161X",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ITAL 179X",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ITAL 180X",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ITAL 189X",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "JAPAN 112",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "JAPAN 159",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "JAPAN 162",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "JAPAN 164",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "JAPAN 165",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "KOR 113",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "KOR 120",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "KOR 139",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "KOR 142",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "KOR 175",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "LAIS 100",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "LAIS 101",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "LAIS 102",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "LAIS 127E",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "LING 130",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MUS 114",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "POL S 6",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "POL S 7",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "POL S 109",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "POL S 121",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "POL S 124",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "POL S 127",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "POL S 128",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "POL S 134",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "POL S 143",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "POL S 146",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "POL S 147",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "POL S 148",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "POL S 150A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "POL S 172",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "POL S 173",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "POL S 175",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PORT 105",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PORT 106",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PORT 109",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PORT 115",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PORT 125A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PORT 125B",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PORT 129",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PORT 130",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PORT 183W",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "RG ST 1",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "RG ST 102A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "RG ST 106",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "RG ST 111",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "RG ST 113",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "RG ST 119A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "RG ST 119B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "RG ST 119C",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "RG ST 119D",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "RG ST 131D",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "RG ST 131H",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "RG ST 140A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "RG ST 140B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "RG ST 140D",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "RG ST 140E",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "RG ST 140F",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "RG ST 147",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "RG ST 152",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "RG ST 157CP",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "RG ST 157G",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "RG ST 157I",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "RG ST 157J",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "RG ST 158C",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "RG ST 162A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "RG ST 181",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "RG ST 185",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "RG ST 193B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SLAV 123C",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SLAV 130A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SLAV 130B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SLAV 130C",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SLAV 151C",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SLAV 152B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SLAV 152C",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SLAV 182",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SOC 1",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "SOC 122GI",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SOC 130GR",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SOC 130LA",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SOC 130ME",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SOC 130SG",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SOC 134CJ",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SOC 153",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SOC 185DG",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SPAN 109",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SPAN 110A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SPAN 110B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SPAN 110C",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SPAN 110D",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SPAN 111A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SPAN 111B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SPAN 111C",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SPAN 119A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SPAN 126",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SPAN 136",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SPAN 138",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SPAN 139",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SPAN 141",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SPAN 149",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SPAN 150",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SPAN 152",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SPAN 153",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SPAN 153E",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SPAN 165",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SPAN 171",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SPAN 174",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SPAN 175",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SPAN 178",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SPAN 183B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "WRIT 107G",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  }
+ ]
+}

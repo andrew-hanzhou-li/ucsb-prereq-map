@@ -3,7 +3,9 @@
   {
    "id": "BSACTSC",
    "name": "Actuarial Science - BS",
+   "kind": "major",
    "file": "actuarial-science-bs.json",
+   "structured": true,
    "courses_in_major": 61,
    "outside_prerequisites": 33,
    "edges": 200,
@@ -11,9 +13,23 @@
    "upper_division_floor": 2
   },
   {
+   "id": "6jRikJ0kTEiFJgF5KRqY",
+   "name": "American Indian and Indigenous Studies - Minor",
+   "kind": "minor",
+   "file": "american-indian-and-indigenous-studies-minor.json",
+   "structured": true,
+   "courses_in_major": 46,
+   "outside_prerequisites": 19,
+   "edges": 56,
+   "columns": 3,
+   "upper_division_floor": 1
+  },
+  {
    "id": "BAANTH",
    "name": "Anthropology - BA",
+   "kind": "major",
    "file": "anthropology-ba.json",
+   "structured": true,
    "courses_in_major": 89,
    "outside_prerequisites": 21,
    "edges": 91,
@@ -23,7 +39,9 @@
   {
    "id": "BAANTHARCHAEOL",
    "name": "Anthropology - BA - Archaeology Emphasis",
+   "kind": "major",
    "file": "anthropology-ba-archaeology-emphasis.json",
+   "structured": true,
    "courses_in_major": 110,
    "outside_prerequisites": 21,
    "edges": 91,
@@ -33,7 +51,9 @@
   {
    "id": "BAANTHBIOLGICL",
    "name": "Anthropology - BA - Biological Emphasis",
+   "kind": "major",
    "file": "anthropology-ba-biological-emphasis.json",
+   "structured": true,
    "courses_in_major": 100,
    "outside_prerequisites": 21,
    "edges": 91,
@@ -43,7 +63,9 @@
   {
    "id": "BAANTHCULTURAL",
    "name": "Anthropology - BA - Cultural Emphasis",
+   "kind": "major",
    "file": "anthropology-ba-cultural-emphasis.json",
+   "structured": true,
    "courses_in_major": 98,
    "outside_prerequisites": 21,
    "edges": 91,
@@ -51,9 +73,23 @@
    "upper_division_floor": 0
   },
   {
+   "id": "TvgU9p4DW3QV32DgILsL",
+   "name": "Anthropology - Minor",
+   "kind": "minor",
+   "file": "anthropology-minor.json",
+   "structured": true,
+   "courses_in_major": 85,
+   "outside_prerequisites": 22,
+   "edges": 91,
+   "columns": 5,
+   "upper_division_floor": 0
+  },
+  {
    "id": "BSAMATH",
    "name": "Applied Mathematics - BS",
+   "kind": "major",
    "file": "applied-mathematics-bs.json",
+   "structured": true,
    "courses_in_major": 102,
    "outside_prerequisites": 28,
    "edges": 247,
@@ -61,19 +97,23 @@
    "upper_division_floor": 4
   },
   {
-   "id": "BAAQBIO",
-   "name": "Aquatic Biology - BA",
-   "file": "aquatic-biology-ba.json",
-   "courses_in_major": 214,
-   "outside_prerequisites": 44,
-   "edges": 696,
-   "columns": 8,
+   "id": "Mh7tNXlDWPz5nIQRR94e",
+   "name": "Applied Psychology - Minor",
+   "kind": "minor",
+   "file": "applied-psychology-minor.json",
+   "structured": true,
+   "courses_in_major": 20,
+   "outside_prerequisites": 0,
+   "edges": 0,
+   "columns": 1,
    "upper_division_floor": 0
   },
   {
    "id": "BSAQBIO",
    "name": "Aquatic Biology - BS",
+   "kind": "major",
    "file": "aquatic-biology-bs.json",
+   "structured": true,
    "courses_in_major": 73,
    "outside_prerequisites": 30,
    "edges": 267,
@@ -81,9 +121,23 @@
    "upper_division_floor": 2
   },
   {
+   "id": "vWNTsyXphvYy0lSOkCEn",
+   "name": "Architecture & Urban History - Minor",
+   "kind": "minor",
+   "file": "architecture-urban-history-minor.json",
+   "structured": true,
+   "courses_in_major": 48,
+   "outside_prerequisites": 7,
+   "edges": 15,
+   "columns": 3,
+   "upper_division_floor": 0
+  },
+  {
    "id": "BAART",
    "name": "Art - BA",
+   "kind": "major",
    "file": "art-ba.json",
+   "structured": true,
    "courses_in_major": 56,
    "outside_prerequisites": 0,
    "edges": 63,
@@ -91,9 +145,43 @@
    "upper_division_floor": 1
   },
   {
+   "id": "BAARTCSBOOKARTS",
+   "name": "Art - BA - Book Arts Emphasis",
+   "kind": "major",
+   "file": "art-ba-book-arts-emphasis.json",
+   "structured": false,
+   "source": "https://catalog.ucsb.edu/programs/BAARTCSBOOKARTS"
+  },
+  {
+   "id": "BAARTCSPAINTING",
+   "name": "Art - BA - Painting Emphasis",
+   "kind": "major",
+   "file": "art-ba-painting-emphasis.json",
+   "structured": false,
+   "source": "https://catalog.ucsb.edu/programs/BAARTCSPAINTING"
+  },
+  {
+   "id": "BAARTCSSCULPT",
+   "name": "Art - BA - Sculpture Emphasis",
+   "kind": "major",
+   "file": "art-ba-sculpture-emphasis.json",
+   "structured": false,
+   "source": "https://catalog.ucsb.edu/programs/BAARTCSSCULPT"
+  },
+  {
+   "id": "BAARTCS",
+   "name": "Art - BA College of Creative Studies",
+   "kind": "major",
+   "file": "art-ba-college-of-creative-studies.json",
+   "structured": false,
+   "source": "https://catalog.ucsb.edu/programs/BAARTCS"
+  },
+  {
    "id": "mcAVHSCZnQkOVw0EAf1m",
    "name": "Artificial Intelligence - BS",
+   "kind": "major",
    "file": "artificial-intelligence-bs.json",
+   "structured": true,
    "courses_in_major": 58,
    "outside_prerequisites": 50,
    "edges": 185,
@@ -103,7 +191,9 @@
   {
    "id": "BAASAM",
    "name": "Asian American Studies - BA",
+   "kind": "major",
    "file": "asian-american-studies-ba.json",
+   "structured": true,
    "courses_in_major": 88,
    "outside_prerequisites": 5,
    "edges": 14,
@@ -111,9 +201,35 @@
    "upper_division_floor": 0
   },
   {
+   "id": "ScOPB2IWbUnIRzvRleMq",
+   "name": "Asian American Studies - Minor",
+   "kind": "minor",
+   "file": "asian-american-studies-minor.json",
+   "structured": true,
+   "courses_in_major": 86,
+   "outside_prerequisites": 1,
+   "edges": 6,
+   "columns": 2,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "gEIEmbbwlSAWFuGAZIs3",
+   "name": "Astronomy and Planetary Science - Minor",
+   "kind": "minor",
+   "file": "astronomy-and-planetary-science-minor.json",
+   "structured": true,
+   "courses_in_major": 49,
+   "outside_prerequisites": 21,
+   "edges": 129,
+   "columns": 9,
+   "upper_division_floor": 6
+  },
+  {
    "id": "BSBCHEM",
    "name": "Biochemistry - BS",
+   "kind": "major",
    "file": "biochemistry-bs.json",
+   "structured": true,
    "courses_in_major": 96,
    "outside_prerequisites": 54,
    "edges": 513,
@@ -123,7 +239,9 @@
   {
    "id": "BABIOSC",
    "name": "Biological Sciences - BA",
+   "kind": "major",
    "file": "biological-sciences-ba.json",
+   "structured": true,
    "courses_in_major": 103,
    "outside_prerequisites": 27,
    "edges": 466,
@@ -133,7 +251,9 @@
   {
    "id": "BSBIOSC",
    "name": "Biological Sciences - BS",
+   "kind": "major",
    "file": "biological-sciences-bs.json",
+   "structured": true,
    "courses_in_major": 128,
    "outside_prerequisites": 39,
    "edges": 588,
@@ -141,9 +261,19 @@
    "upper_division_floor": 4
   },
   {
+   "id": "BABIOCS",
+   "name": "Biology - BA College of Creative Studies",
+   "kind": "major",
+   "file": "biology-ba-college-of-creative-studies.json",
+   "structured": false,
+   "source": "https://catalog.ucsb.edu/programs/BABIOCS"
+  },
+  {
    "id": "BSBIPSY",
    "name": "Biopsychology - BS",
+   "kind": "major",
    "file": "biopsychology-bs.json",
+   "structured": true,
    "courses_in_major": 117,
    "outside_prerequisites": 40,
    "edges": 243,
@@ -153,7 +283,9 @@
   {
    "id": "BABLKST",
    "name": "Black Studies - BA",
+   "kind": "major",
    "file": "black-studies-ba.json",
+   "structured": true,
    "courses_in_major": 86,
    "outside_prerequisites": 4,
    "edges": 15,
@@ -161,9 +293,23 @@
    "upper_division_floor": 1
   },
   {
+   "id": "tTxCJdRNvQDoqKlBBkLi",
+   "name": "Black Studies - Minor",
+   "kind": "minor",
+   "file": "black-studies-minor.json",
+   "structured": true,
+   "courses_in_major": 70,
+   "outside_prerequisites": 5,
+   "edges": 15,
+   "columns": 3,
+   "upper_division_floor": 1
+  },
+  {
    "id": "BSCHEME",
    "name": "Chemical Engineering - BS",
+   "kind": "major",
    "file": "chemical-engineering-bs.json",
+   "structured": true,
    "courses_in_major": 106,
    "outside_prerequisites": 82,
    "edges": 554,
@@ -173,7 +319,9 @@
   {
    "id": "BACHEM",
    "name": "Chemistry - BA",
+   "kind": "major",
    "file": "chemistry-ba.json",
+   "structured": true,
    "courses_in_major": 97,
    "outside_prerequisites": 50,
    "edges": 494,
@@ -183,7 +331,9 @@
   {
    "id": "BSCHEM",
    "name": "Chemistry - BS",
+   "kind": "major",
    "file": "chemistry-bs.json",
+   "structured": true,
    "courses_in_major": 100,
    "outside_prerequisites": 49,
    "edges": 509,
@@ -191,9 +341,39 @@
    "upper_division_floor": 2
   },
   {
+   "id": "OnVSShnabOoErNazCEMl",
+   "name": "Chemistry - Minor",
+   "kind": "minor",
+   "file": "chemistry-minor.json",
+   "structured": true,
+   "courses_in_major": 72,
+   "outside_prerequisites": 66,
+   "edges": 449,
+   "columns": 11,
+   "upper_division_floor": 3
+  },
+  {
+   "id": "BACHBCS",
+   "name": "Chemistry and Biochemistry - BA College of Creative Studies",
+   "kind": "major",
+   "file": "chemistry-and-biochemistry-ba-college-of-creative-studies.json",
+   "structured": false,
+   "source": "https://catalog.ucsb.edu/programs/BACHBCS"
+  },
+  {
+   "id": "BSCHBCS",
+   "name": "Chemistry and Biochemistry - BS College of Creative Studies",
+   "kind": "major",
+   "file": "chemistry-and-biochemistry-bs-college-of-creative-studies.json",
+   "structured": false,
+   "source": "https://catalog.ucsb.edu/programs/BSCHBCS"
+  },
+  {
    "id": "BACHAST",
    "name": "Chicana and Chicano Studies - BA",
+   "kind": "major",
    "file": "chicana-and-chicano-studies-ba.json",
+   "structured": true,
    "courses_in_major": 132,
    "outside_prerequisites": 9,
    "edges": 79,
@@ -201,9 +381,47 @@
    "upper_division_floor": 0
   },
   {
+   "id": "WekJwhc027jYXvSB3hkl",
+   "name": "Chicana and Chicano Studies - Minor",
+   "kind": "minor",
+   "file": "chicana-and-chicano-studies-minor.json",
+   "structured": true,
+   "courses_in_major": 98,
+   "outside_prerequisites": 5,
+   "edges": 70,
+   "columns": 2,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "ezSSULONnfvtTpFQBLrw",
+   "name": "Childhood and Youth Studies - Minor",
+   "kind": "minor",
+   "file": "childhood-and-youth-studies-minor.json",
+   "structured": true,
+   "courses_in_major": 54,
+   "outside_prerequisites": 43,
+   "edges": 84,
+   "columns": 4,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "BqJdshkEB6vyuzcTwTWP",
+   "name": "Chinese - Minor",
+   "kind": "minor",
+   "file": "chinese-minor.json",
+   "structured": true,
+   "courses_in_major": 76,
+   "outside_prerequisites": 14,
+   "edges": 57,
+   "columns": 7,
+   "upper_division_floor": 1
+  },
+  {
    "id": "ABW8eM1cgyNrdxM30jua",
    "name": "Classics - BA - Ancient Greek and Roman Philosophy Emphasis",
+   "kind": "major",
    "file": "classics-ba-ancient-greek-and-roman-philosophy-emphasis.json",
+   "structured": true,
    "courses_in_major": 37,
    "outside_prerequisites": 0,
    "edges": 8,
@@ -213,7 +431,9 @@
   {
    "id": "BACLASSCLASARCH",
    "name": "Classics - BA - Classical Archaeology Emphasis",
+   "kind": "major",
    "file": "classics-ba-classical-archaeology-emphasis.json",
+   "structured": true,
    "courses_in_major": 56,
    "outside_prerequisites": 2,
    "edges": 18,
@@ -223,7 +443,9 @@
   {
    "id": "BACLASSCLASLNLT",
    "name": "Classics - BA - Classical Language & Literature Emphasis",
+   "kind": "major",
    "file": "classics-ba-classical-language-literature-emphasis.json",
+   "structured": true,
    "courses_in_major": 70,
    "outside_prerequisites": 3,
    "edges": 41,
@@ -233,7 +455,9 @@
   {
    "id": "BACLASSGRECOROM",
    "name": "Classics - BA - Greek and Roman Culture Emphasis",
+   "kind": "major",
    "file": "classics-ba-greek-and-roman-culture-emphasis.json",
+   "structured": true,
    "courses_in_major": 84,
    "outside_prerequisites": 14,
    "edges": 28,
@@ -241,9 +465,23 @@
    "upper_division_floor": 0
   },
   {
+   "id": "bkxoln9NJWDwz0TH2qyz",
+   "name": "Classics - Minor",
+   "kind": "minor",
+   "file": "classics-minor.json",
+   "structured": true,
+   "courses_in_major": 69,
+   "outside_prerequisites": 1,
+   "edges": 34,
+   "columns": 7,
+   "upper_division_floor": 0
+  },
+  {
    "id": "BACOMM",
    "name": "Communication - BA",
+   "kind": "major",
    "file": "communication-ba.json",
+   "structured": true,
    "courses_in_major": 33,
    "outside_prerequisites": 17,
    "edges": 25,
@@ -253,8 +491,22 @@
   {
    "id": "BACLITINTERDIS",
    "name": "Comparative Literature - BA - Interdisciplinary Emphasis",
+   "kind": "major",
    "file": "comparative-literature-ba-interdisciplinary-emphasis.json",
+   "structured": true,
    "courses_in_major": 79,
+   "outside_prerequisites": 39,
+   "edges": 83,
+   "columns": 7,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "G6p9MJv0pDXsRUZXe8vw",
+   "name": "Comparative Literature - Minor",
+   "kind": "minor",
+   "file": "comparative-literature-minor.json",
+   "structured": true,
+   "courses_in_major": 77,
    "outside_prerequisites": 39,
    "edges": 83,
    "columns": 7,
@@ -263,7 +515,9 @@
   {
    "id": "BSCMPEN",
    "name": "Computer Engineering - BS",
+   "kind": "major",
    "file": "computer-engineering-bs.json",
+   "structured": true,
    "courses_in_major": 94,
    "outside_prerequisites": 41,
    "edges": 201,
@@ -273,7 +527,9 @@
   {
    "id": "BSCMPSC",
    "name": "Computer Science - BS",
+   "kind": "major",
    "file": "computer-science-bs.json",
+   "structured": true,
    "courses_in_major": 71,
    "outside_prerequisites": 47,
    "edges": 214,
@@ -281,9 +537,155 @@
    "upper_division_floor": 4
   },
   {
+   "id": "BSCMPCS",
+   "name": "Computer Science - BS College of Creative Studies",
+   "kind": "major",
+   "file": "computer-science-bs-college-of-creative-studies.json",
+   "structured": false,
+   "source": "https://catalog.ucsb.edu/programs/BSCMPCS"
+  },
+  {
+   "id": "BACRTST",
+   "name": "Creative Studies - BA",
+   "kind": "major",
+   "file": "creative-studies-ba.json",
+   "structured": false,
+   "source": "https://catalog.ucsb.edu/programs/BACRTST"
+  },
+  {
+   "id": "BACRTSTART",
+   "name": "Creative Studies - BA - Art Emphasis",
+   "kind": "major",
+   "file": "creative-studies-ba-art-emphasis.json",
+   "structured": false,
+   "source": "https://catalog.ucsb.edu/programs/BACRTSTART"
+  },
+  {
+   "id": "BACRTSTBIOL",
+   "name": "Creative Studies - BA - Biology Emphasis",
+   "kind": "major",
+   "file": "creative-studies-ba-biology-emphasis.json",
+   "structured": false,
+   "source": "https://catalog.ucsb.edu/programs/BACRTSTBIOL"
+  },
+  {
+   "id": "BACRTSTBOOKARTS",
+   "name": "Creative Studies - BA - Book Arts Emphasis",
+   "kind": "major",
+   "file": "creative-studies-ba-book-arts-emphasis.json",
+   "structured": false,
+   "source": "https://catalog.ucsb.edu/programs/BACRTSTBOOKARTS"
+  },
+  {
+   "id": "BACRTSTCHEM",
+   "name": "Creative Studies - BA - Chemistry Emphasis",
+   "kind": "major",
+   "file": "creative-studies-ba-chemistry-emphasis.json",
+   "structured": false,
+   "source": "https://catalog.ucsb.edu/programs/BACRTSTCHEM"
+  },
+  {
+   "id": "BACRTSTCHEMBCHM",
+   "name": "Creative Studies - BA - Chemistry and Biochemistry Emphasis",
+   "kind": "major",
+   "file": "creative-studies-ba-chemistry-and-biochemistry-emphasis.json",
+   "structured": false,
+   "source": "https://catalog.ucsb.edu/programs/BACRTSTCHEMBCHM"
+  },
+  {
+   "id": "BACRTSTLIT",
+   "name": "Creative Studies - BA - Literature Emphasis",
+   "kind": "major",
+   "file": "creative-studies-ba-literature-emphasis.json",
+   "structured": false,
+   "source": "https://catalog.ucsb.edu/programs/BACRTSTLIT"
+  },
+  {
+   "id": "BACRTSTMATH",
+   "name": "Creative Studies - BA - Mathematics Emphasis",
+   "kind": "major",
+   "file": "creative-studies-ba-mathematics-emphasis.json",
+   "structured": false,
+   "source": "https://catalog.ucsb.edu/programs/BACRTSTMATH"
+  },
+  {
+   "id": "BACRTSTMUSIC",
+   "name": "Creative Studies - BA - Music Emphasis",
+   "kind": "major",
+   "file": "creative-studies-ba-music-emphasis.json",
+   "structured": false,
+   "source": "https://catalog.ucsb.edu/programs/BACRTSTMUSIC"
+  },
+  {
+   "id": "BACRTSTPAINTING",
+   "name": "Creative Studies - BA - Painting Emphasis",
+   "kind": "major",
+   "file": "creative-studies-ba-painting-emphasis.json",
+   "structured": false,
+   "source": "https://catalog.ucsb.edu/programs/BACRTSTPAINTING"
+  },
+  {
+   "id": "BACRTSTPHYS",
+   "name": "Creative Studies - BA - Physics Emphasis",
+   "kind": "major",
+   "file": "creative-studies-ba-physics-emphasis.json",
+   "structured": false,
+   "source": "https://catalog.ucsb.edu/programs/BACRTSTPHYS"
+  },
+  {
+   "id": "BACRTSTSCULPT",
+   "name": "Creative Studies - BA - Sculpture Emphasis",
+   "kind": "major",
+   "file": "creative-studies-ba-sculpture-emphasis.json",
+   "structured": false,
+   "source": "https://catalog.ucsb.edu/programs/BACRTSTSCULPT"
+  },
+  {
+   "id": "BSCRTSTCHEM",
+   "name": "Creative Studies - BS - Chemistry Emphasis",
+   "kind": "major",
+   "file": "creative-studies-bs-chemistry-emphasis.json",
+   "structured": false,
+   "source": "https://catalog.ucsb.edu/programs/BSCRTSTCHEM"
+  },
+  {
+   "id": "BSCRTSTCHEMBCHM",
+   "name": "Creative Studies - BS - Chemistry and Biochemistry Emphasis",
+   "kind": "major",
+   "file": "creative-studies-bs-chemistry-and-biochemistry-emphasis.json",
+   "structured": false,
+   "source": "https://catalog.ucsb.edu/programs/BSCRTSTCHEMBCHM"
+  },
+  {
+   "id": "BSCRTSTCOMPSCI",
+   "name": "Creative Studies - BS - Computer Science Emphasis",
+   "kind": "major",
+   "file": "creative-studies-bs-computer-science-emphasis.json",
+   "structured": false,
+   "source": "https://catalog.ucsb.edu/programs/BSCRTSTCOMPSCI"
+  },
+  {
+   "id": "BSCRTSTMATH",
+   "name": "Creative Studies - BS - Mathematics Emphasis",
+   "kind": "major",
+   "file": "creative-studies-bs-mathematics-emphasis.json",
+   "structured": false,
+   "source": "https://catalog.ucsb.edu/programs/BSCRTSTMATH"
+  },
+  {
+   "id": "BSCRTSTPHYS",
+   "name": "Creative Studies - BS - Physics Emphasis",
+   "kind": "major",
+   "file": "creative-studies-bs-physics-emphasis.json",
+   "structured": false,
+   "source": "https://catalog.ucsb.edu/programs/BSCRTSTPHYS"
+  },
+  {
    "id": "BADANCE",
    "name": "Dance - BA",
+   "kind": "major",
    "file": "dance-ba.json",
+   "structured": true,
    "courses_in_major": 114,
    "outside_prerequisites": 2,
    "edges": 41,
@@ -293,7 +695,9 @@
   {
    "id": "BFADANCE",
    "name": "Dance - BFA",
+   "kind": "major",
    "file": "dance-bfa.json",
+   "structured": true,
    "courses_in_major": 98,
    "outside_prerequisites": 0,
    "edges": 41,
@@ -303,7 +707,9 @@
   {
    "id": "BAEARTH",
    "name": "Earth Science - BA",
+   "kind": "major",
    "file": "earth-science-ba.json",
+   "structured": true,
    "courses_in_major": 161,
    "outside_prerequisites": 76,
    "edges": 542,
@@ -313,7 +719,9 @@
   {
    "id": "1Y81tx7rjeP3wMSGIBfV",
    "name": "Earth Science - BS -  Geobiology & Paleobiology Emphasis",
+   "kind": "major",
    "file": "earth-science-bs-geobiology-paleobiology-emphasis.json",
+   "structured": true,
    "courses_in_major": 63,
    "outside_prerequisites": 27,
    "edges": 181,
@@ -323,7 +731,9 @@
   {
    "id": "BSEARTHCLIMATE",
    "name": "Earth Science - BS - Climate and Environment Emphasis",
+   "kind": "major",
    "file": "earth-science-bs-climate-and-environment-emphasis.json",
+   "structured": true,
    "courses_in_major": 83,
    "outside_prerequisites": 29,
    "edges": 242,
@@ -333,7 +743,9 @@
   {
    "id": "BSEARTHGEOL",
    "name": "Earth Science - BS - Geology Emphasis",
+   "kind": "major",
    "file": "earth-science-bs-geology-emphasis.json",
+   "structured": true,
    "courses_in_major": 41,
    "outside_prerequisites": 12,
    "edges": 117,
@@ -343,7 +755,9 @@
   {
    "id": "BSEARTHGEOPHYS",
    "name": "Earth Science - BS - Geophysics Emphasis",
+   "kind": "major",
    "file": "earth-science-bs-geophysics-emphasis.json",
+   "structured": true,
    "courses_in_major": 127,
    "outside_prerequisites": 32,
    "edges": 395,
@@ -351,9 +765,23 @@
    "upper_division_floor": 0
   },
   {
+   "id": "5GXc6rr7lBk2tnzXriiM",
+   "name": "Earth Science - Minor",
+   "kind": "minor",
+   "file": "earth-science-minor.json",
+   "structured": true,
+   "courses_in_major": 86,
+   "outside_prerequisites": 53,
+   "edges": 352,
+   "columns": 5,
+   "upper_division_floor": 0
+  },
+  {
    "id": "BAASNST",
    "name": "East Asian Studies - BA",
+   "kind": "major",
    "file": "east-asian-studies-ba.json",
+   "structured": true,
    "courses_in_major": 187,
    "outside_prerequisites": 19,
    "edges": 93,
@@ -363,7 +791,9 @@
   {
    "id": "BAECOEV",
    "name": "Ecology and Evolution - BA",
+   "kind": "major",
    "file": "ecology-and-evolution-ba.json",
+   "structured": true,
    "courses_in_major": 151,
    "outside_prerequisites": 44,
    "edges": 595,
@@ -373,7 +803,9 @@
   {
    "id": "BSECOEV",
    "name": "Ecology and Evolution - BS",
+   "kind": "major",
    "file": "ecology-and-evolution-bs.json",
+   "structured": true,
    "courses_in_major": 92,
    "outside_prerequisites": 40,
    "edges": 503,
@@ -383,7 +815,9 @@
   {
    "id": "BAECON",
    "name": "Economics - BA",
+   "kind": "major",
    "file": "economics-ba.json",
+   "structured": true,
    "courses_in_major": 77,
    "outside_prerequisites": 14,
    "edges": 156,
@@ -393,7 +827,9 @@
   {
    "id": "BAECACC",
    "name": "Economics and Accounting - BA",
+   "kind": "major",
    "file": "economics-and-accounting-ba.json",
+   "structured": true,
    "courses_in_major": 82,
    "outside_prerequisites": 12,
    "edges": 162,
@@ -401,9 +837,23 @@
    "upper_division_floor": 3
   },
   {
+   "id": "JbuncR3fvgtCcGMntnjz",
+   "name": "Educational Studies - Minor",
+   "kind": "minor",
+   "file": "educational-studies-minor.json",
+   "structured": true,
+   "courses_in_major": 35,
+   "outside_prerequisites": 13,
+   "edges": 21,
+   "columns": 4,
+   "upper_division_floor": 0
+  },
+  {
    "id": "BSEE",
    "name": "Electrical Engineering - BS",
+   "kind": "major",
    "file": "electrical-engineering-bs.json",
+   "structured": true,
    "courses_in_major": 96,
    "outside_prerequisites": 57,
    "edges": 309,
@@ -413,7 +863,9 @@
   {
    "id": "BAENGL",
    "name": "English - BA",
+   "kind": "major",
    "file": "english-ba.json",
+   "structured": true,
    "courses_in_major": 196,
    "outside_prerequisites": 9,
    "edges": 222,
@@ -421,9 +873,35 @@
    "upper_division_floor": 3
   },
   {
+   "id": "m3ZHQZLHiTKeKmI76gF3",
+   "name": "English - Minor",
+   "kind": "minor",
+   "file": "english-minor.json",
+   "structured": true,
+   "courses_in_major": 174,
+   "outside_prerequisites": 9,
+   "edges": 338,
+   "columns": 4,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "IvcgpnZwqTTIFhwhaa4l",
+   "name": "Environmental Humanities - Minor",
+   "kind": "minor",
+   "file": "environmental-humanities-minor.json",
+   "structured": true,
+   "courses_in_major": 54,
+   "outside_prerequisites": 19,
+   "edges": 55,
+   "columns": 3,
+   "upper_division_floor": 0
+  },
+  {
    "id": "BAENVST",
    "name": "Environmental Studies - BA",
+   "kind": "major",
    "file": "environmental-studies-ba.json",
+   "structured": true,
    "courses_in_major": 68,
    "outside_prerequisites": 7,
    "edges": 87,
@@ -433,7 +911,9 @@
   {
    "id": "BSENVST",
    "name": "Environmental Studies - BS",
+   "kind": "major",
    "file": "environmental-studies-bs.json",
+   "structured": true,
    "courses_in_major": 122,
    "outside_prerequisites": 36,
    "edges": 373,
@@ -443,8 +923,22 @@
   {
    "id": "BAFEMST",
    "name": "Feminist Studies - BA",
+   "kind": "major",
    "file": "feminist-studies-ba.json",
+   "structured": true,
    "courses_in_major": 10,
+   "outside_prerequisites": 0,
+   "edges": 0,
+   "columns": 1,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "EK5TKmYnukwvbarMYnkv",
+   "name": "Feminist Studies - Minor",
+   "kind": "minor",
+   "file": "feminist-studies-minor.json",
+   "structured": true,
+   "courses_in_major": 8,
    "outside_prerequisites": 0,
    "edges": 0,
    "columns": 1,
@@ -453,7 +947,9 @@
   {
    "id": "BAFAMST",
    "name": "Film and Media Studies - BA",
+   "kind": "major",
    "file": "film-and-media-studies-ba.json",
+   "structured": true,
    "courses_in_major": 167,
    "outside_prerequisites": 10,
    "edges": 108,
@@ -463,7 +959,9 @@
   {
    "id": "BSFINMS",
    "name": "Financial Mathematics and Statistics - BS",
+   "kind": "major",
    "file": "financial-mathematics-and-statistics-bs.json",
+   "structured": true,
    "courses_in_major": 56,
    "outside_prerequisites": 33,
    "edges": 206,
@@ -473,7 +971,9 @@
   {
    "id": "BAFR",
    "name": "French - BA",
+   "kind": "major",
    "file": "french-ba.json",
+   "structured": true,
    "courses_in_major": 70,
    "outside_prerequisites": 8,
    "edges": 99,
@@ -481,9 +981,35 @@
    "upper_division_floor": 0
   },
   {
+   "id": "ltjmqnexV25zw1T3YIQ8",
+   "name": "French - Minor",
+   "kind": "minor",
+   "file": "french-minor.json",
+   "structured": true,
+   "courses_in_major": 59,
+   "outside_prerequisites": 7,
+   "edges": 89,
+   "columns": 5,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "LtHXjlgdOjhIa1etL80U",
+   "name": "Game Studies - Minor",
+   "kind": "minor",
+   "file": "game-studies-minor.json",
+   "structured": true,
+   "courses_in_major": 19,
+   "outside_prerequisites": 38,
+   "edges": 76,
+   "columns": 6,
+   "upper_division_floor": 0
+  },
+  {
    "id": "BAGEOG",
    "name": "Geography - BA",
+   "kind": "major",
    "file": "geography-ba.json",
+   "structured": true,
    "courses_in_major": 105,
    "outside_prerequisites": 37,
    "edges": 207,
@@ -493,7 +1019,9 @@
   {
    "id": "BAGEOGGEOGISCI",
    "name": "Geography - BA - Geographic Information Science Emphasis",
+   "kind": "major",
    "file": "geography-ba-geographic-information-science-emphasis.json",
+   "structured": true,
    "courses_in_major": 104,
    "outside_prerequisites": 37,
    "edges": 207,
@@ -503,7 +1031,9 @@
   {
    "id": "BAGERM",
    "name": "German - BA",
+   "kind": "major",
    "file": "german-ba.json",
+   "structured": true,
    "courses_in_major": 68,
    "outside_prerequisites": 6,
    "edges": 48,
@@ -511,9 +1041,47 @@
    "upper_division_floor": 6
   },
   {
+   "id": "NHNmHVOGJjYrzTN7YUpM",
+   "name": "German Studies - Minor",
+   "kind": "minor",
+   "file": "german-studies-minor.json",
+   "structured": true,
+   "courses_in_major": 33,
+   "outside_prerequisites": 0,
+   "edges": 35,
+   "columns": 8,
+   "upper_division_floor": 6
+  },
+  {
+   "id": "BAGLOBL",
+   "name": "Global Studies - BA",
+   "kind": "major",
+   "file": "global-studies-ba.json",
+   "structured": true,
+   "courses_in_major": 392,
+   "outside_prerequisites": 105,
+   "edges": 341,
+   "columns": 7,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "RpvJh6Tdee4uprCErkHj",
+   "name": "Health Humanities - Minor",
+   "kind": "minor",
+   "file": "health-humanities-minor.json",
+   "structured": true,
+   "courses_in_major": 52,
+   "outside_prerequisites": 27,
+   "edges": 55,
+   "columns": 3,
+   "upper_division_floor": 0
+  },
+  {
    "id": "BAHIST",
    "name": "History - BA",
+   "kind": "major",
    "file": "history-ba.json",
+   "structured": true,
    "courses_in_major": 290,
    "outside_prerequisites": 25,
    "edges": 301,
@@ -521,10 +1089,24 @@
    "upper_division_floor": 0
   },
   {
-   "id": "BAARTHI",
-   "name": "History of Art and Architecture - BA",
-   "file": "history-of-art-and-architecture-ba-baarthi.json",
-   "courses_in_major": 17,
+   "id": "ihw0fKkjh8z4pCIEWq5A",
+   "name": "History - Minor",
+   "kind": "minor",
+   "file": "history-minor.json",
+   "structured": true,
+   "courses_in_major": 39,
+   "outside_prerequisites": 0,
+   "edges": 8,
+   "columns": 1,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "AXni4dsrCMDpQ9DHAxdG",
+   "name": "History of Art & Architecture - Minor",
+   "kind": "minor",
+   "file": "history-of-art-architecture-minor.json",
+   "structured": true,
+   "courses_in_major": 18,
    "outside_prerequisites": 0,
    "edges": 0,
    "columns": 1,
@@ -533,7 +1115,9 @@
   {
    "id": "BAHSART",
    "name": "History of Art and Architecture - BA",
-   "file": "history-of-art-and-architecture-ba-bahsart.json",
+   "kind": "major",
+   "file": "history-of-art-and-architecture-ba.json",
+   "structured": true,
    "courses_in_major": 19,
    "outside_prerequisites": 0,
    "edges": 0,
@@ -543,7 +1127,9 @@
   {
    "id": "BAHSARTARCHENVO",
    "name": "History of Art and Architecture - BA - Architecture and Environment Emphasis",
-   "file": "history-of-art-and-architecture-ba-architecture-and-environment-emphasis-bahsartarchenvo.json",
+   "kind": "major",
+   "file": "history-of-art-and-architecture-ba-architecture-and-environment-emphasis.json",
+   "structured": true,
    "courses_in_major": 108,
    "outside_prerequisites": 44,
    "edges": 99,
@@ -553,7 +1139,9 @@
   {
    "id": "BAHSARTMUSEUMST",
    "name": "History of Art and Architecture - BA - Museum Studies Emphasis",
-   "file": "history-of-art-and-architecture-ba-museum-studies-emphasis-bahsartmuseumst.json",
+   "kind": "major",
+   "file": "history-of-art-and-architecture-ba-museum-studies-emphasis.json",
+   "structured": true,
    "courses_in_major": 58,
    "outside_prerequisites": 10,
    "edges": 15,
@@ -563,7 +1151,9 @@
   {
    "id": "BAHISPL",
    "name": "History of Policy, Law, and Governance - BA",
+   "kind": "major",
    "file": "history-of-policy-law-and-governance-ba.json",
+   "structured": true,
    "courses_in_major": 186,
    "outside_prerequisites": 45,
    "edges": 210,
@@ -571,9 +1161,27 @@
    "upper_division_floor": 0
   },
   {
+   "id": "BAINDIV",
+   "name": "Individual - BA",
+   "kind": "major",
+   "file": "individual-ba.json",
+   "structured": false,
+   "source": "https://catalog.ucsb.edu/programs/BAINDIV"
+  },
+  {
+   "id": "BSINDV",
+   "name": "Individual - BS",
+   "kind": "major",
+   "file": "individual-bs.json",
+   "structured": false,
+   "source": "https://catalog.ucsb.edu/programs/BSINDV"
+  },
+  {
    "id": "BAINTST",
    "name": "Interdisciplinary Studies - BA",
+   "kind": "major",
    "file": "interdisciplinary-studies-ba.json",
+   "structured": true,
    "courses_in_major": 0,
    "outside_prerequisites": 0,
    "edges": 0,
@@ -581,9 +1189,35 @@
    "upper_division_floor": 0
   },
   {
+   "id": "yhWlSEg2CDzz84k4AqlQ",
+   "name": "Iranian Studies - Minor",
+   "kind": "minor",
+   "file": "iranian-studies-minor.json",
+   "structured": true,
+   "courses_in_major": 43,
+   "outside_prerequisites": 5,
+   "edges": 25,
+   "columns": 6,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "FmzNQxQruftko7PYc6GU",
+   "name": "Italian - Minor",
+   "kind": "minor",
+   "file": "italian-minor.json",
+   "structured": true,
+   "courses_in_major": 42,
+   "outside_prerequisites": 0,
+   "edges": 29,
+   "columns": 5,
+   "upper_division_floor": 3
+  },
+  {
    "id": "BAITALS",
    "name": "Italian Studies - BA",
+   "kind": "major",
    "file": "italian-studies-ba.json",
+   "structured": true,
    "courses_in_major": 82,
    "outside_prerequisites": 12,
    "edges": 48,
@@ -593,7 +1227,9 @@
   {
    "id": "BAITALSTRANSNAT",
    "name": "Italian Studies - BA - Transnational Emphasis",
+   "kind": "major",
    "file": "italian-studies-ba-transnational-emphasis.json",
+   "structured": true,
    "courses_in_major": 66,
    "outside_prerequisites": 10,
    "edges": 21,
@@ -601,9 +1237,59 @@
    "upper_division_floor": 0
   },
   {
+   "id": "YOEKriTnzMICe7gzkvN1",
+   "name": "Japanese - Minor",
+   "kind": "minor",
+   "file": "japanese-minor.json",
+   "structured": true,
+   "courses_in_major": 59,
+   "outside_prerequisites": 9,
+   "edges": 36,
+   "columns": 11,
+   "upper_division_floor": 6
+  },
+  {
+   "id": "l0T2AKxZV6exHw8q3HzD",
+   "name": "Jewish Studies - Minor",
+   "kind": "minor",
+   "file": "jewish-studies-minor.json",
+   "structured": true,
+   "courses_in_major": 39,
+   "outside_prerequisites": 9,
+   "edges": 19,
+   "columns": 4,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "RR5QOChfokC7bLMu9qre",
+   "name": "Labor Studies - Minor",
+   "kind": "minor",
+   "file": "labor-studies-minor.json",
+   "structured": true,
+   "courses_in_major": 62,
+   "outside_prerequisites": 26,
+   "edges": 70,
+   "columns": 4,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "F8N6GPVhwoni0ywNg2Cp",
+   "name": "Language & Speech Technologies - Minor",
+   "kind": "minor",
+   "file": "language-speech-technologies-minor.json",
+   "structured": true,
+   "courses_in_major": 56,
+   "outside_prerequisites": 2,
+   "edges": 45,
+   "columns": 3,
+   "upper_division_floor": 0
+  },
+  {
    "id": "BALC&S",
    "name": "Language, Culture, and Society - BA",
+   "kind": "major",
    "file": "language-culture-and-society-ba.json",
+   "structured": true,
    "courses_in_major": 91,
    "outside_prerequisites": 6,
    "edges": 51,
@@ -611,9 +1297,23 @@
    "upper_division_floor": 0
   },
   {
+   "id": "vCUbrNOAhXsbxWVqDrg5",
+   "name": "Latin American & Iberian Studies - Minor",
+   "kind": "minor",
+   "file": "latin-american-iberian-studies-minor.json",
+   "structured": true,
+   "courses_in_major": 153,
+   "outside_prerequisites": 47,
+   "edges": 173,
+   "columns": 7,
+   "upper_division_floor": 1
+  },
+  {
    "id": "BALAIS",
    "name": "Latin American and Iberian Studies - BA",
+   "kind": "major",
    "file": "latin-american-and-iberian-studies-ba.json",
+   "structured": true,
    "courses_in_major": 154,
    "outside_prerequisites": 47,
    "edges": 173,
@@ -621,9 +1321,35 @@
    "upper_division_floor": 0
   },
   {
+   "id": "Ww0LJ9rq4EamyT5dYkhC",
+   "name": "Legal Humanities - Minor",
+   "kind": "minor",
+   "file": "legal-humanities-minor.json",
+   "structured": true,
+   "courses_in_major": 33,
+   "outside_prerequisites": 16,
+   "edges": 32,
+   "columns": 3,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "tJzCBDDqgU7GVc5XTwbz",
+   "name": "Lesbian, Gay, Bisexual, Transgender, & Queer Studies - Minor",
+   "kind": "minor",
+   "file": "lesbian-gay-bisexual-transgender-queer-studies-minor.json",
+   "structured": true,
+   "courses_in_major": 46,
+   "outside_prerequisites": 21,
+   "edges": 36,
+   "columns": 5,
+   "upper_division_floor": 1
+  },
+  {
    "id": "BALING",
    "name": "Linguistics - BA",
+   "kind": "major",
    "file": "linguistics-ba.json",
+   "structured": true,
    "courses_in_major": 55,
    "outside_prerequisites": 2,
    "edges": 45,
@@ -633,7 +1359,9 @@
   {
    "id": "BALINGCHINESE",
    "name": "Linguistics - BA - Chinese Emphasis",
+   "kind": "major",
    "file": "linguistics-ba-chinese-emphasis.json",
+   "structured": true,
    "courses_in_major": 97,
    "outside_prerequisites": 18,
    "edges": 73,
@@ -643,7 +1371,9 @@
   {
    "id": "BALINGENGLISH",
    "name": "Linguistics - BA - English Emphasis",
+   "kind": "major",
    "file": "linguistics-ba-english-emphasis.json",
+   "structured": true,
    "courses_in_major": 55,
    "outside_prerequisites": 2,
    "edges": 45,
@@ -653,7 +1383,9 @@
   {
    "id": "BALINGFRENCH",
    "name": "Linguistics - BA - French Emphasis",
+   "kind": "major",
    "file": "linguistics-ba-french-emphasis.json",
+   "structured": true,
    "courses_in_major": 108,
    "outside_prerequisites": 12,
    "edges": 132,
@@ -663,7 +1395,9 @@
   {
    "id": "BALINGGERMAN",
    "name": "Linguistics - BA - German Emphasis",
+   "kind": "major",
    "file": "linguistics-ba-german-emphasis.json",
+   "structured": true,
    "courses_in_major": 83,
    "outside_prerequisites": 7,
    "edges": 80,
@@ -673,7 +1407,9 @@
   {
    "id": "BALINGJAPANESE",
    "name": "Linguistics - BA - Japanese Emphasis",
+   "kind": "major",
    "file": "linguistics-ba-japanese-emphasis.json",
+   "structured": true,
    "courses_in_major": 87,
    "outside_prerequisites": 9,
    "edges": 59,
@@ -683,7 +1419,9 @@
   {
    "id": "BALINGLASPTECH",
    "name": "Linguistics - BA - Language and Speech Technologies Emphasis",
+   "kind": "major",
    "file": "linguistics-ba-language-and-speech-technologies-emphasis.json",
+   "structured": true,
    "courses_in_major": 56,
    "outside_prerequisites": 2,
    "edges": 45,
@@ -693,7 +1431,9 @@
   {
    "id": "BALINGSLAVIC",
    "name": "Linguistics - BA - Slavic Emphasis",
+   "kind": "major",
    "file": "linguistics-ba-slavic-emphasis.json",
+   "structured": true,
    "courses_in_major": 90,
    "outside_prerequisites": 7,
    "edges": 58,
@@ -703,7 +1443,9 @@
   {
    "id": "BALINGSPANISH",
    "name": "Linguistics - BA - Spanish Emphasis",
+   "kind": "major",
    "file": "linguistics-ba-spanish-emphasis.json",
+   "structured": true,
    "courses_in_major": 155,
    "outside_prerequisites": 19,
    "edges": 212,
@@ -713,7 +1455,9 @@
   {
    "id": "BALINGSLDS",
    "name": "Linguistics - BA - Speech-Language Sciences and Disorders Emphasis",
+   "kind": "major",
    "file": "linguistics-ba-speech-language-sciences-and-disorders-emphasis.json",
+   "structured": true,
    "courses_in_major": 58,
    "outside_prerequisites": 1,
    "edges": 45,
@@ -721,9 +1465,31 @@
    "upper_division_floor": 1
   },
   {
+   "id": "VeH4o1l3qkynM7REkGLP",
+   "name": "Linguistics - Minor",
+   "kind": "minor",
+   "file": "linguistics-minor.json",
+   "structured": true,
+   "courses_in_major": 55,
+   "outside_prerequisites": 2,
+   "edges": 45,
+   "columns": 4,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "BAMRNCS",
+   "name": "Marine Science - BA College of Creative Studies",
+   "kind": "major",
+   "file": "marine-science-ba-college-of-creative-studies.json",
+   "structured": false,
+   "source": "https://catalog.ucsb.edu/programs/BAMRNCS"
+  },
+  {
    "id": "BAMATH",
    "name": "Mathematics - BA",
+   "kind": "major",
    "file": "mathematics-ba.json",
+   "structured": true,
    "courses_in_major": 100,
    "outside_prerequisites": 30,
    "edges": 247,
@@ -731,9 +1497,19 @@
    "upper_division_floor": 3
   },
   {
+   "id": "BAMATCS",
+   "name": "Mathematics - BA College of Creative Studies",
+   "kind": "major",
+   "file": "mathematics-ba-college-of-creative-studies.json",
+   "structured": false,
+   "source": "https://catalog.ucsb.edu/programs/BAMATCS"
+  },
+  {
    "id": "BSMATH",
    "name": "Mathematics - BS",
+   "kind": "major",
    "file": "mathematics-bs.json",
+   "structured": true,
    "courses_in_major": 102,
    "outside_prerequisites": 28,
    "edges": 247,
@@ -741,9 +1517,43 @@
    "upper_division_floor": 4
   },
   {
+   "id": "BSMATCS",
+   "name": "Mathematics - BS College of Creative Studies",
+   "kind": "major",
+   "file": "mathematics-bs-college-of-creative-studies.json",
+   "structured": false,
+   "source": "https://catalog.ucsb.edu/programs/BSMATCS"
+  },
+  {
+   "id": "hRoE0M3erWvxWAcOTOFJ",
+   "name": "Mathematics - Minor",
+   "kind": "minor",
+   "file": "mathematics-minor.json",
+   "structured": true,
+   "courses_in_major": 52,
+   "outside_prerequisites": 23,
+   "edges": 142,
+   "columns": 8,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "MuHphlTKZnEnZQXTRz3y",
+   "name": "Mathematics for High School Teaching - Minor",
+   "kind": "minor",
+   "file": "mathematics-for-high-school-teaching-minor.json",
+   "structured": true,
+   "courses_in_major": 13,
+   "outside_prerequisites": 7,
+   "edges": 28,
+   "columns": 6,
+   "upper_division_floor": 3
+  },
+  {
    "id": "BSME",
    "name": "Mechanical Engineering - BS",
+   "kind": "major",
    "file": "mechanical-engineering-bs.json",
+   "structured": true,
    "courses_in_major": 96,
    "outside_prerequisites": 49,
    "edges": 297,
@@ -751,9 +1561,23 @@
    "upper_division_floor": 2
   },
   {
+   "id": "LFTURyih1ii2pmVp0VT3",
+   "name": "Media Arts and Design- Minor",
+   "kind": "minor",
+   "file": "media-arts-and-design-minor.json",
+   "structured": true,
+   "courses_in_major": 21,
+   "outside_prerequisites": 13,
+   "edges": 24,
+   "columns": 3,
+   "upper_division_floor": 1
+  },
+  {
    "id": "BAMDVST",
    "name": "Medieval Studies - BA",
+   "kind": "major",
    "file": "medieval-studies-ba.json",
+   "structured": true,
    "courses_in_major": 140,
    "outside_prerequisites": 36,
    "edges": 107,
@@ -761,9 +1585,23 @@
    "upper_division_floor": 0
   },
   {
+   "id": "EIQ4TR7moZGokxM6aSiE",
+   "name": "Medieval Studies - Minor",
+   "kind": "minor",
+   "file": "medieval-studies-minor.json",
+   "structured": true,
+   "courses_in_major": 136,
+   "outside_prerequisites": 37,
+   "edges": 106,
+   "columns": 7,
+   "upper_division_floor": 0
+  },
+  {
    "id": "BAMESTD",
    "name": "Middle East Studies - BA",
+   "kind": "major",
    "file": "middle-east-studies-ba.json",
+   "structured": true,
    "courses_in_major": 138,
    "outside_prerequisites": 9,
    "edges": 56,
@@ -771,9 +1609,23 @@
    "upper_division_floor": 0
   },
   {
+   "id": "u7cr9KDjDnnB8CYvYhAY",
+   "name": "Museum Studies - Minor",
+   "kind": "minor",
+   "file": "museum-studies-minor.json",
+   "structured": true,
+   "courses_in_major": 57,
+   "outside_prerequisites": 10,
+   "edges": 14,
+   "columns": 3,
+   "upper_division_floor": 0
+  },
+  {
    "id": "BMMUSICBASSOON",
    "name": "Music - BM - Bassoon Emphasis",
+   "kind": "major",
    "file": "music-bm-bassoon-emphasis.json",
+   "structured": true,
    "courses_in_major": 120,
    "outside_prerequisites": 16,
    "edges": 74,
@@ -783,7 +1635,9 @@
   {
    "id": "BMMUSICCELLO",
    "name": "Music - BM - Cello Emphasis",
+   "kind": "major",
    "file": "music-bm-cello-emphasis.json",
+   "structured": true,
    "courses_in_major": 112,
    "outside_prerequisites": 16,
    "edges": 74,
@@ -793,7 +1647,9 @@
   {
    "id": "BMMUSICCLARINET",
    "name": "Music - BM - Clarinet Emphasis",
+   "kind": "major",
    "file": "music-bm-clarinet-emphasis.json",
+   "structured": true,
    "courses_in_major": 120,
    "outside_prerequisites": 16,
    "edges": 74,
@@ -803,7 +1659,9 @@
   {
    "id": "BMMUSICCOMPOSTN",
    "name": "Music - BM - Composition Emphasis",
+   "kind": "major",
    "file": "music-bm-composition-emphasis.json",
+   "structured": true,
    "courses_in_major": 162,
    "outside_prerequisites": 14,
    "edges": 71,
@@ -813,7 +1671,9 @@
   {
    "id": "BMMUSICDBLBASS",
    "name": "Music - BM - Double Bass Emphasis",
+   "kind": "major",
    "file": "music-bm-double-bass-emphasis.json",
+   "structured": true,
    "courses_in_major": 113,
    "outside_prerequisites": 16,
    "edges": 74,
@@ -823,7 +1683,9 @@
   {
    "id": "BMMUSICFLUTE",
    "name": "Music - BM - Flute Emphasis",
+   "kind": "major",
    "file": "music-bm-flute-emphasis.json",
+   "structured": true,
    "courses_in_major": 120,
    "outside_prerequisites": 16,
    "edges": 74,
@@ -833,7 +1695,9 @@
   {
    "id": "BMMUSICFRHORN",
    "name": "Music - BM - French Horn Emphasis",
+   "kind": "major",
    "file": "music-bm-french-horn-emphasis.json",
+   "structured": true,
    "courses_in_major": 126,
    "outside_prerequisites": 16,
    "edges": 74,
@@ -843,7 +1707,9 @@
   {
    "id": "BMMUSICOBOE",
    "name": "Music - BM - Oboe Emphasis",
+   "kind": "major",
    "file": "music-bm-oboe-emphasis.json",
+   "structured": true,
    "courses_in_major": 120,
    "outside_prerequisites": 16,
    "edges": 74,
@@ -853,7 +1719,9 @@
   {
    "id": "BMMUSICPERCUSSN",
    "name": "Music - BM - Percussion Emphasis",
+   "kind": "major",
    "file": "music-bm-percussion-emphasis.json",
+   "structured": true,
    "courses_in_major": 176,
    "outside_prerequisites": 10,
    "edges": 90,
@@ -863,7 +1731,9 @@
   {
    "id": "BMMUSICPIANO",
    "name": "Music - BM - Piano Emphasis",
+   "kind": "major",
    "file": "music-bm-piano-emphasis.json",
+   "structured": true,
    "courses_in_major": 111,
    "outside_prerequisites": 14,
    "edges": 74,
@@ -873,7 +1743,9 @@
   {
    "id": "BMMUSICTROMBONE",
    "name": "Music - BM - Trombone Emphasis",
+   "kind": "major",
    "file": "music-bm-trombone-emphasis.json",
+   "structured": true,
    "courses_in_major": 127,
    "outside_prerequisites": 16,
    "edges": 74,
@@ -883,7 +1755,9 @@
   {
    "id": "BMMUSICTRUMPET",
    "name": "Music - BM - Trumpet Emphasis",
+   "kind": "major",
    "file": "music-bm-trumpet-emphasis.json",
+   "structured": true,
    "courses_in_major": 126,
    "outside_prerequisites": 16,
    "edges": 74,
@@ -893,7 +1767,9 @@
   {
    "id": "BMMUSICTUBA",
    "name": "Music - BM - Tuba Emphasis",
+   "kind": "major",
    "file": "music-bm-tuba-emphasis.json",
+   "structured": true,
    "courses_in_major": 127,
    "outside_prerequisites": 16,
    "edges": 74,
@@ -903,7 +1779,9 @@
   {
    "id": "BMMUSICVIOLA",
    "name": "Music - BM - Viola Emphasis",
+   "kind": "major",
    "file": "music-bm-viola-emphasis.json",
+   "structured": true,
    "courses_in_major": 112,
    "outside_prerequisites": 16,
    "edges": 74,
@@ -913,7 +1791,9 @@
   {
    "id": "BMMUSICVIOLIN",
    "name": "Music - BM - Violin Emphasis",
+   "kind": "major",
    "file": "music-bm-violin-emphasis.json",
+   "structured": true,
    "courses_in_major": 112,
    "outside_prerequisites": 16,
    "edges": 74,
@@ -923,7 +1803,9 @@
   {
    "id": "BMMUSICVOICE",
    "name": "Music - BM - Voice Emphasis",
+   "kind": "major",
    "file": "music-bm-voice-emphasis.json",
+   "structured": true,
    "courses_in_major": 125,
    "outside_prerequisites": 15,
    "edges": 80,
@@ -931,9 +1813,31 @@
    "upper_division_floor": 1
   },
   {
+   "id": "9OhtTSghSQhujt3wDlFC",
+   "name": "Music - Minor",
+   "kind": "minor",
+   "file": "music-minor.json",
+   "structured": true,
+   "courses_in_major": 97,
+   "outside_prerequisites": 16,
+   "edges": 61,
+   "columns": 7,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "BAMUSCS",
+   "name": "Music Composition - BA College of Creative Studies",
+   "kind": "major",
+   "file": "music-composition-ba-college-of-creative-studies.json",
+   "structured": false,
+   "source": "https://catalog.ucsb.edu/programs/BAMUSCS"
+  },
+  {
    "id": "BAMUSST",
    "name": "Music Studies - BA",
+   "kind": "major",
    "file": "music-studies-ba.json",
+   "structured": true,
    "courses_in_major": 167,
    "outside_prerequisites": 13,
    "edges": 73,
@@ -943,7 +1847,9 @@
   {
    "id": "BAMUSSTETHNOMUS",
    "name": "Music Studies - BA - Ethnomusicology Emphasis",
+   "kind": "major",
    "file": "music-studies-ba-ethnomusicology-emphasis.json",
+   "structured": true,
    "courses_in_major": 187,
    "outside_prerequisites": 13,
    "edges": 75,
@@ -953,7 +1859,9 @@
   {
    "id": "BAMUSSTINTRDSTD",
    "name": "Music Studies - BA - Interdisciplinary Studies of Music Emphasis",
+   "kind": "major",
    "file": "music-studies-ba-interdisciplinary-studies-of-music-emphasis.json",
+   "structured": true,
    "courses_in_major": 187,
    "outside_prerequisites": 13,
    "edges": 75,
@@ -963,7 +1871,9 @@
   {
    "id": "BAMUSSTWESTART",
    "name": "Music Studies - BA - Western Art Music Emphasis",
+   "kind": "major",
    "file": "music-studies-ba-western-art-music-emphasis.json",
+   "structured": true,
    "courses_in_major": 188,
    "outside_prerequisites": 12,
    "edges": 75,
@@ -973,7 +1883,9 @@
   {
    "id": "BAPHIL",
    "name": "Philosophy - BA",
+   "kind": "major",
    "file": "philosophy-ba.json",
+   "structured": true,
    "courses_in_major": 81,
    "outside_prerequisites": 1,
    "edges": 98,
@@ -981,9 +1893,23 @@
    "upper_division_floor": 0
   },
   {
+   "id": "ozX6BAQklI0AShzhWhIc",
+   "name": "Philosophy - Minor",
+   "kind": "minor",
+   "file": "philosophy-minor.json",
+   "structured": true,
+   "courses_in_major": 77,
+   "outside_prerequisites": 3,
+   "edges": 98,
+   "columns": 3,
+   "upper_division_floor": 0
+  },
+  {
    "id": "BSGEOGP",
    "name": "Physical Geography - BS",
+   "kind": "major",
    "file": "physical-geography-bs.json",
+   "structured": true,
    "courses_in_major": 106,
    "outside_prerequisites": 49,
    "edges": 319,
@@ -993,7 +1919,9 @@
   {
    "id": "BSGEOGPOCEANSCI",
    "name": "Physical Geography - BS - Ocean Science Emphasis",
+   "kind": "major",
    "file": "physical-geography-bs-ocean-science-emphasis.json",
+   "structured": true,
    "courses_in_major": 89,
    "outside_prerequisites": 37,
    "edges": 236,
@@ -1003,7 +1931,9 @@
   {
    "id": "BAPHYS",
    "name": "Physics - BA",
+   "kind": "major",
    "file": "physics-ba.json",
+   "structured": true,
    "courses_in_major": 76,
    "outside_prerequisites": 28,
    "edges": 182,
@@ -1011,9 +1941,19 @@
    "upper_division_floor": 0
   },
   {
+   "id": "BAPHYCS",
+   "name": "Physics - BA College of Creative Studies",
+   "kind": "major",
+   "file": "physics-ba-college-of-creative-studies.json",
+   "structured": false,
+   "source": "https://catalog.ucsb.edu/programs/BAPHYCS"
+  },
+  {
    "id": "BSPHYS",
    "name": "Physics - BS",
+   "kind": "major",
    "file": "physics-bs.json",
+   "structured": true,
    "courses_in_major": 83,
    "outside_prerequisites": 30,
    "edges": 187,
@@ -1021,9 +1961,31 @@
    "upper_division_floor": 3
   },
   {
+   "id": "BSPHYCS",
+   "name": "Physics - BS College of Creative Studies",
+   "kind": "major",
+   "file": "physics-bs-college-of-creative-studies.json",
+   "structured": false,
+   "source": "https://catalog.ucsb.edu/programs/BSPHYCS"
+  },
+  {
+   "id": "jElvmKTTVASrWw6PIDxB",
+   "name": "Physics - Minor",
+   "kind": "minor",
+   "file": "physics-minor.json",
+   "structured": true,
+   "courses_in_major": 77,
+   "outside_prerequisites": 20,
+   "edges": 191,
+   "columns": 9,
+   "upper_division_floor": 0
+  },
+  {
    "id": "BSPHYSY",
    "name": "Physiology - BS",
+   "kind": "major",
    "file": "physiology-bs.json",
+   "structured": true,
    "courses_in_major": 70,
    "outside_prerequisites": 31,
    "edges": 284,
@@ -1033,7 +1995,9 @@
   {
    "id": "BAPOLS",
    "name": "Political Science - BA",
+   "kind": "major",
    "file": "political-science-ba.json",
+   "structured": true,
    "courses_in_major": 90,
    "outside_prerequisites": 9,
    "edges": 79,
@@ -1043,7 +2007,9 @@
   {
    "id": "BAPORT",
    "name": "Portuguese - BA",
+   "kind": "major",
    "file": "portuguese-ba.json",
+   "structured": true,
    "courses_in_major": 91,
    "outside_prerequisites": 20,
    "edges": 133,
@@ -1051,9 +2017,35 @@
    "upper_division_floor": 6
   },
   {
+   "id": "CXqhbw3y6MCIfK2CNdvD",
+   "name": "Portuguese - Minor",
+   "kind": "minor",
+   "file": "portuguese-minor.json",
+   "structured": true,
+   "courses_in_major": 32,
+   "outside_prerequisites": 2,
+   "edges": 13,
+   "columns": 7,
+   "upper_division_floor": 6
+  },
+  {
+   "id": "1iNwTTWHMydrGXDxDxRh",
+   "name": "Poverty, Inequality, and Social Justice - Minor",
+   "kind": "minor",
+   "file": "poverty-inequality-and-social-justice-minor.json",
+   "structured": true,
+   "courses_in_major": 5,
+   "outside_prerequisites": 0,
+   "edges": 2,
+   "columns": 2,
+   "upper_division_floor": 1
+  },
+  {
    "id": "BSPRACT",
    "name": "Pre-Actuarial Science - BS",
+   "kind": "major",
    "file": "pre-actuarial-science-bs.json",
+   "structured": true,
    "courses_in_major": 17,
    "outside_prerequisites": 31,
    "edges": 86,
@@ -1063,7 +2055,9 @@
   {
    "id": "BSPRAMA",
    "name": "Pre-Applied Mathematics - BS",
+   "kind": "major",
    "file": "pre-applied-mathematics-bs.json",
+   "structured": true,
    "courses_in_major": 17,
    "outside_prerequisites": 8,
    "edges": 40,
@@ -1073,7 +2067,9 @@
   {
    "id": "BAPRBIO",
    "name": "Pre-Biology - BA",
+   "kind": "major",
    "file": "pre-biology-ba.json",
+   "structured": true,
    "courses_in_major": 28,
    "outside_prerequisites": 9,
    "edges": 72,
@@ -1083,7 +2079,9 @@
   {
    "id": "BSPRBIO",
    "name": "Pre-Biology - BS",
+   "kind": "major",
    "file": "pre-biology-bs.json",
+   "structured": true,
    "courses_in_major": 28,
    "outside_prerequisites": 9,
    "edges": 72,
@@ -1093,7 +2091,9 @@
   {
    "id": "BSPRBPY",
    "name": "Pre-Biopsychology - BS",
+   "kind": "major",
    "file": "pre-biopsychology-bs.json",
+   "structured": true,
    "courses_in_major": 32,
    "outside_prerequisites": 17,
    "edges": 104,
@@ -1103,7 +2103,9 @@
   {
    "id": "BAPRCHM",
    "name": "Pre-Chemistry - BA",
+   "kind": "major",
    "file": "pre-chemistry-ba.json",
+   "structured": true,
    "courses_in_major": 32,
    "outside_prerequisites": 7,
    "edges": 109,
@@ -1113,7 +2115,9 @@
   {
    "id": "BSPRCHM",
    "name": "Pre-Chemistry - BS",
+   "kind": "major",
    "file": "pre-chemistry-bs.json",
+   "structured": true,
    "courses_in_major": 32,
    "outside_prerequisites": 7,
    "edges": 109,
@@ -1123,7 +2127,9 @@
   {
    "id": "BAPRCOM",
    "name": "Pre-Communication - BA",
+   "kind": "major",
    "file": "pre-communication-ba.json",
+   "structured": true,
    "courses_in_major": 4,
    "outside_prerequisites": 0,
    "edges": 0,
@@ -1133,7 +2139,9 @@
   {
    "id": "BAPRECO",
    "name": "Pre-Economics - BA",
+   "kind": "major",
    "file": "pre-economics-ba.json",
+   "structured": true,
    "courses_in_major": 11,
    "outside_prerequisites": 7,
    "edges": 33,
@@ -1143,7 +2151,9 @@
   {
    "id": "BAPRECA",
    "name": "Pre-Economics and Accounting - BA",
+   "kind": "major",
    "file": "pre-economics-and-accounting-ba.json",
+   "structured": true,
    "courses_in_major": 13,
    "outside_prerequisites": 7,
    "edges": 34,
@@ -1153,7 +2163,9 @@
   {
    "id": "BAPRFAM",
    "name": "Pre-Film and Media Studies - BA",
+   "kind": "major",
    "file": "pre-film-and-media-studies-ba.json",
+   "structured": true,
    "courses_in_major": 47,
    "outside_prerequisites": 2,
    "edges": 5,
@@ -1163,7 +2175,9 @@
   {
    "id": "BSPRFMS",
    "name": "Pre-Financial Mathematics and Statistics - BS",
+   "kind": "major",
    "file": "pre-financial-mathematics-and-statistics-bs.json",
+   "structured": true,
    "courses_in_major": 18,
    "outside_prerequisites": 8,
    "edges": 43,
@@ -1173,7 +2187,9 @@
   {
    "id": "BAPRGLB",
    "name": "Pre-Global Studies - BA",
+   "kind": "major",
    "file": "pre-global-studies-ba.json",
+   "structured": true,
    "courses_in_major": 33,
    "outside_prerequisites": 0,
    "edges": 1,
@@ -1183,7 +2199,9 @@
   {
    "id": "BAPRMTH",
    "name": "Pre-Mathematics - BA",
+   "kind": "major",
    "file": "pre-mathematics-ba.json",
+   "structured": true,
    "courses_in_major": 15,
    "outside_prerequisites": 10,
    "edges": 40,
@@ -1193,7 +2211,9 @@
   {
    "id": "BSPRMTH",
    "name": "Pre-Mathematics - BS",
+   "kind": "major",
    "file": "pre-mathematics-bs.json",
+   "structured": true,
    "courses_in_major": 17,
    "outside_prerequisites": 8,
    "edges": 40,
@@ -1203,7 +2223,9 @@
   {
    "id": "BAPRPOL",
    "name": "Pre-Political Science - BA",
+   "kind": "major",
    "file": "pre-political-science-ba.json",
+   "structured": true,
    "courses_in_major": 8,
    "outside_prerequisites": 0,
    "edges": 1,
@@ -1213,7 +2235,9 @@
   {
    "id": "BSPRPBS",
    "name": "Pre-Psychological & Brain Sciences - BS",
+   "kind": "major",
    "file": "pre-psychological-brain-sciences-bs.json",
+   "structured": true,
    "courses_in_major": 53,
    "outside_prerequisites": 14,
    "edges": 92,
@@ -1223,7 +2247,9 @@
   {
    "id": "BAPRSOC",
    "name": "Pre-Sociology - BA",
+   "kind": "major",
    "file": "pre-sociology-ba.json",
+   "structured": true,
    "courses_in_major": 46,
    "outside_prerequisites": 1,
    "edges": 2,
@@ -1233,7 +2259,9 @@
   {
    "id": "BAPRSDS",
    "name": "Pre-Statistics and Data Science - BA",
+   "kind": "major",
    "file": "pre-statistics-and-data-science-ba.json",
+   "structured": true,
    "courses_in_major": 13,
    "outside_prerequisites": 16,
    "edges": 44,
@@ -1243,7 +2271,9 @@
   {
    "id": "BSPRSDS",
    "name": "Pre-Statistics and Data Science - BS",
+   "kind": "major",
    "file": "pre-statistics-and-data-science-bs.json",
+   "structured": true,
    "courses_in_major": 13,
    "outside_prerequisites": 16,
    "edges": 44,
@@ -1251,9 +2281,23 @@
    "upper_division_floor": 0
   },
   {
+   "id": "GSPARUgBEnhMtzTOM6bg",
+   "name": "Professional Writing - Minor",
+   "kind": "minor",
+   "file": "professional-writing-minor.json",
+   "structured": true,
+   "courses_in_major": 54,
+   "outside_prerequisites": 26,
+   "edges": 162,
+   "columns": 3,
+   "upper_division_floor": 0
+  },
+  {
    "id": "BSPBS",
    "name": "Psychological & Brain Sciences - BS",
+   "kind": "major",
    "file": "psychological-brain-sciences-bs.json",
+   "structured": true,
    "courses_in_major": 152,
    "outside_prerequisites": 51,
    "edges": 287,
@@ -1263,7 +2307,9 @@
   {
    "id": "BARGSTD",
    "name": "Religious Studies - BA",
+   "kind": "major",
    "file": "religious-studies-ba.json",
+   "structured": true,
    "courses_in_major": 189,
    "outside_prerequisites": 20,
    "edges": 85,
@@ -1271,9 +2317,35 @@
    "upper_division_floor": 0
   },
   {
+   "id": "zdijRccrH4dKMxKgbxij",
+   "name": "Religious Studies - Minor",
+   "kind": "minor",
+   "file": "religious-studies-minor.json",
+   "structured": true,
+   "courses_in_major": 189,
+   "outside_prerequisites": 20,
+   "edges": 85,
+   "columns": 9,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "AzDfCkZPBQVO46OKZWB7",
+   "name": "Russian - Minor",
+   "kind": "minor",
+   "file": "russian-minor.json",
+   "structured": true,
+   "courses_in_major": 51,
+   "outside_prerequisites": 0,
+   "edges": 13,
+   "columns": 7,
+   "upper_division_floor": 0
+  },
+  {
    "id": "BARUSEU",
    "name": "Russian and East European Studies - BA",
+   "kind": "major",
    "file": "russian-and-east-european-studies-ba.json",
+   "structured": true,
    "courses_in_major": 44,
    "outside_prerequisites": 0,
    "edges": 13,
@@ -1281,9 +2353,35 @@
    "upper_division_floor": 6
   },
   {
+   "id": "zWFHL9VhUscWE7goOJdZ",
+   "name": "Science and Mathematics Education - Minor",
+   "kind": "minor",
+   "file": "science-and-mathematics-education-minor.json",
+   "structured": true,
+   "courses_in_major": 39,
+   "outside_prerequisites": 46,
+   "edges": 104,
+   "columns": 7,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "NLTsDYuNyLY7au8k23hy",
+   "name": "Sociocultural Linguistics - Minor",
+   "kind": "minor",
+   "file": "sociocultural-linguistics-minor.json",
+   "structured": true,
+   "courses_in_major": 60,
+   "outside_prerequisites": 1,
+   "edges": 45,
+   "columns": 3,
+   "upper_division_floor": 0
+  },
+  {
    "id": "BASOC",
    "name": "Sociology - BA",
+   "kind": "major",
    "file": "sociology-ba.json",
+   "structured": true,
    "courses_in_major": 141,
    "outside_prerequisites": 1,
    "edges": 6,
@@ -1293,7 +2391,9 @@
   {
    "id": "BASPAN",
    "name": "Spanish - BA",
+   "kind": "major",
    "file": "spanish-ba.json",
+   "structured": true,
    "courses_in_major": 94,
    "outside_prerequisites": 9,
    "edges": 154,
@@ -1301,9 +2401,47 @@
    "upper_division_floor": 6
   },
   {
+   "id": "c6N2E3aQxD7OvvrKFdED",
+   "name": "Spanish - Minor",
+   "kind": "minor",
+   "file": "spanish-minor.json",
+   "structured": true,
+   "courses_in_major": 114,
+   "outside_prerequisites": 9,
+   "edges": 158,
+   "columns": 9,
+   "upper_division_floor": 6
+  },
+  {
+   "id": "Dr8c5wOyIVohltlqftKe",
+   "name": "Speech-Language Sciences & Disorders - Minor",
+   "kind": "minor",
+   "file": "speech-language-sciences-disorders-minor.json",
+   "structured": true,
+   "courses_in_major": 17,
+   "outside_prerequisites": 3,
+   "edges": 20,
+   "columns": 4,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "HktKyCJK0ZSb1IoIKtyk",
+   "name": "Statistical Science - Minor",
+   "kind": "minor",
+   "file": "statistical-science-minor.json",
+   "structured": true,
+   "courses_in_major": 50,
+   "outside_prerequisites": 28,
+   "edges": 147,
+   "columns": 9,
+   "upper_division_floor": 3
+  },
+  {
    "id": "BASTSDS",
    "name": "Statistics and Data Science - BA",
+   "kind": "major",
    "file": "statistics-and-data-science-ba.json",
+   "structured": true,
    "courses_in_major": 56,
    "outside_prerequisites": 33,
    "edges": 183,
@@ -1313,7 +2451,9 @@
   {
    "id": "BSSTSDS",
    "name": "Statistics and Data Science - BS",
+   "kind": "major",
    "file": "statistics-and-data-science-bs.json",
+   "structured": true,
    "courses_in_major": 59,
    "outside_prerequisites": 35,
    "edges": 193,
@@ -1321,9 +2461,23 @@
    "upper_division_floor": 3
   },
   {
+   "id": "qY2bh5NBNGjWWrq7VuPP",
+   "name": "Teaching English to Speakers of Other Languages (TESOL) - Minor",
+   "kind": "minor",
+   "file": "teaching-english-to-speakers-of-other-languages-tesol-minor.json",
+   "structured": true,
+   "courses_in_major": 15,
+   "outside_prerequisites": 6,
+   "edges": 17,
+   "columns": 3,
+   "upper_division_floor": 0
+  },
+  {
    "id": "BATHTR",
    "name": "Theater - BA",
+   "kind": "major",
    "file": "theater-ba.json",
+   "structured": true,
    "courses_in_major": 129,
    "outside_prerequisites": 5,
    "edges": 35,
@@ -1333,7 +2487,9 @@
   {
    "id": "BFATHTRACTING",
    "name": "Theater - BFA - Acting Emphasis",
+   "kind": "major",
    "file": "theater-bfa-acting-emphasis.json",
+   "structured": true,
    "courses_in_major": 92,
    "outside_prerequisites": 0,
    "edges": 36,
@@ -1341,9 +2497,63 @@
    "upper_division_floor": 2
   },
   {
+   "id": "pfWK2EPxmqo8cGj7TKMc",
+   "name": "Theater - Minor",
+   "kind": "minor",
+   "file": "theater-minor.json",
+   "structured": true,
+   "courses_in_major": 47,
+   "outside_prerequisites": 0,
+   "edges": 2,
+   "columns": 2,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "6fk4UKjpKspAWZO8zMdq",
+   "name": "Theater Production and Design - Minor",
+   "kind": "minor",
+   "file": "theater-production-and-design-minor.json",
+   "structured": true,
+   "courses_in_major": 32,
+   "outside_prerequisites": 1,
+   "edges": 21,
+   "columns": 4,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "IauVsyBBgzZV9DfR5gVP",
+   "name": "Translation Studies - Minor",
+   "kind": "minor",
+   "file": "translation-studies-minor.json",
+   "structured": true,
+   "courses_in_major": 16,
+   "outside_prerequisites": 37,
+   "edges": 66,
+   "columns": 9,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "BAUNDEC",
+   "name": "Undeclared (Letters and Science) - BA",
+   "kind": "major",
+   "file": "undeclared-letters-and-science-ba.json",
+   "structured": false,
+   "source": "https://catalog.ucsb.edu/programs/BAUNDEC"
+  },
+  {
+   "id": "BAWTLCS",
+   "name": "Writing and Literature - BA College of Creative Studies",
+   "kind": "major",
+   "file": "writing-and-literature-ba-college-of-creative-studies.json",
+   "structured": false,
+   "source": "https://catalog.ucsb.edu/programs/BAWTLCS"
+  },
+  {
    "id": "BSZOOL",
    "name": "Zoology - BS",
+   "kind": "major",
    "file": "zoology-bs.json",
+   "structured": true,
    "courses_in_major": 131,
    "outside_prerequisites": 34,
    "edges": 461,

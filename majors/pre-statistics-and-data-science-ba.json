@@ -2,6 +2,7 @@
  "id": "BAPRSDS",
  "name": "Pre-Statistics and Data Science - BA",
  "type": "Bachelor's Degree",
+ "kind": "major",
  "departments": [
   "STATS"
  ],
@@ -81,7 +82,8 @@
       "status": "active"
      }
     ],
-    "catalog_rule_id": "GeSLKMkO"
+    "catalog_rule_id": "GeSLKMkO",
+    "label": "Math Preparation"
    },
    "notes": "- Either Math 4A, 4B, 6A, or 6B must be completed with a grade of \"B\" or better to take Math 8 or PSTAT 8.\n- Math 8 is a prerequisite for all upper division Math courses except Math 117, 104A, 104B, and 104C. If you plan to take additional upper division Math courses, you must take Math 8.\n- Math 4B is a prerequisite for the following UD PSTAT elective courses: PSTAT 160B, 170, 172B, 176."
   },
@@ -110,7 +112,8 @@
         ]
        }
       ],
-      "catalog_rule_id": "JOsIhyYY"
+      "catalog_rule_id": "JOsIhyYY",
+      "label": "Intro to Computer Science"
      },
      {
       "type": "choose",
@@ -128,6 +131,7 @@
        }
       ],
       "catalog_rule_id": "vH44PLbd",
+      "label": "Computer Science Preparation",
       "notes": "- CMPSC 9 is recommended over CMPSC 16.\n- Students cannot get credit for CMPSC 8 at UCSB if transferring in credit for CMPSC 9 or 16, so please see the Department advisors in such instances.\n- Only one repeat is allowed between both CMPSC 9 and CMPSC 16."
      }
     ]

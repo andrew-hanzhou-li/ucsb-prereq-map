@@ -1,0 +1,585 @@
+{
+ "id": "pfWK2EPxmqo8cGj7TKMc",
+ "name": "Theater - Minor",
+ "type": "Minor",
+ "kind": "minor",
+ "departments": [
+  "THTDA"
+ ],
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsb.edu/programs/pfWK2EPxmqo8cGj7TKMc",
+ "narrative": [
+  "All courses to be applied to the minor must be completed on a letter-grade basis. This includes both courses offered in Theater and those offered by other departments and applied to the minor.",
+  "Students must consult the General Catalog for prerequisites to required courses.\nThe following conditions must also be met for official recognition of the minor:\n- The sponsoring department reports completion of the minor prior to the posting of the degree.\n- At least 18 upper-division quarter units are completed for the minor. (Waivers cannot reduce the requirement below this number.)\n- The UC grade-point average in ALL applicable upper-division courses is 2.0 or higher.\n- No more than 5 upper-division units overlap between this minor and the upper-division portion of the major(s) or other minor(s). If overlap is greater with the major(s), completion of the minor will not be formally recognized; if overlap with other minor(s) is greater, only the first minor reported will be recognized."
+ ],
+ "sections": [
+  {
+   "name": "PREPARATION",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "count": 1,
+      "items": [
+       {
+        "type": "course",
+        "code": "THTR 1",
+        "status": "active"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "THTR 2A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "THTR 2B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "THTR 2C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "THTR 2D",
+          "status": "inactive"
+         }
+        ]
+       }
+      ],
+      "catalog_rule_id": "SwWyzwJ1"
+     },
+     {
+      "type": "choose",
+      "count": 1,
+      "items": [
+       {
+        "type": "course",
+        "code": "THTR 5",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "THTR 9",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "THTR 19",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "jKD5vwkA"
+     },
+     {
+      "type": "units",
+      "units": 1,
+      "items": [
+       {
+        "type": "course",
+        "code": "THTR 29D",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "XhWBrrMa"
+     }
+    ]
+   }
+  },
+  {
+   "name": "UPPER-DIVISION",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "count": 1,
+      "items": [
+       {
+        "type": "course",
+        "code": "THTR 180A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "THTR 180B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "THTR 180C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "THTR 180D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "THTR 180E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "THTR 180F",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "Qy1o807a",
+      "label": "A."
+     },
+     {
+      "type": "choose",
+      "count": 1,
+      "items": [
+       {
+        "type": "course",
+        "code": "THTR 181",
+        "status": "active",
+        "from_list": "Theater 181AA-ZZ"
+       },
+       {
+        "type": "course",
+        "code": "THTR 181B",
+        "status": "active",
+        "from_list": "Theater 181AA-ZZ"
+       },
+       {
+        "type": "course",
+        "code": "THTR 182",
+        "status": "active",
+        "from_list": "Theater 182AA-ZZ"
+       },
+       {
+        "type": "course",
+        "code": "THTR 182A",
+        "status": "active",
+        "from_list": "Theater 182AA-ZZ"
+       },
+       {
+        "type": "course",
+        "code": "THTR 182M",
+        "status": "active",
+        "from_list": "Theater 182AA-ZZ"
+       },
+       {
+        "type": "course",
+        "code": "THTR 182RN",
+        "status": "active",
+        "from_list": "Theater 182AA-ZZ"
+       },
+       {
+        "type": "course",
+        "code": "THTR 183",
+        "status": "active",
+        "from_list": "Theater 183AA-ZZ"
+       },
+       {
+        "type": "course",
+        "code": "THTR 184",
+        "status": "active",
+        "from_list": "Theater 184AA-ZZ"
+       }
+      ],
+      "catalog_rule_id": "WPJ3usk2",
+      "label": "B."
+     },
+     {
+      "type": "choose",
+      "count": 1,
+      "items": [
+       {
+        "type": "course",
+        "code": "THTR 185",
+        "status": "active",
+        "from_list": "Theater 185AA-ZZ"
+       },
+       {
+        "type": "course",
+        "code": "THTR 185ST",
+        "status": "active",
+        "from_list": "Theater 185AA-ZZ"
+       },
+       {
+        "type": "course",
+        "code": "THTR 187",
+        "status": "active",
+        "from_list": "Theater 187AA-ZZ"
+       },
+       {
+        "type": "course",
+        "code": "THTR 187MU",
+        "status": "active",
+        "from_list": "Theater 187AA-ZZ"
+       },
+       {
+        "type": "course",
+        "code": "THTR 187PS",
+        "status": "active",
+        "from_list": "Theater 187AA-ZZ"
+       },
+       {
+        "type": "course",
+        "code": "THTR 187SP",
+        "status": "active",
+        "from_list": "Theater 187AA-ZZ"
+       },
+       {
+        "type": "course",
+        "code": "THTR 188",
+        "status": "active",
+        "from_list": "Theater 188AA-ZZ"
+       },
+       {
+        "type": "course",
+        "code": "THTR 188D",
+        "status": "active",
+        "from_list": "Theater 188AA-ZZ"
+       },
+       {
+        "type": "course",
+        "code": "THTR 188S",
+        "status": "active",
+        "from_list": "Theater 188AA-ZZ"
+       }
+      ],
+      "catalog_rule_id": "eWwPT1an",
+      "label": "C.",
+      "notes": "- Theater 180G"
+     },
+     {
+      "type": "units",
+      "units": 8,
+      "items": [
+       {
+        "type": "course",
+        "code": "THTR 104A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "THTR 104B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "THTR 104C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "THTR 104D",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "THTR 104E",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "THTR 140A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "THTR 140B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "THTR 142",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "THTR 143",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "THTR 144A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "THTR 144B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "THTR 145",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "THTR 194L",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "THTR 194T",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "THTR 195",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "pfM7WcMe",
+      "label": "D.",
+      "notes": "- THTR 113AA-ZZ"
+     }
+    ],
+    "catalog_rule_id": "GTCHysIg",
+    "label": "20 UD Theater units are required, distributed as follows"
+   },
+   "notes": "Substitutions and waivers are subject to the approval by the chair of the department."
+  }
+ ],
+ "courses": [
+  {
+   "code": "THTR 1",
+   "status": "active",
+   "section": "PREPARATION"
+  },
+  {
+   "code": "THTR 2A",
+   "status": "active",
+   "section": "PREPARATION"
+  },
+  {
+   "code": "THTR 2B",
+   "status": "active",
+   "section": "PREPARATION"
+  },
+  {
+   "code": "THTR 2C",
+   "status": "active",
+   "section": "PREPARATION"
+  },
+  {
+   "code": "THTR 2D",
+   "status": "inactive",
+   "section": "PREPARATION"
+  },
+  {
+   "code": "THTR 5",
+   "status": "active",
+   "section": "PREPARATION"
+  },
+  {
+   "code": "THTR 9",
+   "status": "active",
+   "section": "PREPARATION"
+  },
+  {
+   "code": "THTR 19",
+   "status": "active",
+   "section": "PREPARATION"
+  },
+  {
+   "code": "THTR 29D",
+   "status": "active",
+   "section": "PREPARATION"
+  },
+  {
+   "code": "THTR 104A",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "THTR 104B",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "THTR 104C",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "THTR 104D",
+   "status": "inactive",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "THTR 104E",
+   "status": "inactive",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "THTR 140A",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "THTR 140B",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "THTR 142",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "THTR 143",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "THTR 144A",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "THTR 144B",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "THTR 145",
+   "status": "inactive",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "THTR 180A",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "THTR 180B",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "THTR 180C",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "THTR 180D",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "THTR 180E",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "THTR 180F",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "THTR 181",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "THTR 181B",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "THTR 182",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "THTR 182A",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "THTR 182M",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "THTR 182RN",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "THTR 183",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "THTR 184",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "THTR 185",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "THTR 185ST",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "THTR 187",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "THTR 187MU",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "THTR 187PS",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "THTR 187SP",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "THTR 188",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "THTR 188D",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "THTR 188S",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "THTR 194L",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "THTR 194T",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "THTR 195",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  }
+ ]
+}

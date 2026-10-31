@@ -63,6 +63,9 @@ a { color: var(--teal); }
   line-height: 1.2;
   letter-spacing: -0.01em;
 }
+.site-name a { color: inherit; text-decoration: none; }
+
+.about-link { align-self: center; font-size: 0.92rem; }
 
 .pickers {
   display: flex;
@@ -250,16 +253,47 @@ a { color: var(--teal); }
   cursor: pointer;
 }
 
+/* The front page: welcome text (or a notice) and lists of every program. */
 .empty {
   position: absolute;
   inset: 0;
-  padding: 48px 32px;
-  max-width: 640px;
+  overflow-y: auto;
+  background: var(--fog);
 }
+.empty-inner { max-width: 980px; padding: 40px 32px 48px; }
 
 .empty h2 { margin: 0 0 12px; font-size: 1.6rem; line-height: 1.2; }
-.empty p { margin: 0 0 12px; }
-.empty[hidden] { display: none; }
+.empty p { margin: 0 0 12px; max-width: 640px; }
+.empty[hidden], .notice[hidden], #welcome[hidden] { display: none; }
+
+.notice {
+  margin-bottom: 8px;
+  padding: 18px 22px 8px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-left: 5px solid var(--amber);
+  border-radius: 8px;
+}
+
+.browse {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 8px 40px;
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+}
+.browse h3 { margin: 0 0 8px; font-size: 1.05rem; }
+.browse-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.92rem;
+  columns: 2 220px;
+  column-gap: 24px;
+}
+.browse section:last-child .browse-list { columns: 1; }
+.browse-list li { padding: 2px 0; break-inside: avoid; }
 
 .legend {
   position: absolute;
@@ -306,6 +340,7 @@ a { color: var(--teal); }
   padding: 18px 20px 24px;
 }
 
+.panel[hidden] { display: none; }
 .panel-empty { color: var(--muted); }
 
 .panel h2 {
@@ -403,6 +438,12 @@ a { color: var(--teal); }
 @media (max-width: 800px) {
   .top { padding: 10px 14px; gap: 8px; align-items: center; }
   .site-name { font-size: 1.1rem; flex: 1; }
+
+  .empty-inner { padding: 24px 16px 40px; }
+  .empty h2 { font-size: 1.35rem; }
+  .browse { grid-template-columns: 1fr; }
+  .browse-list, .browse section:last-child .browse-list { columns: 1; }
+  .browse-list li { padding: 5px 0; }      /* bigger tap targets */
   .picker span { display: none; }      /* the placeholder text says what each box is for */
 
   /* Room to scroll the bottom courses up above the open sheet. */
@@ -481,6 +522,25 @@ a { color: var(--teal); }
   .map-area { margin-bottom: 48px; }   /* keep the map clear of the closed sheet */
   .legend { bottom: 12px; }
 }
+
+/* ------------------------------------------------- about.html and 404.html
+   Plain reading pages that share the header and colors. */
+.page { display: block; height: auto; }
+.page .top { align-items: center; }
+.article {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 28px 20px 56px;
+}
+.article h2 { margin: 0 0 12px; font-size: 1.7rem; line-height: 1.2; }
+.article h3 { margin: 32px 0 8px; font-size: 1.15rem; }
+.article p, .article li { max-width: 68ch; }
+.article ul { padding-left: 22px; }
+.article li { margin: 4px 0; }
+.article .lede { font-size: 1.1rem; }
+.article .key { list-style: none; padding-left: 0; }
+.article .key li { display: flex; align-items: center; gap: 10px; }
+.page .bottom { margin-top: 0; }
 
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; }

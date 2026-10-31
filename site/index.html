@@ -4,7 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>UCSB Prerequisite Map</title>
-  <meta name="description" content="Pick a UCSB major and see every course in it, each placed to the right of the courses it needs.">
+  <meta name="description" content="Pick a UCSB major or minor and see every course in it, each placed to the right of the courses it needs.">
+  <meta name="theme-color" content="#0e6e73">
+  <!-- How the link looks when shared in a text or on social media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="UCSB Prerequisite Map">
+  <meta property="og:description" content="Pick a UCSB major or minor and see every course in it, each placed to the right of the courses it needs.">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -13,13 +20,14 @@
 <body>
 
   <header class="top">
-    <h1 class="site-name">UCSB Prerequisite Map</h1>
+    <h1 class="site-name"><a href="./" id="home-link">UCSB Prerequisite Map</a></h1>
+    <a class="about-link" href="about.html">About</a>
     <button type="button" class="options-button" id="options-button" aria-expanded="false" aria-controls="more-options">Options</button>
 
     <div class="pickers">
       <label class="picker">
-        <span>Major</span>
-        <input id="major-input" list="major-list" placeholder="Type a major, e.g. Economics" autocomplete="off">
+        <span>Major or minor</span>
+        <input id="major-input" list="major-list" placeholder="Type a major or minor, e.g. Economics" autocomplete="off">
         <datalist id="major-list"></datalist>
       </label>
       <label class="picker more-options">
@@ -33,7 +41,7 @@
       <fieldset class="toggles" id="toggles" disabled>
         <legend>Show</legend>
         <label><input type="checkbox" id="show-electives" checked> Electives</label>
-        <label><input type="checkbox" id="show-outside"> Courses from other majors</label>
+        <label><input type="checkbox" id="show-outside"> Prerequisites from outside</label>
         <label><input type="checkbox" id="show-inactive"> Courses not offered now</label>
       </fieldset>
       <p class="taken-status" id="taken-status" aria-live="polite"></p>
@@ -53,9 +61,28 @@
       </div>
 
       <div class="empty" id="empty">
-        <h2>Pick a major to see its map</h2>
-        <p>Every course in the major appears as a box, placed to the right of the courses it needs. Click a course to see what it needs and what it unlocks.</p>
-        <p class="quick">Try <a href="#economics-ba">Economics</a>, <a href="#statistics-and-data-science-bs">Statistics and Data Science (BS)</a> or <a href="#computer-engineering-bs">Computer Engineering</a>.</p>
+        <div class="empty-inner">
+          <!-- Shown instead of the welcome text when a link points at a
+               program with no map (app.js, showNotice). -->
+          <div class="notice" id="notice" hidden></div>
+
+          <div id="welcome">
+            <h2>Pick a major or minor to see its map</h2>
+            <p>Every course appears as a box, placed to the right of the courses it needs. Click a course to see what it needs and what it unlocks.</p>
+            <p class="quick">Try <a href="#economics-ba">Economics</a>, <a href="#statistics-and-data-science-bs">Statistics and Data Science (BS)</a> or <a href="#computer-engineering-bs">Computer Engineering</a>.</p>
+          </div>
+
+          <div class="browse" id="browse">
+            <section>
+              <h3 id="browse-majors-title">Majors</h3>
+              <ul class="browse-list" id="browse-majors"></ul>
+            </section>
+            <section>
+              <h3 id="browse-minors-title">Minors</h3>
+              <ul class="browse-list" id="browse-minors"></ul>
+            </section>
+          </div>
+        </div>
       </div>
 
       <details class="legend" id="legend" hidden>
@@ -64,7 +91,7 @@
           <li><span class="swatch required"></span>Required</li>
           <li><span class="swatch choice"></span>Required, take one of the courses listed</li>
           <li><span class="swatch elective"></span>Elective</li>
-          <li><span class="swatch outside"></span>From another major, needed first</li>
+          <li><span class="swatch outside"></span>From outside this program, needed first</li>
           <li><span class="swatch inactive"></span>Not offered now</li>
           <li><span class="swatch group"></span>A list of electives (click to open)</li>
           <li><span class="swatch taken"></span>You've taken it</li>
@@ -74,7 +101,7 @@
       </details>
     </section>
 
-    <aside class="panel" id="panel" aria-live="polite">
+    <aside class="panel" id="panel" aria-live="polite" hidden>
       <button type="button" class="panel-handle" id="panel-handle">Course details</button>
       <div id="panel-body" class="panel-empty">
         <p>Click any course to see its prerequisites, what it unlocks and where it counts in the major.</p>
@@ -85,6 +112,7 @@
   <footer class="bottom">
     <p id="footer-catalog">Built from the UCSB General Catalog.</p>
     <p>Unofficial student project. Requirements change; confirm your plan with a department advisor.</p>
+    <p><a href="about.html">About this site</a></p>
     <p id="footer-repo"></p>
   </footer>
 

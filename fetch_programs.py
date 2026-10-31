@@ -54,7 +54,7 @@ def request(url, body=None):
 
 def get_programs():
     columns = ["name", "catalogDisplayName", "programGroupId", "id", "type",
-               "departments", "requisites", "effectiveStartDate"]
+               "departments", "requisites", "effectiveStartDate", "status"]
     programs = []
     skip = 0
     while True:
@@ -80,6 +80,7 @@ def simplify(program):
         "type": program.get("type"),
         "departments": [d.get("id") or d.get("_id") for d in program.get("departments") or []],
         "effectiveStartDate": program.get("effectiveStartDate"),
+        "status": program.get("status"),          # "Active", or "Inactive" for retired programs
         "requisites": program.get("requisites"),
     }
 

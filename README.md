@@ -1,8 +1,8 @@
 # UCSB Prereq Planner
 
-A tool that draws the prerequisite map for any UCSB major, built from the official General Catalog.
+A tool that draws the prerequisite map for any UCSB major or minor, built from the official General Catalog.
 
-**Status:** Parts 1–6 done (data, prerequisite parser, major requirements, graph, website, mark-as-taken and mobile). Part 7 (launch) is next.
+**Status:** Parts 1–7 done (data, prerequisite parser, major requirements, graph, website, mark-as-taken and mobile, launch prep with minors). Next: publish it and test with classmates (end of `PART7.md`).
 
 ## Project map
 
@@ -14,6 +14,7 @@ A tool that draws the prerequisite map for any UCSB major, built from the offici
 | 4 | One ready-to-draw graph per major | `build_graph.py`, `test_graph.py` → `site/data/` | `PART4.md` |
 | 5 | The website | `site/index.html`, `site/style.css`, `site/app.js`, `test_site.py` | `PART5.md` |
 | 6 | Mark as taken, folded elective lists, phone layout; map redesigned (relative layout with dagre, sharp HTML text) | same files, plus `site/lib/dagre.min.js` | `PART6.md` |
+| 7 | Minors, retired programs left out, front-page lists, links to a course, About and 404 pages | same files, plus `site/about.html`, `site/404.html` | `PART7.md` |
 
 To rebuild everything from scratch (Windows):
 
@@ -27,7 +28,9 @@ py measure.py --quiet
 py test_graph.py
 ```
 
-To see the site, run `py -m http.server 8000 --directory site` and open http://localhost:8000.
+To see the site, run `py -m http.server 8000 --directory site` and open http://localhost:8000. If port 8000 is already in use, use another number, such as 8765.
+
+To run the browser test, keep that server running and in a second terminal run `py test_site.py` (or `py test_site.py 8765` for another port).
 
 The two `fetch` steps download from the catalog (about 40 requests total). Every data file they produce is already included, so you can skip them and start at `build_prereqs.py`.
 

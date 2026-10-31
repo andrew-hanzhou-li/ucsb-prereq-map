@@ -1,5 +1,5 @@
 """
-build_majors.py: turn the catalog's major requirements into one file per major.
+build_majors.py: turn the catalog's major and minor requirements into one file each.
 
     py build_majors.py
 
@@ -7,8 +7,15 @@ Reads   raw_programs.json       every program in the catalog, with its
                                 requirements (from fetch_programs.py)
         raw_courses.json        from Part 1, to check every course exists
         program_overrides.json  hand corrections for rules stated only in notes
-Writes  majors/<id>.json        one file per bachelor's degree, e.g. majors/baecon.json
+Writes  majors/<name>.json      one file per current bachelor's degree or minor,
+                                e.g. majors/economics-ba.json, majors/mathematics-minor.json
         majors/index.json       list of all of them, for the site's major picker
+
+Retired programs (the catalog marks them "Inactive", e.g. Geological
+Sciences - BS, replaced by Earth Science) are left out. Current programs with
+no course list in the catalog (College of Creative Studies majors,
+Undeclared, Individual major) are listed in the index with
+"structured": false and no file, so the site can explain why there's no map.
 
 Where the data comes from
 -------------------------
@@ -208,6 +215,7 @@ class Converter:
             "id": program["programGroupId"],
             "name": program["name"],
             "type": program["type"],
+            "kind": program_kind(program),
             "departments": program.get("departments") or [],
             "catalog_year": catalog_year(program.get("effectiveStartDate")),
             "source": "https://catalog.ucsb.edu/programs/" + program["programGroupId"],
@@ -307,6 +315,11 @@ def course_summary(result):
     return sorted(seen.values(), key=lambda c: sort_key(c["code"] or ""))
 
 
+def program_kind(program):
+    """"major" for a bachelor's degree, "minor" for a minor."""
+    return "minor" if program.get("type") == "Minor" else "major"
+
+
 def file_name(name):
     """'Economics - BA ' -> 'economics-ba.json'."""
     return re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-") + ".json"
@@ -326,15 +339,24 @@ def main():
     converter = Converter(data, active, overrides)
     os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-    bachelors = [p for p in data["programs"] if "Bachelor" in (p.get("type") or "")]
-    # A few names appear twice under different program codes (an old and a new
-    # code); those files get the code added so neither overwrites the other.
+    undergrad = [p for p in data["programs"]
+                 if "Bachelor" in (p.get("type") or "") or p.get("type") == "Minor"]
+    current = [p for p in undergrad if p.get("status") != "Inactive"]
+    retired = len(undergrad) - len(current)
+    # A name could appear twice under different program codes (an old and a
+    # new code); those files get the code added so neither overwrites the other.
     name_counts = {}
-    for program in bachelors:
+    for program in current:
         name_counts[program["name"]] = name_counts.get(program["name"], 0) + 1
 
+    # Start clean, so files for programs that were retired since the last
+    # run don't linger.
+    for old in os.listdir(OUTPUT_DIR):
+        if old.endswith(".json"):
+            os.remove(os.path.join(OUTPUT_DIR, old))
+
     index = []
-    for program in bachelors:
+    for program in current:
         result = converter.program(program)
         if name_counts[program["name"]] > 1:
             name_for_file = result["name"] + " " + result["id"]
@@ -345,7 +367,9 @@ def main():
         entry = {
             "id": result["id"],
             "name": result["name"],
+            "kind": result["kind"],
             "file": file_name(name_for_file),
+            "source": result["source"],
             "structured": has_rules,
             "courses": len(statuses),
             "inactive": statuses.count("inactive"),
@@ -362,9 +386,12 @@ def main():
                   f, indent=1, ensure_ascii=False)
 
     structured = [e for e in index if e["structured"]]
-    print("Bachelor's programs in catalog:   %d" % len(index))
-    print("  with structured requirements:   %d  (written to majors/)" % len(structured))
-    print("  narrative only (no course list): %d" % (len(index) - len(structured)))
+    for kind in ("major", "minor"):
+        of_kind = [e for e in index if e["kind"] == kind]
+        print("Current %ss in catalog:          %d" % (kind, len(of_kind)))
+        print("  with structured requirements:   %d  (written to majors/)" % sum(e["structured"] for e in of_kind))
+        print("  no course list in the catalog:  %d" % sum(not e["structured"] for e in of_kind))
+    print("Retired programs left out:        %d" % retired)
     print("Courses referenced:               %d" % sum(e["courses"] for e in structured))
     print("  inactive (not offered now):     %d" % sum(e["inactive"] for e in structured))
     print("  unresolved catalog IDs:         %d" % sum(e["unresolved"] for e in structured))

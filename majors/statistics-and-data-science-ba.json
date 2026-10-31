@@ -2,6 +2,7 @@
  "id": "BASTSDS",
  "name": "Statistics and Data Science - BA",
  "type": "Bachelor's Degree",
+ "kind": "major",
  "departments": [
   "STATS"
  ],
@@ -82,6 +83,7 @@
      }
     ],
     "catalog_rule_id": "jzmkVdvz",
+    "label": "Math Preparation",
     "notes": "*Notes:\n- Either Math 4A, 4B, 6A, or 6B must be completed with a grade of \"B\" or better to take Math 8 or PSTAT 8.\n- Math 8 is a prerequisite for all upper division Math courses except Math 117, 104A, 104B, and 104C. If you plan to take additional upper division Math courses, you must take Math 8.\n- Math 4B is a prerequisite for the following UD PSTAT elective courses: PSTAT 160B, 170, 172B, 176."
    }
   },
@@ -91,20 +93,27 @@
     "type": "all",
     "items": [
      {
-      "type": "choose",
-      "count": 1,
+      "type": "all",
       "items": [
        {
-        "type": "course",
-        "code": "CMPSC 8",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CMPSCW 8",
-        "status": "active"
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "CMPSC 8",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CMPSCW 8",
+          "status": "active"
+         }
+        ]
        }
-      ]
+      ],
+      "catalog_rule_id": "uFMAE9XK",
+      "label": "Intro to Computer Science"
      },
      {
       "type": "choose",
@@ -120,11 +129,12 @@
         "code": "CMPSC 16",
         "status": "active"
        }
-      ]
+      ],
+      "catalog_rule_id": "NYPy5qyd",
+      "label": "Computer Science Preparation",
+      "notes": "- CMPSC 9 is recommended over CMPSC 16.\n- Students cannot get credit for CMPSC 8 at UCSB if transferring in credit for CMPSC 9 or 16, so please see the Department advisors in such instances.\n- Only one repeat is allowed between both CMPSC 9 and CMPSC16.\""
      }
-    ],
-    "catalog_rule_id": "uFMAE9XK",
-    "notes": "- CMPSC 9 is recommended over CMPSC 16.\n- Students cannot get credit for CMPSC 8 at UCSB if transferring in credit for CMPSC 9 or 16, so please see the Department advisors in such instances.\n- Only one repeat is allowed between both CMPSC 9 and CMPSC16.\""
+    ]
    }
   },
   {
@@ -436,6 +446,7 @@
      }
     ],
     "catalog_rule_id": "YvI1kDRS",
+    "label": "Upper-Division Requirements",
     "description": "36 UD units in PSTAT and Mathematics are required, distributed as follows:"
    },
    "notes": "Guide to PSTAT Courses:\n- Probability and Statistics Theory: PSTAT 120A (or W 120A), 120B, 120C\n- Data Science and Applied Statistics courses: PSTAT 100, 105, 115, 122, 123, 126, 127, 130, 131, 132, 134, 135, 174 (or W 174), 175, 197A-B-C\n- Actuarial and Financial Mathematics courses: PSTAT 170*, 171, 172A-B*, 173, 176*, 183\n- Stochastic Modelling courses: PSTAT 160A (or W 160A), 160B*\n- For students preparing to continue to graduate school: PSTAT 160A (or W 160A), 160B, PSTAT 199 (research), and at least one UD Math course (Math 117 and/or Math 108A) is highly recommended\n*Note: Math 4B is required for PSTAT 160B, 170, 172B, 176"
