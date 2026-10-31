@@ -204,17 +204,64 @@ def main():
         check("Close clears the selection", page.evaluate("selected") is None and
               page.inner_text("#panel-body h2") == "Computer Engineering - BS")
         box(page, "CMPSC 130A").hover()
-        page.wait_for_timeout(100)
+        page.wait_for_timeout(300)
         check("hovering previews a course's chain",
               page.evaluate("el.stage.classList.contains('focused') && document.querySelectorAll('.arrow').length > 0"))
+        scales = page.evaluate("""() => ['CMPSC 130A', 'CMPSC 130B', 'CMPSC 24', 'ECE 5']
+            .map(c => boxFor(c).style.transform)""")
+        check("hovering grows the course and what it unlocks, and shrinks the unrelated ones",
+              scales[0] == "scale(1.05)" and scales[1] == "scale(1.05)" and scales[2] == "" and scales[3] == "scale(0.9)",
+              scales)
         page.mouse.move(700, 20)
-        page.wait_for_timeout(250)
+        page.wait_for_timeout(450)
         check("moving away from it clears the preview", not page.evaluate("el.stage.classList.contains('focused')"))
+        check("...and every box goes back to its normal size",
+              page.evaluate("[...document.querySelectorAll('.box')].every(b => !b.style.transform)"))
         box(page, "ECE 10A").click()
         box(page, "CMPSC 130A").hover()
+        page.wait_for_timeout(300)
         page.mouse.move(700, 20)
-        page.wait_for_timeout(250)
+        page.wait_for_timeout(450)
         check("after a preview, the clicked course is back", "selected" in classes(page, "ECE 10A"))
+        page.keyboard.press("Escape")
+
+        # Linked courses off screen (Anthropology: ANTH 2 unlocks courses far down the elective list)
+        open_major(page, SITE, "anthropology-ba", "BAANTH")
+        box(page, "ANTH 2").hover()
+        page.wait_for_timeout(300)
+        bar = page.locator("#offscreen-down")
+        check("off-screen courses ANTH 2 unlocks are named in a bar at the bottom",
+              bar.is_visible() and "ANTH 2 unlocks" in bar.inner_text(), bar.inner_text() if bar.is_visible() else "hidden")
+        bar_box = bar.bounding_box()
+        page.mouse.move(bar_box["x"] + 20, bar_box["y"] + bar_box["height"] / 2, steps=12)   # crosses other courses
+        page.wait_for_timeout(300)
+        check("moving the mouse down to the bar keeps ANTH 2's preview", page.evaluate("focus && focus.code") == "ANTH 2")
+        bar.click()
+        page.wait_for_timeout(900)
+        check("clicking the bar selects ANTH 2", page.evaluate("selected") == "ANTH 2")
+        in_view = page.evaluate("""() => {
+            const v = el.map.getBoundingClientRect();
+            return [...focus.unlocks].some(c => { const r = boxFor(c).getBoundingClientRect(); return r.top >= v.top && r.bottom <= v.bottom; });
+        }""")
+        check("...and scrolls so the courses it unlocks are in view", in_view)
+        overlaps = page.evaluate("""() => {
+            const r = [...document.querySelectorAll('.box.unlocks, .box.selected')].map(b => b.getBoundingClientRect());
+            let n = 0;
+            for (let i = 0; i < r.length; i++) for (let j = i + 1; j < r.length; j++)
+                if (r[i].left < r[j].right && r[j].left < r[i].right && r[i].top < r[j].bottom && r[j].top < r[i].bottom) n++;
+            return n; }""")
+        check("grown boxes don't overlap each other", overlaps == 0, "%d overlaps" % overlaps)
+        check("...and a bar at the top leads back to ANTH 2",
+              page.is_visible("#offscreen-up") and "ANTH 2" in page.inner_text("#offscreen-up"))
+        page.click("#offscreen-up")
+        page.wait_for_timeout(900)
+        check("clicking it scrolls back up to ANTH 2", page.evaluate("""() => {
+            const v = el.map.getBoundingClientRect(); const r = boxFor('ANTH 2').getBoundingClientRect();
+            return r.top >= v.top && r.bottom <= v.bottom; }"""))
+        check("Anthropology's summary says 'all in step 1'", "all in step 1" in page.evaluate(
+            "(clearSelection(), document.getElementById('panel-body').innerText)"))
+
+        open_major(page, SITE, "computer-engineering-bs", "BSCMPEN")
         page.click("#all-link")
         page.wait_for_timeout(300)
         check("'All majors and minors' goes back to the front page",

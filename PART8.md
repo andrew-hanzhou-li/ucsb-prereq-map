@@ -72,6 +72,15 @@ The data already had a rule for this: upper-division courses are never placed be
 | **All majors and minors** (next to the pickers) | Back to the front page |
 | Browser Back | Goes to the previous major or page, not the previous course, so it doesn't fill up with every click |
 
+## Growing, shrinking, and courses off screen
+
+When a course is lit up (pointed at or clicked):
+- **It and the courses it unlocks grow 5%.** The courses it needs stay at normal size (they're already amber), and everything unrelated shrinks to 90% and fades. Sizes are set in one place, `SCALE` in `app.js`; above 5%, two grown boxes side by side would touch.
+- **A bar names the linked courses that are scrolled out of view**, e.g. "↓ Further down: ANTH 2 unlocks ANTH 102, ANTH 113, ANTH 115 and 10 more". Growing alone couldn't fix Anthropology: all 13 courses ANTH 2 unlocks are in an 80-course elective list, the nearest about 800 px below the screen. **Click the bar** to select the course and scroll to them; a bar at the top then leads back ("↑ Back to ANTH 2"). On phones, the bottom bar sits above the course sheet.
+- **The mouse can travel to the bar** without the preview jumping to every course it crosses: once one course is previewed, another has to be pointed at for about a tenth of a second to take over.
+
+The arrows end exactly on the resized boxes. They're worked out from where each box will end up, not measured mid-animation.
+
 ## The single file
 
 `py build_single.py` writes `site/ucsb-prereq-map.html`. It's the same page, styles and code, with every major inside it, so it opens by double-clicking, with no internet and no server. The website links to it in the footer ("Download the whole site as one file").

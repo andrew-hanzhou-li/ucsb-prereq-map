@@ -80,6 +80,8 @@ const el = {
   map: document.getElementById("map"),
   stage: document.getElementById("stage"),
   empty: document.getElementById("empty"),
+  offUp: document.getElementById("offscreen-up"),
+  offDown: document.getElementById("offscreen-down"),
   notice: document.getElementById("notice"),
   welcome: document.getElementById("welcome"),
   browseMajors: document.getElementById("browse-majors"),
@@ -278,6 +280,9 @@ function showHome() {
   shown = new Set();
   selected = null;
   previous = [];
+  focus = null;
+  el.offUp.hidden = true;
+  el.offDown.hidden = true;
   el.stage.innerHTML = "";
   el.courseList.innerHTML = "";
   el.majorInput.value = "";
@@ -834,10 +839,18 @@ function boxFor(code) {
   return el.stage.querySelector('.box[data-code="' + cssEscape(code) + '"]');
 }
 
+// While a course is lit up, the courses it unlocks grow a little and the
+// unrelated ones shrink a little, so the ones that matter stand out. (More
+// than 1.05 and two grown boxes side by side would touch; see .grid's gap.)
+const SCALE = { selected: 1.05, unlocks: 1.05, needs: 1, other: 0.9 };
+
+let focus = null;           // the lit-up course (hovered or clicked) and its relatives
+
 /*
   Light up one course: it, everything that leads to it (amber) and what it
-  directly unlocks (blue); fade the rest; draw the arrows. focusOn(null)
-  clears it. Hovering calls this too, then puts the clicked course back.
+  directly unlocks (blue); fade and shrink the rest; draw the arrows.
+  focusOn(null) clears it. Hovering calls this too, then puts the clicked
+  course back.
 */
 function focusOn(code) {
   const svg = el.stage.querySelector(".arrows");
@@ -848,25 +861,40 @@ function focusOn(code) {
   el.stage.classList.toggle("focused", Boolean(onMap));
   const needs = onMap ? ancestorsOf(code) : new Set();
   const unlocks = onMap ? new Set(unlocksOf(code)) : new Set();
+  focus = onMap ? { code: code, needs: needs, unlocks: unlocks } : null;
+  function scaleOf(c) {
+    if (!onMap) return 1;
+    if (c === code) return SCALE.selected;
+    if (unlocks.has(c)) return SCALE.unlocks;
+    if (needs.has(c)) return SCALE.needs;
+    return SCALE.other;
+  }
   for (const button of el.stage.querySelectorAll(".box[data-code]")) {
     const c = button.dataset.code;
     button.classList.toggle("selected", c === code);
     button.classList.toggle("needs", needs.has(c));
     button.classList.toggle("unlocks", unlocks.has(c));
+    const scale = scaleOf(c);
+    button.style.transform = scale === 1 ? "" : "scale(" + scale + ")";
   }
+  updateOffscreen();
   if (!onMap) return;
 
   // The svg covers the whole map, so arrows can join boxes in any rows.
   svg.setAttribute("width", el.stage.scrollWidth);
   svg.setAttribute("height", el.stage.scrollHeight);
-  const origin = el.stage.getBoundingClientRect();
+  // Where each box ends up once it has grown or shrunk (from its center).
+  // Worked out from the layout rather than measured on screen, because the
+  // boxes are still animating to their new size at this moment.
   const rects = {};
   function rect(c) {
     if (!rects[c]) {
       const box = boxFor(c);
       if (!box) return null;
-      const r = box.getBoundingClientRect();
-      rects[c] = { x: r.left - origin.left, y: r.top - origin.top, w: r.width, h: r.height };
+      const s = scaleOf(c);
+      const w = box.offsetWidth;
+      const h = box.offsetHeight;
+      rects[c] = { x: box.offsetLeft + w * (1 - s) / 2, y: box.offsetTop + h * (1 - s) / 2, w: w * s, h: h * s };
     }
     return rects[c];
   }
@@ -884,6 +912,107 @@ function focusOn(code) {
   for (const u of unlocks) arrow(code, u, "unlocks");
   svg.insertAdjacentHTML("beforeend", paths);
 }
+
+/*
+  Linked courses that are off screen. In a long list (Anthropology's 80
+  electives), the courses ANTH 2 unlocks can all be far below. A bar at the
+  bottom (or top) edge of the map names them, and clicking it scrolls there.
+*/
+function updateOffscreen() {
+  for (const bar of [el.offUp, el.offDown]) bar.hidden = true;
+  if (!focus) return;
+  const view = visibleArea();
+  const groups = { up: { self: false, unlocks: [], needs: [] }, down: { self: false, unlocks: [], needs: [] } };
+  function place(c, kind) {
+    const box = boxFor(c);
+    if (!box) return;
+    const r = box.getBoundingClientRect();
+    const side = r.bottom < view.top + 8 ? "up" : r.top > view.bottom - 8 ? "down" : null;
+    if (!side) return;
+    if (kind === "self") groups[side].self = true; else groups[side][kind].push({ code: c, top: r.top });
+  }
+  place(focus.code, "self");
+  focus.unlocks.forEach(c => place(c, "unlocks"));
+  focus.needs.forEach(c => place(c, "needs"));
+
+  for (const side of ["up", "down"]) {
+    const g = groups[side];
+    // "↓ Further down: ANTH 2 unlocks ANTH 105BW, ANTH 106 and 11 more"
+    const parts = [];
+    if (g.unlocks.length) parts.push("unlocks " + listCodes(g.unlocks));
+    if (g.needs.length) parts.push("needs " + listCodes(g.needs));
+    const arrowSign = side === "up" ? "↑ " : "↓ ";
+    let text;
+    if (parts.length) {
+      text = arrowSign + (side === "up" ? "Further up: " : "Further down: ") + focus.code + " " + parts.join("; ");
+      if (g.self) text += " · and " + focus.code + " itself";
+    } else if (g.self) {
+      text = arrowSign + "Back to " + focus.code;
+    } else {
+      continue;
+    }
+    const bar = side === "up" ? el.offUp : el.offDown;
+    bar.textContent = text;
+    bar.hidden = false;
+  }
+  // On phones, keep the bottom bar above the course sheet when it's open.
+  el.offDown.style.bottom = (view.coveredBelow + 10) + "px";
+}
+
+// "ANTH 105BW, ANTH 106, ANTH 120MJ and 10 more", nearest first.
+function listCodes(items) {
+  const codes = items.sort((a, b) => a.top - b.top).map(i => i.code);
+  const first = codes.slice(0, 3).join(", ");
+  return codes.length > 3 ? first + " and " + (codes.length - 3) + " more" : first;
+}
+
+// The part of the map you can see (in screen coordinates), and how much of
+// its bottom the phone's course sheet covers.
+function visibleArea() {
+  const map = el.map.getBoundingClientRect();
+  let bottom = map.bottom;
+  if (isPhone() && el.panel.classList.contains("open")) bottom = Math.min(bottom, el.panel.getBoundingClientRect().top);
+  return { top: map.top, bottom: bottom, coveredBelow: Math.max(0, map.bottom - bottom) };
+}
+
+// Clicking a bar keeps the course selected (if it was only hovered) and
+// scrolls to the nearest of the linked courses in that direction.
+function jumpOffscreen(side) {
+  if (!focus) return;
+  const code = focus.code;
+  if (selected !== code) selectCourse(code, false);
+  const view = visibleArea();
+  const targets = [code, ...focus.unlocks, ...focus.needs]
+    .map(c => boxFor(c))
+    .filter(Boolean)
+    .map(box => box.getBoundingClientRect())
+    .filter(r => side === "up" ? r.bottom < view.top + 8 : r.top > view.bottom - 8);
+  if (!targets.length) return;
+  // Down: the nearest one below goes near the top, so the ones after it show too.
+  // Up: the nearest one above goes near the bottom.
+  const target = side === "down"
+    ? targets.reduce((a, b) => (b.top < a.top ? b : a))
+    : targets.reduce((a, b) => (b.bottom > a.bottom ? b : a));
+  const shift = side === "down" ? target.top - view.top - 70 : target.bottom - view.bottom + 70;
+  el.map.scrollTo({ top: el.map.scrollTop + shift, behavior: "smooth" });
+}
+
+for (const [bar, side] of [[document.getElementById("offscreen-up"), "up"], [document.getElementById("offscreen-down"), "down"]]) {
+  bar.addEventListener("click", function () { jumpOffscreen(side); });
+  // Moving the mouse from a hovered course to the bar keeps the preview.
+  bar.addEventListener("pointerenter", function () { clearTimeout(hoverTimer); });
+  bar.addEventListener("pointerleave", function (event) {
+    if (event.pointerType !== "mouse") return;
+    clearTimeout(hoverTimer);
+    hoverTimer = setTimeout(function () { focusOn(selected); }, 250);
+  });
+}
+
+let scrollFrame = null;
+el.map.addEventListener("scroll", function () {
+  if (scrollFrame) return;
+  scrollFrame = requestAnimationFrame(function () { scrollFrame = null; updateOffscreen(); });
+});
 
 /*
   A curved arrow from box a to box b. Going down the page (the usual case:
@@ -933,20 +1062,27 @@ el.stage.addEventListener("click", function (event) {
   else selectCourse(button.dataset.code, false);
 });
 
-// Pointing at a course with a mouse previews its chain; moving off puts back
-// whatever was clicked. (Touch screens have no hover; tapping selects.)
+/*
+  Pointing at a course with a mouse previews its chain; moving off puts back
+  whatever was clicked. (Touch screens have no hover; tapping selects.)
+  While one preview is showing, the next course has to be pointed at for a
+  moment before it takes over, so the mouse can cross other courses on its
+  way to the "Further down" bar without losing the preview.
+*/
 el.stage.addEventListener("pointerover", function (event) {
   if (event.pointerType !== "mouse") return;
   const button = event.target.closest(".box[data-code]");
   if (!button) return;
+  const code = button.dataset.code;
   clearTimeout(hoverTimer);
-  focusOn(button.dataset.code);
+  if (focus && focus.code === code) return;
+  hoverTimer = setTimeout(function () { focusOn(code); }, focus ? 120 : 0);
 });
 el.stage.addEventListener("pointerout", function (event) {
   if (event.pointerType !== "mouse") return;
   if (event.relatedTarget && event.relatedTarget.closest && event.relatedTarget.closest(".box[data-code]")) return;
   clearTimeout(hoverTimer);
-  hoverTimer = setTimeout(function () { focusOn(selected); }, 80);
+  hoverTimer = setTimeout(function () { focusOn(selected); }, 250);
 });
 
 // Select a course by its code (from a click, the finder or a link in the
@@ -1202,7 +1338,8 @@ function showMajorSummary() {
   html += '<p class="facts">' + escapeHtml(graph.major.catalog_year) + " catalog</p>";
   html += "<p>" + graph.stats.courses_in_major + " courses" +
           (outside ? ", plus " + outside + " from other departments that they need" : "") + ". " +
-          "The required ones are in " + steps + " steps: each course's prerequisites are in earlier steps. " +
+          (steps === 1 ? "The required ones are all in step 1. "
+                       : "The required ones are in " + steps + " steps: each course's prerequisites are in earlier steps. ") +
           "Electives are listed below the steps.</p>";
   html += "<p>Point at or click a course to trace what it needs and what it unlocks. Mark courses you've taken, and the ones you can take next get a green outline.</p>";
 
