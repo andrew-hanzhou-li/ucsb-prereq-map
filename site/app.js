@@ -40,7 +40,7 @@ const ROW_GAP = 12;           // vertical space between boxes in a layer
 const COLLAPSE_AT = 9;        // elective lists with this many courses or more start folded into one box
 const CHOICE_MAX = 4;         // "pick one of" lists up to this long share one box
 const SAVE_KEY = "ucsb-prereq-map.taken";   // where "taken" marks are saved in the browser
-const REPO_URL = "";          // put your GitHub repository's address here to link it in the footer
+const REPO_URL = "https://github.com/andrew-hanzhou-li/ucsb-prereq-map";   // linked as "Source code" in the footer
 
 const ROLE_NAMES = {
   required: "Required",
