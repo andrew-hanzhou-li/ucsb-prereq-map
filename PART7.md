@@ -1,6 +1,6 @@
 # Part 7 — Launch prep, minors, and the majors that wouldn't load
 
-**Status:** the code is done and the browser test passes (`1373 checks passed, 0 failed`). What's left is yours: publish it and show it to classmates (see "Your part" at the end).
+**Status:** done and live at **https://andrew-hanzhou-li.github.io/ucsb-prereq-map/** (source: https://github.com/andrew-hanzhou-li/ucsb-prereq-map). The browser test passes (`1373 checks passed, 0 failed`). What's left is yours: show it to classmates (see "Launch" at the end).
 
 Part 7 did three things:
 
@@ -105,9 +105,15 @@ It should print `1373 checks passed, 0 failed`. `py test_graph.py` should print 
 
 `raw_programs.json` was downloaded again on Oct 31. `raw_courses.json` is still the early-October copy. That's fine unless the catalog changes a course mid-year. To refresh everything, run the full rebuild in the README, starting with `py fetch.py`.
 
-## Your part: launch
+## Launch
 
-1. **Create a GitHub repository** and push this folder. Git is set up here with a `main` branch; you just need to add the remote and push.
-2. **Turn on Pages:** repository Settings → Pages → Source: **GitHub Actions**. The workflow in `.github/workflows/pages.yml` publishes `site/` on every push to `main`.
-3. **Set `REPO_URL`** at the top of `site/app.js` to your repository's address, so the footer shows a "Source code" link.
-4. **Show it to 3 classmates on their phones** (from Part 6). Don't explain anything; note where each one hesitates, and bring those notes back.
+Done:
+
+1. **Repository:** https://github.com/andrew-hanzhou-li/ucsb-prereq-map (public). Commits use your GitHub "noreply" email, so your personal email isn't shown.
+2. **Pages:** turned on with GitHub Actions as the source. `.github/workflows/pages.yml` republishes `site/` on every push to `main`, which takes about a minute. The first run failed because it started before Pages was on; the re-run worked.
+3. **`REPO_URL`** in `site/app.js` points at the repository, so the footer shows a "Source code" link.
+4. **Checked live:** the front page lists 169 majors and 56 minors, a course link opens that course, the About page loads, a mistyped address shows the 404 page, and there are no JavaScript errors. Checked on desktop and phone sizes.
+
+To publish a change: commit and `git push`. The Actions tab on GitHub shows each run.
+
+Yours: **show it to 3 classmates on their phones** (from Part 6). Text them the link, don't explain anything, and note where each one hesitates. Bring those notes back.

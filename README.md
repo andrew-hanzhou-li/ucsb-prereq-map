@@ -2,7 +2,9 @@
 
 A tool that draws the prerequisite map for any UCSB major or minor, built from the official General Catalog.
 
-**Status:** Parts 1–7 done (data, prerequisite parser, major requirements, graph, website, mark-as-taken and mobile, launch prep with minors). Next: publish it and test with classmates (end of `PART7.md`).
+**Live at https://andrew-hanzhou-li.github.io/ucsb-prereq-map/**
+
+**Status:** Parts 1–7 done (data, prerequisite parser, major requirements, graph, website, mark-as-taken and mobile, launch with minors). Next: test with classmates (end of `PART7.md`).
 
 ## Project map
 
