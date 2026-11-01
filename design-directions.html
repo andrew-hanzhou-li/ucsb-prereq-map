@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Three design directions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Overpass:wght@400;600;800;900&family=Overpass+Mono:wght@400;600&family=IBM+Plex+Mono:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  /* This page only compares directions. Each frame is the same slice of the
+     Computer Engineering map with ECE 152A selected. */
+  html { background: #d9d9d4; }
+  body { margin: 0; padding: 28px 24px 60px; font: 15px/1.45 system-ui, sans-serif; color: #222; }
+  .intro { max-width: 1120px; margin: 0 auto 24px; }
+  .intro h1 { font-size: 20px; margin: 0 0 6px; }
+  .intro p { margin: 0; max-width: 760px; }
+  .label { max-width: 1120px; margin: 36px auto 8px; display: flex; gap: 14px; align-items: baseline; }
+  .label b { font-size: 18px; }
+  .label span { color: #555; }
+  .frame { position: relative; width: 1120px; margin: 0 auto; overflow: hidden; border: 1px solid #999; }
+  .stage { position: relative; }
+  .stage svg.arrows { position: absolute; left: 0; top: 0; pointer-events: none; overflow: visible; }
+  .faded { opacity: .28; }
+
+  /* ================================================== A. Catalog page */
+  .a { background: #f6f3ea; color: #1b1a17; font-family: "Libre Caslon Text", Georgia, serif; }
+  .a-mast { padding: 18px 28px 10px; border-bottom: 3px double #1b1a17; display: flex; align-items: baseline; gap: 28px; }
+  .a-title { font-size: 26px; letter-spacing: .01em; }
+  .a-title i { font-size: 16px; color: #6d675a; margin-left: 10px; }
+  .a-nav { margin-left: auto; font-size: 14px; display: flex; gap: 18px; font-variant: small-caps; letter-spacing: .06em; }
+  .a-nav a { color: inherit; }
+  .a-sub { padding: 8px 28px; font-size: 14px; border-bottom: 1px solid #1b1a17; display: flex; gap: 22px; }
+  .a-sub .prog { font-weight: 700; }
+  .a-sub label { font-style: italic; color: #6d675a; }
+  .a-body { display: grid; grid-template-columns: 1fr 330px; }
+  .a-map { padding: 8px 28px 28px; }
+  .a h3 { margin: 22px 0 6px; font-size: 13px; font-weight: 400; font-variant: small-caps; letter-spacing: .14em; border-bottom: 1px solid #1b1a17; padding-bottom: 3px; }
+  .a h3 em { font-variant: normal; letter-spacing: 0; color: #6d675a; margin-left: 8px; }
+  .a-list { display: grid; grid-template-columns: repeat(4, 1fr); column-gap: 26px; margin: 0; padding: 0; list-style: none; }
+  .a-list li { padding: 6px 0 7px; border-bottom: 1px dotted #a39d8d; font-size: 13.5px; line-height: 1.3; }
+  .a-list b { display: block; font-size: 14.5px; letter-spacing: .02em; }
+  .a-list .or { display: block; font-style: italic; font-size: 12.5px; color: #6d675a; }
+  .a-list .out b::after { content: " †"; font-weight: 400; }
+  .a-list .sel { color: #b3261e; }
+  .a-list .sel b { border-bottom: 2px solid #b3261e; display: inline; }
+  .a-list .need b { color: #b3261e; }
+  .a-list .unl b { color: #23407a; }
+  .a .arrow { fill: none; stroke: #b3261e; stroke-width: 1.3; }
+  .a .arrow.u { stroke: #23407a; }
+  .a-panel { border-left: 1px solid #1b1a17; padding: 20px 24px; font-size: 14px; }
+  .a-panel .head { font-size: 20px; font-weight: 700; margin: 0; }
+  .a-panel .head span { font-weight: 400; }
+  .a-panel p { margin: 10px 0; }
+  .a-panel .k { font-variant: small-caps; letter-spacing: .1em; font-size: 13px; }
+  .a-panel .back { font-size: 13px; display: flex; justify-content: space-between; margin-bottom: 14px; font-style: italic; }
+  .a-panel .back a { color: inherit; }
+  .a-panel label { display: flex; gap: 8px; align-items: center; margin-top: 14px; }
+  .a-panel .fine { font-size: 12.5px; color: #6d675a; font-style: italic; }
+  .a-foot { padding: 7px 28px; border-top: 1px solid #1b1a17; font-size: 12.5px; font-style: italic; display: flex; justify-content: space-between; }
+  .a-more { position: absolute; left: 28px; bottom: 34px; font-size: 13.5px; background: #f6f3ea; padding: 2px 0; border-bottom: 1px solid #23407a; color: #23407a; font-style: italic; }
+
+  /* ================================================== B. Transit map */
+  .b { background: #fff; color: #111; font-family: "Overpass", "Arial Narrow", sans-serif; }
+  .b-bar { background: #111; color: #fff; display: flex; align-items: center; gap: 22px; padding: 0 22px; height: 54px; }
+  .b-bar .t { font-weight: 900; font-size: 19px; letter-spacing: .02em; text-transform: uppercase; }
+  .b-bar .prog { background: #fff; color: #111; font-weight: 800; padding: 5px 10px 3px; font-size: 15px; }
+  .b-bar .lines { margin-left: auto; display: flex; gap: 14px; font-size: 13px; font-weight: 600; }
+  .b-bar .lines i { display: inline-block; width: 12px; height: 12px; margin-right: 5px; vertical-align: -1px; }
+  .b-body { display: grid; grid-template-columns: 1fr 320px; }
+  .b-map { padding: 4px 0 26px; }
+  .b-zone { display: grid; grid-template-columns: 70px 1fr; border-bottom: 2px solid #111; }
+  .b-zone .n { font-weight: 900; font-size: 38px; line-height: 1; padding: 12px 0 0 18px; }
+  .b-zone .n small { display: block; font-size: 11px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; margin-top: 4px; }
+  .b-stops { display: grid; grid-template-columns: repeat(4, 1fr); gap: 4px 18px; padding: 14px 18px 16px 6px; }
+  .b-stop { display: grid; grid-template-columns: 16px 1fr; gap: 0 8px; align-items: start; padding: 4px 6px 5px 4px; }
+  .b-stop i { width: 14px; height: 14px; margin-top: 3px; }
+  .b-stop b { font-weight: 800; font-size: 16px; letter-spacing: .01em; }
+  .b-stop span { grid-column: 2; font-size: 13px; line-height: 1.25; color: #333; }
+  .b-stop.out b::after { content: "  outside"; font-size: 10px; font-weight: 600; text-transform: uppercase; color: #666; letter-spacing: .06em; }
+  .b-stop.sel { background: #111; }
+  .b-stop.sel b, .b-stop.sel span { color: #fff; }
+  .b-stop.need { outline: 3px solid #111; outline-offset: -1px; }
+  .b-stop.unl { outline: 3px dashed #111; outline-offset: -1px; }
+  .b .arrow { fill: none; stroke-width: 4; stroke-linejoin: round; }
+  .ece { background: #d1342b; } .cs { background: #138a3e; } .math { background: #1f55c4; } .phys { background: #e98a00; } .engr { background: #7a4fb0; }
+  .b-panel { border-left: 2px solid #111; }
+  .b-panel .h { background: #d1342b; color: #fff; padding: 14px 18px 10px; }
+  .b-panel .h b { font-size: 30px; font-weight: 900; display: block; line-height: 1; }
+  .b-panel .h span { font-size: 15px; font-weight: 600; }
+  .b-panel .nav { display: flex; border-bottom: 2px solid #111; }
+  .b-panel .nav a { flex: 1; padding: 8px 12px 6px; font-weight: 800; font-size: 13px; text-transform: uppercase; letter-spacing: .05em; color: #111; text-decoration: none; }
+  .b-panel .nav a + a { border-left: 2px solid #111; text-align: right; }
+  .b-panel .sec { padding: 12px 18px 4px; }
+  .b-panel .sec h4 { margin: 0 0 6px; font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; }
+  .b-panel .row { display: flex; gap: 8px; align-items: center; font-size: 14px; padding: 2px 0; }
+  .b-panel .row i { width: 12px; height: 12px; }
+  .b-panel .row em { font-style: normal; color: #666; font-size: 12px; }
+  .b-panel button { margin: 14px 18px; font: 800 14px "Overpass", sans-serif; text-transform: uppercase; letter-spacing: .05em; background: #fff; border: 2px solid #111; padding: 8px 14px 6px; }
+  .b-more { position: absolute; left: 0; right: 320px; bottom: 0; background: #111; color: #fff; font-weight: 800; font-size: 14px; padding: 8px 22px 6px; letter-spacing: .02em; }
+
+  /* ================================================== C. Plain web / periodic table */
+  .c { background: #fff; color: #000; font-family: "IBM Plex Mono", Consolas, monospace; font-size: 13px; }
+  .c a { color: #0000ee; }
+  .c-top { padding: 12px 20px; border-bottom: 1px solid #000; display: flex; gap: 22px; align-items: baseline; }
+  .c-top .t { font-weight: 600; font-size: 15px; }
+  .c-top .path { color: #555; }
+  .c-top .path b { color: #000; }
+  .c-top .r { margin-left: auto; display: flex; gap: 16px; }
+  .c-top input { font: inherit; border: 1px solid #000; padding: 3px 6px; width: 190px; border-radius: 0; }
+  .c-body { display: grid; grid-template-columns: 1fr 330px; }
+  .c-map { padding: 6px 20px 26px; }
+  .c h3 { margin: 18px 0 6px; font-size: 13px; font-weight: 600; }
+  .c h3 span { font-weight: 400; color: #555; }
+  .c-grid { display: grid; grid-template-columns: repeat(5, 1fr); border-top: 1px solid #000; border-left: 1px solid #000; }
+  .c-cell { border-right: 1px solid #000; border-bottom: 1px solid #000; padding: 7px 8px 8px; min-height: 64px; background: #fff; position: relative; }
+  .c-cell b { display: block; font-size: 14px; }
+  .c-cell span { display: block; font-size: 12px; line-height: 1.3; }
+  .c-cell .or { color: #555; font-style: italic; }
+  .c-cell.out { background: #ededed; }
+  .c-cell .tag { position: absolute; top: 6px; right: 7px; font-size: 10px; color: #555; }
+  .c-cell.sel { background: #ffe94d; }
+  .c-cell.need { box-shadow: inset 0 0 0 3px #000; }
+  .c-cell.unl { box-shadow: inset 0 0 0 3px #0000ee; }
+  .c .arrow { fill: none; stroke: #000; stroke-width: 1.5; }
+  .c .arrow.u { stroke: #0000ee; }
+  .c-panel { border-left: 1px solid #000; padding: 14px 18px; }
+  .c-panel .nav { margin-bottom: 12px; display: flex; justify-content: space-between; }
+  .c-panel h2 { font-size: 17px; margin: 0; }
+  .c-panel dl { margin: 12px 0; display: grid; grid-template-columns: 80px 1fr; gap: 6px 10px; }
+  .c-panel dt { color: #555; }
+  .c-panel dd { margin: 0; }
+  .c-panel pre { white-space: pre-wrap; margin: 0; font: inherit; }
+  .c-panel .q { border-left: 1px solid #000; padding-left: 10px; color: #333; margin: 10px 0; }
+  .c-more { position: absolute; left: 20px; bottom: 10px; background: #ffe94d; padding: 2px 6px; font-weight: 600; }
+</style>
+</head>
+<body>
+
+<div class="intro">
+  <h1>Three directions for the UCSB Prerequisite Map</h1>
+  <p>Each frame is the same slice of the Computer Engineering map: steps 1, 4, 5 and 6, with ECE 152A selected, so the arrows from what it needs and to what it unlocks are drawn, and the side panel shows it. None of them uses gradients, rounded cards, drop shadows or Inter/Fraunces.</p>
+</div>
+
+<!-- ============================================================ A -->
+<div class="label"><b>A. Catalog page</b><span>Typeset like the printed UCSB General Catalog. Caslon serif, ruled lists instead of boxes, red and blue pencil marks. Calm and bookish.</span></div>
+<section class="frame a" id="A">
+  <header class="a-mast">
+    <div class="a-title">The Prerequisite Map<i>University of California, Santa Barbara</i></div>
+    <nav class="a-nav"><a href="#">All programs</a><a href="#">About</a><a href="#">One-file copy</a></nav>
+  </header>
+  <div class="a-sub"><span class="prog">Computer Engineering, B.S.</span><label>Find a course…</label><label>Show: electives · courses not offered</label></div>
+  <div class="a-body">
+    <div class="a-map stage">
+      <h3>Step one <em>no prerequisites in this major</em></h3>
+      <ul class="a-list">
+        <li class="faded"><b>ECE 1A</b>Computer Engineering Seminar</li>
+        <li class="faded"><b>ECE 1B</b>Ten Puzzling Problems in Computer Engineering</li>
+        <li class="faded"><b>ECE 5</b>Intro. to Electrical &amp; Computer Engineering</li>
+        <li class="need" data-c="ECE 15A"><b>ECE 15A</b>Fundamentals of Logic Design</li>
+        <li class="faded"><b>MATH 2A</b>Calculus with Algebra and Trigonometry<span class="or">or Math 3A</span></li>
+        <li class="faded"><b>MATH 3A</b>Calculus with Applications, First Course<span class="or">or Math 2A</span></li>
+        <li class="faded out"><b>CMPSC 8</b>Introduction to Computer Science</li>
+      </ul>
+      <h3>Step four</h3>
+      <ul class="a-list">
+        <li class="faded"><b>CMPSC 32</b>Object Oriented Design and Implementation</li>
+        <li class="faded"><b>CMPSC 41</b>Discrete Mathematics for Computer Science</li>
+        <li class="need" data-c="ECE 10A"><b>ECE 10A</b>Foundations of Analog and Digital Circuits</li>
+        <li class="need" data-c="ECE 10AL"><b>ECE 10AL</b>Foundations of Analog and Digital Circuits, Lab</li>
+        <li class="faded"><b>MATH 4B</b>Differential Equations</li>
+        <li class="faded"><b>MATH 6A</b>Vector Calculus with Applications</li>
+        <li class="faded"><b>PHYS 7C</b>Basic Physics</li>
+        <li class="faded"><b>PHYS 7L</b>Physics Laboratory</li>
+      </ul>
+      <h3>Step five</h3>
+      <ul class="a-list">
+        <li class="faded"><b>CMPSC 130A</b>Data Structures and Algorithms</li>
+        <li class="faded"><b>ECE 10B</b>Foundations of Analog and Digital Circuits II</li>
+        <li class="faded"><b>ECE 139</b>Probability and Statistics</li>
+        <li class="sel" data-c="ECE 152A"><b>ECE 152A</b><br>Digital Design Principles</li>
+        <li class="faded"><b>ENGR 101</b>Ethics in Engineering</li>
+        <li class="faded"><b>PHYS 7D</b>Basic Physics</li>
+      </ul>
+      <h3>Step six</h3>
+      <ul class="a-list">
+        <li class="faded"><b>CMPSC 189A</b>Senior Computer Systems Project</li>
+        <li class="faded"><b>ECE 10C</b>Foundations of Analog and Digital Circuits III</li>
+        <li class="unl" data-c="ECE 154A"><b>ECE 154A</b>Introduction to Computer Architecture</li>
+      </ul>
+      <p style="font-size:12.5px;font-style:italic;color:#6d675a;margin-top:18px">† from another department, needed first</p>
+      <svg class="arrows"></svg>
+    </div>
+    <aside class="a-panel">
+      <div class="back"><a href="#">← ECE 15A</a><a href="#">close</a></div>
+      <p class="head">ECE 152A. <span>Digital Design Principles</span></p>
+      <p>(5) Step five on this map.</p>
+      <p><span class="k">Needs.</span> ECE 15A and ECE 10A–10AL, each with a grade of C− or better; or Computer Science 30 or 64. Open to EE, CE and CS majors only.</p>
+      <p><span class="k">Unlocks.</span> ECE 154A; and 9 electives, listed below the steps.</p>
+      <p><span class="k">Counts as.</span> Required, upper-division major.</p>
+      <label><input type="checkbox"> I've taken this course</label>
+      <p class="fine">Copy a link to this course · See it in the catalog</p>
+    </aside>
+  </div>
+  <div class="a-more">Further down: ECE 152A also unlocks ECE 152B, ECE 153B, ECE 122A and 6 more ↓</div>
+  <div class="a-foot"><span>Built from the 2026–27 General Catalog. An unofficial student project.</span><span>Confirm your plan with a department advisor.</span></div>
+</section>
+
+<!-- ============================================================ B -->
+<div class="label"><b>B. Transit map</b><span>Read like a subway map: every department is a colored line, steps are zones, prerequisite chains are thick colored routes. Signage type (Overpass, modeled on US highway signs). Bold and graphic.</span></div>
+<section class="frame b" id="B">
+  <div class="b-bar">
+    <span class="t">Prereq Map</span>
+    <span class="prog">Computer Engineering · BS</span>
+    <span class="lines"><span><i class="ece"></i>ECE</span><span><i class="cs"></i>CMPSC</span><span><i class="math"></i>MATH</span><span><i class="phys"></i>PHYS</span><span><i class="engr"></i>ENGR</span></span>
+  </div>
+  <div class="b-body">
+    <div class="b-map stage">
+      <div class="b-zone"><div class="n">1<small>Start</small></div><div class="b-stops">
+        <div class="b-stop faded"><i class="ece"></i><b>ECE 1A</b><span>Computer Engineering Seminar</span></div>
+        <div class="b-stop faded"><i class="ece"></i><b>ECE 1B</b><span>Ten Puzzling Problems</span></div>
+        <div class="b-stop faded"><i class="ece"></i><b>ECE 5</b><span>Intro to Electrical &amp; Computer Eng.</span></div>
+        <div class="b-stop need" data-c="ECE 15A" data-line="#d1342b"><i class="ece"></i><b>ECE 15A</b><span>Fundamentals of Logic Design</span></div>
+        <div class="b-stop faded"><i class="math"></i><b>MATH 2A</b><span>Calculus with Algebra and Trig. · or 3A</span></div>
+        <div class="b-stop faded"><i class="math"></i><b>MATH 3A</b><span>Calculus with Applications I · or 2A</span></div>
+        <div class="b-stop faded out"><i class="cs"></i><b>CMPSC 8</b><span>Introduction to Computer Science</span></div>
+      </div></div>
+      <div class="b-zone"><div class="n">4</div><div class="b-stops">
+        <div class="b-stop faded"><i class="cs"></i><b>CMPSC 32</b><span>Object Oriented Design</span></div>
+        <div class="b-stop faded"><i class="cs"></i><b>CMPSC 41</b><span>Discrete Mathematics for CS</span></div>
+        <div class="b-stop need" data-c="ECE 10A" data-line="#d1342b"><i class="ece"></i><b>ECE 10A</b><span>Analog and Digital Circuits</span></div>
+        <div class="b-stop need" data-c="ECE 10AL" data-line="#d1342b"><i class="ece"></i><b>ECE 10AL</b><span>Analog and Digital Circuits Lab</span></div>
+        <div class="b-stop faded"><i class="math"></i><b>MATH 4B</b><span>Differential Equations</span></div>
+        <div class="b-stop faded"><i class="math"></i><b>MATH 6A</b><span>Vector Calculus</span></div>
+        <div class="b-stop faded"><i class="phys"></i><b>PHYS 7C</b><span>Basic Physics</span></div>
+        <div class="b-stop faded"><i class="phys"></i><b>PHYS 7L</b><span>Physics Laboratory</span></div>
+      </div></div>
+      <div class="b-zone"><div class="n">5</div><div class="b-stops">
+        <div class="b-stop faded"><i class="cs"></i><b>CMPSC 130A</b><span>Data Structures and Algorithms</span></div>
+        <div class="b-stop faded"><i class="ece"></i><b>ECE 10B</b><span>Analog and Digital Circuits II</span></div>
+        <div class="b-stop faded"><i class="ece"></i><b>ECE 139</b><span>Probability and Statistics</span></div>
+        <div class="b-stop sel" data-c="ECE 152A"><i class="ece"></i><b>ECE 152A</b><span>Digital Design Principles</span></div>
+        <div class="b-stop faded"><i class="engr"></i><b>ENGR 101</b><span>Ethics in Engineering</span></div>
+        <div class="b-stop faded"><i class="phys"></i><b>PHYS 7D</b><span>Basic Physics</span></div>
+      </div></div>
+      <div class="b-zone" style="border-bottom:0"><div class="n">6</div><div class="b-stops">
+        <div class="b-stop faded"><i class="cs"></i><b>CMPSC 189A</b><span>Senior Computer Systems Project</span></div>
+        <div class="b-stop faded"><i class="ece"></i><b>ECE 10C</b><span>Analog and Digital Circuits III</span></div>
+        <div class="b-stop unl" data-c="ECE 154A" data-line="#111"><i class="ece"></i><b>ECE 154A</b><span>Intro to Computer Architecture</span></div>
+      </div></div>
+      <svg class="arrows"></svg>
+    </div>
+    <aside class="b-panel">
+      <div class="h"><b>ECE 152A</b><span>Digital Design Principles · 5 units</span></div>
+      <div class="nav"><a href="#">← ECE 15A</a><a href="#">Close ✕</a></div>
+      <div class="sec"><h4>Needs</h4>
+        <div class="row"><i class="ece"></i>ECE 15A <em>C− or better</em></div>
+        <div class="row"><i class="ece"></i>ECE 10A + 10AL <em>C− or better</em></div>
+        <div class="row" style="color:#666">or CMPSC 30 / 64 <em>not on this map</em></div>
+      </div>
+      <div class="sec"><h4>Unlocks</h4>
+        <div class="row"><i class="ece"></i>ECE 154A</div>
+        <div class="row"><i class="ece"></i>ECE 152B, 153B, 122A <em>+ 6 electives</em></div>
+      </div>
+      <button>Mark as taken</button>
+    </aside>
+  </div>
+  <div class="b-more">↓ ECE 152A also unlocks ECE 152B, 153B, 122A + 6 more further down</div>
+</section>
+
+<!-- ============================================================ C -->
+<div class="label"><b>C. Plain web page</b><span>Like a hand-built page from a CS department: monospace (IBM Plex Mono), a ruled table of cells sharing hairlines, real blue underlined links, a yellow highlighter for the selection. Dense and no-nonsense.</span></div>
+<section class="frame c" id="C">
+  <div class="c-top">
+    <span class="t">ucsb prereq map</span>
+    <span class="path">/ majors / <b>computer-engineering-bs</b></span>
+    <span class="r"><input value="find a course…"><a href="#">all majors</a><a href="#">about</a><a href="#">download .html</a></span>
+  </div>
+  <div class="c-body">
+    <div class="c-map stage">
+      <h3>step 1 <span>— no prerequisites in this major</span></h3>
+      <div class="c-grid">
+        <div class="c-cell faded"><b>ECE 1A</b><span>Computer Engineering Seminar</span></div>
+        <div class="c-cell faded"><b>ECE 1B</b><span>Ten Puzzling Problems in Comp. Eng.</span></div>
+        <div class="c-cell faded"><b>ECE 5</b><span>Intro to Electrical &amp; Computer Eng.</span></div>
+        <div class="c-cell need" data-c="ECE 15A"><b>ECE 15A</b><span>Fundamentals of Logic Design</span></div>
+        <div class="c-cell faded"><b>MATH 2A</b><span>Calculus with Algebra and Trig.</span><span class="or">or MATH 3A</span></div>
+        <div class="c-cell faded"><b>MATH 3A</b><span>Calculus with Applications I</span><span class="or">or MATH 2A</span></div>
+        <div class="c-cell faded out"><b>CMPSC 8</b><span>Intro to Computer Science</span><span class="tag">other dept</span></div>
+      </div>
+      <h3>step 4</h3>
+      <div class="c-grid">
+        <div class="c-cell faded"><b>CMPSC 32</b><span>Object Oriented Design</span></div>
+        <div class="c-cell faded"><b>CMPSC 41</b><span>Discrete Math for CS</span></div>
+        <div class="c-cell need" data-c="ECE 10A"><b>ECE 10A</b><span>Analog and Digital Circuits</span></div>
+        <div class="c-cell need" data-c="ECE 10AL"><b>ECE 10AL</b><span>Analog and Digital Circuits Lab</span></div>
+        <div class="c-cell faded"><b>MATH 4B</b><span>Differential Equations</span></div>
+        <div class="c-cell faded"><b>MATH 6A</b><span>Vector Calculus</span></div>
+        <div class="c-cell faded"><b>PHYS 7C</b><span>Basic Physics</span></div>
+        <div class="c-cell faded"><b>PHYS 7L</b><span>Physics Laboratory</span></div>
+      </div>
+      <h3>step 5</h3>
+      <div class="c-grid">
+        <div class="c-cell faded"><b>CMPSC 130A</b><span>Data Structures and Algorithms</span></div>
+        <div class="c-cell faded"><b>ECE 10B</b><span>Analog and Digital Circuits II</span></div>
+        <div class="c-cell faded"><b>ECE 139</b><span>Probability and Statistics</span></div>
+        <div class="c-cell sel" data-c="ECE 152A"><b>ECE 152A</b><span>Digital Design Principles</span></div>
+        <div class="c-cell faded"><b>ENGR 101</b><span>Ethics in Engineering</span></div>
+        <div class="c-cell faded"><b>PHYS 7D</b><span>Basic Physics</span></div>
+      </div>
+      <h3>step 6</h3>
+      <div class="c-grid">
+        <div class="c-cell faded"><b>CMPSC 189A</b><span>Senior Computer Systems Project</span></div>
+        <div class="c-cell faded"><b>ECE 10C</b><span>Analog and Digital Circuits III</span></div>
+        <div class="c-cell unl" data-c="ECE 154A"><b>ECE 154A</b><span>Intro to Computer Architecture</span></div>
+      </div>
+      <svg class="arrows"></svg>
+    </div>
+    <aside class="c-panel">
+      <div class="nav"><a href="#">&lt; back to ECE 15A</a><a href="#">[esc] close</a></div>
+      <h2>ECE 152A</h2>
+      <div>Digital Design Principles · 5 units · step 5</div>
+      <dl>
+        <dt>needs</dt><dd><pre>ECE 15A and
+ECE 10A + 10AL  (C- or better)
+or CMPSC 30 / 64</pre></dd>
+        <dt>unlocks</dt><dd>ECE 154A, ECE 152B, ECE 153B, ECE 122A, +6</dd>
+        <dt>counts as</dt><dd>required, upper-division</dd>
+        <dt>taken?</dt><dd>[ ] <a href="#">mark as taken</a></dd>
+      </dl>
+      <div class="q">catalog: "ECE 15A and ECE 2A or ECE 10A &amp; ECE 10AL with a minimum grade of C- in each course; or Computer Science 30 or 64…"</div>
+    </aside>
+  </div>
+  <div class="c-more">↓ 9 more it unlocks below: ECE 152B, ECE 153B, ECE 122A…</div>
+</section>
+
+<script>
+  // Draw the arrows for each frame: from what ECE 152A needs, and to what it unlocks.
+  const LINKS = [["ECE 15A", "ECE 152A", ""], ["ECE 10A", "ECE 152A", ""], ["ECE 10AL", "ECE 152A", ""], ["ECE 152A", "ECE 154A", "u"]];
+  function draw(frameId, style) {
+    const stage = document.querySelector("#" + frameId + " .stage");
+    const svg = stage.querySelector("svg.arrows");
+    const o = stage.getBoundingClientRect();
+    svg.setAttribute("width", stage.scrollWidth);
+    svg.setAttribute("height", stage.scrollHeight);
+    function r(c) {
+      const b = stage.querySelector('[data-c="' + c + '"]').getBoundingClientRect();
+      return { x: b.left - o.left, y: b.top - o.top, w: b.width, h: b.height, el: stage.querySelector('[data-c="' + c + '"]') };
+    }
+    let html = '<defs><marker id="h' + frameId + '" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="context-stroke"/></marker></defs>';
+    for (const [f, t, cls] of LINKS) {
+      const a = r(f), b = r(t);
+      const x1 = a.x + a.w / 2, y1 = a.y + a.h, x2 = b.x + b.w / 2, y2 = b.y;
+      let d;
+      if (style === "elbow") {
+        const mid = y2 - 12;
+        d = "M" + x1 + "," + y1 + " V" + mid + " H" + x2 + " V" + y2;
+      } else if (style === "straight") {
+        d = "M" + x1 + "," + y1 + " L" + x2 + "," + y2;
+      } else {
+        const bend = Math.max((y2 - y1) * 0.45, 20);
+        d = "M" + x1 + "," + y1 + " C" + x1 + "," + (y1 + bend) + " " + x2 + "," + (y2 - bend) + " " + x2 + "," + y2;
+      }
+      const color = style === "elbow" ? (a.el.dataset.line || "#111") : null;
+      const stroke = color ? ' style="stroke:' + (cls === "u" ? "#111" : color) + (cls === "u" ? ";stroke-dasharray:8 5" : "") + '"' : "";
+      html += '<path class="arrow ' + cls + '" d="' + d + '"' + stroke + ' marker-end="url(#h' + frameId + ')"/>';
+    }
+    svg.innerHTML = html;
+  }
+  function all() { draw("A", "curve"); draw("B", "elbow"); draw("C", "straight"); }
+  document.fonts.ready.then(all);
+  window.addEventListener("resize", all);
+</script>
+</body>
+</html>

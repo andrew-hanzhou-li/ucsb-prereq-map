@@ -1,28 +1,25 @@
 /*
-  style.css for the UCSB Prerequisite Map.
+  style.css for the Prerequisite Map.
 
-  Colors are defined once here as variables and used everywhere below.
+  The look is a printed course catalog: ink on warm paper, one serif
+  (Libre Caslon Text), ruled lines instead of boxes, and two "pencil"
+  colors: red for what a course needs, blue for what it unlocks.
+  No rounded corners, no shadows, no gradients.
 */
 
 :root {
-  --fog: #eef2f1;          /* page background */
-  --paper: #ffffff;        /* panel and boxes */
-  --ink: #17313b;          /* main text */
-  --muted: #536870;        /* secondary text */
-  --line: #c9d3d2;         /* borders */
-  --teal: #0e6e73;         /* required courses */
-  --teal-soft: #b9dcd8;    /* "pick one of a few" courses */
-  --sand: #ebe4d3;         /* courses from other departments */
-  --amber: #b86e00;        /* the selected course and what it needs */
-  --amber-soft: #fbe7c6;
-  --indigo: #3b5ba9;       /* what the selected course unlocks */
-  --indigo-soft: #dfe6f6;
-  --done: #d6ead8;         /* courses marked as taken */
-  --green: #2e7d32;        /* taken, and "can take next" outline */
+  --paper: #f6f3ea;        /* page */
+  --ink: #1b1a17;          /* text and rules */
+  --muted: #6d675a;        /* secondary text */
+  --dots: #a39d8d;         /* dotted rules between courses */
+  --red: #b3261e;          /* the chosen course and what it needs */
+  --blue: #23407a;         /* what it unlocks */
+  --green: #2f5d34;        /* taken, and "next" */
+  --faded: 0.3;            /* opacity of unrelated courses while one is chosen */
 
-  --font: "Atkinson Hyperlegible", system-ui, -apple-system, "Segoe UI", sans-serif;
-  --panel-width: 380px;
-  --box-min: 172px;        /* boxes are at least this wide; the rest of the width is shared out */
+  --serif: "Libre Caslon Text", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --panel-width: 340px;
+  --col-min: 168px;        /* course columns are at least this wide */
 }
 
 * { box-sizing: border-box; }
@@ -31,101 +28,36 @@ html, body { height: 100%; }
 
 body {
   margin: 0;
-  background: var(--fog);
+  background: var(--paper);
   color: var(--ink);
-  font-family: var(--font);
-  font-size: 16px;
-  line-height: 1.45;
+  font-family: var(--serif);
+  font-size: 15px;
+  line-height: 1.4;
   display: flex;
   flex-direction: column;
 }
 
-a { color: var(--teal); }
+a { color: inherit; text-underline-offset: 2px; }
 
 :focus-visible {
-  outline: 3px solid var(--amber);
+  outline: 2px solid var(--red);
   outline-offset: 2px;
 }
 
-kbd {
-  font: inherit;
-  font-size: 0.85em;
-  padding: 0 5px;
-  border: 1px solid var(--line);
-  border-bottom-width: 2px;
-  border-radius: 4px;
-  background: var(--paper);
+kbd { font: inherit; font-variant: small-caps; letter-spacing: 0.06em; }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
 }
-
-/* ---------------------------------------------------------------- header */
-
-.top {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-end;
-  gap: 10px 24px;
-  padding: 12px 20px 10px;
-  border-bottom: 1px solid var(--line);
-  background: var(--paper);
-}
-
-.site-name {
-  margin: 0;
-  font-size: 1.35rem;
-  line-height: 1.2;
-  letter-spacing: -0.01em;
-  align-self: center;
-}
-.site-name a { color: inherit; text-decoration: none; }
-
-.about-link { align-self: center; font-size: 0.95rem; }
-
-.pickers {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-end;
-  gap: 10px 16px;
-  flex: 1 1 auto;
-}
-
-.picker {
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
-  font-size: 0.85rem;
-  color: var(--muted);
-  width: 320px;
-  max-width: 100%;
-}
-
-.picker input {
-  font: inherit;
-  font-size: 1rem;
-  color: var(--ink);
-  padding: 8px 10px;
-  border: 1px solid var(--line);
-  border-radius: 6px;
-  background: var(--paper);
-}
-
-.picker input:disabled { background: var(--fog); }
-
-.all-link { padding-bottom: 9px; font-size: 0.95rem; white-space: nowrap; }
-.all-link[hidden] { display: none; }
-
-.options-row {
-  flex-basis: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 4px 28px;
-}
-
-.taken-status { margin: 0; font-size: 0.9rem; color: var(--muted); }
 
 .text-button {
   font: inherit;
-  color: var(--teal);
+  color: inherit;
   background: none;
   border: 0;
   padding: 0;
@@ -134,24 +66,89 @@ kbd {
   text-underline-offset: 2px;
 }
 
+/* --------------------------------------------------------------- masthead */
+
+.top { border-bottom: 1px solid var(--ink); }
+
+.mast {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 28px;
+  padding: 16px 28px 10px;
+  border-bottom: 3px double var(--ink);
+}
+
+.site-name {
+  margin: 0;
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 1.15;
+}
+.site-name a { text-decoration: none; }
+.tagline { margin-left: 12px; font-size: 1rem; font-style: italic; color: var(--muted); }
+
+.mast-nav {
+  margin-left: auto;
+  display: flex;
+  gap: 18px;
+  font-variant: small-caps;
+  letter-spacing: 0.06em;
+  font-size: 0.95rem;
+}
+.mast-nav a[hidden] { display: none; }
+.options-button { display: none; }
+
+/* The line under the masthead: program, find a course, what to show. */
+.sub {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 24px;
+  padding: 7px 28px 8px;
+}
+
+.picker input {
+  font: inherit;
+  font-size: 1rem;
+  color: var(--ink);
+  width: 300px;
+  max-width: 100%;
+  padding: 2px 0;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px dotted var(--dots);
+  border-radius: 0;
+}
+.picker input:first-child,
+#major-input { font-weight: 700; }
+.picker input::placeholder { font-style: italic; font-weight: 400; color: var(--muted); }
+.picker input:disabled { opacity: 0.6; }
+#course-input { width: 200px; }
+
+.options-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 24px;
+}
+
 .toggles {
   display: flex;
   flex-wrap: wrap;
-  gap: 4px 18px;
+  gap: 2px 14px;
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 0.92rem;
-}
-
-.toggles legend {
-  float: left;
-  margin-right: 4px;
+  font-style: italic;
   color: var(--muted);
 }
-
+.toggles legend { float: left; margin-right: 2px; }
 .toggles label { white-space: nowrap; cursor: pointer; }
+.toggles input { accent-color: var(--ink); margin: 0 2px 0 0; vertical-align: -1px; }
 .toggles:disabled { opacity: 0.5; }
+
+.taken-status { margin: 0; font-style: italic; color: var(--green); }
 
 /* ------------------------------------------------------------ main area */
 
@@ -168,8 +165,8 @@ kbd {
 }
 
 /*
-  The map scrolls down the page. Inside it, the "stage" holds the rows of
-  boxes, with an SVG drawing of the arrows laid over them.
+  The map scrolls down the page. Inside it, the "stage" holds the steps and
+  elective lists, with an SVG drawing of the lines laid under the text.
 */
 .map {
   position: absolute;
@@ -181,7 +178,7 @@ kbd {
 .stage {
   position: relative;
   min-height: 100%;
-  padding: 14px 22px 40px;
+  padding: 10px 28px 48px;
 }
 
 .arrows {
@@ -190,207 +187,185 @@ kbd {
   top: 0;
   overflow: visible;
   pointer-events: none;
-  z-index: 0;              /* under the boxes, so lines never cross out a course's text */
+  z-index: 0;              /* under the course names */
 }
 
-.arrow { fill: none; stroke-width: 2.25; }
-.arrow.needs { stroke: var(--amber); marker-end: url(#head-needs); }
-.arrow.chain { stroke: var(--amber); stroke-width: 1.5; opacity: 0.45; marker-end: url(#head-chain); }
-.arrow.unlocks { stroke: var(--indigo); marker-end: url(#head-unlocks); }
-.arrow.alternative { stroke-dasharray: 6 4; }
-#head-needs path, #head-chain path { fill: var(--amber); }
-#head-unlocks path { fill: var(--indigo); }
+.arrow { fill: none; stroke-width: 1.4; }
+.arrow.needs { stroke: var(--red); marker-end: url(#head-needs); }
+.arrow.chain { stroke: var(--red); stroke-width: 1; opacity: 0.4; marker-end: url(#head-chain); }
+.arrow.unlocks { stroke: var(--blue); marker-end: url(#head-unlocks); }
+.arrow.alternative { stroke-dasharray: 4 3; }
+#head-needs path, #head-chain path { fill: var(--red); }
+#head-unlocks path { fill: var(--blue); }
 
-.map-head {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 6px 24px;
-  margin-bottom: 6px;
-}
-.map-hint { margin: 0; color: var(--muted); font-size: 0.95rem; }
+/* The two lines at the top of a map: how to use it, and what the marks mean. */
+.map-head { margin: 6px 0 2px; font-style: italic; color: var(--muted); }
+.map-head p { margin: 0 0 2px; }
+.map-head .red { color: var(--red); font-style: normal; }
+.map-head .blue { color: var(--blue); font-style: normal; }
+.map-head .ok { color: var(--green); font-style: normal; }
 .narrow-only { display: none; }
-.key-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px 14px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  font-size: 0.88rem;
-  color: var(--muted);
-}
-.key-row li { display: flex; align-items: center; gap: 6px; }
-.key-line { display: inline-block; width: 22px; height: 0; border-top: 3px solid; }
-.key-line.needs { border-color: var(--amber); }
-.key-line.unlocks { border-color: var(--indigo); }
 
-.row { margin-top: 18px; }
+/* A step or a list of electives: a small-caps heading over a rule. */
+.row { margin-top: 22px; }
 .row-label {
-  margin: 0 0 8px;
-  font-size: 0.95rem;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  color: var(--ink);
+  margin: 0 0 4px;
+  padding-bottom: 3px;
+  border-bottom: 1px solid var(--ink);
+  font-size: 0.86rem;
+  font-weight: 400;
+  font-variant: small-caps;
+  letter-spacing: 0.14em;
 }
-.row-count { font-weight: 400; color: var(--muted); }
-.elective-row { margin-top: 30px; padding-top: 14px; border-top: 1px solid var(--line); }
-.elective-row + .elective-row { margin-top: 18px; }
-.map-note { color: var(--muted); }
+.row-count { margin-left: 8px; font-variant: normal; letter-spacing: 0; font-style: italic; color: var(--muted); }
+.elective-row { margin-top: 34px; }
+.map-note { font-style: italic; color: var(--muted); }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(var(--box-min), 1fr));
-  gap: 12px;
+  grid-template-columns: repeat(auto-fill, minmax(var(--col-min), 1fr));
+  column-gap: 26px;
+  row-gap: 6px;            /* room for a course to grow 5% without touching the next */
 }
 
+/* A course: its code and title, over a dotted rule. Not a box. */
 .box {
   position: relative;
   z-index: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 70px;
-  padding: 8px 10px;
+  display: block;
+  width: 100%;
+  padding: 7px 0 8px;
   font: inherit;
-  font-size: 0.9rem;
-  line-height: 1.25;
-  text-align: center;
+  font-size: 0.92rem;
+  line-height: 1.3;
+  text-align: left;
   color: var(--ink);
-  background: var(--paper);
-  border: 2px solid var(--teal);
-  border-radius: 8px;
+  background: var(--paper);  /* so lines pass under the words, not through them */
+  border: 0;
+  border-bottom: 1px dotted var(--dots);
+  border-radius: 0;
   cursor: pointer;
-  /* Grows or shrinks (from app.js, SCALE) when another course is lit up. */
-  transition: opacity 120ms, box-shadow 120ms, transform 150ms ease-out;
+  transform-origin: left center;
+  /* Grows or shrinks (from app.js, SCALE) when another course is chosen. */
+  transition: opacity 120ms, transform 150ms ease-out;
 }
 .box .line { display: block; max-width: 100%; }
-.box .strong { font-weight: 700; font-size: 1.05rem; letter-spacing: 0.01em; }
+.box .strong { font-size: 1.02rem; font-weight: 700; letter-spacing: 0.02em; }
 .box .title {
-  margin-top: 2px;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-.box .tag { margin-top: 3px; font-size: 0.8rem; color: var(--muted); }
-.box:hover { box-shadow: 0 2px 10px rgba(23, 49, 59, 0.2); }
+.box .tag { font-size: 0.86rem; font-style: italic; color: var(--muted); }
+.box:hover .strong { text-decoration: underline; text-underline-offset: 3px; }
 
-.box.role-required { background: var(--teal); color: var(--paper); }
-.box.role-required .tag { color: #d9eeec; }
-.box.role-choice { background: var(--teal-soft); }
-.box.role-choice .tag { color: var(--ink); }
-.box.role-prerequisite { background: var(--sand); border: 2px dashed var(--muted); }
-.box.kind-pool { border: 4px double var(--teal); }
-.box.inactive { background: var(--paper); color: var(--muted); border: 2px dotted var(--muted); }
+.box.role-prerequisite .strong::after { content: " †"; font-weight: 400; }
+.box.inactive { color: var(--muted); }
+.box.kind-pool .strong { font-style: italic; }
 
 /* Progress from "Mark as taken". */
-.box.taken { background: var(--done); color: var(--ink); border: 2px solid var(--green); }
-.box.taken .tag { color: var(--muted); }
-.box.ready { box-shadow: 0 0 0 3px var(--green); }
+.box.taken .strong { color: var(--green); }
+.box.ready .strong::after { content: " next"; font-size: 0.85rem; font-style: italic; font-weight: 400; color: var(--green); }
+.box.role-prerequisite.ready .strong::after { content: " † next"; }
 
-/* Highlighting a course: everything else fades. */
-.stage.focused .box { opacity: 0.25; }
+/* A course is chosen: it and its relatives are inked, the rest fade. */
+.stage.focused .box { opacity: var(--faded); }
 .stage.focused .box.selected,
 .stage.focused .box.needs,
-.stage.focused .box.unlocks { opacity: 1; z-index: 2; }   /* grown boxes sit over shrunk neighbors */
+.stage.focused .box.unlocks { opacity: 1; z-index: 2; }
+.box.needs .strong { color: var(--red); }
+.box.unlocks .strong { color: var(--blue); }
+.box.selected { color: var(--red); }
+.box.selected .strong { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; }
+.box.selected .tag { color: var(--red); }
 
-/* Bars at the map's top and bottom edges naming linked courses that are
-   scrolled out of view. Click to scroll there. */
+/* Lines at the top and bottom edges of the map naming linked courses that
+   are scrolled out of view. Click to scroll there. */
 .offscreen {
   position: absolute;
-  left: 50%;
+  left: 28px;
   z-index: 5;
-  transform: translateX(-50%);
-  max-width: calc(100% - 32px);
-  padding: 8px 16px;
+  max-width: calc(100% - 56px);
+  padding: 3px 0 2px;
   font: inherit;
-  font-size: 0.92rem;
-  font-weight: 700;
-  color: var(--paper);
+  font-style: italic;
+  text-align: left;
+  background: var(--paper);
   border: 0;
-  border-radius: 999px;
-  box-shadow: 0 4px 16px rgba(23, 49, 59, 0.3);
+  border-radius: 0;
   cursor: pointer;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.offscreen.down { bottom: 10px; background: var(--indigo); }
-.offscreen.up { top: 10px; background: var(--amber); }
+.offscreen.down { bottom: 10px; color: var(--blue); border-bottom: 1px solid var(--blue); }
+.offscreen.up { top: 8px; color: var(--red); border-bottom: 1px solid var(--red); }
 .offscreen[hidden] { display: none; }
-.box.needs { box-shadow: 0 0 0 3px var(--amber); }
-.box.unlocks { box-shadow: 0 0 0 3px var(--indigo); }
-.box.selected { background: var(--amber); color: var(--paper); border-color: var(--amber); box-shadow: 0 4px 14px rgba(23, 49, 59, 0.3); }
-.box.selected .tag { color: var(--paper); }
 
-/* The front page: welcome text (or a notice) and lists of every program. */
+/* ------------------------------------------------- the front page */
+
 .empty {
   position: absolute;
   inset: 0;
   overflow-y: auto;
-  background: var(--fog);
+  background: var(--paper);
 }
-.empty-inner { max-width: 1100px; padding: 40px 32px 48px; }
+.empty-inner { max-width: 1100px; padding: 30px 28px 48px; }
 
-.empty h2 { margin: 0 0 12px; font-size: 1.7rem; line-height: 1.2; }
-.empty p { margin: 0 0 12px; max-width: 680px; }
+.empty h2 { margin: 0 0 10px; font-size: 1.6rem; font-weight: 400; line-height: 1.2; }
+.empty p { margin: 0 0 10px; max-width: 640px; }
+.quick { font-style: italic; }
+.quick a { font-style: normal; }
 .empty[hidden], .notice[hidden], #welcome[hidden] { display: none; }
 
+/* A message in place of the welcome text ("there's no map for this one"). */
 .notice {
+  max-width: 680px;
   margin-bottom: 8px;
-  padding: 18px 22px 8px;
-  background: var(--paper);
-  border: 1px solid var(--line);
-  border-left: 5px solid var(--amber);
-  border-radius: 8px;
+  padding: 10px 0 4px;
+  border-top: 3px double var(--ink);
+  border-bottom: 1px solid var(--ink);
 }
 
+/* The index of every program, like the back of a catalog. */
 .browse {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 8px 40px;
-  margin-top: 28px;
-  padding-top: 20px;
-  border-top: 1px solid var(--line);
+  margin-top: 26px;
 }
-.browse h3 { margin: 0 0 8px; font-size: 1.1rem; }
+.browse h3 {
+  margin: 0 0 4px;
+  padding-bottom: 3px;
+  border-bottom: 1px solid var(--ink);
+  font-size: 0.9rem;
+  font-weight: 400;
+  font-variant: small-caps;
+  letter-spacing: 0.14em;
+}
 .browse-list {
   margin: 0;
   padding: 0;
   list-style: none;
   columns: 2 240px;
-  column-gap: 24px;
+  column-gap: 28px;
 }
 .browse section:last-child .browse-list { columns: 1; }
-.browse-list li { padding: 3px 0; break-inside: avoid; }
+.browse-list li { padding: 4px 0; border-bottom: 1px dotted var(--dots); break-inside: avoid; }
+.browse-list a { text-decoration: none; }
+.browse-list a:hover { text-decoration: underline; }
+.note { font-size: 0.9rem; font-style: italic; color: var(--muted); }
 
-.swatch {
-  display: inline-block;
-  flex-shrink: 0;
-  width: 24px;
-  height: 14px;
-  border-radius: 3px;
-  border: 2px solid var(--teal);
-}
-.swatch.required { background: var(--teal); }
-.swatch.choice { background: var(--teal-soft); }
-.swatch.elective { background: var(--paper); }
-.swatch.outside { background: var(--sand); border: 2px dashed var(--muted); }
-.swatch.inactive { background: var(--paper); border: 2px dotted var(--muted); }
-.swatch.taken { background: var(--done); border-color: var(--green); }
-.swatch.ready { background: var(--paper); border-color: var(--paper); box-shadow: 0 0 0 3px var(--green); }
-
-/* ----------------------------------------------------------------- panel */
+/* ------------------------------------------- beside the map: the entry */
 
 .panel {
   width: var(--panel-width);
   flex-shrink: 0;
   overflow-y: auto;
   background: var(--paper);
-  border-left: 1px solid var(--line);
-  padding: 16px 20px 24px;
+  border-left: 1px solid var(--ink);
+  padding: 16px 24px 28px;
 }
 
 .panel[hidden] { display: none; }
@@ -398,53 +373,14 @@ kbd {
 
 .panel-nav {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  gap: 8px;
+  gap: 12px;
   margin: 0 0 14px;
+  font-style: italic;
 }
 .nav-button {
   font: inherit;
-  font-size: 0.92rem;
-  padding: 5px 12px;
-  color: var(--ink);
-  background: var(--fog);
-  border: 1px solid var(--line);
-  border-radius: 6px;
-  cursor: pointer;
-}
-.nav-button:hover { border-color: var(--muted); }
-.nav-button[data-close] { margin-left: auto; }
-
-.panel h2 {
-  margin: 0;
-  font-size: 1.6rem;
-  line-height: 1.15;
-}
-
-.panel .course-title { margin: 2px 0 8px; font-size: 1.1rem; }
-.panel .facts { margin: 0 0 14px; color: var(--muted); font-size: 0.92rem; }
-
-.panel h3 {
-  margin: 20px 0 6px;
-  font-size: 1rem;
-}
-
-.panel p { margin: 0 0 8px; }
-.panel .catalog-text { font-size: 0.9rem; color: var(--muted); font-style: italic; }
-
-.panel ul { margin: 0 0 8px; padding-left: 20px; }
-.panel li { margin: 3px 0; }
-
-/* A prerequisite tree: "All of" / "One of" groups nest with a left rule. */
-.tree { list-style: none; padding-left: 0; }
-.tree .tree { padding-left: 12px; border-left: 2px solid var(--line); margin-left: 2px; }
-.tree-label { color: var(--muted); font-size: 0.92rem; }
-
-.course-link {
-  font: inherit;
-  font-weight: 700;
-  color: var(--teal);
+  color: inherit;
   background: none;
   border: 0;
   padding: 0;
@@ -452,37 +388,66 @@ kbd {
   text-decoration: underline;
   text-underline-offset: 2px;
 }
+.nav-button[data-close] { margin-left: auto; }
 
-.note { font-size: 0.9rem; color: var(--muted); }
+.panel h2 {
+  margin: 0;
+  font-size: 1.45rem;
+  font-weight: 700;
+  line-height: 1.15;
+}
+.panel .course-title { margin: 2px 0 8px; font-size: 1.15rem; line-height: 1.25; }
+.panel .facts { margin: 0 0 12px; font-style: italic; color: var(--muted); }
 
-.taken-button {
+/* Section heads in the entry: small capitals, like the catalog's run-in heads. */
+.panel h3 {
+  margin: 18px 0 4px;
+  font-size: 0.9rem;
+  font-weight: 400;
+  font-variant: small-caps;
+  letter-spacing: 0.12em;
+}
+.needs-key { color: var(--red); }
+.unlocks-key { color: var(--blue); }
+
+.panel p { margin: 0 0 8px; }
+.panel .catalog-text { font-style: italic; color: var(--muted); }
+
+.panel ul { margin: 0 0 8px; padding-left: 18px; }
+.panel li { margin: 2px 0; }
+
+/* A prerequisite tree: "All of" / "One of" groups nest under a hairline. */
+.tree { list-style: none; padding-left: 0; }
+.tree .tree { padding-left: 12px; border-left: 1px solid var(--dots); margin-left: 2px; }
+.tree-label { font-style: italic; color: var(--muted); }
+
+.course-link {
   font: inherit;
   font-weight: 700;
-  padding: 8px 14px;
-  border-radius: 6px;
-  border: 2px solid var(--green);
-  background: var(--paper);
-  color: var(--green);
+  color: inherit;
+  background: none;
+  border: 0;
+  padding: 0;
   cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: var(--dots);
+  text-underline-offset: 2px;
 }
-.taken-button.is-taken { background: var(--done); }
-.progress-row { margin: 0 0 6px; }
-.ready-note { color: var(--green); font-size: 0.92rem; }
+.course-link:hover { text-decoration-color: var(--ink); }
 
-/* Phone-only controls: the panel's handle and the Options button. */
+/* "Mark as taken" is a checkbox, like ticking a course off in pencil. */
+.taken-row { display: flex; gap: 8px; align-items: baseline; margin: 4px 0 6px; cursor: pointer; }
+.taken-row input { accent-color: var(--green); margin: 0; }
+.taken-row.is-taken { color: var(--green); }
+.ready-note { color: var(--green); font-style: italic; }
+
+.flag { font-style: italic; color: var(--red); }
+
+.panel details { margin-top: 12px; }
+.panel summary { cursor: pointer; font-style: italic; }
+
+/* Phone-only: the handle at the top of the entry when it's a bottom sheet. */
 .panel-handle { display: none; }
-.options-button { display: none; }
-
-.flag {
-  display: inline-block;
-  font-size: 0.82rem;
-  padding: 1px 6px;
-  border-radius: 4px;
-  background: var(--sand);
-}
-
-.unlocks-key { border-bottom: 3px solid var(--indigo); }
-.needs-key { border-bottom: 3px solid var(--amber); }
 
 /* ---------------------------------------------------------------- footer */
 
@@ -490,93 +455,85 @@ kbd {
   display: flex;
   flex-wrap: wrap;
   gap: 4px 24px;
-  padding: 8px 20px;
-  font-size: 0.82rem;
-  color: var(--muted);
-  border-top: 1px solid var(--line);
+  padding: 6px 28px 7px;
+  font-size: 0.85rem;
+  font-style: italic;
+  border-top: 1px solid var(--ink);
   background: var(--paper);
 }
-
 .bottom p { margin: 0; }
 .bottom p[hidden] { display: none; }
+#footer-repo { margin-left: auto; }
 
 /* ------------------------------------------------------------ About box */
 
 .about {
-  width: min(760px, calc(100vw - 32px));
+  width: min(720px, calc(100vw - 32px));
   max-height: calc(100vh - 48px);
-  padding: 24px 28px 28px;
+  padding: 22px 30px 28px;
   color: var(--ink);
   background: var(--paper);
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  box-shadow: 0 12px 40px rgba(23, 49, 59, 0.3);
+  border: 1px solid var(--ink);
+  border-radius: 0;
 }
-.about::backdrop { background: rgba(23, 49, 59, 0.45); }
-.about h2 { margin: 0 0 12px; font-size: 1.6rem; line-height: 1.2; }
-.about h3 { margin: 24px 0 8px; font-size: 1.1rem; }
-.about ul { padding-left: 22px; }
+.about::backdrop { background: rgba(27, 26, 23, 0.4); }
+.about h2 { margin: 0 0 10px; padding-bottom: 8px; border-bottom: 3px double var(--ink); font-size: 1.6rem; font-weight: 400; }
+.about h3 { margin: 22px 0 6px; font-size: 0.95rem; font-weight: 400; font-variant: small-caps; letter-spacing: 0.12em; }
+.about ul { padding-left: 20px; }
 .about li { margin: 5px 0; }
-.about .lede { font-size: 1.08rem; }
-.about .key { list-style: none; padding-left: 0; }
-.about .key li { display: flex; align-items: center; gap: 10px; }
-.about-close { float: right; margin: -6px -8px 0 12px; }
-.about-close .text-button { font-size: 0.95rem; }
+.about .lede { font-size: 1.08rem; font-style: italic; }
+.about .key { display: grid; grid-template-columns: max-content 1fr; gap: 3px 16px; margin: 0; }
+.about .key dt { font-weight: 700; }
+.about .key dd { margin: 0; font-style: italic; color: var(--muted); }
+.about .key dt:nth-of-type(1) { color: var(--red); }
+.about .key dt:nth-of-type(2) { color: var(--blue); }
+.about .key dt:nth-of-type(5) { color: var(--green); }
+.about .key .next { font-weight: 400; color: var(--green); }
+.about .key .muted { color: var(--muted); font-weight: 400; }
+.about-close { float: right; margin: 4px 0 0 12px; font-style: italic; }
 
 /* ------------------------------------------------------------ 404.html */
 
 .page { display: block; height: auto; }
-.page .top { align-items: center; }
-.article { max-width: 720px; margin: 0 auto; padding: 28px 20px 56px; }
-.article h2 { margin: 0 0 12px; font-size: 1.7rem; line-height: 1.2; }
-.article .lede { font-size: 1.1rem; }
+.article { max-width: 680px; margin: 0 auto; padding: 28px 20px 56px; }
+.article h2 { margin: 0 0 12px; font-size: 1.6rem; font-weight: 400; }
+.article .lede { font-size: 1.1rem; font-style: italic; }
 
 /* ------------------------------------------------------------ small screens
-   On phones the panel becomes a sheet along the bottom of the screen: a
-   handle shows what's selected, and tapping it (or a course) slides the
-   sheet up over the lower part of the map. */
+   On phones the entry becomes a sheet along the bottom of the screen: a
+   handle shows what's chosen, and tapping it (or a course) slides the sheet
+   up over the lower part of the map. */
 @media (max-width: 800px) {
-  :root { --box-min: 140px; }
-  .top { padding: 10px 14px; gap: 8px; align-items: center; }
-  .site-name { font-size: 1.1rem; flex: 1; }
-  .picker span { display: none; }      /* the placeholder text says what each box is for */
-  .all-link { padding-bottom: 0; }
+  :root { --col-min: 140px; }
+  .mast { padding: 12px 16px 8px; }
+  .site-name { font-size: 1.35rem; }
+  .tagline { display: block; margin: 2px 0 0; font-size: 0.9rem; }
+  .mast-nav { margin-left: 0; gap: 14px; }
+  #footer-download { display: none; }
+  .sub { padding: 6px 16px 7px; }
+  .picker, .picker input, #course-input { width: 100%; }
 
-  .stage { padding: 10px 12px 24px; }
+  .stage { padding: 6px 16px 24px; }
+  .grid { column-gap: 18px; }
   /* Room to scroll the bottom courses up above the open sheet. */
   .stage::after { content: ""; display: block; height: 62vh; }
-  .map-hint { font-size: 0.88rem; }
   .wide-only { display: none; }
   .narrow-only { display: inline; }
-  .key-row { font-size: 0.8rem; gap: 3px 10px; }
-  .box { min-height: 64px; padding: 7px 8px; font-size: 0.85rem; }
-  .box .strong { font-size: 0.98rem; }
+  .offscreen { left: 16px; max-width: calc(100% - 32px); }
 
-  .empty-inner { padding: 24px 16px 40px; }
+  .empty-inner { padding: 20px 16px 40px; }
   .empty h2 { font-size: 1.35rem; }
   .browse { grid-template-columns: 1fr; }
   .browse-list, .browse section:last-child .browse-list { columns: 1; }
-  .browse-list li { padding: 5px 0; }      /* bigger tap targets */
+  .browse-list li { padding: 7px 0; }      /* bigger tap targets */
 
-  /* "Find a course" and the Show checkboxes fold behind an Options button. */
-  .options-button {
-    display: block;
-    font: inherit;
-    font-size: 0.9rem;
-    padding: 6px 12px;
-    color: var(--teal);
-    background: var(--paper);
-    border: 1px solid var(--line);
-    border-radius: 6px;
-  }
+  /* "Find a course" and the Show checkboxes fold behind "Options". */
+  .options-button { display: inline; font-variant: small-caps; letter-spacing: 0.06em; }
   .top .more-options { display: none; }
   .top.show-options .more-options { display: flex; }
-  .picker { width: 100%; }
-  .pickers { gap: 8px; }
-  .toggles { font-size: 0.85rem; }
 
   .layout { flex-direction: column; }
-  .map-area { flex: 1; min-height: 0; margin-bottom: 48px; }   /* clear of the closed sheet */
+  .map-area { flex: 1; min-height: 0; margin-bottom: 46px; }   /* clear of the closed sheet */
 
   .panel {
     position: fixed;
@@ -587,11 +544,9 @@ kbd {
     max-height: 62vh;
     padding: 0 16px 20px;
     border-left: 0;
-    border-top: 1px solid var(--line);
-    border-radius: 14px 14px 0 0;
-    box-shadow: 0 -4px 18px rgba(23, 49, 59, 0.18);
+    border-top: 3px double var(--ink);
     z-index: 10;
-    transform: translateY(calc(100% - 48px));
+    transform: translateY(calc(100% - 46px));
     transition: transform 180ms ease-out;
   }
   .panel.open { transform: translateY(0); }
@@ -603,31 +558,23 @@ kbd {
     z-index: 1;
     width: calc(100% + 32px);
     margin: 0 -16px 10px;
-    padding: 14px 16px 12px;
+    padding: 11px 16px 10px;
     font: inherit;
     font-weight: 700;
     text-align: left;
     color: var(--ink);
     background: var(--paper);
     border: 0;
-    border-bottom: 1px solid var(--line);
-    border-radius: 14px 14px 0 0;
+    border-bottom: 1px solid var(--ink);
     cursor: pointer;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
-  .panel-handle::before {
-    content: "";
-    display: block;
-    width: 40px;
-    height: 4px;
-    margin: -6px auto 8px;
-    border-radius: 2px;
-    background: var(--line);
-  }
+  .panel-handle::after { content: "▴"; float: right; font-weight: 400; }
+  .panel.open .panel-handle::after { content: "▾"; }
 
-  /* No room for a footer; the same notice is in the panel's major summary. */
+  /* No room for a footer; the same notice is in the program's summary. */
   .bottom { display: none; }
 }
 

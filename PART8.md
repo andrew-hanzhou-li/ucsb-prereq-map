@@ -118,3 +118,20 @@ Things that differ in the single file:
 - **Getting around:** hover preview and moving away, clicking empty space, Esc, Close, Back twice, and "All majors and minors".
 - **The single file, opened from disk:** every program is listed, CE works, details and descriptions are there, and there are no errors.
 - Everything from earlier parts: checkboxes, Find a course, Mark as taken, links, notices, About, 404, phone.
+
+## The look: a catalog page
+
+The first version of this layout looked like a generic web app: a grid of identical rounded cards with soft shadows, a teal/amber palette, a floating pill button, swatch chips for the key, and gray "← Back" / "✕ Close" buttons. Three directions were mocked up on the same slice of the CE map (`design-directions.html`): **A. Catalog page**, **B. Transit map**, **C. Plain web page**. You picked A.
+
+What it looks like now:
+
+- **Type:** one serif, Libre Caslon Text, used the way a printed catalog uses it. Small capitals for section heads ("Step five", "Needs"), italics for notes, bold course codes.
+- **Paper and ink:** warm off-white paper, near-black ink, a double rule under the masthead. No rounded corners, no shadows, no gradients anywhere.
+- **Courses are entries in a ruled list**, each over a dotted rule, not boxes. A course from another department gets a dagger (†) and a footnote-style explanation at the top of the map, as a catalog would.
+- **Two pencil colors.** Red for the chosen course and everything it needs; blue for what it unlocks. Lines are thin pencil strokes.
+- **Taken is a tick:** "I've taken this course" is a checkbox, taken courses get a ✓ in green, and courses you can take next say "next".
+- **The entry beside the map** reads like a catalog entry: code, title, "5 units · step five on this map", then **Needs**, **Unlocks**, **In this major** as run-in small-caps heads. Back and close are plain italic links.
+- **The off-screen lines** ("↓ Further down: ANTH 2 unlocks …") are italic underlined text at the map's edge, not a floating button.
+- **The tab icon** is a ruled page with a red pencil line.
+
+Colors are set once at the top of `style.css` (`--paper`, `--ink`, `--red`, `--blue`, `--green`).

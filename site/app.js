@@ -1,5 +1,5 @@
 /*
-  app.js: the UCSB Prerequisite Map website.
+  app.js: the Prerequisite Map website (UCSB).
 
   What happens, in order:
     1. Load the list of majors and minors into the picker and the lists on
@@ -17,12 +17,12 @@
            for "may be taken at the same time"),
          - each elective list in its own block underneath.
        Boxes wrap to fill the screen's width; the page scrolls down.
-    5. No arrows until you point at or click a course. Then amber arrows
-       trace everything it needs, all the way back, blue arrows show what
-       it unlocks, and everything else fades.
-    6. "Mark as taken": courses you've taken turn green, and courses whose
-       prerequisites you've now met get a green outline. Marks are saved in
-       this browser.
+    5. No lines until you point at or click a course. Then red lines trace
+       everything it needs, all the way back, blue lines show what it
+       unlocks, and everything else fades.
+    6. "I've taken this course": ticked courses get a check mark, and
+       courses whose prerequisites you've now met are marked "next". Marks
+       are saved in this browser.
 
   The same code runs two ways:
     - as the website, loading each major's file from data/ when needed,
@@ -293,7 +293,7 @@ function showHome() {
   el.toggles.disabled = true;
   el.courseInput.disabled = true;
   el.footerCatalog.textContent = "Built from the UCSB General Catalog.";
-  document.title = "UCSB Prerequisite Map";
+  document.title = "The Prerequisite Map · UCSB";
   el.panel.hidden = true;           // nothing to show until a map is open
   closeSheet();
 }
@@ -345,7 +345,7 @@ async function loadMajor(major) {
   source.href = graph.major.source;
   source.textContent = "Official requirements for " + graph.major.name;
   el.footerCatalog.appendChild(source);
-  document.title = graph.major.name + " | UCSB Prerequisite Map";
+  document.title = graph.major.name + " · The Prerequisite Map";
 
   draw();
   el.map.scrollTo(0, 0);
@@ -695,8 +695,8 @@ function draw() {
   columns.forEach(function (column, i) {
     const codes = coreCodes.filter(code => level[code] === column)
       .sort((a, b) => (roleRank(a) - roleRank(b)) || bySortKey(a, b));
-    const label = i === 0 ? "Step 1 · no prerequisites in this " + programWord() : "Step " + (i + 1);
-    html += '<section class="row step-row"><h3 class="row-label">' + escapeHtml(label) + "</h3>" +
+    const note = i === 0 ? '<span class="row-count">no prerequisites in this ' + programWord() + "</span>" : "";
+    html += '<section class="row step-row"><h3 class="row-label">' + stepName(i + 1) + note + "</h3>" +
             '<div class="grid">' + codes.map(boxHtml).join("") + "</div></section>";
   });
 
@@ -745,21 +745,20 @@ function draw() {
   }
 }
 
+// The two lines at the top of a map: how to use it, and the marks, in words.
 function mapHeader() {
   return '<div class="map-head">' +
-    '<p class="map-hint"><span class="wide-only">Point at or click a course to trace what it needs and what it unlocks. <kbd>Esc</kbd> clears it.</span>' +
-    '<span class="narrow-only">Tap a course to trace what it needs and what it unlocks.</span></p>' +
-    '<ul class="key-row" aria-label="Key">' +
-    '<li><span class="swatch required"></span>Required</li>' +
-    '<li><span class="swatch choice"></span>Pick one of a few</li>' +
-    '<li><span class="swatch elective"></span>Elective</li>' +
-    '<li><span class="swatch outside"></span>Other department, needed first</li>' +
-    (el.showInactive.checked ? '<li><span class="swatch inactive"></span>Not offered now</li>' : "") +
-    '<li><span class="swatch taken"></span>Taken</li>' +
-    '<li><span class="swatch ready"></span>Can take next</li>' +
-    '<li><span class="key-line needs"></span>Needs</li>' +
-    '<li><span class="key-line unlocks"></span>Unlocks</li>' +
-    "</ul></div>";
+    '<p><span class="wide-only">Point at or click a course to see what it needs and what it unlocks; <kbd>esc</kbd> clears it.</span>' +
+    '<span class="narrow-only">Tap a course to see what it needs and what it unlocks.</span></p>' +
+    '<p>In <span class="red">red</span>, what it needs; in <span class="blue">blue</span>, what it unlocks. ' +
+    "† from another department. <span class=\"ok\">✓</span> taken; <span class=\"ok\">next</span>, ready to take." +
+    (el.showInactive.checked ? " Grayed: not offered now." : "") + "</p></div>";
+}
+
+// "Step one", "Step two"… (numbers past twelve).
+const STEP_WORDS = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve"];
+function stepName(n) {
+  return "Step " + (STEP_WORDS[n - 1] || n);
 }
 
 function roleRank(code) {
@@ -779,7 +778,6 @@ function boxInnerHtml(code) {
   let tag = "";
   if (course.status !== "active") tag = "not offered now";
   else if (course.role === "choice" && partners[code]) tag = "or " + partners[code].join(" or ");
-  else if (course.role === "prerequisite") tag = "needed first";
   if (tag) html += '<span class="line tag">' + escapeHtml(tag) + "</span>";
   return html;
 }
@@ -847,7 +845,7 @@ const SCALE = { selected: 1.05, unlocks: 1.05, needs: 1, other: 0.9 };
 let focus = null;           // the lit-up course (hovered or clicked) and its relatives
 
 /*
-  Light up one course: it, everything that leads to it (amber) and what it
+  Light up one course: it, everything that leads to it (red) and what it
   directly unlocks (blue); fade and shrink the rest; draw the arrows.
   focusOn(null) clears it. Hovering calls this too, then puts the clicked
   course back.
@@ -883,9 +881,10 @@ function focusOn(code) {
   // The svg covers the whole map, so arrows can join boxes in any rows.
   svg.setAttribute("width", el.stage.scrollWidth);
   svg.setAttribute("height", el.stage.scrollHeight);
-  // Where each box ends up once it has grown or shrunk (from its center).
+  // Where each course ends up once it has grown or shrunk (from its left
+  // edge, so the column stays lined up; see transform-origin in style.css).
   // Worked out from the layout rather than measured on screen, because the
-  // boxes are still animating to their new size at this moment.
+  // courses are still animating to their new size at this moment.
   const rects = {};
   function rect(c) {
     if (!rects[c]) {
@@ -894,7 +893,7 @@ function focusOn(code) {
       const s = scaleOf(c);
       const w = box.offsetWidth;
       const h = box.offsetHeight;
-      rects[c] = { x: box.offsetLeft + w * (1 - s) / 2, y: box.offsetTop + h * (1 - s) / 2, w: w * s, h: h * s };
+      rects[c] = { x: box.offsetLeft, y: box.offsetTop + h * (1 - s) / 2, w: w * s, h: h * s };
     }
     return rects[c];
   }
@@ -1235,9 +1234,9 @@ function panelNav() {
   let html = '<div class="panel-nav">';
   if (last) {
     const name = last.startsWith("pool-") ? "previous list" : last;
-    html += '<button type="button" class="nav-button" data-back>← Back to ' + escapeHtml(name) + "</button>";
+    html += '<button type="button" class="nav-button" data-back>← back to ' + escapeHtml(name) + "</button>";
   }
-  html += '<button type="button" class="nav-button" data-close>✕ Close</button></div>';
+  html += '<button type="button" class="nav-button" data-close>close</button></div>';
   return html;
 }
 
@@ -1260,12 +1259,11 @@ function showCourse(course) {
   html += '<p class="course-title">' + escapeHtml(course.title) + "</p>";
   const facts = [];
   if (course.units) facts.push(escapeHtml(course.units) + " units");
-  if (stepOf[course.id]) facts.push("Step " + stepOf[course.id] + " on this map");
+  if (stepOf[course.id]) facts.push(stepName(stepOf[course.id]).toLowerCase() + " on this map");
   if (facts.length) html += '<p class="facts">' + facts.join(" · ") + "</p>";
 
-  html += '<p class="progress-row"><button type="button" class="taken-button' + (isTaken ? " is-taken" : "") +
-          '" data-taken="' + escapeHtml(course.id) + '">' +
-          (isTaken ? "✓ Taken (click to undo)" : "Mark as taken") + "</button></p>";
+  html += '<label class="taken-row' + (isTaken ? " is-taken" : "") + '"><input type="checkbox" data-taken="' +
+          escapeHtml(course.id) + '"' + (isTaken ? " checked" : "") + "> I've taken this course</label>";
   if (!isTaken && canTakeNext(course)) {
     html += '<p class="ready-note">You\'ve taken the courses this needs' +
             (hasConditions(course.requires) ? ", but check the other conditions below." : ".") + "</p>";
@@ -1341,7 +1339,7 @@ function showMajorSummary() {
           (steps === 1 ? "The required ones are all in step 1. "
                        : "The required ones are in " + steps + " steps: each course's prerequisites are in earlier steps. ") +
           "Electives are listed below the steps.</p>";
-  html += "<p>Point at or click a course to trace what it needs and what it unlocks. Mark courses you've taken, and the ones you can take next get a green outline.</p>";
+  html += "<p>Point at or click a course to see what it needs and what it unlocks. Tick off the courses you've taken, and the ones you can take next are marked “next”.</p>";
 
   const inMajor = graph.nodes.filter(n => n.in_major);
   const done = inMajor.filter(n => taken.has(n.id)).length;
@@ -1398,9 +1396,12 @@ el.panelBody.addEventListener("click", function (event) {
     clearSelection();
   } else if ("copyLink" in button.dataset) {
     copyLink(button);
-  } else if (button.dataset.taken) {
-    toggleTaken(button.dataset.taken);
   }
+});
+
+// The "I've taken this course" checkbox.
+el.panelBody.addEventListener("change", function (event) {
+  if (event.target.dataset.taken) toggleTaken(event.target.dataset.taken);
 });
 
 // ===========================================================================

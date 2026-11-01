@@ -187,7 +187,7 @@ def main():
         box(page, "ECE 152A").click()
         box(page, "ECE 154A").click()
         page.wait_for_timeout(100)
-        check("panel shows a Back button naming the course before", "Back to ECE 152A" in page.inner_text(".panel-nav"))
+        check("panel shows a back link naming the course before", "back to ECE 152A" in page.inner_text(".panel-nav"))
         page.click("[data-back]")
         page.wait_for_timeout(100)
         check("Back returns to ECE 152A", page.evaluate("selected") == "ECE 152A")
@@ -333,7 +333,7 @@ def main():
 
         # 7. About box and 404
         page.click("#about-button")
-        check("About opens", page.is_visible("#about") and "About this site" in page.inner_text("#about h2"))
+        check("About opens", page.is_visible("#about") and "About this map" in page.inner_text("#about h2"))
         page.keyboard.press("Escape")
         page.wait_for_timeout(100)
         check("Esc closes About", not page.is_visible("#about"))
