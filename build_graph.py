@@ -439,23 +439,22 @@ def main():
         with open(os.path.join(OUTPUT_DIR, entry["file"]), "w", encoding="utf-8") as f:
             json.dump(graph, f, ensure_ascii=False, separators=(",", ":"))
         listing.append({"id": entry["id"], "name": entry["name"], "kind": entry["kind"],
-                        "file": entry["file"], "structured": True, **graph["stats"]})
+                        "department": entry["department"], "file": entry["file"],
+                        "structured": True, **graph["stats"]})
     built = list(listing)
 
     if not wanted:
-        # Programs with no course list still go in the picker, so the site can
-        # say why there's no map instead of leaving them out silently.
-        for entry in everything:
-            if not entry["structured"]:
-                listing.append({"id": entry["id"], "name": entry["name"], "kind": entry["kind"],
-                                "file": entry["file"], "structured": False, "source": entry["source"]})
+        # Programs with no course list in the catalog (College of Creative
+        # Studies, Individual, Undeclared) are left out: the site only lists
+        # programs it can draw.
         with open(os.path.join(OUTPUT_DIR, "majors.json"), "w", encoding="utf-8") as f:
             json.dump({"majors": sorted(listing, key=lambda m: m["name"])}, f, indent=1, ensure_ascii=False)
 
     print("Built %d graph(s) in %s (%d majors, %d minors)" % (
         len(built), OUTPUT_DIR, sum(m["kind"] == "major" for m in built), sum(m["kind"] == "minor" for m in built)))
-    if len(listing) > len(built):
-        print("Listed %d more with no course list in the catalog" % (len(listing) - len(built)))
+    skipped = sum(not e["structured"] for e in everything)
+    if skipped and not wanted:
+        print("Left out %d with no course list in the catalog" % skipped)
     for m in built[:10] if len(built) <= 10 else []:
         print("  %-45s %3d courses + %2d outside, %3d edges, %2d columns" % (
             m["name"], m["courses_in_major"], m["outside_prerequisites"], m["edges"], m["columns"]))

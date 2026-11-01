@@ -71,6 +71,21 @@ def get_programs():
             return programs
 
 
+def department_names(programs):
+    """Department code -> its name ("ECE" -> "Electrical and Computer
+    Engineering"), for grouping the site's list of programs. Only the name is
+    kept; the catalog's department records also hold staff contact details,
+    which this project has no use for."""
+    names = {}
+    for program in programs:
+        for d in program.get("departments") or []:
+            code = d.get("id") or d.get("_id")
+            name = (d.get("displayName") or d.get("name") or "").strip()
+            if code and name:
+                names[code] = name
+    return names
+
+
 def simplify(program):
     """Keep the fields we need. Departments become just their codes."""
     return {
@@ -151,7 +166,9 @@ def look_up_course_ids(course_ids):
 
 def main():
     print("Step 1: programs")
-    programs = [simplify(p) for p in get_programs()]
+    raw = get_programs()
+    departments = department_names(raw)
+    programs = [simplify(p) for p in raw]
     list_ids, course_ids = find_references(programs)
 
     print("Step 2: course lists")
@@ -168,6 +185,7 @@ def main():
         "fetched_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "catalog_id": CATALOG_ID,
         "programs": programs,
+        "department_names": departments,
         "course_sets": lists,
         "course_group_ids": codes,
     }

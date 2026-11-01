@@ -315,6 +315,16 @@ def course_summary(result):
     return sorted(seen.values(), key=lambda c: sort_key(c["code"] or ""))
 
 
+def department_name(codes, names):
+    """The program's department, by name, for grouping the site's list:
+    ["ECE"] -> "Electrical & Computer Engineering". The first one listed, if
+    a program belongs to several."""
+    for code in codes:
+        if names.get(code):
+            return names[code]
+    return "Other programs"
+
+
 def program_kind(program):
     """"major" for a bachelor's degree, "minor" for a minor."""
     return "minor" if program.get("type") == "Minor" else "major"
@@ -337,6 +347,7 @@ def main():
         overrides = json.load(f)["programs"]
 
     converter = Converter(data, active, overrides)
+    dept_names = data.get("department_names") or {}
     os.makedirs(OUTPUT_DIR, exist_ok=True)
 
     undergrad = [p for p in data["programs"]
@@ -368,6 +379,7 @@ def main():
             "id": result["id"],
             "name": result["name"],
             "kind": result["kind"],
+            "department": department_name(result["departments"], dept_names),
             "file": file_name(name_for_file),
             "source": result["source"],
             "structured": has_rules,

@@ -135,3 +135,13 @@ What it looks like now:
 - **The tab icon** is a ruled page with a red pencil line.
 
 Colors are set once at the top of `style.css` (`--paper`, `--ink`, `--red`, `--blue`, `--green`).
+
+### Second pass: easier to read, less old-fashioned
+
+After using it, you found the warm tan paper and Caslon type too old-fashioned. Changes:
+
+- **Sans-serif for reading:** course codes, titles, notes, the entry beside the map and all controls are in IBM Plex Sans. **Serif only for titles and headings** (the site name, "Step five", department names, the course heading in the entry), in Literata, a contemporary book serif rather than an old-style one.
+- **Near-white page** (`--paper: #fcfcfb`) with dark gray-black ink instead of black on tan. Small capitals, the double rule and most italics are gone. The ruled-list layout and the red and blue pencil lines stay.
+- **Only programs with a map are listed.** The 35 programs with no course list in the catalog (College of Creative Studies, Individual BA/BS, Undeclared) are left out of `site/data/majors.json` entirely (`build_graph.py`). An old link to one shows "No map at that address".
+- **The front page is an index by department** (46 of them, A to Z), each listing its majors and then its minors. The department names come from the catalog: `fetch_programs.py` now saves `department_names` (code → name) in `raw_programs.json`. It keeps only the name; the catalog's department records also include staff contact details, which aren't saved. `build_majors.py` adds each program's `department`.
+- **A clicked course stays lit.** Pointing at other courses no longer changes anything while a course is selected, including when they slide under the mouse as you scroll. Pointing previews courses only when nothing is clicked. Click empty space, press Esc or "close" to clear it, or click another course to switch.

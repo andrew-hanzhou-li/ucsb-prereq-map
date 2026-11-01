@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>The Prerequisite Map · UCSB</title>
   <meta name="description" content="Pick a UCSB major or minor and see every course in it, in prerequisite order, with the full prerequisites of each one.">
-  <meta name="theme-color" content="#f6f3ea">
+  <meta name="theme-color" content="#fcfcfb">
   <!-- How the link looks when shared in a text or on social media -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="The Prerequisite Map · UCSB">
@@ -14,7 +14,7 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Literata:opsz,wght@7..72,500;7..72,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -78,16 +78,9 @@
             <p class="quick">For example: <a href="#economics-ba">Economics</a>, <a href="#statistics-and-data-science-bs">Statistics and Data Science, B.S.</a>, or <a href="#computer-engineering-bs">Computer Engineering</a>.</p>
           </div>
 
-          <div class="browse" id="browse">
-            <section>
-              <h3 id="browse-majors-title">Majors</h3>
-              <ul class="browse-list" id="browse-majors"></ul>
-            </section>
-            <section>
-              <h3 id="browse-minors-title">Minors</h3>
-              <ul class="browse-list" id="browse-minors"></ul>
-            </section>
-          </div>
+          <!-- Every program, grouped by department (app.js, fillBrowseLists). -->
+          <p class="browse-count" id="browse-count"></p>
+          <div class="browse" id="browse"></div>
         </div>
       </div>
     </section>
@@ -143,7 +136,7 @@
       <li><strong>Grades.</strong> "C or better" is shown, but marking a course taken assumes you met the grade.</li>
       <li><strong>Conditions</strong> like class standing, major restrictions or instructor approval are listed, not checked. ECE 139, for example, has no course prerequisites in the catalog, only "open to EE and CE majors", so it sits with the other upper-division core courses.</li>
       <li><strong>Rules written as notes</strong> (for example "a maximum of 4 units of 199 courses") appear as text beside the map.</li>
-      <li><strong>Some programs have no map.</strong> The catalog doesn't list course requirements for College of Creative Studies majors, the individual major or Undeclared.</li>
+      <li><strong>Some programs aren't here.</strong> The catalog doesn't list course requirements for College of Creative Studies majors, the individual major or Undeclared, so there's nothing to map.</li>
       <li><strong>Unclear wording.</strong> When the catalog mixes "and" and "or" without punctuation, the entry says the reading is a best guess and shows the original wording.</li>
     </ul>
 

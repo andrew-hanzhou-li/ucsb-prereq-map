@@ -84,8 +84,8 @@ const el = {
   offDown: document.getElementById("offscreen-down"),
   notice: document.getElementById("notice"),
   welcome: document.getElementById("welcome"),
-  browseMajors: document.getElementById("browse-majors"),
-  browseMinors: document.getElementById("browse-minors"),
+  browse: document.getElementById("browse"),
+  browseCount: document.getElementById("browse-count"),
   panel: document.getElementById("panel"),
   panelHandle: document.getElementById("panel-handle"),
   panelBody: document.getElementById("panel-body"),
@@ -172,19 +172,21 @@ function stem(fileName) {
   return fileName.replace(/\.json$/, "");
 }
 
-// The front page's lists of every major and minor.
+// The front page's index: every major and minor, grouped by department
+// (A to Z), majors first in each.
 function fillBrowseLists() {
-  for (const kind of ["major", "minor"]) {
-    const list = kind === "major" ? el.browseMajors : el.browseMinors;
-    const items = majors.filter(m => m.kind === kind);
-    list.innerHTML = items.map(function (m) {
-      const name = kind === "minor" ? m.name.replace(/\s*-\s*Minor\s*$/, "") : m.name;
-      return '<li><a href="#' + escapeHtml(stem(m.file)) + '">' + escapeHtml(name) + "</a>" +
-             (m.structured ? "" : ' <span class="note">(no map)</span>') + "</li>";
-    }).join("");
-    document.getElementById("browse-" + kind + "s-title").textContent =
-      (kind === "major" ? "Majors" : "Minors") + " (" + items.length + ")";
-  }
+  const departments = {};
+  for (const m of majors) (departments[m.department] = departments[m.department] || []).push(m);
+  const names = Object.keys(departments).sort((a, b) => a.localeCompare(b));
+  el.browseCount.textContent = majors.filter(m => m.kind === "major").length + " majors and " +
+    majors.filter(m => m.kind === "minor").length + " minors, in " + names.length + " departments.";
+  el.browse.innerHTML = names.map(function (name) {
+    const programs = departments[name].sort((a, b) => (a.kind === b.kind ? a.name.localeCompare(b.name) : a.kind === "major" ? -1 : 1));
+    return '<section class="dept"><h3>' + escapeHtml(name) + "</h3><ul>" + programs.map(function (m) {
+      const label = m.kind === "minor" ? m.name.replace(/\s*-\s*Minor\s*$/, "") + ", minor" : m.name;
+      return '<li><a href="#' + escapeHtml(stem(m.file)) + '">' + escapeHtml(label) + "</a></li>";
+    }).join("") + "</ul></section>";
+  }).join("");
 }
 
 /*
@@ -231,12 +233,6 @@ async function loadFromHash() {
                "retired from the catalog. Pick one from the lists below.</p>");
     return;
   }
-  if (!major.structured) {
-    showHome();
-    el.majorInput.value = major.name;
-    showNotice(noMapMessage(major));
-    return;
-  }
   if (!currentMajor || currentMajor.id !== major.id) {
     if (!(await loadMajor(major))) return;
   }
@@ -245,21 +241,6 @@ async function loadFromHash() {
   } else if (selected) {
     clearSelection();
   }
-}
-
-// Programs listed in the catalog with no course list (build_majors.py).
-function noMapMessage(major) {
-  let why = "The UCSB catalog doesn't list required courses for this program, so there's nothing to map.";
-  if (/Creative Studies/.test(major.name)) {
-    why = "The UCSB catalog doesn't list required courses for College of Creative Studies programs. " +
-          'CCS describes its majors on <a href="https://ccs.ucsb.edu/" target="_blank" rel="noopener">its own site</a>.';
-  } else if (/^Undeclared/.test(major.name)) {
-    why = "Undeclared isn't a major with its own courses. Browse the majors below to see what each one takes.";
-  } else if (/^Individual/.test(major.name)) {
-    why = "An individual major is designed with an advisor, so the catalog has no fixed course list for it.";
-  }
-  return "<h2>" + escapeHtml(major.name) + "</h2><p>There's no map for this one. " + why + "</p>" +
-         '<p><a href="' + escapeHtml(major.source) + '" target="_blank" rel="noopener">See it in the UCSB catalog</a></p>';
 }
 
 // A message at the top of the front page, in place of the welcome text.
@@ -1062,14 +1043,16 @@ el.stage.addEventListener("click", function (event) {
 });
 
 /*
-  Pointing at a course with a mouse previews its chain; moving off puts back
-  whatever was clicked. (Touch screens have no hover; tapping selects.)
+  Pointing at a course with a mouse previews its chain, but only while
+  nothing is clicked: a clicked course stays lit, however the mouse moves
+  (say, while scrolling), until you click elsewhere or on another course.
+  (Touch screens have no hover; tapping selects.)
   While one preview is showing, the next course has to be pointed at for a
   moment before it takes over, so the mouse can cross other courses on its
-  way to the "Further down" bar without losing the preview.
+  way to the "Further down" line without losing the preview.
 */
 el.stage.addEventListener("pointerover", function (event) {
-  if (event.pointerType !== "mouse") return;
+  if (event.pointerType !== "mouse" || selected) return;
   const button = event.target.closest(".box[data-code]");
   if (!button) return;
   const code = button.dataset.code;
@@ -1078,7 +1061,7 @@ el.stage.addEventListener("pointerover", function (event) {
   hoverTimer = setTimeout(function () { focusOn(code); }, focus ? 120 : 0);
 });
 el.stage.addEventListener("pointerout", function (event) {
-  if (event.pointerType !== "mouse") return;
+  if (event.pointerType !== "mouse" || selected) return;
   if (event.relatedTarget && event.relatedTarget.closest && event.relatedTarget.closest(".box[data-code]")) return;
   clearTimeout(hoverTimer);
   hoverTimer = setTimeout(function () { focusOn(selected); }, 250);

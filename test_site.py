@@ -108,7 +108,6 @@ def main():
     with open("site/data/majors.json", encoding="utf-8") as f:
         listed = json.load(f)["majors"]
     majors = [m for m in listed if m["structured"]]          # the ones with a map
-    no_map = [m for m in listed if not m["structured"]]
 
     with sync_playwright() as p:
         browser = p.chromium.launch()
@@ -121,10 +120,17 @@ def main():
         check("front page hides the empty course panel", not page.is_visible("#panel"))
         check("major picker has every major and minor",
               page.evaluate("document.querySelectorAll('#major-list option').length") == len(listed))
-        for kind in ("major", "minor"):
-            expected = sum(m["kind"] == kind for m in listed)
-            shown = page.locator("#browse-%ss li" % kind).count()
-            check("front page lists all %d %ss" % (expected, kind), shown == expected, "%d listed" % shown)
+        check("every listed program has a map", all(m["structured"] for m in listed))
+        check("Individual BA/BS and College of Creative Studies programs aren't listed",
+              not any(m["name"].startswith("Individual") or "Creative Studies" in m["name"] for m in listed))
+        shown = page.locator("#browse .dept li").count()
+        check("front page lists all %d programs" % len(listed), shown == len(listed), "%d listed" % shown)
+        departments = {m["department"] for m in listed}
+        check("front page groups them into %d departments" % len(departments),
+              page.locator("#browse .dept h3").count() == len(departments))
+        ece = page.locator("#browse .dept", has=page.locator("h3", has_text="Electrical and Computer Engineering"))
+        check("Computer Engineering is listed under Electrical and Computer Engineering",
+              ece.count() == 1 and "Computer Engineering - BS" in ece.inner_text())
         open_major(page, SITE, "economics-ba", "BAECON")
         page.focus("#major-input")
         check("clicking into a filled-in picker empties it, so the full list shows",
@@ -218,11 +224,19 @@ def main():
         check("...and every box goes back to its normal size",
               page.evaluate("[...document.querySelectorAll('.box')].every(b => !b.style.transform)"))
         box(page, "ECE 10A").click()
+        page.wait_for_timeout(100)
+        arrows_before = page.evaluate("document.querySelectorAll('.arrow').length")
         box(page, "CMPSC 130A").hover()
-        page.wait_for_timeout(300)
-        page.mouse.move(700, 20)
-        page.wait_for_timeout(450)
-        check("after a preview, the clicked course is back", "selected" in classes(page, "ECE 10A"))
+        page.wait_for_timeout(400)
+        check("while a course is clicked, pointing at another doesn't change what's lit",
+              page.evaluate("focus.code") == "ECE 10A" and "selected" in classes(page, "ECE 10A") and
+              "selected" not in classes(page, "CMPSC 130A") and
+              page.evaluate("document.querySelectorAll('.arrow').length") == arrows_before)
+        page.mouse.wheel(0, 600)
+        page.wait_for_timeout(400)
+        page.mouse.move(700, 500)
+        page.wait_for_timeout(400)
+        check("...nor does scrolling with the mouse over other courses", page.evaluate("focus.code") == "ECE 10A")
         page.keyboard.press("Escape")
 
         # Linked courses off screen (Anthropology: ANTH 2 unlocks courses far down the elective list)
@@ -315,12 +329,11 @@ def main():
         check("a course link opens the major with that course selected",
               page.inner_text("#panel-body h2").strip() == "PSTAT 120B" and "selected" in classes(page, "PSTAT 120B"))
         check("the copy-link button is in the course panel", page.locator("[data-copy-link]").count() == 1)
-        ccs = next(m for m in no_map if "Creative Studies" in m["name"])
-        page.goto(SITE + "#" + ccs["file"][:-5])
+        page.goto(SITE + "#computer-science-bs-college-of-creative-studies")
         page.wait_for_timeout(300)
-        check("no-list program: notice is shown", page.is_visible("#notice") and "no map" in page.inner_text("#notice"))
-        check("no-list program: it links to the catalog", page.locator("#notice a[href*='catalog.ucsb.edu']").count() == 1)
-        check("no-list program: no map and no panel", page.locator(".box").count() == 0 and not page.is_visible("#panel"))
+        check("an old link to a program with no map gets the 'no map at that address' notice",
+              page.is_visible("#notice") and "No map at that address" in page.inner_text("#notice") and
+              page.locator(".box").count() == 0 and not page.is_visible("#panel"))
         page.goto(SITE + "#geological-sciences-bs")
         page.wait_for_timeout(300)
         check("unknown address: 'no map at that address' notice",

@@ -117,3 +117,5 @@ Done:
 To publish a change: commit and `git push`. The Actions tab on GitHub shows each run.
 
 Yours: **show it to 3 classmates on their phones** (from Part 6). Text them the link, don't explain anything, and note where each one hesitates. Bring those notes back.
+
+> **Update (Part 8):** programs with no course list in the catalog are no longer listed at all. See "Second pass" in `PART8.md`.
