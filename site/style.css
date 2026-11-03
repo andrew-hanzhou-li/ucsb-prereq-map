@@ -698,3 +698,6 @@ kbd {
   .plan-cell { border-left: 0; height: auto; }
   .cell-name { display: block; font-size: 0.85rem; color: var(--muted); }
 }
+.chip-grade { color: var(--green); font-weight: 600; }
+.grade-row select { font: inherit; }
+.gpa strong { font-family: var(--serif); font-size: 1.4rem; }

@@ -404,6 +404,31 @@ def main():
         check("plan: the slim panel shows units and when it's offered, not prerequisites",
               "units" in page.inner_text("#panel-body") and "Usually offered" in page.inner_text("#panel-body") and
               "Needs first" not in page.inner_text("#panel-body"))
+        # Phase 4: grades and GPA
+        for code, grade in (("ECON 1", "A"), ("ECON 2", "B+"), ("ECON 10A", "P")):
+            page.click('.chip[data-plan-drag="%s"]' % code)
+            page.select_option('[data-plan-grade="%s"]' % code, grade)
+            page.wait_for_timeout(80)
+        gpa = page.evaluate("gpaOf()")
+        check("grades: GPA is (5 x 4.0 + 5 x 3.3) / 10 = 3.65, with P left out",
+              abs(gpa["gpa"] - 3.65) < 1e-9 and gpa["units"] == 10, gpa)
+        page.click("[data-plan-close]")
+        page.wait_for_timeout(100)
+        check("grades: the plan's summary shows the GPA", "3.65" in page.inner_text("#panel-body"))
+        check("grades: the grade shows on the course in the grid", "A" in page.inner_text('.chip[data-plan-drag="ECON 1"]'))
+        page.click('.chip[data-plan-drag="ECON 1"]')
+        page.select_option('[data-plan-grade="ECON 1"]', "F")
+        page.wait_for_timeout(80)
+        check("grades: an F counts 0 points", abs(page.evaluate("gpaOf().gpa") - 1.65) < 1e-9)
+        check("grades: an F doesn't count as done", not page.evaluate("isDone('ECON 1')"))
+        page.select_option('[data-plan-grade="ECON 1"]', "IP")
+        page.wait_for_timeout(80)
+        check("grades: In Progress doesn't count toward GPA", page.evaluate("gpaOf().units") == 5)
+        page.select_option('[data-plan-grade="ECON 1"]', "A-")
+        page.wait_for_timeout(80)
+        check("grades: a passing grade counts as done", page.evaluate("isDone('ECON 1')"))
+        page.evaluate("plan.grades = {}; planChanged()")
+
         page.evaluate("credit.ap = {}; creditChanged(); refreshPlan()")
         check("plan: without the calculus credit, ECON 10A says what it needs first",
               any("MATH" in m for m in page.evaluate("missingPrereqs('ECON 10A')")))

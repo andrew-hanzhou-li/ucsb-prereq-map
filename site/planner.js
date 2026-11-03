@@ -440,7 +440,8 @@ function chipHtml(code) {
   return '<button type="button" class="' + classes.join(" ") + '" draggable="true" data-plan-show="' + escapeHtml(code) +
          '" data-plan-drag="' + escapeHtml(code) + '"' + (problems.length ? ' title="Needs first: ' + escapeHtml(problems.join("; ")) + '"' : "") + ">" +
          '<span class="chip-code">' + (problems.length ? "! " : "") + escapeHtml(code) + "</span>" +
-         '<span class="chip-units">' + unitsOf(code) + "</span></button>";
+         '<span class="chip-units">' + (plan.grades[code] ? '<span class="chip-grade">' + escapeHtml(plan.grades[code]) + "</span> " : "") +
+         unitsOf(code) + "</span></button>";
 }
 
 function electiveChipHtml(slot) {

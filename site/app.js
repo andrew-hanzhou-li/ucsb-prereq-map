@@ -532,10 +532,11 @@ function clearTaken() {
   if (selected) showDetails(selected); else showMajorSummary();
 }
 
-// A course is done if it's ticked as taken, or the student has credit for
-// it from AP or another college (student.js).
+// A course is done if it's ticked as taken, the student has credit for it
+// from AP or another college (student.js), or it has a passing grade in the
+// plan (grades.js).
 function isDone(code) {
-  return taken.has(code) || hasCredit(code);
+  return taken.has(code) || hasCredit(code) || passedCourse(code);
 }
 
 /*
