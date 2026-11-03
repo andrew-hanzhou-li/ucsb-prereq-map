@@ -544,6 +544,21 @@ def main():
         check("plan: CE chain in order (ECE 15A, 10A before 152A before 154A)",
               min(order) >= 0 and order[0] < order[2] and order[1] < order[2] and order[2] < order[3], order)
 
+        # Two programs and AP credit: the case that showed ordering by column wasn't enough
+        page.evaluate("localStorage.clear()")
+        page.goto(SITE + "#plan/computer-engineering-bs+statistical-science-minor")
+        page.reload()
+        page.wait_for_function("graph && graph.major.programs.length === 2 && currentView === 'plan'", timeout=15000)
+        page.evaluate("credit.ap = {'Calculus BC': 5}; creditChanged(); refreshPlan()")
+        page.click("#plan-autofill")
+        page.wait_for_timeout(500)
+        flagged = page.evaluate("Object.keys(plan.placed).filter(c => missingPrereqs(c).length)")
+        check("plan: CE + Statistical Science minor auto-fills with nothing before its prerequisites", not flagged, flagged)
+        check("plan: ...and with slots for CE's 36 units of electives", page.evaluate("plan.electives.length") >= 9)
+        check("plan: ...and no calculus, thanks to the AP credit",
+              not page.evaluate("['MATH 2A','MATH 3A','MATH 3B'].some(c => plan.placed[c])"))
+        page.evaluate("credit.ap = {}; creditChanged()")
+
         # back to the map
         page.click("#view-map")
         page.wait_for_function("currentView === 'map'", timeout=5000)

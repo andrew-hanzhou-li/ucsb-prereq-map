@@ -1324,6 +1324,8 @@ el.allLink.addEventListener("click", function () {
 // ===========================================================================
 
 function readable(name) {
+  // "Statistical Science minor — UPPER DIVISION": tidy each part on its own.
+  if (name.includes(" — ")) return name.split(" — ").map(readable).join(" — ");
   if (name !== name.toUpperCase()) return name;
   const lower = name.toLowerCase();
   return lower.charAt(0).toUpperCase() + lower.slice(1);

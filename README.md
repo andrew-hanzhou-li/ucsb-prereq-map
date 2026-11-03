@@ -18,6 +18,7 @@ A tool that draws the prerequisite map for any UCSB major or minor, built from t
 | 6 | Mark as taken, folded elective lists, phone layout; map redesigned (relative layout with dagre, sharp HTML text) | same files, plus `site/lib/dagre.min.js` | `PART6.md` |
 | 7 | Minors, retired programs left out, front-page lists, links to a course, About and 404 pages | same files, plus `site/404.html` | `PART7.md` |
 | 8 | Flowchart layout (every course, in steps; arrows on hover or click), Back/Close/Esc, the whole site as one file | same files, plus `build_single.py` → `site/ucsb-prereq-map.html` | `PART8.md` |
+| 9 | Degree planner: combined programs, AP/college credit, quarter-by-quarter plan, grades and GPA, transcript reading, goal-GPA targets | `site/student.js`, `credit.js`, `planner.js`, `grades.js`, `transcript.js`; `ap_credit.json` → `build_credit.py` | `PART9.md` |
 
 To rebuild everything from scratch (Windows):
 
@@ -29,6 +30,7 @@ py build_majors.py
 py build_graph.py
 py measure.py --quiet
 py test_graph.py
+py build_credit.py
 py build_single.py
 ```
 

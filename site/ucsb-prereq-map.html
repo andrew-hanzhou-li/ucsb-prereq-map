@@ -865,6 +865,9 @@ kbd {
       <dt class="muted">ECON 141</dt><dd>in the catalog but not offered now (shown only if you ask)</dd>
     </dl>
 
+    <h3>Planning quarter by quarter</h3>
+    <p>"Plan" (next to the program names) lays your courses out by year and quarter. Click a course to add it: it goes in the first quarter after its prerequisites, when it's usually offered, under your unit limit. Auto-fill places the rest. Add grades to see your GPA, or read them from your GOLD transcript; the file never leaves your computer.</p>
+
     <h3>Your marks stay on your device</h3>
     <p>Courses you mark as taken are saved in your browser on this device only. They're never sent anywhere, and the site has no accounts and no analytics. Clearing your browser's data, or using a private window, removes the marks.</p>
 
@@ -2393,6 +2396,8 @@ el.allLink.addEventListener("click", function () {
 // ===========================================================================
 
 function readable(name) {
+  // "Statistical Science minor — UPPER DIVISION": tidy each part on its own.
+  if (name.includes(" — ")) return name.split(" — ").map(readable).join(" — ");
   if (name !== name.toUpperCase()) return name;
   const lower = name.toLowerCase();
   return lower.charAt(0).toUpperCase() + lower.slice(1);
@@ -3126,14 +3131,20 @@ function progress(node, key) {
   }
   if (node.type === "units") {
     let units = slots * ELECTIVE_UNITS;
-    node.items.forEach(function (item) {
-      if (item.type === "course" && item.code && inPlanOrDone(item.code)) units += unitsOf(item.code);
-    });
+    for (const code of coursesInRequirement(node)) {
+      if (inPlanOrDone(code)) units += unitsOf(code);
+    }
     return { have: Math.min(node.units, units), need: node.units };
   }
   // choose N
   const complete = parts.filter(p => p.need > 0 && p.have >= p.need).length + slots;
   return { have: Math.min(node.count, complete), need: node.count };
+}
+
+// Every course named anywhere inside a requirement.
+function coursesInRequirement(node) {
+  if (node.type === "course") return node.code ? [node.code] : [];
+  return (node.items || []).flatMap(coursesInRequirement);
 }
 
 function progressText(p) {
@@ -3490,27 +3501,34 @@ function addCourse(code) {
 function autoFill() {
   const needed = chooseShown({ electives: false, everyOutside: false, inactive: false });
   const skip = new Set();
-  // "Take one of": keep an option already done or planned, else the first.
-  for (const options of pickOneSets()) {
-    const chosen = options.find(option => option.every(inPlanOrDone)) || options[0];
+  // "Take one of": keep an option already done or planned, else the first
+  // one the catalog still offers. A required "one of" adds that option even
+  // if the map calls its courses electives.
+  for (const set of pickOneSets()) {
+    const options = set.options;
+    const offered = option => option.every(code => nodesById[code] && nodesById[code].status === "active");
+    const chosen = options.find(option => option.every(inPlanOrDone)) || options.find(offered) || options[0];
     for (const option of options) {
       if (option !== chosen) option.forEach(code => skip.add(code));
     }
+    if (set.required) chosen.forEach(code => needed.add(code));
   }
-  const list = Array.from(needed)
-    .filter(code => !skip.has(code) && !inPlanOrDone(code) && nodesById[code].status === "active")
-    .sort((a, b) => (nodesById[a].column - nodesById[b].column) || bySortKey(a, b));
+  const list = prerequisiteOrder(Array.from(needed)
+    .filter(code => !skip.has(code) && !inPlanOrDone(code) && nodesById[code] && nodesById[code].status === "active"));
   let placed = 0;
   for (const code of list) {
     if (placeCourse(code)) placed += 1;
   }
+  repairOrder();
 
   // Elective slots, for lists of courses still short.
   let slots = 0;
   graph.major.sections.forEach(function (section, i) {
     (function visit(node, key) {
       if (!node.items) return;
-      const leafList = (node.type === "choose" || node.type === "units") && node.items.every(item => item.type === "course");
+      // A list of courses, or of short sequences ("ECE 152A + 152B"), to choose from.
+      const leafList = (node.type === "choose" || node.type === "units") &&
+        node.items.every(item => item.type === "course" || (item.items && item.items.every(c => c.type === "course")));
       if (leafList && !(node.type === "choose" && node.count === 1 && node.items.length <= 4)) {
         let p = progress(node, key);
         while (p.have < p.need && slots < 60) {
@@ -3527,7 +3545,49 @@ function autoFill() {
   planChanged();
 }
 
-// "Take one of" lists of 2–4 options: [[["MATH 2A"], ["MATH 3A"]], …]
+/*
+  Courses in an order where each comes after the ones it needs (among the
+  courses being added): a depth-first walk that adds a course only after
+  its prerequisites. This is what a "topological sort" is (CS 24). Ties go
+  by the map's column, then code.
+*/
+function prerequisiteOrder(codes) {
+  const inList = new Set(codes);
+  const seen = new Set();
+  const order = [];
+  function visit(code) {
+    if (seen.has(code)) return;
+    seen.add(code);
+    for (const need of coursesIn(nodesById[code].requires)) {
+      if (inList.has(need)) visit(need);
+    }
+    order.push(code);
+  }
+  codes.sort((a, b) => (nodesById[a].column - nodesById[b].column) || bySortKey(a, b)).forEach(visit);
+  return order;
+}
+
+// A safety pass: a course that still sits before a prerequisite placed
+// later (a full quarter can push a prerequisite back) is placed again.
+function repairOrder() {
+  for (let round = 0; round < 4; round++) {
+    let moved = false;
+    for (const code of Object.keys(plan.placed)) {
+      if (isDone(code) || !missingPrereqs(code).length) continue;
+      const before = plan.placed[code];
+      delete plan.placed[code];
+      if (!placeCourse(code)) plan.placed[code] = before;
+      else if (plan.placed[code] !== before) moved = true;
+    }
+    if (!moved) return;
+  }
+}
+
+/*
+  "Take one of" lists of 2–4 options: { options: [["MATH 2A"], ["MATH 3A"]],
+  required }. `required` means every rule above it is "all of", so the
+  student must take one of them (not one option among electives).
+*/
 function pickOneSets() {
   const sets = [];
   function codesOf(item) {
@@ -3535,18 +3595,18 @@ function pickOneSets() {
     if (item.type === "all" && item.items.every(i => i.type === "course" && i.code)) return item.items.map(i => i.code);
     return null;
   }
-  (function visitAll(nodes) {
+  (function visitAll(nodes, required) {
     for (const node of nodes) {
       if (node.type === "choose" && node.count === 1 && node.items.length >= 2 && node.items.length <= 4) {
         const options = node.items.map(codesOf);
         if (options.every(Boolean)) {
-          sets.push(options);
+          sets.push({ options: options, required: required });
           continue;
         }
       }
-      if (node.items) visitAll(node.items);
+      if (node.items) visitAll(node.items, required && node.type === "all");
     }
-  })(graph.major.sections.map(s => s.requirement));
+  })(graph.major.sections.map(s => s.requirement), true);
   return sets;
 }
 
