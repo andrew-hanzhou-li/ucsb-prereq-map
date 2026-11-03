@@ -438,7 +438,22 @@ def main():
         page.select_option('[data-plan-grade="ECON 1"]', "A-")
         page.wait_for_timeout(80)
         check("grades: a passing grade counts as done", page.evaluate("isDone('ECON 1')"))
-        page.evaluate("plan.grades = {}; planChanged()")
+        # Phase 6: target grades for a goal GPA (ECON 1 A, ECON 2 B, ECON 10A ungraded, all year 1)
+        page.evaluate("plan.grades = {'ECON 1': 'A', 'ECON 2': 'B'}; planChanged(); showPlanSummary()")
+        page.fill('[data-goal="gpa"]', "3.5")
+        page.select_option('[data-goal="year"]', "1")
+        page.dispatch_event('[data-goal="gpa"]', "change")
+        page.wait_for_timeout(100)
+        target = page.evaluate("targetFor(3.5, 1)")
+        check("goal: a 3.50 after year 1 needs (3.5 x 15 - 35) / 5 = 3.50 in ECON 10A",
+              abs(target["needed"] - 3.5) < 1e-9 and target["remaining"] == 5, target)
+        check("goal: the summary says what to aim for", "3.50" in page.inner_text(".target") and "A- or better" in page.inner_text(".target"),
+              page.inner_text(".target"))
+        page.fill('[data-goal="gpa"]', "4.0")
+        page.dispatch_event('[data-goal="gpa"]', "change")
+        page.wait_for_timeout(100)
+        check("goal: says when a goal is out of reach", "more than straight A's" in page.inner_text(".target"))
+        page.evaluate("plan.grades = {}; plan.goal = null; planChanged()")
 
         page.evaluate("credit.ap = {}; creditChanged(); refreshPlan()")
         check("plan: without the calculus credit, ECON 10A says what it needs first",

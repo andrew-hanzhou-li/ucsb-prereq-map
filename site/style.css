@@ -706,3 +706,6 @@ kbd {
 .review-table th, .review-table td { text-align: left; padding: 3px 6px; border-bottom: 1px dotted var(--dots); }
 .review-table input[type="number"] { width: 60px; font: inherit; }
 .review-table select { font: inherit; }
+.goal-row input { width: 70px; font: inherit; border: 0; border-bottom: 1px solid var(--dots); background: transparent; }
+.goal-row select { font: inherit; }
+.target strong { font-family: var(--serif); font-size: 1.15rem; }

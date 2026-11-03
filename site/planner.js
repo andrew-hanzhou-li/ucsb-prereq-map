@@ -546,7 +546,7 @@ function showPlanSummary() {
           "when it's usually offered, under " + plan.cap + " units. Drag courses to move them, or click one for its details.</p>";
   html += '<p class="note">Most courses don\'t list when they\'re offered in the catalog; those are assumed Fall, Winter and Spring. ' +
           "Check the Schedule of Classes on GOLD before you enroll.</p>";
-  if (typeof gpaSummaryHtml === "function") html += gpaSummaryHtml();
+  if (typeof gpaSummaryHtml === "function") html += gpaSummaryHtml() + goalHtml();
   html += '<p class="note">Unofficial student project. Requirements change; confirm your plan with a department advisor.</p>';
   setPanel(html, "Your plan");
   drawGrid();
