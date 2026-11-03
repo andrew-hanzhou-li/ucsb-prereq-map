@@ -27,6 +27,7 @@ together when a major is opened. Result: about 8 MB.
 
 import base64
 import json
+import re
 import os
 import sys
 
@@ -78,15 +79,28 @@ def main():
             "nodes": [{key: node[key] for key in PER_MAJOR} for node in graph["nodes"]],
         }
 
-    embedded = {"majors": majors, "courses": courses, "programs": programs}
+    # The AP chart for the Credit box (build_credit.py).
+    with open(os.path.join(SITE, "data", "credit.json"), encoding="utf-8") as f:
+        credit_table = json.load(f)
+
+    embedded = {"majors": majors, "courses": courses, "programs": programs, "credit": credit_table}
     icon = "data:image/svg+xml;base64," + base64.b64encode(read("favicon.svg").encode("utf-8")).decode("ascii")
 
     page = read("index.html")
     page = replace_once(page, '<link rel="stylesheet" href="style.css">', "<style>\n" + read("style.css") + "</style>")
     page = replace_once(page, 'href="favicon.svg"', 'href="' + icon + '"')
-    page = replace_once(page, '<script src="app.js"></script>',
-                        "<script>window.EMBEDDED = " + script_json(embedded) + ";</script>\n"
-                        "<script>\n" + read("app.js") + "</script>")
+
+    # Every script the page loads from site/ (student.js, app.js, credit.js…),
+    # in the same order, copied into the page. The data goes in first, so
+    # the scripts find window.EMBEDDED when they start.
+    scripts = re.findall(r'<script src="([\w-]+\.js)"></script>', page)
+    if not scripts:
+        sys.exit("build_single.py: no <script src=...> tags found in index.html")
+    for i, name in enumerate(scripts):
+        inline = "<script>\n" + read(name) + "</script>"
+        if i == 0:
+            inline = "<script>window.EMBEDDED = " + script_json(embedded) + ";</script>\n" + inline
+        page = replace_once(page, '<script src="%s"></script>' % name, inline)
 
     with open(OUTPUT, "w", encoding="utf-8") as f:
         f.write(page)

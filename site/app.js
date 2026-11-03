@@ -1243,7 +1243,8 @@ function goBack() {
 }
 
 document.addEventListener("keydown", function (event) {
-  if (event.key !== "Escape" || el.about.open) return;
+  // Esc inside the About or Credit box closes the box, nothing else.
+  if (event.key !== "Escape" || document.querySelector("dialog[open]")) return;
   if (document.activeElement && document.activeElement.tagName === "INPUT") return;
   if (selected) clearSelection();
 });
