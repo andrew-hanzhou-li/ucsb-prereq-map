@@ -1381,9 +1381,16 @@ function readable(name) {
   return lower.charAt(0).toUpperCase() + lower.slice(1);
 }
 
+// "PREPARATION FOR THE MAJOR: D." -> "Preparation for the major: D.". A
+// label that only repeats the section's name ("Preparation for the major:
+// Preparation") is left off.
 function readableGroup(key) {
   const parts = key.split(": ");
-  return readable(parts[0]) + (parts.length > 1 ? ": " + parts.slice(1).join(": ") : "");
+  const section = readable(parts[0]);
+  const label = parts.slice(1).join(": ");
+  const sectionName = section.split(" — ").pop().toLowerCase();
+  if (!label || sectionName.startsWith(label.toLowerCase().replace(/[^a-z ]/g, "").trim())) return section;
+  return section + ": " + label;
 }
 
 function escapeHtml(text) {

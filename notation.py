@@ -15,6 +15,11 @@ answers and hand corrections use this one-line notation instead:
                            at the same level without them
     @standing              a non-course condition; the kinds are
                            @standing, @consent, @restriction, @exam, @other
+    @other{prior programming experience}
+                           the same, with the catalog's own words, shown on
+                           the site (hand corrections should always give them;
+                           to_notation() leaves the words out, so answers
+                           still compare by structure)
     -                      no prerequisite at all
 
 to_notation() turns a tree into this text and from_notation() turns the text
@@ -110,7 +115,10 @@ def _read_group(tokens, position):
 
 def _read_leaf(token):
     if token.startswith("@"):
-        return {"type": "condition", "kind": token[1:], "text": ""}
+        match = re.match(r"^@(\w+)(?:\{(.*)\})?$", token)
+        if not match:
+            raise ValueError("Malformed condition: %s" % token)
+        return {"type": "condition", "kind": match.group(1), "text": (match.group(2) or "").strip()}
     match = re.match(r"^(.+?)(\*)?(?:\[([A-F][+-]?)\])?$", token)
     return {
         "type": "course",

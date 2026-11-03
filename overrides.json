@@ -8,12 +8,12 @@
   },
   "MUS 31F": {
    "for_text": "Placement by audition. Must be taken consecutively. A grade of at least C- required in each of the Music 31 series.",
-   "requires": "@other",
+   "requires": "@other{Placement by audition}",
    "why": "'Music 31 series' names a series, not a prerequisite course."
   },
   "PHYS 21": {
    "for_text": "Mathematics 2A/3A and Mathematics 2B/3B or Physics 8 or AP Calculus BC Exam score of 5.",
-   "requires": "((MATH 2A | MATH 3A) & (MATH 2B | MATH 3B)) | PHYS 8 | @exam",
+   "requires": "((MATH 2A | MATH 3A) & (MATH 2B | MATH 3B)) | PHYS 8 | @exam{AP Calculus BC Exam score of 5}",
    "why": "Mixed and/or with no punctuation; the parser groups 'or' first, which is wrong here."
   },
   "ME 238": {
@@ -23,7 +23,7 @@
   },
   "C LIT 162I": {
    "for_text": "Upper Division standing and one course from the following: RGST 19, 20, 140D, 158C, 159 G-H-J-K-L-M-N-O, 160A, 161D, 169 or equivalent; or instructor approval.",
-   "requires": "(@standing & (RG ST 19 | RG ST 20 | RG ST 140D | RG ST 158C | RG ST 159G | RG ST 159H | RG ST 159J | RG ST 159K | RG ST 159L | RG ST 159M | RG ST 159N | RG ST 159O | RG ST 160A | RG ST 161D | RG ST 169 | @other)) | @consent",
+   "requires": "(@standing{Upper Division standing} & (RG ST 19 | RG ST 20 | RG ST 140D | RG ST 158C | RG ST 159G | RG ST 159H | RG ST 159J | RG ST 159K | RG ST 159L | RG ST 159M | RG ST 159N | RG ST 159O | RG ST 160A | RG ST 161D | RG ST 169 | @other{or equivalent})) | @consent{instructor approval}",
    "why": "Colon list plus '159 G-H-J-K-L-M-N-O' (eight lettered courses)."
   },
   "EARTH 184A": {
@@ -33,12 +33,12 @@
   },
   "ECE 152A": {
    "for_text": "ECE 15A and ECE 2A or ECE 10A & ECE 10AL with a minimum grade of C- in each course; or Computer Science 30 or 64 with a minimum grade of C- in each course; open to electrical engineering, computer engineering, and computer science majors only.",
-   "requires": "((ECE 15A[C-] & (ECE 2A[C-] | (ECE 10A[C-] & ECE 10AL[C-]))) | CMPSC 30[C-] | CMPSC 64[C-]) & @restriction",
+   "requires": "((ECE 15A[C-] & (ECE 2A[C-] | (ECE 10A[C-] & ECE 10AL[C-]))) | CMPSC 30[C-] | CMPSC 64[C-]) & @restriction{open to electrical engineering, computer engineering, and computer science majors only}",
    "why": "Three-level mix: ECE 15A and (ECE 2A or (ECE 10A and 10AL))."
   },
   "CMPSC 16": {
    "for_text": "Mathematics 3A or 2A with a grade of C or better (may be taken concurrently), CS 8 or Engineering 3 or ECE 3 with a grade of C or better, or significant prior programming experience.",
-   "requires": "(MATH 2A*[C] | MATH 3A*[C]) & (CMPSC 8[C] | ECE 3[C] | ENGR 3[C] | @other)",
+   "requires": "(MATH 2A*[C] | MATH 3A*[C]) & (CMPSC 8[C] | ECE 3[C] | ENGR 3[C] | @other{significant prior programming experience})",
    "why": "'A, B, or C' here means A and (B or C), not A or B or C."
   }
  }

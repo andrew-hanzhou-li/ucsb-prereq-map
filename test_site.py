@@ -473,6 +473,8 @@ def main():
         page.click("[data-plan-close]")
         page.wait_for_timeout(100)
         check("grades: the plan's summary shows the GPA", "3.65" in page.inner_text("#panel-body"))
+        check("item 12: the GPA says which courses it covers",
+              "GPA of graded courses in this plan" in page.inner_text("#panel-body") and "GOLD" in page.inner_text("#panel-body"))
         check("grades: the grade shows on the course in the grid", "A" in page.inner_text('.chip[data-plan-drag="ECON 1"]'))
         page.click('.chip[data-plan-drag="ECON 1"]')
         page.select_option('[data-plan-grade="ECON 1"]', "F")
@@ -698,6 +700,26 @@ def main():
               page.evaluate("i => Object.keys(plan.placed).filter(c => !plan.grades[c]).every(c => slotIndex(plan.placed[c]) >= i)", first_open))
         check("item 6: a passed course is never flagged (CMPSC 16, A)", not page.evaluate("missingPrereqs('CMPSC 16').length"))
         check("item 6: no CMPSC 8 for someone who passed CMPSC 16", not page.evaluate("plan.placed['CMPSC 8']"))
+
+        # Item 16: wording in the sidebar and the course panel
+        page.evaluate("document.querySelectorAll('#plan-reqs details.req-section').forEach(d => d.open = true)")
+        side = page.text_content("#plan-reqs")
+        check("item 16: groups read 'All of these' / 'One of these'", "All of these" in side and "One of these" in side)
+        check("item 16: no 'All of 0 of 2' style counts", " of 0 of " not in side and "All of done" not in side)
+        page.goto(SITE + "#computer-engineering-bs/MATH+4A")
+        page.wait_for_function("selected === 'MATH 4A'", timeout=10000)
+        check("item 16: the panel doesn't say 'Preparation for the major: Preparation'",
+              "major: Preparation" not in page.inner_text("#panel-body"), page.inner_text("#panel-body")[:300])
+
+        # Item 11: a repeated course shows both attempts
+        page.goto(SITE + "#plan/computer-engineering-bs")
+        page.wait_for_function("currentView === 'plan'", timeout=10000)
+        rows = page.evaluate("""t => parseTranscript(t).map(r => [r.code, r.grade, r.use, r.note])""",
+                             "Fall 2024\nMATH 4A -LINEAR ALGEBRA F 11111 4.0 0.0 4.0 0.00\nWinter 2025\nMATH 4A -LINEAR ALGEBRA B 22222 4.0 4.0 4.0 12.00")
+        check("item 11: both attempts are listed", len(rows) == 2, rows)
+        check("item 11: the earlier one is unticked and says it was replaced",
+              rows[0][2] is False and "replaced by B" in rows[0][3], rows)
+        check("item 11: the later one says what it replaced", rows[1][2] is True and "repeated: F replaced by B" in rows[1][3], rows)
 
         # Item 7: credit takes covered courses out, and the warning follows
         page.evaluate("localStorage.clear()")

@@ -146,12 +146,27 @@ function parseTranscript(text) {
   }
   finish();
 
-  // A course taken twice: keep the latest attempt that counts.
-  const latest = {};
-  for (const row of rows) {
-    if (row.use || !latest[row.code] || !latest[row.code].use) latest[row.code] = row;
+  /*
+    A course taken more than once: every attempt is listed. The latest one
+    that counts is used ("repeated: F replaced by B"); earlier ones stay in
+    the table, unticked, so nothing disappears without explanation. The
+    plan keeps one grade per course, so only one attempt can be applied.
+  */
+  const attempts = {};
+  for (const row of rows) (attempts[row.code] = attempts[row.code] || []).push(row);
+  for (const code of Object.keys(attempts)) {
+    const list = attempts[code];
+    if (list.length < 2) continue;
+    const kept = list.slice().reverse().find(r => r.use) || list[list.length - 1];
+    const others = list.filter(r => r !== kept);
+    for (const r of others) {
+      r.use = false;
+      r.note = (r.note ? r.note + "; " : "") + "earlier attempt, replaced by " + (kept.grade === "IP" ? "the current one" : kept.grade);
+    }
+    kept.note = (kept.note ? kept.note + "; " : "") + "repeated: " + others.map(r => r.grade === "IP" ? "no grade" : r.grade).join(", ") +
+                " replaced by " + (kept.grade === "IP" ? "In Progress" : kept.grade);
   }
-  return Object.values(latest);
+  return rows;
 }
 
 /*

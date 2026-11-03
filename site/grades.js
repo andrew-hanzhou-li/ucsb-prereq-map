@@ -80,9 +80,11 @@ function gpaSummaryHtml() {
   const graded = Object.keys(plan.grades).length;
   if (!graded) return '<p class="note">Add grades to courses you\'ve finished (click a course in the plan) to see your GPA.</p>';
   const inProgress = Object.values(plan.grades).filter(g => g === "IP").length;
-  return '<h3>GPA</h3><p class="gpa"><strong>' + formatGpa(result.gpa) + "</strong> over " + result.units +
+  return '<h3>GPA of graded courses in this plan</h3><p class="gpa"><strong>' + formatGpa(result.gpa) + "</strong> over " + result.units +
          " graded units" + (inProgress ? ", " + inProgress + " in progress" : "") + ".</p>" +
-         '<p class="note">P/NP and In Progress don\'t count toward GPA.</p>';
+         '<p class="note">Only courses in this plan count, so it matches the UC GPA on GOLD only if the plan has every graded course ' +
+         "you've taken (reading your transcript adds them all). P/NP and In Progress don't count. A repeated course counts once, " +
+         "with its latest grade; UCSB replaces only D, F and NP grades, for the first 16 repeated units, so GOLD may differ.</p>";
 }
 
 el.panelBody.addEventListener("change", function (event) {

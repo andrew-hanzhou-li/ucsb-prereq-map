@@ -356,26 +356,32 @@ function placeCourse(code) {
     text             nothing to count
 */
 function progress(node, key) {
+  // "have" counts done or planned; "done" counts only done (taken, credit,
+  // passed), so the wording can say which.
   if (node.type === "course") {
-    if (!node.code) return { have: 0, need: 1 };
-    return { have: inPlanOrDone(node.code) ? 1 : 0, need: 1 };
+    if (!node.code) return { have: 0, done: 0, need: 1 };
+    return { have: inPlanOrDone(node.code) ? 1 : 0, done: isDone(node.code) ? 1 : 0, need: 1 };
   }
-  if (node.type === "text") return { have: 0, need: 0 };
+  if (node.type === "text") return { have: 0, done: 0, need: 0 };
   const parts = node.items.map((item, i) => progress(item, key + "." + i));
   const slots = (plan.electives || []).filter(e => e.key === key).length;
   if (node.type === "all") {
-    return parts.reduce((sum, p) => ({ have: sum.have + p.have, need: sum.need + p.need }), { have: 0, need: 0 });
+    return parts.reduce((sum, p) => ({ have: sum.have + p.have, done: sum.done + p.done, need: sum.need + p.need }),
+                        { have: 0, done: 0, need: 0 });
   }
   if (node.type === "units") {
     let units = slots * ELECTIVE_UNITS;
+    let done = 0;
     for (const code of coursesInRequirement(node)) {
       if (inPlanOrDone(code)) units += unitsOf(code);
+      if (isDone(code)) done += unitsOf(code);
     }
-    return { have: Math.min(node.units, units), need: node.units };
+    return { have: Math.min(node.units, units), done: Math.min(node.units, done), need: node.units };
   }
   // choose N
   const complete = parts.filter(p => p.need > 0 && p.have >= p.need).length + slots;
-  return { have: Math.min(node.count, complete), need: node.count };
+  const completeDone = parts.filter(p => p.need > 0 && p.done >= p.need).length;
+  return { have: Math.min(node.count, complete), done: Math.min(node.count, completeDone), need: node.count };
 }
 
 // Every course named anywhere inside a requirement.
@@ -384,9 +390,11 @@ function coursesInRequirement(node) {
   return (node.items || []).flatMap(coursesInRequirement);
 }
 
+// "done", "planned", "0/2 done", "1/3 done or planned".
 function progressText(p) {
   if (!p.need) return "";
-  return p.have >= p.need ? "done or planned" : p.have + " of " + p.need;
+  if (p.have >= p.need) return p.done >= p.need ? "done" : "planned";
+  return p.have + "/" + p.need + (p.have > p.done ? " done or planned" : " done");
 }
 
 // A requirement tree as nested lists, each course clickable to add it.
@@ -400,9 +408,9 @@ function requirementHtml(node, key, depth, sectionName, insideChoice) {
   }
   const p = progress(node, key);
   let rule = "";
-  if (node.type === "choose") rule = node.count === 1 && node.items.length <= 4 ? "One of" : "Choose " + node.count;
-  if (node.type === "units") rule = node.units + " units from";
-  if (node.type === "all") rule = depth > 0 ? "All of" : "";
+  if (node.type === "choose") rule = node.count === 1 && node.items.length <= 4 ? "One of these" : "Choose " + node.count + " of these";
+  if (node.type === "units") rule = node.units + " units from these";
+  if (node.type === "all") rule = depth > 0 ? "All of these" : "";
   // The catalog often repeats the section's name as a rule's label; skip that.
   const label = node.label && node.label.toLowerCase() !== (sectionName || "").split(" — ").pop().toLowerCase() ? node.label : "";
   const head = [label, rule].filter(Boolean).join(": ");
@@ -431,8 +439,8 @@ function requirementHtml(node, key, depth, sectionName, insideChoice) {
   const count = coursesInRequirement(node).length;
   return '<li class="req-group' + (collapsed ? " collapsed" : "") + '">' +
          '<button type="button" class="req-toggle" data-req-toggle="' + escapeHtml(key) + '" aria-expanded="' + !collapsed + '">' +
-         '<span class="req-head">' + escapeHtml(head || "Courses") + "</span> " +
-         '<span class="req-progress">' + (showProgress ? progressText(p) : "") + "</span>" +
+         '<span class="req-head">' + escapeHtml(head || "Courses") + "</span>" +
+         (showProgress && progressText(p) ? ' <span class="req-progress">· ' + progressText(p) + "</span>" : "") +
          (collapsed ? ' <span class="req-hidden">· ' + count + (count === 1 ? " course" : " courses") + "</span>" : "") +
          "</button>" + slotButton +
          '<div class="req-children"><button type="button" class="req-thread" data-req-toggle="' + escapeHtml(key) +

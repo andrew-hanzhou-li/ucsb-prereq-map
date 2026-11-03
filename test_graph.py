@@ -177,9 +177,31 @@ def test_real_graphs():
             check("%s: %s and its lab %s share a column" % (stem, a, b), column.get(a) == column.get(b))
 
 
+def test_condition_text():
+    """Every condition has the catalog's words, so the site never shows a
+    blank item (IMPROVEMENTS.md item 14). Hand corrections in overrides.json
+    give them as @other{...}."""
+    with open("prereqs.json", encoding="utf-8") as f:
+        courses = json.load(f)["courses"]
+    empty = []
+
+    def walk(node, code):
+        if not node:
+            return
+        if node["type"] == "condition" and not (node.get("text") or "").strip():
+            empty.append(code)
+        for item in node.get("items", []):
+            walk(item, code)
+
+    for course in courses:
+        walk(course.get("requires"), course["code"])
+    check("no condition with empty text in prereqs.json", not empty, sorted(set(empty))[:10])
+
+
 if __name__ == "__main__":
     sys.stdout.reconfigure(errors="replace")
     test_rules()
     test_real_graphs()
+    test_condition_text()
     print("%d checks passed, %d failed" % (passed, failed))
     sys.exit(1 if failed else 0)
