@@ -591,3 +591,15 @@ kbd {
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; }
 }
+
+/* ------------------------------------------------------------ Credit box */
+.credit-invite { margin-top: 4px !important; }
+.credit-note { color: var(--green); }
+.ap-list { display: grid; gap: 2px 0; }
+.ap-row { display: grid; grid-template-columns: 300px 1fr; gap: 12px; align-items: baseline; padding: 3px 0; border-bottom: 1px dotted var(--dots); }
+.ap-row label { display: flex; justify-content: space-between; gap: 10px; }
+.ap-row select { font: inherit; }
+.ap-result { font-size: 0.88rem; color: var(--green); }
+.transfer-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 2px 18px; }
+.transfer-add-row input { font: inherit; border: 0; border-bottom: 1px solid var(--dots); background: transparent; width: 160px; }
+@media (max-width: 800px) { .ap-row { grid-template-columns: 1fr; gap: 0; } }

@@ -112,6 +112,14 @@ async function start() {
     return;
   }
 
+  // The AP chart, for the Credit box. Without it the site still works;
+  // only AP credit can't be entered.
+  try {
+    creditTable = window.EMBEDDED ? window.EMBEDDED.credit : await (await fetch("data/credit.json")).json();
+  } catch (error) {
+    creditTable = null;
+  }
+
   for (const major of majors) {
     const option = document.createElement("option");
     option.value = major.name;
@@ -477,9 +485,15 @@ function clearTaken() {
   if (selected) showDetails(selected); else showMajorSummary();
 }
 
+// A course is done if it's ticked as taken, or the student has credit for
+// it from AP or another college (student.js).
+function isDone(code) {
+  return taken.has(code) || hasCredit(code);
+}
+
 /*
   Have the prerequisites in a tree (from Part 2) been met?
-    course     met if you've marked it taken
+    course     met if it's done (taken, or credit for it)
     all of     met if every part is met
     one of     met if any part is met
     condition  ("consent of instructor", "upper-division standing") can't be
@@ -488,7 +502,7 @@ function clearTaken() {
 */
 function isMet(node) {
   if (!node) return true;
-  if (node.type === "course") return taken.has(node.code);
+  if (node.type === "course") return isDone(node.code);
   if (node.type === "condition") return true;
   if (node.type === "and") return node.items.every(isMet);
   // "One of": a condition option like "or an AP exam score" can't be checked,
@@ -508,11 +522,11 @@ function hasCourses(node) {
 // met. (Courses with no course prerequisites would always qualify, which
 // isn't useful to highlight.)
 function canTakeNext(course) {
-  return !taken.has(course.id) && hasCourses(course.requires) && isMet(course.requires);
+  return !isDone(course.id) && hasCourses(course.requires) && isMet(course.requires);
 }
 
 function progressOf(code) {
-  if (taken.has(code)) return "taken";
+  if (isDone(code)) return "taken";
   return canTakeNext(nodesById[code]) ? "ready" : "";
 }
 
@@ -834,7 +848,12 @@ function mapHeader() {
     '<span class="narrow-only">Tap a course to see what it needs and what it unlocks.</span></p>' +
     '<p>In <span class="red">red</span>, what it needs; in <span class="blue">blue</span>, what it unlocks. ' +
     "† from another department. <span class=\"ok\">✓</span> taken; <span class=\"ok\">next</span>, ready to take." +
-    (el.showInactive.checked ? " Grayed: not offered now." : "") + "</p></div>";
+    (el.showInactive.checked ? " Grayed: not offered now." : "") + "</p>" +
+    '<p class="credit-invite">' + (hasAnyCredit()
+      ? "Your AP and college credit counts as taken. "
+      : "Have AP or college credit? ") +
+    '<button type="button" class="text-button" data-open-credit>' + (hasAnyCredit() ? "Change it" : "Add it") +
+    "</button>, and the map treats those courses as done.</p></div>";
 }
 
 // "Step one", "Step two"… (numbers past twelve).
@@ -855,7 +874,7 @@ function boxHtml(code) {
 
 function boxInnerHtml(code) {
   const course = nodesById[code];
-  let html = '<span class="line strong">' + (taken.has(code) ? "✓ " : "") + escapeHtml(code) + "</span>" +
+  let html = '<span class="line strong">' + (isDone(code) ? "✓ " : "") + escapeHtml(code) + "</span>" +
              '<span class="line title">' + escapeHtml(course.title || "") + "</span>";
   let tag = "";
   if (course.status !== "active") tag = "not offered now";
@@ -1279,7 +1298,7 @@ function thisProgram() {
 // A course code as a button that selects it.
 function courseLink(code) {
   const course = nodesById[code];
-  const text = (taken.has(code) ? "✓ " : "") + escapeHtml(code);
+  const text = (isDone(code) ? "✓ " : "") + escapeHtml(code);
   if (course) {
     let note = "";
     if (course.status !== "active") note = ' <span class="note">(not offered now)</span>';
@@ -1345,6 +1364,7 @@ function showCourse(course) {
   const unlockList = Array.from(shown).filter(other => (other !== course.id) &&
     JSON.stringify(nodesById[other].requires || null).includes('"code":"' + course.id + '"')).sort(bySortKey);
   const isTaken = taken.has(course.id);
+  const fromCredit = creditFor(course.id);
 
   let html = panelNav();
   html += "<h2>" + escapeHtml(course.id) + "</h2>";
@@ -1354,9 +1374,13 @@ function showCourse(course) {
   if (stepOf[course.id]) facts.push(stepName(stepOf[course.id]).toLowerCase() + " on this map");
   if (facts.length) html += '<p class="facts">' + facts.join(" · ") + "</p>";
 
-  html += '<label class="taken-row' + (isTaken ? " is-taken" : "") + '"><input type="checkbox" data-taken="' +
-          escapeHtml(course.id) + '"' + (isTaken ? " checked" : "") + "> I've taken this course</label>";
-  if (!isTaken && canTakeNext(course)) {
+  if (fromCredit) {
+    html += '<p class="credit-note">✓ You have credit for this: ' + escapeHtml(fromCredit) + ".</p>";
+  } else {
+    html += '<label class="taken-row' + (isTaken ? " is-taken" : "") + '"><input type="checkbox" data-taken="' +
+            escapeHtml(course.id) + '"' + (isTaken ? " checked" : "") + "> I've taken this course</label>";
+  }
+  if (!isTaken && !fromCredit && canTakeNext(course)) {
     html += '<p class="ready-note">You\'ve taken the courses this needs' +
             (hasConditions(course.requires) ? ", but check the other conditions below." : ".") + "</p>";
   }
@@ -1437,8 +1461,8 @@ function showMajorSummary() {
   html += "<p>Point at or click a course to see what it needs and what it unlocks. Tick off the courses you've taken, and the ones you can take next are marked “next”.</p>";
 
   const inMajor = graph.nodes.filter(n => n.in_major);
-  const done = inMajor.filter(n => taken.has(n.id)).length;
-  if (done) html += "<p>You've marked " + done + " of the " + inMajor.length + " courses in " + thisProgram() + " as taken.</p>";
+  const done = inMajor.filter(n => isDone(n.id)).length;
+  if (done) html += "<p>You've taken, or have credit for, " + done + " of the " + inMajor.length + " courses in " + thisProgram() + ".</p>";
 
   html += "<h3>Requirements</h3><ul>";
   for (const section of graph.major.sections) html += "<li>" + escapeHtml(readable(section.name)) + "</li>";
