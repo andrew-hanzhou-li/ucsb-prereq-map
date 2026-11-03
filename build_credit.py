@@ -5,7 +5,9 @@ build_credit.py: check the AP credit table and copy it to the site.
 
 Reads   ap_credit.json          UCSB's AP chart, typed in from the catalog
         raw_courses.json        the current course list (Part 1)
-Writes  site/data/credit.json   the table, ready for the site's Credit box
+Writes  site/data/credit.json   the table, ready for the site's Credit box,
+                                plus the catalog's subject codes (for the
+                                transcript reader)
 
 The AP chart is a page of text in the catalog, not data, so ap_credit.json
 was copied from it by hand. That's exactly the kind of file that goes
@@ -46,7 +48,12 @@ def main():
             row["equivalents"] = [c for code in row["equivalents"] for c in expand(code, current)]
             missing.update(c for c in row["equivalents"] if c not in current)
 
-    out = {"source": table["source"], "catalog_year": table["catalog_year"], "ap": table["exams"]}
+    # Every subject code in the catalog ("ECE", "CMPSC", "ENV S"), so the
+    # transcript reader (site/transcript.js) can tell a course line from
+    # any other line of text.
+    with open("raw_courses.json", encoding="utf-8") as f:
+        subjects = sorted({c["subject"] for c in json.load(f)["courses"]})
+    out = {"source": table["source"], "catalog_year": table["catalog_year"], "ap": table["exams"], "subjects": subjects}
     os.makedirs(os.path.join("site", "data"), exist_ok=True)
     with open(os.path.join("site", "data", "credit.json"), "w", encoding="utf-8") as f:
         json.dump(out, f, indent=1, ensure_ascii=False)

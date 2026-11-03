@@ -44,6 +44,17 @@ import sys
 
 from playwright.sync_api import sync_playwright
 
+SAMPLE_TRANSCRIPT = """UNOFFICIAL TRANSCRIPT - TEST STUDENT
+Fall 2025
+ECON 1 PRINCIPLES OF ECON-MICRO 5.0 A 20.0
+MATH 3A CALC WITH APPLIC 4.0 B+ 13.2
+WRIT 2 ACADEMIC WRITING 4.0 P 0.0
+Term GPA 3.69
+Winter 2026
+ECON 2 PRINCIPLES OF ECON-MACRO 5.0 A- 18.5
+MATH 3B CALC WITH APPLIC 4.0 In Progress
+"""
+
 SITE = "http://localhost:%s/" % (sys.argv[1] if len(sys.argv) > 1 else "8000")
 SINGLE_FILE = pathlib.Path("site", "ucsb-prereq-map.html").resolve()
 passed = 0
@@ -522,8 +533,52 @@ def main():
         page.click("#view-map")
         page.wait_for_function("currentView === 'map'", timeout=5000)
         check("plan: Map goes back to the map", page.is_visible(".map-area") and page.locator(".box").count() > 0)
-        page.evaluate("localStorage.clear()")
         check("plan: no JavaScript errors", not page.errors, page.errors)
+
+        # Phase 5: reading a transcript (pasted text, then a PDF)
+        page.evaluate("localStorage.clear()")
+        page.goto(SITE + "#plan/economics-ba")
+        page.reload()
+        page.wait_for_function("graph && currentView === 'plan'", timeout=15000)
+        page.click("#plan-import")
+        page.fill("#transcript-text", SAMPLE_TRANSCRIPT)
+        page.click("#transcript-read")
+        page.wait_for_timeout(200)
+        rows = page.evaluate("transcriptRows.map(r => [r.code, r.term && r.term.quarter + ' ' + r.term.year, r.units, r.grade])")
+        check("transcript: reads every course line, and nothing else", [r[0] for r in rows] ==
+              ["ECON 1", "MATH 3A", "WRIT 2", "ECON 2", "MATH 3B"], rows)
+        check("transcript: reads terms, units and grades",
+              rows[0] == ["ECON 1", "Fall 2025", 5, "A"] and rows[1][3] == "B+" and rows[2][3] == "P", rows)
+        check("transcript: a course with no grade yet is In Progress", rows[4][3] == "IP", rows)
+        check("transcript: shows a table to check before applying", page.locator(".review-table tbody tr").count() == 5)
+        page.select_option('select[data-row="1"][data-field="grade"]', "A-")
+        page.click("#transcript-apply")
+        page.wait_for_timeout(200)
+        check("transcript: courses go in their quarters (plan now starts Fall 2025)",
+              page.evaluate("[plan.startYear, plan.placed['ECON 1'], plan.placed['ECON 2'], plan.placed['MATH 3B']]") ==
+              [2025, "1-F", "1-W", "1-W"])
+        check("transcript: corrections in the table are used", page.evaluate("plan.grades['MATH 3A']") == "A-")
+        check("transcript: grades feed the GPA", abs(page.evaluate("gpaOf().gpa") - (5 * 4.0 + 4 * 3.7 + 5 * 3.7) / 14) < 1e-9)
+        check("transcript: the text itself isn't kept anywhere",
+              "PRINCIPLES OF ECON" not in page.evaluate("JSON.stringify(localStorage)"))
+
+        pdf_maker = browser.new_page()
+        pdf_maker.set_content("<pre style='font:12px monospace'>" + SAMPLE_TRANSCRIPT + "</pre>")
+        pdf_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "test_transcript.pdf")
+        pdf_maker.pdf(path=pdf_path)
+        pdf_maker.close()
+        page.click("#plan-import")
+        page.fill("#transcript-text", "")
+        page.set_input_files("#transcript-file", pdf_path)
+        page.click("#transcript-read")
+        page.wait_for_function("transcriptRows.length > 0 || document.getElementById('transcript-status').textContent.includes('read')", timeout=20000)
+        os.remove(pdf_path)
+        rows = page.evaluate("transcriptRows.map(r => r.code)")
+        check("transcript: reads a PDF in the browser (pdf.js)", rows == ["ECON 1", "MATH 3A", "WRIT 2", "ECON 2", "MATH 3B"],
+              rows or page.inner_text("#transcript-status"))
+        page.keyboard.press("Escape")
+        page.evaluate("localStorage.clear()")
+        check("transcript: no JavaScript errors", not page.errors, page.errors)
         open_major(page, SITE, "economics-ba", "BAECON")
 
         # 6. Links and notices
