@@ -1659,4 +1659,11 @@ el.about.addEventListener("click", function (event) {
   if (event.target === el.about) el.about.close();     // a click outside the box closes it
 });
 
-start();
+// Start once every script on the page has loaded (planner.js, grades.js…),
+// not as soon as this one has. In the one-file copy, a link straight to a
+// program used to start before grades.js existed.
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", start);
+} else {
+  start();
+}

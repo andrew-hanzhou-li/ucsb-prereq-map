@@ -10,7 +10,15 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="The Prerequisite Map · UCSB">
   <meta property="og:description" content="Pick a UCSB major or minor and see every course in it, in prerequisite order, with the full prerequisites of each one.">
-  <meta name="twitter:card" content="summary">
+  <!-- The picture shown under a shared link (made by build_preview.py).
+       Absolute addresses, because Reddit and Discord fetch it from the site. -->
+  <meta property="og:url" content="https://andrew-hanzhou-li.github.io/ucsb-prereq-map/">
+  <meta property="og:image" content="https://andrew-hanzhou-li.github.io/ucsb-prereq-map/preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="The Computer Engineering map with ECE 152A selected: what it needs in red, what it unlocks in blue.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://andrew-hanzhou-li.github.io/ucsb-prereq-map/preview.png">
   <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+CiAgPCEtLSBBIHJ1bGVkIGNhdGFsb2cgcGFnZSB3aXRoIGEgcmVkIHBlbmNpbCBsaW5lLCBpbiB0aGUgc2l0ZSdzIGNvbG9ycy4gLS0+CiAgPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiBmaWxsPSIjZmNmY2ZiIi8+CiAgPHJlY3QgeD0iMC41IiB5PSIwLjUiIHdpZHRoPSIzMSIgaGVpZ2h0PSIzMSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMWQyMTI1Ii8+CiAgPHBhdGggZD0iTTYgOUgyNk02IDE1SDIwTTYgMjFIMjQiIHN0cm9rZT0iIzFkMjEyNSIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgPHBhdGggZD0iTTggMTFDMTAgMTggMTggMTQgMjIgMjMiIHN0cm9rZT0iI2IzMjYxZSIgc3Ryb2tlLXdpZHRoPSIxLjYiIGZpbGw9Im5vbmUiLz4KPC9zdmc+Cg==" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -2761,7 +2769,14 @@ el.about.addEventListener("click", function (event) {
   if (event.target === el.about) el.about.close();     // a click outside the box closes it
 });
 
-start();
+// Start once every script on the page has loaded (planner.js, grades.js…),
+// not as soon as this one has. In the one-file copy, a link straight to a
+// program used to start before grades.js existed.
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", start);
+} else {
+  start();
+}
 </script>
   <script>
 /*

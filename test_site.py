@@ -830,6 +830,10 @@ def main():
         page.keyboard.press("Escape")
         page.wait_for_timeout(100)
         check("Esc closes About", not page.is_visible("#about"))
+        check("item 8: the page has a large link-preview image",
+              page.get_attribute('meta[property="og:image"]', "content").endswith("/preview.png") and
+              page.get_attribute('meta[name="twitter:card"]', "content") == "summary_large_image")
+        check("item 8: the preview image is there", page.request.get(SITE + "preview.png").ok)
         response = page.goto(SITE + "404.html")
         check("404 page loads", response.ok and page.inner_text("h2") == "Page not found")
         check("no JavaScript errors in sections 3-7", not page.errors, page.errors)
@@ -873,6 +877,11 @@ def main():
             page.click("#credit-button")
             check("single file: the Credit box has the AP chart", page.locator("#ap-list select").count() > 30)
             page.keyboard.press("Escape")
+            fresh = new_page(browser, viewport={"width": 1400, "height": 900})
+            fresh.goto(url + "#computer-engineering-bs/ECE+152A")
+            fresh.wait_for_function("typeof selected !== 'undefined' && selected === 'ECE 152A'", timeout=15000)
+            check("single file: opening it straight to a course works", not fresh.errors, fresh.errors)
+            fresh.close()
             page.goto(url + "#plan/economics-ba")
             page.wait_for_function("currentView === 'plan'", timeout=15000)
             page.click('[data-plan-add="ECON 1"]')
