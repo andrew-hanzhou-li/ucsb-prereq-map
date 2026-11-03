@@ -603,3 +603,98 @@ kbd {
 .transfer-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 2px 18px; }
 .transfer-add-row input { font: inherit; border: 0; border-bottom: 1px solid var(--dots); background: transparent; width: 160px; }
 @media (max-width: 800px) { .ap-row { grid-template-columns: 1fr; gap: 0; } }
+
+/* ------------------------------------------------------------ Map / Plan */
+.views { display: inline-flex; gap: 2px; margin-right: 6px; }
+.views[hidden] { display: none; }
+.views a {
+  padding: 1px 10px 2px;
+  text-decoration: none;
+  border: 1px solid var(--dots);
+  color: var(--muted);
+}
+.views a.current { color: var(--paper); background: var(--ink); border-color: var(--ink); }
+.toggles[hidden], .picker[hidden] { display: none !important; }
+
+/* ------------------------------------------------------------ the planner */
+.plan-area { flex: 1; min-width: 0; display: flex; flex-direction: column; overflow: hidden; }
+.plan-area[hidden] { display: none; }
+.plan-tools {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 22px;
+  padding: 8px 28px;
+  border-bottom: 1px solid var(--dots);
+  font-size: 0.92rem;
+}
+.plan-tools input[type="number"] { font: inherit; width: 66px; border: 0; border-bottom: 1px solid var(--dots); background: transparent; }
+.plan-tools input[type="checkbox"] { accent-color: var(--ink); }
+.plan-buttons { display: inline-flex; flex-wrap: wrap; gap: 4px 16px; margin-left: auto; }
+.plan-message { flex-basis: 100%; margin: 0; color: var(--green); min-height: 1.3em; }
+
+.plan-body { flex: 1; min-height: 0; display: grid; grid-template-columns: minmax(260px, 340px) 1fr; }
+.plan-reqs { overflow-y: auto; padding: 10px 20px 40px 28px; border-right: 1px solid var(--dots); font-size: 0.9rem; }
+.plan-grid { overflow: auto; padding: 14px 24px 40px; }
+
+.req-section h3 { margin: 16px 0 4px; padding-bottom: 3px; border-bottom: 1px solid var(--ink); font-family: var(--serif); font-size: 1rem; font-weight: 600; }
+.req-list, .req-list ul { list-style: none; margin: 0; padding: 0; }
+.req-list ul { padding-left: 12px; border-left: 1px solid var(--dots); margin: 2px 0 6px 2px; }
+.req-list li { padding: 2px 0; }
+.req-head { color: var(--muted); }
+.req-progress { font-family: var(--sans); font-size: 0.85rem; font-weight: 400; color: var(--green); }
+.req-course { cursor: grab; }
+.req-code { font: inherit; font-weight: 600; background: none; border: 0; padding: 0; cursor: pointer; color: inherit; }
+.req-title { color: var(--muted); }
+.req-done { color: var(--green); font-size: 0.85rem; }
+.req-planned { color: var(--blue); font-size: 0.85rem; }
+.req-text { color: var(--muted); font-style: italic; }
+.req-list summary { cursor: pointer; color: var(--muted); }
+
+.plan-table { border-collapse: collapse; width: 100%; min-width: 640px; table-layout: fixed; }
+.plan-table th { font-family: var(--serif); font-weight: 600; text-align: left; padding: 4px 8px; border-bottom: 1px solid var(--ink); }
+.plan-table th.plan-year { width: 110px; vertical-align: top; padding-top: 10px; font-size: 0.92rem; border-bottom: 1px solid var(--dots); }
+.plan-cell { vertical-align: top; padding: 6px 8px 8px; border-bottom: 1px solid var(--dots); border-left: 1px solid var(--dots); height: 92px; }
+.plan-cell.drop { background: #eef2f8; }
+.plan-cell.over .cell-units { color: var(--red); font-weight: 600; }
+.cell-name { display: none; }
+.cell-units { display: block; margin-top: 4px; font-size: 0.8rem; color: var(--muted); }
+.chip {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
+  margin: 0 0 3px;
+  padding: 3px 6px;
+  font: inherit;
+  font-size: 0.88rem;
+  text-align: left;
+  color: var(--ink);
+  background: var(--paper);
+  border: 1px solid var(--dots);
+  cursor: grab;
+}
+.chip:hover { border-color: var(--ink); }
+.chip-code { font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.chip-units { color: var(--muted); }
+.chip.warn { border-color: var(--red); }
+.chip.warn .chip-code { color: var(--red); }
+.chip.selected { outline: 2px solid var(--blue); outline-offset: -1px; }
+.chip.elective-slot { border-style: dashed; }
+.chip.elective-slot .chip-code { font-weight: 400; font-style: italic; }
+.plan-years { font-size: 0.9rem; }
+.plan-actions { margin-top: 10px !important; }
+.pick-list { list-style: none; padding-left: 0 !important; max-height: 50vh; overflow-y: auto; }
+
+@media (max-width: 800px) {
+  .plan-tools { padding: 8px 16px; }
+  .plan-buttons { margin-left: 0; }
+  .plan-body { display: block; overflow-y: auto; }
+  .plan-reqs { border-right: 0; padding: 8px 16px; }
+  .plan-grid { padding: 8px 16px 70vh; overflow: visible; }
+  /* One year at a time, quarters stacked. */
+  .plan-table, .plan-table tbody, .plan-table tr, .plan-table td, .plan-table th { display: block; width: 100%; min-width: 0; }
+  .plan-table thead { display: none; }
+  .plan-cell { border-left: 0; height: auto; }
+  .cell-name { display: block; font-size: 0.85rem; color: var(--muted); }
+}

@@ -52,6 +52,7 @@ const ROLE_NAMES = {
 
 let majors = [];            // majors and minors (data/majors.json)
 let currentPrograms = [];   // the entries from majors.json on the map (one or more)
+let currentView = "map";    // "map" or "plan" (planner.js)
 let graph = null;           // the loaded major's graph
 let loading = 0;            // counts loads, so a slow one can't replace a newer one
 let nodesById = {};         // course code -> course from the graph
@@ -70,6 +71,11 @@ let hoverTimer = null;
 const el = {
   majorInput: document.getElementById("major-input"),
   chosen: document.getElementById("chosen"),
+  views: document.getElementById("views"),
+  viewMap: document.getElementById("view-map"),
+  viewPlan: document.getElementById("view-plan"),
+  mapArea: document.querySelector(".map-area"),
+  planArea: document.getElementById("plan-area"),
   majorList: document.getElementById("major-list"),
   courseInput: document.getElementById("course-input"),
   courseList: document.getElementById("course-list"),
@@ -134,7 +140,7 @@ async function start() {
     el.majorInput.value = "";
     if (!major) return;
     const programs = currentPrograms.filter(p => p.id !== major.id).concat([major]);
-    location.hash = hashFor(programs, null);
+    location.hash = currentView === "plan" ? planHashFor(programs) : hashFor(programs, null);
   });
 
   // The × after a program's name takes it off the map.
@@ -142,7 +148,8 @@ async function start() {
     const button = event.target.closest("button[data-remove]");
     if (!button) return;
     const programs = currentPrograms.filter(p => p.id !== button.dataset.remove);
-    location.hash = programs.length ? hashFor(programs, null) : "";
+    if (!programs.length) location.hash = "";
+    else location.hash = currentView === "plan" ? planHashFor(programs) : hashFor(programs, null);
   });
 
   el.courseInput.addEventListener("change", function () {
@@ -226,21 +233,31 @@ function readHash() {
   } catch (error) {
     // A mangled link: treat it as no address.
   }
+  // The planner's address: "plan/" in front; a shared plan adds "/" and the
+  // plan itself, packed into letters (planner.js, packPlan).
+  if (raw.startsWith("plan/")) {
+    const parts = raw.slice(5).split("/");
+    return { view: "plan", stems: parts[0] ? parts[0].split("+") : [], course: null, shared: parts[1] || null };
+  }
   const slash = raw.indexOf("/");
   const programs = slash < 0 ? raw : raw.slice(0, slash);
   const course = slash < 0 ? null : raw.slice(slash + 1).replace(/\+/g, " ").toUpperCase() || null;
-  return { stems: programs ? programs.split("+") : [], course: course };
+  return { view: "map", stems: programs ? programs.split("+") : [], course: course, shared: null };
 }
 
 function hashFor(programs, code) {
   return "#" + programs.map(p => stem(p.file)).join("+") + (code ? "/" + code.replace(/ /g, "+") : "");
 }
 
+function planHashFor(programs) {
+  return "#plan/" + programs.map(p => stem(p.file)).join("+");
+}
+
 // Keep the address bar in step with the selection, so copying it shares this
 // exact view. replaceState changes the address without adding a Back step
 // for every click, and without firing "hashchange".
 function rememberInAddress() {
-  if (!currentPrograms.length) return;
+  if (!currentPrograms.length || currentView === "plan") return;
   const code = selected && nodesById[selected] ? selected : null;
   const target = hashFor(currentPrograms, code);
   if (location.hash !== target) history.replaceState(null, "", target);
@@ -263,10 +280,34 @@ async function loadFromHash() {
   if (programs.map(p => p.id).join("+") !== currentPrograms.map(p => p.id).join("+")) {
     if (!(await loadPrograms(programs))) return;
   }
+  showView(wanted.view, wanted.shared);
+  if (wanted.view === "plan") return;
   if (wanted.course && nodesById[wanted.course]) {
     if (wanted.course !== selected) selectCourse(wanted.course, true);
   } else if (selected) {
     clearSelection();
+  }
+}
+
+/*
+  Map or Plan. Both use the same programs, credit and marks; only what's on
+  screen changes. The two links under the masthead switch between them.
+*/
+function showView(view, shared) {
+  currentView = view;
+  el.viewMap.href = hashFor(currentPrograms, null);
+  el.viewPlan.href = planHashFor(currentPrograms);
+  el.viewMap.classList.toggle("current", view === "map");
+  el.viewPlan.classList.toggle("current", view === "plan");
+  el.views.hidden = false;
+  el.mapArea.hidden = view !== "map";
+  el.planArea.hidden = view !== "plan";
+  el.toggles.hidden = view !== "map";
+  el.courseInput.parentElement.hidden = view !== "map";
+  if (view === "plan") {
+    openPlan(shared);
+  } else if (!selected) {
+    showMajorSummary();
   }
 }
 
@@ -299,6 +340,12 @@ function showHome() {
   el.notice.hidden = true;
   el.welcome.hidden = false;
   el.allLink.hidden = true;
+  currentView = "map";
+  el.views.hidden = true;
+  el.mapArea.hidden = false;
+  el.planArea.hidden = true;
+  el.toggles.hidden = false;
+  el.courseInput.parentElement.hidden = false;
   el.toggles.disabled = true;
   el.courseInput.disabled = true;
   el.footerCatalog.textContent = "Built from the UCSB General Catalog.";
@@ -554,10 +601,6 @@ function updateTakenStatus() {
 // 3. Which courses to show
 // ===========================================================================
 
-function isActiveEnough(course) {
-  return course.status === "active" || el.showInactive.checked;
-}
-
 /*
   The courses on the map:
     - every course in the major (electives only if "Electives" is ticked;
@@ -568,15 +611,22 @@ function isActiveEnough(course) {
       is in Computer Engineering, so PSTAT 120A isn't added). If none of the
       options is in the major, the first one the catalog lists is added.
       "Every outside course" adds all the rest.
+  The settings come from the map's Show checkboxes, or from the planner,
+  which always wants { electives: false, everyOutside: false, inactive: false }.
 */
-function chooseShown() {
+function mapSettings() {
+  return { electives: el.showElectives.checked, everyOutside: el.showOutside.checked, inactive: el.showInactive.checked };
+}
+
+function chooseShown(settings) {
   const result = new Set();
   for (const course of graph.nodes) {
-    if (!course.in_major || !isActiveEnough(course)) continue;
-    if (course.role === "elective" && !el.showElectives.checked) continue;
+    if (!course.in_major) continue;
+    if (course.status !== "active" && !settings.inactive) continue;
+    if (course.role === "elective" && !settings.electives) continue;
     result.add(course.id);
   }
-  if (el.showOutside.checked) {
+  if (settings.everyOutside) {
     for (const course of graph.nodes) {
       if (!course.in_major && course.status === "active") result.add(course.id);
     }
@@ -600,7 +650,10 @@ function chooseShown() {
       const options = node.items.filter(hasCourses);
       if (!options.length) return;
       const covered = options.some(option => coursesIn(option).some(code => result.has(code)));
-      if (!covered) walk(options[0]);
+      // Otherwise the first option whose courses are all still offered
+      // (CMPSC 48 is retired, so CMPSC 189A's "48 or 56 or …" picks 56).
+      const offered = options.find(option => coursesIn(option).every(code => nodesById[code] && nodesById[code].status === "active"));
+      if (!covered) walk(offered || options[0]);
     }
   }
   for (const course of graph.nodes) {
@@ -774,7 +827,7 @@ function electiveGroups() {
 }
 
 function draw() {
-  shown = chooseShown();
+  shown = chooseShown(mapSettings());
   partners = findPartners();
   prereqCache = {};
 

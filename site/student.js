@@ -91,3 +91,54 @@ function hasCredit(code) {
 function hasAnyCredit() {
   return Object.keys(credit.ap).length > 0 || credit.transfer.length > 0;
 }
+
+/*
+  The student's plan: which quarter each course goes in, and the settings
+  for the grid. One plan per browser, whatever programs are on screen, so
+  switching or adding a program keeps everything already placed.
+
+    plan.placed   { "ECON 1": "1-F" }   year number, then F/W/S/U
+                                         (Fall, Winter, Spring, Summer)
+    plan.units    { "ANTH 99": 2 }       units chosen for variable-unit courses
+    plan.grades   { "ECON 1": "A-" }     grades (Phase 4)
+*/
+const PLAN_KEY = "ucsb-prereq-map.plan";
+
+function emptyPlan() {
+  return {
+    firstYear: 1,       // 3 for a transfer student, who starts in year 3
+    years: 4,
+    startYear: defaultStartYear(),
+    summer: false,
+    cap: 16,            // most units to place in one quarter
+    placed: {},
+    units: {},
+    grades: {},
+  };
+}
+
+// Fall of this year if it's before August, otherwise next Fall.
+function defaultStartYear() {
+  const now = new Date();
+  return now.getMonth() < 7 ? now.getFullYear() : now.getFullYear() + 1;
+}
+
+let plan = loadPlan();
+
+function loadPlan() {
+  try {
+    const saved = JSON.parse(localStorage.getItem(PLAN_KEY) || "null");
+    if (saved && typeof saved === "object") return Object.assign(emptyPlan(), saved);
+  } catch (error) {
+    // Storage unavailable or damaged: start empty.
+  }
+  return emptyPlan();
+}
+
+function savePlan() {
+  try {
+    localStorage.setItem(PLAN_KEY, JSON.stringify(plan));
+  } catch (error) {
+    // Storage unavailable: the plan still works until the page is closed.
+  }
+}

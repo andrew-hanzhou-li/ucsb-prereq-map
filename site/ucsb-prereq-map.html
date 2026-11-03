@@ -621,6 +621,101 @@ kbd {
 .transfer-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 2px 18px; }
 .transfer-add-row input { font: inherit; border: 0; border-bottom: 1px solid var(--dots); background: transparent; width: 160px; }
 @media (max-width: 800px) { .ap-row { grid-template-columns: 1fr; gap: 0; } }
+
+/* ------------------------------------------------------------ Map / Plan */
+.views { display: inline-flex; gap: 2px; margin-right: 6px; }
+.views[hidden] { display: none; }
+.views a {
+  padding: 1px 10px 2px;
+  text-decoration: none;
+  border: 1px solid var(--dots);
+  color: var(--muted);
+}
+.views a.current { color: var(--paper); background: var(--ink); border-color: var(--ink); }
+.toggles[hidden], .picker[hidden] { display: none !important; }
+
+/* ------------------------------------------------------------ the planner */
+.plan-area { flex: 1; min-width: 0; display: flex; flex-direction: column; overflow: hidden; }
+.plan-area[hidden] { display: none; }
+.plan-tools {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 22px;
+  padding: 8px 28px;
+  border-bottom: 1px solid var(--dots);
+  font-size: 0.92rem;
+}
+.plan-tools input[type="number"] { font: inherit; width: 66px; border: 0; border-bottom: 1px solid var(--dots); background: transparent; }
+.plan-tools input[type="checkbox"] { accent-color: var(--ink); }
+.plan-buttons { display: inline-flex; flex-wrap: wrap; gap: 4px 16px; margin-left: auto; }
+.plan-message { flex-basis: 100%; margin: 0; color: var(--green); min-height: 1.3em; }
+
+.plan-body { flex: 1; min-height: 0; display: grid; grid-template-columns: minmax(260px, 340px) 1fr; }
+.plan-reqs { overflow-y: auto; padding: 10px 20px 40px 28px; border-right: 1px solid var(--dots); font-size: 0.9rem; }
+.plan-grid { overflow: auto; padding: 14px 24px 40px; }
+
+.req-section h3 { margin: 16px 0 4px; padding-bottom: 3px; border-bottom: 1px solid var(--ink); font-family: var(--serif); font-size: 1rem; font-weight: 600; }
+.req-list, .req-list ul { list-style: none; margin: 0; padding: 0; }
+.req-list ul { padding-left: 12px; border-left: 1px solid var(--dots); margin: 2px 0 6px 2px; }
+.req-list li { padding: 2px 0; }
+.req-head { color: var(--muted); }
+.req-progress { font-family: var(--sans); font-size: 0.85rem; font-weight: 400; color: var(--green); }
+.req-course { cursor: grab; }
+.req-code { font: inherit; font-weight: 600; background: none; border: 0; padding: 0; cursor: pointer; color: inherit; }
+.req-title { color: var(--muted); }
+.req-done { color: var(--green); font-size: 0.85rem; }
+.req-planned { color: var(--blue); font-size: 0.85rem; }
+.req-text { color: var(--muted); font-style: italic; }
+.req-list summary { cursor: pointer; color: var(--muted); }
+
+.plan-table { border-collapse: collapse; width: 100%; min-width: 640px; table-layout: fixed; }
+.plan-table th { font-family: var(--serif); font-weight: 600; text-align: left; padding: 4px 8px; border-bottom: 1px solid var(--ink); }
+.plan-table th.plan-year { width: 110px; vertical-align: top; padding-top: 10px; font-size: 0.92rem; border-bottom: 1px solid var(--dots); }
+.plan-cell { vertical-align: top; padding: 6px 8px 8px; border-bottom: 1px solid var(--dots); border-left: 1px solid var(--dots); height: 92px; }
+.plan-cell.drop { background: #eef2f8; }
+.plan-cell.over .cell-units { color: var(--red); font-weight: 600; }
+.cell-name { display: none; }
+.cell-units { display: block; margin-top: 4px; font-size: 0.8rem; color: var(--muted); }
+.chip {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
+  margin: 0 0 3px;
+  padding: 3px 6px;
+  font: inherit;
+  font-size: 0.88rem;
+  text-align: left;
+  color: var(--ink);
+  background: var(--paper);
+  border: 1px solid var(--dots);
+  cursor: grab;
+}
+.chip:hover { border-color: var(--ink); }
+.chip-code { font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.chip-units { color: var(--muted); }
+.chip.warn { border-color: var(--red); }
+.chip.warn .chip-code { color: var(--red); }
+.chip.selected { outline: 2px solid var(--blue); outline-offset: -1px; }
+.chip.elective-slot { border-style: dashed; }
+.chip.elective-slot .chip-code { font-weight: 400; font-style: italic; }
+.plan-years { font-size: 0.9rem; }
+.plan-actions { margin-top: 10px !important; }
+.pick-list { list-style: none; padding-left: 0 !important; max-height: 50vh; overflow-y: auto; }
+
+@media (max-width: 800px) {
+  .plan-tools { padding: 8px 16px; }
+  .plan-buttons { margin-left: 0; }
+  .plan-body { display: block; overflow-y: auto; }
+  .plan-reqs { border-right: 0; padding: 8px 16px; }
+  .plan-grid { padding: 8px 16px 70vh; overflow: visible; }
+  /* One year at a time, quarters stacked. */
+  .plan-table, .plan-table tbody, .plan-table tr, .plan-table td, .plan-table th { display: block; width: 100%; min-width: 0; }
+  .plan-table thead { display: none; }
+  .plan-cell { border-left: 0; height: auto; }
+  .cell-name { display: block; font-size: 0.85rem; color: var(--muted); }
+}
 </style>
 </head>
 <body>
@@ -643,6 +738,11 @@ kbd {
     <div class="sub">
       <!-- The programs on the map; a double major or a major + minor shows both (app.js, showChosen). -->
       <span class="chosen" id="chosen"></span>
+      <!-- Two views of the same programs (app.js, showView). -->
+      <nav class="views" id="views" hidden aria-label="View">
+        <a href="#" id="view-map">Map</a>
+        <a href="#" id="view-plan">Plan</a>
+      </nav>
       <label class="picker">
         <span class="visually-hidden">Major or minor</span>
         <input id="major-input" list="major-list" placeholder="Choose a major or minor…" autocomplete="off">
@@ -691,6 +791,28 @@ kbd {
           <p class="browse-count" id="browse-count"></p>
           <div class="browse" id="browse"></div>
         </div>
+      </div>
+    </section>
+
+    <!-- The Plan view (planner.js): settings, then the requirements beside a
+         grid of years and quarters. -->
+    <section class="plan-area" id="plan-area" aria-label="Quarter-by-quarter plan" hidden>
+      <div class="plan-tools">
+        <label>Starting Fall <input type="number" id="plan-start" min="2000" max="2100"></label>
+        <label><input type="checkbox" id="plan-transfer"> transfer student (start in year 3)</label>
+        <label><input type="checkbox" id="plan-summer"> plan summer quarters</label>
+        <label>up to <input type="number" id="plan-cap" min="4" max="30"> units a quarter</label>
+        <span class="plan-buttons">
+          <button type="button" class="text-button" id="plan-autofill">Auto-fill the rest</button>
+          <button type="button" class="text-button" id="plan-share">Copy share link</button>
+          <button type="button" class="text-button" id="plan-download">Download (.csv)</button>
+          <button type="button" class="text-button" id="plan-clear">Clear plan</button>
+        </span>
+        <p class="plan-message" id="plan-message" aria-live="polite"></p>
+      </div>
+      <div class="plan-body">
+        <div class="plan-reqs" id="plan-reqs"></div>
+        <div class="plan-grid" id="plan-grid"></div>
       </div>
     </section>
 
@@ -868,6 +990,57 @@ function hasCredit(code) {
 function hasAnyCredit() {
   return Object.keys(credit.ap).length > 0 || credit.transfer.length > 0;
 }
+
+/*
+  The student's plan: which quarter each course goes in, and the settings
+  for the grid. One plan per browser, whatever programs are on screen, so
+  switching or adding a program keeps everything already placed.
+
+    plan.placed   { "ECON 1": "1-F" }   year number, then F/W/S/U
+                                         (Fall, Winter, Spring, Summer)
+    plan.units    { "ANTH 99": 2 }       units chosen for variable-unit courses
+    plan.grades   { "ECON 1": "A-" }     grades (Phase 4)
+*/
+const PLAN_KEY = "ucsb-prereq-map.plan";
+
+function emptyPlan() {
+  return {
+    firstYear: 1,       // 3 for a transfer student, who starts in year 3
+    years: 4,
+    startYear: defaultStartYear(),
+    summer: false,
+    cap: 16,            // most units to place in one quarter
+    placed: {},
+    units: {},
+    grades: {},
+  };
+}
+
+// Fall of this year if it's before August, otherwise next Fall.
+function defaultStartYear() {
+  const now = new Date();
+  return now.getMonth() < 7 ? now.getFullYear() : now.getFullYear() + 1;
+}
+
+let plan = loadPlan();
+
+function loadPlan() {
+  try {
+    const saved = JSON.parse(localStorage.getItem(PLAN_KEY) || "null");
+    if (saved && typeof saved === "object") return Object.assign(emptyPlan(), saved);
+  } catch (error) {
+    // Storage unavailable or damaged: start empty.
+  }
+  return emptyPlan();
+}
+
+function savePlan() {
+  try {
+    localStorage.setItem(PLAN_KEY, JSON.stringify(plan));
+  } catch (error) {
+    // Storage unavailable: the plan still works until the page is closed.
+  }
+}
 </script>
   <script>
 /*
@@ -924,6 +1097,7 @@ const ROLE_NAMES = {
 
 let majors = [];            // majors and minors (data/majors.json)
 let currentPrograms = [];   // the entries from majors.json on the map (one or more)
+let currentView = "map";    // "map" or "plan" (planner.js)
 let graph = null;           // the loaded major's graph
 let loading = 0;            // counts loads, so a slow one can't replace a newer one
 let nodesById = {};         // course code -> course from the graph
@@ -942,6 +1116,11 @@ let hoverTimer = null;
 const el = {
   majorInput: document.getElementById("major-input"),
   chosen: document.getElementById("chosen"),
+  views: document.getElementById("views"),
+  viewMap: document.getElementById("view-map"),
+  viewPlan: document.getElementById("view-plan"),
+  mapArea: document.querySelector(".map-area"),
+  planArea: document.getElementById("plan-area"),
   majorList: document.getElementById("major-list"),
   courseInput: document.getElementById("course-input"),
   courseList: document.getElementById("course-list"),
@@ -1006,7 +1185,7 @@ async function start() {
     el.majorInput.value = "";
     if (!major) return;
     const programs = currentPrograms.filter(p => p.id !== major.id).concat([major]);
-    location.hash = hashFor(programs, null);
+    location.hash = currentView === "plan" ? planHashFor(programs) : hashFor(programs, null);
   });
 
   // The × after a program's name takes it off the map.
@@ -1014,7 +1193,8 @@ async function start() {
     const button = event.target.closest("button[data-remove]");
     if (!button) return;
     const programs = currentPrograms.filter(p => p.id !== button.dataset.remove);
-    location.hash = programs.length ? hashFor(programs, null) : "";
+    if (!programs.length) location.hash = "";
+    else location.hash = currentView === "plan" ? planHashFor(programs) : hashFor(programs, null);
   });
 
   el.courseInput.addEventListener("change", function () {
@@ -1098,21 +1278,31 @@ function readHash() {
   } catch (error) {
     // A mangled link: treat it as no address.
   }
+  // The planner's address: "plan/" in front; a shared plan adds "/" and the
+  // plan itself, packed into letters (planner.js, packPlan).
+  if (raw.startsWith("plan/")) {
+    const parts = raw.slice(5).split("/");
+    return { view: "plan", stems: parts[0] ? parts[0].split("+") : [], course: null, shared: parts[1] || null };
+  }
   const slash = raw.indexOf("/");
   const programs = slash < 0 ? raw : raw.slice(0, slash);
   const course = slash < 0 ? null : raw.slice(slash + 1).replace(/\+/g, " ").toUpperCase() || null;
-  return { stems: programs ? programs.split("+") : [], course: course };
+  return { view: "map", stems: programs ? programs.split("+") : [], course: course, shared: null };
 }
 
 function hashFor(programs, code) {
   return "#" + programs.map(p => stem(p.file)).join("+") + (code ? "/" + code.replace(/ /g, "+") : "");
 }
 
+function planHashFor(programs) {
+  return "#plan/" + programs.map(p => stem(p.file)).join("+");
+}
+
 // Keep the address bar in step with the selection, so copying it shares this
 // exact view. replaceState changes the address without adding a Back step
 // for every click, and without firing "hashchange".
 function rememberInAddress() {
-  if (!currentPrograms.length) return;
+  if (!currentPrograms.length || currentView === "plan") return;
   const code = selected && nodesById[selected] ? selected : null;
   const target = hashFor(currentPrograms, code);
   if (location.hash !== target) history.replaceState(null, "", target);
@@ -1135,10 +1325,34 @@ async function loadFromHash() {
   if (programs.map(p => p.id).join("+") !== currentPrograms.map(p => p.id).join("+")) {
     if (!(await loadPrograms(programs))) return;
   }
+  showView(wanted.view, wanted.shared);
+  if (wanted.view === "plan") return;
   if (wanted.course && nodesById[wanted.course]) {
     if (wanted.course !== selected) selectCourse(wanted.course, true);
   } else if (selected) {
     clearSelection();
+  }
+}
+
+/*
+  Map or Plan. Both use the same programs, credit and marks; only what's on
+  screen changes. The two links under the masthead switch between them.
+*/
+function showView(view, shared) {
+  currentView = view;
+  el.viewMap.href = hashFor(currentPrograms, null);
+  el.viewPlan.href = planHashFor(currentPrograms);
+  el.viewMap.classList.toggle("current", view === "map");
+  el.viewPlan.classList.toggle("current", view === "plan");
+  el.views.hidden = false;
+  el.mapArea.hidden = view !== "map";
+  el.planArea.hidden = view !== "plan";
+  el.toggles.hidden = view !== "map";
+  el.courseInput.parentElement.hidden = view !== "map";
+  if (view === "plan") {
+    openPlan(shared);
+  } else if (!selected) {
+    showMajorSummary();
   }
 }
 
@@ -1171,6 +1385,12 @@ function showHome() {
   el.notice.hidden = true;
   el.welcome.hidden = false;
   el.allLink.hidden = true;
+  currentView = "map";
+  el.views.hidden = true;
+  el.mapArea.hidden = false;
+  el.planArea.hidden = true;
+  el.toggles.hidden = false;
+  el.courseInput.parentElement.hidden = false;
   el.toggles.disabled = true;
   el.courseInput.disabled = true;
   el.footerCatalog.textContent = "Built from the UCSB General Catalog.";
@@ -1426,10 +1646,6 @@ function updateTakenStatus() {
 // 3. Which courses to show
 // ===========================================================================
 
-function isActiveEnough(course) {
-  return course.status === "active" || el.showInactive.checked;
-}
-
 /*
   The courses on the map:
     - every course in the major (electives only if "Electives" is ticked;
@@ -1440,15 +1656,22 @@ function isActiveEnough(course) {
       is in Computer Engineering, so PSTAT 120A isn't added). If none of the
       options is in the major, the first one the catalog lists is added.
       "Every outside course" adds all the rest.
+  The settings come from the map's Show checkboxes, or from the planner,
+  which always wants { electives: false, everyOutside: false, inactive: false }.
 */
-function chooseShown() {
+function mapSettings() {
+  return { electives: el.showElectives.checked, everyOutside: el.showOutside.checked, inactive: el.showInactive.checked };
+}
+
+function chooseShown(settings) {
   const result = new Set();
   for (const course of graph.nodes) {
-    if (!course.in_major || !isActiveEnough(course)) continue;
-    if (course.role === "elective" && !el.showElectives.checked) continue;
+    if (!course.in_major) continue;
+    if (course.status !== "active" && !settings.inactive) continue;
+    if (course.role === "elective" && !settings.electives) continue;
     result.add(course.id);
   }
-  if (el.showOutside.checked) {
+  if (settings.everyOutside) {
     for (const course of graph.nodes) {
       if (!course.in_major && course.status === "active") result.add(course.id);
     }
@@ -1472,7 +1695,10 @@ function chooseShown() {
       const options = node.items.filter(hasCourses);
       if (!options.length) return;
       const covered = options.some(option => coursesIn(option).some(code => result.has(code)));
-      if (!covered) walk(options[0]);
+      // Otherwise the first option whose courses are all still offered
+      // (CMPSC 48 is retired, so CMPSC 189A's "48 or 56 or …" picks 56).
+      const offered = options.find(option => coursesIn(option).every(code => nodesById[code] && nodesById[code].status === "active"));
+      if (!covered) walk(offered || options[0]);
     }
   }
   for (const course of graph.nodes) {
@@ -1646,7 +1872,7 @@ function electiveGroups() {
 }
 
 function draw() {
-  shown = chooseShown();
+  shown = chooseShown(mapSettings());
   partners = findPartners();
   prereqCache = {};
 
@@ -2516,9 +2742,11 @@ function creditUpdated() {
   fillCreditBox();
   if (graph) {
     draw();
-    if (selected) showDetails(selected); else showMajorSummary();
+    if (currentView === "map") {
+      if (selected) showDetails(selected); else showMajorSummary();
+    }
   }
-  if (typeof refreshPlan === "function") refreshPlan();
+  if (currentView === "plan") refreshPlan();
 }
 
 creditEl.apList.addEventListener("change", function (event) {
@@ -2569,6 +2797,952 @@ document.addEventListener("click", function (event) {
 });
 creditEl.box.addEventListener("click", function (event) {
   if (event.target === creditEl.box) creditEl.box.close();     // a click outside the box closes it
+});
+</script>
+  <script>
+/*
+  planner.js: the Plan view, a quarter-by-quarter plan for the programs on
+  screen.
+
+  The page has two views of the same programs (app.js, showView):
+    Map    the prerequisite map
+    Plan   this file: a grid of years x quarters, and beside it the
+           program's requirements with progress in each
+
+  How a course gets placed when you click it (earliestSlot)
+  ---------------------------------------------------------
+  It goes in the first quarter, counting from Fall of year 1, where:
+    1. its prerequisites are done (taken, or AP/college credit) or placed in
+       an EARLIER quarter. "May be taken at the same time" prerequisites can
+       be in the same quarter. A prerequisite that isn't in the plan at all
+       doesn't hold the course back, but the course is flagged.
+    2. the course is usually offered that quarter. The catalog lists this for
+       only about 115 courses; the rest are assumed Fall, Winter and Spring.
+       Summer is used only if "Plan summer quarters" is ticked.
+    3. the quarter stays under the unit cap (16 by default).
+  So ECON 1 -> Fall, ECON 2 (needs ECON 1) -> Winter, ECON 10A -> Spring.
+
+  The catalog has no sample four-year plans in its data, and there's no
+  public record of when students actually take courses, so placement uses
+  only these three rules.
+
+  Auto-fill
+  ---------
+  Places every required course not yet done or planned, in prerequisite
+  order (the map's "column" from Part 4), plus the courses from other
+  departments they need. For "take one of" requirements it uses an option
+  already done or planned, or else the first one the catalog lists. Elective
+  lists get labeled slots ("Elective: Area D electives"), placed from year 3
+  on; click one to choose the actual course.
+
+  Everything is saved in this browser (student.js) and can be shared as a
+  link that carries the plan itself (no grades).
+*/
+
+const QUARTERS = [
+  { key: "F", name: "Fall" },
+  { key: "W", name: "Winter" },
+  { key: "S", name: "Spring" },
+  { key: "U", name: "Summer" },
+];
+const MAX_YEARS = 8;
+const ELECTIVE_UNITS = 4;     // units assumed for an elective slot
+
+const planEl = {
+  area: document.getElementById("plan-area"),
+  reqs: document.getElementById("plan-reqs"),
+  grid: document.getElementById("plan-grid"),
+  start: document.getElementById("plan-start"),
+  transfer: document.getElementById("plan-transfer"),
+  summer: document.getElementById("plan-summer"),
+  cap: document.getElementById("plan-cap"),
+  autofill: document.getElementById("plan-autofill"),
+  share: document.getElementById("plan-share"),
+  download: document.getElementById("plan-download"),
+  clear: document.getElementById("plan-clear"),
+  message: document.getElementById("plan-message"),
+};
+
+let planSelected = null;      // course code (or elective slot id) shown in the panel
+
+// ===========================================================================
+// 1. Quarters
+// ===========================================================================
+
+// Every quarter in the plan, in order: [{ id: "1-F", year: 1, q: "F" }, …]
+function planSlots() {
+  const list = [];
+  for (let year = plan.firstYear; year < plan.firstYear + plan.years; year++) {
+    for (const quarter of QUARTERS) {
+      if (quarter.key === "U" && !plan.summer) continue;
+      list.push({ id: year + "-" + quarter.key, year: year, q: quarter.key });
+    }
+  }
+  return list;
+}
+
+function slotIndex(id) {
+  return planSlots().findIndex(s => s.id === id);
+}
+
+// "1-F" -> "Fall 2026"; Winter, Spring and Summer fall in the next calendar year.
+function slotName(id) {
+  const [year, q] = id.split("-");
+  const quarter = QUARTERS.find(x => x.key === q);
+  const calendar = plan.startYear + (Number(year) - plan.firstYear) + (q === "F" ? 0 : 1);
+  return quarter.name + " " + calendar;
+}
+
+function yearName(year) {
+  const first = plan.startYear + (year - plan.firstYear);
+  return "Year " + year + " · " + first + "–" + String(first + 1).slice(2);
+}
+
+// ===========================================================================
+// 2. Facts about a course
+// ===========================================================================
+
+/*
+  Courses already in the plan may come from a program that's no longer on
+  screen, so the plan keeps each placed course's title and units
+  (plan.info) and uses them when the course isn't in the current graph.
+*/
+function courseInfo(code) {
+  const node = nodesById[code];
+  if (node) return { title: node.title, units: node.units, offered: node.offered || [], requires: node.requires, level: node.level };
+  const saved = (plan.info || {})[code] || {};
+  return { title: saved.title || "", units: saved.units || "4", offered: saved.offered || [], requires: null, level: "" };
+}
+
+// "4" -> [4, 4]; "1-4" -> [1, 4]; "" -> [4, 4] (assume 4 if the catalog has none)
+function unitRange(code) {
+  const text = String(courseInfo(code).units || "");
+  const match = text.match(/^(\d+(?:\.\d+)?)(?:-(\d+(?:\.\d+)?))?$/);
+  if (!match) return [4, 4];
+  const low = Number(match[1]);
+  return [low, match[2] ? Number(match[2]) : low];
+}
+
+// Units counted for a course: the student's choice for a variable-unit
+// course, otherwise the catalog's (the smallest, for a range they haven't set).
+function unitsOf(code) {
+  const range = unitRange(code);
+  const chosen = plan.units[code];
+  if (chosen >= range[0] && chosen <= range[1]) return chosen;
+  return range[0];
+}
+
+// The quarters a course is usually offered: the catalog's list, or
+// Fall/Winter/Spring when it doesn't say. Summer only if the student plans summers.
+function offeredList(code) {
+  const listed = courseInfo(code).offered;
+  return listed.length ? listed : ["Fall", "Winter", "Spring"];
+}
+
+function offeredIn(code, q) {
+  if (q === "U") return plan.summer;
+  const name = QUARTERS.find(x => x.key === q).name;
+  return offeredList(code).includes(name);
+}
+
+function offeredText(code) {
+  const listed = courseInfo(code).offered;
+  return listed.length ? listed.join(", ") : "not listed in the catalog (assumed Fall, Winter, Spring)";
+}
+
+// ===========================================================================
+// 3. Prerequisites in time
+// ===========================================================================
+
+function quarterUnits(slotId, except) {
+  let total = 0;
+  for (const code of Object.keys(plan.placed)) {
+    if (plan.placed[code] === slotId && code !== except) total += unitsOf(code);
+  }
+  for (const slot of plan.electives || []) {
+    if (slot.slot === slotId && slot.id !== except) total += ELECTIVE_UNITS;
+  }
+  return total;
+}
+
+// Done before quarter number `index`? Done means taken or credited (isDone,
+// app.js); or planned for an earlier quarter (the same one, if concurrent).
+function readyBy(code, index, concurrent) {
+  if (isDone(code)) return true;
+  const slot = plan.placed[code];
+  if (!slot) return false;
+  const at = slotIndex(slot);
+  return at >= 0 && (concurrent ? at <= index : at < index);
+}
+
+function inPlanOrDone(code) {
+  return isDone(code) || Boolean(plan.placed[code]);
+}
+
+// Could this part of a prerequisite tree be met by what's done or planned?
+// "ECE 15A and (ECE 2A or ECE 10A + 10AL)" can, with 15A, 10A and 10AL
+// planned, even though ECE 2A isn't.
+function plannable(node) {
+  if (!node || node.type === "condition") return true;
+  if (node.type === "course") return inPlanOrDone(node.code);
+  if (node.type === "and") return node.items.every(plannable);
+  return node.items.filter(hasCourses).some(plannable);
+}
+
+/*
+  Are a course's prerequisites met by quarter number `index`?
+  `relaxed` is for choosing where to put a course: a prerequisite that isn't
+  in the plan at all doesn't stop it (it would never be met); the course is
+  flagged instead (missingPrereqs).
+*/
+function metAt(node, index, self, relaxed) {
+  if (!node) return true;
+  if (node.type === "condition") return true;
+  if (node.type === "course") {
+    if (node.code === self) return true;
+    if (relaxed && !inPlanOrDone(node.code)) return true;
+    return readyBy(node.code, index, node.concurrent);
+  }
+  if (node.type === "and") return node.items.every(item => metAt(item, index, self, relaxed));
+  // "One of": only course options count when there are some. If none of the
+  // options is planned or done yet, a relaxed check lets it through.
+  const options = node.items.filter(hasCourses);
+  if (!options.length) return true;
+  const available = options.filter(plannable);
+  if (!available.length) return relaxed;
+  return available.some(option => metAt(option, index, self, false));
+}
+
+// The prerequisites not met for a course where it's planned, as words:
+// ["ECON 1 (not in your plan)", "MATH 3B (planned for the same quarter)"].
+function missingPrereqs(code) {
+  const slot = plan.placed[code];
+  if (!slot) return [];
+  const index = slotIndex(slot);
+  const requires = courseInfo(code).requires;
+  if (metAt(requires, index, code, false)) return [];
+  const missing = [];
+  function why(c) {
+    if (!plan.placed[c]) return c + " (not in your plan)";
+    return c + " (planned for " + slotName(plan.placed[c]) + ")";
+  }
+  function collect(node) {
+    if (!node || node.type === "condition") return;
+    if (node.type === "course") {
+      if (node.code !== code && !readyBy(node.code, index, node.concurrent)) missing.push(why(node.code));
+    } else if (node.type === "and") {
+      node.items.forEach(collect);
+    } else if (!metAt(node, index, code, false)) {
+      const options = node.items.filter(hasCourses).map(option => coursesIn(option).join(" and "));
+      missing.push("one of " + options.join(", or "));
+    }
+  }
+  collect(requires);
+  return missing;
+}
+
+/*
+  The first quarter (from `fromIndex` on) where a course fits: its
+  prerequisites come earlier, it's usually offered then, and the quarter
+  stays under the unit cap. null if no quarter in the plan fits.
+*/
+function earliestSlot(code, fromIndex) {
+  const slots = planSlots();
+  const units = unitsOf(code);
+  const requires = courseInfo(code).requires;
+  for (let i = fromIndex || 0; i < slots.length; i++) {
+    if (!offeredIn(code, slots[i].q)) continue;
+    if (quarterUnits(slots[i].id, code) + units > plan.cap) continue;
+    if (!metAt(requires, i, code, true)) continue;
+    return slots[i].id;
+  }
+  return null;
+}
+
+// Put a course in its earliest quarter, adding years if the plan is full.
+// Returns the quarter, or null.
+function placeCourse(code) {
+  let slot = earliestSlot(code);
+  while (!slot && plan.years + plan.firstYear - 1 < MAX_YEARS) {
+    plan.years += 1;
+    slot = earliestSlot(code);
+  }
+  if (!slot) return null;
+  plan.placed[code] = slot;
+  const info = courseInfo(code);
+  plan.info = plan.info || {};
+  plan.info[code] = { title: info.title, units: info.units, offered: info.offered };
+  return slot;
+}
+
+// ===========================================================================
+// 4. Requirements and progress
+// ===========================================================================
+
+/*
+  Progress through a requirement, as { have, need }:
+    course           need 1; have 1 if it's done or planned
+    all of           the sum of its parts
+    choose N         need N; have = how many of its parts are complete
+                     (or planned), plus elective slots for it, up to N
+    N units from     need N units; have = units done or planned, up to N
+    text             nothing to count
+*/
+function progress(node, key) {
+  if (node.type === "course") {
+    if (!node.code) return { have: 0, need: 1 };
+    return { have: inPlanOrDone(node.code) ? 1 : 0, need: 1 };
+  }
+  if (node.type === "text") return { have: 0, need: 0 };
+  const parts = node.items.map((item, i) => progress(item, key + "." + i));
+  const slots = (plan.electives || []).filter(e => e.key === key).length;
+  if (node.type === "all") {
+    return parts.reduce((sum, p) => ({ have: sum.have + p.have, need: sum.need + p.need }), { have: 0, need: 0 });
+  }
+  if (node.type === "units") {
+    let units = slots * ELECTIVE_UNITS;
+    node.items.forEach(function (item) {
+      if (item.type === "course" && item.code && inPlanOrDone(item.code)) units += unitsOf(item.code);
+    });
+    return { have: Math.min(node.units, units), need: node.units };
+  }
+  // choose N
+  const complete = parts.filter(p => p.need > 0 && p.have >= p.need).length + slots;
+  return { have: Math.min(node.count, complete), need: node.count };
+}
+
+function progressText(p) {
+  if (!p.need) return "";
+  return p.have >= p.need ? "done or planned" : p.have + " of " + p.need;
+}
+
+// A requirement tree as nested lists, each course clickable to add it.
+function requirementHtml(node, key, depth, sectionName, insideChoice) {
+  if (node.type === "text") {
+    return '<li class="req-text">' + escapeHtml(node.text || node.description || "") + "</li>";
+  }
+  if (node.type === "course") {
+    if (!node.code) return '<li class="req-course muted">A course the catalog doesn\'t name</li>';
+    return "<li>" + requirementCourse(node.code) + "</li>";
+  }
+  const p = progress(node, key);
+  let rule = "";
+  if (node.type === "choose") rule = node.count === 1 && node.items.length <= 4 ? "One of" : "Choose " + node.count;
+  if (node.type === "units") rule = node.units + " units from";
+  if (node.type === "all") rule = depth > 0 ? "All of" : "";
+  // The catalog often repeats the section's name as a rule's label; skip that.
+  const label = node.label && node.label.toLowerCase() !== (sectionName || "").split(" — ").pop().toLowerCase() ? node.label : "";
+  const head = [label, rule].filter(Boolean).join(": ");
+  const isChoice = node.type === "choose";
+  const items = node.items.map((item, i) => requirementHtml(item, key + "." + i, depth + 1, sectionName, isChoice)).join("");
+  // Progress inside a "one of" option ("0 of 2") reads like something is
+  // missing when the student simply took the other option, so it's left off.
+  const showProgress = depth > 0 && !insideChoice;
+  const canSlot = (node.type === "choose" || node.type === "units") && p.have < p.need &&
+                  node.items.every(i => i.type === "course");
+  const slotButton = canSlot
+    ? ' <button type="button" class="text-button" data-plan-elective="' + escapeHtml(key) + '">add a slot</button>'
+    : "";
+  if (node.items.length > 8) {
+    return '<li class="req-group"><details><summary>' + escapeHtml(head || "Courses") +
+           ' <span class="req-progress">' + progressText(p) + "</span>" + slotButton + "</summary><ul>" + items +
+           "</ul></details></li>";
+  }
+  return '<li class="req-group">' + (head ? '<span class="req-head">' + escapeHtml(head) + "</span> " : "") +
+         '<span class="req-progress">' + (showProgress ? progressText(p) : "") + "</span>" + slotButton +
+         "<ul>" + items + "</ul></li>";
+}
+
+function requirementCourse(code) {
+  const info = courseInfo(code);
+  let state = '<button type="button" class="text-button" data-plan-add="' + escapeHtml(code) + '">add</button>';
+  if (isDone(code)) state = '<span class="req-done">✓ ' + (creditFor(code) ? "credit" : "taken") + "</span>";
+  else if (plan.placed[code]) state = '<span class="req-planned">' + escapeHtml(slotName(plan.placed[code])) + "</span>";
+  return '<span class="req-course" draggable="true" data-plan-drag="' + escapeHtml(code) + '">' +
+         '<button type="button" class="req-code" data-plan-show="' + escapeHtml(code) + '">' + escapeHtml(code) + "</button> " +
+         '<span class="req-title">' + escapeHtml(info.title || "") + "</span></span> " + state;
+}
+
+function drawRequirements() {
+  let html = "";
+  graph.major.sections.forEach(function (section, i) {
+    const key = "s" + i;
+    const p = progress(section.requirement, key);
+    html += '<section class="req-section"><h3>' + escapeHtml(readable(section.name)) +
+            ' <span class="req-progress">' + progressText(p) + "</span></h3><ul class=\"req-list\">" +
+            requirementHtml(section.requirement, key, 0, section.name, false) + "</ul></section>";
+  });
+  for (const pool of graph.pools) {
+    html += '<section class="req-section"><h3>' + escapeHtml(pool.list_name || pool.label) + "</h3>" +
+            '<p class="note">Earn ' + escapeHtml(pool.rule) + " from a list of " + pool.courses.length +
+            " courses (too long to list here; see the map).</p></section>";
+  }
+  planEl.reqs.innerHTML = html;
+}
+
+// The requirement node behind an elective slot's key ("s2.0.3").
+function nodeForKey(key) {
+  const parts = key.split(".");
+  let node = graph.major.sections[Number(parts[0].slice(1))];
+  if (!node) return null;
+  node = node.requirement;
+  for (const i of parts.slice(1)) {
+    if (!node || !node.items) return null;
+    node = node.items[Number(i)];
+  }
+  return node;
+}
+
+function sectionNameForKey(key) {
+  const section = graph.major.sections[Number(key.split(".")[0].slice(1))];
+  return section ? section.name : "";
+}
+
+// "Area D electives", named the same way as the map's elective lists
+// (groupTitle, app.js), so a slot matches its list on the map.
+function electiveLabel(key) {
+  const node = nodeForKey(key);
+  const section = sectionNameForKey(key);
+  return node && node.label ? groupTitle(section + ": " + node.label) : readable(section.split(" — ").pop()) + " elective";
+}
+
+// ===========================================================================
+// 5. The grid
+// ===========================================================================
+
+function drawGrid() {
+  const quarters = QUARTERS.filter(q => q.key !== "U" || plan.summer);
+  let html = '<table class="plan-table"><thead><tr><th></th>' +
+             quarters.map(q => "<th>" + q.name + "</th>").join("") + "</tr></thead><tbody>";
+  for (let year = plan.firstYear; year < plan.firstYear + plan.years; year++) {
+    html += '<tr><th class="plan-year">' + escapeHtml(yearName(year)) + "</th>";
+    for (const q of quarters) {
+      const slotId = year + "-" + q.key;
+      const codes = Object.keys(plan.placed).filter(c => plan.placed[c] === slotId).sort(bySortKey);
+      const slots = (plan.electives || []).filter(e => e.slot === slotId);
+      const units = quarterUnits(slotId);
+      html += '<td class="plan-cell' + (units > plan.cap ? " over" : "") + '" data-plan-slot="' + slotId + '">' +
+              '<span class="cell-name">' + escapeHtml(slotName(slotId)) + "</span>" +
+              codes.map(chipHtml).join("") + slots.map(electiveChipHtml).join("") +
+              (units ? '<span class="cell-units">' + units + " units</span>" : "") + "</td>";
+    }
+    html += "</tr>";
+  }
+  html += "</tbody></table>";
+  html += '<p class="plan-years"><button type="button" class="text-button" data-plan-years="1">add a year</button>' +
+          (plan.years > 1 ? ' · <button type="button" class="text-button" data-plan-years="-1">remove the last year</button>' : "") + "</p>";
+  planEl.grid.innerHTML = html;
+}
+
+function chipHtml(code) {
+  const problems = missingPrereqs(code);
+  const classes = ["chip"];
+  if (problems.length) classes.push("warn");
+  if (code === planSelected) classes.push("selected");
+  return '<button type="button" class="' + classes.join(" ") + '" draggable="true" data-plan-show="' + escapeHtml(code) +
+         '" data-plan-drag="' + escapeHtml(code) + '"' + (problems.length ? ' title="Needs first: ' + escapeHtml(problems.join("; ")) + '"' : "") + ">" +
+         '<span class="chip-code">' + (problems.length ? "! " : "") + escapeHtml(code) + "</span>" +
+         '<span class="chip-units">' + unitsOf(code) + "</span></button>";
+}
+
+function electiveChipHtml(slot) {
+  return '<button type="button" class="chip elective-slot' + (slot.id === planSelected ? " selected" : "") +
+         '" draggable="true" data-plan-show="' + escapeHtml(slot.id) + '" data-plan-drag="' + escapeHtml(slot.id) + '">' +
+         '<span class="chip-code">' + escapeHtml(electiveLabel(slot.key)) + "</span>" +
+         '<span class="chip-units">' + ELECTIVE_UNITS + "</span></button>";
+}
+
+// ===========================================================================
+// 6. The panel beside the plan (slim, as CLAUDE.md asks)
+// ===========================================================================
+
+/*
+  Only what's needed right now: name, units, when it's usually offered,
+  where it's planned. Prerequisites appear only when they're NOT met where
+  the course is planned.
+*/
+function showPlanCourse(code) {
+  planSelected = code;
+  const info = courseInfo(code);
+  const range = unitRange(code);
+  let html = '<div class="panel-nav"><button type="button" class="nav-button" data-plan-close>close</button></div>';
+  html += "<h2>" + escapeHtml(code) + "</h2>";
+  html += '<p class="course-title">' + escapeHtml(info.title || "") + "</p>";
+  if (range[0] !== range[1]) {
+    const options = [];
+    for (let u = range[0]; u <= range[1]; u++) {
+      options.push('<option value="' + u + '"' + (unitsOf(code) === u ? " selected" : "") + ">" + u + "</option>");
+    }
+    html += '<p class="facts"><label>Units <select data-plan-units="' + escapeHtml(code) + '">' + options.join("") + "</select></label> (variable, " + range[0] + "–" + range[1] + ")</p>";
+  } else {
+    html += '<p class="facts">' + unitsOf(code) + " units</p>";
+  }
+  html += '<p class="facts">Usually offered: ' + escapeHtml(offeredText(code)) + "</p>";
+
+  if (isDone(code)) {
+    html += '<p class="credit-note">✓ ' + (creditFor(code) ? "You have credit for this: " + escapeHtml(creditFor(code)) : "Marked as taken") + ".</p>";
+  }
+  if (plan.placed[code]) {
+    html += "<p>Planned for <strong>" + escapeHtml(slotName(plan.placed[code])) + "</strong>.</p>";
+    const problems = missingPrereqs(code);
+    if (problems.length) {
+      html += '<h3><span class="needs-key">Needs first</span></h3><ul>' +
+              problems.map(p => "<li>" + escapeHtml(p) + "</li>").join("") + "</ul>";
+      if (info.requires && courseInfo(code).requires) {
+        html += '<p class="catalog-text">Catalog wording: "' + escapeHtml((nodesById[code] || {}).prereq_text || "") + '"</p>';
+      }
+    }
+    html += '<p class="plan-actions"><button type="button" class="text-button" data-plan-move="-1">earlier</button> · ' +
+            '<button type="button" class="text-button" data-plan-move="1">later</button> · ' +
+            '<button type="button" class="text-button" data-plan-remove>remove from plan</button></p>';
+  } else if (!isDone(code)) {
+    html += '<p class="plan-actions"><button type="button" class="text-button" data-plan-add="' + escapeHtml(code) + '">add to plan</button></p>';
+  }
+  html += '<p><a href="https://catalog.ucsb.edu/courses/' + encodeURIComponent(code) + '" target="_blank" rel="noopener">This course in the UCSB catalog</a></p>';
+  if (typeof gradeHtml === "function") html += gradeHtml(code);
+  setPanel(html, code + "  " + (info.title || ""));
+  openSheet();
+  drawGrid();
+}
+
+// An elective slot: pick the actual course from its list.
+function showElectiveSlot(id) {
+  planSelected = id;
+  const slot = plan.electives.find(e => e.id === id);
+  const node = nodeForKey(slot.key);
+  let html = '<div class="panel-nav"><button type="button" class="nav-button" data-plan-close>close</button></div>';
+  html += "<h2>" + escapeHtml(electiveLabel(slot.key)) + "</h2>";
+  html += '<p class="facts">' + escapeHtml(slotName(slot.slot)) + " · " + ELECTIVE_UNITS + " units assumed</p>";
+  if (node && node.items) {
+    const options = node.items.filter(i => i.type === "course" && i.code && !inPlanOrDone(i.code) &&
+                                           (nodesById[i.code] || {}).status !== "inactive");
+    html += "<p>Choose the course for this slot:</p><ul class=\"pick-list\">" + options.map(i =>
+      '<li><button type="button" class="text-button" data-plan-fill="' + escapeHtml(i.code) + '">' + escapeHtml(i.code) +
+      "</button> " + escapeHtml((nodesById[i.code] || {}).title || "") + "</li>").join("") + "</ul>";
+  }
+  html += '<p class="plan-actions"><button type="button" class="text-button" data-plan-move="-1">earlier</button> · ' +
+          '<button type="button" class="text-button" data-plan-move="1">later</button> · ' +
+          '<button type="button" class="text-button" data-plan-remove>remove this slot</button></p>';
+  setPanel(html, electiveLabel(slot.key));
+  openSheet();
+  drawGrid();
+}
+
+function showPlanSummary() {
+  planSelected = null;
+  let total = 0;
+  for (const code of Object.keys(plan.placed)) total += unitsOf(code);
+  total += (plan.electives || []).length * ELECTIVE_UNITS;
+  const flagged = Object.keys(plan.placed).filter(c => missingPrereqs(c).length);
+  let html = "<h2>Your plan</h2>";
+  html += '<p class="facts">' + escapeHtml(graph.major.name) + "</p>";
+  html += "<p>" + Object.keys(plan.placed).length + " courses and " + (plan.electives || []).length +
+          " elective slots planned, " + total + " units.</p>";
+  if (flagged.length) {
+    html += '<p class="flag">' + flagged.length + (flagged.length === 1 ? " course is" : " courses are") +
+            " planned before " + (flagged.length === 1 ? "its" : "their") + " prerequisites (marked !): " +
+            flagged.map(escapeHtml).join(", ") + ".</p>";
+  }
+  html += "<p>Click a course on the left to add it. It goes in the first quarter after its prerequisites, " +
+          "when it's usually offered, under " + plan.cap + " units. Drag courses to move them, or click one for its details.</p>";
+  html += '<p class="note">Most courses don\'t list when they\'re offered in the catalog; those are assumed Fall, Winter and Spring. ' +
+          "Check the Schedule of Classes on GOLD before you enroll.</p>";
+  if (typeof gpaSummaryHtml === "function") html += gpaSummaryHtml();
+  html += '<p class="note">Unofficial student project. Requirements change; confirm your plan with a department advisor.</p>';
+  setPanel(html, "Your plan");
+  drawGrid();
+}
+
+// ===========================================================================
+// 7. Opening, redrawing, settings
+// ===========================================================================
+
+// Called by app.js when the Plan view opens. `shared` is a plan from a link.
+function openPlan(shared) {
+  if (shared) {
+    const incoming = unpackPlan(shared);
+    if (incoming) {
+      const hasOwn = Object.keys(plan.placed).length > 0;
+      if (!hasOwn || window.confirm("Replace your saved plan with the one in this link?")) {
+        plan = Object.assign(emptyPlan(), incoming, { grades: plan.grades });
+        savePlan();
+      }
+    }
+    history.replaceState(null, "", planHashFor(currentPrograms));
+  }
+  refreshPlan();
+  showPlanSummary();
+}
+
+function refreshPlan() {
+  if (!graph || currentView !== "plan") return;
+  planEl.start.value = plan.startYear;
+  planEl.transfer.checked = plan.firstYear === 3;
+  planEl.summer.checked = plan.summer;
+  planEl.cap.value = plan.cap;
+  drawRequirements();
+  drawGrid();
+  if (planSelected) {
+    if ((plan.electives || []).some(e => e.id === planSelected)) showElectiveSlot(planSelected);
+    else if (plan.placed[planSelected] || nodesById[planSelected]) showPlanCourse(planSelected);
+    else showPlanSummary();
+  }
+}
+
+function planChanged() {
+  savePlan();
+  refreshPlan();
+  if (!planSelected) showPlanSummary();
+}
+
+function say(text) {
+  planEl.message.textContent = text;
+}
+
+planEl.start.addEventListener("change", function () {
+  const year = parseInt(planEl.start.value, 10);
+  if (year >= 2000 && year <= 2100) plan.startYear = year;
+  planChanged();
+});
+
+// A transfer student starts in year 3, with two years to plan.
+planEl.transfer.addEventListener("change", function () {
+  const firstYear = planEl.transfer.checked ? 3 : 1;
+  const shift = firstYear - plan.firstYear;
+  // Keep courses in the same position relative to the start.
+  for (const code of Object.keys(plan.placed)) {
+    const [year, q] = plan.placed[code].split("-");
+    plan.placed[code] = (Number(year) + shift) + "-" + q;
+  }
+  for (const slot of plan.electives || []) {
+    const [year, q] = slot.slot.split("-");
+    slot.slot = (Number(year) + shift) + "-" + q;
+  }
+  plan.firstYear = firstYear;
+  plan.years = Math.max(firstYear === 3 ? 2 : 4, plan.years);
+  if (firstYear === 3) say("Transfer plan: years 3 and 4. Add your community college courses in Credit so their prerequisites count as met.");
+  planChanged();
+});
+
+planEl.summer.addEventListener("change", function () {
+  plan.summer = planEl.summer.checked;
+  if (!plan.summer) {
+    // Courses in summer quarters move to the next Fall.
+    for (const code of Object.keys(plan.placed)) {
+      const [year, q] = plan.placed[code].split("-");
+      if (q === "U") plan.placed[code] = (Number(year) + 1) + "-F";
+    }
+  }
+  planChanged();
+});
+
+planEl.cap.addEventListener("change", function () {
+  const cap = parseInt(planEl.cap.value, 10);
+  if (cap >= 4 && cap <= 30) plan.cap = cap;
+  planChanged();
+});
+
+// ===========================================================================
+// 8. Adding, moving and removing
+// ===========================================================================
+
+function addCourse(code) {
+  if (isDone(code)) {
+    say(code + " is already done (taken or credit).");
+    return;
+  }
+  const slot = placeCourse(code);
+  say(slot ? code + " goes in " + slotName(slot) + "." : "No room for " + code + " in " + MAX_YEARS + " years.");
+  planChanged();
+  showPlanCourse(code);
+}
+
+/*
+  Auto-fill: everything required that isn't done or planned yet, in
+  prerequisite order, then a slot for each elective still needed.
+*/
+function autoFill() {
+  const needed = chooseShown({ electives: false, everyOutside: false, inactive: false });
+  const skip = new Set();
+  // "Take one of": keep an option already done or planned, else the first.
+  for (const options of pickOneSets()) {
+    const chosen = options.find(option => option.every(inPlanOrDone)) || options[0];
+    for (const option of options) {
+      if (option !== chosen) option.forEach(code => skip.add(code));
+    }
+  }
+  const list = Array.from(needed)
+    .filter(code => !skip.has(code) && !inPlanOrDone(code) && nodesById[code].status === "active")
+    .sort((a, b) => (nodesById[a].column - nodesById[b].column) || bySortKey(a, b));
+  let placed = 0;
+  for (const code of list) {
+    if (placeCourse(code)) placed += 1;
+  }
+
+  // Elective slots, for lists of courses still short.
+  let slots = 0;
+  graph.major.sections.forEach(function (section, i) {
+    (function visit(node, key) {
+      if (!node.items) return;
+      const leafList = (node.type === "choose" || node.type === "units") && node.items.every(item => item.type === "course");
+      if (leafList && !(node.type === "choose" && node.count === 1 && node.items.length <= 4)) {
+        let p = progress(node, key);
+        while (p.have < p.need && slots < 60) {
+          if (!addElectiveSlot(key)) return;
+          slots += 1;
+          p = progress(node, key);
+        }
+        return;
+      }
+      node.items.forEach((item, j) => visit(item, key + "." + j));
+    })(section.requirement, "s" + i);
+  });
+  say("Auto-fill placed " + placed + " courses and " + slots + " elective slots. Electives start in year 3; click a slot to choose its course.");
+  planChanged();
+}
+
+// "Take one of" lists of 2–4 options: [[["MATH 2A"], ["MATH 3A"]], …]
+function pickOneSets() {
+  const sets = [];
+  function codesOf(item) {
+    if (item.type === "course") return item.code ? [item.code] : null;
+    if (item.type === "all" && item.items.every(i => i.type === "course" && i.code)) return item.items.map(i => i.code);
+    return null;
+  }
+  (function visitAll(nodes) {
+    for (const node of nodes) {
+      if (node.type === "choose" && node.count === 1 && node.items.length >= 2 && node.items.length <= 4) {
+        const options = node.items.map(codesOf);
+        if (options.every(Boolean)) {
+          sets.push(options);
+          continue;
+        }
+      }
+      if (node.items) visitAll(node.items);
+    }
+  })(graph.major.sections.map(s => s.requirement));
+  return sets;
+}
+
+// An elective slot goes in the first quarter from year 3 on with room.
+function addElectiveSlot(key) {
+  plan.electives = plan.electives || [];
+  const slots = planSlots();
+  let from = Math.max(0, slots.findIndex(s => s.year >= 3));
+  for (;;) {
+    const list = planSlots();
+    for (let i = from; i < list.length; i++) {
+      if (list[i].q === "U") continue;
+      if (quarterUnits(list[i].id) + ELECTIVE_UNITS <= plan.cap) {
+        plan.electives.push({ id: "e" + Date.now().toString(36) + Math.random().toString(36).slice(2, 6), key: key, slot: list[i].id });
+        return true;
+      }
+    }
+    if (plan.years + plan.firstYear - 1 >= MAX_YEARS) return false;
+    plan.years += 1;
+  }
+}
+
+// Move a course or elective slot one quarter earlier (-1) or later (+1).
+function moveSelected(step) {
+  const slots = planSlots();
+  const elective = (plan.electives || []).find(e => e.id === planSelected);
+  const current = elective ? elective.slot : plan.placed[planSelected];
+  const index = slots.findIndex(s => s.id === current) + step;
+  if (index < 0) return;
+  if (index >= slots.length) {
+    if (plan.years + plan.firstYear - 1 >= MAX_YEARS) return;
+    plan.years += 1;
+  }
+  const target = planSlots()[index].id;
+  if (elective) elective.slot = target; else plan.placed[planSelected] = target;
+  planChanged();
+}
+
+function moveTo(id, slotId) {
+  const elective = (plan.electives || []).find(e => e.id === id);
+  if (elective) elective.slot = slotId;
+  else {
+    plan.placed[id] = slotId;
+    const info = courseInfo(id);
+    plan.info = plan.info || {};
+    plan.info[id] = { title: info.title, units: info.units, offered: info.offered };
+  }
+  planChanged();
+}
+
+function removeSelected() {
+  if ((plan.electives || []).some(e => e.id === planSelected)) {
+    plan.electives = plan.electives.filter(e => e.id !== planSelected);
+  } else {
+    delete plan.placed[planSelected];
+  }
+  planSelected = null;
+  planChanged();
+  showPlanSummary();
+}
+
+// ===========================================================================
+// 9. Sharing, downloading, clearing
+// ===========================================================================
+
+/*
+  A share link carries the plan itself in the address, so it works with no
+  server: the plan as JSON, turned into URL-safe letters (base64). Grades
+  are left out; they're the student's own business.
+*/
+function packPlan() {
+  const data = {
+    f: plan.firstYear, y: plan.years, s: plan.startYear, u: plan.summer ? 1 : 0, c: plan.cap,
+    p: plan.placed, v: plan.units, e: (plan.electives || []).map(e => [e.key, e.slot]),
+  };
+  return btoa(JSON.stringify(data)).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
+}
+
+function unpackPlan(text) {
+  try {
+    const data = JSON.parse(atob(text.replace(/-/g, "+").replace(/_/g, "/")));
+    return {
+      firstYear: data.f === 3 ? 3 : 1,
+      years: Math.min(MAX_YEARS, Math.max(1, Number(data.y) || 4)),
+      startYear: Number(data.s) || defaultStartYear(),
+      summer: Boolean(data.u),
+      cap: Number(data.c) || 16,
+      placed: data.p || {},
+      units: data.v || {},
+      electives: (data.e || []).map((e, i) => ({ id: "e" + i, key: e[0], slot: e[1] })),
+    };
+  } catch (error) {
+    return null;
+  }
+}
+
+function shareLink() {
+  const url = location.href.split("#")[0] + planHashFor(currentPrograms) + "/" + packPlan();
+  if (navigator.clipboard && location.protocol !== "file:") {
+    navigator.clipboard.writeText(url).then(
+      () => say("Link copied. It holds your plan (not your grades); anyone who opens it gets a copy."),
+      () => say("Copy this link: " + url));
+  } else {
+    say("Copy this link: " + url);
+  }
+}
+
+// The plan as a spreadsheet file (CSV opens in Excel, Numbers or Google Sheets).
+function downloadPlan() {
+  const rows = [["Year", "Quarter", "Course", "Title", "Units", "Grade"]];
+  for (const slot of planSlots()) {
+    const codes = Object.keys(plan.placed).filter(c => plan.placed[c] === slot.id).sort(bySortKey);
+    for (const code of codes) {
+      rows.push([slot.year, slotName(slot.id), code, courseInfo(code).title || "", unitsOf(code), plan.grades[code] || ""]);
+    }
+    for (const e of (plan.electives || []).filter(e => e.slot === slot.id)) {
+      rows.push([slot.year, slotName(slot.id), electiveLabel(e.key), "", ELECTIVE_UNITS, ""]);
+    }
+  }
+  const csv = rows.map(r => r.map(v => '"' + String(v).replace(/"/g, '""') + '"').join(",")).join("\r\n");
+  const link = document.createElement("a");
+  link.href = URL.createObjectURL(new Blob([csv], { type: "text/csv" }));
+  link.download = "ucsb-plan.csv";
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+  say("Downloaded ucsb-plan.csv.");
+}
+
+function clearPlan() {
+  if (!window.confirm("Clear every course and elective slot from your plan? Grades and credit stay.")) return;
+  plan.placed = {};
+  plan.electives = [];
+  planSelected = null;
+  say("Plan cleared.");
+  planChanged();
+}
+
+planEl.autofill.addEventListener("click", autoFill);
+planEl.share.addEventListener("click", shareLink);
+planEl.download.addEventListener("click", downloadPlan);
+planEl.clear.addEventListener("click", clearPlan);
+
+// ===========================================================================
+// 10. Clicks and dragging
+// ===========================================================================
+
+planEl.area.addEventListener("click", function (event) {
+  const target = event.target.closest("button");
+  if (!target) return;
+  if (target.dataset.planAdd) {
+    addCourse(target.dataset.planAdd);
+  } else if (target.dataset.planShow) {
+    const id = target.dataset.planShow;
+    if ((plan.electives || []).some(e => e.id === id)) showElectiveSlot(id); else showPlanCourse(id);
+  } else if (target.dataset.planElective) {
+    if (addElectiveSlot(target.dataset.planElective)) say("Added an elective slot.");
+    planChanged();
+  } else if (target.dataset.planYears) {
+    const change = Number(target.dataset.planYears);
+    const last = plan.firstYear + plan.years - 1;
+    if (change < 0 && (Object.values(plan.placed).some(s => s.startsWith(last + "-")) ||
+                       (plan.electives || []).some(e => e.slot.startsWith(last + "-")))) {
+      say("Year " + last + " has courses in it; move them first.");
+      return;
+    }
+    plan.years = Math.min(MAX_YEARS - plan.firstYear + 1, Math.max(1, plan.years + change));
+    planChanged();
+  }
+});
+
+// The panel's buttons, while the Plan view is open.
+el.panelBody.addEventListener("click", function (event) {
+  if (currentView !== "plan") return;
+  const target = event.target.closest("button");
+  if (!target) return;
+  if ("planClose" in target.dataset) {
+    showPlanSummary();
+    closeSheet();
+  } else if (target.dataset.planMove) {
+    moveSelected(Number(target.dataset.planMove));
+  } else if ("planRemove" in target.dataset) {
+    removeSelected();
+  } else if (target.dataset.planAdd) {
+    addCourse(target.dataset.planAdd);
+  } else if (target.dataset.planFill) {
+    // Fill an elective slot with an actual course, in the same quarter.
+    const slot = plan.electives.find(e => e.id === planSelected);
+    plan.electives = plan.electives.filter(e => e.id !== planSelected);
+    moveTo(target.dataset.planFill, slot.slot);
+    showPlanCourse(target.dataset.planFill);
+  }
+});
+el.panelBody.addEventListener("change", function (event) {
+  if (currentView !== "plan" || !event.target.dataset.planUnits) return;
+  plan.units[event.target.dataset.planUnits] = Number(event.target.value);
+  planChanged();
+});
+
+// Drag a course (from the grid or the requirements) onto a quarter.
+planEl.area.addEventListener("dragstart", function (event) {
+  const item = event.target.closest("[data-plan-drag]");
+  if (!item) return;
+  event.dataTransfer.setData("text/plain", item.dataset.planDrag);
+  event.dataTransfer.effectAllowed = "move";
+});
+planEl.area.addEventListener("dragover", function (event) {
+  const cell = event.target.closest("[data-plan-slot]");
+  if (!cell) return;
+  event.preventDefault();
+  cell.classList.add("drop");
+});
+planEl.area.addEventListener("dragleave", function (event) {
+  const cell = event.target.closest("[data-plan-slot]");
+  if (cell) cell.classList.remove("drop");
+});
+planEl.area.addEventListener("drop", function (event) {
+  const cell = event.target.closest("[data-plan-slot]");
+  if (!cell) return;
+  event.preventDefault();
+  const id = event.dataTransfer.getData("text/plain");
+  if (id) moveTo(id, cell.dataset.planSlot);
 });
 </script>
 </body>

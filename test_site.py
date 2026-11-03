@@ -388,6 +388,119 @@ def main():
         check("credit: removing it undoes it", "taken" not in classes(page, "MATH 3A") and "taken" not in classes(page, "ECON 1"))
         check("credit: no JavaScript errors", not page.errors, page.errors)
 
+        # Phase 3: the quarter-by-quarter plan
+        page.evaluate("localStorage.clear()")
+        page.goto(SITE + "#plan/economics-ba")
+        page.reload()
+        page.wait_for_function("graph && currentView === 'plan'", timeout=15000)
+        page.evaluate("credit.ap = {'Calculus BC': 4}; creditChanged(); refreshPlan()")
+        check("plan: the Plan view replaces the map", page.is_visible("#plan-area") and not page.is_visible(".map-area"))
+        check("plan: Plan is the current view", "current" in (page.get_attribute("#view-plan", "class") or ""))
+        for code, slot in (("ECON 1", "1-F"), ("ECON 2", "1-W"), ("ECON 10A", "1-S")):
+            page.click('[data-plan-add="%s"]' % code)
+            page.wait_for_timeout(80)
+            check("plan: clicking %s places it in %s" % (code, slot), page.evaluate("c => plan.placed[c]", code) == slot,
+                  page.evaluate("c => plan.placed[c]", code))
+        check("plan: the slim panel shows units and when it's offered, not prerequisites",
+              "units" in page.inner_text("#panel-body") and "Usually offered" in page.inner_text("#panel-body") and
+              "Needs first" not in page.inner_text("#panel-body"))
+        page.evaluate("credit.ap = {}; creditChanged(); refreshPlan()")
+        check("plan: without the calculus credit, ECON 10A says what it needs first",
+              any("MATH" in m for m in page.evaluate("missingPrereqs('ECON 10A')")))
+        page.click("#plan-autofill")
+        page.wait_for_timeout(300)
+        flagged = page.evaluate("Object.keys(plan.placed).filter(c => missingPrereqs(c).length)")
+        check("plan: auto-fill adds the calculus and puts no course before its prerequisites (Economics)", not flagged, flagged)
+        over = page.evaluate("planSlots().filter(s => quarterUnits(s.id) > plan.cap).map(s => s.id)")
+        check("plan: no quarter is over the unit cap", not over, over)
+        check("plan: auto-fill adds elective slots", page.evaluate("plan.electives.length") > 0)
+        check("plan: auto-fill picks one of MATH 2A or 3A, not both",
+              page.evaluate("Boolean(plan.placed['MATH 2A']) !== Boolean(plan.placed['MATH 3A'])"))
+
+        # dragging a course to another quarter
+        page.drag_and_drop('.chip[data-plan-drag="ECON 2"]', '[data-plan-slot="2-W"]')
+        page.wait_for_timeout(150)
+        check("plan: dragging ECON 2 moves it", page.evaluate("plan.placed['ECON 2']") == "2-W")
+        check("plan: ...and ECON 10A, now before it, is flagged", "warn" in (page.get_attribute('.chip[data-plan-drag="ECON 10A"]', "class") or ""))
+        page.click('.chip[data-plan-drag="ECON 10A"]')
+        page.wait_for_timeout(100)
+        check("plan: the panel shows the unmet prerequisite only then",
+              "Needs first" in page.inner_text("#panel-body") and "ECON 2" in page.inner_text("#panel-body"))
+        page.click('.chip[data-plan-drag="ECON 2"]')
+        page.click("[data-plan-move='-1']")
+        page.wait_for_timeout(100)
+        check("plan: 'earlier' moves a course back a quarter", page.evaluate("plan.placed['ECON 2']") == "2-F")
+
+        # filling an elective slot
+        first = page.evaluate("plan.electives[0].id")
+        slot_quarter = page.evaluate("plan.electives[0].slot")
+        page.click('.chip[data-plan-drag="%s"]' % first)
+        pick = page.evaluate("document.querySelector('[data-plan-fill]').dataset.planFill")
+        page.click("[data-plan-fill]")
+        page.wait_for_timeout(150)
+        check("plan: picking a course fills the elective slot, same quarter",
+              page.evaluate("c => plan.placed[c]", pick) == slot_quarter and
+              not page.evaluate("id => plan.electives.some(e => e.id === id)", first))
+
+        # it's saved, shareable, downloadable
+        placed = page.evaluate("JSON.stringify(plan.placed)")
+        page.reload()
+        page.wait_for_function("graph && currentView === 'plan'", timeout=15000)
+        check("plan: it survives a reload", page.evaluate("JSON.stringify(plan.placed)") == placed)
+        packed = page.evaluate("packPlan()")
+        other = new_page(browser, viewport={"width": 1400, "height": 900})
+        other.goto(SITE + "#plan/economics-ba/" + packed)
+        other.wait_for_function("graph && currentView === 'plan'", timeout=15000)
+        check("plan: a share link opens the same plan elsewhere", other.evaluate("JSON.stringify(plan.placed)") == placed)
+        check("plan: ...and tidies the address afterwards", other.evaluate("location.hash") == "#plan/economics-ba")
+        other.close()
+        with page.expect_download() as download:
+            page.click("#plan-download")
+        check("plan: Download gives a CSV", download.value.suggested_filename == "ucsb-plan.csv")
+
+        # transfer students start in year 3
+        page.check("#plan-transfer")
+        page.wait_for_timeout(150)
+        years = page.locator(".plan-year").all_inner_texts()
+        check("plan: transfer students start in year 3", years and years[0].startswith("Year 3"), years)
+        page.uncheck("#plan-transfer")
+        page.wait_for_timeout(150)
+
+        # credit means auto-fill leaves those courses out
+        page.once("dialog", lambda d: d.accept())
+        page.click("#plan-clear")
+        page.wait_for_timeout(150)
+        check("plan: Clear empties it", page.evaluate("Object.keys(plan.placed).length") == 0)
+        page.evaluate("credit.ap = {'Calculus BC': 4}; creditChanged(); refreshPlan()")
+        page.click("#plan-autofill")
+        page.wait_for_timeout(300)
+        check("plan: with AP Calculus BC, auto-fill doesn't add MATH 2A, 2B, 3A or 3B",
+              not page.evaluate("['MATH 2A','MATH 2B','MATH 3A','MATH 3B'].some(c => plan.placed[c])"))
+        check("plan: ...and ECON 10A, which needs calculus, isn't flagged",
+              not page.evaluate("missingPrereqs('ECON 10A').length"))
+        page.evaluate("credit.ap = {}; creditChanged()")
+
+        # Computer Engineering: a longer chain
+        page.once("dialog", lambda d: d.accept())
+        page.click("#plan-clear")
+        page.goto(SITE + "#plan/computer-engineering-bs")
+        page.wait_for_function("graph && graph.major.id === 'BSCMPEN' && currentView === 'plan'", timeout=15000)
+        page.click("#plan-autofill")
+        page.wait_for_timeout(500)
+        flagged = page.evaluate("Object.keys(plan.placed).filter(c => missingPrereqs(c).length)")
+        check("plan: auto-fill puts no course before its prerequisites (Computer Engineering)", not flagged, flagged)
+        order = page.evaluate("['ECE 15A','ECE 10A','ECE 152A','ECE 154A'].map(c => slotIndex(plan.placed[c]))")
+        check("plan: CE chain in order (ECE 15A, 10A before 152A before 154A)",
+              min(order) >= 0 and order[0] < order[2] and order[1] < order[2] and order[2] < order[3], order)
+
+        # back to the map
+        page.click("#view-map")
+        page.wait_for_function("currentView === 'map'", timeout=5000)
+        check("plan: Map goes back to the map", page.is_visible(".map-area") and page.locator(".box").count() > 0)
+        page.evaluate("localStorage.clear()")
+        check("plan: no JavaScript errors", not page.errors, page.errors)
+        open_major(page, SITE, "economics-ba", "BAECON")
+
         # 6. Links and notices
         box(page, "ECON 10A").click()
         page.wait_for_timeout(100)
@@ -463,6 +576,14 @@ def main():
             page.click("#credit-button")
             check("single file: the Credit box has the AP chart", page.locator("#ap-list select").count() > 30)
             page.keyboard.press("Escape")
+            page.goto(url + "#plan/economics-ba")
+            page.wait_for_function("currentView === 'plan'", timeout=15000)
+            page.click('[data-plan-add="ECON 1"]')
+            check("single file: the planner works offline", page.evaluate("plan.placed['ECON 1']") == "1-F")
+            page.goto(url + "#computer-engineering-bs")
+            page.wait_for_function("currentView === 'map' && graph.major.id === 'BSCMPEN'", timeout=15000)
+            box(page, "ECE 152A").click()
+            page.wait_for_timeout(150)
             check("single file: course descriptions are there",
                   page.locator("#panel-body details").count() == 1)
             page.click("#all-link")

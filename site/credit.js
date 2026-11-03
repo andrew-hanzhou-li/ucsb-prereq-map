@@ -86,9 +86,11 @@ function creditUpdated() {
   fillCreditBox();
   if (graph) {
     draw();
-    if (selected) showDetails(selected); else showMajorSummary();
+    if (currentView === "map") {
+      if (selected) showDetails(selected); else showMajorSummary();
+    }
   }
-  if (typeof refreshPlan === "function") refreshPlan();
+  if (currentView === "plan") refreshPlan();
 }
 
 creditEl.apList.addEventListener("change", function (event) {

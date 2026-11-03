@@ -37,6 +37,11 @@
     <div class="sub">
       <!-- The programs on the map; a double major or a major + minor shows both (app.js, showChosen). -->
       <span class="chosen" id="chosen"></span>
+      <!-- Two views of the same programs (app.js, showView). -->
+      <nav class="views" id="views" hidden aria-label="View">
+        <a href="#" id="view-map">Map</a>
+        <a href="#" id="view-plan">Plan</a>
+      </nav>
       <label class="picker">
         <span class="visually-hidden">Major or minor</span>
         <input id="major-input" list="major-list" placeholder="Choose a major or minor…" autocomplete="off">
@@ -85,6 +90,28 @@
           <p class="browse-count" id="browse-count"></p>
           <div class="browse" id="browse"></div>
         </div>
+      </div>
+    </section>
+
+    <!-- The Plan view (planner.js): settings, then the requirements beside a
+         grid of years and quarters. -->
+    <section class="plan-area" id="plan-area" aria-label="Quarter-by-quarter plan" hidden>
+      <div class="plan-tools">
+        <label>Starting Fall <input type="number" id="plan-start" min="2000" max="2100"></label>
+        <label><input type="checkbox" id="plan-transfer"> transfer student (start in year 3)</label>
+        <label><input type="checkbox" id="plan-summer"> plan summer quarters</label>
+        <label>up to <input type="number" id="plan-cap" min="4" max="30"> units a quarter</label>
+        <span class="plan-buttons">
+          <button type="button" class="text-button" id="plan-autofill">Auto-fill the rest</button>
+          <button type="button" class="text-button" id="plan-share">Copy share link</button>
+          <button type="button" class="text-button" id="plan-download">Download (.csv)</button>
+          <button type="button" class="text-button" id="plan-clear">Clear plan</button>
+        </span>
+        <p class="plan-message" id="plan-message" aria-live="polite"></p>
+      </div>
+      <div class="plan-body">
+        <div class="plan-reqs" id="plan-reqs"></div>
+        <div class="plan-grid" id="plan-grid"></div>
       </div>
     </section>
 
@@ -170,5 +197,6 @@
   <script src="student.js"></script>
   <script src="app.js"></script>
   <script src="credit.js"></script>
+  <script src="planner.js"></script>
 </body>
 </html>
