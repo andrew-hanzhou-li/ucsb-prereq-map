@@ -148,7 +148,7 @@ SAME_COLUMN = {
 
 def test_real_graphs():
     files = [f for f in glob.glob(os.path.join("site", "data", "*.json"))
-             if not f.endswith(("majors.json", "credit.json"))]   # the list of programs, and the AP chart
+             if not f.endswith(("majors.json", "credit.json", "course-index.json"))]   # not program graphs
     check("site/data has graphs (run build_graph.py first)", len(files) > 0)
 
     for path in files:

@@ -137,7 +137,7 @@ def classes(page, code):
 
 def find_course(page, code):
     page.fill("#course-input", code)
-    page.dispatch_event("#course-input", "change")
+    page.press("#course-input", "Enter")
     page.wait_for_timeout(250)
 
 
@@ -186,8 +186,8 @@ def main():
         page.wait_for_timeout(400)
         check("front page shows the 'pick a major' message", page.is_visible("#welcome"))
         check("front page hides the empty course panel", not page.is_visible("#panel"))
-        check("major picker has every major and minor",
-              page.evaluate("document.querySelectorAll('#major-list option').length") == len(listed))
+        check("major search finds every major and minor by its name",
+              page.evaluate("majors.every(m => findPrograms(displayName(m.name)).some(x => x.program.id === m.id))"))
         check("every listed program has a map", all(m["structured"] for m in listed))
         check("Individual BA/BS and College of Creative Studies programs aren't listed",
               not any(m["name"].startswith("Individual") or "Creative Studies" in m["name"] for m in listed))
@@ -198,14 +198,78 @@ def main():
               page.locator("#browse .dept h3").count() == len(departments))
         ece = page.locator("#browse .dept", has=page.locator("h3", has_text="Electrical and Computer Engineering"))
         check("Computer Engineering is listed under Electrical and Computer Engineering",
-              ece.count() == 1 and "Computer Engineering - BS" in ece.inner_text())
+              ece.count() == 1 and "Computer Engineering (B.S.)" in ece.inner_text())
+        # Item 17: one name format everywhere.
+        check("program names read 'Name (B.S.)' / 'Name (minor)'",
+              page.evaluate("[displayName('Computer Engineering - BS'), displayName('Media Arts and Design- Minor'),"
+                            " displayName('Anthropology - BA - Archaeology Emphasis'), displayName('Computer Engineering (B.S.)')]")
+              == ["Computer Engineering (B.S.)", "Media Arts and Design (minor)",
+                  "Anthropology (B.A., Archaeology Emphasis)", "Computer Engineering (B.S.)"])
+        check("the front page list uses that format",
+              not any(" - " in t for t in page.locator("#browse .dept li").all_inner_texts()))
+        # Item 18: the Show checkboxes stay out of the way until a program is open.
+        check("front page: the Show checkboxes are hidden", not page.is_visible("#toggles"))
+
+        # Item 9: the search boxes.
+        def suggestions(selector, text):
+            page.fill(selector, text)
+            page.wait_for_timeout(150)
+            return page.locator(selector + " ~ .search-list li").all_inner_texts()
+        found = suggestions("#major-input", "stats")
+        check("major search: 'stats' finds Statistics and Data Science",
+              any(t.startswith("Statistics and Data Science") for t in found), found[:4])
+        found = suggestions("#major-input", "cs")
+        check("major search: 'cs' puts Computer Science first", found and found[0].startswith("Computer Science"), found[:3])
+        found = suggestions("#major-input", "COMP eng")
+        check("major search: ignores case, matches word starts", found and found[0] == "Computer Engineering (B.S.)", found[:3])
+        found = suggestions("#major-input", "economcs")
+        check("major search: no match says so and suggests the nearest",
+              found and found[0].startswith("No match for") and "Economics" in found[0], found)
+        page.click(".search-list [data-guess]")
+        page.wait_for_function("graph && graph.major.programs.length === 1", timeout=15000)
+        check("major search: clicking 'Did you mean' opens it", page.evaluate("location.hash").startswith("#economics"))
+        page.goto(SITE)
+        page.wait_for_timeout(300)
+        page.fill("#major-input", "physics")
+        page.locator("#major-input").blur()
+        page.click("#major-input")
+        check("major search: clicking into the box selects its text",
+              page.evaluate("[el.majorInput.selectionStart, el.majorInput.selectionEnd]") == [0, len("physics")])
+        page.fill("#major-input", "")
+        check("front page: course search is on", page.is_enabled("#course-input"))
+        page.click("#course-input")
+        page.wait_for_function("courseIndex !== null")
+        found = suggestions("#course-input", "cs 16")
+        check("course search: 'cs 16' finds CMPSC 16", found and found[0].startswith("CMPSC 16"), found[:3])
+        found = suggestions("#course-input", "math4a")
+        check("course search: spaces don't matter", found and found[0].startswith("MATH 4A"), found[:3])
+        page.keyboard.press("ArrowDown")
+        page.keyboard.press("ArrowUp")
+        page.keyboard.press("Enter")
+        page.wait_for_timeout(150)
+        check("course search on the front page opens a panel listing its programs",
+              page.is_visible("#panel") and page.inner_text("#panel-body h2") == "MATH 4A" and
+              "Computer Engineering (B.S.)" in page.inner_text("#panel-body"))
+        page.click("#panel-body a[href='#computer-engineering-bs/MATH+4A']")
+        page.wait_for_function("graph && selected === 'MATH 4A'", timeout=15000)
+        check("its program link opens that map with the course chosen", page.evaluate("location.hash") == "#computer-engineering-bs/MATH+4A")
+        found = suggestions("#course-input", "ece 15")
+        check("course search on a map: nickname-free codes still work", found and found[0].startswith("ECE 15A"), found[:3])
+        found = suggestions("#course-input", "zzz 999")
+        check("course search: no match says so", found and found[0].startswith("No match for"), found)
+        page.keyboard.press("Escape")
+        check("Esc closes the list", not page.is_visible(".search-list"))
+        page.goto(SITE)
+        page.wait_for_timeout(300)
+
         open_major(page, SITE, "economics-ba", "BAECON")
-        check("the chosen program is shown by name", "Economics - BA" in page.inner_text("#chosen"))
+        check("the Show checkboxes appear once a program is open", page.is_visible("#toggles"))
+        check("the chosen program is shown by name", "Economics (B.A.)" in page.inner_text("#chosen"))
         check("the picker is empty, ready to add another program", page.input_value("#major-input") == "")
 
         # Phase 1: several programs at once (CE BS + Statistical Science minor)
-        page.fill("#major-input", "Computer Engineering - BS")
-        page.dispatch_event("#major-input", "change")
+        page.fill("#major-input", "comp eng bs")
+        page.press("#major-input", "Enter")
         page.wait_for_function("graph && graph.major.programs.length === 2", timeout=15000)
         check("adding a program puts both on the map", page.evaluate("location.hash") == "#economics-ba+computer-engineering-bs")
         page.click('#chosen button[data-remove="BAECON"]')
@@ -228,11 +292,11 @@ def main():
         check("combined map: a course in only one program doesn't", "counts toward" not in box(page, "ECE 152A").inner_text())
         titles = page.locator(".elective-row .row-label").all_inner_texts()
         check("combined map: elective lists are labeled with their program",
-              any(t.startswith("Computer Engineering BS:") for t in titles) and any(t.startswith("Statistical Science minor:") for t in titles), titles)
+              any(t.startswith("Computer Engineering (B.S.):") for t in titles) and any(t.startswith("Statistical Science (minor):") for t in titles), titles)
         box(page, "MATH 4A").click()
         page.wait_for_timeout(100)
         check("combined map: the panel says which programs a course counts toward",
-              "Counts toward Computer Engineering BS and Statistical Science minor" in page.inner_text("#panel-body"))
+              "Counts toward Computer Engineering (B.S.) and Statistical Science (minor)" in page.inner_text("#panel-body"))
         check("combined map: no JavaScript errors", not page.errors, page.errors)
 
         # 2. Every major
@@ -306,7 +370,7 @@ def main():
         page.click("[data-close]")
         page.wait_for_timeout(100)
         check("Close clears the selection", page.evaluate("selected") is None and
-              page.inner_text("#panel-body h2") == "Computer Engineering - BS")
+              page.inner_text("#panel-body h2") == "Computer Engineering (B.S.)")
         box(page, "CMPSC 130A").hover()
         page.wait_for_timeout(300)
         check("hovering previews a course's chain",
@@ -916,8 +980,9 @@ def main():
             url = SINGLE_FILE.as_uri()
             page.goto(url)
             page.wait_for_timeout(1500)
-            check("single file: picker has every major and minor",
-                  page.evaluate("document.querySelectorAll('#major-list option').length") == len(listed))
+            check("single file: major search finds every major and minor",
+                  page.evaluate("majors.length") == len(listed) and
+                  page.evaluate("majors.every(m => findPrograms(displayName(m.name)).some(x => x.program.id === m.id))"))
             check("single file: no download link to itself", not page.is_visible("#footer-download"))
             open_major(page, url, "computer-engineering-bs", "BSCMPEN")
             check("single file: CE shows MATH 4A and ECE 139",

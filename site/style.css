@@ -149,6 +149,32 @@ kbd {
 .picker input:disabled { opacity: 0.6; }
 #course-input { width: 200px; }
 
+/* The search boxes' dropdown (search.js): a plain list under the box. */
+.search { position: relative; }
+.search-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 30;
+  min-width: 100%;
+  width: max-content;
+  max-width: min(440px, 92vw);
+  max-height: 60vh;
+  overflow-y: auto;
+  margin: 2px 0 0;
+  padding: 2px 0;
+  list-style: none;
+  background: var(--paper);
+  border: 1px solid var(--ink);
+  font-weight: 400;
+}
+.search-list li { padding: 4px 10px; cursor: pointer; }
+.search-list li.active { background: var(--ink); color: var(--paper); }
+.search-list li.active .search-hint { color: inherit; }
+.search-hint { color: var(--muted); font-size: 13px; }
+.search-list li.search-none { cursor: default; color: var(--muted); white-space: normal; }
+.toggles[hidden] { display: none; }
+
 .options-row {
   display: flex;
   flex-wrap: wrap;
@@ -169,7 +195,6 @@ kbd {
 .toggles legend { float: left; margin-right: 2px; }
 .toggles label { white-space: nowrap; cursor: pointer; }
 .toggles input { accent-color: var(--ink); margin: 0 3px 0 0; vertical-align: -1px; }
-.toggles:disabled { opacity: 0.5; }
 
 .taken-status { margin: 0; font-size: 0.92rem; color: var(--green); }
 

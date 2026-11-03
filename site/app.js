@@ -76,9 +76,7 @@ const el = {
   viewPlan: document.getElementById("view-plan"),
   mapArea: document.querySelector(".map-area"),
   planArea: document.getElementById("plan-area"),
-  majorList: document.getElementById("major-list"),
   courseInput: document.getElementById("course-input"),
-  courseList: document.getElementById("course-list"),
   allLink: document.getElementById("all-link"),
   toggles: document.getElementById("toggles"),
   showElectives: document.getElementById("show-electives"),
@@ -126,22 +124,10 @@ async function start() {
     creditTable = null;
   }
 
-  for (const major of majors) {
-    const option = document.createElement("option");
-    option.value = major.name;
-    el.majorList.appendChild(option);
-  }
   fillBrowseLists();
-
-  // Picking a program in the box adds it to the ones on the map (or opens
-  // it, if nothing is open yet).
-  el.majorInput.addEventListener("change", function () {
-    const major = majors.find(m => m.name.toLowerCase() === el.majorInput.value.trim().toLowerCase());
-    el.majorInput.value = "";
-    if (!major) return;
-    const programs = currentPrograms.filter(p => p.id !== major.id).concat([major]);
-    location.hash = currentView === "plan" ? planHashFor(programs) : hashFor(programs, null);
-  });
+  // The two search boxes (search.js). Picking a program adds it to the ones
+  // on the map, or opens it if nothing is open yet.
+  startSearch();
 
   // The × after a program's name takes it off the map.
   el.chosen.addEventListener("click", function (event) {
@@ -152,17 +138,6 @@ async function start() {
     else location.hash = currentView === "plan" ? planHashFor(programs) : hashFor(programs, null);
   });
 
-  el.courseInput.addEventListener("change", function () {
-    const code = el.courseInput.value.trim().toUpperCase();
-    if (nodesById[code]) {
-      selectCourse(code, true);
-      el.courseInput.value = "";
-      el.courseInput.blur();
-    }
-  });
-
-  showFullListWhenOpened(el.majorInput);
-  showFullListWhenOpened(el.courseInput);
 
   for (const box of [el.showElectives, el.showOutside, el.showInactive]) {
     box.addEventListener("change", function () { draw(); });
@@ -177,24 +152,6 @@ async function start() {
   // The single file doesn't need a link to download itself.
   if (window.EMBEDDED) el.footerDownload.hidden = true;
   updateTakenStatus();
-}
-
-/*
-  A text box with a suggestion list (<datalist>) only suggests entries that
-  match what's already typed. Once a major is filled in, that's just the one
-  major, so the list looked broken. Fix: when you click into the box, empty
-  it so the whole list shows; if you leave without picking, put the old
-  value back.
-*/
-function showFullListWhenOpened(input) {
-  let before = "";
-  input.addEventListener("focus", function () {
-    before = input.value;
-    input.value = "";
-  });
-  input.addEventListener("blur", function () {
-    if (input.value.trim() === "") input.value = before;
-  });
 }
 
 function stem(fileName) {
@@ -212,8 +169,7 @@ function fillBrowseLists() {
   el.browse.innerHTML = names.map(function (name) {
     const programs = departments[name].sort((a, b) => (a.kind === b.kind ? a.name.localeCompare(b.name) : a.kind === "major" ? -1 : 1));
     return '<section class="dept"><h3>' + escapeHtml(name) + "</h3><ul>" + programs.map(function (m) {
-      const label = m.kind === "minor" ? m.name.replace(/\s*-\s*Minor\s*$/, "") + ", minor" : m.name;
-      return '<li><a href="#' + escapeHtml(stem(m.file)) + '">' + escapeHtml(label) + "</a></li>";
+      return '<li><a href="#' + escapeHtml(stem(m.file)) + '">' + escapeHtml(displayName(m.name)) + "</a></li>";
     }).join("") + "</ul></section>";
   }).join("");
 }
@@ -334,7 +290,6 @@ function showHome() {
   el.offUp.hidden = true;
   el.offDown.hidden = true;
   el.stage.innerHTML = "";
-  el.courseList.innerHTML = "";
   el.majorInput.value = "";
   el.empty.hidden = false;
   el.notice.hidden = true;
@@ -344,10 +299,9 @@ function showHome() {
   el.views.hidden = true;
   el.mapArea.hidden = false;
   el.planArea.hidden = true;
-  el.toggles.hidden = false;
+  el.toggles.hidden = true;             // nothing to show or hide until a program is open
   el.courseInput.parentElement.hidden = false;
-  el.toggles.disabled = true;
-  el.courseInput.disabled = true;
+  el.courseInput.disabled = false;      // course search works from the front page too
   el.footerCatalog.textContent = "Built from the UCSB General Catalog.";
   document.title = "The Prerequisite Map · UCSB";
   el.panel.hidden = true;           // nothing to show until a map is open
@@ -367,10 +321,23 @@ async function fetchMajor(major) {
   });
 }
 
-// "Computer Engineering - BS" -> "Computer Engineering BS";
-// "Statistical Science - Minor" -> "Statistical Science minor".
-function shortName(name) {
-  return name.replace(/\s*-\s*Minor\s*$/, " minor").replace(/\s+-\s+/g, " ").trim();
+/*
+  The catalog writes program names several ways ("Computer Engineering - BS",
+  "Media Arts and Design- Minor", "Anthropology - BA - Archaeology
+  Emphasis"). The site shows them all one way:
+    Computer Engineering (B.S.)
+    Statistical Science (minor)
+    Anthropology (B.A., Archaeology Emphasis)
+  A name already in this form comes back unchanged.
+*/
+const DEGREES = { BA: "B.A.", BS: "B.S.", BFA: "B.F.A.", BM: "B.M.", MINOR: "minor" };
+
+function displayName(name) {
+  // Split on a dash with a space on at least one side, so "Speech-Language" stays whole.
+  const parts = name.split(/\s+-\s*|\s*-\s+/).map(s => s.trim()).filter(Boolean);
+  if (parts.length < 2) return name;
+  const degree = DEGREES[parts[1].toUpperCase()] || parts[1];
+  return parts[0] + " (" + [degree].concat(parts.slice(2)).join(", ") + ")";
 }
 
 /*
@@ -380,15 +347,16 @@ function shortName(name) {
       of the programs (required beats "pick one", which beats elective), and
       "programs" lists every program it counts toward.
     - requirement sections and elective lists keep their program's name in
-      front ("Statistical Science minor — UPPER DIVISION"), so two programs'
+      front ("Statistical Science (minor) — UPPER DIVISION"), so two programs'
       lists never merge by accident.
   With one program, the graph is used as it is.
 */
 function combine(entries, graphs) {
-  const labels = entries.map(e => shortName(e.name));
+  const labels = entries.map(e => displayName(e.name));
   if (graphs.length === 1) {
     const only = graphs[0];
-    only.major.programs = [{ id: entries[0].id, name: entries[0].name, label: labels[0], source: only.major.source }];
+    only.major.name = labels[0];
+    only.major.programs = [{ id: entries[0].id, name: labels[0], label: labels[0], source: only.major.source }];
     for (const node of only.nodes) node.programs = node.in_major ? [labels[0]] : [];
     return only;
   }
@@ -421,13 +389,13 @@ function combine(entries, graphs) {
   return {
     major: {
       id: entries.map(e => e.id).join("+"),
-      name: entries.map(e => e.name).join(" + "),
+      name: labels.join(" + "),
       kind: "combined",
       catalog_year: graphs[0].major.catalog_year,
       source: graphs[0].major.source,
       sections: sections,
       narrative: narrative,
-      programs: entries.map((e, i) => ({ id: e.id, name: e.name, label: labels[i], source: graphs[i].major.source })),
+      programs: entries.map((e, i) => ({ id: e.id, name: labels[i], label: labels[i], source: graphs[i].major.source })),
     },
     nodes: nodes,
     pools: pools,
@@ -438,9 +406,9 @@ function combine(entries, graphs) {
 // The programs on the map, as names with an × to take each one off.
 function showChosen() {
   el.chosen.innerHTML = currentPrograms.map(p =>
-    '<span class="chosen-item">' + escapeHtml(p.name) +
+    '<span class="chosen-item">' + escapeHtml(displayName(p.name)) +
     ' <button type="button" class="remove" data-remove="' + escapeHtml(p.id) + '" aria-label="Remove ' +
-    escapeHtml(p.name) + '">×</button></span>').join('<span class="plus">+</span>');
+    escapeHtml(displayName(p.name)) + '">×</button></span>').join('<span class="plus">+</span>');
   el.majorInput.placeholder = currentPrograms.length ? "Add another major or minor…" : "Choose a major or minor…";
 }
 
@@ -455,7 +423,7 @@ async function loadPrograms(programs) {
   } catch (error) {
     if (ticket !== loading) return false;
     showHome();
-    showNotice("<h2>" + escapeHtml(programs.map(p => p.name).join(" + ")) + " didn't load</h2>" +
+    showNotice("<h2>" + escapeHtml(programs.map(p => displayName(p.name)).join(" + ")) + " didn't load</h2>" +
                "<p>Check your internet connection, then refresh the page.</p>");
     return false;
   }
@@ -474,7 +442,7 @@ async function loadPrograms(programs) {
   el.notice.hidden = true;
   el.panel.hidden = false;
   el.allLink.hidden = false;
-  el.toggles.disabled = false;
+  el.toggles.hidden = currentView !== "map";
   el.courseInput.disabled = false;
   el.footerCatalog.textContent = "Built from the " + graph.major.catalog_year + " UCSB General Catalog. Official requirements: ";
   graph.major.programs.forEach(function (program, i) {
@@ -966,14 +934,6 @@ function draw() {
 
   el.stage.innerHTML = html;
 
-  // The course finder suggests every course on the map.
-  el.courseList.innerHTML = "";
-  for (const code of Array.from(shown).sort(bySortKey)) {
-    const option = document.createElement("option");
-    option.value = code;
-    option.label = nodesById[code].title;
-    el.courseList.appendChild(option);
-  }
 
   if (selected && (shown.has(selected) || nodesById[selected])) {
     focusOn(selected);
@@ -1052,7 +1012,7 @@ function joinCodes(codes) {
 }
 
 function groupTitle(key) {
-  // "Statistical Science minor — UPPER DIVISION: Electives" -> "Statistical Science minor: Electives"
+  // "Statistical Science (minor) — UPPER DIVISION: Electives" -> "Statistical Science (minor): Electives"
   const dash = key.indexOf(" — ");
   if (dash >= 0) return key.slice(0, dash) + ": " + groupTitle(key.slice(dash + 3));
   // "UUPPER-DIVISION MAJOR: D." -> "Area D electives"; "...: Computer Engineering electives" -> that.
@@ -1416,7 +1376,7 @@ el.allLink.addEventListener("click", function () {
 // ===========================================================================
 
 function readable(name) {
-  // "Statistical Science minor — UPPER DIVISION": tidy each part on its own.
+  // "Statistical Science (minor) — UPPER DIVISION": tidy each part on its own.
   if (name.includes(" — ")) return name.split(" — ").map(readable).join(" — ");
   if (name !== name.toUpperCase()) return name;
   const lower = name.toLowerCase();
@@ -1668,7 +1628,7 @@ el.panelBody.addEventListener("click", function (event) {
   } else if ("back" in button.dataset) {
     goBack();
   } else if ("close" in button.dataset) {
-    clearSelection();
+    if (graph) clearSelection(); else el.panel.hidden = true;
   } else if ("copyLink" in button.dataset) {
     copyLink(button);
   }

@@ -490,8 +490,21 @@ def main():
         # Programs with no course list in the catalog (College of Creative
         # Studies, Individual, Undeclared) are left out: the site only lists
         # programs it can draw.
+        listing = sorted(listing, key=lambda m: m["name"])
         with open(os.path.join(OUTPUT_DIR, "majors.json"), "w", encoding="utf-8") as f:
-            json.dump({"majors": sorted(listing, key=lambda m: m["name"])}, f, indent=1, ensure_ascii=False)
+            json.dump({"majors": listing}, f, indent=1, ensure_ascii=False)
+        # For "Find a course" on the front page: every course that's part of
+        # some program, its title, and the programs it's in. Each program is
+        # its place in majors.json (0, 1, 2…), which keeps the file small.
+        course_index = {}
+        for position, entry in enumerate(listing):
+            with open(os.path.join(OUTPUT_DIR, entry["file"]), encoding="utf-8") as f:
+                for node in json.load(f)["nodes"]:
+                    if node["in_major"] and node["status"] == "active":
+                        course_index.setdefault(node["id"], [node["title"], []])[1].append(position)
+        with open(os.path.join(OUTPUT_DIR, "course-index.json"), "w", encoding="utf-8") as f:
+            json.dump(dict(sorted(course_index.items())), f, ensure_ascii=False, separators=(",", ":"))
+        print("Course index: %d courses" % len(course_index))
 
     print("Built %d graph(s) in %s (%d majors, %d minors)" % (
         len(built), OUTPUT_DIR, sum(m["kind"] == "major" for m in built), sum(m["kind"] == "minor" for m in built)))

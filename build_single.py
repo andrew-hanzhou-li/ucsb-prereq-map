@@ -83,7 +83,10 @@ def main():
     with open(os.path.join(SITE, "data", "credit.json"), encoding="utf-8") as f:
         credit_table = json.load(f)
 
-    embedded = {"majors": majors, "courses": courses, "programs": programs, "credit": credit_table}
+    with open(os.path.join(SITE, "data", "course-index.json"), encoding="utf-8") as f:
+        course_index = json.load(f)
+    embedded = {"majors": majors, "courses": courses, "programs": programs, "credit": credit_table,
+                "courseIndex": course_index}
     icon = "data:image/svg+xml;base64," + base64.b64encode(read("favicon.svg").encode("utf-8")).decode("ascii")
 
     page = read("index.html")

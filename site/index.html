@@ -52,16 +52,14 @@
       </nav>
       <label class="picker">
         <span class="visually-hidden">Major or minor</span>
-        <input id="major-input" list="major-list" placeholder="Choose a major or minor…" autocomplete="off">
-        <datalist id="major-list"></datalist>
+        <input id="major-input" placeholder="Choose a major or minor…" autocomplete="off">
       </label>
       <label class="picker more-options">
         <span class="visually-hidden">Find a course</span>
-        <input id="course-input" list="course-list" placeholder="Find a course…" autocomplete="off" disabled>
-        <datalist id="course-list"></datalist>
+        <input id="course-input" placeholder="Find a course…" autocomplete="off">
       </label>
       <div class="options-row more-options" id="more-options">
-        <fieldset class="toggles" id="toggles" disabled>
+        <fieldset class="toggles" id="toggles" hidden>
           <legend>Show:</legend>
           <label><input type="checkbox" id="show-electives" checked> electives</label>
           <label><input type="checkbox" id="show-outside"> every outside course</label>
@@ -91,7 +89,7 @@
           <div id="welcome">
             <h2>Choose a major or minor.</h2>
             <p>Every course in the program is listed in prerequisite order, with the courses from other departments it needs. Point at or click a course to see everything it needs and everything it unlocks.</p>
-            <p class="quick">For example: <a href="#economics-ba">Economics</a>, <a href="#statistics-and-data-science-bs">Statistics and Data Science, B.S.</a>, or <a href="#computer-engineering-bs">Computer Engineering</a>.</p>
+            <p class="quick">For example: <a href="#economics-ba">Economics (B.A.)</a>, <a href="#statistics-and-data-science-bs">Statistics and Data Science (B.S.)</a>, or <a href="#computer-engineering-bs">Computer Engineering (B.S.)</a>.</p>
           </div>
 
           <!-- Every program, grouped by department (app.js, fillBrowseLists). -->
@@ -219,6 +217,7 @@
   </dialog>
 
   <script src="student.js"></script>
+  <script src="search.js"></script>
   <script src="app.js"></script>
   <script src="credit.js"></script>
   <script src="planner.js"></script>
