@@ -467,6 +467,7 @@ async function loadPrograms(programs) {
 
   nodesById = {};
   for (const node of graph.nodes) nodesById[node.id] = node;
+  findTwins();
   selected = null;
   previous = [];
   el.empty.hidden = true;
@@ -543,7 +544,36 @@ function isDone(code) {
 }
 
 function doneDirectly(code) {
-  return taken.has(code) || hasCredit(code) || passedCourse(code);
+  return [code, onlineTwin(code), onlineBase(code)].some(c => c && (taken.has(c) || hasCredit(c) || passedCourse(c)));
+}
+
+/*
+  Online twins. Many courses have an online version with "W" in the
+  subject: PSTATW 120A for PSTAT 120A, CMPSCW 8 for CMPSC 8, ENGR W 3 for
+  ENGR 3. They're the same course, so the map shows one card ("or online
+  PSTATW 120A"), and taking either counts for both.
+    onlineBase("PSTATW 120A") -> "PSTAT 120A"   (null if not a twin)
+    onlineTwin("PSTAT 120A")  -> "PSTATW 120A"  (null if it has none)
+*/
+let twinOfBase = {};
+
+function onlineBase(code) {
+  const match = String(code).match(/^(.+?)\s?W (\S+)$/);
+  if (!match) return null;
+  const base = match[1] + " " + match[2];
+  return nodesById[base] ? base : null;
+}
+
+function onlineTwin(code) {
+  return twinOfBase[code] || null;
+}
+
+function findTwins() {
+  twinOfBase = {};
+  for (const code of Object.keys(nodesById)) {
+    const base = onlineBase(code);
+    if (base) twinOfBase[base] = code;
+  }
 }
 
 /*
@@ -674,7 +704,7 @@ function chooseShown(settings) {
     for (const course of graph.nodes) {
       if (!course.in_major && course.status === "active") result.add(course.id);
     }
-    return result;
+    return withoutOnlineTwins(result);
   }
 
   const needed = [];
@@ -714,7 +744,17 @@ function chooseShown(settings) {
     if (settings.skipDone && isDone(code)) continue;
     walk(nodesById[code].requires);
   }
-  return result;
+  return withoutOnlineTwins(result);
+}
+
+// A course and its online twin are one card: drop the twin when its base
+// course is there too.
+function withoutOnlineTwins(codes) {
+  for (const code of Array.from(codes)) {
+    const base = onlineBase(code);
+    if (base && codes.has(base)) codes.delete(code);
+  }
+  return codes;
 }
 
 function coursesIn(node) {
@@ -984,6 +1024,8 @@ function boxInnerHtml(code) {
   if (course.status !== "active") tag = "not offered now";
   else if (course.role === "choice" && partners[code]) tag = "or " + partners[code].join(" or ");
   if (tag) html += '<span class="line tag">' + escapeHtml(tag) + "</span>";
+  const twin = onlineTwin(code);
+  if (twin && !shown.has(twin)) html += '<span class="line tag">' + escapeHtml("or online " + twin) + "</span>";
   if (course.programs && course.programs.length > 1) {
     html += '<span class="line tag both">counts toward ' + (course.programs.length === 2 ? "both" : course.programs.length) + "</span>";
   }

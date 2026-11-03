@@ -41,6 +41,7 @@ import datetime
 import json
 import os
 import pathlib
+import re
 import sys
 
 from playwright.sync_api import sync_playwright
@@ -115,6 +116,15 @@ def check(name, condition, detail=""):
     else:
         failed += 1
         print("FAIL: %s %s" % (name, detail))
+
+
+def online_base(code, codes):
+    """'PSTATW 120A' -> 'PSTAT 120A' if that's in codes (the site's rule, app.js onlineBase)."""
+    match = re.match(r"^(.+?)\s?W (\S+)$", code)
+    if not match:
+        return None
+    base = match.group(1) + " " + match.group(2)
+    return base if base in codes else None
 
 
 def box(page, code):
@@ -208,6 +218,7 @@ def main():
             with open("site/data/%s.json" % stem_, encoding="utf-8") as f:
                 both[stem_] = {n["id"] for n in json.load(f)["nodes"] if n["in_major"] and n["status"] == "active"}
         expected = both["computer-engineering-bs"] | both["statistical-science-minor"]
+        expected = {c for c in expected if online_base(c, expected) is None}   # twins share a card
         boxes = page.evaluate("[...document.querySelectorAll('.box[data-code]')].map(b => b.dataset.code)")
         check("combined map: every course of both programs is there", expected <= set(boxes),
               sorted(expected - set(boxes))[:5])
@@ -232,6 +243,8 @@ def main():
             with open("site/data/" + major["file"], encoding="utf-8") as f:
                 graph = json.load(f)
             expected = sorted(n["id"] for n in graph["nodes"] if n["status"] == "active" and n["in_major"])
+            # An online twin (PSTATW 120A) shares its base course's card (item 13).
+            expected = [c for c in expected if online_base(c, expected) is None]
             boxes = page.evaluate("[...document.querySelectorAll('.box[data-code]')].map(b => b.dataset.code)")
             in_major = sorted(code for code in boxes if code in set(expected))
             extra = [code for code in boxes if code not in set(expected)]
@@ -679,6 +692,17 @@ def main():
         page.wait_for_function("currentView === 'map'", timeout=10000)
         check("item 1: the map shows the capstone as 'one of'", "or CMPSC 189A" in box(page, "ECE 189A").inner_text(),
               box(page, "ECE 189A").inner_text())
+
+        # Item 13: online twins share one card
+        page.goto(SITE + "#statistics-and-data-science-bs")
+        page.wait_for_function("graph && graph.major.id === 'BSSTSDS' && currentView === 'map'", timeout=15000)
+        check("item 13: PSTAT 120A's card names its online twin", "or online PSTATW 120A" in box(page, "PSTAT 120A").inner_text())
+        check("item 13: PSTATW 120A has no card of its own", box(page, "PSTATW 120A").count() == 0)
+        page.evaluate("taken.add('PSTATW 120A'); doneChanged(); draw()")
+        check("item 13: taking the online twin counts for both", page.evaluate("isDone('PSTAT 120A')") and "taken" in classes(page, "PSTAT 120A"))
+        page.evaluate("taken.delete('PSTATW 120A'); doneChanged(); draw()")
+        page.goto(SITE + "#plan/computer-engineering-bs")
+        page.wait_for_function("graph.major.id === 'BSCMPEN' && currentView === 'plan'", timeout=15000)
 
         # Items 5-6: reading a transcript into an auto-filled plan
         page.goto(SITE + "#plan/computer-engineering-bs")

@@ -174,7 +174,14 @@ function readyBy(code, index, concurrent) {
 }
 
 function inPlanOrDone(code) {
-  return isDone(code) || Boolean(plan.placed[code]);
+  return isDone(code) || [code, onlineTwin(code), onlineBase(code)].some(c => c && plan.placed[c]);
+}
+
+// A requirement's items without online twins whose base course is listed
+// too: "PSTAT 120A or PSTATW 120A" is one course for counting and listing.
+function withoutTwins(items) {
+  const codes = new Set(items.filter(i => i.type === "course").map(i => i.code));
+  return items.filter(i => !(i.type === "course" && i.code && onlineBase(i.code) && codes.has(onlineBase(i.code))));
 }
 
 // Could this part of a prerequisite tree be met by what's done or planned?
@@ -363,7 +370,8 @@ function progress(node, key) {
     return { have: inPlanOrDone(node.code) ? 1 : 0, done: isDone(node.code) ? 1 : 0, need: 1 };
   }
   if (node.type === "text") return { have: 0, done: 0, need: 0 };
-  const parts = node.items.map((item, i) => progress(item, key + "." + i));
+  const kept = withoutTwins(node.items);
+  const parts = node.items.map((item, i) => progress(item, key + "." + i)).filter((p, i) => kept.includes(node.items[i]));
   const slots = (plan.electives || []).filter(e => e.key === key).length;
   if (node.type === "all") {
     return parts.reduce((sum, p) => ({ have: sum.have + p.have, done: sum.done + p.done, need: sum.need + p.need }),
@@ -385,9 +393,12 @@ function progress(node, key) {
 }
 
 // Every course named anywhere inside a requirement.
+// Every course named anywhere inside a requirement, once (an online twin
+// whose base course is also named counts as that course).
 function coursesInRequirement(node) {
   if (node.type === "course") return node.code ? [node.code] : [];
-  return (node.items || []).flatMap(coursesInRequirement);
+  const all = (node.items || []).flatMap(coursesInRequirement);
+  return all.filter(code => !(onlineBase(code) && all.includes(onlineBase(code))));
 }
 
 // "done", "planned", "0/2 done", "1/3 done or planned".
@@ -415,7 +426,9 @@ function requirementHtml(node, key, depth, sectionName, insideChoice) {
   const label = node.label && node.label.toLowerCase() !== (sectionName || "").split(" — ").pop().toLowerCase() ? node.label : "";
   const head = [label, rule].filter(Boolean).join(": ");
   const isChoice = node.type === "choose";
-  const items = node.items.map((item, i) => requirementHtml(item, key + "." + i, depth + 1, sectionName, isChoice)).join("");
+  // (Keys use each item's place in the full list, so slots stay matched.)
+  const kept = withoutTwins(node.items);
+  const items = node.items.map((item, i) => kept.includes(item) ? requirementHtml(item, key + "." + i, depth + 1, sectionName, isChoice) : "").join("");
   // Progress inside a "one of" option ("0 of 2") reads like something is
   // missing when the student simply took the other option, so it's left off.
   const showProgress = depth > 0 && !insideChoice;
