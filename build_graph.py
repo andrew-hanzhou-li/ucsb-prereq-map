@@ -294,6 +294,7 @@ def build_major(major, prereqs, catalog):
             "id": code,
             "title": info.get("title", ""),
             "units": info.get("units", ""),
+            "offered": info.get("offered", []),
             "level": info.get("level", ""),
             "status": status,
             "in_major": in_major,

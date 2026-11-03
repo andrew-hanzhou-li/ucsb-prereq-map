@@ -132,12 +132,39 @@ def main():
         check("Computer Engineering is listed under Electrical and Computer Engineering",
               ece.count() == 1 and "Computer Engineering - BS" in ece.inner_text())
         open_major(page, SITE, "economics-ba", "BAECON")
-        page.focus("#major-input")
-        check("clicking into a filled-in picker empties it, so the full list shows",
-              page.input_value("#major-input") == "")
-        page.focus("#course-input")
-        check("leaving it without choosing puts the major back",
-              page.input_value("#major-input") == "Economics - BA")
+        check("the chosen program is shown by name", "Economics - BA" in page.inner_text("#chosen"))
+        check("the picker is empty, ready to add another program", page.input_value("#major-input") == "")
+
+        # Phase 1: several programs at once (CE BS + Statistical Science minor)
+        page.fill("#major-input", "Computer Engineering - BS")
+        page.dispatch_event("#major-input", "change")
+        page.wait_for_function("graph && graph.major.programs.length === 2", timeout=15000)
+        check("adding a program puts both on the map", page.evaluate("location.hash") == "#economics-ba+computer-engineering-bs")
+        page.click('#chosen button[data-remove="BAECON"]')
+        page.wait_for_function("graph && graph.major.programs.length === 1", timeout=15000)
+        check("the x takes a program off the map", page.evaluate("location.hash") == "#computer-engineering-bs")
+        page.goto(SITE + "#computer-engineering-bs+statistical-science-minor")
+        page.wait_for_function("graph && graph.major.programs.length === 2 && document.querySelectorAll('.box').length > 0", timeout=15000)
+        both = {}
+        for stem_ in ("computer-engineering-bs", "statistical-science-minor"):
+            with open("site/data/%s.json" % stem_, encoding="utf-8") as f:
+                both[stem_] = {n["id"] for n in json.load(f)["nodes"] if n["in_major"] and n["status"] == "active"}
+        expected = both["computer-engineering-bs"] | both["statistical-science-minor"]
+        boxes = page.evaluate("[...document.querySelectorAll('.box[data-code]')].map(b => b.dataset.code)")
+        check("combined map: every course of both programs is there", expected <= set(boxes),
+              sorted(expected - set(boxes))[:5])
+        check("combined map: no course appears twice", len(boxes) == len(set(boxes)))
+        check("combined map: MATH 4A, in both, says it counts toward both",
+              "counts toward both" in box(page, "MATH 4A").inner_text())
+        check("combined map: a course in only one program doesn't", "counts toward" not in box(page, "ECE 152A").inner_text())
+        titles = page.locator(".elective-row .row-label").all_inner_texts()
+        check("combined map: elective lists are labeled with their program",
+              any(t.startswith("Computer Engineering BS:") for t in titles) and any(t.startswith("Statistical Science minor:") for t in titles), titles)
+        box(page, "MATH 4A").click()
+        page.wait_for_timeout(100)
+        check("combined map: the panel says which programs a course counts toward",
+              "Counts toward Computer Engineering BS and Statistical Science minor" in page.inner_text("#panel-body"))
+        check("combined map: no JavaScript errors", not page.errors, page.errors)
 
         # 2. Every major
         for major in majors:

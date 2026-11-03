@@ -34,7 +34,7 @@ SITE = "site"
 OUTPUT = os.path.join(SITE, "ucsb-prereq-map.html")
 
 # Course details shared by every major (stored once).
-SHARED = ("title", "units", "level", "prereq_text", "requires", "ambiguous", "description")
+SHARED = ("title", "units", "offered", "level", "prereq_text", "requires", "ambiguous", "description")
 # A major's own facts about each of its courses.
 PER_MAJOR = ("id", "status", "in_major", "role", "groups", "column")
 

@@ -51,7 +51,7 @@ const ROLE_NAMES = {
 // ===========================================================================
 
 let majors = [];            // majors and minors (data/majors.json)
-let currentMajor = null;    // the entry from majors.json that's on the map
+let currentPrograms = [];   // the entries from majors.json on the map (one or more)
 let graph = null;           // the loaded major's graph
 let loading = 0;            // counts loads, so a slow one can't replace a newer one
 let nodesById = {};         // course code -> course from the graph
@@ -69,6 +69,7 @@ let hoverTimer = null;
 
 const el = {
   majorInput: document.getElementById("major-input"),
+  chosen: document.getElementById("chosen"),
   majorList: document.getElementById("major-list"),
   courseInput: document.getElementById("course-input"),
   courseList: document.getElementById("course-list"),
@@ -118,9 +119,22 @@ async function start() {
   }
   fillBrowseLists();
 
+  // Picking a program in the box adds it to the ones on the map (or opens
+  // it, if nothing is open yet).
   el.majorInput.addEventListener("change", function () {
     const major = majors.find(m => m.name.toLowerCase() === el.majorInput.value.trim().toLowerCase());
-    if (major) location.hash = stem(major.file);
+    el.majorInput.value = "";
+    if (!major) return;
+    const programs = currentPrograms.filter(p => p.id !== major.id).concat([major]);
+    location.hash = hashFor(programs, null);
+  });
+
+  // The × after a program's name takes it off the map.
+  el.chosen.addEventListener("click", function (event) {
+    const button = event.target.closest("button[data-remove]");
+    if (!button) return;
+    const programs = currentPrograms.filter(p => p.id !== button.dataset.remove);
+    location.hash = programs.length ? hashFor(programs, null) : "";
   });
 
   el.courseInput.addEventListener("change", function () {
@@ -190,8 +204,12 @@ function fillBrowseLists() {
 }
 
 /*
-  The address: "#economics-ba" is a major; "#economics-ba/ECON+10A" is a
-  major with a course selected ("+" stands for the space in a course code).
+  The address:
+    #economics-ba                                one program
+    #economics-ba+statistical-science-minor      several, joined by "+"
+    #economics-ba/ECON+10A                       with a course selected
+                                                 ("+" there stands for the
+                                                 space in a course code)
 */
 function readHash() {
   let raw = "";
@@ -201,40 +219,41 @@ function readHash() {
     // A mangled link: treat it as no address.
   }
   const slash = raw.indexOf("/");
-  if (slash < 0) return { stem: raw, course: null };
-  return { stem: raw.slice(0, slash), course: raw.slice(slash + 1).replace(/\+/g, " ").toUpperCase() || null };
+  const programs = slash < 0 ? raw : raw.slice(0, slash);
+  const course = slash < 0 ? null : raw.slice(slash + 1).replace(/\+/g, " ").toUpperCase() || null;
+  return { stems: programs ? programs.split("+") : [], course: course };
 }
 
-function hashFor(major, code) {
-  return "#" + stem(major.file) + (code ? "/" + code.replace(/ /g, "+") : "");
+function hashFor(programs, code) {
+  return "#" + programs.map(p => stem(p.file)).join("+") + (code ? "/" + code.replace(/ /g, "+") : "");
 }
 
 // Keep the address bar in step with the selection, so copying it shares this
 // exact view. replaceState changes the address without adding a Back step
 // for every click, and without firing "hashchange".
 function rememberInAddress() {
-  if (!currentMajor) return;
+  if (!currentPrograms.length) return;
   const code = selected && nodesById[selected] ? selected : null;
-  const target = hashFor(currentMajor, code);
+  const target = hashFor(currentPrograms, code);
   if (location.hash !== target) history.replaceState(null, "", target);
 }
 
 async function loadFromHash() {
   const wanted = readHash();
-  if (!wanted.stem) {
+  if (!wanted.stems.length) {
     showHome();
     return;
   }
-  const major = majors.find(m => stem(m.file) === wanted.stem);
-  if (!major) {
+  const programs = wanted.stems.map(s => majors.find(m => stem(m.file) === s));
+  if (programs.some(p => !p)) {
     showHome();
     showNotice("<h2>No map at that address</h2>" +
                "<p>That link doesn't match a current major or minor. The program may have been renamed or " +
                "retired from the catalog. Pick one from the lists below.</p>");
     return;
   }
-  if (!currentMajor || currentMajor.id !== major.id) {
-    if (!(await loadMajor(major))) return;
+  if (programs.map(p => p.id).join("+") !== currentPrograms.map(p => p.id).join("+")) {
+    if (!(await loadPrograms(programs))) return;
   }
   if (wanted.course && nodesById[wanted.course]) {
     if (wanted.course !== selected) selectCourse(wanted.course, true);
@@ -255,7 +274,8 @@ function showNotice(html) {
 // Back to the front page: no map, the welcome text and the lists.
 function showHome() {
   loading += 1;           // any load still in progress is no longer wanted
-  currentMajor = null;
+  currentPrograms = [];
+  showChosen();
   graph = null;
   nodesById = {};
   shown = new Set();
@@ -292,24 +312,102 @@ async function fetchMajor(major) {
   });
 }
 
-// Load a major's graph and draw it. Returns false if it didn't load.
-async function loadMajor(major) {
+// "Computer Engineering - BS" -> "Computer Engineering BS";
+// "Statistical Science - Minor" -> "Statistical Science minor".
+function shortName(name) {
+  return name.replace(/\s*-\s*Minor\s*$/, " minor").replace(/\s+-\s+/g, " ").trim();
+}
+
+/*
+  Put several programs' graphs together into one, so the rest of the code
+  can treat a double major (or a major and a minor) like a single program:
+    - each course appears once. Its role is the strongest one it has in any
+      of the programs (required beats "pick one", which beats elective), and
+      "programs" lists every program it counts toward.
+    - requirement sections and elective lists keep their program's name in
+      front ("Statistical Science minor — UPPER DIVISION"), so two programs'
+      lists never merge by accident.
+  With one program, the graph is used as it is.
+*/
+function combine(entries, graphs) {
+  const labels = entries.map(e => shortName(e.name));
+  if (graphs.length === 1) {
+    const only = graphs[0];
+    only.major.programs = [{ id: entries[0].id, name: entries[0].name, label: labels[0], source: only.major.source }];
+    for (const node of only.nodes) node.programs = node.in_major ? [labels[0]] : [];
+    return only;
+  }
+  const strength = { prerequisite: 0, elective: 1, choice: 2, required: 3 };
+  const byId = {};
+  const sections = [];
+  const narrative = [];
+  const pools = [];
+  graphs.forEach(function (g, i) {
+    const label = labels[i];
+    for (const node of g.nodes) {
+      let merged = byId[node.id];
+      if (!merged) {
+        merged = byId[node.id] = Object.assign({}, node, { in_major: false, role: "prerequisite", groups: [], programs: [] });
+      }
+      if (node.in_major) {
+        merged.in_major = true;
+        merged.status = node.status;
+        merged.programs.push(label);
+        merged.groups = merged.groups.concat(node.groups.map(group => label + " — " + group));
+      }
+      if (strength[node.role] > strength[merged.role]) merged.role = node.role;
+      merged.column = Math.min(merged.column, node.column);
+    }
+    for (const section of g.major.sections) sections.push(Object.assign({}, section, { name: label + " — " + section.name }));
+    for (const text of g.major.narrative) narrative.push(label + ": " + text);
+    for (const pool of g.pools) pools.push(Object.assign({}, pool, { id: "p" + i + "-" + pool.id, section: label + " — " + pool.section }));
+  });
+  const nodes = Object.values(byId);
+  return {
+    major: {
+      id: entries.map(e => e.id).join("+"),
+      name: entries.map(e => e.name).join(" + "),
+      kind: "combined",
+      catalog_year: graphs[0].major.catalog_year,
+      source: graphs[0].major.source,
+      sections: sections,
+      narrative: narrative,
+      programs: entries.map((e, i) => ({ id: e.id, name: e.name, label: labels[i], source: graphs[i].major.source })),
+    },
+    nodes: nodes,
+    pools: pools,
+    stats: { courses_in_major: nodes.filter(n => n.in_major).length },
+  };
+}
+
+// The programs on the map, as names with an × to take each one off.
+function showChosen() {
+  el.chosen.innerHTML = currentPrograms.map(p =>
+    '<span class="chosen-item">' + escapeHtml(p.name) +
+    ' <button type="button" class="remove" data-remove="' + escapeHtml(p.id) + '" aria-label="Remove ' +
+    escapeHtml(p.name) + '">×</button></span>').join('<span class="plus">+</span>');
+  el.majorInput.placeholder = currentPrograms.length ? "Add another major or minor…" : "Choose a major or minor…";
+}
+
+// Load the programs' graphs, put them together and draw the map.
+// Returns false if they didn't load.
+async function loadPrograms(programs) {
   const ticket = ++loading;
-  el.majorInput.value = major.name;
   el.majorInput.blur();
   let loaded;
   try {
-    loaded = await fetchMajor(major);
+    loaded = await Promise.all(programs.map(fetchMajor));
   } catch (error) {
     if (ticket !== loading) return false;
     showHome();
-    showNotice("<h2>" + escapeHtml(major.name) + " didn't load</h2>" +
+    showNotice("<h2>" + escapeHtml(programs.map(p => p.name).join(" + ")) + " didn't load</h2>" +
                "<p>Check your internet connection, then refresh the page.</p>");
     return false;
   }
-  if (ticket !== loading) return false;     // another major was picked meanwhile
-  currentMajor = major;
-  graph = loaded;
+  if (ticket !== loading) return false;     // another program was picked meanwhile
+  currentPrograms = programs;
+  graph = combine(programs, loaded);
+  showChosen();
 
   nodesById = {};
   for (const node of graph.nodes) nodesById[node.id] = node;
@@ -321,11 +419,14 @@ async function loadMajor(major) {
   el.allLink.hidden = false;
   el.toggles.disabled = false;
   el.courseInput.disabled = false;
-  el.footerCatalog.textContent = "Built from the " + graph.major.catalog_year + " UCSB General Catalog. ";
-  const source = document.createElement("a");
-  source.href = graph.major.source;
-  source.textContent = "Official requirements for " + graph.major.name;
-  el.footerCatalog.appendChild(source);
+  el.footerCatalog.textContent = "Built from the " + graph.major.catalog_year + " UCSB General Catalog. Official requirements: ";
+  graph.major.programs.forEach(function (program, i) {
+    const source = document.createElement("a");
+    source.href = program.source;
+    source.textContent = program.name;
+    if (i) el.footerCatalog.appendChild(document.createTextNode(", "));
+    el.footerCatalog.appendChild(source);
+  });
   document.title = graph.major.name + " · The Prerequisite Map";
 
   draw();
@@ -676,7 +777,7 @@ function draw() {
   columns.forEach(function (column, i) {
     const codes = coreCodes.filter(code => level[code] === column)
       .sort((a, b) => (roleRank(a) - roleRank(b)) || bySortKey(a, b));
-    const note = i === 0 ? '<span class="row-count">no prerequisites in this ' + programWord() + "</span>" : "";
+    const note = i === 0 ? '<span class="row-count">no prerequisites in ' + thisProgram() + "</span>" : "";
     html += '<section class="row step-row"><h3 class="row-label">' + stepName(i + 1) + note + "</h3>" +
             '<div class="grid">' + codes.map(boxHtml).join("") + "</div></section>";
   });
@@ -760,6 +861,9 @@ function boxInnerHtml(code) {
   if (course.status !== "active") tag = "not offered now";
   else if (course.role === "choice" && partners[code]) tag = "or " + partners[code].join(" or ");
   if (tag) html += '<span class="line tag">' + escapeHtml(tag) + "</span>";
+  if (course.programs && course.programs.length > 1) {
+    html += '<span class="line tag both">counts toward ' + (course.programs.length === 2 ? "both" : course.programs.length) + "</span>";
+  }
   return html;
 }
 
@@ -783,6 +887,9 @@ function joinCodes(codes) {
 }
 
 function groupTitle(key) {
+  // "Statistical Science minor — UPPER DIVISION: Electives" -> "Statistical Science minor: Electives"
+  const dash = key.indexOf(" — ");
+  if (dash >= 0) return key.slice(0, dash) + ": " + groupTitle(key.slice(dash + 3));
   // "UUPPER-DIVISION MAJOR: D." -> "Area D electives"; "...: Computer Engineering electives" -> that.
   const parts = key.split(": ");
   const label = parts.length > 1 ? parts.slice(1).join(": ") : readable(parts[0]);
@@ -1162,9 +1269,11 @@ function cssEscape(text) {
   return String(text).replace(/["\\]/g, "\\$&");
 }
 
-// "major" or "minor", for the page's wording.
-function programWord() {
-  return graph && graph.major.kind === "minor" ? "minor" : "major";
+// "this major", "this minor" or "these programs", for the page's wording.
+function thisProgram() {
+  if (!graph) return "this major";
+  if (graph.major.programs.length > 1) return "these programs";
+  return graph.major.kind === "minor" ? "this minor" : "this major";
 }
 
 // A course code as a button that selects it.
@@ -1273,12 +1382,15 @@ function showCourse(course) {
     html += '<p class="note">Further back on the map: ' + earlier.map(courseLink).join(", ") + "</p>";
   }
 
-  html += '<h3><span class="unlocks-key">Unlocks in this ' + programWord() + "</span></h3>";
+  html += '<h3><span class="unlocks-key">Unlocks in ' + thisProgram() + "</span></h3>";
   html += unlockList.length
     ? "<ul>" + unlockList.map(code => "<li>" + courseLink(code) + "</li>").join("") + "</ul>"
     : "<p>Nothing on this map lists it as a prerequisite.</p>";
 
-  html += "<h3>In this " + programWord() + "</h3><p>" + ROLE_NAMES[course.role] + "</p>";
+  html += "<h3>In " + thisProgram() + "</h3><p>" + ROLE_NAMES[course.role] + "</p>";
+  if (graph.major.programs.length > 1) {
+    html += "<p>Counts toward " + (course.programs.length ? course.programs.map(escapeHtml).join(" and ") : "neither directly") + ".</p>";
+  }
   if (course.groups.length) {
     html += "<ul>" + course.groups.map(g => "<li>" + escapeHtml(readableGroup(g)) + "</li>").join("") + "</ul>";
   }
@@ -1326,7 +1438,7 @@ function showMajorSummary() {
 
   const inMajor = graph.nodes.filter(n => n.in_major);
   const done = inMajor.filter(n => taken.has(n.id)).length;
-  if (done) html += "<p>You've marked " + done + " of this " + programWord() + "'s " + inMajor.length + " courses as taken.</p>";
+  if (done) html += "<p>You've marked " + done + " of the " + inMajor.length + " courses in " + thisProgram() + " as taken.</p>";
 
   html += "<h3>Requirements</h3><ul>";
   for (const section of graph.major.sections) html += "<li>" + escapeHtml(readable(section.name)) + "</li>";

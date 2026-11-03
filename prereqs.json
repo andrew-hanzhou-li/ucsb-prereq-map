@@ -1146,6 +1146,18 @@
    "unparsed": []
   },
   {
+   "code": "ANTH 180A",
+   "prereq_text": "Consent of instructor.",
+   "requires": {
+    "type": "condition",
+    "kind": "consent",
+    "text": "Consent of instructor"
+   },
+   "source": "parser",
+   "ambiguous": false,
+   "unparsed": []
+  },
+  {
    "code": "ANTH 182M",
    "prereq_text": "Anthropology 3 or 3SS or 100.",
    "requires": {
@@ -4313,6 +4325,18 @@
     "type": "condition",
     "kind": "standing",
     "text": "Not open to freshmen"
+   },
+   "source": "parser",
+   "ambiguous": false,
+   "unparsed": []
+  },
+  {
+   "code": "ARTHI 131D",
+   "prereq_text": "Upper-division standing.",
+   "requires": {
+    "type": "condition",
+    "kind": "standing",
+    "text": "Upper-division standing"
    },
    "source": "parser",
    "ambiguous": false,
@@ -14676,6 +14700,14 @@
    "unparsed": []
   },
   {
+   "code": "CHEM 49",
+   "prereq_text": "",
+   "requires": null,
+   "source": "parser",
+   "ambiguous": false,
+   "unparsed": []
+  },
+  {
    "code": "CHEM 91",
    "prereq_text": "Consent of instructor.",
    "requires": {
@@ -16909,14 +16941,6 @@
      }
     ]
    },
-   "source": "parser",
-   "ambiguous": false,
-   "unparsed": []
-  },
-  {
-   "code": "CHEM 149",
-   "prereq_text": "",
-   "requires": null,
    "source": "parser",
    "ambiguous": false,
    "unparsed": []
@@ -21839,6 +21863,29 @@
    "unparsed": []
   },
   {
+   "code": "CMPSC 172",
+   "prereq_text": "Computer Science 130A. Open to Computer Science or Computer Engineering majors only, or by consent of department.",
+   "requires": {
+    "type": "and",
+    "items": [
+     {
+      "type": "course",
+      "code": "CMPSC 130A",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "condition",
+      "kind": "restriction",
+      "text": "Open to Computer Science or Computer Engineering majors only, or by consent of department"
+     }
+    ]
+   },
+   "source": "parser",
+   "ambiguous": false,
+   "unparsed": []
+  },
+  {
    "code": "CMPSC 174A",
    "prereq_text": "Computer Science 130A.",
    "requires": {
@@ -22054,7 +22101,7 @@
   },
   {
    "code": "CMPSC 181",
-   "prereq_text": "Upper-division standing in Electrical Engineering, Computer Engineering, Computer Science, Chemical Engineering or Mechanical Engineering.",
+   "prereq_text": "Upper-division standing in Artificial Intelligence, Electrical Engineering, Computer Engineering, Computer Science, Chemical Engineering or Mechanical Engineering.",
    "requires": {
     "type": "and",
     "items": [
@@ -22066,7 +22113,7 @@
      {
       "type": "condition",
       "kind": "other",
-      "text": "Computer Engineering"
+      "text": "Electrical Engineering"
      }
     ]
    },
@@ -34711,7 +34758,7 @@
   },
   {
    "code": "ECE 181",
-   "prereq_text": "Upper-division standing in Electrical Engineering, Computer Engineering, Computer Science, Chemical Engineering or Mechanical Engineering.",
+   "prereq_text": "Upper-division standing in Artificial Intelligence, Electrical Engineering, Computer Engineering, Computer Science, Chemical Engineering or Mechanical Engineering.",
    "requires": {
     "type": "and",
     "items": [
@@ -34723,7 +34770,7 @@
      {
       "type": "condition",
       "kind": "other",
-      "text": "Computer Engineering"
+      "text": "Electrical Engineering"
      }
     ]
    },
@@ -37462,6 +37509,14 @@
   },
   {
    "code": "ECON 93",
+   "prereq_text": "",
+   "requires": null,
+   "source": "parser",
+   "ambiguous": false,
+   "unparsed": []
+  },
+  {
+   "code": "ECON 94",
    "prereq_text": "",
    "requires": null,
    "source": "parser",
@@ -49316,7 +49371,7 @@
    "unparsed": []
   },
   {
-   "code": "ENGL 105SF ",
+   "code": "ENGL 105SF",
    "prereq_text": "Writing 2 or 50 or 109 or English 10 or upper-division standing.",
    "requires": {
     "type": "or",
@@ -51882,6 +51937,29 @@
    "unparsed": []
   },
   {
+   "code": "ENGL 165NT",
+   "prereq_text": "Writing 2 or upper-division standing.",
+   "requires": {
+    "type": "or",
+    "items": [
+     {
+      "type": "course",
+      "code": "WRIT 2",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "condition",
+      "kind": "standing",
+      "text": "upper-division standing"
+     }
+    ]
+   },
+   "source": "parser",
+   "ambiguous": false,
+   "unparsed": []
+  },
+  {
    "code": "ENGL 165RP",
    "prereq_text": "Writing 2 or upper-division standing.",
    "requires": {
@@ -52325,6 +52403,14 @@
      }
     ]
    },
+   "source": "parser",
+   "ambiguous": false,
+   "unparsed": []
+  },
+  {
+   "code": "ENGL 174WS",
+   "prereq_text": "",
+   "requires": null,
    "source": "parser",
    "ambiguous": false,
    "unparsed": []
@@ -58718,7 +58804,7 @@
    "unparsed": []
   },
   {
-   "code": "ESM 258 ",
+   "code": "ESM 258",
    "prereq_text": "",
    "requires": null,
    "source": "parser",
@@ -58913,7 +58999,7 @@
    "unparsed": []
   },
   {
-   "code": "ESM 292 ",
+   "code": "ESM 292",
    "prereq_text": "",
    "requires": null,
    "source": "parser",
@@ -58937,7 +59023,7 @@
    "unparsed": []
   },
   {
-   "code": "ESM 295 ",
+   "code": "ESM 295",
    "prereq_text": "",
    "requires": null,
    "source": "parser",
@@ -58970,33 +59056,20 @@
   },
   {
    "code": "ESM 401A",
-   "prereq_text": "Graduate standing. MESM students only.",
-   "requires": {
-    "type": "and",
-    "items": [
-     {
-      "type": "condition",
-      "kind": "standing",
-      "text": "Graduate standing"
-     },
-     {
-      "type": "condition",
-      "kind": "restriction",
-      "text": "MESM students only"
-     }
-    ]
-   },
+   "prereq_text": "",
+   "requires": null,
    "source": "parser",
    "ambiguous": false,
    "unparsed": []
   },
   {
    "code": "ESM 401B",
-   "prereq_text": "ESM401A - MESM students only.",
+   "prereq_text": "ESM401A",
    "requires": {
-    "type": "condition",
-    "kind": "restriction",
-    "text": "ESM 401A - MESM students only"
+    "type": "course",
+    "code": "ESM 401A",
+    "concurrent": false,
+    "min_grade": null
    },
    "source": "parser",
    "ambiguous": false,
@@ -59004,7 +59077,7 @@
   },
   {
    "code": "ESM 401C",
-   "prereq_text": "ESM401A, ESM401B. MESM students only.",
+   "prereq_text": "ESM401A, ESM401B.",
    "requires": {
     "type": "and",
     "items": [
@@ -59019,11 +59092,6 @@
       "code": "ESM 401B",
       "concurrent": false,
       "min_grade": null
-     },
-     {
-      "type": "condition",
-      "kind": "restriction",
-      "text": "MESM students only"
      }
     ]
    },
@@ -59033,7 +59101,7 @@
   },
   {
    "code": "ESM 401D",
-   "prereq_text": "ESM 401A, 401B, and 401C. Graduate standing in ESM.",
+   "prereq_text": "ESM 401A, 401B, and 401C.",
    "requires": {
     "type": "and",
     "items": [
@@ -59054,11 +59122,6 @@
       "code": "ESM 401C",
       "concurrent": false,
       "min_grade": null
-     },
-     {
-      "type": "condition",
-      "kind": "standing",
-      "text": "Graduate standing in ESM"
      }
     ]
    },
@@ -59076,11 +59139,12 @@
   },
   {
    "code": "ESM 402B",
-   "prereq_text": "ESM402A - MESM students only.",
+   "prereq_text": "ESM402A",
    "requires": {
-    "type": "condition",
-    "kind": "restriction",
-    "text": "ESM 402A - MESM students only"
+    "type": "course",
+    "code": "ESM 402A",
+    "concurrent": false,
+    "min_grade": null
    },
    "source": "parser",
    "ambiguous": false,
@@ -59088,7 +59152,7 @@
   },
   {
    "code": "ESM 402C",
-   "prereq_text": "ESM402A and ESM402B. MESM students only.",
+   "prereq_text": "ESM402A and ESM402B.",
    "requires": {
     "type": "and",
     "items": [
@@ -59103,11 +59167,6 @@
       "code": "ESM 402B",
       "concurrent": false,
       "min_grade": null
-     },
-     {
-      "type": "condition",
-      "kind": "restriction",
-      "text": "MESM students only"
      }
     ]
    },
@@ -59117,7 +59176,7 @@
   },
   {
    "code": "ESM 402D",
-   "prereq_text": "ESM402A,402B and 402C. MESM students only.",
+   "prereq_text": "ESM402A,402B and 402C.",
    "requires": {
     "type": "and",
     "items": [
@@ -59138,11 +59197,6 @@
       "code": "ESM 402C",
       "concurrent": false,
       "min_grade": null
-     },
-     {
-      "type": "condition",
-      "kind": "restriction",
-      "text": "MESM students only"
      }
     ]
    },
@@ -59633,7 +59687,7 @@
   },
   {
    "code": "FAMST 55LH",
-   "prereq_text": "No prerequisites.",
+   "prereq_text": "",
    "requires": null,
    "source": "parser",
    "ambiguous": false,
@@ -60103,13 +60157,13 @@
   },
   {
    "code": "FAMST 112",
-   "prereq_text": "Film and Media Studies 46 or consent of instructor.",
+   "prereq_text": "Film and Media Studies 104 or consent of instructor.",
    "requires": {
     "type": "or",
     "items": [
      {
       "type": "course",
-      "code": "FAMST 46",
+      "code": "FAMST 104",
       "concurrent": false,
       "min_grade": null
      },
@@ -60186,6 +60240,29 @@
       "type": "condition",
       "kind": "standing",
       "text": "upper-division standing"
+     }
+    ]
+   },
+   "source": "parser",
+   "ambiguous": false,
+   "unparsed": []
+  },
+  {
+   "code": "FAMST 114",
+   "prereq_text": "Film and Media Studies 104 or consent of instructor.",
+   "requires": {
+    "type": "or",
+    "items": [
+     {
+      "type": "course",
+      "code": "FAMST 104",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
      }
     ]
    },
@@ -60293,11 +60370,22 @@
   },
   {
    "code": "FAMST 118LP",
-   "prereq_text": "Upper-division standing.",
+   "prereq_text": "Film and Media Studies 104 or consent of instructor.",
    "requires": {
-    "type": "condition",
-    "kind": "standing",
-    "text": "Upper-division standing"
+    "type": "or",
+    "items": [
+     {
+      "type": "course",
+      "code": "FAMST 104",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -60642,6 +60730,40 @@
     "type": "condition",
     "kind": "standing",
     "text": "Upper-division standing"
+   },
+   "source": "parser",
+   "ambiguous": false,
+   "unparsed": []
+  },
+  {
+   "code": "FAMST 136",
+   "prereq_text": "FAMST 46 or 70 or C Lit 30AA-ZZ or consent of instructor.",
+   "requires": {
+    "type": "or",
+    "items": [
+     {
+      "type": "course",
+      "code": "FAMST 46",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "course",
+      "code": "FAMST 70",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "condition",
+      "kind": "other",
+      "text": "C Lit 30AA-ZZ"
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -61346,6 +61468,35 @@
    "unparsed": []
   },
   {
+   "code": "FAMST 166SP",
+   "prereq_text": "Film and Media Studies 46 or 70 or upper-division standing.",
+   "requires": {
+    "type": "or",
+    "items": [
+     {
+      "type": "course",
+      "code": "FAMST 46",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "course",
+      "code": "FAMST 70",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "condition",
+      "kind": "standing",
+      "text": "upper-division standing"
+     }
+    ]
+   },
+   "source": "parser",
+   "ambiguous": false,
+   "unparsed": []
+  },
+  {
    "code": "FAMST 166TS",
    "prereq_text": "Film Studies 46.",
    "requires": {
@@ -61701,6 +61852,39 @@
   },
   {
    "code": "FAMST 187DJ",
+   "prereq_text": "Film studies 46 or upper-division standing, and consent of instructor.",
+   "requires": {
+    "type": "and",
+    "items": [
+     {
+      "type": "or",
+      "items": [
+       {
+        "type": "course",
+        "code": "FAMST 46",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "condition",
+        "kind": "standing",
+        "text": "upper-division standing"
+       }
+      ]
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
+     }
+    ]
+   },
+   "source": "parser",
+   "ambiguous": false,
+   "unparsed": []
+  },
+  {
+   "code": "FAMST 187DM",
    "prereq_text": "Film studies 46 or upper-division standing, and consent of instructor.",
    "requires": {
     "type": "and",
@@ -62922,6 +63106,72 @@
   },
   {
    "code": "FAMST 190AW",
+   "prereq_text": "Film Studies 46 or upper-division standing, and consent of instructor.",
+   "requires": {
+    "type": "and",
+    "items": [
+     {
+      "type": "or",
+      "items": [
+       {
+        "type": "course",
+        "code": "FAMST 46",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "condition",
+        "kind": "standing",
+        "text": "upper-division standing"
+       }
+      ]
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
+     }
+    ]
+   },
+   "source": "parser",
+   "ambiguous": false,
+   "unparsed": []
+  },
+  {
+   "code": "FAMST 190FM",
+   "prereq_text": "Film Studies 46 or upper-division standing, and consent of instructor.",
+   "requires": {
+    "type": "and",
+    "items": [
+     {
+      "type": "or",
+      "items": [
+       {
+        "type": "course",
+        "code": "FAMST 46",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "condition",
+        "kind": "standing",
+        "text": "upper-division standing"
+       }
+      ]
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
+     }
+    ]
+   },
+   "source": "parser",
+   "ambiguous": false,
+   "unparsed": []
+  },
+  {
+   "code": "FAMST 190MC",
    "prereq_text": "Film Studies 46 or upper-division standing, and consent of instructor.",
    "requires": {
     "type": "and",
@@ -67697,6 +67947,28 @@
    "unparsed": []
   },
   {
+   "code": "GEOG 165",
+   "prereq_text": "Upper-division standing or consent of instructor.",
+   "requires": {
+    "type": "or",
+    "items": [
+     {
+      "type": "condition",
+      "kind": "standing",
+      "text": "Upper-division standing"
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
+     }
+    ]
+   },
+   "source": "parser",
+   "ambiguous": false,
+   "unparsed": []
+  },
+  {
    "code": "GEOG 166",
    "prereq_text": "Chemistry 1A; and Geography 3 or 104 or Earth Science 4",
    "requires": {
@@ -70761,7 +71033,7 @@
    "unparsed": []
   },
   {
-   "code": "GLOBL 190 ",
+   "code": "GLOBL 190",
    "prereq_text": "Consent of instructor and admission to Global Studies departmental Honors program",
    "requires": {
     "type": "and",
@@ -71338,6 +71610,18 @@
   },
   {
    "code": "GLOBL 254",
+   "prereq_text": "Graduate standing",
+   "requires": {
+    "type": "condition",
+    "kind": "standing",
+    "text": "Graduate standing"
+   },
+   "source": "parser",
+   "ambiguous": false,
+   "unparsed": []
+  },
+  {
+   "code": "GLOBL 256",
    "prereq_text": "Graduate standing",
    "requires": {
     "type": "condition",
@@ -84645,7 +84929,7 @@
    "unparsed": []
   },
   {
-   "code": "INT 92BA ",
+   "code": "INT 92BA",
    "prereq_text": "Only open to Intercollegiate student athletes.",
    "requires": {
     "type": "condition",
@@ -84689,7 +84973,7 @@
    "unparsed": []
   },
   {
-   "code": "INT 92FM ",
+   "code": "INT 92FM",
    "prereq_text": "Only open to Intercollegiate student athletes.",
    "requires": {
     "type": "condition",
@@ -85973,6 +86257,18 @@
   },
   {
    "code": "INT 186ED",
+   "prereq_text": "Upper-division standing.",
+   "requires": {
+    "type": "condition",
+    "kind": "standing",
+    "text": "Upper-division standing"
+   },
+   "source": "parser",
+   "ambiguous": false,
+   "unparsed": []
+  },
+  {
+   "code": "INT 186SA",
    "prereq_text": "Upper-division standing.",
    "requires": {
     "type": "condition",
@@ -89699,6 +89995,18 @@
    "unparsed": []
   },
   {
+   "code": "JAPAN 160",
+   "prereq_text": "Upper-division standing.",
+   "requires": {
+    "type": "condition",
+    "kind": "standing",
+    "text": "Upper-division standing"
+   },
+   "source": "parser",
+   "ambiguous": false,
+   "unparsed": []
+  },
+  {
    "code": "JAPAN 161",
    "prereq_text": "Upper-division standing.",
    "requires": {
@@ -90740,6 +91048,18 @@
    "unparsed": []
   },
   {
+   "code": "LAIS 131D",
+   "prereq_text": "Upper-division standing.",
+   "requires": {
+    "type": "condition",
+    "kind": "standing",
+    "text": "Upper-division standing"
+   },
+   "source": "parser",
+   "ambiguous": false,
+   "unparsed": []
+  },
+  {
    "code": "LAIS 145",
    "prereq_text": "Spanish 16B or Spanish 25",
    "requires": {
@@ -91754,12 +92074,8 @@
   },
   {
    "code": "LING 31",
-   "prereq_text": "No restrictions.",
-   "requires": {
-    "type": "condition",
-    "kind": "other",
-    "text": "No restrictions"
-   },
+   "prereq_text": "",
+   "requires": null,
    "source": "parser",
    "ambiguous": false,
    "unparsed": []
@@ -92424,20 +92740,20 @@
   },
   {
    "code": "LING 147",
-   "prereq_text": "LING 20 OR Upper-division standing.",
+   "prereq_text": "LING 106 OR instructor permission.",
    "requires": {
     "type": "or",
     "items": [
      {
       "type": "course",
-      "code": "LING 20",
+      "code": "LING 106",
       "concurrent": false,
       "min_grade": null
      },
      {
       "type": "condition",
-      "kind": "standing",
-      "text": "Upper-division standing"
+      "kind": "consent",
+      "text": "instructor permission"
      }
     ]
    },
@@ -98241,27 +98557,27 @@
   },
   {
    "code": "MATRL 135",
-   "prereq_text": "Physics 5 or 6C or 25.",
+   "prereq_text": "Physics 6C or 7D or 25 with a minimum grade of C-",
    "requires": {
     "type": "or",
     "items": [
      {
       "type": "course",
-      "code": "PHYS 5",
+      "code": "PHYS 6C",
       "concurrent": false,
-      "min_grade": null
+      "min_grade": "C-"
      },
      {
       "type": "course",
-      "code": "PHYS 6C",
+      "code": "PHYS 7D",
       "concurrent": false,
-      "min_grade": null
+      "min_grade": "C-"
      },
      {
       "type": "course",
       "code": "PHYS 25",
       "concurrent": false,
-      "min_grade": null
+      "min_grade": "C-"
      }
     ]
    },
@@ -104624,6 +104940,18 @@
    "unparsed": []
   },
   {
+   "code": "ME 125HY",
+   "prereq_text": "Consent of instructor.",
+   "requires": {
+    "type": "condition",
+    "kind": "consent",
+    "text": "Consent of instructor"
+   },
+   "source": "parser",
+   "ambiguous": false,
+   "unparsed": []
+  },
+  {
    "code": "ME 125JS",
    "prereq_text": "Consent of instructor.",
    "requires": {
@@ -108168,6 +108496,14 @@
   },
   {
    "code": "MUS 17",
+   "prereq_text": "",
+   "requires": null,
+   "source": "parser",
+   "ambiguous": false,
+   "unparsed": []
+  },
+  {
+   "code": "MUS 19",
    "prereq_text": "",
    "requires": null,
    "source": "parser",
@@ -116657,7 +116993,7 @@
   },
   {
    "code": "PHYS 135",
-   "prereq_text": "Physics 6C or 5 or 25.",
+   "prereq_text": "Physics 6C or 7D or 25 with a minimum grade of C-",
    "requires": {
     "type": "or",
     "items": [
@@ -116665,19 +117001,19 @@
       "type": "course",
       "code": "PHYS 6C",
       "concurrent": false,
-      "min_grade": null
+      "min_grade": "C-"
      },
      {
       "type": "course",
-      "code": "PHYS 5",
+      "code": "PHYS 7D",
       "concurrent": false,
-      "min_grade": null
+      "min_grade": "C-"
      },
      {
       "type": "course",
       "code": "PHYS 25",
       "concurrent": false,
-      "min_grade": null
+      "min_grade": "C-"
      }
     ]
    },
@@ -126913,6 +127249,18 @@
    "unparsed": []
   },
   {
+   "code": "PSY 594DA",
+   "prereq_text": "Graduate standing in PBS or DYNS",
+   "requires": {
+    "type": "condition",
+    "kind": "standing",
+    "text": "Graduate standing in PBS or DYNS"
+   },
+   "source": "parser",
+   "ambiguous": false,
+   "unparsed": []
+  },
+  {
    "code": "PSY 594DB",
    "prereq_text": "Graduate standing.",
    "requires": {
@@ -131973,7 +132321,7 @@
    "unparsed": []
   },
   {
-   "code": "SOC 108E ",
+   "code": "SOC 108E",
    "prereq_text": "Upper-division standing.",
    "requires": {
     "type": "condition",
@@ -132908,6 +133256,58 @@
       "type": "condition",
       "kind": "consent",
       "text": "consent of instructor and department"
+     }
+    ]
+   },
+   "source": "parser",
+   "ambiguous": false,
+   "unparsed": []
+  },
+  {
+   "code": "SOC 191WF",
+   "prereq_text": "SOC 1; either PSTAT 5A, PSTAT 5LS, COMM 87 or CMPSC 5A. Upper division standing.",
+   "requires": {
+    "type": "and",
+    "items": [
+     {
+      "type": "course",
+      "code": "SOC 1",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "or",
+      "items": [
+       {
+        "type": "course",
+        "code": "PSTAT 5A",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "PSTAT 5LS",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "COMM 87",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "CMPSC 5A",
+        "concurrent": false,
+        "min_grade": null
+       }
+      ]
+     },
+     {
+      "type": "condition",
+      "kind": "standing",
+      "text": "Upper division standing"
      }
     ]
    },
@@ -135720,20 +136120,20 @@
   },
   {
    "code": "SPAN 183B",
-   "prereq_text": "Spanish 102L or Spanish 30 (may be taken concurrently).",
+   "prereq_text": "Spanish 16B or Spanish 25",
    "requires": {
     "type": "or",
     "items": [
      {
       "type": "course",
-      "code": "SPAN 102L",
-      "concurrent": true,
+      "code": "SPAN 16B",
+      "concurrent": false,
       "min_grade": null
      },
      {
       "type": "course",
-      "code": "SPAN 30",
-      "concurrent": true,
+      "code": "SPAN 25",
+      "concurrent": false,
       "min_grade": null
      }
     ]
@@ -135744,20 +136144,20 @@
   },
   {
    "code": "SPAN 183E",
-   "prereq_text": "Spanish 102L or Spanish 30 (may be taken concurrently).",
+   "prereq_text": "Spanish 16B or Spanish 25",
    "requires": {
     "type": "or",
     "items": [
      {
       "type": "course",
-      "code": "SPAN 102L",
-      "concurrent": true,
+      "code": "SPAN 16B",
+      "concurrent": false,
       "min_grade": null
      },
      {
       "type": "course",
-      "code": "SPAN 30",
-      "concurrent": true,
+      "code": "SPAN 25",
+      "concurrent": false,
       "min_grade": null
      }
     ]
@@ -135768,20 +136168,20 @@
   },
   {
    "code": "SPAN 183EB",
-   "prereq_text": "Spanish 102L or Spanish 30 (may be taken concurrently).",
+   "prereq_text": "Spanish 16B or Spanish 25",
    "requires": {
     "type": "or",
     "items": [
      {
       "type": "course",
-      "code": "SPAN 102L",
-      "concurrent": true,
+      "code": "SPAN 16B",
+      "concurrent": false,
       "min_grade": null
      },
      {
       "type": "course",
-      "code": "SPAN 30",
-      "concurrent": true,
+      "code": "SPAN 25",
+      "concurrent": false,
       "min_grade": null
      }
     ]
@@ -135792,20 +136192,20 @@
   },
   {
    "code": "SPAN 183IA",
-   "prereq_text": "Spanish 102L or Spanish 30 (may be taken concurrently).",
+   "prereq_text": "Spanish 16B or Spanish 25",
    "requires": {
     "type": "or",
     "items": [
      {
       "type": "course",
-      "code": "SPAN 102L",
-      "concurrent": true,
+      "code": "SPAN 16B",
+      "concurrent": false,
       "min_grade": null
      },
      {
       "type": "course",
-      "code": "SPAN 30",
-      "concurrent": true,
+      "code": "SPAN 25",
+      "concurrent": false,
       "min_grade": null
      }
     ]
@@ -138859,6 +139259,18 @@
    "unparsed": []
   },
   {
+   "code": "TMP 191ES",
+   "prereq_text": "Sophomore standing or higher.",
+   "requires": {
+    "type": "condition",
+    "kind": "standing",
+    "text": "Sophomore standing or higher"
+   },
+   "source": "parser",
+   "ambiguous": false,
+   "unparsed": []
+  },
+  {
    "code": "TMP 191FM",
    "prereq_text": "Sophomore standing or higher.",
    "requires": {
@@ -139655,6 +140067,14 @@
    "unparsed": []
   },
   {
+   "code": "W L CS 122",
+   "prereq_text": "",
+   "requires": null,
+   "source": "parser",
+   "ambiguous": false,
+   "unparsed": []
+  },
+  {
    "code": "W L CS 130",
    "prereq_text": "Consent of Instructor",
    "requires": {
@@ -139990,6 +140410,14 @@
     "kind": "consent",
     "text": "Consent of Instructor"
    },
+   "source": "parser",
+   "ambiguous": false,
+   "unparsed": []
+  },
+  {
+   "code": "W&L CS 160CN",
+   "prereq_text": "",
+   "requires": null,
    "source": "parser",
    "ambiguous": false,
    "unparsed": []
@@ -140525,6 +140953,40 @@
       "type": "condition",
       "kind": "standing",
       "text": "upper division standing"
+     }
+    ]
+   },
+   "source": "parser",
+   "ambiguous": false,
+   "unparsed": []
+  },
+  {
+   "code": "WRIT 105DS",
+   "prereq_text": "Writing 2 or 2E; upper-division standing",
+   "requires": {
+    "type": "and",
+    "items": [
+     {
+      "type": "or",
+      "items": [
+       {
+        "type": "course",
+        "code": "WRIT 2",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "WRIT 2E",
+        "concurrent": false,
+        "min_grade": null
+       }
+      ]
+     },
+     {
+      "type": "condition",
+      "kind": "standing",
+      "text": "upper-division standing"
      }
     ]
    },

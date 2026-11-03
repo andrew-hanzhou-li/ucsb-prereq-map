@@ -40,7 +40,7 @@ OUTPUT_FILE = "raw_courses.json"
 
 # The fields we ask the API to return.
 COLUMNS = [
-    "customFields.advisorEnrollmentComments",
+    "customFields.advisorEnrollmentComments", "customFields.quartersUsuallyOffered",
     "description", "longName", "courseNumber", "subjectCode", "code",
     "courseGroupId", "college", "departments", "credits", "requisites", "status",
 ]
@@ -132,14 +132,31 @@ def course_level(number):
 
 
 def format_units(credits):
-    """Units are stored as a min/max range; '4' or '1-4'."""
+    """Units are stored as a min/max range; '4' or '1-4'.
+
+    Variable-unit courses (independent study, 199s) store 0 credit hours and
+    put their range in "contactHours" instead (ANTH 99: 1 to 4 units), so
+    for those the range comes from there."""
     hours = (credits or {}).get("creditHours") or {}
     low, high = hours.get("min"), hours.get("max")
+    if not low:
+        contact = (credits or {}).get("contactHours") or {}
+        if contact.get("min"):
+            low, high = contact.get("min"), contact.get("max")
     if low is None:
         return ""
     if high and high != low:
         return f"{low}-{high}"
     return str(low)
+
+
+def quarters_offered(custom):
+    """The quarters a course is usually offered, when the catalog says
+    (["Fall", "Spring"]). Most courses leave this empty, so an empty list
+    means "not listed", not "never"."""
+    order = ["Fall", "Winter", "Spring", "Summer"]
+    listed = custom.get("quartersUsuallyOffered") or []
+    return [q for q in order if q in listed]
 
 
 def simplify(raw):
@@ -155,6 +172,7 @@ def simplify(raw):
         "level": course_level(number),
         "title": clean_text(raw.get("longName")),
         "units": format_units(raw.get("credits")),
+        "offered": quarters_offered(custom),
         "prereq_text": clean_text(requisites.get("value")),
         "comments": clean_text(custom.get("advisorEnrollmentComments")),
         "description": clean_text(raw.get("description")),
