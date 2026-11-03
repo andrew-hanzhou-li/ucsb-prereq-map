@@ -731,3 +731,4 @@ kbd {
 .ap-row.taken .ap-name { font-weight: 600; }
 .ap-name input { accent-color: var(--green); }
 @media (max-width: 800px) { .ap-row { grid-template-columns: 1fr auto; } .ap-result { grid-column: 1 / -1; } }
+.chip-assumed { margin-left: 3px; font-weight: 400; font-size: 0.78rem; color: var(--muted); }

@@ -1,0 +1,9 @@
+{
+ "about": "Hand corrections to when courses are usually offered. The catalog fills in 'quarters usually offered' for only about 115 courses, and the planner assumes Fall, Winter and Spring for the rest. Each entry gives the quarters, why, and where it comes from. build_graph.py uses these before anything else.",
+ "courses": {
+  "ECE 139": {
+   "offered": ["Spring"],
+   "why": "The department's Computer Engineering 4-year plan puts ECE 139 in sophomore Spring and notes it is offered in Spring only (from Andrew's review, IMPROVEMENTS.md item 3). Source: https://www.ce.ucsb.edu/sites/default/files/2023-08/gear-23-24-ce-major-require-4-yr-plan-pgs-16-17.pdf (no longer online as of Nov 2026; check the current GEAR plan each year)."
+  }
+ }
+}

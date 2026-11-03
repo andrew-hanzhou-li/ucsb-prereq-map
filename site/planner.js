@@ -639,9 +639,15 @@ function chipHtml(code) {
   const classes = ["chip"];
   if (problems.length) classes.push("warn");
   if (code === planSelected) classes.push("selected");
+  // A faint "?" when nobody says which quarters it's offered (assumed F/W/S).
+  const assumed = !courseInfo(code).offered.length && !plan.grades[code];
+  if (assumed) classes.push("assumed");
+  const hover = problems.length ? "Needs first: " + problems.join("; ")
+              : assumed ? "When it's offered isn't listed; assumed Fall, Winter and Spring"
+              : plan.grades[code] ? "" : "Usually offered: " + courseInfo(code).offered.join(", ");
   return '<button type="button" class="' + classes.join(" ") + '" draggable="true" data-plan-show="' + escapeHtml(code) +
-         '" data-plan-drag="' + escapeHtml(code) + '"' + (problems.length ? ' title="Needs first: ' + escapeHtml(problems.join("; ")) + '"' : "") + ">" +
-         '<span class="chip-code">' + (problems.length ? "! " : "") + escapeHtml(code) + "</span>" +
+         '" data-plan-drag="' + escapeHtml(code) + '"' + (hover ? ' title="' + escapeHtml(hover) + '"' : "") + ">" +
+         '<span class="chip-code">' + (problems.length ? "! " : "") + escapeHtml(code) + (assumed ? '<span class="chip-assumed">?</span>' : "") + "</span>" +
          '<span class="chip-units">' + (plan.grades[code] ? '<span class="chip-grade">' + escapeHtml(plan.grades[code]) + "</span> " : "") +
          unitsOf(code) + "</span></button>";
 }
@@ -748,8 +754,8 @@ function showPlanSummary() {
   }
   html += "<p>Click a course on the left to add it. It goes in the first quarter after its prerequisites, " +
           "when it's usually offered, under " + plan.cap + " units. Drag courses to move them, or click one for its details.</p>";
-  html += '<p class="note">Most courses don\'t list when they\'re offered in the catalog; those are assumed Fall, Winter and Spring. ' +
-          "Check the Schedule of Classes on GOLD before you enroll.</p>";
+  html += '<p class="note">When a course is offered is known for only about 120 UCSB courses (the catalog, plus hand corrections). ' +
+          "The rest are assumed Fall, Winter and Spring and marked with a faint ? in the plan. Check the Schedule of Classes on GOLD before you enroll.</p>";
   if (typeof gpaSummaryHtml === "function") html += gpaSummaryHtml() + goalHtml();
   html += '<p class="note">Unofficial student project. Requirements change; confirm your plan with a department advisor.</p>';
   setPanel(html, "Your plan");

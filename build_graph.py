@@ -281,6 +281,37 @@ class ColumnFinder:
 # Putting it together
 # ===========================================================================
 
+QUARTER_ORDER = ["Fall", "Winter", "Spring", "Summer"]
+OFFERING_OVERRIDES = {}      # filled from offering_overrides.json in main()
+
+
+def offered_for(code, info):
+    """When a course is usually offered, from the best source there is:
+      1. offering_overrides.json, hand corrections with a source;
+      2. the catalog's "quarters usually offered" field;
+      3. the course's own notes or description, when they say so in so many
+         words ("Quarters usually offered: Spring", "Offered every fall
+         quarter", "summer only"). About ten courses do.
+    An empty list means nobody says; the planner then assumes Fall, Winter
+    and Spring and marks the course "assumed"."""
+    if code in OFFERING_OVERRIDES:
+        return OFFERING_OVERRIDES[code]["offered"]
+    if info.get("offered"):
+        return info["offered"]
+    text = " ".join([info.get("comments") or "", info.get("description") or ""])
+    found = []
+    match = re.search(r"quarters usually offered:\s*([A-Za-z ,]+)", text, flags=re.IGNORECASE)
+    if match:
+        found = [q for q in QUARTER_ORDER if q.lower() in match.group(1).lower()]
+    elif re.search(r"summer( session)? only", text, flags=re.IGNORECASE):
+        found = ["Summer"]
+    else:
+        match = re.search(r"offered every (fall|winter|spring)", text, flags=re.IGNORECASE)
+        if match:
+            found = [match.group(1).capitalize()]
+    return found
+
+
 def build_major(major, prereqs, catalog):
     major_courses, pools = collect_major_courses(major)
     outside = add_outside_prerequisites(major_courses.keys(), prereqs)
@@ -298,7 +329,7 @@ def build_major(major, prereqs, catalog):
             "id": code,
             "title": info.get("title", ""),
             "units": info.get("units", ""),
-            "offered": info.get("offered", []),
+            "offered": offered_for(code, info),
             "level": info.get("level", ""),
             "status": status,
             "in_major": in_major,
@@ -422,6 +453,13 @@ def main():
         prereqs = {c["code"]: c for c in json.load(f)["courses"]}
     with open("raw_courses.json", encoding="utf-8") as f:
         catalog = {c["code"]: c for c in json.load(f)["courses"]}
+    with open("offering_overrides.json", encoding="utf-8") as f:
+        OFFERING_OVERRIDES.update(json.load(f)["courses"])
+    known = sum(1 for code, info in catalog.items() if offered_for(code, info))
+    print("Courses with known offering quarters: %d of %d (catalog field %d, course text %d, hand corrections %d)" % (
+        known, len(catalog), sum(1 for c in catalog.values() if c.get("offered")),
+        sum(1 for code, c in catalog.items() if not c.get("offered") and code not in OFFERING_OVERRIDES and offered_for(code, c)),
+        len(OFFERING_OVERRIDES)))
     with open(os.path.join(MAJORS_DIR, "index.json"), encoding="utf-8") as f:
         everything = json.load(f)["majors"]
     index = [m for m in everything if m["structured"]]

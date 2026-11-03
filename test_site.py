@@ -682,6 +682,11 @@ def main():
         early = page.evaluate("Object.keys(plan.placed).filter(c => courseInfo(c).level === 'upper' && plan.placed[c].startsWith('1-'))")
         check("item 3: no upper-division course in year 1", not early, early)
         check("item 3: ECE 139 isn't in year 1", not page.evaluate("plan.placed['ECE 139'].startsWith('1-')"))
+        check("item 10: ECE 139, offered Spring only (hand correction), is planned in a Spring",
+              page.evaluate("plan.placed['ECE 139'].endsWith('-S')"), page.evaluate("plan.placed['ECE 139']"))
+        check("item 10: cards with assumed quarters are marked, ECE 139 isn't",
+              page.locator(".chip.assumed").count() > 0 and
+              "assumed" not in (page.get_attribute('.chip[data-plan-drag="ECE 139"]', "class") or ""))
         capstone = capstones[0]
         page.drag_and_drop('.chip[data-plan-drag="%s"]' % capstone, '[data-plan-slot="2-F"]')
         page.wait_for_timeout(150)
