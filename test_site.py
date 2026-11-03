@@ -44,16 +44,62 @@ import sys
 
 from playwright.sync_api import sync_playwright
 
-SAMPLE_TRANSCRIPT = """UNOFFICIAL TRANSCRIPT - TEST STUDENT
-Fall 2025
-ECON 1 PRINCIPLES OF ECON-MICRO 5.0 A 20.0
-MATH 3A CALC WITH APPLIC 4.0 B+ 13.2
-WRIT 2 ACADEMIC WRITING 4.0 P 0.0
-Term GPA 3.69
-Winter 2026
-ECON 2 PRINCIPLES OF ECON-MACRO 5.0 A- 18.5
-MATH 3B CALC WITH APPLIC 4.0 In Progress
-"""
+# A made-up transcript in the layout of GOLD's "Unofficial Transcript -
+# Printable Version" (no real student's data). Each row: course, grade,
+# EnrlCd, Att/Comp/GPA units, points, additional info. It covers what real
+# transcripts showed: titles that wrap, "295LA-TITLE" with no space before
+# the dash, two-word subjects, S and W grades, "No Credit", a variable-unit
+# course, and courses in progress (no grade yet).
+TRANSCRIPT_TERMS = [
+    ("Fall 2024", [
+        ("CMPSC 16 -PROBLEM SOLVING I", "A", "30111", "4.0", "4.0", "4.0", "16.00", ""),
+        ("ECE 15A -FUND OF LOGIC DESIGN", "A-", "30222", "4.0", "4.0", "4.0", "14.80", ""),
+        ("MATH 4A -LINEAR ALGEBRA W APPLIC", "B+", "30333", "4.0", "4.0", "4.0", "13.20", ""),
+        ("ECE 1A -COMPUTER ENGR SEMINAR", "P", "30444", "1.0", "1.0", "0.0", "0.00", ""),
+    ]),
+    ("Winter 2025", [
+        ("PSTAT 5E -STAT ECON BUS APPL", "A", "40111", "5.0", "0.0", "0.0", "0.00", "No Credit"),
+        ("ECE 10A -FOUND ANALOG DIG CIRC", "B", "40222", "3.0", "3.0", "3.0", "9.00", ""),
+        ("ANTH 99 -INDEPENDENT STUDIES", "A", "40333", "2.0", "2.0", "2.0", "8.00", ""),
+        ("HIST 295LA-WORKSHOP LATIN AM", "S", "40444", "1.0", "1.0", "0.0", "0.00", ""),
+        ("RG ST 148B -ADVANCED ARABIC", "W", "40555", "4.0", "0.0", "0.0", "0.00", ""),
+    ]),
+    ("Spring 2025", [
+        ("ECE 10B -FOUND ANALOG DIG CIRC II", "", "50111", "3.0", "0.0", "0.0", "0.00", ""),
+        ("MATH 6A -VECTOR CALCULUS", "", "50222", "4.0", "0.0", "0.0", "0.00", ""),
+    ]),
+]
+TRANSCRIPT_EXPECTED = [
+    # code, units, grade, used
+    ("CMPSC 16", 4, "A", True), ("ECE 15A", 4, "A-", True), ("MATH 4A", 4, "B+", True), ("ECE 1A", 1, "P", True),
+    ("PSTAT 5E", 5, "A", False), ("ECE 10A", 3, "B", True), ("ANTH 99", 2, "A", True), ("HIST 295LA", 1, "P", True),
+    ("RG ST 148B", 4, "IP", False), ("ECE 10B", 3, "IP", True), ("MATH 6A", 4, "IP", True),
+]
+
+
+def transcript_text():
+    """As copied from GOLD's page: one line per row."""
+    lines = ["University of California, Santa Barbara", "Unofficial Transcript", "TEST STUDENT", "Perm Number: 0000000"]
+    for term, rows in TRANSCRIPT_TERMS:
+        lines += [term, "Course Grade EnrlCd Att Unit Comp Unit GPA Unit Points Additional Info"]
+        lines += [" ".join(x for x in row if x) for row in rows]
+        lines.append("Quarter Total (Ugrad) GPA 3.50 13.0 13.0 13.0 45.50")
+    return "\n".join(lines)
+
+
+def transcript_html():
+    """As GOLD prints it: a table whose narrow Course column wraps long
+    titles, with the other cells centered between the two lines."""
+    html = ["<style>body{font:13px serif} td,th{padding:2px 6px;vertical-align:middle} td.c{width:150px}</style>",
+            "<p>University of California, Santa Barbara</p><h3>Unofficial Transcript</h3><p>TEST STUDENT<br>Perm Number: 0000000</p>"]
+    for term, rows in TRANSCRIPT_TERMS:
+        html.append("<h4>%s</h4><table><tr><th>Course</th><th>Grade</th><th>EnrlCd</th><th>Att<br>Unit</th>"
+                    "<th>Comp<br>Unit</th><th>GPA<br>Unit</th><th>Points</th><th>Additional Info</th></tr>" % term)
+        for row in rows:
+            html.append("<tr><td class='c'>%s</td>" % row[0] + "".join("<td>%s</td>" % x for x in row[1:]) + "</tr>")
+        html.append("<tr><td><b>Quarter Total (Ugrad)</b></td><td><b>GPA 3.50</b></td><td></td><td>13.0</td></tr></table>")
+    return "".join(html)
+
 
 SITE = "http://localhost:%s/" % (sys.argv[1] if len(sys.argv) > 1 else "8000")
 SINGLE_FILE = pathlib.Path("site", "ucsb-prereq-map.html").resolve()
@@ -544,6 +590,42 @@ def main():
         check("plan: CE chain in order (ECE 15A, 10A before 152A before 154A)",
               min(order) >= 0 and order[0] < order[2] and order[1] < order[2] and order[2] < order[3], order)
 
+        # The left column: credit first, one requirement area open at a time, outside courses listed
+        check("plan: the credit box is at the top of the left column",
+              page.locator("#plan-reqs > .req-credit [data-open-credit]").count() == 1)
+        check("plan: only one requirement area is open", page.locator("#plan-reqs details.req-section[open]").count() == 1)
+        areas = page.locator("#plan-reqs details.req-section")
+        closed = page.locator("#plan-reqs details.req-section:not([open]) > summary").first
+        closed_key = closed.evaluate("s => s.parentElement.dataset.area")
+        closed.click()
+        page.wait_for_timeout(100)
+        check("plan: opening another area closes the first",
+              page.locator("#plan-reqs details.req-section[open]").count() == 1 and
+              page.evaluate("k => document.querySelector('details.req-section[data-area=\"' + k + '\"]').open", closed_key))
+        outside = page.locator('#plan-reqs details[data-area="outside"]')
+        check("plan: CE lists the courses it needs from other departments, including CMPSC 8",
+              outside.count() == 1 and "CMPSC 8" in outside.text_content())
+
+        # Andrew's case: MATH 3B planned, MATH 3A from AP Calculus AB
+        page.evaluate("plan.placed = {'MATH 3B': '1-F'}; plan.electives = []; planChanged()")
+        check("AP: MATH 3B without MATH 3A is flagged", page.evaluate("missingPrereqs('MATH 3B').length") > 0)
+        page.click('.chip[data-plan-drag="MATH 3B"]')
+        check("AP: the course's panel offers to add credit", page.locator("#panel-body [data-open-credit]").count() == 1)
+        page.click("#panel-body [data-open-credit]")
+        page.check('input[data-exam-check="Calculus AB (or the AB subscore of BC)"]')
+        page.wait_for_timeout(150)
+        check("AP: ticking an exam sets a score and shows what it counts as",
+              "MATH 3A" in page.inner_text(".ap-row.taken .ap-result"))
+        page.keyboard.press("Escape")
+        page.wait_for_timeout(150)
+        check("AP: with AP Calculus AB, MATH 3B is no longer flagged", page.evaluate("missingPrereqs('MATH 3B').length") == 0)
+        check("AP: the credit shows at the top of the plan", "AP Calculus AB" in page.inner_text("#plan-reqs .req-credit"))
+        page.click("#credit-button")
+        page.uncheck('input[data-exam-check="Calculus AB (or the AB subscore of BC)"]')
+        page.keyboard.press("Escape")
+        page.wait_for_timeout(150)
+        check("AP: unticking takes the credit away", page.evaluate("missingPrereqs('MATH 3B').length") > 0)
+
         # Two programs and AP credit: the case that showed ordering by column wasn't enough
         page.evaluate("localStorage.clear()")
         page.goto(SITE + "#plan/computer-engineering-bs+statistical-science-minor")
@@ -570,30 +652,42 @@ def main():
         page.goto(SITE + "#plan/economics-ba")
         page.reload()
         page.wait_for_function("graph && currentView === 'plan'", timeout=15000)
+        def read_rows():
+            return page.evaluate("transcriptRows.map(r => [r.code, r.units, r.grade, r.use])")
+
+        def expected_rows():
+            return [list(r) for r in TRANSCRIPT_EXPECTED]
+
         page.click("#plan-import")
-        page.fill("#transcript-text", SAMPLE_TRANSCRIPT)
+        page.fill("#transcript-text", transcript_text())
         page.click("#transcript-read")
         page.wait_for_timeout(200)
-        rows = page.evaluate("transcriptRows.map(r => [r.code, r.term && r.term.quarter + ' ' + r.term.year, r.units, r.grade])")
-        check("transcript: reads every course line, and nothing else", [r[0] for r in rows] ==
-              ["ECON 1", "MATH 3A", "WRIT 2", "ECON 2", "MATH 3B"], rows)
-        check("transcript: reads terms, units and grades",
-              rows[0] == ["ECON 1", "Fall 2025", 5, "A"] and rows[1][3] == "B+" and rows[2][3] == "P", rows)
-        check("transcript: a course with no grade yet is In Progress", rows[4][3] == "IP", rows)
-        check("transcript: shows a table to check before applying", page.locator(".review-table tbody tr").count() == 5)
-        page.select_option('select[data-row="1"][data-field="grade"]', "A-")
+        rows = read_rows()
+        check("transcript (pasted): every course read, with units and grades", rows == expected_rows(),
+              [r for r in rows if r not in expected_rows()] or rows)
+        check("transcript: shows a table to check before applying",
+              page.locator(".review-table tbody tr").count() == len(TRANSCRIPT_EXPECTED))
+        check("transcript: says why a row is left unticked", "no credit" in page.inner_text(".review-table") and
+              "withdrawn" in page.inner_text(".review-table"))
+        page.select_option('select[data-row="2"][data-field="grade"]', "A-")
         page.click("#transcript-apply")
         page.wait_for_timeout(200)
-        check("transcript: courses go in their quarters (plan now starts Fall 2025)",
-              page.evaluate("[plan.startYear, plan.placed['ECON 1'], plan.placed['ECON 2'], plan.placed['MATH 3B']]") ==
-              [2025, "1-F", "1-W", "1-W"])
-        check("transcript: corrections in the table are used", page.evaluate("plan.grades['MATH 3A']") == "A-")
-        check("transcript: grades feed the GPA", abs(page.evaluate("gpaOf().gpa") - (5 * 4.0 + 4 * 3.7 + 5 * 3.7) / 14) < 1e-9)
-        check("transcript: the text itself isn't kept anywhere",
-              "PRINCIPLES OF ECON" not in page.evaluate("JSON.stringify(localStorage)"))
+        check("transcript: courses go in their quarters (plan now starts Fall 2024)",
+              page.evaluate("[plan.startYear, plan.placed['CMPSC 16'], plan.placed['ECE 10A'], plan.placed['ECE 10B']]") ==
+              [2024, "1-F", "1-W", "1-S"])
+        check("transcript: corrections in the table are used", page.evaluate("plan.grades['MATH 4A']") == "A-")
+        check("transcript: unticked rows aren't added", not page.evaluate("plan.placed['PSTAT 5E'] || plan.placed['RG ST 148B']"))
+        check("transcript: a variable-unit course keeps its units", page.evaluate("unitsOf('ANTH 99')") == 2)
+        expected_gpa = (4 * 4.0 + 4 * 3.7 + 4 * 3.7 + 3 * 3.0 + 2 * 4.0) / 17
+        check("transcript: grades feed the GPA (P and In Progress left out)", abs(page.evaluate("gpaOf().gpa") - expected_gpa) < 1e-9,
+              page.evaluate("gpaOf()"))
+        saved = page.evaluate("JSON.stringify(localStorage)")
+        check("transcript: the student's name, perm number and enrollment codes aren't kept",
+              "TEST STUDENT" not in saved and "0000000" not in saved and "30111" not in saved)
 
+        # The PDF, laid out like GOLD's printout, read in the browser by pdf.js
         pdf_maker = browser.new_page()
-        pdf_maker.set_content("<pre style='font:12px monospace'>" + SAMPLE_TRANSCRIPT + "</pre>")
+        pdf_maker.set_content(transcript_html())
         pdf_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "test_transcript.pdf")
         pdf_maker.pdf(path=pdf_path)
         pdf_maker.close()
@@ -603,9 +697,9 @@ def main():
         page.click("#transcript-read")
         page.wait_for_function("transcriptRows.length > 0 || document.getElementById('transcript-status').textContent.includes('read')", timeout=20000)
         os.remove(pdf_path)
-        rows = page.evaluate("transcriptRows.map(r => r.code)")
-        check("transcript: reads a PDF in the browser (pdf.js)", rows == ["ECON 1", "MATH 3A", "WRIT 2", "ECON 2", "MATH 3B"],
-              rows or page.inner_text("#transcript-status"))
+        rows = read_rows()
+        check("transcript (PDF with wrapped titles): every course read, with units and grades", rows == expected_rows(),
+              [r for r in rows if r not in expected_rows()] or rows or page.inner_text("#transcript-status"))
         page.keyboard.press("Escape")
         page.evaluate("localStorage.clear()")
         check("transcript: no JavaScript errors", not page.errors, page.errors)

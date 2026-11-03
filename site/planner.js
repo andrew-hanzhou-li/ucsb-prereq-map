@@ -347,7 +347,8 @@ function requirementHtml(node, key, depth, sectionName, insideChoice) {
   const slotButton = canSlot
     ? ' <button type="button" class="text-button" data-plan-elective="' + escapeHtml(key) + '">add a slot</button>'
     : "";
-  if (node.items.length > 8) {
+  // Long lists fold up, except at the top of an area (the area itself folds).
+  if (node.items.length > 8 && depth > 0) {
     return '<li class="req-group"><details><summary>' + escapeHtml(head || "Courses") +
            ' <span class="req-progress">' + progressText(p) + "</span>" + slotButton + "</summary><ul>" + items +
            "</ul></details></li>";
@@ -367,22 +368,97 @@ function requirementCourse(code) {
          '<span class="req-title">' + escapeHtml(info.title || "") + "</span></span> " + state;
 }
 
+/*
+  The column beside the grid, top to bottom:
+    1. Your credit: AP exams and college courses, with a button to add them.
+       It's at the top because it changes everything below it (AP Calculus
+       AB means MATH 3A is done, so MATH 3B isn't flagged).
+    2. One fold per requirement area (Preparation for the major, Upper
+       division…), with progress. Only one is open at a time, so the list
+       stays short; it starts on the first area that isn't complete.
+    3. "Needed first, from other departments": courses the requirements
+       need that aren't in the program itself (CMPSC 8 for CMPSC 16 in
+       Computer Engineering).
+*/
+let openArea = null;      // which fold is open ("s0", "s1"…, "outside"); null = choose one
+
 function drawRequirements() {
-  let html = "";
+  const areas = [];
   graph.major.sections.forEach(function (section, i) {
     const key = "s" + i;
-    const p = progress(section.requirement, key);
-    html += '<section class="req-section"><h3>' + escapeHtml(readable(section.name)) +
-            ' <span class="req-progress">' + progressText(p) + "</span></h3><ul class=\"req-list\">" +
-            requirementHtml(section.requirement, key, 0, section.name, false) + "</ul></section>";
+    areas.push({
+      key: key,
+      title: readable(section.name),
+      progress: progress(section.requirement, key),
+      body: '<ul class="req-list">' + requirementHtml(section.requirement, key, 0, section.name, false) + "</ul>",
+    });
   });
   for (const pool of graph.pools) {
-    html += '<section class="req-section"><h3>' + escapeHtml(pool.list_name || pool.label) + "</h3>" +
-            '<p class="note">Earn ' + escapeHtml(pool.rule) + " from a list of " + pool.courses.length +
-            " courses (too long to list here; see the map).</p></section>";
+    areas.push({
+      key: pool.id,
+      title: pool.list_name || pool.label,
+      progress: { have: 0, need: 0 },
+      body: '<p class="note">Earn ' + escapeHtml(pool.rule) + " from a list of " + pool.courses.length +
+            " courses (too long to list here; see the map).</p>",
+    });
   }
-  planEl.reqs.innerHTML = html;
+  const outside = outsideCourses();
+  if (outside.length) {
+    const done = outside.filter(inPlanOrDone).length;
+    areas.push({
+      key: "outside",
+      title: "Needed first, from other departments",
+      progress: { have: done, need: outside.length },
+      body: '<p class="note">Not part of ' + escapeHtml(thisProgram()) + ", but courses in it need them.</p>" +
+            '<ul class="req-list">' + outside.map(code => "<li>" + requirementCourse(code) + "</li>").join("") + "</ul>",
+    });
+  }
+
+  if (!openArea || !areas.some(a => a.key === openArea)) {
+    const first = areas.find(a => a.progress.need && a.progress.have < a.progress.need);
+    openArea = first ? first.key : areas[0] && areas[0].key;
+  }
+  planEl.reqs.innerHTML = creditSummaryHtml() + areas.map(a =>
+    '<details class="req-section" data-area="' + escapeHtml(a.key) + '"' + (a.key === openArea ? " open" : "") + "><summary><h3>" +
+    escapeHtml(a.title) + ' <span class="req-progress">' + progressText(a.progress) + "</span></h3></summary>" +
+    a.body + "</details>").join("");
 }
+
+// Courses from other departments that the requirements need (the same ones
+// the map adds), sorted by prerequisite order.
+function outsideCourses() {
+  const needed = chooseShown({ electives: false, everyOutside: false, inactive: false });
+  return Array.from(needed).filter(code => !nodesById[code].in_major)
+    .sort((a, b) => (nodesById[a].column - nodesById[b].column) || bySortKey(a, b));
+}
+
+// "Your credit": what's counted already, and the way to add more.
+function creditSummaryHtml() {
+  const lines = [];
+  for (const exam of Object.keys(credit.ap)) {
+    const row = apRow(exam, credit.ap[exam]);
+    lines.push("<li>AP " + escapeHtml(exam) + " (" + credit.ap[exam] + ")" +
+               (row && row.equivalents.length ? ': <span class="req-done">' + escapeHtml(row.equivalents.join(", ")) + "</span>" : "") + "</li>");
+  }
+  if (credit.transfer.length) {
+    lines.push('<li>College credit: <span class="req-done">' + escapeHtml(credit.transfer.join(", ")) + "</span></li>");
+  }
+  return '<section class="req-credit"><h3>Your AP and college credit</h3>' +
+         (lines.length ? '<ul class="credit-lines">' + lines.join("") + "</ul>"
+                       : '<p class="note">None yet. AP exams and courses from other colleges count as done, so their prerequisites aren\'t flagged.</p>') +
+         '<p><button type="button" class="credit-button" data-open-credit>' +
+         (lines.length ? "Change your credit" : "Check off AP exams and college credit") + "</button></p></section>";
+}
+
+// One area open at a time: opening a fold closes the others.
+planEl.reqs.addEventListener("toggle", function (event) {
+  const area = event.target.closest && event.target.closest("details.req-section");
+  if (!area || event.target !== area || !area.open) return;
+  openArea = area.dataset.area;
+  for (const other of planEl.reqs.querySelectorAll("details.req-section[open]")) {
+    if (other !== area) other.open = false;
+  }
+}, true);
 
 // The requirement node behind an elective slot's key ("s2.0.3").
 function nodeForKey(key) {
@@ -493,6 +569,8 @@ function showPlanCourse(code) {
     if (problems.length) {
       html += '<h3><span class="needs-key">Needs first</span></h3><ul>' +
               problems.map(p => "<li>" + escapeHtml(p) + "</li>").join("") + "</ul>";
+      html += '<p class="note">Already have one of these from an AP exam or another college? ' +
+              '<button type="button" class="text-button" data-open-credit>Add your credit</button> and it counts.</p>';
       if (info.requires && courseInfo(code).requires) {
         html += '<p class="catalog-text">Catalog wording: "' + escapeHtml((nodesById[code] || {}).prereq_text || "") + '"</p>';
       }
@@ -675,7 +753,12 @@ function autoFill() {
   for (const set of pickOneSets()) {
     const options = set.options;
     const offered = option => option.every(code => nodesById[code] && nodesById[code].status === "active");
-    const chosen = options.find(option => option.every(inPlanOrDone)) || options.find(offered) || options[0];
+    // Prefer an option already done or planned; then the one with the
+    // fewest courses still to take (with AP Calculus AB, MATH 2A-B or 3A-B
+    // each need one more); then one the catalog still offers.
+    const toTake = option => option.filter(code => !inPlanOrDone(code)).length;
+    const ranked = options.slice().sort((a, b) => (toTake(a) - toTake(b)) || (offered(b) - offered(a)));
+    const chosen = ranked.find(offered) || ranked[0];
     for (const option of options) {
       if (option !== chosen) option.forEach(code => skip.add(code));
     }

@@ -160,3 +160,32 @@ You enter a goal GPA and a year. The needed average is:
    - The default unit cap is 16.
    - Elective slots start in year 3.
    - Share links leave out grades.
+
+## Revision 1 (after your review)
+
+### The transcript reader, rebuilt from real GOLD transcripts
+
+Two real "Unofficial Transcript - Printable Version" pages showed why it missed about half the courses and got units wrong:
+
+| What GOLD does | What the reader does now |
+|---|---|
+| Long titles wrap ("HIST 202 -HISTORICAL" / "METHODS"), and the grade and units sit halfway between the two lines, so a PDF has **three separate lines** per course | A course is its first line **plus the lines after it**, up to the next course, term, total or page header |
+| Columns: Grade, EnrlCd (5 digits), Att Unit, Comp Unit, GPA Unit, Points, Additional Info | The grade is the word right **before the EnrlCd**; the units are **Att Unit, right after it** |
+| "HIST 202 -HISTORICAL" but also "HIST 295LA-WORKSHOP" (no space), "RG ST 251B" (two-word subject) | A course is a subject, a number and a dash. Any capital-letter subject counts there, since old transcripts have codes the catalog has dropped |
+| Grades S and U (graduate), W, I; "No Credit" under Additional Info | S → P, U → NP, I → In Progress. W and No Credit are listed but **unticked**, with the reason shown |
+| A course in progress has no grade | In Progress |
+
+The tests use a **made-up transcript in GOLD's exact layout**, not the real ones (those have students' names and perm numbers):
+- **As pasted text:** every row on one line.
+- **As a PDF:** a table with a narrow Course column, drawn by Chromium. It reproduces the three-lines-per-course problem; the test prints the PDF's lines, and the grade really is on its own line.
+- **Both are read exactly:** all 11 courses, with units (including a 2-unit ANTH 99 and 1-unit courses) and grades.
+- **Privacy is checked:** the name, perm number and enrollment codes are never saved.
+
+Also fixed: a course from outside the programs on screen used to fall back to 4 units after a transcript was read; it now keeps the transcript's units, so the GPA is right.
+
+### The column beside the plan
+
+- **Your AP and college credit** is now the first thing in the column, with a button to check off exams. In the Credit box, each AP exam has a **checkbox**. Ticking it fills in a score of 3 (the lowest that earns credit) and shows what it counts as; change the score if yours differs. A course flagged for a missing prerequisite also offers "Add your credit" in its panel. With AP Calculus AB ticked, MATH 3B is no longer flagged for MATH 3A.
+- **One requirement area open at a time.** Preparation, Upper division and the rest are folds; opening one closes the others. It starts on the first area that isn't complete.
+- **"Needed first, from other departments"** lists the courses the requirements need from outside the program: CMPSC 8 for Computer Engineering, the calculus for Economics.
+- **Auto-fill prefers the "one of" option you've partly done.** With AP Calculus AB, it adds MATH 2B or 3B, not a whole new sequence.

@@ -11,22 +11,43 @@
   sent. Without internet (say, the one-file copy offline), pasting the
   transcript's text works the same way.
 
-  How the text is read
-  --------------------
-  A transcript lists terms ("Fall 2025") with the courses under each. So:
-    1. a line naming a quarter and year starts a new term;
-    2. a line starting with a real UCSB subject code and a course number
-       ("ECE 15A", "ENV S 1") is a course. On that line, the last grade-like
-       word (A+ … F, P, NP, IP) is the grade, and the first number from 0.5
-       to 12 after the title is the units. No grade, or the words "in
-       progress", means In Progress.
-  This hasn't been tuned against a real GOLD transcript yet, which is why
-  everything read is shown in a table to check and correct before it's used.
+  How GOLD's "Unofficial Transcript - Printable Version" is laid out
+  -----------------------------------------------------------------
+    Fall 2018
+    Course                     Grade EnrlCd Att Comp GPA  Points Additional Info
+                                            Unit Unit Unit
+    HIST 202 -HISTORICAL       A     27201  4.0  4.0  4.0 16.00
+    METHODS
+    HIST 295LA-WORKSHOP        A     60137  1.0  1.0  1.0  4.00
+    LATIN AM
+    Quarter Total (Grad)       GPA 4.00     13.0 13.0 13.0 52.00
+
+  Things that matter for reading it:
+    - Long titles wrap onto a second line, and the grade and numbers sit
+      halfway between the two lines. In a PDF those are three separate lines
+      of text, so a course is read as its first line plus every line after
+      it, up to the next course, term or total.
+    - A course starts with its subject and number, then a dash and the
+      title: "HIST 202 -HISTORICAL", "HIST 295LA-WORKSHOP", "RG ST 251B -REL".
+      Old subject codes no longer in the catalog still count.
+    - The grade comes right before the 5-digit enrollment code (EnrlCd); the
+      units are the first number after it (Att Unit). A course in progress
+      has no grade yet.
+    - Grades: A+ … F, P, NP; S and U (graduate Satisfactory/Unsatisfactory,
+      read as P and NP); I (Incomplete, read as In Progress); W (Withdrawn)
+      and courses marked "No Credit" are listed but left unticked.
+  Pasted text (copied from GOLD's page) usually has each row on one line;
+  the same rules read it.
+
+  Everything read is shown in a table to check and correct before it's used.
 */
 
 const PDFJS_URL = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js";
 const PDFJS_WORKER = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
 const GRADE_WORDS = ["A+", "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "D-", "F", "P", "NP", "IP"];
+// Grades on a transcript that the plan stores differently.
+const GRADE_ALIASES = { S: "P", U: "NP", I: "IP" };
+const TRANSCRIPT_GRADES = GRADE_WORDS.concat(Object.keys(GRADE_ALIASES), ["W"]);
 
 const transcriptEl = {
   box: document.getElementById("transcript"),
@@ -91,54 +112,103 @@ function parseTranscript(text) {
   const subjects = ((creditTable && creditTable.subjects) || []).slice().sort((a, b) => b.length - a.length);
   const rows = [];
   let term = null;
+  let pending = null;      // the course being read: its first line plus what follows
+
+  function finish() {
+    if (!pending) return;
+    const course = readCourse(pending.code, pending.text);
+    course.term = pending.term;
+    rows.push(course);
+    pending = null;
+  }
+
   for (const raw of text.split(/\r?\n/)) {
     const line = raw.replace(/\s+/g, " ").trim();
     if (!line) continue;
-    const termMatch = line.match(/\b(Fall|Winter|Spring|Summer)\b(?:\s+(?:Quarter|Session))?\s+(\d{4})\b/i);
-    const course = readCourseLine(line, subjects);
-    if (!course && termMatch) {
+    const start = courseStart(line, subjects);
+    if (start) {
+      finish();
+      pending = { code: start.code, text: start.rest, term: term };
+      continue;
+    }
+    const termMatch = line.match(/^(Fall|Winter|Spring|Summer)(?:\s+(?:Quarter|Session))?\s+(\d{4})\b/i);
+    if (termMatch && line.length < 40) {
+      finish();
       term = { quarter: termMatch[1][0].toUpperCase() + termMatch[1].slice(1).toLowerCase(), year: Number(termMatch[2]) };
       continue;
     }
-    if (course) {
-      course.term = term;
-      rows.push(course);
+    // Totals, column headings and page headers end a course.
+    if (/^(Quarter Total|Cumulative Total|Term Total|Course\b|Unit\b|Dean'?s|University of California|https?:|\d{1,2}\/\d{1,2}\/\d{2,4})/i.test(line)) {
+      finish();
+      continue;
     }
+    if (pending) pending.text += " " + line;
   }
-  // A course taken twice: keep the latest attempt.
+  finish();
+
+  // A course taken twice: keep the latest attempt that counts.
   const latest = {};
-  for (const row of rows) latest[row.code] = row;
-  return Object.values(latest).map(r => Object.assign(r, { use: true }));
+  for (const row of rows) {
+    if (row.use || !latest[row.code] || !latest[row.code].use) latest[row.code] = row;
+  }
+  return Object.values(latest);
 }
 
-// "ECE 15A FUND LOGIC DESIGN 4.0 A- 14.8" -> { code, title, units, grade }
-function readCourseLine(line, subjects) {
+/*
+  Does this line start a course? Two forms:
+    GOLD's:  "HIST 202 -HISTORICAL", "HIST 295LA-WORKSHOP" (a dash after the
+             number). Any subject made of capital letters counts, since old
+             transcripts can have subject codes the catalog has since dropped.
+    plain:   "ECE 15A Fund of Logic Design 4.0 A-" (no dash). Only a real
+             catalog subject counts, so ordinary text isn't mistaken for one.
+*/
+function courseStart(line, subjects) {
+  const gold = line.match(/^([A-Z][A-Z&]*(?: [A-Z&]+){0,2}) (\d{1,3}[A-Z]{0,4}) ?-(.*)$/);
+  if (gold) return { code: gold[1] + " " + gold[2], rest: gold[3] };
   const upper = line.toUpperCase();
   const subject = subjects.find(s => upper.startsWith(s + " "));
   if (!subject) return null;
-  const rest = line.slice(subject.length).trim();
-  const number = rest.match(/^(\d{1,3}[A-Z]{0,4})\b(.*)$/i);
+  const number = line.slice(subject.length).trim().match(/^(\d{1,3}[A-Z]{0,4})\b(.*)$/i);
   if (!number) return null;
-  const code = subject + " " + number[1].toUpperCase();
-  const words = number[2].trim().split(" ");
+  return { code: subject + " " + number[1].toUpperCase(), rest: number[2] };
+}
 
+// Grade, units and title from a course's text (everything after its code).
+function readCourse(code, text) {
+  const words = text.trim().split(" ").filter(Boolean);
   let grade = null;
-  for (const word of words) {
-    if (GRADE_WORDS.includes(word.toUpperCase())) grade = word.toUpperCase();
-  }
-  if (/in progress/i.test(line)) grade = "IP";
-
   let units = null;
-  const titleWords = [];
-  for (const word of words) {
-    const value = Number(word);
-    if (units === null && /^\d+(\.\d+)?$/.test(word) && value >= 0.5 && value <= 12) {
-      units = value;
-    } else if (units === null && !GRADE_WORDS.includes(word.toUpperCase())) {
-      titleWords.push(word);
+  const numbersAt = words.findIndex(w => /^\d{5}$/.test(w));       // the EnrlCd
+
+  if (numbersAt >= 0) {
+    // GOLD's columns: [grade] EnrlCd AttUnit CompUnit GPAUnit Points
+    const before = (words[numbersAt - 1] || "").toUpperCase();
+    if (TRANSCRIPT_GRADES.includes(before)) grade = before;
+    const att = Number(words[numbersAt + 1]);
+    if (!isNaN(att)) units = att;
+  } else {
+    // Plain text: the last grade-like word, and the first sensible number.
+    for (const word of words) {
+      if (TRANSCRIPT_GRADES.includes(word.toUpperCase())) grade = word.toUpperCase();
+      const value = Number(word);
+      if (units === null && /^\d+(\.\d+)?$/.test(word) && value >= 0.5 && value <= 12) units = value;
     }
   }
-  return { code: code, title: titleWords.join(" "), units: units, grade: grade || "IP" };
+  if (/in progress/i.test(text)) grade = "IP";
+
+  // The title: the words that aren't the grade, numbers or the notes column.
+  const title = words.filter(function (w, i) {
+    if (numbersAt >= 0 && (i === numbersAt - 1 && grade) ) return false;
+    if (/^\d+(\.\d+)?$/.test(w)) return false;
+    return numbersAt < 0 ? !TRANSCRIPT_GRADES.includes(w.toUpperCase()) : true;
+  }).join(" ").replace(/\b(No Credit|Honors|Repeated|In Progress)\b/gi, "").replace(/\s+/g, " ").trim();
+
+  const noCredit = /no credit/i.test(text);
+  let use = !noCredit && grade !== "W";
+  let note = noCredit ? "no credit" : grade === "W" ? "withdrawn" : "";
+  if (grade === "W") grade = null;
+  if (grade && GRADE_ALIASES[grade]) grade = GRADE_ALIASES[grade];
+  return { code: code, title: title, units: units, grade: grade || "IP", use: use, note: note };
 }
 
 // ===========================================================================
@@ -162,7 +232,8 @@ function showReview() {
     '<table class="review-table"><thead><tr><th>Use</th><th>Course</th><th>Term</th><th>Units</th><th>Grade</th></tr></thead><tbody>' +
     transcriptRows.map((r, i) =>
       '<tr><td><input type="checkbox" data-row="' + i + '" data-field="use"' + (r.use ? " checked" : "") + "></td>" +
-      "<td><strong>" + escapeHtml(r.code) + '</strong> <span class="note">' + escapeHtml(r.title) + "</span></td>" +
+      "<td><strong>" + escapeHtml(r.code) + '</strong> <span class="note">' + escapeHtml(r.title) +
+      (r.note ? " (" + escapeHtml(r.note) + ")" : "") + "</span></td>" +
       "<td>" + escapeHtml(termName(r.term)) + "</td>" +
       '<td><input type="number" step="0.5" min="0" max="12" data-row="' + i + '" data-field="units" value="' + (r.units === null ? "" : r.units) + '"></td>' +
       '<td><select data-row="' + i + '" data-field="grade">' + gradeOptions(r.grade) + "</select></td></tr>").join("") +
@@ -213,8 +284,12 @@ function applyTranscript() {
     plan.placed[r.code] = slot.id;
     if (r.grade) plan.grades[r.code] = r.grade; else delete plan.grades[r.code];
     if (r.units !== null) plan.units[r.code] = r.units;
-    const info = courseInfo(r.code);
-    plan.info[r.code] = { title: info.title || r.title, units: info.units || String(r.units || 4), offered: info.offered };
+    // A course outside the programs on screen has no catalog details here,
+    // so its units come from the transcript (what the student actually took).
+    const node = nodesById[r.code];
+    plan.info[r.code] = node
+      ? { title: node.title, units: node.units, offered: node.offered || [] }
+      : { title: r.title, units: String(r.units === null ? 4 : r.units), offered: [] };
   }
   transcriptRows = [];
   transcriptEl.box.close();

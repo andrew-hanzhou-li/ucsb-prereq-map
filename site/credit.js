@@ -31,7 +31,7 @@ function openCreditBox() {
 }
 
 function fillCreditBox() {
-  // AP: one line per exam, with a score menu and what it counts as.
+  // AP: one line per exam: a box to tick, the score, and what it counts as.
   if (!creditTable) {
     creditEl.apList.innerHTML = '<p class="note">The AP chart didn\'t load. Check your connection and reopen this box.</p>';
   } else {
@@ -40,8 +40,9 @@ function fillCreditBox() {
       const score = credit.ap[exam.name] || "";
       const options = ["", "3", "4", "5"].map(s =>
         '<option value="' + s + '"' + (String(score) === s ? " selected" : "") + ">" + (s || "—") + "</option>").join("");
-      return '<div class="ap-row"><label><span>' + escapeHtml(exam.name) + '</span><select data-exam="' +
-             escapeHtml(exam.name) + '">' + options + "</select></label>" +
+      return '<div class="ap-row' + (score ? " taken" : "") + '"><label class="ap-name"><input type="checkbox" data-exam-check="' +
+             escapeHtml(exam.name) + '"' + (score ? " checked" : "") + "> " + escapeHtml(exam.name) + "</label>" +
+             '<label class="ap-score">score <select data-exam="' + escapeHtml(exam.name) + '">' + options + "</select></label>" +
              '<span class="ap-result">' + escapeHtml(apResult(exam.name)) + "</span></div>";
     }).join("");
   }
@@ -94,6 +95,16 @@ function creditUpdated() {
 }
 
 creditEl.apList.addEventListener("change", function (event) {
+  // Ticking an exam fills in 3, the lowest score that earns credit; the
+  // line beside it shows what that counts as, so a different score is easy
+  // to set. Unticking removes it.
+  const ticked = event.target.dataset.examCheck;
+  if (ticked) {
+    if (event.target.checked) credit.ap[ticked] = credit.ap[ticked] || 3;
+    else delete credit.ap[ticked];
+    creditUpdated();
+    return;
+  }
   const name = event.target.dataset.exam;
   if (!name) return;
   if (event.target.value) credit.ap[name] = Number(event.target.value);
