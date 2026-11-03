@@ -343,19 +343,49 @@ function requirementHtml(node, key, depth, sectionName, insideChoice) {
   // missing when the student simply took the other option, so it's left off.
   const showProgress = depth > 0 && !insideChoice;
   const canSlot = (node.type === "choose" || node.type === "units") && p.have < p.need &&
-                  node.items.every(i => i.type === "course");
+                  node.items.every(i => i.type === "course") && slotsAllowed(sectionName);
   const slotButton = canSlot
     ? ' <button type="button" class="text-button" data-plan-elective="' + escapeHtml(key) + '">add a slot</button>'
     : "";
-  // Long lists fold up, except at the top of an area (the area itself folds).
-  if (node.items.length > 8 && depth > 0) {
-    return '<li class="req-group"><details><summary>' + escapeHtml(head || "Courses") +
-           ' <span class="req-progress">' + progressText(p) + "</span>" + slotButton + "</summary><ul>" + items +
-           "</ul></details></li>";
+  // The top of an area has no line of its own: the area itself folds.
+  if (depth === 0) {
+    return '<li class="req-group">' + (head ? '<span class="req-head">' + escapeHtml(head) + "</span> " : "") + slotButton +
+           "<ul>" + items + "</ul></li>";
   }
-  return '<li class="req-group">' + (head ? '<span class="req-head">' + escapeHtml(head) + "</span> " : "") +
-         '<span class="req-progress">' + (showProgress ? progressText(p) : "") + "</span>" + slotButton +
-         "<ul>" + items + "</ul></li>";
+  /*
+    Inside an area, a group's courses hang off a thin vertical line, as in a
+    Reddit thread: clicking the line (or the group's heading) collapses the
+    whole group to one line, and clicking again opens it. Long lists start
+    collapsed. What's open is remembered while the page is open (openGroups).
+  */
+  const collapsed = groupCollapsed(key, node);
+  const count = coursesInRequirement(node).length;
+  return '<li class="req-group' + (collapsed ? " collapsed" : "") + '">' +
+         '<button type="button" class="req-toggle" data-req-toggle="' + escapeHtml(key) + '" aria-expanded="' + !collapsed + '">' +
+         '<span class="req-head">' + escapeHtml(head || "Courses") + "</span> " +
+         '<span class="req-progress">' + (showProgress ? progressText(p) : "") + "</span>" +
+         (collapsed ? ' <span class="req-hidden">· ' + count + (count === 1 ? " course" : " courses") + "</span>" : "") +
+         "</button>" + slotButton +
+         '<div class="req-children"><button type="button" class="req-thread" data-req-toggle="' + escapeHtml(key) +
+         '" aria-label="Collapse this group" tabindex="-1"></button><ul>' + items + "</ul></div></li>";
+}
+
+// Which groups the student has opened or closed (key -> true for open).
+const openGroups = {};
+
+function groupCollapsed(key, node) {
+  if (key in openGroups) return !openGroups[key];
+  return node.items.length > 8;
+}
+
+/*
+  Elective slots ("a course from this list, to be chosen") belong in the
+  upper-division part of a program, where students genuinely pick from a
+  list. In Pre-major and Preparation for the major, students choose
+  specific courses, so no slots there, in the sidebar or from auto-fill.
+*/
+function slotsAllowed(sectionName) {
+  return !/pre-?major|preparation/i.test(sectionName || "");
 }
 
 function requirementCourse(code) {
@@ -364,8 +394,8 @@ function requirementCourse(code) {
   if (isDone(code)) state = '<span class="req-done">✓ ' + (creditFor(code) ? "credit" : "taken") + "</span>";
   else if (plan.placed[code]) state = '<span class="req-planned">' + escapeHtml(slotName(plan.placed[code])) + "</span>";
   return '<span class="req-course" draggable="true" data-plan-drag="' + escapeHtml(code) + '">' +
-         '<button type="button" class="req-code" data-plan-show="' + escapeHtml(code) + '">' + escapeHtml(code) + "</button> " +
-         '<span class="req-title">' + escapeHtml(info.title || "") + "</span></span> " + state;
+         '<button type="button" class="req-code" data-plan-show="' + escapeHtml(code) + '" title="' + escapeHtml(info.title || "") + '">' +
+         escapeHtml(code) + "</button></span> " + state;
 }
 
 /*
@@ -781,6 +811,7 @@ function autoFill() {
       const leafList = (node.type === "choose" || node.type === "units") &&
         node.items.every(item => item.type === "course" || (item.items && item.items.every(c => c.type === "course")));
       if (leafList && !(node.type === "choose" && node.count === 1 && node.items.length <= 4)) {
+        if (!slotsAllowed(section.name)) return;
         let p = progress(node, key);
         while (p.have < p.need && slots < 60) {
           if (!addElectiveSlot(key)) return;
@@ -1008,7 +1039,11 @@ planEl.clear.addEventListener("click", clearPlan);
 planEl.area.addEventListener("click", function (event) {
   const target = event.target.closest("button");
   if (!target) return;
-  if (target.dataset.planAdd) {
+  if (target.dataset.reqToggle) {
+    const group = target.closest(".req-group");
+    openGroups[target.dataset.reqToggle] = group.classList.contains("collapsed");
+    drawRequirements();
+  } else if (target.dataset.planAdd) {
     addCourse(target.dataset.planAdd);
   } else if (target.dataset.planShow) {
     const id = target.dataset.planShow;

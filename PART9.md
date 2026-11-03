@@ -189,3 +189,9 @@ Also fixed: a course from outside the programs on screen used to fall back to 4 
 - **One requirement area open at a time.** Preparation, Upper division and the rest are folds; opening one closes the others. It starts on the first area that isn't complete.
 - **"Needed first, from other departments"** lists the courses the requirements need from outside the program: CMPSC 8 for Computer Engineering, the calculus for Economics.
 - **Auto-fill prefers the "one of" option you've partly done.** With AP Calculus AB, it adds MATH 2B or 3B, not a whole new sequence.
+
+## Revision 2: a calmer sidebar
+
+- **Course codes only** in the requirements column (MATH 2A, not "MATH 2A Calculus with Algebra and Trigonometry"). Pointing at a code still shows its title.
+- **No "add a slot" in Pre-major or Preparation for the major**, in the column or from auto-fill (`slotsAllowed`). Students take specific courses there. Upper-division electives keep their slots.
+- **Click a line to collapse a group, as in a Reddit thread.** Every group inside an area hangs off a thin vertical line. Clicking the line, or the group's heading, collapses the whole group to one line ("All of 0 of 2 · 2 courses"); clicking the heading opens it again. Long lists start collapsed. This replaced the triangle folds inside areas, so every group works the same way.

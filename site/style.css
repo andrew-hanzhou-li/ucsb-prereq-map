@@ -648,17 +648,25 @@ kbd {
 .credit-lines { margin: 0 0 6px; padding-left: 16px; }
 .credit-button { font: inherit; font-weight: 600; padding: 4px 10px; color: var(--paper); background: var(--ink); border: 0; cursor: pointer; }
 .req-list, .req-list ul { list-style: none; margin: 0; padding: 0; }
-.req-list ul { padding-left: 12px; border-left: 1px solid var(--dots); margin: 2px 0 6px 2px; }
 .req-list li { padding: 2px 0; }
+/* A group: its heading, then its courses hanging off a vertical line.
+   Click the line or the heading to collapse the group (planner.js). */
+.req-toggle { font: inherit; text-align: left; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
+.req-toggle::before { content: "▾ "; color: var(--muted); }
+.req-group.collapsed > .req-toggle::before { content: "▸ "; }
+.req-hidden { font-size: 0.85rem; color: var(--muted); }
+.req-children { position: relative; padding-left: 14px; margin: 1px 0 4px 3px; }
+.req-group.collapsed > .req-children { display: none; }
+.req-thread { position: absolute; left: 0; top: 0; bottom: 0; width: 12px; padding: 0; background: none; border: 0; cursor: pointer; }
+.req-thread::before { content: ""; position: absolute; left: 3px; top: 0; bottom: 0; border-left: 1px solid var(--dots); }
+.req-thread:hover::before { border-left: 2px solid var(--ink); }
 .req-head { color: var(--muted); }
 .req-progress { font-family: var(--sans); font-size: 0.85rem; font-weight: 400; color: var(--green); }
 .req-course { cursor: grab; }
 .req-code { font: inherit; font-weight: 600; background: none; border: 0; padding: 0; cursor: pointer; color: inherit; }
-.req-title { color: var(--muted); }
 .req-done { color: var(--green); font-size: 0.85rem; }
 .req-planned { color: var(--blue); font-size: 0.85rem; }
 .req-text { color: var(--muted); font-style: italic; }
-.req-list summary { cursor: pointer; color: var(--muted); }
 
 .plan-table { border-collapse: collapse; width: 100%; min-width: 640px; table-layout: fixed; }
 .plan-table th { font-family: var(--serif); font-weight: 600; text-align: left; padding: 4px 8px; border-bottom: 1px solid var(--ink); }

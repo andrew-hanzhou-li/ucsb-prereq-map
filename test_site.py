@@ -602,6 +602,24 @@ def main():
         check("plan: opening another area closes the first",
               page.locator("#plan-reqs details.req-section[open]").count() == 1 and
               page.evaluate("k => document.querySelector('details.req-section[data-area=\"' + k + '\"]').open", closed_key))
+        check("sidebar: courses show their code only, no title",
+              page.locator("#plan-reqs .req-title").count() == 0 and "Calculus with" not in page.text_content("#plan-reqs"))
+        prep_slots = page.evaluate("""() => [...document.querySelectorAll('#plan-reqs details.req-section')]
+            .filter(d => /pre-?major|preparation/i.test(d.querySelector('summary').textContent))
+            .reduce((n, d) => n + d.querySelectorAll('[data-plan-elective]').length, 0)""")
+        check("sidebar: no 'add a slot' in Pre-major or Preparation", prep_slots == 0, prep_slots)
+        check("auto-fill: no elective slots for Pre-major or Preparation",
+              not page.evaluate("plan.electives.some(e => /pre-?major|preparation/i.test(sectionNameForKey(e.key)))"))
+        page.evaluate("document.querySelector('#plan-reqs details.req-section').open = true")
+        group = page.evaluate("document.querySelector('#plan-reqs .req-group:not(.collapsed) > .req-children > .req-thread').dataset.reqToggle")
+        page.click('#plan-reqs .req-thread[data-req-toggle="%s"]' % group, force=True)
+        page.wait_for_timeout(100)
+        check("sidebar: clicking a group's line collapses the whole group",
+              page.evaluate("k => document.querySelector('[data-req-toggle=\"' + k + '\"]').closest('.req-group').classList.contains('collapsed')", group))
+        page.click('#plan-reqs .req-toggle[data-req-toggle="%s"]' % group)
+        page.wait_for_timeout(100)
+        check("sidebar: clicking its heading opens it again",
+              not page.evaluate("k => document.querySelector('[data-req-toggle=\"' + k + '\"]').closest('.req-group').classList.contains('collapsed')", group))
         outside = page.locator('#plan-reqs details[data-area="outside"]')
         check("plan: CE lists the courses it needs from other departments, including CMPSC 8",
               outside.count() == 1 and "CMPSC 8" in outside.text_content())
