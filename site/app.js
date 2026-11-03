@@ -462,6 +462,7 @@ async function loadPrograms(programs) {
   if (ticket !== loading) return false;     // another program was picked meanwhile
   currentPrograms = programs;
   graph = combine(programs, loaded);
+  doneChanged();
   showChosen();
 
   nodesById = {};
@@ -518,6 +519,7 @@ function saveTaken() {
 
 function toggleTaken(code) {
   if (taken.has(code)) taken.delete(code); else taken.add(code);
+  doneChanged();
   saveTaken();
   updateTakenStatus();
   applyProgress();
@@ -526,6 +528,7 @@ function toggleTaken(code) {
 
 function clearTaken() {
   taken = new Set();
+  doneChanged();
   saveTaken();
   updateTakenStatus();
   applyProgress();
@@ -536,7 +539,47 @@ function clearTaken() {
 // from AP or another college (student.js), or it has a passing grade in the
 // plan (grades.js).
 function isDone(code) {
+  return doneDirectly(code) || impliedDone().has(code);
+}
+
+function doneDirectly(code) {
   return taken.has(code) || hasCredit(code) || passedCourse(code);
+}
+
+/*
+  Done by implication: the required prerequisites of a course that's done.
+  If you passed ECON 10A, which needs "ECON 1 and 2", you have ECON 1 and 2
+  in some form (AP, placement, another school), so they count as done for
+  the map's "next" marks and the planner. Only prerequisites every way
+  through need ("and"), not one option of a "one of" (passing CMPSC 16
+  doesn't say which of CMPSC 8, ECE 3 or prior experience you had), and
+  not "may be taken at the same time" ones.
+  Worked out once and kept until something changes (doneChanged).
+*/
+let impliedCache = null;
+
+function impliedDone() {
+  if (impliedCache) return impliedCache;
+  impliedCache = new Set();
+  const stack = Object.keys(nodesById).filter(doneDirectly);
+  while (stack.length) {
+    const node = nodesById[stack.pop()];
+    (function walk(req) {
+      if (!req) return;
+      if (req.type === "and") return req.items.forEach(walk);
+      if (req.type !== "course" || req.concurrent || req.code === node.id) return;
+      if (!impliedCache.has(req.code) && !doneDirectly(req.code)) {
+        impliedCache.add(req.code);
+        if (nodesById[req.code]) stack.push(req.code);
+      }
+    })(node && node.requires);
+  }
+  return impliedCache;
+}
+
+// Call after taken marks, credit, grades or the programs change.
+function doneChanged() {
+  impliedCache = null;
 }
 
 /*
@@ -657,13 +700,20 @@ function chooseShown(settings) {
       if (!covered) walk(offered || options[0]);
     }
   }
+  // (The planner passes skipDone: a course already done doesn't need its
+  // prerequisites added. Passing CMPSC 16 means no CMPSC 8.)
   for (const course of graph.nodes) {
     if (course.in_major && result.has(course.id) && (course.role === "required" || course.role === "choice")) {
+      if (settings.skipDone && isDone(course.id)) continue;
       walk(course.requires);
     }
   }
   // Outside courses can need outside courses of their own (PHYS 7B needs PHYS 7A).
-  while (needed.length) walk(nodesById[needed.pop()].requires);
+  while (needed.length) {
+    const code = needed.pop();
+    if (settings.skipDone && isDone(code)) continue;
+    walk(nodesById[code].requires);
+  }
   return result;
 }
 

@@ -291,9 +291,12 @@ function applyTranscript() {
       ? { title: node.title, units: node.units, offered: node.offered || [] }
       : { title: r.title, units: String(r.units === null ? 4 : r.units), offered: [] };
   }
+  for (const r of rows) delete (plan.auto || {})[r.code];
+  pruneCovered();
+  rebuildAfterTranscript(new Set(rows.map(r => r.code)));
   transcriptRows = [];
   transcriptEl.box.close();
-  say(rows.length + " courses from your transcript are in your plan, with their grades.");
+  say(rows.length + " courses from your transcript are in your plan, with their grades. The rest of your plan now starts after them.");
   planChanged();
   if (graph) draw();
 }

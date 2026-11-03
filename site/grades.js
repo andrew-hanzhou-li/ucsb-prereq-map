@@ -90,6 +90,8 @@ el.panelBody.addEventListener("change", function (event) {
   const code = event.target.dataset.planGrade;
   if (event.target.value) plan.grades[code] = event.target.value;
   else delete plan.grades[code];
+  delete (plan.auto || {})[code];          // graded: definitely the student's
+  pruneCovered();
   planChanged();
   if (graph) draw();      // the map's ✓ and "next" marks follow grades too
 });

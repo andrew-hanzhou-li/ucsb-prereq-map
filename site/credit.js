@@ -91,7 +91,11 @@ function creditUpdated() {
       if (selected) showDetails(selected); else showMajorSummary();
     }
   }
-  if (currentView === "plan") refreshPlan();
+  if (currentView === "plan") {
+    const removed = pruneCovered();
+    if (removed) say(removed + (removed === 1 ? " course" : " courses") + " your credit covers came out of the plan.");
+    planChanged();
+  }
 }
 
 creditEl.apList.addEventListener("change", function (event) {

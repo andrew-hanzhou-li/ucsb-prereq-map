@@ -216,39 +216,47 @@
         "status": "active"
        },
        {
-        "type": "all",
+        "type": "choose",
+        "count": 1,
         "items": [
          {
-          "type": "course",
-          "code": "CMPSC 189A",
-          "status": "active"
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "CMPSC 189A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CMPSC 189B",
+            "status": "active"
+           }
+          ]
          },
          {
-          "type": "course",
-          "code": "CMPSC 189B",
-          "status": "active"
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "ECE 189A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ECE 189B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ECE 189C",
+            "status": "active"
+           }
+          ]
          }
-        ]
-       },
-       {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "ECE 189A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ECE 189B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ECE 189C",
-          "status": "active"
-         }
-        ]
+        ],
+        "label": "Capstone",
+        "added_by_override": true
        }
       ],
       "catalog_rule_id": "vHXuFXlL",
@@ -588,7 +596,8 @@
   }
  ],
  "overrides_applied": [
-  "The electives note says \"ECE 194AA-ZZ (except 194R)\". These are the lettered ECE 194 courses in the current catalog; none is 194R."
+  "The electives note says \"ECE 194AA-ZZ (except 194R)\". These are the lettered ECE 194 courses in the current catalog; none is 194R.",
+  "The catalog lists both capstone sequences as required, but students take one. The department's requirement sheet lists them as one requirement, \"CMPSC 189A-B / ECE 189A-B-C\" (8-12 units), and its 4-year plan puts \"ECE 189A / CMPSC 189A\" in the same slot. The rule's own note gives a different prerequisite for each sequence. Source: https://www.ce.ucsb.edu/sites/default/files/2023-08/gear-23-24-ce-major-require-4-yr-plan-pgs-16-17.pdf"
  ],
  "courses": [
   {

@@ -76,6 +76,7 @@ function creditSources() {
 let creditCache = null;
 function creditChanged() {
   creditCache = null;
+  if (typeof doneChanged === "function") doneChanged();
   saveCredit();
 }
 
@@ -101,6 +102,9 @@ function hasAnyCredit() {
                                          (Fall, Winter, Spring, Summer)
     plan.units    { "ANTH 99": 2 }       units chosen for variable-unit courses
     plan.grades   { "ECON 1": "A-" }     grades (Phase 4)
+    plan.auto     { "MATH 2A": true }    placed by auto-fill, not chosen by
+                                         the student; only these are ever
+                                         removed automatically
 */
 const PLAN_KEY = "ucsb-prereq-map.plan";
 
@@ -117,10 +121,12 @@ function emptyPlan() {
   };
 }
 
-// Fall of this year if it's before August, otherwise next Fall.
+// The Fall that started the current academic year: Fall 2026 for any date
+// from September 2026 to August 2027. Most people using the planner are
+// current students; an incoming freshman can pick next Fall.
 function defaultStartYear() {
   const now = new Date();
-  return now.getMonth() < 7 ? now.getFullYear() : now.getFullYear() + 1;
+  return now.getMonth() >= 8 ? now.getFullYear() : now.getFullYear() - 1;
 }
 
 let plan = loadPlan();
@@ -136,6 +142,8 @@ function loadPlan() {
 }
 
 function savePlan() {
+  // Grades may have changed what counts as done (app.js).
+  if (typeof doneChanged === "function") doneChanged();
   try {
     localStorage.setItem(PLAN_KEY, JSON.stringify(plan));
   } catch (error) {

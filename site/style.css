@@ -628,6 +628,7 @@ kbd {
   border-bottom: 1px solid var(--dots);
   font-size: 0.92rem;
 }
+.plan-tools select { font: inherit; }
 .plan-tools input[type="number"] { font: inherit; width: 66px; border: 0; border-bottom: 1px solid var(--dots); background: transparent; }
 .plan-tools input[type="checkbox"] { accent-color: var(--ink); }
 .plan-buttons { display: inline-flex; flex-wrap: wrap; gap: 4px 16px; margin-left: auto; }

@@ -37,6 +37,7 @@ Needs Playwright, a browser-automation library (one-time setup):
     py -m playwright install chromium
 """
 
+import datetime
 import json
 import os
 import pathlib
@@ -477,7 +478,8 @@ def main():
         page.select_option('[data-plan-grade="ECON 1"]', "F")
         page.wait_for_timeout(80)
         check("grades: an F counts 0 points", abs(page.evaluate("gpaOf().gpa") - 1.65) < 1e-9)
-        check("grades: an F doesn't count as done", not page.evaluate("isDone('ECON 1')"))
+        # (isDone would be true here anyway: ECON 2, passed, needs ECON 1; see item 6.)
+        check("grades: an F isn't a pass", not page.evaluate("passedCourse('ECON 1')"))
         page.select_option('[data-plan-grade="ECON 1"]', "IP")
         page.wait_for_timeout(80)
         check("grades: In Progress doesn't count toward GPA", page.evaluate("gpaOf().units") == 5)
@@ -643,6 +645,79 @@ def main():
         page.keyboard.press("Escape")
         page.wait_for_timeout(150)
         check("AP: unticking takes the credit away", page.evaluate("missingPrereqs('MATH 3B').length") > 0)
+
+        # IMPROVEMENTS.md P0, items 1-4, on an empty CE plan
+        page.evaluate("localStorage.clear()")
+        page.goto(SITE + "#plan/computer-engineering-bs")
+        page.reload()
+        page.wait_for_function("graph && graph.major.id === 'BSCMPEN' && currentView === 'plan'", timeout=15000)
+        today = datetime.date.today()
+        fall = today.year if today.month >= 9 else today.year - 1
+        check("item 4: a fresh plan starts in the current academic year (Fall %d)" % fall,
+              page.evaluate("plan.startYear") == fall and page.locator(".plan-year").first.inner_text().startswith("Year 1 · %d" % fall))
+        check("item 4: the label says what the year means", "First quarter at UCSB" in page.inner_text(".plan-tools"))
+        page.click("#plan-autofill")
+        page.wait_for_timeout(500)
+        capstones = page.evaluate("['CMPSC 189A', 'ECE 189A'].filter(c => plan.placed[c])")
+        check("item 1: auto-fill schedules exactly one capstone sequence", len(capstones) == 1, capstones)
+        years = page.evaluate("['CMPSC 189A','CMPSC 189B','ECE 189A','ECE 189B','ECE 189C'].filter(c => plan.placed[c]).map(c => Number(plan.placed[c].split('-')[0]))")
+        check("item 2: the senior-standing capstone is in year 4", years and min(years) >= 4, years)
+        senior = page.evaluate("Object.keys(nodesById).filter(c => plan.placed[c] && standingYear(c) && standingYear(c).year === 4 && Number(plan.placed[c].split('-')[0]) < 4)")
+        check("item 2: no senior-standing course before year 4", not senior, senior)
+        early = page.evaluate("Object.keys(plan.placed).filter(c => courseInfo(c).level === 'upper' && plan.placed[c].startsWith('1-'))")
+        check("item 3: no upper-division course in year 1", not early, early)
+        check("item 3: ECE 139 isn't in year 1", not page.evaluate("plan.placed['ECE 139'].startsWith('1-')"))
+        capstone = capstones[0]
+        page.drag_and_drop('.chip[data-plan-drag="%s"]' % capstone, '[data-plan-slot="2-F"]')
+        page.wait_for_timeout(150)
+        check("item 2: dragging the capstone to year 2 shows the '!' for senior standing",
+              "warn" in (page.get_attribute('.chip[data-plan-drag="%s"]' % capstone, "class") or "") and
+              any("senior standing" in m for m in page.evaluate("c => missingPrereqs(c)", capstone)))
+        page.goto(SITE + "#computer-engineering-bs")
+        page.wait_for_function("currentView === 'map'", timeout=10000)
+        check("item 1: the map shows the capstone as 'one of'", "or CMPSC 189A" in box(page, "ECE 189A").inner_text(),
+              box(page, "ECE 189A").inner_text())
+
+        # Items 5-6: reading a transcript into an auto-filled plan
+        page.goto(SITE + "#plan/computer-engineering-bs")
+        page.wait_for_function("currentView === 'plan'", timeout=10000)
+        page.click("#plan-import")
+        page.fill("#transcript-text", transcript_text())
+        page.click("#transcript-read")
+        page.wait_for_timeout(200)
+        page.click("#transcript-apply")
+        page.wait_for_timeout(500)
+        used = page.evaluate("""() => { const ys = new Set(); for (const c of Object.keys(plan.placed)) ys.add(Number(plan.placed[c].split('-')[0]));
+            for (const e of plan.electives) ys.add(Number(e.slot.split('-')[0])); return [...ys].sort((a, b) => a - b); }""")
+        check("item 5: no empty years between the transcript and the rest of the plan",
+              used == list(range(used[0], used[-1] + 1)), used)
+        flagged = page.evaluate("Object.keys(plan.placed).filter(c => missingPrereqs(c).length)")
+        check("item 5: nothing planned before what it needs after the import", not flagged, flagged)
+        first_open = page.evaluate("firstOpenIndex()")
+        check("item 5: planned courses all come after the transcript's last quarter",
+              page.evaluate("i => Object.keys(plan.placed).filter(c => !plan.grades[c]).every(c => slotIndex(plan.placed[c]) >= i)", first_open))
+        check("item 6: a passed course is never flagged (CMPSC 16, A)", not page.evaluate("missingPrereqs('CMPSC 16').length"))
+        check("item 6: no CMPSC 8 for someone who passed CMPSC 16", not page.evaluate("plan.placed['CMPSC 8']"))
+
+        # Item 7: credit takes covered courses out, and the warning follows
+        page.evaluate("localStorage.clear()")
+        page.goto(SITE + "#plan/economics-ba")
+        page.reload()
+        page.wait_for_function("graph && graph.major.id === 'BAECON' && currentView === 'plan'", timeout=15000)
+        page.click("#plan-autofill")
+        page.wait_for_timeout(400)
+        check("item 7: (setup) auto-fill planned MATH 2A and 2B", page.evaluate("Boolean(plan.placed['MATH 2A'] && plan.placed['MATH 2B'])"))
+        page.click("#credit-button")
+        page.select_option('select[data-exam="Calculus BC"]', "3")
+        page.keyboard.press("Escape")
+        page.wait_for_timeout(300)
+        check("item 7: AP Calculus BC takes MATH 2A and 2B out of the plan",
+              not page.evaluate("plan.placed['MATH 2A'] || plan.placed['MATH 2B']"))
+        chips = sorted(page.evaluate("[...document.querySelectorAll('.chip.warn')].map(c => c.dataset.planDrag)"))
+        summary = page.inner_text("#panel-body")
+        check("item 7: the summary's warning matches the '!' marks",
+              (not chips and "planned before" not in summary) or all(c in summary for c in chips), (chips, summary[:200]))
+        page.evaluate("localStorage.clear()")
 
         # Two programs and AP credit: the case that showed ordering by column wasn't enough
         page.evaluate("localStorage.clear()")

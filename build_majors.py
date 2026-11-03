@@ -7,6 +7,9 @@ Reads   raw_programs.json       every program in the catalog, with its
                                 requirements (from fetch_programs.py)
         raw_courses.json        from Part 1, to check every course exists
         program_overrides.json  hand corrections for rules stated only in notes
+                                ("add" courses, "exclude" courses, or "choose"
+                                one of several groups the catalog lists as all
+                                required)
 Writes  majors/<name>.json      one file per current bachelor's degree or minor,
                                 e.g. majors/economics-ba.json, majors/mathematics-minor.json
         majors/index.json       list of all of them, for the site's major picker
@@ -251,6 +254,24 @@ class Converter:
             drop = set(exclude["courses"])
             remove_courses(result, drop)
             result["overrides_applied"].append(exclude["why"])
+
+        # "choose": groups the catalog lists as all required, but students
+        # take only one of (Computer Engineering's two capstone sequences).
+        # The groups are taken out of the rule and put back as one
+        # "choose 1" of them, so the map shows "one of" and the planner
+        # schedules one.
+        for rule_id, choice in (fix.get("choose") or {}).items():
+            node = find_rule(result, rule_id)
+            wanted = [sorted(group) for group in choice["groups"]]
+            found = [item for item in (node or {}).get("items", [])
+                     if sorted(c.get("code") for c in item.get("items", [item])) in wanted]
+            if node is None or len(found) != len(wanted):
+                print("WARNING: %s: override rule %s or its groups not found; catalog changed?" % (result["id"], rule_id))
+                continue
+            node["items"] = [item for item in node["items"] if item not in found]
+            node["items"].append({"type": "choose", "count": 1, "items": found,
+                                  "label": choice.get("label", ""), "added_by_override": True})
+            result["overrides_applied"].append(choice["why"])
 
 
 # =========================================================================

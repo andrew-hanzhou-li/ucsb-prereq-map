@@ -216,10 +216,17 @@ function metAt(node, index, self, relaxed) {
 function missingPrereqs(code) {
   const slot = plan.placed[code];
   if (!slot) return [];
+  // A course already passed (or ticked as taken, or credited) is never
+  // flagged: whatever it needed, the student evidently had.
+  if (isDone(code)) return [];
   const index = slotIndex(slot);
   const requires = courseInfo(code).requires;
-  if (metAt(requires, index, code, false)) return [];
   const missing = [];
+  const standing = standingYear(code);
+  if (standing && Number(slot.split("-")[0]) < standing.year) {
+    missing.push(standing.words + " (year " + standing.year + " or later)");
+  }
+  if (metAt(requires, index, code, false)) return missing;
   function why(c) {
     if (!plan.placed[c]) return c + " (not in your plan)";
     return c + " (planned for " + slotName(plan.placed[c]) + ")";
@@ -240,15 +247,76 @@ function missingPrereqs(code) {
 }
 
 /*
+  Class standing as a year of the plan. The catalog's prerequisites include
+  conditions like "senior standing" (parsed in Part 2 as kind "standing").
+  UCSB counts standing by units, but for a plan it maps onto years:
+    senior                                   year 4 or later
+    junior, upper-division                   year 3 or later
+    sophomore, "not open to freshmen"        year 2 or later
+  Year numbers are the plan's, so a transfer student (who starts in year 3)
+  is already a junior. Only conditions every way through the prerequisites
+  need (not one option of a "one of") count. Graduate standing and
+  freshman standing don't set a minimum year in a bachelor's plan.
+  Returns { year, words } or null.
+*/
+function standingYear(code) {
+  let best = null;
+  (function walk(node) {
+    if (!node) return;
+    if (node.type === "and") return node.items.forEach(walk);
+    if (node.type !== "condition" || node.kind !== "standing") return;
+    const text = (node.text || "").toLowerCase();
+    let found = null;
+    if (/senior/.test(text)) found = { year: 4, words: "senior standing" };
+    else if (/junior|upper[- ]division/.test(text)) found = { year: 3, words: "upper-division standing" };
+    else if (/sophomore|not open to freshm/.test(text)) found = { year: 2, words: "sophomore standing" };
+    if (found && (!best || found.year > best.year)) best = found;
+  })(courseInfo(code).requires);
+  return best;
+}
+
+/*
+  The earliest year the planner itself puts a course in: its standing
+  (above), and for an upper-division course (numbered 100 and up) no
+  earlier than year 2 even without a standing condition. ECE 139 only says
+  "open to EE and CE majors", but the department's 4-year plan has it in
+  sophomore Spring. The student can still drag a course earlier; only a
+  standing condition then shows "!".
+*/
+function placementYear(code) {
+  const standing = standingYear(code);
+  let year = standing ? standing.year : 1;
+  if (courseInfo(code).level === "upper") year = Math.max(year, 2);
+  return year;
+}
+
+/*
+  The first quarter that's still open for planning: the one after the last
+  quarter with a graded course (finished, or In Progress). Quarters up to
+  then are the past, filled from a transcript or by hand; the planner
+  never puts new courses there.
+*/
+function firstOpenIndex() {
+  let last = -1;
+  for (const code of Object.keys(plan.grades)) {
+    if (plan.placed[code]) last = Math.max(last, slotIndex(plan.placed[code]));
+  }
+  return last + 1;
+}
+
+/*
   The first quarter (from `fromIndex` on) where a course fits: its
-  prerequisites come earlier, it's usually offered then, and the quarter
-  stays under the unit cap. null if no quarter in the plan fits.
+  prerequisites come earlier, it's usually offered then, it's not before
+  its earliest year (placementYear), and the quarter stays under the unit
+  cap. null if no quarter in the plan fits.
 */
 function earliestSlot(code, fromIndex) {
   const slots = planSlots();
   const units = unitsOf(code);
   const requires = courseInfo(code).requires;
-  for (let i = fromIndex || 0; i < slots.length; i++) {
+  const firstYear = placementYear(code);
+  for (let i = Math.max(fromIndex || 0, firstOpenIndex()); i < slots.length; i++) {
+    if (slots[i].year < firstYear) continue;
     if (!offeredIn(code, slots[i].q)) continue;
     if (quarterUnits(slots[i].id, code) + units > plan.cap) continue;
     if (!metAt(requires, i, code, true)) continue;
@@ -267,6 +335,7 @@ function placeCourse(code) {
   }
   if (!slot) return null;
   plan.placed[code] = slot;
+  delete (plan.auto || {})[code];          // auto-fill marks its own afterwards
   const info = courseInfo(code);
   plan.info = plan.info || {};
   plan.info[code] = { title: info.title, units: info.units, offered: info.offered };
@@ -457,7 +526,7 @@ function drawRequirements() {
 // Courses from other departments that the requirements need (the same ones
 // the map adds), sorted by prerequisite order.
 function outsideCourses() {
-  const needed = chooseShown({ electives: false, everyOutside: false, inactive: false });
+  const needed = chooseShown({ electives: false, everyOutside: false, inactive: false, skipDone: true });
   return Array.from(needed).filter(code => !nodesById[code].in_major)
     .sort((a, b) => (nodesById[a].column - nodesById[b].column) || bySortKey(a, b));
 }
@@ -689,6 +758,11 @@ function openPlan(shared) {
 
 function refreshPlan() {
   if (!graph || currentView !== "plan") return;
+  // "First quarter at UCSB": the last eight Falls and the next one.
+  const thisFall = defaultStartYear();
+  const years = [];
+  for (let y = Math.min(plan.startYear, thisFall - 8); y <= Math.max(plan.startYear, thisFall + 1); y++) years.push(y);
+  planEl.start.innerHTML = years.map(y => '<option value="' + y + '">' + y + "</option>").join("");
   planEl.start.value = plan.startYear;
   planEl.transfer.checked = plan.firstYear === 3;
   planEl.summer.checked = plan.summer;
@@ -699,13 +773,66 @@ function refreshPlan() {
     if ((plan.electives || []).some(e => e.id === planSelected)) showElectiveSlot(planSelected);
     else if (plan.placed[planSelected] || nodesById[planSelected]) showPlanCourse(planSelected);
     else showPlanSummary();
+  } else {
+    // Redrawn every time, from the same missingPrereqs that draws the "!"
+    // marks, so the summary's warning can't go stale.
+    showPlanSummary();
   }
 }
 
 function planChanged() {
   savePlan();
   refreshPlan();
-  if (!planSelected) showPlanSummary();
+}
+
+/*
+  After credit, grades or a transcript change what's done: take out the
+  courses auto-fill placed that are now done, or no longer needed (CMPSC 8
+  once CMPSC 16 is passed). Courses the student chose, moved or graded
+  stay. Returns how many were removed.
+*/
+function pruneCovered() {
+  if (!graph) return 0;
+  doneChanged();
+  const needed = chooseShown({ electives: false, everyOutside: false, inactive: false, skipDone: true });
+  let removed = 0;
+  for (const code of Object.keys(plan.placed)) {
+    if (!(plan.auto || {})[code] || plan.grades[code]) continue;
+    const node = nodesById[code];
+    const unneeded = node && !node.in_major && !needed.has(code);
+    if (isDone(code) || unneeded) {
+      delete plan.placed[code];
+      delete plan.auto[code];
+      removed += 1;
+    }
+  }
+  return removed;
+}
+
+/*
+  After a transcript is read in: everything planned that isn't from the
+  transcript is placed again, after the last quarter on it, so there's no
+  gap and nothing sits before what it needs. Courses the student chose are
+  kept (just moved); auto-fill's picks are dropped and auto-fill runs again.
+*/
+function rebuildAfterTranscript(fromTranscript) {
+  const chosen = [];
+  let hadAuto = false;
+  for (const code of Object.keys(plan.placed)) {
+    if (fromTranscript.has(code) || plan.grades[code]) continue;
+    if ((plan.auto || {})[code]) hadAuto = true; else chosen.push(code);
+    delete plan.placed[code];
+  }
+  plan.auto = {};
+  const slots = (plan.electives || []).map(e => e.key);
+  plan.electives = [];
+  for (const code of prerequisiteOrder(chosen.filter(c => nodesById[c]))) placeCourse(code);
+  for (const code of chosen.filter(c => !nodesById[c])) placeCourse(code);
+  if (hadAuto) {
+    autoFill(true);
+  } else {
+    slots.forEach(key => addElectiveSlot(key));
+  }
 }
 
 function say(text) {
@@ -774,8 +901,8 @@ function addCourse(code) {
   Auto-fill: everything required that isn't done or planned yet, in
   prerequisite order, then a slot for each elective still needed.
 */
-function autoFill() {
-  const needed = chooseShown({ electives: false, everyOutside: false, inactive: false });
+function autoFill(quiet) {
+  const needed = chooseShown({ electives: false, everyOutside: false, inactive: false, skipDone: true });
   const skip = new Set();
   // "Take one of": keep an option already done or planned, else the first
   // one the catalog still offers. A required "one of" adds that option even
@@ -797,8 +924,12 @@ function autoFill() {
   const list = prerequisiteOrder(Array.from(needed)
     .filter(code => !skip.has(code) && !inPlanOrDone(code) && nodesById[code] && nodesById[code].status === "active"));
   let placed = 0;
+  plan.auto = plan.auto || {};
   for (const code of list) {
-    if (placeCourse(code)) placed += 1;
+    if (placeCourse(code)) {
+      plan.auto[code] = true;
+      placed += 1;
+    }
   }
   repairOrder();
 
@@ -823,7 +954,7 @@ function autoFill() {
       node.items.forEach((item, j) => visit(item, key + "." + j));
     })(section.requirement, "s" + i);
   });
-  say("Auto-fill placed " + placed + " courses and " + slots + " elective slots. Electives start in year 3; click a slot to choose its course.");
+  if (!quiet) say("Auto-fill placed " + placed + " courses and " + slots + " elective slots. Electives start in year 3; click a slot to choose its course.");
   planChanged();
 }
 
@@ -857,8 +988,10 @@ function repairOrder() {
     for (const code of Object.keys(plan.placed)) {
       if (isDone(code) || !missingPrereqs(code).length) continue;
       const before = plan.placed[code];
+      const wasAuto = (plan.auto || {})[code];
       delete plan.placed[code];
       if (!placeCourse(code)) plan.placed[code] = before;
+      if (wasAuto) plan.auto[code] = true;
       else if (plan.placed[code] !== before) moved = true;
     }
     if (!moved) return;
@@ -896,7 +1029,7 @@ function pickOneSets() {
 function addElectiveSlot(key) {
   plan.electives = plan.electives || [];
   const slots = planSlots();
-  let from = Math.max(0, slots.findIndex(s => s.year >= 3));
+  let from = Math.max(0, slots.findIndex(s => s.year >= 3), firstOpenIndex());
   for (;;) {
     const list = planSlots();
     for (let i = from; i < list.length; i++) {
@@ -932,6 +1065,7 @@ function moveTo(id, slotId) {
   if (elective) elective.slot = slotId;
   else {
     plan.placed[id] = slotId;
+    delete (plan.auto || {})[id];          // moved by hand: the student's choice now
     const info = courseInfo(id);
     plan.info = plan.info || {};
     plan.info[id] = { title: info.title, units: info.units, offered: info.offered };

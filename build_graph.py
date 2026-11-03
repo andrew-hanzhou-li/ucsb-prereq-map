@@ -73,6 +73,10 @@ OUTPUT_DIR = os.path.join("site", "data")
 # course in Letters and Science" (~3,000) is not.
 POOL_LIMIT = 100
 
+# Files in site/data written by other scripts, which the cleanup leaves alone
+# (credit.json is the AP chart, from build_credit.py).
+KEEP_IN_DATA = {"credit.json"}
+
 
 # ===========================================================================
 # Step 1: the major's own courses
@@ -430,7 +434,7 @@ def main():
     if not wanted:
         # Start clean, so graphs for programs that were retired don't linger.
         for old in os.listdir(OUTPUT_DIR):
-            if old.endswith(".json"):
+            if old.endswith(".json") and old not in KEEP_IN_DATA:
                 os.remove(os.path.join(OUTPUT_DIR, old))
     listing = []
     for entry in index:
