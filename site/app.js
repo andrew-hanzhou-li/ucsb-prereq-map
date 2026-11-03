@@ -260,6 +260,7 @@ function showView(view, shared) {
   el.planArea.hidden = view !== "plan";
   el.toggles.hidden = view !== "map";
   el.courseInput.parentElement.hidden = view !== "map";
+  el.top.classList.remove("compact");      // a new view starts at its top, with the full header
   if (view === "plan") {
     openPlan(shared);
   } else if (!selected) {
@@ -305,6 +306,7 @@ function showHome() {
   el.footerCatalog.textContent = "Built from the UCSB General Catalog.";
   document.title = "The Prerequisite Map · UCSB";
   el.panel.hidden = true;           // nothing to show until a map is open
+  el.top.classList.remove("compact");
   closeSheet();
 }
 
@@ -945,15 +947,20 @@ function draw() {
   }
 }
 
-// The two lines at the top of a map: how to use it, and the marks, in words.
+// The lines at the top of a map: how to use it, and the marks, in words.
+// On phones only the first line shows; "How to read this" opens the rest.
+let howToReadOpen = false;
+
 function mapHeader() {
-  return '<div class="map-head">' +
+  return '<div class="map-head' + (howToReadOpen ? " open" : "") + '">' +
     '<p><span class="wide-only">Point at or click a course to see what it needs and what it unlocks; <kbd>esc</kbd> clears it.</span>' +
-    '<span class="narrow-only">Tap a course to see what it needs and what it unlocks.</span></p>' +
-    '<p>In <span class="red">red</span>, what it needs; in <span class="blue">blue</span>, what it unlocks. ' +
+    '<span class="narrow-only">Tap a course to see what it needs and unlocks. ' +
+    '<button type="button" class="text-button" data-how-to-read aria-expanded="' + howToReadOpen + '">' +
+    (howToReadOpen ? "Hide the key" : "How to read this") + "</button></span></p>" +
+    '<p class="map-key">In <span class="red">red</span>, what it needs; in <span class="blue">blue</span>, what it unlocks. ' +
     "† from another department. <span class=\"ok\">✓</span> taken; <span class=\"ok\">next</span>, ready to take." +
     (el.showInactive.checked ? " Grayed: not offered now." : "") + "</p>" +
-    '<p class="credit-invite">' + (hasAnyCredit()
+    '<p class="credit-invite map-key">' + (hasAnyCredit()
       ? "Your AP and college credit counts as taken. "
       : "Have AP or college credit? ") +
     '<button type="button" class="text-button" data-open-credit>' + (hasAnyCredit() ? "Change it" : "Add it") +
@@ -1658,6 +1665,46 @@ el.optionsButton.addEventListener("click", function () {
   const open = el.top.classList.toggle("show-options");
   el.optionsButton.setAttribute("aria-expanded", open ? "true" : "false");
 });
+
+// "How to read this" at the top of a map (phones): show or hide the key.
+el.stage.addEventListener("click", function (event) {
+  const button = event.target.closest("[data-how-to-read]");
+  if (!button) return;
+  howToReadOpen = !howToReadOpen;
+  button.closest(".map-head").classList.toggle("open", howToReadOpen);
+  button.setAttribute("aria-expanded", howToReadOpen ? "true" : "false");
+  button.textContent = howToReadOpen ? "Hide the key" : "How to read this";
+});
+
+// On phones the Plan view's settings and its five buttons fold behind
+// "Settings" and "⋯". Each button opens its own part and closes the other.
+const planTools = document.getElementById("plan-tools");
+function foldPlanTools(part) {
+  for (const name of ["settings", "more"]) {
+    const open = name === part && !planTools.classList.contains("show-" + name);
+    planTools.classList.toggle("show-" + name, open);
+    document.getElementById("plan-" + name + "-button").setAttribute("aria-expanded", open ? "true" : "false");
+  }
+}
+document.getElementById("plan-settings-button").addEventListener("click", function () { foldPlanTools("settings"); });
+document.getElementById("plan-more-button").addEventListener("click", function () { foldPlanTools("more"); });
+// Picking one of the five closes the menu again.
+document.getElementById("plan-buttons").addEventListener("click", function (event) {
+  if (event.target.closest("button") && planTools.classList.contains("show-more")) foldPlanTools(null);
+});
+
+/*
+  On phones the header shrinks once you scroll down the map or the plan
+  (the tagline and the "add a program" box go), and comes back at the top.
+  Two thresholds, 80px and 10px, so it doesn't flicker in between.
+  Scroll events don't bubble, so this listens in the capture phase.
+*/
+document.addEventListener("scroll", function (event) {
+  const box = event.target;
+  if (!isPhone() || !box.closest || !box.closest(".layout")) return;
+  if (box.scrollTop > 80) el.top.classList.add("compact");
+  else if (box.scrollTop < 10) el.top.classList.remove("compact");
+}, true);
 
 // About is a box over the page (not a separate page), so it also works in
 // the single-file version.

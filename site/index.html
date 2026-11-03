@@ -31,7 +31,7 @@
     <!-- The masthead. Links use "#" (not "./") so they also work in the
          single-file version, opened straight from your computer. -->
     <div class="mast">
-      <h1 class="site-name"><a href="#" id="home-link">The Prerequisite Map</a><span class="tagline">for UC Santa Barbara · unofficial</span></h1>
+      <h1 class="site-name"><a href="#" id="home-link">The Prerequisite Map</a><span class="tagline"><span class="wide-only">for UC Santa Barbara</span><span class="narrow-only">UCSB</span> · unofficial</span></h1>
       <nav class="mast-nav">
         <a href="#" id="all-link" hidden>All programs</a>
         <button type="button" class="text-button" id="credit-button" data-open-credit>Credit</button>
@@ -102,12 +102,20 @@
     <!-- The Plan view (planner.js): settings, then the requirements beside a
          grid of years and quarters. -->
     <section class="plan-area" id="plan-area" aria-label="Quarter-by-quarter plan" hidden>
-      <div class="plan-tools">
-        <label>First quarter at UCSB: Fall <select id="plan-start"></select></label>
-        <label><input type="checkbox" id="plan-transfer"> transfer student (start in year 3)</label>
-        <label><input type="checkbox" id="plan-summer"> plan summer quarters</label>
-        <label>up to <input type="number" id="plan-cap" min="4" max="30"> units a quarter</label>
-        <span class="plan-buttons">
+      <div class="plan-tools" id="plan-tools">
+        <!-- On phones the settings and the five buttons fold away behind
+             these two, so the grid starts near the top (app.js, section 8). -->
+        <div class="plan-phone-bar">
+          <button type="button" class="text-button" id="plan-settings-button" aria-expanded="false" aria-controls="plan-settings">Settings</button>
+          <button type="button" class="text-button" id="plan-more-button" aria-expanded="false" aria-controls="plan-buttons" aria-label="More plan actions">⋯</button>
+        </div>
+        <div class="plan-settings" id="plan-settings">
+          <label>First quarter at UCSB: Fall <select id="plan-start"></select></label>
+          <label><input type="checkbox" id="plan-transfer"> transfer student (start in year 3)</label>
+          <label><input type="checkbox" id="plan-summer"> plan summer quarters</label>
+          <label>up to <input type="number" id="plan-cap" min="4" max="30"> units a quarter</label>
+        </div>
+        <span class="plan-buttons" id="plan-buttons">
           <button type="button" class="text-button" id="plan-import">Read my transcript</button>
           <button type="button" class="text-button" id="plan-autofill">Auto-fill the rest</button>
           <button type="button" class="text-button" id="plan-share">Copy share link</button>

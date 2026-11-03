@@ -569,10 +569,11 @@ kbd {
   :root { --col-min: 140px; }
   .mast { padding: 12px 16px 8px; }
   .site-name { font-size: 1.35rem; }
-  .tagline { display: block; margin: 2px 0 0; font-size: 0.88rem; }
+  .tagline { margin-left: 8px; font-size: 0.88rem; }
   .mast-nav { margin-left: 0; gap: 16px; }
   #footer-download { display: none; }
-  .sub { padding: 6px 16px 7px; }
+  .sub { padding: 6px 16px 7px; column-gap: 12px; }
+  .views a { padding: 1px 8px 2px; }
   .picker, .picker input, #course-input { width: 100%; }
 
   .stage { padding: 6px 16px 24px; }
@@ -637,6 +638,17 @@ kbd {
 
   /* No room for a footer; the same notice is in the program's summary. */
   .bottom { display: none; }
+
+  /* The map's key, behind "How to read this". */
+  .map-head .map-key { display: none; }
+  .map-head.open .map-key { display: block; }
+
+  /* Scrolled down: a smaller header (app.js, section 8). */
+  .top.compact .mast { padding: 6px 16px 4px; }
+  .top.compact .site-name { font-size: 1.1rem; }
+  .top.compact .tagline,
+  .top.compact .sub > .picker:not(.more-options) { display: none; }
+  .top.compact .sub { padding: 4px 16px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -755,9 +767,33 @@ kbd {
 .plan-actions { margin-top: 10px !important; }
 .pick-list { list-style: none; padding-left: 0 !important; max-height: 50vh; overflow-y: auto; }
 
+/* Phones only: the bar with "Settings" and "⋯". On wide screens the
+   settings box is just part of the tools line. */
+.plan-phone-bar { display: none; }
+.plan-settings { display: contents; }
+
 @media (max-width: 800px) {
-  .plan-tools { padding: 8px 16px; }
-  .plan-buttons { margin-left: 0; }
+  .plan-tools { position: relative; padding: 6px 16px; gap: 4px 16px; }
+  .plan-phone-bar { display: flex; gap: 20px; flex-basis: 100%; }
+  #plan-more-button { margin-left: auto; padding: 0 6px; font-size: 1.2rem; line-height: 1; text-decoration: none; }
+  .plan-settings { display: none; flex-basis: 100%; flex-direction: column; gap: 6px; padding: 4px 0 6px; }
+  .plan-tools.show-settings .plan-settings { display: flex; }
+  .plan-buttons {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 16px;
+    z-index: 20;
+    flex-direction: column;
+    gap: 0;
+    margin: 0;
+    padding: 4px 0;
+    background: var(--paper);
+    border: 1px solid var(--ink);
+  }
+  .plan-buttons .text-button { padding: 8px 16px; text-align: left; }
+  .plan-tools.show-more .plan-buttons { display: flex; }
+  .plan-message:empty { display: none; }
   .plan-body { display: block; overflow-y: auto; }
   .plan-reqs { border-right: 0; padding: 8px 16px; }
   .plan-grid { padding: 8px 16px 70vh; overflow: visible; }
@@ -791,7 +827,7 @@ kbd {
     <!-- The masthead. Links use "#" (not "./") so they also work in the
          single-file version, opened straight from your computer. -->
     <div class="mast">
-      <h1 class="site-name"><a href="#" id="home-link">The Prerequisite Map</a><span class="tagline">for UC Santa Barbara · unofficial</span></h1>
+      <h1 class="site-name"><a href="#" id="home-link">The Prerequisite Map</a><span class="tagline"><span class="wide-only">for UC Santa Barbara</span><span class="narrow-only">UCSB</span> · unofficial</span></h1>
       <nav class="mast-nav">
         <a href="#" id="all-link" hidden>All programs</a>
         <button type="button" class="text-button" id="credit-button" data-open-credit>Credit</button>
@@ -862,12 +898,20 @@ kbd {
     <!-- The Plan view (planner.js): settings, then the requirements beside a
          grid of years and quarters. -->
     <section class="plan-area" id="plan-area" aria-label="Quarter-by-quarter plan" hidden>
-      <div class="plan-tools">
-        <label>First quarter at UCSB: Fall <select id="plan-start"></select></label>
-        <label><input type="checkbox" id="plan-transfer"> transfer student (start in year 3)</label>
-        <label><input type="checkbox" id="plan-summer"> plan summer quarters</label>
-        <label>up to <input type="number" id="plan-cap" min="4" max="30"> units a quarter</label>
-        <span class="plan-buttons">
+      <div class="plan-tools" id="plan-tools">
+        <!-- On phones the settings and the five buttons fold away behind
+             these two, so the grid starts near the top (app.js, section 8). -->
+        <div class="plan-phone-bar">
+          <button type="button" class="text-button" id="plan-settings-button" aria-expanded="false" aria-controls="plan-settings">Settings</button>
+          <button type="button" class="text-button" id="plan-more-button" aria-expanded="false" aria-controls="plan-buttons" aria-label="More plan actions">⋯</button>
+        </div>
+        <div class="plan-settings" id="plan-settings">
+          <label>First quarter at UCSB: Fall <select id="plan-start"></select></label>
+          <label><input type="checkbox" id="plan-transfer"> transfer student (start in year 3)</label>
+          <label><input type="checkbox" id="plan-summer"> plan summer quarters</label>
+          <label>up to <input type="number" id="plan-cap" min="4" max="30"> units a quarter</label>
+        </div>
+        <span class="plan-buttons" id="plan-buttons">
           <button type="button" class="text-button" id="plan-import">Read my transcript</button>
           <button type="button" class="text-button" id="plan-autofill">Auto-fill the rest</button>
           <button type="button" class="text-button" id="plan-share">Copy share link</button>
@@ -1690,6 +1734,7 @@ function showView(view, shared) {
   el.planArea.hidden = view !== "plan";
   el.toggles.hidden = view !== "map";
   el.courseInput.parentElement.hidden = view !== "map";
+  el.top.classList.remove("compact");      // a new view starts at its top, with the full header
   if (view === "plan") {
     openPlan(shared);
   } else if (!selected) {
@@ -1735,6 +1780,7 @@ function showHome() {
   el.footerCatalog.textContent = "Built from the UCSB General Catalog.";
   document.title = "The Prerequisite Map · UCSB";
   el.panel.hidden = true;           // nothing to show until a map is open
+  el.top.classList.remove("compact");
   closeSheet();
 }
 
@@ -2375,15 +2421,20 @@ function draw() {
   }
 }
 
-// The two lines at the top of a map: how to use it, and the marks, in words.
+// The lines at the top of a map: how to use it, and the marks, in words.
+// On phones only the first line shows; "How to read this" opens the rest.
+let howToReadOpen = false;
+
 function mapHeader() {
-  return '<div class="map-head">' +
+  return '<div class="map-head' + (howToReadOpen ? " open" : "") + '">' +
     '<p><span class="wide-only">Point at or click a course to see what it needs and what it unlocks; <kbd>esc</kbd> clears it.</span>' +
-    '<span class="narrow-only">Tap a course to see what it needs and what it unlocks.</span></p>' +
-    '<p>In <span class="red">red</span>, what it needs; in <span class="blue">blue</span>, what it unlocks. ' +
+    '<span class="narrow-only">Tap a course to see what it needs and unlocks. ' +
+    '<button type="button" class="text-button" data-how-to-read aria-expanded="' + howToReadOpen + '">' +
+    (howToReadOpen ? "Hide the key" : "How to read this") + "</button></span></p>" +
+    '<p class="map-key">In <span class="red">red</span>, what it needs; in <span class="blue">blue</span>, what it unlocks. ' +
     "† from another department. <span class=\"ok\">✓</span> taken; <span class=\"ok\">next</span>, ready to take." +
     (el.showInactive.checked ? " Grayed: not offered now." : "") + "</p>" +
-    '<p class="credit-invite">' + (hasAnyCredit()
+    '<p class="credit-invite map-key">' + (hasAnyCredit()
       ? "Your AP and college credit counts as taken. "
       : "Have AP or college credit? ") +
     '<button type="button" class="text-button" data-open-credit>' + (hasAnyCredit() ? "Change it" : "Add it") +
@@ -3088,6 +3139,46 @@ el.optionsButton.addEventListener("click", function () {
   const open = el.top.classList.toggle("show-options");
   el.optionsButton.setAttribute("aria-expanded", open ? "true" : "false");
 });
+
+// "How to read this" at the top of a map (phones): show or hide the key.
+el.stage.addEventListener("click", function (event) {
+  const button = event.target.closest("[data-how-to-read]");
+  if (!button) return;
+  howToReadOpen = !howToReadOpen;
+  button.closest(".map-head").classList.toggle("open", howToReadOpen);
+  button.setAttribute("aria-expanded", howToReadOpen ? "true" : "false");
+  button.textContent = howToReadOpen ? "Hide the key" : "How to read this";
+});
+
+// On phones the Plan view's settings and its five buttons fold behind
+// "Settings" and "⋯". Each button opens its own part and closes the other.
+const planTools = document.getElementById("plan-tools");
+function foldPlanTools(part) {
+  for (const name of ["settings", "more"]) {
+    const open = name === part && !planTools.classList.contains("show-" + name);
+    planTools.classList.toggle("show-" + name, open);
+    document.getElementById("plan-" + name + "-button").setAttribute("aria-expanded", open ? "true" : "false");
+  }
+}
+document.getElementById("plan-settings-button").addEventListener("click", function () { foldPlanTools("settings"); });
+document.getElementById("plan-more-button").addEventListener("click", function () { foldPlanTools("more"); });
+// Picking one of the five closes the menu again.
+document.getElementById("plan-buttons").addEventListener("click", function (event) {
+  if (event.target.closest("button") && planTools.classList.contains("show-more")) foldPlanTools(null);
+});
+
+/*
+  On phones the header shrinks once you scroll down the map or the plan
+  (the tagline and the "add a program" box go), and comes back at the top.
+  Two thresholds, 80px and 10px, so it doesn't flicker in between.
+  Scroll events don't bubble, so this listens in the capture phase.
+*/
+document.addEventListener("scroll", function (event) {
+  const box = event.target;
+  if (!isPhone() || !box.closest || !box.closest(".layout")) return;
+  if (box.scrollTop > 80) el.top.classList.add("compact");
+  else if (box.scrollTop < 10) el.top.classList.remove("compact");
+}, true);
 
 // About is a box over the page (not a separate page), so it also works in
 // the single-file version.

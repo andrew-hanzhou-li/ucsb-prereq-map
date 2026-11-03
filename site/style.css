@@ -543,10 +543,11 @@ kbd {
   :root { --col-min: 140px; }
   .mast { padding: 12px 16px 8px; }
   .site-name { font-size: 1.35rem; }
-  .tagline { display: block; margin: 2px 0 0; font-size: 0.88rem; }
+  .tagline { margin-left: 8px; font-size: 0.88rem; }
   .mast-nav { margin-left: 0; gap: 16px; }
   #footer-download { display: none; }
-  .sub { padding: 6px 16px 7px; }
+  .sub { padding: 6px 16px 7px; column-gap: 12px; }
+  .views a { padding: 1px 8px 2px; }
   .picker, .picker input, #course-input { width: 100%; }
 
   .stage { padding: 6px 16px 24px; }
@@ -611,6 +612,17 @@ kbd {
 
   /* No room for a footer; the same notice is in the program's summary. */
   .bottom { display: none; }
+
+  /* The map's key, behind "How to read this". */
+  .map-head .map-key { display: none; }
+  .map-head.open .map-key { display: block; }
+
+  /* Scrolled down: a smaller header (app.js, section 8). */
+  .top.compact .mast { padding: 6px 16px 4px; }
+  .top.compact .site-name { font-size: 1.1rem; }
+  .top.compact .tagline,
+  .top.compact .sub > .picker:not(.more-options) { display: none; }
+  .top.compact .sub { padding: 4px 16px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -729,9 +741,33 @@ kbd {
 .plan-actions { margin-top: 10px !important; }
 .pick-list { list-style: none; padding-left: 0 !important; max-height: 50vh; overflow-y: auto; }
 
+/* Phones only: the bar with "Settings" and "⋯". On wide screens the
+   settings box is just part of the tools line. */
+.plan-phone-bar { display: none; }
+.plan-settings { display: contents; }
+
 @media (max-width: 800px) {
-  .plan-tools { padding: 8px 16px; }
-  .plan-buttons { margin-left: 0; }
+  .plan-tools { position: relative; padding: 6px 16px; gap: 4px 16px; }
+  .plan-phone-bar { display: flex; gap: 20px; flex-basis: 100%; }
+  #plan-more-button { margin-left: auto; padding: 0 6px; font-size: 1.2rem; line-height: 1; text-decoration: none; }
+  .plan-settings { display: none; flex-basis: 100%; flex-direction: column; gap: 6px; padding: 4px 0 6px; }
+  .plan-tools.show-settings .plan-settings { display: flex; }
+  .plan-buttons {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 16px;
+    z-index: 20;
+    flex-direction: column;
+    gap: 0;
+    margin: 0;
+    padding: 4px 0;
+    background: var(--paper);
+    border: 1px solid var(--ink);
+  }
+  .plan-buttons .text-button { padding: 8px 16px; text-align: left; }
+  .plan-tools.show-more .plan-buttons { display: flex; }
+  .plan-message:empty { display: none; }
   .plan-body { display: block; overflow-y: auto; }
   .plan-reqs { border-right: 0; padding: 8px 16px; }
   .plan-grid { padding: 8px 16px 70vh; overflow: visible; }

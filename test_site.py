@@ -969,6 +969,44 @@ def main():
         check("phone: the selected course stays visible above the sheet", box_bottom < sheet_top,
               "%d vs %d" % (box_bottom, sheet_top))
         check("phone: no JavaScript errors", not phone.errors, phone.errors)
+
+        # Item 15: on a small phone (iPhone SE, 375x667) the header and
+        # controls leave room for the map and the plan.
+        se = new_page(browser, viewport={"width": 375, "height": 667}, is_mobile=True, has_touch=True)
+        open_major(se, SITE, "computer-engineering-bs", "BSCMPEN")
+        first_step = se.evaluate("[...document.querySelectorAll('#stage *')].find(e => e.textContent.trim().startsWith('Step one') && e.children.length < 3).getBoundingClientRect().top")
+        check("SE: 'Step one' starts in the top half of the screen", first_step < 667 / 2, first_step)
+        check("SE: the map intro is one line, with the key folded away",
+              se.is_visible("[data-how-to-read]") and not se.is_visible(".map-head .map-key"))
+        se.click("[data-how-to-read]")
+        check("SE: 'How to read this' opens the key", se.is_visible(".map-head .map-key"))
+        se.click("[data-how-to-read]")
+        check("SE: and closes it again", not se.is_visible(".map-head .map-key"))
+        full_header = se.evaluate("el.top.getBoundingClientRect().height")
+        se.evaluate("el.map.scrollTo(0, 500)")
+        se.wait_for_timeout(200)
+        compact_header = se.evaluate("el.top.getBoundingClientRect().height")
+        check("SE: the header shrinks after scrolling down", compact_header < full_header - 30, (full_header, compact_header))
+        se.evaluate("el.map.scrollTo(0, 0)")
+        se.wait_for_timeout(200)
+        check("SE: and comes back at the top", se.evaluate("el.top.getBoundingClientRect().height") == full_header)
+        se.click("#view-plan")
+        se.wait_for_selector("#plan-grid table")
+        check("SE plan: settings and the five links are folded away",
+              not se.is_visible("#plan-start") and not se.is_visible("#plan-autofill") and se.is_visible("#plan-settings-button"))
+        grid_top = se.evaluate("document.querySelector('.plan-body').getBoundingClientRect().top")
+        check("SE plan: the plan starts in the top third of the screen", grid_top < 667 / 3, grid_top)
+        se.click("#plan-settings-button")
+        check("SE plan: Settings shows the settings", se.is_visible("#plan-start") and se.is_visible("#plan-cap"))
+        se.click("#plan-more-button")
+        check("SE plan: the ⋯ menu shows the five links and closes Settings",
+              se.is_visible("#plan-autofill") and se.is_visible("#plan-clear") and not se.is_visible("#plan-start"))
+        se.click("#plan-autofill")
+        se.wait_for_timeout(300)
+        check("SE plan: picking from the menu runs it and closes the menu",
+              not se.is_visible("#plan-autofill") and se.evaluate("Object.keys(plan.placed).length") > 0)
+        check("SE: no sideways scrolling", se.evaluate("document.documentElement.scrollWidth <= window.innerWidth"))
+        check("SE: no JavaScript errors", not se.errors, se.errors)
         browser.close()
 
         # 9. The single file, opened from the disk
