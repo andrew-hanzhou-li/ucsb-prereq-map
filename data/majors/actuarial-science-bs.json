@@ -1,0 +1,776 @@
+{
+ "id": "BSACTSC",
+ "name": "Actuarial Science - BS",
+ "type": "Bachelor's Degree",
+ "kind": "major",
+ "departments": [
+  "STATS"
+ ],
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsb.edu/programs/BSACTSC",
+ "narrative": [
+  "To be admitted to the full major, students must complete all pre-major courses with a 2.5 or higher UC grade-point average. All pre-major courses must be completed with a grade of “C” or better. Students are permitted to repeat a maximum of two pre-major courses. Only one repeat is allowed in each course. Preparation courses are excluded from the pre-major GPA, but will apply to the overall major GPA. Students must complete Computer Science 8 and either 9 or 16 with a grade of “C” or better. Only one repeat is allowed in each Computer Science preparation for the major and pre-major requirement. Entry into the pre-major does not guarantee admission to full major status. While completing required preparation, students are classified as a Pre-Actuarial Science major.",
+  "MAJOR REGULATIONSPREREQUISITES.................................. Check the General Catalog for the prerequisites to all listed courses.\nP/NP GRADING OPTION.................. Not allowed for any major course (prep or UD major), including courses applied to the major from other departments.\nSUBSTITUTIONS.................................. In the major requirements permissible only by petition to the department chair and dean.\nG.P.A. REQUIREMENTS.................... At least 2.0 overall UC average in all upper-division major courses and all courses (Prep and UD) for the major.\nDOUBLE MAJORS............................... With the approval of each department chairperson, up to a total of 8 units may be applied simultaneously to both UD majors."
+ ],
+ "sections": [
+  {
+   "name": "PRE-MAJOR",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "count": 1,
+      "items": [
+       {
+        "type": "course",
+        "code": "MATH 2A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 3A",
+        "status": "active"
+       }
+      ]
+     },
+     {
+      "type": "choose",
+      "count": 1,
+      "items": [
+       {
+        "type": "course",
+        "code": "MATH 2B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 3B",
+        "status": "active"
+       }
+      ]
+     },
+     {
+      "type": "course",
+      "code": "MATH 4A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MATH 4B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MATH 6A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MATH 6B",
+      "status": "active"
+     },
+     {
+      "type": "choose",
+      "count": 1,
+      "items": [
+       {
+        "type": "course",
+        "code": "MATH 8",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSTAT 8",
+        "status": "active"
+       }
+      ]
+     },
+     {
+      "type": "course",
+      "code": "PSTAT 10",
+      "status": "active"
+     }
+    ],
+    "catalog_rule_id": "DlYbwDyz"
+   },
+   "notes": "- Either Math 4A, 4B, 6A, or 6B must be completed with a grade of \"B\" or better in order to take Math 8 or PSTAT 8.\n- Math 8 is a prerequisite for all upper division Math courses except Math 117, 104A, 104B, and 104C. If you plan to take additional upper division Math courses, you must take Math 8."
+  },
+  {
+   "name": "PREPARATION FOR THE MAJOR",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "count": 1,
+      "items": [
+       {
+        "type": "course",
+        "code": "CMPSC 8",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CMPSCW 8",
+        "status": "active"
+       }
+      ]
+     },
+     {
+      "type": "choose",
+      "count": 1,
+      "items": [
+       {
+        "type": "course",
+        "code": "CMPSC 9",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CMPSC 16",
+        "status": "active"
+       }
+      ]
+     },
+     {
+      "type": "choose",
+      "count": 1,
+      "items": [
+       {
+        "type": "course",
+        "code": "WRIT 107A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "WRIT 107B",
+        "status": "active"
+       }
+      ]
+     }
+    ],
+    "catalog_rule_id": "kecKtEW1",
+    "notes": "- CMPSC 9 is recommended over CMPSC 16.\n- Students cannot get credit for CMPSC 8 at UCSB if transferring in credit for CMPSC 9 or 16, so please see the Department advisors in such instances.\n- Only one repeat is allowed between both CMPSC 9 and CMPSC 16\n- WRIT 107 does not need to be completed before applying to full major."
+   },
+   "notes": "Other recommended courses: Econ 1, 2, 3A, 10A (fulfills VEE), and Phil 3 or 4."
+  },
+  {
+   "name": "UPPER-DIVISION MAJOR",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "PSTAT 120A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PSTATW 120A",
+          "status": "active"
+         }
+        ]
+       },
+       {
+        "type": "course",
+        "code": "PSTAT 120B",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "uqKSuWsO",
+      "label": "Area A"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "PSTAT 126",
+        "status": "active"
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "PSTAT 160A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PSTATW 160A",
+          "status": "active"
+         }
+        ]
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "PSTAT 174",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PSTATW 174",
+          "status": "active"
+         }
+        ]
+       }
+      ],
+      "catalog_rule_id": "LGT1RMRS",
+      "label": "Area B"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "PSTAT 170",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSTAT 171",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSTAT 172A",
+        "status": "active"
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "PSTAT 160B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PSTAT 172B",
+          "status": "active"
+         }
+        ]
+       }
+      ],
+      "catalog_rule_id": "kWzTwHyY",
+      "label": "Area C"
+     },
+     {
+      "type": "choose",
+      "count": 1,
+      "items": [
+       {
+        "type": "course",
+        "code": "PSTAT 105",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSTAT 120C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSTAT 127",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSTAT 130",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSTAT 131",
+        "status": "active"
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "PSTAT 160B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PSTAT 172B",
+          "status": "active"
+         }
+        ]
+       },
+       {
+        "type": "course",
+        "code": "PSTAT 173",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSTAT 175",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSTAT 176",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSTAT 177",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSTAT 183",
+        "status": "active"
+       }
+      ],
+      "units": 8,
+      "catalog_rule_id": "sq263rXN",
+      "label": "Area D",
+      "description": "8 Units from the any of the following:",
+      "notes": "PSTAT 160B or PSTAT 172B may be used if not used in Area C."
+     },
+     {
+      "type": "choose",
+      "count": 1,
+      "items": [
+       {
+        "type": "course",
+        "code": "MATH 104A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 104B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 104C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 108A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 108B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 117",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 118A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 118B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 118C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 124A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 124B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 132A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 132B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 100B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 101",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 134A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 134B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "ECON 141",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "ECON 155",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "ECON 170",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 171",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "hNCaHO5F",
+      "label": "Area E",
+      "description": "4 units from other PSTAT courses not listed in other Areas, or:"
+     }
+    ]
+   },
+   "notes": "Recommended electives:\n- Econ 134A (VEE), 130 (SAS)\n- For SOA track: PSTAT 172B, 173, 175, 131; For CAS track: PSTAT 127, 131, 160B, 173, 183\nNote: Math 100A-B, 101A-B, 102A-B, 193; PSTAT 109, 182T (or W 182T), 188, 190, 193 will NOT apply to the major."
+  }
+ ],
+ "courses": [
+  {
+   "code": "CMPSC 8",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "CMPSC 9",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "CMPSC 16",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "CMPSCW 8",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "ECON 100B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 101",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 134A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 134B",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 141",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 155",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 170",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 171",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MATH 2A",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "MATH 2B",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "MATH 3A",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "MATH 3B",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "MATH 4A",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "MATH 4B",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "MATH 6A",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "MATH 6B",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "MATH 8",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "MATH 104A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MATH 104B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MATH 104C",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MATH 108A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MATH 108B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MATH 117",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MATH 118A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MATH 118B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MATH 118C",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MATH 124A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MATH 124B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MATH 132A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MATH 132B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTAT 8",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "PSTAT 10",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "PSTAT 105",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTAT 120A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTAT 120B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTAT 120C",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTAT 126",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTAT 127",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTAT 130",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTAT 131",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTAT 160A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTAT 160B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTAT 170",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTAT 171",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTAT 172A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTAT 172B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTAT 173",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTAT 174",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTAT 175",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTAT 176",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTAT 177",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTAT 183",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTATW 120A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTATW 160A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTATW 174",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "WRIT 107A",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "WRIT 107B",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  }
+ ]
+}
