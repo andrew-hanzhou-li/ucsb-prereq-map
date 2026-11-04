@@ -2,11 +2,11 @@
 test_site.py: open the website in a real (headless) browser and check it.
 
     py -m http.server 8000 -d site      (in one terminal)
-    py test_site.py                      (in another)
+    py tests/test_site.py                      (in another)
 
 If port 8000 is taken by something else, pick another number for both:
     py -m http.server 8765 -d site
-    py test_site.py 8765
+    py tests/test_site.py 8765
 
 What it checks:
   1. The front page lists every major and minor, and hides the empty panel.
@@ -1037,7 +1037,7 @@ def main():
 
         # 9. The single file, opened from the disk
         if not SINGLE_FILE.exists():
-            check("single file exists (run py build_single.py)", False)
+            check("single file exists (run py pipeline/build_single.py)", False)
         else:
             browser = p.chromium.launch()
             page = new_page(browser, viewport={"width": 1400, "height": 900})

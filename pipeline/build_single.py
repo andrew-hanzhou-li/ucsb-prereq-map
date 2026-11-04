@@ -2,7 +2,7 @@
 build_single.py: put the whole website into one HTML file that opens in any
 browser, even offline, by double-clicking it.
 
-    py build_single.py
+    py pipeline/build_single.py
 
 Reads   site/index.html, site/style.css, site/app.js, site/favicon.svg
         site/data/majors.json and every major's graph in site/data/

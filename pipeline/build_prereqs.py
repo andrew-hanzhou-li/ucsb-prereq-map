@@ -1,7 +1,7 @@
 """
 build_prereqs.py: parse every course in the catalog and save the results.
 
-    py build_prereqs.py
+    py pipeline/build_prereqs.py
 
 Reads   raw_courses.json   (from Part 1)
         overrides.json     (hand corrections for text the parser gets wrong)
@@ -29,9 +29,9 @@ from parser import Parser, all_courses, subject_of
 def main():
     # Windows consoles can't print every character the catalog uses; show "?" instead of crashing.
     sys.stdout.reconfigure(errors="replace")
-    with open("raw_courses.json", encoding="utf-8") as f:
+    with open("data/raw_courses.json", encoding="utf-8") as f:
         courses = json.load(f)["courses"]
-    with open("overrides.json", encoding="utf-8") as f:
+    with open("data/overrides.json", encoding="utf-8") as f:
         overrides = json.load(f)["overrides"]
 
     subjects = {subject_of(c["code"]) for c in courses}
@@ -69,7 +69,7 @@ def main():
 
         results.append(entry)
 
-    with open("prereqs.json", "w", encoding="utf-8") as f:
+    with open("data/prereqs.json", "w", encoding="utf-8") as f:
         json.dump({"courses": results}, f, indent=1, ensure_ascii=False)
 
     # ----------------------------------------------------------- summary

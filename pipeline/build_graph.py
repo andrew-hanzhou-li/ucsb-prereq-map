@@ -2,10 +2,10 @@
 build_graph.py: combine a major (Part 3) with course prerequisites (Part 2)
 into one ready-to-draw file per major.
 
-    py build_graph.py                      every major in majors/
-    py build_graph.py economics-ba         just one
+    py pipeline/build_graph.py                      every major in data/majors/
+    py pipeline/build_graph.py economics-ba         just one
 
-Reads   majors/*.json         what each major requires          (Part 3)
+Reads   data/majors/*.json      what each major requires          (Part 3)
         prereqs.json          what each course requires         (Part 2)
         raw_courses.json      titles, units, descriptions       (Part 1)
 Writes  site/data/<major>.json   one graph per major
@@ -65,7 +65,7 @@ import sys
 
 from parser import all_courses
 
-MAJORS_DIR = "majors"
+MAJORS_DIR = os.path.join("data", "majors")
 OUTPUT_DIR = os.path.join("site", "data")
 
 # An elective list longer than this becomes one "pool" box. Computer
@@ -449,11 +449,11 @@ def real_cycles(cycles, prereqs):
 
 def main():
     sys.stdout.reconfigure(errors="replace")
-    with open("prereqs.json", encoding="utf-8") as f:
+    with open("data/prereqs.json", encoding="utf-8") as f:
         prereqs = {c["code"]: c for c in json.load(f)["courses"]}
-    with open("raw_courses.json", encoding="utf-8") as f:
+    with open("data/raw_courses.json", encoding="utf-8") as f:
         catalog = {c["code"]: c for c in json.load(f)["courses"]}
-    with open("offering_overrides.json", encoding="utf-8") as f:
+    with open("data/offering_overrides.json", encoding="utf-8") as f:
         OFFERING_OVERRIDES.update(json.load(f)["courses"])
     known = sum(1 for code, info in catalog.items() if offered_for(code, info))
     print("Courses with known offering quarters: %d of %d (catalog field %d, course text %d, hand corrections %d)" % (

@@ -1,7 +1,7 @@
 """
 test_graph.py: checks for build_graph.py.
 
-    py test_graph.py
+    py tests/test_graph.py
 
 Two kinds of tests:
 
@@ -21,6 +21,8 @@ import json
 import os
 import sys
 
+# build_graph.py lives in pipeline/; tell Python to look there for it.
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "pipeline"))
 from build_graph import ColumnFinder, make_edges
 
 passed = 0
@@ -181,7 +183,7 @@ def test_condition_text():
     """Every condition has the catalog's words, so the site never shows a
     blank item (IMPROVEMENTS.md item 14). Hand corrections in overrides.json
     give them as @other{...}."""
-    with open("prereqs.json", encoding="utf-8") as f:
+    with open("data/prereqs.json", encoding="utf-8") as f:
         courses = json.load(f)["courses"]
     empty = []
 

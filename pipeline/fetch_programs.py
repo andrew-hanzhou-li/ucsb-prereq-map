@@ -2,7 +2,7 @@
 fetch_programs.py: download every program (major, minor, degree) in the UCSB
 catalog, with its requirements, and save it to raw_programs.json.
 
-    py fetch_programs.py
+    py pipeline/fetch_programs.py
 
 This is Part 1's fetch.py, but for programs instead of courses. It sends the
 same requests the catalog website sends when you open a major's
@@ -27,7 +27,7 @@ from datetime import datetime, timezone
 SCHOOL = "ucsb"
 CATALOG_ID = "friXFQMHuLvLoBthCmmV"      # 2026-27 General Catalog (same as fetch.py)
 EFFECTIVE_DATE = "2027-03-29"             # a date inside that catalog year
-OUTPUT_FILE = "raw_programs.json"
+OUTPUT_FILE = "data/raw_programs.json"
 API = "https://app.coursedog.com/api/v1/cm/" + SCHOOL
 HEADERS = {
     "Content-Type": "application/json",

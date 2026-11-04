@@ -8,8 +8,8 @@ matches exactly: every course, every and/or, every grade, every
 condition kinds ("restriction" vs "other"), since only course logic draws
 arrows on the map.
 
-    py measure.py            prints the score and every miss
-    py measure.py --quiet    prints only the score
+    py pipeline/measure.py            prints the score and every miss
+    py pipeline/measure.py --quiet    prints only the score
 
 The 450 test courses come in two groups:
   tuning   150 courses I looked at while writing the parser. It was adjusted
@@ -25,7 +25,7 @@ Each group is split into two sets:
   major    50 random courses from ECON, PSTAT, MATH, ECE, CMPSC and PHYS
            (harder, course-heavy text; the courses the site shows first)
 
-    py measure.py final      score only one group
+    py pipeline/measure.py final      score only one group
 """
 
 import json
@@ -37,7 +37,7 @@ from parser import Parser, subject_of
 
 
 def load_parser():
-    with open("raw_courses.json", encoding="utf-8") as f:
+    with open("data/raw_courses.json", encoding="utf-8") as f:
         courses = json.load(f)["courses"]
     subjects = {subject_of(c["code"]) for c in courses}
     subjects.discard(None)
@@ -56,7 +56,7 @@ def main():
     quiet = "--quiet" in sys.argv
     only = [a for a in sys.argv[1:] if not a.startswith("--")]
     parser = load_parser()
-    with open("test_labels.json", encoding="utf-8") as f:
+    with open("tests/test_labels.json", encoding="utf-8") as f:
         tests = json.load(f)["courses"]
 
     scores = {}

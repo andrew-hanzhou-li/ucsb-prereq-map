@@ -1,7 +1,7 @@
 """
 build_majors.py: turn the catalog's major and minor requirements into one file each.
 
-    py build_majors.py
+    py pipeline/build_majors.py
 
 Reads   raw_programs.json       every program in the catalog, with its
                                 requirements (from fetch_programs.py)
@@ -10,9 +10,9 @@ Reads   raw_programs.json       every program in the catalog, with its
                                 ("add" courses, "exclude" courses, or "choose"
                                 one of several groups the catalog lists as all
                                 required)
-Writes  majors/<name>.json      one file per current bachelor's degree or minor,
-                                e.g. majors/economics-ba.json, majors/mathematics-minor.json
-        majors/index.json       list of all of them, for the site's major picker
+Writes  data/majors/<name>.json      one file per current bachelor's degree or minor,
+                                e.g. data/majors/economics-ba.json, data/majors/mathematics-minor.json
+        data/majors/index.json       list of all of them, for the site's major picker
 
 Retired programs (the catalog marks them "Inactive", e.g. Geological
 Sciences - BS, replaced by Earth Science) are left out. Current programs with
@@ -61,7 +61,7 @@ import os
 import re
 import sys
 
-OUTPUT_DIR = "majors"
+OUTPUT_DIR = os.path.join("data", "majors")
 
 # The catalog's rule types, and how each maps to ours.
 #   completedAllOf        -> all
@@ -360,11 +360,11 @@ def file_name(name):
 
 def main():
     sys.stdout.reconfigure(errors="replace")
-    with open("raw_programs.json", encoding="utf-8") as f:
+    with open("data/raw_programs.json", encoding="utf-8") as f:
         data = json.load(f)
-    with open("raw_courses.json", encoding="utf-8") as f:
+    with open("data/raw_courses.json", encoding="utf-8") as f:
         active = {c["code"] for c in json.load(f)["courses"]}
-    with open("program_overrides.json", encoding="utf-8") as f:
+    with open("data/program_overrides.json", encoding="utf-8") as f:
         overrides = json.load(f)["programs"]
 
     converter = Converter(data, active, overrides)
@@ -422,7 +422,7 @@ def main():
     for kind in ("major", "minor"):
         of_kind = [e for e in index if e["kind"] == kind]
         print("Current %ss in catalog:          %d" % (kind, len(of_kind)))
-        print("  with structured requirements:   %d  (written to majors/)" % sum(e["structured"] for e in of_kind))
+        print("  with structured requirements:   %d  (written to data/majors/)" % sum(e["structured"] for e in of_kind))
         print("  no course list in the catalog:  %d" % sum(not e["structured"] for e in of_kind))
     print("Retired programs left out:        %d" % retired)
     print("Courses referenced:               %d" % sum(e["courses"] for e in structured))

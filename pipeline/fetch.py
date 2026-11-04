@@ -12,7 +12,7 @@ Where the data comes from:
   This script sends the same request the catalog website sends.
 
 How to run:
-  python fetch.py
+  py pipeline/fetch.py
 No extra packages needed - only Python's standard library.
 
 Be polite: the script waits 1 second between requests and only needs about
@@ -36,7 +36,7 @@ SCHOOL = "ucsb"
 CATALOG_ID = "friXFQMHuLvLoBthCmmV"          # 2026-27 General Catalog
 EFFECTIVE_DATE = "2027-03-29"                  # a date inside that catalog year
 PAGE_SIZE = 1000
-OUTPUT_FILE = "raw_courses.json"
+OUTPUT_FILE = "data/raw_courses.json"
 
 # The fields we ask the API to return.
 COLUMNS = [

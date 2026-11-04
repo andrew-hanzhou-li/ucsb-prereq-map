@@ -1,10 +1,10 @@
 """
 show_major.py: print a major's requirements as an indented outline, so you can
-check a majors/*.json file against the catalog page by eye.
+check a data/majors/*.json file against the catalog page by eye.
 
-    py show_major.py economics-ba
-    py show_major.py statistics-and-data-science-bs
-    py show_major.py --list              (every available major)
+    py pipeline/show_major.py economics-ba
+    py pipeline/show_major.py statistics-and-data-science-bs
+    py pipeline/show_major.py --list              (every available major)
 
 Long lists of single courses are printed on one line. Courses marked
 [inactive] are named in the major but not currently offered; [+] marks a
@@ -62,7 +62,7 @@ def show(node, depth):
 
 def main():
     sys.stdout.reconfigure(errors="replace")
-    with open("majors/index.json", encoding="utf-8") as f:
+    with open("data/majors/index.json", encoding="utf-8") as f:
         index = json.load(f)["majors"]
 
     if len(sys.argv) < 2 or sys.argv[1] == "--list":
@@ -72,7 +72,7 @@ def main():
         return
 
     name = sys.argv[1].removesuffix(".json")
-    with open("majors/%s.json" % name, encoding="utf-8") as f:
+    with open("data/majors/%s.json" % name, encoding="utf-8") as f:
         major = json.load(f)
 
     print("%s  (%s catalog)" % (major["name"], major["catalog_year"]))

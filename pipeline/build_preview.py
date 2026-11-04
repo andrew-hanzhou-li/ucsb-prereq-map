@@ -1,8 +1,8 @@
 """
 build_preview.py: make the picture shown when the site's link is shared.
 
-    py build_single.py     (first, so the one-file copy is current)
-    py build_preview.py
+    py pipeline/build_single.py     (first, so the one-file copy is current)
+    py pipeline/build_preview.py
 
 Writes  site/preview.png   1200 x 630, the size Reddit, Discord, iMessage
                            and others use for link previews
@@ -27,7 +27,7 @@ OUTPUT = pathlib.Path("site", "preview.png")
 
 def main():
     if not SINGLE_FILE.exists():
-        sys.exit("build_preview.py: run py build_single.py first")
+        sys.exit("build_preview.py: run py pipeline/build_single.py first")
     with sync_playwright() as p:
         browser = p.chromium.launch()
         page = browser.new_page(viewport={"width": 1200, "height": 630}, device_scale_factor=1)

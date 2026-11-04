@@ -1,7 +1,7 @@
 """
 build_credit.py: check the AP credit table and copy it to the site.
 
-    py build_credit.py
+    py pipeline/build_credit.py
 
 Reads   ap_credit.json          UCSB's AP chart, typed in from the catalog
         raw_courses.json        the current course list (Part 1)
@@ -37,9 +37,9 @@ def expand(code, current):
 
 def main():
     sys.stdout.reconfigure(errors="replace")
-    with open("ap_credit.json", encoding="utf-8") as f:
+    with open("data/ap_credit.json", encoding="utf-8") as f:
         table = json.load(f)
-    with open("raw_courses.json", encoding="utf-8") as f:
+    with open("data/raw_courses.json", encoding="utf-8") as f:
         current = {c["code"] for c in json.load(f)["courses"]}
 
     missing = set()
@@ -51,7 +51,7 @@ def main():
     # Every subject code in the catalog ("ECE", "CMPSC", "ENV S"), so the
     # transcript reader (site/transcript.js) can tell a course line from
     # any other line of text.
-    with open("raw_courses.json", encoding="utf-8") as f:
+    with open("data/raw_courses.json", encoding="utf-8") as f:
         subjects = sorted({c["subject"] for c in json.load(f)["courses"]})
     out = {"source": table["source"], "catalog_year": table["catalog_year"], "ap": table["exams"], "subjects": subjects}
     os.makedirs(os.path.join("site", "data"), exist_ok=True)
