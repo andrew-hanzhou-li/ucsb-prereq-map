@@ -1,0 +1,759 @@
+{
+ "id": "BAITALSTRANSNAT",
+ "name": "Italian Studies - BA - Transnational Emphasis",
+ "type": "Bachelor's Degree",
+ "kind": "major",
+ "departments": [
+  "FRIT"
+ ],
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsb.edu/programs/BAITALSTRANSNAT",
+ "narrative": [
+  "MAJOR REGULATIONS\nPREREQUISITES ................................... Check the General Catalog for the prerequisites to all listed courses.\nP/NP GRADING OPTION ..................... Not allowed for any major course (Prep or UD major), including courses applied to the major from other departments.\nSUBSTITUTIONS ................................... In the major requirements permissible only by petition to the department chair and dean.\nG.P.A. REQUIREMENTS ...................... At least 2.0 overall UC average in all upper-division major courses and all courses (Prep and UD) for the major.\nDOUBLE MAJORS ................................ With the approval of each department chairperson, up to a total of 8 units may be applied simultaneously to both UD majors."
+ ],
+ "sections": [
+  {
+   "name": "PREPARATION FOR THE MAJOR",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "ITAL 1",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ITAL 2",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ITAL 3",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "DLbGUPDm",
+      "label": "Lower Division Italian Requirement",
+      "notes": "Or equivalent"
+     },
+     {
+      "type": "choose",
+      "count": 2,
+      "items": [
+       {
+        "type": "course",
+        "code": "GLOBL 1",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GLOBL 2",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 2C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 4C",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "b7sShXxP",
+      "label": "Lower Division Electives"
+     }
+    ]
+   }
+  },
+  {
+   "name": "UPPER-DIVISION MAJOR",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "ITAL 120X",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "HyErrxpI",
+      "label": "A."
+     },
+     {
+      "type": "choose",
+      "count": 6,
+      "items": [
+       {
+        "type": "course",
+        "code": "ITAL 114X",
+        "status": "active",
+        "from_list": "Upper Division Italian Courses taught in English"
+       },
+       {
+        "type": "course",
+        "code": "ITAL 120X",
+        "status": "active",
+        "from_list": "Upper Division Italian Courses taught in English"
+       },
+       {
+        "type": "course",
+        "code": "ITAL 124X",
+        "status": "active",
+        "from_list": "Upper Division Italian Courses taught in English"
+       },
+       {
+        "type": "course",
+        "code": "ITAL 130X",
+        "status": "active",
+        "from_list": "Upper Division Italian Courses taught in English"
+       },
+       {
+        "type": "course",
+        "code": "ITAL 139CX",
+        "status": "active",
+        "from_list": "Upper Division Italian Courses taught in English"
+       },
+       {
+        "type": "course",
+        "code": "ITAL 139DX",
+        "status": "active",
+        "from_list": "Upper Division Italian Courses taught in English"
+       },
+       {
+        "type": "course",
+        "code": "ITAL 139FX",
+        "status": "active",
+        "from_list": "Upper Division Italian Courses taught in English"
+       },
+       {
+        "type": "course",
+        "code": "ITAL 139TX",
+        "status": "active",
+        "from_list": "Upper Division Italian Courses taught in English"
+       },
+       {
+        "type": "course",
+        "code": "ITAL 139YX",
+        "status": "active",
+        "from_list": "Upper Division Italian Courses taught in English"
+       },
+       {
+        "type": "course",
+        "code": "ITAL 139ZX",
+        "status": "active",
+        "from_list": "Upper Division Italian Courses taught in English"
+       },
+       {
+        "type": "course",
+        "code": "ITAL 145AX",
+        "status": "active",
+        "from_list": "Upper Division Italian Courses taught in English"
+       },
+       {
+        "type": "course",
+        "code": "ITAL 158X",
+        "status": "active",
+        "from_list": "Upper Division Italian Courses taught in English"
+       },
+       {
+        "type": "course",
+        "code": "ITAL 161X",
+        "status": "active",
+        "from_list": "Upper Division Italian Courses taught in English"
+       },
+       {
+        "type": "course",
+        "code": "ITAL 179X",
+        "status": "active",
+        "from_list": "Upper Division Italian Courses taught in English"
+       },
+       {
+        "type": "course",
+        "code": "ITAL 180X",
+        "status": "active",
+        "from_list": "Upper Division Italian Courses taught in English"
+       },
+       {
+        "type": "course",
+        "code": "ITAL 189X",
+        "status": "active",
+        "from_list": "Upper Division Italian Courses taught in English"
+       }
+      ],
+      "catalog_rule_id": "ufuiOk4K",
+      "label": "B.",
+      "description": "Courses taught in English (any courses ending with X)",
+      "notes": "Students may petition to apply up to 8 units from the EAP Summer Program “Mediterranean Crossroads of Culture” or other appropriate EAP courses towards Area B, with approval from the Director of the Italian Program."
+     },
+     {
+      "type": "choose",
+      "count": 3,
+      "items": [
+       {
+        "type": "course",
+        "code": "ARTHI 105O",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ARTHI 107C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ARTHI 113A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "ARTHI 113B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ARTHI 113F",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ARTHI 115D",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "ARTHI 115E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ARTHI 119E",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "ARTHI 132A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ARTHI 141D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ARTHI 142A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ARTHI 142B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "ARTHI 142C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "FAMST 122IT",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GLOBL 104",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "GLOBL 163",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GLOBL 165",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 104G",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 114A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 114B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 114C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 115",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 115A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 115B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 116",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 118A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 121A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 121B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 121E",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 121Q",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 121R",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 123A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 123B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 123C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 124A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 124B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 138X",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 164IA",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 164IB",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 164IR",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 193F",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUS 113A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUS 113B",
+        "status": "inactive"
+       }
+      ],
+      "catalog_rule_id": "uTsuG5aI",
+      "label": "C.",
+      "notes": "Students may also petition for other appropriate courses to apply towards Area C, with approval from the Director of the Italian Program."
+     }
+    ],
+    "catalog_rule_id": "jy7Kl3HC",
+    "label": "40 UD units are required, distributed as follows"
+   }
+  }
+ ],
+ "courses": [
+  {
+   "code": "ARTHI 105O",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ARTHI 107C",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ARTHI 113A",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ARTHI 113B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ARTHI 113F",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ARTHI 115D",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ARTHI 115E",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ARTHI 119E",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ARTHI 132A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ARTHI 141D",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ARTHI 142A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ARTHI 142B",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ARTHI 142C",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "FAMST 122IT",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GLOBL 1",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "GLOBL 2",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "GLOBL 104",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GLOBL 163",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GLOBL 165",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 2C",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "HIST 4C",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "HIST 104G",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 114A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 114B",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 114C",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 115",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 115A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 115B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 116",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 118A",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 121A",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 121B",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 121E",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 121Q",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 121R",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 123A",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 123B",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 123C",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 124A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 124B",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 138X",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 164IA",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 164IB",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 164IR",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 193F",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ITAL 1",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "ITAL 2",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "ITAL 3",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "ITAL 114X",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ITAL 120X",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ITAL 124X",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ITAL 130X",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ITAL 139CX",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ITAL 139DX",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ITAL 139FX",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ITAL 139TX",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ITAL 139YX",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ITAL 139ZX",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ITAL 145AX",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ITAL 158X",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ITAL 161X",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ITAL 179X",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ITAL 180X",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ITAL 189X",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MUS 113A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MUS 113B",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  }
+ ]
+}
