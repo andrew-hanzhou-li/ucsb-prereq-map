@@ -1,0 +1,78 @@
+{
+ "about": "Hand corrections to the catalog's structured major requirements. The catalog sometimes states a rule only in a note (\"ECON 191AA-ZZ\", \"These courses will NOT apply to the major\"), which the structured data can't express. Each correction names the rule it changes by the rule's catalog id, says why, and quotes the catalog note it comes from. build_majors.py warns if a rule id no longer exists.",
+ "programs": {
+  "BAECON": {
+   "add": {
+    "pngKx5Ir": {
+     "courses": [
+      "ECON 191D",
+      "ECON 191M"
+     ],
+     "why": "Area D's note says \"ECON 191AA-ZZ\": any lettered ECON 191 topic counts. These are the two in the current catalog."
+    }
+   }
+  },
+  "BSCMPEN": {
+   "add": {
+    "qzJtgDwL": {
+     "courses": [
+      "ECE 194BB",
+      "ECE 194C",
+      "ECE 194D",
+      "ECE 194E",
+      "ECE 194M",
+      "ECE 194N",
+      "ECE 194P",
+      "ECE 194Q",
+      "ECE 194T",
+      "ECE 194U"
+     ],
+     "why": "The electives note says \"ECE 194AA-ZZ (except 194R)\". These are the lettered ECE 194 courses in the current catalog; none is 194R."
+    }
+   },
+   "choose": {
+    "vHXuFXlL": {
+     "groups": [
+      [
+       "CMPSC 189A",
+       "CMPSC 189B"
+      ],
+      [
+       "ECE 189A",
+       "ECE 189B",
+       "ECE 189C"
+      ]
+     ],
+     "label": "Capstone",
+     "why": "The catalog lists both capstone sequences as required, but students take one. The department's requirement sheet lists them as one requirement, \"CMPSC 189A-B / ECE 189A-B-C\" (8-12 units), and its 4-year plan puts \"ECE 189A / CMPSC 189A\" in the same slot. The rule's own note gives a different prerequisite for each sequence. Source: https://www.ce.ucsb.edu/sites/default/files/2023-08/gear-23-24-ce-major-require-4-yr-plan-pgs-16-17.pdf"
+    }
+   }
+  },
+  "BASTSDS": {
+   "exclude": {
+    "courses": [
+     "PSTAT 109",
+     "PSTAT 182T",
+     "PSTATW 182T",
+     "PSTAT 188",
+     "PSTAT 190",
+     "PSTAT 193"
+    ],
+    "why": "Area B's note: \"These courses will NOT apply to the major: PSTAT 109, PSTAT 182T (or PSTAT W 182T), PSTAT 188, PSTAT 190, PSTAT 193\". The catalog's 'Upper Division Statistics Courses' list includes some of them anyway."
+   }
+  },
+  "BSSTSDS": {
+   "exclude": {
+    "courses": [
+     "PSTAT 109",
+     "PSTAT 182T",
+     "PSTATW 182T",
+     "PSTAT 188",
+     "PSTAT 190",
+     "PSTAT 193"
+    ],
+    "why": "Area C's note: \"These courses will NOT apply to the major: PSTAT 109, PSTAT 182T (or PSTAT W 182T), PSTAT 188, PSTAT 190, PSTAT 193\". The catalog's 'Upper Division Statistics Courses' list includes some of them anyway."
+   }
+  }
+ }
+}
