@@ -1,0 +1,871 @@
+{
+ "id": "BAGERM",
+ "name": "German - BA",
+ "type": "Bachelor's Degree",
+ "kind": "major",
+ "departments": [
+  "GERSL"
+ ],
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsb.edu/programs/BAGERM",
+ "narrative": [
+  "Notes:\n- A year of study abroad at a German-speaking institution of higher learning is highly recommended.\n- Students, especially those who intend to pursue German at the graduate level, are encouraged to supplement their major by selecting, in consultation with their major advisor, 20 units of courses from another literary, historical or philosophical discipline, such as Political Science or History.\nMAJOR REGULATIONS\nPREREQUISITES ...................................... Check the General Catalog for the prerequisites to all listed courses.\nP/NP GRADING OPTION ......................... Not allowed for major courses (prep or UD major), including courses applied to the major from other departments.\nSUBSTITUTIONS ...................................... In the major requirements permissible only by petition to the department chair and dean.\nG.P.A. REQUIREMENTS ......................... At least 2.0 overall UC average in all upper-division major courses and all courses (Prep and UD) for the major.\nDOUBLE MAJORS .................................... With the approval of each department chairperson, up to a total of 8 units may be applied simultaneously to both UD majors."
+ ],
+ "sections": [
+  {
+   "name": "PREPARATION FOR THE MAJOR",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "GER 1",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GER 2",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GER 3",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GER 4",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GER 5",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GER 6",
+      "status": "active"
+     }
+    ],
+    "catalog_rule_id": "M4cMOgGz",
+    "label": "Language Requirement",
+    "description": "German 1, 2, 3, 4, 5, 6 or placement beyond level 6 in the departmental placement examination",
+    "notes": "Recommended: German 8C (to be taken concurrently with German 3)"
+   }
+  },
+  {
+   "name": "UPPER-DIVISION MAJOR",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "GER 101A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GER 101B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GER 101C",
+          "status": "active"
+         }
+        ]
+       }
+      ],
+      "catalog_rule_id": "SerQkaR9",
+      "label": "A. Advanced German"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "GER 106",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "Hh36Lu1T",
+      "label": "B. Writing Requirement",
+      "notes": "*Note: Students are highly recommended to complete German 106 prior to taking additional higher numbered courses."
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "GER 107A",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "bbYvhisR",
+      "label": "C. Culture Requirement"
+     },
+     {
+      "type": "choose",
+      "count": 1,
+      "items": [
+       {
+        "type": "course",
+        "code": "GER 108",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GER 113",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GER 117",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GER 177A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "GER 190",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "WGYcvaJr",
+      "label": "D. Capstone Project"
+     },
+     {
+      "type": "units",
+      "units": 16,
+      "items": [
+       {
+        "type": "course",
+        "code": "GER 101A",
+        "status": "active",
+        "from_list": "Upper Division German Courses"
+       },
+       {
+        "type": "course",
+        "code": "GER 101B",
+        "status": "active",
+        "from_list": "Upper Division German Courses"
+       },
+       {
+        "type": "course",
+        "code": "GER 101C",
+        "status": "active",
+        "from_list": "Upper Division German Courses"
+       },
+       {
+        "type": "course",
+        "code": "GER 105C",
+        "status": "active",
+        "from_list": "Upper Division German Courses"
+       },
+       {
+        "type": "course",
+        "code": "GER 106",
+        "status": "active",
+        "from_list": "Upper Division German Courses"
+       },
+       {
+        "type": "course",
+        "code": "GER 107A",
+        "status": "active",
+        "from_list": "Upper Division German Courses"
+       },
+       {
+        "type": "course",
+        "code": "GER 108",
+        "status": "active",
+        "from_list": "Upper Division German Courses"
+       },
+       {
+        "type": "course",
+        "code": "GER 109",
+        "status": "active",
+        "from_list": "Upper Division German Courses"
+       },
+       {
+        "type": "course",
+        "code": "GER 113",
+        "status": "active",
+        "from_list": "Upper Division German Courses"
+       },
+       {
+        "type": "course",
+        "code": "GER 114",
+        "status": "active",
+        "from_list": "Upper Division German Courses"
+       },
+       {
+        "type": "course",
+        "code": "GER 115C",
+        "status": "active",
+        "from_list": "Upper Division German Courses"
+       },
+       {
+        "type": "course",
+        "code": "GER 116A",
+        "status": "active",
+        "from_list": "Upper Division German Courses"
+       },
+       {
+        "type": "course",
+        "code": "GER 117",
+        "status": "active",
+        "from_list": "Upper Division German Courses"
+       },
+       {
+        "type": "course",
+        "code": "GER 151C",
+        "status": "active",
+        "from_list": "Upper Division German Courses"
+       },
+       {
+        "type": "course",
+        "code": "GER 152",
+        "status": "active",
+        "from_list": "Upper Division German Courses"
+       },
+       {
+        "type": "course",
+        "code": "GER 155",
+        "status": "active",
+        "from_list": "Upper Division German Courses"
+       },
+       {
+        "type": "course",
+        "code": "GER 163",
+        "status": "active",
+        "from_list": "Upper Division German Courses"
+       },
+       {
+        "type": "course",
+        "code": "GER 164E",
+        "status": "active",
+        "from_list": "Upper Division German Courses"
+       },
+       {
+        "type": "course",
+        "code": "GER 164H",
+        "status": "active",
+        "from_list": "Upper Division German Courses"
+       },
+       {
+        "type": "course",
+        "code": "GER 179B",
+        "status": "active",
+        "from_list": "Upper Division German Courses"
+       },
+       {
+        "type": "course",
+        "code": "GER 179C",
+        "status": "active",
+        "from_list": "Upper Division German Courses"
+       },
+       {
+        "type": "course",
+        "code": "GER 185",
+        "status": "active",
+        "from_list": "Upper Division German Courses"
+       },
+       {
+        "type": "course",
+        "code": "GER 187",
+        "status": "active",
+        "from_list": "Upper Division German Courses"
+       },
+       {
+        "type": "course",
+        "code": "GER 190",
+        "status": "active",
+        "from_list": "Upper Division German Courses"
+       },
+       {
+        "type": "course",
+        "code": "GER 197",
+        "status": "active",
+        "from_list": "Upper Division German Courses"
+       },
+       {
+        "type": "course",
+        "code": "GER 199",
+        "status": "active",
+        "from_list": "Upper Division German Courses"
+       },
+       {
+        "type": "course",
+        "code": "GER 199RA",
+        "status": "active",
+        "from_list": "Upper Division German Courses"
+       },
+       {
+        "type": "course",
+        "code": "RUSS 101A",
+        "status": "active",
+        "from_list": "Upper Division Russian and Slavic Courses"
+       },
+       {
+        "type": "course",
+        "code": "RUSS 101B",
+        "status": "active",
+        "from_list": "Upper Division Russian and Slavic Courses"
+       },
+       {
+        "type": "course",
+        "code": "RUSS 101C",
+        "status": "active",
+        "from_list": "Upper Division Russian and Slavic Courses"
+       },
+       {
+        "type": "course",
+        "code": "RUSS 101D",
+        "status": "active",
+        "from_list": "Upper Division Russian and Slavic Courses"
+       },
+       {
+        "type": "course",
+        "code": "RUSS 101E",
+        "status": "active",
+        "from_list": "Upper Division Russian and Slavic Courses"
+       },
+       {
+        "type": "course",
+        "code": "RUSS 101F",
+        "status": "active",
+        "from_list": "Upper Division Russian and Slavic Courses"
+       },
+       {
+        "type": "course",
+        "code": "RUSS 121",
+        "status": "active",
+        "from_list": "Upper Division Russian and Slavic Courses"
+       },
+       {
+        "type": "course",
+        "code": "RUSS 122",
+        "status": "active",
+        "from_list": "Upper Division Russian and Slavic Courses"
+       },
+       {
+        "type": "course",
+        "code": "SLAV 117",
+        "status": "active",
+        "from_list": "Upper Division Russian and Slavic Courses"
+       },
+       {
+        "type": "course",
+        "code": "SLAV 117G",
+        "status": "active",
+        "from_list": "Upper Division Russian and Slavic Courses"
+       },
+       {
+        "type": "course",
+        "code": "SLAV 117H",
+        "status": "active",
+        "from_list": "Upper Division Russian and Slavic Courses"
+       },
+       {
+        "type": "course",
+        "code": "SLAV 117I",
+        "status": "active",
+        "from_list": "Upper Division Russian and Slavic Courses"
+       },
+       {
+        "type": "course",
+        "code": "SLAV 117J",
+        "status": "active",
+        "from_list": "Upper Division Russian and Slavic Courses"
+       },
+       {
+        "type": "course",
+        "code": "SLAV 123C",
+        "status": "active",
+        "from_list": "Upper Division Russian and Slavic Courses"
+       },
+       {
+        "type": "course",
+        "code": "SLAV 123D",
+        "status": "active",
+        "from_list": "Upper Division Russian and Slavic Courses"
+       },
+       {
+        "type": "course",
+        "code": "SLAV 130A",
+        "status": "active",
+        "from_list": "Upper Division Russian and Slavic Courses"
+       },
+       {
+        "type": "course",
+        "code": "SLAV 130B",
+        "status": "active",
+        "from_list": "Upper Division Russian and Slavic Courses"
+       },
+       {
+        "type": "course",
+        "code": "SLAV 130C",
+        "status": "active",
+        "from_list": "Upper Division Russian and Slavic Courses"
+       },
+       {
+        "type": "course",
+        "code": "SLAV 145",
+        "status": "active",
+        "from_list": "Upper Division Russian and Slavic Courses"
+       },
+       {
+        "type": "course",
+        "code": "SLAV 151C",
+        "status": "active",
+        "from_list": "Upper Division Russian and Slavic Courses"
+       },
+       {
+        "type": "course",
+        "code": "SLAV 152A",
+        "status": "active",
+        "from_list": "Upper Division Russian and Slavic Courses"
+       },
+       {
+        "type": "course",
+        "code": "SLAV 152B",
+        "status": "active",
+        "from_list": "Upper Division Russian and Slavic Courses"
+       },
+       {
+        "type": "course",
+        "code": "SLAV 152C",
+        "status": "active",
+        "from_list": "Upper Division Russian and Slavic Courses"
+       },
+       {
+        "type": "course",
+        "code": "SLAV 164B",
+        "status": "active",
+        "from_list": "Upper Division Russian and Slavic Courses"
+       },
+       {
+        "type": "course",
+        "code": "SLAV 164D",
+        "status": "active",
+        "from_list": "Upper Division Russian and Slavic Courses"
+       },
+       {
+        "type": "course",
+        "code": "SLAV 175A",
+        "status": "active",
+        "from_list": "Upper Division Russian and Slavic Courses"
+       },
+       {
+        "type": "course",
+        "code": "SLAV 181",
+        "status": "active",
+        "from_list": "Upper Division Russian and Slavic Courses"
+       },
+       {
+        "type": "course",
+        "code": "SLAV 181B",
+        "status": "active",
+        "from_list": "Upper Division Russian and Slavic Courses"
+       },
+       {
+        "type": "course",
+        "code": "SLAV 181C",
+        "status": "active",
+        "from_list": "Upper Division Russian and Slavic Courses"
+       },
+       {
+        "type": "course",
+        "code": "SLAV 182",
+        "status": "active",
+        "from_list": "Upper Division Russian and Slavic Courses"
+       },
+       {
+        "type": "course",
+        "code": "SLAV 187",
+        "status": "active",
+        "from_list": "Upper Division Russian and Slavic Courses"
+       },
+       {
+        "type": "course",
+        "code": "SLAV 192",
+        "status": "active",
+        "from_list": "Upper Division Russian and Slavic Courses"
+       },
+       {
+        "type": "course",
+        "code": "SLAV 197",
+        "status": "active",
+        "from_list": "Upper Division Russian and Slavic Courses"
+       },
+       {
+        "type": "course",
+        "code": "SLAV 199",
+        "status": "active",
+        "from_list": "Upper Division Russian and Slavic Courses"
+       }
+      ],
+      "catalog_rule_id": "G00AsWKi",
+      "label": "Electives",
+      "notes": "Recommended: German 105C, 114\nCourses dealing with subjects such as German History, Art History, Political Science, and Literature (maximum 8 units) may be applied by petition to the UD electives after consultation with an academic advisor."
+     }
+    ],
+    "catalog_rule_id": "LCNMEVFk",
+    "label": "Upper-Division Requrements",
+    "description": "40 UD German units are required, distributed as follows:"
+   }
+  }
+ ],
+ "courses": [
+  {
+   "code": "GER 1",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "GER 2",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "GER 3",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "GER 4",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "GER 5",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "GER 6",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "GER 101A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GER 101B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GER 101C",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GER 105C",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GER 106",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GER 107A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GER 108",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GER 109",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GER 113",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GER 114",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GER 115C",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GER 116A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GER 117",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GER 151C",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GER 152",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GER 155",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GER 163",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GER 164E",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GER 164H",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GER 177A",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GER 179B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GER 179C",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GER 185",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GER 187",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GER 190",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GER 197",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GER 199",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GER 199RA",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "RUSS 101A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "RUSS 101B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "RUSS 101C",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "RUSS 101D",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "RUSS 101E",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "RUSS 101F",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "RUSS 121",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "RUSS 122",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SLAV 117",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SLAV 117G",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SLAV 117H",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SLAV 117I",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SLAV 117J",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SLAV 123C",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SLAV 123D",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SLAV 130A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SLAV 130B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SLAV 130C",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SLAV 145",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SLAV 151C",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SLAV 152A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SLAV 152B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SLAV 152C",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SLAV 164B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SLAV 164D",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SLAV 175A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SLAV 181",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SLAV 181B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SLAV 181C",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SLAV 182",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SLAV 187",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SLAV 192",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SLAV 197",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "SLAV 199",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  }
+ ]
+}
