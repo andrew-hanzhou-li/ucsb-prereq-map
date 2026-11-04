@@ -1,0 +1,913 @@
+{
+ "id": "BAECON",
+ "name": "Economics - BA",
+ "type": "Bachelor's Degree",
+ "kind": "major",
+ "departments": [
+  "ECON"
+ ],
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsb.edu/programs/BAECON",
+ "narrative": [
+  "In order to qualify for admission into the Economics major, students must complete Economics 1, 2, and 10A with a UC grade-point average of 2.85 or above. No grade lower than a C in pre-major courses will be accepted. In addition, students must complete Economics 5 or PSTAT 120A and Math 2A-B or 3A-B or 34A-B with a grade of “C” or higher; the grades in these courses will not be used in computing the pre-major GPA but will apply to the overall major GPA.",
+  "UMAJOR REGULATIONS\nPREREQUISITES ......................................................... Check the General Catalog for the prerequisites to all listed courses.\nP/NP GRADING OPTION ........................................... Not allowed for major courses (prep or UD major), including courses applied to the major from other departments.\nSUBSTITUTIONS ......................................................... In the major requirements permissible only by petition to the department chair and dean.\nG.P.A REQUIREMENTS ............................................. At least 2.0 overall UC average in all upper-division major courses and all courses (Prep and UD) for the major.\nDOUBLE MAJORS ...................................................... With the approval of each department chairperson, up to a total of 8 units may be applied simultaneously to both UD majors."
+ ],
+ "sections": [
+  {
+   "name": "PRE-MAJOR",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "ECON 1",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECON 2",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECON 10A",
+      "status": "active"
+     }
+    ],
+    "catalog_rule_id": "hY89074h",
+    "label": "Pre-Major",
+    "notes": "Econ 10A must be taken at UCSB."
+   }
+  },
+  {
+   "name": "PREPARATION FOR THE MAJOR",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "count": 1,
+      "items": [
+       {
+        "type": "course",
+        "code": "ECON 5",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSTAT 120A",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "e081A0SO",
+      "label": "PREPARATION FOR THE MAJOR",
+      "notes": "Econ 5 must be taken at UCSB."
+     },
+     {
+      "type": "choose",
+      "count": 1,
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 2A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 2B",
+          "status": "active"
+         }
+        ]
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 3A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 3B",
+          "status": "active"
+         }
+        ]
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 34A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 34B",
+          "status": "active"
+         }
+        ]
+       }
+      ],
+      "catalog_rule_id": "UtJf9yRh",
+      "label": "PREPARATION FOR THE MAJOR"
+     }
+    ]
+   }
+  },
+  {
+   "name": "UUPPER-DIVISION MAJOR",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "ECON 100B",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "YHnvkSlD",
+      "label": "A."
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "ECON 101",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "j0ZCkqX8",
+      "label": "B."
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "ECON 140A",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "V2TxPvSL",
+      "label": "C."
+     },
+     {
+      "type": "choose",
+      "count": 6,
+      "items": [
+       {
+        "type": "course",
+        "code": "ECON 100C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 106",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 107A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 107B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 112A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 112B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "ECON 113A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "ECON 113B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 114A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 114B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 115",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 116A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 116B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "ECON 116C",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "ECON 117A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 120",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 122",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "ECON 127",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "ECON 130",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 133",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 134A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 134B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "ECON 134C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 135",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 140B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 140C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 141",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "ECON 145",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 150A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 151",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 152",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 153",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "ECON 154",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "ECON 155",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "ECON 156",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 157",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 160",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "ECON 164",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "ECON 170",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 171",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 174",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 176",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 177",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 180",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 181",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 183",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 184",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "ECON 187",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 191",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 196A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 196B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 199",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 191D",
+        "status": "active",
+        "added_by_override": true
+       },
+       {
+        "type": "course",
+        "code": "ECON 191M",
+        "status": "active",
+        "added_by_override": true
+       }
+      ],
+      "catalog_rule_id": "pngKx5Ir",
+      "label": "D.",
+      "description": "Six UD Economics elective courses",
+      "notes": "- ECON 191AA-ZZ"
+     },
+     {
+      "type": "choose",
+      "count": 1,
+      "items": [
+       {
+        "type": "course",
+        "code": "ECON 118",
+        "status": "active"
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "ECON 136A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ECON 136B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ECON 136C",
+          "status": "active"
+         }
+        ]
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "ECON 137A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ECON 137B",
+          "status": "active"
+         }
+        ]
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "ECON 138A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ECON 138B",
+          "status": "active"
+         }
+        ]
+       },
+       {
+        "type": "course",
+        "code": "ECON 185",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "VGj1frfe",
+      "label": "E.",
+      "description": "One additional UD Economics elective course from Area D (above) or from the following:",
+      "notes": "The specific courses listed under Area E courses require the completion of Econ 3A-B. Students who have not taken Econ 3A-B should be taking 7 total electives courses from Area D.\nA maximum of 4 units of Economics 199 will apply to the UD major.\nEconomics 199RA does not count towards the UD major."
+     }
+    ]
+   },
+   "notes": "40 UD Economics units required"
+  }
+ ],
+ "overrides_applied": [
+  "Area D's note says \"ECON 191AA-ZZ\": any lettered ECON 191 topic counts. These are the two in the current catalog."
+ ],
+ "courses": [
+  {
+   "code": "ECON 1",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "ECON 2",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "ECON 5",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "ECON 10A",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "ECON 100B",
+   "status": "active",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 100C",
+   "status": "active",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 101",
+   "status": "active",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 106",
+   "status": "active",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 107A",
+   "status": "active",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 107B",
+   "status": "active",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 112A",
+   "status": "active",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 112B",
+   "status": "inactive",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 113A",
+   "status": "inactive",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 113B",
+   "status": "active",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 114A",
+   "status": "active",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 114B",
+   "status": "active",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 115",
+   "status": "active",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 116A",
+   "status": "active",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 116B",
+   "status": "inactive",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 116C",
+   "status": "inactive",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 117A",
+   "status": "active",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 118",
+   "status": "active",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 120",
+   "status": "active",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 122",
+   "status": "inactive",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 127",
+   "status": "inactive",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 130",
+   "status": "active",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 133",
+   "status": "active",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 134A",
+   "status": "active",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 134B",
+   "status": "inactive",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 134C",
+   "status": "active",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 135",
+   "status": "active",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 136A",
+   "status": "active",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 136B",
+   "status": "active",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 136C",
+   "status": "active",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 137A",
+   "status": "active",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 137B",
+   "status": "active",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 138A",
+   "status": "active",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 138B",
+   "status": "active",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 140A",
+   "status": "active",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 140B",
+   "status": "active",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 140C",
+   "status": "active",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 141",
+   "status": "inactive",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 145",
+   "status": "active",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 150A",
+   "status": "active",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 151",
+   "status": "active",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 152",
+   "status": "active",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 153",
+   "status": "inactive",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 154",
+   "status": "inactive",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 155",
+   "status": "inactive",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 156",
+   "status": "active",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 157",
+   "status": "active",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 160",
+   "status": "inactive",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 164",
+   "status": "inactive",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 170",
+   "status": "active",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 171",
+   "status": "active",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 174",
+   "status": "active",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 176",
+   "status": "active",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 177",
+   "status": "active",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 180",
+   "status": "active",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 181",
+   "status": "active",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 183",
+   "status": "active",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 184",
+   "status": "inactive",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 185",
+   "status": "active",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 187",
+   "status": "active",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 191",
+   "status": "active",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 191D",
+   "status": "active",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 191M",
+   "status": "active",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 196A",
+   "status": "active",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 196B",
+   "status": "active",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ECON 199",
+   "status": "active",
+   "section": "UUPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MATH 2A",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "MATH 2B",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "MATH 3A",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "MATH 3B",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "MATH 34A",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "MATH 34B",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "PSTAT 120A",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  }
+ ]
+}
