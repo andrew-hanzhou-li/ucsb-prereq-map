@@ -1,0 +1,69 @@
+{
+ "id": "BAPRCOM",
+ "name": "Pre-Communication - BA",
+ "type": "Bachelor's Degree",
+ "kind": "major",
+ "departments": [
+  "COMM"
+ ],
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsb.edu/programs/BAPRCOM",
+ "narrative": [
+  "Students will be admitted to full Communication major status only after they complete Communication 1, 87, 88, and 89 with no grade below C- and with a UC grade-point average in these four courses of at least 3.00. If a student has taken an introductory statistics course at UCSB other than Communication 87 (PSTAT 5A or 5LS), the grade received in that course will automatically count towards the Communication pre-major GPA. Communication 87 may not be taken after other lower-division statistics courses.",
+  "MAJOR REGULATIONSPREREQUISITES Check the General Catalog for the prerequisites to all listed courses.\nP/NP GRADING OPTION Not allowed for major courses (prep or UD major), including courses applied to the major from other departments.\nSUBSTITUTIONS In the major requirements permissible only by petition to the department chair and dean.\nG.P.A. REQUIREMENTS At least 2.0 overall UC average in all upper-division major courses and all courses (Prep and UD) for the major.\nDOUBLE MAJORS With the approval of each department chairperson, up to a total of 8 units may be applied simultaneously to both UD majors."
+ ],
+ "sections": [
+  {
+   "name": "PRE-MAJOR REQUIREMENTS",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "COMM 1",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COMM 87",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COMM 88",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COMM 89",
+      "status": "active"
+     }
+    ],
+    "catalog_rule_id": "cZhRGdd4",
+    "notes": "Students intending to become a Communication major are strongly encouraged to declare Pre-Communication as their major. Upon completion of the pre-major course requirements with a 3.00 GPA, students may petition to full major status, generally prior to the accumulation of 100 units.\nAdmission to the pre-major does not guarantee admission to the Communication major, regardless of the number and outcome of upper division Communication units taken."
+   }
+  }
+ ],
+ "courses": [
+  {
+   "code": "COMM 1",
+   "status": "active",
+   "section": "PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "COMM 87",
+   "status": "active",
+   "section": "PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "COMM 88",
+   "status": "active",
+   "section": "PRE-MAJOR REQUIREMENTS"
+  },
+  {
+   "code": "COMM 89",
+   "status": "active",
+   "section": "PRE-MAJOR REQUIREMENTS"
+  }
+ ]
+}
