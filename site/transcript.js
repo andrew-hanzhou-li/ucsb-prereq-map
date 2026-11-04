@@ -9,7 +9,8 @@
   pdf.js (Mozilla's PDF reader) is loaded from cdnjs the first time a PDF
   is opened. That downloads the library's code; nothing about the file is
   sent. Without internet (say, the one-file copy offline), pasting the
-  transcript's text works the same way.
+  transcript's text works the same way. See loadPdfJs for how the download
+  is checked.
 
   How GOLD's "Unofficial Transcript - Printable Version" is laid out
   -----------------------------------------------------------------
@@ -42,8 +43,19 @@
   Everything read is shown in a table to check and correct before it's used.
 */
 
-const PDFJS_URL = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js";
-const PDFJS_WORKER = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
+/*
+  pdf.js 4.10.38. Versions before 4.2.67 let a crafted PDF run JavaScript
+  (CVE-2024-4367). Each file's SHA-384 hash is fixed here: if cdnjs ever
+  served something else, the browser refuses it (Subresource Integrity).
+  To upgrade: change the version, download both files, and put in their
+  new hashes (openssl dgst -sha384 -binary FILE | openssl base64 -A).
+*/
+const PDFJS = {
+  main: "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.10.38/pdf.min.mjs",
+  mainHash: "sha384-+0ti2moQlmLN7WZHE2RHIf5lV8hHxhxEalN0il3YZceG26fUPyOkR0hp9daxk1i7",
+  worker: "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.10.38/pdf.worker.min.mjs",
+  workerHash: "sha384-ToeVvShCxKc6CEvhHeMt0Q8A06pSPDbAlngO9nokrDmh914gk/pYd0N7D0a4Lz2o",
+};
 const GRADE_WORDS = ["A+", "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "D-", "F", "P", "NP", "IP"];
 // Grades on a transcript that the plan stores differently.
 const GRADE_ALIASES = { S: "P", U: "NP", I: "IP" };
@@ -66,18 +78,31 @@ let transcriptRows = [];     // what was read: { code, title, term, units, grade
 // 1. Getting the text
 // ===========================================================================
 
+/*
+  pdf.js 4 comes only as a JavaScript module, and a module loaded with
+  import() can't carry an integrity hash. So each file is downloaded with
+  fetch(), which does check one, and then run from a local copy in memory
+  (a "blob:" address). The main file sets window.pdfjsLib; the worker (the
+  part that reads the PDF in the background) is pointed at its own copy.
+*/
+async function checkedCopy(url, hash) {
+  const response = await fetch(url, { integrity: hash, mode: "cors", credentials: "omit" });
+  if (!response.ok) throw new Error("pdf.js didn't load (" + response.status + ")");
+  return URL.createObjectURL(new Blob([await response.text()], { type: "text/javascript" }));
+}
+
+let pdfJsLoading = null;
 function loadPdfJs() {
-  if (window.pdfjsLib) return Promise.resolve(window.pdfjsLib);
-  return new Promise(function (resolve, reject) {
-    const script = document.createElement("script");
-    script.src = PDFJS_URL;
-    script.onload = function () {
-      window.pdfjsLib.GlobalWorkerOptions.workerSrc = PDFJS_WORKER;
-      resolve(window.pdfjsLib);
-    };
-    script.onerror = () => reject(new Error("pdf.js didn't load"));
-    document.head.appendChild(script);
-  });
+  if (!pdfJsLoading) {
+    pdfJsLoading = (async function () {
+      const main = await checkedCopy(PDFJS.main, PDFJS.mainHash);
+      await import(main);
+      window.pdfjsLib.GlobalWorkerOptions.workerSrc = await checkedCopy(PDFJS.worker, PDFJS.workerHash);
+      return window.pdfjsLib;
+    })();
+    pdfJsLoading.catch(function () { pdfJsLoading = null; });     // let a later try start over
+  }
+  return pdfJsLoading;
 }
 
 /*
@@ -86,7 +111,9 @@ function loadPdfJs() {
 */
 async function pdfText(file) {
   const pdfjs = await loadPdfJs();
-  const pdf = await pdfjs.getDocument({ data: await file.arrayBuffer() }).promise;
+  // isEvalSupported: false: never build code from what's in the PDF (the
+  // CVE above came through that path; it's off as a second guard).
+  const pdf = await pdfjs.getDocument({ data: await file.arrayBuffer(), isEvalSupported: false }).promise;
   const lines = [];
   for (let n = 1; n <= pdf.numPages; n++) {
     const page = await pdf.getPage(n);

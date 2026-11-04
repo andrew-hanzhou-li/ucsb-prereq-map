@@ -928,6 +928,12 @@ def main():
         rows = read_rows()
         check("transcript (PDF with wrapped titles): every course read, with units and grades", rows == expected_rows(),
               [r for r in rows if r not in expected_rows()] or rows or page.inner_text("#transcript-status"))
+        # Item 21: pdf.js 4.x (not open to CVE-2024-4367), checked by hash.
+        check("transcript: pdf.js is version 4.2.67 or later",
+              tuple(int(x) for x in page.evaluate("pdfjsLib.version").split(".")) >= (4, 2, 67), page.evaluate("pdfjsLib.version"))
+        bad_hash = "sha384-" + "A" * 64
+        check("transcript: a pdf.js download that doesn't match its hash is refused",
+              page.evaluate("c => checkedCopy(PDFJS.main, c).then(() => 'loaded', () => 'refused')", bad_hash) == "refused")
         page.keyboard.press("Escape")
         page.evaluate("localStorage.clear()")
         check("transcript: no JavaScript errors", not page.errors, page.errors)
