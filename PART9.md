@@ -195,3 +195,53 @@ Also fixed: a course from outside the programs on screen used to fall back to 4 
 - **Course codes only** in the requirements column (MATH 2A, not "MATH 2A Calculus with Algebra and Trigonometry"). Pointing at a code still shows its title.
 - **No "add a slot" in Pre-major or Preparation for the major**, in the column or from auto-fill (`slotsAllowed`). Students take specific courses there. Upper-division electives keep their slots.
 - **Click a line to collapse a group, as in a Reddit thread.** Every group inside an area hangs off a thin vertical line. Clicking the line, or the group's heading, collapses the whole group to one line ("All of 0 of 2 · 2 courses"); clicking the heading opens it again. Long lists start collapsed. This replaced the triangle folds inside areas, so every group works the same way.
+
+## Revision 3: the IMPROVEMENTS.md list
+
+Each item below has a test that fails without the fix (test_site.py or test_graph.py). Commits are on the `improvements` branch, one per item or small group.
+
+### P0: wrong plans
+
+1. **Computer Engineering capstone is "one of two sequences".** program_overrides.json gets a `choose` override (with a `why` quoting the department sheet): CMPSC 189A–B *or* ECE 189A–C. build_majors.py learned the new `choose` kind.
+2. **Class standing counts.** "Senior standing" puts a course in year 4 at the earliest, "junior standing" or upper division in year 3, "sophomore"/"not open to freshmen" in year 2 (`standingYear`). A course placed too early is flagged.
+3. **Upper-division courses start in year 2 or later** (`placementYear`).
+4. **The start year defaults to the current academic year** (Fall of this year from September, else last year), and the label reads "First quarter at UCSB: Fall 2026".
+5. **Reading a transcript into a plan no longer scrambles it.** Nothing is auto-placed before the quarter after your last graded course (`firstOpenIndex`); courses the transcript covers come out of the plan (`pruneCovered`), and the rest of the auto-filled plan is laid out again (`rebuildAfterTranscript`). Courses you placed by hand stay where you put them.
+6. **Completed courses aren't flagged.** A course that's done (taken, credit, passed, or implied by a later course you passed) has no missing prerequisites.
+7. **AP credit takes covered courses out of the plan,** and the message updates instead of going stale.
+8. **Link previews.** og:image and Twitter card tags, with site/preview.png made by the new build_preview.py.
+
+### P1: confusing or missing
+
+9. **Search boxes** (new site/search.js) replace the browser's `<datalist>`, which only matched exact text:
+   - Case and spaces don't matter ("cs 16", "MATH4A"), and common nicknames work (cs, stats, econ, ee, poli sci, psych…).
+   - Arrow keys and Enter; clicking into a box selects its text.
+   - No match says so and offers the nearest name: "No match for 'economcs'. Did you mean Economics (B.A.)?"
+   - **Course search works on the front page.** Its panel lists every program that uses the course, each linking straight to it on that map. The data is site/data/course-index.json (233 KB, loaded the first time the box is used), built by build_graph.py.
+10. **When courses are offered.** build_graph.py reads it from hand corrections (new offering_overrides.json), then the catalog's field, then phrases in course text: 121 courses in all. ECE 139 is Spring only, from the department's 4-year plan. Everything else is assumed Fall/Winter/Spring and marked with a faint "?" in the plan. UCSB's public API has real quarter data, but it needs an API key; that's your call.
+11. **Repeated courses on a transcript.** Every attempt is listed; earlier ones are unticked ("earlier attempt, replaced by B"), as GOLD's repeat rule works.
+12. **GPA label:** "GPA of graded courses in this plan", with a note that GOLD's own GPA is the official one.
+13. **Online twins share a card:** "PSTAT 120A (or online PSTATW 120A)". Taking either counts for both.
+14. **No empty condition text.** The hand overrides in overrides.json now carry the catalog's words (`@other{significant prior programming experience}`); test_graph.py fails on any empty one.
+15. **Small phones (checked at 375×667, iPhone SE size).**
+   - Plan view: the settings fold behind **Settings** and the five plan links behind a **⋯** menu. The grid starts about 180px down instead of about 400.
+   - Map: one intro line with **How to read this** for the key.
+   - The header **shrinks once you scroll** (tagline and the add-a-program box go) and comes back at the top.
+16. **Wording:** "All of these", "One of these", "Choose 2 of these", and progress as "0/2 done".
+
+### P2: polish
+
+17. **One name format:** "Computer Engineering (B.S.)", "Statistical Science (minor)", "Anthropology (B.A., Archaeology Emphasis)" (`displayName` in app.js), everywhere a program is named.
+18. **The Show checkboxes are hidden on the front page** until a program is open.
+19. **AP box: a score dropdown only** ("—" = not taken; nothing set by default) and a **filter box** for the ~40 exams. Exams with a score stay in view while filtering.
+20. **Elective slots spread evenly.** Each goes in the quarter (year 3 on) with the fewest units so far. Computer Engineering's year 4 went from Fall 15 / Winter 12 / Spring 0 units to 11 / 12 / 8.
+21. **pdf.js 3.11.174 → 4.10.38** (CVE-2024-4367 is fixed from 4.2.67). Version 4 is a JavaScript module only, and a module loaded with `import()` can't carry an integrity hash, so transcript.js downloads each file with `fetch()` and an SRI hash, then runs it from a local `blob:` copy; a file that doesn't match is refused. `isEvalSupported: false` is set. Tested on the site and in the one-file copy opened from disk.
+22. **Privacy text vs. analytics:** no change, since the site has no analytics.
+23. **The one-file copy's size** (8.7 MB) shows next to both links to it; build_single.py keeps the number current.
+24. **Program count:** no change needed (the list checked it).
+25. **ECE 139 vs PSTAT 120A:** the 2026–27 catalog data for Computer Engineering lists ECE 139 only and doesn't mention PSTAT 120A, so no override was added. The department's pages blocked automated access (403), so it's worth asking the CE advisor whether PSTAT 120A is still accepted.
+
+### Also fixed along the way
+
+- **The one-file copy crashed when opened straight at a program** ("passedCourse is not defined"): it started before the later scripts had loaded. It now starts on DOMContentLoaded.
+- **build_graph.py's cleanup deleted credit.json**, emptying the Credit box until build_credit.py ran again. It now keeps that file (`KEEP_IN_DATA`).
