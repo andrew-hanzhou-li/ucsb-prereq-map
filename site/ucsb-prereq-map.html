@@ -4427,19 +4427,28 @@ function pickOneSets() {
   return sets;
 }
 
-// An elective slot goes in the first quarter from year 3 on with room.
+/*
+  An elective slot goes, from year 3 on, in the quarter with the fewest
+  units so far (the earliest one if several tie). Filling the first quarter
+  with room each time used to load Fall and Winter of year 4 and leave
+  Spring nearly empty; this spreads them out. A year is added only when
+  no quarter has room.
+*/
 function addElectiveSlot(key) {
   plan.electives = plan.electives || [];
   const slots = planSlots();
   let from = Math.max(0, slots.findIndex(s => s.year >= 3), firstOpenIndex());
   for (;;) {
     const list = planSlots();
+    let best = null;
     for (let i = from; i < list.length; i++) {
       if (list[i].q === "U") continue;
-      if (quarterUnits(list[i].id) + ELECTIVE_UNITS <= plan.cap) {
-        plan.electives.push({ id: "e" + Date.now().toString(36) + Math.random().toString(36).slice(2, 6), key: key, slot: list[i].id });
-        return true;
-      }
+      const units = quarterUnits(list[i].id);
+      if (units + ELECTIVE_UNITS <= plan.cap && (best === null || units < quarterUnits(best.id))) best = list[i];
+    }
+    if (best) {
+      plan.electives.push({ id: "e" + Date.now().toString(36) + Math.random().toString(36).slice(2, 6), key: key, slot: best.id });
+      return true;
     }
     if (plan.years + plan.firstYear - 1 >= MAX_YEARS) return false;
     plan.years += 1;

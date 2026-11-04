@@ -592,6 +592,15 @@ def main():
         over = page.evaluate("planSlots().filter(s => quarterUnits(s.id) > plan.cap).map(s => s.id)")
         check("plan: no quarter is over the unit cap", not over, over)
         check("plan: auto-fill adds elective slots", page.evaluate("plan.electives.length") > 0)
+        # Item 20: elective slots spread out instead of filling Fall and
+        # Winter first and leaving Spring nearly empty.
+        per_quarter = page.evaluate("""() => {
+          const count = {};
+          for (const e of plan.electives) count[e.slot] = (count[e.slot] || 0) + 1;
+          return planSlots().filter(s => s.year >= 3 && s.q !== 'U').map(s => count[s.id] || 0);
+        }""")
+        check("plan: auto-fill spreads elective slots over the quarters from year 3 (no quarter 2+ ahead of another)",
+              per_quarter and max(per_quarter) - min(per_quarter) <= 1, per_quarter)
         check("plan: auto-fill picks one of MATH 2A or 3A, not both",
               page.evaluate("Boolean(plan.placed['MATH 2A']) !== Boolean(plan.placed['MATH 3A'])"))
 
