@@ -1,0 +1,644 @@
+{
+ "id": "hRoE0M3erWvxWAcOTOFJ",
+ "name": "Mathematics - Minor",
+ "type": "Minor",
+ "kind": "minor",
+ "departments": [
+  "MATH"
+ ],
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsb.edu/programs/hRoE0M3erWvxWAcOTOFJ",
+ "narrative": [
+  "All courses to be applied to the minor must be completed on a letter-grade basis. This includes both courses offered in Mathematics and those offered by other departments and applied to the minor.",
+  "Students must consult the General Catalog for prerequisites to required courses.\nThe following conditions must also be met for official recognition of the minor:\n- The sponsoring department reports completion of the minor prior to the posting of the degree.\n- At least 18 upper-division quarter units are completed for the minor. (Waivers cannot reduce the requirement below this number.)\n- The UC grade-point average in ALL applied upper-division courses is 2.0 or higher.\n- No more than 5 upper-division units overlap between this minor and the upper-division portion of the major(s) or other minor(s). If overlap is greater with the major(s), completion of the minor will not be formally recognized; if overlap with other minor(s) is greater, only the first minor reported will be recognized."
+ ],
+ "sections": [
+  {
+   "name": "PREPARATION",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "count": 1,
+      "items": [
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 2A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 2B",
+          "status": "active"
+         }
+        ],
+        "catalog_rule_id": "OVxYNXk2",
+        "label": "Math 2 Series"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 3A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 3B",
+          "status": "active"
+         }
+        ],
+        "catalog_rule_id": "kGLTBzcV",
+        "label": "Math 3 Series"
+       }
+      ],
+      "catalog_rule_id": "B3C1cO0q",
+      "label": "Calculus"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "MATH 4A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 4B",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "E5uLbgko",
+      "label": "Linear Algebra and Differential Equations",
+      "notes": "Note: Either Math 4A, 4B, 6A, or 6B must be completed with a grade of “B” or better in order to take Math 8."
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "MATH 8",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "UzePNhSI",
+      "label": "Higher Mathematics",
+      "notes": "Math 8 is a prerequisite for all upper division Math courses except Math 117, 104A, 104B, and 104C. If you plan to take additional upper division Math courses, you must take Math 8."
+     }
+    ]
+   }
+  },
+  {
+   "name": "UPPER-DIVISION",
+   "requirement": {
+    "type": "units",
+    "units": 24,
+    "items": [
+     {
+      "type": "course",
+      "code": "MATH 101A",
+      "status": "active",
+      "from_list": "Upper Division Math Courses"
+     },
+     {
+      "type": "course",
+      "code": "MATH 101B",
+      "status": "active",
+      "from_list": "Upper Division Math Courses"
+     },
+     {
+      "type": "course",
+      "code": "MATH 102A",
+      "status": "active",
+      "from_list": "Upper Division Math Courses"
+     },
+     {
+      "type": "course",
+      "code": "MATH 102B",
+      "status": "active",
+      "from_list": "Upper Division Math Courses"
+     },
+     {
+      "type": "course",
+      "code": "MATH 104A",
+      "status": "active",
+      "from_list": "Upper Division Math Courses"
+     },
+     {
+      "type": "course",
+      "code": "MATH 104B",
+      "status": "active",
+      "from_list": "Upper Division Math Courses"
+     },
+     {
+      "type": "course",
+      "code": "MATH 104C",
+      "status": "active",
+      "from_list": "Upper Division Math Courses"
+     },
+     {
+      "type": "course",
+      "code": "MATH 108A",
+      "status": "active",
+      "from_list": "Upper Division Math Courses"
+     },
+     {
+      "type": "course",
+      "code": "MATH 108B",
+      "status": "active",
+      "from_list": "Upper Division Math Courses"
+     },
+     {
+      "type": "course",
+      "code": "MATH 108C",
+      "status": "active",
+      "from_list": "Upper Division Math Courses"
+     },
+     {
+      "type": "course",
+      "code": "MATH 111A",
+      "status": "active",
+      "from_list": "Upper Division Math Courses"
+     },
+     {
+      "type": "course",
+      "code": "MATH 111B",
+      "status": "active",
+      "from_list": "Upper Division Math Courses"
+     },
+     {
+      "type": "course",
+      "code": "MATH 111C",
+      "status": "active",
+      "from_list": "Upper Division Math Courses"
+     },
+     {
+      "type": "course",
+      "code": "MATH 113",
+      "status": "active",
+      "from_list": "Upper Division Math Courses"
+     },
+     {
+      "type": "course",
+      "code": "MATH 115A",
+      "status": "active",
+      "from_list": "Upper Division Math Courses"
+     },
+     {
+      "type": "course",
+      "code": "MATH 115B",
+      "status": "active",
+      "from_list": "Upper Division Math Courses"
+     },
+     {
+      "type": "course",
+      "code": "MATH 116",
+      "status": "active",
+      "from_list": "Upper Division Math Courses"
+     },
+     {
+      "type": "course",
+      "code": "MATH 117",
+      "status": "active",
+      "from_list": "Upper Division Math Courses"
+     },
+     {
+      "type": "course",
+      "code": "MATH 118A",
+      "status": "active",
+      "from_list": "Upper Division Math Courses"
+     },
+     {
+      "type": "course",
+      "code": "MATH 118B",
+      "status": "active",
+      "from_list": "Upper Division Math Courses"
+     },
+     {
+      "type": "course",
+      "code": "MATH 118C",
+      "status": "active",
+      "from_list": "Upper Division Math Courses"
+     },
+     {
+      "type": "course",
+      "code": "MATH 119A",
+      "status": "active",
+      "from_list": "Upper Division Math Courses"
+     },
+     {
+      "type": "course",
+      "code": "MATH 119B",
+      "status": "active",
+      "from_list": "Upper Division Math Courses"
+     },
+     {
+      "type": "course",
+      "code": "MATH 122A",
+      "status": "active",
+      "from_list": "Upper Division Math Courses"
+     },
+     {
+      "type": "course",
+      "code": "MATH 122B",
+      "status": "active",
+      "from_list": "Upper Division Math Courses"
+     },
+     {
+      "type": "course",
+      "code": "MATH 124A",
+      "status": "active",
+      "from_list": "Upper Division Math Courses"
+     },
+     {
+      "type": "course",
+      "code": "MATH 124B",
+      "status": "active",
+      "from_list": "Upper Division Math Courses"
+     },
+     {
+      "type": "course",
+      "code": "MATH 132A",
+      "status": "active",
+      "from_list": "Upper Division Math Courses"
+     },
+     {
+      "type": "course",
+      "code": "MATH 132B",
+      "status": "active",
+      "from_list": "Upper Division Math Courses"
+     },
+     {
+      "type": "course",
+      "code": "MATH 137A",
+      "status": "active",
+      "from_list": "Upper Division Math Courses"
+     },
+     {
+      "type": "course",
+      "code": "MATH 137B",
+      "status": "active",
+      "from_list": "Upper Division Math Courses"
+     },
+     {
+      "type": "course",
+      "code": "MATH 145",
+      "status": "active",
+      "from_list": "Upper Division Math Courses"
+     },
+     {
+      "type": "course",
+      "code": "MATH 147A",
+      "status": "active",
+      "from_list": "Upper Division Math Courses"
+     },
+     {
+      "type": "course",
+      "code": "MATH 147B",
+      "status": "active",
+      "from_list": "Upper Division Math Courses"
+     },
+     {
+      "type": "course",
+      "code": "MATH 170",
+      "status": "active",
+      "from_list": "Upper Division Math Courses"
+     },
+     {
+      "type": "course",
+      "code": "MATH 182",
+      "status": "active",
+      "from_list": "Upper Division Math Courses"
+     },
+     {
+      "type": "course",
+      "code": "MATH 190",
+      "status": "active",
+      "from_list": "Upper Division Math Courses"
+     },
+     {
+      "type": "course",
+      "code": "MATH 190AI",
+      "status": "active",
+      "from_list": "Upper Division Math Courses"
+     },
+     {
+      "type": "course",
+      "code": "MATH 190PS",
+      "status": "active",
+      "from_list": "Upper Division Math Courses"
+     },
+     {
+      "type": "course",
+      "code": "MATH 191",
+      "status": "active",
+      "from_list": "Upper Division Math Courses"
+     },
+     {
+      "type": "course",
+      "code": "MATH 193",
+      "status": "active",
+      "from_list": "Upper Division Math Courses"
+     },
+     {
+      "type": "course",
+      "code": "MATH 197A",
+      "status": "active",
+      "from_list": "Upper Division Math Courses"
+     },
+     {
+      "type": "course",
+      "code": "MATH 197B",
+      "status": "active",
+      "from_list": "Upper Division Math Courses"
+     },
+     {
+      "type": "course",
+      "code": "MATH 199",
+      "status": "active",
+      "from_list": "Upper Division Math Courses"
+     },
+     {
+      "type": "course",
+      "code": "MATH 199RA",
+      "status": "active",
+      "from_list": "Upper Division Math Courses"
+     }
+    ],
+    "catalog_rule_id": "c7BgTCxB",
+    "label": "Upper Division Math Courses",
+    "notes": "Note: The following courses will NOT apply to the minor: Math 100A-B, 193, 195A-B"
+   },
+   "notes": "Substitutions and waivers are subject to approval by the chair of the department."
+  }
+ ],
+ "courses": [
+  {
+   "code": "MATH 2A",
+   "status": "active",
+   "section": "PREPARATION"
+  },
+  {
+   "code": "MATH 2B",
+   "status": "active",
+   "section": "PREPARATION"
+  },
+  {
+   "code": "MATH 3A",
+   "status": "active",
+   "section": "PREPARATION"
+  },
+  {
+   "code": "MATH 3B",
+   "status": "active",
+   "section": "PREPARATION"
+  },
+  {
+   "code": "MATH 4A",
+   "status": "active",
+   "section": "PREPARATION"
+  },
+  {
+   "code": "MATH 4B",
+   "status": "active",
+   "section": "PREPARATION"
+  },
+  {
+   "code": "MATH 8",
+   "status": "active",
+   "section": "PREPARATION"
+  },
+  {
+   "code": "MATH 101A",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "MATH 101B",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "MATH 102A",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "MATH 102B",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "MATH 104A",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "MATH 104B",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "MATH 104C",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "MATH 108A",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "MATH 108B",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "MATH 108C",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "MATH 111A",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "MATH 111B",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "MATH 111C",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "MATH 113",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "MATH 115A",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "MATH 115B",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "MATH 116",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "MATH 117",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "MATH 118A",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "MATH 118B",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "MATH 118C",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "MATH 119A",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "MATH 119B",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "MATH 122A",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "MATH 122B",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "MATH 124A",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "MATH 124B",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "MATH 132A",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "MATH 132B",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "MATH 137A",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "MATH 137B",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "MATH 145",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "MATH 147A",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "MATH 147B",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "MATH 170",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "MATH 182",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "MATH 190",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "MATH 190AI",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "MATH 190PS",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "MATH 191",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "MATH 193",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "MATH 197A",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "MATH 197B",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "MATH 199",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  },
+  {
+   "code": "MATH 199RA",
+   "status": "active",
+   "section": "UPPER-DIVISION"
+  }
+ ]
+}
