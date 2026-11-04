@@ -110,7 +110,7 @@ el.panelBody.addEventListener("change", function (event) {
 
   It's one average across the remaining courses. Spreading it by course
   difficulty (lower targets in historically harder courses) would need
-  grade-distribution data, which isn't in the catalog; see PART9.md.
+  grade-distribution data, which isn't in the catalog.
   Real grades depend a lot on the instructor, so this is rough guidance.
 */
 function targetFor(goal, year) {
