@@ -1,0 +1,579 @@
+{
+ "id": "BSEARTHGEOL",
+ "name": "Earth Science - BS - Geology Emphasis",
+ "type": "Bachelor's Degree",
+ "kind": "major",
+ "departments": [
+  "ERTSC"
+ ],
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsb.edu/programs/BSEARTHGEOL",
+ "narrative": [
+  "An initial consultation with a departmental advisor is essential before embarking on the Earth Science major.",
+  "MAJOR REGULATIONSPREREQUISITES Check the General Catalog for the prerequisites to all listed courses.\nP/NP GRADING OPTION Not allowed for any major course (Prep or UD major), including courses applied to the major from other departments.\nSUBSTITUTIONS In the major requirements permissible only by petition to the department chair and dean.\nG.P.A. REQUIREMENTS At least 2.0 overall UC average in all upper-division major courses and all courses (Prep and UD) for the major.\nDOUBLE MAJORS With approval of each department, up to 8 units may be applied simultaneously to both UD majors."
+ ],
+ "sections": [
+  {
+   "name": "PREPARATION FOR THE MAJOR",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "EARTH 2",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EARTH 3",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EARTH 60W",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "rPoPiFJo",
+      "label": "Lower Division Earth Science Courses"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "CHEM 1A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 1B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 1C",
+          "status": "active"
+         }
+        ]
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "CHEM 2AL",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 2BL",
+          "status": "active"
+         }
+        ]
+       }
+      ],
+      "catalog_rule_id": "A2488koC",
+      "label": "Chemistry Courses"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 3A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 2A",
+          "status": "active"
+         }
+        ]
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 3B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 2B",
+          "status": "active"
+         }
+        ]
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 4A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 4B",
+          "status": "active"
+         }
+        ]
+       }
+      ],
+      "catalog_rule_id": "iVCDgeRp",
+      "label": "Math Courses"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "PHYS 6A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 6AL",
+            "status": "active"
+           }
+          ]
+         },
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "PHYS 6B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 6BL",
+            "status": "active"
+           }
+          ]
+         },
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "PHYS 6C",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 6CL",
+            "status": "active"
+           }
+          ]
+         }
+        ],
+        "catalog_rule_id": "Mm0TcN2z"
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "PHYS 7A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 7B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 7C",
+            "status": "active"
+           }
+          ],
+          "catalog_rule_id": "L4UOKIny"
+         },
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "PHYS 1",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 2",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 3",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PHYS 4",
+            "status": "active"
+           }
+          ],
+          "catalog_rule_id": "az3EWnu7"
+         }
+        ],
+        "catalog_rule_id": "ywGYyit7"
+       }
+      ],
+      "catalog_rule_id": "h6uKiRO5",
+      "label": "Physics Course Options"
+     }
+    ],
+    "catalog_rule_id": "hdBgTlrZ",
+    "label": "Required Courses",
+    "notes": "RECOMMENDED: Math 6A-B, PSTAT 5A, Engineering 3."
+   }
+  },
+  {
+   "name": "UPPER-DIVISION MAJOR",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "EARTH 104A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EARTH 104G",
+          "status": "active"
+         }
+        ]
+       },
+       {
+        "type": "course",
+        "code": "EARTH 105",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EARTH 114",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EARTH 134",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "iI3vpRck",
+      "label": "A."
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "EARTH 103",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EARTH 104B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EARTH 115",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EARTH 118",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EARTH 122",
+          "status": "active"
+         }
+        ],
+        "catalog_rule_id": "BbnVpfMi"
+       },
+       {
+        "type": "choose",
+        "count": 2,
+        "items": [
+         {
+          "type": "course",
+          "code": "EARTH 102A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EARTH 102C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EARTH 177",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EARTH 185",
+          "status": "active"
+         }
+        ],
+        "catalog_rule_id": "UMvncaXq"
+       }
+      ],
+      "catalog_rule_id": "wdzjCElE",
+      "label": "B."
+     }
+    ],
+    "catalog_rule_id": "vVvfhQwD",
+    "description": "54-55 UD units are required, distributed as follows:",
+    "notes": "Recommended Electives: Earth 100, 111, 117 or 137, 123 or 159, 124AA-ZZ, 126, 157 or 186, 158, 176.\nPreparation for Geohydrology:\nStudents interested in careers in geohydrology are recommended to take Earth 168 or 169 and Earth 173. Also recommended: Earth 113, 117, 125, 176, and Environmental studies 144."
+   }
+  }
+ ],
+ "courses": [
+  {
+   "code": "CHEM 1A",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "CHEM 1B",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "CHEM 1C",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "CHEM 2AL",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "CHEM 2BL",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "EARTH 2",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "EARTH 3",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "EARTH 60W",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "EARTH 102A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EARTH 102C",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EARTH 103",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EARTH 104A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EARTH 104B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EARTH 104G",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EARTH 105",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EARTH 114",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EARTH 115",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EARTH 118",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EARTH 122",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EARTH 134",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EARTH 177",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "EARTH 185",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MATH 2A",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "MATH 2B",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "MATH 3A",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "MATH 3B",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "MATH 4A",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "MATH 4B",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "PHYS 1",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "PHYS 2",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "PHYS 3",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "PHYS 4",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "PHYS 6A",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "PHYS 6AL",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "PHYS 6B",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "PHYS 6BL",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "PHYS 6C",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "PHYS 6CL",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "PHYS 7A",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "PHYS 7B",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "PHYS 7C",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  }
+ ]
+}
