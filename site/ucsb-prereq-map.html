@@ -833,7 +833,7 @@ kbd {
         <a href="#" id="all-link" hidden>All programs</a>
         <button type="button" class="text-button" id="credit-button" data-open-credit>Credit</button>
         <button type="button" class="text-button" id="about-button">About</button>
-        <a href="ucsb-prereq-map.html" id="footer-download" download>One-file copy</a>
+        <a href="ucsb-prereq-map.html" id="footer-download" download>One-file copy <span class="file-size">(8.7 MB)</span></a>
         <button type="button" class="text-button options-button" id="options-button" aria-expanded="false" aria-controls="more-options">Options</button>
       </nav>
     </div>
@@ -971,7 +971,7 @@ kbd {
     <p>Courses you mark as taken are saved in your browser on this device only. They're never sent anywhere, and the site has no accounts and no analytics. Clearing your browser's data, or using a private window, removes the marks.</p>
 
     <h3>Sharing and saving</h3>
-    <p>The address bar names the program and the course you've chosen, so you can copy it and send it. There is also a one-file copy of the whole site that opens in any browser, even offline.</p>
+    <p>The address bar names the program and the course you've chosen, so you can copy it and send it. There is also a <a href="ucsb-prereq-map.html" class="download-link" download>one-file copy</a> of the whole site <span class="file-size">(8.7 MB)</span> that opens in any browser, even offline. It's large for a phone, so it's best saved on a computer.</p>
 
     <h3>Where the data comes from</h3>
     <p>Everything comes from the <a href="https://catalog.ucsb.edu/" target="_blank" rel="noopener">UCSB General Catalog</a>: the course list, each course's prerequisites, and each program's requirements. Course prerequisites are written in plain English in the catalog, so a program reads them into "all of" and "one of" rules. Program requirements are copied from the catalog's structured lists.</p>
@@ -1628,6 +1628,8 @@ async function start() {
   if (REPO_URL) el.footerRepo.innerHTML = '<a href="' + REPO_URL + '">Source code</a>';
   // The single file doesn't need a link to download itself.
   if (window.EMBEDDED) el.footerDownload.hidden = true;
+  // The About box's link to the one-file copy: in the copy itself, it would point at itself.
+  if (window.EMBEDDED) document.querySelectorAll(".download-link").forEach(a => a.removeAttribute("href"));
   updateTakenStatus();
 }
 

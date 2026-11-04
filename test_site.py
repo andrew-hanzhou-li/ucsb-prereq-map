@@ -1048,6 +1048,12 @@ def main():
                   page.evaluate("majors.length") == len(listed) and
                   page.evaluate("majors.every(m => findPrograms(displayName(m.name)).some(x => x.program.id === m.id))"))
             check("single file: no download link to itself", not page.is_visible("#footer-download"))
+            # Item 23: the links to the one-file copy say how big it is.
+            with open("site/index.html", encoding="utf-8") as f:
+                sizes = re.findall(r'<span class="file-size">\(([\d.]+) MB\)</span>', f.read())
+            actual = round(SINGLE_FILE.stat().st_size / 1e6, 1)
+            check("index.html: both links to the one-file copy give its size (%.1f MB)" % actual,
+                  len(sizes) == 2 and all(abs(float(x) - actual) < 0.11 for x in sizes), sizes)
             open_major(page, url, "computer-engineering-bs", "BSCMPEN")
             check("single file: CE shows MATH 4A and ECE 139",
                   box(page, "MATH 4A").count() == 1 and box(page, "ECE 139").count() == 1)

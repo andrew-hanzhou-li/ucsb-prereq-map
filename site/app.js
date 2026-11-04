@@ -151,6 +151,8 @@ async function start() {
   if (REPO_URL) el.footerRepo.innerHTML = '<a href="' + REPO_URL + '">Source code</a>';
   // The single file doesn't need a link to download itself.
   if (window.EMBEDDED) el.footerDownload.hidden = true;
+  // The About box's link to the one-file copy: in the copy itself, it would point at itself.
+  if (window.EMBEDDED) document.querySelectorAll(".download-link").forEach(a => a.removeAttribute("href"));
   updateTakenStatus();
 }
 

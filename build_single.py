@@ -107,8 +107,18 @@ def main():
 
     with open(OUTPUT, "w", encoding="utf-8") as f:
         f.write(page)
-    print("Wrote %s: %.1f MB, %d programs, %d courses" % (
-        OUTPUT, os.path.getsize(OUTPUT) / 1e6, len(programs), len(courses)))
+    size = "(%.1f MB)" % (os.path.getsize(OUTPUT) / 1e6)
+    print("Wrote %s: %s, %d programs, %d courses" % (OUTPUT, size, len(programs), len(courses)))
+
+    # The links to this file say how big it is, so someone on a phone isn't
+    # surprised. index.html carries the size from the last build; update it
+    # if it changed (run this script again to carry it into the copy too).
+    index = read("index.html")
+    sized = re.sub(r'<span class="file-size">\([^)]*\)</span>', '<span class="file-size">%s</span>' % size, index)
+    if sized != index:
+        with open(os.path.join(SITE, "index.html"), "w", encoding="utf-8", newline="\n") as f:
+            f.write(sized)
+        print("Updated the file size in index.html to %s" % size)
 
 
 if __name__ == "__main__":
