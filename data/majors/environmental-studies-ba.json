@@ -1,0 +1,897 @@
+{
+ "id": "BAENVST",
+ "name": "Environmental Studies - BA",
+ "type": "Bachelor's Degree",
+ "kind": "major",
+ "departments": [
+  "ENVST"
+ ],
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsb.edu/programs/BAENVST",
+ "narrative": [
+  "MAJOR REGULATIONSPREREQUISITES Check the General Catalog for the prerequisites to all listed courses.\nP/NP GRADING OPTION Env S 190 must be taken P/NP, and up to 4 units of Env S 192 may be taken P/NP for major credit. All other courses, including those applied to the major from other departments must be taken for letter grades.\nSUBSTITUTIONS In the major requirements permissible only by petition to the department chair and dean.\nG.P.A REQUIREMENTS At least 2.0 overall UC average in all UD major courses and all courses (Prep and UD) for the major.\nDOUBLE MAJORS With the approval of each department chairperson, up to a total of 8 units may be applied simultaneously to upper-division areas A and/or B and the other upper-division major."
+ ],
+ "sections": [
+  {
+   "name": "PREPARATION FOR THE MAJOR",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "ENV S 1",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENV S 2",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENV S 3",
+          "status": "active"
+         }
+        ]
+       },
+       {
+        "type": "course",
+        "code": "ENV S 40",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "vwBdgZVC",
+      "label": "Lower-Division Environmental Studies Courses"
+     },
+     {
+      "type": "choose",
+      "count": 1,
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "ENV S 60",
+          "status": "active"
+         }
+        ],
+        "catalog_rule_id": "LgDkD4JW"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "MCDB 1A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MCDB 1LL",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EEMB 2",
+          "status": "active"
+         }
+        ],
+        "catalog_rule_id": "Zf8E7MsO"
+       }
+      ],
+      "catalog_rule_id": "g8zvMb8V",
+      "label": "Ecology and Biology Courses"
+     },
+     {
+      "type": "choose",
+      "count": 1,
+      "items": [
+       {
+        "type": "course",
+        "code": "ECON 1",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 2",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 9",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ENV S 30",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "q05PLpC5",
+      "label": "Economics Courses"
+     },
+     {
+      "type": "choose",
+      "count": 1,
+      "items": [
+       {
+        "type": "course",
+        "code": "EARTH 2",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EARTH 4",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EARTH 20",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GEOG 3",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GEOG 4",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "XFmCDRQ6",
+      "label": "Earth Science Courses"
+     },
+     {
+      "type": "choose",
+      "count": 1,
+      "items": [
+       {
+        "type": "course",
+        "code": "AS AM 9",
+        "status": "active"
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "ENGL 37",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RG ST 37",
+          "status": "active"
+         }
+        ]
+       },
+       {
+        "type": "course",
+        "code": "ENV S 70",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "FEMST 50",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 4",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "POL S 1",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "pxzHzYd5",
+      "label": "Ethics Courses"
+     },
+     {
+      "type": "choose",
+      "count": 1,
+      "items": [
+       {
+        "type": "course",
+        "code": "ANTH 2",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "AS AM 1",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "BL ST 1",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CH ST 1A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "FAMST 46",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GLOBL 1",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSY 1",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "RG ST 1",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "RG ST 14",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SOC 1",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "NJbP9JWr",
+      "label": "Humanities Courses"
+     },
+     {
+      "type": "choose",
+      "count": 1,
+      "items": [
+       {
+        "type": "course",
+        "code": "GLOBL 2",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 5",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 7",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "POL S 6",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "POL S 7",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "POL S 12",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "PiSP9yR9",
+      "label": "Policy and Politics"
+     },
+     {
+      "type": "choose",
+      "count": 1,
+      "items": [
+       {
+        "type": "course",
+        "code": "PSTAT 5A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSTAT 5LS",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 5",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "WazMrz1S",
+      "label": "Statistics Courses"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 2A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 3A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 34A",
+          "status": "active"
+         }
+        ],
+        "catalog_rule_id": "Pe1kauFe"
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "ENV S 25",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 2B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 3B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 34B",
+          "status": "active"
+         }
+        ],
+        "catalog_rule_id": "tXDEw9di"
+       }
+      ],
+      "catalog_rule_id": "I2WegVTd",
+      "label": "Math Courses"
+     },
+     {
+      "type": "choose",
+      "count": 1,
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "CHEM 1A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 1B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 2AL",
+          "status": "active"
+         }
+        ]
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "ENV S 15A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENV S 15B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENV S 15BL",
+          "status": "active"
+         }
+        ]
+       }
+      ],
+      "catalog_rule_id": "OPQIIbYj",
+      "label": "Chemistry Courses"
+     }
+    ]
+   }
+  },
+  {
+   "name": "UPPER-DIVISION MAJOR",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "text",
+      "text": "41 UD units from Areas A and B plus a 16-unit outside concentration (Area C)",
+      "catalog_rule_id": "mT2wtI9g"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "ENV S 190",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "M37t2JZ1",
+      "label": "A."
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "ENV S 101",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENV S 130C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENV S 149",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENV S 153",
+          "status": "active"
+         }
+        ],
+        "catalog_rule_id": "OWZBYYYH",
+        "label": "1. Ecosystems and Society:",
+        "notes": "ENV S 153 or ENV S 193GC"
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "ENV S 115",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENV S 117",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENV S 163A",
+          "status": "active"
+         }
+        ],
+        "catalog_rule_id": "vgiogzVS",
+        "label": "2.   Energy, Water, and Climate:"
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "ENV S 116",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENV S 135A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENV S 155",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENV S 156",
+          "status": "active"
+         }
+        ],
+        "catalog_rule_id": "BUYF6Ppw",
+        "label": "3.   Built Environment:"
+       }
+      ],
+      "catalog_rule_id": "Kfym12su",
+      "description": "One course from each of the following three clusters of courses:"
+     },
+     {
+      "type": "text",
+      "text": "Any 28 upper-division elective units in Environmental Studies not used in Area A, with no more than 8 units combined and 4 units each from Environmental Studies 192, 194, 199, and 199RA",
+      "catalog_rule_id": "xIuyj07O",
+      "label": "B.",
+      "notes": "Note: the following courses are cross-listed with Environmental Studies courses and may be applied toward the major:\ncourse, course; course; course, course, course; course, course; course, course, course, course, course, course; course; course, course; course, course, course, course, course, course, course; course, course; course, course, course; course, course; course, course, course, course"
+     },
+     {
+      "type": "text",
+      "text": "OPTION 1: 16 upper-division units from one department or program. Completion of a double major will satisfy.\nOPTION 2: Interdisciplinary Concentration\n16 upper-division units from outside the department of Environmental Studies forming a coherent focus. A plan of study listing the courses to be taken must be submitted by petition and approved by the department chair. Students must discuss their theme and proposed courses with a department advisor prior to beginning this option.\nNOTE: All courses (including cross-listed courses) may only apply to one area of the major.",
+      "catalog_rule_id": "gIg5V2lb",
+      "label": "C. Outside Concentration",
+      "description": "OPTION 1: 16 upper-division units from one department or program. Completion of a double major will satisfy.\nOPTION 2: Interdisciplinary Concentration\n16 upper-division units from outside the department of Environmental Studies forming a coherent focus. A plan of study listing the courses to be taken must be submitted by petition and approved by the department chair. Students must discuss their theme and proposed courses with a department advisor prior to beginning this option.\nNOTE: All courses (including cross-listed courses) may only apply to one area of the major."
+     }
+    ]
+   }
+  }
+ ],
+ "courses": [
+  {
+   "code": "ANTH 2",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "AS AM 1",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "AS AM 9",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "BL ST 1",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "CH ST 1A",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "CHEM 1A",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "CHEM 1B",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "CHEM 2AL",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "EARTH 2",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "EARTH 4",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "EARTH 20",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "ECON 1",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "ECON 2",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "ECON 5",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "ECON 9",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "EEMB 2",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "ENGL 37",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "ENV S 1",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "ENV S 2",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "ENV S 3",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "ENV S 15A",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "ENV S 15B",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "ENV S 15BL",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "ENV S 25",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "ENV S 30",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "ENV S 40",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "ENV S 60",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "ENV S 70",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "ENV S 101",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENV S 115",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENV S 116",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENV S 117",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENV S 130C",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENV S 135A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENV S 149",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENV S 153",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENV S 155",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENV S 156",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENV S 163A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENV S 190",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "FAMST 46",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "FEMST 50",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "GEOG 3",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "GEOG 4",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "GLOBL 1",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "GLOBL 2",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "HIST 5",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "HIST 7",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "MATH 2A",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "MATH 2B",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "MATH 3A",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "MATH 3B",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "MATH 34A",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "MATH 34B",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "MCDB 1A",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "MCDB 1LL",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "PHIL 4",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "POL S 1",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "POL S 6",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "POL S 7",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "POL S 12",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "PSTAT 5A",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "PSTAT 5LS",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "PSY 1",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "RG ST 1",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "RG ST 14",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "RG ST 37",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "SOC 1",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  }
+ ]
+}
