@@ -17,6 +17,7 @@
 const creditEl = {
   box: document.getElementById("credit"),
   apList: document.getElementById("ap-list"),
+  filter: document.getElementById("ap-filter"),
   suggest: document.getElementById("transfer-suggest"),
   input: document.getElementById("transfer-input"),
   options: document.getElementById("transfer-options"),
@@ -26,12 +27,15 @@ const creditEl = {
 };
 
 function openCreditBox() {
+  creditEl.filter.value = "";      // each time, the whole list
   fillCreditBox();
   creditEl.box.showModal();
 }
 
 function fillCreditBox() {
-  // AP: one line per exam: a box to tick, the score, and what it counts as.
+  // AP: one line per exam: its name, the score ("—" means not taken), and
+  // what that score counts as. The score alone says whether it was taken;
+  // there used to be a checkbox too, which was one more thing to set.
   if (!creditTable) {
     creditEl.apList.innerHTML = '<p class="note">The AP chart didn\'t load. Check your connection and reopen this box.</p>';
   } else {
@@ -40,11 +44,12 @@ function fillCreditBox() {
       const score = credit.ap[exam.name] || "";
       const options = ["", "3", "4", "5"].map(s =>
         '<option value="' + s + '"' + (String(score) === s ? " selected" : "") + ">" + (s || "—") + "</option>").join("");
-      return '<div class="ap-row' + (score ? " taken" : "") + '"><label class="ap-name"><input type="checkbox" data-exam-check="' +
-             escapeHtml(exam.name) + '"' + (score ? " checked" : "") + "> " + escapeHtml(exam.name) + "</label>" +
-             '<label class="ap-score">score <select data-exam="' + escapeHtml(exam.name) + '">' + options + "</select></label>" +
-             '<span class="ap-result">' + escapeHtml(apResult(exam.name)) + "</span></div>";
+      return '<label class="ap-row' + (score ? " taken" : "") + '" data-exam-row="' + escapeHtml(exam.name) + '">' +
+             '<span class="ap-name">' + escapeHtml(exam.name) + "</span>" +
+             '<span class="ap-score">score <select data-exam="' + escapeHtml(exam.name) + '">' + options + "</select></span>" +
+             '<span class="ap-result">' + escapeHtml(apResult(exam.name)) + "</span></label>";
     }).join("");
+    filterExams();
   }
 
   // College credit: suggestions from the programs on the map, then the rest.
@@ -98,17 +103,22 @@ function creditUpdated() {
   }
 }
 
-creditEl.apList.addEventListener("change", function (event) {
-  // Ticking an exam fills in 3, the lowest score that earns credit; the
-  // line beside it shows what that counts as, so a different score is easy
-  // to set. Unticking removes it.
-  const ticked = event.target.dataset.examCheck;
-  if (ticked) {
-    if (event.target.checked) credit.ap[ticked] = credit.ap[ticked] || 3;
-    else delete credit.ap[ticked];
-    creditUpdated();
-    return;
+/*
+  About 40 exams is a long list. The filter box keeps the ones whose name
+  has every typed word ("calc", "us hist", "bio"); exams with a score stay
+  in view either way, so what's set is never hidden.
+*/
+function filterExams() {
+  const typed = creditEl.filter.value.toLowerCase().split(/\s+/).filter(Boolean);
+  for (const row of creditEl.apList.querySelectorAll("[data-exam-row]")) {
+    const name = row.dataset.examRow.toLowerCase();
+    row.hidden = !row.classList.contains("taken") && !typed.every(word => name.includes(word));
   }
+}
+creditEl.filter.addEventListener("input", filterExams);
+
+// A score picked ("—" takes the exam off).
+creditEl.apList.addEventListener("change", function (event) {
   const name = event.target.dataset.exam;
   if (!name) return;
   if (event.target.value) credit.ap[name] = Number(event.target.value);
