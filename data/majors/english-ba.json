@@ -1,0 +1,3829 @@
+{
+ "id": "BAENGL",
+ "name": "English - BA",
+ "type": "Bachelor's Degree",
+ "kind": "major",
+ "departments": [
+  "ENGL"
+ ],
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsb.edu/programs/BAENGL",
+ "narrative": [
+  "The English major requires at least 56 units in English, at least 44 of which must be upper-division, as outlined below.",
+  "MAJOR REGULATIONS\nPREREQUISITES ......................................................... Check the General Catalog for the prerequisites to all listed courses.\nP/NP GRADING OPTION ............................................ Not allowed for major courses (prep or UD major), including courses applied to the major from other departments, with an exception: In Option 1, P/NP allowed through 4th quarter of foreign language.\nSUBSTITUTIONS .......................................................... In the major requirements permissible only by petition to the department chair and dean.\nG.P.A. REQUIREMENTS ............................................ At least 2.0 overall UC average in all upper-division major courses and all courses (Prep and UD) for the major.\nDOUBLE MAJORS ....................................................... With the approval of each department chairperson, up to a total of 8 units may be applied simultaneously to both UD majors."
+ ],
+ "sections": [
+  {
+   "name": "PREPARATION FOR THE MAJOR",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "count": 2,
+      "items": [
+       {
+        "type": "course",
+        "code": "ENGL 10",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 11",
+        "status": "active"
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "ENGL 15",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 15SH",
+          "status": "active"
+         }
+        ]
+       },
+       {
+        "type": "course",
+        "code": "ENGL 22",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 25",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 34NA",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 39",
+        "status": "active"
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "ENGL 40BA",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 40BB",
+          "status": "active"
+         }
+        ]
+       },
+       {
+        "type": "course",
+        "code": "ENGL 50",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "HtIjMUrx",
+      "label": "Two of the following courses",
+      "notes": "English 10 may also be used to satisfy Area A2 under the general education requirements."
+     },
+     {
+      "type": "choose",
+      "count": 1,
+      "items": [
+       {
+        "type": "course",
+        "code": "ENGL 10",
+        "status": "active",
+        "from_list": "Lower Division English Courses "
+       },
+       {
+        "type": "course",
+        "code": "ENGL 10S",
+        "status": "active",
+        "from_list": "Lower Division English Courses "
+       },
+       {
+        "type": "course",
+        "code": "ENGL 11",
+        "status": "active",
+        "from_list": "Lower Division English Courses "
+       },
+       {
+        "type": "course",
+        "code": "ENGL 15",
+        "status": "active",
+        "from_list": "Lower Division English Courses "
+       },
+       {
+        "type": "course",
+        "code": "ENGL 15S",
+        "status": "active",
+        "from_list": "Lower Division English Courses "
+       },
+       {
+        "type": "course",
+        "code": "ENGL 15SH",
+        "status": "active",
+        "from_list": "Lower Division English Courses "
+       },
+       {
+        "type": "course",
+        "code": "ENGL 22",
+        "status": "active",
+        "from_list": "Lower Division English Courses "
+       },
+       {
+        "type": "course",
+        "code": "ENGL 22S",
+        "status": "active",
+        "from_list": "Lower Division English Courses "
+       },
+       {
+        "type": "course",
+        "code": "ENGL 23",
+        "status": "active",
+        "from_list": "Lower Division English Courses "
+       },
+       {
+        "type": "course",
+        "code": "ENGL 23S",
+        "status": "active",
+        "from_list": "Lower Division English Courses "
+       },
+       {
+        "type": "course",
+        "code": "ENGL 24",
+        "status": "active",
+        "from_list": "Lower Division English Courses "
+       },
+       {
+        "type": "course",
+        "code": "ENGL 24S",
+        "status": "active",
+        "from_list": "Lower Division English Courses "
+       },
+       {
+        "type": "course",
+        "code": "ENGL 25",
+        "status": "active",
+        "from_list": "Lower Division English Courses "
+       },
+       {
+        "type": "course",
+        "code": "ENGL 34NA",
+        "status": "active",
+        "from_list": "Lower Division English Courses "
+       },
+       {
+        "type": "course",
+        "code": "ENGL 36",
+        "status": "active",
+        "from_list": "Lower Division English Courses "
+       },
+       {
+        "type": "course",
+        "code": "ENGL 37",
+        "status": "active",
+        "from_list": "Lower Division English Courses "
+       },
+       {
+        "type": "course",
+        "code": "ENGL 38A",
+        "status": "active",
+        "from_list": "Lower Division English Courses "
+       },
+       {
+        "type": "course",
+        "code": "ENGL 39",
+        "status": "active",
+        "from_list": "Lower Division English Courses "
+       },
+       {
+        "type": "course",
+        "code": "ENGL 40BA",
+        "status": "active",
+        "from_list": "Lower Division English Courses "
+       },
+       {
+        "type": "course",
+        "code": "ENGL 40BB",
+        "status": "active",
+        "from_list": "Lower Division English Courses "
+       },
+       {
+        "type": "course",
+        "code": "ENGL 50",
+        "status": "active",
+        "from_list": "Lower Division English Courses "
+       },
+       {
+        "type": "course",
+        "code": "ENGL 50S",
+        "status": "active",
+        "from_list": "Lower Division English Courses "
+       },
+       {
+        "type": "course",
+        "code": "ENGL 65AA",
+        "status": "active",
+        "from_list": "Lower Division English Courses "
+       },
+       {
+        "type": "course",
+        "code": "ENGL 65AL",
+        "status": "active",
+        "from_list": "Lower Division English Courses "
+       },
+       {
+        "type": "course",
+        "code": "ENGL 92SS",
+        "status": "active",
+        "from_list": "Lower Division English Courses "
+       },
+       {
+        "type": "course",
+        "code": "ENGL 99",
+        "status": "active",
+        "from_list": "Lower Division English Courses "
+       }
+      ],
+      "catalog_rule_id": "LfY0ttUP",
+      "label": "Elective lower-division English course",
+      "notes": "Excluding English 18\nOptions: this elective course requirement may be completed at the lower or upper division, but 56 total units are needed overall"
+     }
+    ]
+   }
+  },
+  {
+   "name": "UPPER-DIVISION MAJOR",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "choose",
+          "count": 1,
+          "items": [
+           {
+            "type": "course",
+            "code": "ENGL 101",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 110A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 110B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 110C",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 110T",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 111",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 114MW",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 115",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 152A",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 152B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 152C",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 153",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 156",
+            "status": "inactive"
+           }
+          ],
+          "catalog_rule_id": "QEnQWb67",
+          "label": "1) Literatures & Cultures pre-1500",
+          "description": "One Course",
+          "notes": "ENGL 101AA-ZZ"
+         },
+         {
+          "type": "choose",
+          "count": 1,
+          "items": [
+           {
+            "type": "course",
+            "code": "ENGL 102",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 105A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 105B",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 114EM",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 128ML",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 128RT",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 136",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 145",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 157",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 159",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 160",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 162",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 165EM",
+            "status": "active"
+           }
+          ],
+          "catalog_rule_id": "xSkA2bDm",
+          "label": "2) Literatures & Cultures 1500-1700",
+          "description": "One Course",
+          "notes": "ENGL 102AA-ZZ"
+         },
+         {
+          "type": "choose",
+          "count": 1,
+          "items": [
+           {
+            "type": "course",
+            "code": "ENGL 103",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 128EN",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 136",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 168",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 169",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 179",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 180",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 181",
+            "status": "inactive"
+           }
+          ],
+          "catalog_rule_id": "WTqSeZin",
+          "label": "3) Literatures & Cultures 1700-1900",
+          "description": "One Course",
+          "notes": "ENGL 103AA-ZZ\nENGL 181AA-ZZ"
+         },
+         {
+          "type": "choose",
+          "count": 1,
+          "items": [
+           {
+            "type": "course",
+            "code": "ENGL 104",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 132ZH",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 134AA",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 134BL",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 134CR",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 134MP",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 134PC",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 170CM",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 170TS",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 184",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 189",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 191",
+            "status": "inactive"
+           }
+          ],
+          "catalog_rule_id": "X0iJSDTG",
+          "label": "4) Literatures & Cultures post-1900",
+          "description": "One Course",
+          "notes": "ENGL 104AA-ZZ"
+         }
+        ],
+        "catalog_rule_id": "IWabeWut",
+        "label": "A-1 Historical",
+        "description": "One English course from each of the following four categories"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "choose",
+          "count": 1,
+          "items": [
+           {
+            "type": "course",
+            "code": "ENGL 108CC",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 108LP",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 108MG",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 114",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 122CS",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 122EE",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 122RC",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 122RS",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 122SN",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 122UE",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 122UM",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 128JG",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 128GN",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 128NA",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 128SN",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 129",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 131BR",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 131HF",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 131NS",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 132LA",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 132MD",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 132MT",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 132PR",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 132WE",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 132ZH",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 133MV",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 133PL",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 133TL",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 134",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 141MC",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 141ME",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 141PR",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 150",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 151WR",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 156",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 165AC",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 165AD",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 165HS",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 165IB",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 165NA",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 165NJ",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 165PL",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 165RP",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 170CM",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 170TS",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 170TL",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 175CR",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 175LL",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 176BC",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 176ML",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 180",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 181LV",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 187LL",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 189BW",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 191",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 192DF",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 192SC",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 192WW",
+            "status": "active"
+           }
+          ],
+          "catalog_rule_id": "nCkyYbf7",
+          "label": "1) Literature and the Social",
+          "description": "One Course",
+          "notes": "- ENGL 114AA-ZZ\n- ENGL 134AA-ZZ"
+         },
+         {
+          "type": "choose",
+          "count": 1,
+          "items": [
+           {
+            "type": "course",
+            "code": "ENGL 106A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 107",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 108CC",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 108LP",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 108MG",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 109",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 110A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 110B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 110C",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 120",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 121",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 122CL",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 122CM",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 122EA",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 122EE",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 122FE",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 122SN",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 123",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 124",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 128",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 131HF",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 132EP",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 132MD",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 132MT",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 132PR",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 132WE",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 132ZH",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 134BB",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 134CI",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 134FC",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 134IA",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 134NA",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 134RJ",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": null,
+            "status": "unresolved",
+            "catalog_id": "ckM150mCLTZw4BZ96KCh"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 137B",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 141MC",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 141ME",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 141PR",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 142TT",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 143HE",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 146",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 147",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 148",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 149",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 151JC",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 152B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 153",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 155AI",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 157",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 159",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 162",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 165AD",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 165AE",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 165AS",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 165AT",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 165HN",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 165IF",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 165NT",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 165PL",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 165PP",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 165PR",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 169",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 170IC",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 170NV",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 176",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 183WP",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 185",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 187ML",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 189",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 192",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 193",
+            "status": "active"
+           }
+          ],
+          "catalog_rule_id": "L3rDKyJN",
+          "label": "2) Form, Media, Expression",
+          "description": "One Course",
+          "notes": "- ENGL 128AA-ZZ\n- ENGL 146AA-ZZ\n- ENGL 147AA-ZZ\n- ENGL 148AA-ZZ\n- ENGL 176AA-ZZ\n- ENGL 192AA-ZZ"
+         },
+         {
+          "type": "choose",
+          "count": 1,
+          "items": [
+           {
+            "type": "course",
+            "code": "ENGL 114TN",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 122CC",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 122CS",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 122CL",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 122CM",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 122EA",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 122EE",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 122FC",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 122FE",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 122NE",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 122PW",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 122RC",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 122UE",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 122UM",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 122WE",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 132LA",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 133",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 134LI",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 137B",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 141ME",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": null,
+            "status": "unresolved",
+            "catalog_id": "SsTMVtPv5iThvUEXC68A"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 142TT",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 143HE",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 147GM",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 147OM",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 150",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 165AC",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 165HN",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 165HS",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 165IB",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 165LP",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 165NC",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 165NJ",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 165NT",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 171NH",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 189BW",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 190",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 192EF",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 192FE",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 192SS",
+            "status": "active"
+           }
+          ],
+          "catalog_rule_id": "CoH7pYeY",
+          "label": "3) Regions, Borders, Worlds",
+          "notes": "- ENGL 133AA-ZZ\n- ENGL 190AA-ZZ"
+         },
+         {
+          "type": "choose",
+          "count": 1,
+          "items": [
+           {
+            "type": "course",
+            "code": "ENGL 122CC",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 122WE",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 128AF",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 128NE",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 131BR",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 131NS",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 133SO",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": null,
+            "status": "unresolved",
+            "catalog_id": "SsTMVtPv5iThvUEXC68A"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 146",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 147AB",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 147VN",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 148",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 149",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 151JC",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 155AI",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 165AS",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 165AE",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 165HN",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 165IF",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 165LP",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 165PL",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 165PP",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 165PR",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 165RS",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 170",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 171",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 175",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 176ML",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 176PL",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 183WP",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 190CA",
+            "status": "active"
+           }
+          ],
+          "catalog_rule_id": "c81pU0Nu",
+          "label": "4) Literature Across Disciplines",
+          "description": "One Course",
+          "notes": "- ENGL 146AA-ZZ\n- ENGL 148AA-ZZ\n- ENGL 170AA-ZZ\n- ENGL 171AA-ZZ\n- ENGL 175AA-ZZ"
+         }
+        ],
+        "catalog_rule_id": "bzNSAwMS",
+        "label": "A-2 Subject",
+        "description": "One English course from each of the following four categories"
+       }
+      ],
+      "catalog_rule_id": "qsAzvxIO",
+      "label": "A",
+      "description": "Distribution (note that a single course can only apply towards satisfying one of the A-1 or A-2 area requirements even if it is listed under multiple areas, so a single course cannot be applied under any 2 areas):"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "ENGL 197",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "BKkX84Zg",
+      "label": "B. Upper-Division Seminar"
+     },
+     {
+      "type": "units",
+      "units": 12,
+      "items": [
+       {
+        "type": "course",
+        "code": "ENGL 100",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 100LC",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 101ML",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 101MM",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 101S",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 102BA",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 103A",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 103AS",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 103B",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 103LL",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 103SH",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 103WT",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 104A",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 104AS",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 104B",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 104BS",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 104LC",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 105A",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 105AS",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 105SF",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 106A",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 106CW",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 107",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 108LP",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 109",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 110A",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 110B",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 110T",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 113",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 114EM",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 114MW",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 114TN",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 115",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 119X",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 122CC",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 122CS",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 122EC",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 122NE",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 122RC",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 122WE",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 124",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 128AF",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 128GN",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 128JG",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 128ML",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 128MM",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 128NA",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 128RT",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 128SN",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 131AW",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 131BR",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 131HF",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 131NS",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 132",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 132EP",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 132MD",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 132MT",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 132PR",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 132WE",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 132ZH",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 133MV",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 133SO",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 133TL",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 134AA",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 134AL",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 134BL",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 134CA",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 134CT",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 134IA",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 134IB",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 134LI",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 134LL",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 134MP",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 134NA",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 134PC",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 134RJ",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 136",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 139",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 141MC",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 141ME",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 143HE",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 145",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 146AI",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 146DS",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 146GB",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 146PB",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 147AB",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 147AP",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 147GM",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 147MC",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 147VN",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 148EN",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 149",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 150",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 150S",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 151JC",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 152B",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 159",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 165AD",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 165AE",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 165CT",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 165EM",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 165GN",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 165IB",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 165NJ",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 165NT",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 165RP",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 169",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 170CM",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 170IC",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 170MB",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 170MT",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 170SB",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 170TL",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 170TS",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 171LE",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 171NH",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 172",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 175CR",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 175GW",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 176",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 176BC",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 176ML",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 176PL",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 179",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 181LV",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 182",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 183",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 183WP",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 184",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 187LL",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 187ML",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 189BW",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 190CA",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 190WL",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 192AF",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 192CR",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 192DF",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 192EF",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 192FE",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 192SC",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 192SF",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 192SS",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 192WW",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 193",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 195I",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 196",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 197",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 198H",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 199",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 199RA",
+        "status": "active",
+        "from_list": "Upper Division English Courses"
+       }
+      ],
+      "catalog_rule_id": "auvv9zHs",
+      "label": "C. Elective units in UD English courses",
+      "notes": "One Upper-division foreign literature in translation course can be applied to the elective area by petition"
+     }
+    ],
+    "catalog_rule_id": "M6bJ4ISf",
+    "label": "Upper-Division Major",
+    "description": "44-48 UD English units are required, distributed as follows\nDistribution (note that a single course can only apply towards satisfying one of the A-1 or A-2 area requirements even if it is listed under multiple areas, so a single course cannot be applied under any 2 areas):"
+   }
+  }
+ ],
+ "courses": [
+  {
+   "code": null,
+   "status": "unresolved",
+   "section": "UPPER-DIVISION MAJOR",
+   "catalog_id": "ckM150mCLTZw4BZ96KCh"
+  },
+  {
+   "code": null,
+   "status": "unresolved",
+   "section": "UPPER-DIVISION MAJOR",
+   "catalog_id": "SsTMVtPv5iThvUEXC68A"
+  },
+  {
+   "code": "ENGL 10",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "ENGL 10S",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "ENGL 11",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "ENGL 15",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "ENGL 15S",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "ENGL 15SH",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "ENGL 22",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "ENGL 22S",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "ENGL 23",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "ENGL 23S",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "ENGL 24",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "ENGL 24S",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "ENGL 25",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "ENGL 34NA",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "ENGL 36",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "ENGL 37",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "ENGL 38A",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "ENGL 39",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "ENGL 40BA",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "ENGL 40BB",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "ENGL 50",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "ENGL 50S",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "ENGL 65AA",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "ENGL 65AL",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "ENGL 92SS",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "ENGL 99",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "ENGL 100",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 100LC",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 101",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 101ML",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 101MM",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 101S",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 102",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 102BA",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 103",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 103A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 103AS",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 103B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 103LL",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 103SH",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 103WT",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 104",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 104A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 104AS",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 104B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 104BS",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 104LC",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 105A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 105AS",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 105B",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 105SF",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 106A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 106CW",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 107",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 108CC",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 108LP",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 108MG",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 109",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 110A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 110B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 110C",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 110T",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 111",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 113",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 114",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 114EM",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 114MW",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 114TN",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 115",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 119X",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 120",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 121",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 122CC",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 122CL",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 122CM",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 122CS",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 122EA",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 122EC",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 122EE",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 122FC",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 122FE",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 122NE",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 122PW",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 122RC",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 122RS",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 122SN",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 122UE",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 122UM",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 122WE",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 123",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 124",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 128",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 128AF",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 128EN",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 128GN",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 128JG",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 128ML",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 128MM",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 128NA",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 128NE",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 128RT",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 128SN",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 129",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 131AW",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 131BR",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 131HF",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 131NS",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 132",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 132EP",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 132LA",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 132MD",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 132MT",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 132PR",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 132WE",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 132ZH",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 133",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 133MV",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 133PL",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 133SO",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 133TL",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 134",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 134AA",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 134AL",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 134BB",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 134BL",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 134CA",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 134CI",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 134CR",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 134CT",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 134FC",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 134IA",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 134IB",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 134LI",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 134LL",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 134MP",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 134NA",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 134PC",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 134RJ",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 136",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 137B",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 139",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 141MC",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 141ME",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 141PR",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 142TT",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 143HE",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 145",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 146",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 146AI",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 146DS",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 146GB",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 146PB",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 147",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 147AB",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 147AP",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 147GM",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 147MC",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 147OM",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 147VN",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 148",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 148EN",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 149",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 150",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 150S",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 151JC",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 151WR",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 152A",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 152B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 152C",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 153",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 155AI",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 156",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 157",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 159",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 160",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 162",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 165AC",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 165AD",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 165AE",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 165AS",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 165AT",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 165CT",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 165EM",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 165GN",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 165HN",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 165HS",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 165IB",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 165IF",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 165LP",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 165NA",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 165NC",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 165NJ",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 165NT",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 165PL",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 165PP",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 165PR",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 165RP",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 165RS",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 168",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 169",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 170",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 170CM",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 170IC",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 170MB",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 170MT",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 170NV",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 170SB",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 170TL",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 170TS",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 171",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 171LE",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 171NH",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 172",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 175",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 175CR",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 175GW",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 175LL",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 176",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 176BC",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 176ML",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 176PL",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 179",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 180",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 181",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 181LV",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 182",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 183",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 183WP",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 184",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 185",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 187LL",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 187ML",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 189",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 189BW",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 190",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 190CA",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 190WL",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 191",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 192",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 192AF",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 192CR",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 192DF",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 192EF",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 192FE",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 192SC",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 192SF",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 192SS",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 192WW",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 193",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 195I",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 196",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 197",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 198H",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 199",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "ENGL 199RA",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  }
+ ]
+}
