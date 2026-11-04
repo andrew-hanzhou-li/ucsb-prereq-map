@@ -1,0 +1,3155 @@
+{
+ "about": "Hand-labeled answers for 300 courses, in the notation explained in notation.py. group 'tuning': 150 courses used while writing the parser (it was adjusted until these passed). group 'heldout': 150 different courses labeled before the parser was run on them; the parser was then fixed using its misses, so its later scores are optimistic too. group 'final': 150 more courses, labeled after the parser was frozen and scored once; this is the honest accuracy number. Within each group, set 'random' = 100 random courses that have prerequisite text, set 'major' = 50 random lower/upper-division courses from ECON, PSTAT, MATH, ECE, CMPSC, PHYS.",
+ "courses": [
+  {
+   "code": "FEMST 195HA",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Feminist Studies 195HA; upper-division standing.",
+   "expected": "FEMST 195HA & @standing"
+  },
+  {
+   "code": "CMPSC 293G",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "None.",
+   "expected": "-"
+  },
+  {
+   "code": "MARINCS 150AJ",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "MARINCS 100A or consent of instructor.",
+   "expected": "MARINCS 100A | @consent"
+  },
+  {
+   "code": "MATH 34LB",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Mathematics 2A or 3A or 34A or 34LA with a grade of C or better.",
+   "expected": "MATH 2A[C] | MATH 3A[C] | MATH 34A[C] | MATH 34LA[C]"
+  },
+  {
+   "code": "PSTAT 197A",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "PSTAT 126; and consent of instructor.",
+   "expected": "PSTAT 126 & @consent"
+  },
+  {
+   "code": "CHIN 211",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "One year of classical Chinese.",
+   "expected": "@other"
+  },
+  {
+   "code": "ED 263",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Admission to Single Subject Teaching Credential Program; and consent of instructor.",
+   "expected": "@restriction & @consent"
+  },
+  {
+   "code": "MUS 253",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Enrollment by audition.",
+   "expected": "@other"
+  },
+  {
+   "code": "PHYS 137",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Physics 5 or 25 or 115A with a minimum grade of C-, Physics 104 (may be taken concurrently)",
+   "expected": "(PHYS 5[C-] | PHYS 25[C-] | PHYS 115A[C-]) & PHYS 104*"
+  },
+  {
+   "code": "ME 125ML",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Consent of instructor.",
+   "expected": "@consent"
+  },
+  {
+   "code": "INT 86OM",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Freshman standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "MUS A 136",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Enrollment by audition.",
+   "expected": "@other"
+  },
+  {
+   "code": "MCDB 260",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Graduate standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "THTR 144B",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Consent of instructor.",
+   "expected": "@consent"
+  },
+  {
+   "code": "LING 106",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Department approval to finalize registration.",
+   "expected": "@consent"
+  },
+  {
+   "code": "WRIT 105CW",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Writ 2 or Writ 2E or Writ 2LK or Exam: AP 36 >=4 or Exam: AP 37 >=4 or Exam: WAIV AW >= 1 or Exam: IB BL >= 6 or Exam: IB E >= 6; upper division standing.",
+   "expected": "(WRIT 2 | WRIT 2E | WRIT 2LK | @exam) & @standing"
+  },
+  {
+   "code": "MUS 31F",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Placement by audition. Must be taken consecutively. A grade of at least C- required in each of the Music 31 series.",
+   "expected": "@other"
+  },
+  {
+   "code": "INT 86WD",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Freshman standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "EEMB 194EV",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Upper-division standing and consent of instructor.",
+   "expected": "@standing & @consent"
+  },
+  {
+   "code": "ANTH 123MG",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Anthropology 9 or equivalent.",
+   "expected": "ANTH 9 | @other"
+  },
+  {
+   "code": "PHYS 2",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Physics 1 with a grade of C- or better; Mathematics 2A-B or 3A-B or AP Math BC exam with a score of 3 or better.",
+   "expected": "PHYS 1[C-] & ((MATH 2A & MATH 2B) | (MATH 3A & MATH 3B) | @exam)"
+  },
+  {
+   "code": "CHEM 2B",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "CHEM 2A or CHEM 1A or CHEM 3A with a minimum grade of B.",
+   "expected": "CHEM 2A[B] | CHEM 1A[B] | CHEM 3A[B]"
+  },
+  {
+   "code": "CMPSC 176A",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "CMPSC 32 with a grade of C or better; PSTAT 120A or ECE 139; open to computer science, electrical engineering, and computer engineering majors only.",
+   "expected": "CMPSC 32[C] & (PSTAT 120A | ECE 139) & @restriction"
+  },
+  {
+   "code": "ENV S 197",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Upper-division standing; consent of instructor.",
+   "expected": "@standing & @consent"
+  },
+  {
+   "code": "CHIN 101B",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Chinese 101A",
+   "expected": "CHIN 101A"
+  },
+  {
+   "code": "INT 186AG",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Upper-division standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "ART CS 102",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Consent of instructor.",
+   "expected": "@consent"
+  },
+  {
+   "code": "RG ST 162A",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Upper-division standing or instructor approval",
+   "expected": "@standing | @consent"
+  },
+  {
+   "code": "LING 99",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "NONE",
+   "expected": "-"
+  },
+  {
+   "code": "RG ST 140B",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Upper-division standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "FAMST 595",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Graduate standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "ECON 278H",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Second-year Ph.D. in Economics graduate student standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "INT 86CE",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Freshman standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "ENGL 107",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Writing 2, or 50, or 109, or English 10 or upper-division standing",
+   "expected": "WRIT 2 | WRIT 50 | WRIT 109 | ENGL 10 | @standing"
+  },
+  {
+   "code": "GLOBL 179",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Upper division standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "GREEK 2",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Greek 1 with a grade of C or better.",
+   "expected": "GREEK 1[C]"
+  },
+  {
+   "code": "HIST 185A",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "A prior course in History or upper-division standing.",
+   "expected": "@other | @standing"
+  },
+  {
+   "code": "W L CS 150",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Consent of Instructor",
+   "expected": "@consent"
+  },
+  {
+   "code": "MATH 113",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Mathematics 8 with a grade of \"C\" or better.",
+   "expected": "MATH 8[C]"
+  },
+  {
+   "code": "POL S 99",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Consent of instructor and department.",
+   "expected": "@consent"
+  },
+  {
+   "code": "CH ST 168T",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "A previous course in History or Chicano Studies.",
+   "expected": "@other"
+  },
+  {
+   "code": "SPAN 185",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Spanish 16B or Spanish 25",
+   "expected": "SPAN 16B | SPAN 25"
+  },
+  {
+   "code": "GER 4",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Grade of P or grade of C or better in German 3. Not open for credit to students who have completed more advanced work in German.",
+   "expected": "GER 3[C] & @other"
+  },
+  {
+   "code": "CHEM 175",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Chemistry 173A-B.",
+   "expected": "CHEM 173A & CHEM 173B"
+  },
+  {
+   "code": "ME 125TD",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Consent of instructor.",
+   "expected": "@consent"
+  },
+  {
+   "code": "MCDB 110",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Chemistry 1A-B-C; and Chemistry 109A-B. Completion of all listed prerequisites with a grade of C or better.",
+   "expected": "CHEM 1A[C] & CHEM 1B[C] & CHEM 1C[C] & CHEM 109A[C] & CHEM 109B[C]"
+  },
+  {
+   "code": "ESM 402C",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "ESM402A and ESM402B. MESM students only.",
+   "expected": "ESM 402A & ESM 402B & @restriction"
+  },
+  {
+   "code": "ENV S 1H",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Concurrent enrollment in Environmental Studies 1 and active member of a College Honors Program; or consent of instructor.",
+   "expected": "(ENV S 1* & @restriction) | @consent"
+  },
+  {
+   "code": "INT 189BE",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Senior standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "COMM 175FM",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Comm 124; Consent of instructor; senior standing; communication and interdisciplinary studies majors only.",
+   "expected": "COMM 124 & @consent & @standing & @restriction"
+  },
+  {
+   "code": "PSTAT 160B",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "MATH 4B, PSTAT 120B, and PSTAT 160A with a grade of C or better",
+   "expected": "MATH 4B[C] & PSTAT 120B[C] & PSTAT 160A[C]"
+  },
+  {
+   "code": "SOC 139C",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Upper-division standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "SPAN 132E",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Upper-division standing",
+   "expected": "@standing"
+  },
+  {
+   "code": "MUS A 270I",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Enrollment by audition.",
+   "expected": "@other"
+  },
+  {
+   "code": "FAMST 188MT",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Upper-division standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "ARTHI 134H",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Not open to freshmen.",
+   "expected": "@standing"
+  },
+  {
+   "code": "SPAN 3",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Spanish 2 or Spanish W2 with a grade of P or a grade of C or higher.",
+   "expected": "SPAN 2[C] | SPAN W 2[C]"
+  },
+  {
+   "code": "HIST 144F",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Upper Division Standing",
+   "expected": "@standing"
+  },
+  {
+   "code": "HIST 109T",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "HIST 2C or 4C or 17C; and upper division standing or by permission from the instructor.",
+   "expected": "(HIST 2C | HIST 4C | HIST 17C) & (@standing | @consent)"
+  },
+  {
+   "code": "IQB 203",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Consent of instructor.",
+   "expected": "@consent"
+  },
+  {
+   "code": "INT 86PP",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Freshman standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "CHEM 194",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Consent of Instructor.",
+   "expected": "@consent"
+  },
+  {
+   "code": "INT 86CQ",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Freshman standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "MUS 29",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "By audition. Consent of instructor and department.",
+   "expected": "@other & @consent"
+  },
+  {
+   "code": "ME 105",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "ME 151B, ME 152A, ME 103; and MATRL 101 or MATRL 100C.",
+   "expected": "ME 151B & ME 152A & ME 103 & (MATRL 101 | MATRL 100C)"
+  },
+  {
+   "code": "LING 252A",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Linguistics 234.",
+   "expected": "LING 234"
+  },
+  {
+   "code": "CMPSC 270",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Computer Science 170",
+   "expected": "CMPSC 170"
+  },
+  {
+   "code": "INT 86QQ",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Freshman standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "MAT 276LB",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "MAT 276LA.",
+   "expected": "MAT 276LA"
+  },
+  {
+   "code": "WRIT 50E",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Writing 2 or 2E or 2LK; freshmen only; open to ECE, Chemical Engineering, Mechanical Engineering, and Computer Engineering majors only.",
+   "expected": "(WRIT 2 | WRIT 2E | WRIT 2LK) & @standing & @restriction"
+  },
+  {
+   "code": "MUS 211A",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Passing grade on all theory placement examinations.",
+   "expected": "@other"
+  },
+  {
+   "code": "LING 107",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Linguistics 20 and Linguistics 106",
+   "expected": "LING 20 & LING 106"
+  },
+  {
+   "code": "INT 86CL",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Freshman standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "MATRL 160",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Chemical Engineering 110A or Chemistry 113A or equivalent.",
+   "expected": "CH E 110A | CHEM 113A | @other"
+  },
+  {
+   "code": "ENGL 139",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Writing 2 or upper-division standing.",
+   "expected": "WRIT 2 | @standing"
+  },
+  {
+   "code": "INT 86NG",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Freshman standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "ME 221",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "ME 220A.",
+   "expected": "ME 220A"
+  },
+  {
+   "code": "KOR W 3",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "KOR 1, 2 or KOR W 1, 2",
+   "expected": "(KOR 1 & KOR 2) | (KOR W 1 & KOR W 2)"
+  },
+  {
+   "code": "MATH 108B",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Math 108A with a minimum grade of C.",
+   "expected": "MATH 108A[C]"
+  },
+  {
+   "code": "MATH 202A",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Mathematics 118A-B-C or 122A.",
+   "expected": "(MATH 118A & MATH 118B & MATH 118C) | MATH 122A"
+  },
+  {
+   "code": "ARTHI 136B",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Not open to freshmen.",
+   "expected": "@standing"
+  },
+  {
+   "code": "MUS A 234",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Entrance by audition.",
+   "expected": "@other"
+  },
+  {
+   "code": "ED 274",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Consent of instructor.",
+   "expected": "@consent"
+  },
+  {
+   "code": "CNCSP 279A",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Consent of instructor and advancement to candidacy.",
+   "expected": "@consent & @standing"
+  },
+  {
+   "code": "BL ST 131",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Upper-division standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "SOC 145",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Upper-division standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "MATH 501",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Departmental and instructor approval.",
+   "expected": "@consent"
+  },
+  {
+   "code": "PSY 594MH",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Graduate standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "SPAN 139",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Upper-division standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "PHYS 144L",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Physics 5 or 25; consent of instructor.",
+   "expected": "(PHYS 5 | PHYS 25) & @consent"
+  },
+  {
+   "code": "INT 86SA",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Freshman standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "ITAL 119A",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Italian 1-6 or equivalent",
+   "expected": "(ITAL 1 & ITAL 2 & ITAL 3 & ITAL 4 & ITAL 5 & ITAL 6) | @other"
+  },
+  {
+   "code": "COMM 184",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Not open to freshmen.",
+   "expected": "@standing"
+  },
+  {
+   "code": "LAIS 127E",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Upper-division standing",
+   "expected": "@standing"
+  },
+  {
+   "code": "EEMB 2Z",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Consent of department.",
+   "expected": "@consent"
+  },
+  {
+   "code": "CMPTGCS 130H",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Consent of instructor.",
+   "expected": "@consent"
+  },
+  {
+   "code": "POL S 106AI",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Upper-division, full POLS major standing.",
+   "expected": "@standing & @restriction"
+  },
+  {
+   "code": "SOC 118CW",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Upper-division standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "INT 187AQ",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Upper-division standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "RG ST 110",
+   "group": "tuning",
+   "set": "random",
+   "prereq_text": "Upper division standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "ECON 181",
+   "group": "tuning",
+   "set": "major",
+   "prereq_text": "Economics 100B or 104B, and 101 or 105.",
+   "expected": "(ECON 100B | ECON 104B) & (ECON 101 | ECON 105)"
+  },
+  {
+   "code": "ECE 147C",
+   "group": "tuning",
+   "set": "major",
+   "prereq_text": "ECE 147A or ME 155B or ME 173 with a minimum grade of C-.",
+   "expected": "ECE 147A[C-] | ME 155B[C-] | ME 173[C-]"
+  },
+  {
+   "code": "MATH 118A",
+   "group": "tuning",
+   "set": "major",
+   "prereq_text": "Math 4B, 6A, 108A and 117, each with a minimum grade of C.",
+   "expected": "MATH 4B[C] & MATH 6A[C] & MATH 108A[C] & MATH 117[C]"
+  },
+  {
+   "code": "PSTAT 182T",
+   "group": "tuning",
+   "set": "major",
+   "prereq_text": "Statistics 120A",
+   "expected": "PSTAT 120A"
+  },
+  {
+   "code": "CMPSC 165B",
+   "group": "tuning",
+   "set": "major",
+   "prereq_text": "Computer Science 130A.",
+   "expected": "CMPSC 130A"
+  },
+  {
+   "code": "CMPSC 186",
+   "group": "tuning",
+   "set": "major",
+   "prereq_text": "CMPSC 32 or CMPSC 130A.",
+   "expected": "CMPSC 32 | CMPSC 130A"
+  },
+  {
+   "code": "PHYS 115C",
+   "group": "tuning",
+   "set": "major",
+   "prereq_text": "Physics 115B with a minimum grade of C-.",
+   "expected": "PHYS 115B[C-]"
+  },
+  {
+   "code": "ECE 10C",
+   "group": "tuning",
+   "set": "major",
+   "prereq_text": "ECE 10B with a C- or better grade.",
+   "expected": "ECE 10B[C-]"
+  },
+  {
+   "code": "MATH 101B",
+   "group": "tuning",
+   "set": "major",
+   "prereq_text": "Math 101A with a minimum grade of C.",
+   "expected": "MATH 101A[C]"
+  },
+  {
+   "code": "PHYS 145L",
+   "group": "tuning",
+   "set": "major",
+   "prereq_text": "Physics 5 or 25; and consent of instructor.",
+   "expected": "(PHYS 5 | PHYS 25) & @consent"
+  },
+  {
+   "code": "CMPSC 176B",
+   "group": "tuning",
+   "set": "major",
+   "prereq_text": "Computer Science 176A.",
+   "expected": "CMPSC 176A"
+  },
+  {
+   "code": "PHYS 21",
+   "group": "tuning",
+   "set": "major",
+   "prereq_text": "Mathematics 2A/3A and Mathematics 2B/3B or Physics 8 or AP Calculus BC Exam score of 5.",
+   "expected": "((MATH 2A | MATH 3A) & (MATH 2B | MATH 3B)) | PHYS 8 | @exam"
+  },
+  {
+   "code": "ECON 3BH",
+   "group": "tuning",
+   "set": "major",
+   "prereq_text": "Concurrent with Econ 3B.",
+   "expected": "ECON 3B*"
+  },
+  {
+   "code": "CMPSC 154",
+   "group": "tuning",
+   "set": "major",
+   "prereq_text": "Computer Science 32 with a grade of C or better; Computer Science 64 with a grade of C or better.",
+   "expected": "CMPSC 32[C] & CMPSC 64[C]"
+  },
+  {
+   "code": "ECE 10A",
+   "group": "tuning",
+   "set": "major",
+   "prereq_text": "Mathematics 2A-B or 3A-B or Mathematics 3AH-BH, and Mathematics 4A or 4AI or 3C, all with a minimum grade of C; and, Math 4B or 4BI or 5A with a minimum grade of C (may be taken concurrently); Physics 3, 7B or 23 (may be taken concurrently); open only to electrical engineering and computer engineering majors.",
+   "expected": "((MATH 2A[C] & MATH 2B[C]) | (MATH 3A[C] & MATH 3B[C]) | (MATH 3AH[C] & MATH 3BH[C])) & (MATH 4A[C] | MATH 4AI[C] | MATH 3C[C]) & (MATH 4B*[C] | MATH 4BI*[C] | MATH 5A*[C]) & (PHYS 3* | PHYS 7B* | PHYS 23*) & @restriction"
+  },
+  {
+   "code": "MATH 190K",
+   "group": "tuning",
+   "set": "major",
+   "prereq_text": "Math 8 with a grade of C or better.",
+   "expected": "MATH 8[C]"
+  },
+  {
+   "code": "MATH 137B",
+   "group": "tuning",
+   "set": "major",
+   "prereq_text": "Math 108A and 137A, each with a minimum grade of C.",
+   "expected": "MATH 108A[C] & MATH 137A[C]"
+  },
+  {
+   "code": "CMPSC 183",
+   "group": "tuning",
+   "set": "major",
+   "prereq_text": "CMPSC 25.",
+   "expected": "CMPSC 25"
+  },
+  {
+   "code": "ECON 115",
+   "group": "tuning",
+   "set": "major",
+   "prereq_text": "Economics 10A.",
+   "expected": "ECON 10A"
+  },
+  {
+   "code": "ECE 10B",
+   "group": "tuning",
+   "set": "major",
+   "prereq_text": "ECE 10A with a C- or better grade.",
+   "expected": "ECE 10A[C-]"
+  },
+  {
+   "code": "PHYS 126L",
+   "group": "tuning",
+   "set": "major",
+   "prereq_text": "Physics 24 or 7C with a grade of C- or better, Physics 29 with a grade of C- or better, and Mathematics 6B with a grade of C- or better",
+   "expected": "(PHYS 24[C-] | PHYS 7C[C-]) & PHYS 29[C-] & MATH 6B[C-]"
+  },
+  {
+   "code": "MATH 147B",
+   "group": "tuning",
+   "set": "major",
+   "prereq_text": "Math 6B and Math 147A with a minimum grade of C.",
+   "expected": "MATH 6B[C] & MATH 147A[C]"
+  },
+  {
+   "code": "CMPSC 176C",
+   "group": "tuning",
+   "set": "major",
+   "prereq_text": "Computer Science 176A.",
+   "expected": "CMPSC 176A"
+  },
+  {
+   "code": "PHYS 133",
+   "group": "tuning",
+   "set": "major",
+   "prereq_text": "Physics 5 or 25 or 115A with a minimum grade of C-.",
+   "expected": "PHYS 5[C-] | PHYS 25[C-] | PHYS 115A[C-]"
+  },
+  {
+   "code": "ECE 136C",
+   "group": "tuning",
+   "set": "major",
+   "prereq_text": "PHYS 5/PHYS 5L or PHYS 7D/PHYS 7L or PHYS 25 or equivalent.",
+   "expected": "(PHYS 5 & PHYS 5L) | (PHYS 7D & PHYS 7L) | PHYS 25 | @other"
+  },
+  {
+   "code": "ECON 100C",
+   "group": "tuning",
+   "set": "major",
+   "prereq_text": "Economics 100B or 104B.",
+   "expected": "ECON 100B | ECON 104B"
+  },
+  {
+   "code": "PSTAT 140",
+   "group": "tuning",
+   "set": "major",
+   "prereq_text": "PSTAT 10 and PSTAT 120B both with a minimum grade of C or better.",
+   "expected": "PSTAT 10[C] & PSTAT 120B[C]"
+  },
+  {
+   "code": "PSTAT 135",
+   "group": "tuning",
+   "set": "major",
+   "prereq_text": "PSTAT 131 or PSTAT 231 or Computer Science 165B; and Computer Science 9 (preferred) or Computer Science 16. A minimum letter grade of C or better must be earned in each course.",
+   "expected": "(PSTAT 131[C] | PSTAT 231[C] | CMPSC 165B[C]) & (CMPSC 9[C] | CMPSC 16[C])"
+  },
+  {
+   "code": "CMPSC 177",
+   "group": "tuning",
+   "set": "major",
+   "prereq_text": "Computer Science 170 (may be taken concurrently).",
+   "expected": "CMPSC 170*"
+  },
+  {
+   "code": "PHYS 141",
+   "group": "tuning",
+   "set": "major",
+   "prereq_text": "Physics 110B with a minimum grade of C-.",
+   "expected": "PHYS 110B[C-]"
+  },
+  {
+   "code": "PHYS 150",
+   "group": "tuning",
+   "set": "major",
+   "prereq_text": "Physics 5 or 25.",
+   "expected": "PHYS 5 | PHYS 25"
+  },
+  {
+   "code": "MATH 118B",
+   "group": "tuning",
+   "set": "major",
+   "prereq_text": "Math 108B and 118A, each with a minimum grade of C.",
+   "expected": "MATH 108B[C] & MATH 118A[C]"
+  },
+  {
+   "code": "CMPSC 170",
+   "group": "tuning",
+   "set": "major",
+   "prereq_text": "Computer Science 130A; and, Computer Science 154 or ECE 154A (may be taken concurrently); open to computer science, computer engineering or electrical engineering majors only.",
+   "expected": "CMPSC 130A & (CMPSC 154* | ECE 154A*) & @restriction"
+  },
+  {
+   "code": "ECON 100B",
+   "group": "tuning",
+   "set": "major",
+   "prereq_text": "Economics 10A or 100A; and, Economics 5 or PSTAT 109 or PSTAT 120A.",
+   "expected": "(ECON 10A | ECON 100A) & (ECON 5 | PSTAT 109 | PSTAT 120A)"
+  },
+  {
+   "code": "CMPSC 165A",
+   "group": "tuning",
+   "set": "major",
+   "prereq_text": "Computer Science 130A and PSTAT 120A",
+   "expected": "CMPSC 130A & PSTAT 120A"
+  },
+  {
+   "code": "PHYS 128AL",
+   "group": "tuning",
+   "set": "major",
+   "prereq_text": "Physics 13CL or Physics 20CL or Physics CS 15C. Physics 115A (may be taken concurrently).",
+   "expected": "(PHYS 13CL | PHYS 20CL | PHYS CS 15C) & PHYS 115A*"
+  },
+  {
+   "code": "ECE 142",
+   "group": "tuning",
+   "set": "major",
+   "prereq_text": "ECE 132, ECE 134 and ECE 137A with a minimum grade of C- in all; open to EE majors only.",
+   "expected": "ECE 132[C-] & ECE 134[C-] & ECE 137A[C-] & @restriction"
+  },
+  {
+   "code": "ECON 138B",
+   "group": "tuning",
+   "set": "major",
+   "prereq_text": "Economics 138A.",
+   "expected": "ECON 138A"
+  },
+  {
+   "code": "ECE 146A",
+   "group": "tuning",
+   "set": "major",
+   "prereq_text": "ECE 130A-B with a minimum grade of C-; ECE 139 or PSTAT 120A; open to CE & EE majors only.",
+   "expected": "ECE 130A[C-] & ECE 130B[C-] & (ECE 139 | PSTAT 120A) & @restriction"
+  },
+  {
+   "code": "PHYS 119A",
+   "group": "tuning",
+   "set": "major",
+   "prereq_text": "PHYS 22 and MATH 6B with a minimum grade of C-",
+   "expected": "PHYS 22[C-] & MATH 6B[C-]"
+  },
+  {
+   "code": "ECE 135",
+   "group": "tuning",
+   "set": "major",
+   "prereq_text": "ECE 132 and 134 with a minimum grade of C- in both.",
+   "expected": "ECE 132[C-] & ECE 134[C-]"
+  },
+  {
+   "code": "PHYS 136",
+   "group": "tuning",
+   "set": "major",
+   "prereq_text": "Physics 2 or 22 with a minimum grade of C-, Physics 104 (may be taken concurrently)",
+   "expected": "(PHYS 2[C-] | PHYS 22[C-]) & PHYS 104*"
+  },
+  {
+   "code": "ECON 156",
+   "group": "tuning",
+   "set": "major",
+   "prereq_text": "Economics 100B; and Economics 140A.",
+   "expected": "ECON 100B & ECON 140A"
+  },
+  {
+   "code": "PHYS 129L",
+   "group": "tuning",
+   "set": "major",
+   "prereq_text": "Physics 5 or 25 with a grade of C- or better, and Mathematics 6B with a grade of C- or better; Physics 29 with a grade of C- or better.",
+   "expected": "(PHYS 5[C-] | PHYS 25[C-]) & MATH 6B[C-] & PHYS 29[C-]"
+  },
+  {
+   "code": "ECE 179P",
+   "group": "tuning",
+   "set": "major",
+   "prereq_text": "Mathematics 4A and Upper-Division standing only.",
+   "expected": "MATH 4A & @standing"
+  },
+  {
+   "code": "ECE 120B",
+   "group": "tuning",
+   "set": "major",
+   "prereq_text": "Either ECE 120A or ECE 124B with a minimum grade of C- or better in each of the courses.",
+   "expected": "ECE 120A[C-] | ECE 124B[C-]"
+  },
+  {
+   "code": "PHYS 143L",
+   "group": "tuning",
+   "set": "major",
+   "prereq_text": "Physics 5 or 25; and consent of instructor.",
+   "expected": "(PHYS 5 | PHYS 25) & @consent"
+  },
+  {
+   "code": "PSTAT 172B",
+   "group": "tuning",
+   "set": "major",
+   "prereq_text": "MATH 4B and PSTAT 172A.",
+   "expected": "MATH 4B & PSTAT 172A"
+  },
+  {
+   "code": "ECE 188A",
+   "group": "tuning",
+   "set": "major",
+   "prereq_text": "ECE 153A or ECE 153B. ECE 153A may be taken concurrently with ECE 188A.",
+   "expected": "ECE 153A* | ECE 153B"
+  },
+  {
+   "code": "MATH 104A",
+   "group": "tuning",
+   "set": "major",
+   "prereq_text": "Mathematics 4B or 4BI, 6A, and 6B; and, Math 8 or PSTAT 8, and Math 117 and, Computer Science 5AA-ZZ or 10 or 8 or 16 or Engineering 3, each with a grade of C or above.",
+   "expected": "(MATH 4B[C] | MATH 4BI[C]) & MATH 6A[C] & MATH 6B[C] & (MATH 8[C] | PSTAT 8[C]) & MATH 117[C] & (@other | CMPSC 10[C] | CMPSC 8[C] | CMPSC 16[C] | ENGR 3[C])"
+  },
+  {
+   "code": "SLAV 164B",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Upper-division standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "MATH 145",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Math 8 with a C or better. Either Math 108A or Math 117 with a minimum grade of C.",
+   "expected": "MATH 8[C] & (MATH 108A[C] | MATH 117[C])"
+  },
+  {
+   "code": "EARTH 596",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Consent of instructor and graduate adviser.",
+   "expected": "@consent"
+  },
+  {
+   "code": "FAMST 187TS",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Film studies 46 or upper-division standing, and consent of instructor.",
+   "expected": "(FAMST 46 | @standing) & @consent"
+  },
+  {
+   "code": "PHIL 164",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Philosophy 20B or 100B or 100D or 100E.",
+   "expected": "PHIL 20B | PHIL 100B | PHIL 100D | PHIL 100E"
+  },
+  {
+   "code": "C LIT 132",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Sophomore standing or higher, or consent of instructor.",
+   "expected": "@standing | @consent"
+  },
+  {
+   "code": "ECON 250H",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Second year Ph.D. in Economics graduate student standing.�",
+   "expected": "@standing"
+  },
+  {
+   "code": "ECE 194E",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Consent of instructor.",
+   "expected": "@consent"
+  },
+  {
+   "code": "FR 16A",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "1 year of high school French; or 3 years of high school Spanish or Portuguese or Italian or Latin; or be a native or heritage speaker of Spanish or Portuguese or Italian.",
+   "expected": "@other"
+  },
+  {
+   "code": "CMPSC 96",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Consent of instructor.",
+   "expected": "@consent"
+  },
+  {
+   "code": "ME 238",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "ME 243A/ECE 230A and at least one class among the following: ME 243B/ECE 230B, ME 236/ECE 236, ME 256/ECE 232, or ME 254/ECE 271C.",
+   "expected": "(ME 243A | ECE 230A) & (ME 243B | ECE 230B | ME 236 | ECE 236 | ME 256 | ECE 232 | ME 254 | ECE 271C)"
+  },
+  {
+   "code": "INT 86TV",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Freshman standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "MUS 260D",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Consent of instructor.",
+   "expected": "@consent"
+  },
+  {
+   "code": "GEOG 249",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Mathematics 5C, Geography 104, and Geography 110, or equivalent.",
+   "expected": "(MATH 5C & GEOG 104 & GEOG 110) | @other"
+  },
+  {
+   "code": "GER 115C",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "German 6 and German 101A-B-C",
+   "expected": "GER 6 & GER 101A & GER 101B & GER 101C"
+  },
+  {
+   "code": "DANCE 193HC",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Dance 193HA or 193HB; senior standing.",
+   "expected": "(DANCE 193HA | DANCE 193HB) & @standing"
+  },
+  {
+   "code": "ANTH 180",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Upper-division standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "CHEM 6AL",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Chemistry 1AL or 2AC, 1BL or 2BC, and 1CL or 2CC, or Chemistry 2AL and 2BL; 109A or 109AH or 130A with a minimum grade of a C-; and Chemistry 109B or 109BH or 130B (may be taken concurrently).",
+   "expected": "(((CHEM 1AL | CHEM 2AC) & (CHEM 1BL | CHEM 2BC) & (CHEM 1CL | CHEM 2CC)) | (CHEM 2AL & CHEM 2BL)) & (CHEM 109A[C-] | CHEM 109AH[C-] | CHEM 130A[C-]) & (CHEM 109B* | CHEM 109BH* | CHEM 130B*)"
+  },
+  {
+   "code": "ENV S 184",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Upper-division standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "MUS A 170J",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Enrollment by audition. For upper-division students.",
+   "expected": "@other & @standing"
+  },
+  {
+   "code": "MAT 111WN",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Not open to freshmen.",
+   "expected": "@standing"
+  },
+  {
+   "code": "SOC 134",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Upper-division standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "PSTAT 194",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Upper-division standing; consent of instructor.",
+   "expected": "@standing & @consent"
+  },
+  {
+   "code": "ECE 281B",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "ECE OR CMPSC 181.",
+   "expected": "ECE 181 | CMPSC 181"
+  },
+  {
+   "code": "ART 110",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Art 14, 18; 1A or 7B or Upper Division or Instructor Approval",
+   "expected": "ART 14 & ART 18 & (ART 1A | ART 7B | @standing | @consent)"
+  },
+  {
+   "code": "SOC 185A",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Upper-division standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "EACS 199",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Upper division standing; completion of 2 upper division EACS courses; at least one of those two courses taken with the instructor for EACS 199; GPA for those two courses 3.5 or higher.",
+   "expected": "@standing & @other"
+  },
+  {
+   "code": "ITAL 144A",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Note: ITAL 144XX is the \"in translation (in English) version of this",
+   "expected": "@other"
+  },
+  {
+   "code": "ECE 186",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "ECE 139 or PSTAT 120A or equivalent.",
+   "expected": "ECE 139 | PSTAT 120A | @other"
+  },
+  {
+   "code": "MARINCS 100",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "MARINCS 10, 20.",
+   "expected": "MARINCS 10 & MARINCS 20"
+  },
+  {
+   "code": "EARTH 111L",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Earth 111 (may be taken concurrently).",
+   "expected": "EARTH 111*"
+  },
+  {
+   "code": "FR 153A",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Writing 2 or upper-division standing.",
+   "expected": "WRIT 2 | @standing"
+  },
+  {
+   "code": "GREEK 200",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "One year of Greek or more.",
+   "expected": "@other"
+  },
+  {
+   "code": "ECE 594V",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Consent of instructor and graduate standing.",
+   "expected": "@consent & @standing"
+  },
+  {
+   "code": "GEOG 288CJ",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Graduate students only.",
+   "expected": "@standing"
+  },
+  {
+   "code": "ME 500",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Graduate standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "DANCE 182AR",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Upper-division standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "EARTH 169",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Mathematics 2B or 3B and Chemistry 1A-B-C.",
+   "expected": "(MATH 2B | MATH 3B) & CHEM 1A & CHEM 1B & CHEM 1C"
+  },
+  {
+   "code": "SOC W 130SG",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Upper-division standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "GEOG 210A",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Geography 172-172L, or equivalents.",
+   "expected": "(GEOG 172 & GEOG 172L) | @other"
+  },
+  {
+   "code": "GREEK 171",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Greek 102 or equivalent.",
+   "expected": "GREEK 102 | @other"
+  },
+  {
+   "code": "C LIT 153B",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Upper-division standing",
+   "expected": "@standing"
+  },
+  {
+   "code": "W L CS 152CS",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Consent of Instructor",
+   "expected": "@consent"
+  },
+  {
+   "code": "INT 86VF",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Freshman standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "ECE 278C",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "ECE 158 and 178.",
+   "expected": "ECE 158 & ECE 178"
+  },
+  {
+   "code": "INT 138ST",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Upper-division standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "HIST 145A",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "History 46 or MES 45 or upper-division standing.",
+   "expected": "HIST 46 | MES 45 | @standing"
+  },
+  {
+   "code": "SPAN 212",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Graduate standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "W L CS 199",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Consent of Instructor",
+   "expected": "@consent"
+  },
+  {
+   "code": "INT 86EX",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Freshman standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "CH ST 194A",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "At least one course in one of these departments: Asian American Studies, Black Studies, Chicana/o Studies, Feminist Studies.",
+   "expected": "@other"
+  },
+  {
+   "code": "MATH 237B",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Mathematics 220A-B-C.",
+   "expected": "MATH 220A & MATH 220B & MATH 220C"
+  },
+  {
+   "code": "MATH 199RA",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Upper-division standing; completion of 2 upper-division courses in math; consent of instructor and department.",
+   "expected": "@standing & @other & @consent"
+  },
+  {
+   "code": "CHEM 268A",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Consent of the chemistry graduate advisor.",
+   "expected": "@consent"
+  },
+  {
+   "code": "INT 86DS",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Freshman standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "LATIN 213",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Graduate standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "RG ST 187A",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Upper-division standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "EEMB 502",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Concurrent teaching assistant employment.",
+   "expected": "@other"
+  },
+  {
+   "code": "JAPAN 183",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Japanese 181.",
+   "expected": "JAPAN 181"
+  },
+  {
+   "code": "ANTH 106",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Upper-division standing or consent of instructor.",
+   "expected": "@standing | @consent"
+  },
+  {
+   "code": "COMM W 113",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Not open to Freshmen.",
+   "expected": "@standing"
+  },
+  {
+   "code": "PSY 160AM",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Open to Psychological & Brain Sciences, Biopsychology, and Interdisciplinary Studies majors only.",
+   "expected": "@restriction"
+  },
+  {
+   "code": "ENGL 100",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Consent of instructor.",
+   "expected": "@consent"
+  },
+  {
+   "code": "C LIT 162I",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Upper Division standing and one course from the following: RGST 19, 20, 140D, 158C, 159 G-H-J-K-L-M-N-O, 160A, 161D, 169 or equivalent; or instructor approval.",
+   "expected": "(@standing & (RG ST 19 | RG ST 20 | RG ST 140D | RG ST 158C | RG ST 159G | RG ST 159H | RG ST 159J | RG ST 159K | RG ST 159L | RG ST 159M | RG ST 159N | RG ST 159O | RG ST 160A | RG ST 161D | RG ST 169 | @other)) | @consent"
+  },
+  {
+   "code": "ANTH 132",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Not open to Freshmen.",
+   "expected": "@standing"
+  },
+  {
+   "code": "BL ST 179",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Upper Division Only.",
+   "expected": "@standing"
+  },
+  {
+   "code": "MCDB 151",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "MCDB 1A and 1B. Completion of both prerequisites with a grade of C or better.",
+   "expected": "MCDB 1A[C] & MCDB 1B[C]"
+  },
+  {
+   "code": "WRIT 1CE",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Has not completed the Entry Level Writing Requirement and received a score of 6 or lower on the Analytical Writing Placement Exam or score of 1 on Collaborative Writing Placement Exam.",
+   "expected": "@other"
+  },
+  {
+   "code": "ENGL 146AI",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Writing 2 or upper-division standing.",
+   "expected": "WRIT 2 | @standing"
+  },
+  {
+   "code": "ECE 594N",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Consent of instructor and graduate standing.",
+   "expected": "@consent & @standing"
+  },
+  {
+   "code": "EARTH 184A",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Environmental Studies 15A and 15B or Chemistry 1A-B; and Geography 3 or 4 or Earth Science 2 or 4 or 20",
+   "expected": "((ENV S 15A & ENV S 15B) | (CHEM 1A & CHEM 1B)) & (GEOG 3 | GEOG 4 | EARTH 2 | EARTH 4 | EARTH 20)"
+  },
+  {
+   "code": "MUS 297B",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Recital audition required.",
+   "expected": "@other"
+  },
+  {
+   "code": "AS AM 181",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Consent of department or instructor.",
+   "expected": "@consent"
+  },
+  {
+   "code": "EEMB 194M",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Upper-division standing and consent of instructor.",
+   "expected": "@standing & @consent"
+  },
+  {
+   "code": "GER 101A",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "German 6.",
+   "expected": "GER 6"
+  },
+  {
+   "code": "RG ST 147T",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Upper Division Only",
+   "expected": "@standing"
+  },
+  {
+   "code": "ENV S 125C",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Environmental Studies 125A or 135A.",
+   "expected": "ENV S 125A | ENV S 135A"
+  },
+  {
+   "code": "EARTH 270SP",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Graduate standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "MCDB 11",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Concurrent enrollment in Chemistry 1A or Chemistry 2A.",
+   "expected": "CHEM 1A* | CHEM 2A*"
+  },
+  {
+   "code": "PHYS 123B",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Physics 115B with a minimum grade of C-.",
+   "expected": "PHYS 115B[C-]"
+  },
+  {
+   "code": "INT 86VS",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Freshman standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "BL ST 100",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Upper-division standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "HIST 100",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Upper-division standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "CHEM 145",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Chemistry 113A-B or Chemistry 112A-B; and, Chemistry 142A or Chem W142A or MCDB 108A.",
+   "expected": "((CHEM 113A & CHEM 113B) | (CHEM 112A & CHEM 112B)) & (CHEM 142A | CHEM W 142A | MCDB 108A)"
+  },
+  {
+   "code": "SLAV 181B",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Upper-division standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "MATH 119A",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Mathematics 4B or 4BI and 6A with a minimum grade of C; and Math 8 with a minimum grade of C.",
+   "expected": "(MATH 4B[C] | MATH 4BI[C]) & MATH 6A[C] & MATH 8[C]"
+  },
+  {
+   "code": "CHIN 185A",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "A prior course in History or upper-division standing.",
+   "expected": "@other | @standing"
+  },
+  {
+   "code": "CNCSP 274B",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Consent of instructor.",
+   "expected": "@consent"
+  },
+  {
+   "code": "ENGL 170IC",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Writing 2 or upper-division standing.",
+   "expected": "WRIT 2 | @standing"
+  },
+  {
+   "code": "ENV S 193DS",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Upper-division standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "ED 228D",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Consent of instructor.",
+   "expected": "@consent"
+  },
+  {
+   "code": "INT 86Z",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Freshman standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "PHYS 6CL",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Concurrent enrollment in Physics 6C.",
+   "expected": "PHYS 6C*"
+  },
+  {
+   "code": "PSTAT 130",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "One upper division course in PSTAT, MATH, Computer Science or ECE.",
+   "expected": "@other"
+  },
+  {
+   "code": "C LIT 107",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Writing 2 or equivalent.",
+   "expected": "WRIT 2 | @other"
+  },
+  {
+   "code": "FAMST 187MV",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Film studies 46 or upper-division standing, and consent of instructor.",
+   "expected": "(FAMST 46 | @standing) & @consent"
+  },
+  {
+   "code": "PHYS 223A",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Physics 219 and 215C.",
+   "expected": "PHYS 219 & PHYS 215C"
+  },
+  {
+   "code": "ITAL 199",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Upper-division standing; completion of 2 upper-division courses in Italian.",
+   "expected": "@standing & @other"
+  },
+  {
+   "code": "C LIT 128A",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Upper-division standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "ME 159",
+   "group": "heldout",
+   "set": "random",
+   "prereq_text": "Upper-division standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "PHYS 7D",
+   "group": "heldout",
+   "set": "major",
+   "prereq_text": "Physics 7C with a grade of C- or better; Mathematics 2A-B or 3A-B (AP Math BC Exam score of 3 or better) and 4A.",
+   "expected": "PHYS 7C[C-] & ((MATH 2A & MATH 2B) | (MATH 3A & MATH 3B) | @exam) & MATH 4A"
+  },
+  {
+   "code": "ECE 157A",
+   "group": "heldout",
+   "set": "major",
+   "prereq_text": "ECE 152A with a minimum grade of C-.",
+   "expected": "ECE 152A[C-]"
+  },
+  {
+   "code": "CMPSC 134",
+   "group": "heldout",
+   "set": "major",
+   "prereq_text": "CMPSC 130B with a letter grade of B or better.",
+   "expected": "CMPSC 130B[B]"
+  },
+  {
+   "code": "PHYS 3L",
+   "group": "heldout",
+   "set": "major",
+   "prereq_text": "Physics 3 or 23 (may be taken concurrently).",
+   "expected": "PHYS 3* | PHYS 23*"
+  },
+  {
+   "code": "PHYS CS 33",
+   "group": "heldout",
+   "set": "major",
+   "prereq_text": "Physics CS 31 and 32; consent of instructor.",
+   "expected": "PHYS CS 31 & PHYS CS 32 & @consent"
+  },
+  {
+   "code": "MATH 108C",
+   "group": "heldout",
+   "set": "major",
+   "prereq_text": "Math 108A with a minimum grade of C",
+   "expected": "MATH 108A[C]"
+  },
+  {
+   "code": "ECON 187",
+   "group": "heldout",
+   "set": "major",
+   "prereq_text": "Economics 100B",
+   "expected": "ECON 100B"
+  },
+  {
+   "code": "ECON 107B",
+   "group": "heldout",
+   "set": "major",
+   "prereq_text": "Economics 10A.",
+   "expected": "ECON 10A"
+  },
+  {
+   "code": "PSTAT 126",
+   "group": "heldout",
+   "set": "major",
+   "prereq_text": "PSTAT 10 and PSTAT 120B both with a minimum grade of C or better.",
+   "expected": "PSTAT 10[C] & PSTAT 120B[C]"
+  },
+  {
+   "code": "PSTAT 5H",
+   "group": "heldout",
+   "set": "major",
+   "prereq_text": "Concurrent enrollment in PSTAT 5A, 5LS, 8, or 10",
+   "expected": "PSTAT 5A* | PSTAT 5LS* | PSTAT 8* | PSTAT 10*"
+  },
+  {
+   "code": "CMPSC 130A",
+   "group": "heldout",
+   "set": "major",
+   "prereq_text": "CMPSC 40 or CMPSC 41 or MATH 8 with a grade of C or better; CMPSC 24 or CMPSC 25 with a grade of C or better; PSTAT 120A or ECE 139 (may be taken concurrently with CMPSC 130A); open to Computer Science Department majors, and Electrical and Computer Engineering Department majors only.",
+   "expected": "(CMPSC 40[C] | CMPSC 41[C] | MATH 8[C]) & (CMPSC 24[C] | CMPSC 25[C]) & (PSTAT 120A* | ECE 139*) & @restriction"
+  },
+  {
+   "code": "PHYS 127BL",
+   "group": "heldout",
+   "set": "major",
+   "prereq_text": "Physics 127AL with a minimum grade of C-.",
+   "expected": "PHYS 127AL[C-]"
+  },
+  {
+   "code": "ECE 189C",
+   "group": "heldout",
+   "set": "major",
+   "prereq_text": "ECE 189B with a minimum grade of a C- or better ; senior standing in Computer Engineering, Computer Science, or EE.",
+   "expected": "ECE 189B[C-] & @standing"
+  },
+  {
+   "code": "ECE 189B",
+   "group": "heldout",
+   "set": "major",
+   "prereq_text": "ECE 189A with a minimum grade of a C- or better; senior standing in Computer Engineering, Computer Science or ECE.",
+   "expected": "ECE 189A[C-] & @standing"
+  },
+  {
+   "code": "PHYS 134L",
+   "group": "heldout",
+   "set": "major",
+   "prereq_text": "Physics 5 or 25 or 115A with a minimum grade of C-.",
+   "expected": "PHYS 5[C-] | PHYS 25[C-] | PHYS 115A[C-]"
+  },
+  {
+   "code": "ECE 150",
+   "group": "heldout",
+   "set": "major",
+   "prereq_text": "Proficiency in JAVA programming, and a C- in ECE 152A.",
+   "expected": "@other & ECE 152A[C-]"
+  },
+  {
+   "code": "CMPSC 130B",
+   "group": "heldout",
+   "set": "major",
+   "prereq_text": "Computer Science 130A.",
+   "expected": "CMPSC 130A"
+  },
+  {
+   "code": "ECE 153B",
+   "group": "heldout",
+   "set": "major",
+   "prereq_text": "ECE 152A with a minimum grade of C-.",
+   "expected": "ECE 152A[C-]"
+  },
+  {
+   "code": "PSTAT 120A",
+   "group": "heldout",
+   "set": "major",
+   "prereq_text": "Math 3C or Math 4A or Math 4AI or Math 6A or Math 6AI completed with a minimum grade of C or better.",
+   "expected": "MATH 3C[C] | MATH 4A[C] | MATH 4AI[C] | MATH 6A[C] | MATH 6AI[C]"
+  },
+  {
+   "code": "ECE 162C",
+   "group": "heldout",
+   "set": "major",
+   "prereq_text": "ECE 162A-B with a minimum grade of C-; open to electrical engineering and materials majors only.",
+   "expected": "ECE 162A[C-] & ECE 162B[C-] & @restriction"
+  },
+  {
+   "code": "ECON 106",
+   "group": "heldout",
+   "set": "major",
+   "prereq_text": "Economics 100B or 104B.",
+   "expected": "ECON 100B | ECON 104B"
+  },
+  {
+   "code": "MATH 118C",
+   "group": "heldout",
+   "set": "major",
+   "prereq_text": "Math 118B with a minimum grade of C.",
+   "expected": "MATH 118B[C]"
+  },
+  {
+   "code": "ECE 152A",
+   "group": "heldout",
+   "set": "major",
+   "prereq_text": "ECE 15A and ECE 2A or ECE 10A & ECE 10AL with a minimum grade of C- in each course; or Computer Science 30 or 64 with a minimum grade of C- in each course; open to electrical engineering, computer engineering, and computer science majors only.",
+   "expected": "((ECE 15A[C-] & (ECE 2A[C-] | (ECE 10A[C-] & ECE 10AL[C-]))) | CMPSC 30[C-] | CMPSC 64[C-]) & @restriction"
+  },
+  {
+   "code": "ECON 3B",
+   "group": "heldout",
+   "set": "major",
+   "prereq_text": "Economics 3A.",
+   "expected": "ECON 3A"
+  },
+  {
+   "code": "ECON 137BH",
+   "group": "heldout",
+   "set": "major",
+   "prereq_text": "Concurrent with Econ 137B.",
+   "expected": "ECON 137B*"
+  },
+  {
+   "code": "ECON 137AH",
+   "group": "heldout",
+   "set": "major",
+   "prereq_text": "Concurrent enrollment in Econ 137A.",
+   "expected": "ECON 137A*"
+  },
+  {
+   "code": "PHYS 104",
+   "group": "heldout",
+   "set": "major",
+   "prereq_text": "Physics 103 with a grade of C- or better.",
+   "expected": "PHYS 103[C-]"
+  },
+  {
+   "code": "CMPSC 189A",
+   "group": "heldout",
+   "set": "major",
+   "prereq_text": "Computer Science 48 or 56 or 148 or 156 or 172; Senior standing in computer science or computer engineering.",
+   "expected": "(CMPSC 48 | CMPSC 56 | CMPSC 148 | CMPSC 156 | CMPSC 172) & @standing"
+  },
+  {
+   "code": "CMPSC 16",
+   "group": "heldout",
+   "set": "major",
+   "prereq_text": "Mathematics 3A or 2A with a grade of C or better (may be taken concurrently), CS 8 or Engineering 3 or ECE 3 with a grade of C or better, or significant prior programming experience.",
+   "expected": "(MATH 2A*[C] | MATH 3A*[C]) & (CMPSC 8[C] | ECE 3[C] | ENGR 3[C] | @other)"
+  },
+  {
+   "code": "MATH 108A",
+   "group": "heldout",
+   "set": "major",
+   "prereq_text": "Math 4A and 8 each with a minimum grade of C.",
+   "expected": "MATH 4A[C] & MATH 8[C]"
+  },
+  {
+   "code": "ECON 3AH",
+   "group": "heldout",
+   "set": "major",
+   "prereq_text": "Concurrent with Econ 3A.",
+   "expected": "ECON 3A*"
+  },
+  {
+   "code": "PSTAT 127",
+   "group": "heldout",
+   "set": "major",
+   "prereq_text": "PSTAT 126 with a minimum grade of C or better.",
+   "expected": "PSTAT 126[C]"
+  },
+  {
+   "code": "MATH 170",
+   "group": "heldout",
+   "set": "major",
+   "prereq_text": "MATH 4B, PSTAT 120A-B, and PSTAT 160A, all completed with a minimum grade of C or better.",
+   "expected": "MATH 4B[C] & PSTAT 120A[C] & PSTAT 120B[C] & PSTAT 160A[C]"
+  },
+  {
+   "code": "PHYS 4L",
+   "group": "heldout",
+   "set": "major",
+   "prereq_text": "Physics 4 or 24 (may be taken concurrently).",
+   "expected": "PHYS 4* | PHYS 24*"
+  },
+  {
+   "code": "PHYS 6B",
+   "group": "heldout",
+   "set": "major",
+   "prereq_text": "Physics 6A with a minimum grade of C-.",
+   "expected": "PHYS 6A[C-]"
+  },
+  {
+   "code": "MATH 94",
+   "group": "heldout",
+   "set": "major",
+   "prereq_text": "Mathematics 4A or 4AI or 4B or 4BI or 6A or 6B with a grade of B or better.",
+   "expected": "MATH 4A[B] | MATH 4AI[B] | MATH 4B[B] | MATH 4BI[B] | MATH 6A[B] | MATH 6B[B]"
+  },
+  {
+   "code": "ECON 2",
+   "group": "heldout",
+   "set": "major",
+   "prereq_text": "Economics 1",
+   "expected": "ECON 1"
+  },
+  {
+   "code": "MATH 124A",
+   "group": "heldout",
+   "set": "major",
+   "prereq_text": "Math 4B or 4BI, 6A, and 6B with a minimum grade of C; and Math 8 with a minimum grade of C.",
+   "expected": "(MATH 4B[C] | MATH 4BI[C]) & MATH 6A[C] & MATH 6B[C] & MATH 8[C]"
+  },
+  {
+   "code": "PHYS 186",
+   "group": "heldout",
+   "set": "major",
+   "prereq_text": "PHYS 115A; concurrent enrollment in PHYS 115B.",
+   "expected": "PHYS 115A & PHYS 115B*"
+  },
+  {
+   "code": "ECON 180",
+   "group": "heldout",
+   "set": "major",
+   "prereq_text": "Economics 100B or 104B, and 101 or 105.",
+   "expected": "(ECON 100B | ECON 104B) & (ECON 101 | ECON 105)"
+  },
+  {
+   "code": "PHYS 100A",
+   "group": "heldout",
+   "set": "major",
+   "prereq_text": "Mathematics 6B with a grade of C- or better.",
+   "expected": "MATH 6B[C-]"
+  },
+  {
+   "code": "ECE 122A",
+   "group": "heldout",
+   "set": "major",
+   "prereq_text": "ECE 152A with a minimum grade of C-.",
+   "expected": "ECE 152A[C-]"
+  },
+  {
+   "code": "PHYS 135",
+   "group": "heldout",
+   "set": "major",
+   "prereq_text": "Physics 6C or 5 or 25.",
+   "expected": "PHYS 6C | PHYS 5 | PHYS 25"
+  },
+  {
+   "code": "ECON 157",
+   "group": "heldout",
+   "set": "major",
+   "prereq_text": "Economics 100B",
+   "expected": "ECON 100B"
+  },
+  {
+   "code": "ECON 191D",
+   "group": "heldout",
+   "set": "major",
+   "prereq_text": "Econ 10A or 100A or 104A.",
+   "expected": "ECON 10A | ECON 100A | ECON 104A"
+  },
+  {
+   "code": "PHYS 139",
+   "group": "heldout",
+   "set": "major",
+   "prereq_text": "Physics 119B",
+   "expected": "PHYS 119B"
+  },
+  {
+   "code": "ECON 189H",
+   "group": "heldout",
+   "set": "major",
+   "prereq_text": "Concurrent enrollment in Econ 189.",
+   "expected": "ECON 189*"
+  },
+  {
+   "code": "ECE 130B",
+   "group": "heldout",
+   "set": "major",
+   "prereq_text": "ECE 130A with a minimum grade of C- or better; open to EE and computer engineering majors only.",
+   "expected": "ECE 130A[C-] & @restriction"
+  },
+  {
+   "code": "ECE 141A",
+   "group": "heldout",
+   "set": "major",
+   "prereq_text": "ME 16 or ME W 16 and 17; ME 152A and ME 151A (may be concurrent); or ECE 130A & 137A with a minimum grade of C- in both.",
+   "expected": "((ME 16 | ME W 16) & ME 17 & ME 152A* & ME 151A*) | (ECE 130A[C-] & ECE 137A[C-])"
+  },
+  {
+   "code": "PHYS CS 32",
+   "group": "heldout",
+   "set": "major",
+   "prereq_text": "Physics CS 31.",
+   "expected": "PHYS CS 31"
+  },
+  {
+   "code": "MUS 209LB",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Music 209LA.",
+   "expected": "MUS 209LA"
+  },
+  {
+   "code": "AS AM 194B",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "At least one course in one of these departments: Asian American Studies, Black Studies, Chicana/o Studies, Feminist Studies.",
+   "expected": "@other"
+  },
+  {
+   "code": "ME 225EH",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Consent of instructor.",
+   "expected": "@consent"
+  },
+  {
+   "code": "ECON 230A",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Second-year Ph.D. in Economics graduate student standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "MATH 202C",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Mathematics 118A-B-C or 122A.",
+   "expected": "(MATH 118A & MATH 118B & MATH 118C) | MATH 122A"
+  },
+  {
+   "code": "RG ST 157CP",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "RGST 57D or RGST 58B or Instructor Approval",
+   "expected": "RG ST 57D | RG ST 58B | @consent"
+  },
+  {
+   "code": "ENV S 163A",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Environmental Studies 1 or 3 or Political Science 12; Environmental Studies 40 (may be taken concurrently); Math 2A or 3A or 34A; Pstat 5A or 5LS or 109 or Economics 5.",
+   "expected": "(ENV S 1 | ENV S 3 | POL S 12) & ENV S 40* & (MATH 2A | MATH 3A | MATH 34A) & (PSTAT 5A | PSTAT 5LS | PSTAT 109 | ECON 5)"
+  },
+  {
+   "code": "EACS 147T",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Upper Division Only",
+   "expected": "@standing"
+  },
+  {
+   "code": "ANTH 169",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Anthropology 5 or 7.",
+   "expected": "ANTH 5 | ANTH 7"
+  },
+  {
+   "code": "CNCSP 209A",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Consent of instructor.",
+   "expected": "@consent"
+  },
+  {
+   "code": "INT 86VJ",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Freshman standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "BIOE 240",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "None.",
+   "expected": "-"
+  },
+  {
+   "code": "ENV S 194GB",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Upper-division status and consent of instructor.",
+   "expected": "@standing & @consent"
+  },
+  {
+   "code": "PHYS 7C",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Physics 7B with a grade of C- or better; Mathematics 2A-B or 3A-B or AP Math BC exam with a score of 3 or better.",
+   "expected": "PHYS 7B[C-] & ((MATH 2A & MATH 2B) | (MATH 3A & MATH 3B) | @exam)"
+  },
+  {
+   "code": "CHIN 127B",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Chinese 127A or equivalent.",
+   "expected": "CHIN 127A | @other"
+  },
+  {
+   "code": "ED WL 321M",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Graduate standing and enrollment in The Teacher Education Program.",
+   "expected": "@standing & @restriction"
+  },
+  {
+   "code": "ENGL 122EC",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Writing 2 or upper-division standing.",
+   "expected": "WRIT 2 | @standing"
+  },
+  {
+   "code": "BL ST 206",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Graduate standing. Completion of at least 12 upper-division units related to the subject matter of the course.",
+   "expected": "@standing & @other"
+  },
+  {
+   "code": "EEMB 157A",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "MCDB 1A, and EEMB 2 and MCDB 1B, and EEMB 3; Completion of all listed prerequisites with a grade of C- or better.",
+   "expected": "MCDB 1A[C-] & EEMB 2[C-] & MCDB 1B[C-] & EEMB 3[C-]"
+  },
+  {
+   "code": "HIST 2HA",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Concurrent enrollment in HIST 2A; consent of instructor; honors standing.",
+   "expected": "HIST 2A* & @consent & @restriction"
+  },
+  {
+   "code": "RG ST 199PL",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Upper-division standing and instructor approval.",
+   "expected": "@standing & @consent"
+  },
+  {
+   "code": "SOC W 10",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "SOC 1",
+   "expected": "SOC 1"
+  },
+  {
+   "code": "WRIT 1E",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Has not completed the Entry Level Writing Requirement and received a score of 6 or lower on the Analytical Writing Placement Exam.Freshmen only; open to ECE, Chemical Engineering, Mechanical Engineering, and Computer Engineering majors only.",
+   "expected": "@other & @standing & @restriction"
+  },
+  {
+   "code": "MATRL 289G",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Consent of instructor.",
+   "expected": "@consent"
+  },
+  {
+   "code": "ENGL 115",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Writing 2 or 50 or 109 or English 10; upper-division standing.",
+   "expected": "(WRIT 2 | WRIT 50 | WRIT 109 | ENGL 10) & @standing"
+  },
+  {
+   "code": "ARTHI 192C",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Consent of instructor.",
+   "expected": "@consent"
+  },
+  {
+   "code": "GER 210",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Consent of instructor.",
+   "expected": "@consent"
+  },
+  {
+   "code": "SPAN 6",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Spanish 5 with a grade of P or a grade of C or higher; or a score of 5 on the AP Spanish Language Examination; or a score of 5 on the AP Spanish Language and Culture Examination; or a score of 3 on the AP Spanish Literature Examination; or a score of 4 on the AP Spanish Literature and Culture Examination.",
+   "expected": "SPAN 5[C] | @exam"
+  },
+  {
+   "code": "EARTH 168",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Mathematics 2B or 3B and Chemistry 1A-B-C.",
+   "expected": "(MATH 2B | MATH 3B) & CHEM 1A & CHEM 1B & CHEM 1C"
+  },
+  {
+   "code": "INT 86PL",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Freshman standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "INT 86DB",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Freshman standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "HIST 114C",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "History 2B or 4B or Religious Studies 80B or upper-division standing.",
+   "expected": "HIST 2B | HIST 4B | RG ST 80B | @standing"
+  },
+  {
+   "code": "SPAN 110C",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Spanish 16B or Spanish 25",
+   "expected": "SPAN 16B | SPAN 25"
+  },
+  {
+   "code": "MES 195",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Consent of instructor and department; senior standing; open to Middle East Studies majors who have a 3.5 overall GPA and a 3.75 GPA in the major",
+   "expected": "@consent & @standing & @restriction"
+  },
+  {
+   "code": "CH STW 116",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Upper division standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "RG ST 10F",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Religious Studies 10E.",
+   "expected": "RG ST 10E"
+  },
+  {
+   "code": "SPAN 205",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Graduate Standing",
+   "expected": "@standing"
+  },
+  {
+   "code": "PSTAT 277A",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "PSTAT 274; and, PSTAT 207A or 213A or 220A.",
+   "expected": "PSTAT 274 & (PSTAT 207A | PSTAT 213A | PSTAT 220A)"
+  },
+  {
+   "code": "HIST 135R",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "History 135B or 135C or 135Q or consent of the instructor.",
+   "expected": "HIST 135B | HIST 135C | HIST 135Q | @consent"
+  },
+  {
+   "code": "MUS A 70V",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Enrollment by audition. students.",
+   "expected": "@other"
+  },
+  {
+   "code": "ECE 256C",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "ECE 124A or equivalent or ECE 256A or 256B",
+   "expected": "ECE 124A | @other | ECE 256A | ECE 256B"
+  },
+  {
+   "code": "ENGL 149",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Writing 2 or 50 or 109 or English 10.",
+   "expected": "WRIT 2 | WRIT 50 | WRIT 109 | ENGL 10"
+  },
+  {
+   "code": "PHYS 231B",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Physics 210A-B.",
+   "expected": "PHYS 210A & PHYS 210B"
+  },
+  {
+   "code": "C LIT 186EB",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Upper-division standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "LING 251B",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Linguistics 235 and 251A.",
+   "expected": "LING 235 & LING 251A"
+  },
+  {
+   "code": "INT 86VB",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Freshman standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "ANTH 143F",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Anthropology 3 or 3SS.",
+   "expected": "ANTH 3 | ANTH 3SS"
+  },
+  {
+   "code": "COMM W 184",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Not open to freshmen.",
+   "expected": "@standing"
+  },
+  {
+   "code": "ECON 214A",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Second-year Ph.D. in Economics graduate student standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "PSY 197C",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "PSY 197B and Department approval",
+   "expected": "PSY 197B & @consent"
+  },
+  {
+   "code": "WRIT 105CR",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Writing 2 or 2E or 2LK; upper-division standing.",
+   "expected": "(WRIT 2 | WRIT 2E | WRIT 2LK) & @standing"
+  },
+  {
+   "code": "HIST 135B",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "History 4B or 4C or upper-division standing.",
+   "expected": "HIST 4B | HIST 4C | @standing"
+  },
+  {
+   "code": "GER 101B",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "German 6.",
+   "expected": "GER 6"
+  },
+  {
+   "code": "RG ST 111B",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Upper-division only.",
+   "expected": "@standing"
+  },
+  {
+   "code": "DANCE 47C",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Audition.",
+   "expected": "@other"
+  },
+  {
+   "code": "ECE 10AL",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "ECE 10A (may be taken concurrently) with a C- or better grade.",
+   "expected": "ECE 10A*[C-]"
+  },
+  {
+   "code": "PHIL 133",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Major in philosophy, law & society, political science, or global and international studies.",
+   "expected": "@restriction"
+  },
+  {
+   "code": "ED 124",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Consent of instructor; upper-division standing.",
+   "expected": "@consent & @standing"
+  },
+  {
+   "code": "CH ST 157B",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "At least one course in one of these departments: Asian American Studies, Black Studies, Chicana/o Studies, Feminist Studies.",
+   "expected": "@other"
+  },
+  {
+   "code": "POL S 160",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Political Science 12 or Asian American Studies 1 or Asian American Studies 2.",
+   "expected": "POL S 12 | AS AM 1 | AS AM 2"
+  },
+  {
+   "code": "ART 189A",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Art 7D and Instructor Approval.",
+   "expected": "ART 7D & @consent"
+  },
+  {
+   "code": "HIST 106T",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Upper division standing",
+   "expected": "@standing"
+  },
+  {
+   "code": "TMP 597A",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Completion of:32 units of theory/research courses16 units of Methods courses8 units of Elective courses",
+   "expected": "@other"
+  },
+  {
+   "code": "CHEM 127",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Chemistry 107A-B-C or 109A-B-C or 130A-B-C",
+   "expected": "(CHEM 107A & CHEM 107B & CHEM 107C) | (CHEM 109A & CHEM 109B & CHEM 109C) | (CHEM 130A & CHEM 130B & CHEM 130C)"
+  },
+  {
+   "code": "ME 155A",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "ME 17 with a minimum grade of C-; ME 103.",
+   "expected": "ME 17[C-] & ME 103"
+  },
+  {
+   "code": "SPAN 108",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Upper-division standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "THTR 265A",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Graduate standing; consent of instructor.",
+   "expected": "@standing & @consent"
+  },
+  {
+   "code": "HIST 17HA",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Concurrent enrollment in HIST 17A; consent of instructor; honors standing.",
+   "expected": "HIST 17A* & @consent & @restriction"
+  },
+  {
+   "code": "PSTAT 235",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "PSTAT 131 or PSTAT 231 or Computer Science 165B; and Computer Science 9 or Computer Science 16. A minimum letter grade of C or better must be earned in each course.",
+   "expected": "(PSTAT 131[C] | PSTAT 231[C] | CMPSC 165B[C]) & (CMPSC 9[C] | CMPSC 16[C])"
+  },
+  {
+   "code": "PHYS CS 5",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Consent of Instructor",
+   "expected": "@consent"
+  },
+  {
+   "code": "MCDB 111H",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Concurrent enrollment in MCDB 111; consent of instructor.",
+   "expected": "MCDB 111* & @consent"
+  },
+  {
+   "code": "KOR 181",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Upper Division Standing",
+   "expected": "@standing"
+  },
+  {
+   "code": "INT 127",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Upper-division standing; consent of instructor.",
+   "expected": "@standing & @consent"
+  },
+  {
+   "code": "WRIT 153B",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Writing 153A; upper-division standing. Must be admitted to the Professional Writing Minor.",
+   "expected": "WRIT 153A & @standing & @restriction"
+  },
+  {
+   "code": "ECON 136AH",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Concurrent enrollment in Econ 136A.",
+   "expected": "ECON 136A*"
+  },
+  {
+   "code": "MCDB 184",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Upper-division standing; instructor and departmental approval required.",
+   "expected": "@standing & @consent"
+  },
+  {
+   "code": "INT 84AO",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Enrollment in Letters and Science Honors Program; lower-division standing.",
+   "expected": "@restriction & @standing"
+  },
+  {
+   "code": "ME 210A",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Consent of instructor.",
+   "expected": "@consent"
+  },
+  {
+   "code": "CH E 184B",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Chemical Engineering 184A.",
+   "expected": "CH E 184A"
+  },
+  {
+   "code": "CMPSC 293S",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "None.",
+   "expected": "-"
+  },
+  {
+   "code": "ECE 137B",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "ECE 10C and 10CL or 2C, and ECE 137A with a minimum grade of C- in all; open to EE majors only.",
+   "expected": "((ECE 10C[C-] & ECE 10CL[C-]) | ECE 2C[C-]) & ECE 137A[C-] & @restriction"
+  },
+  {
+   "code": "EARTH 270GL",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Graduate standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "GEOG 288EA",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Graduate students only.",
+   "expected": "@standing"
+  },
+  {
+   "code": "CMPSC 285",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Computer Graphics desired but not necessary",
+   "expected": "@other"
+  },
+  {
+   "code": "EARTH 277",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Earth 2; Earth 114 and 115",
+   "expected": "EARTH 2 & EARTH 114 & EARTH 115"
+  },
+  {
+   "code": "INT 86PJ",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Freshman standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "W L CS 142",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Consent of Instructor",
+   "expected": "@consent"
+  },
+  {
+   "code": "SLAV 130A",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Upper-division standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "ENGR 13A",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Participation in the College of Engineering INSPIRE freshmen program.",
+   "expected": "@restriction"
+  },
+  {
+   "code": "LING 258A",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Linguistics 227 or 228 or 230 or 232.",
+   "expected": "LING 227 | LING 228 | LING 230 | LING 232"
+  },
+  {
+   "code": "MUS CS 5",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Consent of Instructor",
+   "expected": "@consent"
+  },
+  {
+   "code": "POL S 106GR",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Upper-division, full POLS major standing.",
+   "expected": "@standing & @restriction"
+  },
+  {
+   "code": "DANCE 156E",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Dance 156C.",
+   "expected": "DANCE 156C"
+  },
+  {
+   "code": "INT 86CU",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Freshman standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "ECON 136CH",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Concurrent enrollment in Econ 136C.",
+   "expected": "ECON 136C*"
+  },
+  {
+   "code": "MUS A 70SJ",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Enrollment by audition.",
+   "expected": "@other"
+  },
+  {
+   "code": "MCDB 103L",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "MCDB 1A, and EEMB 2 and MCDB 1B, and MCDB 103 (may be taken concurrently). Completion of all listed prerequisites with a grade of C or better.",
+   "expected": "MCDB 1A[C] & EEMB 2[C] & MCDB 1B[C] & MCDB 103*[C]"
+  },
+  {
+   "code": "MATRL 289M",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Consent of instructor.",
+   "expected": "@consent"
+  },
+  {
+   "code": "GLOBL 292E",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Graduate standing",
+   "expected": "@standing"
+  },
+  {
+   "code": "CLASS 199",
+   "group": "final",
+   "set": "random",
+   "prereq_text": "Consent of instructor and department chair; upper-division standing; completion of 2 upper-division courses in Classics.",
+   "expected": "@consent & @standing & @other"
+  },
+  {
+   "code": "ECON 136C",
+   "group": "final",
+   "set": "major",
+   "prereq_text": "Economics 136A-B.",
+   "expected": "ECON 136A & ECON 136B"
+  },
+  {
+   "code": "MATH 101A",
+   "group": "final",
+   "set": "major",
+   "prereq_text": "Math 8 with a minimum grade of C.",
+   "expected": "MATH 8[C]"
+  },
+  {
+   "code": "PHYS 199",
+   "group": "final",
+   "set": "major",
+   "prereq_text": "Consent of instructor; upper-division standing; completion of 2 upper-division courses in physics.",
+   "expected": "@consent & @standing & @other"
+  },
+  {
+   "code": "ECON 133",
+   "group": "final",
+   "set": "major",
+   "prereq_text": "Economics 100B or 104B, and 101 or 105.",
+   "expected": "(ECON 100B | ECON 104B) & (ECON 101 | ECON 105)"
+  },
+  {
+   "code": "ECON 117A",
+   "group": "final",
+   "set": "major",
+   "prereq_text": "Economics 100B or 104B and 140A.",
+   "expected": "(ECON 100B | ECON 104B) & ECON 140A"
+  },
+  {
+   "code": "ECE 158",
+   "group": "final",
+   "set": "major",
+   "prereq_text": "ECE 130A-B with a minimum grade of C-; open to EE majors only.",
+   "expected": "ECE 130A[C-] & ECE 130B[C-] & @restriction"
+  },
+  {
+   "code": "PSTAT 175",
+   "group": "final",
+   "set": "major",
+   "prereq_text": "PSTAT 10 and PSTAT 120B both with a minimum grade of C or better.",
+   "expected": "PSTAT 10[C] & PSTAT 120B[C]"
+  },
+  {
+   "code": "PHYS 6A",
+   "group": "final",
+   "set": "major",
+   "prereq_text": "Mathematics 2A or 3A or 34A (may be taken concurrently) or AP Math AB Exam score of 3 or better.",
+   "expected": "MATH 2A* | MATH 3A* | MATH 34A* | @exam"
+  },
+  {
+   "code": "PSTAT 172A",
+   "group": "final",
+   "set": "major",
+   "prereq_text": "PSTAT 120A and 171.",
+   "expected": "PSTAT 120A & PSTAT 171"
+  },
+  {
+   "code": "PSTAT 120B",
+   "group": "final",
+   "set": "major",
+   "prereq_text": "PSTAT 120A with a grade of C or better.",
+   "expected": "PSTAT 120A[C]"
+  },
+  {
+   "code": "ECON 139H",
+   "group": "final",
+   "set": "major",
+   "prereq_text": "Concurrent with Econ 139.",
+   "expected": "ECON 139*"
+  },
+  {
+   "code": "CMPSC 171",
+   "group": "final",
+   "set": "major",
+   "prereq_text": "Computer Science 130A.",
+   "expected": "CMPSC 130A"
+  },
+  {
+   "code": "ECE 188C",
+   "group": "final",
+   "set": "major",
+   "prereq_text": "ECE 188B with a minimum grade of C-.",
+   "expected": "ECE 188B[C-]"
+  },
+  {
+   "code": "PHYS 100B",
+   "group": "final",
+   "set": "major",
+   "prereq_text": "Mathematics 5C or 6B with a grade of C- or better.",
+   "expected": "MATH 5C[C-] | MATH 6B[C-]"
+  },
+  {
+   "code": "PHYS 7L",
+   "group": "final",
+   "set": "major",
+   "prereq_text": "Physics 7B; Co-requisite: Physics 7C",
+   "expected": "PHYS 7B & PHYS 7C*"
+  },
+  {
+   "code": "ECON 96",
+   "group": "final",
+   "set": "major",
+   "prereq_text": "Approval by the Department based on performance inEconomics 1 and 2.",
+   "expected": "@consent & ECON 1 & ECON 2"
+  },
+  {
+   "code": "CMPSC 138",
+   "group": "final",
+   "set": "major",
+   "prereq_text": "Computer Science 40 or Computer Science 41 with a grade of C or better; open to Computer Science and Computer Engineering majors only.",
+   "expected": "(CMPSC 40[C] | CMPSC 41[C]) & @restriction"
+  },
+  {
+   "code": "ECE 145A",
+   "group": "final",
+   "set": "major",
+   "prereq_text": "ECE 137A-B with a minimum grade of C- in both.",
+   "expected": "ECE 137A[C-] & ECE 137B[C-]"
+  },
+  {
+   "code": "CMPSC 196",
+   "group": "final",
+   "set": "major",
+   "prereq_text": "Students must: (1) have attained upper-division standing (2) have a minimum3.0 grade-point average for preceding three quarters, (3) have consent of instructor.",
+   "expected": "@standing & @other & @consent"
+  },
+  {
+   "code": "MATH 115A",
+   "group": "final",
+   "set": "major",
+   "prereq_text": "Mathematics 8 with a grade of \"C\" or better.",
+   "expected": "MATH 8[C]"
+  },
+  {
+   "code": "PHYS 6BL",
+   "group": "final",
+   "set": "major",
+   "prereq_text": "Concurrent enrollment in Physics 6B.",
+   "expected": "PHYS 6B*"
+  },
+  {
+   "code": "ECON 150A",
+   "group": "final",
+   "set": "major",
+   "prereq_text": "Economics 10A.",
+   "expected": "ECON 10A"
+  },
+  {
+   "code": "ECON 120",
+   "group": "final",
+   "set": "major",
+   "prereq_text": "Economics 100B and 140A.",
+   "expected": "ECON 100B & ECON 140A"
+  },
+  {
+   "code": "PHYS 20AL",
+   "group": "final",
+   "set": "major",
+   "prereq_text": "Physics 29 and Physics 23 (may be taken concurrently)",
+   "expected": "PHYS 29 & PHYS 23*"
+  },
+  {
+   "code": "ECE 147B",
+   "group": "final",
+   "set": "major",
+   "prereq_text": "ECE 147A with a minimum grade of C-; open to EE and CE majors only.",
+   "expected": "ECE 147A[C-] & @restriction"
+  },
+  {
+   "code": "PHYS 199RA",
+   "group": "final",
+   "set": "major",
+   "prereq_text": "Consent of instructor; upper-division standing; completion of 2 upper-division courses in physics.",
+   "expected": "@consent & @standing & @other"
+  },
+  {
+   "code": "ECE 146B",
+   "group": "final",
+   "set": "major",
+   "prereq_text": "ECE 146A with a minimum grade of C- or better; open to EE and CE majors only.",
+   "expected": "ECE 146A[C-] & @restriction"
+  },
+  {
+   "code": "ECON 140A",
+   "group": "final",
+   "set": "major",
+   "prereq_text": "Economics 10A or 100A; and, Economics 5 or PSTAT 109 or PSTAT 120A.",
+   "expected": "(ECON 10A | ECON 100A) & (ECON 5 | PSTAT 109 | PSTAT 120A)"
+  },
+  {
+   "code": "PSTAT 160A",
+   "group": "final",
+   "set": "major",
+   "prereq_text": "Mathematics 4A or 4AI or 5A, Mathematics 8 or PSTAT 8, and PSTAT 120A. A minimum letter grade of C or better must be earned in each course.",
+   "expected": "(MATH 4A[C] | MATH 4AI[C] | MATH 5A[C]) & (MATH 8[C] | PSTAT 8[C]) & PSTAT 120A[C]"
+  },
+  {
+   "code": "PHYS 123A",
+   "group": "final",
+   "set": "major",
+   "prereq_text": "Physics 115A with at least a C- or better, and upper-division standing.",
+   "expected": "PHYS 115A[C-] & @standing"
+  },
+  {
+   "code": "ECE 132",
+   "group": "final",
+   "set": "major",
+   "prereq_text": "Physics 4 or 24 or 7D with a minimum grade of C-; Mathematics 4B, 4BI or 5A with a minimum grade of C; open to EE and computer engineering majors only.",
+   "expected": "(PHYS 4[C-] | PHYS 24[C-] | PHYS 7D[C-]) & (MATH 4B[C] | MATH 4BI[C] | MATH 5A[C]) & @restriction"
+  },
+  {
+   "code": "PHYS 4",
+   "group": "final",
+   "set": "major",
+   "prereq_text": "Physics 3 with a grade of C- or better.",
+   "expected": "PHYS 3[C-]"
+  },
+  {
+   "code": "ECON 136B",
+   "group": "final",
+   "set": "major",
+   "prereq_text": "Economics 136A.",
+   "expected": "ECON 136A"
+  },
+  {
+   "code": "PHYS 131",
+   "group": "final",
+   "set": "major",
+   "prereq_text": "Physics 103-104 with a minimum grade of C- in each.",
+   "expected": "PHYS 103[C-] & PHYS 104[C-]"
+  },
+  {
+   "code": "ECON 137B",
+   "group": "final",
+   "set": "major",
+   "prereq_text": "Economics 137A.",
+   "expected": "ECON 137A"
+  },
+  {
+   "code": "MATH 104C",
+   "group": "final",
+   "set": "major",
+   "prereq_text": "Math 104B with a minimum grade of C.",
+   "expected": "MATH 104B[C]"
+  },
+  {
+   "code": "MATH 122A",
+   "group": "final",
+   "set": "major",
+   "prereq_text": "Math 6A and 8 each with a minimum grade of C.",
+   "expected": "MATH 6A[C] & MATH 8[C]"
+  },
+  {
+   "code": "PHYS 110A",
+   "group": "final",
+   "set": "major",
+   "prereq_text": "Physics 5 or 25 with a minimum grade of C-; Mathematics 6B with minimum grade of C-.",
+   "expected": "(PHYS 5[C-] | PHYS 25[C-]) & MATH 6B[C-]"
+  },
+  {
+   "code": "PHYS 138",
+   "group": "final",
+   "set": "major",
+   "prereq_text": "Co-requisite: Physics 119B",
+   "expected": "PHYS 119B*"
+  },
+  {
+   "code": "PHYS CS 15A",
+   "group": "final",
+   "set": "major",
+   "prereq_text": "Physics CS 31; consent of instructor; Creative Studies and CCS Physics majors only.",
+   "expected": "PHYS CS 31 & @consent & @restriction"
+  },
+  {
+   "code": "PHYS CS 35",
+   "group": "final",
+   "set": "major",
+   "prereq_text": "Physics CS 34; consent of instructor; creative studies majors only.",
+   "expected": "PHYS CS 34 & @consent & @restriction"
+  },
+  {
+   "code": "ECE 196",
+   "group": "final",
+   "set": "major",
+   "prereq_text": "Students must: (1) have attained upper division standing, (2) have a minimu3.0 grade-point average for preceding three quarters, (3) consent of instructor.",
+   "expected": "@standing & @other & @consent"
+  },
+  {
+   "code": "ECE 199",
+   "group": "final",
+   "set": "major",
+   "prereq_text": "Consent of instructor; upper-division standing; completion of 2 upper-diviscourse in Electrical and Computer Engineering.",
+   "expected": "@consent & @standing & @other"
+  },
+  {
+   "code": "PHYS 3",
+   "group": "final",
+   "set": "major",
+   "prereq_text": "Physics 2 with a grade of C- or better; Mathematics 2A-B or 3A-B (AP Math BC Exam score of 3 or better) and 4A.",
+   "expected": "PHYS 2[C-] & ((MATH 2A & MATH 2B) | (MATH 3A & MATH 3B) | @exam) & MATH 4A"
+  },
+  {
+   "code": "MATH 2B",
+   "group": "final",
+   "set": "major",
+   "prereq_text": "Mathematics 2A with a minimum grade of C.",
+   "expected": "MATH 2A[C]"
+  },
+  {
+   "code": "ECON 152",
+   "group": "final",
+   "set": "major",
+   "prereq_text": "Economics 100B.",
+   "expected": "ECON 100B"
+  },
+  {
+   "code": "ECON 136BH",
+   "group": "final",
+   "set": "major",
+   "prereq_text": "Concurrent enrollment in Econ 136B.",
+   "expected": "ECON 136B*"
+  },
+  {
+   "code": "MATH 4B",
+   "group": "final",
+   "set": "major",
+   "prereq_text": "Math 4A or Math 4AI with a minimum grade of C.",
+   "expected": "MATH 4A[C] | MATH 4AI[C]"
+  },
+  {
+   "code": "ECE 147A",
+   "group": "final",
+   "set": "major",
+   "prereq_text": "ECE 130A-B with a minimum grade of C- in each; open to electrical engineering and computer engineering majors only.",
+   "expected": "ECE 130A[C-] & ECE 130B[C-] & @restriction"
+  },
+  {
+   "code": "MATH 104B",
+   "group": "final",
+   "set": "major",
+   "prereq_text": "Math 104A with a minimum grade of C.",
+   "expected": "MATH 104A[C]"
+  }
+ ]
+}
