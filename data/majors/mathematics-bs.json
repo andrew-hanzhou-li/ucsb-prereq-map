@@ -1,0 +1,1302 @@
+{
+ "id": "BSMATH",
+ "name": "Mathematics - BS",
+ "type": "Bachelor's Degree",
+ "kind": "major",
+ "departments": [
+  "MATH"
+ ],
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsb.edu/programs/BSMATH",
+ "narrative": [
+  "To be admitted to full major status, students must complete the following pre-major Mathematics courses with a UC grade-point average of 2.5 or higher. All pre-major courses must be completed with a grade of “C” or better. Preparation courses are excluded from the pre-major GPA, but will apply to the overall major GPA. Entry into the pre-major does not guarantee admission to full major status. While completing required preparation, students are classified as pre-majors.",
+  "MAJOR REGULATIONSPREREQUISITES Check the General Catalog for the prerequisites to all listed courses.\nP/NP GRADING OPTION Not allowed for major courses (prep or UD major), including courses applied to the major from other departments.\nSUBSTITUTIONS In the major requirements permissible only by petition to the department chair and dean.\nG.P.A REQUIREMENTS At least 2.0 overall UC average in all upper-division major courses and all courses (Prep and UD) for the major.\nDOUBLE MAJORS With the approval of each department chairperson, up to a total of 8 units may be applied simultaneously to both UD majors."
+ ],
+ "sections": [
+  {
+   "name": "PRE-MAJOR",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "count": 1,
+      "items": [
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 2A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 2B",
+          "status": "active"
+         }
+        ],
+        "catalog_rule_id": "CRzo6LTg",
+        "label": "Math 2 Series"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 3A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 3B",
+          "status": "active"
+         }
+        ],
+        "catalog_rule_id": "pOXKGSgZ",
+        "label": "Math 3 Series"
+       }
+      ],
+      "catalog_rule_id": "MXYOTfiO",
+      "label": "Calculus"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "MATH 4A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 4B",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "QaR9cdyj",
+      "label": "Linear Algebra and Differential Equations",
+      "notes": "Either Math 4A, 4B, 6A, or 6B must be completed with a grade of “B” or better in order to take Math 8."
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "MATH 6A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 6B",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "TpWkuQ4z",
+      "label": "Vector Calculus",
+      "notes": "Either Math 4A, 4B, 6A, or 6B must be completed with a grade of “B” or better in order to take Math 8."
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "MATH 8",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "WXb3YNwk",
+      "label": "Higher Mathematics"
+     }
+    ]
+   }
+  },
+  {
+   "name": "PREPARATION FOR THE MAJOR",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "count": 1,
+      "items": [
+       {
+        "type": "course",
+        "code": "CMPSC 8",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CMPSC 9",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CMPSC 16",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ENGR 3",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "PjvcOxDb",
+      "label": "Computer Programming"
+     },
+     {
+      "type": "choose",
+      "count": 1,
+      "items": [
+       {
+        "type": "course",
+        "code": "PHYS 1",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 6A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 7A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 21",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "g5ItuLRq",
+      "label": "Physics"
+     }
+    ]
+   }
+  },
+  {
+   "name": "UPPER-DIVISION MAJOR",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "MATH 108A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 108B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 111A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 111B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 117",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 118A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 118B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 122A",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "UDPKPFTE"
+     },
+     {
+      "type": "choose",
+      "count": 1,
+      "items": [
+       {
+        "type": "course",
+        "code": "MATH 111C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 118C",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "xu6R3PJb"
+     },
+     {
+      "type": "choose",
+      "count": 1,
+      "items": [
+       {
+        "type": "course",
+        "code": "MATH 145",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 147A",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "M9XoY6F3"
+     },
+     {
+      "type": "units",
+      "units": 12,
+      "items": [
+       {
+        "type": "course",
+        "code": "MATH 101A",
+        "status": "active",
+        "from_list": "Upper Division Math Courses"
+       },
+       {
+        "type": "course",
+        "code": "MATH 101B",
+        "status": "active",
+        "from_list": "Upper Division Math Courses"
+       },
+       {
+        "type": "course",
+        "code": "MATH 102A",
+        "status": "active",
+        "from_list": "Upper Division Math Courses"
+       },
+       {
+        "type": "course",
+        "code": "MATH 102B",
+        "status": "active",
+        "from_list": "Upper Division Math Courses"
+       },
+       {
+        "type": "course",
+        "code": "MATH 104A",
+        "status": "active",
+        "from_list": "Upper Division Math Courses"
+       },
+       {
+        "type": "course",
+        "code": "MATH 104B",
+        "status": "active",
+        "from_list": "Upper Division Math Courses"
+       },
+       {
+        "type": "course",
+        "code": "MATH 104C",
+        "status": "active",
+        "from_list": "Upper Division Math Courses"
+       },
+       {
+        "type": "course",
+        "code": "MATH 108A",
+        "status": "active",
+        "from_list": "Upper Division Math Courses"
+       },
+       {
+        "type": "course",
+        "code": "MATH 108B",
+        "status": "active",
+        "from_list": "Upper Division Math Courses"
+       },
+       {
+        "type": "course",
+        "code": "MATH 108C",
+        "status": "active",
+        "from_list": "Upper Division Math Courses"
+       },
+       {
+        "type": "course",
+        "code": "MATH 111A",
+        "status": "active",
+        "from_list": "Upper Division Math Courses"
+       },
+       {
+        "type": "course",
+        "code": "MATH 111B",
+        "status": "active",
+        "from_list": "Upper Division Math Courses"
+       },
+       {
+        "type": "course",
+        "code": "MATH 111C",
+        "status": "active",
+        "from_list": "Upper Division Math Courses"
+       },
+       {
+        "type": "course",
+        "code": "MATH 113",
+        "status": "active",
+        "from_list": "Upper Division Math Courses"
+       },
+       {
+        "type": "course",
+        "code": "MATH 115A",
+        "status": "active",
+        "from_list": "Upper Division Math Courses"
+       },
+       {
+        "type": "course",
+        "code": "MATH 115B",
+        "status": "active",
+        "from_list": "Upper Division Math Courses"
+       },
+       {
+        "type": "course",
+        "code": "MATH 116",
+        "status": "active",
+        "from_list": "Upper Division Math Courses"
+       },
+       {
+        "type": "course",
+        "code": "MATH 117",
+        "status": "active",
+        "from_list": "Upper Division Math Courses"
+       },
+       {
+        "type": "course",
+        "code": "MATH 118A",
+        "status": "active",
+        "from_list": "Upper Division Math Courses"
+       },
+       {
+        "type": "course",
+        "code": "MATH 118B",
+        "status": "active",
+        "from_list": "Upper Division Math Courses"
+       },
+       {
+        "type": "course",
+        "code": "MATH 118C",
+        "status": "active",
+        "from_list": "Upper Division Math Courses"
+       },
+       {
+        "type": "course",
+        "code": "MATH 119A",
+        "status": "active",
+        "from_list": "Upper Division Math Courses"
+       },
+       {
+        "type": "course",
+        "code": "MATH 119B",
+        "status": "active",
+        "from_list": "Upper Division Math Courses"
+       },
+       {
+        "type": "course",
+        "code": "MATH 122A",
+        "status": "active",
+        "from_list": "Upper Division Math Courses"
+       },
+       {
+        "type": "course",
+        "code": "MATH 122B",
+        "status": "active",
+        "from_list": "Upper Division Math Courses"
+       },
+       {
+        "type": "course",
+        "code": "MATH 124A",
+        "status": "active",
+        "from_list": "Upper Division Math Courses"
+       },
+       {
+        "type": "course",
+        "code": "MATH 124B",
+        "status": "active",
+        "from_list": "Upper Division Math Courses"
+       },
+       {
+        "type": "course",
+        "code": "MATH 132A",
+        "status": "active",
+        "from_list": "Upper Division Math Courses"
+       },
+       {
+        "type": "course",
+        "code": "MATH 132B",
+        "status": "active",
+        "from_list": "Upper Division Math Courses"
+       },
+       {
+        "type": "course",
+        "code": "MATH 137A",
+        "status": "active",
+        "from_list": "Upper Division Math Courses"
+       },
+       {
+        "type": "course",
+        "code": "MATH 137B",
+        "status": "active",
+        "from_list": "Upper Division Math Courses"
+       },
+       {
+        "type": "course",
+        "code": "MATH 145",
+        "status": "active",
+        "from_list": "Upper Division Math Courses"
+       },
+       {
+        "type": "course",
+        "code": "MATH 147A",
+        "status": "active",
+        "from_list": "Upper Division Math Courses"
+       },
+       {
+        "type": "course",
+        "code": "MATH 147B",
+        "status": "active",
+        "from_list": "Upper Division Math Courses"
+       },
+       {
+        "type": "course",
+        "code": "MATH 170",
+        "status": "active",
+        "from_list": "Upper Division Math Courses"
+       },
+       {
+        "type": "course",
+        "code": "MATH 182",
+        "status": "active",
+        "from_list": "Upper Division Math Courses"
+       },
+       {
+        "type": "course",
+        "code": "MATH 190",
+        "status": "active",
+        "from_list": "Upper Division Math Courses"
+       },
+       {
+        "type": "course",
+        "code": "MATH 190AI",
+        "status": "active",
+        "from_list": "Upper Division Math Courses"
+       },
+       {
+        "type": "course",
+        "code": "MATH 190PS",
+        "status": "active",
+        "from_list": "Upper Division Math Courses"
+       },
+       {
+        "type": "course",
+        "code": "MATH 191",
+        "status": "active",
+        "from_list": "Upper Division Math Courses"
+       },
+       {
+        "type": "course",
+        "code": "MATH 193",
+        "status": "active",
+        "from_list": "Upper Division Math Courses"
+       },
+       {
+        "type": "course",
+        "code": "MATH 197A",
+        "status": "active",
+        "from_list": "Upper Division Math Courses"
+       },
+       {
+        "type": "course",
+        "code": "MATH 197B",
+        "status": "active",
+        "from_list": "Upper Division Math Courses"
+       },
+       {
+        "type": "course",
+        "code": "MATH 199",
+        "status": "active",
+        "from_list": "Upper Division Math Courses"
+       },
+       {
+        "type": "course",
+        "code": "MATH 199RA",
+        "status": "active",
+        "from_list": "Upper Division Math Courses"
+       },
+       {
+        "type": "course",
+        "code": "PSTAT 100",
+        "status": "active",
+        "from_list": "Upper Division Statistics Courses"
+       },
+       {
+        "type": "course",
+        "code": "PSTAT 105",
+        "status": "active",
+        "from_list": "Upper Division Statistics Courses"
+       },
+       {
+        "type": "course",
+        "code": "PSTAT 115",
+        "status": "active",
+        "from_list": "Upper Division Statistics Courses"
+       },
+       {
+        "type": "course",
+        "code": "PSTAT 120A",
+        "status": "active",
+        "from_list": "Upper Division Statistics Courses"
+       },
+       {
+        "type": "course",
+        "code": "PSTAT 120B",
+        "status": "active",
+        "from_list": "Upper Division Statistics Courses"
+       },
+       {
+        "type": "course",
+        "code": "PSTAT 120C",
+        "status": "active",
+        "from_list": "Upper Division Statistics Courses"
+       },
+       {
+        "type": "course",
+        "code": "PSTAT 122",
+        "status": "active",
+        "from_list": "Upper Division Statistics Courses"
+       },
+       {
+        "type": "course",
+        "code": "PSTAT 123",
+        "status": "active",
+        "from_list": "Upper Division Statistics Courses"
+       },
+       {
+        "type": "course",
+        "code": "PSTAT 126",
+        "status": "active",
+        "from_list": "Upper Division Statistics Courses"
+       },
+       {
+        "type": "course",
+        "code": "PSTAT 127",
+        "status": "active",
+        "from_list": "Upper Division Statistics Courses"
+       },
+       {
+        "type": "course",
+        "code": "PSTAT 130",
+        "status": "active",
+        "from_list": "Upper Division Statistics Courses"
+       },
+       {
+        "type": "course",
+        "code": "PSTAT 131",
+        "status": "active",
+        "from_list": "Upper Division Statistics Courses"
+       },
+       {
+        "type": "course",
+        "code": "PSTAT 132",
+        "status": "active",
+        "from_list": "Upper Division Statistics Courses"
+       },
+       {
+        "type": "course",
+        "code": "PSTAT 134",
+        "status": "active",
+        "from_list": "Upper Division Statistics Courses"
+       },
+       {
+        "type": "course",
+        "code": "PSTAT 135",
+        "status": "active",
+        "from_list": "Upper Division Statistics Courses"
+       },
+       {
+        "type": "course",
+        "code": "PSTAT 140",
+        "status": "active",
+        "from_list": "Upper Division Statistics Courses"
+       },
+       {
+        "type": "course",
+        "code": "PSTAT 160A",
+        "status": "active",
+        "from_list": "Upper Division Statistics Courses"
+       },
+       {
+        "type": "course",
+        "code": "PSTAT 160B",
+        "status": "active",
+        "from_list": "Upper Division Statistics Courses"
+       },
+       {
+        "type": "course",
+        "code": "PSTAT 170",
+        "status": "active",
+        "from_list": "Upper Division Statistics Courses"
+       },
+       {
+        "type": "course",
+        "code": "PSTAT 171",
+        "status": "active",
+        "from_list": "Upper Division Statistics Courses"
+       },
+       {
+        "type": "course",
+        "code": "PSTAT 172A",
+        "status": "active",
+        "from_list": "Upper Division Statistics Courses"
+       },
+       {
+        "type": "course",
+        "code": "PSTAT 172B",
+        "status": "active",
+        "from_list": "Upper Division Statistics Courses"
+       },
+       {
+        "type": "course",
+        "code": "PSTAT 173",
+        "status": "active",
+        "from_list": "Upper Division Statistics Courses"
+       },
+       {
+        "type": "course",
+        "code": "PSTAT 174",
+        "status": "active",
+        "from_list": "Upper Division Statistics Courses"
+       },
+       {
+        "type": "course",
+        "code": "PSTAT 175",
+        "status": "active",
+        "from_list": "Upper Division Statistics Courses"
+       },
+       {
+        "type": "course",
+        "code": "PSTAT 176",
+        "status": "active",
+        "from_list": "Upper Division Statistics Courses"
+       },
+       {
+        "type": "course",
+        "code": "PSTAT 177",
+        "status": "active",
+        "from_list": "Upper Division Statistics Courses"
+       },
+       {
+        "type": "course",
+        "code": "PSTAT 182T",
+        "status": "active",
+        "from_list": "Upper Division Statistics Courses"
+       },
+       {
+        "type": "course",
+        "code": "PSTAT 183",
+        "status": "active",
+        "from_list": "Upper Division Statistics Courses"
+       },
+       {
+        "type": "course",
+        "code": "PSTAT 188",
+        "status": "active",
+        "from_list": "Upper Division Statistics Courses"
+       },
+       {
+        "type": "course",
+        "code": "PSTAT 190",
+        "status": "active",
+        "from_list": "Upper Division Statistics Courses"
+       },
+       {
+        "type": "course",
+        "code": "PSTAT 193",
+        "status": "active",
+        "from_list": "Upper Division Statistics Courses"
+       },
+       {
+        "type": "course",
+        "code": "PSTAT 194",
+        "status": "active",
+        "from_list": "Upper Division Statistics Courses"
+       },
+       {
+        "type": "course",
+        "code": "PSTAT 194CS",
+        "status": "active",
+        "from_list": "Upper Division Statistics Courses"
+       },
+       {
+        "type": "course",
+        "code": "PSTAT 194FM",
+        "status": "active",
+        "from_list": "Upper Division Statistics Courses"
+       },
+       {
+        "type": "course",
+        "code": "PSTAT 194TR",
+        "status": "active",
+        "from_list": "Upper Division Statistics Courses"
+       },
+       {
+        "type": "course",
+        "code": "PSTAT 197A",
+        "status": "active",
+        "from_list": "Upper Division Statistics Courses"
+       },
+       {
+        "type": "course",
+        "code": "PSTAT 197B",
+        "status": "active",
+        "from_list": "Upper Division Statistics Courses"
+       },
+       {
+        "type": "course",
+        "code": "PSTAT 197C",
+        "status": "active",
+        "from_list": "Upper Division Statistics Courses"
+       },
+       {
+        "type": "course",
+        "code": "PSTAT 199",
+        "status": "active",
+        "from_list": "Upper Division Statistics Courses"
+       }
+      ],
+      "catalog_rule_id": "n9KDMyMw",
+      "label": "Upper-Division Electives"
+     }
+    ],
+    "catalog_rule_id": "MGUQJDNo",
+    "label": "52 UD units are required, at least 40 of which must be in Mathematics. These units must be distributed as follows.",
+    "notes": "Note: The following courses will NOT apply to the major: Math 100A-B, 193, 195A-B; PSTAT 109, 188, 190, 193."
+   },
+   "notes": "With an advisor’s approval, 4 of the 52 UD units may be non-mathematics courses taken as part of a coherent\nmathematics program."
+  }
+ ],
+ "courses": [
+  {
+   "code": "CMPSC 8",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "CMPSC 9",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "CMPSC 16",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "ENGR 3",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "MATH 2A",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "MATH 2B",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "MATH 3A",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "MATH 3B",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "MATH 4A",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "MATH 4B",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "MATH 6A",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "MATH 6B",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "MATH 8",
+   "status": "active",
+   "section": "PRE-MAJOR"
+  },
+  {
+   "code": "MATH 101A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MATH 101B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MATH 102A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MATH 102B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MATH 104A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MATH 104B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MATH 104C",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MATH 108A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MATH 108B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MATH 108C",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MATH 111A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MATH 111B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MATH 111C",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MATH 113",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MATH 115A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MATH 115B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MATH 116",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MATH 117",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MATH 118A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MATH 118B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MATH 118C",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MATH 119A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MATH 119B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MATH 122A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MATH 122B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MATH 124A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MATH 124B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MATH 132A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MATH 132B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MATH 137A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MATH 137B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MATH 145",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MATH 147A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MATH 147B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MATH 170",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MATH 182",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MATH 190",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MATH 190AI",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MATH 190PS",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MATH 191",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MATH 193",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MATH 197A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MATH 197B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MATH 199",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "MATH 199RA",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PHYS 1",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "PHYS 6A",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "PHYS 7A",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "PHYS 21",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "PSTAT 100",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTAT 105",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTAT 115",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTAT 120A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTAT 120B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTAT 120C",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTAT 122",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTAT 123",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTAT 126",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTAT 127",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTAT 130",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTAT 131",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTAT 132",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTAT 134",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTAT 135",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTAT 140",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTAT 160A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTAT 160B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTAT 170",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTAT 171",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTAT 172A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTAT 172B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTAT 173",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTAT 174",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTAT 175",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTAT 176",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTAT 177",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTAT 182T",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTAT 183",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTAT 188",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTAT 190",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTAT 193",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTAT 194",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTAT 194CS",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTAT 194FM",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTAT 194TR",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTAT 197A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTAT 197B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTAT 197C",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "PSTAT 199",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  }
+ ]
+}
