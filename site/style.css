@@ -1,0 +1,796 @@
+/*
+  style.css for the Prerequisite Map.
+
+  Laid out like a course catalog (ruled lists, not boxes), but set for the
+  screen: a clean sans-serif for reading (IBM Plex Sans), a contemporary
+  serif for titles and headings (Literata), dark ink on near-white, and two
+  "pencil" colors: red for what a course needs, blue for what it unlocks.
+  No rounded corners, no shadows, no gradients.
+*/
+
+:root {
+  --paper: #fcfcfb;        /* page */
+  --ink: #1d2125;          /* text and rules */
+  --muted: #5d646c;        /* secondary text */
+  --dots: #c9cdd2;         /* dotted rules between courses */
+  --red: #b3261e;          /* the chosen course and what it needs */
+  --blue: #2a4f96;         /* what it unlocks */
+  --green: #2f6b3a;        /* taken, and "next" */
+  --faded: 0.3;            /* opacity of unrelated courses while one is chosen */
+
+  --sans: "IBM Plex Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --serif: "Literata", Georgia, "Times New Roman", serif;
+  --panel-width: 350px;
+  --col-min: 168px;        /* course columns are at least this wide */
+}
+
+* { box-sizing: border-box; }
+
+html, body { height: 100%; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 15px;
+  line-height: 1.45;
+  display: flex;
+  flex-direction: column;
+}
+
+a { color: inherit; text-underline-offset: 2px; }
+
+:focus-visible {
+  outline: 2px solid var(--red);
+  outline-offset: 2px;
+}
+
+kbd {
+  font: inherit;
+  font-size: 0.85em;
+  padding: 0 4px;
+  border: 1px solid var(--dots);
+  border-bottom-width: 2px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.text-button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* --------------------------------------------------------------- masthead */
+
+.top { border-bottom: 1px solid var(--ink); }
+
+.mast {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 28px;
+  padding: 14px 28px 10px;
+  border-bottom: 1px solid var(--dots);
+}
+
+.site-name {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 1.65rem;
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+.site-name a { text-decoration: none; }
+.tagline { margin-left: 12px; font-family: var(--sans); font-size: 0.95rem; font-weight: 400; letter-spacing: 0; color: var(--muted); }
+
+.mast-nav {
+  margin-left: auto;
+  display: flex;
+  gap: 20px;
+  font-size: 0.95rem;
+}
+.mast-nav a[hidden] { display: none; }
+.options-button { display: none; }
+
+/* The line under the masthead: program, find a course, what to show. */
+.sub {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 24px;
+  padding: 8px 28px 9px;
+}
+
+/* The programs on the map: names joined by "+", each with an × to remove it. */
+.chosen { display: inline-flex; flex-wrap: wrap; align-items: baseline; gap: 2px 10px; font-weight: 600; }
+.chosen:empty { display: none; }
+.chosen .plus { color: var(--muted); font-weight: 400; }
+.chosen .remove {
+  font: inherit;
+  font-weight: 400;
+  color: var(--muted);
+  background: none;
+  border: 0;
+  padding: 0 2px;
+  cursor: pointer;
+}
+.chosen .remove:hover { color: var(--red); }
+.box .tag.both { color: var(--blue); }
+
+.picker input {
+  font: inherit;
+  font-size: 1rem;
+  color: var(--ink);
+  width: 300px;
+  max-width: 100%;
+  padding: 2px 0;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--dots);
+  border-radius: 0;
+}
+#major-input { width: 240px; }
+.picker input::placeholder { font-weight: 400; color: var(--muted); }
+.picker input:disabled { opacity: 0.6; }
+#course-input { width: 200px; }
+
+/* The search boxes' dropdown (search.js): a plain list under the box. */
+.search { position: relative; }
+.search-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 30;
+  min-width: 100%;
+  width: max-content;
+  max-width: min(440px, 92vw);
+  max-height: 60vh;
+  overflow-y: auto;
+  margin: 2px 0 0;
+  padding: 2px 0;
+  list-style: none;
+  background: var(--paper);
+  border: 1px solid var(--ink);
+  font-weight: 400;
+}
+.search-list li { padding: 4px 10px; cursor: pointer; }
+.search-list li.active { background: var(--ink); color: var(--paper); }
+.search-list li.active .search-hint { color: inherit; }
+.search-hint { color: var(--muted); font-size: 13px; }
+.search-list li.search-none { cursor: default; color: var(--muted); white-space: normal; }
+.toggles[hidden] { display: none; }
+
+.options-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 24px;
+}
+
+.toggles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px 14px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 0.92rem;
+  color: var(--muted);
+}
+.toggles legend { float: left; margin-right: 2px; }
+.toggles label { white-space: nowrap; cursor: pointer; }
+.toggles input { accent-color: var(--ink); margin: 0 3px 0 0; vertical-align: -1px; }
+
+.taken-status { margin: 0; font-size: 0.92rem; color: var(--green); }
+
+/* ------------------------------------------------------------ main area */
+
+.layout {
+  flex: 1;
+  display: flex;
+  min-height: 0;           /* lets the map shrink instead of overflowing */
+}
+
+.map-area {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+}
+
+/*
+  The map scrolls down the page. Inside it, the "stage" holds the steps and
+  elective lists, with an SVG drawing of the lines laid under the text.
+*/
+.map {
+  position: absolute;
+  inset: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.stage {
+  position: relative;
+  min-height: 100%;
+  padding: 10px 28px 48px;
+}
+
+.arrows {
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: visible;
+  pointer-events: none;
+  z-index: 0;              /* under the course names */
+}
+
+.arrow { fill: none; stroke-width: 1.5; }
+.arrow.needs { stroke: var(--red); marker-end: url(#head-needs); }
+.arrow.chain { stroke: var(--red); stroke-width: 1; opacity: 0.4; marker-end: url(#head-chain); }
+.arrow.unlocks { stroke: var(--blue); marker-end: url(#head-unlocks); }
+.arrow.alternative { stroke-dasharray: 4 3; }
+#head-needs path, #head-chain path { fill: var(--red); }
+#head-unlocks path { fill: var(--blue); }
+
+/* The two lines at the top of a map: how to use it, and what the marks mean. */
+.map-head { margin: 6px 0 2px; font-size: 0.92rem; color: var(--muted); }
+.map-head p { margin: 0 0 2px; }
+.map-head .red { color: var(--red); font-weight: 600; }
+.map-head .blue { color: var(--blue); font-weight: 600; }
+.map-head .ok { color: var(--green); font-weight: 600; }
+.narrow-only { display: none; }
+
+/* A step or a list of electives: a serif heading over a rule. */
+.row { margin-top: 24px; }
+.row-label {
+  margin: 0 0 4px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--ink);
+  font-family: var(--serif);
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+.row-count { margin-left: 10px; font-family: var(--sans); font-size: 0.9rem; font-weight: 400; color: var(--muted); }
+.elective-row { margin-top: 36px; }
+.map-note { color: var(--muted); }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--col-min), 1fr));
+  column-gap: 26px;
+  row-gap: 6px;            /* room for a course to grow 5% without touching the next */
+}
+
+/* A course: its code and title, over a dotted rule. Not a box. */
+.box {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  padding: 7px 0 8px;
+  font: inherit;
+  font-size: 0.92rem;
+  line-height: 1.3;
+  text-align: left;
+  color: var(--ink);
+  background: var(--paper);  /* so lines pass under the words, not through them */
+  border: 0;
+  border-bottom: 1px dotted var(--dots);
+  border-radius: 0;
+  cursor: pointer;
+  transform-origin: left center;
+  /* Grows or shrinks (from app.js, SCALE) when another course is chosen. */
+  transition: opacity 120ms, transform 150ms ease-out;
+}
+.box .line { display: block; max-width: 100%; }
+.box .strong { font-size: 1rem; font-weight: 600; }
+.box .title {
+  color: #3a4048;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.box .tag { font-size: 0.85rem; color: var(--muted); }
+.box:hover .strong { text-decoration: underline; text-underline-offset: 3px; }
+
+.box.role-prerequisite .strong::after { content: " †"; font-weight: 400; }
+.box.inactive, .box.inactive .title { color: var(--muted); }
+.box.kind-pool .strong { font-style: italic; }
+
+/* Progress from "I've taken this course". */
+.box.taken .strong { color: var(--green); }
+.box.ready .strong::after { content: " next"; font-size: 0.82rem; font-weight: 500; color: var(--green); }
+.box.role-prerequisite.ready .strong::after { content: " † next"; }
+
+/* A course is chosen: it and its relatives are inked, the rest fade. */
+.stage.focused .box { opacity: var(--faded); }
+.stage.focused .box.selected,
+.stage.focused .box.needs,
+.stage.focused .box.unlocks { opacity: 1; z-index: 2; }
+.box.needs .strong { color: var(--red); }
+.box.unlocks .strong { color: var(--blue); }
+.box.selected, .box.selected .title { color: var(--red); }
+.box.selected .strong { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; }
+.box.selected .tag { color: var(--red); }
+
+/* Lines at the top and bottom edges of the map naming linked courses that
+   are scrolled out of view. Click to scroll there. */
+.offscreen {
+  position: absolute;
+  left: 28px;
+  z-index: 5;
+  max-width: calc(100% - 56px);
+  padding: 3px 0 2px;
+  font: inherit;
+  font-size: 0.92rem;
+  font-weight: 500;
+  text-align: left;
+  background: var(--paper);
+  border: 0;
+  border-radius: 0;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.offscreen.down { bottom: 10px; color: var(--blue); border-bottom: 1px solid var(--blue); }
+.offscreen.up { top: 8px; color: var(--red); border-bottom: 1px solid var(--red); }
+.offscreen[hidden] { display: none; }
+
+/* ------------------------------------------------- the front page */
+
+.empty {
+  position: absolute;
+  inset: 0;
+  overflow-y: auto;
+  background: var(--paper);
+}
+.empty-inner { max-width: 1180px; padding: 28px 28px 48px; }
+
+.empty h2 { margin: 0 0 10px; font-family: var(--serif); font-size: 1.6rem; font-weight: 600; line-height: 1.2; }
+.empty p { margin: 0 0 10px; max-width: 640px; }
+.quick { color: var(--muted); }
+.quick a { color: var(--ink); }
+.empty[hidden], .notice[hidden], #welcome[hidden] { display: none; }
+
+/* A message in place of the welcome text ("no map at that address"). */
+.notice {
+  max-width: 680px;
+  margin-bottom: 8px;
+  padding: 10px 0 4px;
+  border-top: 1px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+}
+.notice h2 { color: var(--red); }
+
+/* The index of every program, by department, like the back of a catalog. */
+.browse-count { margin: 26px 0 10px !important; padding-bottom: 6px; border-bottom: 1px solid var(--ink); color: var(--muted); max-width: none !important; }
+.browse { columns: 3 280px; column-gap: 40px; }
+.dept { break-inside: avoid; margin: 0 0 20px; }
+.dept h3 {
+  margin: 0 0 2px;
+  font-family: var(--serif);
+  font-size: 1rem;
+  font-weight: 600;
+}
+.dept ul { margin: 0; padding: 0; list-style: none; }
+.dept li { padding: 3px 0; border-bottom: 1px dotted var(--dots); }
+.dept a { text-decoration: none; }
+.dept a:hover { text-decoration: underline; }
+.note { font-size: 0.9rem; color: var(--muted); }
+
+/* ------------------------------------------- beside the map: the entry */
+
+.panel {
+  width: var(--panel-width);
+  flex-shrink: 0;
+  overflow-y: auto;
+  background: var(--paper);
+  border-left: 1px solid var(--ink);
+  padding: 16px 24px 28px;
+}
+
+.panel[hidden] { display: none; }
+.panel-empty { color: var(--muted); }
+
+.panel-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 0 0 14px;
+  font-size: 0.92rem;
+}
+.nav-button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.nav-button[data-close] { margin-left: auto; }
+
+.panel h2 {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.15;
+}
+.panel .course-title { margin: 2px 0 8px; font-family: var(--serif); font-size: 1.1rem; font-weight: 500; line-height: 1.3; }
+.panel .facts { margin: 0 0 12px; font-size: 0.92rem; color: var(--muted); }
+
+.panel h3 {
+  margin: 20px 0 4px;
+  font-family: var(--serif);
+  font-size: 1rem;
+  font-weight: 600;
+}
+.needs-key { color: var(--red); }
+.unlocks-key { color: var(--blue); }
+
+.panel p { margin: 0 0 8px; }
+.panel .catalog-text { font-size: 0.92rem; font-style: italic; color: var(--muted); }
+
+.panel ul { margin: 0 0 8px; padding-left: 18px; }
+.panel li { margin: 2px 0; }
+
+/* A prerequisite tree: "All of" / "One of" groups nest under a hairline. */
+.tree { list-style: none; padding-left: 0; }
+.tree .tree { padding-left: 12px; border-left: 1px solid var(--dots); margin-left: 2px; }
+.tree-label { font-size: 0.92rem; color: var(--muted); }
+
+.course-link {
+  font: inherit;
+  font-weight: 600;
+  color: inherit;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: var(--dots);
+  text-underline-offset: 2px;
+}
+.course-link:hover { text-decoration-color: var(--ink); }
+
+/* "Mark as taken" is a checkbox, like ticking a course off in pencil. */
+.taken-row { display: flex; gap: 8px; align-items: baseline; margin: 4px 0 6px; cursor: pointer; }
+.taken-row input { accent-color: var(--green); margin: 0; }
+.taken-row.is-taken { color: var(--green); }
+.ready-note { color: var(--green); }
+
+.flag { color: var(--red); }
+
+.panel details { margin-top: 12px; }
+.panel summary { cursor: pointer; color: var(--muted); }
+
+/* Phone-only: the handle at the top of the entry when it's a bottom sheet. */
+.panel-handle { display: none; }
+
+/* ---------------------------------------------------------------- footer */
+
+.bottom {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 24px;
+  padding: 6px 28px 7px;
+  font-size: 0.84rem;
+  color: var(--muted);
+  border-top: 1px solid var(--ink);
+  background: var(--paper);
+}
+.bottom p { margin: 0; }
+.bottom p[hidden] { display: none; }
+#footer-repo { margin-left: auto; }
+
+/* ------------------------------------------------------------ About box */
+
+.about {
+  width: min(720px, calc(100vw - 32px));
+  max-height: calc(100vh - 48px);
+  padding: 22px 30px 28px;
+  color: var(--ink);
+  background: var(--paper);
+  border: 1px solid var(--ink);
+  border-radius: 0;
+}
+.about::backdrop { background: rgba(29, 33, 37, 0.45); }
+.about h2 { margin: 0 0 10px; padding-bottom: 8px; border-bottom: 1px solid var(--ink); font-family: var(--serif); font-size: 1.6rem; font-weight: 600; }
+.about h3 { margin: 22px 0 6px; font-family: var(--serif); font-size: 1.05rem; font-weight: 600; }
+.about ul { padding-left: 20px; }
+.about li { margin: 5px 0; }
+.about .lede { font-size: 1.05rem; color: var(--muted); }
+.about .key { display: grid; grid-template-columns: max-content 1fr; gap: 3px 16px; margin: 0; }
+.about .key dt { font-weight: 600; }
+.about .key dd { margin: 0; color: var(--muted); }
+.about .key dt:nth-of-type(1) { color: var(--red); }
+.about .key dt:nth-of-type(2) { color: var(--blue); }
+.about .key dt:nth-of-type(5) { color: var(--green); }
+.about .key .next { font-style: normal; font-weight: 500; color: var(--green); }
+.about .key .muted { color: var(--muted); font-weight: 400; }
+.about-close { float: right; margin: 4px 0 0 12px; }
+
+/* ------------------------------------------------------------ 404.html */
+
+.page { display: block; height: auto; }
+.article { max-width: 680px; margin: 0 auto; padding: 28px 20px 56px; }
+.article h2 { margin: 0 0 12px; font-family: var(--serif); font-size: 1.6rem; font-weight: 600; }
+.article .lede { font-size: 1.1rem; color: var(--muted); }
+
+/* ------------------------------------------------------------ small screens
+   On phones the entry becomes a sheet along the bottom of the screen: a
+   handle shows what's chosen, and tapping it (or a course) slides the sheet
+   up over the lower part of the map. */
+@media (max-width: 800px) {
+  :root { --col-min: 140px; }
+  .mast { padding: 12px 16px 8px; }
+  .site-name { font-size: 1.35rem; }
+  .tagline { margin-left: 8px; font-size: 0.88rem; }
+  .mast-nav { margin-left: 0; gap: 16px; }
+  #footer-download { display: none; }
+  .sub { padding: 6px 16px 7px; column-gap: 12px; }
+  .views a { padding: 1px 8px 2px; }
+  .picker, .picker input, #course-input { width: 100%; }
+
+  .stage { padding: 6px 16px 24px; }
+  .grid { column-gap: 18px; }
+  /* Room to scroll the bottom courses up above the open sheet. */
+  .stage::after { content: ""; display: block; height: 62vh; }
+  .wide-only { display: none; }
+  .narrow-only { display: inline; }
+  .offscreen { left: 16px; max-width: calc(100% - 32px); }
+
+  .empty-inner { padding: 20px 16px 40px; }
+  .empty h2 { font-size: 1.35rem; }
+  .browse { columns: 1; }
+  .dept li { padding: 7px 0; }      /* bigger tap targets */
+
+  /* "Find a course" and the Show checkboxes fold behind "Options". */
+  .options-button { display: inline; }
+  .top .more-options { display: none; }
+  .top.show-options .more-options { display: flex; }
+
+  .layout { flex-direction: column; }
+  .map-area { flex: 1; min-height: 0; margin-bottom: 46px; }   /* clear of the closed sheet */
+
+  .panel {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    max-height: 62vh;
+    padding: 0 16px 20px;
+    border-left: 0;
+    border-top: 1px solid var(--ink);
+    z-index: 10;
+    transform: translateY(calc(100% - 46px));
+    transition: transform 180ms ease-out;
+  }
+  .panel.open { transform: translateY(0); }
+
+  .panel-handle {
+    display: block;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    width: calc(100% + 32px);
+    margin: 0 -16px 10px;
+    padding: 11px 16px 10px;
+    font: inherit;
+    font-weight: 600;
+    text-align: left;
+    color: var(--ink);
+    background: var(--paper);
+    border: 0;
+    border-bottom: 1px solid var(--dots);
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .panel-handle::after { content: "▴"; float: right; font-weight: 400; }
+  .panel.open .panel-handle::after { content: "▾"; }
+
+  /* No room for a footer; the same notice is in the program's summary. */
+  .bottom { display: none; }
+
+  /* The map's key, behind "How to read this". */
+  .map-head .map-key { display: none; }
+  .map-head.open .map-key { display: block; }
+
+  /* Scrolled down: a smaller header (app.js, section 8). */
+  .top.compact .mast { padding: 6px 16px 4px; }
+  .top.compact .site-name { font-size: 1.1rem; }
+  .top.compact .tagline,
+  .top.compact .sub > .picker:not(.more-options) { display: none; }
+  .top.compact .sub { padding: 4px 16px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
+
+/* ------------------------------------------------------------ Credit box */
+.credit-invite { margin-top: 4px !important; }
+.credit-note { color: var(--green); }
+.ap-list { display: grid; gap: 2px 0; }
+.ap-row { display: grid; grid-template-columns: 260px 90px 1fr; gap: 12px; align-items: baseline; padding: 3px 0; border-bottom: 1px dotted var(--dots); }
+.ap-row label { display: flex; justify-content: space-between; gap: 10px; }
+.ap-row select { font: inherit; }
+.ap-result { font-size: 0.88rem; color: var(--green); }
+.transfer-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 2px 18px; }
+.transfer-add-row input { font: inherit; border: 0; border-bottom: 1px solid var(--dots); background: transparent; width: 160px; }
+@media (max-width: 800px) { .ap-row { grid-template-columns: 1fr; gap: 0; } }
+
+/* ------------------------------------------------------------ Map / Plan */
+.views { display: inline-flex; gap: 2px; margin-right: 6px; }
+.views[hidden] { display: none; }
+.views a {
+  padding: 1px 10px 2px;
+  text-decoration: none;
+  border: 1px solid var(--dots);
+  color: var(--muted);
+}
+.views a.current { color: var(--paper); background: var(--ink); border-color: var(--ink); }
+.toggles[hidden], .picker[hidden] { display: none !important; }
+
+/* ------------------------------------------------------------ the planner */
+.plan-area { flex: 1; min-width: 0; display: flex; flex-direction: column; overflow: hidden; }
+.plan-area[hidden] { display: none; }
+.plan-tools {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 22px;
+  padding: 8px 28px;
+  border-bottom: 1px solid var(--dots);
+  font-size: 0.92rem;
+}
+.plan-tools select { font: inherit; }
+.plan-tools input[type="number"] { font: inherit; width: 66px; border: 0; border-bottom: 1px solid var(--dots); background: transparent; }
+.plan-tools input[type="checkbox"] { accent-color: var(--ink); }
+.plan-buttons { display: inline-flex; flex-wrap: wrap; gap: 4px 16px; margin-left: auto; }
+.plan-message { flex-basis: 100%; margin: 0; color: var(--green); min-height: 1.3em; }
+
+.plan-body { flex: 1; min-height: 0; display: grid; grid-template-columns: minmax(260px, 340px) 1fr; }
+.plan-reqs { overflow-y: auto; padding: 10px 20px 40px 28px; border-right: 1px solid var(--dots); font-size: 0.9rem; }
+.plan-grid { overflow: auto; padding: 14px 24px 40px; }
+
+.req-section { margin-top: 10px; }
+.req-section > summary { list-style: none; cursor: pointer; }
+.req-section > summary::-webkit-details-marker { display: none; }
+.req-section > summary h3::before { content: "▸ "; font-family: var(--sans); color: var(--muted); }
+.req-section[open] > summary h3::before { content: "▾ "; }
+.req-section h3 { margin: 6px 0 4px; padding-bottom: 3px; border-bottom: 1px solid var(--ink); font-family: var(--serif); font-size: 1rem; font-weight: 600; }
+.req-credit { margin: 4px 0 8px; padding: 8px 10px 4px; border: 1px solid var(--dots); }
+.req-credit h3 { margin: 0 0 4px; font-family: var(--serif); font-size: 1rem; font-weight: 600; }
+.credit-lines { margin: 0 0 6px; padding-left: 16px; }
+.credit-button { font: inherit; font-weight: 600; padding: 4px 10px; color: var(--paper); background: var(--ink); border: 0; cursor: pointer; }
+.req-list, .req-list ul { list-style: none; margin: 0; padding: 0; }
+.req-list li { padding: 2px 0; }
+/* A group: its heading, then its courses hanging off a vertical line.
+   Click the line or the heading to collapse the group (planner.js). */
+.req-toggle { font: inherit; text-align: left; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
+.req-toggle::before { content: "▾ "; color: var(--muted); }
+.req-group.collapsed > .req-toggle::before { content: "▸ "; }
+.req-hidden { font-size: 0.85rem; color: var(--muted); }
+.req-children { position: relative; padding-left: 14px; margin: 1px 0 4px 3px; }
+.req-group.collapsed > .req-children { display: none; }
+.req-thread { position: absolute; left: 0; top: 0; bottom: 0; width: 12px; padding: 0; background: none; border: 0; cursor: pointer; }
+.req-thread::before { content: ""; position: absolute; left: 3px; top: 0; bottom: 0; border-left: 1px solid var(--dots); }
+.req-thread:hover::before { border-left: 2px solid var(--ink); }
+.req-head { color: var(--muted); }
+.req-progress { font-family: var(--sans); font-size: 0.85rem; font-weight: 400; color: var(--green); }
+.req-course { cursor: grab; }
+.req-code { font: inherit; font-weight: 600; background: none; border: 0; padding: 0; cursor: pointer; color: inherit; }
+.req-done { color: var(--green); font-size: 0.85rem; }
+.req-planned { color: var(--blue); font-size: 0.85rem; }
+.req-text { color: var(--muted); font-style: italic; }
+
+.plan-table { border-collapse: collapse; width: 100%; min-width: 640px; table-layout: fixed; }
+.plan-table th { font-family: var(--serif); font-weight: 600; text-align: left; padding: 4px 8px; border-bottom: 1px solid var(--ink); }
+.plan-table th.plan-year { width: 110px; vertical-align: top; padding-top: 10px; font-size: 0.92rem; border-bottom: 1px solid var(--dots); }
+.plan-cell { vertical-align: top; padding: 6px 8px 8px; border-bottom: 1px solid var(--dots); border-left: 1px solid var(--dots); height: 92px; }
+.plan-cell.drop { background: #eef2f8; }
+.plan-cell.over .cell-units { color: var(--red); font-weight: 600; }
+.cell-name { display: none; }
+.cell-units { display: block; margin-top: 4px; font-size: 0.8rem; color: var(--muted); }
+.chip {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
+  margin: 0 0 3px;
+  padding: 3px 6px;
+  font: inherit;
+  font-size: 0.88rem;
+  text-align: left;
+  color: var(--ink);
+  background: var(--paper);
+  border: 1px solid var(--dots);
+  cursor: grab;
+}
+.chip:hover { border-color: var(--ink); }
+.chip-code { font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.chip-units { color: var(--muted); }
+.chip.warn { border-color: var(--red); }
+.chip.warn .chip-code { color: var(--red); }
+.chip.selected { outline: 2px solid var(--blue); outline-offset: -1px; }
+.chip.elective-slot { border-style: dashed; }
+.chip.elective-slot .chip-code { font-weight: 400; font-style: italic; }
+.plan-years { font-size: 0.9rem; }
+.plan-actions { margin-top: 10px !important; }
+.pick-list { list-style: none; padding-left: 0 !important; max-height: 50vh; overflow-y: auto; }
+
+/* Phones only: the bar with "Settings" and "⋯". On wide screens the
+   settings box is just part of the tools line. */
+.plan-phone-bar { display: none; }
+.plan-settings { display: contents; }
+
+@media (max-width: 800px) {
+  .plan-tools { position: relative; padding: 6px 16px; gap: 4px 16px; }
+  .plan-phone-bar { display: flex; gap: 20px; flex-basis: 100%; }
+  #plan-more-button { margin-left: auto; padding: 0 6px; font-size: 1.2rem; line-height: 1; text-decoration: none; }
+  .plan-settings { display: none; flex-basis: 100%; flex-direction: column; gap: 6px; padding: 4px 0 6px; }
+  .plan-tools.show-settings .plan-settings { display: flex; }
+  .plan-buttons {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 16px;
+    z-index: 20;
+    flex-direction: column;
+    gap: 0;
+    margin: 0;
+    padding: 4px 0;
+    background: var(--paper);
+    border: 1px solid var(--ink);
+  }
+  .plan-buttons .text-button { padding: 8px 16px; text-align: left; }
+  .plan-tools.show-more .plan-buttons { display: flex; }
+  .plan-message:empty { display: none; }
+  .plan-body { display: block; overflow-y: auto; }
+  .plan-reqs { border-right: 0; padding: 8px 16px; }
+  .plan-grid { padding: 8px 16px 70vh; overflow: visible; }
+  /* One year at a time, quarters stacked. */
+  .plan-table, .plan-table tbody, .plan-table tr, .plan-table td, .plan-table th { display: block; width: 100%; min-width: 0; }
+  .plan-table thead { display: none; }
+  .plan-cell { border-left: 0; height: auto; }
+  .cell-name { display: block; font-size: 0.85rem; color: var(--muted); }
+}
+.chip-grade { color: var(--green); font-weight: 600; }
+.grade-row select { font: inherit; }
+.gpa strong { font-family: var(--serif); font-size: 1.4rem; }
+.transcript textarea { width: 100%; font: inherit; font-size: 0.9rem; border: 1px solid var(--dots); background: var(--paper); }
+.review-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+.review-table th, .review-table td { text-align: left; padding: 3px 6px; border-bottom: 1px dotted var(--dots); }
+.review-table input[type="number"] { width: 60px; font: inherit; }
+.review-table select { font: inherit; }
+.goal-row input { width: 70px; font: inherit; border: 0; border-bottom: 1px solid var(--dots); background: transparent; }
+.goal-row select { font: inherit; }
+.target strong { font-family: var(--serif); font-size: 1.15rem; }
+.ap-row .ap-name { justify-content: flex-start; align-items: baseline; gap: 6px; }
+.ap-row.taken .ap-name { font-weight: 600; }
+.ap-row[hidden] { display: none; }
+.ap-filter input { width: 100%; max-width: 360px; margin: 4px 0 8px; padding: 3px 0; font: inherit; background: transparent; border: 0; border-bottom: 1px solid var(--ink); }
+@media (max-width: 800px) { .ap-row { grid-template-columns: 1fr auto; } .ap-result { grid-column: 1 / -1; } }
+.chip-assumed { margin-left: 3px; font-weight: 400; font-size: 0.78rem; color: var(--muted); }
