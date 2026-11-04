@@ -1,0 +1,873 @@
+{
+ "id": "BACLASSCLASLNLT",
+ "name": "Classics - BA - Classical Language & Literature Emphasis",
+ "type": "Bachelor's Degree",
+ "kind": "major",
+ "departments": [
+  "CLASS"
+ ],
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsb.edu/programs/BACLASSCLASLNLT",
+ "narrative": [
+  "MAJOR REGULATIONSPREREQUISITES Check the General Catalog for the prerequisites to all listed courses.\nP/NP GRADING OPTION Up to 8 units total of Greek 199 and Latin 199 may be taken P/NP for major credit; all other courses must be taken for letter grades, including those applied to the major from other departments.\nSUBSTITUTIONS In the major requirements permissible only by petition to the department chair and dean.\nG.P.A REQUIREMENTS At least 2.0 overall UC average in all upper-division major courses and all courses (Prep and UD) for the major.\nDOUBLE MAJORS With the approval of each department chairperson, up to a total of 8 units may be applied simultaneously to both UD majors."
+ ],
+ "sections": [
+  {
+   "name": "PREPARATION FOR THE MAJOR",
+   "requirement": {
+    "type": "choose",
+    "count": 1,
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "GREEK 1",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GREEK 2",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GREEK 3",
+          "status": "active"
+         }
+        ]
+       },
+       {
+        "type": "course",
+        "code": "CLASS 20B",
+        "status": "active"
+       }
+      ],
+      "catalog_rule_id": "JGRngUSL",
+      "label": "TRACK 1"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "LATIN 1",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LATIN 2",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LATIN 3",
+          "status": "active"
+         }
+        ]
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "CLASS 20A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CLASS 36",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CLASS 40",
+          "status": "active"
+         }
+        ]
+       }
+      ],
+      "catalog_rule_id": "IiQ7O0GK",
+      "label": "TRACK 2"
+     }
+    ],
+    "catalog_rule_id": "jXWKVRZx",
+    "label": "Lower-Division",
+    "description": "Complete ONE of the following tracks:",
+    "notes": "Students may choose TRACK 1 or TRACK 2. However, those completing courses in a second classical language may substitute up to 4 units of such work for Classics 20A, 20B, 36, and 40."
+   }
+  },
+  {
+   "name": "UPPER-DIVISION MAJOR",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "units",
+      "units": 28,
+      "items": [
+       {
+        "type": "course",
+        "code": "GREEK 100",
+        "status": "active",
+        "from_list": "Upper Division Greek Courses"
+       },
+       {
+        "type": "course",
+        "code": "GREEK 101",
+        "status": "active",
+        "from_list": "Upper Division Greek Courses"
+       },
+       {
+        "type": "course",
+        "code": "GREEK 110",
+        "status": "active",
+        "from_list": "Upper Division Greek Courses"
+       },
+       {
+        "type": "course",
+        "code": "GREEK 142",
+        "status": "active",
+        "from_list": "Upper Division Greek Courses"
+       },
+       {
+        "type": "course",
+        "code": "GREEK 143",
+        "status": "active",
+        "from_list": "Upper Division Greek Courses"
+       },
+       {
+        "type": "course",
+        "code": "GREEK 151",
+        "status": "active",
+        "from_list": "Upper Division Greek Courses"
+       },
+       {
+        "type": "course",
+        "code": "GREEK 152",
+        "status": "active",
+        "from_list": "Upper Division Greek Courses"
+       },
+       {
+        "type": "course",
+        "code": "GREEK 153",
+        "status": "active",
+        "from_list": "Upper Division Greek Courses"
+       },
+       {
+        "type": "course",
+        "code": "GREEK 158",
+        "status": "active",
+        "from_list": "Upper Division Greek Courses"
+       },
+       {
+        "type": "course",
+        "code": "GREEK 171",
+        "status": "active",
+        "from_list": "Upper Division Greek Courses"
+       },
+       {
+        "type": "course",
+        "code": "GREEK 173",
+        "status": "active",
+        "from_list": "Upper Division Greek Courses"
+       },
+       {
+        "type": "course",
+        "code": "GREEK 199",
+        "status": "active",
+        "from_list": "Upper Division Greek Courses"
+       },
+       {
+        "type": "course",
+        "code": "LATIN 100",
+        "status": "active",
+        "from_list": "Upper Division Latin Courses"
+       },
+       {
+        "type": "course",
+        "code": "LATIN 101",
+        "status": "active",
+        "from_list": "Upper Division Latin Courses"
+       },
+       {
+        "type": "course",
+        "code": "LATIN 102",
+        "status": "active",
+        "from_list": "Upper Division Latin Courses"
+       },
+       {
+        "type": "course",
+        "code": "LATIN 103",
+        "status": "active",
+        "from_list": "Upper Division Latin Courses"
+       },
+       {
+        "type": "course",
+        "code": "LATIN 113",
+        "status": "active",
+        "from_list": "Upper Division Latin Courses"
+       },
+       {
+        "type": "course",
+        "code": "LATIN 114",
+        "status": "active",
+        "from_list": "Upper Division Latin Courses"
+       },
+       {
+        "type": "course",
+        "code": "LATIN 115",
+        "status": "active",
+        "from_list": "Upper Division Latin Courses"
+       },
+       {
+        "type": "course",
+        "code": "LATIN 116",
+        "status": "active",
+        "from_list": "Upper Division Latin Courses"
+       },
+       {
+        "type": "course",
+        "code": "LATIN 120",
+        "status": "active",
+        "from_list": "Upper Division Latin Courses"
+       },
+       {
+        "type": "course",
+        "code": "LATIN 135",
+        "status": "active",
+        "from_list": "Upper Division Latin Courses"
+       },
+       {
+        "type": "course",
+        "code": "LATIN 136",
+        "status": "active",
+        "from_list": "Upper Division Latin Courses"
+       },
+       {
+        "type": "course",
+        "code": "LATIN 137",
+        "status": "active",
+        "from_list": "Upper Division Latin Courses"
+       },
+       {
+        "type": "course",
+        "code": "LATIN 138",
+        "status": "active",
+        "from_list": "Upper Division Latin Courses"
+       },
+       {
+        "type": "course",
+        "code": "LATIN 139",
+        "status": "active",
+        "from_list": "Upper Division Latin Courses"
+       },
+       {
+        "type": "course",
+        "code": "LATIN 199",
+        "status": "active",
+        "from_list": "Upper Division Latin Courses"
+       },
+       {
+        "type": "course",
+        "code": "CLASS 101",
+        "status": "active",
+        "from_list": "Upper Division Classics Courses"
+       },
+       {
+        "type": "course",
+        "code": "CLASS 102",
+        "status": "active",
+        "from_list": "Upper Division Classics Courses"
+       },
+       {
+        "type": "course",
+        "code": "CLASS 106",
+        "status": "active",
+        "from_list": "Upper Division Classics Courses"
+       },
+       {
+        "type": "course",
+        "code": "CLASS 109",
+        "status": "active",
+        "from_list": "Upper Division Classics Courses"
+       },
+       {
+        "type": "course",
+        "code": "CLASS 110",
+        "status": "active",
+        "from_list": "Upper Division Classics Courses"
+       },
+       {
+        "type": "course",
+        "code": "CLASS 130",
+        "status": "active",
+        "from_list": "Upper Division Classics Courses"
+       },
+       {
+        "type": "course",
+        "code": "CLASS 140",
+        "status": "active",
+        "from_list": "Upper Division Classics Courses"
+       },
+       {
+        "type": "course",
+        "code": "CLASS 145",
+        "status": "active",
+        "from_list": "Upper Division Classics Courses"
+       },
+       {
+        "type": "course",
+        "code": "CLASS 150",
+        "status": "active",
+        "from_list": "Upper Division Classics Courses"
+       },
+       {
+        "type": "course",
+        "code": "CLASS 155",
+        "status": "active",
+        "from_list": "Upper Division Classics Courses"
+       },
+       {
+        "type": "course",
+        "code": "CLASS 165",
+        "status": "active",
+        "from_list": "Upper Division Classics Courses"
+       },
+       {
+        "type": "course",
+        "code": "CLASS 170",
+        "status": "active",
+        "from_list": "Upper Division Classics Courses"
+       },
+       {
+        "type": "course",
+        "code": "CLASS 171",
+        "status": "active",
+        "from_list": "Upper Division Classics Courses"
+       },
+       {
+        "type": "course",
+        "code": "CLASS 178",
+        "status": "active",
+        "from_list": "Upper Division Classics Courses"
+       },
+       {
+        "type": "course",
+        "code": "CLASS 180A",
+        "status": "active",
+        "from_list": "Upper Division Classics Courses"
+       },
+       {
+        "type": "course",
+        "code": "CLASS 180B",
+        "status": "active",
+        "from_list": "Upper Division Classics Courses"
+       },
+       {
+        "type": "course",
+        "code": "CLASS 185",
+        "status": "active",
+        "from_list": "Upper Division Classics Courses"
+       },
+       {
+        "type": "course",
+        "code": "CLASS 190",
+        "status": "active",
+        "from_list": "Upper Division Classics Courses"
+       },
+       {
+        "type": "course",
+        "code": "CLASS 192",
+        "status": "active",
+        "from_list": "Upper Division Classics Courses"
+       },
+       {
+        "type": "course",
+        "code": "CLASS 195A",
+        "status": "active",
+        "from_list": "Upper Division Classics Courses"
+       },
+       {
+        "type": "course",
+        "code": "CLASS 195B",
+        "status": "active",
+        "from_list": "Upper Division Classics Courses"
+       },
+       {
+        "type": "course",
+        "code": "CLASS 198",
+        "status": "active",
+        "from_list": "Upper Division Classics Courses"
+       },
+       {
+        "type": "course",
+        "code": "CLASS 199",
+        "status": "active",
+        "from_list": "Upper Division Classics Courses"
+       },
+       {
+        "type": "course",
+        "code": "CLASS 199RA",
+        "status": "active",
+        "from_list": "Upper Division Classics Courses"
+       }
+      ],
+      "catalog_rule_id": "XJaWCdbf",
+      "label": "A.",
+      "notes": "Courses can include either Greek 100 and 101 or Latin 100 and 101.\nAlso, up to 12 units of the 28 may be from upper-division Classics courses."
+     },
+     {
+      "type": "choose",
+      "count": 1,
+      "items": [
+       {
+        "type": "course",
+        "code": "CLASS 150",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLASS 151",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 111A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 111B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 111C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 111F",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 111T",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 112A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 112C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 112D",
+        "status": "inactive"
+       }
+      ],
+      "catalog_rule_id": "cLZtQ7Xm",
+      "label": "B."
+     },
+     {
+      "type": "choose",
+      "count": 1,
+      "items": [
+       {
+        "type": "course",
+        "code": "CLASS 185",
+        "status": "active"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "CLASS 195A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CLASS 195B",
+          "status": "active"
+         }
+        ]
+       }
+      ],
+      "catalog_rule_id": "k9qehOd3",
+      "label": "C."
+     }
+    ],
+    "catalog_rule_id": "OoeRy7A6",
+    "description": "36 UD units are required",
+    "notes": "- Other UD courses not listed above that have a strong ancient history component may be substituted by petition.\n- In the first quarter of their junior year, all majors must make an appointment with the undergraduate advisor to review their progress towards meeting the requirements of the major."
+   }
+  }
+ ],
+ "courses": [
+  {
+   "code": "CLASS 20A",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "CLASS 20B",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "CLASS 36",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "CLASS 40",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "CLASS 101",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CLASS 102",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CLASS 106",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CLASS 109",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CLASS 110",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CLASS 130",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CLASS 140",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CLASS 145",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CLASS 150",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CLASS 151",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CLASS 155",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CLASS 165",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CLASS 170",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CLASS 171",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CLASS 178",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CLASS 180A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CLASS 180B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CLASS 185",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CLASS 190",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CLASS 192",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CLASS 195A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CLASS 195B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CLASS 198",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CLASS 199",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "CLASS 199RA",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GREEK 1",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "GREEK 2",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "GREEK 3",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "GREEK 100",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GREEK 101",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GREEK 110",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GREEK 142",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GREEK 143",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GREEK 151",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GREEK 152",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GREEK 153",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GREEK 158",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GREEK 171",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GREEK 173",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "GREEK 199",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 111A",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 111B",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 111C",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 111F",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 111T",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 112A",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 112C",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "HIST 112D",
+   "status": "inactive",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "LATIN 1",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "LATIN 2",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "LATIN 3",
+   "status": "active",
+   "section": "PREPARATION FOR THE MAJOR"
+  },
+  {
+   "code": "LATIN 100",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "LATIN 101",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "LATIN 102",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "LATIN 103",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "LATIN 113",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "LATIN 114",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "LATIN 115",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "LATIN 116",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "LATIN 120",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "LATIN 135",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "LATIN 136",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "LATIN 137",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "LATIN 138",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "LATIN 139",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  },
+  {
+   "code": "LATIN 199",
+   "status": "active",
+   "section": "UPPER-DIVISION MAJOR"
+  }
+ ]
+}
