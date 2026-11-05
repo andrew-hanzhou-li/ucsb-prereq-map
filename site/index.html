@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Prerequisite Map · UCSB</title>
+  <meta name="description" content="Pick a UCSB major or minor and see every course in it, in prerequisite order, with the full prerequisites of each one.">
+  <meta name="theme-color" content="#fcfcfb">
+  <!-- How the link looks when shared in a text or on social media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="The Prerequisite Map · UCSB">
+  <meta property="og:description" content="Pick a UCSB major or minor and see every course in it, in prerequisite order, with the full prerequisites of each one.">
+  <!-- The picture shown under a shared link (made by build_preview.py).
+       Absolute addresses, because Reddit and Discord fetch it from the site. -->
+  <meta property="og:url" content="https://ucsbplanner.duckdns.org/">
+  <meta property="og:image" content="https://ucsbplanner.duckdns.org/preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="The Computer Engineering map with ECE 152A selected: what it needs in red, what it unlocks in blue.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://ucsbplanner.duckdns.org/preview.png">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Literata:opsz,wght@7..72,500;7..72,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="top">
+    <!-- The masthead. Links use "#" (not "./") so they also work in the
+         single-file version, opened straight from your computer. -->
+    <div class="mast">
+      <h1 class="site-name"><a href="#" id="home-link">The Prerequisite Map</a><span class="tagline"><span class="wide-only">for UC Santa Barbara</span><span class="narrow-only">UCSB</span> · unofficial</span></h1>
+      <nav class="mast-nav">
+        <a href="#" id="all-link" hidden>All programs</a>
+        <button type="button" class="text-button" id="credit-button" data-open-credit>Credit</button>
+        <button type="button" class="text-button" id="about-button">About</button>
+        <a href="ucsb-prereq-map.html" id="footer-download" download>One-file copy <span class="file-size">(8.7 MB)</span></a>
+        <button type="button" class="text-button options-button" id="options-button" aria-expanded="false" aria-controls="more-options">Options</button>
+      </nav>
+    </div>
+
+    <!-- The line under it: which program, find a course, what to show. -->
+    <div class="sub">
+      <!-- The programs on the map; a double major or a major + minor shows both (app.js, showChosen). -->
+      <span class="chosen" id="chosen"></span>
+      <!-- Two views of the same programs (app.js, showView). -->
+      <nav class="views" id="views" hidden aria-label="View">
+        <a href="#" id="view-map">Map</a>
+        <a href="#" id="view-plan">Plan</a>
+      </nav>
+      <label class="picker">
+        <span class="visually-hidden">Major or minor</span>
+        <input id="major-input" placeholder="Choose a major or minor…" autocomplete="off">
+      </label>
+      <label class="picker more-options">
+        <span class="visually-hidden">Find a course</span>
+        <input id="course-input" placeholder="Find a course…" autocomplete="off">
+      </label>
+      <div class="options-row more-options" id="more-options">
+        <fieldset class="toggles" id="toggles" hidden>
+          <legend>Show:</legend>
+          <label><input type="checkbox" id="show-electives" checked> electives</label>
+          <label><input type="checkbox" id="show-outside"> every outside course</label>
+          <label><input type="checkbox" id="show-inactive"> courses not offered now</label>
+        </fieldset>
+        <p class="taken-status" id="taken-status" aria-live="polite"></p>
+      </div>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="map-area" aria-label="Prerequisite map">
+      <div id="map" class="map">
+        <div id="stage" class="stage"></div>
+      </div>
+
+      <!-- Name the linked courses that are scrolled out of view (app.js, updateOffscreen). -->
+      <button type="button" class="offscreen up" id="offscreen-up" hidden></button>
+      <button type="button" class="offscreen down" id="offscreen-down" hidden></button>
+
+      <div class="empty" id="empty">
+        <div class="empty-inner">
+          <!-- Shown instead of the welcome text when a link points at a
+               program with no map (app.js, showNotice). -->
+          <div class="notice" id="notice" hidden></div>
+
+          <div id="welcome">
+            <h2>Choose a major or minor.</h2>
+            <p>Every course in the program is listed in prerequisite order, with the courses from other departments it needs. Point at or click a course to see everything it needs and everything it unlocks.</p>
+            <p class="quick">For example: <a href="#economics-ba">Economics (B.A.)</a>, <a href="#statistics-and-data-science-bs">Statistics and Data Science (B.S.)</a>, or <a href="#computer-engineering-bs">Computer Engineering (B.S.)</a>.</p>
+          </div>
+
+          <!-- Every program, grouped by department (app.js, fillBrowseLists). -->
+          <p class="browse-count" id="browse-count"></p>
+          <div class="browse" id="browse"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Plan view (planner.js): settings, then the requirements beside a
+         grid of years and quarters. -->
+    <section class="plan-area" id="plan-area" aria-label="Quarter-by-quarter plan" hidden>
+      <div class="plan-tools" id="plan-tools">
+        <!-- On phones the settings and the five buttons fold away behind
+             these two, so the grid starts near the top (app.js, section 8). -->
+        <div class="plan-phone-bar">
+          <button type="button" class="text-button" id="plan-settings-button" aria-expanded="false" aria-controls="plan-settings">Settings</button>
+          <button type="button" class="text-button" id="plan-more-button" aria-expanded="false" aria-controls="plan-buttons" aria-label="More plan actions">⋯</button>
+        </div>
+        <div class="plan-settings" id="plan-settings">
+          <label>First quarter at UCSB: Fall <select id="plan-start"></select></label>
+          <label><input type="checkbox" id="plan-transfer"> transfer student (start in year 3)</label>
+          <label><input type="checkbox" id="plan-summer"> plan summer quarters</label>
+          <label>up to <input type="number" id="plan-cap" min="4" max="30"> units a quarter</label>
+        </div>
+        <span class="plan-buttons" id="plan-buttons">
+          <button type="button" class="text-button" id="plan-import">Read my transcript</button>
+          <button type="button" class="text-button" id="plan-autofill">Auto-fill the rest</button>
+          <button type="button" class="text-button" id="plan-share">Copy share link</button>
+          <button type="button" class="text-button" id="plan-download">Download (.csv)</button>
+          <button type="button" class="text-button" id="plan-clear">Clear plan</button>
+        </span>
+        <p class="plan-message" id="plan-message" aria-live="polite"></p>
+      </div>
+      <div class="plan-body">
+        <div class="plan-reqs" id="plan-reqs"></div>
+        <div class="plan-grid" id="plan-grid"></div>
+      </div>
+    </section>
+
+    <aside class="panel" id="panel" aria-live="polite" hidden>
+      <button type="button" class="panel-handle" id="panel-handle">Course details</button>
+      <div id="panel-body" class="panel-empty"></div>
+    </aside>
+  </main>
+
+  <footer class="bottom">
+    <p id="footer-catalog">Built from the UCSB General Catalog.</p>
+    <p>An unofficial student project. Confirm your plan with a department advisor.</p>
+    <p id="footer-repo"></p>
+  </footer>
+
+  <dialog class="about" id="about">
+    <form method="dialog" class="about-close"><button type="submit" class="text-button">close</button></form>
+    <h2>About this map</h2>
+    <p class="lede">Choose a UCSB major or minor and see every course in it on one page, in prerequisite order, with what each course needs and what it leads to.</p>
+
+    <h3>How to read it</h3>
+    <ul>
+      <li><strong>Steps.</strong> The required courses, and the courses from other departments they need, are listed in steps. A course's prerequisites are always in an earlier step. Steps are an order, not a schedule, so they work whether you started as a freshman, transferred or switched majors.</li>
+      <li><strong>Electives</strong> follow the steps, one list for each set of electives, with its rule (for example "complete at least 6").</li>
+      <li><strong>Point at or click a course.</strong> Red lines lead to it from everything it needs, all the way back; blue lines lead from it to what it unlocks; everything else fades. Clicking also opens the course's entry beside the map: its prerequisites in full and in the catalog's own words.</li>
+      <li><strong>Getting back.</strong> Press <kbd>esc</kbd>, or "close" beside the entry, to see the whole map again. "← back" returns to the course you looked at before. "All programs" returns to the list.</li>
+      <li><strong>Mark courses as taken,</strong> and the ones you can take next are marked "next".</li>
+    </ul>
+
+    <h3>How courses are marked</h3>
+    <dl class="key">
+      <dt>ECE 15A</dt><dd>in red: needed by the course you've chosen</dd>
+      <dt>ECE 154A</dt><dd>in blue: unlocked by it</dd>
+      <dt>CMPSC 8&nbsp;†</dt><dd>from another department, needed first</dd>
+      <dt><i>or MATH 3A</i></dt><dd>take this course or the one named</dd>
+      <dt>✓ ECON 1</dt><dd>you've marked it taken</dd>
+      <dt>ECON 2 <i class="next">next</i></dt><dd>you've taken what it needs</dd>
+      <dt class="muted">ECON 141</dt><dd>in the catalog but not offered now (shown only if you ask)</dd>
+    </dl>
+
+    <h3>Planning quarter by quarter</h3>
+    <p>"Plan" (next to the program names) lays your courses out by year and quarter. Click a course to add it: it goes in the first quarter after its prerequisites, when it's usually offered, under your unit limit. Auto-fill places the rest. Add grades to see your GPA, or read them from your GOLD transcript; the file never leaves your computer.</p>
+
+    <h3>Your marks stay on your device</h3>
+    <p>Courses you mark as taken are saved in your browser on this device only. They're never sent anywhere, and the site has no accounts and no analytics. Clearing your browser's data, or using a private window, removes the marks.</p>
+
+    <h3>Sharing and saving</h3>
+    <p>The address bar names the program and the course you've chosen, so you can copy it and send it. There is also a <a href="ucsb-prereq-map.html" class="download-link" download>one-file copy</a> of the whole site <span class="file-size">(8.7 MB)</span> that opens in any browser, even offline. It's large for a phone, so it's best saved on a computer.</p>
+
+    <h3>Where the data comes from</h3>
+    <p>Everything comes from the <a href="https://catalog.ucsb.edu/" target="_blank" rel="noopener">UCSB General Catalog</a>: the course list, each course's prerequisites, and each program's requirements. Course prerequisites are written in plain English in the catalog, so a program reads them into "all of" and "one of" rules. Program requirements are copied from the catalog's structured lists.</p>
+
+    <h3>What it can't check</h3>
+    <ul>
+      <li><strong>Grades.</strong> "C or better" is shown, but marking a course taken assumes you met the grade.</li>
+      <li><strong>Conditions</strong> like class standing, major restrictions or instructor approval are listed, not checked. ECE 139, for example, has no course prerequisites in the catalog, only "open to EE and CE majors", so it sits with the other upper-division core courses.</li>
+      <li><strong>Rules written as notes</strong> (for example "a maximum of 4 units of 199 courses") appear as text beside the map.</li>
+      <li><strong>Some programs aren't here.</strong> The catalog doesn't list course requirements for College of Creative Studies majors, the individual major or Undeclared, so there's nothing to map.</li>
+      <li><strong>Unclear wording.</strong> When the catalog mixes "and" and "or" without punctuation, the entry says the reading is a best guess and shows the original wording.</li>
+    </ul>
+
+    <h3>An unofficial student project</h3>
+    <p>It isn't made or endorsed by UC Santa Barbara. Requirements change, and the catalog is the official source. Confirm your plan with your department advisor.</p>
+  </dialog>
+
+  <dialog class="about credit" id="credit">
+    <form method="dialog" class="about-close"><button type="submit" class="text-button">done</button></form>
+    <h2>Credit you already have</h2>
+    <p class="lede">Courses you have credit for count as done: their prerequisites are met on the map and in your plan. Saved in this browser only.</p>
+
+    <h3>AP exams</h3>
+    <p class="note">Pick your score for each exam you took; leave the rest at “—”. From the <a id="ap-source" href="https://catalog.ucsb.edu/" target="_blank" rel="noopener">catalog's AP chart</a>; scores of 1 or 2 earn no credit.</p>
+    <label class="ap-filter"><span class="visually-hidden">Filter the exams</span>
+      <input type="search" id="ap-filter" placeholder="Filter the exams (calc, bio, history…)" autocomplete="off"></label>
+    <div class="ap-list" id="ap-list"></div>
+
+    <h3>College courses</h3>
+    <p class="note">Dual enrollment, community college or another university: tick the UCSB course each one counts as. For California community colleges, <a href="https://assist.org/" target="_blank" rel="noopener">ASSIST.org</a> lists the official equivalents.</p>
+    <div id="transfer-suggest"></div>
+    <p class="transfer-add-row">
+      <label>Another UCSB course <input id="transfer-input" list="transfer-options" placeholder="e.g. CMPSC 40" autocomplete="off"></label>
+      <datalist id="transfer-options"></datalist>
+      <button type="button" class="text-button" id="transfer-add">add</button>
+    </p>
+    <ul class="transfer-chosen" id="transfer-chosen"></ul>
+  </dialog>
+
+  <dialog class="about transcript" id="transcript">
+    <form method="dialog" class="about-close"><button type="submit" class="text-button">cancel</button></form>
+    <h2>Read your transcript</h2>
+    <p class="lede">Your courses and grades go into your plan, finished courses with their grades and current ones as In Progress.</p>
+    <p class="note"><strong>The file stays on your computer.</strong> It's read by this page in your browser, never uploaded, and not saved; only the courses you approve below are kept, in your plan. No GOLD login is ever needed.</p>
+    <p><label>Your transcript from GOLD (PDF or text) <input type="file" id="transcript-file" accept=".pdf,.txt,application/pdf,text/plain"></label></p>
+    <p><label>Or paste its text<br><textarea id="transcript-text" rows="6" placeholder="Fall 2025&#10;CMPSC 16  PROBLEM SOLVING I  4.0  A-&#10;…"></textarea></label></p>
+    <p><button type="button" class="text-button" id="transcript-read">Read it</button> <span id="transcript-status" class="note"></span></p>
+    <div id="transcript-review"></div>
+    <p><button type="button" class="text-button" id="transcript-apply" hidden>Apply to my plan</button></p>
+  </dialog>
+
+  <script src="student.js"></script>
+  <script src="search.js"></script>
+  <script src="app.js"></script>
+  <script src="credit.js"></script>
+  <script src="planner.js"></script>
+  <script src="grades.js"></script>
+  <script src="transcript.js"></script>
+</body>
+</html>
