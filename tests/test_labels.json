@@ -1,5 +1,5 @@
 {
- "about": "Hand-labeled answers for 300 courses, in the notation explained in notation.py. group 'tuning': 150 courses used while writing the parser (it was adjusted until these passed). group 'heldout': 150 different courses labeled before the parser was run on them; the parser was then fixed using its misses, so its later scores are optimistic too. group 'final': 150 more courses, labeled after the parser was frozen and scored once; this is the honest accuracy number. Within each group, set 'random' = 100 random courses that have prerequisite text, set 'major' = 50 random lower/upper-division courses from ECON, PSTAT, MATH, ECE, CMPSC, PHYS.",
+ "about": "AI-generated answers for 450 courses, in the notation explained in notation.py. group 'tuning': 150 courses used while writing the parser (it was adjusted until these passed). group 'heldout': 150 different courses labeled before the parser was run on them; the parser was then fixed using its misses, so its later scores are optimistic too. group 'final': 150 more courses, labeled after the parser was frozen and scored once; this is the honest accuracy number. Within each group, set 'random' = 100 random courses that have prerequisite text, set 'major' = 50 random lower/upper-division courses from ECON, PSTAT, MATH, ECE, CMPSC, PHYS.",
  "courses": [
   {
    "code": "FEMST 195HA",
