@@ -9,7 +9,7 @@ Prerequisite maps for every UCSB major and minor, built from the official Genera
 ## How it works
 
 - **Fetch** the 2026-27 catalog from its Coursedog API, the same requests catalog.ucsb.edu makes (`pipeline/fetch.py`, `pipeline/fetch_programs.py`).
-- **Parse** each course's prerequisite English into an AND/OR tree. On 150 hand-labeled courses, labeled after the parser was frozen and scored once, 91% (137 of 150) come out exactly right (`pipeline/parser.py`, scored by `pipeline/measure.py`).
+- **Parse** each course's prerequisite English into an AND/OR tree. On 150 hand-labeled courses, labeled after the parser was frozen and scored once, 90% (135 of 150) came out exactly right (`pipeline/parser.py`, scored by `pipeline/measure.py`).
 - **Build** one graph per major or minor, with courses grouped into prerequisite steps (`pipeline/build_graph.py` writes `site/data/`).
 - **Serve** a static site from `site/`, deployed to GitHub Pages by GitHub Actions on every push to `main`.
 
