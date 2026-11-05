@@ -19,7 +19,7 @@ Python (standard library only for the data pipeline; Playwright for the browser 
 
 ## Design
 
-How it's designed: [DESIGN.md](DESIGN.md) (coming soon).
+How it's designed: [DESIGN.md](DESIGN.md).
 
 ## Run it locally
 
