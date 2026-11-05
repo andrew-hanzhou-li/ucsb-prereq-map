@@ -2,7 +2,7 @@
 measure.py: how accurate is the parser?
 
 Runs the parser on every course in test_labels.json and compares its answer
-to the hand-written one. A course counts as correct only if the whole tree
+to the labeled one. A course counts as correct only if the whole tree
 matches exactly: every course, every and/or, every grade, every
 "concurrent" flag and the kind of every condition. A second score ignores the
 condition kinds ("restriction" vs "other"), since only course logic draws
@@ -11,10 +11,12 @@ arrows on the map.
     py pipeline/measure.py            prints the score and every miss
     py pipeline/measure.py --quiet    prints only the score
 
-The 450 test courses come in two groups:
+The answers were generated with AI, not written by a person.
+
+The 450 test courses come in three groups:
   tuning   150 courses I looked at while writing the parser. It was adjusted
            until these passed, so their score is optimistic.
-  heldout  150 different courses, labeled by hand BEFORE the parser was run
+  heldout  150 different courses, labeled BEFORE the parser was run
            on them. Its first score was the first honest number; I then fixed
            the parser using its misses, so later scores are optimistic too.
   final    150 more courses, labeled after the parser was frozen and scored
