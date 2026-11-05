@@ -660,7 +660,7 @@ function electiveChipHtml(slot) {
 }
 
 // ===========================================================================
-// 6. The panel beside the plan (slim, as CLAUDE.md asks)
+// 6. The panel beside the plan (kept slim)
 // ===========================================================================
 
 /*
