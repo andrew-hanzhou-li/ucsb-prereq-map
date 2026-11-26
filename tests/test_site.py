@@ -684,7 +684,6 @@ def main():
         check("plan: the credit box is at the top of the left column",
               page.locator("#plan-reqs > .req-credit [data-open-credit]").count() == 1)
         check("plan: only one requirement area is open", page.locator("#plan-reqs details.req-section[open]").count() == 1)
-        areas = page.locator("#plan-reqs details.req-section")
         closed = page.locator("#plan-reqs details.req-section:not([open]) > summary").first
         closed_key = closed.evaluate("s => s.parentElement.dataset.area")
         closed.click()
