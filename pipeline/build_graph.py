@@ -303,10 +303,10 @@ def offered_for(code, info):
     match = re.search(r"quarters usually offered:\s*([A-Za-z ,]+)", text, flags=re.IGNORECASE)
     if match:
         found = [q for q in QUARTER_ORDER if q.lower() in match.group(1).lower()]
-    elif re.search(r"summer( session)? only", text, flags=re.IGNORECASE):
+    elif re.search(r"\bsummer( session)? only\b", text, flags=re.IGNORECASE):
         found = ["Summer"]
     else:
-        match = re.search(r"offered every (fall|winter|spring)", text, flags=re.IGNORECASE)
+        match = re.search(r"\boffered every (fall|winter|spring)\b", text, flags=re.IGNORECASE)
         if match:
             found = [match.group(1).capitalize()]
     return found
