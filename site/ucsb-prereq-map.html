@@ -3712,12 +3712,18 @@ function earliestSlot(code, fromIndex) {
 // Put a course in its earliest quarter, adding years if the plan is full.
 // Returns the quarter, or null.
 function placeCourse(code) {
+  const yearsBefore = plan.years;
   let slot = earliestSlot(code);
   while (!slot && plan.years + plan.firstYear - 1 < MAX_YEARS) {
     plan.years += 1;
     slot = earliestSlot(code);
   }
-  if (!slot) return null;
+  if (!slot) {
+    // Adding years didn't help (e.g. a summer-only course with summers off),
+    // so don't leave the plan stretched to the limit
+    plan.years = yearsBefore;
+    return null;
+  }
   plan.placed[code] = slot;
   delete (plan.auto || {})[code];          // auto-fill marks its own afterwards
   const info = courseInfo(code);
@@ -4296,7 +4302,10 @@ function addCourse(code) {
     return;
   }
   const slot = placeCourse(code);
-  say(slot ? code + " goes in " + slotName(slot) + "." : "No room for " + code + " in " + MAX_YEARS + " years.");
+  if (slot) say(code + " goes in " + slotName(slot) + ".");
+  else if (!plan.summer && offeredList(code).every(q => q === "Summer")) {
+    say(code + " is only offered in summer. Turn on summer quarters to plan it.");
+  } else say("No room for " + code + " in " + MAX_YEARS + " years.");
   planChanged();
   showPlanCourse(code);
 }
