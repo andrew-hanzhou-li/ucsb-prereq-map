@@ -1,0 +1,73 @@
+name: Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  data-and-parser:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run checks
+        shell: bash
+        run: |
+          set -o pipefail
+          {
+            python tests/test_graph.py &&
+            python tests/test_parser.py &&
+            python tests/test_pipeline.py
+          } 2>&1 | tee test-output.txt
+
+      - name: Show failures as annotations
+        # Puts the failing lines on the run's summary page, so a failure can be
+        # read without opening the full log.
+        if: failure()
+        shell: bash
+        run: |
+          [ -f test-output.txt ] || exit 0
+          { grep -E 'FAIL|ERROR|Error|assert|Traceback|failed' test-output.txt || true; tail -n 5 test-output.txt; } \
+            | awk '!seen[$0]++' | head -n 20 | while IFS= read -r line; do echo "::error::${line:0:400}"; done
+
+  site:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Playwright
+        run: |
+          pip install playwright
+          python -m playwright install --with-deps chromium
+
+      - name: Run browser checks
+        shell: bash
+        run: |
+          set -o pipefail
+          python -m http.server 8765 --directory site > /dev/null 2>&1 &
+          # Wait for the server rather than guessing how long it needs
+          for i in $(seq 1 30); do curl -sf http://localhost:8765/ > /dev/null && break; sleep 1; done
+          python tests/test_site.py 8765 2>&1 | tee test-output.txt
+
+      - name: Show failures as annotations
+        # Puts the failing lines on the run's summary page, so a failure can be
+        # read without opening the full log.
+        if: failure()
+        shell: bash
+        run: |
+          [ -f test-output.txt ] || exit 0
+          { grep -E 'FAIL|ERROR|Error|assert|Traceback|failed' test-output.txt || true; tail -n 5 test-output.txt; } \
+            | awk '!seen[$0]++' | head -n 20 | while IFS= read -r line; do echo "::error::${line:0:400}"; done
