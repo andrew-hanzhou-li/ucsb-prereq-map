@@ -189,20 +189,21 @@ def test_major_rules():
     check("real_cycles: keeps real loops once, drops 'take together' pairs", loops == [["A 1", "A 2", "A 1"]], loops)
 
     # A lecture/lab pair where the recursion stops early: L 1L comes out in
-    # column 0, and build_major's cleanup pass moves it (and A 2 after it) right.
+    # column 0, and build_major's cleanup pass moves it (and Z 2 after it) right.
+    # Z 2 must sort after L 1L, or computing it first would place L 1L directly.
     major = {"id": "m", "name": "M", "kind": "major", "catalog_year": "2026-27", "source": "s", "narrative": [],
              "sections": [{"name": "Prep", "requirement": {"type": "all", "items": [
-                 req_course("L 1"), req_course("L 1L"), req_course("A 2")]}}]}
+                 req_course("L 1"), req_course("L 1L"), req_course("Z 2")]}}]}
     prereqs = {"L 1": {"requires": AND(course("O 2"), course("L 1L", concurrent=True))},
                "L 1L": {"requires": course("L 1", concurrent=True)},
                "O 2": {"requires": course("O 1")},
-               "A 2": {"requires": course("L 1L")}}
+               "Z 2": {"requires": course("L 1L")}}
     graph = build_major(major, prereqs, {"L 1": {"title": "Lecture", "units": "4"}})
     nodes = {n["id"]: n for n in graph["nodes"]}
     check("build_major: courses in number order, outside prerequisites added",
-          [n["id"] for n in graph["nodes"]] == ["A 2", "L 1", "L 1L", "O 1", "O 2"], list(nodes))
+          [n["id"] for n in graph["nodes"]] == ["L 1", "L 1L", "O 1", "O 2", "Z 2"], list(nodes))
     check("build_major: the cleanup pass puts a lab level with its lecture",
-          {code: n["column"] for code, n in nodes.items()} == {"O 1": 0, "O 2": 1, "L 1": 2, "L 1L": 2, "A 2": 3},
+          {code: n["column"] for code, n in nodes.items()} == {"O 1": 0, "O 2": 1, "L 1": 2, "L 1L": 2, "Z 2": 3},
           {code: n["column"] for code, n in nodes.items()})
     check("build_major: outside courses are prerequisites; unknown ones are marked",
           (nodes["O 1"]["role"], nodes["O 1"]["status"], nodes["L 1"]["title"]) ==
