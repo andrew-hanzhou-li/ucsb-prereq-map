@@ -1140,15 +1140,30 @@ function packPlan() {
 function unpackPlan(text) {
   try {
     const data = JSON.parse(atob(text.replace(/-/g, "+").replace(/_/g, "/")));
+    // A link can hold anything, and what it holds is saved, so keep only
+    // what a real plan has: a start year near now, quarters like "1-F",
+    // numbers of units, and elective slots with a key and a quarter.
+    const start = Number(data.s);
+    const isSlot = slot => typeof slot === "string" && /^-?\d+-[FWSU]$/.test(slot);
+    const placed = {};
+    for (const [code, slot] of Object.entries(data.p && typeof data.p === "object" ? data.p : {})) {
+      if (isSlot(slot)) placed[code] = slot;
+    }
+    const units = {};
+    for (const [code, n] of Object.entries(data.v && typeof data.v === "object" ? data.v : {})) {
+      if (typeof n === "number") units[code] = n;
+    }
+    const electives = (Array.isArray(data.e) ? data.e : [])
+      .filter(e => Array.isArray(e) && typeof e[0] === "string" && isSlot(e[1]));
     return {
       firstYear: data.f === 3 ? 3 : 1,
       years: Math.min(MAX_YEARS, Math.max(1, Number(data.y) || 4)),
-      startYear: Number(data.s) || defaultStartYear(),
+      startYear: Number.isInteger(start) && Math.abs(start - defaultStartYear()) <= 50 ? start : defaultStartYear(),
       summer: Boolean(data.u),
       cap: Number(data.c) || 16,
-      placed: data.p || {},
-      units: data.v || {},
-      electives: (data.e || []).map((e, i) => ({ id: "e" + i, key: e[0], slot: e[1] })),
+      placed: placed,
+      units: units,
+      electives: electives.map((e, i) => ({ id: "e" + i, key: e[0], slot: e[1] })),
     };
   } catch (error) {
     return null;
@@ -1178,7 +1193,10 @@ function downloadPlan() {
       rows.push([slot.year, slotName(slot.id), electiveLabel(e.key), "", ELECTIVE_UNITS, ""]);
     }
   }
-  const csv = rows.map(r => r.map(v => '"' + String(v).replace(/"/g, '""') + '"').join(",")).join("\r\n");
+  // A cell starting with = + - or @ is a formula to a spreadsheet; a course
+  // code from a shared link could be one, so such cells get a ' in front.
+  const cell = v => String(v).replace(/^[=+\-@\t\r]/, "'$&");
+  const csv = rows.map(r => r.map(v => '"' + cell(v).replace(/"/g, '""') + '"').join(",")).join("\r\n");
   const link = document.createElement("a");
   link.href = URL.createObjectURL(new Blob([csv], { type: "text/csv" }));
   link.download = "ucsb-plan.csv";
