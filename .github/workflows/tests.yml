@@ -13,9 +13,9 @@ jobs:
   data-and-parser:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
 
@@ -28,6 +28,15 @@ jobs:
             python tests/test_parser.py &&
             python tests/test_pipeline.py
           } 2>&1 | tee test-output.txt
+
+      - name: Post the test summary
+        # Shows how many tests ran (and were skipped) on the run page.
+        if: always()
+        shell: bash
+        run: |
+          [ -f test-output.txt ] || exit 0
+          grep -E "^Ran [0-9]+ tests|^OK|^FAILED|checks passed|[0-9]+ (passed|failed|skipped)|^# (tests|pass|fail|skipped) " test-output.txt \
+            | tail -n 6 | while IFS= read -r line; do echo "::notice::${line:0:400}"; done
 
       - name: Show failures as annotations
         # Puts the failing lines on the run's summary page, so a failure can be
@@ -42,9 +51,9 @@ jobs:
   site:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
 
@@ -61,6 +70,15 @@ jobs:
           # Wait for the server rather than guessing how long it needs
           for i in $(seq 1 30); do curl -sf http://localhost:8765/ > /dev/null && break; sleep 1; done
           python tests/test_site.py 8765 2>&1 | tee test-output.txt
+
+      - name: Post the test summary
+        # Shows how many tests ran (and were skipped) on the run page.
+        if: always()
+        shell: bash
+        run: |
+          [ -f test-output.txt ] || exit 0
+          grep -E "^Ran [0-9]+ tests|^OK|^FAILED|checks passed|[0-9]+ (passed|failed|skipped)|^# (tests|pass|fail|skipped) " test-output.txt \
+            | tail -n 6 | while IFS= read -r line; do echo "::notice::${line:0:400}"; done
 
       - name: Show failures as annotations
         # Puts the failing lines on the run's summary page, so a failure can be
