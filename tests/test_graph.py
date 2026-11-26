@@ -23,7 +23,7 @@ import sys
 
 # build_graph.py lives in pipeline/; tell Python to look there for it.
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "pipeline"))
-from build_graph import (OFFERING_OVERRIDES, POOL_LIMIT, ColumnFinder, add_outside_prerequisites,
+from build_graph import (OFFERING_OVERRIDES, POOL_LIMIT, ColumnFinder, add_outside_prerequisites, build_major,
                          collect_major_courses, describe_rule, is_upper_division, make_edges, offered_for,
                          real_cycles, sort_key, upper_division_floor)
 
@@ -187,6 +187,29 @@ def test_major_rules():
                "L 1L": {"requires": course("L 1", concurrent=True)}}
     loops = real_cycles([["A 1", "A 2", "A 1"], ["A 1", "A 2", "A 1"], ["L 1", "L 1L", "L 1"]], prereqs)
     check("real_cycles: keeps real loops once, drops 'take together' pairs", loops == [["A 1", "A 2", "A 1"]], loops)
+
+    # A lecture/lab pair where the recursion stops early: L 1L comes out in
+    # column 0, and build_major's cleanup pass moves it (and A 2 after it) right.
+    major = {"id": "m", "name": "M", "kind": "major", "catalog_year": "2026-27", "source": "s", "narrative": [],
+             "sections": [{"name": "Prep", "requirement": {"type": "all", "items": [
+                 req_course("L 1"), req_course("L 1L"), req_course("A 2")]}}]}
+    prereqs = {"L 1": {"requires": AND(course("O 2"), course("L 1L", concurrent=True))},
+               "L 1L": {"requires": course("L 1", concurrent=True)},
+               "O 2": {"requires": course("O 1")},
+               "A 2": {"requires": course("L 1L")}}
+    graph = build_major(major, prereqs, {"L 1": {"title": "Lecture", "units": "4"}})
+    nodes = {n["id"]: n for n in graph["nodes"]}
+    check("build_major: courses in number order, outside prerequisites added",
+          [n["id"] for n in graph["nodes"]] == ["A 2", "L 1", "L 1L", "O 1", "O 2"], list(nodes))
+    check("build_major: the cleanup pass puts a lab level with its lecture",
+          {code: n["column"] for code, n in nodes.items()} == {"O 1": 0, "O 2": 1, "L 1": 2, "L 1L": 2, "A 2": 3},
+          {code: n["column"] for code, n in nodes.items()})
+    check("build_major: outside courses are prerequisites; unknown ones are marked",
+          (nodes["O 1"]["role"], nodes["O 1"]["status"], nodes["L 1"]["title"]) ==
+          ("prerequisite", "not_in_catalog", "Lecture"), nodes["O 1"])
+    check("build_major: stats", graph["stats"] == {"courses_in_major": 3, "outside_prerequisites": 2, "edges": 5,
+                                                   "columns": 4, "upper_division_floor": 0}, graph["stats"])
+    check("build_major: a lecture/lab pair is not a loop", graph["loops"] == [], graph["loops"])
 
 
 def test_offered():
