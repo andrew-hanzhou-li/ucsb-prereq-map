@@ -1266,6 +1266,7 @@ function hideCampusScreen() {
 document.addEventListener("keydown", function (event) {
   if (!document.body.classList.contains("choosing-campus")) return;
   if (event.ctrlKey || event.metaKey || event.altKey) return;
+  if (document.querySelector("dialog[open]")) return;     // typing in the About box
   if (event.target.closest && event.target.closest("input, textarea, select")) return;
   const campus = CAMPUSES[Number(event.key) - 1];
   if (/^[1-9]$/.test(event.key) && campus && isReady(campus.id)) location.hash = "#" + campus.id + "/";

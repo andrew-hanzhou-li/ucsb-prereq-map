@@ -19,7 +19,7 @@ Python (standard library only for the data pipeline; Playwright for the browser 
 
 ## Design
 
-How it's designed: [DESIGN.md](DESIGN.md).
+How it's built: [DESIGN.md](DESIGN.md). How it looks, and why: [docs/design-brief.md](docs/design-brief.md). The plan for every UC campus: [docs/PLAN-all-uc.md](docs/PLAN-all-uc.md).
 
 ## Run it locally
 
