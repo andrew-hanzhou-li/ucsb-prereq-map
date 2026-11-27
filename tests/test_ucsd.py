@@ -149,6 +149,10 @@ def test_readings(parser):
         ("DSC 190", "department and instructor approval required to monitor enrollment. Restricted to students with "
                     "upper-division standing.", "@consent & @standing"),
         ("MATH 96", "AP Calculus AB score of 4 or more, or MATH 20A.", "@exam | MATH 20A"),
+        ("BENG 187C", "BENG 187B; bioengineering, bioengineering: biotechnology, or bioengineering: bioinformatics "
+                      "majors only or consent of instructor.", "(@restriction & BENG 187B) | @consent"),
+        ("CLX 199", "students must meet with a faculty member for approval and to define course objectives.", "@consent"),
+        ("CSE 12", "CSE 11 and CS majors only.", "@restriction & CSE 11"),
     ]
     for code, text, expected in cases:
         got = to_notation(build_prereqs.parse(parser, text, code)["requires"])

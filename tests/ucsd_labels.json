@@ -1,5 +1,5 @@
 {
- "about": "AI-generated answers for 300 UC San Diego courses, in the notation explained in pipeline/notation.py, written by three separate labelers from the catalog text alone, before the parser was ever run on UCSD text. group 'tuning': may be looked at while adjusting the parser. group 'heldout': scored, then its misses may be used, so later scores are optimistic. group 'final': scored once, after the parser is frozen; this is the honest accuracy number. set 'random' = random courses with prerequisite text; set 'major' = random courses from CSE, MATH, ECON, CHEM, PHYS, COGS, ECE, DSC, MAE and biology. Sample drawn with random.Random(20261127). 'prereq_text' is everything after 'Prerequisites:' in the catalog, including notes. Conventions: 'or equivalent' is | @other; a repeated tag inside one & or | is written once. 'restricted to seniors' or 'upper-division ... majors only' is both @restriction and @standing. Scores: the final group scored 84/100 (79% random, 94% major) on the parser frozen in commit c35e32e; its misses were then used, so a later 'final' score is optimistic. group 'final2': 100 more courses (random.Random(20261128)), labeled by two new labelers with the conventions above, kept exactly as labeled, and scored once on the parser frozen in commit 6e241c7. final2 scored 85/100 exactly right (82% random, 91% major; course logic 86/100). One of its misses is a label mistake (DSC 100: the course is DSC 40BR, the label says DSC 40R), left as labeled. Convention added later: an approved Special Studies form is @consent (labelers had differed; DSGN 99 and COGS 99 updated). group 'final3': 100 more courses (random.Random(20261129)), each labeled by two labelers independently (they agreed on all 100), scored once on the parser frozen in commit fb24dd6. final3 scored 91/100 exactly right (91% random, 91% major). group 'final4': 100 more courses (random.Random(20261130)), double-labeled (agreed on all 100), scored once on the parser frozen in commit c954c01. final4 scored 90/100 exactly right (88% random, 94% major).",
+ "about": "AI-generated answers for 300 UC San Diego courses, in the notation explained in pipeline/notation.py, written by three separate labelers from the catalog text alone, before the parser was ever run on UCSD text. group 'tuning': may be looked at while adjusting the parser. group 'heldout': scored, then its misses may be used, so later scores are optimistic. group 'final': scored once, after the parser is frozen; this is the honest accuracy number. set 'random' = random courses with prerequisite text; set 'major' = random courses from CSE, MATH, ECON, CHEM, PHYS, COGS, ECE, DSC, MAE and biology. Sample drawn with random.Random(20261127). 'prereq_text' is everything after 'Prerequisites:' in the catalog, including notes. Conventions: 'or equivalent' is | @other; a repeated tag inside one & or | is written once. 'restricted to seniors' or 'upper-division ... majors only' is both @restriction and @standing. Scores: the final group scored 84/100 (79% random, 94% major) on the parser frozen in commit c35e32e; its misses were then used, so a later 'final' score is optimistic. group 'final2': 100 more courses (random.Random(20261128)), labeled by two new labelers with the conventions above, kept exactly as labeled, and scored once on the parser frozen in commit 6e241c7. final2 scored 85/100 exactly right (82% random, 91% major; course logic 86/100). One of its misses is a label mistake (DSC 100: the course is DSC 40BR, the label says DSC 40R), left as labeled. Convention added later: an approved Special Studies form is @consent (labelers had differed; DSGN 99 and COGS 99 updated). group 'final3': 100 more courses (random.Random(20261129)), each labeled by two labelers independently (they agreed on all 100), scored once on the parser frozen in commit fb24dd6. final3 scored 91/100 exactly right (91% random, 91% major). group 'final4': 100 more courses (random.Random(20261130)), double-labeled (agreed on all 100), scored once on the parser frozen in commit c954c01. final4 scored 90/100 exactly right (88% random, 94% major). group 'final5': 100 more courses (random.Random(20261201)), double-labeled (agreed on all 100), scored once on the parser frozen in commit 9c12166. final5 scored 94/100 exactly right (94% random, 94% major).",
  "courses": [
   {
    "code": "BIPN 100R",
@@ -4328,6 +4328,720 @@
    "prereq_text": "CSE 20 or MATH 15A or MATH 31CH; students who have completed MATH 154 or MATH 184 or MATH 188 previously or concurrently may not receive credit for CSE 21; restricted to undergraduates. Graduate students will be allowed as space permits.",
    "expected": "(CSE 20 | MATH 15A | MATH 31CH) & @restriction",
    "note": "'restricted to undergraduates' kept as @restriction; credit rule and space-permits note omitted."
+  },
+  {
+   "code": "BENG 99H",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "student must be of first-year standing and a Regents Scholar; approved Special Studies form.",
+   "expected": "@standing & @restriction & @consent",
+   "note": "Regents Scholar read as @restriction; approved Special Studies form as @consent. / Regents Scholar treated as @restriction; approved Special Studies form = @consent."
+  },
+  {
+   "code": "CHIN 182B",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "any one of the following or department approval through placement interview: CHIN 165A-B-C, CHIN 169A-B, CHIN 182A, CHIN 182C, CHIN 185A-B-C.",
+   "expected": "(CHIN 165A & CHIN 165B & CHIN 165C) | (CHIN 169A & CHIN 169B) | CHIN 182A | CHIN 182C | (CHIN 185A & CHIN 185B & CHIN 185C) | @consent",
+   "note": "Hyphenated items read as full sequences per rule 1; placement-interview department approval read as @consent. / Dash sequences in a 'one of' list read as whole sequences; department approval via placement interview tagged @consent, not @exam."
+  },
+  {
+   "code": "TDDE 151",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "upper-division standing or consent of instructor.",
+   "expected": "@standing | @consent"
+  },
+  {
+   "code": "ANAR 154",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "upper-division standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "MUS 20",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "none.",
+   "expected": "-"
+  },
+  {
+   "code": "ANAR 113",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "upper-division standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "VIS 156",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "VIS 84.",
+   "expected": "VIS 84"
+  },
+  {
+   "code": "ANTH 111",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "upper-division standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "POLI 104P",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "upper-division standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "SIO 144",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "undergraduate: SIO 50, 102, and 120 or consent of instructor. Graduate: graduate-level standing or consent of instructor. Graduate level requires student presentation.",
+   "expected": "(SIO 50 & SIO 102 & SIO 120) | @standing | @consent",
+   "note": "Undergraduate path and graduate path combined as alternatives; graduate standing = @standing; consent appears in both paths. / Undergraduate and graduate paths joined by OR; consent appears in both so written once."
+  },
+  {
+   "code": "HIEU 184",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "upper-division or graduate standing and department stamp.",
+   "expected": "@standing & @consent"
+  },
+  {
+   "code": "LTWR 119W",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "LTWR 8A or 8B.",
+   "expected": "LTWR 8A | LTWR 8B"
+  },
+  {
+   "code": "LIAB 1F",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "LIAB 1E.",
+   "expected": "LIAB 1E"
+  },
+  {
+   "code": "COMM 106N",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "junior or senior standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "MGT 128",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "upper-division standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "VIS 141B",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "VIS 141A. Open to ICAM and speculative design majors and minors only.",
+   "expected": "VIS 141A & @restriction"
+  },
+  {
+   "code": "SIO 10",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "none.",
+   "expected": "-"
+  },
+  {
+   "code": "VIS 126J",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "none.",
+   "expected": "-"
+  },
+  {
+   "code": "VIS 113AN",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "VIS 112.",
+   "expected": "VIS 112"
+  },
+  {
+   "code": "RELI 146",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "upper-division standing or consent of instructor.",
+   "expected": "@standing | @consent"
+  },
+  {
+   "code": "SIO 3",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "none.",
+   "expected": "-"
+  },
+  {
+   "code": "PSYC 174",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "upper-division standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "VIS 106A",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "VIS 80.",
+   "expected": "VIS 80"
+  },
+  {
+   "code": "TDPR 102",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "TDPR 6; permission of instructor; department stamp required.",
+   "expected": "TDPR 6 & @consent",
+   "note": "Permission of instructor and department stamp both @consent, written once."
+  },
+  {
+   "code": "TDMV 111",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "TDMV 110 or consent of instructor.",
+   "expected": "TDMV 110 | @consent"
+  },
+  {
+   "code": "USP 172",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "upper-division standing or consent of instructor.",
+   "expected": "@standing | @consent"
+  },
+  {
+   "code": "CLX 199",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "students must meet with a faculty member for approval and to define course objectives and learning goals by filling out a Special Studies form.",
+   "expected": "@consent"
+  },
+  {
+   "code": "COMM 100CR",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "junior or senior standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "LIHL 124P",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "upper-division standing or consent of instructor; appropriate proficiency for level.",
+   "expected": "(@standing | @consent) & @other",
+   "note": "'appropriate proficiency for level' read as @other. / 'appropriate proficiency for level' = language proficiency -> @other; consent covers only standing (semicolon)."
+  },
+  {
+   "code": "INTL 97",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "department approval required.",
+   "expected": "@consent"
+  },
+  {
+   "code": "MUS 2A",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "passing score on proficiency exam or consent of instructor. Music majors must be concurrently enrolled in MUS 2AK, 2BK, and 2CK (Basic Keyboard). Must be taken in sequence.",
+   "expected": "@exam | @consent",
+   "note": "Concurrent MUS 2AK applies only to music majors (conditional), so left out; 'must be taken in sequence' is an enrollment note. / Concurrent MUS 2AK/2BK/2CK applies only to music majors (conditional, and shared across the 2A-B-C sequence), so omitted; 'must be taken in sequence' is an enrollment note."
+  },
+  {
+   "code": "ASTR 131",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "PHYS 2A/2AR-B-C-D or 4A-B-C-D-E.",
+   "expected": "((PHYS 2A | PHYS 2AR) & PHYS 2B & PHYS 2C & PHYS 2D) | (PHYS 4A & PHYS 4B & PHYS 4C & PHYS 4D & PHYS 4E)"
+  },
+  {
+   "code": "RELI 147",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "upper-division standing or consent of instructor.",
+   "expected": "@standing | @consent"
+  },
+  {
+   "code": "USP 165B",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "upper-division standing or consent of instructor.",
+   "expected": "@standing | @consent"
+  },
+  {
+   "code": "VIS 132",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "senior standing or consent of instructor required. Open to media, studio, ICAM, and speculative design majors only.",
+   "expected": "(@standing | @consent) & @restriction"
+  },
+  {
+   "code": "EDS 135",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "department approval required.",
+   "expected": "@consent"
+  },
+  {
+   "code": "PSYC 154",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "upper-division standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "SE 131B",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "SE 131A, SE 101C, and SE 130B.",
+   "expected": "SE 131A & SE 101C & SE 130B"
+  },
+  {
+   "code": "ETHN 155",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "upper-division standing or instructor approval.",
+   "expected": "@standing | @consent"
+  },
+  {
+   "code": "PSYC 122",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "upper-division standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "SIO 126",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "BILD 1 or consent of instructor.",
+   "expected": "BILD 1 | @consent"
+  },
+  {
+   "code": "VIS 127N",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "upper-division standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "SOCI 140F",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "upper-division standing. Will not receive credit for SOCI 140F and SOCC 140F.",
+   "expected": "@standing"
+  },
+  {
+   "code": "ANAR 104",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "upper-division standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "SE 198",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "consent of instructor or department stamp.",
+   "expected": "@consent"
+  },
+  {
+   "code": "MUS 126",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "upper-division standing or consent of instructor.",
+   "expected": "@standing | @consent"
+  },
+  {
+   "code": "CHIN 165C",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "any one of the following or department approval through placement interview: CHIN 100CM, CHIN 100CN, CHIN 165A-B, CHIN 185A-B-C.",
+   "expected": "CHIN 100CM | CHIN 100CN | (CHIN 165A & CHIN 165B) | (CHIN 185A & CHIN 185B & CHIN 185C) | @consent",
+   "note": "Hyphenated items read as full sequences per rule 1; placement-interview department approval read as @consent."
+  },
+  {
+   "code": "COMM 112C",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "COMM 10 or HDP 1.",
+   "expected": "COMM 10 | HDP 1"
+  },
+  {
+   "code": "GSS 198",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "upper-division standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "POLI 28",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "PHIL/POLI 27.",
+   "expected": "PHIL 27 | POLI 27",
+   "note": "Cross-listed 'PHIL/POLI 27' read as either listing."
+  },
+  {
+   "code": "LTWR 195",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "department approval.",
+   "expected": "@consent"
+  },
+  {
+   "code": "SOCI 111T",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "upper-division standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "MUS 12",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "none.",
+   "expected": "-"
+  },
+  {
+   "code": "BENG 187C",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "BENG 187B; bioengineering, bioengineering: biotechnology, or bioengineering: biosystems or bioengineering: bioinformatics majors only or consent of instructor.",
+   "expected": "(BENG 187B & @restriction) | @consent",
+   "note": "Sentence-final 'or consent of instructor' taken to cover both BENG 187B and the majors restriction (rule 5). / Per rule 5, trailing 'or consent of instructor' covers the whole sentence incl. BENG 187B; narrower reading would be BENG 187B & (@restriction | @consent)."
+  },
+  {
+   "code": "TDPW 101",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "TDPW 1 or consent of instructor.",
+   "expected": "TDPW 1 | @consent"
+  },
+  {
+   "code": "HUM 4GS",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "satisfaction of the UC Entry Level Writing requirement and acceptance into Global Seminar Program.",
+   "expected": "@other & @restriction"
+  },
+  {
+   "code": "SIO 101",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "CHEM 6A or consent of instructor.",
+   "expected": "CHEM 6A | @consent"
+  },
+  {
+   "code": "ANAR 143",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "upper-division standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "EDS 130",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "department approval required; EDS 139 must be taken as a corequisite.",
+   "expected": "@consent & EDS 139*"
+  },
+  {
+   "code": "SOCI 118",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "upper-division standing. Will not receive credit for SOCI 118 and SOCB 118.",
+   "expected": "@standing"
+  },
+  {
+   "code": "POLI 137A",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "upper-division standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "USP 104",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "upper-division standing or consent of instructor.",
+   "expected": "@standing | @consent"
+  },
+  {
+   "code": "POLI 100O",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "upper-division standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "COMM 104E",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "COMM 10.",
+   "expected": "COMM 10"
+  },
+  {
+   "code": "CHIN 198",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "consent of instructor.",
+   "expected": "@consent"
+  },
+  {
+   "code": "TDPW 104",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "TDPW 1.",
+   "expected": "TDPW 1"
+  },
+  {
+   "code": "AWP 4B",
+   "group": "final5",
+   "set": "random",
+   "prereq_text": "AWP 4A.",
+   "expected": "AWP 4A"
+  },
+  {
+   "code": "ECON 100CH",
+   "group": "final5",
+   "set": "major",
+   "prereq_text": "department approval required.",
+   "expected": "@consent"
+  },
+  {
+   "code": "MATH 152",
+   "group": "final5",
+   "set": "major",
+   "prereq_text": "MATH 20D and either MATH 18 or MATH 20F or MATH 31AH. Students who have not completed listed prerequisites may enroll with consent of instructor.",
+   "expected": "(MATH 20D & (MATH 18 | MATH 20F | MATH 31AH)) | @consent"
+  },
+  {
+   "code": "ECE 156",
+   "group": "final5",
+   "set": "major",
+   "prereq_text": "upper-division standing and consent of instructor, or graduate student in science and engineering.",
+   "expected": "(@standing & @consent) | (@standing & @restriction)",
+   "note": "'graduate student in science and engineering' read as graduate @standing & program @restriction. / 'graduate student in science and engineering' read as graduate standing plus field restriction."
+  },
+  {
+   "code": "MATH 140B",
+   "group": "final5",
+   "set": "major",
+   "prereq_text": "MATH 140A or consent of instructor.",
+   "expected": "MATH 140A | @consent"
+  },
+  {
+   "code": "ECE 188",
+   "group": "final5",
+   "set": "major",
+   "prereq_text": "upper-division standing.",
+   "expected": "@standing"
+  },
+  {
+   "code": "MATH 103B",
+   "group": "final5",
+   "set": "major",
+   "prereq_text": "MATH 103A or MATH 100A or consent of instructor.",
+   "expected": "MATH 103A | MATH 100A | @consent"
+  },
+  {
+   "code": "CSE 110",
+   "group": "final5",
+   "set": "major",
+   "prereq_text": "CSE 100 or CSE 100R; restricted to students within the CS25, CS26, CS27, CS29, and EC26 majors. All other students will be allowed as space permits.",
+   "expected": "(CSE 100 | CSE 100R) & @restriction",
+   "note": "'All other students allowed as space permits' treated as an enrollment note; restriction kept. / Major restriction kept; 'others allowed as space permits' dropped as enrollment note."
+  },
+  {
+   "code": "MAE 03",
+   "group": "final5",
+   "set": "major",
+   "prereq_text": "PHYS 2A or 4A. Enrollment restricted to BE 25, MC 25, MC 27, MC 29, and MC 30–37 majors only.",
+   "expected": "(PHYS 2A | PHYS 4A) & @restriction"
+  },
+  {
+   "code": "MATH 160B",
+   "group": "final5",
+   "set": "major",
+   "prereq_text": "MATH 160A or consent of instructor.",
+   "expected": "MATH 160A | @consent"
+  },
+  {
+   "code": "COGS 101A",
+   "group": "final5",
+   "set": "major",
+   "prereq_text": "COGS 1.",
+   "expected": "COGS 1"
+  },
+  {
+   "code": "BIMM 120",
+   "group": "final5",
+   "set": "major",
+   "prereq_text": "BILD 3 and BIBC 100 or BIBC 102 or CHEM 114A or CHEM 114B and BIMM 100.",
+   "expected": "BILD 3 & (BIBC 100 | BIBC 102 | CHEM 114A | CHEM 114B) & BIMM 100"
+  },
+  {
+   "code": "ECON 137",
+   "group": "final5",
+   "set": "major",
+   "prereq_text": "ECON 100C and 120C. Enrollment limited to majors in the Department of Economics and MA33 only; department approval required.",
+   "expected": "ECON 100C & ECON 120C & @restriction & @consent"
+  },
+  {
+   "code": "CHEM 130",
+   "group": "final5",
+   "set": "major",
+   "prereq_text": "CHEM 6C or 6CH, and PHYS 2C or 2D, and MATH 20D.",
+   "expected": "(CHEM 6C | CHEM 6CH) & (PHYS 2C | PHYS 2D) & MATH 20D"
+  },
+  {
+   "code": "ECON 152T",
+   "group": "final5",
+   "set": "major",
+   "prereq_text": "ECON 152.",
+   "expected": "ECON 152"
+  },
+  {
+   "code": "CHEM 6A",
+   "group": "final5",
+   "set": "major",
+   "prereq_text": "CHEM 4, or AP Chemistry score of 3, or Math Placement Exam qualifying score, or AP Calculus AB score of 2, or MATH 3C or higher.",
+   "expected": "CHEM 4 | @exam | MATH 3C | @other",
+   "note": "AP and Math Placement scores merged into one @exam; 'MATH 3C or higher' read as MATH 3C | @other. / AP and Math Placement scores collapsed into one @exam; 'MATH 3C or higher' -> MATH 3C | @other."
+  },
+  {
+   "code": "MATH 150A",
+   "group": "final5",
+   "set": "major",
+   "prereq_text": "MATH 20E or MATH 31CH and either MATH 18 or MATH 20F or MATH 31AH. Students who have not completed listed prerequisites may enroll with consent of instructor.",
+   "expected": "((MATH 20E | MATH 31CH) & (MATH 18 | MATH 20F | MATH 31AH)) | @consent"
+  },
+  {
+   "code": "BIBC 110",
+   "group": "final5",
+   "set": "major",
+   "prereq_text": "BILD 1 and CHEM 6B or CHEM 6BH.",
+   "expected": "BILD 1 & (CHEM 6B | CHEM 6BH)"
+  },
+  {
+   "code": "ECE 111",
+   "group": "final5",
+   "set": "major",
+   "prereq_text": "ECE 25 or CSE 140.",
+   "expected": "ECE 25 | CSE 140"
+  },
+  {
+   "code": "MATH 180B",
+   "group": "final5",
+   "set": "major",
+   "prereq_text": "MATH 20D and either MATH 18 or MATH 20F or MATH 31AH, and MATH 109 or MATH 31CH, and MATH 180A. Students who have not completed listed prerequisites may enroll with consent of instructor.",
+   "expected": "(MATH 20D & (MATH 18 | MATH 20F | MATH 31AH) & (MATH 109 | MATH 31CH) & MATH 180A) | @consent"
+  },
+  {
+   "code": "BICD 130",
+   "group": "final5",
+   "set": "major",
+   "prereq_text": "upper-division standing; BICD 100 or BICD 100R and BIBC 100 or BIBC 102 or CHEM 114A or CHEM 114B.",
+   "expected": "@standing & (BICD 100 | BICD 100R) & (BIBC 100 | BIBC 102 | CHEM 114A | CHEM 114B)"
+  },
+  {
+   "code": "MATH 31CH",
+   "group": "final5",
+   "set": "major",
+   "prereq_text": "MATH 31BH with a grade of B– or better, or consent of instructor.",
+   "expected": "MATH 31BH[B-] | @consent"
+  },
+  {
+   "code": "ECON 184",
+   "group": "final5",
+   "set": "major",
+   "prereq_text": "ECON 120B or MATH 181B.",
+   "expected": "ECON 120B | MATH 181B"
+  },
+  {
+   "code": "MATH 112A",
+   "group": "final5",
+   "set": "major",
+   "prereq_text": "MATH 18 or MATH 31AH, and MATH 20D. Students who have not completed listed prerequisites may enroll with consent of instructor.",
+   "expected": "((MATH 18 | MATH 31AH) & MATH 20D) | @consent"
+  },
+  {
+   "code": "CSE 131",
+   "group": "final5",
+   "set": "major",
+   "prereq_text": "CSE 30 and CSE 100 or CSE 100R and CSE 105 and CSE 130; restricted to CS25, CS26, CS27, CS29, and EC26 majors. All other students will be allowed as space permits.",
+   "expected": "CSE 30 & (CSE 100 | CSE 100R) & CSE 105 & CSE 130 & @restriction",
+   "note": "'All other students allowed as space permits' treated as an enrollment note; restriction kept. / Major restriction kept; space-permits clause dropped."
+  },
+  {
+   "code": "MATH 183",
+   "group": "final5",
+   "set": "major",
+   "prereq_text": "MATH 20C or MATH 31BH, or consent of instructor.",
+   "expected": "MATH 20C | MATH 31BH | @consent"
+  },
+  {
+   "code": "DSC 160",
+   "group": "final5",
+   "set": "major",
+   "prereq_text": "DSC 80. Restricted to students within the data science or business data science major. All other students will be allowed as space permits.",
+   "expected": "DSC 80 & @restriction",
+   "note": "'All other students allowed as space permits' treated as an enrollment note; restriction kept. / Major restriction kept; space-permits clause dropped."
+  },
+  {
+   "code": "MAE 20",
+   "group": "final5",
+   "set": "major",
+   "prereq_text": "PHYS 2A or 4A, CHEM 6A or CHEM 6AH, and MATH 20C.",
+   "expected": "(PHYS 2A | PHYS 4A) & (CHEM 6A | CHEM 6AH) & MATH 20C"
+  },
+  {
+   "code": "MAE 167",
+   "group": "final5",
+   "set": "major",
+   "prereq_text": "consent of instructor.",
+   "expected": "@consent"
+  },
+  {
+   "code": "ECON 165",
+   "group": "final5",
+   "set": "major",
+   "prereq_text": "ECON 1 and 3.",
+   "expected": "ECON 1 & ECON 3"
+  },
+  {
+   "code": "MAE 123",
+   "group": "final5",
+   "set": "major",
+   "prereq_text": "MAE 105, or consent of instructor.",
+   "expected": "MAE 105 | @consent"
+  },
+  {
+   "code": "ECE 140A",
+   "group": "final5",
+   "set": "major",
+   "prereq_text": "CSE 8B or CSE 11 or ECE 15.",
+   "expected": "CSE 8B | CSE 11 | ECE 15"
+  },
+  {
+   "code": "CSE 91",
+   "group": "final5",
+   "set": "major",
+   "prereq_text": "majors only.",
+   "expected": "@restriction"
+  },
+  {
+   "code": "MATH 189",
+   "group": "final5",
+   "set": "major",
+   "prereq_text": "MATH 18 or MATH 20F or MATH 31AH, and MATH 20C and one of BENG 134, CSE 103, ECE 109, ECON 120A, MAE 108, MATH 180A, MATH 183, MATH 186, or SE 125. Students who have not completed listed prerequisites may enroll with consent of instructor.",
+   "expected": "((MATH 18 | MATH 20F | MATH 31AH) & MATH 20C & (BENG 134 | CSE 103 | ECE 109 | ECON 120A | MAE 108 | MATH 180A | MATH 183 | MATH 186 | SE 125)) | @consent"
   }
  ]
 }

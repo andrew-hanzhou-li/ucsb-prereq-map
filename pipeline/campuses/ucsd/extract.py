@@ -67,7 +67,7 @@ COMMENT_STARTS = re.compile(
     r"students may receive credit for|\(?(?:may not be|only) offered|pass/not pass|repeatable|"
     r"paperwork|may be taken (?:\w+ times? )?for credit|\(?offered in|"
     r"students completing [^.]* instead of|students must apply to enroll in order to|"
-    r"students will need to fill out|this form|if students wish)", re.IGNORECASE)
+    r"students will need to fill out|this form|if students wish|\w+ majors must be concurrently enrolled)", re.IGNORECASE)
 # A clause inside a note that is still a requirement: "This form provides ...;
 # EDS 139 must be taken as a corequisite."
 REQUIREMENT_CLAUSE = re.compile(r"\b(?:corequisite|must be taken|concurrent enrollment|is required|are required)\b", re.IGNORECASE)

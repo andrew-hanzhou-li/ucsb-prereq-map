@@ -65,6 +65,10 @@ EXTRA_RULES = [
     ("consent", r"(?i:\b(?:approval\s+of\s+the\s+|an\s+approved\s+)?special\s+studies\s+(?:online\s+)?(?:form|application))"),
     ("consent", r"\bdepartment(?:al)?\s+(?:stamp|authorization|approval)(?:\s+(?:is\s+)?required)?"),
     ("consent", r"\benrollment\s+via\s+[^;.§]*"),
+    ("consent", r"\b(?:students\s+)?must\s+meet\s+with\s+(?:a\s+)?faculty\s+member\s+for\s+approval[^;.§]*"),
+    # "bioengineering, bioengineering: biotechnology, or ... majors only": no
+    # course codes inside (no digits), so a course before it isn't swallowed.
+    ("restriction", r"\b[a-z][^;.§\d]{0,200}?\bmajors?\s+only\b"),
     # "ethnic studies major or minor", "international studies major with ...", "a Regent's Scholar"
     ("restriction", r"\b(?:[a-z]+\s){1,3}major\s+or\s+minor\b"),
     ("restriction", r"\b(?:[a-z]+\s){1,3}major(?=\s+with\b)"),

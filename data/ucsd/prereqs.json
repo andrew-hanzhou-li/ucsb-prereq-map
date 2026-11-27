@@ -6990,13 +6990,8 @@
       "items": [
        {
         "type": "condition",
-        "kind": "other",
-        "text": "bioengineering"
-       },
-       {
-        "type": "condition",
         "kind": "restriction",
-        "text": "or bioengineering: bioinformatics majors only"
+        "text": "bioengineering, bioengineering: biotechnology, or bioengineering: biosystems majors, or bioengineering: bioinformatics majors only"
        },
        {
         "type": "condition",
@@ -7028,13 +7023,8 @@
        },
        {
         "type": "condition",
-        "kind": "other",
-        "text": "bioengineering"
-       },
-       {
-        "type": "condition",
         "kind": "restriction",
-        "text": "or bioengineering: biosystems or bioengineering: bioinformatics majors only"
+        "text": "bioengineering, bioengineering: biotechnology, or bioengineering: biosystems or bioengineering: bioinformatics majors only"
        }
       ]
      },
@@ -7066,13 +7056,8 @@
        },
        {
         "type": "condition",
-        "kind": "other",
-        "text": "bioengineering"
-       },
-       {
-        "type": "condition",
         "kind": "restriction",
-        "text": "or bioengineering: biosystems or bioengineering: bioinformatics majors only"
+        "text": "bioengineering, bioengineering: biotechnology, or bioengineering: biosystems or bioengineering: bioinformatics majors only"
        }
       ]
      },
@@ -7104,13 +7089,8 @@
        },
        {
         "type": "condition",
-        "kind": "other",
-        "text": "bioengineering"
-       },
-       {
-        "type": "condition",
         "kind": "restriction",
-        "text": "or bioengineering: biosystems or bioengineering: bioinformatics majors only"
+        "text": "bioengineering, bioengineering: biotechnology, or bioengineering: biosystems or bioengineering: bioinformatics majors only"
        }
       ]
      },
@@ -18346,19 +18326,9 @@
    "code": "CLX 199",
    "prereq_text": "students must meet with a faculty member for approval and to define course objectives and learning goals by filling out a Special Studies form.",
    "requires": {
-    "type": "and",
-    "items": [
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "students must meet with a faculty member for approval"
-     },
-     {
-      "type": "condition",
-      "kind": "consent",
-      "text": "Special Studies form"
-     }
-    ]
+    "type": "condition",
+    "kind": "consent",
+    "text": "students must meet with a faculty member for approval and to define course objectives and learning goals by filling out a"
    },
    "source": "parser",
    "ambiguous": false,
@@ -69269,35 +69239,19 @@
   },
   {
    "code": "MUS 2A",
-   "prereq_text": "passing score on proficiency exam or consent of instructor. Music majors must be concurrently enrolled in MUS 2AK, 2BK, and 2CK (Basic Keyboard).",
+   "prereq_text": "passing score on proficiency exam or consent of instructor.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "or",
-      "items": [
-       {
-        "type": "condition",
-        "kind": "exam",
-        "text": "passing score on proficiency exam"
-       },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
-       }
-      ]
+      "type": "condition",
+      "kind": "exam",
+      "text": "passing score on proficiency exam"
      },
      {
       "type": "condition",
-      "kind": "other",
-      "text": "Music majors must be MUS 2AK"
-     },
-     {
-      "type": "course",
-      "code": "MUS 2BK",
-      "concurrent": true,
-      "min_grade": null
+      "kind": "consent",
+      "text": "consent of instructor"
      }
     ]
    },
@@ -69330,35 +69284,19 @@
   },
   {
    "code": "MUS 2B",
-   "prereq_text": "passing score on proficiency exam or consent of instructor. Music majors must be concurrently enrolled in MUS 2AK, 2BK, and 2CK (Basic Keyboard).",
+   "prereq_text": "passing score on proficiency exam or consent of instructor.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "or",
-      "items": [
-       {
-        "type": "condition",
-        "kind": "exam",
-        "text": "passing score on proficiency exam"
-       },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
-       }
-      ]
+      "type": "condition",
+      "kind": "exam",
+      "text": "passing score on proficiency exam"
      },
      {
       "type": "condition",
-      "kind": "other",
-      "text": "Music majors must be MUS 2AK"
-     },
-     {
-      "type": "course",
-      "code": "MUS 2BK",
-      "concurrent": true,
-      "min_grade": null
+      "kind": "consent",
+      "text": "consent of instructor"
      }
     ]
    },
@@ -69391,35 +69329,19 @@
   },
   {
    "code": "MUS 2C",
-   "prereq_text": "passing score on proficiency exam or consent of instructor. Music majors must be concurrently enrolled in MUS 2AK, 2BK, and 2CK (Basic Keyboard).",
+   "prereq_text": "passing score on proficiency exam or consent of instructor.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "or",
-      "items": [
-       {
-        "type": "condition",
-        "kind": "exam",
-        "text": "passing score on proficiency exam"
-       },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
-       }
-      ]
+      "type": "condition",
+      "kind": "exam",
+      "text": "passing score on proficiency exam"
      },
      {
       "type": "condition",
-      "kind": "other",
-      "text": "Music majors must be MUS 2AK"
-     },
-     {
-      "type": "course",
-      "code": "MUS 2BK",
-      "concurrent": true,
-      "min_grade": null
+      "kind": "consent",
+      "text": "consent of instructor"
      }
     ]
    },
