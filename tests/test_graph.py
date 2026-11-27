@@ -23,7 +23,9 @@ import sys
 
 # build_graph.py lives in pipeline/; tell Python to look there for it.
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "pipeline"))
-from build_graph import ColumnFinder, make_edges
+from build_graph import (OFFERING_OVERRIDES, POOL_LIMIT, ColumnFinder, add_outside_prerequisites, build_major,
+                         collect_major_courses, describe_rule, is_upper_division, make_edges, offered_for,
+                         real_cycles, sort_key, upper_division_floor)
 
 passed = 0
 failed = 0
@@ -118,6 +120,114 @@ def test_rules():
     check("edges: a course listing itself gets no arrow",
           [e["from"] for e in edges] == ["B 1"], edges)
 
+    edges = make_edges("C 1", OR(course("A 1"), condition("consent")))
+    check("edges: 'A or consent' still makes A an alternative",
+          [(e["type"], e["group"]) for e in edges] == [("alternative", "C 1/or1")], edges)
+    check("edges: no prerequisite, no arrows", make_edges("C 1", None) == [])
+
+
+def req_course(code, status="active"):
+    return {"type": "course", "code": code, "status": status}
+
+
+def test_major_rules():
+    major = {"sections": [
+        {"name": "Preparation", "requirement": {"type": "all", "items": [
+            req_course("M 1"),
+            {"type": "choose", "count": 1, "items": [req_course("M 2"), req_course("M 2H")]},
+            {"type": "text", "text": "A language"},
+            {"type": "course", "code": None, "status": "unresolved"}]}},
+        {"name": "Upper Division", "requirement": {"type": "choose", "count": 2, "label": "Area A", "items": [
+            req_course("M 2"), req_course("M 101"), req_course("M 102", "inactive")]}},
+        {"name": "Electives", "requirement": {"type": "units", "units": 8, "items": [
+            req_course("E %d" % n) for n in range(POOL_LIMIT + 1)]}},
+    ]}
+    courses, pools = collect_major_courses(major)
+    roles = {code: info["role"] for code, info in courses.items()}
+    check("major: 'all' makes a course required", roles.get("M 1") == "required", roles)
+    check("major: a short 'choose 1' makes a choice", roles.get("M 2H") == "choice", roles)
+    check("major: a 'choose 2' list is elective", roles.get("M 101") == "elective", roles)
+    check("major: a course keeps its strongest role", roles.get("M 2") == "choice", roles)
+    check("major: a course lists every group it's in",
+          courses["M 2"]["groups"] == ["Preparation", "Upper Division: Area A"], courses["M 2"])
+    check("major: status is kept", courses["M 102"]["status"] == "inactive")
+    check("major: text and unresolved courses are skipped", None not in courses)
+    check("major: a list longer than POOL_LIMIT becomes one pool",
+          len(pools) == 1 and len(pools[0]["courses"]) == POOL_LIMIT + 1 and "E 0" not in courses, pools[:1])
+    check("major: the pool says what it asks for", pools and pools[0]["rule"] == "at least 8 units", pools[:1])
+
+    check("describe_rule", [describe_rule({"type": "choose", "count": 1}), describe_rule({"type": "choose", "count": 3}),
+                            describe_rule({"type": "all"})] == ["at least 1 course", "at least 3 courses", "all"])
+
+    prereqs = {"A 3": {"requires": AND(course("A 2"), condition("consent"))},
+               "A 2": {"requires": OR(course("A 1"), course("B 1"))}}
+    check("outside prerequisites: followed all the way, every alternative",
+          add_outside_prerequisites(["A 3"], prereqs) == {"A 1", "A 2", "B 1"})
+
+    check("upper division is 100 and up",
+          [is_upper_division(c) for c in ["MATH 99", "MATH 100", "PSTAT 120A", "ECE 10AL", "X"]]
+          == [False, True, True, False, False])
+    check("sort_key puts 3A before 108A",
+          sorted(["MATH 108A", "MATH 3B", "MATH 3A", "ECON 1"], key=sort_key) ==
+          ["ECON 1", "MATH 3A", "MATH 3B", "MATH 108A"])
+
+    core = {"U 101": {"role": "required", "groups": ["Upper Division"]},
+            "U 102": {"role": "required", "groups": ["Upper Division"]},
+            "P 120": {"role": "choice", "groups": ["Preparation"]},
+            "L 1": {"role": "required", "groups": ["Preparation"]}}
+    prereqs = {"U 101": {"requires": course("L 2")}, "L 2": {"requires": course("L 1")},
+               "U 102": {"requires": condition("standing")}, "P 120": {"requires": course("L 1")}}
+    check("upper-division floor: the earliest upper-division course in an upper-division section",
+          upper_division_floor(core, prereqs) == 2, upper_division_floor(core, prereqs))
+    check("upper-division floor: 0 when no upper-division course has prerequisites",
+          upper_division_floor({"L 1": core["L 1"]}, prereqs) == 0)
+
+    prereqs = {"A 1": {"requires": course("A 2")}, "A 2": {"requires": course("A 1")},
+               "L 1": {"requires": course("L 1L", concurrent=True)},
+               "L 1L": {"requires": course("L 1", concurrent=True)}}
+    loops = real_cycles([["A 1", "A 2", "A 1"], ["A 1", "A 2", "A 1"], ["L 1", "L 1L", "L 1"]], prereqs)
+    check("real_cycles: keeps real loops once, drops 'take together' pairs", loops == [["A 1", "A 2", "A 1"]], loops)
+
+    # A lecture/lab pair where the recursion stops early: L 1L comes out in
+    # column 0, and build_major's cleanup pass moves it (and Z 2 after it) right.
+    # Z 2 must sort after L 1L, or computing it first would place L 1L directly.
+    major = {"id": "m", "name": "M", "kind": "major", "catalog_year": "2026-27", "source": "s", "narrative": [],
+             "sections": [{"name": "Prep", "requirement": {"type": "all", "items": [
+                 req_course("L 1"), req_course("L 1L"), req_course("Z 2")]}}]}
+    prereqs = {"L 1": {"requires": AND(course("O 2"), course("L 1L", concurrent=True))},
+               "L 1L": {"requires": course("L 1", concurrent=True)},
+               "O 2": {"requires": course("O 1")},
+               "Z 2": {"requires": course("L 1L")}}
+    graph = build_major(major, prereqs, {"L 1": {"title": "Lecture", "units": "4"}})
+    nodes = {n["id"]: n for n in graph["nodes"]}
+    check("build_major: courses in number order, outside prerequisites added",
+          [n["id"] for n in graph["nodes"]] == ["L 1", "L 1L", "O 1", "O 2", "Z 2"], list(nodes))
+    check("build_major: the cleanup pass puts a lab level with its lecture",
+          {code: n["column"] for code, n in nodes.items()} == {"O 1": 0, "O 2": 1, "L 1": 2, "L 1L": 2, "Z 2": 3},
+          {code: n["column"] for code, n in nodes.items()})
+    check("build_major: outside courses are prerequisites; unknown ones are marked",
+          (nodes["O 1"]["role"], nodes["O 1"]["status"], nodes["L 1"]["title"]) ==
+          ("prerequisite", "not_in_catalog", "Lecture"), nodes["O 1"])
+    check("build_major: stats", graph["stats"] == {"courses_in_major": 3, "outside_prerequisites": 2, "edges": 5,
+                                                   "columns": 4, "upper_division_floor": 0}, graph["stats"])
+    check("build_major: a lecture/lab pair is not a loop", graph["loops"] == [], graph["loops"])
+
+
+def test_offered():
+    check("offered: the catalog field", offered_for("X 1", {"offered": ["Fall"]}) == ["Fall"])
+    check("offered: 'Quarters usually offered' in the comments",
+          offered_for("X 1", {"comments": "Quarters usually offered: Winter, Fall."}) == ["Fall", "Winter"])
+    check("offered: 'summer only' in the description",
+          offered_for("X 1", {"description": "A field course. Summer session only."}) == ["Summer"])
+    check("offered: 'Offered every spring'",
+          offered_for("X 1", {"description": "Offered every spring quarter."}) == ["Spring"])
+    check("offered: nothing said means an empty list", offered_for("X 1", {}) == [])
+    OFFERING_OVERRIDES["X 1"] = {"offered": ["Winter"]}
+    try:
+        check("offered: a hand correction wins", offered_for("X 1", {"offered": ["Fall"]}) == ["Winter"])
+    finally:
+        del OFFERING_OVERRIDES["X 1"]
+
 
 # ---------------------------------------------------------------------------
 # 2. The real graphs
@@ -203,6 +313,8 @@ def test_condition_text():
 if __name__ == "__main__":
     sys.stdout.reconfigure(errors="replace")
     test_rules()
+    test_major_rules()
+    test_offered()
     test_real_graphs()
     test_condition_text()
     print("%d checks passed, %d failed" % (passed, failed))

@@ -165,7 +165,7 @@ Ten random courses were checked by hand against their catalog pages, and all ten
 
 ## Known limits
 
-- **When courses are offered** is the weakest data: known for 121 of 7,973 courses. The rest are assumed Fall, Winter and Spring, and marked with a "?".
+- **When courses are offered** is the weakest data: known for 124 of 7,973 courses. The rest are assumed Fall, Winter and Spring, and marked with a "?".
 - **Minimum grades** ("C or better") are shown but not enforced.
 - **Difficulty-weighted GPA targets** aren't built. They need grade-distribution data whose terms of use allow it.
 - **Transcript reading** depends on GOLD's layout. If it changes, the patterns need updating.

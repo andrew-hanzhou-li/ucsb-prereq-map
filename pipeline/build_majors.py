@@ -91,7 +91,6 @@ class Converter:
         self.group_ids = data["course_group_ids"]
         self.active = active_codes
         self.overrides = overrides
-        self.used_rule_ids = set()
 
     # ------------------------------------------------------------- courses
     def course(self, ref):

@@ -33,6 +33,8 @@ py pipeline/measure.py --quiet
 py pipeline/build_credit.py
 py pipeline/build_single.py
 py tests/test_graph.py
+py tests/test_parser.py
+py tests/test_pipeline.py
 ```
 
 `pipeline/fetch.py` and `pipeline/fetch_programs.py` download the catalog again (about 40 requests). Their output is already in `data/`, so you only need them for a new catalog year.
@@ -47,5 +49,5 @@ To see the site, run `py -m http.server 8000 --directory site` and open http://l
 |---|---|
 | `pipeline/` | Scripts that fetch the catalog and build the site's data |
 | `data/` | Catalog downloads, parsed prerequisites, hand corrections (`*overrides.json`), and one requirements file per program in `data/majors/` |
-| `tests/` | `test_graph.py` (data checks), `test_site.py` (browser checks), `test_labels.json` (labeled parser answers) |
+| `tests/` | `test_graph.py` (data checks), `test_parser.py` and `test_pipeline.py` (pipeline checks), `test_site.py` (browser checks), `test_labels.json` (labeled parser answers) |
 | `site/` | The website GitHub Pages publishes |

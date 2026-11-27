@@ -37,6 +37,7 @@ Needs Playwright, a browser-automation library (one-time setup):
     py -m playwright install chromium
 """
 
+import base64
 import datetime
 import json
 import os
@@ -641,6 +642,40 @@ def main():
         check("plan: a share link opens the same plan elsewhere", other.evaluate("JSON.stringify(plan.placed)") == placed)
         check("plan: ...and tidies the address afterwards", other.evaluate("location.hash") == "#plan/economics-ba")
         other.close()
+        # A made-up link with a far-off start year, a broken quarter and a
+        # non-text elective key: the bad parts are dropped, nothing hangs.
+        bad = ('{"f":1,"y":4,"s":-100000000,"u":0,"c":16,"p":{"ECON 1":"1-F","ECON 2":"zzz","=SUM(1)":"1-W"},'
+               '"v":{"ECON 1":"<b>4</b>"},"e":[[123,"1-F"]]}')
+        bad = base64.b64encode(bad.encode()).decode().replace("+", "-").replace("/", "_").rstrip("=")
+        other = new_page(browser, viewport={"width": 1400, "height": 900})
+        other.goto(SITE + "#plan/economics-ba/" + bad)
+        other.wait_for_function("graph && currentView === 'plan'", timeout=15000)
+        check("plan: a damaged share link keeps only what makes sense",
+              other.evaluate("JSON.stringify([plan.placed, plan.units, plan.electives, plan.startYear === defaultStartYear()])")
+              == '[{"ECON 1":"1-F","=SUM(1)":"1-W"},{},[],true]', other.evaluate("JSON.stringify(plan)"))
+        check("plan: ...with no JavaScript errors", not other.errors, other.errors)
+        with other.expect_download() as download:
+            other.click("#plan-download")
+        csv = pathlib.Path(download.value.path()).read_text(encoding="utf-8")
+        check("plan: the CSV doesn't start a cell with a formula", '"\'=SUM(1)"' in csv and '"=SUM' not in csv, csv)
+        other.close()
+        # A summer-only course with summers off can't be placed; the plan
+        # mustn't grow to the year limit trying, and the message says why.
+        other = new_page(browser, viewport={"width": 1400, "height": 900})
+        other.goto(SITE + "#plan/zoology-bs")
+        other.wait_for_function("graph && currentView === 'plan'", timeout=15000)
+        other.evaluate("plan.summer = false; plan.years = 4; delete plan.placed['EEMB 170']")
+        other.evaluate("addCourse('EEMB 170')")
+        check("plan: a summer-only course with summers off leaves the plan's length alone",
+              other.evaluate("[plan.years, 'EEMB 170' in plan.placed]") == [4, False],
+              other.evaluate("JSON.stringify([plan.years, plan.placed['EEMB 170']])"))
+        check("plan: ...and says to turn on summer quarters",
+              "only offered in summer" in other.inner_text("#plan-message"), other.inner_text("#plan-message"))
+        other.evaluate("plan.summer = true; addCourse('EEMB 170')")
+        check("plan: with summers on it goes in a summer quarter",
+              other.evaluate("(plan.placed['EEMB 170'] || '').endsWith('-U')"), other.evaluate("plan.placed['EEMB 170']"))
+        check("plan: ...with no JavaScript errors", not other.errors, other.errors)
+        other.close()
         with page.expect_download() as download:
             page.click("#plan-download")
         check("plan: Download gives a CSV", download.value.suggested_filename == "ucsb-plan.csv")
@@ -684,7 +719,6 @@ def main():
         check("plan: the credit box is at the top of the left column",
               page.locator("#plan-reqs > .req-credit [data-open-credit]").count() == 1)
         check("plan: only one requirement area is open", page.locator("#plan-reqs details.req-section[open]").count() == 1)
-        areas = page.locator("#plan-reqs details.req-section")
         closed = page.locator("#plan-reqs details.req-section:not([open]) > summary").first
         closed_key = closed.evaluate("s => s.parentElement.dataset.area")
         closed.click()
