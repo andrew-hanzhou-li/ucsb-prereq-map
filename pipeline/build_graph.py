@@ -543,8 +543,11 @@ def main():
             json.dump(dict(sorted(course_index.items())), f, ensure_ascii=False, separators=(",", ":"))
         print("Course index: %d courses" % len(course_index))
 
-    print("Built %d graph(s) in %s (%d majors, %d minors)" % (
-        len(built), OUTPUT_DIR, sum(m["kind"] == "major" for m in built), sum(m["kind"] == "minor" for m in built)))
+    kinds = {}
+    for m in built:
+        kinds[m["kind"]] = kinds.get(m["kind"], 0) + 1
+    print("Built %d graph(s) in %s (%s)" % (len(built), OUTPUT_DIR,
+          ", ".join("%d %ss" % (n, kind) for kind, n in sorted(kinds.items()))))
     skipped = sum(not e["structured"] for e in everything)
     if skipped and not wanted:
         print("Left out %d with no course list in the catalog" % skipped)
