@@ -1,3 +1,6 @@
 __pycache__/
 *.pyc
 .claude/settings.local.json
+
+# UCSD catalog pages as downloaded (pipeline/campuses/ucsd/fetch.py); only the extracted data is kept
+data/ucsd/raw/
