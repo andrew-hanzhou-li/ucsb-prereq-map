@@ -93,7 +93,21 @@ function slotName(id) {
 
 function yearName(year) {
   const first = plan.startYear + (year - plan.firstYear);
-  return "Year " + year + " · " + first + "–" + String(first + 1).slice(2);
+  return "Year " + year + ", " + first + "–" + String(first + 1).slice(2);
+}
+
+/*
+  The quarter in session on `today` (or the next one to start, between
+  quarters), as slotName writes it ("Fall 2026"). Dates are approximate:
+  UC quarters start in late September, early January and late March.
+*/
+function currentQuarterName(today) {
+  const year = today.getFullYear();
+  const monthDay = (today.getMonth() + 1) * 100 + today.getDate();
+  if (monthDay < 325) return "Winter " + year;
+  if (monthDay < 620) return "Spring " + year;
+  if (monthDay < 920 && plan.summer) return "Summer " + year;
+  return "Fall " + year;
 }
 
 // ===========================================================================
@@ -612,6 +626,7 @@ function electiveLabel(key) {
 
 function drawGrid() {
   const quarters = QUARTERS.filter(q => q.key !== "U" || plan.summer);
+  const now = currentQuarterName(new Date());
   let html = '<table class="plan-table"><thead><tr><th></th>' +
              quarters.map(q => "<th>" + q.name + "</th>").join("") + "</tr></thead><tbody>";
   for (let year = plan.firstYear; year < plan.firstYear + plan.years; year++) {
@@ -621,8 +636,10 @@ function drawGrid() {
       const codes = Object.keys(plan.placed).filter(c => plan.placed[c] === slotId).sort(bySortKey);
       const slots = (plan.electives || []).filter(e => e.slot === slotId);
       const units = quarterUnits(slotId);
-      html += '<td class="plan-cell' + (units > plan.cap ? " over" : "") + '" data-plan-slot="' + slotId + '">' +
+      const isNow = slotName(slotId) === now;
+      html += '<td class="plan-cell' + (units > plan.cap ? " over" : "") + (isNow ? " now" : "") + '" data-plan-slot="' + slotId + '">' +
               '<span class="cell-name">' + escapeHtml(slotName(slotId)) + "</span>" +
+              (isNow ? '<span class="cell-now">This quarter</span>' : "") +
               codes.map(chipHtml).join("") + slots.map(electiveChipHtml).join("") +
               (units ? '<span class="cell-units">' + units + " units</span>" : "") + "</td>";
     }
@@ -630,7 +647,7 @@ function drawGrid() {
   }
   html += "</tbody></table>";
   html += '<p class="plan-years"><button type="button" class="text-button" data-plan-years="1">add a year</button>' +
-          (plan.years > 1 ? ' · <button type="button" class="text-button" data-plan-years="-1">remove the last year</button>' : "") + "</p>";
+          (plan.years > 1 ? ' <button type="button" class="text-button" data-plan-years="-1">remove the last year</button>' : "") + "</p>";
   planEl.grid.innerHTML = html;
 }
 

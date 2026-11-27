@@ -1,5 +1,5 @@
 /*
-  app.js: the Prerequisite Map website (UCSB).
+  app.js: the prerequisite map and the app around it.
 
   What happens, in order:
     1. Load the list of majors and minors into the picker and the lists on
@@ -330,7 +330,7 @@ function showHome() {
   el.courseInput.parentElement.hidden = false;
   el.courseInput.disabled = false;      // course search works from the front page too
   el.footerCatalog.textContent = "Built from the UCSB General Catalog.";
-  document.title = "The Prerequisite Map · UCSB";
+  document.title = SITE_NAME + " · " + campusById(CAMPUS).name;
   el.panel.hidden = true;           // nothing to show until a map is open
   el.top.classList.remove("compact");
   closeSheet();
@@ -480,7 +480,7 @@ async function loadPrograms(programs) {
     if (i) el.footerCatalog.appendChild(document.createTextNode(", "));
     el.footerCatalog.appendChild(source);
   });
-  document.title = graph.major.name + " · The Prerequisite Map";
+  document.title = graph.major.name + " · " + SITE_NAME;
 
   draw();
   el.map.scrollTo(0, 0);

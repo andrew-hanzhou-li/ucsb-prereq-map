@@ -16,6 +16,10 @@
   the page, so no data, marks or plan from one campus can mix with another's.
 */
 
+// The site's name. A placeholder until Andrew picks one; it's also written
+// in index.html and 404.html.
+const SITE_NAME = "Prereq";
+
 // UC's own order. "ready": its data is on the site. "next": being built.
 // "later": not started.
 const CAMPUSES = [

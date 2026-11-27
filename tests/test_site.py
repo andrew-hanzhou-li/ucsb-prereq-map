@@ -753,7 +753,7 @@ def main():
         today = datetime.date.today()
         fall = today.year if today.month >= 9 else today.year - 1
         check("item 4: a fresh plan starts in the current academic year (Fall %d)" % fall,
-              page.evaluate("plan.startYear") == fall and page.locator(".plan-year").first.inner_text().startswith("Year 1 · %d" % fall))
+              page.evaluate("plan.startYear") == fall and page.locator(".plan-year").first.inner_text().startswith("Year 1, %d" % fall))
         check("item 4: the label says what the year means", "First quarter at UCSB" in page.inner_text(".plan-tools"))
         page.click("#plan-autofill")
         page.wait_for_timeout(500)

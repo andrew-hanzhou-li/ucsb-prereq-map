@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>The Prerequisite Map · UCSB</title>
+  <title>Prereq · UCSB</title>
   <meta name="description" content="Pick a UCSB major or minor and see every course in it, in prerequisite order, with the full prerequisites of each one.">
   <meta name="theme-color" content="#fcfcfb">
   <!-- How the link looks when shared in a text or on social media -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="The Prerequisite Map · UCSB">
+  <meta property="og:title" content="Prereq · UCSB">
   <meta property="og:description" content="Pick a UCSB major or minor and see every course in it, in prerequisite order, with the full prerequisites of each one.">
   <!-- The picture shown under a shared link (made by build_preview.py).
        Absolute addresses, because Reddit and Discord fetch it from the site. -->
@@ -22,30 +22,34 @@
   <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+CiAgPCEtLSBBIHJ1bGVkIGNhdGFsb2cgcGFnZSB3aXRoIGEgcmVkIHBlbmNpbCBsaW5lLCBpbiB0aGUgc2l0ZSdzIGNvbG9ycy4gLS0+CiAgPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiBmaWxsPSIjZmNmY2ZiIi8+CiAgPHJlY3QgeD0iMC41IiB5PSIwLjUiIHdpZHRoPSIzMSIgaGVpZ2h0PSIzMSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMWQyMTI1Ii8+CiAgPHBhdGggZD0iTTYgOUgyNk02IDE1SDIwTTYgMjFIMjQiIHN0cm9rZT0iIzFkMjEyNSIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgPHBhdGggZD0iTTggMTFDMTAgMTggMTggMTQgMjIgMjMiIHN0cm9rZT0iI2IzMjYxZSIgc3Ryb2tlLXdpZHRoPSIxLjYiIGZpbGw9Im5vbmUiLz4KPC9zdmc+Cg==" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Literata:opsz,wght@7..72,500;7..72,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,400;0,500;0,600;0,800;1,400&display=swap" rel="stylesheet">
   <style>
 /*
-  style.css for the Prerequisite Map.
+  style.css for the site (design: docs/design-brief.md, "Timetable").
 
-  Laid out like a course catalog (ruled lists, not boxes), but set for the
-  screen: a clean sans-serif for reading (IBM Plex Sans), a contemporary
-  serif for titles and headings (Literata), dark ink on near-white, and two
-  "pencil" colors: red for what a course needs, blue for what it unlocks.
-  No rounded corners, no shadows, no gradients.
+  Laid out like a printed timetable: big type for what you choose, small
+  type for details, heavy ink rules between sections and thin ones between
+  rows. One typeface (Libre Franklin), near-black ink on white, yellow only
+  as a "you are here" background, and two "pencil" colors: red for what a
+  course needs, blue for what it unlocks. No rounded cards, no shadows, no
+  gradients.
 */
 
 :root {
-  --paper: #fcfcfb;        /* page */
-  --ink: #1d2125;          /* text and rules */
-  --muted: #5d646c;        /* secondary text */
-  --dots: #c9cdd2;         /* dotted rules between courses */
+  --paper: #ffffff;        /* page */
+  --ink: #16181d;          /* text and heavy rules */
+  --muted: #5b616b;        /* secondary text */
+  --dots: #d8dadf;         /* thin rules between rows */
+  --hi: #f2c230;           /* "you are here": this quarter, the open campus. Background only, never text. */
   --red: #b3261e;          /* the chosen course and what it needs */
   --blue: #2a4f96;         /* what it unlocks */
-  --green: #2f6b3a;        /* taken, and "next" */
+  --green: #1f7a3a;        /* taken, "next", "Ready" */
   --faded: 0.3;            /* opacity of unrelated courses while one is chosen */
 
-  --sans: "IBM Plex Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
-  --serif: "Literata", Georgia, "Times New Roman", serif;
+  /* One family (docs/design-brief.md): 400 text, 600 labels, 800 names.
+     --display is for headings, so they can change apart from body text. */
+  --sans: "Libre Franklin", "Segoe UI", -apple-system, Arial, sans-serif;
+  --display: var(--sans);
   --panel-width: 350px;
   --col-min: 168px;        /* course columns are at least this wide */
 }
@@ -61,6 +65,7 @@ body {
   font-family: var(--sans);
   font-size: 15px;
   line-height: 1.45;
+  font-variant-numeric: tabular-nums;   /* units and totals line up */
   display: flex;
   flex-direction: column;
 }
@@ -102,7 +107,7 @@ kbd {
 
 /* --------------------------------------------------------------- masthead */
 
-.top { border-bottom: 1px solid var(--ink); }
+.top { border-bottom: 3px solid var(--ink); }
 
 .mast {
   display: flex;
@@ -115,11 +120,11 @@ kbd {
 
 .site-name {
   margin: 0;
-  font-family: var(--serif);
-  font-size: 1.65rem;
-  font-weight: 600;
+  font-family: var(--display);
+  font-size: 1.6rem;
+  font-weight: 800;
   line-height: 1.15;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
 }
 .site-name a { text-decoration: none; }
 .brand { display: flex; align-items: baseline; gap: 14px; }
@@ -131,7 +136,7 @@ kbd {
 .campus-screen[hidden] { display: none; }
 body.choosing-campus .layout, body.choosing-campus .sub, body.choosing-campus .campus-label,
 body.choosing-campus .mast-nav > :not(#about-button), body.choosing-campus #footer-catalog { display: none; }
-.campus-screen { max-width: 1180px; margin: 0 auto; padding: 24px; }
+.campus-screen { flex: 1 0 auto; width: 100%; max-width: 1180px; padding: 24px 28px 40px; }
 .campus-heading { margin: 0 0 10px; font-size: 1rem; font-weight: 600; color: var(--muted); }
 .campus-note { margin: 0 0 12px; font-weight: 600; }
 .campus-list { list-style: none; margin: 0; padding: 0; border-top: 3px solid var(--ink); }
@@ -140,12 +145,13 @@ body.choosing-campus .mast-nav > :not(#about-button), body.choosing-campus #foot
 .campus-name { font-size: 2.1rem; font-weight: 800; line-height: 1.1; color: var(--ink); text-decoration: none; }
 a.campus-name:hover, a.campus-name:focus-visible { text-decoration: underline; }
 .campus-row.later .campus-name { color: #8b9099; }
-.campus-row.current .campus-number { background: #f2c230; color: var(--ink); text-align: center; margin-right: 8px; }
+.campus-row.current .campus-number { background: var(--hi); color: var(--ink); text-align: center; margin-right: 8px; }
 .campus-terms { color: var(--muted); }
 .campus-status { text-align: right; font-weight: 600; }
-.campus-row.ready .campus-status { color: #1f7a3a; }
+.campus-row.ready .campus-status { color: var(--green); }
 .campus-hint { margin-top: 16px; color: var(--muted); font-size: 0.95rem; }
 @media (max-width: 700px) {
+  .campus-screen { padding: 18px 16px 32px; }
   .campus-row { grid-template-columns: 1.6em 1fr auto; }
   .campus-terms { display: none; }
   .campus-name { font-size: 1.6rem; }
@@ -307,15 +313,15 @@ a.campus-name:hover, a.campus-name:focus-visible { text-decoration: underline; }
 .map-head .ok { color: var(--green); font-weight: 600; }
 .narrow-only { display: none; }
 
-/* A step or a list of electives: a serif heading over a rule. */
+/* A step or a list of electives: a heavy heading over a heavy rule. */
 .row { margin-top: 24px; }
 .row-label {
   margin: 0 0 4px;
   padding-bottom: 4px;
-  border-bottom: 1px solid var(--ink);
-  font-family: var(--serif);
-  font-size: 1.05rem;
-  font-weight: 600;
+  border-bottom: 2px solid var(--ink);
+  font-family: var(--display);
+  font-size: 1.1rem;
+  font-weight: 800;
 }
 .row-count { margin-left: 10px; font-family: var(--sans); font-size: 0.9rem; font-weight: 400; color: var(--muted); }
 .elective-row { margin-top: 36px; }
@@ -415,7 +421,7 @@ a.campus-name:hover, a.campus-name:focus-visible { text-decoration: underline; }
 }
 .empty-inner { max-width: 1180px; padding: 28px 28px 48px; }
 
-.empty h2 { margin: 0 0 10px; font-family: var(--serif); font-size: 1.6rem; font-weight: 600; line-height: 1.2; }
+.empty h2 { margin: 0 0 10px; font-family: var(--display); font-size: 1.6rem; font-weight: 800; line-height: 1.2; }
 .empty p { margin: 0 0 10px; max-width: 640px; }
 .quick { color: var(--muted); }
 .quick a { color: var(--ink); }
@@ -437,7 +443,7 @@ a.campus-name:hover, a.campus-name:focus-visible { text-decoration: underline; }
 .dept { break-inside: avoid; margin: 0 0 20px; }
 .dept h3 {
   margin: 0 0 2px;
-  font-family: var(--serif);
+  font-family: var(--display);
   font-size: 1rem;
   font-weight: 600;
 }
@@ -482,17 +488,17 @@ a.campus-name:hover, a.campus-name:focus-visible { text-decoration: underline; }
 
 .panel h2 {
   margin: 0;
-  font-family: var(--serif);
+  font-family: var(--display);
   font-size: 1.5rem;
   font-weight: 600;
   line-height: 1.15;
 }
-.panel .course-title { margin: 2px 0 8px; font-family: var(--serif); font-size: 1.1rem; font-weight: 500; line-height: 1.3; }
+.panel .course-title { margin: 2px 0 8px; font-family: var(--display); font-size: 1.1rem; font-weight: 500; line-height: 1.3; }
 .panel .facts { margin: 0 0 12px; font-size: 0.92rem; color: var(--muted); }
 
 .panel h3 {
   margin: 20px 0 4px;
-  font-family: var(--serif);
+  font-family: var(--display);
   font-size: 1rem;
   font-weight: 600;
 }
@@ -566,8 +572,8 @@ a.campus-name:hover, a.campus-name:focus-visible { text-decoration: underline; }
   border-radius: 0;
 }
 .about::backdrop { background: rgba(29, 33, 37, 0.45); }
-.about h2 { margin: 0 0 10px; padding-bottom: 8px; border-bottom: 1px solid var(--ink); font-family: var(--serif); font-size: 1.6rem; font-weight: 600; }
-.about h3 { margin: 22px 0 6px; font-family: var(--serif); font-size: 1.05rem; font-weight: 600; }
+.about h2 { margin: 0 0 10px; padding-bottom: 8px; border-bottom: 3px solid var(--ink); font-family: var(--display); font-size: 1.6rem; font-weight: 800; }
+.about h3 { margin: 22px 0 6px; font-family: var(--display); font-size: 1.05rem; font-weight: 600; }
 .about ul { padding-left: 20px; }
 .about li { margin: 5px 0; }
 .about .lede { font-size: 1.05rem; color: var(--muted); }
@@ -585,7 +591,7 @@ a.campus-name:hover, a.campus-name:focus-visible { text-decoration: underline; }
 
 .page { display: block; height: auto; }
 .article { max-width: 680px; margin: 0 auto; padding: 28px 20px 56px; }
-.article h2 { margin: 0 0 12px; font-family: var(--serif); font-size: 1.6rem; font-weight: 600; }
+.article h2 { margin: 0 0 12px; font-family: var(--display); font-size: 1.6rem; font-weight: 800; }
 .article .lede { font-size: 1.1rem; color: var(--muted); }
 
 /* ------------------------------------------------------------ small screens
@@ -733,9 +739,9 @@ a.campus-name:hover, a.campus-name:focus-visible { text-decoration: underline; }
 .req-section > summary::-webkit-details-marker { display: none; }
 .req-section > summary h3::before { content: "▸ "; font-family: var(--sans); color: var(--muted); }
 .req-section[open] > summary h3::before { content: "▾ "; }
-.req-section h3 { margin: 6px 0 4px; padding-bottom: 3px; border-bottom: 1px solid var(--ink); font-family: var(--serif); font-size: 1rem; font-weight: 600; }
+.req-section h3 { margin: 6px 0 4px; padding-bottom: 3px; border-bottom: 2px solid var(--ink); font-family: var(--display); font-size: 1rem; font-weight: 800; }
 .req-credit { margin: 4px 0 8px; padding: 8px 10px 4px; border: 1px solid var(--dots); }
-.req-credit h3 { margin: 0 0 4px; font-family: var(--serif); font-size: 1rem; font-weight: 600; }
+.req-credit h3 { margin: 0 0 4px; font-family: var(--display); font-size: 1rem; font-weight: 600; }
 .credit-lines { margin: 0 0 6px; padding-left: 16px; }
 .credit-button { font: inherit; font-weight: 600; padding: 4px 10px; color: var(--paper); background: var(--ink); border: 0; cursor: pointer; }
 .req-list, .req-list ul { list-style: none; margin: 0; padding: 0; }
@@ -760,12 +766,15 @@ a.campus-name:hover, a.campus-name:focus-visible { text-decoration: underline; }
 .req-text { color: var(--muted); font-style: italic; }
 
 .plan-table { border-collapse: collapse; width: 100%; min-width: 640px; table-layout: fixed; }
-.plan-table th { font-family: var(--serif); font-weight: 600; text-align: left; padding: 4px 8px; border-bottom: 1px solid var(--ink); }
+.plan-table th { font-family: var(--display); font-weight: 800; text-align: left; padding: 4px 8px; border-bottom: 3px solid var(--ink); }
 .plan-table th.plan-year { width: 110px; vertical-align: top; padding-top: 10px; font-size: 0.92rem; border-bottom: 1px solid var(--dots); }
 .plan-cell { vertical-align: top; padding: 6px 8px 8px; border-bottom: 1px solid var(--dots); border-left: 1px solid var(--dots); height: 92px; }
 .plan-cell.drop { background: #eef2f8; }
 .plan-cell.over .cell-units { color: var(--red); font-weight: 600; }
 .cell-name { display: none; }
+/* This quarter (planner.js, currentQuarterName): the design's yellow mark. */
+.plan-cell.now { background: #fdf6dc; box-shadow: inset 0 4px 0 var(--hi); }
+.cell-now { display: inline-block; margin: 2px 0 4px; padding: 0 5px; background: var(--hi); color: var(--ink); font-size: 0.8rem; font-weight: 600; }
 .cell-units { display: block; margin-top: 4px; font-size: 0.8rem; color: var(--muted); }
 .chip {
   display: flex;
@@ -832,7 +841,7 @@ a.campus-name:hover, a.campus-name:focus-visible { text-decoration: underline; }
 }
 .chip-grade { color: var(--green); font-weight: 600; }
 .grade-row select { font: inherit; }
-.gpa strong { font-family: var(--serif); font-size: 1.4rem; }
+.gpa strong { font-family: var(--display); font-size: 1.4rem; }
 .transcript textarea { width: 100%; font: inherit; font-size: 0.9rem; border: 1px solid var(--dots); background: var(--paper); }
 .review-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
 .review-table th, .review-table td { text-align: left; padding: 3px 6px; border-bottom: 1px dotted var(--dots); }
@@ -840,7 +849,7 @@ a.campus-name:hover, a.campus-name:focus-visible { text-decoration: underline; }
 .review-table select { font: inherit; }
 .goal-row input { width: 70px; font: inherit; border: 0; border-bottom: 1px solid var(--dots); background: transparent; }
 .goal-row select { font: inherit; }
-.target strong { font-family: var(--serif); font-size: 1.15rem; }
+.target strong { font-family: var(--display); font-size: 1.15rem; }
 .ap-row .ap-name { justify-content: flex-start; align-items: baseline; gap: 6px; }
 .ap-row.taken .ap-name { font-weight: 600; }
 .ap-row[hidden] { display: none; }
@@ -856,7 +865,7 @@ a.campus-name:hover, a.campus-name:focus-visible { text-decoration: underline; }
          single-file version, opened straight from your computer. -->
     <div class="mast">
       <div class="brand">
-        <h1 class="site-name"><a href="#" id="home-link">The Prerequisite Map</a></h1>
+        <h1 class="site-name"><a href="#" id="home-link">Prereq</a></h1>
         <p class="campus-label"><span id="campus-name"></span> <a href="#campus" id="campus-change">change</a></p>
       </div>
       <nav class="mast-nav">
@@ -1080,6 +1089,10 @@ a.campus-name:hover, a.campus-name:focus-visible { text-decoration: underline; }
   CAMPUS is fixed for the life of the page. Opening another campus reloads
   the page, so no data, marks or plan from one campus can mix with another's.
 */
+
+// The site's name. A placeholder until Andrew picks one; it's also written
+// in index.html and 404.html.
+const SITE_NAME = "Prereq";
 
 // UC's own order. "ready": its data is on the site. "next": being built.
 // "later": not started.
@@ -1710,7 +1723,7 @@ function startSearch() {
 </script>
   <script>
 /*
-  app.js: the Prerequisite Map website (UCSB).
+  app.js: the prerequisite map and the app around it.
 
   What happens, in order:
     1. Load the list of majors and minors into the picker and the lists on
@@ -2041,7 +2054,7 @@ function showHome() {
   el.courseInput.parentElement.hidden = false;
   el.courseInput.disabled = false;      // course search works from the front page too
   el.footerCatalog.textContent = "Built from the UCSB General Catalog.";
-  document.title = "The Prerequisite Map · UCSB";
+  document.title = SITE_NAME + " · " + campusById(CAMPUS).name;
   el.panel.hidden = true;           // nothing to show until a map is open
   el.top.classList.remove("compact");
   closeSheet();
@@ -2191,7 +2204,7 @@ async function loadPrograms(programs) {
     if (i) el.footerCatalog.appendChild(document.createTextNode(", "));
     el.footerCatalog.appendChild(source);
   });
-  document.title = graph.major.name + " · The Prerequisite Map";
+  document.title = graph.major.name + " · " + SITE_NAME;
 
   draw();
   el.map.scrollTo(0, 0);
@@ -3728,7 +3741,21 @@ function slotName(id) {
 
 function yearName(year) {
   const first = plan.startYear + (year - plan.firstYear);
-  return "Year " + year + " · " + first + "–" + String(first + 1).slice(2);
+  return "Year " + year + ", " + first + "–" + String(first + 1).slice(2);
+}
+
+/*
+  The quarter in session on `today` (or the next one to start, between
+  quarters), as slotName writes it ("Fall 2026"). Dates are approximate:
+  UC quarters start in late September, early January and late March.
+*/
+function currentQuarterName(today) {
+  const year = today.getFullYear();
+  const monthDay = (today.getMonth() + 1) * 100 + today.getDate();
+  if (monthDay < 325) return "Winter " + year;
+  if (monthDay < 620) return "Spring " + year;
+  if (monthDay < 920 && plan.summer) return "Summer " + year;
+  return "Fall " + year;
 }
 
 // ===========================================================================
@@ -4247,6 +4274,7 @@ function electiveLabel(key) {
 
 function drawGrid() {
   const quarters = QUARTERS.filter(q => q.key !== "U" || plan.summer);
+  const now = currentQuarterName(new Date());
   let html = '<table class="plan-table"><thead><tr><th></th>' +
              quarters.map(q => "<th>" + q.name + "</th>").join("") + "</tr></thead><tbody>";
   for (let year = plan.firstYear; year < plan.firstYear + plan.years; year++) {
@@ -4256,8 +4284,10 @@ function drawGrid() {
       const codes = Object.keys(plan.placed).filter(c => plan.placed[c] === slotId).sort(bySortKey);
       const slots = (plan.electives || []).filter(e => e.slot === slotId);
       const units = quarterUnits(slotId);
-      html += '<td class="plan-cell' + (units > plan.cap ? " over" : "") + '" data-plan-slot="' + slotId + '">' +
+      const isNow = slotName(slotId) === now;
+      html += '<td class="plan-cell' + (units > plan.cap ? " over" : "") + (isNow ? " now" : "") + '" data-plan-slot="' + slotId + '">' +
               '<span class="cell-name">' + escapeHtml(slotName(slotId)) + "</span>" +
+              (isNow ? '<span class="cell-now">This quarter</span>' : "") +
               codes.map(chipHtml).join("") + slots.map(electiveChipHtml).join("") +
               (units ? '<span class="cell-units">' + units + " units</span>" : "") + "</td>";
     }
@@ -4265,7 +4295,7 @@ function drawGrid() {
   }
   html += "</tbody></table>";
   html += '<p class="plan-years"><button type="button" class="text-button" data-plan-years="1">add a year</button>' +
-          (plan.years > 1 ? ' · <button type="button" class="text-button" data-plan-years="-1">remove the last year</button>' : "") + "</p>";
+          (plan.years > 1 ? ' <button type="button" class="text-button" data-plan-years="-1">remove the last year</button>' : "") + "</p>";
   planEl.grid.innerHTML = html;
 }
 
