@@ -41,11 +41,16 @@ EXTRA_RULES = [
     ("exam", r"\b(?:passing|qualifying)\s+score\s+on\s+(?:the\s+)?[\w ]{0,30}?(?:exam|test)\b"),
     ("exam", r"\b[\w ]{0,30}?placement\s+(?:exam|test)(?:ination)?(?:\s+qualifying\s+score)?"),
     ("exam", r"\bAP\s+[A-Z][\w ]{0,30}?score\s+of\s+\d"),
-    ("standing", r"\b(?:freshman|sophomore|junior|senior)\s+or\s+(?:sophomore|junior|senior)\s+standing"),
-    ("standing", r"\bcompletion\s+of\s+(?:\w+|\d+)\s+units(?:\s+of\s+UC\s+San\s+Diego\s+undergraduate\s+study)?"),
+    # "junior or senior standing", "sophomore, junior, and senior standing",
+    # "restricted enrollment to ...", "of first-year standing"
+    ("standing", r"\b(?:restricted\s+enrollment\s+to\s+)?(?:of\s+)?(?:(?:freshman|first-year|sophomore|junior|senior)"
+                 r"(?:\s*,\s*(?:and\s+|or\s+)?|\s+(?:and|or)\s+))+(?:freshman|first-year|sophomore|junior|senior)\s+standing"),
+    ("standing", r"\b(?:student\s+must\s+be\s+)?of\s+(?:freshman|first-year|sophomore|junior|senior)\s+standing"),
+    ("standing", r"\b(?:must\s+)?complet(?:ion\s+of|e)\s+(?:at\s+least\s+)?(?:\w+|\d+)\s+units(?:\s+of\s+(?:credit|undergraduate\s+study))?"
+                 r"(?:\s+(?:of|at)\s+UC\s+San\s+Diego(?:\s+undergraduate\s+study)?)?"),
     # "restricted to X majors", stopping before "or by department approval"
     # or "with senior standing", which are conditions of their own.
-    ("restriction", r"\brestricted\s+to\s+(?:(?!\b(?:or\s+(?:by\s+)?(?:department|consent|permission)|"
+    ("restriction", r"\b(?:enrollment\s+)?(?:restricted|limited)\s+(?:to|for)\s+(?:(?!\b(?:or\s+(?:by\s+)?(?:department|consent|permission)|"
                     r"with\s+(?:\w+[- ])?(?:\w+\s+)?standing))[^;.§])*"),
     ("restriction", r"\b(?:students\s+must\s+)?(?:(?:submit\s+(?:an\s+)?applications?|apply)\b[^;.§]*?\s+and\s+)?"
                     r"(?:be\s+)?accepted\s+(?:in|into|to)\s+(?:the\s+)?[^;.§]*?program\b"),
@@ -56,10 +61,11 @@ EXTRA_RULES = [
     ("restriction", r"\b(?:students\s+)?must\s+be\s+(?:an?\s+)?[\w ]{0,40}?(?:students?|participants\s+in\s+[^;.§]*)"),
     # Major codes: "ED25 major", "CS25, CS26, and CS27 majors"
     ("restriction", r"\b[A-Z]{2} ?\d{2}(?:(?:,\s*(?:or\s+|and\s+)?|\s+or\s+|\s+and\s+)[A-Z]{2} ?\d{2})*\s+majors?\b"),
+    ("consent", r"(?i:\b(?:instructor|department)\s*(?:and|/)\s*(?:instructor|department)\s+(?:approval|consent|permission)(?:\s+(?:is\s+)?required)?)"),
+    ("consent", r"(?i:\b(?:approval\s+of\s+the\s+|an\s+approved\s+)?special\s+studies\s+(?:online\s+)?(?:form|application))"),
     ("consent", r"\bdepartment(?:al)?\s+(?:stamp|authorization|approval)(?:\s+(?:is\s+)?required)?"),
     ("consent", r"\benrollment\s+via\s+[^;.§]*"),
     ("consent", r"\bby\s+invitation(?:\s+only)?"),
-    ("consent", r"(?i:\b(?:instructor|department)\s+and\s+(?:instructor|department)\s+(?:approval|consent|permission))"),
     ("consent", r"\b(?:and\s+)?(?:the\s+)?director\s+of\s+[^;.§]*?program\b"),
 ]
 
@@ -178,6 +184,43 @@ def twin_sequence(match):
     return "((%s %s%s or %s %s) and %s)" % (subject, number, first, subject, twin, " and ".join(rest))
 
 
+def courses_for_this_course(text, number):
+    """"EDS 135, 136, or 129A for 129B, and 129B for 129C": each "<courses>
+    for <number>" phrase is about one course of the sequence. Keep the
+    courses of the phrase for this one, drop the others."""
+    course = r"(?:[A-Z]{2,5} )?\d+[A-Z]*"
+    # Each join needs a comma or "or", so a run of digits can't split many
+    # ways; "and" ends the list ("..., or 146, and 128A for 128B").
+    join = r"(?:,\s*(?:or\s+)?|\s+or\s+)"
+    phrase = re.compile(r"(%s(?:%s%s)*)\s+for\s+(?:[A-Z]{2,5}\s)?(\d+[A-Z]*)\b" % (course, join, course))
+    if not phrase.search(text):
+        return text
+    text = phrase.sub(lambda m: m.group(1) if m.group(2) == number else "", text)
+    # Tidy the joins left by dropped phrases: ", and ." -> "."
+    text = re.sub(r"(?:,\s*(?:and|or)?\s*)+(?=[;.]|$)", "", text)
+    text = re.sub(r"\b(?:completed|and|or)\s*(?=[;.]|$)", "", text)
+    return re.sub(r"\s{2,}", " ", text)
+
+
+def for_this_course(text, code):
+    """A sequence's shared text with a part per course: "none for 5A; for
+    5B, two or more years of French; LIFR 5B for 5C" -> the part for this
+    course ("two or more years of French" for LIFR 5B). Only when every
+    clause names the course it's for."""
+    if not code:
+        return text
+    number = code.split(" ")[-1]
+    clauses = [c.strip() for c in re.split(r";", text.rstrip(". ")) if c.strip()]
+    pattern = r"\bfor\s+(?:[A-Z]{2,5}\s)?(\d+[A-Z]*)\b"
+    if len(clauses) < 2 or not all(re.search(pattern, c) for c in clauses):
+        return courses_for_this_course(text, number)
+    for clause in clauses:
+        if any(found == number for found in re.findall(pattern, clause)):
+            part = re.sub(r",?\s*\bfor\s+(?:[A-Z]{2,5}\s)?\d+[A-Z]*\s*,?\s*", " ", clause).strip(" ,")
+            return "none." if part.lower() in ("none", "") else part + "."
+    return text
+
+
 def expand_shorthand(text, code):
     """UCSD's shorthand, written out so the shared parser reads it."""
     # "(formerly MUS 161)": an old number for the same course.
@@ -198,6 +241,28 @@ def expand_shorthand(text, code):
     # "POLI/ECON 5(D)", "POLI 30(D)": either subject, with or without the letter.
     text = re.sub(r"\b(?P<subjects>[A-Z]{2,5}(?:/[A-Z]{2,5})+) (?P<number>\d+)(?:\((?P<suffix>[A-Z]+)\))?", subject_list, text)
     text = re.sub(r"\b([A-Z]{2,5}) (\d+)\(([A-Z]+)\)", r"(\1 \2 or \1 \2\3)", text)
+    # "PHYS 2A and B" -> "PHYS 2A and PHYS 2B"
+    text = re.sub(r"\b([A-Z]{2,5} \d+)([A-Z]+) (and|or) ([A-Z])\b(?![\s-]*\d)(?!\w)", r"\1\2 \3 \1\4", text)
+    # "LISP 1D/DX" -> "LISP 1D or LISP 1DX"; "DSC 40B/R" -> "DSC 40B or DSC 40BR"
+    def letter_twin(match):
+        subject, number, letters, after = match.groups()
+        twin = number + (after if after.startswith(letters) else letters + after)
+        return "%s %s%s or %s %s" % (subject, number, letters, subject, twin)
+    text = re.sub(r"\b([A-Z]{2,5}) (\d+)([A-Z]+)/([A-Z]{1,3})\b(?!\s?\d)", letter_twin, text)
+    # "EDS 139 must be taken as a corequisite" -> "concurrent enrollment in EDS 139"
+    text = re.sub(r"\b([A-Z]{2,5} \d+[A-Z]*) must be taken as (?:a )?corequisite", r"concurrent enrollment in \1", text)
+    # "EDS 130 or ... or 146 must be completed before EDS 128A": the list is the requirement.
+    text = re.sub(r"\s+must\s+be\s+completed\s+before\s+(?:[A-Z]{2,5}\s)?\d+[A-Z]*", "", text, flags=re.IGNORECASE)
+    # "must have successfully completed EDS 135" -> "EDS 135"
+    text = re.sub(r"\bmust\s+have\s+(?:successfully\s+)?completed\s+", "", text, flags=re.IGNORECASE)
+    # "undergraduate: BILD 3 or consent. Graduate: graduate-level standing ...": the undergraduate part.
+    text = re.sub(r"(?<!under)\bgraduates?:\s*[^.]*\.?", "", text, flags=re.IGNORECASE)
+    text = re.sub(r"\bundergraduates?:\s*", "", text, flags=re.IGNORECASE)
+    text = for_this_course(text, code)
+    # "EDS 128A and EDS 128B are restricted for students applying to ...":
+    # the courses are what's restricted, not requirements.
+    text = re.sub(r"\b(?:[A-Z]{2,5} )?\d+[A-Z]*(?:\s+and\s+(?:[A-Z]{2,5} )?\d+[A-Z]*)*\s+(?:are|is)\s+(restricted|limited)\b",
+                  r"\1", text)
     # "EDS (20S or 30 or 31)": the subject goes inside the brackets.
     text = re.sub(r"\b([A-Z]{2,5}) \((\d+[A-Z]*\s+(?:or|and)\s)", r"(\1 \2", text)
     # "previous course or consent": the course before this one in its sequence.

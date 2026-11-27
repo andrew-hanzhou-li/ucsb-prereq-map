@@ -173,7 +173,7 @@
      },
      {
       "type": "condition",
-      "kind": "other",
+      "kind": "consent",
       "text": "approval of the Special Studies form"
      }
     ]
@@ -5483,6 +5483,11 @@
       "type": "condition",
       "kind": "other",
       "text": "a minimum UC San Diego GPA of 3.0"
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "Special Studies form"
      }
     ]
    },
@@ -5505,6 +5510,11 @@
       "type": "condition",
       "kind": "other",
       "text": "completion of thirty units of undergraduate study at UC San Diego with a UC San Diego GPA of at least 3.0 and consent of a bioengineering faculty member"
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "Special Studies form"
      }
     ]
    },
@@ -5527,6 +5537,11 @@
       "type": "condition",
       "kind": "other",
       "text": "completion of thirty units of undergraduate study at UC San Diego with a UC San Diego GPA of at least 3.0 and consent of a bioengineering faculty member"
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "Special Studies form"
      }
     ]
    },
@@ -5538,9 +5553,24 @@
    "code": "BENG 99H",
    "prereq_text": "student must be of first-year standing and a Regents Scholar; approved Special Studies form.",
    "requires": {
-    "type": "condition",
-    "kind": "other",
-    "text": "student must be of first-year standing"
+    "type": "and",
+    "items": [
+     {
+      "type": "condition",
+      "kind": "standing",
+      "text": "student must be of first-year standing"
+     },
+     {
+      "type": "condition",
+      "kind": "other",
+      "text": "a Regents Scholar"
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "Special Studies form"
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -10272,7 +10302,71 @@
   {
    "code": "BIMM 185",
    "prereq_text": "two courses out of BIMM 181 or BENG 181 or CSE 181, BIMM 182 or BENG 182 or CSE 182, BENG 183, BIMM 184 or BENG 184 or CSE 184.",
-   "requires": null,
+   "requires": {
+    "type": "or",
+    "items": [
+     {
+      "type": "course",
+      "code": "BIMM 181",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "course",
+      "code": "BENG 181",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "course",
+      "code": "CSE 181",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "course",
+      "code": "BIMM 182",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "course",
+      "code": "BENG 182",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "course",
+      "code": "CSE 182",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "course",
+      "code": "BENG 183",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "course",
+      "code": "BIMM 184",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "course",
+      "code": "BENG 184",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "course",
+      "code": "CSE 184",
+      "concurrent": false,
+      "min_grade": null
+     }
+    ]
+   },
    "source": "parser",
    "ambiguous": false,
    "unparsed": []
@@ -11330,6 +11424,11 @@
      },
      {
       "type": "condition",
+      "kind": "standing",
+      "text": "must complete at least ninety units of credit"
+     },
+     {
+      "type": "condition",
       "kind": "other",
       "text": "Students must complete at least ninety units of credit and have a minimum GPA of 2.5"
      }
@@ -11371,6 +11470,11 @@
       "type": "condition",
       "kind": "consent",
       "text": "department approval required"
+     },
+     {
+      "type": "condition",
+      "kind": "standing",
+      "text": "must complete at least ninety units of credit"
      },
      {
       "type": "condition",
@@ -14157,9 +14261,24 @@
    "code": "CHEM 99H",
    "prereq_text": "student must be of first-year standing and a Regent’s Scholar; approved Special Studies form.",
    "requires": {
-    "type": "condition",
-    "kind": "other",
-    "text": "student must be of first-year standing"
+    "type": "and",
+    "items": [
+     {
+      "type": "condition",
+      "kind": "standing",
+      "text": "student must be of first-year standing"
+     },
+     {
+      "type": "condition",
+      "kind": "other",
+      "text": "a Regent’s Scholar"
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "Special Studies form"
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -16432,8 +16551,13 @@
      },
      {
       "type": "condition",
-      "kind": "other",
+      "kind": "consent",
       "text": "an approved Special Studies online application"
+     },
+     {
+      "type": "condition",
+      "kind": "other",
+      "text": "AIP learning agreement"
      }
     ]
    },
@@ -16445,19 +16569,9 @@
    "code": "CHEM 198",
    "prereq_text": "department approval required and an approved Special Studies online application.",
    "requires": {
-    "type": "and",
-    "items": [
-     {
-      "type": "condition",
-      "kind": "consent",
-      "text": "department approval required"
-     },
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "an approved Special Studies online application"
-     }
-    ]
+    "type": "condition",
+    "kind": "consent",
+    "text": "department approval required"
    },
    "source": "parser",
    "ambiguous": false,
@@ -18249,7 +18363,7 @@
      },
      {
       "type": "condition",
-      "kind": "other",
+      "kind": "consent",
       "text": "approval of the Special Studies form"
      }
     ]
@@ -18262,9 +18376,19 @@
    "code": "CLX 199",
    "prereq_text": "students must meet with a faculty member for approval and to define course objectives and learning goals by filling out a Special Studies form.",
    "requires": {
-    "type": "condition",
-    "kind": "other",
-    "text": "students must meet with a faculty member for approval"
+    "type": "and",
+    "items": [
+     {
+      "type": "condition",
+      "kind": "other",
+      "text": "students must meet with a faculty member for approval"
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "Special Studies form"
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -18306,19 +18430,9 @@
    "code": "COGS 8",
    "prereq_text": "freshman and sophomore standing.",
    "requires": {
-    "type": "and",
-    "items": [
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "freshman"
-     },
-     {
-      "type": "condition",
-      "kind": "standing",
-      "text": "sophomore standing"
-     }
-    ]
+    "type": "condition",
+    "kind": "standing",
+    "text": "freshman and sophomore standing"
    },
    "source": "parser",
    "ambiguous": false,
@@ -18472,6 +18586,11 @@
       "type": "condition",
       "kind": "other",
       "text": "a minimum UC San Diego GPA of 3.0"
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "Special Studies form"
      }
     ]
    },
@@ -21028,13 +21147,8 @@
      },
      {
       "type": "condition",
-      "kind": "other",
-      "text": "instructor"
-     },
-     {
-      "type": "condition",
       "kind": "consent",
-      "text": "department approval"
+      "text": "instructor and department approval"
      }
     ]
    },
@@ -21127,19 +21241,9 @@
    "code": "COGS 193",
    "prereq_text": "junior and senior standing.",
    "requires": {
-    "type": "and",
-    "items": [
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "junior"
-     },
-     {
-      "type": "condition",
-      "kind": "standing",
-      "text": "senior standing"
-     }
-    ]
+    "type": "condition",
+    "kind": "standing",
+    "text": "junior and senior standing"
    },
    "source": "parser",
    "ambiguous": false,
@@ -21164,7 +21268,7 @@
      {
       "type": "condition",
       "kind": "consent",
-      "text": "department approval"
+      "text": "instructor and department approval"
      }
     ]
    },
@@ -21218,7 +21322,7 @@
      {
       "type": "condition",
       "kind": "consent",
-      "text": "consent of instructor"
+      "text": "instructor and department approval"
      }
     ]
    },
@@ -21245,7 +21349,7 @@
      {
       "type": "condition",
       "kind": "consent",
-      "text": "consent of instructor"
+      "text": "instructor and department approval"
      }
     ]
    },
@@ -24679,7 +24783,29 @@
   {
    "code": "COMM 172T",
    "prereq_text": "one from COMM 100A, 100B, 100C.",
-   "requires": null,
+   "requires": {
+    "type": "or",
+    "items": [
+     {
+      "type": "course",
+      "code": "COMM 100A",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "course",
+      "code": "COMM 100B",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "course",
+      "code": "COMM 100C",
+      "concurrent": false,
+      "min_grade": null
+     }
+    ]
+   },
    "source": "parser",
    "ambiguous": false,
    "unparsed": []
@@ -24687,7 +24813,29 @@
   {
    "code": "COMM 172TR",
    "prereq_text": "one from COMM 100A, 100B, 100C.",
-   "requires": null,
+   "requires": {
+    "type": "or",
+    "items": [
+     {
+      "type": "course",
+      "code": "COMM 100A",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "course",
+      "code": "COMM 100B",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "course",
+      "code": "COMM 100C",
+      "concurrent": false,
+      "min_grade": null
+     }
+    ]
+   },
    "source": "parser",
    "ambiguous": false,
    "unparsed": []
@@ -26624,7 +26772,71 @@
   {
    "code": "CSE 118",
    "prereq_text": "any course from the following: COGS 102C or COGS 121 or COGS 184 or COGS 184GS or CSE 131 or CSE 132B or ECE 111 or ECE 118 or ECE 191 or ECE 192.",
-   "requires": null,
+   "requires": {
+    "type": "or",
+    "items": [
+     {
+      "type": "course",
+      "code": "COGS 102C",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "course",
+      "code": "COGS 121",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "course",
+      "code": "COGS 184",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "course",
+      "code": "COGS 184GS",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "course",
+      "code": "CSE 131",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "course",
+      "code": "CSE 132B",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "course",
+      "code": "ECE 111",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "course",
+      "code": "ECE 118",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "course",
+      "code": "ECE 191",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "course",
+      "code": "ECE 192",
+      "concurrent": false,
+      "min_grade": null
+     }
+    ]
+   },
    "source": "parser",
    "ambiguous": false,
    "unparsed": []
@@ -30778,6 +30990,40 @@
     "type": "and",
     "items": [
      {
+      "type": "or",
+      "items": [
+       {
+        "type": "course",
+        "code": "MATH 20C",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "MATH 31BH",
+        "concurrent": false,
+        "min_grade": null
+       }
+      ]
+     },
+     {
+      "type": "or",
+      "items": [
+       {
+        "type": "course",
+        "code": "MATH 18",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "MATH 31AH",
+        "concurrent": false,
+        "min_grade": null
+       }
+      ]
+     },
+     {
       "type": "course",
       "code": "DSC 20",
       "concurrent": false,
@@ -30792,17 +31038,12 @@
      {
       "type": "condition",
       "kind": "standing",
-      "text": "Completion of thirty units"
-     },
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "Completion of thirty units at UC San Diego with a university GPA of 3.0"
+      "text": "Completion of thirty units at UC San Diego"
      },
      {
       "type": "condition",
       "kind": "consent",
-      "text": "consent of the instructor"
+      "text": "Special Studies form"
      },
      {
       "type": "condition",
@@ -30870,17 +31111,12 @@
      {
       "type": "condition",
       "kind": "standing",
-      "text": "Completion of thirty units"
-     },
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "Completion of thirty units at UC San Diego with a university GPA of 3.0"
+      "text": "Completion of thirty units at UC San Diego"
      },
      {
       "type": "condition",
       "kind": "consent",
-      "text": "consent of the instructor"
+      "text": "Special Studies form"
      },
      {
       "type": "condition",
@@ -30948,17 +31184,12 @@
      {
       "type": "condition",
       "kind": "standing",
-      "text": "Completion of thirty units"
-     },
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "Completion of thirty units at UC San Diego with a university GPA of 3.0"
+      "text": "Completion of thirty units at UC San Diego"
      },
      {
       "type": "condition",
       "kind": "consent",
-      "text": "consent of the instructor"
+      "text": "Special Studies form"
      },
      {
       "type": "condition",
@@ -31756,6 +31987,59 @@
       ]
      },
      {
+      "type": "or",
+      "items": [
+       {
+        "type": "course",
+        "code": "DSC 140B",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "CSE 151A",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "COGS 188",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "CSE 158",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "CSE 158R",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "DSC 148",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "DSC 140A",
+        "concurrent": false,
+        "min_grade": null
+       }
+      ]
+     },
+     {
+      "type": "course",
+      "code": "DSC 106",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
       "type": "condition",
       "kind": "restriction",
       "text": "Restricted to students"
@@ -31813,7 +32097,7 @@
      {
       "type": "condition",
       "kind": "consent",
-      "text": "department and instructor approval"
+      "text": "department and instructor approval required"
      },
      {
       "type": "condition",
@@ -31855,7 +32139,7 @@
      {
       "type": "condition",
       "kind": "consent",
-      "text": "Department and instructor approval"
+      "text": "Department and instructor approval is required"
      },
      {
       "type": "condition",
@@ -31988,6 +32272,11 @@
       "type": "condition",
       "kind": "other",
       "text": "a minimum UC San Diego GPA of 3.0"
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "Special Studies form"
      }
     ]
    },
@@ -34131,7 +34420,7 @@
      {
       "type": "condition",
       "kind": "other",
-      "text": "students enrolling in this course must have completed all of the breadth courses"
+      "text": "students enrolling in this course all of the breadth courses"
      },
      {
       "type": "condition",
@@ -34942,7 +35231,7 @@
      },
      {
       "type": "condition",
-      "kind": "other",
+      "kind": "restriction",
       "text": "Enrollment limited to majors in the Department of Economics and MA33 only"
      }
     ]
@@ -35661,7 +35950,7 @@
      },
      {
       "type": "condition",
-      "kind": "other",
+      "kind": "restriction",
       "text": "Enrollment limited to majors in the Department of Economics"
      }
     ]
@@ -35749,7 +36038,7 @@
      },
      {
       "type": "condition",
-      "kind": "other",
+      "kind": "restriction",
       "text": "Enrollment limited to majors in the Department of Economics and MA33 only"
      },
      {
@@ -35875,7 +36164,7 @@
      },
      {
       "type": "condition",
-      "kind": "other",
+      "kind": "restriction",
       "text": "Enrollment limited to majors in the Department of Economics and MA33 only"
      }
     ]
@@ -36664,7 +36953,7 @@
        {
         "type": "condition",
         "kind": "restriction",
-        "text": "EN25, EN26, EN28, and MA33 majors"
+        "text": "Enrollment limited to EN25, EN26, EN28, and MA33 majors only"
        },
        {
         "type": "condition",
@@ -36930,7 +37219,7 @@
    "requires": {
     "type": "condition",
     "kind": "consent",
-    "text": "consent of instructor"
+    "text": "instructor and department approval"
    },
    "source": "parser",
    "ambiguous": false,
@@ -37035,19 +37324,9 @@
    "code": "EDS 24",
    "prereq_text": "department/instructor approval required.",
    "requires": {
-    "type": "or",
-    "items": [
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "department"
-     },
-     {
-      "type": "condition",
-      "kind": "consent",
-      "text": "instructor approval"
-     }
-    ]
+    "type": "condition",
+    "kind": "consent",
+    "text": "department/instructor approval required"
    },
    "source": "parser",
    "ambiguous": false,
@@ -37065,19 +37344,9 @@
       "text": "Summer Bridge participation"
      },
      {
-      "type": "or",
-      "items": [
-       {
-        "type": "condition",
-        "kind": "other",
-        "text": "Department"
-       },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "instructor approval"
-       }
-      ]
+      "type": "condition",
+      "kind": "consent",
+      "text": "Department/instructor approval required"
      }
     ]
    },
@@ -37872,9 +38141,10 @@
       "text": "department approval required"
      },
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "EDS 139 must be taken as"
+      "type": "course",
+      "code": "EDS 139",
+      "concurrent": true,
+      "min_grade": null
      },
      {
       "type": "or",
@@ -37922,11 +38192,17 @@
         "min_grade": null
        },
        {
-        "type": "condition",
-        "kind": "other",
-        "text": "146 must be completed before EDS 128A"
+        "type": "course",
+        "code": "EDS 146",
+        "concurrent": false,
+        "min_grade": null
        }
       ]
+     },
+     {
+      "type": "condition",
+      "kind": "restriction",
+      "text": "restricted for students applying to the EDS MEd/Multiple Subject Credential Program"
      }
     ]
    },
@@ -37946,9 +38222,10 @@
       "text": "department approval required"
      },
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "EDS 139 must be taken as"
+      "type": "course",
+      "code": "EDS 139",
+      "concurrent": true,
+      "min_grade": null
      },
      {
       "type": "or",
@@ -37996,9 +38273,10 @@
         "min_grade": null
        },
        {
-        "type": "condition",
-        "kind": "other",
-        "text": "146 must be completed before EDS 128A"
+        "type": "course",
+        "code": "EDS 146",
+        "concurrent": false,
+        "min_grade": null
        }
       ]
      },
@@ -38007,6 +38285,11 @@
       "code": "EDS 128A",
       "concurrent": false,
       "min_grade": null
+     },
+     {
+      "type": "condition",
+      "kind": "restriction",
+      "text": "restricted for students applying to the EDS MEd/Multiple Subject Credential Program"
      }
     ]
    },
@@ -38026,31 +38309,15 @@
       "text": "department approval required"
      },
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "EDS 139 must be taken as"
-     },
-     {
-      "type": "or",
-      "items": [
-       {
-        "type": "condition",
-        "kind": "other",
-        "text": "Must have successfully completed EDS 135"
-       },
-       {
-        "type": "course",
-        "code": "EDS 136",
-        "concurrent": false,
-        "min_grade": null
-       }
-      ]
-     },
-     {
       "type": "course",
-      "code": "EDS 129B",
-      "concurrent": false,
+      "code": "EDS 139",
+      "concurrent": true,
       "min_grade": null
+     },
+     {
+      "type": "condition",
+      "kind": "restriction",
+      "text": "restricted for students applying to the EDS MEd/Single Subject Credential Program"
      }
     ]
    },
@@ -38070,25 +38337,38 @@
       "text": "department approval required"
      },
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "EDS 139 must be taken as"
+      "type": "course",
+      "code": "EDS 139",
+      "concurrent": true,
+      "min_grade": null
      },
      {
       "type": "or",
       "items": [
        {
-        "type": "condition",
-        "kind": "other",
-        "text": "Must have successfully completed EDS 135"
+        "type": "course",
+        "code": "EDS 135",
+        "concurrent": false,
+        "min_grade": null
        },
        {
         "type": "course",
         "code": "EDS 136",
         "concurrent": false,
         "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "EDS 129A",
+        "concurrent": false,
+        "min_grade": null
        }
       ]
+     },
+     {
+      "type": "condition",
+      "kind": "restriction",
+      "text": "restricted for students applying to the EDS MEd/Single Subject Credential Program"
      }
     ]
    },
@@ -38108,31 +38388,21 @@
       "text": "department approval required"
      },
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "EDS 139 must be taken as"
-     },
-     {
-      "type": "or",
-      "items": [
-       {
-        "type": "condition",
-        "kind": "other",
-        "text": "Must have successfully completed EDS 135"
-       },
-       {
-        "type": "course",
-        "code": "EDS 136",
-        "concurrent": false,
-        "min_grade": null
-       }
-      ]
+      "type": "course",
+      "code": "EDS 139",
+      "concurrent": true,
+      "min_grade": null
      },
      {
       "type": "course",
       "code": "EDS 129B",
-      "concurrent": false,
+      "concurrent": true,
       "min_grade": null
+     },
+     {
+      "type": "condition",
+      "kind": "restriction",
+      "text": "restricted for students applying to the EDS MEd/Single Subject Credential Program"
      }
     ]
    },
@@ -38152,9 +38422,10 @@
       "text": "department approval required"
      },
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "EDS 139 must be taken as a"
+      "type": "course",
+      "code": "EDS 139",
+      "concurrent": true,
+      "min_grade": null
      }
     ]
    },
@@ -38177,6 +38448,12 @@
       "type": "condition",
       "kind": "other",
       "text": "Students will need to fill out a placement form prior to getting approval to enroll in EDS 131"
+     },
+     {
+      "type": "course",
+      "code": "EDS 139",
+      "concurrent": true,
+      "min_grade": null
      }
     ]
    },
@@ -38196,9 +38473,10 @@
       "text": "department approval required"
      },
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "EDS 139 must be taken as a"
+      "type": "course",
+      "code": "EDS 139",
+      "concurrent": true,
+      "min_grade": null
      }
     ]
    },
@@ -38230,9 +38508,10 @@
       "text": "department approval required"
      },
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "EDS 139 must be taken as a"
+      "type": "course",
+      "code": "EDS 139",
+      "concurrent": true,
+      "min_grade": null
      }
     ]
    },
@@ -38252,9 +38531,10 @@
       "text": "department approval required"
      },
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "EDS 139 must be taken as a"
+      "type": "course",
+      "code": "EDS 139",
+      "concurrent": true,
+      "min_grade": null
      }
     ]
    },
@@ -38342,6 +38622,12 @@
       "type": "condition",
       "kind": "other",
       "text": "Students will need to fill out a placement form prior to getting approval to enroll in EDS 140"
+     },
+     {
+      "type": "course",
+      "code": "EDS 139",
+      "concurrent": true,
+      "min_grade": null
      }
     ]
    },
@@ -38370,6 +38656,12 @@
       "type": "condition",
       "kind": "other",
       "text": "Students will need to fill out a placement form prior to getting approval to enroll in EDS 140"
+     },
+     {
+      "type": "course",
+      "code": "EDS 139",
+      "concurrent": true,
+      "min_grade": null
      }
     ]
    },
@@ -38389,9 +38681,10 @@
       "text": "department approval required"
      },
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "EDS 139 must be taken as a"
+      "type": "course",
+      "code": "EDS 139",
+      "concurrent": true,
+      "min_grade": null
      }
     ]
    },
@@ -38411,9 +38704,10 @@
       "text": "department approval required"
      },
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "EDS 139 must be taken as a"
+      "type": "course",
+      "code": "EDS 139",
+      "concurrent": true,
+      "min_grade": null
      }
     ]
    },
@@ -38573,7 +38867,7 @@
    "requires": {
     "type": "condition",
     "kind": "consent",
-    "text": "consent of instructor"
+    "text": "instructor and department approval"
    },
    "source": "parser",
    "ambiguous": false,
@@ -39482,7 +39776,7 @@
      {
       "type": "condition",
       "kind": "other",
-      "text": "completion of at least thirty units of undergraduate study at UC San Diego"
+      "text": "minimum 3.0 GPA at UC San Diego"
      },
      {
       "type": "condition",
@@ -39509,7 +39803,7 @@
      {
       "type": "condition",
       "kind": "other",
-      "text": "completion of at least thirty units of undergraduate study at UC San Diego"
+      "text": "minimum 3.0 GPA at UC San Diego"
      },
      {
       "type": "condition",
@@ -39536,7 +39830,7 @@
      {
       "type": "condition",
       "kind": "other",
-      "text": "completion of at least thirty units of undergraduate study at UC San Diego"
+      "text": "minimum 3.0 GPA at UC San Diego"
      },
      {
       "type": "condition",
@@ -43589,12 +43883,12 @@
      {
       "type": "condition",
       "kind": "other",
-      "text": "completion of at least ninety units of UC San Diego undergraduate study"
+      "text": "a minimum UC San Diego GPA of 2.95"
      },
      {
       "type": "condition",
       "kind": "consent",
-      "text": "department stamp"
+      "text": "Special Studies form"
      }
     ]
    },
@@ -44976,6 +45270,11 @@
       "type": "condition",
       "kind": "other",
       "text": "a minimum UC San Diego GPA of 3.0"
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "Special Studies form"
      }
     ]
    },
@@ -45609,7 +45908,12 @@
      {
       "type": "condition",
       "kind": "other",
-      "text": "completion of at least ninety units of UC San Diego undergraduate study"
+      "text": "a minimum G.P.A. of 2.5"
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "Special Studies form"
      }
     ]
    },
@@ -46910,13 +47214,8 @@
      },
      {
       "type": "condition",
-      "kind": "other",
-      "text": "junior"
-     },
-     {
-      "type": "condition",
       "kind": "standing",
-      "text": "senior standing"
+      "text": "junior and senior standing"
      }
     ]
    },
@@ -48543,7 +48842,7 @@
    "requires": {
     "type": "condition",
     "kind": "other",
-    "text": "none for 5A"
+    "text": "two"
    },
    "source": "parser",
    "ambiguous": false,
@@ -48872,11 +49171,7 @@
   {
    "code": "LIGM 5A",
    "prereq_text": "none for 5A; for 5B, two or more years of German in high school or the first semester of college-level German.",
-   "requires": {
-    "type": "condition",
-    "kind": "other",
-    "text": "none for 5A"
-   },
+   "requires": null,
    "source": "parser",
    "ambiguous": false,
    "unparsed": []
@@ -48887,7 +49182,7 @@
    "requires": {
     "type": "condition",
     "kind": "other",
-    "text": "none for 5A"
+    "text": "two"
    },
    "source": "parser",
    "ambiguous": false,
@@ -53163,11 +53458,7 @@
   {
    "code": "LISL 5A",
    "prereq_text": "none for 5A; for 5B two or more years of ASL in high school or the first semester of college-level ASL.",
-   "requires": {
-    "type": "condition",
-    "kind": "other",
-    "text": "none for 5A"
-   },
+   "requires": null,
    "source": "parser",
    "ambiguous": false,
    "unparsed": []
@@ -53178,7 +53469,7 @@
    "requires": {
     "type": "condition",
     "kind": "other",
-    "text": "none for 5A"
+    "text": "two"
    },
    "source": "parser",
    "ambiguous": false,
@@ -53487,11 +53778,7 @@
   {
    "code": "LISP 5A",
    "prereq_text": "none for 5A; for 5B, two or more years of Spanish in high school or the first semester or the first quarter of college-level Spanish.",
-   "requires": {
-    "type": "condition",
-    "kind": "other",
-    "text": "none for 5A"
-   },
+   "requires": null,
    "source": "parser",
    "ambiguous": false,
    "unparsed": []
@@ -53502,7 +53789,7 @@
    "requires": {
     "type": "condition",
     "kind": "other",
-    "text": "none for 5A"
+    "text": "two"
    },
    "source": "parser",
    "ambiguous": false,
@@ -53545,9 +53832,15 @@
       "min_grade": null
      },
      {
+      "type": "course",
+      "code": "LISP 1DX",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
       "type": "condition",
       "kind": "other",
-      "text": "DX"
+      "text": "at least three semesters"
      },
      {
       "type": "condition",
@@ -53573,9 +53866,15 @@
       "min_grade": null
      },
      {
+      "type": "course",
+      "code": "LISP 1DX",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
       "type": "condition",
       "kind": "other",
-      "text": "DX"
+      "text": "at least three semesters"
      },
      {
       "type": "condition",
@@ -53601,9 +53900,15 @@
       "min_grade": null
      },
      {
+      "type": "course",
+      "code": "LISP 1DX",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
       "type": "condition",
       "kind": "other",
-      "text": "DX"
+      "text": "at least three semesters"
      },
      {
       "type": "condition",
@@ -53629,9 +53934,10 @@
       "min_grade": null
      },
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "DX"
+      "type": "course",
+      "code": "LISP 1DX",
+      "concurrent": false,
+      "min_grade": null
      }
     ]
    },
@@ -55132,9 +55438,15 @@
         "min_grade": null
        },
        {
+        "type": "course",
+        "code": "LIFR 1CX",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
         "type": "condition",
         "kind": "other",
-        "text": "CX"
+        "text": "its equivalent"
        }
       ]
      },
@@ -56861,9 +57173,10 @@
       "min_grade": null
      },
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "DX"
+      "type": "course",
+      "code": "LISP 1DX",
+      "concurrent": false,
+      "min_grade": null
      },
      {
       "type": "condition",
@@ -56906,9 +57219,10 @@
       "min_grade": null
      },
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "DX"
+      "type": "course",
+      "code": "LISP 1DX",
+      "concurrent": false,
+      "min_grade": null
      },
      {
       "type": "condition",
@@ -59925,7 +60239,7 @@
      {
       "type": "condition",
       "kind": "restriction",
-      "text": "restricted to BE 25, MC 25, MC 27, MC 29, and MC 30-37 majors only"
+      "text": "Enrollment restricted to BE 25, MC 25, MC 27, MC 29, and MC 30-37 majors only"
      }
     ]
    },
@@ -60004,7 +60318,7 @@
      {
       "type": "condition",
       "kind": "restriction",
-      "text": "restricted to engineering majors only"
+      "text": "Enrollment restricted to engineering majors only"
      }
     ]
    },
@@ -60113,7 +60427,7 @@
      {
       "type": "condition",
       "kind": "restriction",
-      "text": "restricted to MC 25 and MC 35-37 majors only"
+      "text": "Enrollment restricted to MC 25 and MC 35-37 majors only"
      }
     ]
    },
@@ -60288,9 +60602,24 @@
    "code": "MAE 99H",
    "prereq_text": "student must be of first-year standing and a Regent’s Scholar; approved Special Studies form.",
    "requires": {
-    "type": "condition",
-    "kind": "other",
-    "text": "student must be of first-year standing"
+    "type": "and",
+    "items": [
+     {
+      "type": "condition",
+      "kind": "standing",
+      "text": "student must be of first-year standing"
+     },
+     {
+      "type": "condition",
+      "kind": "other",
+      "text": "a Regent’s Scholar"
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "Special Studies form"
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -60360,7 +60689,7 @@
      {
       "type": "condition",
       "kind": "restriction",
-      "text": "restricted to MC 25, MC 27, MC 29, MC 30-34, and MC 35-37 majors only"
+      "text": "Enrollment restricted to MC 25, MC 27, MC 29, MC 30-34, and MC 35-37 majors only"
      }
     ]
    },
@@ -60540,7 +60869,7 @@
      {
       "type": "condition",
       "kind": "restriction",
-      "text": "restricted to MC 25, MC 27, MC 29, MC 30-34, MC 35-37, and SE 27 majors only"
+      "text": "Enrollment restricted to MC 25, MC 27, MC 29, MC 30-34, MC 35-37, and SE 27 majors only"
      }
     ]
    },
@@ -60561,9 +60890,10 @@
       "min_grade": null
      },
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "B"
+      "type": "course",
+      "code": "PHYS 2B",
+      "concurrent": false,
+      "min_grade": null
      },
      {
       "type": "or",
@@ -60585,7 +60915,7 @@
      {
       "type": "condition",
       "kind": "restriction",
-      "text": "restricted to engineering majors only"
+      "text": "Enrollment restricted to engineering majors only"
      }
     ]
    },
@@ -60759,7 +61089,7 @@
      {
       "type": "condition",
       "kind": "restriction",
-      "text": "restricted to MC 25, MC 27, MC 29, MC 30-34, and MC 35-37 majors only"
+      "text": "Enrollment restricted to MC 25, MC 27, MC 29, MC 30-34, and MC 35-37 majors only"
      }
     ]
    },
@@ -61123,7 +61453,7 @@
      {
       "type": "condition",
       "kind": "restriction",
-      "text": "restricted to engineering majors only"
+      "text": "Enrollment restricted to engineering majors only"
      }
     ]
    },
@@ -61202,7 +61532,7 @@
      {
       "type": "condition",
       "kind": "restriction",
-      "text": "restricted to engineering majors only"
+      "text": "Enrollment restricted to engineering majors only"
      }
     ]
    },
@@ -62082,7 +62412,7 @@
      {
       "type": "condition",
       "kind": "restriction",
-      "text": "restricted to MC 25, MC 27, MC 29, MC 30-34, MC 35-37, BE 25, BE 27"
+      "text": "Enrollment restricted to MC 25, MC 27, MC 29, MC 30-34, MC 35-37, BE 25, BE 27"
      }
     ]
    },
@@ -62117,7 +62447,7 @@
      {
       "type": "condition",
       "kind": "restriction",
-      "text": "restricted to MC 27 and MC 30-34 majors only"
+      "text": "Enrollment restricted to MC 27 and MC 30-34 majors only"
      }
     ]
    },
@@ -62907,9 +63237,19 @@
    "code": "MATH 99R",
    "prereq_text": "Must be of first-year standing and a Regent’s Scholar.",
    "requires": {
-    "type": "condition",
-    "kind": "other",
-    "text": "Must be of first-year standing"
+    "type": "and",
+    "items": [
+     {
+      "type": "condition",
+      "kind": "standing",
+      "text": "of first-year standing"
+     },
+     {
+      "type": "condition",
+      "kind": "other",
+      "text": "a Regent’s Scholar"
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -68524,19 +68864,9 @@
    "code": "MGT 199",
    "prereq_text": "consent of instructor and department approval; approved Special Studies form.",
    "requires": {
-    "type": "and",
-    "items": [
-     {
-      "type": "condition",
-      "kind": "consent",
-      "text": "consent of instructor"
-     },
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "approved Special Studies form"
-     }
-    ]
+    "type": "condition",
+    "kind": "consent",
+    "text": "instructor and department approval"
    },
    "source": "parser",
    "ambiguous": false,
@@ -71176,7 +71506,7 @@
    "requires": {
     "type": "condition",
     "kind": "consent",
-    "text": "consent of instructor"
+    "text": "instructor and department approval"
    },
    "source": "parser",
    "ambiguous": false,
@@ -72397,13 +72727,8 @@
      },
      {
       "type": "condition",
-      "kind": "other",
-      "text": "Restricted enrollment to sophomore"
-     },
-     {
-      "type": "condition",
       "kind": "standing",
-      "text": "senior standing"
+      "text": "Restricted enrollment to sophomore, junior, and senior standing"
      }
     ]
    },
@@ -72589,13 +72914,8 @@
      },
      {
       "type": "condition",
-      "kind": "other",
-      "text": "Restricted enrollment to sophomore"
-     },
-     {
-      "type": "condition",
       "kind": "standing",
-      "text": "senior standing"
+      "text": "Restricted enrollment to sophomore, junior, and senior standing"
      }
     ]
    },
@@ -72701,13 +73021,8 @@
      },
      {
       "type": "condition",
-      "kind": "other",
-      "text": "Restricted enrollment to sophomore"
-     },
-     {
-      "type": "condition",
       "kind": "standing",
-      "text": "senior standing"
+      "text": "Restricted enrollment to sophomore, junior, and senior standing"
      }
     ]
    },
@@ -72791,13 +73106,8 @@
      },
      {
       "type": "condition",
-      "kind": "other",
-      "text": "Restricted enrollment to sophomore"
-     },
-     {
-      "type": "condition",
       "kind": "standing",
-      "text": "senior standing"
+      "text": "Restricted enrollment to sophomore, junior, and senior standing"
      }
     ]
    },
@@ -72869,13 +73179,8 @@
      },
      {
       "type": "condition",
-      "kind": "other",
-      "text": "Restricted enrollment to sophomore"
-     },
-     {
-      "type": "condition",
       "kind": "standing",
-      "text": "senior standing"
+      "text": "Restricted enrollment to sophomore, junior, and senior standing"
      },
      {
       "type": "condition",
@@ -73408,7 +73713,7 @@
      {
       "type": "condition",
       "kind": "consent",
-      "text": "department approval"
+      "text": "instructor and department approval"
      }
     ]
    },
@@ -73869,9 +74174,10 @@
       "type": "or",
       "items": [
        {
-        "type": "condition",
-        "kind": "other",
-        "text": "B"
+        "type": "course",
+        "code": "WCWP 10B",
+        "concurrent": false,
+        "min_grade": null
        },
        {
         "type": "course",
@@ -76586,7 +76892,7 @@
      {
       "type": "condition",
       "kind": "consent",
-      "text": "Department stamp required"
+      "text": "Special Studies form"
      }
     ]
    },
@@ -78677,7 +78983,23 @@
   {
    "code": "POLI 28",
    "prereq_text": "PHIL/POLI 27.",
-   "requires": null,
+   "requires": {
+    "type": "or",
+    "items": [
+     {
+      "type": "course",
+      "code": "PHIL 27",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "course",
+      "code": "POLI 27",
+      "concurrent": false,
+      "min_grade": null
+     }
+    ]
+   },
    "source": "parser",
    "ambiguous": false,
    "unparsed": []
@@ -78685,7 +79007,23 @@
   {
    "code": "POLI 28R",
    "prereq_text": "PHIL/POLI 27.",
-   "requires": null,
+   "requires": {
+    "type": "or",
+    "items": [
+     {
+      "type": "course",
+      "code": "PHIL 27",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "course",
+      "code": "POLI 27",
+      "concurrent": false,
+      "min_grade": null
+     }
+    ]
+   },
    "source": "parser",
    "ambiguous": false,
    "unparsed": []
@@ -78734,9 +79072,19 @@
    "code": "POLI 99H",
    "prereq_text": "student must be of first-year class standing, and a Regents Scholar; approved Special Studies form.",
    "requires": {
-    "type": "condition",
-    "kind": "other",
-    "text": "student must be of first-year class standing"
+    "type": "and",
+    "items": [
+     {
+      "type": "condition",
+      "kind": "other",
+      "text": "student must be of first-year class standing"
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "Special Studies form"
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -79975,27 +80323,13 @@
    "code": "POLI 120J",
    "prereq_text": "for POLI 120J, one lower-division political science course; for POLI 220J, graduate standing.",
    "requires": {
-    "type": "and",
-    "items": [
-     {
-      "type": "condition",
-      "kind": "standing",
-      "text": "lower-division"
-     },
-     {
-      "type": "course",
-      "code": "POLI 220J",
-      "concurrent": false,
-      "min_grade": null
-     }
-    ]
+    "type": "condition",
+    "kind": "standing",
+    "text": "lower-division"
    },
    "source": "parser",
    "ambiguous": false,
-   "unparsed": [
-    "for POLI 120J",
-    "for POLI 220J"
-   ]
+   "unparsed": []
   },
   {
    "code": "POLI 120K",
@@ -81831,6 +82165,11 @@
       "type": "condition",
       "kind": "other",
       "text": "completion of at least thirty units of undergraduate study at UC San Diego with a minimum UC San Diego GPA of 3.0"
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "Special Studies form"
      }
     ]
    },
@@ -81967,13 +82306,8 @@
      },
      {
       "type": "condition",
-      "kind": "other",
-      "text": "Instructor"
-     },
-     {
-      "type": "condition",
       "kind": "consent",
-      "text": "department approval"
+      "text": "Instructor and department approval"
      }
     ]
    },
@@ -82000,13 +82334,8 @@
      },
      {
       "type": "condition",
-      "kind": "other",
-      "text": "Instructor"
-     },
-     {
-      "type": "condition",
       "kind": "consent",
-      "text": "department approval"
+      "text": "Instructor and department approval"
      }
     ]
    },
@@ -82240,13 +82569,8 @@
      },
      {
       "type": "condition",
-      "kind": "other",
-      "text": "Instructor"
-     },
-     {
-      "type": "condition",
       "kind": "consent",
-      "text": "department approval"
+      "text": "Instructor and department approval"
      }
     ]
    },
@@ -82279,13 +82603,8 @@
      },
      {
       "type": "condition",
-      "kind": "other",
-      "text": "instructor"
-     },
-     {
-      "type": "condition",
       "kind": "consent",
-      "text": "department approval"
+      "text": "instructor and department approval"
      },
      {
       "type": "course",
@@ -83756,7 +84075,7 @@
      {
       "type": "condition",
       "kind": "consent",
-      "text": "department approval"
+      "text": "instructor and department approval"
      }
     ]
    },
@@ -83777,13 +84096,8 @@
      },
      {
       "type": "condition",
-      "kind": "other",
-      "text": "instructor"
-     },
-     {
-      "type": "condition",
       "kind": "consent",
-      "text": "department approval"
+      "text": "instructor and department approval"
      }
     ]
    },
@@ -83804,13 +84118,8 @@
      },
      {
       "type": "condition",
-      "kind": "other",
-      "text": "instructor"
-     },
-     {
-      "type": "condition",
       "kind": "consent",
-      "text": "department approval"
+      "text": "instructor and department approval"
      }
     ]
    },
@@ -83831,13 +84140,8 @@
      },
      {
       "type": "condition",
-      "kind": "other",
-      "text": "instructor"
-     },
-     {
-      "type": "condition",
       "kind": "consent",
-      "text": "department approval"
+      "text": "instructor and department approval"
      }
     ]
    },
@@ -84588,7 +84892,7 @@
    "prereq_text": "enrollment limited to Revelle College students.",
    "requires": {
     "type": "condition",
-    "kind": "other",
+    "kind": "restriction",
     "text": "enrollment limited to Revelle College students"
    },
    "source": "parser",
@@ -84653,7 +84957,7 @@
    "requires": {
     "type": "condition",
     "kind": "restriction",
-    "text": "restricted to SE 27, SE 28, SE 29, SE 30, and SE 31 majors only"
+    "text": "Enrollment restricted to SE 27, SE 28, SE 29, SE 30, and SE 31 majors only"
    },
    "source": "parser",
    "ambiguous": false,
@@ -84961,7 +85265,7 @@
      {
       "type": "condition",
       "kind": "restriction",
-      "text": "restricted to SE 27, SE 28, SE 29, SE 30, and SE 31 majors only"
+      "text": "Enrollment restricted to SE 27, SE 28, SE 29, SE 30, and SE 31 majors only"
      }
     ]
    },
@@ -85060,7 +85364,7 @@
      {
       "type": "condition",
       "kind": "restriction",
-      "text": "restricted to SE 27, SE 28, SE 29, SE 30, and SE 31 majors only"
+      "text": "Enrollment restricted to SE 27, SE 28, SE 29, SE 30, and SE 31 majors only"
      }
     ]
    },
@@ -85475,7 +85779,7 @@
      {
       "type": "condition",
       "kind": "restriction",
-      "text": "restricted to SE 27, SE 28, SE 29, SE 30, SE 31 majors only"
+      "text": "Enrollment restricted to SE 27, SE 28, SE 29, SE 30, SE 31 majors only"
      }
     ]
    },
@@ -85567,7 +85871,7 @@
      {
       "type": "condition",
       "kind": "restriction",
-      "text": "restricted to MC 25, MC 27, and SE 27, SE 28, SE 29, SE 30, SE 31 majors only"
+      "text": "Enrollment restricted to MC 25, MC 27, and SE 27, SE 28, SE 29, SE 30, SE 31 majors only"
      }
     ]
    },
@@ -85629,7 +85933,7 @@
      {
       "type": "condition",
       "kind": "restriction",
-      "text": "restricted to SE 27, SE 28, SE 29, SE 30, SE 31 majors only"
+      "text": "Enrollment restricted to SE 27, SE 28, SE 29, SE 30, SE 31 majors only"
      }
     ]
    },
@@ -85727,7 +86031,7 @@
      {
       "type": "condition",
       "kind": "restriction",
-      "text": "restricted to SE 27, SE 28, SE 29, SE 30, SE 31, MC 25, and MC 27 majors only"
+      "text": "Enrollment restricted to SE 27, SE 28, SE 29, SE 30, SE 31, MC 25, and MC 27 majors only"
      }
     ]
    },
@@ -85762,7 +86066,7 @@
      {
       "type": "condition",
       "kind": "restriction",
-      "text": "restricted to SE 27, SE 28, SE 29, SE 30, SE 31 majors only"
+      "text": "Enrollment restricted to SE 27, SE 28, SE 29, SE 30, SE 31 majors only"
      }
     ]
    },
@@ -85785,7 +86089,7 @@
      {
       "type": "condition",
       "kind": "restriction",
-      "text": "restricted to SE 27, SE 28, SE 29, SE 30, SE 31 majors only"
+      "text": "Enrollment restricted to SE 27, SE 28, SE 29, SE 30, SE 31 majors only"
      }
     ]
    },
@@ -86193,6 +86497,11 @@
       "type": "condition",
       "kind": "other",
       "text": "a minimum UC San Diego GPA of 3.0"
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "Special Studies form"
      }
     ]
    },
@@ -86380,46 +86689,24 @@
    "code": "SIO 104",
    "prereq_text": "undergraduate: BILD 3 or consent of instructor. Graduate: graduate-level standing or consent of instructor.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "or",
-      "items": [
-       {
-        "type": "course",
-        "code": "BILD 3",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
-       }
-      ]
+      "type": "course",
+      "code": "BILD 3",
+      "concurrent": false,
+      "min_grade": null
      },
      {
-      "type": "or",
-      "items": [
-       {
-        "type": "condition",
-        "kind": "other",
-        "text": "Graduate: graduate-level standing"
-       },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
-       }
-      ]
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
      }
     ]
    },
    "source": "parser",
    "ambiguous": false,
-   "unparsed": [
-    "undergraduate: BILD 3"
-   ]
+   "unparsed": []
   },
   {
    "code": "SIO 105",
@@ -87454,80 +87741,58 @@
    "code": "SIO 135",
    "prereq_text": "undergraduate: PHYS 2A-B or PHYS 4A-B-C, or consent of instructor. Graduate: graduate-level standing or consent of instructor.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "or",
+      "type": "and",
       "items": [
        {
-        "type": "and",
-        "items": [
-         {
-          "type": "course",
-          "code": "PHYS 2A",
-          "concurrent": false,
-          "min_grade": null
-         },
-         {
-          "type": "course",
-          "code": "PHYS 2B",
-          "concurrent": false,
-          "min_grade": null
-         }
-        ]
+        "type": "course",
+        "code": "PHYS 2A",
+        "concurrent": false,
+        "min_grade": null
        },
        {
-        "type": "and",
-        "items": [
-         {
-          "type": "course",
-          "code": "PHYS 4A",
-          "concurrent": false,
-          "min_grade": null
-         },
-         {
-          "type": "course",
-          "code": "PHYS 4B",
-          "concurrent": false,
-          "min_grade": null
-         },
-         {
-          "type": "course",
-          "code": "PHYS 4C",
-          "concurrent": false,
-          "min_grade": null
-         }
-        ]
-       },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
+        "type": "course",
+        "code": "PHYS 2B",
+        "concurrent": false,
+        "min_grade": null
        }
       ]
      },
      {
-      "type": "or",
+      "type": "and",
       "items": [
        {
-        "type": "condition",
-        "kind": "other",
-        "text": "Graduate: graduate-level standing"
+        "type": "course",
+        "code": "PHYS 4A",
+        "concurrent": false,
+        "min_grade": null
        },
        {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
+        "type": "course",
+        "code": "PHYS 4B",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "PHYS 4C",
+        "concurrent": false,
+        "min_grade": null
        }
       ]
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
      }
     ]
    },
    "source": "parser",
    "ambiguous": false,
-   "unparsed": [
-    "undergraduate: PHYS 2A-B"
-   ]
+   "unparsed": []
   },
   {
    "code": "SIO 136",
@@ -87785,25 +88050,10 @@
         "min_grade": null
        },
        {
-        "type": "or",
-        "items": [
-         {
-          "type": "course",
-          "code": "SIO 120",
-          "concurrent": false,
-          "min_grade": null
-         },
-         {
-          "type": "condition",
-          "kind": "consent",
-          "text": "consent of instructor"
-         }
-        ]
-       },
-       {
-        "type": "condition",
-        "kind": "other",
-        "text": "Graduate: graduate-level standing"
+        "type": "course",
+        "code": "SIO 120",
+        "concurrent": false,
+        "min_grade": null
        }
       ]
      },
@@ -87816,9 +88066,7 @@
    },
    "source": "parser",
    "ambiguous": false,
-   "unparsed": [
-    "undergraduate: SIO 50"
-   ]
+   "unparsed": []
   },
   {
    "code": "SIO 145",
@@ -89011,13 +89259,13 @@
      },
      {
       "type": "condition",
-      "kind": "other",
-      "text": "approved Special Studies form"
+      "kind": "consent",
+      "text": "Special Studies form"
      },
      {
       "type": "condition",
-      "kind": "consent",
-      "text": "department stamp"
+      "kind": "other",
+      "text": "UC San Diego Application for Enrollment Special Studies Courses 197"
      }
     ]
    },
@@ -89182,7 +89430,7 @@
      {
       "type": "condition",
       "kind": "consent",
-      "text": "Consent of instructor"
+      "text": "Special Studies form"
      }
     ]
    },
@@ -89209,7 +89457,7 @@
      {
       "type": "condition",
       "kind": "consent",
-      "text": "Consent of instructor"
+      "text": "Special Studies form"
      }
     ]
    },
@@ -91300,17 +91548,17 @@
      {
       "type": "condition",
       "kind": "restriction",
-      "text": "restricted to upper-division Seventh College students only, must be taken P/NP only, can be taken up to two times for credit, must complete at least ninety units with a 2"
+      "text": "restricted to upper-division Seventh College students only, must be taken P/NP only, can be taken up to two times for credit"
      },
      {
       "type": "condition",
       "kind": "standing",
-      "text": "upper-division"
+      "text": "must complete at least ninety units"
      },
      {
       "type": "condition",
       "kind": "other",
-      "text": "restricted to upper-division Seventh College students only, must be taken P/NP only, can be taken up to two times for credit, must complete at least ninety units with a 2 .5 GPA in upper-division undergraduate courses at UC San Diego"
+      "text": "restricted to upper-division Seventh College students only, must be taken P/NP only, can be taken up to two times for credit, must complete at least ninety units with a 2.5 GPA in upper-division undergraduate courses at UC San Diego"
      },
      {
       "type": "condition",
@@ -91338,17 +91586,17 @@
      {
       "type": "condition",
       "kind": "restriction",
-      "text": "restricted to upper-division Seventh College students only, must be taken P/NP only, can be taken up to two times for credit, must complete at least ninety units with a 2"
+      "text": "restricted to upper-division Seventh College students only, must be taken P/NP only, can be taken up to two times for credit"
      },
      {
       "type": "condition",
       "kind": "standing",
-      "text": "upper-division"
+      "text": "must complete at least ninety units"
      },
      {
       "type": "condition",
       "kind": "other",
-      "text": "restricted to upper-division Seventh College students only, must be taken P/NP only, can be taken up to two times for credit, must complete at least ninety units with a 2 .5 GPA in upper-division undergraduate courses at UC San Diego"
+      "text": "restricted to upper-division Seventh College students only, must be taken P/NP only, can be taken up to two times for credit, must complete at least ninety units with a 2.5 GPA in upper-division undergraduate courses at UC San Diego"
      },
      {
       "type": "condition",
@@ -91802,7 +92050,7 @@
      {
       "type": "condition",
       "kind": "consent",
-      "text": "consent of instructor"
+      "text": "instructor and department approval required"
      }
     ]
    },
@@ -91891,13 +92139,8 @@
      },
      {
       "type": "condition",
-      "kind": "other",
-      "text": "Instructor"
-     },
-     {
-      "type": "condition",
       "kind": "consent",
-      "text": "department approval required"
+      "text": "Instructor and department approval required"
      }
     ]
    },
@@ -94617,7 +94860,7 @@
      {
       "type": "condition",
       "kind": "restriction",
-      "text": "restricted to USP (US26) majors and minors only"
+      "text": "Enrollment restricted to USP (US26) majors and minors only"
      }
     ]
    },
@@ -94880,32 +95123,22 @@
    "code": "USP 141A",
    "prereq_text": "upper-division standing or consent of instructor and department approval.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "or",
-      "items": [
-       {
-        "type": "condition",
-        "kind": "standing",
-        "text": "upper-division standing"
-       },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
-       }
-      ]
+      "type": "condition",
+      "kind": "standing",
+      "text": "upper-division standing"
      },
      {
       "type": "condition",
       "kind": "consent",
-      "text": "department approval"
+      "text": "instructor and department approval"
      }
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -94927,32 +95160,22 @@
    "code": "USP 142A",
    "prereq_text": "upper-division standing or consent of instructor and department approval.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "or",
-      "items": [
-       {
-        "type": "condition",
-        "kind": "standing",
-        "text": "upper-division standing"
-       },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
-       }
-      ]
+      "type": "condition",
+      "kind": "standing",
+      "text": "upper-division standing"
      },
      {
       "type": "condition",
       "kind": "consent",
-      "text": "department approval"
+      "text": "instructor and department approval"
      }
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -95286,32 +95509,22 @@
    "code": "USP 159A",
    "prereq_text": "upper-division standing or consent of instructor and department approval.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "or",
-      "items": [
-       {
-        "type": "condition",
-        "kind": "standing",
-        "text": "upper-division standing"
-       },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
-       }
-      ]
+      "type": "condition",
+      "kind": "standing",
+      "text": "upper-division standing"
      },
      {
       "type": "condition",
       "kind": "consent",
-      "text": "department approval"
+      "text": "instructor and department approval"
      }
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -95670,32 +95883,22 @@
    "code": "USP 171GS",
    "prereq_text": "upper-division standing or consent of instructor and department approval.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "or",
-      "items": [
-       {
-        "type": "condition",
-        "kind": "standing",
-        "text": "upper-division standing"
-       },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
-       }
-      ]
+      "type": "condition",
+      "kind": "standing",
+      "text": "upper-division standing"
      },
      {
       "type": "condition",
       "kind": "consent",
-      "text": "department approval"
+      "text": "instructor and department approval"
      }
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -95746,32 +95949,22 @@
    "code": "USP 173GS",
    "prereq_text": "upper-division standing or consent of instructor and department approval.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "or",
-      "items": [
-       {
-        "type": "condition",
-        "kind": "standing",
-        "text": "upper-division standing"
-       },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
-       }
-      ]
+      "type": "condition",
+      "kind": "standing",
+      "text": "upper-division standing"
      },
      {
       "type": "condition",
       "kind": "consent",
-      "text": "department approval"
+      "text": "instructor and department approval"
      }
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -97335,32 +97528,22 @@
    "code": "VIS 114GS",
    "prereq_text": "upper-division standing or consent of instructor and department approval.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "or",
-      "items": [
-       {
-        "type": "condition",
-        "kind": "standing",
-        "text": "upper-division standing"
-       },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
-       }
-      ]
+      "type": "condition",
+      "kind": "standing",
+      "text": "upper-division standing"
      },
      {
       "type": "condition",
       "kind": "consent",
-      "text": "department approval"
+      "text": "instructor and department approval"
      }
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -97483,32 +97666,22 @@
    "code": "VIS 122GS",
    "prereq_text": "upper-division standing or consent of instructor and department approval.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "or",
-      "items": [
-       {
-        "type": "condition",
-        "kind": "standing",
-        "text": "upper-division standing"
-       },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
-       }
-      ]
+      "type": "condition",
+      "kind": "standing",
+      "text": "upper-division standing"
      },
      {
       "type": "condition",
       "kind": "consent",
-      "text": "department approval"
+      "text": "instructor and department approval"
      }
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -97775,32 +97948,22 @@
    "code": "VIS 127GS",
    "prereq_text": "upper-division standing or consent of instructor and department approval.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "or",
-      "items": [
-       {
-        "type": "condition",
-        "kind": "standing",
-        "text": "upper-division standing"
-       },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
-       }
-      ]
+      "type": "condition",
+      "kind": "standing",
+      "text": "upper-division standing"
      },
      {
       "type": "condition",
       "kind": "consent",
-      "text": "department approval"
+      "text": "instructor and department approval"
      }
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -100490,6 +100653,47 @@
       "code": "VIS 135",
       "concurrent": false,
       "min_grade": null
+     },
+     {
+      "type": "or",
+      "items": [
+       {
+        "type": "course",
+        "code": "VIS 100A",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "VIS 101A",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "VIS 133A",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "VIS 136A",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "VIS 161",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "VIS 162",
+        "concurrent": false,
+        "min_grade": null
+       }
+      ]
      }
     ]
    },

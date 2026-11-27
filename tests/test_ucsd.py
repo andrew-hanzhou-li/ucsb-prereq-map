@@ -107,6 +107,30 @@ def test_readings(parser):
                       "CHIN 100CN.", "@consent | CHIN 100CM | CHIN 100CN"),
         ("LIIT 1B", "LIIT 1A with a grade of C– or better, or equivalent and LIIT 1AX with a grade of D or better, or "
                     "equivalent.", "(@other | LIIT 1AX[D]) & (@other | LIIT 1A[C-])"),
+        # Brackets group, and the subject carries into and out of them
+        ("ASTR 122", "PHYS 2A/2AR-B-C-D or 4A-B-C-D-E.",
+         "((PHYS 2A | PHYS 2AR) & PHYS 2B & PHYS 2C & PHYS 2D) | (PHYS 4A & PHYS 4B & PHYS 4C & PHYS 4D & PHYS 4E)"),
+        ("DSC 97", "(MATH 20C or MATH 31BH), and (MATH 18 or MATH 31AH), and DSC 20.",
+         "(MATH 18 | MATH 31AH) & (MATH 20C | MATH 31BH) & DSC 20"),
+        ("X 1", "EDS (20S or 30 or 31) and EDS 117.", "(EDS 20S | EDS 30 | EDS 31) & EDS 117"),
+        ("CHEM 43A", "CHEM 7L or 7LM and 40A, 40AH, or 41A.", "(CHEM 40A | CHEM 40AH | CHEM 41A) & (CHEM 7L | CHEM 7LM)"),
+        ("POLI 161", "POLI/ECON 5(D) and POLI 30(D).", "(ECON 5 | ECON 5D | POLI 5 | POLI 5D) & (POLI 30 | POLI 30D)"),
+        ("MUS 177", "MUS 172 (formerly MUS 161).", "MUS 172"),
+        ("JAPN 140B", "previous course or consent of instructor.", "@consent | JAPN 140A"),
+        ("MAE 105", "PHYS 2A and B, and MATH 20D.", "MATH 20D & PHYS 2A & PHYS 2B"),
+        ("LISP 15", "LISP 1D/DX.", "LISP 1D | LISP 1DX"),
+        ("EDS 130", "department approval required; EDS 139 must be taken as a corequisite.", "@consent & EDS 139*"),
+        ("SIO 104", "undergraduate: BILD 3 or consent of instructor. Graduate: graduate-level standing.", "@consent | BILD 3"),
+        ("PH 110", "PH 40. Restricted enrollment to sophomore, junior, and senior standing.", "@standing & PH 40"),
+        ("EDS 102", "ED25 major and upper-division standing.", "@restriction & @standing"),
+        ("CENG 101B", "admission to the major and a grade of C– or better in CENG 101A.", "@restriction & CENG 101A[C-]"),
+        ("EDS 129A", "department approval required. Must have successfully completed EDS 135, 136, or 129A for 129B, "
+                     "and 129B for 129C. EDS 129B and 129C are restricted for students applying to the program.",
+         "@consent & @restriction"),
+        ("EDS 129B", "Must have successfully completed EDS 135, 136, or 129A for 129B, and 129B for 129C.",
+         "EDS 129A | EDS 135 | EDS 136"),
+        ("LIFR 5B", "none for 5A; for 5B, two or more years of French in high school.", "@other"),
+        ("LIFR 5A", "none for 5A; for 5B, two or more years of French in high school.", "-"),
     ]
     for code, text, expected in cases:
         got = to_notation(build_prereqs.parse(parser, text, code)["requires"])
@@ -134,6 +158,9 @@ def test_regex_speed():
     start = time.time()
     re.search(rule, text)
     check("major-code rule is fast on a long list", time.time() - start < 0.5, time.time() - start)
+    start = time.time()
+    build_prereqs.courses_for_this_course("1" * 60 + " and more", "5")
+    check("'for' phrases are fast on a long run of digits", time.time() - start < 0.5, time.time() - start)
 
 
 if __name__ == "__main__":

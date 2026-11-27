@@ -1,5 +1,5 @@
 {
- "about": "AI-generated answers for 300 UC San Diego courses, in the notation explained in pipeline/notation.py, written by three separate labelers from the catalog text alone, before the parser was ever run on UCSD text. group 'tuning': may be looked at while adjusting the parser. group 'heldout': scored, then its misses may be used, so later scores are optimistic. group 'final': scored once, after the parser is frozen; this is the honest accuracy number. set 'random' = random courses with prerequisite text; set 'major' = random courses from CSE, MATH, ECON, CHEM, PHYS, COGS, ECE, DSC, MAE and biology. Sample drawn with random.Random(20261127). 'prereq_text' is everything after 'Prerequisites:' in the catalog, including notes. Conventions: 'or equivalent' is | @other; a repeated tag inside one & or | is written once. 'restricted to seniors' or 'upper-division ... majors only' is both @restriction and @standing. Scores: the final group scored 84/100 (79% random, 94% major) on the parser frozen in commit c35e32e; its misses were then used, so a later 'final' score is optimistic. group 'final2': 100 more courses (random.Random(20261128)), labeled by two new labelers with the conventions above, kept exactly as labeled, and scored once on the parser frozen in commit 6e241c7. final2 scored 85/100 exactly right (82% random, 91% major; course logic 86/100). One of its misses is a label mistake (DSC 100: the course is DSC 40BR, the label says DSC 40R), left as labeled.",
+ "about": "AI-generated answers for 300 UC San Diego courses, in the notation explained in pipeline/notation.py, written by three separate labelers from the catalog text alone, before the parser was ever run on UCSD text. group 'tuning': may be looked at while adjusting the parser. group 'heldout': scored, then its misses may be used, so later scores are optimistic. group 'final': scored once, after the parser is frozen; this is the honest accuracy number. set 'random' = random courses with prerequisite text; set 'major' = random courses from CSE, MATH, ECON, CHEM, PHYS, COGS, ECE, DSC, MAE and biology. Sample drawn with random.Random(20261127). 'prereq_text' is everything after 'Prerequisites:' in the catalog, including notes. Conventions: 'or equivalent' is | @other; a repeated tag inside one & or | is written once. 'restricted to seniors' or 'upper-division ... majors only' is both @restriction and @standing. Scores: the final group scored 84/100 (79% random, 94% major) on the parser frozen in commit c35e32e; its misses were then used, so a later 'final' score is optimistic. group 'final2': 100 more courses (random.Random(20261128)), labeled by two new labelers with the conventions above, kept exactly as labeled, and scored once on the parser frozen in commit 6e241c7. final2 scored 85/100 exactly right (82% random, 91% major; course logic 86/100). One of its misses is a label mistake (DSC 100: the course is DSC 40BR, the label says DSC 40R), left as labeled. Convention added later: an approved Special Studies form is @consent (labelers had differed; DSGN 99 and COGS 99 updated).",
  "courses": [
   {
    "code": "BIPN 100R",
@@ -1094,8 +1094,8 @@
    "group": "heldout",
    "set": "random",
    "prereq_text": "lower-division standing, completion of thirty units of UC San Diego undergraduate study, a minimum UC San Diego GPA of 3.0, and a completed and approved Special Studies form.",
-   "expected": "@standing & @other",
-   "note": "Lower-division standing and 30 units as @standing; GPA and Special Studies form as @other; duplicates merged."
+   "expected": "@consent & @other & @standing",
+   "note": "Lower-division standing and 30 units as @standing; GPA and Special Studies form as @other; duplicates merged. Harmonized: an approved Special Studies form is @consent, as labeled for ETHN 98 (final2)."
   },
   {
    "code": "ERC 2",
@@ -1264,8 +1264,8 @@
    "group": "heldout",
    "set": "major",
    "prereq_text": "lower-division standing, completion of thirty units of UC San Diego undergraduate study, a minimum UC San Diego GPA of 3.0, and a completed and approved Special Studies form.",
-   "expected": "@standing & @other",
-   "note": "Lower-division standing and 30 units as @standing; GPA and Special Studies form as @other; duplicates merged."
+   "expected": "@consent & @other & @standing",
+   "note": "Lower-division standing and 30 units as @standing; GPA and Special Studies form as @other; duplicates merged. Harmonized: an approved Special Studies form is @consent, as labeled for ETHN 98 (final2)."
   },
   {
    "code": "MATH 193A",

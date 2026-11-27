@@ -517,7 +517,7 @@ class Parser:
             without = PLACEHOLDER.sub("", segment[1]).strip()
             tokens = PLACEHOLDER.findall(segment[1])
             infos = [self.protector.lookup(t) for t in tokens]
-            if not without and infos and all(i["marker"] != "condition" for i in infos):
+            if not without and infos and all(i["marker"] not in ("condition", "group") for i in infos):
                 for info in infos:
                     if info["marker"] == "grade" and info["each"]:
                         each_grade = info["grade"]
