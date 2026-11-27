@@ -153,6 +153,9 @@ def test_readings(parser):
                       "majors only or consent of instructor.", "(@restriction & BENG 187B) | @consent"),
         ("CLX 199", "students must meet with a faculty member for approval and to define course objectives.", "@consent"),
         ("CSE 12", "CSE 11 and CS majors only.", "@restriction & CSE 11"),
+        ("MUIR 199", "upper-division status, approval by project advisor and by provost.", "@consent & @standing"),
+        ("CENG 124A", "admission to chemical engineering major and grades of C– or better in CENG 113 and CENG 122, "
+                      "or consent of instructor.", "(@restriction & CENG 113[C-] & CENG 122[C-]) | @consent"),
     ]
     for code, text, expected in cases:
         got = to_notation(build_prereqs.parse(parser, text, code)["requires"])

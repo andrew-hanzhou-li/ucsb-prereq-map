@@ -130,7 +130,7 @@ def main():
             print("  got:      " + got)
             print()
 
-    for group in ("tuning", "heldout", "final", "final2", "final3", "final4", "final5"):
+    for group in ("tuning", "heldout", "final", "final2", "final3", "final4", "final5", "final6"):
         for name in ("random", "major"):
             if (group, name) in scores:
                 right, total = scores[(group, name)]

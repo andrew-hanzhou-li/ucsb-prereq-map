@@ -210,6 +210,7 @@ The pipeline split into `pipeline/common/` and `pipeline/campuses/<id>/` happens
 | final3 (third honest score) | 100 | 91 (91% random, 91% major) | double-labeled (labelers agreed on all 100); parser frozen in fb24dd6 |
 | final4 (fourth honest score) | 100 | 90 (88% random, 94% major) | double-labeled (agreed on all 100); parser frozen in c954c01 |
 | final5 (fifth honest score) | 100 | 94 (94% random, 94% major) | double-labeled (agreed on all 100); parser frozen in 9c12166 |
+| final6 (sixth honest score) | 100 | **97** (96% random, 100% major); 93/96 without 4 courses seen in sweeps | double-labeled (agreed on all 100); parser frozen in dcd6420 |
 | UCSB, for comparison | 150 | 89% random, 96% major | its own "final" group |
 
-The 95% bar isn't met yet: the latest honest score is 94%, one course short. Most remaining misses are long-tail phrasings ("PHYS 2A/2AR-B-C-D", "POLI 5(D)", "previous course") and two readings where labelers differ (whether "or consent of instructor" covers only its own sentence).
+The 95% bar is met: the latest honest score is 97% (96.9% without the four courses seen earlier). Marking UCSD "Ready" is Andrew's call. Most remaining misses are long-tail phrasings ("PHYS 2A/2AR-B-C-D", "POLI 5(D)", "previous course") and two readings where labelers differ (whether "or consent of instructor" covers only its own sentence).

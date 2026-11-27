@@ -12213,13 +12213,25 @@
        {
         "type": "condition",
         "kind": "restriction",
-        "text": "admission to the major and grades of C- or better in PHYS 2A, MATH 20D"
+        "text": "admission to the major"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 2A",
+        "concurrent": false,
+        "min_grade": "C-"
+       },
+       {
+        "type": "course",
+        "code": "MATH 20D",
+        "concurrent": false,
+        "min_grade": "C-"
        },
        {
         "type": "course",
         "code": "MATH 20E",
         "concurrent": false,
-        "min_grade": null
+        "min_grade": "C-"
        }
       ]
      },
@@ -12261,9 +12273,20 @@
    "code": "CENG 101C",
    "prereq_text": "admission to the major and grade of C– or better in CENG 101A.",
    "requires": {
-    "type": "condition",
-    "kind": "restriction",
-    "text": "admission to the major and grade of C- or better in CENG 101A"
+    "type": "and",
+    "items": [
+     {
+      "type": "condition",
+      "kind": "restriction",
+      "text": "admission to the major"
+     },
+     {
+      "type": "course",
+      "code": "CENG 101A",
+      "concurrent": false,
+      "min_grade": "C-"
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -12489,13 +12512,25 @@
      {
       "type": "condition",
       "kind": "restriction",
-      "text": "admission to the major and grades of C- or better in CENG 100, CENG 102"
+      "text": "admission to the major"
+     },
+     {
+      "type": "course",
+      "code": "CENG 100",
+      "concurrent": false,
+      "min_grade": "C-"
+     },
+     {
+      "type": "course",
+      "code": "CENG 102",
+      "concurrent": false,
+      "min_grade": "C-"
      },
      {
       "type": "course",
       "code": "CENG 101C",
       "concurrent": false,
-      "min_grade": null
+      "min_grade": "C-"
      }
     ]
    },
@@ -12515,13 +12550,19 @@
        {
         "type": "condition",
         "kind": "restriction",
-        "text": "admission to chemical engineering major and grades of C- or better in CENG 113"
+        "text": "admission to chemical engineering major"
+       },
+       {
+        "type": "course",
+        "code": "CENG 113",
+        "concurrent": false,
+        "min_grade": "C-"
        },
        {
         "type": "course",
         "code": "CENG 122",
         "concurrent": false,
-        "min_grade": null
+        "min_grade": "C-"
        }
       ]
      },
@@ -12540,9 +12581,20 @@
    "code": "CENG 124B",
    "prereq_text": "admission to chemical engineering major and grade of C– or better in CENG 124A.",
    "requires": {
-    "type": "condition",
-    "kind": "restriction",
-    "text": "admission to chemical engineering major and grade of C- or better in CENG 124A"
+    "type": "and",
+    "items": [
+     {
+      "type": "condition",
+      "kind": "restriction",
+      "text": "admission to chemical engineering major"
+     },
+     {
+      "type": "course",
+      "code": "CENG 124A",
+      "concurrent": false,
+      "min_grade": "C-"
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -69194,8 +69246,8 @@
      },
      {
       "type": "condition",
-      "kind": "other",
-      "text": "approval by project advisor"
+      "kind": "consent",
+      "text": "approval by project advisor and by provost"
      }
     ]
    },

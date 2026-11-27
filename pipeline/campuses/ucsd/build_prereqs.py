@@ -56,7 +56,7 @@ EXTRA_RULES = [
                     r"(?:be\s+)?accepted\s+(?:in|into|to)\s+(?:the\s+)?[^;.§]*?program\b"),
     # "admission to the major", stopping before "and a grade of C– in X" or a course.
     ("restriction", r"\b(?:formal\s+)?(?:admittance|acceptance|admission)\s+(?:to|in|into)\s+"
-                    r"(?:(?!\band\s+(?:a\s+grade|[A-Z]{2,5}\s\d))[^;.§])*"),
+                    r"(?:(?!\band\s+(?:a\s+)?(?:grades?\b|[A-Z]{2,5}\s\d))[^;.§])*"),
     ("restriction", r"\b(?:students\s+)?must\s+apply\s+(?:for|to)\s+[^;.§]*?\s+and\s+be\s+(?:accepted|approved)(?:\s+to\s+enroll)?"),
     ("restriction", r"\b(?:students\s+)?must\s+be\s+(?:an?\s+)?[\w ]{0,40}?(?:students?|participants\s+in\s+[^;.§]*)"),
     # Major codes: "ED25 major", "CS25, CS26, and CS27 majors"
@@ -65,6 +65,8 @@ EXTRA_RULES = [
     ("consent", r"(?i:\b(?:approval\s+of\s+the\s+|an\s+approved\s+)?special\s+studies\s+(?:online\s+)?(?:form|application))"),
     ("consent", r"\bdepartment(?:al)?\s+(?:stamp|authorization|approval)(?:\s+(?:is\s+)?required)?"),
     ("consent", r"\benrollment\s+via\s+[^;.§]*"),
+    ("consent", r"\bapproval\s+by\s+(?:the\s+)?[\w ]{0,40}?(?:advisor|adviser|provost|instructor|director|department)"
+                r"(?:\s+and\s+by\s+(?:the\s+)?[\w ]{0,40}?(?:advisor|adviser|provost|instructor|director|department))?"),
     ("consent", r"\b(?:students\s+)?must\s+meet\s+with\s+(?:a\s+)?faculty\s+member\s+for\s+approval[^;.§]*"),
     # "bioengineering, bioengineering: biotechnology, or ... majors only": no
     # course codes inside (no digits), so a course before it isn't swallowed.
