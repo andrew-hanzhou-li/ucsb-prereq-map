@@ -31463,7 +31463,7 @@
          },
          {
           "type": "course",
-          "code": "MATH 31",
+          "code": "MATH 31AH",
           "concurrent": false,
           "min_grade": null
          }
@@ -31480,9 +31480,7 @@
    },
    "source": "parser",
    "ambiguous": false,
-   "unparsed": [
-    "MATH 31 AH"
-   ]
+   "unparsed": []
   },
   {
    "code": "DSC 123B",
@@ -34859,9 +34857,7 @@
    },
    "source": "parser",
    "ambiguous": false,
-   "unparsed": [
-    "after completion of ECON 102"
-   ]
+   "unparsed": []
   },
   {
    "code": "ECON 103",
@@ -35030,7 +35026,7 @@
        },
        {
         "type": "course",
-        "code": "MATH 20",
+        "code": "MATH 20C",
         "concurrent": false,
         "min_grade": null
        }
@@ -35040,9 +35036,7 @@
    },
    "source": "parser",
    "ambiguous": false,
-   "unparsed": [
-    "MATH 20 C"
-   ]
+   "unparsed": []
   },
   {
    "code": "ECON 109T",
@@ -35065,9 +35059,7 @@
    },
    "source": "parser",
    "ambiguous": false,
-   "unparsed": [
-    "after completion of ECON 109"
-   ]
+   "unparsed": []
   },
   {
    "code": "ECON 110A",
@@ -36485,9 +36477,7 @@
    },
    "source": "parser",
    "ambiguous": false,
-   "unparsed": [
-    "after completion of ECON 164"
-   ]
+   "unparsed": []
   },
   {
    "code": "ECON 165",
@@ -36534,9 +36524,7 @@
    },
    "source": "parser",
    "ambiguous": false,
-   "unparsed": [
-    "after completion of ECON 165"
-   ]
+   "unparsed": []
   },
   {
    "code": "ECON 167",
@@ -47908,9 +47896,7 @@
    },
    "source": "parser",
    "ambiguous": false,
-   "unparsed": [
-    "previous enrollment in JWSP 196A"
-   ]
+   "unparsed": []
   },
   {
    "code": "JWSP 198",
@@ -48101,9 +48087,7 @@
    },
    "source": "parser",
    "ambiguous": false,
-   "unparsed": [
-    "satisfactory completion of LATI 50"
-   ]
+   "unparsed": []
   },
   {
    "code": "LATI 199",
@@ -66385,9 +66369,7 @@
    },
    "source": "parser",
    "ambiguous": false,
-   "unparsed": [
-    "satisfaction of the MCWP 40 requirement"
-   ]
+   "unparsed": []
   },
   {
    "code": "MCWP 50R",
@@ -76537,30 +76519,35 @@
         ]
        },
        {
-        "type": "course",
-        "code": "PHYS 4C",
-        "concurrent": false,
-        "min_grade": null
+        "type": "and",
+        "items": [
+         {
+          "type": "course",
+          "code": "PHYS 4C",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "PHYS 2A",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "PHYS 2B",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "PHYS 2C",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
        }
       ]
-     },
-     {
-      "type": "course",
-      "code": "PHYS 2A",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "PHYS 2B",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "PHYS 2C",
-      "concurrent": false,
-      "min_grade": null
      },
      {
       "type": "or",
@@ -76639,10 +76626,8 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
-   "unparsed": [
-    "the combination of PHYS 4C"
-   ]
+   "ambiguous": false,
+   "unparsed": []
   },
   {
    "code": "PHYS 4E",
@@ -78253,50 +78238,48 @@
    "code": "PHYS 175",
    "prereq_text": "CHEM 126 or 131 or 132 or the combination of PHYS 100A and 110A.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "or",
+      "type": "course",
+      "code": "CHEM 126",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "course",
+      "code": "CHEM 131",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "course",
+      "code": "CHEM 132",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "and",
       "items": [
-       {
-        "type": "course",
-        "code": "CHEM 126",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
-        "type": "course",
-        "code": "CHEM 131",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
-        "type": "course",
-        "code": "CHEM 132",
-        "concurrent": false,
-        "min_grade": null
-       },
        {
         "type": "course",
         "code": "PHYS 100A",
         "concurrent": false,
         "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "PHYS 110A",
+        "concurrent": false,
+        "min_grade": null
        }
       ]
-     },
-     {
-      "type": "course",
-      "code": "PHYS 110A",
-      "concurrent": false,
-      "min_grade": null
      }
     ]
    },
    "source": "parser",
-   "ambiguous": true,
-   "unparsed": [
-    "the combination of PHYS 100A"
-   ]
+   "ambiguous": false,
+   "unparsed": []
   },
   {
    "code": "PHYS 176",
@@ -86414,26 +86397,14 @@
    "code": "SIO 65",
    "prereq_text": "SIO 50 (P/NP grades only).",
    "requires": {
-    "type": "or",
-    "items": [
-     {
-      "type": "course",
-      "code": "SIO 50",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "NP grades only)"
-     }
-    ]
+    "type": "course",
+    "code": "SIO 50",
+    "concurrent": false,
+    "min_grade": null
    },
    "source": "parser",
    "ambiguous": false,
-   "unparsed": [
-    "SIO 50 (P"
-   ]
+   "unparsed": []
   },
   {
    "code": "SIO 75",
@@ -95152,9 +95123,7 @@
    },
    "source": "parser",
    "ambiguous": false,
-   "unparsed": [
-    "successful completion of USP 141A"
-   ]
+   "unparsed": []
   },
   {
    "code": "USP 142A",
@@ -95189,9 +95158,7 @@
    },
    "source": "parser",
    "ambiguous": false,
-   "unparsed": [
-    "successful completion of USP 142A"
-   ]
+   "unparsed": []
   },
   {
    "code": "USP 142C",
@@ -100904,9 +100871,7 @@
    },
    "source": "parser",
    "ambiguous": false,
-   "unparsed": [
-    "satisfaction of WCWP 10A"
-   ]
+   "unparsed": []
   },
   {
    "code": "WCWP 100",

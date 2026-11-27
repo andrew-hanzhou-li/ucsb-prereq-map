@@ -241,6 +241,19 @@ def expand_shorthand(text, code):
     # "POLI/ECON 5(D)", "POLI 30(D)": either subject, with or without the letter.
     text = re.sub(r"\b(?P<subjects>[A-Z]{2,5}(?:/[A-Z]{2,5})+) (?P<number>\d+)(?:\((?P<suffix>[A-Z]+)\))?", subject_list, text)
     text = re.sub(r"\b([A-Z]{2,5}) (\d+)\(([A-Z]+)\)", r"(\1 \2 or \1 \2\3)", text)
+    # "MATH 31 AH", "MATH 20 C": a space slipped into the code.
+    text = re.sub(r"\b([A-Z]{2,5} \d+) ([A-Z]{1,2})\b(?=\s*(?:[).,;]|\band\b|\bor\b|$))", r"\1\2", text)
+    # "May be taken concurrently with ECON 102 or after completion of ECON 102"
+    text = re.sub(r"\bmay\s+be\s+taken\s+concurrently\s+with\s+([A-Z]{2,5} \d+[A-Z]*)\s+or\s+after\s+completion\s+of\s+\1\b",
+                  r"concurrent enrollment in \1", text, flags=re.IGNORECASE)
+    # Words around a course that don't change it.
+    text = re.sub(r"\b(?:successful|satisfactory)\s+completion\s+of\s+|\bprevious\s+enrollment\s+in\s+", "", text,
+                  flags=re.IGNORECASE)
+    text = re.sub(r"\bsatisfaction\s+of\s+(?:the\s+)?([A-Z]{2,5} \d+[A-Z]*)(?:\s+requirement)?", r"\1", text)
+    text = re.sub(r"\s*\(P/NP grades only\)", "", text)
+    # "the combination of PHYS 100A and 110A": both, as one choice.
+    text = re.sub(r"\bthe\s+combination\s+of\s+((?:[A-Z]{2,5} )?\d+[A-Z-]*(?:\s+and\s+(?:[A-Z]{2,5} )?\d+[A-Z-]*)+)",
+                  r"(\1)", text)
     # "PHYS 2A and B" -> "PHYS 2A and PHYS 2B"
     text = re.sub(r"\b([A-Z]{2,5} \d+)([A-Z]+) (and|or) ([A-Z])\b(?![\s-]*\d)(?!\w)", r"\1\2 \3 \1\4", text)
     # "LISP 1D/DX" -> "LISP 1D or LISP 1DX"; "DSC 40B/R" -> "DSC 40B or DSC 40BR"
