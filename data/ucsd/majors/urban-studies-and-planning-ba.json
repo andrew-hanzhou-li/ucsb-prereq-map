@@ -1,0 +1,834 @@
+{
+  "name": "Urban Studies and Planning - BA",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Urban Studies and Planning",
+  "source": "https://catalog.ucsd.edu/curric/USP.html",
+  "narrative": [
+    "The undergraduate program in urban studies and planning requires six lower-division courses in urban studies and planning, and twelve courses in upper-division urban studies and planning.",
+    "All lower-division and upper-division requirements must be taken for a letter grade. A 2.0 grade point average is required in the major, and students must earn at least C– in each course used for the major.",
+    "No more than one special studies course, USP 198 or USP 199, will be accepted to count toward the major.",
+    "Courses used to satisfy the major cannot be applied toward a minor, although some overlap is allowed for double majors.",
+    "Because the senior sequence includes an internship, no other internship or field placement will be counted toward the major.",
+    "Students are required to complete USP 30, USP 60, USP 124, a research methods course, and a technical elective course prior to enrolling in USP 186. USP 186 is a prerequisite for USP 187.",
+    "USP courses numbered 150–159 are reserved for the real estate and development major and do not count toward USP major requirements."
+  ],
+  "sections": [
+    {
+      "name": "Lower-Division Requirements",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "course",
+            "code": "USP 1"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "USP 2"
+              },
+              {
+                "type": "course",
+                "code": "USP 6"
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "USP 3"
+              },
+              {
+                "type": "course",
+                "code": "USP 5"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "USP 4"
+          },
+          {
+            "type": "course",
+            "code": "USP 30"
+          },
+          {
+            "type": "course",
+            "code": "USP 60"
+          }
+        ],
+        "label": "Introductory sequence"
+      }
+    },
+    {
+      "name": "Upper-Division Requirements: Foundation Courses",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "course",
+            "code": "USP 124"
+          },
+          {
+            "type": "course",
+            "code": "USP 173"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "USP 100"
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "USP 103"
+                  },
+                  {
+                    "type": "course",
+                    "code": "HIUS 148"
+                  }
+                ]
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "USP 104"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ETHN 105"
+                  }
+                ]
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "USP 105"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 153"
+                  }
+                ]
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "USP 106"
+                  },
+                  {
+                    "type": "course",
+                    "code": "HIUS 129"
+                  }
+                ]
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "USP 107"
+                  },
+                  {
+                    "type": "course",
+                    "code": "POLI 102E"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "USP 108"
+              },
+              {
+                "type": "course",
+                "code": "USP 170"
+              },
+              {
+                "type": "course",
+                "code": "USP 171"
+              },
+              {
+                "type": "course",
+                "code": "USP 171GS"
+              }
+            ],
+            "label": "One additional foundation course",
+            "notes": "The foundation list prints USP 105's cross-listing as SOCI 153; the elective list prints it as SOCI 153C."
+          }
+        ]
+      }
+    },
+    {
+      "name": "Research Methods Courses",
+      "requirement": {
+        "type": "choose",
+        "count": 1,
+        "items": [
+          {
+            "type": "course",
+            "code": "USP 125"
+          },
+          {
+            "type": "course",
+            "code": "USP 128A"
+          },
+          {
+            "type": "course",
+            "code": "USP 141A"
+          },
+          {
+            "type": "course",
+            "code": "USP 142A"
+          },
+          {
+            "type": "course",
+            "code": "USP 142B"
+          },
+          {
+            "type": "course",
+            "code": "USP 160"
+          },
+          {
+            "type": "course",
+            "code": "USP 163"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "USP 188"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 188"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "USP 193"
+          }
+        ],
+        "notes": "One research methods course to be taken junior year."
+      }
+    },
+    {
+      "name": "Technical Elective Courses",
+      "requirement": {
+        "type": "choose",
+        "count": 1,
+        "items": [
+          {
+            "type": "course",
+            "code": "USP 169"
+          },
+          {
+            "type": "course",
+            "code": "USP 172"
+          },
+          {
+            "type": "course",
+            "code": "USP 175"
+          },
+          {
+            "type": "course",
+            "code": "USP 177A"
+          },
+          {
+            "type": "course",
+            "code": "USP 183GS"
+          },
+          {
+            "type": "course",
+            "code": "USP 191A"
+          }
+        ],
+        "notes": "One technical elective course to be taken junior year."
+      }
+    },
+    {
+      "name": "Senior Sequence Requirement",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "course",
+            "code": "USP 186"
+          },
+          {
+            "type": "course",
+            "code": "USP 187"
+          }
+        ],
+        "notes": "USP 186 in the fall, and USP 187 in the winter. These courses must be taken in order."
+      }
+    },
+    {
+      "name": "Upper-Division Elective Courses",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "choose",
+            "count": 3,
+            "items": [
+              {
+                "type": "range",
+                "subject": "USP",
+                "from": 100,
+                "to": 149
+              },
+              {
+                "type": "range",
+                "subject": "USP",
+                "from": 160,
+                "to": 194
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "USP 198"
+                  },
+                  {
+                    "type": "course",
+                    "code": "USP 199"
+                  }
+                ],
+                "label": "USP 198 or USP 199 (only one)"
+              }
+            ],
+            "label": "USP electives",
+            "notes": "At least three of the upper-division elective courses must be USP courses. Any USP course numbered 100–149 and 160–194; one special studies course (USP 198 or USP 199)."
+          },
+          {
+            "type": "choose",
+            "count": 2,
+            "items": [
+              {
+                "type": "range",
+                "subject": "USP",
+                "from": 100,
+                "to": 149
+              },
+              {
+                "type": "range",
+                "subject": "USP",
+                "from": 160,
+                "to": 194
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "USP 101"
+                  },
+                  {
+                    "type": "course",
+                    "code": "POLI 160AA"
+                  }
+                ]
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "USP 102"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ECON 135"
+                  }
+                ]
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "USP 103"
+                  },
+                  {
+                    "type": "course",
+                    "code": "HIUS 148"
+                  }
+                ]
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "USP 104"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ETHN 105"
+                  }
+                ]
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "USP 105"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 153C"
+                  }
+                ]
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "USP 106"
+                  },
+                  {
+                    "type": "course",
+                    "code": "HIUS 129"
+                  }
+                ]
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "USP 107"
+                  },
+                  {
+                    "type": "course",
+                    "code": "POLI 102E"
+                  }
+                ]
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "USP 110"
+                  },
+                  {
+                    "type": "course",
+                    "code": "POLI 102J"
+                  }
+                ]
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "USP 128A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ANTH 128A"
+                  }
+                ]
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "USP 128B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ANTH 128A"
+                  }
+                ]
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "USP 132"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ETHN 188"
+                  }
+                ]
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "USP 133"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 152"
+                  }
+                ]
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "USP 135"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ETHN 129"
+                  }
+                ]
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "USP 167"
+                  },
+                  {
+                    "type": "course",
+                    "code": "HIUS 123"
+                  }
+                ]
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "USP 168"
+                  },
+                  {
+                    "type": "course",
+                    "code": "HIUS 117"
+                  }
+                ]
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "USP 183"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 183"
+                  }
+                ]
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "USP 188"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 188"
+                  }
+                ]
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "ANBI 132"
+                  },
+                  {
+                    "type": "course",
+                    "code": "BIEB 176"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "CGS 134"
+              },
+              {
+                "type": "course",
+                "code": "COMM 111C"
+              },
+              {
+                "type": "course",
+                "code": "COMM 124A"
+              },
+              {
+                "type": "course",
+                "code": "ECON 116"
+              },
+              {
+                "type": "course",
+                "code": "ENVR 102"
+              },
+              {
+                "type": "course",
+                "code": "ENVR 110"
+              },
+              {
+                "type": "course",
+                "code": "ENVR 111"
+              },
+              {
+                "type": "course",
+                "code": "ENVR 140"
+              },
+              {
+                "type": "course",
+                "code": "ESYS 103"
+              },
+              {
+                "type": "course",
+                "code": "ETHN 103"
+              },
+              {
+                "type": "course",
+                "code": "ETHN 104"
+              },
+              {
+                "type": "course",
+                "code": "ETHN 118"
+              },
+              {
+                "type": "course",
+                "code": "ETHN 121"
+              },
+              {
+                "type": "course",
+                "code": "ETHN 123"
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "ETHN 131"
+                  },
+                  {
+                    "type": "course",
+                    "code": "HIUS 159"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "ETHN 142"
+              },
+              {
+                "type": "course",
+                "code": "ETHN 151"
+              },
+              {
+                "type": "course",
+                "code": "ETHN 160"
+              },
+              {
+                "type": "course",
+                "code": "ETHN 161"
+              },
+              {
+                "type": "course",
+                "code": "ETHN 184"
+              },
+              {
+                "type": "course",
+                "code": "HIEU 129"
+              },
+              {
+                "type": "course",
+                "code": "HIUS 114"
+              },
+              {
+                "type": "course",
+                "code": "HIUS 117"
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "HIUS 124"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ETHN 125"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "HIUS 139"
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "HIUS 158"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ETHN 130"
+                  }
+                ]
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "HIUS 180"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ETHN 134"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "POLI 100H"
+              },
+              {
+                "type": "course",
+                "code": "POLI 100J"
+              },
+              {
+                "type": "course",
+                "code": "POLI 103A"
+              },
+              {
+                "type": "course",
+                "code": "POLI 105A"
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "POLI 117"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SIO 109"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "POLI 150A"
+              },
+              {
+                "type": "course",
+                "code": "POLI 162"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 125"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 139"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 151"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 159"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 169"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 179"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 180"
+              },
+              {
+                "type": "course",
+                "code": "VIS 101A"
+              },
+              {
+                "type": "course",
+                "code": "VIS 103"
+              },
+              {
+                "type": "course",
+                "code": "VIS 103B"
+              }
+            ],
+            "label": "Remaining upper-division electives",
+            "notes": "Five upper-division electives in all; USP courses count here too (USP 198/199 is listed only in the USP group above, since only one may count). Cross-listed courses (e.g. USP 101/POLI 160AA) count once. ENVR 102 and SOCI 159 (special topics) must be petitioned for credit, as must USP 110/POLI 102J. The catalog lists USP 128B as cross-listed with ANTH 128A."
+          }
+        ],
+        "label": "Five upper-division elective courses"
+      }
+    }
+  ]
+}

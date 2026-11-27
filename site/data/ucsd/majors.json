@@ -23,8 +23,8 @@
    "courses_in_major": 33,
    "outside_prerequisites": 45,
    "edges": 177,
-   "columns": 11,
-   "upper_division_floor": 4
+   "columns": 9,
+   "upper_division_floor": 1
   },
   {
    "id": "UCSD-MAJOR-aerospace-engineering-bs-aerothermodynamics",
@@ -36,8 +36,8 @@
    "courses_in_major": 42,
    "outside_prerequisites": 45,
    "edges": 187,
-   "columns": 11,
-   "upper_division_floor": 4
+   "columns": 9,
+   "upper_division_floor": 1
   },
   {
    "id": "UCSD-MAJOR-aerospace-engineering-bs-astrodynamics-and-space-applications",
@@ -49,8 +49,8 @@
    "courses_in_major": 39,
    "outside_prerequisites": 45,
    "edges": 182,
-   "columns": 11,
-   "upper_division_floor": 4
+   "columns": 9,
+   "upper_division_floor": 1
   },
   {
    "id": "UCSD-MAJOR-aerospace-engineering-bs-flight-dynamics-and-controls",
@@ -62,8 +62,8 @@
    "courses_in_major": 41,
    "outside_prerequisites": 55,
    "edges": 222,
-   "columns": 11,
-   "upper_division_floor": 4
+   "columns": 9,
+   "upper_division_floor": 1
   },
   {
    "id": "UCSD-AASM",
@@ -131,6 +131,19 @@
    "upper_division_floor": 0
   },
   {
+   "id": "UCSD-MAJOR-anthropology-ba-climate-change-and-human-solutions",
+   "name": "Anthropology - BA - Climate Change and Human Solutions",
+   "kind": "major",
+   "department": "Anthropology",
+   "file": "anthropology-ba-climate-change-and-human-solutions.json",
+   "structured": true,
+   "courses_in_major": 25,
+   "outside_prerequisites": 0,
+   "edges": 0,
+   "columns": 1,
+   "upper_division_floor": 0
+  },
+  {
    "id": "UCSD-MAJOR-anthropology-ba-sociocultural-anthropology",
    "name": "Anthropology - BA - Sociocultural Anthropology",
    "kind": "major",
@@ -142,6 +155,45 @@
    "edges": 20,
    "columns": 2,
    "upper_division_floor": 0
+  },
+  {
+   "id": "UCSD-MAJOR-applied-mathematics-bs",
+   "name": "Applied Mathematics - BS",
+   "kind": "major",
+   "department": "Mathematics",
+   "file": "applied-mathematics-bs.json",
+   "structured": true,
+   "courses_in_major": 89,
+   "outside_prerequisites": 37,
+   "edges": 313,
+   "columns": 7,
+   "upper_division_floor": 2
+  },
+  {
+   "id": "UCSD-MAJOR-art-history-theory-criticism-ba",
+   "name": "Art History/Theory/Criticism - BA",
+   "kind": "major",
+   "department": "Visual Arts",
+   "file": "art-history-theory-criticism-ba.json",
+   "structured": true,
+   "courses_in_major": 87,
+   "outside_prerequisites": 2,
+   "edges": 36,
+   "columns": 3,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "UCSD-MAJOR-artificial-intelligence-bs",
+   "name": "Artificial Intelligence - BS",
+   "kind": "major",
+   "department": "Computer Science and Engineering",
+   "file": "artificial-intelligence-bs.json",
+   "structured": true,
+   "courses_in_major": 178,
+   "outside_prerequisites": 156,
+   "edges": 1040,
+   "columns": 6,
+   "upper_division_floor": 2
   },
   {
    "id": "UCSD-AAPI",
@@ -192,7 +244,7 @@
    "courses_in_major": 39,
    "outside_prerequisites": 10,
    "edges": 187,
-   "columns": 6,
+   "columns": 5,
    "upper_division_floor": 4
   },
   {
@@ -205,7 +257,7 @@
    "courses_in_major": 112,
    "outside_prerequisites": 71,
    "edges": 425,
-   "columns": 9,
+   "columns": 8,
    "upper_division_floor": 4
   },
   {
@@ -231,7 +283,7 @@
    "courses_in_major": 43,
    "outside_prerequisites": 77,
    "edges": 280,
-   "columns": 12,
+   "columns": 10,
    "upper_division_floor": 1
   },
   {
@@ -244,7 +296,7 @@
    "courses_in_major": 41,
    "outside_prerequisites": 67,
    "edges": 245,
-   "columns": 8,
+   "columns": 7,
    "upper_division_floor": 1
   },
   {
@@ -257,7 +309,7 @@
    "courses_in_major": 41,
    "outside_prerequisites": 69,
    "edges": 252,
-   "columns": 10,
+   "columns": 8,
    "upper_division_floor": 1
   },
   {
@@ -270,8 +322,21 @@
    "courses_in_major": 44,
    "outside_prerequisites": 70,
    "edges": 269,
-   "columns": 9,
+   "columns": 7,
    "upper_division_floor": 1
+  },
+  {
+   "id": "UCSD-MAJOR-biological-anthropology-bs",
+   "name": "Biological Anthropology - BS",
+   "kind": "major",
+   "department": "Anthropology",
+   "file": "biological-anthropology-bs.json",
+   "structured": true,
+   "courses_in_major": 55,
+   "outside_prerequisites": 7,
+   "edges": 35,
+   "columns": 4,
+   "upper_division_floor": 0
   },
   {
    "id": "UCSD-BIOL",
@@ -283,7 +348,7 @@
    "courses_in_major": 165,
    "outside_prerequisites": 84,
    "edges": 480,
-   "columns": 6,
+   "columns": 5,
    "upper_division_floor": 1
   },
   {
@@ -300,6 +365,97 @@
    "upper_division_floor": 1
   },
   {
+   "id": "UCSD-MAJOR-business-data-science-bs",
+   "name": "Business Data Science - BS",
+   "kind": "major",
+   "department": "Data Science",
+   "file": "business-data-science-bs.json",
+   "structured": true,
+   "courses_in_major": 56,
+   "outside_prerequisites": 73,
+   "edges": 340,
+   "columns": 6,
+   "upper_division_floor": 2
+  },
+  {
+   "id": "UCSD-MAJOR-business-economics-bs",
+   "name": "Business Economics - BS",
+   "kind": "major",
+   "department": "Economics",
+   "file": "business-economics-bs.json",
+   "structured": true,
+   "courses_in_major": 181,
+   "outside_prerequisites": 52,
+   "edges": 523,
+   "columns": 7,
+   "upper_division_floor": 2
+  },
+  {
+   "id": "UCSD-MAJOR-business-psychology-bs",
+   "name": "Business Psychology - BS",
+   "kind": "major",
+   "department": "Psychology",
+   "file": "business-psychology-bs.json",
+   "structured": true,
+   "courses_in_major": 162,
+   "outside_prerequisites": 37,
+   "edges": 262,
+   "columns": 6,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "UCSD-MAJOR-business-psychology-bs-marketing",
+   "name": "Business Psychology - BS - Marketing",
+   "kind": "major",
+   "department": "Rady School of Management",
+   "file": "business-psychology-bs-marketing.json",
+   "structured": true,
+   "courses_in_major": 149,
+   "outside_prerequisites": 28,
+   "edges": 213,
+   "columns": 6,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "UCSD-MAJOR-business-psychology-bs-operations",
+   "name": "Business Psychology - BS - Operations",
+   "kind": "major",
+   "department": "Rady School of Management",
+   "file": "business-psychology-bs-operations.json",
+   "structured": true,
+   "courses_in_major": 146,
+   "outside_prerequisites": 28,
+   "edges": 213,
+   "columns": 6,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "UCSD-MAJOR-business-psychology-bs-stem",
+   "name": "Business Psychology - BS - STEM",
+   "kind": "major",
+   "department": "Rady School of Management",
+   "file": "business-psychology-bs-stem.json",
+   "structured": true,
+   "courses_in_major": 148,
+   "outside_prerequisites": 37,
+   "edges": 226,
+   "columns": 6,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "UCSD-MAJOR-chemical-engineering-bs",
+   "name": "Chemical Engineering - BS",
+   "kind": "major",
+   "department": "Aiiso Yufeng Li Family Department of Chemical and Nano Engineering",
+   "file": "chemical-engineering-bs.json",
+   "structured": true,
+   "courses_in_major": 44,
+   "outside_prerequisites": 29,
+   "edges": 170,
+   "columns": 9,
+   "upper_division_floor": 1
+  },
+  {
    "id": "UCSD-NANO",
    "name": "Chemical and NanoEngineering",
    "kind": "department",
@@ -309,7 +465,7 @@
    "courses_in_major": 63,
    "outside_prerequisites": 30,
    "edges": 160,
-   "columns": 9,
+   "columns": 8,
    "upper_division_floor": 1
   },
   {
@@ -336,7 +492,7 @@
    "outside_prerequisites": 53,
    "edges": 339,
    "columns": 8,
-   "upper_division_floor": 3
+   "upper_division_floor": 2
   },
   {
    "id": "UCSD-CLS",
@@ -404,6 +560,19 @@
    "upper_division_floor": 1
   },
   {
+   "id": "UCSD-MAJOR-cinematic-arts-ba",
+   "name": "Cinematic Arts - BA",
+   "kind": "major",
+   "department": "Cinematic Arts (Institute of Arts and Humanities)",
+   "file": "cinematic-arts-ba.json",
+   "structured": true,
+   "courses_in_major": 110,
+   "outside_prerequisites": 35,
+   "edges": 121,
+   "columns": 7,
+   "upper_division_floor": 0
+  },
+  {
    "id": "UCSD-CLAS",
    "name": "Classical Studies",
    "kind": "department",
@@ -415,6 +584,32 @@
    "edges": 11,
    "columns": 3,
    "upper_division_floor": 1
+  },
+  {
+   "id": "UCSD-MAJOR-classical-studies-ba-cultures-emphasis",
+   "name": "Classical Studies - BA - Cultures Emphasis",
+   "kind": "major",
+   "department": "Classical Studies Program",
+   "file": "classical-studies-ba-cultures-emphasis.json",
+   "structured": true,
+   "courses_in_major": 113,
+   "outside_prerequisites": 1,
+   "edges": 43,
+   "columns": 4,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "UCSD-MAJOR-classical-studies-ba-language-emphasis",
+   "name": "Classical Studies - BA - Language Emphasis",
+   "kind": "major",
+   "department": "Classical Studies Program",
+   "file": "classical-studies-ba-language-emphasis.json",
+   "structured": true,
+   "courses_in_major": 113,
+   "outside_prerequisites": 1,
+   "edges": 43,
+   "columns": 4,
+   "upper_division_floor": 0
   },
   {
    "id": "UCSD-CCS",
@@ -452,7 +647,7 @@
    "courses_in_major": 91,
    "outside_prerequisites": 111,
    "edges": 598,
-   "columns": 7,
+   "columns": 6,
    "upper_division_floor": 0
   },
   {
@@ -465,7 +660,7 @@
    "courses_in_major": 97,
    "outside_prerequisites": 107,
    "edges": 599,
-   "columns": 7,
+   "columns": 6,
    "upper_division_floor": 1
   },
   {
@@ -478,7 +673,7 @@
    "courses_in_major": 97,
    "outside_prerequisites": 107,
    "edges": 599,
-   "columns": 7,
+   "columns": 6,
    "upper_division_floor": 1
   },
   {
@@ -491,7 +686,7 @@
    "courses_in_major": 97,
    "outside_prerequisites": 107,
    "edges": 599,
-   "columns": 7,
+   "columns": 6,
    "upper_division_floor": 1
   },
   {
@@ -504,7 +699,7 @@
    "courses_in_major": 97,
    "outside_prerequisites": 107,
    "edges": 599,
-   "columns": 7,
+   "columns": 6,
    "upper_division_floor": 1
   },
   {
@@ -517,7 +712,7 @@
    "courses_in_major": 97,
    "outside_prerequisites": 107,
    "edges": 599,
-   "columns": 7,
+   "columns": 6,
    "upper_division_floor": 1
   },
   {
@@ -530,7 +725,20 @@
    "courses_in_major": 97,
    "outside_prerequisites": 107,
    "edges": 599,
-   "columns": 7,
+   "columns": 6,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "UCSD-MAJOR-cognitive-and-behavioral-neuroscience-bs",
+   "name": "Cognitive and Behavioral Neuroscience - BS",
+   "kind": "major",
+   "department": "Psychology",
+   "file": "cognitive-and-behavioral-neuroscience-bs.json",
+   "structured": true,
+   "courses_in_major": 111,
+   "outside_prerequisites": 101,
+   "edges": 525,
+   "columns": 6,
    "upper_division_floor": 1
   },
   {
@@ -547,6 +755,19 @@
    "upper_division_floor": 1
   },
   {
+   "id": "UCSD-MAJOR-communication-ba",
+   "name": "Communication - BA",
+   "kind": "major",
+   "department": "Communication",
+   "file": "communication-ba.json",
+   "structured": true,
+   "courses_in_major": 67,
+   "outside_prerequisites": 11,
+   "edges": 226,
+   "columns": 3,
+   "upper_division_floor": 1
+  },
+  {
    "id": "UCSD-CSS",
    "name": "Computational Social Science",
    "kind": "department",
@@ -556,8 +777,47 @@
    "courses_in_major": 3,
    "outside_prerequisites": 16,
    "edges": 25,
+   "columns": 3,
+   "upper_division_floor": 2
+  },
+  {
+   "id": "UCSD-MAJOR-computer-engineering-bs",
+   "name": "Computer Engineering - BS",
+   "kind": "major",
+   "department": "Computer Science and Engineering",
+   "file": "computer-engineering-bs.json",
+   "structured": true,
+   "courses_in_major": 42,
+   "outside_prerequisites": 76,
+   "edges": 253,
    "columns": 5,
    "upper_division_floor": 2
+  },
+  {
+   "id": "UCSD-MAJOR-computer-science-bs",
+   "name": "Computer Science - BS",
+   "kind": "major",
+   "department": "Computer Science and Engineering",
+   "file": "computer-science-bs.json",
+   "structured": true,
+   "courses_in_major": 148,
+   "outside_prerequisites": 154,
+   "edges": 957,
+   "columns": 6,
+   "upper_division_floor": 2
+  },
+  {
+   "id": "UCSD-MAJOR-computer-science-bs-bioinformatics",
+   "name": "Computer Science - BS - Bioinformatics",
+   "kind": "major",
+   "department": "Computer Science and Engineering",
+   "file": "computer-science-bs-bioinformatics.json",
+   "structured": true,
+   "courses_in_major": 38,
+   "outside_prerequisites": 48,
+   "edges": 207,
+   "columns": 6,
+   "upper_division_floor": 1
   },
   {
    "id": "UCSD-CSE",
@@ -690,6 +950,19 @@
    "upper_division_floor": 0
   },
   {
+   "id": "UCSD-MAJOR-ecology-behavior-and-evolution-bs",
+   "name": "Ecology, Behavior, and Evolution - BS",
+   "kind": "major",
+   "department": "School of Biological Sciences",
+   "file": "ecology-behavior-and-evolution-bs.json",
+   "structured": true,
+   "courses_in_major": 54,
+   "outside_prerequisites": 13,
+   "edges": 88,
+   "columns": 4,
+   "upper_division_floor": 1
+  },
+  {
    "id": "UCSD-ECON",
    "name": "Economics",
    "kind": "department",
@@ -712,8 +985,34 @@
    "courses_in_major": 99,
    "outside_prerequisites": 45,
    "edges": 306,
-   "columns": 9,
-   "upper_division_floor": 4
+   "columns": 7,
+   "upper_division_floor": 2
+  },
+  {
+   "id": "UCSD-MAJOR-economics-bs",
+   "name": "Economics - BS",
+   "kind": "major",
+   "department": "Economics",
+   "file": "economics-bs.json",
+   "structured": true,
+   "courses_in_major": 101,
+   "outside_prerequisites": 44,
+   "edges": 311,
+   "columns": 7,
+   "upper_division_floor": 2
+  },
+  {
+   "id": "UCSD-MAJOR-education-sciences-bs",
+   "name": "Education Sciences - BS",
+   "kind": "major",
+   "department": "Education Studies",
+   "file": "education-sciences-bs.json",
+   "structured": true,
+   "courses_in_major": 77,
+   "outside_prerequisites": 78,
+   "edges": 200,
+   "columns": 6,
+   "upper_division_floor": 0
   },
   {
    "id": "UCSD-EDS",
@@ -738,8 +1037,125 @@
    "courses_in_major": 11,
    "outside_prerequisites": 6,
    "edges": 9,
-   "columns": 4,
+   "columns": 2,
    "upper_division_floor": 0
+  },
+  {
+   "id": "UCSD-MAJOR-electrical-engineering-bs-communication-systems",
+   "name": "Electrical Engineering - BS - Communication Systems",
+   "kind": "major",
+   "department": "Electrical and Computer Engineering",
+   "file": "electrical-engineering-bs-communication-systems.json",
+   "structured": true,
+   "courses_in_major": 37,
+   "outside_prerequisites": 34,
+   "edges": 163,
+   "columns": 7,
+   "upper_division_floor": 3
+  },
+  {
+   "id": "UCSD-MAJOR-electrical-engineering-bs-computer-system-design",
+   "name": "Electrical Engineering - BS - Computer System Design",
+   "kind": "major",
+   "department": "Electrical and Computer Engineering",
+   "file": "electrical-engineering-bs-computer-system-design.json",
+   "structured": true,
+   "courses_in_major": 39,
+   "outside_prerequisites": 28,
+   "edges": 144,
+   "columns": 6,
+   "upper_division_floor": 2
+  },
+  {
+   "id": "UCSD-MAJOR-electrical-engineering-bs-electronic-circuits-and-systems",
+   "name": "Electrical Engineering - BS - Electronic Circuits and Systems",
+   "kind": "major",
+   "department": "Electrical and Computer Engineering",
+   "file": "electrical-engineering-bs-electronic-circuits-and-systems.json",
+   "structured": true,
+   "courses_in_major": 36,
+   "outside_prerequisites": 24,
+   "edges": 133,
+   "columns": 6,
+   "upper_division_floor": 3
+  },
+  {
+   "id": "UCSD-MAJOR-electrical-engineering-bs-electronic-devices-and-materials",
+   "name": "Electrical Engineering - BS - Electronic Devices and Materials",
+   "kind": "major",
+   "department": "Electrical and Computer Engineering",
+   "file": "electrical-engineering-bs-electronic-devices-and-materials.json",
+   "structured": true,
+   "courses_in_major": 37,
+   "outside_prerequisites": 24,
+   "edges": 134,
+   "columns": 9,
+   "upper_division_floor": 3
+  },
+  {
+   "id": "UCSD-MAJOR-electrical-engineering-bs-machine-learning-and-controls",
+   "name": "Electrical Engineering - BS - Machine Learning and Controls",
+   "kind": "major",
+   "department": "Electrical and Computer Engineering",
+   "file": "electrical-engineering-bs-machine-learning-and-controls.json",
+   "structured": true,
+   "courses_in_major": 36,
+   "outside_prerequisites": 23,
+   "edges": 117,
+   "columns": 6,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "UCSD-MAJOR-electrical-engineering-bs-photonics",
+   "name": "Electrical Engineering - BS - Photonics",
+   "kind": "major",
+   "department": "Electrical and Computer Engineering",
+   "file": "electrical-engineering-bs-photonics.json",
+   "structured": true,
+   "courses_in_major": 37,
+   "outside_prerequisites": 24,
+   "edges": 134,
+   "columns": 8,
+   "upper_division_floor": 3
+  },
+  {
+   "id": "UCSD-MAJOR-electrical-engineering-bs-power-engineering",
+   "name": "Electrical Engineering - BS - Power Engineering",
+   "kind": "major",
+   "department": "Electrical and Computer Engineering",
+   "file": "electrical-engineering-bs-power-engineering.json",
+   "structured": true,
+   "courses_in_major": 39,
+   "outside_prerequisites": 24,
+   "edges": 133,
+   "columns": 6,
+   "upper_division_floor": 3
+  },
+  {
+   "id": "UCSD-MAJOR-electrical-engineering-bs-signal-and-image-processing",
+   "name": "Electrical Engineering - BS - Signal and Image Processing",
+   "kind": "major",
+   "department": "Electrical and Computer Engineering",
+   "file": "electrical-engineering-bs-signal-and-image-processing.json",
+   "structured": true,
+   "courses_in_major": 34,
+   "outside_prerequisites": 23,
+   "edges": 112,
+   "columns": 7,
+   "upper_division_floor": 3
+  },
+  {
+   "id": "UCSD-MAJOR-electrical-engineering-and-society-ba",
+   "name": "Electrical Engineering and Society - BA",
+   "kind": "major",
+   "department": "Electrical and Computer Engineering",
+   "file": "electrical-engineering-and-society-ba.json",
+   "structured": true,
+   "courses_in_major": 162,
+   "outside_prerequisites": 46,
+   "edges": 260,
+   "columns": 7,
+   "upper_division_floor": 3
   },
   {
    "id": "UCSD-ECE",
@@ -751,8 +1167,34 @@
    "courses_in_major": 91,
    "outside_prerequisites": 58,
    "edges": 281,
-   "columns": 10,
+   "columns": 8,
    "upper_division_floor": 1
+  },
+  {
+   "id": "UCSD-MAJOR-engineering-physics-bs",
+   "name": "Engineering Physics - BS",
+   "kind": "major",
+   "department": "Electrical and Computer Engineering",
+   "file": "engineering-physics-bs.json",
+   "structured": true,
+   "courses_in_major": 46,
+   "outside_prerequisites": 28,
+   "edges": 196,
+   "columns": 8,
+   "upper_division_floor": 3
+  },
+  {
+   "id": "UCSD-MAJOR-environmental-anthropology-bs",
+   "name": "Environmental Anthropology - BS",
+   "kind": "major",
+   "department": "Anthropology",
+   "file": "environmental-anthropology-bs.json",
+   "structured": true,
+   "courses_in_major": 63,
+   "outside_prerequisites": 16,
+   "edges": 55,
+   "columns": 4,
+   "upper_division_floor": 0
   },
   {
    "id": "UCSD-MAJOR-environmental-chemistry-bs",
@@ -764,7 +1206,7 @@
    "courses_in_major": 54,
    "outside_prerequisites": 34,
    "edges": 192,
-   "columns": 8,
+   "columns": 6,
    "upper_division_floor": 4
   },
   {
@@ -803,7 +1245,7 @@
    "courses_in_major": 58,
    "outside_prerequisites": 27,
    "edges": 117,
-   "columns": 7,
+   "columns": 5,
    "upper_division_floor": 1
   },
   {
@@ -816,7 +1258,20 @@
    "courses_in_major": 59,
    "outside_prerequisites": 28,
    "edges": 156,
-   "columns": 7,
+   "columns": 6,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "UCSD-MAJOR-environmental-systems-bs-ecology-behavior-and-evolution",
+   "name": "Environmental Systems - BS - Ecology, Behavior, and Evolution",
+   "kind": "major",
+   "department": "Environmental Systems Program",
+   "file": "environmental-systems-bs-ecology-behavior-and-evolution.json",
+   "structured": true,
+   "courses_in_major": 58,
+   "outside_prerequisites": 20,
+   "edges": 116,
+   "columns": 5,
    "upper_division_floor": 1
   },
   {
@@ -829,7 +1284,7 @@
    "courses_in_major": 37,
    "outside_prerequisites": 37,
    "edges": 152,
-   "columns": 7,
+   "columns": 6,
    "upper_division_floor": 1
   },
   {
@@ -846,6 +1301,32 @@
    "upper_division_floor": 1
   },
   {
+   "id": "UCSD-MAJOR-ethnic-studies-ba",
+   "name": "Ethnic Studies - BA",
+   "kind": "major",
+   "department": "Ethnic Studies",
+   "file": "ethnic-studies-ba.json",
+   "structured": true,
+   "courses_in_major": 6,
+   "outside_prerequisites": 0,
+   "edges": 6,
+   "columns": 4,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "UCSD-MAJOR-experimental-psychology-bs",
+   "name": "Experimental Psychology - BS",
+   "kind": "major",
+   "department": "Psychology",
+   "file": "experimental-psychology-bs.json",
+   "structured": true,
+   "courses_in_major": 143,
+   "outside_prerequisites": 20,
+   "edges": 178,
+   "columns": 5,
+   "upper_division_floor": 0
+  },
+  {
    "id": "UCSD-MAJOR-general-biology-bs",
    "name": "General Biology - BS",
    "kind": "major",
@@ -855,8 +1336,60 @@
    "courses_in_major": 63,
    "outside_prerequisites": 28,
    "edges": 165,
-   "columns": 7,
+   "columns": 6,
    "upper_division_floor": 1
+  },
+  {
+   "id": "UCSD-MAJOR-geosciences-bs",
+   "name": "Geosciences - BS",
+   "kind": "major",
+   "department": "Scripps Institution of Oceanography",
+   "file": "geosciences-bs.json",
+   "structured": true,
+   "courses_in_major": 51,
+   "outside_prerequisites": 23,
+   "edges": 146,
+   "columns": 6,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "UCSD-MAJOR-german-studies-ba",
+   "name": "German Studies - BA",
+   "kind": "major",
+   "department": "German Studies",
+   "file": "german-studies-ba.json",
+   "structured": true,
+   "courses_in_major": 31,
+   "outside_prerequisites": 7,
+   "edges": 8,
+   "columns": 3,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "UCSD-MAJOR-global-health-ba",
+   "name": "Global Health - BA",
+   "kind": "major",
+   "department": "Global Health Program",
+   "file": "global-health-ba.json",
+   "structured": true,
+   "courses_in_major": 214,
+   "outside_prerequisites": 59,
+   "edges": 179,
+   "columns": 6,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "UCSD-MAJOR-global-health-bs",
+   "name": "Global Health - BS",
+   "kind": "major",
+   "department": "Global Health Program",
+   "file": "global-health-bs.json",
+   "structured": true,
+   "courses_in_major": 173,
+   "outside_prerequisites": 52,
+   "edges": 176,
+   "columns": 6,
+   "upper_division_floor": 0
   },
   {
    "id": "UCSD-GLBH",
@@ -868,7 +1401,7 @@
    "courses_in_major": 48,
    "outside_prerequisites": 14,
    "edges": 24,
-   "columns": 5,
+   "columns": 3,
    "upper_division_floor": 1
   },
   {
@@ -998,7 +1531,7 @@
    "courses_in_major": 25,
    "outside_prerequisites": 29,
    "edges": 53,
-   "columns": 5,
+   "columns": 3,
    "upper_division_floor": 1
   },
   {
@@ -1028,6 +1561,19 @@
    "upper_division_floor": 0
   },
   {
+   "id": "UCSD-MAJOR-interdisciplinary-computing-and-the-arts-ba",
+   "name": "Interdisciplinary Computing and the Arts - BA",
+   "kind": "major",
+   "department": "Visual Arts",
+   "file": "interdisciplinary-computing-and-the-arts-ba.json",
+   "structured": true,
+   "courses_in_major": 159,
+   "outside_prerequisites": 34,
+   "edges": 157,
+   "columns": 5,
+   "upper_division_floor": 1
+  },
+  {
    "id": "UCSD-INTL",
    "name": "International Studies",
    "kind": "department",
@@ -1038,6 +1584,123 @@
    "outside_prerequisites": 0,
    "edges": 9,
    "columns": 5,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "UCSD-MAJOR-international-studies-ba-anthropology",
+   "name": "International Studies - BA - Anthropology",
+   "kind": "major",
+   "department": "International Studies Program (School of Global Policy and Strategy)",
+   "file": "international-studies-ba-anthropology.json",
+   "structured": true,
+   "courses_in_major": 6,
+   "outside_prerequisites": 0,
+   "edges": 2,
+   "columns": 2,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "UCSD-MAJOR-international-studies-ba-economics",
+   "name": "International Studies - BA - Economics",
+   "kind": "major",
+   "department": "International Studies Program (School of Global Policy and Strategy)",
+   "file": "international-studies-ba-economics.json",
+   "structured": true,
+   "courses_in_major": 38,
+   "outside_prerequisites": 20,
+   "edges": 133,
+   "columns": 6,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "UCSD-MAJOR-international-studies-ba-history",
+   "name": "International Studies - BA - History",
+   "kind": "major",
+   "department": "International Studies Program (School of Global Policy and Strategy)",
+   "file": "international-studies-ba-history.json",
+   "structured": true,
+   "courses_in_major": 3,
+   "outside_prerequisites": 0,
+   "edges": 2,
+   "columns": 2,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "UCSD-MAJOR-international-studies-ba-international-business",
+   "name": "International Studies - BA - International Business",
+   "kind": "major",
+   "department": "International Studies Program (School of Global Policy and Strategy)",
+   "file": "international-studies-ba-international-business.json",
+   "structured": true,
+   "courses_in_major": 85,
+   "outside_prerequisites": 42,
+   "edges": 296,
+   "columns": 5,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "UCSD-MAJOR-international-studies-ba-linguistics",
+   "name": "International Studies - BA - Linguistics",
+   "kind": "major",
+   "department": "International Studies Program (School of Global Policy and Strategy)",
+   "file": "international-studies-ba-linguistics.json",
+   "structured": true,
+   "courses_in_major": 54,
+   "outside_prerequisites": 19,
+   "edges": 73,
+   "columns": 4,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "UCSD-MAJOR-international-studies-ba-literature",
+   "name": "International Studies - BA - Literature",
+   "kind": "major",
+   "department": "International Studies Program (School of Global Policy and Strategy)",
+   "file": "international-studies-ba-literature.json",
+   "structured": true,
+   "courses_in_major": 3,
+   "outside_prerequisites": 0,
+   "edges": 2,
+   "columns": 2,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "UCSD-MAJOR-international-studies-ba-philosophy",
+   "name": "International Studies - BA - Philosophy",
+   "kind": "major",
+   "department": "International Studies Program (School of Global Policy and Strategy)",
+   "file": "international-studies-ba-philosophy.json",
+   "structured": true,
+   "courses_in_major": 80,
+   "outside_prerequisites": 3,
+   "edges": 17,
+   "columns": 4,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "UCSD-MAJOR-international-studies-ba-political-science",
+   "name": "International Studies - BA - Political Science",
+   "kind": "major",
+   "department": "International Studies Program (School of Global Policy and Strategy)",
+   "file": "international-studies-ba-political-science.json",
+   "structured": true,
+   "courses_in_major": 101,
+   "outside_prerequisites": 2,
+   "edges": 7,
+   "columns": 3,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "UCSD-MAJOR-international-studies-ba-sociology",
+   "name": "International Studies - BA - Sociology",
+   "kind": "major",
+   "department": "International Studies Program (School of Global Policy and Strategy)",
+   "file": "international-studies-ba-sociology.json",
+   "structured": true,
+   "courses_in_major": 38,
+   "outside_prerequisites": 1,
+   "edges": 4,
+   "columns": 3,
    "upper_division_floor": 1
   },
   {
@@ -1078,6 +1741,19 @@
    "edges": 16,
    "columns": 6,
    "upper_division_floor": 1
+  },
+  {
+   "id": "UCSD-MAJOR-japanese-studies-ba",
+   "name": "Japanese Studies - BA",
+   "kind": "major",
+   "department": "Japanese Studies Program",
+   "file": "japanese-studies-ba.json",
+   "structured": true,
+   "courses_in_major": 87,
+   "outside_prerequisites": 0,
+   "edges": 19,
+   "columns": 6,
+   "upper_division_floor": 0
   },
   {
    "id": "UCSD-JWSP",
@@ -1132,6 +1808,32 @@
    "upper_division_floor": 1
   },
   {
+   "id": "UCSD-MAJOR-latin-american-studies-ba-mexico",
+   "name": "Latin American Studies - BA - Mexico",
+   "kind": "major",
+   "department": "Latin American Studies",
+   "file": "latin-american-studies-ba-mexico.json",
+   "structured": true,
+   "courses_in_major": 67,
+   "outside_prerequisites": 29,
+   "edges": 50,
+   "columns": 7,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "UCSD-MAJOR-latin-american-studies-ba-migration-and-border-studies",
+   "name": "Latin American Studies - BA - Migration and Border Studies",
+   "kind": "major",
+   "department": "Latin American Studies",
+   "file": "latin-american-studies-ba-migration-and-border-studies.json",
+   "structured": true,
+   "courses_in_major": 70,
+   "outside_prerequisites": 27,
+   "edges": 40,
+   "columns": 7,
+   "upper_division_floor": 1
+  },
+  {
    "id": "UCSD-LAWS",
    "name": "Law and Society",
    "kind": "department",
@@ -1158,6 +1860,19 @@
    "upper_division_floor": 0
   },
   {
+   "id": "UCSD-MAJOR-linguistics-ba",
+   "name": "Linguistics - BA",
+   "kind": "major",
+   "department": "Linguistics",
+   "file": "linguistics-ba.json",
+   "structured": true,
+   "courses_in_major": 107,
+   "outside_prerequisites": 35,
+   "edges": 102,
+   "columns": 5,
+   "upper_division_floor": 0
+  },
+  {
    "id": "UCSD-MAJOR-linguistics-ba-cognition-and-language",
    "name": "Linguistics - BA - Cognition and Language",
    "kind": "major",
@@ -1171,6 +1886,19 @@
    "upper_division_floor": 0
   },
   {
+   "id": "UCSD-MAJOR-linguistics-ba-language-studies",
+   "name": "Linguistics - BA - Language Studies",
+   "kind": "major",
+   "department": "Linguistics",
+   "file": "linguistics-ba-language-studies.json",
+   "structured": true,
+   "courses_in_major": 50,
+   "outside_prerequisites": 20,
+   "edges": 71,
+   "columns": 4,
+   "upper_division_floor": 0
+  },
+  {
    "id": "UCSD-MAJOR-linguistics-ba-language-and-society",
    "name": "Linguistics - BA - Language and Society",
    "kind": "major",
@@ -1180,7 +1908,7 @@
    "courses_in_major": 69,
    "outside_prerequisites": 27,
    "edges": 83,
-   "columns": 5,
+   "columns": 4,
    "upper_division_floor": 0
   },
   {
@@ -1193,7 +1921,7 @@
    "courses_in_major": 53,
    "outside_prerequisites": 33,
    "edges": 81,
-   "columns": 5,
+   "columns": 4,
    "upper_division_floor": 0
   },
   {
@@ -1236,6 +1964,19 @@
    "upper_division_floor": 0
   },
   {
+   "id": "UCSD-MAJOR-literatures-in-spanish-ba",
+   "name": "Literatures in Spanish - BA",
+   "kind": "major",
+   "department": "Literature",
+   "file": "literatures-in-spanish-ba.json",
+   "structured": true,
+   "courses_in_major": 65,
+   "outside_prerequisites": 44,
+   "edges": 157,
+   "columns": 7,
+   "upper_division_floor": 1
+  },
+  {
    "id": "UCSD-MMW",
    "name": "Making of the Modern World",
    "kind": "department",
@@ -1249,6 +1990,45 @@
    "upper_division_floor": 0
   },
   {
+   "id": "UCSD-MAJOR-management-science-bs",
+   "name": "Management Science - BS",
+   "kind": "major",
+   "department": "Economics",
+   "file": "management-science-bs.json",
+   "structured": true,
+   "courses_in_major": 99,
+   "outside_prerequisites": 46,
+   "edges": 311,
+   "columns": 8,
+   "upper_division_floor": 3
+  },
+  {
+   "id": "UCSD-MAJOR-marine-biology-bs",
+   "name": "Marine Biology - BS",
+   "kind": "major",
+   "department": "Scripps Institution of Oceanography",
+   "file": "marine-biology-bs.json",
+   "structured": true,
+   "courses_in_major": 61,
+   "outside_prerequisites": 23,
+   "edges": 129,
+   "columns": 5,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "UCSD-MAJOR-mathematical-biology-bs",
+   "name": "Mathematical Biology - BS",
+   "kind": "major",
+   "department": "Mathematics",
+   "file": "mathematical-biology-bs.json",
+   "structured": true,
+   "courses_in_major": 79,
+   "outside_prerequisites": 44,
+   "edges": 287,
+   "columns": 7,
+   "upper_division_floor": 2
+  },
+  {
    "id": "UCSD-MATH",
    "name": "Mathematics",
    "kind": "department",
@@ -1258,8 +2038,73 @@
    "courses_in_major": 103,
    "outside_prerequisites": 30,
    "edges": 312,
-   "columns": 9,
+   "columns": 7,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "UCSD-MAJOR-mathematics-bs",
+   "name": "Mathematics - BS",
+   "kind": "major",
+   "department": "Mathematics",
+   "file": "mathematics-bs.json",
+   "structured": true,
+   "courses_in_major": 86,
+   "outside_prerequisites": 38,
+   "edges": 311,
+   "columns": 7,
+   "upper_division_floor": 3
+  },
+  {
+   "id": "UCSD-MAJOR-mathematics-and-economics-bs",
+   "name": "Mathematics and Economics - BS",
+   "kind": "major",
+   "department": "Mathematics",
+   "file": "mathematics-and-economics-bs.json",
+   "structured": true,
+   "courses_in_major": 98,
+   "outside_prerequisites": 36,
+   "edges": 349,
+   "columns": 7,
    "upper_division_floor": 2
+  },
+  {
+   "id": "UCSD-MAJOR-mathematics-applied-science-bs",
+   "name": "Mathematics—Applied Science - BS",
+   "kind": "major",
+   "department": "Mathematics",
+   "file": "mathematics-applied-science-bs.json",
+   "structured": true,
+   "courses_in_major": 89,
+   "outside_prerequisites": 37,
+   "edges": 313,
+   "columns": 7,
+   "upper_division_floor": 3
+  },
+  {
+   "id": "UCSD-MAJOR-mathematics-computer-science-bs",
+   "name": "Mathematics—Computer Science - BS",
+   "kind": "major",
+   "department": "Mathematics",
+   "file": "mathematics-computer-science-bs.json",
+   "structured": true,
+   "courses_in_major": 118,
+   "outside_prerequisites": 80,
+   "edges": 671,
+   "columns": 7,
+   "upper_division_floor": 2
+  },
+  {
+   "id": "UCSD-MAJOR-mathematics-secondary-education-ba",
+   "name": "Mathematics—Secondary Education - BA",
+   "kind": "major",
+   "department": "Mathematics",
+   "file": "mathematics-secondary-education-ba.json",
+   "structured": true,
+   "courses_in_major": 93,
+   "outside_prerequisites": 46,
+   "edges": 336,
+   "columns": 7,
+   "upper_division_floor": 0
   },
   {
    "id": "UCSD-MAJOR-mechanical-engineering-bs",
@@ -1271,8 +2116,8 @@
    "courses_in_major": 33,
    "outside_prerequisites": 38,
    "edges": 178,
-   "columns": 10,
-   "upper_division_floor": 4
+   "columns": 8,
+   "upper_division_floor": 1
   },
   {
    "id": "UCSD-MAJOR-mechanical-engineering-bs-controls-and-robotics",
@@ -1284,8 +2129,8 @@
    "courses_in_major": 44,
    "outside_prerequisites": 61,
    "edges": 257,
-   "columns": 11,
-   "upper_division_floor": 4
+   "columns": 9,
+   "upper_division_floor": 1
   },
   {
    "id": "UCSD-MAJOR-mechanical-engineering-bs-fluid-mechanics-and-thermal-systems",
@@ -1297,8 +2142,8 @@
    "courses_in_major": 48,
    "outside_prerequisites": 40,
    "edges": 218,
-   "columns": 10,
-   "upper_division_floor": 4
+   "columns": 8,
+   "upper_division_floor": 1
   },
   {
    "id": "UCSD-MAJOR-mechanical-engineering-bs-materials-science-and-engineering",
@@ -1310,8 +2155,8 @@
    "courses_in_major": 49,
    "outside_prerequisites": 47,
    "edges": 212,
-   "columns": 10,
-   "upper_division_floor": 4
+   "columns": 8,
+   "upper_division_floor": 1
   },
   {
    "id": "UCSD-MAJOR-mechanical-engineering-bs-mechanics-of-materials",
@@ -1323,8 +2168,8 @@
    "courses_in_major": 48,
    "outside_prerequisites": 42,
    "edges": 198,
-   "columns": 10,
-   "upper_division_floor": 4
+   "columns": 8,
+   "upper_division_floor": 1
   },
   {
    "id": "UCSD-MAJOR-mechanical-engineering-bs-renewable-energy-and-environmental-flows",
@@ -1336,8 +2181,8 @@
    "courses_in_major": 66,
    "outside_prerequisites": 44,
    "edges": 254,
-   "columns": 10,
-   "upper_division_floor": 4
+   "columns": 8,
+   "upper_division_floor": 1
   },
   {
    "id": "UCSD-MAE",
@@ -1353,6 +2198,45 @@
    "upper_division_floor": 1
   },
   {
+   "id": "UCSD-MAJOR-media-ba",
+   "name": "Media - BA",
+   "kind": "major",
+   "department": "Visual Arts",
+   "file": "media-ba.json",
+   "structured": true,
+   "courses_in_major": 95,
+   "outside_prerequisites": 9,
+   "edges": 194,
+   "columns": 3,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "UCSD-MAJOR-media-industries-and-communication-ba",
+   "name": "Media Industries and Communication - BA",
+   "kind": "major",
+   "department": "Communication",
+   "file": "media-industries-and-communication-ba.json",
+   "structured": true,
+   "courses_in_major": 101,
+   "outside_prerequisites": 34,
+   "edges": 213,
+   "columns": 3,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "UCSD-MAJOR-microbiology-bs",
+   "name": "Microbiology - BS",
+   "kind": "major",
+   "department": "School of Biological Sciences",
+   "file": "microbiology-bs.json",
+   "structured": true,
+   "courses_in_major": 49,
+   "outside_prerequisites": 33,
+   "edges": 154,
+   "columns": 7,
+   "upper_division_floor": 1
+  },
+  {
    "id": "UCSD-MAJOR-molecular-synthesis-bs",
    "name": "Molecular Synthesis - BS",
    "kind": "major",
@@ -1364,6 +2248,19 @@
    "edges": 192,
    "columns": 8,
    "upper_division_floor": 4
+  },
+  {
+   "id": "UCSD-MAJOR-molecular-and-cell-biology-bs",
+   "name": "Molecular and Cell Biology - BS",
+   "kind": "major",
+   "department": "School of Biological Sciences",
+   "file": "molecular-and-cell-biology-bs.json",
+   "structured": true,
+   "courses_in_major": 60,
+   "outside_prerequisites": 32,
+   "edges": 187,
+   "columns": 7,
+   "upper_division_floor": 1
   },
   {
    "id": "UCSD-MCWP",
@@ -1392,6 +2289,32 @@
    "upper_division_floor": 1
   },
   {
+   "id": "UCSD-MAJOR-music-ba",
+   "name": "Music - BA",
+   "kind": "major",
+   "department": "Music",
+   "file": "music-ba.json",
+   "structured": true,
+   "courses_in_major": 59,
+   "outside_prerequisites": 8,
+   "edges": 48,
+   "columns": 7,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "UCSD-MAJOR-music-humanities-ba",
+   "name": "Music/Humanities - BA",
+   "kind": "major",
+   "department": "Music",
+   "file": "music-humanities-ba.json",
+   "structured": true,
+   "courses_in_major": 26,
+   "outside_prerequisites": 2,
+   "edges": 10,
+   "columns": 4,
+   "upper_division_floor": 1
+  },
+  {
    "id": "UCSD-MAJOR-nanoengineering-bs",
    "name": "NanoEngineering - BS",
    "kind": "major",
@@ -1401,8 +2324,21 @@
    "courses_in_major": 54,
    "outside_prerequisites": 19,
    "edges": 123,
-   "columns": 10,
-   "upper_division_floor": 4
+   "columns": 8,
+   "upper_division_floor": 2
+  },
+  {
+   "id": "UCSD-MAJOR-neurobiology-bs",
+   "name": "Neurobiology - BS",
+   "kind": "major",
+   "department": "School of Biological Sciences",
+   "file": "neurobiology-bs.json",
+   "structured": true,
+   "courses_in_major": 55,
+   "outside_prerequisites": 37,
+   "edges": 179,
+   "columns": 7,
+   "upper_division_floor": 1
   },
   {
    "id": "UCSD-NEU",
@@ -1427,8 +2363,8 @@
    "courses_in_major": 50,
    "outside_prerequisites": 32,
    "edges": 243,
-   "columns": 11,
-   "upper_division_floor": 5
+   "columns": 9,
+   "upper_division_floor": 3
   },
   {
    "id": "UCSD-MAJOR-pharmacological-chemistry-bs",
@@ -1440,7 +2376,7 @@
    "courses_in_major": 108,
    "outside_prerequisites": 70,
    "edges": 412,
-   "columns": 9,
+   "columns": 8,
    "upper_division_floor": 4
   },
   {
@@ -1531,8 +2467,34 @@
    "courses_in_major": 70,
    "outside_prerequisites": 48,
    "edges": 279,
-   "columns": 9,
+   "columns": 8,
    "upper_division_floor": 1
+  },
+  {
+   "id": "UCSD-MAJOR-physics-ba",
+   "name": "Physics - BA",
+   "kind": "major",
+   "department": "Physics",
+   "file": "physics-ba.json",
+   "structured": true,
+   "courses_in_major": 59,
+   "outside_prerequisites": 30,
+   "edges": 263,
+   "columns": 9,
+   "upper_division_floor": 5
+  },
+  {
+   "id": "UCSD-MAJOR-physics-bs",
+   "name": "Physics - BS",
+   "kind": "major",
+   "department": "Physics",
+   "file": "physics-bs.json",
+   "structured": true,
+   "courses_in_major": 30,
+   "outside_prerequisites": 28,
+   "edges": 182,
+   "columns": 8,
+   "upper_division_floor": 5
   },
   {
    "id": "UCSD-POLI",
@@ -1665,6 +2627,19 @@
    "upper_division_floor": 0
   },
   {
+   "id": "UCSD-MAJOR-probability-and-statistics-bs",
+   "name": "Probability and Statistics - BS",
+   "kind": "major",
+   "department": "Mathematics",
+   "file": "probability-and-statistics-bs.json",
+   "structured": true,
+   "courses_in_major": 69,
+   "outside_prerequisites": 31,
+   "edges": 260,
+   "columns": 6,
+   "upper_division_floor": 2
+  },
+  {
    "id": "UCSD-PSYC",
    "name": "Psychology",
    "kind": "department",
@@ -1678,6 +2653,45 @@
    "upper_division_floor": 1
   },
   {
+   "id": "UCSD-MAJOR-psychology-ba",
+   "name": "Psychology - BA",
+   "kind": "major",
+   "department": "Psychology",
+   "file": "psychology-ba.json",
+   "structured": true,
+   "courses_in_major": 127,
+   "outside_prerequisites": 20,
+   "edges": 124,
+   "columns": 4,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "UCSD-MAJOR-psychology-ba-clinical-psychology",
+   "name": "Psychology - BA - Clinical Psychology",
+   "kind": "major",
+   "department": "Psychology",
+   "file": "psychology-ba-clinical-psychology.json",
+   "structured": true,
+   "courses_in_major": 126,
+   "outside_prerequisites": 21,
+   "edges": 131,
+   "columns": 5,
+   "upper_division_floor": 0
+  },
+  {
+   "id": "UCSD-MAJOR-psychology-bs-clinical-psychology",
+   "name": "Psychology - BS - Clinical Psychology",
+   "kind": "major",
+   "department": "Psychology",
+   "file": "psychology-bs-clinical-psychology.json",
+   "structured": true,
+   "courses_in_major": 143,
+   "outside_prerequisites": 20,
+   "edges": 178,
+   "columns": 5,
+   "upper_division_floor": 0
+  },
+  {
    "id": "UCSD-PH",
    "name": "Public Health",
    "kind": "department",
@@ -1687,7 +2701,20 @@
    "courses_in_major": 34,
    "outside_prerequisites": 20,
    "edges": 121,
-   "columns": 5,
+   "columns": 4,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "UCSD-MAJOR-public-health-bs",
+   "name": "Public Health - BS",
+   "kind": "major",
+   "department": "Herbert Wertheim School of Public Health and Human Longevity Science",
+   "file": "public-health-bs.json",
+   "structured": true,
+   "courses_in_major": 64,
+   "outside_prerequisites": 16,
+   "edges": 125,
+   "columns": 4,
    "upper_division_floor": 1
   },
   {
@@ -1700,7 +2727,72 @@
    "courses_in_major": 59,
    "outside_prerequisites": 22,
    "edges": 147,
-   "columns": 8,
+   "columns": 6,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "UCSD-MAJOR-public-health-bs-climate-and-environmental-sciences",
+   "name": "Public Health - BS - Climate and Environmental Sciences",
+   "kind": "major",
+   "department": "Herbert Wertheim School of Public Health and Human Longevity Science",
+   "file": "public-health-bs-climate-and-environmental-sciences.json",
+   "structured": true,
+   "courses_in_major": 74,
+   "outside_prerequisites": 26,
+   "edges": 155,
+   "columns": 5,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "UCSD-MAJOR-public-health-bs-community-health-sciences",
+   "name": "Public Health - BS - Community Health Sciences",
+   "kind": "major",
+   "department": "Herbert Wertheim School of Public Health and Human Longevity Science",
+   "file": "public-health-bs-community-health-sciences.json",
+   "structured": true,
+   "courses_in_major": 102,
+   "outside_prerequisites": 24,
+   "edges": 133,
+   "columns": 4,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "UCSD-MAJOR-public-health-bs-epidemiology",
+   "name": "Public Health - BS - Epidemiology",
+   "kind": "major",
+   "department": "Herbert Wertheim School of Public Health and Human Longevity Science",
+   "file": "public-health-bs-epidemiology.json",
+   "structured": true,
+   "courses_in_major": 64,
+   "outside_prerequisites": 50,
+   "edges": 208,
+   "columns": 6,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "UCSD-MAJOR-public-health-bs-health-policy-and-management-sciences",
+   "name": "Public Health - BS - Health Policy and Management Sciences",
+   "kind": "major",
+   "department": "Herbert Wertheim School of Public Health and Human Longevity Science",
+   "file": "public-health-bs-health-policy-and-management-sciences.json",
+   "structured": true,
+   "courses_in_major": 85,
+   "outside_prerequisites": 28,
+   "edges": 147,
+   "columns": 6,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "UCSD-MAJOR-public-health-bs-medicine-sciences",
+   "name": "Public Health - BS - Medicine Sciences",
+   "kind": "major",
+   "department": "Herbert Wertheim School of Public Health and Human Longevity Science",
+   "file": "public-health-bs-medicine-sciences.json",
+   "structured": true,
+   "courses_in_major": 96,
+   "outside_prerequisites": 36,
+   "edges": 245,
+   "columns": 7,
    "upper_division_floor": 1
   },
   {
@@ -1713,7 +2805,7 @@
    "courses_in_major": 85,
    "outside_prerequisites": 43,
    "edges": 294,
-   "columns": 7,
+   "columns": 5,
    "upper_division_floor": 1
   },
   {
@@ -1726,7 +2818,7 @@
    "courses_in_major": 59,
    "outside_prerequisites": 41,
    "edges": 145,
-   "columns": 7,
+   "columns": 5,
    "upper_division_floor": 1
   },
   {
@@ -1741,6 +2833,19 @@
    "edges": 0,
    "columns": 1,
    "upper_division_floor": 0
+  },
+  {
+   "id": "UCSD-MAJOR-russian-east-european-and-eurasian-studies-ba",
+   "name": "Russian, East European, and Eurasian Studies - BA",
+   "kind": "major",
+   "department": "Russian, East European, and Eurasian Studies (Institute of Arts and Humanities)",
+   "file": "russian-east-european-and-eurasian-studies-ba.json",
+   "structured": true,
+   "courses_in_major": 44,
+   "outside_prerequisites": 1,
+   "edges": 8,
+   "columns": 7,
+   "upper_division_floor": 5
   },
   {
    "id": "UCSD-SCIS",
@@ -1765,7 +2870,7 @@
    "courses_in_major": 118,
    "outside_prerequisites": 41,
    "edges": 244,
-   "columns": 7,
+   "columns": 6,
    "upper_division_floor": 1
   },
   {
@@ -1804,7 +2909,7 @@
    "courses_in_major": 146,
    "outside_prerequisites": 20,
    "edges": 40,
-   "columns": 5,
+   "columns": 3,
    "upper_division_floor": 1
   },
   {
@@ -1817,7 +2922,7 @@
    "courses_in_major": 21,
    "outside_prerequisites": 21,
    "edges": 38,
-   "columns": 5,
+   "columns": 3,
    "upper_division_floor": 0
   },
   {
@@ -1830,7 +2935,7 @@
    "courses_in_major": 43,
    "outside_prerequisites": 21,
    "edges": 38,
-   "columns": 5,
+   "columns": 3,
    "upper_division_floor": 0
   },
   {
@@ -1843,7 +2948,7 @@
    "courses_in_major": 48,
    "outside_prerequisites": 21,
    "edges": 38,
-   "columns": 5,
+   "columns": 3,
    "upper_division_floor": 0
   },
   {
@@ -1856,7 +2961,7 @@
    "courses_in_major": 44,
    "outside_prerequisites": 21,
    "edges": 38,
-   "columns": 5,
+   "columns": 3,
    "upper_division_floor": 0
   },
   {
@@ -1869,7 +2974,7 @@
    "courses_in_major": 58,
    "outside_prerequisites": 20,
    "edges": 38,
-   "columns": 5,
+   "columns": 3,
    "upper_division_floor": 0
   },
   {
@@ -1882,7 +2987,7 @@
    "courses_in_major": 46,
    "outside_prerequisites": 21,
    "edges": 38,
-   "columns": 5,
+   "columns": 3,
    "upper_division_floor": 0
   },
   {
@@ -1895,7 +3000,7 @@
    "courses_in_major": 41,
    "outside_prerequisites": 21,
    "edges": 39,
-   "columns": 5,
+   "columns": 3,
    "upper_division_floor": 0
   },
   {
@@ -1908,8 +3013,21 @@
    "courses_in_major": 52,
    "outside_prerequisites": 20,
    "edges": 38,
-   "columns": 5,
+   "columns": 3,
    "upper_division_floor": 0
+  },
+  {
+   "id": "UCSD-MAJOR-speculative-design-ba",
+   "name": "Speculative Design - BA",
+   "kind": "major",
+   "department": "Visual Arts",
+   "file": "speculative-design-ba.json",
+   "structured": true,
+   "courses_in_major": 53,
+   "outside_prerequisites": 9,
+   "edges": 42,
+   "columns": 4,
+   "upper_division_floor": 1
   },
   {
    "id": "UCSD-SE",
@@ -1921,8 +3039,21 @@
    "courses_in_major": 50,
    "outside_prerequisites": 33,
    "edges": 154,
-   "columns": 9,
+   "columns": 8,
    "upper_division_floor": 2
+  },
+  {
+   "id": "UCSD-MAJOR-structural-engineering-bs",
+   "name": "Structural Engineering - BS",
+   "kind": "major",
+   "department": "Structural Engineering",
+   "file": "structural-engineering-bs.json",
+   "structured": true,
+   "courses_in_major": 56,
+   "outside_prerequisites": 27,
+   "edges": 175,
+   "columns": 9,
+   "upper_division_floor": 3
   },
   {
    "id": "UCSD-MAJOR-structural-engineering-bs-aerospace-structures",
@@ -1934,8 +3065,8 @@
    "courses_in_major": 56,
    "outside_prerequisites": 27,
    "edges": 175,
-   "columns": 11,
-   "upper_division_floor": 5
+   "columns": 9,
+   "upper_division_floor": 3
   },
   {
    "id": "UCSD-MAJOR-structural-engineering-bs-civil-structures",
@@ -1947,8 +3078,8 @@
    "courses_in_major": 56,
    "outside_prerequisites": 27,
    "edges": 175,
-   "columns": 11,
-   "upper_division_floor": 5
+   "columns": 9,
+   "upper_division_floor": 3
   },
   {
    "id": "UCSD-MAJOR-structural-engineering-bs-geotechnical-engineering",
@@ -1960,8 +3091,8 @@
    "courses_in_major": 56,
    "outside_prerequisites": 27,
    "edges": 175,
-   "columns": 11,
-   "upper_division_floor": 5
+   "columns": 9,
+   "upper_division_floor": 3
   },
   {
    "id": "UCSD-MAJOR-structural-engineering-bs-structural-health-monitoring-non-destructive-evaluation",
@@ -1973,8 +3104,21 @@
    "courses_in_major": 56,
    "outside_prerequisites": 27,
    "edges": 175,
-   "columns": 11,
-   "upper_division_floor": 5
+   "columns": 9,
+   "upper_division_floor": 3
+  },
+  {
+   "id": "UCSD-MAJOR-studio-ba",
+   "name": "Studio - BA",
+   "kind": "major",
+   "department": "Visual Arts",
+   "file": "studio-ba.json",
+   "structured": true,
+   "courses_in_major": 134,
+   "outside_prerequisites": 12,
+   "edges": 89,
+   "columns": 5,
+   "upper_division_floor": 2
   },
   {
    "id": "UCSD-RELI",
@@ -2042,6 +3186,19 @@
    "upper_division_floor": 1
   },
   {
+   "id": "UCSD-MAJOR-theatre-and-dance-double-major-ba",
+   "name": "Theatre and Dance Double Major - BA",
+   "kind": "major",
+   "department": "Theatre and Dance",
+   "file": "theatre-and-dance-double-major-ba.json",
+   "structured": true,
+   "courses_in_major": 84,
+   "outside_prerequisites": 8,
+   "edges": 66,
+   "columns": 5,
+   "upper_division_floor": 1
+  },
+  {
    "id": "UCSD-TMC",
    "name": "Thurgood Marshall College",
    "kind": "department",
@@ -2064,6 +3221,19 @@
    "courses_in_major": 103,
    "outside_prerequisites": 18,
    "edges": 59,
+   "columns": 5,
+   "upper_division_floor": 1
+  },
+  {
+   "id": "UCSD-MAJOR-urban-studies-and-planning-ba",
+   "name": "Urban Studies and Planning - BA",
+   "kind": "major",
+   "department": "Urban Studies and Planning",
+   "file": "urban-studies-and-planning-ba.json",
+   "structured": true,
+   "courses_in_major": 96,
+   "outside_prerequisites": 23,
+   "edges": 56,
    "columns": 5,
    "upper_division_floor": 1
   },

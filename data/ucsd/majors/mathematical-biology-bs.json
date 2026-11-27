@@ -1,0 +1,568 @@
+{
+  "name": "Mathematical Biology - BS",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Mathematics",
+  "major_code": "MA36",
+  "source": "https://catalog.ucsd.edu/curric/MATH-ug.html",
+  "narrative": [
+    "All majors must obtain a minimum 2.0 grade point average in the upper-division courses used to satisfy the major requirements. Further, the student must receive a grade of C– or better in any course to be counted toward fulfillment of the major requirements.",
+    "Unless otherwise stated, any mathematics course numbered 100–194 may be used as an upper-division elective. (Note: MATH 195, 196, 197, 198, 199, and 199H cannot be used toward any mathematics major.)",
+    "All courses used to fulfill the major must be taken for a letter grade. No more than three upper-division courses taken externally from UC San Diego can be counted toward any major. Special exceptions may be considered via petition.",
+    "A total of thirteen upper-division courses (totaling fifty-two units) are required, including the required courses.",
+    "The catalog lists the Honors Calculus option for this major as MATH 31AH-BH, MATH 20D (without MATH 31CH), while the MATH 109 note refers to MATH 31AH-BH-CH."
+  ],
+  "sections": [
+    {
+      "name": "Lower Division",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 18"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 20A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 20B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 20C"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 20D"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 20E"
+                  }
+                ],
+                "label": "Linear Algebra and Calculus"
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 31AH"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 31BH"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 20D"
+                  }
+                ],
+                "label": "Honors Calculus"
+              }
+            ],
+            "label": "One of the following sequences"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "CSE 8A"
+              },
+              {
+                "type": "course",
+                "code": "CSE 11"
+              },
+              {
+                "type": "course",
+                "code": "ECE 15"
+              }
+            ],
+            "label": "Programming"
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "BILD 1"
+              },
+              {
+                "type": "course",
+                "code": "BILD 3"
+              }
+            ],
+            "label": "Biological foundations"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Upper Division",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "MATH 109"
+              },
+              {
+                "type": "text",
+                "text": "Students completing MATH 31AH-BH-CH may substitute a four-unit upper-division mathematics elective for MATH 109."
+              }
+            ],
+            "label": "Mathematical Reasoning"
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "MATH 110"
+              }
+            ],
+            "label": "Partial Differential Equations"
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "MATH 130"
+              }
+            ],
+            "label": "Ordinary Differential Equations"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "MATH 170A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 173A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 174"
+              }
+            ],
+            "label": "Numerical Methods"
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "MATH 180A"
+              }
+            ],
+            "label": "Introduction to Probability"
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "MATH 189"
+              }
+            ],
+            "label": "Exploratory Data Analysis and Inference"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 112A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 112B"
+                  }
+                ]
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 212A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 212B"
+                  }
+                ]
+              }
+            ],
+            "label": "Introduction to Mathematical Biology"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "MATH 114"
+              },
+              {
+                "type": "course",
+                "code": "MATH 214"
+              }
+            ],
+            "label": "Introduction to Computational Stochastics"
+          },
+          {
+            "type": "choose",
+            "count": 2,
+            "items": [
+              {
+                "type": "course",
+                "code": "BICD 100"
+              },
+              {
+                "type": "course",
+                "code": "BICD 120"
+              },
+              {
+                "type": "course",
+                "code": "BIEB 126"
+              },
+              {
+                "type": "course",
+                "code": "BIEB 128"
+              },
+              {
+                "type": "course",
+                "code": "BIEB 130"
+              },
+              {
+                "type": "course",
+                "code": "BIEB 140"
+              },
+              {
+                "type": "course",
+                "code": "BIEB 146"
+              },
+              {
+                "type": "course",
+                "code": "BIEB 148"
+              },
+              {
+                "type": "course",
+                "code": "BIEB 150"
+              },
+              {
+                "type": "course",
+                "code": "BIEB 152"
+              },
+              {
+                "type": "course",
+                "code": "BIEB 154"
+              },
+              {
+                "type": "course",
+                "code": "BIEB 156"
+              },
+              {
+                "type": "course",
+                "code": "BIEB 166"
+              },
+              {
+                "type": "course",
+                "code": "BIMM 116"
+              },
+              {
+                "type": "course",
+                "code": "BIMM 134"
+              },
+              {
+                "type": "course",
+                "code": "BIMM 140"
+              },
+              {
+                "type": "course",
+                "code": "BIPN 142"
+              },
+              {
+                "type": "course",
+                "code": "BIPN 144"
+              },
+              {
+                "type": "course",
+                "code": "BIPN 146"
+              },
+              {
+                "type": "course",
+                "code": "BIPN 147"
+              },
+              {
+                "type": "course",
+                "code": "BIPN 162"
+              },
+              {
+                "type": "course",
+                "code": "BIPN 164"
+              }
+            ],
+            "label": "Biology-focused electives",
+            "notes": "At least two electives must be biology focused, non-mathematics courses."
+          },
+          {
+            "type": "choose",
+            "count": 2,
+            "items": [
+              {
+                "type": "course",
+                "code": "BICD 100"
+              },
+              {
+                "type": "course",
+                "code": "BICD 120"
+              },
+              {
+                "type": "course",
+                "code": "BIEB 126"
+              },
+              {
+                "type": "course",
+                "code": "BIEB 128"
+              },
+              {
+                "type": "course",
+                "code": "BIEB 130"
+              },
+              {
+                "type": "course",
+                "code": "BIEB 140"
+              },
+              {
+                "type": "course",
+                "code": "BIEB 146"
+              },
+              {
+                "type": "course",
+                "code": "BIEB 148"
+              },
+              {
+                "type": "course",
+                "code": "BIEB 150"
+              },
+              {
+                "type": "course",
+                "code": "BIEB 152"
+              },
+              {
+                "type": "course",
+                "code": "BIEB 154"
+              },
+              {
+                "type": "course",
+                "code": "BIEB 156"
+              },
+              {
+                "type": "course",
+                "code": "BIEB 166"
+              },
+              {
+                "type": "course",
+                "code": "BIMM 116"
+              },
+              {
+                "type": "course",
+                "code": "BIMM 134"
+              },
+              {
+                "type": "course",
+                "code": "BIMM 140"
+              },
+              {
+                "type": "course",
+                "code": "BIPN 142"
+              },
+              {
+                "type": "course",
+                "code": "BIPN 144"
+              },
+              {
+                "type": "course",
+                "code": "BIPN 146"
+              },
+              {
+                "type": "course",
+                "code": "BIPN 147"
+              },
+              {
+                "type": "course",
+                "code": "BIPN 162"
+              },
+              {
+                "type": "course",
+                "code": "BIPN 164"
+              },
+              {
+                "type": "course",
+                "code": "MATH 100A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 100B"
+              },
+              {
+                "type": "course",
+                "code": "MATH 102"
+              },
+              {
+                "type": "course",
+                "code": "MATH 103A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 103B"
+              },
+              {
+                "type": "course",
+                "code": "MATH 111A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 120A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 140A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 140B"
+              },
+              {
+                "type": "course",
+                "code": "MATH 140C"
+              },
+              {
+                "type": "course",
+                "code": "MATH 142A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 142B"
+              },
+              {
+                "type": "course",
+                "code": "MATH 150A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 150B"
+              },
+              {
+                "type": "course",
+                "code": "MATH 154"
+              },
+              {
+                "type": "course",
+                "code": "MATH 158"
+              },
+              {
+                "type": "course",
+                "code": "MATH 170A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 170B"
+              },
+              {
+                "type": "course",
+                "code": "MATH 170C"
+              },
+              {
+                "type": "course",
+                "code": "MATH 171A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 171B"
+              },
+              {
+                "type": "course",
+                "code": "MATH 173A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 173B"
+              },
+              {
+                "type": "course",
+                "code": "MATH 175"
+              },
+              {
+                "type": "course",
+                "code": "MATH 180B"
+              },
+              {
+                "type": "course",
+                "code": "MATH 180C"
+              },
+              {
+                "type": "course",
+                "code": "MATH 181A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 181B"
+              },
+              {
+                "type": "course",
+                "code": "MATH 184"
+              },
+              {
+                "type": "course",
+                "code": "MATH 185"
+              },
+              {
+                "type": "course",
+                "code": "MATH 188"
+              },
+              {
+                "type": "course",
+                "code": "MATH 190A"
+              },
+              {
+                "type": "text",
+                "text": "Possible suitable courses from chemistry or physics as identified in consultation with faculty advisers."
+              }
+            ],
+            "label": "Remaining upper-division electives",
+            "notes": "Catalog: \"Upper-division electives to complete thirteen four-unit courses.\" 13 = 9 required courses above + 4 electives, at least two of them biology focused (biology courses count here too)."
+          }
+        ],
+        "label": "A total of thirteen upper-division courses (totaling fifty-two units)"
+      }
+    }
+  ]
+}

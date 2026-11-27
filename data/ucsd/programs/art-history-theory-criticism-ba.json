@@ -1,0 +1,953 @@
+{
+ "id": "UCSD-MAJOR-art-history-theory-criticism-ba",
+ "name": "Art History/Theory/Criticism - BA",
+ "kind": "major",
+ "type": "Bachelor's Degree",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsd.edu/curric/VIS-ug.html",
+ "sections": [
+  {
+   "name": "Lower Division: Foundation Level (seven courses)",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "VIS 22",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 22R",
+        "status": "active"
+       }
+      ],
+      "count": 1
+     },
+     {
+      "type": "course",
+      "code": "VIS 23",
+      "status": "active"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "VIS 11",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 12R",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 20",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 21A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 21B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 21C",
+        "status": "active"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "VIS 83",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "VIS 83R",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "VIS 84",
+          "status": "active"
+         }
+        ],
+        "count": 1
+       }
+      ],
+      "count": 5,
+      "label": "Choose five courses from"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Upper Division: Intermediate Level (seven courses)",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "VIS 112",
+      "status": "active"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "VIS 120A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 120B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 120C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 121AN",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 121B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 121C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 122AN",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 124BN",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 126AN",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 126BN",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 127B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 127C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 127P",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 128A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 128B",
+        "status": "active"
+       }
+      ],
+      "count": 2,
+      "label": "A. Ancient-1800"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "VIS 122GS",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 123C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 124CN",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 124D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 124E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 124F",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 124G",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 125A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 125E",
+        "status": "active"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "VIS 125G",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "VIS 125GR",
+          "status": "active"
+         }
+        ],
+        "count": 1
+       },
+       {
+        "type": "course",
+        "code": "VIS 126E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 126F",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 126HN",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 126I",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 126J",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 126P",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 127N",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 128D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 159",
+        "status": "active"
+       }
+      ],
+      "count": 2,
+      "label": "B. 1800-1945"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "VIS 123B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 125BN",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 126Q",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 128C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 128E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 150",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 150A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 151",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 151A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 152",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 152D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 155",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 156",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 157",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 157D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 158A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 158B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 158C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 158D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 194S",
+        "status": "active"
+       }
+      ],
+      "count": 2,
+      "label": "C. 1945-Present"
+     }
+    ],
+    "notes": "Choose six courses, two from each area."
+   }
+  },
+  {
+   "name": "Upper Division: Advanced Level (five courses)",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "VIS 113AN",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 113BN",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 113CN",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 114A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 114B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 117E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 117F",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 117G",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 129F",
+        "status": "active"
+       }
+      ],
+      "count": 1,
+      "label": "Choose one theory course"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "VIS 127G",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "VIS 127Q",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 129A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 129B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 129C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 129D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 129E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 113AN",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 113BN",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 113CN",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 114A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 114B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 117E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 117F",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 117G",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 129F",
+        "status": "active"
+       }
+      ],
+      "count": 3,
+      "label": "Choose three seminar courses",
+      "notes": "Students may also select any course from the theory course list to count toward the seminar requirement. Course will count as ONE theory or seminar course, but not both."
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "VIS 120A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 120B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 120C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 121AN",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 121B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 121C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 122AN",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 124BN",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 126AN",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 126BN",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 127B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 127C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 127P",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 128A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 128B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 122GS",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 123C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 124CN",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 124D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 124E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 124F",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 124G",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 125A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 125E",
+        "status": "active"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "VIS 125G",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "VIS 125GR",
+          "status": "active"
+         }
+        ],
+        "count": 1
+       },
+       {
+        "type": "course",
+        "code": "VIS 126E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 126F",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 126HN",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 126I",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 126J",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 126P",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 127N",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 128D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 159",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 123B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 125BN",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 126Q",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 128C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 128E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 150",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 150A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 151",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 151A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 152",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 152D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 155",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 156",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 157",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 157D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 158A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 158B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 158C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 158D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 194S",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 113AN",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 113BN",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 113CN",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 114A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 114B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 117E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 117F",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 117G",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 129F",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 127G",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "VIS 127Q",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 129A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 129B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 129C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 129D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 129E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 196",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "VIS 199",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "AIP 197",
+        "status": "active"
+       }
+      ],
+      "count": 1,
+      "label": "Choose one elective course",
+      "notes": "Any intermediate art history course, any advanced art history course, art history honors (VIS 196), or VIS 199 or AIP 197. The completion of both quarters of VIS 196 count as one course."
+     }
+    ]
+   }
+  }
+ ],
+ "narrative": [
+  "All courses taken to satisfy major requirements must be taken for a letter grade, and only grades of C– or better will be accepted in the visual arts major.",
+  "A minimum of two-thirds of the course work completed for the major must be taken at UC San Diego.",
+  "Double majors within the department (art history/theory/criticism paired with studio, speculative design, media, or ICAM) must have at least ten upper-division courses that are unique to each departmental major.",
+  "Degree type (BA) is not stated on the page; assumed BA.",
+  "Upper division: twelve courses (intermediate seven, advanced five).",
+  "Students take two-thirds of the upper-division courses in their major at UC San Diego. The distribution requirement must be fulfilled with courses taken at UC San Diego; courses taken abroad or at other US institutions do not count toward the six-course distribution requirement."
+ ]
+}

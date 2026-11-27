@@ -282,6 +282,13 @@ class ColumnFinder:
         #    Without this, "MATH 3B or 3BI" would place MATH 4A by 3BI (an
         #    honors course the catalog lists with no prerequisites), one
         #    column earlier than where Economics students actually take it.
+        #  - a placement exam is the usual way in ("Math Placement Exam
+        #    qualifying score, or MATH 4C or MATH 10A"), so the course needs
+        #    no earlier quarter. Otherwise UCSD's MATH 20A would sit behind
+        #    the precalculus chain MATH 3B, 3C, 4C on every map.
+        if any(item["type"] == "condition" and re.search(r"(?<!advanced )placement", item.get("text") or "", re.IGNORECASE)
+               for item in node["items"]):
+            return 0
         options = [item for item in node["items"] if all_courses(item)] or node["items"]
         in_major = [item for item in options
                     if any(c["code"] in self.preferred for c in all_courses(item))]

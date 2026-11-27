@@ -1,0 +1,351 @@
+{
+  "name": "Structural Engineering - BS",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Structural Engineering",
+  "major_code": "SE-BS-003",
+  "source": "https://catalog.ucsd.edu/curric/SE-ug.html",
+  "narrative": [
+    "The BS degree in structural engineering requires a minimum of 145 units, plus college requirements in humanities and social sciences.",
+    "To graduate, students must maintain an overall GPA of at least 2.0, and the department requires at least a C– grade in each course required for the major. All courses required for the major must be taken for a letter grade.",
+    "Structural engineering is a screened major. Screening courses for admitted first-year students: MATH 20A-B-C-D, MATH 18, PHYS 2A, SE 101A; for admitted transfer students: MATH 20A-B-C-D, MATH 18, PHYS 2A-B-C, SE 101A (C– or above, overall UC San Diego GPA of 2.0 or above).",
+    "SE 1, SE 3, and SE 9 must be taken by all students majoring in structural engineering. Transfer students who have successfully petitioned to use a course equivalent to SE 101A prior to entering UC San Diego may take an additional technical elective in place of SE 1.",
+    "Course requirements are taken from the department's curriculum table (core courses, focus sequence FS, capstone, technical electives TE).",
+    "Students in the structural engineering major SE-BS-003 can choose any of the focus sequences and the corresponding capstone course(s).",
+    "Geotechnical focus: SE 151A has SE 103 as a prerequisite, and SE 140A has SE 150A as a prerequisite. Students should plan to take SE 103 and SE 150A as TE classes their junior year."
+  ],
+  "sections": [
+    {
+      "name": "Lower-Division Requirements",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "course",
+            "code": "MATH 18"
+          },
+          {
+            "type": "course",
+            "code": "MATH 20A"
+          },
+          {
+            "type": "course",
+            "code": "MATH 20B"
+          },
+          {
+            "type": "course",
+            "code": "MATH 20C"
+          },
+          {
+            "type": "course",
+            "code": "MATH 20D"
+          },
+          {
+            "type": "course",
+            "code": "MATH 20E"
+          },
+          {
+            "type": "course",
+            "code": "CHEM 6A"
+          },
+          {
+            "type": "course",
+            "code": "PHYS 2A"
+          },
+          {
+            "type": "course",
+            "code": "PHYS 2B"
+          },
+          {
+            "type": "course",
+            "code": "PHYS 2BL"
+          },
+          {
+            "type": "course",
+            "code": "PHYS 2C"
+          },
+          {
+            "type": "course",
+            "code": "PHYS 2CL"
+          },
+          {
+            "type": "course",
+            "code": "SE 1"
+          },
+          {
+            "type": "course",
+            "code": "SE 3"
+          },
+          {
+            "type": "course",
+            "code": "SE 9"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Upper-Division Core",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "course",
+            "code": "SE 101A"
+          },
+          {
+            "type": "course",
+            "code": "SE 101B"
+          },
+          {
+            "type": "course",
+            "code": "SE 101C"
+          },
+          {
+            "type": "course",
+            "code": "SE 102"
+          },
+          {
+            "type": "course",
+            "code": "SE 105"
+          },
+          {
+            "type": "course",
+            "code": "SE 110A"
+          },
+          {
+            "type": "course",
+            "code": "SE 110B"
+          },
+          {
+            "type": "course",
+            "code": "SE 115"
+          },
+          {
+            "type": "course",
+            "code": "SE 125"
+          },
+          {
+            "type": "course",
+            "code": "SE 130A"
+          },
+          {
+            "type": "course",
+            "code": "SE 130B"
+          },
+          {
+            "type": "course",
+            "code": "SE 131A"
+          },
+          {
+            "type": "course",
+            "code": "SE 131B"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Focus Sequence and Capstone",
+      "requirement": {
+        "type": "choose",
+        "count": 1,
+        "items": [
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "SE 103"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SE 150A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SE 151A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SE 181"
+                  }
+                ],
+                "label": "Civil Structures Focus Sequence"
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "SE 140A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SE 140B"
+                  }
+                ],
+                "label": "Civil Structures/Geotechnical Capstone"
+              }
+            ],
+            "label": "Civil structures"
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "SE 142"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SE 160A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SE 160B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SE 171"
+                  }
+                ],
+                "label": "Aerospace Focus Sequence"
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "SE 143A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SE 143B"
+                  }
+                ],
+                "label": "Aerospace Structures Capstone"
+              }
+            ],
+            "label": "Aerospace structures"
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "SE 151A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SE 181"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SE 182"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SE 184"
+                  }
+                ],
+                "label": "Geotechnical Focus Sequence"
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "SE 140A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SE 140B"
+                  }
+                ],
+                "label": "Civil Structures/Geotechnical Capstone"
+              }
+            ],
+            "label": "Geotechnical engineering"
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "SE 163"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SE 164"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SE 167"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SE 168"
+                  }
+                ],
+                "label": "SHM/NDE Focus Sequence"
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "SE 165"
+                  },
+                  {
+                    "type": "text",
+                    "text": "Additional Technical Elective"
+                  }
+                ],
+                "label": "SHM/NDE Capstone"
+              }
+            ],
+            "label": "SHM/NDE"
+          }
+        ],
+        "label": "One full focus sequence (FS) and the corresponding capstone design sequence",
+        "notes": "Students must take one full focus sequence (FS) and one capstone design sequence 'depending on their choice of focus sequence'."
+      }
+    },
+    {
+      "name": "Technical Electives",
+      "requirement": {
+        "type": "choose",
+        "count": 3,
+        "items": [
+          {
+            "type": "any",
+            "subject": "SE",
+            "level": "upper",
+            "except": [
+              "SE 195",
+              "SE 197",
+              "SE 198"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "Technical elective (TE) course must be an upper-division or graduate course in the engineering sciences, natural sciences, or mathematics, selected with prior approval of the department to meet ABET standards. Other engineering courses having technical depth equivalent to the level of upper-division SE courses will also be considered via petition process. See the preapproved technical elective list on the structural engineering website."
+          }
+        ],
+        "label": "Technical Electives (three courses)",
+        "notes": "A course cannot be taken both as part of a focus sequence and as a TE. Courses such as SE 195, SE 197, and SE 198 are not allowed as technical electives; SE 199 can be used as a technical elective only under restrictive conditions (four units, approved petition). TE selections must have departmental approval."
+      }
+    }
+  ]
+}

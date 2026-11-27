@@ -1,0 +1,465 @@
+{
+  "name": "Education Sciences - BS",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Education Studies",
+  "source": "https://catalog.ucsd.edu/curric/EDS-ug.html",
+  "narrative": [
+    "Bachelor of Science in Education Sciences: Transforming Education through Research and Practice.",
+    "Students must meet the following requirements: one lower-division course (at least two units) and a total of eleven upper-division courses (at least fifty units), with a minimum of six courses within the Department of Education Studies.",
+    "To satisfy the requirements for the major, lower- and upper-division courses must be completed with a P, C–, or better grade.",
+    "Except for independent study course electives (EDS 197, 198, or 199) which are always taken with a Pass/No Pass grade option, students may take up to two courses, either lower or upper division, with a Pass/No Pass option.",
+    "All students in the Education Sciences major are required to complete fieldwork hours in an educational setting.",
+    "Students in the major have the option of completing a specialization in Elementary Educational Practices; Secondary Educational Practices; and Educational Research and Outreach (no separate requirements listed).",
+    "Students who plan on applying to the graduate program to obtain a California Single Subject Teaching Credential must complete a second major in the content area of their planned teaching credential."
+  ],
+  "sections": [
+    {
+      "name": "Lower-Division Introduction to Education Requirements",
+      "requirement": {
+        "type": "choose",
+        "count": 1,
+        "label": "One course in explorations in education, human development, or social science research",
+        "items": [
+          {
+            "type": "course",
+            "code": "MATH 95"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "EDS 31"
+              },
+              {
+                "type": "course",
+                "code": "CHEM 96"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "EDS 38"
+          },
+          {
+            "type": "course",
+            "code": "EDS 39"
+          },
+          {
+            "type": "course",
+            "code": "EDS 40"
+          },
+          {
+            "type": "course",
+            "code": "SOCI 60"
+          },
+          {
+            "type": "course",
+            "code": "HDS 1"
+          }
+        ],
+        "notes": "ONE lower-division introductory course as a prerequisite to completing upper-division courses for the major."
+      }
+    },
+    {
+      "name": "Education in a Diverse Society",
+      "requirement": {
+        "type": "choose",
+        "count": 1,
+        "items": [
+          {
+            "type": "course",
+            "code": "EDS 107"
+          },
+          {
+            "type": "course",
+            "code": "EDS 112"
+          },
+          {
+            "type": "course",
+            "code": "EDS 113"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "EDS 117"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 117"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "EDS 125"
+          },
+          {
+            "type": "course",
+            "code": "EDS 126"
+          },
+          {
+            "type": "course",
+            "code": "EDS 155"
+          },
+          {
+            "type": "course",
+            "code": "SOCI 152"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Learning and Development",
+      "requirement": {
+        "type": "choose",
+        "count": 2,
+        "items": [
+          {
+            "type": "course",
+            "code": "EDS 114"
+          },
+          {
+            "type": "course",
+            "code": "EDS 115"
+          },
+          {
+            "type": "course",
+            "code": "EDS 118"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "EDS 119"
+              },
+              {
+                "type": "course",
+                "code": "LIGN 119"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "EDS 162"
+          },
+          {
+            "type": "course",
+            "code": "EDS 165"
+          },
+          {
+            "type": "course",
+            "code": "HDS 120"
+          },
+          {
+            "type": "course",
+            "code": "HDS 122"
+          },
+          {
+            "type": "course",
+            "code": "HDS 133"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Introduction to Learning Contexts",
+      "requirement": {
+        "type": "choose",
+        "count": 1,
+        "items": [
+          {
+            "type": "course",
+            "code": "EDS 130"
+          },
+          {
+            "type": "course",
+            "code": "EDS 131"
+          },
+          {
+            "type": "course",
+            "code": "EDS 133"
+          },
+          {
+            "type": "course",
+            "code": "EDS 135"
+          },
+          {
+            "type": "course",
+            "code": "EDS 136"
+          },
+          {
+            "type": "course",
+            "code": "EDS 137"
+          },
+          {
+            "type": "course",
+            "code": "EDS 145"
+          },
+          {
+            "type": "course",
+            "code": "EDS 146"
+          }
+        ],
+        "notes": "Students will select at least ONE course. EDS 139 (Practicum in Teaching Learning–2 units) is a corequisite course required for all introduction to learning contexts courses with the exception of EDS 135.",
+        "label": "At least ONE course"
+      }
+    },
+    {
+      "name": "Educational Research",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "EDS 102"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 110"
+              }
+            ],
+            "label": "Qualitative Research Courses",
+            "notes": "EDS 102 or equivalent course with department approval"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "EDS 103"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 109"
+              }
+            ],
+            "label": "Quantitative Research Courses",
+            "notes": "EDS 103 or equivalent course with department approval"
+          }
+        ],
+        "notes": "Students must complete TWO courses in research methodology. One course must address qualitative research methods and one course must address quantitative research methods."
+      }
+    },
+    {
+      "name": "Senior Educational Fieldwork Capstone Sequence",
+      "requirement": {
+        "type": "choose",
+        "count": 1,
+        "label": "Select one fieldwork pathway",
+        "notes": "EDS 139 (Practicum in Teaching Learning-2 units) is a corequisite course required for ALL educational fieldwork courses.",
+        "items": [
+          {
+            "type": "all",
+            "label": "Pathway 1. Programs, Policy, and Research",
+            "items": [
+              {
+                "type": "course",
+                "code": "EDS 140"
+              },
+              {
+                "type": "course",
+                "code": "EDS 141"
+              }
+            ]
+          },
+          {
+            "type": "all",
+            "label": "Pathway 2. Elementary Education Teaching",
+            "items": [
+              {
+                "type": "course",
+                "code": "EDS 128A"
+              },
+              {
+                "type": "course",
+                "code": "EDS 128B"
+              }
+            ]
+          },
+          {
+            "type": "all",
+            "label": "Pathway 3. Secondary Education Teaching",
+            "items": [
+              {
+                "type": "course",
+                "code": "EDS 129A"
+              },
+              {
+                "type": "course",
+                "code": "EDS 129B"
+              },
+              {
+                "type": "course",
+                "code": "EDS 129C"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Upper-Division Focus Area Elective Courses",
+      "requirement": {
+        "type": "choose",
+        "count": 2,
+        "label": "At least two upper-division elective courses",
+        "notes": "EDS 199, Independent Study, taken for Pass/No Pass may count for ONE EDS upper-division elective course. Electives courses may be from more than one focus area.",
+        "items": [
+          {
+            "type": "course",
+            "code": "EDS 111"
+          },
+          {
+            "type": "course",
+            "code": "MATH 121A"
+          },
+          {
+            "type": "course",
+            "code": "MATH 121B"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "EDS 122"
+              },
+              {
+                "type": "course",
+                "code": "CHEM 187"
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "EDS 123"
+              },
+              {
+                "type": "course",
+                "code": "CHEM 188"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "EDS 124AR"
+          },
+          {
+            "type": "course",
+            "code": "EDS 124BR"
+          },
+          {
+            "type": "course",
+            "code": "EDS 127"
+          },
+          {
+            "type": "course",
+            "code": "EDS 164R"
+          },
+          {
+            "type": "course",
+            "code": "ECON 147"
+          },
+          {
+            "type": "course",
+            "code": "USP 104"
+          },
+          {
+            "type": "course",
+            "code": "USP 116"
+          },
+          {
+            "type": "course",
+            "code": "SOCI 127"
+          },
+          {
+            "type": "course",
+            "code": "SOCI 139"
+          },
+          {
+            "type": "course",
+            "code": "EDS 120"
+          },
+          {
+            "type": "course",
+            "code": "ETHN 100A"
+          },
+          {
+            "type": "course",
+            "code": "ETHN 100B"
+          },
+          {
+            "type": "course",
+            "code": "SOCI 102"
+          },
+          {
+            "type": "course",
+            "code": "SOCI 108"
+          },
+          {
+            "type": "course",
+            "code": "SOCI 122"
+          },
+          {
+            "type": "course",
+            "code": "USP 125"
+          },
+          {
+            "type": "course",
+            "code": "EDS 108GS"
+          },
+          {
+            "type": "course",
+            "code": "EDS 110R"
+          },
+          {
+            "type": "course",
+            "code": "EDS 116"
+          },
+          {
+            "type": "course",
+            "code": "ETHN 144"
+          },
+          {
+            "type": "course",
+            "code": "COMM 168"
+          },
+          {
+            "type": "course",
+            "code": "COMM 169"
+          },
+          {
+            "type": "course",
+            "code": "EDS 180"
+          },
+          {
+            "type": "course",
+            "code": "EDS 199"
+          },
+          {
+            "type": "text",
+            "text": "Students may also define their own area of focus, selecting from courses offered by EDS and other related departments with department approval."
+          }
+        ]
+      }
+    }
+  ]
+}

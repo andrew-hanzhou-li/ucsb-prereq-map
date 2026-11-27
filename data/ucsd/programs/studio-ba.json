@@ -1,0 +1,797 @@
+{
+ "id": "UCSD-MAJOR-studio-ba",
+ "name": "Studio - BA",
+ "kind": "major",
+ "type": "Bachelor's Degree",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsd.edu/curric/VIS-ug.html",
+ "sections": [
+  {
+   "name": "Lower Division: Foundation Level",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "VIS 11",
+      "status": "active"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "VIS 22",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 22R",
+        "status": "active"
+       }
+      ],
+      "count": 1,
+      "label": "VIS 22/22R"
+     },
+     {
+      "type": "course",
+      "code": "VIS 80",
+      "status": "active"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "VIS 1",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 2",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 3",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 41",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 42",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 60",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 70N",
+        "status": "active"
+       }
+      ],
+      "count": 2,
+      "label": "Art making"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "VIS 12R",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 20",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 21A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 21B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 21C",
+        "status": "active"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "VIS 83",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "VIS 83R",
+          "status": "active"
+         }
+        ],
+        "count": 1,
+        "label": "VIS 83/83R"
+       },
+       {
+        "type": "course",
+        "code": "VIS 84",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 84B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 85A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 85B",
+        "status": "active"
+       }
+      ],
+      "count": 1,
+      "label": "History"
+     }
+    ],
+    "notes": "Six courses required."
+   }
+  },
+  {
+   "name": "Upper Division: Intermediate Level",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "VIS 104A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 105A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 106A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 107A",
+        "status": "active"
+       }
+      ],
+      "count": 3,
+      "label": "Group A"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "VIS 104B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 105B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 106B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 107B",
+        "status": "active"
+       }
+      ],
+      "count": 2,
+      "label": "Group B"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "VIS 100",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 101",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 102",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 133",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 134",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 142",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 147A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 163",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 164",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 165",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 165A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 165B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 174",
+        "status": "active"
+       }
+      ],
+      "count": 1,
+      "label": "Interdisciplinary"
+     }
+    ],
+    "notes": "Six courses required."
+   }
+  },
+  {
+   "name": "History and Theory",
+   "requirement": {
+    "type": "choose",
+    "items": [
+     {
+      "type": "course",
+      "code": "VIS 120A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 120B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 120C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 121AN",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 121B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 121C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 122AN",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 122B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 122GS",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 123B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 123C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 124BN",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 124CN",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 124D",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 124E",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 124F",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 124G",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 125A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 125BN",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 125E",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 125G",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 125GR",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 126AN",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 126BN",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 126E",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 126F",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 126HN",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 126I",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 126J",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 126P",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 126Q",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 127B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 127C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 127GS",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 127N",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 127P",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 127Q",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 128A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 128B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 128C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 128D",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 128E",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 129A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 129B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 129C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 129D",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 129E",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 129F",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 150",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 150A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 151",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 151A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 152",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 152D",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 155",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 156",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 157",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 157D",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 158A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 158B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 158C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 158D",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 159",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 194S",
+      "status": "active"
+     }
+    ],
+    "count": 3,
+    "notes": "Any upper-division art history course: VIS 120–129; any upper-division media history course: VIS 150–159, 194S."
+   }
+  },
+  {
+   "name": "Upper Division: Advanced Level",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "VIS 104C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 105C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 106C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 107C",
+        "status": "active"
+       }
+      ],
+      "count": 1,
+      "label": "Art making"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "VIS 100A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 101A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 108",
+        "status": "active"
+       },
+       {
+        "type": "text",
+        "text": "VIS 110A–K. Advanced—Various Topics"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "VIS 110M",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "VIS 110N",
+          "status": "active"
+         }
+        ],
+        "label": "VIS 110M–N. Studio Honors"
+       },
+       {
+        "type": "course",
+        "code": "VIS 130",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 131",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 132",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 133A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 143A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 143B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 145A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 145B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 146A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 146B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 147B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 149",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 167",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 168",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 169A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 169B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 198",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 199",
+        "status": "active"
+       }
+      ],
+      "count": 2,
+      "label": "Interdisciplinary",
+      "notes": "The studio honors sequence, VIS 110M–N, counts as one course toward the fulfillment of an advanced level requirement."
+     }
+    ],
+    "notes": "Three courses required."
+   }
+  }
+ ],
+ "narrative": [
+  "All courses taken to satisfy major requirements must be taken for a letter grade, and only grades of C– or better will be accepted in the visual arts major.",
+  "A minimum of two-thirds of the course work completed for the major must be taken at UC San Diego.",
+  "Double majors within the department (art history/theory/criticism paired with studio, speculative design, media, or ICAM) must have at least ten upper-division courses that are unique to each departmental major.",
+  "Degree type (BA) is not stated on the page; assumed BA."
+ ]
+}

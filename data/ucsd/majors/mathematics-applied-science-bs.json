@@ -1,0 +1,541 @@
+{
+  "name": "Mathematics—Applied Science - BS",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Mathematics",
+  "major_code": "MA31",
+  "source": "https://catalog.ucsd.edu/curric/MATH-ug.html",
+  "narrative": [
+    "All majors must obtain a minimum 2.0 grade point average in the upper-division courses used to satisfy the major requirements. Further, the student must receive a grade of C– or better in any course to be counted toward fulfillment of the major requirements.",
+    "Unless otherwise stated, any mathematics course numbered 100–194 may be used as an upper-division elective. (Note: MATH 195, 196, 197, 198, 199, and 199H cannot be used toward any mathematics major.)",
+    "All courses used to fulfill the major must be taken for a letter grade. No more than three upper-division courses taken externally from UC San Diego can be counted toward any major. Special exceptions may be considered via petition.",
+    "A total of fourteen upper-division courses (totaling fifty-six units) are required (seven courses from the Department of Mathematics and seven courses from one or two other departments).",
+    "Students must submit an individual plan for approval by a mathematics department adviser before taking their applied science course work, and all subsequent changes to the plan must be approved by a mathematics department adviser."
+  ],
+  "sections": [
+    {
+      "name": "Lower Division",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 18"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 20A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 20B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 20C"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 20D"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 20E"
+                  }
+                ],
+                "label": "Linear Algebra and Calculus"
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 31AH"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 31BH"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 31CH"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 20D"
+                  }
+                ],
+                "label": "Honors Calculus"
+              }
+            ],
+            "label": "One of the following sequences"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "CSE 11"
+              },
+              {
+                "type": "course",
+                "code": "ECE 15"
+              },
+              {
+                "type": "course",
+                "code": "DSC 20"
+              }
+            ],
+            "label": "Programming"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Upper Division: Mathematics Requirements",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "MATH 109"
+              },
+              {
+                "type": "text",
+                "text": "Students completing MATH 31AH-BH-CH may substitute a four-unit upper-division mathematics elective for MATH 109."
+              }
+            ],
+            "label": "Mathematical Reasoning"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "MATH 102"
+              },
+              {
+                "type": "course",
+                "code": "MATH 170A"
+              }
+            ],
+            "label": "Linear Algebra"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 140A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 140B"
+                  }
+                ]
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 142A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 142B"
+                  }
+                ]
+              }
+            ],
+            "label": "Analysis"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 100A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 100B"
+                  }
+                ]
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 103A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 103B"
+                  }
+                ]
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 104A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 104B"
+                  }
+                ]
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 110"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 130"
+                  }
+                ]
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 110"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 148"
+                  }
+                ]
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 111A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 111B"
+                  }
+                ]
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 112A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 112B"
+                  }
+                ]
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 120A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 120B"
+                  }
+                ]
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 130"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 146"
+                  }
+                ]
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 146"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 148"
+                  }
+                ]
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 150A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 150B"
+                  }
+                ]
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 154"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 184"
+                  }
+                ]
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 155A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 155B"
+                  }
+                ]
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 158"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 188"
+                  }
+                ]
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 160A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 160B"
+                  }
+                ]
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 170A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 170B"
+                  }
+                ]
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 171A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 171B"
+                  }
+                ]
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 173A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 173B"
+                  }
+                ]
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 174"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 175"
+                  }
+                ]
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 174"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 179"
+                  }
+                ]
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 180A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 180B"
+                  }
+                ]
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 180A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 194"
+                  }
+                ]
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 181A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 181B"
+                  }
+                ]
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 187A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 187B"
+                  }
+                ]
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 190A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 190B"
+                  }
+                ]
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 193A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 193B"
+                  }
+                ]
+              }
+            ],
+            "label": "Any two-quarter, upper-division math sequence"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "range",
+                "subject": "MATH",
+                "from": 100,
+                "to": 194
+              }
+            ],
+            "label": "Upper-division elective",
+            "notes": "Catalog: \"Upper-division electives to complete at least seven four-unit courses, chosen from any mathematics course numbered between 100 and 194 (including those taken from the requirements listed above).\" 7 = 6 required courses above + 1 elective."
+          }
+        ],
+        "label": "Seven upper-division mathematics courses"
+      }
+    },
+    {
+      "name": "Upper Division: Applied Science Requirements",
+      "requirement": {
+        "type": "text",
+        "text": "Seven upper-division courses (totaling twenty-eight units) selected from one or two other departments (these cannot be from mathematics). At least three of these seven upper-division courses must require calculus (MATH 20B or a subsequent course in the MATH 20 series) as a prerequisite."
+      }
+    }
+  ]
+}

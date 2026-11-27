@@ -1,0 +1,396 @@
+{
+ "id": "UCSD-MAJOR-speculative-design-ba",
+ "name": "Speculative Design - BA",
+ "kind": "major",
+ "type": "Bachelor's Degree",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsd.edu/curric/VIS-ug.html",
+ "sections": [
+  {
+   "name": "Lower Division: Foundation Level",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "VIS 11",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 30",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 41",
+      "status": "active"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "VIS 1",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "VIS 2",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "VIS 3",
+          "status": "active"
+         }
+        ],
+        "count": 1,
+        "label": "VIS 1 or 2 or 3"
+       },
+       {
+        "type": "course",
+        "code": "VIS 42",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 60",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 70N",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 80",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 10",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "USP 1",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "USP 2",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "USP 3",
+        "status": "active"
+       }
+      ],
+      "count": 2,
+      "label": "Breadth electives"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "VIS 10",
+        "status": "active"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "VIS 22",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "VIS 22R",
+          "status": "active"
+         }
+        ],
+        "count": 1,
+        "label": "VIS 22/22R"
+       },
+       {
+        "type": "course",
+        "code": "VIS 31",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 32",
+        "status": "active"
+       }
+      ],
+      "count": 1,
+      "label": "History"
+     }
+    ],
+    "notes": "Six courses required."
+   }
+  },
+  {
+   "name": "Upper Division: Required",
+   "requirement": {
+    "type": "course",
+    "code": "VIS 135",
+    "status": "active"
+   }
+  },
+  {
+   "name": "Upper Division: Intermediate Level",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "VIS 100",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 101",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 102",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 133",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 134",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 142",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 163",
+        "status": "active"
+       }
+      ],
+      "count": 3,
+      "label": "Lecture courses"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "VIS 100A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 101A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 133A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 136A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 161",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 162",
+        "status": "active"
+       }
+      ],
+      "count": 2,
+      "label": "Studio courses"
+     }
+    ],
+    "notes": "Catalog heading: six courses required (VIS 135 is listed as required just above)."
+   }
+  },
+  {
+   "name": "History and Theory",
+   "requirement": {
+    "type": "choose",
+    "items": [
+     {
+      "type": "course",
+      "code": "VIS 103",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 103A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 103B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 103C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 103D",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 159",
+      "status": "active"
+     }
+    ],
+    "count": 2
+   }
+  },
+  {
+   "name": "Advanced Electives",
+   "requirement": {
+    "type": "choose",
+    "items": [
+     {
+      "type": "course",
+      "code": "VIS 100A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 101A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 133A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 136A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 141A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 141B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 143A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 143B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 145A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 145B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 146A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 146B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 147A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 147B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 149",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 161",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 162",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 174",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 178",
+      "status": "active"
+     }
+    ],
+    "count": 3,
+    "notes": "Courses may not overlap between intermediate and advanced requirements."
+   }
+  },
+  {
+   "name": "Design Master Studio (one course required, eight units)",
+   "requirement": {
+    "type": "course",
+    "code": "VIS 190",
+    "status": "active"
+   }
+  }
+ ],
+ "narrative": [
+  "All courses taken to satisfy major requirements must be taken for a letter grade, and only grades of C– or better will be accepted in the visual arts major.",
+  "A minimum of two-thirds of the course work completed for the major must be taken at UC San Diego.",
+  "Double majors within the department (art history/theory/criticism paired with studio, speculative design, media, or ICAM) must have at least ten upper-division courses that are unique to each departmental major.",
+  "Degree type (BA) is not stated on the page; assumed BA."
+ ]
+}

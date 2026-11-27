@@ -236,3 +236,5 @@ The 95% bar is met: the latest honest score is 97% (96.9% without the four cours
 - **Site:** UCSD lists majors (and keeps department maps for browsing courses).
 
 Order: offerings fetch runs in the background (slow but simple) while the AP chart is typed, then majors.
+
+**Done (2026-11-27):** AP chart (40 exams); offerings from the Schedule of Classes (3,128 of 4,655 courses have quarters); 180 majors, each translated twice and the 90 that differed reconciled from the page text (see data/ucsd/majors/README.md, which lists the questions a person should check). The map now treats "placement exam, or MATH 4C" as a course you can start with, so calculus is in the first step. What's left before "Ready": Andrew's call.

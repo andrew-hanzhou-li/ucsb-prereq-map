@@ -1,0 +1,535 @@
+{
+ "id": "UCSD-MAJOR-probability-and-statistics-bs",
+ "name": "Probability and Statistics - BS",
+ "kind": "major",
+ "type": "Bachelor's Degree",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsd.edu/curric/MATH-ug.html",
+ "sections": [
+  {
+   "name": "Lower Division",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 18",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 20A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 20B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 20C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 20D",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 20E",
+          "status": "active"
+         }
+        ],
+        "label": "Linear Algebra and Calculus"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 31AH",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 31BH",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 31CH",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 20D",
+          "status": "active"
+         }
+        ],
+        "label": "Honors Calculus"
+       }
+      ],
+      "count": 1,
+      "label": "One of the following sequences"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "CSE 11",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 15",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DSC 20",
+        "status": "active"
+       }
+      ],
+      "count": 1,
+      "label": "Programming"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Upper Division",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "MATH 109",
+        "status": "active"
+       },
+       {
+        "type": "text",
+        "text": "Students completing MATH 31AH-BH-CH may substitute a four-unit upper-division mathematics elective for MATH 109."
+       }
+      ],
+      "count": 1,
+      "label": "Mathematical Reasoning"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "MATH 102",
+        "status": "active"
+       }
+      ],
+      "label": "Linear Algebra"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 140A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 140B",
+          "status": "active"
+         }
+        ]
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 142A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 142B",
+          "status": "active"
+         }
+        ]
+       }
+      ],
+      "count": 1,
+      "label": "Analysis/Advanced Calculus"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "MATH 180A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 180B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 180C",
+        "status": "active"
+       }
+      ],
+      "label": "Probability"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "MATH 181A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 181B",
+        "status": "active"
+       }
+      ],
+      "label": "Mathematical Statistics"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "MATH 185",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 189",
+        "status": "active"
+       }
+      ],
+      "count": 1,
+      "label": "Applied/Computational Statistics"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "MATH 181C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 181D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 181E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 181F",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 182",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 185",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 189",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 194",
+        "status": "active"
+       }
+      ],
+      "count": 1,
+      "label": "One additional course",
+      "notes": "Must differ from the course used for Applied/Computational Statistics."
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "MATH 100A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 100B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 100C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 103A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 103B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 110",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 111A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 111B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 112A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 112B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 114",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 120A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 120B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 130",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 140C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 144",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 146",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 148",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 152",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 154",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 155A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 158",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 170A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 170B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 170C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 171A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 171B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 173A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 173B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 174",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 175",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 179",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 181C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 181D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 181E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 181F",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 182",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 184",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 185",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 187A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 188",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 189",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 190A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 193A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 193B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 194",
+        "status": "active"
+       },
+       {
+        "type": "text",
+        "text": "Up to two upper-division electives (totaling eight units) may be outside the department in an approved applied mathematical area. A petition approved by a probability and statistics faculty is required."
+       }
+      ],
+      "count": 3,
+      "label": "Upper-division electives",
+      "notes": "Catalog: \"Upper-division electives to complete fourteen upper-division courses (totaling fifty-six units) including those from the requirements listed above, from the following list.\" 14 = 11 required courses above + 3 electives."
+     }
+    ],
+    "label": "A total of fourteen upper-division courses (totaling fifty-six units)"
+   }
+  }
+ ],
+ "narrative": [
+  "All majors must obtain a minimum 2.0 grade point average in the upper-division courses used to satisfy the major requirements. Further, the student must receive a grade of C– or better in any course to be counted toward fulfillment of the major requirements.",
+  "Unless otherwise stated, any mathematics course numbered 100–194 may be used as an upper-division elective. (Note: MATH 195, 196, 197, 198, 199, and 199H cannot be used toward any mathematics major.)",
+  "All courses used to fulfill the major must be taken for a letter grade. No more than three upper-division courses taken externally from UC San Diego can be counted toward any major. Special exceptions may be considered via petition.",
+  "A total of fourteen upper-division courses (totaling fifty-six units) are required, including the required courses.",
+  "MAE 107, ECON 120A-B-C, MATH 195-199 cannot be counted toward the upper-division requirements.",
+  "Duplication of credit exists between MATH 180A and ECON 120A.",
+  "Recommended, not required: MATH 140A-B-C for graduate school. Recommended: complete through at least MATH 20D and MATH 109 before the end of the sophomore year."
+ ]
+}

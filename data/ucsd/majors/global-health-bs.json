@@ -1,0 +1,915 @@
+{
+  "name": "Global Health - BS",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Global Health Program",
+  "source": "https://catalog.ucsd.edu/curric/GLBH-ug.html",
+  "narrative": [
+    "All courses applied to the major must receive a letter grade of C- or better.",
+    "The Bachelor of Science in Global Health (twenty-four courses/ninety-six units).",
+    "There are eight electives required, all of which must be upper division. At least one elective must be a global health (GLBH) course."
+  ],
+  "sections": [
+    {
+      "name": "I. Lower-Division Core Requirements (twelve courses/forty-eight units)",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "course",
+            "code": "GLBH 20"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "label": "Complete one of the following courses",
+            "items": [
+              {
+                "type": "course",
+                "code": "HILD 30"
+              },
+              {
+                "type": "course",
+                "code": "PHIL 26"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 1"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 30"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 40"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 70"
+              }
+            ]
+          },
+          {
+            "type": "all",
+            "label": "One year of biology",
+            "items": [
+              {
+                "type": "course",
+                "code": "BILD 1"
+              },
+              {
+                "type": "course",
+                "code": "BILD 2"
+              },
+              {
+                "type": "course",
+                "code": "BILD 3"
+              }
+            ]
+          },
+          {
+            "type": "all",
+            "label": "One year of chemistry and lab",
+            "items": [
+              {
+                "type": "course",
+                "code": "CHEM 6A"
+              },
+              {
+                "type": "course",
+                "code": "CHEM 6B"
+              },
+              {
+                "type": "course",
+                "code": "CHEM 6C"
+              },
+              {
+                "type": "course",
+                "code": "CHEM 7L"
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "label": "One year of mathematics and statistics",
+            "items": [
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 10A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 10B"
+                  },
+                  {
+                    "type": "choose",
+                    "count": 1,
+                    "items": [
+                      {
+                        "type": "course",
+                        "code": "MATH 11"
+                      },
+                      {
+                        "type": "course",
+                        "code": "PSYC 60"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 20A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 20B"
+                  },
+                  {
+                    "type": "choose",
+                    "count": 1,
+                    "items": [
+                      {
+                        "type": "course",
+                        "code": "MATH 11"
+                      },
+                      {
+                        "type": "course",
+                        "code": "PSYC 60"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "II. Upper-Division Core Requirements (four courses/sixteen units)",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "GLBH 148"
+              },
+              {
+                "type": "course",
+                "code": "ANSC 148"
+              }
+            ],
+            "notes": "GLBH 148 is cross-listed with ANSC 148."
+          },
+          {
+            "type": "course",
+            "code": "GLBH 181"
+          },
+          {
+            "type": "course",
+            "code": "MGT 173"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "label": "One course in policy analysis",
+            "items": [
+              {
+                "type": "course",
+                "code": "GLBH 160"
+              },
+              {
+                "type": "course",
+                "code": "POLI 160AA"
+              },
+              {
+                "type": "course",
+                "code": "POLI 170A"
+              },
+              {
+                "type": "course",
+                "code": "USP 147"
+              },
+              {
+                "type": "course",
+                "code": "HISC 180"
+              },
+              {
+                "type": "course",
+                "code": "ECON 130"
+              },
+              {
+                "type": "course",
+                "code": "ENVR 110"
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "USP 133"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 152"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "USP 171"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "III. Field Experience Requirement",
+      "requirement": {
+        "type": "text",
+        "text": "Global Health Field Experience: minimum one hundred hours distributed over no more than three programs, at a research, service, or clinical site in the United States or abroad, approved by the advisory committee. May be noncredit or credit bearing. Upon approval by petition, a student may enroll in a maximum of two Independent Study (GLBH 199) or Directed Group Study (GLBH 198) courses; this credit will count as an elective toward the major."
+      }
+    },
+    {
+      "name": "IV. Electives (eight courses/thirty-two units)",
+      "requirement": {
+        "type": "all",
+        "notes": "All eight electives must be upper division.",
+        "items": [
+          {
+            "type": "choose",
+            "count": 3,
+            "label": "Three biological science courses",
+            "items": [
+              {
+                "type": "course",
+                "code": "ANBI 116"
+              },
+              {
+                "type": "course",
+                "code": "ANBI 130"
+              },
+              {
+                "type": "course",
+                "code": "ANBI 131"
+              },
+              {
+                "type": "course",
+                "code": "ANBI 134"
+              },
+              {
+                "type": "course",
+                "code": "ANBI 139"
+              },
+              {
+                "type": "course",
+                "code": "ANBI 140"
+              },
+              {
+                "type": "course",
+                "code": "ANBI 141"
+              },
+              {
+                "type": "course",
+                "code": "ANBI 144"
+              },
+              {
+                "type": "course",
+                "code": "BIBC 102"
+              },
+              {
+                "type": "course",
+                "code": "BIBC 103"
+              },
+              {
+                "type": "course",
+                "code": "BIBC 120"
+              },
+              {
+                "type": "course",
+                "code": "BICD 100"
+              },
+              {
+                "type": "course",
+                "code": "BICD 110"
+              },
+              {
+                "type": "course",
+                "code": "BICD 136"
+              },
+              {
+                "type": "course",
+                "code": "BICD 140"
+              },
+              {
+                "type": "course",
+                "code": "BIEB 150"
+              },
+              {
+                "type": "course",
+                "code": "BIEB 176"
+              },
+              {
+                "type": "course",
+                "code": "BIMM 100"
+              },
+              {
+                "type": "course",
+                "code": "BIMM 110"
+              },
+              {
+                "type": "course",
+                "code": "BIMM 114"
+              },
+              {
+                "type": "course",
+                "code": "BIMM 120"
+              },
+              {
+                "type": "course",
+                "code": "BIMM 124"
+              },
+              {
+                "type": "course",
+                "code": "BIPN 100"
+              },
+              {
+                "type": "course",
+                "code": "BIPN 102"
+              },
+              {
+                "type": "course",
+                "code": "BIPN 134"
+              },
+              {
+                "type": "course",
+                "code": "COGS 174"
+              },
+              {
+                "type": "course",
+                "code": "PH 101"
+              },
+              {
+                "type": "course",
+                "code": "PH 102"
+              },
+              {
+                "type": "course",
+                "code": "GLBH 102"
+              },
+              {
+                "type": "course",
+                "code": "HDS 110"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 107"
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 4,
+            "label": "Four medical social science courses",
+            "notes": "GLBH 111 may count toward two elective credits. CGS 123 if not used for global processes; GLBH/ANSC 129 if not taken for medical humanities; GLBH 160 and USP 147 if not taken for policy analysis requirement; SIO 116 if not taken for a global processes elective.",
+            "items": [
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "ANSC 101"
+                  },
+                  {
+                    "type": "course",
+                    "code": "GLBH 101"
+                  }
+                ]
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "ANSC 105"
+                  },
+                  {
+                    "type": "course",
+                    "code": "GLBH 105"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "ANSC 106"
+              },
+              {
+                "type": "course",
+                "code": "ANSC 121"
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "ANSC 129"
+                  },
+                  {
+                    "type": "course",
+                    "code": "GLBH 129"
+                  }
+                ]
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "ANSC 139"
+                  },
+                  {
+                    "type": "course",
+                    "code": "GLBH 139"
+                  }
+                ]
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "ANSC 143"
+                  },
+                  {
+                    "type": "course",
+                    "code": "GLBH 143"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "ANSC 144"
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "ANSC 146"
+                  },
+                  {
+                    "type": "course",
+                    "code": "GLBH 146"
+                  }
+                ]
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "ANSC 147"
+                  },
+                  {
+                    "type": "course",
+                    "code": "GLBH 147"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "ANSC 149"
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "ANSC 150"
+                  },
+                  {
+                    "type": "course",
+                    "code": "GLBH 150"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "ANSC 155"
+              },
+              {
+                "type": "course",
+                "code": "ANSC 156"
+              },
+              {
+                "type": "course",
+                "code": "ANSC 164"
+              },
+              {
+                "type": "course",
+                "code": "ANSC 182"
+              },
+              {
+                "type": "course",
+                "code": "COMM 114J"
+              },
+              {
+                "type": "course",
+                "code": "GLBH 114W"
+              },
+              {
+                "type": "course",
+                "code": "CGS 123"
+              },
+              {
+                "type": "course",
+                "code": "ECON 140"
+              },
+              {
+                "type": "course",
+                "code": "ECON 141"
+              },
+              {
+                "type": "course",
+                "code": "ETHN 142"
+              },
+              {
+                "type": "course",
+                "code": "PH 102"
+              },
+              {
+                "type": "course",
+                "code": "PH 110"
+              },
+              {
+                "type": "course",
+                "code": "GLBH 100"
+              },
+              {
+                "type": "course",
+                "code": "GLBH 103"
+              },
+              {
+                "type": "course",
+                "code": "GLBH 106"
+              },
+              {
+                "type": "course",
+                "code": "GLBH 108"
+              },
+              {
+                "type": "course",
+                "code": "GLBH 109"
+              },
+              {
+                "type": "course",
+                "code": "GLBH 110"
+              },
+              {
+                "type": "course",
+                "code": "GLBH 111"
+              },
+              {
+                "type": "course",
+                "code": "GLBH 112"
+              },
+              {
+                "type": "course",
+                "code": "GLBH 113"
+              },
+              {
+                "type": "course",
+                "code": "GLBH 114"
+              },
+              {
+                "type": "course",
+                "code": "GLBH 115"
+              },
+              {
+                "type": "course",
+                "code": "GLBH 116"
+              },
+              {
+                "type": "course",
+                "code": "GLBH 117"
+              },
+              {
+                "type": "course",
+                "code": "GLBH 119"
+              },
+              {
+                "type": "course",
+                "code": "GLBH 120"
+              },
+              {
+                "type": "course",
+                "code": "GLBH 121"
+              },
+              {
+                "type": "course",
+                "code": "GLBH 130"
+              },
+              {
+                "type": "course",
+                "code": "GLBH 131"
+              },
+              {
+                "type": "course",
+                "code": "GLBH 141"
+              },
+              {
+                "type": "course",
+                "code": "GLBH 150A"
+              },
+              {
+                "type": "course",
+                "code": "GLBH 160"
+              },
+              {
+                "type": "course",
+                "code": "GLBH 162"
+              },
+              {
+                "type": "course",
+                "code": "GLBH 163"
+              },
+              {
+                "type": "course",
+                "code": "GLBH 170R"
+              },
+              {
+                "type": "course",
+                "code": "GLBH 171R"
+              },
+              {
+                "type": "course",
+                "code": "GLBH 173"
+              },
+              {
+                "type": "course",
+                "code": "GLBH 190"
+              },
+              {
+                "type": "course",
+                "code": "GLBH 197"
+              },
+              {
+                "type": "course",
+                "code": "GLBH 198"
+              },
+              {
+                "type": "course",
+                "code": "GLBH 199"
+              },
+              {
+                "type": "course",
+                "code": "POLI 111D"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 100"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 101"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 116"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 124"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 125"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 134"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 143"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 155"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 168"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 172"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 179"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 181"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 188"
+              },
+              {
+                "type": "course",
+                "code": "SIO 116"
+              },
+              {
+                "type": "course",
+                "code": "SIO 189"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 113"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 134"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 135"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 136E"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 136F"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 138"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 143"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 173"
+              },
+              {
+                "type": "course",
+                "code": "USP 143"
+              },
+              {
+                "type": "course",
+                "code": "USP 144"
+              },
+              {
+                "type": "course",
+                "code": "USP 145"
+              },
+              {
+                "type": "course",
+                "code": "USP 147"
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "label": "One medical humanities course",
+            "notes": "ANSC/GLBH 129 if not taken for medical social science elective. (ANSC 190 is printed as \"ANCS 190\" in this list.)",
+            "items": [
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "ANSC 129"
+                  },
+                  {
+                    "type": "course",
+                    "code": "GLBH 129"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "ANSC 188"
+              },
+              {
+                "type": "course",
+                "code": "ANSC 190"
+              },
+              {
+                "type": "course",
+                "code": "CGS 111"
+              },
+              {
+                "type": "course",
+                "code": "GLBH 104"
+              },
+              {
+                "type": "course",
+                "code": "GLBH 107"
+              },
+              {
+                "type": "course",
+                "code": "GLBH 118"
+              },
+              {
+                "type": "course",
+                "code": "GLBH 150B"
+              },
+              {
+                "type": "course",
+                "code": "HISC 108"
+              },
+              {
+                "type": "course",
+                "code": "HISC 109"
+              },
+              {
+                "type": "course",
+                "code": "HISC 115"
+              },
+              {
+                "type": "course",
+                "code": "HISC 116"
+              },
+              {
+                "type": "course",
+                "code": "HISC 117"
+              },
+              {
+                "type": "course",
+                "code": "HISC 119"
+              },
+              {
+                "type": "course",
+                "code": "HISC 176"
+              },
+              {
+                "type": "course",
+                "code": "LTCS 155"
+              },
+              {
+                "type": "course",
+                "code": "LTCS 165"
+              },
+              {
+                "type": "course",
+                "code": "LTWL 177"
+              },
+              {
+                "type": "course",
+                "code": "PHIL 150"
+              },
+              {
+                "type": "course",
+                "code": "PHIL 163"
+              },
+              {
+                "type": "course",
+                "code": "PHIL 164"
+              },
+              {
+                "type": "course",
+                "code": "PHIL 173"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "There are eight electives required, all of which must be upper division. At least one elective must be a global health (GLBH) course. \"Students completing the honors thesis program can apply the course work [GLBH 150A, GLBH 150B] toward one medical social science elective and one medical humanities elective.\""
+          }
+        ]
+      }
+    }
+  ]
+}

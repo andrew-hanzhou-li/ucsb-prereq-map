@@ -123,7 +123,9 @@ def test_rules():
 # 2. The real graphs
 # ---------------------------------------------------------------------------
 
-KNOWN_ORDER = {
+# Course chains that must run left to right, per campus (UCSB and UCSD both
+# have an economics-ba, with different courses).
+KNOWN_ORDER = {"ucsb": {
     "economics-ba": [
         ["ECON 1", "ECON 2", "ECON 10A", "ECON 100B", "ECON 100C"],
         ["MATH 3A", "MATH 3B"],
@@ -141,14 +143,24 @@ KNOWN_ORDER = {
         ["ECE 189A", "ECE 189B", "ECE 189C"],
         ["CMPSC 16", "CMPSC 24", "CMPSC 32"],
     ],
-    # UC San Diego (department maps)
+}, "ucsd": {
+    # department maps
     "computer-science-and-engineering": [["CSE 11", "CSE 12", "CSE 100"], ["CSE 20", "CSE 21", "CSE 101"]],
     "mathematics": [["MATH 20A", "MATH 20B", "MATH 20C"]],
-}
+    # majors
+    "computer-science-bs": [["CSE 11", "CSE 12", "CSE 100"], ["MATH 20A", "MATH 20B", "MATH 20C"]],
+    "mathematics-bs": [["MATH 20A", "MATH 20B", "MATH 20C"], ["MATH 100A", "MATH 100B"]],
+    "economics-ba": [["ECON 1", "ECON 3"], ["ECON 100A", "ECON 100B"]],
+}}
 
-SAME_COLUMN = {
+# Courses a student can start with: a placement exam lets them in, so the
+# precalculus chain shown beside them mustn't push them to a later step.
+FIRST_STEP = {"ucsd": {"mathematics-bs": ["MATH 20A", "MATH 18"], "computer-science-bs": ["MATH 20A"]},
+              "ucsb": {"music-studies-ba": ["MUS 5A"]}}
+
+SAME_COLUMN = {"ucsb": {
     "computer-engineering-bs": [("ECE 10A", "ECE 10AL"), ("ECE 10B", "ECE 10BL"), ("ECE 10C", "ECE 10CL")],
-}
+}}
 
 
 def test_real_graphs(campus):
@@ -174,11 +186,13 @@ def test_real_graphs(campus):
         check("%s: no prerequisite loops" % name, graph["loops"] == [], graph["loops"])
 
         stem = name[:-5]
-        for chain in KNOWN_ORDER.get(stem, []):
+        for chain in KNOWN_ORDER.get(campus, {}).get(stem, []):
             cols = [column.get(code) for code in chain]
             in_order = None not in cols and all(a < b for a, b in zip(cols, cols[1:]))
             check("%s: %s in increasing columns" % (stem, " < ".join(chain)), in_order, cols)
-        for a, b in SAME_COLUMN.get(stem, []):
+        for code in FIRST_STEP.get(campus, {}).get(stem, []):
+            check("%s: %s is in the first step" % (stem, code), column.get(code) == 0, column.get(code))
+        for a, b in SAME_COLUMN.get(campus, {}).get(stem, []):
             check("%s: %s and its lab %s share a column" % (stem, a, b), column.get(a) == column.get(b))
 
 

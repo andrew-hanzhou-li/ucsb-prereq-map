@@ -1,0 +1,658 @@
+{
+  "name": "Cognitive and Behavioral Neuroscience - BS",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Psychology",
+  "source": "https://catalog.ucsd.edu/curric/PSYC-ug.html",
+  "narrative": [
+    "The BS in cognitive and behavioral neuroscience (CBN) is a major jointly administered by the Departments of Psychology and Cognitive Science.",
+    "Statistics must be taken for a letter grade. All lower-division courses must be passed with a minimum grade of a C- or P.",
+    "All upper-division courses numbered 100-193 must be taken for a letter grade and a minimum grade of C- is required for the course to count toward the major.",
+    "Courses taken Pass/Not Pass cannot be used to satisfy the upper-division major requirement.",
+    "Excluded from credit toward the major are graduate seminars (2XX).",
+    "A maximum of three upper-division courses toward the CBN major may be taken outside UC San Diego. (The Cognitive Science page says: A minimum of nine upper-division courses toward the CBN major must be taken at UC San Diego.)",
+    "A grade point average of at least 2.0 in the upper-division major courses is required for graduation.",
+    "The Cognitive Science page (catalog.ucsd.edu/curric/COGS-ug.html) also describes this jointly administered major with slightly different lists: it accepts BILD 24, allows ECE 15 or MAE 8 by petition, has a shorter research list (no PSYC 112, 113, COGS 118A, 138, 165, 170), lists PSYC 116 and HDP 110 (not PSYC 116A-B-C, HDS 110) and omits COGS 116, 118C, 165, 170 among the CBN courses; this file follows the Psychology page."
+  ],
+  "sections": [
+    {
+      "name": "Lower-Division Requirements",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "COGS 17"
+              },
+              {
+                "type": "choose",
+                "count": 2,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "BILD 1"
+                  },
+                  {
+                    "type": "course",
+                    "code": "BILD 2"
+                  },
+                  {
+                    "type": "course",
+                    "code": "BILD 3"
+                  },
+                  {
+                    "type": "course",
+                    "code": "BILD 10"
+                  },
+                  {
+                    "type": "course",
+                    "code": "BILD 20"
+                  },
+                  {
+                    "type": "course",
+                    "code": "BILD 26"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CHEM 4"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CHEM 6A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CHEM 6B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CHEM 6C"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CHEM 11"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CHEM 12"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CHEM 13"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 1A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 1B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 1C"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 2A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 2B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 2C"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 10"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 11"
+                  }
+                ],
+                "notes": "BILD 12 and 22 are NOT accepted. Only one of CHEM 4 or 11 can be taken for credit."
+              }
+            ],
+            "label": "Three Natural Science Courses"
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 10A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 20A"
+                  }
+                ]
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 10B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 20B"
+                  }
+                ]
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 10C"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 20C"
+                  }
+                ]
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "PSYC 70"
+                  },
+                  {
+                    "type": "course",
+                    "code": "COGS 14A"
+                  }
+                ]
+              }
+            ],
+            "label": "Four Formal Skills Courses"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "COGS 18"
+              },
+              {
+                "type": "course",
+                "code": "CSE 7"
+              },
+              {
+                "type": "course",
+                "code": "CSE 8A"
+              },
+              {
+                "type": "course",
+                "code": "CSE 8B"
+              },
+              {
+                "type": "course",
+                "code": "CSE 11"
+              },
+              {
+                "type": "course",
+                "code": "CSE 12"
+              }
+            ],
+            "label": "One Computer Programming Course"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "PSYC 60"
+              },
+              {
+                "type": "course",
+                "code": "COGS 14B"
+              }
+            ],
+            "label": "One Statistics Course",
+            "notes": "By petition, MATH 11 will be accepted for the major."
+          }
+        ],
+        "notes": "thirty-six units"
+      }
+    },
+    {
+      "name": "Upper-Division Requirements",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "COGS 107A"
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "PSYC 102"
+                  },
+                  {
+                    "type": "course",
+                    "code": "COGS 101A"
+                  }
+                ]
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "PSYC 106"
+                  },
+                  {
+                    "type": "course",
+                    "code": "COGS 107B"
+                  }
+                ]
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "PSYC 108"
+                  },
+                  {
+                    "type": "course",
+                    "code": "COGS 107C"
+                  }
+                ]
+              }
+            ],
+            "label": "Four CBN Core Courses"
+          },
+          {
+            "type": "choose",
+            "count": 2,
+            "items": [
+              {
+                "type": "course",
+                "code": "PSYC 112"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 113"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 114"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 115A"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 115B"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 116A"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 116B"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 116C"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 117"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 118"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 121"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 140"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 193L"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 194A"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 194B"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 194C"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 199"
+              },
+              {
+                "type": "course",
+                "code": "COGS 102B"
+              },
+              {
+                "type": "course",
+                "code": "COGS 102C"
+              },
+              {
+                "type": "course",
+                "code": "COGS 118A"
+              },
+              {
+                "type": "course",
+                "code": "COGS 118B"
+              },
+              {
+                "type": "course",
+                "code": "COGS 119"
+              },
+              {
+                "type": "course",
+                "code": "COGS 120"
+              },
+              {
+                "type": "course",
+                "code": "COGS 121"
+              },
+              {
+                "type": "course",
+                "code": "COGS 138"
+              },
+              {
+                "type": "course",
+                "code": "COGS 153"
+              },
+              {
+                "type": "course",
+                "code": "COGS 160"
+              },
+              {
+                "type": "course",
+                "code": "COGS 165"
+              },
+              {
+                "type": "course",
+                "code": "COGS 170"
+              },
+              {
+                "type": "course",
+                "code": "COGS 189"
+              },
+              {
+                "type": "course",
+                "code": "COGS 190A"
+              },
+              {
+                "type": "course",
+                "code": "COGS 190B"
+              },
+              {
+                "type": "course",
+                "code": "COGS 190C"
+              },
+              {
+                "type": "course",
+                "code": "COGS 199"
+              }
+            ],
+            "label": "Two Research Experience Courses",
+            "notes": "PSYC 116A-B-C with completion of concurrent 199 sections; COGS 160 must pre-approve. Successful completion of either COGS 190A-B-C or PSYC 194A-B-C fully satisfies the research experience requirement. If the two research courses are 199s, at least one of them must culminate in a research paper approved by the faculty adviser."
+          },
+          {
+            "type": "choose",
+            "count": 6,
+            "items": [
+              {
+                "type": "course",
+                "code": "PSYC 116A"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 116B"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 116C"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 122"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 123"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 125"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 132"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 133"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 144"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 150"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 159"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 169"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 170"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 171"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 179"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 181"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 189"
+              },
+              {
+                "type": "course",
+                "code": "COGS 115"
+              },
+              {
+                "type": "course",
+                "code": "COGS 116"
+              },
+              {
+                "type": "course",
+                "code": "COGS 118C"
+              },
+              {
+                "type": "course",
+                "code": "COGS 119"
+              },
+              {
+                "type": "course",
+                "code": "COGS 154"
+              },
+              {
+                "type": "course",
+                "code": "COGS 163"
+              },
+              {
+                "type": "course",
+                "code": "COGS 164"
+              },
+              {
+                "type": "course",
+                "code": "COGS 165"
+              },
+              {
+                "type": "course",
+                "code": "COGS 169"
+              },
+              {
+                "type": "course",
+                "code": "COGS 170"
+              },
+              {
+                "type": "course",
+                "code": "COGS 171"
+              },
+              {
+                "type": "course",
+                "code": "COGS 172"
+              },
+              {
+                "type": "course",
+                "code": "COGS 174"
+              },
+              {
+                "type": "course",
+                "code": "COGS 175"
+              },
+              {
+                "type": "course",
+                "code": "COGS 176"
+              },
+              {
+                "type": "course",
+                "code": "COGS 177"
+              },
+              {
+                "type": "course",
+                "code": "COGS 178"
+              },
+              {
+                "type": "course",
+                "code": "COGS 179"
+              },
+              {
+                "type": "course",
+                "code": "COGS 180"
+              },
+              {
+                "type": "course",
+                "code": "COGS 184"
+              },
+              {
+                "type": "course",
+                "code": "HDS 110"
+              }
+            ],
+            "label": "Six Upper-Division Courses in CBN"
+          },
+          {
+            "type": "choose",
+            "count": 2,
+            "items": [
+              {
+                "type": "course",
+                "code": "PSYC 100"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 101"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 104"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 105"
+              },
+              {
+                "type": "range",
+                "subject": "PSYC",
+                "from": 110,
+                "to": 193
+              },
+              {
+                "type": "course",
+                "code": "COGS 101B"
+              },
+              {
+                "type": "course",
+                "code": "COGS 101C"
+              },
+              {
+                "type": "course",
+                "code": "COGS 102A"
+              },
+              {
+                "type": "course",
+                "code": "COGS 102B"
+              },
+              {
+                "type": "course",
+                "code": "COGS 102C"
+              },
+              {
+                "type": "range",
+                "subject": "COGS",
+                "from": 109,
+                "to": 189
+              }
+            ],
+            "label": "Two Additional Upper-Division Elective Courses",
+            "notes": "Research courses are NOT approved to count as UD CBN elective courses: PSYC 71, 81, 99, 112, 113, 114, 115, 117, 118, 193L, 194, 196, 199."
+          }
+        ],
+        "notes": "fifty-six units"
+      }
+    }
+  ]
+}

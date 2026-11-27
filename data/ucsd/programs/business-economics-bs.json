@@ -1,0 +1,1812 @@
+{
+ "id": "UCSD-MAJOR-business-economics-bs",
+ "name": "Business Economics - BS",
+ "kind": "major",
+ "type": "Bachelor's Degree",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsd.edu/curric/ECON-ug.html",
+ "sections": [
+  {
+   "name": "Lower division (nine classes, thirty-six units)",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 10A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 10B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 10C",
+          "status": "active"
+         }
+        ]
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 20A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 20B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 20C",
+          "status": "active"
+         }
+        ]
+       }
+      ],
+      "count": 1,
+      "label": "Lower-division mathematics courses",
+      "notes": "MATH 10A-B-C (required) or MATH 20A-B-C (recommended)."
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "ECON 1",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 3",
+        "status": "active"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "ECON 5",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "POLI 5",
+          "status": "active"
+         }
+        ],
+        "count": 1
+       }
+      ],
+      "label": "Lower-division economics courses"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "MGT 45",
+          "status": "active"
+         },
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "choose",
+            "items": [
+             {
+              "type": "course",
+              "code": "ECON 4",
+              "status": "active"
+             },
+             {
+              "type": "course",
+              "code": "MGT 4",
+              "status": "active"
+             }
+            ],
+            "count": 1
+           },
+           {
+            "type": "course",
+            "code": "MGT 5",
+            "status": "active"
+           }
+          ]
+         }
+        ],
+        "count": 1,
+        "notes": "MGT 45 (principles of accounting or both ECON/MGT 4 and MGT 5)"
+       },
+       {
+        "type": "course",
+        "code": "MGT 16",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 71",
+        "status": "active"
+       }
+      ],
+      "label": "Lower-division Rady School of Management courses"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Upper-Division Core (ten classes, forty units)",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "ECON 100A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 100B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 110B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 120A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 120B",
+        "status": "active"
+       }
+      ],
+      "label": "Upper-division economics core courses"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "MGT 100",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 160",
+        "status": "active"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "MGT 162",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MGT 162R",
+          "status": "active"
+         }
+        ],
+        "count": 1
+       },
+       {
+        "type": "course",
+        "code": "MGT 164",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 180",
+        "status": "active"
+       }
+      ],
+      "label": "Upper-division Rady School of Management core courses"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Upper-Division Electives (three classes, twelve units)",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "ECON 100AH",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 100BH",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 100C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 100CH",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 101",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 102",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 102T",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 103",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 104",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 105",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 106",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 107",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 109",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 109T",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 110A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 110AH",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 110BH",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 111",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 112",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 113",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 116",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 117",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 118",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 119",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 120AH",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 120BH",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 120C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 120CH",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 121",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 122",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 125",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 129",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 130",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 131",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 132",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 132T",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 134",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 135",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 136",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 137",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 138",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 139",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 140",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 141",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 142",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 143",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 144",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 145",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 146",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 147",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 149",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 150",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 151",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 152",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 152T",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 158",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 159",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 162",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 164",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 164T",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 165",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 165T",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 167",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 168",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 169",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 171",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 172A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 172B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 173A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 173B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 174",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 175",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 176",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 178",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 181",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 182",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 183",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 184",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 185",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 186",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 190",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 191A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 191B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 195P",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 198",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 199",
+        "status": "active"
+       }
+      ],
+      "count": 1,
+      "label": "Economics elective"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "MGT 102",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 103",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 104",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 105",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 106",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 107",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 108R",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 109",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 111",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 112",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 113",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 117",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 119",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 120",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 121A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 121B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 123",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 127",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 127R",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 128",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 128R",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 129",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 131A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 131B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 132",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 133",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 134",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 135",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 136",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 137",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 139",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 143",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 146",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 147",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 148",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 149",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 151",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 151R",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 153",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 154",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 155",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 157",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 158",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 159T",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 160R",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 164GS",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 166",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 167",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 170",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 171",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 171R",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 172",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 172R",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 173",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 175",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 176",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 177",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 179",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 180R",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 181",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 183",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 184",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 185",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 187",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 188",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 189",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 198",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 199",
+        "status": "active"
+       }
+      ],
+      "count": 1,
+      "label": "Rady School of Management elective"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "ECON 100AH",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 100BH",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 100C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 100CH",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 101",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 102",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 102T",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 103",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 104",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 105",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 106",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 107",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 109",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 109T",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 110A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 110AH",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 110BH",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 111",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 112",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 113",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 116",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 117",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 118",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 119",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 120AH",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 120BH",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 120C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 120CH",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 121",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 122",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 125",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 129",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 130",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 131",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 132",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 132T",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 134",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 135",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 136",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 137",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 138",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 139",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 140",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 141",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 142",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 143",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 144",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 145",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 146",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 147",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 149",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 150",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 151",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 152",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 152T",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 158",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 159",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 162",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 164",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 164T",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 165",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 165T",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 167",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 168",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 169",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 171",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 172A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 172B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 173A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 173B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 174",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 175",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 176",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 178",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 181",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 182",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 183",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 184",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 185",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 186",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 190",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 191A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 191B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 195P",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 198",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 199",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 102",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 103",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 104",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 105",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 106",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 107",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 108R",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 109",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 111",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 112",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 113",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 117",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 119",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 120",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 121A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 121B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 123",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 127",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 127R",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 128",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 128R",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 129",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 131A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 131B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 132",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 133",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 134",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 135",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 136",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 137",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 139",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 143",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 146",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 147",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 148",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 149",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 151",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 151R",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 153",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 154",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 155",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 157",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 158",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 159T",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 160R",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 164GS",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 166",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 167",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 170",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 171",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 171R",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 172",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 172R",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 173",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 175",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 176",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 177",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 179",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 180R",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 181",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 183",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 184",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 185",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 187",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 188",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 189",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 198",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 199",
+        "status": "active"
+       }
+      ],
+      "count": 1,
+      "label": "Economics or Rady School of Management elective"
+     }
+    ],
+    "notes": "three upper-division courses, at least one of which must be from economics and at least one of which must be from the Rady School of Management."
+   }
+  }
+ ],
+ "narrative": [
+  "The business economics major is a collaborative, interdisciplinary degree program between the Rady School of Management and the Department of Economics.",
+  "While we require business economics majors to take MATH 10A-B-C, we recommend that business economics students take MATH 20A-B-C.",
+  "To receive a bachelor of science degree in business economics, no more than one upper-division economics course and one upper-division Rady School of Management course may be taken externally from UC San Diego and be counted toward the major.",
+  "To graduate with a major, a minimum GPA of 2.0 is required in upper-division courses used to satisfy major requirements.",
+  "All courses must be taken for a letter grade and passed with a grade of C– (C minus), or better, with the exception of ECON 195P, ECON 198, and ECON 199, for which P/NP grading is mandatory.",
+  "No more than twelve units of ECON 195P, ECON 198, and ECON 199 taken P/NP may be counted toward major requirements. ECON 195P may only be taken twice for credit (eight units).",
+  "Also described on the Rady School of Management page (https://catalog.ucsd.edu/curric/MGT-ug.html, \"The Business Economics Major (BSc)\"), which lists the finance core course as \"MGT 180/180R\" rather than MGT 180 and omits the ECON P/NP exceptions from its grade rules."
+ ]
+}

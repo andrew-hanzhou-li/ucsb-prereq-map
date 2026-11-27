@@ -1,0 +1,445 @@
+{
+  "name": "Japanese Studies - BA",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Japanese Studies Program",
+  "source": "https://catalog.ucsd.edu/curric/JAPN.html",
+  "narrative": [
+    "All upper-division courses must be taken for a letter grade, with the exception of JAPN 199.",
+    "Students who declare for the Japanese studies major and minor will be allowed no more than one course with a D grade to count toward the program requirements.",
+    "The language requirement can be waived by demonstrating the equivalent proficiency through exam. The required number of courses must be fulfilled by taking other upper-division nonlanguage courses.",
+    "All graduate-level courses require consent of the instructor/department for undergraduate students. Courses marked with an asterisk (*) in the catalog (e.g., COMM 113, HIEA 144, HIEA 150, HIEA 180, LTWL 155, LTCS courses, MUS 111, MUS 116, TDGE 126, VIS 128E) may require departmental approval via student petition; approval is given only when content relates primarily to Japan.",
+    "Lower-division requirement is headed \"(nine courses)\"; the courses listed are JAPN 10A-B-C and JAPN 20A-B-C.",
+    "The degree (BA) is not stated on the catalog page."
+  ],
+  "sections": [
+    {
+      "name": "A. Lower-Division Requirement (nine courses)",
+      "requirement": {
+        "type": "all",
+        "label": "Japanese language",
+        "notes": "two years of lower-division courses or the transferred equivalent from JAPN 10A-B-C, JAPN 20A-B-C. The language requirement may be waived by demonstrating the equivalent proficiency through exam.",
+        "items": [
+          {
+            "type": "course",
+            "code": "JAPN 10A"
+          },
+          {
+            "type": "course",
+            "code": "JAPN 10B"
+          },
+          {
+            "type": "course",
+            "code": "JAPN 10C"
+          },
+          {
+            "type": "course",
+            "code": "JAPN 20A"
+          },
+          {
+            "type": "course",
+            "code": "JAPN 20B"
+          },
+          {
+            "type": "course",
+            "code": "JAPN 20C"
+          }
+        ]
+      }
+    },
+    {
+      "name": "B. Upper-Division Requirement (twelve courses)",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "choose",
+            "count": 6,
+            "label": "Japanese language: six upper-division language courses",
+            "notes": "six upper-division language courses or the transferred equivalent. The language requirement can be waived by demonstrating the equivalent proficiency through exam; the required number of courses must then be fulfilled by taking other upper-division nonlanguage courses. Students may petition to include upper-division language courses taken abroad under the Education Abroad Program (EAP) or Opportunities Abroad Program (OAP).",
+            "items": [
+              {
+                "type": "course",
+                "code": "JAPN 100A"
+              },
+              {
+                "type": "course",
+                "code": "JAPN 100B"
+              },
+              {
+                "type": "course",
+                "code": "JAPN 100C"
+              },
+              {
+                "type": "course",
+                "code": "JAPN 130A"
+              },
+              {
+                "type": "course",
+                "code": "JAPN 130B"
+              },
+              {
+                "type": "course",
+                "code": "JAPN 130C"
+              },
+              {
+                "type": "course",
+                "code": "JAPN 135A"
+              },
+              {
+                "type": "course",
+                "code": "JAPN 135B"
+              },
+              {
+                "type": "course",
+                "code": "JAPN 135C"
+              },
+              {
+                "type": "course",
+                "code": "JAPN 137A"
+              },
+              {
+                "type": "course",
+                "code": "JAPN 137B"
+              },
+              {
+                "type": "course",
+                "code": "JAPN 137C"
+              },
+              {
+                "type": "course",
+                "code": "JAPN 140A"
+              },
+              {
+                "type": "course",
+                "code": "JAPN 140B"
+              },
+              {
+                "type": "course",
+                "code": "JAPN 140C"
+              },
+              {
+                "type": "course",
+                "code": "JAPN 150A"
+              },
+              {
+                "type": "course",
+                "code": "JAPN 150B"
+              },
+              {
+                "type": "course",
+                "code": "JAPN 150C"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "JAPN 190"
+          },
+          {
+            "type": "choose",
+            "count": 5,
+            "label": "The remaining five courses",
+            "notes": "The remaining five courses must be taken from two or more different disciplines, from the list of upper-division courses applicable for the major. Students may include one 199 (Special Studies) course. JAPN 135A-C, 137A-C and 150A-C appear on that list (under Japanese Studies) and are kept here.",
+            "items": [
+              {
+                "type": "course",
+                "code": "ANSC 166"
+              },
+              {
+                "type": "course",
+                "code": "COMM 106C"
+              },
+              {
+                "type": "course",
+                "code": "COMM 113"
+              },
+              {
+                "type": "course",
+                "code": "HIEA 111"
+              },
+              {
+                "type": "course",
+                "code": "HIEA 112"
+              },
+              {
+                "type": "course",
+                "code": "HIEA 113"
+              },
+              {
+                "type": "course",
+                "code": "HIEA 114"
+              },
+              {
+                "type": "course",
+                "code": "HIEA 115"
+              },
+              {
+                "type": "course",
+                "code": "HIEA 116"
+              },
+              {
+                "type": "course",
+                "code": "HIEA 117"
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "HIEA 119"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 162R"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "HIEA 125"
+              },
+              {
+                "type": "course",
+                "code": "HIEA 144"
+              },
+              {
+                "type": "course",
+                "code": "HIEA 150"
+              },
+              {
+                "type": "course",
+                "code": "HIEA 160"
+              },
+              {
+                "type": "course",
+                "code": "HIEA 180"
+              },
+              {
+                "type": "course",
+                "code": "JAPN 135A"
+              },
+              {
+                "type": "course",
+                "code": "JAPN 135B"
+              },
+              {
+                "type": "course",
+                "code": "JAPN 135C"
+              },
+              {
+                "type": "course",
+                "code": "JAPN 137A"
+              },
+              {
+                "type": "course",
+                "code": "JAPN 137B"
+              },
+              {
+                "type": "course",
+                "code": "JAPN 137C"
+              },
+              {
+                "type": "course",
+                "code": "JAPN 150A"
+              },
+              {
+                "type": "course",
+                "code": "JAPN 150B"
+              },
+              {
+                "type": "course",
+                "code": "JAPN 150C"
+              },
+              {
+                "type": "course",
+                "code": "JAPN 180"
+              },
+              {
+                "type": "course",
+                "code": "ECON 163"
+              },
+              {
+                "type": "course",
+                "code": "LTEA 130"
+              },
+              {
+                "type": "course",
+                "code": "LTEA 132"
+              },
+              {
+                "type": "course",
+                "code": "LTEA 134"
+              },
+              {
+                "type": "course",
+                "code": "LTEA 136"
+              },
+              {
+                "type": "course",
+                "code": "LTEA 138"
+              },
+              {
+                "type": "course",
+                "code": "LTWL 155"
+              },
+              {
+                "type": "course",
+                "code": "LTCS 110"
+              },
+              {
+                "type": "course",
+                "code": "LTCS 115"
+              },
+              {
+                "type": "course",
+                "code": "LTCS 118"
+              },
+              {
+                "type": "course",
+                "code": "LTCS 120"
+              },
+              {
+                "type": "course",
+                "code": "LTCS 125"
+              },
+              {
+                "type": "course",
+                "code": "LTCS 130"
+              },
+              {
+                "type": "course",
+                "code": "LTCS 131"
+              },
+              {
+                "type": "course",
+                "code": "LTCS 132"
+              },
+              {
+                "type": "course",
+                "code": "LTCS 133"
+              },
+              {
+                "type": "course",
+                "code": "LTCS 135"
+              },
+              {
+                "type": "course",
+                "code": "LTCS 141"
+              },
+              {
+                "type": "course",
+                "code": "LTCS 145"
+              },
+              {
+                "type": "course",
+                "code": "LTCS 150"
+              },
+              {
+                "type": "course",
+                "code": "LTCS 160"
+              },
+              {
+                "type": "course",
+                "code": "LTCS 170"
+              },
+              {
+                "type": "course",
+                "code": "MUS 111"
+              },
+              {
+                "type": "course",
+                "code": "MUS 116"
+              },
+              {
+                "type": "course",
+                "code": "POLI 113B"
+              },
+              {
+                "type": "course",
+                "code": "POLI 113BR"
+              },
+              {
+                "type": "course",
+                "code": "POLI 113C"
+              },
+              {
+                "type": "course",
+                "code": "POLI 132B"
+              },
+              {
+                "type": "course",
+                "code": "POLI 133A"
+              },
+              {
+                "type": "course",
+                "code": "POLI 133D"
+              },
+              {
+                "type": "course",
+                "code": "POLI 133DD"
+              },
+              {
+                "type": "course",
+                "code": "POLI 133G"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 123"
+              },
+              {
+                "type": "course",
+                "code": "TDGE 126"
+              },
+              {
+                "type": "course",
+                "code": "VIS 127N"
+              },
+              {
+                "type": "course",
+                "code": "VIS 127P"
+              },
+              {
+                "type": "course",
+                "code": "VIS 128E"
+              },
+              {
+                "type": "course",
+                "code": "GPPS 400"
+              },
+              {
+                "type": "course",
+                "code": "GPIM 411"
+              },
+              {
+                "type": "course",
+                "code": "GPPS 416"
+              },
+              {
+                "type": "course",
+                "code": "GPPS 460"
+              },
+              {
+                "type": "course",
+                "code": "GPEC 471"
+              },
+              {
+                "type": "course",
+                "code": "GPPS 478"
+              },
+              {
+                "type": "course",
+                "code": "JAPN 199"
+              },
+              {
+                "type": "text",
+                "text": "Students may petition to include upper-division nonlanguage courses taken abroad under EAP or OAP."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

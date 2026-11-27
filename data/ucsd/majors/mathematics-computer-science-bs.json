@@ -1,0 +1,915 @@
+{
+  "name": "Mathematics—Computer Science - BS",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Mathematics",
+  "major_code": "MA30",
+  "source": "https://catalog.ucsd.edu/curric/MATH-ug.html",
+  "narrative": [
+    "All majors must obtain a minimum 2.0 grade point average in the upper-division courses used to satisfy the major requirements. Further, the student must receive a grade of C– or better in any course to be counted toward fulfillment of the major requirements.",
+    "Unless otherwise stated, any mathematics course numbered 100–194 may be used as an upper-division elective. (Note: MATH 195, 196, 197, 198, 199, and 199H cannot be used toward any mathematics major.)",
+    "All courses used to fulfill the major must be taken for a letter grade. No more than three upper-division courses taken externally from UC San Diego can be counted toward any major. Special exceptions may be considered via petition.",
+    "A total of fourteen upper-division courses (totaling fifty-six units) are required. In order to ensure fifty-six unique upper-division units are completed, students cannot use a single course to fulfill more than one requirement for the major.",
+    "A mathematics—computer science major is not allowed to also minor in computer science in the Department of Computer Science and Engineering.",
+    "Recommended: students interested in computer architecture and design (CSE 140-140L, CSE 141-141L, CSE 142-142L, CSE 148) should take CSE 30 as preparation.",
+    "CSE 105 note: CSE 21 or MATH 100A or MATH 103A or MATH 184 or MATH 184A must be taken prior to CSE 105. CSE 100 note: CSE 21 or MATH 154 or MATH 184 or MATH 184A must be taken prior to CSE 100.",
+    "Duplication of credit exists between MATH 180A/183 and ECON 120A. Students wishing to add CSE courses are subject to enrollment restrictions."
+  ],
+  "sections": [
+    {
+      "name": "Lower Division",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 18"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 20A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 20B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 20C"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 20D"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 20E"
+                  }
+                ],
+                "label": "Linear Algebra and Calculus"
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 31AH"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 31BH"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 31CH"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 20D"
+                  }
+                ],
+                "label": "Honors Calculus"
+              }
+            ],
+            "label": "One of the following sequences"
+          },
+          {
+            "type": "course",
+            "code": "CSE 11"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "CSE 15L"
+              },
+              {
+                "type": "course",
+                "code": "CSE 29"
+              }
+            ],
+            "label": "Software Tools and Techniques Laboratory"
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "CSE 12"
+              }
+            ],
+            "label": "Basic Data Structures and Object-Oriented Design"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Upper Division",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "MATH 109"
+              },
+              {
+                "type": "text",
+                "text": "Students completing MATH 31AH-BH-CH may substitute a four-unit upper-division mathematics elective for MATH 109."
+              }
+            ],
+            "label": "Mathematical Reasoning"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 103A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 103B"
+                  }
+                ]
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 100A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 100B"
+                  }
+                ]
+              }
+            ],
+            "label": "Modern Applied Algebra or Modern Algebra"
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "CSE 105"
+              }
+            ],
+            "label": "Theory of Computability"
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "CSE 100"
+              }
+            ],
+            "label": "Computer Implementations of Data Structures"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "MATH 180A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 183"
+              }
+            ],
+            "label": "Intro to Probability"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "MATH 154"
+              },
+              {
+                "type": "course",
+                "code": "MATH 158"
+              },
+              {
+                "type": "course",
+                "code": "MATH 184"
+              },
+              {
+                "type": "course",
+                "code": "MATH 188"
+              }
+            ],
+            "label": "Discrete Math or Combinatorics"
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "CSE 101"
+              }
+            ],
+            "label": "Design and Analysis of Algorithms"
+          },
+          {
+            "type": "units",
+            "units": 8,
+            "items": [
+              {
+                "type": "course",
+                "code": "MATH 170A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 170B"
+              },
+              {
+                "type": "course",
+                "code": "MATH 170C"
+              },
+              {
+                "type": "course",
+                "code": "MATH 171A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 171B"
+              },
+              {
+                "type": "course",
+                "code": "MATH 173A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 173B"
+              },
+              {
+                "type": "course",
+                "code": "MATH 174"
+              },
+              {
+                "type": "course",
+                "code": "MATH 175"
+              },
+              {
+                "type": "course",
+                "code": "MATH 179"
+              },
+              {
+                "type": "course",
+                "code": "MATH 180B"
+              },
+              {
+                "type": "course",
+                "code": "MATH 180C"
+              },
+              {
+                "type": "course",
+                "code": "MATH 181A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 181B"
+              },
+              {
+                "type": "course",
+                "code": "MATH 181C"
+              },
+              {
+                "type": "course",
+                "code": "MATH 181E"
+              }
+            ],
+            "label": "Applied Mathematics Electives"
+          },
+          {
+            "type": "units",
+            "units": 8,
+            "items": [
+              {
+                "type": "course",
+                "code": "MATH 152"
+              },
+              {
+                "type": "course",
+                "code": "MATH 154"
+              },
+              {
+                "type": "course",
+                "code": "MATH 155A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 155B"
+              },
+              {
+                "type": "course",
+                "code": "MATH 157"
+              },
+              {
+                "type": "course",
+                "code": "MATH 158"
+              },
+              {
+                "type": "course",
+                "code": "MATH 160A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 160B"
+              },
+              {
+                "type": "course",
+                "code": "MATH 168A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 182"
+              },
+              {
+                "type": "course",
+                "code": "MATH 184"
+              },
+              {
+                "type": "course",
+                "code": "MATH 185"
+              },
+              {
+                "type": "course",
+                "code": "MATH 187A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 187B"
+              },
+              {
+                "type": "course",
+                "code": "MATH 188"
+              },
+              {
+                "type": "course",
+                "code": "MATH 189"
+              },
+              {
+                "type": "course",
+                "code": "CSE 107"
+              },
+              {
+                "type": "course",
+                "code": "CSE 110"
+              },
+              {
+                "type": "course",
+                "code": "CSE 112"
+              },
+              {
+                "type": "course",
+                "code": "CSE 120"
+              },
+              {
+                "type": "course",
+                "code": "CSE 121"
+              },
+              {
+                "type": "course",
+                "code": "CSE 123"
+              },
+              {
+                "type": "course",
+                "code": "CSE 124"
+              },
+              {
+                "type": "course",
+                "code": "CSE 127"
+              },
+              {
+                "type": "course",
+                "code": "CSE 130"
+              },
+              {
+                "type": "course",
+                "code": "CSE 131"
+              },
+              {
+                "type": "course",
+                "code": "CSE 132A"
+              },
+              {
+                "type": "course",
+                "code": "CSE 132B"
+              },
+              {
+                "type": "course",
+                "code": "CSE 134B"
+              },
+              {
+                "type": "course",
+                "code": "CSE 140"
+              },
+              {
+                "type": "course",
+                "code": "CSE 140L"
+              },
+              {
+                "type": "course",
+                "code": "CSE 141"
+              },
+              {
+                "type": "course",
+                "code": "CSE 141L"
+              },
+              {
+                "type": "course",
+                "code": "CSE 142"
+              },
+              {
+                "type": "course",
+                "code": "CSE 150A"
+              },
+              {
+                "type": "course",
+                "code": "CSE 150B"
+              },
+              {
+                "type": "course",
+                "code": "CSE 151A"
+              },
+              {
+                "type": "course",
+                "code": "CSE 152A"
+              },
+              {
+                "type": "course",
+                "code": "CSE 152B"
+              },
+              {
+                "type": "course",
+                "code": "CSE 158"
+              },
+              {
+                "type": "course",
+                "code": "CSE 160"
+              },
+              {
+                "type": "course",
+                "code": "CSE 165"
+              },
+              {
+                "type": "course",
+                "code": "CSE 167"
+              },
+              {
+                "type": "course",
+                "code": "CSE 168"
+              },
+              {
+                "type": "course",
+                "code": "CSE 169"
+              },
+              {
+                "type": "course",
+                "code": "CSE 176A"
+              },
+              {
+                "type": "course",
+                "code": "COGS 108"
+              },
+              {
+                "type": "course",
+                "code": "COGS 118A"
+              },
+              {
+                "type": "course",
+                "code": "COGS 118B"
+              },
+              {
+                "type": "course",
+                "code": "COGS 120"
+              },
+              {
+                "type": "course",
+                "code": "COGS 185"
+              },
+              {
+                "type": "course",
+                "code": "COGS 188"
+              }
+            ],
+            "label": "Computational Electives"
+          },
+          {
+            "type": "units",
+            "units": 8,
+            "items": [
+              {
+                "type": "course",
+                "code": "MATH 170A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 170B"
+              },
+              {
+                "type": "course",
+                "code": "MATH 170C"
+              },
+              {
+                "type": "course",
+                "code": "MATH 171A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 171B"
+              },
+              {
+                "type": "course",
+                "code": "MATH 173A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 173B"
+              },
+              {
+                "type": "course",
+                "code": "MATH 174"
+              },
+              {
+                "type": "course",
+                "code": "MATH 175"
+              },
+              {
+                "type": "course",
+                "code": "MATH 179"
+              },
+              {
+                "type": "course",
+                "code": "MATH 180B"
+              },
+              {
+                "type": "course",
+                "code": "MATH 180C"
+              },
+              {
+                "type": "course",
+                "code": "MATH 181A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 181B"
+              },
+              {
+                "type": "course",
+                "code": "MATH 181C"
+              },
+              {
+                "type": "course",
+                "code": "MATH 181E"
+              },
+              {
+                "type": "course",
+                "code": "MATH 152"
+              },
+              {
+                "type": "course",
+                "code": "MATH 154"
+              },
+              {
+                "type": "course",
+                "code": "MATH 155A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 155B"
+              },
+              {
+                "type": "course",
+                "code": "MATH 157"
+              },
+              {
+                "type": "course",
+                "code": "MATH 158"
+              },
+              {
+                "type": "course",
+                "code": "MATH 160A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 160B"
+              },
+              {
+                "type": "course",
+                "code": "MATH 168A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 182"
+              },
+              {
+                "type": "course",
+                "code": "MATH 184"
+              },
+              {
+                "type": "course",
+                "code": "MATH 185"
+              },
+              {
+                "type": "course",
+                "code": "MATH 187A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 187B"
+              },
+              {
+                "type": "course",
+                "code": "MATH 188"
+              },
+              {
+                "type": "course",
+                "code": "MATH 189"
+              },
+              {
+                "type": "course",
+                "code": "CSE 107"
+              },
+              {
+                "type": "course",
+                "code": "CSE 110"
+              },
+              {
+                "type": "course",
+                "code": "CSE 112"
+              },
+              {
+                "type": "course",
+                "code": "CSE 120"
+              },
+              {
+                "type": "course",
+                "code": "CSE 121"
+              },
+              {
+                "type": "course",
+                "code": "CSE 123"
+              },
+              {
+                "type": "course",
+                "code": "CSE 124"
+              },
+              {
+                "type": "course",
+                "code": "CSE 127"
+              },
+              {
+                "type": "course",
+                "code": "CSE 130"
+              },
+              {
+                "type": "course",
+                "code": "CSE 131"
+              },
+              {
+                "type": "course",
+                "code": "CSE 132A"
+              },
+              {
+                "type": "course",
+                "code": "CSE 132B"
+              },
+              {
+                "type": "course",
+                "code": "CSE 134B"
+              },
+              {
+                "type": "course",
+                "code": "CSE 140"
+              },
+              {
+                "type": "course",
+                "code": "CSE 140L"
+              },
+              {
+                "type": "course",
+                "code": "CSE 141"
+              },
+              {
+                "type": "course",
+                "code": "CSE 141L"
+              },
+              {
+                "type": "course",
+                "code": "CSE 142"
+              },
+              {
+                "type": "course",
+                "code": "CSE 150A"
+              },
+              {
+                "type": "course",
+                "code": "CSE 150B"
+              },
+              {
+                "type": "course",
+                "code": "CSE 151A"
+              },
+              {
+                "type": "course",
+                "code": "CSE 152A"
+              },
+              {
+                "type": "course",
+                "code": "CSE 152B"
+              },
+              {
+                "type": "course",
+                "code": "CSE 158"
+              },
+              {
+                "type": "course",
+                "code": "CSE 160"
+              },
+              {
+                "type": "course",
+                "code": "CSE 165"
+              },
+              {
+                "type": "course",
+                "code": "CSE 167"
+              },
+              {
+                "type": "course",
+                "code": "CSE 168"
+              },
+              {
+                "type": "course",
+                "code": "CSE 169"
+              },
+              {
+                "type": "course",
+                "code": "CSE 176A"
+              },
+              {
+                "type": "course",
+                "code": "COGS 108"
+              },
+              {
+                "type": "course",
+                "code": "COGS 118A"
+              },
+              {
+                "type": "course",
+                "code": "COGS 118B"
+              },
+              {
+                "type": "course",
+                "code": "COGS 120"
+              },
+              {
+                "type": "course",
+                "code": "COGS 185"
+              },
+              {
+                "type": "course",
+                "code": "COGS 188"
+              },
+              {
+                "type": "course",
+                "code": "MATH 100C"
+              },
+              {
+                "type": "course",
+                "code": "MATH 102"
+              },
+              {
+                "type": "course",
+                "code": "MATH 104A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 104B"
+              },
+              {
+                "type": "course",
+                "code": "MATH 106"
+              },
+              {
+                "type": "course",
+                "code": "MATH 110"
+              },
+              {
+                "type": "course",
+                "code": "MATH 111A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 111B"
+              },
+              {
+                "type": "course",
+                "code": "MATH 114"
+              },
+              {
+                "type": "course",
+                "code": "MATH 120A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 120B"
+              },
+              {
+                "type": "course",
+                "code": "MATH 130"
+              },
+              {
+                "type": "course",
+                "code": "MATH 140A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 140B"
+              },
+              {
+                "type": "course",
+                "code": "MATH 142A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 142B"
+              },
+              {
+                "type": "course",
+                "code": "MATH 144"
+              },
+              {
+                "type": "course",
+                "code": "MATH 150A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 150B"
+              },
+              {
+                "type": "course",
+                "code": "MATH 163"
+              },
+              {
+                "type": "course",
+                "code": "MATH 181D"
+              },
+              {
+                "type": "course",
+                "code": "MATH 181F"
+              },
+              {
+                "type": "course",
+                "code": "MATH 190A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 190B"
+              },
+              {
+                "type": "course",
+                "code": "MATH 193A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 193B"
+              },
+              {
+                "type": "course",
+                "code": "MATH 194"
+              }
+            ],
+            "label": "General Math—CS Electives",
+            "notes": "Eight additional units from any course in the Applied Mathematics or Computational Electives lists or the additional MATH courses listed; a course cannot fulfill more than one requirement."
+          }
+        ],
+        "label": "A total of fourteen upper-division courses (totaling fifty-six units)"
+      }
+    }
+  ]
+}

@@ -1,0 +1,247 @@
+{
+  "name": "Biological Anthropology - BS",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Anthropology",
+  "source": "https://catalog.ucsd.edu/curric/ANTH-ug.html",
+  "narrative": [
+    "Twenty-two courses, eighty-eight units.",
+    "The student must complete the following courses with a letter grade of C– or better."
+  ],
+  "sections": [
+    {
+      "name": "Lower Division",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "BILD 1"
+              },
+              {
+                "type": "course",
+                "code": "BILD 2"
+              }
+            ],
+            "label": "Two courses in general biology"
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "CHEM 6A"
+              },
+              {
+                "type": "course",
+                "code": "CHEM 6B"
+              },
+              {
+                "type": "course",
+                "code": "CHEM 6C"
+              }
+            ],
+            "label": "Three courses in general chemistry"
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "choose",
+                    "count": 2,
+                    "items": [
+                      {
+                        "type": "course",
+                        "code": "MATH 10A"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MATH 10B"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MATH 10C"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "choose",
+                    "count": 2,
+                    "items": [
+                      {
+                        "type": "course",
+                        "code": "MATH 20A"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MATH 20B"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MATH 20C"
+                      }
+                    ]
+                  }
+                ],
+                "notes": "Choose two of these courses: MATH 10A-B-C or 20A-B-C (read as two courses from one of the two calculus sequences)."
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 11"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PSYC 60"
+                  }
+                ]
+              }
+            ],
+            "label": "Three courses in mathematics/statistics"
+          },
+          {
+            "type": "course",
+            "code": "ANTH 2"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "ANTH 43"
+              },
+              {
+                "type": "course",
+                "code": "ANTH 42"
+              },
+              {
+                "type": "course",
+                "code": "ANTH 5"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 70"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 1"
+              }
+            ],
+            "label": "One course in anthropology or psychology or sociology"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Core Requirements",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "course",
+            "code": "ANTH 101"
+          },
+          {
+            "type": "course",
+            "code": "ANTH 102"
+          },
+          {
+            "type": "course",
+            "code": "ANTH 103"
+          }
+        ],
+        "label": "Anthropology Core Courses"
+      }
+    },
+    {
+      "name": "Upper-Division Concentration Requirements",
+      "requirement": {
+        "type": "choose",
+        "count": 4,
+        "items": [
+          {
+            "type": "any",
+            "subject": "ANBI",
+            "level": "upper"
+          }
+        ],
+        "notes": "FOUR four-unit upper-division courses with the prefix ANBI"
+      }
+    },
+    {
+      "name": "Skills and Methods",
+      "requirement": {
+        "type": "choose",
+        "count": 1,
+        "items": [
+          {
+            "type": "course",
+            "code": "ANBI 112"
+          },
+          {
+            "type": "course",
+            "code": "ANBI 114"
+          },
+          {
+            "type": "course",
+            "code": "ANBI 135"
+          },
+          {
+            "type": "course",
+            "code": "ANBI 143"
+          },
+          {
+            "type": "course",
+            "code": "ANBI 144"
+          },
+          {
+            "type": "course",
+            "code": "ANBI 174"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Upper-Division Elective Requirements",
+      "requirement": {
+        "type": "choose",
+        "count": 4,
+        "items": [
+          {
+            "type": "any",
+            "subject": "ANAR",
+            "level": "upper"
+          },
+          {
+            "type": "any",
+            "subject": "ANBI",
+            "level": "upper"
+          },
+          {
+            "type": "any",
+            "subject": "ANSC",
+            "level": "upper"
+          },
+          {
+            "type": "any",
+            "subject": "ANTH",
+            "level": "upper"
+          }
+        ],
+        "label": "Upper-division elective requirements",
+        "notes": "four-unit, upper-division elective courses with the prefix ANAR, ANBI, ANSC, or ANTH (including ANTH 197, 198, 199, 196A–C)"
+      }
+    }
+  ]
+}

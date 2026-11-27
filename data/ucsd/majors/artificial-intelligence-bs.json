@@ -1,0 +1,1039 @@
+{
+  "name": "Artificial Intelligence - BS",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Computer Science and Engineering",
+  "source": "https://catalog.ucsd.edu/curric/CSE-ug.html",
+  "narrative": [
+    "All major requirements for each degree program must be completed with a C– or better, except for courses offered Pass/No Pass only.",
+    "All major requirements and upper-division electives except CSE 91, 95, 109, 197, 198, or 199 must be taken for a letter grade.",
+    "To graduate, a minimum grade point average of 2.0 will be required in upper-division courses in the major, including upper-division electives.",
+    "At most four units of CSE 197 may be used toward technical elective requirements.",
+    "CSE 195 cannot be used toward course requirements.",
+    "Students may not get duplicate credit for equivalent courses.",
+    "Selective major: admission for continuing students is by selective major application (screening courses: CSE 8B or 11, CSE 12, CSE 29 or ECE 15 or CSE 15L, CSE 20, CSE 21, CSE 30 or ECE 30, CSE 100 (R), and CSE 101 for applicants after second year).",
+    "The BS artificial intelligence program requires a total of 124 units (not including the general-education requirements).",
+    "Students are expected to complete the following sixty units [lower-division] by the end of their sophomore year.",
+    "Students must complete sixty-four upper-division units: twenty units of core courses and forty-four units of elective courses.",
+    "The page also lists 'Technical Electives for all CSE Majors'; the BS artificial intelligence elective rules themselves are stated in terms of the AI elective list and the program-level tags."
+  ],
+  "sections": [
+    {
+      "name": "Lower-Division Requirements",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "CSE 8B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CSE 11"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "CSE 12"
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "CSE 15L"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CSE 29"
+                  }
+                ]
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "CSE 20"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 15A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 31CH"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 109"
+                  }
+                ]
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "CSE 21"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 154"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 158"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 184"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 188"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "CSE 30"
+              }
+            ],
+            "label": "Computer Science and Engineering"
+          },
+          {
+            "type": "units",
+            "units": 4,
+            "items": [
+              {
+                "type": "course",
+                "code": "CSE 3"
+              },
+              {
+                "type": "course",
+                "code": "CSE 4GS"
+              },
+              {
+                "type": "course",
+                "code": "CSE 6R"
+              },
+              {
+                "type": "course",
+                "code": "CSE 6GS"
+              },
+              {
+                "type": "course",
+                "code": "CSE 8A"
+              },
+              {
+                "type": "course",
+                "code": "CSE 42"
+              },
+              {
+                "type": "course",
+                "code": "CSE 86"
+              },
+              {
+                "type": "course",
+                "code": "CSE 89"
+              },
+              {
+                "type": "course",
+                "code": "CSE 90"
+              },
+              {
+                "type": "course",
+                "code": "CSE 91"
+              },
+              {
+                "type": "course",
+                "code": "CSE 95"
+              },
+              {
+                "type": "course",
+                "code": "CSE 99"
+              },
+              {
+                "type": "course",
+                "code": "CSE 180"
+              },
+              {
+                "type": "course",
+                "code": "CSE 180R"
+              },
+              {
+                "type": "course",
+                "code": "MAE 8"
+              },
+              {
+                "type": "course",
+                "code": "MAE 9"
+              },
+              {
+                "type": "course",
+                "code": "COGS 9"
+              },
+              {
+                "type": "course",
+                "code": "COGS 10"
+              },
+              {
+                "type": "course",
+                "code": "COGS 18"
+              },
+              {
+                "type": "course",
+                "code": "ECE 15"
+              },
+              {
+                "type": "course",
+                "code": "ENG 10"
+              },
+              {
+                "type": "course",
+                "code": "ENG 15"
+              },
+              {
+                "type": "course",
+                "code": "NANO 15"
+              },
+              {
+                "type": "course",
+                "code": "CENG 15"
+              },
+              {
+                "type": "any",
+                "subject": "CSE",
+                "level": "upper"
+              },
+              {
+                "type": "text",
+                "text": "or any CSE upper-division course not used to fulfill other degree requirements"
+              }
+            ],
+            "label": "Computer Science and Engineering"
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "CSE 25"
+              },
+              {
+                "type": "course",
+                "code": "CSE 55"
+              }
+            ],
+            "label": "Artificial Intelligence"
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "MATH 20A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 20B"
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 20C"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 31BH"
+                  }
+                ]
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 18"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 31AH"
+                  }
+                ]
+              }
+            ],
+            "label": "Mathematics"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "PHYS 2A"
+              },
+              {
+                "type": "course",
+                "code": "PHYS 2B"
+              },
+              {
+                "type": "course",
+                "code": "PHYS 4A"
+              },
+              {
+                "type": "course",
+                "code": "PHYS 4B"
+              },
+              {
+                "type": "course",
+                "code": "CHEM 6A"
+              },
+              {
+                "type": "course",
+                "code": "CHEM 6AH"
+              },
+              {
+                "type": "course",
+                "code": "CHEM 6B"
+              },
+              {
+                "type": "course",
+                "code": "CHEM 6BH"
+              },
+              {
+                "type": "course",
+                "code": "BILD 1"
+              },
+              {
+                "type": "course",
+                "code": "BILD 2"
+              },
+              {
+                "type": "course",
+                "code": "BILD 3"
+              },
+              {
+                "type": "course",
+                "code": "BICD 100"
+              },
+              {
+                "type": "course",
+                "code": "BIMM 101"
+              },
+              {
+                "type": "course",
+                "code": "BIMM 121"
+              },
+              {
+                "type": "course",
+                "code": "COGS 107A"
+              },
+              {
+                "type": "course",
+                "code": "COGS 107B"
+              },
+              {
+                "type": "course",
+                "code": "COGS 115"
+              },
+              {
+                "type": "course",
+                "code": "ESYS 101"
+              },
+              {
+                "type": "course",
+                "code": "HDS 110"
+              },
+              {
+                "type": "course",
+                "code": "SIO 126"
+              },
+              {
+                "type": "course",
+                "code": "SIO 128"
+              }
+            ],
+            "label": "General Science"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "MATH 181A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 183"
+              },
+              {
+                "type": "course",
+                "code": "ECE 109"
+              },
+              {
+                "type": "course",
+                "code": "ECON 120A"
+              },
+              {
+                "type": "course",
+                "code": "CSE 103"
+              }
+            ],
+            "label": "Probability and Statistics"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Upper-Division Requirements",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "CSE 100"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CSE 100R"
+                  }
+                ],
+                "label": "Data structures and programming"
+              },
+              {
+                "type": "course",
+                "code": "CSE 101"
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "CSE 150A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CSE 150B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CSE 151B"
+                  }
+                ],
+                "label": "Artificial Intelligence",
+                "notes": "Catalog lists \"CSE 150A or CSE 150B or CSE 151B\" here and CSE 151B again as the Deep Learning core course; one course cannot fill both slots."
+              },
+              {
+                "type": "course",
+                "code": "CSE 151A"
+              },
+              {
+                "type": "course",
+                "code": "CSE 151B"
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "CSE 194"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHIL 174"
+                  },
+                  {
+                    "type": "course",
+                    "code": "POLI 121D"
+                  }
+                ],
+                "label": "Ethics",
+                "notes": "\"Ethics: Four units\". The catalog lists it under Core Courses, though its core total is twenty units (CSE 100, 101, AI, 151A, 151B)."
+              }
+            ],
+            "label": "Core Courses"
+          },
+          {
+            "type": "units",
+            "units": 12,
+            "items": [
+              {
+                "type": "course",
+                "code": "CSE 106"
+              },
+              {
+                "type": "course",
+                "code": "CSE 150A"
+              },
+              {
+                "type": "course",
+                "code": "CSE 150B"
+              },
+              {
+                "type": "course",
+                "code": "CSE 152A"
+              },
+              {
+                "type": "course",
+                "code": "CSE 152B"
+              },
+              {
+                "type": "course",
+                "code": "CSE 153"
+              },
+              {
+                "type": "course",
+                "code": "CSE 153R"
+              },
+              {
+                "type": "course",
+                "code": "CSE 154"
+              },
+              {
+                "type": "course",
+                "code": "CSE 156"
+              },
+              {
+                "type": "course",
+                "code": "CSE 157"
+              },
+              {
+                "type": "course",
+                "code": "CSE 158"
+              },
+              {
+                "type": "course",
+                "code": "CSE 158R"
+              },
+              {
+                "type": "course",
+                "code": "CSE 176B"
+              },
+              {
+                "type": "course",
+                "code": "CSE 186"
+              },
+              {
+                "type": "course",
+                "code": "DSC 102"
+              },
+              {
+                "type": "course",
+                "code": "DSC 120"
+              },
+              {
+                "type": "course",
+                "code": "DSC 131"
+              },
+              {
+                "type": "course",
+                "code": "DSC 140A"
+              },
+              {
+                "type": "course",
+                "code": "DSC 140B"
+              },
+              {
+                "type": "course",
+                "code": "DSC 148"
+              },
+              {
+                "type": "course",
+                "code": "DSC 155"
+              },
+              {
+                "type": "course",
+                "code": "DSC 161"
+              },
+              {
+                "type": "course",
+                "code": "DSC 170"
+              },
+              {
+                "type": "course",
+                "code": "DSC 185"
+              },
+              {
+                "type": "course",
+                "code": "COGS 108"
+              },
+              {
+                "type": "course",
+                "code": "COGS 109"
+              },
+              {
+                "type": "course",
+                "code": "COGS 118A"
+              },
+              {
+                "type": "course",
+                "code": "COGS 118B"
+              },
+              {
+                "type": "course",
+                "code": "COGS 118C"
+              },
+              {
+                "type": "course",
+                "code": "COGS 181"
+              },
+              {
+                "type": "course",
+                "code": "COGS 182"
+              },
+              {
+                "type": "course",
+                "code": "COGS 185"
+              },
+              {
+                "type": "course",
+                "code": "COGS 186"
+              },
+              {
+                "type": "course",
+                "code": "COGS 188"
+              },
+              {
+                "type": "course",
+                "code": "MATH 102"
+              },
+              {
+                "type": "course",
+                "code": "MATH 170A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 173A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 173B"
+              },
+              {
+                "type": "course",
+                "code": "MATH 181A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 181D"
+              },
+              {
+                "type": "course",
+                "code": "MATH 182"
+              },
+              {
+                "type": "course",
+                "code": "MATH 189"
+              },
+              {
+                "type": "course",
+                "code": "ECE 172A"
+              },
+              {
+                "type": "course",
+                "code": "ECE 175A"
+              },
+              {
+                "type": "course",
+                "code": "ECE 175B"
+              },
+              {
+                "type": "course",
+                "code": "ECE 176"
+              },
+              {
+                "type": "course",
+                "code": "PHIL 150"
+              }
+            ],
+            "label": "AI Electives",
+            "notes": "Twelve units of AI electives chosen from the list (which are not used to satisfy other core or breadth elective requirements)."
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "units",
+                "units": 8,
+                "items": [
+                  {
+                    "type": "tagged",
+                    "subject": "CSE",
+                    "tag": "Systems"
+                  },
+                  {
+                    "type": "course",
+                    "code": "DSC 102"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ECE 140A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ECE 140B"
+                  }
+                ],
+                "label": "Systems breadth"
+              },
+              {
+                "type": "units",
+                "units": 8,
+                "items": [
+                  {
+                    "type": "tagged",
+                    "subject": "CSE",
+                    "tag": "Theory/Abstraction"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ECON 172A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ECON 172B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 170A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 170B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 170C"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 171A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 171B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 173A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 173B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 185"
+                  }
+                ],
+                "label": "Theory/Abstraction breadth"
+              },
+              {
+                "type": "units",
+                "units": 8,
+                "items": [
+                  {
+                    "type": "tagged",
+                    "subject": "CSE",
+                    "tag": "Applications of Computing"
+                  },
+                  {
+                    "type": "course",
+                    "code": "COGS 108"
+                  },
+                  {
+                    "type": "course",
+                    "code": "COGS 109"
+                  },
+                  {
+                    "type": "course",
+                    "code": "COGS 118A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "COGS 118B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "COGS 118C"
+                  },
+                  {
+                    "type": "range",
+                    "subject": "COGS",
+                    "from": 120,
+                    "to": 127
+                  },
+                  {
+                    "type": "course",
+                    "code": "COGS 181"
+                  },
+                  {
+                    "type": "course",
+                    "code": "COGS 185"
+                  },
+                  {
+                    "type": "course",
+                    "code": "COGS 187A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "COGS 187B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "COGS 189"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ECON 172A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ECON 172B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ECE 140A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ECE 140B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "EDS 124AR"
+                  },
+                  {
+                    "type": "course",
+                    "code": "EDS 124BR"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ENG 100D"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ENG 100L"
+                  },
+                  {
+                    "type": "course",
+                    "code": "LIGN 165"
+                  },
+                  {
+                    "type": "course",
+                    "code": "LIGN 167"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 155A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 171A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 171B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 189"
+                  }
+                ],
+                "label": "Applications of Computing breadth",
+                "notes": "Students may use up to eight units of ENG 100D/L courses toward upper-division CSE elective credits (as part of the twelve-unit maximum of special studies courses - CSE 197, 198, 199, 199H). Students may only take ENG 100D once."
+              },
+              {
+                "type": "units",
+                "units": 4,
+                "items": [
+                  {
+                    "type": "any",
+                    "subject": "CSE",
+                    "level": "upper",
+                    "except": [
+                      "CSE 180",
+                      "CSE 180R",
+                      "CSE 191",
+                      "CSE 195"
+                    ]
+                  },
+                  {
+                    "type": "course",
+                    "code": "DSC 102"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ECE 140A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ECE 140B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ECON 172A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ECON 172B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 170A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 170B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 170C"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 171A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 171B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 173A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 173B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 185"
+                  },
+                  {
+                    "type": "course",
+                    "code": "COGS 108"
+                  },
+                  {
+                    "type": "course",
+                    "code": "COGS 109"
+                  },
+                  {
+                    "type": "course",
+                    "code": "COGS 118A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "COGS 118B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "COGS 118C"
+                  },
+                  {
+                    "type": "range",
+                    "subject": "COGS",
+                    "from": 120,
+                    "to": 127
+                  },
+                  {
+                    "type": "course",
+                    "code": "COGS 181"
+                  },
+                  {
+                    "type": "course",
+                    "code": "COGS 185"
+                  },
+                  {
+                    "type": "course",
+                    "code": "COGS 187A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "COGS 187B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "COGS 189"
+                  },
+                  {
+                    "type": "course",
+                    "code": "EDS 124AR"
+                  },
+                  {
+                    "type": "course",
+                    "code": "EDS 124BR"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ENG 100D"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ENG 100L"
+                  },
+                  {
+                    "type": "course",
+                    "code": "LIGN 165"
+                  },
+                  {
+                    "type": "course",
+                    "code": "LIGN 167"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 155A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 189"
+                  },
+                  {
+                    "type": "text",
+                    "text": "Any CSE upper-division course between CSE 100-194 that is not being used for another major requirement, with the exception of CSE 180/180R and CSE 191 which are not allowed to meet CSE upper-division CSE elective requirements."
+                  },
+                  {
+                    "type": "text",
+                    "text": "CSE upper-division or graduate courses or non-CSE classes that are tagged with one of the three tags (which are not used to satisfy the core or breadth elective requirements)"
+                  }
+                ],
+                "label": "Additional electives",
+                "notes": "Students may use twelve units of CSE 190 toward CSE elective credit (repeatable up to three times for different topics; CSE 291 applies to this twelve-unit maximum). Undergraduate students may petition to use graduate-level course work toward their elective requirements."
+              }
+            ],
+            "label": "Electives",
+            "notes": "28 units of elective courses. Electives must give sufficient breadth within these outcomes (Systems, Theory/Abstraction, Applications of Computing). A maximum of twelve units of P/NP courses may count, chosen from: a maximum of eight units of CSE 198 or 199 or 199H; a maximum of four units of CSE 197; a maximum of two units of CSE 109."
+          }
+        ],
+        "notes": "Students must complete sixty-four upper-division units: twenty units of core courses and forty-four units of elective courses."
+      }
+    }
+  ]
+}

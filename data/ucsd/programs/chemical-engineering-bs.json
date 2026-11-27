@@ -1,0 +1,1988 @@
+{
+ "id": "UCSD-MAJOR-chemical-engineering-bs",
+ "name": "Chemical Engineering - BS",
+ "kind": "major",
+ "type": "Bachelor's Degree",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsd.edu/curric/NANO-ug.html",
+ "sections": [
+  {
+   "name": "Basic sciences",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "MATH 20A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MATH 20B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MATH 20C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MATH 20D",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MATH 20E",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MATH 18",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 2A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 2B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 2C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 2CL",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 6A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 6B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 6C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 7L",
+      "status": "active"
+     }
+    ],
+    "notes": "fifty-four units: twenty-four units of mathematics (MATH 20A-E and MATH 18, formerly MATH 20F), fourteen units of physics (PHYS 2A-C, 2CL), and sixteen units of chemistry (CHEM 6A-C, 7L)"
+   }
+  },
+  {
+   "name": "Chemistry core",
+   "requirement": {
+    "type": "choose",
+    "items": [
+     {
+      "type": "course",
+      "code": "CHEM 130",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 131",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 132",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 41A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 41B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 41C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 43A",
+      "status": "active"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 114A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "BIBC 100",
+        "status": "active"
+       }
+      ],
+      "count": 1
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 114B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "BIBC 102",
+        "status": "active"
+       }
+      ],
+      "count": 1
+     },
+     {
+      "type": "course",
+      "code": "CHEM 120A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 120B",
+      "status": "active"
+     }
+    ],
+    "count": 3,
+    "label": "Advanced chemistry electives",
+    "notes": "Three advanced chemistry electives must be selected from among the preapproved list: CHEM 130, 131, 132, CHEM 41A-C*, CHEM 43A, 114A (or BIBC 100), 114B (or BIBC 102), or 120A-B. Students may not receive credit for both BIBC 100 and CHEM 114A, or BIBC 102 and CHEM 114B."
+   }
+  },
+  {
+   "name": "Chemical engineering core",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "CENG 4",
+      "status": "active"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "CENG 100",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CENG 110",
+        "status": "active"
+       }
+      ],
+      "count": 1
+     },
+     {
+      "type": "course",
+      "code": "CENG 101A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CENG 101B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CENG 101C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CENG 102",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CENG 113",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CENG 120",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CENG 122",
+      "status": "active"
+     }
+    ],
+    "notes": "thirty-three units (CENG 4, 100/110, 101A-C, 102, 113, 120, 122)"
+   }
+  },
+  {
+   "name": "Process laboratory and design",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "CENG 124A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CENG 124B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CENG 176A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CENG 176B",
+      "status": "active"
+     }
+    ],
+    "notes": "sixteen units"
+   }
+  },
+  {
+   "name": "General engineering",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "CENG 15",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CENG 114",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CENG 170",
+      "status": "active"
+     }
+    ],
+    "notes": "twelve units: computer programming (CENG 15), probability and statistics (CENG 114), instrumentation (CENG 170)"
+   }
+  },
+  {
+   "name": "Technical Electives",
+   "requirement": {
+    "type": "units",
+    "items": [
+     {
+      "type": "course",
+      "code": "CENG 100",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CENG 101A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CENG 101B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CENG 101C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CENG 102",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CENG 110",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CENG 113",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CENG 114",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CENG 120",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CENG 122",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CENG 124A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CENG 124B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CENG 134",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CENG 157",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CENG 160",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CENG 170",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CENG 175",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CENG 176A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CENG 176B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CENG 199",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 100L",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 102",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 103",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 104",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 106",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 107",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 108",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 110",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 111",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 112",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 114",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 115L",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 117",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 119",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 120A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 120B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 134",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 141A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 141B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 146",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 148",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 150",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 156",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 158",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 158L",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 159",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 161",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 164",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 168",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 174",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 174L",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 175",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 181",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 181R",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 199",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 100",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 102",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 103B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 110",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 112A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 112B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 120",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 122A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 123",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 125",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 130",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 133",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 134",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 135",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 140A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 140B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 141",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 152",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 160",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 161A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 161B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 162",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 166A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 168",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 172",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 181",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 182",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 183",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 186A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 186B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 187A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 187B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 187C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 187D",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 188A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 188B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 189",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 190",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 190L",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 191",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 193",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 195P",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 196",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 197",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 198",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 199",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 100",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 101",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 102",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 103",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 107",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 108",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 109",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 111",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 115",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 116",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 118",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 121A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 121B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 123",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 124",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 125A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 125B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 128A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 128B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 128C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 129",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 134",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 135A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 135B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 136L",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 138L",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 139",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 140A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 140B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 141A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 141B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 143",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 144",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 145AL",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 145BL",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 145CL",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 148",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 150",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 153",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 155",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 156",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 157A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 157B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 158A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 158B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 159",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 161A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 161B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 161C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 163",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 164",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 165",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 166",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 171A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 171B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 172A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 174",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 175A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 175B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 176",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 180",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 181",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 182",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 183",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 184",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 185",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 187",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 188",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 189",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 190",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 191",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 193H",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 194",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 195",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 196",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 197",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 198",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 199",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 101A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 101B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 101C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 101D",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 104",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 105",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 107",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 108",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 110",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 113",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 114",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 117A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 118",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 119",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 120",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 121",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 122",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 123",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 125",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 126A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 126B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 130",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 131A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 131B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 133",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 142",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 143A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 143B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 144",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 145",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 146",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 148",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 149",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 150",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 152",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 153",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 154",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 155A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 155B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 156A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 156B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 160",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 165",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 167",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 170",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 171A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 171B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 175A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 180",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 181",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 182",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 184",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 185",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 190",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 191",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 197",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 198",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 199",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 103",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 242",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "NANO 244",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "NANO 262",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "CENG 160",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CENG 254",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "CENG 256",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "BENG 100",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 101",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "BENG 109",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "BENG 110",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 112A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 112B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 130",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 186A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 107",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CENG 157",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 103",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 134",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 135A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 136L",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 141A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 141B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 104",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 131A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 149",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 160",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 114B",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "MAE 105",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 107",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 140",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "ESYS 103",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 119",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 122",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 125",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 126A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 126B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 127",
+      "status": "inactive"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "CENG 134",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "NANO 134",
+        "status": "active"
+       }
+      ],
+      "count": 1
+     },
+     {
+      "type": "course",
+      "code": "NANO 100L",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 159",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 174",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 174L",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MATS 201A",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "MATS 201B",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "MATS 201C",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "MATS 205A",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "MATS 227",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "NANO 102",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 104",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 106",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 108",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 110",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 111",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 112",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 140",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "NANO 145",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "NANO 146",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 148",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 150",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 156",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 158",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 161",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 162",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "NANO 164",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 168",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 253",
+      "status": "inactive"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "NANO 175",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CENG 175",
+        "status": "active"
+       }
+      ],
+      "count": 1
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "CENG 207",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "NANO 243",
+        "status": "inactive"
+       }
+      ],
+      "count": 1
+     },
+     {
+      "type": "course",
+      "code": "CENG 208",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "CENG 211",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "CENG 212",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "CENG 213",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "CENG 214",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "CENG 215",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "MAE 142",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 143A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 144",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 180A",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "ECE 171B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 122A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 110",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 113",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 118",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 120",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ENG 100D",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ENG 100B",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "ENG 100L",
+      "status": "active"
+     },
+     {
+      "type": "text",
+      "text": "All electives must be upper-division courses in engineering. Technical elective (TE) course selections must have departmental approval prior to taking the courses."
+     },
+     {
+      "type": "text",
+      "text": "Two consecutive quarters of independent research (CENG 199) can be approved as equivalent to two technical elective courses (eight units)."
+     },
+     {
+      "type": "text",
+      "text": "Students are allowed to take one of the following four-unit 'Teams in Engineering Service' courses: ENG 100D or ENG 100B and ENG 100L or two quarters of ENG 100L as an approved Engineering Focus elective."
+     },
+     {
+      "type": "text",
+      "text": "Any other upper-division course in engineering, with departmental approval"
+     }
+    ],
+    "units": 12,
+    "label": "Technical Electives",
+    "notes": "Electives are intended to broaden and enhance professional goals. All electives must be upper-division courses in engineering. Suggestions are listed by area in the catalog. Courses such as CENG 195, 197, and 198 are not allowed as a technical elective. CENG 199 can be used as a technical elective only under restrictive conditions. NANO 156 and MAE 166 are cross-listed; CENG majors must enroll in NANO 156."
+   }
+  }
+ ],
+ "narrative": [
+  "To graduate, students must maintain an overall GPA of at least 2.0.",
+  "Every course required for the major (except CENG 4 and CENG 199) must be taken for a letter grade, including all CENG and technical elective courses. This also includes all MATH, BILD, CHEM, and PHYS courses. All major requirements must have a grade of C- or higher.",
+  "The chemical engineering major is a selective major. Only students who have completed the required screening courses and have a minimum 2.0 UC GPA are eligible to apply.",
+  "Screening courses (first-year applicants): MATH 20A, 20B, 20C, PHYS 2A, 2B, CHEM 6A, 6B, 6C, 7L. Screening courses (second-year applicants): MATH 20A, 20B, 20C, 20D, MATH 18, PHYS 2A, 2B, 2C, 2CL, CHEM 6A, 6B, 6C, 7L.",
+  "All transfer students must take CENG 4 and CENG 15 (MATLAB) in the fall or winter of their first year at UC San Diego.",
+  "NANO 156 and MAE 166 are cross-listed courses; CENG majors must enroll in NANO 156. NANO 175 and CENG 175 are cross-listed courses and credit cannot be given for both."
+ ]
+}

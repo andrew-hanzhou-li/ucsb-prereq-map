@@ -1,0 +1,495 @@
+{
+  "name": "Computer Science - BS - Bioinformatics",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Computer Science and Engineering",
+  "source": "https://catalog.ucsd.edu/curric/CSE-ug.html",
+  "narrative": [
+    "All major requirements for each degree program must be completed with a C– or better, except for courses offered Pass/No Pass only.",
+    "All major requirements and upper-division electives except CSE 91, 95, 109, 197, 198, or 199 must be taken for a letter grade.",
+    "To graduate, a minimum grade point average of 2.0 will be required in upper-division courses in the major, including upper-division electives.",
+    "At most four units of CSE 197 may be used toward technical elective requirements.",
+    "CSE 195 cannot be used toward course requirements.",
+    "Students may not get duplicate credit for equivalent courses.",
+    "Selective major: admission for continuing students is by selective major application (screening courses: CSE 8B or 11, CSE 12, CSE 29 or ECE 15 or CSE 15L, CSE 20, CSE 21, CSE 30 or ECE 30, CSE 100 (R), and CSE 101 for applicants after second year).",
+    "The BS computer science with a specialization in bioinformatics program requires a total of 128 units (not including the general-education requirements).",
+    "All classes must be taken for a letter grade unless offered P/NP only.",
+    "Students must complete sixty-four upper-division units.",
+    "This interdisciplinary major also is offered by the School of Biological Sciences and the Department of Bioengineering."
+  ],
+  "sections": [
+    {
+      "name": "Lower-Division Requirements",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "CSE 8B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CSE 11"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "CSE 12"
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "CSE 15L"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CSE 29"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "CSE 21"
+              },
+              {
+                "type": "course",
+                "code": "CSE 30"
+              }
+            ],
+            "label": "Computer Science and Engineering"
+          },
+          {
+            "type": "units",
+            "units": 2,
+            "items": [
+              {
+                "type": "course",
+                "code": "CSE 3"
+              },
+              {
+                "type": "course",
+                "code": "CSE 4GS"
+              },
+              {
+                "type": "course",
+                "code": "CSE 6R"
+              },
+              {
+                "type": "course",
+                "code": "CSE 6GS"
+              },
+              {
+                "type": "course",
+                "code": "CSE 8A"
+              },
+              {
+                "type": "course",
+                "code": "CSE 25"
+              },
+              {
+                "type": "course",
+                "code": "CSE 42"
+              },
+              {
+                "type": "course",
+                "code": "CSE 86"
+              },
+              {
+                "type": "course",
+                "code": "CSE 89"
+              },
+              {
+                "type": "course",
+                "code": "CSE 90"
+              },
+              {
+                "type": "course",
+                "code": "CSE 91"
+              },
+              {
+                "type": "course",
+                "code": "CSE 95"
+              },
+              {
+                "type": "course",
+                "code": "CSE 99"
+              },
+              {
+                "type": "course",
+                "code": "CSE 180"
+              },
+              {
+                "type": "course",
+                "code": "CSE 180R"
+              },
+              {
+                "type": "course",
+                "code": "MAE 8"
+              },
+              {
+                "type": "course",
+                "code": "MAE 9"
+              },
+              {
+                "type": "course",
+                "code": "COGS 9"
+              },
+              {
+                "type": "course",
+                "code": "COGS 10"
+              },
+              {
+                "type": "course",
+                "code": "COGS 18"
+              },
+              {
+                "type": "course",
+                "code": "ECE 15"
+              },
+              {
+                "type": "course",
+                "code": "ENG 10"
+              },
+              {
+                "type": "course",
+                "code": "ENG 15"
+              },
+              {
+                "type": "course",
+                "code": "NANO 15"
+              },
+              {
+                "type": "course",
+                "code": "CENG 15"
+              },
+              {
+                "type": "any",
+                "subject": "CSE",
+                "level": "upper"
+              },
+              {
+                "type": "text",
+                "text": "or any CSE upper-division course not used to fulfill other degree requirements"
+              }
+            ],
+            "label": "Computer Science and Engineering"
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "MATH 20A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 20B"
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 20C"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 31BH"
+                  }
+                ]
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 18"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 31AH"
+                  }
+                ]
+              }
+            ],
+            "label": "Mathematics"
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "CHEM 6A"
+              },
+              {
+                "type": "course",
+                "code": "CHEM 6B"
+              }
+            ],
+            "label": "Chemistry"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "CHEM 40A"
+              },
+              {
+                "type": "course",
+                "code": "CHEM 41A"
+              }
+            ],
+            "label": "Organic Chemistry"
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "BILD 1"
+              },
+              {
+                "type": "course",
+                "code": "BILD 3"
+              },
+              {
+                "type": "course",
+                "code": "BILD 4"
+              }
+            ],
+            "label": "Biology"
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "PHYS 2A"
+              }
+            ],
+            "label": "Physics"
+          }
+        ],
+        "notes": "All classes must be taken for a letter grade unless offered P/NP only."
+      }
+    },
+    {
+      "name": "Upper-Division Requirements",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "course",
+            "code": "CSE 100"
+          },
+          {
+            "type": "course",
+            "code": "CSE 101"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "BIBC 100"
+              },
+              {
+                "type": "course",
+                "code": "CHEM 114A"
+              },
+              {
+                "type": "course",
+                "code": "BIBC 102"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "BICD 100"
+          },
+          {
+            "type": "course",
+            "code": "BIMM 100"
+          },
+          {
+            "type": "course",
+            "code": "BIMM 101"
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "CSE 181"
+                  },
+                  {
+                    "type": "course",
+                    "code": "BIMM 181"
+                  },
+                  {
+                    "type": "course",
+                    "code": "BENG 181"
+                  }
+                ]
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "CSE 182"
+                  },
+                  {
+                    "type": "course",
+                    "code": "BIMM 182"
+                  },
+                  {
+                    "type": "course",
+                    "code": "BENG 182"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "BENG 183"
+              },
+              {
+                "type": "course",
+                "code": "CSE 185"
+              },
+              {
+                "type": "course",
+                "code": "MATH 186"
+              }
+            ],
+            "label": "The bioinformatics series"
+          },
+          {
+            "type": "choose",
+            "count": 5,
+            "items": [
+              {
+                "type": "any",
+                "subject": "CSE",
+                "level": "upper",
+                "except": [
+                  "CSE 195"
+                ]
+              },
+              {
+                "type": "course",
+                "code": "COGS 108"
+              },
+              {
+                "type": "course",
+                "code": "COGS 109"
+              },
+              {
+                "type": "course",
+                "code": "COGS 118A"
+              },
+              {
+                "type": "course",
+                "code": "COGS 118B"
+              },
+              {
+                "type": "course",
+                "code": "COGS 118C"
+              },
+              {
+                "type": "range",
+                "subject": "COGS",
+                "from": 120,
+                "to": 127
+              },
+              {
+                "type": "course",
+                "code": "COGS 181"
+              },
+              {
+                "type": "course",
+                "code": "COGS 185"
+              },
+              {
+                "type": "course",
+                "code": "COGS 187A"
+              },
+              {
+                "type": "course",
+                "code": "COGS 187B"
+              },
+              {
+                "type": "course",
+                "code": "COGS 189"
+              },
+              {
+                "type": "course",
+                "code": "DSC 102"
+              },
+              {
+                "type": "course",
+                "code": "ECE 140A"
+              },
+              {
+                "type": "course",
+                "code": "ECE 140B"
+              },
+              {
+                "type": "course",
+                "code": "EDS 124AR"
+              },
+              {
+                "type": "course",
+                "code": "EDS 124BR"
+              },
+              {
+                "type": "course",
+                "code": "ENG 100D"
+              },
+              {
+                "type": "course",
+                "code": "ENG 100L"
+              },
+              {
+                "type": "course",
+                "code": "LIGN 165"
+              },
+              {
+                "type": "course",
+                "code": "LIGN 167"
+              },
+              {
+                "type": "text",
+                "text": "Five upper-division electives: The following courses may also be applied to the twenty-four-unit minimum"
+              }
+            ],
+            "label": "Five upper-division electives",
+            "notes": "Students may use twelve units of CSE 190 toward CSE elective credit (CSE 291 counts toward this maximum). Up to eight units of ENG 100D/L toward upper-division CSE elective/technical elective credits; ENG 100D only once. A maximum of twelve units of P/NP courses may count, chosen from: a maximum of eight units of CSE 198 or 199 or 199H; a maximum of four units of CSE 197; a maximum of two units of CSE 109. A maximum of four units of special studies course work may count from the following: CSE 197, CSE 198, CSE 199, CSE 199H, ENG 100D, or ENG 100L. Undergraduate students may petition to use graduate-level course work toward their elective requirements. The catalog says \"Five upper-division electives\" but also refers to a \"twenty-four-unit minimum\"; five four-unit courses fit its sixty-four upper-division units."
+          }
+        ],
+        "notes": "Students must complete sixty-four upper-division units. All courses must be taken for a letter grade unless offered P/NP only."
+      }
+    }
+  ]
+}

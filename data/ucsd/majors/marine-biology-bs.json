@@ -1,0 +1,412 @@
+{
+  "name": "Marine Biology - BS",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Scripps Institution of Oceanography",
+  "source": "https://catalog.ucsd.edu/curric/SIO-ug.html",
+  "narrative": [
+    "Students must receive a grade of C– or higher in any course to be counted toward fulfillment of the major requirements (with the exception of SIO 90 and SIO 139, which are only offered on a P/NP basis).",
+    "One quarter of SIO 199 credit (four units) may be used as a restricted elective but does not satisfy a laboratory course requirement."
+  ],
+  "sections": [
+    {
+      "name": "Lower-Division Requirements",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 10A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 10B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 10C"
+                  }
+                ]
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 20A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 20B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 20C"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "CHEM 6A"
+              },
+              {
+                "type": "course",
+                "code": "CHEM 6B"
+              },
+              {
+                "type": "course",
+                "code": "CHEM 6C"
+              },
+              {
+                "type": "course",
+                "code": "CHEM 7L"
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "PHYS 1A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 1AL"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 1B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 1BL"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 1C"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 1CL"
+                  }
+                ]
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "PHYS 2A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 2B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 2C"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "BILD 1"
+          },
+          {
+            "type": "course",
+            "code": "BILD 2"
+          },
+          {
+            "type": "course",
+            "code": "BILD 3"
+          },
+          {
+            "type": "course",
+            "code": "SIO 90"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Marine Biology Core",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "course",
+            "code": "SIO 132"
+          },
+          {
+            "type": "course",
+            "code": "SIO 134"
+          },
+          {
+            "type": "course",
+            "code": "SIO 181"
+          },
+          {
+            "type": "course",
+            "code": "SIO 136"
+          },
+          {
+            "type": "course",
+            "code": "SIO 139"
+          }
+        ],
+        "notes": "all courses required"
+      }
+    },
+    {
+      "name": "Biology Core Courses",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "course",
+            "code": "SIO 187"
+          },
+          {
+            "type": "course",
+            "code": "BICD 100"
+          }
+        ],
+        "notes": "all courses required"
+      }
+    },
+    {
+      "name": "Oceans Physics and Chemistry Requirement",
+      "requirement": {
+        "type": "course",
+        "code": "SIO 119"
+      }
+    },
+    {
+      "name": "Restricted Electives",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "choose",
+            "count": 2,
+            "items": [
+              {
+                "type": "course",
+                "code": "SIO 101"
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "SIO 104"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SIO 148"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "SIO 131"
+              },
+              {
+                "type": "course",
+                "code": "SIO 145"
+              },
+              {
+                "type": "course",
+                "code": "SIO 146"
+              },
+              {
+                "type": "course",
+                "code": "SIO 147"
+              },
+              {
+                "type": "course",
+                "code": "SIO 183"
+              },
+              {
+                "type": "course",
+                "code": "SIO 184"
+              },
+              {
+                "type": "course",
+                "code": "SIO 185"
+              },
+              {
+                "type": "course",
+                "code": "SIO 186"
+              },
+              {
+                "type": "course",
+                "code": "SIO 188"
+              },
+              {
+                "type": "course",
+                "code": "BIBC 103"
+              }
+            ],
+            "label": "Laboratory courses",
+            "notes": "two of the five must be indicated as laboratory courses"
+          },
+          {
+            "type": "choose",
+            "count": 3,
+            "items": [
+              {
+                "type": "course",
+                "code": "SIO 101"
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "SIO 104"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SIO 148"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "SIO 121"
+              },
+              {
+                "type": "course",
+                "code": "SIO 122"
+              },
+              {
+                "type": "course",
+                "code": "SIO 123"
+              },
+              {
+                "type": "course",
+                "code": "SIO 124"
+              },
+              {
+                "type": "course",
+                "code": "SIO 125"
+              },
+              {
+                "type": "course",
+                "code": "SIO 126"
+              },
+              {
+                "type": "course",
+                "code": "SIO 127"
+              },
+              {
+                "type": "course",
+                "code": "SIO 128"
+              },
+              {
+                "type": "course",
+                "code": "SIO 129"
+              },
+              {
+                "type": "course",
+                "code": "SIO 131"
+              },
+              {
+                "type": "course",
+                "code": "SIO 133"
+              },
+              {
+                "type": "course",
+                "code": "SIO 137"
+              },
+              {
+                "type": "course",
+                "code": "SIO 138"
+              },
+              {
+                "type": "course",
+                "code": "SIO 145"
+              },
+              {
+                "type": "course",
+                "code": "SIO 146"
+              },
+              {
+                "type": "course",
+                "code": "SIO 147"
+              },
+              {
+                "type": "course",
+                "code": "SIO 183"
+              },
+              {
+                "type": "course",
+                "code": "SIO 184"
+              },
+              {
+                "type": "course",
+                "code": "SIO 185"
+              },
+              {
+                "type": "course",
+                "code": "SIO 186"
+              },
+              {
+                "type": "course",
+                "code": "SIO 188"
+              },
+              {
+                "type": "course",
+                "code": "SIO 189"
+              },
+              {
+                "type": "course",
+                "code": "BIBC 103"
+              },
+              {
+                "type": "course",
+                "code": "BIBC 102"
+              },
+              {
+                "type": "course",
+                "code": "BIEB 102"
+              },
+              {
+                "type": "course",
+                "code": "BIEB 150"
+              },
+              {
+                "type": "course",
+                "code": "SIO 199"
+              }
+            ],
+            "notes": "the remaining three restricted electives (lab courses count too); one quarter of SIO 199 (four units) may be used"
+          }
+        ],
+        "label": "Restricted Electives",
+        "notes": "at least five of the following; two must be indicated as laboratory courses. SIO 199 (one quarter) does not satisfy a laboratory course requirement."
+      }
+    }
+  ]
+}

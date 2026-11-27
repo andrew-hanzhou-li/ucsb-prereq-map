@@ -1,0 +1,247 @@
+{
+ "id": "UCSD-MAJOR-music-humanities-ba",
+ "name": "Music/Humanities - BA",
+ "kind": "major",
+ "type": "Bachelor's Degree",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsd.edu/curric/MUS-ug.html",
+ "sections": [
+  {
+   "name": "Prerequisite",
+   "requirement": {
+    "type": "choose",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "MUS 1A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUS 1B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUS 1C",
+        "status": "active"
+       }
+      ]
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "MUS 2A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUS 2B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUS 2C",
+        "status": "active"
+       }
+      ]
+     }
+    ],
+    "count": 1,
+    "notes": "Music 1A-B-C (or 2A-B-C, if qualified)"
+   }
+  },
+  {
+   "name": "Music History",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "MUS 120A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MUS 120B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MUS 120C",
+      "status": "active"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Music Literature",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "MUS 107",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUS 110",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUS 116",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUS 150",
+        "status": "active"
+       }
+      ],
+      "count": 1,
+      "notes": "at least one must be 107, 110, 116, or 150"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "MUS 107",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUS 110",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUS 111",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUS 112",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUS 113",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUS 114",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUS 115",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUS 116",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUS 126",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUS 127",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUS 150",
+        "status": "active"
+       }
+      ],
+      "count": 2
+     }
+    ],
+    "label": "Three courses chosen from MUS 107-116, 126, 127, and 150"
+   }
+  },
+  {
+   "name": "Humanities Focus",
+   "requirement": {
+    "type": "text",
+    "text": "A coherent set of six upper-division courses selected from the humanities or fine arts (including music) that focuses on a specific topic, chosen in consultation with the music/humanities academic adviser"
+   }
+  },
+  {
+   "name": "Ensemble Performance",
+   "requirement": {
+    "type": "choose",
+    "items": [
+     {
+      "type": "text",
+      "text": "MUS 95B–W"
+     },
+     {
+      "type": "course",
+      "code": "MUS 130",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MUS 131",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MUS 133",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MUS 134",
+      "status": "active"
+     }
+    ],
+    "count": 3,
+    "label": "Ensemble performance",
+    "notes": "Any three of MUS 95B–W, 130, 131, 133, or 134 (One of these may be repeated for credit)"
+   }
+  },
+  {
+   "name": "Department Seminar",
+   "requirement": {
+    "type": "choose",
+    "items": [
+     {
+      "type": "course",
+      "code": "MUS 43",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MUS 143",
+      "status": "active"
+     }
+    ],
+    "count": 1,
+    "label": "Department Seminar",
+    "notes": "MUS 43/143 every quarter"
+   }
+  }
+ ],
+ "narrative": [
+  "Students interested in this major should confer with the music/humanities faculty adviser to work out a course of study, which must be submitted at the beginning of the junior year for the adviser’s written approval.",
+  "The prerequisite for the music/humanities major is Music 1A-B-C (or 2A-B-C, if qualified)."
+ ]
+}

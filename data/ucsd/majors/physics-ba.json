@@ -1,0 +1,203 @@
+{
+  "name": "Physics - BA",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Physics",
+  "major_code": "PY35",
+  "source": "https://catalog.ucsd.edu/curric/PHYS-ug.html",
+  "narrative": [
+    "The Physics 4 series is designed to prepare students for the upper-division program and is required for all physics majors.",
+    "The honors math series (MATH 31AH, 31BH, 31CH) can replace the standard math courses (MATH 18, 20C, 20E, respectively).",
+    "A course that is listed in several areas cannot count towards more than one area and can satisfy only ONE of the major requirements.",
+    "P/NP Grading Option: Not allowed for any courses applied to the major (the exceptions are courses completed via AP/IB/A-Level and a single four-unit PHYS 199/199H that may only be applied as an upper-division restricted elective).",
+    "A grade point average of 2.0 or higher in the upper-division major program is required for graduation. Students must receive a grade of C– or better in any course to be counted toward fulfillment of the major requirements.",
+    "At least 60 percent of the upper-division courses in the major must be taken while in residence at UC San Diego. All core upper-division courses must be taken while in residence at UC San Diego.",
+    "Substitutions/Exceptions: Permissible only by approved petition to the department.",
+    "Lower-division units 52; upper-division units 49; total units required for the major 101.",
+    "Programming: For students transferring into the physics program, one of the following courses is accepted via petition provided the course was completed before the transfer into physics was formalized: CENG/NANO 15; COGS 18; CSE 8A, 11, 12; ECE 15; MAE 8.",
+    "Double Majors: Approved by petition only; the equivalent of at least ten upper-division courses (forty units) must be unique to each major. A student cannot pursue two majors within the Department of Physics.",
+    "To broaden preparation in the sciences, the following courses are recommended but not required: BILD 1, 2, 3; CHEM 6A-B-C, CSE 30, MAE 03."
+  ],
+  "sections": [
+    {
+      "name": "Lower-Division Requirements",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "course",
+            "code": "PHYS 4A"
+          },
+          {
+            "type": "course",
+            "code": "PHYS 4B"
+          },
+          {
+            "type": "course",
+            "code": "PHYS 4C"
+          },
+          {
+            "type": "course",
+            "code": "PHYS 4D"
+          },
+          {
+            "type": "course",
+            "code": "PHYS 4E"
+          },
+          {
+            "type": "course",
+            "code": "PHYS 2CL"
+          },
+          {
+            "type": "course",
+            "code": "PHYS 2DL"
+          },
+          {
+            "type": "course",
+            "code": "PHYS 41"
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 18"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 31AH"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "MATH 20A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 20B"
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 20C"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 31BH"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "MATH 20D"
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 20E"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 31CH"
+                  }
+                ]
+              }
+            ],
+            "notes": "MATH 18 and 20A-B-C-D-E; the honors math series (MATH 31AH, 31BH, 31CH) can replace MATH 18, 20C, 20E, respectively."
+          }
+        ]
+      }
+    },
+    {
+      "name": "Upper-Division Core",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "course",
+            "code": "PHYS 100A"
+          },
+          {
+            "type": "course",
+            "code": "PHYS 100B"
+          },
+          {
+            "type": "course",
+            "code": "PHYS 110A"
+          },
+          {
+            "type": "course",
+            "code": "PHYS 120"
+          },
+          {
+            "type": "course",
+            "code": "PHYS 130A"
+          }
+        ],
+        "notes": "twenty-one units"
+      }
+    },
+    {
+      "name": "Restricted Electives",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "units",
+            "units": 12,
+            "label": "Physics",
+            "notes": "at least twelve units from upper-division or graduate-level physics",
+            "items": [
+              {
+                "type": "any",
+                "subject": "PHYS",
+                "level": "upper"
+              },
+              {
+                "type": "range",
+                "subject": "PHYS",
+                "from": 200,
+                "to": 299
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 4,
+            "notes": "Remaining four-unit upper-division courses from the sciences and engineering; physics courses count too. A single four-unit PHYS 199/199H (may be P/NP) may be applied.",
+            "items": [
+              {
+                "type": "any",
+                "subject": "PHYS",
+                "level": "upper"
+              },
+              {
+                "type": "range",
+                "subject": "PHYS",
+                "from": 200,
+                "to": 299
+              },
+              {
+                "type": "text",
+                "text": "any four-unit upper-division course from the sciences and engineering"
+              }
+            ]
+          }
+        ],
+        "label": "Restricted Electives",
+        "notes": "Seven four-unit upper-division courses from the sciences and engineering, with at least twelve units from upper-division or graduate-level physics (twenty-eight units)"
+      }
+    }
+  ]
+}

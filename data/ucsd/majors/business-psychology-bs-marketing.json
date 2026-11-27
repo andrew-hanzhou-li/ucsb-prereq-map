@@ -1,0 +1,679 @@
+{
+  "name": "Business Psychology - BS - Marketing",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Rady School of Management",
+  "source": "https://catalog.ucsd.edu/curric/MGT-ug.html",
+  "narrative": [
+    "All courses taken for the major must be letter-graded and completed with a C– or better. Exceptions for PSYC 99, PSYC 195P, PSYC 199, and AIP 197 which are only offered on a P/NP grading option and major lower-division natural science, formal skills, computer programming, and research methods.",
+    "A course may only fulfill one major course requirement.",
+    "Excluded from credit toward the major are graduate seminars (2XX).",
+    "A maximum of three upper-division courses toward the major may be taken outside UC San Diego.",
+    "A grade-point average of at least 2.0 in the upper-division major courses is required for graduation.",
+    "Lower-division courses for the major should be completed by the end of the sophomore year.",
+    "Students may choose to complete a twelve-unit concentration in marketing, STEM, or operations."
+  ],
+  "sections": [
+    {
+      "name": "Lower-Division Requirements (forty units)",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "choose",
+            "count": 3,
+            "items": [
+              {
+                "type": "course",
+                "code": "BILD 1"
+              },
+              {
+                "type": "course",
+                "code": "BILD 2"
+              },
+              {
+                "type": "course",
+                "code": "BILD 3"
+              },
+              {
+                "type": "course",
+                "code": "BILD 10"
+              },
+              {
+                "type": "course",
+                "code": "BILD 20"
+              },
+              {
+                "type": "course",
+                "code": "BILD 26"
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "BILD 12"
+                  },
+                  {
+                    "type": "course",
+                    "code": "COGS 17"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PSYC 2"
+                  }
+                ],
+                "notes": "Only one of BILD 12, COGS 17, or PSYC 2 may be counted toward this requirement."
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "CHEM 4"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CHEM 11"
+                  }
+                ],
+                "notes": "Only one of CHEM 4 or 11 can be taken for credit."
+              },
+              {
+                "type": "course",
+                "code": "CHEM 6A"
+              },
+              {
+                "type": "course",
+                "code": "CHEM 6B"
+              },
+              {
+                "type": "course",
+                "code": "CHEM 6C"
+              },
+              {
+                "type": "course",
+                "code": "CHEM 12"
+              },
+              {
+                "type": "course",
+                "code": "CHEM 13"
+              },
+              {
+                "type": "course",
+                "code": "PHYS 1A"
+              },
+              {
+                "type": "course",
+                "code": "PHYS 1B"
+              },
+              {
+                "type": "course",
+                "code": "PHYS 1C"
+              },
+              {
+                "type": "course",
+                "code": "PHYS 2A"
+              },
+              {
+                "type": "course",
+                "code": "PHYS 2B"
+              },
+              {
+                "type": "course",
+                "code": "PHYS 2C"
+              },
+              {
+                "type": "course",
+                "code": "PHYS 10"
+              },
+              {
+                "type": "course",
+                "code": "PHYS 11"
+              }
+            ],
+            "label": "Three Natural Science Courses"
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "choose",
+                    "count": 1,
+                    "items": [
+                      {
+                        "type": "course",
+                        "code": "MATH 10A"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MATH 20A"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "choose",
+                    "count": 1,
+                    "items": [
+                      {
+                        "type": "course",
+                        "code": "MATH 10B"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MATH 20B"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 18"
+                  }
+                ],
+                "label": "Choose one mathematics course"
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "choose",
+                    "count": 1,
+                    "items": [
+                      {
+                        "type": "course",
+                        "code": "MATH 10A"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MATH 20A"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "choose",
+                    "count": 1,
+                    "items": [
+                      {
+                        "type": "course",
+                        "code": "MATH 10B"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MATH 20B"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 18"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHIL 10"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHIL 12"
+                  }
+                ],
+                "label": "Choose one course from the list that has not already been completed"
+              }
+            ],
+            "label": "Two Formal Skills Courses"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "COGS 18"
+              },
+              {
+                "type": "course",
+                "code": "CSE 6R"
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "CSE 8A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CSE 8B"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "CSE 11"
+              },
+              {
+                "type": "course",
+                "code": "CSE 12"
+              },
+              {
+                "type": "course",
+                "code": "CSS 1"
+              },
+              {
+                "type": "course",
+                "code": "DSC 10"
+              },
+              {
+                "type": "course",
+                "code": "ECE 15"
+              },
+              {
+                "type": "course",
+                "code": "MAE 5"
+              },
+              {
+                "type": "course",
+                "code": "MAE 8"
+              }
+            ],
+            "label": "One Computer Programming Course",
+            "notes": "COGS 18, CSS 1, ECE 15, MAE 8 are preferred for students who plan to pursue research careers in psychology."
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "PSYC 60"
+              },
+              {
+                "type": "course",
+                "code": "MGT 3"
+              },
+              {
+                "type": "course",
+                "code": "BENG 100"
+              },
+              {
+                "type": "course",
+                "code": "BIEB 100"
+              },
+              {
+                "type": "course",
+                "code": "COGS 14B"
+              },
+              {
+                "type": "course",
+                "code": "ECON 120A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 11"
+              },
+              {
+                "type": "course",
+                "code": "MATH 181A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 183"
+              },
+              {
+                "type": "course",
+                "code": "MATH 186"
+              }
+            ],
+            "label": "One Statistics Course",
+            "notes": "PSYC 60 preferred"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "PSYC 70"
+              },
+              {
+                "type": "course",
+                "code": "COGS 14A"
+              }
+            ],
+            "label": "One Research Methods Course",
+            "notes": "PSYC 70 preferred"
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "MGT 16"
+              },
+              {
+                "type": "course",
+                "code": "MGT 18"
+              }
+            ],
+            "label": "Two Business Fundamentals Courses"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Research Requirement (eight units)",
+      "requirement": {
+        "type": "choose",
+        "count": 1,
+        "items": [
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "MGT 52"
+              },
+              {
+                "type": "course",
+                "code": "MGT 151R"
+              }
+            ]
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "MGT 52"
+              },
+              {
+                "type": "course",
+                "code": "MGT 151A"
+              }
+            ]
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "MGT 52"
+              },
+              {
+                "type": "course",
+                "code": "MGT 153"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "Two PSYC 199 courses (2 PSYC 199s)"
+          },
+          {
+            "type": "text",
+            "text": "Two MGT 199 courses (2 MGT 199s)"
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "PSYC 199"
+              },
+              {
+                "type": "course",
+                "code": "MGT 199"
+              }
+            ]
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "PSYC 194A"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 194B"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 194C"
+              }
+            ]
+          }
+        ],
+        "label": "Two Research Experience Courses (choose one of the pair options)",
+        "notes": "If the research experience requirement is fully satisfied by MGT 199 and/or PSYC 199, their independent research experience must culminate in a research paper approved by the faculty adviser and submitted to the Psychology Student Affairs Office."
+      }
+    },
+    {
+      "name": "Upper-Division Requirements (forty-four units)",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "PSYC 104"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 105"
+              }
+            ],
+            "label": "Two Psychology Core Courses in Business Psychology"
+          },
+          {
+            "type": "choose",
+            "count": 2,
+            "items": [
+              {
+                "type": "course",
+                "code": "PSYC 100"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 101"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 102"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 106"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 108"
+              }
+            ],
+            "label": "Two Additional Psychology Core Courses"
+          },
+          {
+            "type": "units",
+            "units": 12,
+            "items": [
+              {
+                "type": "course",
+                "code": "MGT 100"
+              },
+              {
+                "type": "course",
+                "code": "MGT 102"
+              },
+              {
+                "type": "course",
+                "code": "MGT 103"
+              },
+              {
+                "type": "course",
+                "code": "MGT 105"
+              },
+              {
+                "type": "course",
+                "code": "MGT 106"
+              },
+              {
+                "type": "course",
+                "code": "MGT 107"
+              },
+              {
+                "type": "course",
+                "code": "MGT 108R"
+              },
+              {
+                "type": "course",
+                "code": "MGT 109"
+              },
+              {
+                "type": "course",
+                "code": "MGT 129"
+              },
+              {
+                "type": "course",
+                "code": "MGT 154"
+              },
+              {
+                "type": "course",
+                "code": "MGT 162"
+              },
+              {
+                "type": "course",
+                "code": "MGT 164"
+              }
+            ],
+            "label": "Three to Four Business Courses: Marketing-related Courses (twelve units)",
+            "notes": "Twelve units from the marketing-related courses (the concentration). MGT 129 is a topics course: only the listed topic Interpersonal Communication at Work (2 units) counts."
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "PSYC 148"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PSYC 151"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PSYC 178"
+                  }
+                ],
+                "notes": "Students must choose at least one of these courses: PSYC 148, PSYC 151, PSYC 178"
+              },
+              {
+                "type": "choose",
+                "count": 2,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "PSYC 137"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PSYC 143"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PSYC 147"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PSYC 148"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PSYC 151"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PSYC 153"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PSYC 154"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PSYC 158"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PSYC 161"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PSYC 162"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PSYC 176"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PSYC 178"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PSYC 184"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PSYC 187"
+                  }
+                ],
+                "notes": "remaining two electives from the list, not already counted"
+              }
+            ],
+            "label": "Three Additional Psychology Electives in Business Psychology"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "range",
+                "subject": "PSYC",
+                "from": 100,
+                "to": 111
+              },
+              {
+                "type": "range",
+                "subject": "PSYC",
+                "from": 122,
+                "to": 193
+              },
+              {
+                "type": "course",
+                "code": "PSYC 195P"
+              },
+              {
+                "type": "course",
+                "code": "AIP 197"
+              }
+            ],
+            "label": "One Open Elective in Psychology",
+            "notes": "Students may use one four-unit PSYC 195P and/or AIP 197 toward the upper-division (UD) psychology elective requirement. Preapproval from the Psychology Advising Office is required."
+          }
+        ]
+      }
+    }
+  ]
+}

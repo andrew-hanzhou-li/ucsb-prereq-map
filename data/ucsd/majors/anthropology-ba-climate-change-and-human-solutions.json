@@ -1,0 +1,198 @@
+{
+  "name": "Anthropology - BA - Climate Change and Human Solutions",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Anthropology",
+  "source": "https://catalog.ucsd.edu/curric/ANTH-ug.html",
+  "narrative": [
+    "Twelve upper-division courses, forty-eight units.",
+    "There are no lower-division requirements. All courses must be taken for a letter grade of C– or better.",
+    "No courses taken in fulfillment of the above requirements may be taken on a Pass/Not Pass (P/NP) basis. All courses applied toward the major must be taken for a letter grade of C– or better. [An exception is made for some courses accepted from other schools and for one independent study course (199) or one directed group study course (198). However, this exception does not extend to ANTH 101, 102, or 103, or to transfer credits accepted in lieu of them.]",
+    "Climate change human solutions field experience: Recommended (not required): minimum of one hundred hours; may be noncredit or credit bearing, using ANTH 197/198/199.",
+    "For the BA degree, a minimum average GPA of 2.0 is required, both as an overall average in all anthropology courses and in the ANTH 101, 102, and 103 sequence considered separately.",
+    "At least seven of the upper-division courses submitted for the major must be taken at UC San Diego. The seven normally must include ANTH 101, 102, and 103."
+  ],
+  "sections": [
+    {
+      "name": "Core Requirements",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "course",
+            "code": "ANTH 101"
+          },
+          {
+            "type": "course",
+            "code": "ANTH 102"
+          },
+          {
+            "type": "course",
+            "code": "ANTH 103"
+          }
+        ],
+        "label": "Anthropology Core Courses"
+      }
+    },
+    {
+      "name": "Upper-Division Concentration Requirements",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "course",
+            "code": "ANTH 110"
+          },
+          {
+            "type": "choose",
+            "count": 2,
+            "items": [
+              {
+                "type": "course",
+                "code": "ANAR 120"
+              },
+              {
+                "type": "course",
+                "code": "ANAR 146"
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "ANAR 166"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SIO 166"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "ANBI 132"
+              },
+              {
+                "type": "course",
+                "code": "ANBI 174"
+              },
+              {
+                "type": "course",
+                "code": "ANSC 144"
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "ANSC 147"
+                  },
+                  {
+                    "type": "course",
+                    "code": "GLBH 147"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "ANSC 184"
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "ANSC 193"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ANSC 193GS"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "ANTH 105"
+              },
+              {
+                "type": "course",
+                "code": "ANTH 106"
+              },
+              {
+                "type": "course",
+                "code": "ANTH 108"
+              },
+              {
+                "type": "course",
+                "code": "ANTH 109"
+              }
+            ],
+            "notes": "All students will take two of the following. ANAR 166 is cross-listed with SIO 166; ANSC 147 with GLBH 147; ANSC 193 or ANSC 193GS."
+          }
+        ]
+      }
+    },
+    {
+      "name": "Skills and Methods",
+      "requirement": {
+        "type": "choose",
+        "count": 1,
+        "items": [
+          {
+            "type": "course",
+            "code": "ANAR 104"
+          },
+          {
+            "type": "course",
+            "code": "ANAR 121"
+          },
+          {
+            "type": "course",
+            "code": "ANSC 138"
+          },
+          {
+            "type": "course",
+            "code": "ANSC 183"
+          },
+          {
+            "type": "course",
+            "code": "ANTH 107"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Upper-Division Elective Requirements",
+      "requirement": {
+        "type": "choose",
+        "count": 5,
+        "items": [
+          {
+            "type": "any",
+            "subject": "ANAR",
+            "level": "upper"
+          },
+          {
+            "type": "any",
+            "subject": "ANBI",
+            "level": "upper"
+          },
+          {
+            "type": "any",
+            "subject": "ANSC",
+            "level": "upper"
+          },
+          {
+            "type": "any",
+            "subject": "ANTH",
+            "level": "upper"
+          }
+        ],
+        "notes": "FIVE upper-division anthropology courses from any category. Credit-bearing field experience (up to two ANTH 198/199 by petition) counts as an elective toward the concentration."
+      }
+    }
+  ]
+}

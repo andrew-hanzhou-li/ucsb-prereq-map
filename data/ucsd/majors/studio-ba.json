@@ -1,0 +1,423 @@
+{
+  "name": "Studio - BA",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Visual Arts",
+  "major_code": "VA28",
+  "source": "https://catalog.ucsd.edu/curric/VIS-ug.html",
+  "narrative": [
+    "All courses taken to satisfy major requirements must be taken for a letter grade, and only grades of C– or better will be accepted in the visual arts major.",
+    "A minimum of two-thirds of the course work completed for the major must be taken at UC San Diego.",
+    "Double majors within the department (art history/theory/criticism paired with studio, speculative design, media, or ICAM) must have at least ten upper-division courses that are unique to each departmental major.",
+    "Degree type (BA) is not stated on the page; assumed BA."
+  ],
+  "sections": [
+    {
+      "name": "Lower Division: Foundation Level",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "course",
+            "code": "VIS 11"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "VIS 22"
+              },
+              {
+                "type": "course",
+                "code": "VIS 22R"
+              }
+            ],
+            "label": "VIS 22/22R"
+          },
+          {
+            "type": "course",
+            "code": "VIS 80"
+          },
+          {
+            "type": "choose",
+            "count": 2,
+            "items": [
+              {
+                "type": "course",
+                "code": "VIS 1"
+              },
+              {
+                "type": "course",
+                "code": "VIS 2"
+              },
+              {
+                "type": "course",
+                "code": "VIS 3"
+              },
+              {
+                "type": "course",
+                "code": "VIS 41"
+              },
+              {
+                "type": "course",
+                "code": "VIS 42"
+              },
+              {
+                "type": "course",
+                "code": "VIS 60"
+              },
+              {
+                "type": "course",
+                "code": "VIS 70N"
+              }
+            ],
+            "label": "Art making"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "VIS 12R"
+              },
+              {
+                "type": "course",
+                "code": "VIS 20"
+              },
+              {
+                "type": "course",
+                "code": "VIS 21A"
+              },
+              {
+                "type": "course",
+                "code": "VIS 21B"
+              },
+              {
+                "type": "course",
+                "code": "VIS 21C"
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "VIS 83"
+                  },
+                  {
+                    "type": "course",
+                    "code": "VIS 83R"
+                  }
+                ],
+                "label": "VIS 83/83R"
+              },
+              {
+                "type": "course",
+                "code": "VIS 84"
+              },
+              {
+                "type": "course",
+                "code": "VIS 84B"
+              },
+              {
+                "type": "course",
+                "code": "VIS 85A"
+              },
+              {
+                "type": "course",
+                "code": "VIS 85B"
+              }
+            ],
+            "label": "History"
+          }
+        ],
+        "notes": "Six courses required."
+      }
+    },
+    {
+      "name": "Upper Division: Intermediate Level",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "choose",
+            "count": 3,
+            "items": [
+              {
+                "type": "course",
+                "code": "VIS 104A"
+              },
+              {
+                "type": "course",
+                "code": "VIS 105A"
+              },
+              {
+                "type": "course",
+                "code": "VIS 106A"
+              },
+              {
+                "type": "course",
+                "code": "VIS 107A"
+              }
+            ],
+            "label": "Group A"
+          },
+          {
+            "type": "choose",
+            "count": 2,
+            "items": [
+              {
+                "type": "course",
+                "code": "VIS 104B"
+              },
+              {
+                "type": "course",
+                "code": "VIS 105B"
+              },
+              {
+                "type": "course",
+                "code": "VIS 106B"
+              },
+              {
+                "type": "course",
+                "code": "VIS 107B"
+              }
+            ],
+            "label": "Group B"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "VIS 100"
+              },
+              {
+                "type": "course",
+                "code": "VIS 101"
+              },
+              {
+                "type": "course",
+                "code": "VIS 102"
+              },
+              {
+                "type": "course",
+                "code": "VIS 133"
+              },
+              {
+                "type": "course",
+                "code": "VIS 134"
+              },
+              {
+                "type": "course",
+                "code": "VIS 142"
+              },
+              {
+                "type": "course",
+                "code": "VIS 147A"
+              },
+              {
+                "type": "course",
+                "code": "VIS 163"
+              },
+              {
+                "type": "course",
+                "code": "VIS 164"
+              },
+              {
+                "type": "course",
+                "code": "VIS 165"
+              },
+              {
+                "type": "course",
+                "code": "VIS 165A"
+              },
+              {
+                "type": "course",
+                "code": "VIS 165B"
+              },
+              {
+                "type": "course",
+                "code": "VIS 174"
+              }
+            ],
+            "label": "Interdisciplinary"
+          }
+        ],
+        "notes": "Six courses required."
+      }
+    },
+    {
+      "name": "History and Theory",
+      "requirement": {
+        "type": "choose",
+        "count": 3,
+        "items": [
+          {
+            "type": "range",
+            "subject": "VIS",
+            "from": 120,
+            "to": 129
+          },
+          {
+            "type": "range",
+            "subject": "VIS",
+            "from": 150,
+            "to": 159
+          },
+          {
+            "type": "course",
+            "code": "VIS 194S"
+          }
+        ],
+        "notes": "Any upper-division art history course: VIS 120–129; any upper-division media history course: VIS 150–159, 194S."
+      }
+    },
+    {
+      "name": "Upper Division: Advanced Level",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "VIS 104C"
+              },
+              {
+                "type": "course",
+                "code": "VIS 105C"
+              },
+              {
+                "type": "course",
+                "code": "VIS 106C"
+              },
+              {
+                "type": "course",
+                "code": "VIS 107C"
+              }
+            ],
+            "label": "Art making"
+          },
+          {
+            "type": "choose",
+            "count": 2,
+            "items": [
+              {
+                "type": "course",
+                "code": "VIS 100A"
+              },
+              {
+                "type": "course",
+                "code": "VIS 101A"
+              },
+              {
+                "type": "course",
+                "code": "VIS 108"
+              },
+              {
+                "type": "text",
+                "text": "VIS 110A–K. Advanced—Various Topics"
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "VIS 110M"
+                  },
+                  {
+                    "type": "course",
+                    "code": "VIS 110N"
+                  }
+                ],
+                "label": "VIS 110M–N. Studio Honors"
+              },
+              {
+                "type": "course",
+                "code": "VIS 130"
+              },
+              {
+                "type": "course",
+                "code": "VIS 131"
+              },
+              {
+                "type": "course",
+                "code": "VIS 132"
+              },
+              {
+                "type": "course",
+                "code": "VIS 133A"
+              },
+              {
+                "type": "course",
+                "code": "VIS 143A"
+              },
+              {
+                "type": "course",
+                "code": "VIS 143B"
+              },
+              {
+                "type": "course",
+                "code": "VIS 145A"
+              },
+              {
+                "type": "course",
+                "code": "VIS 145B"
+              },
+              {
+                "type": "course",
+                "code": "VIS 146A"
+              },
+              {
+                "type": "course",
+                "code": "VIS 146B"
+              },
+              {
+                "type": "course",
+                "code": "VIS 147B"
+              },
+              {
+                "type": "course",
+                "code": "VIS 149"
+              },
+              {
+                "type": "course",
+                "code": "VIS 167"
+              },
+              {
+                "type": "course",
+                "code": "VIS 168"
+              },
+              {
+                "type": "course",
+                "code": "VIS 169A"
+              },
+              {
+                "type": "course",
+                "code": "VIS 169B"
+              },
+              {
+                "type": "course",
+                "code": "VIS 198"
+              },
+              {
+                "type": "course",
+                "code": "VIS 199"
+              }
+            ],
+            "label": "Interdisciplinary",
+            "notes": "The studio honors sequence, VIS 110M–N, counts as one course toward the fulfillment of an advanced level requirement."
+          }
+        ],
+        "notes": "Three courses required."
+      }
+    }
+  ]
+}

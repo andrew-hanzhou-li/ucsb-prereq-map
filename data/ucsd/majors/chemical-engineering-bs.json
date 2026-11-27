@@ -1,0 +1,701 @@
+{
+  "name": "Chemical Engineering - BS",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Aiiso Yufeng Li Family Department of Chemical and Nano Engineering",
+  "major_code": "CE25",
+  "source": "https://catalog.ucsd.edu/curric/NANO-ug.html",
+  "narrative": [
+    "To graduate, students must maintain an overall GPA of at least 2.0.",
+    "Every course required for the major (except CENG 4 and CENG 199) must be taken for a letter grade, including all CENG and technical elective courses. This also includes all MATH, BILD, CHEM, and PHYS courses. All major requirements must have a grade of C- or higher.",
+    "The chemical engineering major is a selective major. Only students who have completed the required screening courses and have a minimum 2.0 UC GPA are eligible to apply.",
+    "Screening courses (first-year applicants): MATH 20A, 20B, 20C, PHYS 2A, 2B, CHEM 6A, 6B, 6C, 7L. Screening courses (second-year applicants): MATH 20A, 20B, 20C, 20D, MATH 18, PHYS 2A, 2B, 2C, 2CL, CHEM 6A, 6B, 6C, 7L.",
+    "All transfer students must take CENG 4 and CENG 15 (MATLAB) in the fall or winter of their first year at UC San Diego.",
+    "NANO 156 and MAE 166 are cross-listed courses; CENG majors must enroll in NANO 156. NANO 175 and CENG 175 are cross-listed courses and credit cannot be given for both."
+  ],
+  "sections": [
+    {
+      "name": "Basic sciences",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "course",
+            "code": "MATH 20A"
+          },
+          {
+            "type": "course",
+            "code": "MATH 20B"
+          },
+          {
+            "type": "course",
+            "code": "MATH 20C"
+          },
+          {
+            "type": "course",
+            "code": "MATH 20D"
+          },
+          {
+            "type": "course",
+            "code": "MATH 20E"
+          },
+          {
+            "type": "course",
+            "code": "MATH 18"
+          },
+          {
+            "type": "course",
+            "code": "PHYS 2A"
+          },
+          {
+            "type": "course",
+            "code": "PHYS 2B"
+          },
+          {
+            "type": "course",
+            "code": "PHYS 2C"
+          },
+          {
+            "type": "course",
+            "code": "PHYS 2CL"
+          },
+          {
+            "type": "course",
+            "code": "CHEM 6A"
+          },
+          {
+            "type": "course",
+            "code": "CHEM 6B"
+          },
+          {
+            "type": "course",
+            "code": "CHEM 6C"
+          },
+          {
+            "type": "course",
+            "code": "CHEM 7L"
+          }
+        ],
+        "notes": "fifty-four units: twenty-four units of mathematics (MATH 20A-E and MATH 18, formerly MATH 20F), fourteen units of physics (PHYS 2A-C, 2CL), and sixteen units of chemistry (CHEM 6A-C, 7L)"
+      }
+    },
+    {
+      "name": "Chemistry core",
+      "requirement": {
+        "type": "choose",
+        "count": 3,
+        "items": [
+          {
+            "type": "course",
+            "code": "CHEM 130"
+          },
+          {
+            "type": "course",
+            "code": "CHEM 131"
+          },
+          {
+            "type": "course",
+            "code": "CHEM 132"
+          },
+          {
+            "type": "course",
+            "code": "CHEM 41A"
+          },
+          {
+            "type": "course",
+            "code": "CHEM 41B"
+          },
+          {
+            "type": "course",
+            "code": "CHEM 41C"
+          },
+          {
+            "type": "course",
+            "code": "CHEM 43A"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "CHEM 114A"
+              },
+              {
+                "type": "course",
+                "code": "BIBC 100"
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "CHEM 114B"
+              },
+              {
+                "type": "course",
+                "code": "BIBC 102"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "CHEM 120A"
+          },
+          {
+            "type": "course",
+            "code": "CHEM 120B"
+          }
+        ],
+        "label": "Advanced chemistry electives",
+        "notes": "Three advanced chemistry electives must be selected from among the preapproved list: CHEM 130, 131, 132, CHEM 41A-C*, CHEM 43A, 114A (or BIBC 100), 114B (or BIBC 102), or 120A-B. Students may not receive credit for both BIBC 100 and CHEM 114A, or BIBC 102 and CHEM 114B."
+      }
+    },
+    {
+      "name": "Chemical engineering core",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "course",
+            "code": "CENG 4"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "CENG 100"
+              },
+              {
+                "type": "course",
+                "code": "CENG 110"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "CENG 101A"
+          },
+          {
+            "type": "course",
+            "code": "CENG 101B"
+          },
+          {
+            "type": "course",
+            "code": "CENG 101C"
+          },
+          {
+            "type": "course",
+            "code": "CENG 102"
+          },
+          {
+            "type": "course",
+            "code": "CENG 113"
+          },
+          {
+            "type": "course",
+            "code": "CENG 120"
+          },
+          {
+            "type": "course",
+            "code": "CENG 122"
+          }
+        ],
+        "notes": "thirty-three units (CENG 4, 100/110, 101A-C, 102, 113, 120, 122)"
+      }
+    },
+    {
+      "name": "Process laboratory and design",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "course",
+            "code": "CENG 124A"
+          },
+          {
+            "type": "course",
+            "code": "CENG 124B"
+          },
+          {
+            "type": "course",
+            "code": "CENG 176A"
+          },
+          {
+            "type": "course",
+            "code": "CENG 176B"
+          }
+        ],
+        "notes": "sixteen units"
+      }
+    },
+    {
+      "name": "General engineering",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "course",
+            "code": "CENG 15"
+          },
+          {
+            "type": "course",
+            "code": "CENG 114"
+          },
+          {
+            "type": "course",
+            "code": "CENG 170"
+          }
+        ],
+        "notes": "twelve units: computer programming (CENG 15), probability and statistics (CENG 114), instrumentation (CENG 170)"
+      }
+    },
+    {
+      "name": "Technical Electives",
+      "requirement": {
+        "type": "units",
+        "units": 12,
+        "items": [
+          {
+            "type": "any",
+            "subject": "CENG",
+            "level": "upper",
+            "except": [
+              "CENG 195",
+              "CENG 197",
+              "CENG 198"
+            ]
+          },
+          {
+            "type": "any",
+            "subject": "NANO",
+            "level": "upper"
+          },
+          {
+            "type": "any",
+            "subject": "BENG",
+            "level": "upper"
+          },
+          {
+            "type": "any",
+            "subject": "ECE",
+            "level": "upper"
+          },
+          {
+            "type": "any",
+            "subject": "MAE",
+            "level": "upper",
+            "except": [
+              "MAE 166"
+            ]
+          },
+          {
+            "type": "course",
+            "code": "NANO 103"
+          },
+          {
+            "type": "course",
+            "code": "NANO 242"
+          },
+          {
+            "type": "course",
+            "code": "NANO 244"
+          },
+          {
+            "type": "course",
+            "code": "NANO 262"
+          },
+          {
+            "type": "course",
+            "code": "CENG 160"
+          },
+          {
+            "type": "course",
+            "code": "CENG 254"
+          },
+          {
+            "type": "course",
+            "code": "CENG 256"
+          },
+          {
+            "type": "course",
+            "code": "BENG 100"
+          },
+          {
+            "type": "course",
+            "code": "BENG 101"
+          },
+          {
+            "type": "course",
+            "code": "BENG 109"
+          },
+          {
+            "type": "course",
+            "code": "BENG 110"
+          },
+          {
+            "type": "course",
+            "code": "BENG 112A"
+          },
+          {
+            "type": "course",
+            "code": "BENG 112B"
+          },
+          {
+            "type": "course",
+            "code": "BENG 130"
+          },
+          {
+            "type": "course",
+            "code": "BENG 186A"
+          },
+          {
+            "type": "course",
+            "code": "NANO 107"
+          },
+          {
+            "type": "course",
+            "code": "CENG 157"
+          },
+          {
+            "type": "course",
+            "code": "ECE 103"
+          },
+          {
+            "type": "course",
+            "code": "ECE 134"
+          },
+          {
+            "type": "course",
+            "code": "ECE 135A"
+          },
+          {
+            "type": "course",
+            "code": "ECE 136L"
+          },
+          {
+            "type": "course",
+            "code": "NANO 141A"
+          },
+          {
+            "type": "course",
+            "code": "NANO 141B"
+          },
+          {
+            "type": "course",
+            "code": "MAE 104"
+          },
+          {
+            "type": "course",
+            "code": "MAE 131A"
+          },
+          {
+            "type": "course",
+            "code": "MAE 149"
+          },
+          {
+            "type": "course",
+            "code": "MAE 160"
+          },
+          {
+            "type": "course",
+            "code": "NANO 114B"
+          },
+          {
+            "type": "course",
+            "code": "MAE 105"
+          },
+          {
+            "type": "course",
+            "code": "MAE 107"
+          },
+          {
+            "type": "course",
+            "code": "MAE 140"
+          },
+          {
+            "type": "course",
+            "code": "ESYS 103"
+          },
+          {
+            "type": "course",
+            "code": "MAE 119"
+          },
+          {
+            "type": "course",
+            "code": "MAE 122"
+          },
+          {
+            "type": "course",
+            "code": "MAE 125"
+          },
+          {
+            "type": "course",
+            "code": "MAE 126A"
+          },
+          {
+            "type": "course",
+            "code": "MAE 126B"
+          },
+          {
+            "type": "course",
+            "code": "MAE 127"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "CENG 134"
+              },
+              {
+                "type": "course",
+                "code": "NANO 134"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "NANO 100L"
+          },
+          {
+            "type": "course",
+            "code": "NANO 159"
+          },
+          {
+            "type": "course",
+            "code": "NANO 174"
+          },
+          {
+            "type": "course",
+            "code": "NANO 174L"
+          },
+          {
+            "type": "course",
+            "code": "MATS 201A"
+          },
+          {
+            "type": "course",
+            "code": "MATS 201B"
+          },
+          {
+            "type": "course",
+            "code": "MATS 201C"
+          },
+          {
+            "type": "course",
+            "code": "MATS 205A"
+          },
+          {
+            "type": "course",
+            "code": "MATS 227"
+          },
+          {
+            "type": "course",
+            "code": "NANO 102"
+          },
+          {
+            "type": "course",
+            "code": "NANO 104"
+          },
+          {
+            "type": "course",
+            "code": "NANO 106"
+          },
+          {
+            "type": "course",
+            "code": "NANO 108"
+          },
+          {
+            "type": "course",
+            "code": "NANO 110"
+          },
+          {
+            "type": "course",
+            "code": "NANO 111"
+          },
+          {
+            "type": "course",
+            "code": "NANO 112"
+          },
+          {
+            "type": "course",
+            "code": "NANO 140"
+          },
+          {
+            "type": "course",
+            "code": "NANO 145"
+          },
+          {
+            "type": "course",
+            "code": "NANO 146"
+          },
+          {
+            "type": "course",
+            "code": "NANO 148"
+          },
+          {
+            "type": "course",
+            "code": "NANO 150"
+          },
+          {
+            "type": "course",
+            "code": "NANO 156"
+          },
+          {
+            "type": "course",
+            "code": "NANO 158"
+          },
+          {
+            "type": "course",
+            "code": "NANO 161"
+          },
+          {
+            "type": "course",
+            "code": "NANO 162"
+          },
+          {
+            "type": "course",
+            "code": "NANO 164"
+          },
+          {
+            "type": "course",
+            "code": "NANO 168"
+          },
+          {
+            "type": "course",
+            "code": "NANO 253"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "NANO 175"
+              },
+              {
+                "type": "course",
+                "code": "CENG 175"
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "CENG 207"
+              },
+              {
+                "type": "course",
+                "code": "NANO 243"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "CENG 208"
+          },
+          {
+            "type": "course",
+            "code": "CENG 211"
+          },
+          {
+            "type": "course",
+            "code": "CENG 212"
+          },
+          {
+            "type": "course",
+            "code": "CENG 213"
+          },
+          {
+            "type": "course",
+            "code": "CENG 214"
+          },
+          {
+            "type": "course",
+            "code": "CENG 215"
+          },
+          {
+            "type": "course",
+            "code": "MAE 142"
+          },
+          {
+            "type": "course",
+            "code": "MAE 143A"
+          },
+          {
+            "type": "course",
+            "code": "MAE 144"
+          },
+          {
+            "type": "course",
+            "code": "MAE 180A"
+          },
+          {
+            "type": "course",
+            "code": "ECE 171B"
+          },
+          {
+            "type": "course",
+            "code": "BENG 122A"
+          },
+          {
+            "type": "course",
+            "code": "MAE 110"
+          },
+          {
+            "type": "course",
+            "code": "MAE 113"
+          },
+          {
+            "type": "course",
+            "code": "MAE 118"
+          },
+          {
+            "type": "course",
+            "code": "MAE 120"
+          },
+          {
+            "type": "course",
+            "code": "ENG 100D"
+          },
+          {
+            "type": "course",
+            "code": "ENG 100B"
+          },
+          {
+            "type": "course",
+            "code": "ENG 100L"
+          },
+          {
+            "type": "text",
+            "text": "All electives must be upper-division courses in engineering. Technical elective (TE) course selections must have departmental approval prior to taking the courses."
+          },
+          {
+            "type": "text",
+            "text": "Two consecutive quarters of independent research (CENG 199) can be approved as equivalent to two technical elective courses (eight units)."
+          },
+          {
+            "type": "text",
+            "text": "Students are allowed to take one of the following four-unit 'Teams in Engineering Service' courses: ENG 100D or ENG 100B and ENG 100L or two quarters of ENG 100L as an approved Engineering Focus elective."
+          },
+          {
+            "type": "text",
+            "text": "Any other upper-division course in engineering, with departmental approval"
+          }
+        ],
+        "label": "Technical Electives",
+        "notes": "Electives are intended to broaden and enhance professional goals. All electives must be upper-division courses in engineering. Suggestions are listed by area in the catalog. Courses such as CENG 195, 197, and 198 are not allowed as a technical elective. CENG 199 can be used as a technical elective only under restrictive conditions. NANO 156 and MAE 166 are cross-listed; CENG majors must enroll in NANO 156."
+      }
+    }
+  ]
+}

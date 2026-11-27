@@ -1,0 +1,351 @@
+{
+  "name": "Mathematics and Economics - BS",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Mathematics",
+  "major_code": "MA33",
+  "source": "https://catalog.ucsd.edu/curric/MATH-ug.html",
+  "narrative": [
+    "Joint Major in Mathematics and Economics (MA33 in the mathematics department and EN28 in the economics department); also described on the Economics page (https://catalog.ucsd.edu/curric/ECON-ug.html).",
+    "Economics page differences: ODE listed as MATH 130; MATH 109 substitution for students completing MATH 31CH; last group lists ECON 172A-B or ECON 171 and ECON 172A; 'a minimum of seven courses from one department and eight from the other', chosen from the courses listed.",
+    "A total of fifteen upper-division courses (totaling sixty units) are required (with a minimum of seven courses from each department—mathematics and economics).",
+    "All majors must obtain a minimum 2.0 grade point average in the upper-division courses used to satisfy the major requirements. The student must receive a grade of C– or better in any course to be counted toward fulfillment of the major requirements. All courses used to fulfill the major must be taken for a letter grade.",
+    "No more than three upper-division courses taken externally from UC San Diego can be counted toward the major.",
+    "MATH 195, 196, 197, 198, 199, and 199H cannot be used toward any mathematics major.",
+    "Students in the joint major cannot double major with any other major in the mathematics or economics departments, and cannot minor in mathematics or economics.",
+    "Strongly recommended (not required): MATH 193A-B and 194 and ECON 109, 113, 175, and 178 (Economics page: MATH 190, 193A-B and ECON 109, 113, 173A-B, 174, 178; MATH 142 recommended over MATH 140)."
+  ],
+  "sections": [
+    {
+      "name": "Lower Division",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 18"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 20A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 20B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 20C"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 20D"
+                  }
+                ],
+                "label": "Linear Algebra and Calculus"
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 31AH"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 31BH"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 20D"
+                  }
+                ],
+                "label": "Honors Calculus"
+              }
+            ],
+            "label": "One of the following sequences",
+            "notes": "MATH 20E is not required."
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "ECON 1"
+              },
+              {
+                "type": "course",
+                "code": "ECON 3"
+              }
+            ],
+            "label": "Intro. to Economics"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Upper Division",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "MATH 109"
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 31CH"
+                  },
+                  {
+                    "type": "choose",
+                    "count": 1,
+                    "items": [
+                      {
+                        "type": "range",
+                        "subject": "MATH",
+                        "from": 100,
+                        "to": 194
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "label": "Mathematical Reasoning",
+            "notes": "Students completing MATH 31AH-BH-CH may substitute a four-unit upper-division mathematics elective for MATH 109."
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "MATH 102"
+              },
+              {
+                "type": "course",
+                "code": "MATH 170A"
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 100A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 100B"
+                  }
+                ]
+              }
+            ],
+            "notes": "Applied Linear Algebra: MATH 102; Numerical Linear Algebra: MATH 170A; Abstract Algebra: MATH 100A-B"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "MATH 140A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 142A"
+              }
+            ],
+            "notes": "Foundations of Real Analysis or Introduction to Analysis"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "MATH 130"
+              },
+              {
+                "type": "course",
+                "code": "MATH 140B"
+              },
+              {
+                "type": "course",
+                "code": "MATH 142B"
+              }
+            ],
+            "notes": "Ordinary Differential Equations: printed 'MATH 130A' here; corrected to MATH 130, as written elsewhere on the page."
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "ECON 100A"
+              },
+              {
+                "type": "course",
+                "code": "ECON 100B"
+              },
+              {
+                "type": "course",
+                "code": "ECON 100C"
+              }
+            ],
+            "label": "Microeconomics"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "ECON 120A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ECON 120B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ECON 120C"
+                  }
+                ]
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 180A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ECON 120B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ECON 120C"
+                  }
+                ]
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 180A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 181A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 181B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ECON 120C"
+                  }
+                ]
+              }
+            ],
+            "label": "Econometrics/Statistics"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "ECON 110A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ECON 110B"
+                  }
+                ],
+                "label": "Macroeconomics"
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 171A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 171B"
+                  }
+                ],
+                "label": "Mathematical Programming: Numerical Optimization"
+              },
+              {
+                "type": "choose",
+                "count": 2,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "ECON 171"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ECON 172A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ECON 172B"
+                  }
+                ],
+                "label": "Two courses from Decisions Under Uncertainty and Introduction to Operations Research",
+                "notes": "ECON 172A is a prerequisite for 172B-C."
+              }
+            ],
+            "label": "One of the following sequences"
+          },
+          {
+            "type": "choose",
+            "count": 3,
+            "items": [
+              {
+                "type": "range",
+                "subject": "MATH",
+                "from": 100,
+                "to": 194
+              },
+              {
+                "type": "any",
+                "subject": "ECON",
+                "level": "upper"
+              }
+            ],
+            "label": "Additional upper-division courses to reach fifteen",
+            "notes": "Catalog total: fifteen upper-division courses (sixty units), at least seven from each department, including the courses above. Three more are needed when the shortest options above (twelve courses) are chosen; fewer if MATH 100A-B or a four-course statistics sequence is taken. MATH 195-199 do not count."
+          }
+        ]
+      }
+    }
+  ]
+}

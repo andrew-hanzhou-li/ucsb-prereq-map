@@ -1,0 +1,1045 @@
+{
+ "id": "UCSD-MAJOR-linguistics-ba",
+ "name": "Linguistics - BA",
+ "kind": "major",
+ "type": "Bachelor's Degree",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsd.edu/curric/LING-ug.html",
+ "sections": [
+  {
+   "name": "Undergraduate Language Requirement",
+   "requirement": {
+    "type": "text",
+    "text": "All linguistics majors must demonstrate proficiency in one non-English natural language by one of the following: By passing the reading proficiency examination and the oral interview administered by the Department of Linguistics in French, German, Italian, Russian, Spanish, Arabic, Farsi, Tagalog, Portuguese, Vietnamese, or American Sign Language; or By successfully completing a course given at UC San Diego representing the fourth quarter (or beyond) of instruction in any single non-English natural language with a grade of C– or better; or By scoring four or greater on the Advanced Placement (AP) exam in a non-English natural language. Students with native language competence in a language other than English may petition to have English count as satisfying the proficiency requirement."
+   }
+  },
+  {
+   "name": "Linguistic Analysis and Breadth Courses",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "LIGN 102",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 103",
+      "status": "active"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "LIGN 110",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LIGN 111",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LIGN 120",
+        "status": "active"
+       }
+      ],
+      "count": 1,
+      "label": "One introductory course in phonetics, phonology, or morphology"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "LIGN 121",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LIGN 130",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LIGN 160",
+        "status": "active"
+       }
+      ],
+      "count": 1,
+      "label": "One introductory course in syntax, semantics, or pragmatics"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "LIGN 117",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LIGN 165",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LIGN 167",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LIGN 168",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LIGN 169",
+          "status": "active"
+         }
+        ],
+        "count": 1,
+        "label": "Computational Linguistics"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "LIGN 108",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LIGN 139",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LIGN 141",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LIGN 142",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "LIGN 143",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LIGN 148",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LIGN 152",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LIGN 177",
+          "status": "active"
+         }
+        ],
+        "count": 1,
+        "label": "Crosslinguistic Variation"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "LIGN 119",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LIGN 148",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LIGN 154",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LIGN 155",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LIGN 170",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LIGN 171",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LIGN 179",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LIGN 180",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LIGN 181",
+          "status": "active"
+         }
+        ],
+        "count": 1,
+        "label": "Language and Cognition"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "LIGN 105",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LIGN 146",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LIGN 174",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LIGN 175",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LIGN 176",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LIGN 177",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LIGN 178",
+          "status": "active"
+         }
+        ],
+        "count": 1,
+        "label": "Language and Society"
+       }
+      ],
+      "count": 3,
+      "label": "One course each from 3 areas",
+      "notes": "no course may count more than once"
+     }
+    ],
+    "label": "Seven Linguistic Analysis and Breadth Courses"
+   }
+  },
+  {
+   "name": "Linguistics Electives",
+   "requirement": {
+    "type": "choose",
+    "items": [
+     {
+      "type": "course",
+      "code": "LIGN 105",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 108",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 110",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 111",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 112",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 113",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 115",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 117",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 118",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 119",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 120",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 121",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 125",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 139",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 141",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 142",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 143",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 144",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 145",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 146",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 148",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 150",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 152",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 154",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 155",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 160",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 165",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 167",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 168",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 169",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 170",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 171",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 172",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 173",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 174",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 175",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 176",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 177",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 178",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 179",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 180",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 181",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 187",
+      "status": "active"
+     }
+    ],
+    "count": 4,
+    "notes": "Four linguistics electives that have not been used to satisfy the linguistic analysis and breadth requirements."
+   }
+  },
+  {
+   "name": "Additional Elective",
+   "requirement": {
+    "type": "choose",
+    "items": [
+     {
+      "type": "course",
+      "code": "LIGN 102",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 103",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 105",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 108",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 110",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 111",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 112",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 113",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 115",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 117",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 118",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 119",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 120",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 121",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 125",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 130",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 139",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 141",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 143",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 144",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 146",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 148",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 149GS",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 150",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 152",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 154",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 155",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 160",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 165",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 167",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 168",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 169",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 170",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 171",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 172",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 174",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 175",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 176",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 177",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 178",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 179",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 180",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 181",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 187",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 188R",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 195P",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 197",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 199",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LIGN 199H",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ANBI 140",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ANBI 159",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ANBI 173",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COGS 101C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COGS 102A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COGS 102B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COGS 107C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COGS 108D",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "COGS 108E",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "COGS 108F",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "COGS 151",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COGS 153",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COGS 154",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COGS 156",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COGS 158",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COGS 170",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COGS 184",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COGS 191",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "CSE 133",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "PHIL 120",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHIL 122",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHIL 123",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHIL 134",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHIL 136",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHIL 150",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PSYC 102",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PSYC 118A",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "PSYC 118B",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "PSYC 119",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "PSYC 145",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ANSC 113",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ANSC 118",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ANSC 122",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ANSC 131",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ANSC 141",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ANSC 162",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ANSC 191",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ANSC 194",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COMM 100B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COMM 110P",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COMM 110T",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COMM 110X",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COMM 112G",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COMM 168",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COMM 169",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "EDS 125",
+      "status": "active"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "EDS 117",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SOCI 117",
+        "status": "active"
+       }
+      ],
+      "count": 1
+     },
+     {
+      "type": "course",
+      "code": "ETHN 140",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ETHN 141",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ETHN 144",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "SOCI 118E",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SOCI 120T",
+      "status": "active"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "LIHL 112",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "LIHL 112X",
+        "status": "inactive"
+       }
+      ],
+      "count": 1,
+      "label": "Heritage Language course (example: LIHL 112/LIHL 112X)"
+     },
+     {
+      "type": "text",
+      "text": "a Heritage Language course offered in the Linguistics Language Program"
+     },
+     {
+      "type": "text",
+      "text": "upper-division course in another department pertaining to the study of language"
+     }
+    ],
+    "count": 1,
+    "notes": "One additional linguistics elective or upper-division course in another department pertaining to the study of language. Courses currently approved include the electives for the cognition and language major (except PSYC 105; its linguistics electives are any upper-division LIGN courses not used above) and the electives for the language and society major, or a Heritage Language course offered in the Linguistics Language Program (for example, LIHL 112/LIHL 112X)."
+   }
+  }
+ ],
+ "narrative": [
+  "Every linguistics major (except the language studies major) must satisfy the undergraduate language requirement and must successfully complete a minimum of twelve upper-division courses. The general major requires twelve upper-division courses.",
+  "Except for LIGN 188R, LIGN 195, LIGN 199, and LIGN 199H, no course taken on a Pass/Not Pass basis may be counted toward a linguistics major. No more than four combined units of LIGN 188R, LIGN 195, and LIGN 199 may be counted toward a linguistics major. An additional four units of LIGN 199H may be counted toward a linguistics major.",
+  "A letter grade of C– or better is required for every course counted toward a linguistics major, including courses taken to satisfy the department’s undergraduate language requirement.",
+  "LIGN 87 and LIGN 192 do not count as linguistics electives (restricted courses).",
+  "At least six out of the twelve upper-division linguistics courses counted toward the major must be linguistics courses taken in residence at UC San Diego.",
+  "Independent study (LIGN 199) requires at least a 3.5 GPA in the major courses; no more than one such course (taken P/NP) may count toward the major."
+ ]
+}

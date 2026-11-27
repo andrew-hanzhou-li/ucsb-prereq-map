@@ -1,0 +1,2044 @@
+{
+ "id": "UCSD-MAJOR-computer-science-bs",
+ "name": "Computer Science - BS",
+ "kind": "major",
+ "type": "Bachelor's Degree",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsd.edu/curric/CSE-ug.html",
+ "sections": [
+  {
+   "name": "Lower-Division Requirements",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "CSE 8B",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "CSE 11",
+          "status": "active"
+         }
+        ],
+        "count": 1
+       },
+       {
+        "type": "course",
+        "code": "CSE 12",
+        "status": "active"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "CSE 15L",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 29",
+          "status": "active"
+         }
+        ],
+        "count": 1
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "CSE 20",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 15A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MATH 31CH",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 109",
+          "status": "active"
+         }
+        ],
+        "count": 1
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "CSE 21",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 154",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 184",
+          "status": "active"
+         }
+        ],
+        "count": 1
+       },
+       {
+        "type": "course",
+        "code": "CSE 30",
+        "status": "active"
+       }
+      ],
+      "label": "Computer Science and Engineering"
+     },
+     {
+      "type": "units",
+      "items": [
+       {
+        "type": "course",
+        "code": "CSE 3",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 4GS",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 6R",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 6GS",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 8A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 25",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 42",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 86",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 89",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 90",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 91",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 95",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 99",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 180",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 180R",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 08",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 9",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "COGS 9",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 10",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 18",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 15",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ENG 10",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ENG 15",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "NANO 15",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CENG 15",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 100",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 100R",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 101",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 103",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 105",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 106",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 107",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 109",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 110",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 112",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 118",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 120",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 121",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 122",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 123",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 124",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 125",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 127",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 130",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 131",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 132A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 132B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 132C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 134B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 135",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 136",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 140",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 140L",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 141",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 141L",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 142",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 142L",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 143",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 145",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 147",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 148",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 150A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 150B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 151A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 151B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 152A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 152B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 153",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 153R",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 156",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 158",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 158R",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 160",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 163",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 165",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 166",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 167",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 167R",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 168",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 168R",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 169",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 170",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 175",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 176A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 176E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 180",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 180R",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 181",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 181R",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 182",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 184",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 185",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 190",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 191",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 192",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 193",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 194",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 197",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 197C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 198",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 199",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 199H",
+        "status": "active"
+       },
+       {
+        "type": "text",
+        "text": "or any CSE upper-division course not used to fulfill other degree requirements"
+       }
+      ],
+      "units": 4,
+      "label": "Computer Science and Engineering"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "MATH 20A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 20B",
+        "status": "active"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 20C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 31BH",
+          "status": "active"
+         }
+        ],
+        "count": 1
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 18",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 31AH",
+          "status": "active"
+         }
+        ],
+        "count": 1
+       }
+      ],
+      "label": "Mathematics"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "PHYS 2A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 2B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 4A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 4B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 6A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 6AH",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 6B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 6BH",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "BILD 1",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "BILD 2",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "BILD 3",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "BICD 100",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "BIMM 101",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "BIMM 121",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 107A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 107B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 115",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ESYS 101",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HDS 110",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 126",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 128",
+        "status": "active"
+       }
+      ],
+      "count": 1,
+      "label": "General Science"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "MATH 181A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 183",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 109",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 120A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 103",
+        "status": "active"
+       }
+      ],
+      "count": 1,
+      "label": "Probability and Statistics"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Upper-Division Requirements",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "CSE 100",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 101",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 110",
+        "status": "active"
+       }
+      ],
+      "label": "Core Courses"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "units",
+        "items": [
+         {
+          "type": "course",
+          "code": "CSE 120",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 121",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 122",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 123",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 124",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 127",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 132C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 140",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 140L",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 141",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 141L",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 142",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 142L",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 143",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 145",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 147",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 148",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 160",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "DSC 102",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ECE 140A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ECE 140B",
+          "status": "active"
+         }
+        ],
+        "units": 12,
+        "label": "Systems breadth"
+       },
+       {
+        "type": "units",
+        "items": [
+         {
+          "type": "course",
+          "code": "CSE 105",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 106",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 107",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 130",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 132A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 140",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 150A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ECON 172A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ECON 172B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 170A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 170B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 170C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 171A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 171B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 173A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 173B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 185",
+          "status": "active"
+         }
+        ],
+        "units": 12,
+        "label": "Theory/Abstraction breadth"
+       },
+       {
+        "type": "units",
+        "items": [
+         {
+          "type": "course",
+          "code": "CSE 112",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 118",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 125",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 127",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 131",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 132B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 134B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 135",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 136",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 140",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 140L",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 142L",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 145",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 148",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 150B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 151A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 151B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 152A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 152B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 153",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 153R",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 156",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 158",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 158R",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 163",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 165",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 166",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 167",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 167R",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 168",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 168R",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 169",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 170",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 175",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 176A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 176E",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 181",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 181R",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 182",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 184",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 185",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 193",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 194",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COGS 108",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COGS 109",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COGS 118A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COGS 118B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COGS 118C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COGS 120",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COGS 121",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COGS 122",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COGS 123",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COGS 124",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COGS 125",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COGS 126",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COGS 127",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COGS 181",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COGS 185",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COGS 187A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COGS 187B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COGS 189",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ECON 172A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ECON 172B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ECE 140A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ECE 140B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EDS 124AR",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EDS 124BR",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENG 100D",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENG 100L",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LIGN 165",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LIGN 167",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 155A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 171A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 171B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 189",
+          "status": "active"
+         }
+        ],
+        "units": 12,
+        "label": "Applications of Computing breadth",
+        "notes": "Students may use up to eight units of ENG 100D/L courses toward upper-division CSE elective credits (as part of the twelve-unit maximum of special studies courses - CSE 197, 198, 199, 199H). Students may only take ENG 100D once."
+       },
+       {
+        "type": "units",
+        "items": [
+         {
+          "type": "course",
+          "code": "CSE 100",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 100R",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 101",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 103",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 105",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 106",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 107",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 109",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 110",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 112",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 118",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 120",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 121",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 122",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 123",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 124",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 125",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 127",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 130",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 131",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 132A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 132B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 132C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 134B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 135",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 136",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 140",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 140L",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 141",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 141L",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 142",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 142L",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 143",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 145",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 147",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 148",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 150A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 150B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 151A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 151B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 152A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 152B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 153",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 153R",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 156",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 158",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 158R",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 160",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 163",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 165",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 166",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 167",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 167R",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 168",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 168R",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 169",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 170",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 175",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 176A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 176E",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 181",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 181R",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 182",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 184",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 185",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 190",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 192",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 193",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 194",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 197",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 197C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 198",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 199",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CSE 199H",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "DSC 102",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ECE 140A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ECE 140B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ECON 172A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ECON 172B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 170A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 170B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 170C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 171A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 171B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 173A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 173B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 185",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COGS 108",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COGS 109",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COGS 118A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COGS 118B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COGS 118C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COGS 120",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COGS 121",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COGS 122",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COGS 123",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COGS 124",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COGS 125",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COGS 126",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COGS 127",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COGS 181",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COGS 185",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COGS 187A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COGS 187B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COGS 189",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EDS 124AR",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EDS 124BR",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENG 100D",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENG 100L",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LIGN 165",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LIGN 167",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 155A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 189",
+          "status": "active"
+         },
+         {
+          "type": "text",
+          "text": "Any CSE upper-division course between CSE 100-194 that is not being used for another major requirement, with the exception of CSE 180/180R and CSE 191 which are not allowed to meet CSE upper-division CSE elective requirements."
+         },
+         {
+          "type": "text",
+          "text": "CSE upper-division or graduate courses or non-CSE classes that are tagged with one of the three tags (which are not used to satisfy the core or breadth elective requirements)"
+         }
+        ],
+        "units": 24,
+        "label": "Additional electives",
+        "notes": "Students may use twelve units of CSE 190 toward CSE elective credit (repeatable up to three times for different topics; CSE 291 applies to this twelve-unit maximum). Undergraduate students may petition to use graduate-level course work toward their elective requirements."
+       }
+      ],
+      "label": "Electives",
+      "notes": "60 units of elective courses. Electives must give sufficient breadth within these outcomes (Systems, Theory/Abstraction, Applications of Computing). A maximum of twelve units of P/NP courses may count, chosen from: a maximum of eight units of CSE 198 or 199 or 199H; a maximum of four units of CSE 197; a maximum of two units of CSE 109."
+     }
+    ],
+    "notes": "Students must complete seventy-two upper-division units: twelve units of core courses and sixty units of elective courses."
+   }
+  }
+ ],
+ "narrative": [
+  "All major requirements for each degree program must be completed with a C– or better, except for courses offered Pass/No Pass only.",
+  "All major requirements and upper-division electives except CSE 91, 95, 109, 197, 198, or 199 must be taken for a letter grade.",
+  "To graduate, a minimum grade point average of 2.0 will be required in upper-division courses in the major, including upper-division electives.",
+  "At most four units of CSE 197 may be used toward technical elective requirements.",
+  "CSE 195 cannot be used toward course requirements.",
+  "Students may not get duplicate credit for equivalent courses.",
+  "Selective major: admission for continuing students is by selective major application (screening courses: CSE 8B or 11, CSE 12, CSE 29 or ECE 15 or CSE 15L, CSE 20, CSE 21, CSE 30 or ECE 30, CSE 100 (R), and CSE 101 for applicants after second year).",
+  "The BS computer science requires a total of 124 units for the BS computer science program (not including the general-education requirements).",
+  "Students are expected to complete the following fifty-two units [lower-division] by the end of their sophomore year.",
+  "Students must complete seventy-two upper-division units: twelve units of core courses and sixty units of elective courses.",
+  "The page also lists 'Technical Electives for all CSE Majors' (upper-division courses from other disciplines that can be counted as technical electives); the BS computer science elective rules themselves are stated in terms of the program-level tags."
+ ]
+}

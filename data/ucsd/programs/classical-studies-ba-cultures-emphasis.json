@@ -1,0 +1,723 @@
+{
+ "id": "UCSD-MAJOR-classical-studies-ba-cultures-emphasis",
+ "name": "Classical Studies - BA - Cultures Emphasis",
+ "kind": "major",
+ "type": "Bachelor's Degree",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsd.edu/curric/CLAS-ug.html",
+ "sections": [
+  {
+   "name": "Lower-division courses (three)",
+   "requirement": {
+    "type": "choose",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "HUM 1",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "HUM 2",
+            "status": "active"
+           }
+          ]
+         },
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "MMW 11",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MMW 12",
+            "status": "active"
+           }
+          ]
+         },
+         {
+          "type": "choose",
+          "items": [
+           {
+            "type": "course",
+            "code": "LTWL 19A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "LTWL 19B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "LTWL 19C",
+            "status": "active"
+           }
+          ],
+          "count": 2
+         }
+        ],
+        "count": 1,
+        "label": "Two survey courses",
+        "notes": "HUM 1-2 or MMW 11-12 or two LTWL 19 courses = 19A-B, 19B-C, or 19A-C"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "ANTH 3",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CLAS 87",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HILD 10",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HILD 20R",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "HILD 40",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HUM 1",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HUM 2",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HUM 3",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HUM 3R",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HUM 3GS",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LTGK 1",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LTGK 2",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LTGK 3",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LTLA 1",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LTLA 2",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LTLA 3",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LTWL 19A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LTWL 19B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LTWL 19C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MMW 11",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MMW 12",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MMW 13",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHIL 31",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "TDHT 21",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "VIS 21A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "VIS 21B",
+          "status": "active"
+         }
+        ],
+        "count": 1,
+        "label": "One additional survey course",
+        "notes": "From the list of courses approved by Classical Studies Program; the track description says 'plus any lower-division classes from the list of approved courses', so the whole approved lower-division list is included."
+       }
+      ],
+      "label": "Option 1"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "LTGK 1",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LTGK 2",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LTGK 3",
+          "status": "active"
+         }
+        ]
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "LTLA 1",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LTLA 2",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LTLA 3",
+          "status": "active"
+         }
+        ]
+       }
+      ],
+      "count": 1,
+      "label": "Option 2",
+      "notes": "A sequence of three language courses (LTGK 1-2-3 or LTLA 1-2-3)"
+     }
+    ],
+    "count": 1
+   }
+  },
+  {
+   "name": "Upper-division courses (twelve)",
+   "requirement": {
+    "type": "choose",
+    "items": [
+     {
+      "type": "course",
+      "code": "ANAR 135",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ANAR 135S",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "ANAR 138",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ANAR 142",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "ANAR 143",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ANAR 144",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ANAR 145S",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ANAR 153",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ANAR 154",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ANAR 155",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ANAR 155S",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ANAR 158",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ANAR 158GS",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ANAR 160",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ANAR 165",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CLAS 109",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CLAS 110",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CLAS 119",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CLAS 120",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CLAS 121R",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CLAS 125",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CLAS 140",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CLAS 196A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CLAS 196B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CLAS 198",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CLAS 199",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "HIEU 102",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "HIEU 102A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "HIEU 103",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "HIEU 104",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "HIEU 106",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "HIEU 108",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "HIEU 122",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "HIEU 123",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "HIEU 124",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "HIEU 160",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "HIEU 161",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "HIEU 199",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "HINE 100",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "HINE 113",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "HINE 115",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "HINE 125",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "HINE 171",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LTCS 180",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LTGK 101",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LTGK 102",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LTGK 103",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LTGK 104",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LTGK 105",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LTGK 198",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LTGK 199",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LTLA 100",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LTLA 102",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LTLA 103",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LTLA 104",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LTLA 105",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LTLA 198",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LTLA 199",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LTWL 100",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LTWL 101",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LTWL 102",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LTWL 103",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LTWL 106",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LTWL 123",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LTWL 129",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "LTWL 158A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LTWL 158B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LTWL 158C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MMW 121",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHIL 100",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHIL 101",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHIL 102",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHIL 110",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHIL 199",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POLI 110A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "RELI 146",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "RELI 161GS",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 120A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 120B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 120C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "HIGR 260",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "HIGR 261",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "LTCO 210",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "PHIL 210",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "PHIL 287",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "PHIL 288",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "PHIL 290",
+      "status": "inactive"
+     }
+    ],
+    "count": 12,
+    "label": "Twelve electives from at least three different departments",
+    "notes": "from the list of courses approved by Classical Studies Program. There is no restriction on how many courses from each department should be taken. Graduate courses listed by the program may be taken with consent of the instructor."
+   }
+  }
+ ],
+ "narrative": [
+  "For both tracks, a major in classical studies consists of a choice of twelve upper-division courses (forty-eight units) approved for the program and listed below.",
+  "All courses used to meet requirements for a major in classical studies must be taken for a letter grade and be passed with a grade of C– or better.",
+  "Graduate courses may be taken by undergraduates with consent of the instructor.",
+  "Honors: Eight units of CLAS 196 (A-B) may be counted toward the major in place of two other upper-division courses.",
+  "Additional courses counting toward a major in classical studies are offered on a year-to-year basis; consult the program faculty for an up-to-date list."
+ ]
+}

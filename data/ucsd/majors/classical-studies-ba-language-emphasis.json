@@ -1,0 +1,556 @@
+{
+  "name": "Classical Studies - BA - Language Emphasis",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Classical Studies Program",
+  "source": "https://catalog.ucsd.edu/curric/CLAS-ug.html",
+  "narrative": [
+    "For both tracks, a major in classical studies consists of a choice of twelve upper-division courses (forty-eight units) approved for the program and listed below.",
+    "All courses used to meet requirements for a major in classical studies must be taken for a letter grade and be passed with a grade of C– or better.",
+    "Graduate courses may be taken by undergraduates with consent of the instructor.",
+    "Honors: Eight units of CLAS 196 (A-B) may be counted toward the major in place of two other upper-division courses.",
+    "Additional courses counting toward a major in classical studies are offered on a year-to-year basis; consult the program faculty for an up-to-date list.",
+    "Before commencing upper-division work in Greek and Latin literature (LTGK and LTLA), students must complete LTGK 1-2-3 and LTLA 1-2-3 or demonstrate the equivalent with transfer credit."
+  ],
+  "sections": [
+    {
+      "name": "Lower-division courses (eight)",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "LTGK 1"
+              },
+              {
+                "type": "course",
+                "code": "LTGK 2"
+              },
+              {
+                "type": "course",
+                "code": "LTGK 3"
+              },
+              {
+                "type": "course",
+                "code": "LTLA 1"
+              },
+              {
+                "type": "course",
+                "code": "LTLA 2"
+              },
+              {
+                "type": "course",
+                "code": "LTLA 3"
+              }
+            ],
+            "label": "Six foundational language courses",
+            "notes": "three Greek and three Latin (LTGK 1-2-3 and LTLA 1-2-3) or equivalent"
+          },
+          {
+            "type": "choose",
+            "count": 2,
+            "items": [
+              {
+                "type": "course",
+                "code": "ANTH 3"
+              },
+              {
+                "type": "course",
+                "code": "CLAS 87"
+              },
+              {
+                "type": "course",
+                "code": "HILD 10"
+              },
+              {
+                "type": "course",
+                "code": "HILD 20R"
+              },
+              {
+                "type": "course",
+                "code": "HILD 40"
+              },
+              {
+                "type": "course",
+                "code": "HUM 1"
+              },
+              {
+                "type": "course",
+                "code": "HUM 2"
+              },
+              {
+                "type": "course",
+                "code": "HUM 3"
+              },
+              {
+                "type": "course",
+                "code": "HUM 3R"
+              },
+              {
+                "type": "course",
+                "code": "HUM 3GS"
+              },
+              {
+                "type": "course",
+                "code": "LTWL 19A"
+              },
+              {
+                "type": "course",
+                "code": "LTWL 19B"
+              },
+              {
+                "type": "course",
+                "code": "LTWL 19C"
+              },
+              {
+                "type": "course",
+                "code": "MMW 11"
+              },
+              {
+                "type": "course",
+                "code": "MMW 12"
+              },
+              {
+                "type": "course",
+                "code": "MMW 13"
+              },
+              {
+                "type": "course",
+                "code": "PHIL 31"
+              },
+              {
+                "type": "course",
+                "code": "TDHT 21"
+              },
+              {
+                "type": "course",
+                "code": "VIS 21A"
+              },
+              {
+                "type": "course",
+                "code": "VIS 21B"
+              }
+            ],
+            "label": "Two additional lower-division courses (from the list of courses approved by Classical Studies Program)"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Upper-division courses (twelve)",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "choose",
+                "count": 3,
+                "items": [
+                  {
+                    "type": "range",
+                    "subject": "LTGK",
+                    "from": 100,
+                    "to": 199
+                  },
+                  {
+                    "type": "course",
+                    "code": "CLAS 109"
+                  },
+                  {
+                    "type": "text",
+                    "text": "Greek reading courses in other departments"
+                  }
+                ],
+                "label": "Greek"
+              },
+              {
+                "type": "choose",
+                "count": 3,
+                "items": [
+                  {
+                    "type": "range",
+                    "subject": "LTLA",
+                    "from": 100,
+                    "to": 199
+                  },
+                  {
+                    "type": "course",
+                    "code": "CLAS 110"
+                  },
+                  {
+                    "type": "text",
+                    "text": "Latin reading courses in other departments"
+                  }
+                ],
+                "label": "Latin"
+              }
+            ],
+            "label": "Six language-based courses in both Latin and Greek",
+            "notes": "three in one language and three in the other (typically three LTGK 100–199 and three LTLA 100–199). CLAS 109 or CLAS 110, as well as Greek or Latin reading courses in other departments, are acceptable as well."
+          },
+          {
+            "type": "choose",
+            "count": 6,
+            "items": [
+              {
+                "type": "course",
+                "code": "ANAR 135"
+              },
+              {
+                "type": "course",
+                "code": "ANAR 135S"
+              },
+              {
+                "type": "course",
+                "code": "ANAR 138"
+              },
+              {
+                "type": "course",
+                "code": "ANAR 142"
+              },
+              {
+                "type": "course",
+                "code": "ANAR 143"
+              },
+              {
+                "type": "course",
+                "code": "ANAR 144"
+              },
+              {
+                "type": "course",
+                "code": "ANAR 145S"
+              },
+              {
+                "type": "course",
+                "code": "ANAR 153"
+              },
+              {
+                "type": "course",
+                "code": "ANAR 154"
+              },
+              {
+                "type": "course",
+                "code": "ANAR 155"
+              },
+              {
+                "type": "course",
+                "code": "ANAR 155S"
+              },
+              {
+                "type": "course",
+                "code": "ANAR 158"
+              },
+              {
+                "type": "course",
+                "code": "ANAR 158GS"
+              },
+              {
+                "type": "course",
+                "code": "ANAR 160"
+              },
+              {
+                "type": "course",
+                "code": "ANAR 165"
+              },
+              {
+                "type": "course",
+                "code": "CLAS 109"
+              },
+              {
+                "type": "course",
+                "code": "CLAS 110"
+              },
+              {
+                "type": "course",
+                "code": "CLAS 119"
+              },
+              {
+                "type": "course",
+                "code": "CLAS 120"
+              },
+              {
+                "type": "course",
+                "code": "CLAS 121R"
+              },
+              {
+                "type": "course",
+                "code": "CLAS 125"
+              },
+              {
+                "type": "course",
+                "code": "CLAS 140"
+              },
+              {
+                "type": "course",
+                "code": "CLAS 196A"
+              },
+              {
+                "type": "course",
+                "code": "CLAS 196B"
+              },
+              {
+                "type": "course",
+                "code": "CLAS 198"
+              },
+              {
+                "type": "course",
+                "code": "CLAS 199"
+              },
+              {
+                "type": "course",
+                "code": "HIEU 102"
+              },
+              {
+                "type": "course",
+                "code": "HIEU 102A"
+              },
+              {
+                "type": "course",
+                "code": "HIEU 103"
+              },
+              {
+                "type": "course",
+                "code": "HIEU 104"
+              },
+              {
+                "type": "course",
+                "code": "HIEU 106"
+              },
+              {
+                "type": "course",
+                "code": "HIEU 108"
+              },
+              {
+                "type": "course",
+                "code": "HIEU 122"
+              },
+              {
+                "type": "course",
+                "code": "HIEU 123"
+              },
+              {
+                "type": "course",
+                "code": "HIEU 124"
+              },
+              {
+                "type": "course",
+                "code": "HIEU 160"
+              },
+              {
+                "type": "course",
+                "code": "HIEU 161"
+              },
+              {
+                "type": "course",
+                "code": "HIEU 199"
+              },
+              {
+                "type": "course",
+                "code": "HINE 100"
+              },
+              {
+                "type": "course",
+                "code": "HINE 113"
+              },
+              {
+                "type": "course",
+                "code": "HINE 115"
+              },
+              {
+                "type": "course",
+                "code": "HINE 125"
+              },
+              {
+                "type": "course",
+                "code": "HINE 171"
+              },
+              {
+                "type": "course",
+                "code": "LTCS 180"
+              },
+              {
+                "type": "course",
+                "code": "LTGK 101"
+              },
+              {
+                "type": "course",
+                "code": "LTGK 102"
+              },
+              {
+                "type": "course",
+                "code": "LTGK 103"
+              },
+              {
+                "type": "course",
+                "code": "LTGK 104"
+              },
+              {
+                "type": "course",
+                "code": "LTGK 105"
+              },
+              {
+                "type": "course",
+                "code": "LTGK 198"
+              },
+              {
+                "type": "course",
+                "code": "LTGK 199"
+              },
+              {
+                "type": "course",
+                "code": "LTLA 100"
+              },
+              {
+                "type": "course",
+                "code": "LTLA 102"
+              },
+              {
+                "type": "course",
+                "code": "LTLA 103"
+              },
+              {
+                "type": "course",
+                "code": "LTLA 104"
+              },
+              {
+                "type": "course",
+                "code": "LTLA 105"
+              },
+              {
+                "type": "course",
+                "code": "LTLA 198"
+              },
+              {
+                "type": "course",
+                "code": "LTLA 199"
+              },
+              {
+                "type": "course",
+                "code": "LTWL 100"
+              },
+              {
+                "type": "course",
+                "code": "LTWL 101"
+              },
+              {
+                "type": "course",
+                "code": "LTWL 102"
+              },
+              {
+                "type": "course",
+                "code": "LTWL 103"
+              },
+              {
+                "type": "course",
+                "code": "LTWL 106"
+              },
+              {
+                "type": "course",
+                "code": "LTWL 123"
+              },
+              {
+                "type": "course",
+                "code": "LTWL 129"
+              },
+              {
+                "type": "course",
+                "code": "LTWL 158A"
+              },
+              {
+                "type": "course",
+                "code": "LTWL 158B"
+              },
+              {
+                "type": "course",
+                "code": "LTWL 158C"
+              },
+              {
+                "type": "course",
+                "code": "MMW 121"
+              },
+              {
+                "type": "course",
+                "code": "PHIL 100"
+              },
+              {
+                "type": "course",
+                "code": "PHIL 101"
+              },
+              {
+                "type": "course",
+                "code": "PHIL 102"
+              },
+              {
+                "type": "course",
+                "code": "PHIL 110"
+              },
+              {
+                "type": "course",
+                "code": "PHIL 199"
+              },
+              {
+                "type": "course",
+                "code": "POLI 110A"
+              },
+              {
+                "type": "course",
+                "code": "RELI 146"
+              },
+              {
+                "type": "course",
+                "code": "RELI 161GS"
+              },
+              {
+                "type": "course",
+                "code": "VIS 120A"
+              },
+              {
+                "type": "course",
+                "code": "VIS 120B"
+              },
+              {
+                "type": "course",
+                "code": "VIS 120C"
+              },
+              {
+                "type": "course",
+                "code": "HIGR 260"
+              },
+              {
+                "type": "course",
+                "code": "HIGR 261"
+              },
+              {
+                "type": "course",
+                "code": "LTCO 210"
+              },
+              {
+                "type": "course",
+                "code": "PHIL 210"
+              },
+              {
+                "type": "course",
+                "code": "PHIL 287"
+              },
+              {
+                "type": "course",
+                "code": "PHIL 288"
+              },
+              {
+                "type": "course",
+                "code": "PHIL 290"
+              }
+            ],
+            "label": "Six electives from at least two different departments",
+            "notes": "from the list of approved courses in anthropology, history, literature, philosophy, political science, theatre and dance, and visual arts. These courses must be from at least two departments. Upper-division LTGK/LTLA courses beyond the six language-based courses may count here (they are on the approved literature list)."
+          }
+        ]
+      }
+    }
+  ]
+}

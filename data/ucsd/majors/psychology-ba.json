@@ -1,0 +1,367 @@
+{
+  "name": "Psychology - BA",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Psychology",
+  "source": "https://catalog.ucsd.edu/curric/PSYC-ug.html",
+  "narrative": [
+    "All courses taken for the major must be letter-graded and completed with a C– or better. Exceptions for PSYC 195P and AIP 197 which are only offered on a P/NP grading option and major lower-division natural science, formal skills, computer programming, and research methods.",
+    "A course may only fulfill one major course requirement.",
+    "Excluded from credit toward the major are graduate seminars (2XX).",
+    "A maximum of three upper-division psychology courses may be taken outside UC San Diego.",
+    "A grade point average of at least 2.0 in the upper-division major courses is required for graduation.",
+    "Students majoring in psychology must have departmental approval for electives taken outside the department.",
+    "Lower-Division Requirements (twenty-four units); Upper-Division Course Requirements (forty-eight units)."
+  ],
+  "sections": [
+    {
+      "name": "Lower-Division Requirements",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "choose",
+            "count": 2,
+            "label": "Two Natural Science Courses",
+            "notes": "BILD 22 is NOT accepted. Only one of CHEM 4 or 11 can be taken for credit. Only one of BILD 12, COGS 17, or PSYC 2 may be counted toward this requirement.",
+            "items": [
+              {
+                "type": "course",
+                "code": "BILD 1"
+              },
+              {
+                "type": "course",
+                "code": "BILD 2"
+              },
+              {
+                "type": "course",
+                "code": "BILD 3"
+              },
+              {
+                "type": "course",
+                "code": "BILD 10"
+              },
+              {
+                "type": "course",
+                "code": "BILD 12"
+              },
+              {
+                "type": "course",
+                "code": "BILD 20"
+              },
+              {
+                "type": "course",
+                "code": "BILD 26"
+              },
+              {
+                "type": "course",
+                "code": "CHEM 4"
+              },
+              {
+                "type": "course",
+                "code": "CHEM 6A"
+              },
+              {
+                "type": "course",
+                "code": "CHEM 6B"
+              },
+              {
+                "type": "course",
+                "code": "CHEM 6C"
+              },
+              {
+                "type": "course",
+                "code": "CHEM 11"
+              },
+              {
+                "type": "course",
+                "code": "CHEM 12"
+              },
+              {
+                "type": "course",
+                "code": "CHEM 13"
+              },
+              {
+                "type": "course",
+                "code": "COGS 17"
+              },
+              {
+                "type": "course",
+                "code": "PHYS 1A"
+              },
+              {
+                "type": "course",
+                "code": "PHYS 1B"
+              },
+              {
+                "type": "course",
+                "code": "PHYS 1C"
+              },
+              {
+                "type": "course",
+                "code": "PHYS 2A"
+              },
+              {
+                "type": "course",
+                "code": "PHYS 2B"
+              },
+              {
+                "type": "course",
+                "code": "PHYS 2C"
+              },
+              {
+                "type": "course",
+                "code": "PHYS 10"
+              },
+              {
+                "type": "course",
+                "code": "PHYS 11"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 2"
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "label": "One Formal Skills Course",
+            "items": [
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 10A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 20A"
+                  }
+                ]
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 10B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 20B"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "MATH 18"
+              },
+              {
+                "type": "course",
+                "code": "PHIL 10"
+              },
+              {
+                "type": "course",
+                "code": "PHIL 12"
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "label": "One Computer Programming Course",
+            "items": [
+              {
+                "type": "course",
+                "code": "COGS 18"
+              },
+              {
+                "type": "course",
+                "code": "CSE 6R"
+              },
+              {
+                "type": "course",
+                "code": "CSE 8A"
+              },
+              {
+                "type": "course",
+                "code": "CSE 8B"
+              },
+              {
+                "type": "course",
+                "code": "CSE 11"
+              },
+              {
+                "type": "course",
+                "code": "CSE 12"
+              },
+              {
+                "type": "course",
+                "code": "CSS 1"
+              },
+              {
+                "type": "course",
+                "code": "DSC 10"
+              },
+              {
+                "type": "course",
+                "code": "ECE 15"
+              },
+              {
+                "type": "course",
+                "code": "MAE 5"
+              },
+              {
+                "type": "course",
+                "code": "MAE 8"
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "label": "One Statistics Course",
+            "notes": "PSYC 60 (preferred)",
+            "items": [
+              {
+                "type": "course",
+                "code": "PSYC 60"
+              },
+              {
+                "type": "course",
+                "code": "BENG 100"
+              },
+              {
+                "type": "course",
+                "code": "BIEB 100"
+              },
+              {
+                "type": "course",
+                "code": "COGS 14B"
+              },
+              {
+                "type": "course",
+                "code": "ECON 120A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 11"
+              },
+              {
+                "type": "course",
+                "code": "MATH 181A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 183"
+              },
+              {
+                "type": "course",
+                "code": "MATH 186"
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "label": "One Research Methods Course",
+            "notes": "PSYC 70 (preferred)",
+            "items": [
+              {
+                "type": "course",
+                "code": "PSYC 70"
+              },
+              {
+                "type": "course",
+                "code": "COGS 14A"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Upper-Division Course Requirements",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "choose",
+            "count": 4,
+            "label": "Four Psychology Core Courses",
+            "items": [
+              {
+                "type": "course",
+                "code": "PSYC 100"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 101"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 102"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 104"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 105"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 106"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 108"
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 8,
+            "label": "Eight Upper-Division Psychology Elective Courses",
+            "notes": "PSYC 100–111, 122–193. Only one of PHIL 137, 149 can count toward the psychology elective requirement. Students may use one four-unit PSYC 195P and/or AIP 197 toward the upper-division (UD) psychology elective requirement. Preapproval from the Psychology Advising Office is required.",
+            "items": [
+              {
+                "type": "range",
+                "subject": "PSYC",
+                "from": 100,
+                "to": 111
+              },
+              {
+                "type": "range",
+                "subject": "PSYC",
+                "from": 122,
+                "to": 193
+              },
+              {
+                "type": "course",
+                "code": "PSYC 195P"
+              },
+              {
+                "type": "course",
+                "code": "AIP 197"
+              },
+              {
+                "type": "course",
+                "code": "PHIL 137"
+              },
+              {
+                "type": "course",
+                "code": "PHIL 149"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

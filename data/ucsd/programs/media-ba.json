@@ -1,0 +1,599 @@
+{
+ "id": "UCSD-MAJOR-media-ba",
+ "name": "Media - BA",
+ "kind": "major",
+ "type": "Bachelor's Degree",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsd.edu/curric/VIS-ug.html",
+ "sections": [
+  {
+   "name": "Lower Division: Foundation Level (seven courses required)",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "VIS 60",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 70N",
+      "status": "active"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "VIS 83",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "VIS 83R",
+          "status": "active"
+         }
+        ],
+        "count": 1
+       },
+       {
+        "type": "course",
+        "code": "VIS 84",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 84B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 85A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 85B",
+        "status": "active"
+       }
+      ],
+      "count": 2,
+      "label": "Choose two media studies courses"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "VIS 1",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 2",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 3",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 11",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 41",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 42",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 71",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 72",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 73",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 80",
+        "status": "active"
+       }
+      ],
+      "count": 2,
+      "label": "Choose two art making courses"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "VIS 12R",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 20",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 21A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 21B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 21C",
+        "status": "active"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "VIS 22",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "VIS 22R",
+          "status": "active"
+         }
+        ],
+        "count": 1,
+        "label": "VIS 22/22R"
+       }
+      ],
+      "count": 1,
+      "label": "Choose one art history course"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Upper Division: Intermediate Level (eight courses required)",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "VIS 164",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 174",
+      "status": "active"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "VIS 165",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 165A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 165B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 171",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 172",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 175",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 176",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 177",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 178",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 179",
+        "status": "active"
+       }
+      ],
+      "count": 2,
+      "label": "Choose two media practice courses"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "VIS 150",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 150A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 151",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 151A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 152",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 152D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 155",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 156",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 157",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 157D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 158A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 158B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 158C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 158D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 159",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 194S",
+        "status": "active"
+       }
+      ],
+      "count": 3,
+      "label": "Choose three media studies courses"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "VIS 100",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 101",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 102",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 104A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 105A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 106A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 107A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 133",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 134",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 142",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 147A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 163",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 173",
+        "status": "active"
+       }
+      ],
+      "count": 1,
+      "label": "Choose one interdisciplinary course"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Advanced Level (two courses required)",
+   "requirement": {
+    "type": "choose",
+    "items": [
+     {
+      "type": "course",
+      "code": "VIS 167",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 168",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 169A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 169B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 180A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 180B",
+      "status": "active"
+     }
+    ],
+    "count": 2,
+    "label": "Choose two media practice courses"
+   }
+  },
+  {
+   "name": "Senior Projects (three courses required)",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "VIS 181",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 182",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 182A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 183A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 183B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 184",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 185",
+        "status": "active"
+       }
+      ],
+      "count": 2,
+      "label": "Choose two media practice courses"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "VIS 100A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 101A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 108",
+        "status": "active"
+       },
+       {
+        "type": "text",
+        "text": "VIS 110A–K. Advanced—Various Topics"
+       },
+       {
+        "type": "course",
+        "code": "VIS 131",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 132",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 133A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 143A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 145A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 146A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 147B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 149",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 180",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 183",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 197",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 198",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 199",
+        "status": "active"
+       }
+      ],
+      "count": 1,
+      "label": "Choose one interdisciplinary course"
+     }
+    ]
+   }
+  }
+ ],
+ "narrative": [
+  "All courses taken to satisfy major requirements must be taken for a letter grade, and only grades of C– or better will be accepted in the visual arts major.",
+  "A minimum of two-thirds of the course work completed for the major must be taken at UC San Diego.",
+  "Double majors within the department (art history/theory/criticism paired with studio, speculative design, media, or ICAM) must have at least ten upper-division courses that are unique to each departmental major.",
+  "Degree type (BA) is not stated on the page; assumed BA.",
+  "Enrollment in production courses is limited to two per quarter."
+ ]
+}
