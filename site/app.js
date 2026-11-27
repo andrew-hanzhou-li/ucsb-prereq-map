@@ -128,6 +128,7 @@ async function start() {
     '<span class="narrow-only">' + escapeHtml(CAMPUS.toUpperCase()) + "</span>";
   // The one-file copy is UCSB only.
   if (window.EMBEDDED) el.campusChange.hidden = true;
+  fillCampusWords();
 
   try {
     majors = window.EMBEDDED ? window.EMBEDDED.majors : (await (await fetch(dataUrl("majors.json"))).json()).majors;
@@ -140,6 +141,7 @@ async function start() {
   // The AP chart, for the Credit box. Without it the site still works;
   // only AP credit can't be entered.
   try {
+    if (!campusDetails().apChart) throw new Error("no AP chart for this campus yet");
     creditTable = window.EMBEDDED ? window.EMBEDDED.credit : await (await fetch(dataUrl("credit.json"))).json();
   } catch (error) {
     creditTable = null;
@@ -176,6 +178,28 @@ async function start() {
   updateTakenStatus();
 }
 
+// The words on the page that name the campus, its catalog and what a
+// student picks there (campus.js, CAMPUS_DETAILS).
+function fillCampusWords() {
+  const details = campusDetails();
+  const campus = campusById(CAMPUS);
+  document.querySelectorAll(".campus-short").forEach(e => { e.textContent = CAMPUS.toUpperCase(); });
+  document.querySelectorAll(".campus-name").forEach(e => { e.textContent = campus.name; });
+  document.querySelectorAll(".campus-program").forEach(e => { e.textContent = details.program; });
+  document.querySelectorAll(".campus-catalog").forEach(e => { e.textContent = details.catalog; e.href = details.catalogHome; });
+  document.getElementById("welcome-title").textContent = "Choose a " + details.program + ".";
+  const examples = details.examples.map(([address, name]) =>
+    '<a href="' + campusHash() + escapeHtml(address) + '">' + escapeHtml(name) + "</a>");
+  document.getElementById("welcome-examples").innerHTML = "For example: " +
+    examples.slice(0, -1).join(", ") + ", or " + examples[examples.length - 1] + ".";
+  el.majorInput.placeholder = "Choose a " + details.program + "…";
+  // The one-file copy holds UCSB only, so other campuses don't offer it.
+  if (CAMPUS !== "ucsb") {
+    el.footerDownload.hidden = true;
+    document.querySelectorAll(".download-link").forEach(a => { a.closest("p").hidden = true; });
+  }
+}
+
 function stem(fileName) {
   return fileName.replace(/\.json$/, "");
 }
@@ -183,6 +207,13 @@ function stem(fileName) {
 // The front page's index: every major and minor, grouped by department
 // (A to Z), majors first in each.
 function fillBrowseLists() {
+  // A campus whose programs are departments (UCSD for now): one list.
+  if (majors.every(m => m.kind === "department")) {
+    el.browseCount.textContent = majors.length + " departments.";
+    el.browse.innerHTML = '<section class="dept flat"><ul>' + majors.slice().sort((a, b) => a.name.localeCompare(b.name)).map(m =>
+      '<li><a href="' + campusHash() + escapeHtml(stem(m.file)) + '">' + escapeHtml(m.name) + "</a></li>").join("") + "</ul></section>";
+    return;
+  }
   const departments = {};
   for (const m of majors) (departments[m.department] = departments[m.department] || []).push(m);
   const names = Object.keys(departments).sort((a, b) => a.localeCompare(b));
@@ -338,7 +369,7 @@ function showHome() {
   el.toggles.hidden = true;             // nothing to show or hide until a program is open
   el.courseInput.parentElement.hidden = false;
   el.courseInput.disabled = false;      // course search works from the front page too
-  el.footerCatalog.textContent = "Built from the UCSB General Catalog.";
+  el.footerCatalog.textContent = "Built from the " + campusDetails().catalog + ".";
   document.title = SITE_NAME + " · " + campusById(CAMPUS).name;
   el.panel.hidden = true;           // nothing to show until a map is open
   el.top.classList.remove("compact");
@@ -446,7 +477,8 @@ function showChosen() {
     '<span class="chosen-item">' + escapeHtml(displayName(p.name)) +
     ' <button type="button" class="remove" data-remove="' + escapeHtml(p.id) + '" aria-label="Remove ' +
     escapeHtml(displayName(p.name)) + '">×</button></span>').join('<span class="plus">+</span>');
-  el.majorInput.placeholder = currentPrograms.length ? "Add another major or minor…" : "Choose a major or minor…";
+  const program = campusDetails().program;
+  el.majorInput.placeholder = currentPrograms.length ? "Add another " + program + "…" : "Choose a " + program + "…";
 }
 
 // Load the programs' graphs, put them together and draw the map.
@@ -481,7 +513,8 @@ async function loadPrograms(programs) {
   el.allLink.hidden = false;
   el.toggles.hidden = currentView !== "map";
   el.courseInput.disabled = false;
-  el.footerCatalog.textContent = "Built from the " + graph.major.catalog_year + " UCSB General Catalog. Official requirements: ";
+  el.footerCatalog.textContent = "Built from the " + graph.major.catalog_year + " " + campusDetails().catalog +
+    (graph.major.kind === "department" ? ". Its courses: " : ". Official requirements: ");
   graph.major.programs.forEach(function (program, i) {
     const source = document.createElement("a");
     source.href = program.source;
@@ -1583,8 +1616,7 @@ function showCourse(course) {
 
   html += "<h3>More</h3><ul>";
   html += '<li><button type="button" class="text-button" data-copy-link>Copy a link to this course</button></li>';
-  html += '<li><a href="https://catalog.ucsb.edu/courses/' + encodeURIComponent(course.id) +
-          '" target="_blank" rel="noopener">This course in the UCSB catalog</a></li>';
+  html += "<li>" + catalogLinkFor(course.id, course.url) + "</li>";
   if (course.level === "lower") {
     html += '<li><a href="https://assist.org/" target="_blank" rel="noopener">Community college equivalents on ASSIST</a></li>';
   }
@@ -1630,9 +1662,10 @@ function showMajorSummary() {
     html += "<details><summary>Notes from the catalog</summary>" +
             graph.major.narrative.map(t => '<p class="note">' + escapeHtml(t) + "</p>").join("") + "</details>";
   }
-  html += '<p class="note">Unofficial student project, built from the ' + escapeHtml(graph.major.catalog_year) +
-          ' UCSB General Catalog. Requirements change; confirm your plan with a department advisor. <a href="' +
-          escapeHtml(graph.major.source) + '" target="_blank" rel="noopener">Official requirements</a></p>';
+  html += '<p class="note">Unofficial student project, built from the ' + escapeHtml(graph.major.catalog_year) + " " +
+          escapeHtml(campusDetails().catalog) + '. Requirements change; confirm your plan with a department advisor. <a href="' +
+          escapeHtml(graph.major.source) + '" target="_blank" rel="noopener">' +
+          (graph.major.kind === "department" ? "The department's courses" : "Official requirements") + "</a></p>";
   setPanel(html, graph.major.name);
 }
 

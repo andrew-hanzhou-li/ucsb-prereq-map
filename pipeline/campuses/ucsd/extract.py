@@ -230,6 +230,9 @@ def courses_on_page(path):
                 "cross_listed": [c for c in codes if c != code and level_of(c) != "graduate"]
                                 if "/" in name.group("codes") else [],
                 "tags": [t.strip() for t in tags.group("tags").split(",")] if tags else [],
+                # The course on its department's page: "...courses/CSE.html#cse100"
+                "url": "https://catalog.ucsd.edu/courses/%s.html#%s" % (
+                    os.path.splitext(os.path.basename(path))[0], code.replace(" ", "").lower()),
             })
     return courses, problems
 

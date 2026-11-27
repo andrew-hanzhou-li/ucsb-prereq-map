@@ -4,6 +4,8 @@ into one ready-to-draw file per major.
 
     py pipeline/build_graph.py                      every major in data/majors/
     py pipeline/build_graph.py economics-ba         just one
+    py pipeline/build_graph.py --campus ucsd        UC San Diego's departments
+                                                    (data/ucsd/ -> site/data/ucsd/)
 
 Reads   data/majors/*.json      what each major requires          (Part 3)
         prereqs.json          what each course requires         (Part 2)
@@ -65,7 +67,16 @@ import sys
 
 from parser import all_courses
 
-MAJORS_DIR = os.path.join("data", "majors")
+# Where each campus's inputs and output are. UCSB's came first, so its
+# inputs sit at the top of data/.
+CAMPUS_PATHS = {
+    "ucsb": {"programs": os.path.join("data", "majors"), "prereqs": os.path.join("data", "prereqs.json"),
+             "courses": os.path.join("data", "raw_courses.json"),
+             "offering_overrides": os.path.join("data", "offering_overrides.json")},
+    "ucsd": {"programs": os.path.join("data", "ucsd", "programs"), "prereqs": os.path.join("data", "ucsd", "prereqs.json"),
+             "courses": os.path.join("data", "ucsd", "raw_courses.json"), "offering_overrides": None},
+}
+MAJORS_DIR = CAMPUS_PATHS["ucsb"]["programs"]
 OUTPUT_DIR = os.path.join("site", "data", "ucsb")
 
 # An elective list longer than this becomes one "pool" box. Computer
@@ -340,6 +351,9 @@ def build_major(major, prereqs, catalog):
             "requires": entry.get("requires"),
             "ambiguous": entry.get("ambiguous", False),
             "description": info.get("description", ""),
+            # Its page in the catalog, for campuses whose addresses can't be
+            # built from the code alone (UCSD: one page per department).
+            **({"url": info["url"]} if info.get("url") else {}),
         })
         edges.extend(make_edges(code, entry.get("requires")))
 
@@ -448,13 +462,25 @@ def real_cycles(cycles, prereqs):
 
 
 def main():
+    global MAJORS_DIR, OUTPUT_DIR
     sys.stdout.reconfigure(errors="replace")
-    with open("data/prereqs.json", encoding="utf-8") as f:
+    args = sys.argv[1:]
+    campus = "ucsb"
+    if "--campus" in args:
+        campus = args[args.index("--campus") + 1]
+        args = [a for a in args if a not in ("--campus", campus)]
+    if campus not in CAMPUS_PATHS:
+        sys.exit("build_graph.py: unknown campus %r (known: %s)" % (campus, ", ".join(CAMPUS_PATHS)))
+    paths = CAMPUS_PATHS[campus]
+    MAJORS_DIR = paths["programs"]
+    OUTPUT_DIR = os.path.join("site", "data", campus)
+    with open(paths["prereqs"], encoding="utf-8") as f:
         prereqs = {c["code"]: c for c in json.load(f)["courses"]}
-    with open("data/raw_courses.json", encoding="utf-8") as f:
+    with open(paths["courses"], encoding="utf-8") as f:
         catalog = {c["code"]: c for c in json.load(f)["courses"]}
-    with open("data/offering_overrides.json", encoding="utf-8") as f:
-        OFFERING_OVERRIDES.update(json.load(f)["courses"])
+    if paths["offering_overrides"]:
+        with open(paths["offering_overrides"], encoding="utf-8") as f:
+            OFFERING_OVERRIDES.update(json.load(f)["courses"])
     known = sum(1 for code, info in catalog.items() if offered_for(code, info))
     print("Courses with known offering quarters: %d of %d (catalog field %d, course text %d, hand corrections %d)" % (
         known, len(catalog), sum(1 for c in catalog.values() if c.get("offered")),
@@ -464,7 +490,7 @@ def main():
         everything = json.load(f)["majors"]
     index = [m for m in everything if m["structured"]]
 
-    wanted = [a.removesuffix(".json") for a in sys.argv[1:]]
+    wanted = [a.removesuffix(".json") for a in args]
     if wanted:
         index = [m for m in index if m["file"][:-5] in wanted]
 
@@ -501,7 +527,10 @@ def main():
             with open(os.path.join(OUTPUT_DIR, entry["file"]), encoding="utf-8") as f:
                 for node in json.load(f)["nodes"]:
                     if node["in_major"] and node["status"] == "active":
-                        course_index.setdefault(node["id"], [node["title"], []])[1].append(position)
+                        entry = course_index.setdefault(node["id"], [node["title"], []])
+                        entry[1].append(position)
+                        if node.get("url") and len(entry) == 2:
+                            entry.append(node["url"])       # [title, programs, catalog address]
         with open(os.path.join(OUTPUT_DIR, "course-index.json"), "w", encoding="utf-8") as f:
             json.dump(dict(sorted(course_index.items())), f, ensure_ascii=False, separators=(",", ":"))
         print("Course index: %d courses" % len(course_index))

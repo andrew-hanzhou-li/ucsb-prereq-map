@@ -415,6 +415,7 @@ a.campus-name:hover, a.campus-name:focus-visible { text-decoration: underline; }
 .browse-count { margin: 26px 0 10px !important; padding-bottom: 6px; border-bottom: 1px solid var(--ink); color: var(--muted); max-width: none !important; }
 .browse { columns: 3 280px; column-gap: 40px; }
 .dept { break-inside: avoid; margin: 0 0 20px; }
+.dept.flat { break-inside: auto; }      /* one long list (departments) flows across the columns */
 .dept h3 {
   margin: 0 0 2px;
   font-family: var(--display);

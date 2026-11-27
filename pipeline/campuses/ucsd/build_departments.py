@@ -60,8 +60,22 @@ def department_names(index_html):
     names = {}
     for page, options in candidates.items():
         matching = [title for name, title in options if title and title.startswith(name)]
-        names[page] = matching[0] if matching else options[0][0]
+        names[page] = tidy_name(matching[0] if matching else options[0][0])
     return names
+
+
+def tidy_name(name):
+    """The index's inverted names, put the right way round:
+        "Religion, Study of"                 -> "Study of Religion"
+        "Engineering, Jacobs School of"      -> "Jacobs School of Engineering"
+        "Biological Sciences, Division of"   -> "Biological Sciences"
+    """
+    match = re.match(r"^(?P<subject>.+), (?P<unit>[^,]+ of)$", name)
+    if not match:
+        return name
+    if match.group("unit") == "Division of":
+        return match.group("subject")
+    return match.group("unit") + " " + match.group("subject")
 
 
 def file_name(name):

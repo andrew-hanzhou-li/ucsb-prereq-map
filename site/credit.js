@@ -37,7 +37,9 @@ function fillCreditBox() {
   // what that score counts as. The score alone says whether it was taken;
   // there used to be a checkbox too, which was one more thing to set.
   if (!creditTable) {
-    creditEl.apList.innerHTML = '<p class="note">The AP chart didn\'t load. Check your connection and reopen this box.</p>';
+    creditEl.apList.innerHTML = campusDetails().apChart
+      ? '<p class="note">The AP chart didn\'t load. Check your connection and reopen this box.</p>'
+      : '<p class="note">' + escapeHtml(campusById(CAMPUS).name) + '\'s AP chart isn\'t on the site yet. Add the courses your scores count as under "College courses" below.</p>';
   } else {
     creditEl.source.href = creditTable.source;
     creditEl.apList.innerHTML = creditTable.ap.map(function (exam) {
@@ -63,7 +65,7 @@ function fillCreditBox() {
         '<label><input type="checkbox" data-transfer="' + escapeHtml(code) + '"' +
         (credit.transfer.includes(code) ? " checked" : "") + "> " + escapeHtml(code) +
         ' <span class="note">' + escapeHtml(nodesById[code].title || "") + "</span></label>").join("") + "</div>"
-    : '<p class="note">Open a major or minor first to see its lower-division courses here, or add any course below.</p>';
+    : '<p class="note">Open a ' + campusDetails().program + ' first to see its lower-division courses here, or add any course below.</p>';
 
   creditEl.options.innerHTML = graph
     ? graph.nodes.map(n => '<option value="' + escapeHtml(n.id) + '">').join("")

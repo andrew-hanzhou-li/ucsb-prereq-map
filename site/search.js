@@ -274,7 +274,7 @@ function showIndexedCourse(code) {
   html += "<h3>In these programs</h3><ul>" + programs.map(m =>
     '<li><a href="' + hashFor([m], code) + '">' + escapeHtml(displayName(m.name)) + "</a></li>").join("") + "</ul>";
   html += '<p class="note">Open one to see what ' + escapeHtml(code) + " needs and what it unlocks there.</p>";
-  html += '<p><a href="https://catalog.ucsb.edu/courses/' + encodeURIComponent(code) + '" target="_blank" rel="noopener">This course in the UCSB catalog</a></p>';
+  html += "<p>" + catalogLinkFor(code, entry[2]) + "</p>";     // entry: [title, programs, address?]
   el.panel.hidden = false;
   setPanel(html, code + "  " + entry[0]);
   openSheet();

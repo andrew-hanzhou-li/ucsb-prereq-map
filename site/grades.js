@@ -84,7 +84,7 @@ function gpaSummaryHtml() {
          " graded units" + (inProgress ? ", " + inProgress + " in progress" : "") + ".</p>" +
          '<p class="note">Only courses in this plan count, so it matches the UC GPA on GOLD only if the plan has every graded course ' +
          "you've taken (reading your transcript adds them all). P/NP and In Progress don't count. A repeated course counts once, " +
-         "with its latest grade; UCSB replaces only D, F and NP grades, for the first 16 repeated units, so GOLD may differ.</p>";
+         "with its latest grade; the UC replaces only D, F and NP grades, for the first 16 repeated units, so your official GPA may differ.</p>";
 }
 
 el.panelBody.addEventListener("change", function (event) {

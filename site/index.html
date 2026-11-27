@@ -98,9 +98,9 @@
           <div class="notice" id="notice" hidden></div>
 
           <div id="welcome">
-            <h2>Choose a major or minor.</h2>
+            <h2 id="welcome-title">Choose a major or minor.</h2>
             <p>Every course in the program is listed in prerequisite order, with the courses from other departments it needs. Point at or click a course to see everything it needs and everything it unlocks.</p>
-            <p class="quick">For example: <a href="#ucsb/economics-ba">Economics (B.A.)</a>, <a href="#ucsb/statistics-and-data-science-bs">Statistics and Data Science (B.S.)</a>, or <a href="#ucsb/computer-engineering-bs">Computer Engineering (B.S.)</a>.</p>
+            <p class="quick" id="welcome-examples">For example: <a href="#ucsb/economics-ba">Economics (B.A.)</a>, <a href="#ucsb/statistics-and-data-science-bs">Statistics and Data Science (B.S.)</a>, or <a href="#ucsb/computer-engineering-bs">Computer Engineering (B.S.)</a>.</p>
           </div>
 
           <!-- Every program, grouped by department (app.js, fillBrowseLists). -->
@@ -121,7 +121,7 @@
           <button type="button" class="text-button" id="plan-more-button" aria-expanded="false" aria-controls="plan-buttons" aria-label="More plan actions">⋯</button>
         </div>
         <div class="plan-settings" id="plan-settings">
-          <label>First quarter at UCSB: Fall <select id="plan-start"></select></label>
+          <label>First quarter at <span class="campus-short">UCSB</span>: Fall <select id="plan-start"></select></label>
           <label><input type="checkbox" id="plan-transfer"> transfer student (start in year 3)</label>
           <label><input type="checkbox" id="plan-summer"> plan summer quarters</label>
           <label>up to <input type="number" id="plan-cap" min="4" max="30"> units a quarter</label>
@@ -156,7 +156,7 @@
   <dialog class="about" id="about">
     <form method="dialog" class="about-close"><button type="submit" class="text-button">close</button></form>
     <h2>About this map</h2>
-    <p class="lede">Choose a UCSB major or minor and see every course in it on one page, in prerequisite order, with what each course needs and what it leads to.</p>
+    <p class="lede">Choose a <span class="campus-short">UCSB</span> <span class="campus-program">major or minor</span> and see every course in it on one page, in prerequisite order, with what each course needs and what it leads to.</p>
 
     <h3>How to read it</h3>
     <ul>
@@ -188,7 +188,7 @@
     <p>The address bar names the program and the course you've chosen, so you can copy it and send it. There is also a <a href="ucsb-prereq-map.html" class="download-link" download>one-file copy</a> of the whole site <span class="file-size">(8.7 MB)</span> that opens in any browser, even offline. It's large for a phone, so it's best saved on a computer.</p>
 
     <h3>Where the data comes from</h3>
-    <p>Everything comes from the <a href="https://catalog.ucsb.edu/" target="_blank" rel="noopener">UCSB General Catalog</a>: the course list, each course's prerequisites, and each program's requirements. Course prerequisites are written in plain English in the catalog, so a program reads them into "all of" and "one of" rules. Program requirements are copied from the catalog's structured lists.</p>
+    <p>Everything comes from the <a href="https://catalog.ucsb.edu/" target="_blank" rel="noopener" class="campus-catalog">UCSB General Catalog</a>: the course list, each course's prerequisites, and each program's requirements. Course prerequisites are written in plain English in the catalog, so a program reads them into "all of" and "one of" rules. Program requirements are copied from the catalog's structured lists.</p>
 
     <h3>What it can't check</h3>
     <ul>
@@ -200,7 +200,7 @@
     </ul>
 
     <h3>An unofficial student project</h3>
-    <p>It isn't made or endorsed by UC Santa Barbara. Requirements change, and the catalog is the official source. Confirm your plan with your department advisor.</p>
+    <p>It isn't made or endorsed by <span class="campus-name">UC Santa Barbara</span>. Requirements change, and the catalog is the official source. Confirm your plan with your department advisor.</p>
   </dialog>
 
   <dialog class="about credit" id="credit">
@@ -215,10 +215,10 @@
     <div class="ap-list" id="ap-list"></div>
 
     <h3>College courses</h3>
-    <p class="note">Dual enrollment, community college or another university: tick the UCSB course each one counts as. For California community colleges, <a href="https://assist.org/" target="_blank" rel="noopener">ASSIST.org</a> lists the official equivalents.</p>
+    <p class="note">Dual enrollment, community college or another university: tick the <span class="campus-short">UCSB</span> course each one counts as. For California community colleges, <a href="https://assist.org/" target="_blank" rel="noopener">ASSIST.org</a> lists the official equivalents.</p>
     <div id="transfer-suggest"></div>
     <p class="transfer-add-row">
-      <label>Another UCSB course <input id="transfer-input" list="transfer-options" placeholder="e.g. CMPSC 40" autocomplete="off"></label>
+      <label>Another <span class="campus-short">UCSB</span> course <input id="transfer-input" list="transfer-options" placeholder="e.g. CMPSC 40" autocomplete="off"></label>
       <datalist id="transfer-options"></datalist>
       <button type="button" class="text-button" id="transfer-add">add</button>
     </p>

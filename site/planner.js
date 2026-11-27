@@ -732,7 +732,7 @@ function showPlanCourse(code) {
   } else if (!isDone(code)) {
     html += '<p class="plan-actions"><button type="button" class="text-button" data-plan-add="' + escapeHtml(code) + '">add to plan</button></p>';
   }
-  html += '<p><a href="https://catalog.ucsb.edu/courses/' + encodeURIComponent(code) + '" target="_blank" rel="noopener">This course in the UCSB catalog</a></p>';
+  html += "<p>" + catalogLinkFor(code, info.url) + "</p>";
   if (typeof gradeHtml === "function") html += gradeHtml(code);
   setPanel(html, code + "  " + (info.title || ""));
   openSheet();
@@ -779,8 +779,9 @@ function showPlanSummary() {
   }
   html += "<p>Click a course on the left to add it. It goes in the first quarter after its prerequisites, " +
           "when it's usually offered, under " + plan.cap + " units. Drag courses to move them, or click one for its details.</p>";
-  html += '<p class="note">When a course is offered is known for only about 120 UCSB courses (the catalog, plus hand corrections). ' +
-          "The rest are assumed Fall, Winter and Spring and marked with a faint ? in the plan. Check the Schedule of Classes on GOLD before you enroll.</p>";
+  html += '<p class="note">When a course is offered is known for only some courses (from the catalog' +
+          (CAMPUS === "ucsb" ? ", plus hand corrections" : "") + "). " +
+          "The rest are assumed Fall, Winter and Spring and marked with a faint ? in the plan. Check the Schedule of Classes before you enroll.</p>";
   if (typeof gpaSummaryHtml === "function") html += gpaSummaryHtml() + goalHtml();
   html += '<p class="note">Unofficial student project. Requirements change; confirm your plan with a department advisor.</p>';
   setPanel(html, "Your plan");

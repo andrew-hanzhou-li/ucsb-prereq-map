@@ -34,6 +34,45 @@ const CAMPUSES = [
   { id: "ucsc", name: "UC Santa Cruz", short: "Santa Cruz", terms: "Quarters", status: "later" },
 ];
 
+// What differs between campuses in the site's words and links.
+//   catalog       the catalog's name, as the footer and links say it
+//   courseUrl     a course's catalog page from its code, when the catalog has
+//                 one page per course; otherwise the data gives each course's
+//                 own address (UCSD: one page per department)
+//   program(s)    what a student picks: UCSB has majors and minors; UCSD,
+//                 until its majors are read, has departments
+//   examples      [address, name] for the front page's "For example"
+const CAMPUS_DETAILS = {
+  ucsb: {
+    catalog: "UCSB General Catalog", catalogHome: "https://catalog.ucsb.edu/",
+    courseUrl: code => "https://catalog.ucsb.edu/courses/" + encodeURIComponent(code),
+    program: "major or minor", programs: "majors and minors", apChart: true,
+    examples: [["economics-ba", "Economics (B.A.)"], ["statistics-and-data-science-bs", "Statistics and Data Science (B.S.)"],
+               ["computer-engineering-bs", "Computer Engineering (B.S.)"]],
+  },
+  ucsd: {
+    catalog: "UC San Diego General Catalog", catalogHome: "https://catalog.ucsd.edu/",
+    courseUrl: null,
+    program: "department", programs: "departments", apChart: false,
+    examples: [["computer-science-and-engineering", "Computer Science and Engineering"], ["mathematics", "Mathematics"],
+               ["biological-sciences", "Biological Sciences"]],
+  },
+};
+
+function campusDetails() {
+  return CAMPUS_DETAILS[CAMPUS] || CAMPUS_DETAILS.ucsb;
+}
+
+// "This course in the UCSB General Catalog", linked. `url` is the course's
+// own address from the data, when there is one; only https links are used.
+function catalogLinkFor(code, url) {
+  const details = campusDetails();
+  let href = url && /^https:\/\//.test(url) ? url : null;
+  if (!href) href = details.courseUrl ? details.courseUrl(code) : details.catalogHome;
+  return '<a href="' + escapeCampusText(href) + '" target="_blank" rel="noopener">This course in the ' +
+         escapeCampusText(details.catalog) + "</a>";
+}
+
 const CAMPUS_SCREEN = "campus";               // the address of the campus screen
 const REMEMBERED_CAMPUS_KEY = "prereq.campus";
 // Every address before campuses were added was UCSB's.
