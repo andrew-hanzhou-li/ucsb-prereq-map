@@ -28,9 +28,13 @@ Each group is split into two sets:
            (harder, course-heavy text; the courses the site shows first)
 
     py pipeline/measure.py final      score only one group
+    py pipeline/measure.py --campus ucsd
+                                      score UC San Diego's parser on
+                                      tests/ucsd_labels.json (same groups)
 """
 
 import json
+import os
 import re
 import sys
 
@@ -46,6 +50,36 @@ def load_parser():
     return Parser(subjects)
 
 
+def load_ucsd():
+    """A function parsing a label's text the way UCSD's pipeline does: the
+    labels hold everything after "Prerequisites:", and extract.py splits
+    enrollment notes off it first."""
+    sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "campuses", "ucsd"))
+    import build_prereqs
+    import extract
+    with open(build_prereqs.INPUT, encoding="utf-8") as f:
+        courses = json.load(f)["courses"]
+    parser = build_prereqs.make_parser(courses)
+    return lambda text: build_prereqs.parse(parser, extract.split_prereq_text(text)[0])
+
+
+def without_repeats(notation):
+    """The same answer with a tag or course repeated inside one & or | written
+    once ("@consent & @consent & X" -> "@consent & X"): the meaning is the
+    same, and labels write it once."""
+    def tidy(node):
+        if node is None or node["type"] not in ("and", "or"):
+            return node
+        items, seen = [], set()
+        for item in (tidy(i) for i in node["items"]):
+            key = to_notation(item)
+            if key not in seen:
+                seen.add(key)
+                items.append(item)
+        return items[0] if len(items) == 1 else dict(node, items=items)
+    return to_notation(tidy(from_notation(notation)))
+
+
 def course_logic_only(notation):
     """Treat every kind of condition as the same, so only the course logic
     (what draws arrows on the map) is compared."""
@@ -56,9 +90,15 @@ def main():
     # Windows consoles can't print every character the catalog uses; show "?" instead of crashing.
     sys.stdout.reconfigure(errors="replace")
     quiet = "--quiet" in sys.argv
-    only = [a for a in sys.argv[1:] if not a.startswith("--")]
-    parser = load_parser()
-    with open("tests/test_labels.json", encoding="utf-8") as f:
+    campus = sys.argv[sys.argv.index("--campus") + 1] if "--campus" in sys.argv else "ucsb"
+    only = [a for a in sys.argv[1:] if not a.startswith("--") and a != campus]
+    if campus == "ucsd":
+        parse = load_ucsd()
+        labels = "tests/ucsd_labels.json"
+    else:
+        parse = load_parser().parse
+        labels = "tests/test_labels.json"
+    with open(labels, encoding="utf-8") as f:
         tests = json.load(f)["courses"]
 
     scores = {}
@@ -67,9 +107,9 @@ def main():
     for test in tests:
         if only and test["group"] not in only:
             continue
-        tree = parser.parse(test["prereq_text"])["requires"]
-        got = to_notation(tree)
-        expected = to_notation(from_notation(test["expected"]))
+        tree = parse(test["prereq_text"])["requires"]
+        got = without_repeats(to_notation(tree))
+        expected = without_repeats(test["expected"])
         key = (test["group"], test["set"])
         right, total = scores.get(key, (0, 0))
         scores[key] = (right + (got == expected), total + 1)

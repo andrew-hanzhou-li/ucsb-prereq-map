@@ -55,13 +55,27 @@ TAGS = re.compile(r"\s+Tags?:\s*(?P<tags>.*)$")
 # One course code anywhere in a sentence ("MATH 20C", "Math 20D", "MATH 20 C").
 CODE_IN_TEXT = re.compile(r"\b[A-Za-z]{2,5} ?\d+[A-Z]{0,3}\b")
 
-# Sentences after the prerequisites that are about enrolling, not about
-# which courses come first. They go into "comments".
+# Sentences after the first that are about enrolling, not about what must
+# come first. They go into "comments".
 COMMENT_STARTS = re.compile(
-    r"^(students may not receive credit|students who have not completed|graduate students|"
-    r"this course|attendance|enrollment|credit (?:not|will not)|may be (?:repeated|taken for credit)|"
-    r"program or materials fee|renumbered|formerly|students (?:will|must|should)|"
-    r"department (?:stamp|approval) (?:is )?required for|letter grade)", re.IGNORECASE)
+    r"^(?:(?:students )?(?:may not|will not|cannot) receive (?:duplicate )?credit|recommended|"
+    r"(?:graduate|all other) students will be allowed|this course|attendance|"
+    r"credit (?:not|will not)|may be (?:repeated|taken for credit)|program or materials fee|"
+    r"renumbered|formerly|must be taken in sequence|letter grade|duplicate credit|"
+    r"students may receive credit for)", re.IGNORECASE)
+# Sentences after the first that ARE requirements even without a course code:
+# who may enroll, and whose approval is needed.
+REQUIREMENT_WORDS = re.compile(
+    r"\b(?:restricted to|open to|majors? only|consent|approval|authorization|stamp|"
+    r"accepted into|admission|admittance|standing|may enroll|cannot enroll|enrollment via)\b", re.IGNORECASE)
+# "(F,W,S)": the quarters a course is usually offered, written by a few
+# departments at the end of the description or prerequisites.
+QUARTER_MARK = re.compile(r"\s*\((?P<quarters>[FWSU](?:\s*,\s*[FWSU])*)\)\.?")
+QUARTER_NAMES = {"F": "Fall", "W": "Winter", "S": "Spring", "U": "Summer"}
+
+# Clauses inside a sentence (after ";") that are notes, e.g. "CSE 11;
+# restricted to undergraduates; graduate students will be allowed as space permits".
+COMMENT_CLAUSE = re.compile(r";\s*(?:graduate|all other) students will be allowed as space permits", re.IGNORECASE)
 
 
 class CoursePageParser(html.parser.HTMLParser):
@@ -156,15 +170,24 @@ def split_sentences(text):
 
 
 def split_prereq_text(text):
-    """(prerequisites, comments). The first sentence is always prerequisites;
-    a later one is too if it names a course and isn't a note about enrolling."""
-    sentences = split_sentences(text.strip())
-    prereqs, comments = sentences[:1], []
-    for sentence in sentences[1:]:
-        if comments or COMMENT_STARTS.match(sentence) or not CODE_IN_TEXT.search(sentence):
-            comments.append(sentence)
-        else:
+    """(prerequisites, comments). The first sentence is always prerequisites
+    (less any "graduate students will be allowed..." clause); each later one
+    is judged on its own: a note about enrolling goes to comments, a sentence
+    naming a course or saying who may enroll stays."""
+    sentences = split_sentences(QUARTER_MARK.sub("", text).strip())
+    prereqs, comments = [], []
+    for i, sentence in enumerate(sentences):
+        for clause in COMMENT_CLAUSE.findall(sentence):
+            comments.append(clause.lstrip("; ").capitalize())
+        sentence = COMMENT_CLAUSE.sub("", sentence)
+        if i == 0:
             prereqs.append(sentence)
+        elif COMMENT_STARTS.match(sentence):
+            comments.append(sentence)
+        elif CODE_IN_TEXT.search(sentence) or REQUIREMENT_WORDS.search(sentence):
+            prereqs.append(sentence)
+        else:
+            comments.append(sentence)
     join = lambda parts: ". ".join(p.rstrip(".") for p in parts) + ("." if parts else "")
     return join(prereqs), join(comments)
 
@@ -189,6 +212,9 @@ def courses_on_page(path):
             continue
         following = paragraphs[i + 1] if i + 1 < len(paragraphs) else None
         description = following[1] if following and following[0] == "course-descriptions" else ""
+        marks = QUARTER_MARK.findall(description)
+        offered = [QUARTER_NAMES[q] for q in "FWSU" if marks and q in marks[-1]]
+        description = QUARTER_MARK.sub("", description)
         parts = re.split(r"\bPrerequisites?:\s*", description, maxsplit=1)
         prereq_text, comments = split_prereq_text(parts[1]) if len(parts) == 2 else ("", "")
         for code, units in zip(codes, split_units(name.group("units") or "", len(codes))):
@@ -197,7 +223,7 @@ def courses_on_page(path):
             subject, number = code.rsplit(" ", 1)
             courses.append({
                 "code": code, "subject": subject, "number": number, "level": level_of(code),
-                "title": name.group("title"), "units": units, "offered": [],
+                "title": name.group("title"), "units": units, "offered": offered,
                 "prereq_text": prereq_text, "comments": comments,
                 "description": parts[0].strip(), "departments": [department],
                 "cross_listed": [c for c in codes if c != code and level_of(c) != "graduate"]
