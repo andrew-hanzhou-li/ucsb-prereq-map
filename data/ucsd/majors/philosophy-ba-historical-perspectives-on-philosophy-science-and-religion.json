@@ -145,20 +145,7 @@
         "items": [
           {
             "type": "choose",
-            "count": 12,
-            "items": [
-              {
-                "type": "any",
-                "subject": "PHIL",
-                "level": "upper"
-              }
-            ],
-            "label": "Upper-division philosophy courses",
-            "notes": "At least twelve of the fifteen courses must be upper-division; core courses count. PHIL 191–199 may not be used. Up to two upper-division courses outside philosophy may count with adviser approval."
-          },
-          {
-            "type": "choose",
-            "count": 3,
+            "count": 2,
             "items": [
               {
                 "type": "any",
@@ -172,10 +159,11 @@
               }
             ],
             "label": "Remaining philosophy courses",
-            "notes": "The remaining three of the fifteen philosophy courses may be lower- or upper-division; PHIL 10 counts here."
+            "notes": "The remaining courses of the fifteen may be lower- or upper-division; PHIL 10 (core, above) is one of them, so two more are needed here."
           }
         ],
-        "label": "Fifteen philosophy courses"
+        "label": "Fifteen philosophy courses",
+        "notes": "Fifteen philosophy courses in all, at least twelve upper-division (PHIL 191–199 may not be used; up to two upper-division courses outside philosophy may count with adviser approval). The eight core courses and the five area-of-emphasis courses count toward the fifteen (\"Courses taken to complete an area of emphasis are counted toward the fifteen courses required for the major\"), and their twelve upper-division courses meet the upper-division minimum, so only two more courses are needed. The catalog lets a course count for both the emphasis and a core requirement (PHIL 161 or 166); counted once here, the emphasis asks for five courses besides the core, but a student who uses PHIL 161 or 166 for both may take any other philosophy course in place of one of the five."
       }
     },
     {
