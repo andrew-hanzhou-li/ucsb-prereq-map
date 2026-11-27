@@ -20,8 +20,8 @@
 // in index.html and 404.html.
 const SITE_NAME = "Prereq";
 
-// UC's own order. "ready": its data is on the site. "next": being built.
-// "later": not started.
+// UC's own order. "ready": its data is on the site. "next": being built
+// (hasData: its data is on the site, for the preview). "later": not started.
 const CAMPUSES = [
   { id: "ucb", name: "UC Berkeley", short: "Berkeley", terms: "Semesters", status: "later" },
   { id: "ucd", name: "UC Davis", short: "Davis", terms: "Quarters", status: "later" },
@@ -29,7 +29,7 @@ const CAMPUSES = [
   { id: "ucla", name: "UCLA", short: "Los Angeles", terms: "Quarters", status: "next" },
   { id: "ucm", name: "UC Merced", short: "Merced", terms: "Semesters", status: "later" },
   { id: "ucr", name: "UC Riverside", short: "Riverside", terms: "Quarters", status: "later" },
-  { id: "ucsd", name: "UC San Diego", short: "San Diego", terms: "Quarters", status: "next" },
+  { id: "ucsd", name: "UC San Diego", short: "San Diego", terms: "Quarters", status: "next", hasData: true },
   { id: "ucsb", name: "UC Santa Barbara", short: "Santa Barbara", terms: "Quarters", status: "ready" },
   { id: "ucsc", name: "UC Santa Cruz", short: "Santa Cruz", terms: "Quarters", status: "later" },
 ];
@@ -82,11 +82,29 @@ function campusById(id) {
   return CAMPUSES.find(c => c.id === id) || null;
 }
 
+// Preview: opening the site with "?preview" in the address also opens the
+// "Coming next" campuses, to check them before they're marked ready. It's
+// remembered on this device until "?preview=off".
+const PREVIEW_KEY = "prereq.preview";
+const PREVIEW = (function () {
+  const asked = new URLSearchParams(location.search).get("preview");
+  try {
+    if (asked !== null) {
+      if (asked === "off") localStorage.removeItem(PREVIEW_KEY);
+      else localStorage.setItem(PREVIEW_KEY, "1");
+    }
+    return localStorage.getItem(PREVIEW_KEY) === "1";
+  } catch (error) {
+    return asked !== null && asked !== "off";     // storage blocked: this page only
+  }
+})();
+
 function isReady(id) {
   const campus = campusById(id);
   // The one-file copy carries only UCSB's data.
   if (window.EMBEDDED) return id === "ucsb";
-  return Boolean(campus && campus.status === "ready");
+  if (!campus) return false;
+  return campus.status === "ready" || (PREVIEW && campus.status === "next" && campus.hasData === true);
 }
 
 function decodedHash() {
@@ -202,7 +220,7 @@ function escapeCampusText(text) {
   return String(text).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
 }
 
-const STATUS_TEXT = { ready: "Ready", next: "Coming next", later: "" };
+const STATUS_TEXT = { ready: "Ready", preview: "Preview", next: "Coming next", later: "" };
 
 // `note`: shown above the list, e.g. when a link asked for a campus that
 // isn't ready yet.
@@ -216,8 +234,9 @@ function showCampusScreen(note) {
   noteBox.hidden = !note;
   document.getElementById("campus-list").innerHTML = CAMPUSES.map(function (campus, i) {
     const name = escapeCampusText(campus.short);
-    const status = isReady(campus.id) ? "ready" : campus.status === "ready" ? "later" : campus.status;
-    // Only a ready campus is a link; the rest say why they can't be picked.
+    let status = campus.status === "ready" && !isReady(campus.id) ? "later" : campus.status;   // one-file copy
+    if (campus.status === "next" && isReady(campus.id)) status = "preview";
+    // Only a campus that can open is a link; the rest say why they can't be picked.
     const label = isReady(campus.id)
       ? '<a class="campus-name" href="#' + campus.id + '/">' + name + "</a>"
       : '<span class="campus-name">' + name + '<span class="visually-hidden"> (not available yet)</span></span>';

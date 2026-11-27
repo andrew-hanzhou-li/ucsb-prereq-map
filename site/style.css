@@ -123,6 +123,7 @@ a.campus-name:hover, a.campus-name:focus-visible { text-decoration: underline; }
 .campus-terms { color: var(--muted); }
 .campus-status { text-align: right; font-weight: 600; }
 .campus-row.ready .campus-status { color: var(--green); }
+.campus-row.preview .campus-status { color: var(--muted); }
 .campus-hint { margin-top: 16px; color: var(--muted); font-size: 0.95rem; }
 @media (max-width: 700px) {
   .campus-screen { padding: 18px 16px 32px; }

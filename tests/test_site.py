@@ -290,6 +290,48 @@ def check_campuses(p):
     old.evaluate("localStorage.clear()")
     old.close()
 
+    # UC San Diego, opened with "?preview" while it's "Coming next": its
+    # department maps, its course links and its words.
+    ucsd = new_page(browser, viewport={"width": 1400, "height": 900})
+    ucsd.goto(SITE + "#campus")
+    ucsd.wait_for_timeout(400)
+    check("campus: without the preview, UC San Diego can't be picked",
+          ucsd.locator(".campus-row a.campus-name").count() == 1)
+    ucsd.goto(SITE + "?preview#campus")
+    ucsd.wait_for_timeout(400)
+    check("campus: with ?preview, UC San Diego can be picked and says Preview",
+          ucsd.locator(".campus-row.preview a.campus-name").count() == 1 and
+          "Preview" in ucsd.inner_text(".campus-row.preview"))
+    ucsd.goto(SITE + "?preview#ucsd/")
+    ucsd.wait_for_function("typeof majors !== 'undefined' && majors.length > 0", timeout=15000)
+    check("ucsd: the front page lists departments",
+          ucsd.inner_text("#browse-count").endswith("departments.") and
+          ucsd.inner_text("#welcome-title") == "Choose a department." and
+          "UC San Diego General Catalog" in ucsd.inner_text("#footer-catalog"))
+    check("ucsd: no one-file copy link (it's UCSB only)", not ucsd.is_visible("#footer-download"))
+    ucsd.goto(SITE + "?preview#ucsd/computer-science-and-engineering/CSE+100")
+    ucsd.wait_for_function("typeof selected !== 'undefined' && selected === 'CSE 100'", timeout=15000)
+    check("ucsd: CSE 100's panel links to its spot on the CSE page",
+          ucsd.locator('#panel-body a[href="https://catalog.ucsd.edu/courses/CSE.html#cse100"]').count() == 1)
+    check("ucsd: CSE 100 needs CSE 12 (an arrow on the map)",
+          ucsd.evaluate("graph.edges.some(e => e.from === 'CSE 12' && e.to === 'CSE 100')"))
+    ucsd.goto(SITE + "?preview#ucsd/plan/mathematics")
+    ucsd.wait_for_function("currentView === 'plan'", timeout=15000)
+    ucsd.click('[data-plan-add="MATH 20A"]')
+    check("ucsd: a course can be added to a plan", ucsd.evaluate("plan.placed['MATH 20A']") is not None)
+    check("ucsd: plans are saved apart from UCSB's",
+          ucsd.evaluate("localStorage.getItem('prereq.ucsd.plan')") is not None and
+          "MATH 20A" not in (ucsd.evaluate("localStorage.getItem('prereq.ucsb.plan')") or ""))
+    ucsd.click("#credit-button")
+    check("ucsd: the Credit box says the AP chart isn't here yet", "isn't on the site yet" in ucsd.inner_text("#ap-list"))
+    ucsd.keyboard.press("Escape")
+    ucsd.goto(SITE + "?preview=off#campus")
+    ucsd.wait_for_timeout(400)
+    check("campus: ?preview=off turns the preview off", ucsd.locator(".campus-row.preview").count() == 0)
+    check("ucsd: no JavaScript errors", not ucsd.errors, ucsd.errors)
+    ucsd.evaluate("localStorage.clear()")
+    ucsd.close()
+
     phone = new_page(browser, viewport={"width": 360, "height": 740})
     phone.goto(SITE + "#campus")
     phone.wait_for_timeout(500)
