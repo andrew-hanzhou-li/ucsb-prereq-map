@@ -475,6 +475,8 @@ def main():
     args = sys.argv[1:]
     campus = "ucsb"
     if "--campus" in args:
+        if args.index("--campus") + 1 >= len(args):
+            sys.exit("build_graph.py: --campus needs a campus id (%s)" % ", ".join(CAMPUS_PATHS))
         campus = args[args.index("--campus") + 1]
         args = [a for a in args if a not in ("--campus", campus)]
     if campus not in CAMPUS_PATHS:

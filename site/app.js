@@ -184,7 +184,17 @@ function fillCampusWords() {
   const details = campusDetails();
   const campus = campusById(CAMPUS);
   document.querySelectorAll(".campus-short").forEach(e => { e.textContent = CAMPUS.toUpperCase(); });
-  document.querySelectorAll(".campus-name").forEach(e => { e.textContent = campus.name; });
+  document.querySelectorAll(".campus-fullname").forEach(e => { e.textContent = campus.name; });
+  document.querySelectorAll(".campus-program-label").forEach(e => {
+    e.textContent = details.program.charAt(0).toUpperCase() + details.program.slice(1);
+  });
+  document.querySelectorAll(".campus-example-course").forEach(e => { e.placeholder = "e.g. " + details.exampleCourse; });
+  // Only UCSB has an AP chart and a transcript reader (GOLD's format) so far.
+  if (!details.apChart) document.querySelectorAll(".ap-only").forEach(e => { e.hidden = true; });
+  if (CAMPUS !== "ucsb") {
+    document.querySelectorAll(".ucsb-only").forEach(e => { e.hidden = true; });
+    document.getElementById("plan-import").hidden = true;
+  }
   document.querySelectorAll(".campus-program").forEach(e => { e.textContent = details.program; });
   document.querySelectorAll(".campus-catalog").forEach(e => { e.textContent = details.catalog; e.href = details.catalogHome; });
   document.getElementById("welcome-title").textContent = "Choose a " + details.program + ".";
@@ -295,7 +305,7 @@ async function loadFromHash() {
   if (programs.some(p => !p)) {
     showHome();
     showNotice("<h2>No map at that address</h2>" +
-               "<p>That link doesn't match a current major or minor. The program may have been renamed or " +
+               "<p>That link doesn't match a current " + campusDetails().program + ". It may have been renamed or " +
                "retired from the catalog. Pick one from the lists below.</p>");
     return;
   }
@@ -1484,6 +1494,7 @@ function cssEscape(text) {
 function thisProgram() {
   if (!graph) return "this major";
   if (graph.major.programs.length > 1) return "these programs";
+  if (graph.major.kind === "department") return "this department";
   return graph.major.kind === "minor" ? "this minor" : "this major";
 }
 

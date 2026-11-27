@@ -600,12 +600,21 @@ class Parser:
                         if self.protector.lookup(m.group())["marker"] == "grade"
                         and not self.protector.lookup(m.group())["each"]]
         if len(plain_grades) >= 2:
+            # A trial parse of each stretch, to see which courses it names.
+            # parse_words remembers the last subject and collects leftover
+            # words; put both back, so the real parse below starts clean.
+            saved = (getattr(self, "last_subject", None), list(self.unparsed), self.ambiguous)
             start = 0
             for match in plain_grades:
                 before = PLACEHOLDER.sub(" ", text[start:match.start()])
                 codes = {c["code"] for c in all_courses(self.parse_words(before))}
                 grade_targets.append((self.protector.lookup(match.group()), codes))
                 start = match.end()
+            self.last_subject, self.unparsed, self.ambiguous = saved
+            # A grade written before its course ("C or better in A and a B-
+            # in B") has no course before it: keep the old rule for this piece.
+            if any(not codes for _, codes in grade_targets):
+                grade_targets = []
 
         markers = []
         for token in PLACEHOLDER.findall(text):

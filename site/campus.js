@@ -46,14 +46,14 @@ const CAMPUS_DETAILS = {
   ucsb: {
     catalog: "UCSB General Catalog", catalogHome: "https://catalog.ucsb.edu/",
     courseUrl: code => "https://catalog.ucsb.edu/courses/" + encodeURIComponent(code),
-    program: "major or minor", programs: "majors and minors", apChart: true,
+    program: "major or minor", programs: "majors and minors", apChart: true, exampleCourse: "CMPSC 40",
     examples: [["economics-ba", "Economics (B.A.)"], ["statistics-and-data-science-bs", "Statistics and Data Science (B.S.)"],
                ["computer-engineering-bs", "Computer Engineering (B.S.)"]],
   },
   ucsd: {
     catalog: "UC San Diego General Catalog", catalogHome: "https://catalog.ucsd.edu/",
     courseUrl: null,
-    program: "department", programs: "departments", apChart: false,
+    program: "department", programs: "departments", apChart: false, exampleCourse: "CSE 12",
     examples: [["computer-science-and-engineering", "Computer Science and Engineering"], ["mathematics", "Mathematics"],
                ["biological-sciences", "Biological Sciences"]],
   },

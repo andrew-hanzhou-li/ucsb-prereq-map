@@ -889,7 +889,7 @@ a.campus-name:hover, a.campus-name:focus-visible { text-decoration: underline; }
         <a href="#" id="view-plan">Plan</a>
       </nav>
       <label class="picker">
-        <span class="visually-hidden">Major or minor</span>
+        <span class="visually-hidden campus-program-label">Major or minor</span>
         <input id="major-input" placeholder="Choose a major or minor…" autocomplete="off">
       </label>
       <label class="picker more-options">
@@ -1014,7 +1014,7 @@ a.campus-name:hover, a.campus-name:focus-visible { text-decoration: underline; }
     </dl>
 
     <h3>Planning quarter by quarter</h3>
-    <p>"Plan" (next to the program names) lays your courses out by year and quarter. Click a course to add it: it goes in the first quarter after its prerequisites, when it's usually offered, under your unit limit. Auto-fill places the rest. Add grades to see your GPA, or read them from your GOLD transcript; the file never leaves your computer.</p>
+    <p>"Plan" (next to the program names) lays your courses out by year and quarter. Click a course to add it: it goes in the first quarter after its prerequisites, when it's usually offered, under your unit limit. Auto-fill places the rest. Add grades to see your GPA<span class="ucsb-only">, or read them from your GOLD transcript; the file never leaves your computer</span>.</p>
 
     <h3>Your marks stay on your device</h3>
     <p>Courses you mark as taken are saved in your browser on this device only. They're never sent anywhere, and the site has no accounts and no analytics. Clearing your browser's data, or using a private window, removes the marks.</p>
@@ -1035,7 +1035,7 @@ a.campus-name:hover, a.campus-name:focus-visible { text-decoration: underline; }
     </ul>
 
     <h3>An unofficial student project</h3>
-    <p>It isn't made or endorsed by <span class="campus-name">UC Santa Barbara</span>. Requirements change, and the catalog is the official source. Confirm your plan with your department advisor.</p>
+    <p>It isn't made or endorsed by <span class="campus-fullname">UC Santa Barbara</span>. Requirements change, and the catalog is the official source. Confirm your plan with your department advisor.</p>
   </dialog>
 
   <dialog class="about credit" id="credit">
@@ -1044,8 +1044,8 @@ a.campus-name:hover, a.campus-name:focus-visible { text-decoration: underline; }
     <p class="lede">Courses you have credit for count as done: their prerequisites are met on the map and in your plan. Saved in this browser only.</p>
 
     <h3>AP exams</h3>
-    <p class="note">Pick your score for each exam you took; leave the rest at “—”. From the <a id="ap-source" href="https://catalog.ucsb.edu/" target="_blank" rel="noopener">catalog's AP chart</a>; scores of 1 or 2 earn no credit.</p>
-    <label class="ap-filter"><span class="visually-hidden">Filter the exams</span>
+    <p class="note ap-only">Pick your score for each exam you took; leave the rest at “—”. From the <a id="ap-source" href="https://catalog.ucsb.edu/" target="_blank" rel="noopener">catalog's AP chart</a>; scores of 1 or 2 earn no credit.</p>
+    <label class="ap-filter ap-only"><span class="visually-hidden">Filter the exams</span>
       <input type="search" id="ap-filter" placeholder="Filter the exams (calc, bio, history…)" autocomplete="off"></label>
     <div class="ap-list" id="ap-list"></div>
 
@@ -1053,7 +1053,7 @@ a.campus-name:hover, a.campus-name:focus-visible { text-decoration: underline; }
     <p class="note">Dual enrollment, community college or another university: tick the <span class="campus-short">UCSB</span> course each one counts as. For California community colleges, <a href="https://assist.org/" target="_blank" rel="noopener">ASSIST.org</a> lists the official equivalents.</p>
     <div id="transfer-suggest"></div>
     <p class="transfer-add-row">
-      <label>Another <span class="campus-short">UCSB</span> course <input id="transfer-input" list="transfer-options" placeholder="e.g. CMPSC 40" autocomplete="off"></label>
+      <label>Another <span class="campus-short">UCSB</span> course <input id="transfer-input" list="transfer-options" placeholder="e.g. CMPSC 40" class="campus-example-course" autocomplete="off"></label>
       <datalist id="transfer-options"></datalist>
       <button type="button" class="text-button" id="transfer-add">add</button>
     </p>
@@ -1122,14 +1122,14 @@ const CAMPUS_DETAILS = {
   ucsb: {
     catalog: "UCSB General Catalog", catalogHome: "https://catalog.ucsb.edu/",
     courseUrl: code => "https://catalog.ucsb.edu/courses/" + encodeURIComponent(code),
-    program: "major or minor", programs: "majors and minors", apChart: true,
+    program: "major or minor", programs: "majors and minors", apChart: true, exampleCourse: "CMPSC 40",
     examples: [["economics-ba", "Economics (B.A.)"], ["statistics-and-data-science-bs", "Statistics and Data Science (B.S.)"],
                ["computer-engineering-bs", "Computer Engineering (B.S.)"]],
   },
   ucsd: {
     catalog: "UC San Diego General Catalog", catalogHome: "https://catalog.ucsd.edu/",
     courseUrl: null,
-    program: "department", programs: "departments", apChart: false,
+    program: "department", programs: "departments", apChart: false, exampleCourse: "CSE 12",
     examples: [["computer-science-and-engineering", "Computer Science and Engineering"], ["mathematics", "Mathematics"],
                ["biological-sciences", "Biological Sciences"]],
   },
@@ -1975,7 +1975,17 @@ function fillCampusWords() {
   const details = campusDetails();
   const campus = campusById(CAMPUS);
   document.querySelectorAll(".campus-short").forEach(e => { e.textContent = CAMPUS.toUpperCase(); });
-  document.querySelectorAll(".campus-name").forEach(e => { e.textContent = campus.name; });
+  document.querySelectorAll(".campus-fullname").forEach(e => { e.textContent = campus.name; });
+  document.querySelectorAll(".campus-program-label").forEach(e => {
+    e.textContent = details.program.charAt(0).toUpperCase() + details.program.slice(1);
+  });
+  document.querySelectorAll(".campus-example-course").forEach(e => { e.placeholder = "e.g. " + details.exampleCourse; });
+  // Only UCSB has an AP chart and a transcript reader (GOLD's format) so far.
+  if (!details.apChart) document.querySelectorAll(".ap-only").forEach(e => { e.hidden = true; });
+  if (CAMPUS !== "ucsb") {
+    document.querySelectorAll(".ucsb-only").forEach(e => { e.hidden = true; });
+    document.getElementById("plan-import").hidden = true;
+  }
   document.querySelectorAll(".campus-program").forEach(e => { e.textContent = details.program; });
   document.querySelectorAll(".campus-catalog").forEach(e => { e.textContent = details.catalog; e.href = details.catalogHome; });
   document.getElementById("welcome-title").textContent = "Choose a " + details.program + ".";
@@ -2086,7 +2096,7 @@ async function loadFromHash() {
   if (programs.some(p => !p)) {
     showHome();
     showNotice("<h2>No map at that address</h2>" +
-               "<p>That link doesn't match a current major or minor. The program may have been renamed or " +
+               "<p>That link doesn't match a current " + campusDetails().program + ". It may have been renamed or " +
                "retired from the catalog. Pick one from the lists below.</p>");
     return;
   }
@@ -3275,6 +3285,7 @@ function cssEscape(text) {
 function thisProgram() {
   if (!graph) return "this major";
   if (graph.major.programs.length > 1) return "these programs";
+  if (graph.major.kind === "department") return "this department";
   return graph.major.kind === "minor" ? "this minor" : "this major";
 }
 
@@ -5158,8 +5169,8 @@ function gpaSummaryHtml() {
   const inProgress = Object.values(plan.grades).filter(g => g === "IP").length;
   return '<h3>GPA of graded courses in this plan</h3><p class="gpa"><strong>' + formatGpa(result.gpa) + "</strong> over " + result.units +
          " graded units" + (inProgress ? ", " + inProgress + " in progress" : "") + ".</p>" +
-         '<p class="note">Only courses in this plan count, so it matches the UC GPA on GOLD only if the plan has every graded course ' +
-         "you've taken (reading your transcript adds them all). P/NP and In Progress don't count. A repeated course counts once, " +
+         '<p class="note">Only courses in this plan count, so it matches your UC GPA' + (CAMPUS === "ucsb" ? " on GOLD" : "") + ' only if the plan has every graded course ' +
+         "you've taken" + (CAMPUS === "ucsb" ? " (reading your transcript adds them all)" : "") + ". P/NP and In Progress don't count. A repeated course counts once, " +
          "with its latest grade; the UC replaces only D, F and NP grades, for the first 16 repeated units, so your official GPA may differ.</p>";
 }
 

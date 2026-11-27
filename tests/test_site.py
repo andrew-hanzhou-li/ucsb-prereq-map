@@ -322,8 +322,17 @@ def check_campuses(p):
     check("ucsd: plans are saved apart from UCSB's",
           ucsd.evaluate("localStorage.getItem('prereq.ucsd.plan')") is not None and
           "MATH 20A" not in (ucsd.evaluate("localStorage.getItem('prereq.ucsb.plan')") or ""))
+    check("ucsd: no GOLD transcript reader (it reads UCSB's format only)", not ucsd.is_visible("#plan-import"))
     ucsd.click("#credit-button")
-    check("ucsd: the Credit box says the AP chart isn't here yet", "isn't on the site yet" in ucsd.inner_text("#ap-list"))
+    check("ucsd: the Credit box says the AP chart isn't here yet, with no exam filter",
+          "isn't on the site yet" in ucsd.inner_text("#ap-list") and not ucsd.is_visible("#ap-filter"))
+    check("ucsd: the example course is a UCSD one", ucsd.get_attribute("#transfer-input", "placeholder") == "e.g. CSE 12")
+    ucsd.keyboard.press("Escape")
+    ucsd.click("#about-button")
+    check("ucsd: About names UC San Diego in normal-size text, and doesn't mention GOLD",
+          ucsd.evaluate("getComputedStyle(document.querySelector('#about .campus-fullname')).fontSize") ==
+          ucsd.evaluate("getComputedStyle(document.querySelector('#about .campus-fullname').parentElement).fontSize") and
+          "UC San Diego" in ucsd.inner_text("#about") and "GOLD" not in ucsd.inner_text("#about"))
     ucsd.keyboard.press("Escape")
     ucsd.goto(SITE + "?preview=off#campus")
     ucsd.wait_for_timeout(400)

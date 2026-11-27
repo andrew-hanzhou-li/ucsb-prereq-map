@@ -52,7 +52,7 @@ EXTRA_RULES = [
     ("restriction", r"\b(?:formal\s+)?(?:admittance|acceptance)\s+(?:to|in|into)\s+[^;.§]*"),
     ("restriction", r"\b(?:students\s+)?must\s+be\s+(?:an?\s+)?[\w ]{0,40}?(?:students?|participants\s+in\s+[^;.§]*)"),
     # Major codes: "ED25 major", "CS25, CS26, and CS27 majors"
-    ("restriction", r"\b[A-Z]{2}\d{2}(?:\s*(?:,|,?\s*or|,?\s*and)\s*[A-Z]{2}\d{2})*\s+majors?\b"),
+    ("restriction", r"\b[A-Z]{2}\d{2}(?:(?:,\s*(?:or\s+|and\s+)?|\s+or\s+|\s+and\s+)[A-Z]{2}\d{2})*\s+majors?\b"),
     ("consent", r"\bdepartment(?:al)?\s+(?:stamp|authorization|approval)(?:\s+(?:is\s+)?required)?"),
     ("consent", r"\benrollment\s+via\s+[^;.§]*"),
     ("consent", r"\bby\s+invitation(?:\s+only)?"),
@@ -61,7 +61,7 @@ EXTRA_RULES = [
 # A sentence saying the instructor can let anyone in: the whole requirement
 # becomes "(...) or consent". Removed from the text before parsing.
 CONSENT_FOR_ALL = re.compile(
-    r"\s*(?:students\s+who\s+have\s+not\s+completed\s+(?:the\s+)?(?:listed\s+)?prerequisites?\s+"
+    r"\s*(?:students\s+who\s+have\s+not\s+completed\s+(?:the\s+)?(?:listed\s+)?prerequisites?(?:\(s\))?\s+"
     r"may\s+enroll\s+with\s+(?:the\s+)?consent\s+of\s+(?:the\s+)?instructor|"
     r"consent\s+of\s+(?:the\s+)?instructor\s+if\s+students\s+do\s+not\s+meet\s+(?:the\s+)?prerequisites?|"
     r"[\w ,-]*students\s+cannot\s+enroll\s+without\s+(?:the\s+)?consent\s+of\s+(?:the\s+)?instructor|"
@@ -99,9 +99,15 @@ def make_parser(courses):
 
 
 def as_alternatives(match):
-    """"one from A, B, and C" -> "(A or B or C)"."""
-    items = [i for i in re.split(r"\s*,\s*(?:and\s+|or\s+)?|\s+or\s+", match.group("items").strip()) if i]
-    return "(" + " or ".join(items) + ")"
+    """"one from A, B, and C" -> "(A or B or C)". Words between "the
+    following" and the colon stay after the list: "any one of the following
+    or department approval: A, B" -> "(A or B) or department approval"."""
+    text = match.group("items").strip()
+    before = ""
+    if ":" in text:
+        before, text = text.split(":", 1)
+    items = [i for i in re.split(r"\s*,\s*(?:and\s+|or\s+)?|\s+or\s+", text.strip()) if i]
+    return "(" + " or ".join(items) + ")" + (" " + before.strip() if before.strip() else "")
 
 
 def without_course(node, code):
@@ -117,19 +123,53 @@ def without_course(node, code):
     return node
 
 
+def without_recommendations(text):
+    """Take out what's only recommended, keeping what's required:
+        "CHEM 40B (a grade of C ... is strongly recommended)"   -> "CHEM 40B"
+        "upper-division standing and background in X is recommended" -> "upper-division standing"
+        "consent of instructor, MUS 171 recommended"             -> "consent of instructor"
+        "MUS 172; MUS 4, 8–10, or 120 recommended"               -> "MUS 172"
+    In a clause ending "recommended", only its last comma item is, unless
+    that item starts with "or"/"and" (then the whole list is)."""
+    text = re.sub(r"\s*\([^()]*\brecommended\b[^()]*\)", "", text)
+    text = re.sub(r"\s+and\s+[^;,.()]*?\b(?:is|are)\s+(?:strongly\s+)?recommended\b", "", text)
+    clauses = re.split(r"(?<=[;.])\s+", text)
+    kept = []
+    for clause in clauses:
+        body = clause.rstrip(";. ")
+        if not re.search(r"\brecommended$", body):
+            kept.append(clause)
+            continue
+        items = body.split(",")
+        last = items[-1].strip()
+        if len(items) == 1 or re.match(r"^(?:or|and)\b", last):
+            continue                                    # the whole clause is a recommendation
+        kept.append(",".join(items[:-1]).rstrip() + clause[len(body):])
+    return " ".join(kept).strip()
+
+
 def parse(parser, prereq_text, code=None):
     """The parser's answer for one course (`code`), with UCSD's rewrites:
     recommendations dropped, choice lists, consent that stands in for
     everything, and the course itself left out."""
     # "...; MUS 4, 8–10, or 120 recommended." and "MUS 170 recommended; ...":
     # a recommendation isn't a requirement.
-    text = re.sub(r"(^|[;.])\s*[^;.]*\brecommended\b[^;.]*(?=[;.]|$)", r"\1", prereq_text).lstrip("; ")
-    text = re.sub(r"\.\s*\.", ".", text)
+    text = without_recommendations(prereq_text)
+    # "...; students who have completed MATH 154 ... may not receive credit
+    # for CSE 21; ...": about credit, not a requirement.
+    text = re.sub(r"(?:^|;)\s*[^;.]*\b(?:may not|will not|cannot) receive (?:duplicate )?credit\b[^;.]*", "", text).lstrip("; ")
     # "none. Open to visual arts majors": "none" is about courses; the rest still counts.
     text = re.sub(r"^\s*none\.\s*(?=\S)", "", text, flags=re.IGNORECASE)
     # "AP Calculus AB score of 3 (or equivalent AB subscore on BC exam)": part of the exam.
     text = re.sub(r"(score of \d)\s*\(or equivalent[^)]*\)", r"\1", text)
-    text, consent_for_all = CONSENT_FOR_ALL.subn("", text)
+    consent_for_all = 0
+    match = CONSENT_FOR_ALL.search(text)
+    # A plain list ending ", or consent of instructor" ("BILD 1, BILD 2,
+    # BILD 3, or consent of instructor") already reads right; only rewrite
+    # when something before it is joined with "and" or ";".
+    if match and (not match.group(0).lstrip(",; ").lower().startswith("or ") or
+                  re.search(r";|\band\b", text[:match.start()])):
+        text, consent_for_all = text[:match.start()] + text[match.end():], 1
     text = CHOICE_LIST.sub(as_alternatives, text)
     # "CHEM 7L or 7LM and CHEM 40A, 40AH, or 41A": the comma list after "and"
     # is one choice -> "... and (CHEM 40A or 40AH or 41A)".
@@ -154,7 +194,11 @@ def parse(parser, prereq_text, code=None):
                  r"\bupper-division\s+[\w ]{0,40}majors\s+only\b", text, re.IGNORECASE):
         standing = {"type": "condition", "kind": "standing", "text": "class standing"}
         tree = parsed["requires"]
-        if tree is None:
+        already = tree is not None and any(
+            i.get("kind") == "standing" for i in ([tree] if tree["type"] != "and" else tree["items"]))
+        if already:
+            pass
+        elif tree is None:
             parsed["requires"] = standing
         elif tree["type"] == "and":
             parsed["requires"] = dict(tree, items=tree["items"] + [standing])

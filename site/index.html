@@ -54,7 +54,7 @@
         <a href="#" id="view-plan">Plan</a>
       </nav>
       <label class="picker">
-        <span class="visually-hidden">Major or minor</span>
+        <span class="visually-hidden campus-program-label">Major or minor</span>
         <input id="major-input" placeholder="Choose a major or minor…" autocomplete="off">
       </label>
       <label class="picker more-options">
@@ -179,7 +179,7 @@
     </dl>
 
     <h3>Planning quarter by quarter</h3>
-    <p>"Plan" (next to the program names) lays your courses out by year and quarter. Click a course to add it: it goes in the first quarter after its prerequisites, when it's usually offered, under your unit limit. Auto-fill places the rest. Add grades to see your GPA, or read them from your GOLD transcript; the file never leaves your computer.</p>
+    <p>"Plan" (next to the program names) lays your courses out by year and quarter. Click a course to add it: it goes in the first quarter after its prerequisites, when it's usually offered, under your unit limit. Auto-fill places the rest. Add grades to see your GPA<span class="ucsb-only">, or read them from your GOLD transcript; the file never leaves your computer</span>.</p>
 
     <h3>Your marks stay on your device</h3>
     <p>Courses you mark as taken are saved in your browser on this device only. They're never sent anywhere, and the site has no accounts and no analytics. Clearing your browser's data, or using a private window, removes the marks.</p>
@@ -200,7 +200,7 @@
     </ul>
 
     <h3>An unofficial student project</h3>
-    <p>It isn't made or endorsed by <span class="campus-name">UC Santa Barbara</span>. Requirements change, and the catalog is the official source. Confirm your plan with your department advisor.</p>
+    <p>It isn't made or endorsed by <span class="campus-fullname">UC Santa Barbara</span>. Requirements change, and the catalog is the official source. Confirm your plan with your department advisor.</p>
   </dialog>
 
   <dialog class="about credit" id="credit">
@@ -209,8 +209,8 @@
     <p class="lede">Courses you have credit for count as done: their prerequisites are met on the map and in your plan. Saved in this browser only.</p>
 
     <h3>AP exams</h3>
-    <p class="note">Pick your score for each exam you took; leave the rest at “—”. From the <a id="ap-source" href="https://catalog.ucsb.edu/" target="_blank" rel="noopener">catalog's AP chart</a>; scores of 1 or 2 earn no credit.</p>
-    <label class="ap-filter"><span class="visually-hidden">Filter the exams</span>
+    <p class="note ap-only">Pick your score for each exam you took; leave the rest at “—”. From the <a id="ap-source" href="https://catalog.ucsb.edu/" target="_blank" rel="noopener">catalog's AP chart</a>; scores of 1 or 2 earn no credit.</p>
+    <label class="ap-filter ap-only"><span class="visually-hidden">Filter the exams</span>
       <input type="search" id="ap-filter" placeholder="Filter the exams (calc, bio, history…)" autocomplete="off"></label>
     <div class="ap-list" id="ap-list"></div>
 
@@ -218,7 +218,7 @@
     <p class="note">Dual enrollment, community college or another university: tick the <span class="campus-short">UCSB</span> course each one counts as. For California community colleges, <a href="https://assist.org/" target="_blank" rel="noopener">ASSIST.org</a> lists the official equivalents.</p>
     <div id="transfer-suggest"></div>
     <p class="transfer-add-row">
-      <label>Another <span class="campus-short">UCSB</span> course <input id="transfer-input" list="transfer-options" placeholder="e.g. CMPSC 40" autocomplete="off"></label>
+      <label>Another <span class="campus-short">UCSB</span> course <input id="transfer-input" list="transfer-options" placeholder="e.g. CMPSC 40" class="campus-example-course" autocomplete="off"></label>
       <datalist id="transfer-options"></datalist>
       <button type="button" class="text-button" id="transfer-add">add</button>
     </p>

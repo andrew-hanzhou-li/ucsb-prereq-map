@@ -28,6 +28,7 @@ undergraduates. The level comes from the number (under 100: lower
 division), which is how UCSD numbers courses.
 """
 
+import collections
 import glob
 import html.parser
 import json
@@ -42,7 +43,7 @@ OUTPUT = os.path.join("data", "ucsd", "raw_courses.json")
 # (letters added to the code before), or a sequence ("20A-B-C", "21-22-23").
 SUBJECT = r"[A-Z]{2,8}(?: GEN)?"
 PIECE = r"(?:%s(?: ?\d+ ?[A-Z]*(?:(?:[-–][A-Z]+)+|(?:-\d+)+)?)?|\d+[A-Z]*(?:-\d+)*|[A-Z]{1,3})" % SUBJECT
-CODE_LIST = r"%s(?:\s*[/,]\s*%s)*" % (PIECE, PIECE)
+CODE_LIST = r"%s(?:(?:\s*[/,]\s*|\s+or\s+)%s)*" % (PIECE, PIECE)
 # "CSE 100. Advanced Data Structures (4)": the codes, the title, the units.
 # The period is missing on a few lines ("COMM 114M CSI: ..."), and a few
 # have no units.
@@ -58,17 +59,20 @@ CODE_IN_TEXT = re.compile(r"\b[A-Za-z]{2,5} ?\d+[A-Z]{0,3}\b")
 # Sentences after the first that are about enrolling, not about what must
 # come first. They go into "comments".
 COMMENT_STARTS = re.compile(
-    r"^(?:(?:students )?(?:may not|will not|cannot) receive (?:duplicate )?credit|recommended|"
+    r"^(?:note:\s*)?(?:(?:students )?(?:may not|will not|cannot|may only|may) receive (?:duplicate |a combined total )?(?:credit)?|"
+    r"no credit|recommended|"
     r"(?:graduate|all other) students will be allowed|this course|attendance|"
     r"credit (?:not|will not)|may be (?:repeated|taken for credit)|program or materials fee|"
     r"renumbered|formerly|must be taken in sequence|letter grade|duplicate credit|"
     r"students may receive credit for|\(?(?:may not be|only) offered|pass/not pass|repeatable)", re.IGNORECASE)
+ENCOURAGED = re.compile(r"\bencouraged but not required\b", re.IGNORECASE)
 # Sentences after the first that ARE requirements even without a course code:
 # who may enroll, and whose approval is needed.
 REQUIREMENT_WORDS = re.compile(
     r"\b(?:restricted to|open to|majors? only|consent|approval|authorization|stamp|"
     r"accepted (?:in|into|to)|acceptance|admission|admittance|standing|may enroll|cannot enroll|"
-    r"enrollment via|invitation|must be (?:an? )?[\w ]*students?|participants)\b", re.IGNORECASE)
+    r"enrollment via|invitation|must be (?:an? )?[\w ]*students?|participants|limited to|"
+    r"declared|open only to)\b", re.IGNORECASE)
 # "(F,W,S)": the quarters a course is usually offered, written by a few
 # departments at the end of the description or prerequisites.
 QUARTER_MARK = re.compile(r"\s*\((?P<quarters>[FWSU](?:\s*,\s*[FWSU])*)\)\.?")
@@ -80,25 +84,30 @@ COMMENT_CLAUSE = re.compile(r";\s*(?:graduate|all other) students will be allowe
 
 
 class CoursePageParser(html.parser.HTMLParser):
-    """Collects (kind, text) for each course-name and course-descriptions
-    paragraph, in page order."""
+    """Collects (kind, text, anchor) for each course-name and
+    course-descriptions paragraph, in page order. `anchor` is the id of the
+    last <a class="anchor"> before it: the course's spot on the page."""
 
     def __init__(self):
         super().__init__(convert_charrefs=True)
         self.paragraphs = []
         self.kind = None          # "course-name" or "course-descriptions" while inside one
         self.text = []
+        self.anchor = None
 
     def handle_starttag(self, tag, attrs):
-        css = dict(attrs).get("class") or ""
-        if tag == "p" and css in ("course-name", "course-descriptions"):
+        attrs = dict(attrs)
+        css = attrs.get("class") or ""
+        if tag == "a" and css == "anchor" and (attrs.get("id") or attrs.get("name")):
+            self.anchor = attrs.get("id") or attrs.get("name")
+        elif tag == "p" and css in ("course-name", "course-descriptions"):
             self.kind, self.text = css, []
         elif tag == "br" and self.kind:
             self.text.append(" ")
 
     def handle_endtag(self, tag):
         if tag == "p" and self.kind:
-            self.paragraphs.append((self.kind, " ".join("".join(self.text).split())))
+            self.paragraphs.append((self.kind, " ".join("".join(self.text).split()), self.anchor))
             self.kind = None
 
     def handle_data(self, data):
@@ -113,6 +122,7 @@ def expand_codes(codes_text):
         "AAS/ANSC 185"        -> ["AAS 185", "ANSC 185"]
         "HIEU 160/260"        -> ["HIEU 160", "HIEU 260"]
         "DSC 10/R"            -> ["DSC 10", "DSC 10R"]
+        "POLI 30 or 30D"      -> ["POLI 30", "POLI 30D"]
         "MATH 20A-B-C"        -> ["MATH 20A", "MATH 20B", "MATH 20C"]
         "ECE 145AL-BL-CL"     -> ["ECE 145AL", "ECE 145BL", "ECE 145CL"]
         "VIS 128A–E"          -> ["VIS 128A", ..., "VIS 128E"] (an en dash
@@ -120,7 +130,7 @@ def expand_codes(codes_text):
         "GSS 21-22-23"        -> ["GSS 21", "GSS 22", "GSS 23"]
     Returns [] if a piece can't be read."""
     codes, waiting_subjects, subject = [], [], None
-    for piece in re.split(r"\s*[/,]\s*", codes_text.strip()):
+    for piece in re.split(r"\s*[/,]\s*|\s+or\s+", codes_text.strip()):
         full = re.match(r"^(%s) ?(\d+) ?([A-Z]*)((?:[-–][A-Z]+)+)?((?:-\d+)+)?$" % SUBJECT, piece)
         bare_number = re.match(r"^(\d+[A-Z]*)$", piece)
         if full:
@@ -183,7 +193,7 @@ def split_prereq_text(text):
         sentence = COMMENT_CLAUSE.sub("", sentence)
         if i == 0:
             prereqs.append(sentence)
-        elif COMMENT_STARTS.match(sentence):
+        elif COMMENT_STARTS.match(sentence) or ENCOURAGED.search(sentence):
             comments.append(sentence)
         elif CODE_IN_TEXT.search(sentence) or REQUIREMENT_WORDS.search(sentence):
             prereqs.append(sentence)
@@ -201,7 +211,7 @@ def courses_on_page(path):
     department = os.path.splitext(os.path.basename(path))[0].upper()
     courses, problems = [], []
     paragraphs = parser.paragraphs
-    for i, (kind, text) in enumerate(paragraphs):
+    for i, (kind, text, anchor) in enumerate(paragraphs):
         if kind != "course-name":
             continue
         tags = TAGS.search(text)
@@ -230,28 +240,34 @@ def courses_on_page(path):
                 "cross_listed": [c for c in codes if c != code and level_of(c) != "graduate"]
                                 if "/" in name.group("codes") else [],
                 "tags": [t.strip() for t in tags.group("tags").split(",")] if tags else [],
-                # The course on its department's page: "...courses/CSE.html#cse100"
+                # The course on its department's page: "...courses/CSE.html#cse100",
+                # from the page's own anchor (a few pages write "clas-109").
                 "url": "https://catalog.ucsd.edu/courses/%s.html#%s" % (
-                    os.path.splitext(os.path.basename(path))[0], code.replace(" ", "").lower()),
+                    os.path.splitext(os.path.basename(path))[0], anchor or code.replace(" ", "").lower()),
             })
     return courses, problems
 
 
 def main():
-    by_code, problems = {}, []
+    copies, problems, page_subjects = {}, [], {}
     for path in sorted(glob.glob(os.path.join(RAW_DIR, "*.html"))):
         if os.path.basename(path) == "index.html":
             continue
         courses, page_problems = courses_on_page(path)
         problems.extend(page_problems)
+        page = os.path.splitext(os.path.basename(path))[0].upper()
+        page_subjects[page] = collections.Counter(c["subject"] for c in courses)
         for course in courses:
-            # A cross-listed course is on each of its departments' pages:
-            # keep the first copy, and note every department it's listed in.
-            if course["code"] in by_code:
-                known = by_code[course["code"]]
-                known["departments"] = sorted(set(known["departments"]) | set(course["departments"]))
-            else:
-                by_code[course["code"]] = course
+            copies.setdefault(course["code"], []).append(course)
+    # A cross-listed course is on each of its departments' pages. Keep the
+    # copy from the page where its subject is most at home (CSE 181 from the
+    # CSE page, not BENG's), and note every department it's listed in.
+    by_code = {}
+    for code, found in copies.items():
+        subject = found[0]["subject"]
+        best = max(found, key=lambda c: page_subjects[c["departments"][0]][subject])
+        best["departments"] = sorted({d for c in found for d in c["departments"]})
+        by_code[code] = best
     courses = sorted(by_code.values(), key=lambda c: (c["subject"], int(re.match(r"\d+", c["number"]).group()), c["number"]))
     with open(OUTPUT, "w", encoding="utf-8") as f:
         json.dump({"courses": courses}, f, indent=1, ensure_ascii=False)
