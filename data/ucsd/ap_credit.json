@@ -94,7 +94,7 @@
    ]
   },
   {
-   "name": "Calculus AB (or the AB subscore of BC)",
+   "name": "Calculus AB",
    "rows": [
     {
      "scores": [
@@ -168,9 +168,9 @@
      ],
      "units": 8,
      "equivalents": [
-      "CHEM 4",
       "CHEM 6A"
-     ]
+     ],
+     "note": "May take CHEM 6B or 6AH next"
     },
     {
      "scores": [
@@ -178,7 +178,6 @@
      ],
      "units": 8,
      "equivalents": [
-      "CHEM 4",
       "CHEM 6A",
       "CHEM 6B",
       "CHEM 6C"
@@ -284,7 +283,7 @@
    ]
   },
   {
-   "name": "English Language or Literature and Composition",
+   "name": "English Language and Composition",
    "rows": [
     {
      "scores": [
@@ -294,7 +293,22 @@
      ],
      "units": 8,
      "equivalents": [],
-     "note": "Meets the Entry Level Writing requirement; 8-unit maximum for both tests"
+     "note": "Meets the Entry Level Writing requirement; 8-unit maximum for both English tests"
+    }
+   ]
+  },
+  {
+   "name": "English Literature and Composition",
+   "rows": [
+    {
+     "scores": [
+      3,
+      4,
+      5
+     ],
+     "units": 8,
+     "equivalents": [],
+     "note": "Meets the Entry Level Writing requirement; 8-unit maximum for both English tests"
     }
    ]
   },
@@ -577,7 +591,8 @@
      "units": 8,
      "equivalents": [
       "PHYS 10"
-     ]
+     ],
+     "note": "8-unit maximum for all physics tests"
     }
    ]
   },
@@ -593,33 +608,8 @@
      "units": 8,
      "equivalents": [
       "PHYS 10"
-     ]
-    }
-   ]
-  },
-  {
-   "name": "Physics C: Mechanics",
-   "rows": [
-    {
-     "scores": [
-      3
      ],
-     "units": 4,
-     "equivalents": [
-      "PHYS 1A"
-     ]
-    },
-    {
-     "scores": [
-      4,
-      5
-     ],
-     "units": 4,
-     "equivalents": [
-      "PHYS 1A",
-      "PHYS 2A"
-     ],
-     "note": "Counts as PHYS 1A or PHYS 2A"
+     "note": "8-unit maximum for all physics tests"
     }
    ]
   },
@@ -633,7 +623,8 @@
      "units": 4,
      "equivalents": [
       "PHYS 1B"
-     ]
+     ],
+     "note": "8-unit maximum for all physics tests"
     },
     {
      "scores": [
@@ -645,7 +636,34 @@
       "PHYS 1B",
       "PHYS 2B"
      ],
-     "note": "Counts as PHYS 1B or PHYS 2B"
+     "note": "Counts as PHYS 1B or PHYS 2B; 8-unit maximum for all physics tests"
+    }
+   ]
+  },
+  {
+   "name": "Physics C: Mechanics",
+   "rows": [
+    {
+     "scores": [
+      3
+     ],
+     "units": 4,
+     "equivalents": [
+      "PHYS 1A"
+     ],
+     "note": "8-unit maximum for all physics tests"
+    },
+    {
+     "scores": [
+      4,
+      5
+     ],
+     "units": 4,
+     "equivalents": [
+      "PHYS 1A",
+      "PHYS 2A"
+     ],
+     "note": "Counts as PHYS 1A or PHYS 2A; 8-unit maximum for all physics tests"
     }
    ]
   },

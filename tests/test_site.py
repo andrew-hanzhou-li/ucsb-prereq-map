@@ -327,9 +327,9 @@ def check_campuses(p):
     check("ucsd: the Credit box shows UCSD's AP chart, linked to its source",
           ucsd.locator("#ap-list select").count() > 30 and ucsd.is_visible("#ap-filter") and
           "ucsd.edu" in (ucsd.get_attribute("#ap-source", "href") or ""))
-    ucsd.select_option('select[data-exam="Calculus AB (or the AB subscore of BC)"]', "4")
+    ucsd.select_option('select[data-exam="Calculus AB"]', "4")
     ucsd.wait_for_timeout(200)
-    result = ucsd.inner_text(".ap-row:has(select[data-exam='Calculus AB (or the AB subscore of BC)']) .ap-result")
+    result = ucsd.inner_text(".ap-row:has(select[data-exam='Calculus AB']) .ap-result")
     check("ucsd: a 4 on Calculus AB counts as MATH 20A", "MATH 20A" in result and "4 units" in result, result)
     check("ucsd: the credit is saved apart from UCSB's",
           "Calculus AB" in (ucsd.evaluate("localStorage.getItem('prereq.ucsd.credit')") or "") and
