@@ -1352,46 +1352,51 @@
    "code": "ANBI 149",
    "prereq_text": "upper-division standing. ANBI 130 or ANBI 131 or ANBI 134 or ANBI 135 or consent of instructor.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "condition",
-      "kind": "standing",
-      "text": "upper-division standing"
-     },
-     {
-      "type": "or",
+      "type": "and",
       "items": [
        {
-        "type": "course",
-        "code": "ANBI 130",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
-        "type": "course",
-        "code": "ANBI 131",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
-        "type": "course",
-        "code": "ANBI 134",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
-        "type": "course",
-        "code": "ANBI 135",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
         "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
+        "kind": "standing",
+        "text": "upper-division standing"
+       },
+       {
+        "type": "or",
+        "items": [
+         {
+          "type": "course",
+          "code": "ANBI 130",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "ANBI 131",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "ANBI 134",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "ANBI 135",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
        }
       ]
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
      }
     ]
    },
@@ -6193,43 +6198,60 @@
    "code": "BENG 140B",
    "prereq_text": "CHEM 6A or CHEM 6AH and PHYS 2A or PHYS 2AR and PHYS 2B and BILD 1, or BENG 102; majors only or consent of instructor.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "or",
+      "type": "and",
       "items": [
        {
-        "type": "and",
+        "type": "or",
         "items": [
          {
-          "type": "or",
+          "type": "and",
           "items": [
            {
+            "type": "or",
+            "items": [
+             {
+              "type": "course",
+              "code": "CHEM 6A",
+              "concurrent": false,
+              "min_grade": null
+             },
+             {
+              "type": "course",
+              "code": "CHEM 6AH",
+              "concurrent": false,
+              "min_grade": null
+             }
+            ]
+           },
+           {
+            "type": "or",
+            "items": [
+             {
+              "type": "course",
+              "code": "PHYS 2A",
+              "concurrent": false,
+              "min_grade": null
+             },
+             {
+              "type": "course",
+              "code": "PHYS 2AR",
+              "concurrent": false,
+              "min_grade": null
+             }
+            ]
+           },
+           {
             "type": "course",
-            "code": "CHEM 6A",
+            "code": "PHYS 2B",
             "concurrent": false,
             "min_grade": null
            },
            {
             "type": "course",
-            "code": "CHEM 6AH",
-            "concurrent": false,
-            "min_grade": null
-           }
-          ]
-         },
-         {
-          "type": "or",
-          "items": [
-           {
-            "type": "course",
-            "code": "PHYS 2A",
-            "concurrent": false,
-            "min_grade": null
-           },
-           {
-            "type": "course",
-            "code": "PHYS 2AR",
+            "code": "BILD 1",
             "concurrent": false,
             "min_grade": null
            }
@@ -6237,40 +6259,23 @@
          },
          {
           "type": "course",
-          "code": "PHYS 2B",
-          "concurrent": false,
-          "min_grade": null
-         },
-         {
-          "type": "course",
-          "code": "BILD 1",
+          "code": "BENG 102",
           "concurrent": false,
           "min_grade": null
          }
         ]
        },
        {
-        "type": "course",
-        "code": "BENG 102",
-        "concurrent": false,
-        "min_grade": null
+        "type": "condition",
+        "kind": "restriction",
+        "text": "majors only"
        }
       ]
      },
      {
-      "type": "or",
-      "items": [
-       {
-        "type": "condition",
-        "kind": "restriction",
-        "text": "majors only"
-       },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
-       }
-      ]
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
      }
     ]
    },
@@ -6644,28 +6649,28 @@
    "code": "BENG 172",
    "prereq_text": "MAE 170; junior or senior standing in the major or consent of instructor.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "MAE 170",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "or",
+      "type": "and",
       "items": [
+       {
+        "type": "course",
+        "code": "MAE 170",
+        "concurrent": false,
+        "min_grade": null
+       },
        {
         "type": "condition",
         "kind": "standing",
         "text": "junior or senior standing"
-       },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
        }
       ]
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
      }
     ]
    },
@@ -6916,33 +6921,33 @@
    "code": "BENG 187B",
    "prereq_text": "BENG 187A; bioengineering, bioengineering: biotechnology, or bioengineering: biosystems or bioengineering: bioinformatics majors only or consent of instructor.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "BENG 187A",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "bioengineering"
-     },
-     {
-      "type": "or",
+      "type": "and",
       "items": [
+       {
+        "type": "course",
+        "code": "BENG 187A",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "condition",
+        "kind": "other",
+        "text": "bioengineering"
+       },
        {
         "type": "condition",
         "kind": "restriction",
         "text": "or bioengineering: biosystems or bioengineering: bioinformatics majors only"
-       },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
        }
       ]
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
      }
     ]
    },
@@ -6954,33 +6959,33 @@
    "code": "BENG 187C",
    "prereq_text": "BENG 187B; bioengineering, bioengineering: biotechnology, or bioengineering: biosystems or bioengineering: bioinformatics majors only or consent of instructor.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "BENG 187B",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "bioengineering"
-     },
-     {
-      "type": "or",
+      "type": "and",
       "items": [
+       {
+        "type": "course",
+        "code": "BENG 187B",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "condition",
+        "kind": "other",
+        "text": "bioengineering"
+       },
        {
         "type": "condition",
         "kind": "restriction",
         "text": "or bioengineering: biosystems or bioengineering: bioinformatics majors only"
-       },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
        }
       ]
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
      }
     ]
    },
@@ -6992,33 +6997,33 @@
    "code": "BENG 187D",
    "prereq_text": "BENG 187C; bioengineering, bioengineering: biotechnology, or bioengineering: biosystems or bioengineering: bioinformatics majors only or consent of instructor.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "BENG 187C",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "bioengineering"
-     },
-     {
-      "type": "or",
+      "type": "and",
       "items": [
+       {
+        "type": "course",
+        "code": "BENG 187C",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "condition",
+        "kind": "other",
+        "text": "bioengineering"
+       },
        {
         "type": "condition",
         "kind": "restriction",
         "text": "or bioengineering: biosystems or bioengineering: bioinformatics majors only"
-       },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
        }
       ]
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
      }
     ]
    },
@@ -8186,11 +8191,7 @@
   {
    "code": "BICD 136",
    "prereq_text": "BILD 1, BILD 2 recommended.",
-   "requires": {
-    "type": "condition",
-    "kind": "other",
-    "text": "BILD 1, BILD 2 recommended"
-   },
+   "requires": null,
    "source": "parser",
    "ambiguous": false,
    "unparsed": []
@@ -12697,35 +12698,35 @@
    "code": "CENG 176A",
    "prereq_text": "CENG 113, CENG 122, and CENG 170 or consent of instructor.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "CENG 113",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "CENG 122",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "or",
+      "type": "and",
       "items": [
+       {
+        "type": "course",
+        "code": "CENG 113",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "CENG 122",
+        "concurrent": false,
+        "min_grade": null
+       },
        {
         "type": "course",
         "code": "CENG 170",
         "concurrent": false,
         "min_grade": null
-       },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
        }
       ]
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
      }
     ]
    },
@@ -14130,47 +14131,47 @@
    "code": "CHEM 43A",
    "prereq_text": "CHEM 7L or 7LM and 40A, 40AH, or 41A.",
    "requires": {
-    "type": "or",
+    "type": "and",
     "items": [
      {
-      "type": "and",
+      "type": "or",
       "items": [
        {
-        "type": "or",
-        "items": [
-         {
-          "type": "course",
-          "code": "CHEM 7L",
-          "concurrent": false,
-          "min_grade": null
-         },
-         {
-          "type": "course",
-          "code": "CHEM 7LM",
-          "concurrent": false,
-          "min_grade": null
-         }
-        ]
+        "type": "course",
+        "code": "CHEM 7L",
+        "concurrent": false,
+        "min_grade": null
        },
        {
         "type": "course",
-        "code": "CHEM 40A",
+        "code": "CHEM 7LM",
         "concurrent": false,
         "min_grade": null
        }
       ]
      },
      {
-      "type": "course",
-      "code": "CHEM 40AH",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "CHEM 41A",
-      "concurrent": false,
-      "min_grade": null
+      "type": "or",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 40A",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "CHEM 40AH",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "CHEM 41A",
+        "concurrent": false,
+        "min_grade": null
+       }
+      ]
      }
     ]
    },
@@ -14182,47 +14183,47 @@
    "code": "CHEM 43AM",
    "prereq_text": "CHEM 7L or 7LM and CHEM 40A, 40AH, or 41A.",
    "requires": {
-    "type": "or",
+    "type": "and",
     "items": [
      {
-      "type": "and",
+      "type": "or",
       "items": [
        {
-        "type": "or",
-        "items": [
-         {
-          "type": "course",
-          "code": "CHEM 7L",
-          "concurrent": false,
-          "min_grade": null
-         },
-         {
-          "type": "course",
-          "code": "CHEM 7LM",
-          "concurrent": false,
-          "min_grade": null
-         }
-        ]
+        "type": "course",
+        "code": "CHEM 7L",
+        "concurrent": false,
+        "min_grade": null
        },
        {
         "type": "course",
-        "code": "CHEM 40A",
+        "code": "CHEM 7LM",
         "concurrent": false,
         "min_grade": null
        }
       ]
      },
      {
-      "type": "course",
-      "code": "CHEM 40AH",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "CHEM 41A",
-      "concurrent": false,
-      "min_grade": null
+      "type": "or",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 40A",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "CHEM 40AH",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "CHEM 41A",
+        "concurrent": false,
+        "min_grade": null
+       }
+      ]
      }
     ]
    },
@@ -14939,47 +14940,47 @@
    "code": "CHEM 119",
    "prereq_text": "BIMM 100 or CHEM 114C and CHEM 40C, 40CH, or 41C.",
    "requires": {
-    "type": "or",
+    "type": "and",
     "items": [
      {
-      "type": "and",
+      "type": "or",
       "items": [
        {
-        "type": "or",
-        "items": [
-         {
-          "type": "course",
-          "code": "BIMM 100",
-          "concurrent": false,
-          "min_grade": null
-         },
-         {
-          "type": "course",
-          "code": "CHEM 114C",
-          "concurrent": false,
-          "min_grade": null
-         }
-        ]
+        "type": "course",
+        "code": "BIMM 100",
+        "concurrent": false,
+        "min_grade": null
        },
        {
         "type": "course",
-        "code": "CHEM 40C",
+        "code": "CHEM 114C",
         "concurrent": false,
         "min_grade": null
        }
       ]
      },
      {
-      "type": "course",
-      "code": "CHEM 40CH",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "CHEM 41C",
-      "concurrent": false,
-      "min_grade": null
+      "type": "or",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 40C",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "CHEM 40CH",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "CHEM 41C",
+        "concurrent": false,
+        "min_grade": null
+       }
+      ]
      }
     ]
    },
@@ -14991,47 +14992,47 @@
    "code": "CHEM 120A",
    "prereq_text": "CHEM 6C or 6CH and CHEM 40A, 41A, or 140A.",
    "requires": {
-    "type": "or",
+    "type": "and",
     "items": [
      {
-      "type": "and",
+      "type": "or",
       "items": [
        {
-        "type": "or",
-        "items": [
-         {
-          "type": "course",
-          "code": "CHEM 6C",
-          "concurrent": false,
-          "min_grade": null
-         },
-         {
-          "type": "course",
-          "code": "CHEM 6CH",
-          "concurrent": false,
-          "min_grade": null
-         }
-        ]
+        "type": "course",
+        "code": "CHEM 6C",
+        "concurrent": false,
+        "min_grade": null
        },
        {
         "type": "course",
-        "code": "CHEM 40A",
+        "code": "CHEM 6CH",
         "concurrent": false,
         "min_grade": null
        }
       ]
      },
      {
-      "type": "course",
-      "code": "CHEM 41A",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "CHEM 140A",
-      "concurrent": false,
-      "min_grade": null
+      "type": "or",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 40A",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "CHEM 41A",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "CHEM 140A",
+        "concurrent": false,
+        "min_grade": null
+       }
+      ]
      }
     ]
    },
@@ -15585,41 +15586,46 @@
         "min_grade": null
        },
        {
-        "type": "course",
-        "code": "CHEM 40B",
-        "concurrent": false,
-        "min_grade": null
+        "type": "or",
+        "items": [
+         {
+          "type": "course",
+          "code": "CHEM 40B",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "CHEM 40BH",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "CHEM 41B",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "CHEM 140B",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "CHEM 140BH",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
        }
       ]
-     },
-     {
-      "type": "course",
-      "code": "CHEM 40BH",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "CHEM 41B",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "CHEM 140B",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "CHEM 140BH",
-      "concurrent": false,
-      "min_grade": null
      }
     ]
    },
    "source": "parser",
-   "ambiguous": false,
+   "ambiguous": true,
    "unparsed": []
   },
   {
@@ -19946,11 +19952,7 @@
   {
    "code": "COGS 156",
    "prereq_text": "upper-division standing and background in development psychology and/or linguistics is recommended.",
-   "requires": {
-    "type": "condition",
-    "kind": "other",
-    "text": "upper-division standing and background in development psychology and/or linguistics is recommended"
-   },
+   "requires": null,
    "source": "parser",
    "ambiguous": false,
    "unparsed": []
@@ -25338,12 +25340,6 @@
        },
        {
         "type": "course",
-        "code": "CSE 5R",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
-        "type": "course",
         "code": "CSE 25",
         "concurrent": false,
         "min_grade": null
@@ -28181,21 +28177,111 @@
    "code": "CSE 152A",
    "prereq_text": "MATH 18 or MATH 31AH and CSE 12 or DSC 30 and CSE 15L or CSE 29 or DSC 80; Python programming experience recommended; restricted to students within the CS25, CS26, CS27, CS29, and EC26 majors.",
    "requires": {
-    "type": "condition",
-    "kind": "other",
-    "text": "MATH 18 or MATH 31AH and CSE 12 or DSC 30 and CSE 15L or CSE 29 or DSC 80; Python programming experience recommended; restricted to students within the CS25, CS26, CS27, CS29, and EC26 majors"
+    "type": "and",
+    "items": [
+     {
+      "type": "or",
+      "items": [
+       {
+        "type": "course",
+        "code": "MATH 18",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "MATH 31AH",
+        "concurrent": false,
+        "min_grade": null
+       }
+      ]
+     },
+     {
+      "type": "or",
+      "items": [
+       {
+        "type": "course",
+        "code": "CSE 12",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "DSC 30",
+        "concurrent": false,
+        "min_grade": null
+       }
+      ]
+     },
+     {
+      "type": "or",
+      "items": [
+       {
+        "type": "course",
+        "code": "CSE 15L",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "CSE 29",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "DSC 80",
+        "concurrent": false,
+        "min_grade": null
+       }
+      ]
+     },
+     {
+      "type": "condition",
+      "kind": "restriction",
+      "text": "restricted to students within the CS25, CS26, CS27, CS29, and EC26 majors"
+     }
+    ]
    },
    "source": "parser",
-   "ambiguous": false,
+   "ambiguous": true,
    "unparsed": []
   },
   {
    "code": "CSE 152B",
    "prereq_text": "CSE 152A or CSE 152 or CSE 166; Python programming experience recommended; restricted to students within the CS25, CS26, CS27, CS29, and EC26 majors.",
    "requires": {
-    "type": "condition",
-    "kind": "other",
-    "text": "CSE 152A or CSE 152 or CSE 166; Python programming experience recommended; restricted to students within the CS25, CS26, CS27, CS29, and EC26 majors"
+    "type": "and",
+    "items": [
+     {
+      "type": "or",
+      "items": [
+       {
+        "type": "course",
+        "code": "CSE 152A",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "CSE 152",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "CSE 166",
+        "concurrent": false,
+        "min_grade": null
+       }
+      ]
+     },
+     {
+      "type": "condition",
+      "kind": "restriction",
+      "text": "restricted to students within the CS25, CS26, CS27, CS29, and EC26 majors"
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -30236,9 +30322,10 @@
         "min_grade": null
        },
        {
-        "type": "condition",
-        "kind": "other",
-        "text": "R"
+        "type": "course",
+        "code": "DSC 10R",
+        "concurrent": false,
+        "min_grade": null
        }
       ]
      },
@@ -30269,9 +30356,10 @@
         "min_grade": null
        },
        {
-        "type": "condition",
-        "kind": "other",
-        "text": "R"
+        "type": "course",
+        "code": "DSC 10R",
+        "concurrent": false,
+        "min_grade": null
        }
       ]
      },
@@ -30302,9 +30390,10 @@
         "min_grade": null
        },
        {
-        "type": "condition",
-        "kind": "other",
-        "text": "R"
+        "type": "course",
+        "code": "DSC 20R",
+        "concurrent": false,
+        "min_grade": null
        }
       ]
      },
@@ -30335,9 +30424,10 @@
         "min_grade": null
        },
        {
-        "type": "condition",
-        "kind": "other",
-        "text": "R"
+        "type": "course",
+        "code": "DSC 20R",
+        "concurrent": false,
+        "min_grade": null
        }
       ]
      },
@@ -30368,9 +30458,10 @@
         "min_grade": null
        },
        {
-        "type": "condition",
-        "kind": "other",
-        "text": "R"
+        "type": "course",
+        "code": "DSC 10R",
+        "concurrent": false,
+        "min_grade": null
        }
       ]
      },
@@ -30441,9 +30532,10 @@
         "min_grade": null
        },
        {
-        "type": "condition",
-        "kind": "other",
-        "text": "R"
+        "type": "course",
+        "code": "DSC 10R",
+        "concurrent": false,
+        "min_grade": null
        }
       ]
      },
@@ -30530,9 +30622,10 @@
         "min_grade": null
        },
        {
-        "type": "condition",
-        "kind": "other",
-        "text": "R"
+        "type": "course",
+        "code": "DSC 30R",
+        "concurrent": false,
+        "min_grade": null
        }
       ]
      },
@@ -30546,9 +30639,10 @@
         "min_grade": null
        },
        {
-        "type": "condition",
-        "kind": "other",
-        "text": "R"
+        "type": "course",
+        "code": "DSC 40AR",
+        "concurrent": false,
+        "min_grade": null
        }
       ]
      },
@@ -30560,7 +30654,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": false,
+   "ambiguous": true,
    "unparsed": []
   },
   {
@@ -30579,9 +30673,10 @@
         "min_grade": null
        },
        {
-        "type": "condition",
-        "kind": "other",
-        "text": "R"
+        "type": "course",
+        "code": "DSC 30R",
+        "concurrent": false,
+        "min_grade": null
        }
       ]
      },
@@ -30595,9 +30690,10 @@
         "min_grade": null
        },
        {
-        "type": "condition",
-        "kind": "other",
-        "text": "R"
+        "type": "course",
+        "code": "DSC 40AR",
+        "concurrent": false,
+        "min_grade": null
        }
       ]
      },
@@ -30609,7 +30705,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": false,
+   "ambiguous": true,
    "unparsed": []
   },
   {
@@ -30628,9 +30724,10 @@
         "min_grade": null
        },
        {
-        "type": "condition",
-        "kind": "other",
-        "text": "R"
+        "type": "course",
+        "code": "DSC 10R",
+        "concurrent": false,
+        "min_grade": null
        }
       ]
      },
@@ -30940,9 +31037,10 @@
         "min_grade": null
        },
        {
-        "type": "condition",
-        "kind": "other",
-        "text": "R"
+        "type": "course",
+        "code": "DSC 40BR",
+        "concurrent": false,
+        "min_grade": null
        }
       ]
      },
@@ -30956,9 +31054,10 @@
         "min_grade": null
        },
        {
-        "type": "condition",
-        "kind": "other",
-        "text": "R"
+        "type": "course",
+        "code": "DSC 80R",
+        "concurrent": false,
+        "min_grade": null
        }
       ]
      },
@@ -30975,7 +31074,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": false,
+   "ambiguous": true,
    "unparsed": []
   },
   {
@@ -31050,9 +31149,10 @@
         "min_grade": null
        },
        {
-        "type": "condition",
-        "kind": "other",
-        "text": "R"
+        "type": "course",
+        "code": "DSC 80R",
+        "concurrent": false,
+        "min_grade": null
        }
       ]
      },
@@ -31122,9 +31222,10 @@
         "min_grade": null
        },
        {
-        "type": "condition",
-        "kind": "other",
-        "text": "R"
+        "type": "course",
+        "code": "DSC 80R",
+        "concurrent": false,
+        "min_grade": null
        }
       ]
      },
@@ -31247,9 +31348,10 @@
         "min_grade": null
        },
        {
-        "type": "condition",
-        "kind": "other",
-        "text": "R"
+        "type": "course",
+        "code": "DSC 80R",
+        "concurrent": false,
+        "min_grade": null
        }
       ]
      },
@@ -31326,9 +31428,10 @@
         "min_grade": null
        },
        {
-        "type": "condition",
-        "kind": "other",
-        "text": "R"
+        "type": "course",
+        "code": "DSC 80R",
+        "concurrent": false,
+        "min_grade": null
        }
       ]
      },
@@ -34162,12 +34265,6 @@
       "type": "condition",
       "kind": "consent",
       "text": "department stamp is required"
-     },
-     {
-      "type": "course",
-      "code": "ECE 190",
-      "concurrent": false,
-      "min_grade": null
      }
     ]
    },
@@ -37914,12 +38011,6 @@
         "text": "146 must be completed before EDS 128A"
        }
       ]
-     },
-     {
-      "type": "course",
-      "code": "EDS 128A",
-      "concurrent": false,
-      "min_grade": null
      }
     ]
    },
@@ -38082,12 +38173,6 @@
         "min_grade": null
        }
       ]
-     },
-     {
-      "type": "course",
-      "code": "EDS 129B",
-      "concurrent": false,
-      "min_grade": null
      }
     ]
    },
@@ -39268,34 +39353,49 @@
     "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "MATH 10A",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "MATH 20A",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "CHEM 6A",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "PHYS 1A",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "PHYS 2A",
-      "concurrent": false,
-      "min_grade": null
+      "type": "and",
+      "items": [
+       {
+        "type": "or",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 10A",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "MATH 20A",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
+       },
+       {
+        "type": "course",
+        "code": "CHEM 6A",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "or",
+        "items": [
+         {
+          "type": "course",
+          "code": "PHYS 1A",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "PHYS 2A",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
+       }
+      ]
      },
      {
       "type": "condition",
@@ -39545,27 +39645,37 @@
     "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "ETHN 1",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "ETHN 2",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "ETHN 3",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "ethnic studies majors"
+      "type": "and",
+      "items": [
+       {
+        "type": "or",
+        "items": [
+         {
+          "type": "course",
+          "code": "ETHN 1",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "ETHN 2",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "ETHN 3",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
+       },
+       {
+        "type": "condition",
+        "kind": "other",
+        "text": "ethnic studies majors"
+       }
+      ]
      },
      {
       "type": "condition",
@@ -39626,13 +39736,13 @@
         "code": "ETHN 100B",
         "concurrent": false,
         "min_grade": null
+       },
+       {
+        "type": "condition",
+        "kind": "other",
+        "text": "ethnic studies major"
        }
       ]
-     },
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "ethnic studies major"
      },
      {
       "type": "condition",
@@ -46264,9 +46374,19 @@
    "code": "HIUS 181",
    "prereq_text": "department stamp or consent of instructor.",
    "requires": {
-    "type": "condition",
-    "kind": "consent",
-    "text": "department stamp"
+    "type": "or",
+    "items": [
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "department stamp"
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -46284,9 +46404,19 @@
    "code": "HIUS 183",
    "prereq_text": "department stamp or consent of instructor.",
    "requires": {
-    "type": "condition",
-    "kind": "consent",
-    "text": "department stamp"
+    "type": "or",
+    "items": [
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "department stamp"
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -46302,12 +46432,6 @@
       "type": "condition",
       "kind": "consent",
       "text": "department stamp required"
-     },
-     {
-      "type": "course",
-      "code": "HIUS 185",
-      "concurrent": false,
-      "min_grade": null
      },
      {
       "type": "course",
@@ -47329,28 +47453,28 @@
    "code": "JWSP 131",
    "prereq_text": "JWSP 100A; upper-division standing or consent of instructor.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "JWSP 100A",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "or",
+      "type": "and",
       "items": [
+       {
+        "type": "course",
+        "code": "JWSP 100A",
+        "concurrent": false,
+        "min_grade": null
+       },
        {
         "type": "condition",
         "kind": "standing",
         "text": "upper-division standing"
-       },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
        }
       ]
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
      }
     ]
    },
@@ -48919,16 +49043,21 @@
     "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "LIGN 101",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "LIGN 101",
-      "concurrent": true,
-      "min_grade": null
+      "type": "and",
+      "items": [
+       {
+        "type": "course",
+        "code": "LIGN 101",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "LIGN 101",
+        "concurrent": true,
+        "min_grade": null
+       }
+      ]
      },
      {
       "type": "condition",
@@ -52113,40 +52242,40 @@
    "code": "LIIT 5BS",
    "prereq_text": "LIIT 1A/1AX, 5AS or consent of instructor.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "or",
+      "type": "and",
       "items": [
        {
-        "type": "course",
-        "code": "LIIT 1A",
-        "concurrent": false,
-        "min_grade": null
+        "type": "or",
+        "items": [
+         {
+          "type": "course",
+          "code": "LIIT 1A",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "LIIT 1AX",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
        },
        {
         "type": "course",
-        "code": "LIIT 1AX",
+        "code": "LIIT 5AS",
         "concurrent": false,
         "min_grade": null
        }
       ]
      },
      {
-      "type": "or",
-      "items": [
-       {
-        "type": "course",
-        "code": "LIIT 5AS",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
-       }
-      ]
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
      }
     ]
    },
@@ -52158,40 +52287,40 @@
    "code": "LIIT 5CS",
    "prereq_text": "LIIT 1B/1BX, 5BS or consent of instructor.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "or",
+      "type": "and",
       "items": [
        {
-        "type": "course",
-        "code": "LIIT 1B",
-        "concurrent": false,
-        "min_grade": null
+        "type": "or",
+        "items": [
+         {
+          "type": "course",
+          "code": "LIIT 1B",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "LIIT 1BX",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
        },
        {
         "type": "course",
-        "code": "LIIT 1BX",
+        "code": "LIIT 5BS",
         "concurrent": false,
         "min_grade": null
        }
       ]
      },
      {
-      "type": "or",
-      "items": [
-       {
-        "type": "course",
-        "code": "LIIT 5BS",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
-       }
-      ]
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
      }
     ]
    },
@@ -52203,45 +52332,50 @@
    "code": "LIIT 5DS",
    "prereq_text": "LIIT 1C/1CX, 5CS or equivalent or consent of instructor.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "or",
+      "type": "and",
       "items": [
        {
-        "type": "course",
-        "code": "LIIT 1C",
-        "concurrent": false,
-        "min_grade": null
+        "type": "or",
+        "items": [
+         {
+          "type": "course",
+          "code": "LIIT 1C",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "LIIT 1CX",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
        },
        {
-        "type": "course",
-        "code": "LIIT 1CX",
-        "concurrent": false,
-        "min_grade": null
+        "type": "or",
+        "items": [
+         {
+          "type": "course",
+          "code": "LIIT 5CS",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "condition",
+          "kind": "other",
+          "text": "equivalent"
+         }
+        ]
        }
       ]
      },
      {
-      "type": "or",
-      "items": [
-       {
-        "type": "course",
-        "code": "LIIT 5CS",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
-        "type": "condition",
-        "kind": "other",
-        "text": "equivalent"
-       },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
-       }
-      ]
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
      }
     ]
    },
@@ -52541,34 +52675,39 @@
    "code": "LIPO 15",
    "prereq_text": "LIPO 1D and 1DX or equivalent or by consent of the instructor.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "LIPO 1D",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "or",
+      "type": "and",
       "items": [
        {
         "type": "course",
-        "code": "LIPO 1DX",
+        "code": "LIPO 1D",
         "concurrent": false,
         "min_grade": null
        },
        {
-        "type": "condition",
-        "kind": "other",
-        "text": "equivalent"
-       },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of the instructor"
+        "type": "or",
+        "items": [
+         {
+          "type": "course",
+          "code": "LIPO 1DX",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "condition",
+          "kind": "other",
+          "text": "equivalent"
+         }
+        ]
        }
       ]
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
      }
     ]
    },
@@ -52580,34 +52719,39 @@
    "code": "LIPO 16",
    "prereq_text": "LIPO 1D and 1DX or equivalent or by consent of instructor.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "LIPO 1D",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "or",
+      "type": "and",
       "items": [
        {
         "type": "course",
-        "code": "LIPO 1DX",
+        "code": "LIPO 1D",
         "concurrent": false,
         "min_grade": null
        },
        {
-        "type": "condition",
-        "kind": "other",
-        "text": "equivalent"
-       },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
+        "type": "or",
+        "items": [
+         {
+          "type": "course",
+          "code": "LIPO 1DX",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "condition",
+          "kind": "other",
+          "text": "equivalent"
+         }
+        ]
        }
       ]
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
      }
     ]
    },
@@ -52619,34 +52763,39 @@
    "code": "LIPO 17",
    "prereq_text": "LIPO 1D and 1DX or equivalent or by consent of instructor.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "LIPO 1D",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "or",
+      "type": "and",
       "items": [
        {
         "type": "course",
-        "code": "LIPO 1DX",
+        "code": "LIPO 1D",
         "concurrent": false,
         "min_grade": null
        },
        {
-        "type": "condition",
-        "kind": "other",
-        "text": "equivalent"
-       },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
+        "type": "or",
+        "items": [
+         {
+          "type": "course",
+          "code": "LIPO 1DX",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "condition",
+          "kind": "other",
+          "text": "equivalent"
+         }
+        ]
        }
       ]
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
      }
     ]
    },
@@ -54890,38 +55039,43 @@
    "code": "LTFR 2A",
    "prereq_text": "LIFR 1C/CX or its equivalent, score of 3 on French language AP exam or consent of instructor.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "or",
+      "type": "and",
       "items": [
        {
-        "type": "course",
-        "code": "LIFR 1C",
-        "concurrent": false,
-        "min_grade": null
+        "type": "or",
+        "items": [
+         {
+          "type": "course",
+          "code": "LIFR 1C",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "condition",
+          "kind": "other",
+          "text": "CX"
+         }
+        ]
+       },
+       {
+        "type": "condition",
+        "kind": "exam",
+        "text": "AP exam"
        },
        {
         "type": "condition",
         "kind": "other",
-        "text": "CX"
+        "text": "score of 3 on French language AP exam"
        }
       ]
      },
      {
       "type": "condition",
-      "kind": "exam",
-      "text": "AP exam"
-     },
-     {
-      "type": "condition",
       "kind": "consent",
       "text": "consent of instructor"
-     },
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "score of 3 on French language AP exam or consent of instructor"
      }
     ]
    },
@@ -54933,21 +55087,31 @@
    "code": "LTFR 2B",
    "prereq_text": "LTFR 2A or its equivalent, score of 4 on French language or score of 3 on French literature AP exams or consent of instructor.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "or",
+      "type": "and",
       "items": [
        {
-        "type": "course",
-        "code": "LTFR 2A",
-        "concurrent": false,
-        "min_grade": null
+        "type": "or",
+        "items": [
+         {
+          "type": "course",
+          "code": "LTFR 2A",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "condition",
+          "kind": "other",
+          "text": "its equivalent"
+         }
+        ]
        },
        {
         "type": "condition",
         "kind": "other",
-        "text": "its equivalent"
+        "text": "score of 4 on French language or score of 3 on French literature AP exams"
        }
       ]
      },
@@ -54955,11 +55119,6 @@
       "type": "condition",
       "kind": "consent",
       "text": "consent of instructor"
-     },
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "score of 4 on French language or score of 3 on French literature AP exams or consent of instructor"
      }
     ]
    },
@@ -54971,21 +55130,31 @@
    "code": "LTFR 2C",
    "prereq_text": "LTFR 2B or its equivalent, score of 5 on French language or score of 4 on French literature AP exams or consent of instructor.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "or",
+      "type": "and",
       "items": [
        {
-        "type": "course",
-        "code": "LTFR 2B",
-        "concurrent": false,
-        "min_grade": null
+        "type": "or",
+        "items": [
+         {
+          "type": "course",
+          "code": "LTFR 2B",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "condition",
+          "kind": "other",
+          "text": "its equivalent"
+         }
+        ]
        },
        {
         "type": "condition",
         "kind": "other",
-        "text": "its equivalent"
+        "text": "score of 5 on French language or score of 4 on French literature AP exams"
        }
       ]
      },
@@ -54993,11 +55162,6 @@
       "type": "condition",
       "kind": "consent",
       "text": "consent of instructor"
-     },
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "score of 5 on French language or score of 4 on French literature AP exams or consent of instructor"
      }
     ]
    },
@@ -59688,34 +59852,34 @@
    "code": "MAE 08",
    "prereq_text": "MATH 20A and 20B or consent of instructor.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "MATH 20A",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "or",
+      "type": "and",
       "items": [
+       {
+        "type": "course",
+        "code": "MATH 20A",
+        "concurrent": false,
+        "min_grade": null
+       },
        {
         "type": "course",
         "code": "MATH 20B",
         "concurrent": false,
         "min_grade": null
-       },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
        }
       ]
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
      }
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -60952,40 +61116,55 @@
     "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "MATH 20D",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "MATH 21D",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "MATH 20E",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "MATH 18",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "MATH 20F",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "MATH 31AH",
-      "concurrent": false,
-      "min_grade": null
+      "type": "and",
+      "items": [
+       {
+        "type": "or",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 20D",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "MATH 21D",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
+       },
+       {
+        "type": "course",
+        "code": "MATH 20E",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "or",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 18",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "MATH 20F",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "MATH 31AH",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
+       }
+      ]
      },
      {
       "type": "condition",
@@ -61085,34 +61264,34 @@
    "code": "MAE 145",
    "prereq_text": "MAE 8, MAE 108, and senior standing or consent of instructor.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "MAE 8",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "MAE 108",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "or",
+      "type": "and",
       "items": [
+       {
+        "type": "course",
+        "code": "MAE 8",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "MAE 108",
+        "concurrent": false,
+        "min_grade": null
+       },
        {
         "type": "condition",
         "kind": "standing",
         "text": "senior standing"
-       },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
        }
       ]
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
      }
     ]
    },
@@ -61281,75 +61460,85 @@
    "code": "MAE 150",
    "prereq_text": "MAE 30A or MAE 130A or SE 101A or BENG 110, MAE 107 or SE 121, MAE 3 or MAE 2, and senior standing in engineering major, or consent of instructor.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "or",
+      "type": "and",
       "items": [
        {
-        "type": "course",
-        "code": "MAE 30A",
-        "concurrent": false,
-        "min_grade": null
+        "type": "or",
+        "items": [
+         {
+          "type": "course",
+          "code": "MAE 30A",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "MAE 130A",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "SE 101A",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "BENG 110",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
        },
        {
-        "type": "course",
-        "code": "MAE 130A",
-        "concurrent": false,
-        "min_grade": null
+        "type": "or",
+        "items": [
+         {
+          "type": "course",
+          "code": "MAE 107",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "SE 121",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
        },
        {
-        "type": "course",
-        "code": "SE 101A",
-        "concurrent": false,
-        "min_grade": null
+        "type": "or",
+        "items": [
+         {
+          "type": "course",
+          "code": "MAE 3",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "MAE 2",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
        },
        {
-        "type": "course",
-        "code": "BENG 110",
-        "concurrent": false,
-        "min_grade": null
-       }
-      ]
-     },
-     {
-      "type": "or",
-      "items": [
-       {
-        "type": "course",
-        "code": "MAE 107",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
-        "type": "course",
-        "code": "SE 121",
-        "concurrent": false,
-        "min_grade": null
-       }
-      ]
-     },
-     {
-      "type": "or",
-      "items": [
-       {
-        "type": "course",
-        "code": "MAE 3",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
-        "type": "course",
-        "code": "MAE 2",
-        "concurrent": false,
-        "min_grade": null
+        "type": "condition",
+        "kind": "standing",
+        "text": "senior standing in engineering major"
        }
       ]
      },
      {
       "type": "condition",
-      "kind": "standing",
-      "text": "senior standing in engineering major, or consent of instructor"
+      "kind": "consent",
+      "text": "consent of instructor"
      }
     ]
    },
@@ -61867,34 +62056,34 @@
    "code": "MAE 175A",
    "prereq_text": "senior standing; MAE 143B; and MAE 170, or consent of instructor.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "condition",
-      "kind": "standing",
-      "text": "senior standing"
-     },
-     {
-      "type": "course",
-      "code": "MAE 143B",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "or",
+      "type": "and",
       "items": [
+       {
+        "type": "condition",
+        "kind": "standing",
+        "text": "senior standing"
+       },
+       {
+        "type": "course",
+        "code": "MAE 143B",
+        "concurrent": false,
+        "min_grade": null
+       },
        {
         "type": "course",
         "code": "MAE 170",
         "concurrent": false,
         "min_grade": null
-       },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
        }
       ]
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
      }
     ]
    },
@@ -62281,11 +62470,6 @@
       "text": "Math Placement Exam qualifying score"
      },
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "equivalent AB subscore on BC exam"
-     },
-     {
       "type": "course",
       "code": "MATH 4C",
       "concurrent": false,
@@ -62324,11 +62508,6 @@
       "type": "condition",
       "kind": "exam",
       "text": "Math Placement Exam qualifying score"
-     },
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "equivalent AB subscore on BC exam"
      },
      {
       "type": "course",
@@ -64421,40 +64600,40 @@
    "code": "MATH 171B",
    "prereq_text": "MATH 20C or MATH 31BH and MATH 171A or consent of instructor.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "or",
+      "type": "and",
       "items": [
        {
-        "type": "course",
-        "code": "MATH 20C",
-        "concurrent": false,
-        "min_grade": null
+        "type": "or",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 20C",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "MATH 31BH",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
        },
        {
         "type": "course",
-        "code": "MATH 31BH",
+        "code": "MATH 171A",
         "concurrent": false,
         "min_grade": null
        }
       ]
      },
      {
-      "type": "or",
-      "items": [
-       {
-        "type": "course",
-        "code": "MATH 171A",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
-       }
-      ]
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
      }
     ]
    },
@@ -65504,30 +65683,25 @@
    "code": "MATH 190A",
    "prereq_text": "MATH 31CH or MATH 140A or MATH 142A. Students who have not completed prerequisites may enroll with consent of instructor.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "or",
-      "items": [
-       {
-        "type": "course",
-        "code": "MATH 31CH",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
-        "type": "course",
-        "code": "MATH 140A",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
-        "type": "course",
-        "code": "MATH 142A",
-        "concurrent": false,
-        "min_grade": null
-       }
-      ]
+      "type": "course",
+      "code": "MATH 31CH",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "course",
+      "code": "MATH 140A",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "course",
+      "code": "MATH 142A",
+      "concurrent": false,
+      "min_grade": null
      },
      {
       "type": "condition",
@@ -69626,34 +69800,34 @@
    "code": "MUS 105",
    "prereq_text": "MUS 101A and 101B or consent of instructor.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "MUS 101A",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "or",
+      "type": "and",
       "items": [
+       {
+        "type": "course",
+        "code": "MUS 101A",
+        "concurrent": false,
+        "min_grade": null
+       },
        {
         "type": "course",
         "code": "MUS 101B",
         "concurrent": false,
         "min_grade": null
-       },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
        }
       ]
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
      }
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -69754,9 +69928,19 @@
    "code": "MUS 112",
    "prereq_text": "knowledge of music notation or consent of instructor; MUS 4, 8–10, or 120 recommended.",
    "requires": {
-    "type": "condition",
-    "kind": "other",
-    "text": "knowledge of music notation or consent of instructor ; MUS 4, 8-10, or 120 recommended"
+    "type": "or",
+    "items": [
+     {
+      "type": "condition",
+      "kind": "other",
+      "text": "knowledge of music notation"
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -70240,13 +70424,13 @@
         "code": "MUS 2C",
         "concurrent": false,
         "min_grade": null
+       },
+       {
+        "type": "condition",
+        "kind": "other",
+        "text": "proficiency exam"
        }
       ]
-     },
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "proficiency exam"
      },
      {
       "type": "condition",
@@ -70648,8 +70832,8 @@
    "prereq_text": "upper-division standing; MUS 170 recommended.",
    "requires": {
     "type": "condition",
-    "kind": "other",
-    "text": "upper-division standing ; MUS 170 recommended"
+    "kind": "standing",
+    "text": "upper-division standing"
    },
    "source": "parser",
    "ambiguous": false,
@@ -70672,27 +70856,27 @@
    "code": "MUS 173A",
    "prereq_text": "upper-division standing; restricted to music, ICAM-music, and ICAM-visual arts majors and minors, or consent of instructor.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "condition",
-      "kind": "standing",
-      "text": "upper-division standing"
-     },
-     {
-      "type": "or",
+      "type": "and",
       "items": [
+       {
+        "type": "condition",
+        "kind": "standing",
+        "text": "upper-division standing"
+       },
        {
         "type": "condition",
         "kind": "restriction",
         "text": "restricted to music, ICAM-music, and ICAM-visual arts majors and minors"
-       },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
        }
       ]
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
      }
     ]
    },
@@ -70737,28 +70921,28 @@
    "code": "MUS 174A",
    "prereq_text": "MUS 170; restricted to music, ICAM-music, and ICAM-visual arts majors and minors, or consent of instructor.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "MUS 170",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "or",
+      "type": "and",
       "items": [
+       {
+        "type": "course",
+        "code": "MUS 170",
+        "concurrent": false,
+        "min_grade": null
+       },
        {
         "type": "condition",
         "kind": "restriction",
         "text": "restricted to music, ICAM-music, and ICAM-visual arts majors and minors"
-       },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
        }
       ]
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
      }
     ]
    },
@@ -70770,34 +70954,34 @@
    "code": "MUS 174B",
    "prereq_text": "MUS 170, MUS 174A; restricted to music, ICAM-music, and ICAM-visual arts majors and minors, or consent of instructor.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "MUS 170",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "MUS 174A",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "or",
+      "type": "and",
       "items": [
+       {
+        "type": "course",
+        "code": "MUS 170",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "MUS 174A",
+        "concurrent": false,
+        "min_grade": null
+       },
        {
         "type": "condition",
         "kind": "restriction",
         "text": "restricted to music, ICAM-music, and ICAM-visual arts majors and minors"
-       },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
        }
       ]
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
      }
     ]
    },
@@ -70809,34 +70993,34 @@
    "code": "MUS 174C",
    "prereq_text": "MUS 170, MUS 174B; restricted to music, ICAM-music, and ICAM-visual arts majors and minors, or consent of instructor.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "MUS 170",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "MUS 174B",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "or",
+      "type": "and",
       "items": [
+       {
+        "type": "course",
+        "code": "MUS 170",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "MUS 174B",
+        "concurrent": false,
+        "min_grade": null
+       },
        {
         "type": "condition",
         "kind": "restriction",
         "text": "restricted to music, ICAM-music, and ICAM-visual arts majors and minors"
-       },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
        }
       ]
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
      }
     ]
    },
@@ -70848,9 +71032,19 @@
    "code": "MUS 175",
    "prereq_text": "MUS 170 recommended; restricted to music, ICAM-music, and ICAM-visual arts majors and minors, or consent of instructor.",
    "requires": {
-    "type": "condition",
-    "kind": "other",
-    "text": "MUS 170 recommended; restricted to music, ICAM-music, and ICAM-visual arts majors and minors, or consent of instructor"
+    "type": "or",
+    "items": [
+     {
+      "type": "condition",
+      "kind": "restriction",
+      "text": "restricted to music, ICAM-music, and ICAM-visual arts majors and minors"
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -70859,11 +71053,7 @@
   {
    "code": "MUS 176",
    "prereq_text": "consent of instructor, MUS 171 recommended.",
-   "requires": {
-    "type": "condition",
-    "kind": "other",
-    "text": "consent of instructor , MUS 171 recommended"
-   },
+   "requires": null,
    "source": "parser",
    "ambiguous": false,
    "unparsed": []
@@ -70872,34 +71062,34 @@
    "code": "MUS 177",
    "prereq_text": "MUS 172 (formerly MUS 161); restricted to music, ICAM-music, and ICAM-visual arts majors and minors, or consent of instructor.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "MUS 172",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "MUS 161",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "or",
+      "type": "and",
       "items": [
+       {
+        "type": "course",
+        "code": "MUS 172",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "MUS 161",
+        "concurrent": false,
+        "min_grade": null
+       },
        {
         "type": "condition",
         "kind": "restriction",
         "text": "restricted to music, ICAM-music, and ICAM-visual arts majors and minors"
-       },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
        }
       ]
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
      }
     ]
    },
@@ -72011,63 +72201,58 @@
    "code": "PH 101",
    "prereq_text": "PH 40 or FMPH 40 and PSYC 60, HDS 60, MATH 11, or COGS 14B, and upper-division standing.",
    "requires": {
-    "type": "or",
+    "type": "and",
     "items": [
      {
-      "type": "and",
+      "type": "or",
       "items": [
        {
-        "type": "or",
-        "items": [
-         {
-          "type": "course",
-          "code": "PH 40",
-          "concurrent": false,
-          "min_grade": null
-         },
-         {
-          "type": "course",
-          "code": "FMPH 40",
-          "concurrent": false,
-          "min_grade": null
-         }
-        ]
+        "type": "course",
+        "code": "PH 40",
+        "concurrent": false,
+        "min_grade": null
        },
+       {
+        "type": "course",
+        "code": "FMPH 40",
+        "concurrent": false,
+        "min_grade": null
+       }
+      ]
+     },
+     {
+      "type": "or",
+      "items": [
        {
         "type": "course",
         "code": "PSYC 60",
         "concurrent": false,
         "min_grade": null
-       }
-      ]
-     },
-     {
-      "type": "course",
-      "code": "HDS 60",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "MATH 11",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "and",
-      "items": [
+       },
+       {
+        "type": "course",
+        "code": "HDS 60",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "MATH 11",
+        "concurrent": false,
+        "min_grade": null
+       },
        {
         "type": "course",
         "code": "COGS 14B",
         "concurrent": false,
         "min_grade": null
-       },
-       {
-        "type": "condition",
-        "kind": "standing",
-        "text": "upper-division standing"
        }
       ]
+     },
+     {
+      "type": "condition",
+      "kind": "standing",
+      "text": "upper-division standing"
      }
     ]
    },
@@ -72079,63 +72264,58 @@
    "code": "PH 102",
    "prereq_text": "PH 40 or FMPH 40 and PSYC 60, HDS 60, MATH 11, or COGS 14B, and upper-division standing.",
    "requires": {
-    "type": "or",
+    "type": "and",
     "items": [
      {
-      "type": "and",
+      "type": "or",
       "items": [
        {
-        "type": "or",
-        "items": [
-         {
-          "type": "course",
-          "code": "PH 40",
-          "concurrent": false,
-          "min_grade": null
-         },
-         {
-          "type": "course",
-          "code": "FMPH 40",
-          "concurrent": false,
-          "min_grade": null
-         }
-        ]
+        "type": "course",
+        "code": "PH 40",
+        "concurrent": false,
+        "min_grade": null
        },
+       {
+        "type": "course",
+        "code": "FMPH 40",
+        "concurrent": false,
+        "min_grade": null
+       }
+      ]
+     },
+     {
+      "type": "or",
+      "items": [
        {
         "type": "course",
         "code": "PSYC 60",
         "concurrent": false,
         "min_grade": null
-       }
-      ]
-     },
-     {
-      "type": "course",
-      "code": "HDS 60",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "MATH 11",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "and",
-      "items": [
+       },
+       {
+        "type": "course",
+        "code": "HDS 60",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "MATH 11",
+        "concurrent": false,
+        "min_grade": null
+       },
        {
         "type": "course",
         "code": "COGS 14B",
         "concurrent": false,
         "min_grade": null
-       },
-       {
-        "type": "condition",
-        "kind": "standing",
-        "text": "upper-division standing"
        }
       ]
+     },
+     {
+      "type": "condition",
+      "kind": "standing",
+      "text": "upper-division standing"
      }
     ]
    },
@@ -72358,12 +72538,6 @@
         "type": "condition",
         "kind": "other",
         "text": "Students may only receive credit for (these courses: PH 151"
-       },
-       {
-        "type": "course",
-        "code": "PH 151R",
-        "concurrent": false,
-        "min_grade": null
        },
        {
         "type": "course",
@@ -72955,12 +73129,6 @@
        },
        {
         "type": "course",
-        "code": "PH 193R",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
-        "type": "course",
         "code": "FMPH 193",
         "concurrent": false,
         "min_grade": null
@@ -73256,12 +73424,6 @@
         "type": "condition",
         "kind": "other",
         "text": "Students may only receive credit for (PH 194"
-       },
-       {
-        "type": "course",
-        "code": "PH 194R",
-        "concurrent": false,
-        "min_grade": null
        },
        {
         "type": "course",
@@ -74145,78 +74307,108 @@
    "code": "PHIL 110",
    "prereq_text": "upper-division standing and department stamp or consent of instructor.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "condition",
-      "kind": "standing",
-      "text": "upper-division standing"
+      "type": "and",
+      "items": [
+       {
+        "type": "condition",
+        "kind": "standing",
+        "text": "upper-division standing"
+       },
+       {
+        "type": "condition",
+        "kind": "consent",
+        "text": "department stamp"
+       }
+      ]
      },
      {
       "type": "condition",
       "kind": "consent",
-      "text": "department stamp"
+      "text": "consent of instructor"
      }
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
    "code": "PHIL 111",
    "prereq_text": "PHIL 110, upper-division standing and department stamp or consent of instructor.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "PHIL 110",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "condition",
-      "kind": "standing",
-      "text": "upper-division standing"
+      "type": "and",
+      "items": [
+       {
+        "type": "course",
+        "code": "PHIL 110",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "condition",
+        "kind": "standing",
+        "text": "upper-division standing"
+       },
+       {
+        "type": "condition",
+        "kind": "consent",
+        "text": "department stamp"
+       }
+      ]
      },
      {
       "type": "condition",
       "kind": "consent",
-      "text": "department stamp"
+      "text": "consent of instructor"
      }
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
    "code": "PHIL 112",
    "prereq_text": "PHIL 111, upper-division standing and department stamp or consent of instructor.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "PHIL 111",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "condition",
-      "kind": "standing",
-      "text": "upper-division standing"
+      "type": "and",
+      "items": [
+       {
+        "type": "course",
+        "code": "PHIL 111",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "condition",
+        "kind": "standing",
+        "text": "upper-division standing"
+       },
+       {
+        "type": "condition",
+        "kind": "consent",
+        "text": "department stamp"
+       }
+      ]
      },
      {
       "type": "condition",
       "kind": "consent",
-      "text": "department stamp"
+      "text": "consent of instructor"
      }
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -79275,20 +79467,9 @@
    "code": "POLI 113B",
    "prereq_text": "upper-division standing for POLI 113B.",
    "requires": {
-    "type": "and",
-    "items": [
-     {
-      "type": "condition",
-      "kind": "standing",
-      "text": "upper-division standing"
-     },
-     {
-      "type": "course",
-      "code": "POLI 113B",
-      "concurrent": false,
-      "min_grade": null
-     }
-    ]
+    "type": "condition",
+    "kind": "standing",
+    "text": "upper-division standing"
    },
    "source": "parser",
    "ambiguous": false,
@@ -79492,12 +79673,6 @@
    "requires": {
     "type": "and",
     "items": [
-     {
-      "type": "course",
-      "code": "POLI 120J",
-      "concurrent": false,
-      "min_grade": null
-     },
      {
       "type": "condition",
       "kind": "standing",
@@ -82086,40 +82261,45 @@
    "code": "PSYC 133",
    "prereq_text": "upper-division standing. BILD 1 or COGS 107B or PSYC 106 or consent of instructor.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "condition",
-      "kind": "standing",
-      "text": "upper-division standing"
-     },
-     {
-      "type": "or",
+      "type": "and",
       "items": [
        {
-        "type": "course",
-        "code": "BILD 1",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
-        "type": "course",
-        "code": "COGS 107B",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
-        "type": "course",
-        "code": "PSYC 106",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
         "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
+        "kind": "standing",
+        "text": "upper-division standing"
+       },
+       {
+        "type": "or",
+        "items": [
+         {
+          "type": "course",
+          "code": "BILD 1",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "COGS 107B",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "PSYC 106",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
        }
       ]
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
      }
     ]
    },
@@ -82131,40 +82311,45 @@
    "code": "PSYC 133R",
    "prereq_text": "upper-division standing. BILD 1 or COGS 107B or PSYC 106 or consent of instructor.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "condition",
-      "kind": "standing",
-      "text": "upper-division standing"
-     },
-     {
-      "type": "or",
+      "type": "and",
       "items": [
        {
-        "type": "course",
-        "code": "BILD 1",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
-        "type": "course",
-        "code": "COGS 107B",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
-        "type": "course",
-        "code": "PSYC 106",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
         "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
+        "kind": "standing",
+        "text": "upper-division standing"
+       },
+       {
+        "type": "or",
+        "items": [
+         {
+          "type": "course",
+          "code": "BILD 1",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "COGS 107B",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "PSYC 106",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
        }
       ]
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
      }
     ]
    },
@@ -85894,38 +86079,38 @@
    "code": "SIO 104",
    "prereq_text": "undergraduate: BILD 3 or consent of instructor. Graduate: graduate-level standing or consent of instructor.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "or",
+      "type": "and",
       "items": [
        {
-        "type": "course",
-        "code": "BILD 3",
-        "concurrent": false,
-        "min_grade": null
+        "type": "or",
+        "items": [
+         {
+          "type": "course",
+          "code": "BILD 3",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "condition",
+          "kind": "consent",
+          "text": "consent of instructor"
+         }
+        ]
        },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
-       }
-      ]
-     },
-     {
-      "type": "or",
-      "items": [
        {
         "type": "condition",
         "kind": "other",
         "text": "Graduate: graduate-level standing"
-       },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
        }
       ]
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
      }
     ]
    },
@@ -85962,46 +86147,46 @@
    "code": "SIO 106",
    "prereq_text": "SIO 50, MATH 20C, PHYS 2C, and CHEM 6C; upper-division standing or consent of instructor.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "SIO 50",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "MATH 20C",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "PHYS 2C",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "CHEM 6C",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "or",
+      "type": "and",
       "items": [
+       {
+        "type": "course",
+        "code": "SIO 50",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "MATH 20C",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "PHYS 2C",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "CHEM 6C",
+        "concurrent": false,
+        "min_grade": null
+       },
        {
         "type": "condition",
         "kind": "standing",
         "text": "upper-division standing"
-       },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
        }
       ]
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
      }
     ]
    },
@@ -86369,34 +86554,34 @@
    "code": "SIO 117",
    "prereq_text": "MATH 20D and PHYS 2C or consent of instructor.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "MATH 20D",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "or",
+      "type": "and",
       "items": [
+       {
+        "type": "course",
+        "code": "MATH 20D",
+        "concurrent": false,
+        "min_grade": null
+       },
        {
         "type": "course",
         "code": "PHYS 2C",
         "concurrent": false,
         "min_grade": null
-       },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
        }
       ]
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
      }
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -86418,22 +86603,32 @@
     "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "PHYS 1C",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "PHYS 2C",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "CHEM 6C",
-      "concurrent": false,
-      "min_grade": null
+      "type": "and",
+      "items": [
+       {
+        "type": "or",
+        "items": [
+         {
+          "type": "course",
+          "code": "PHYS 1C",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "PHYS 2C",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
+       },
+       {
+        "type": "course",
+        "code": "CHEM 6C",
+        "concurrent": false,
+        "min_grade": null
+       }
+      ]
      },
      {
       "type": "condition",
@@ -86476,22 +86671,27 @@
     "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "BILD 1",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "BILD 2",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "BILD 3",
-      "concurrent": false,
-      "min_grade": null
+      "type": "and",
+      "items": [
+       {
+        "type": "course",
+        "code": "BILD 1",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "BILD 2",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "BILD 3",
+        "concurrent": false,
+        "min_grade": null
+       }
+      ]
      },
      {
       "type": "condition",
@@ -86584,35 +86784,40 @@
    "code": "SIO 124",
    "prereq_text": "CHEM 6C and BILD 1 or BILD 3 or consent of instructor.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "CHEM 6C",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "or",
+      "type": "and",
       "items": [
        {
         "type": "course",
-        "code": "BILD 1",
+        "code": "CHEM 6C",
         "concurrent": false,
         "min_grade": null
        },
        {
-        "type": "course",
-        "code": "BILD 3",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
+        "type": "or",
+        "items": [
+         {
+          "type": "course",
+          "code": "BILD 1",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "BILD 3",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
        }
       ]
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
      }
     ]
    },
@@ -86887,138 +87092,138 @@
    "code": "SIO 133",
    "prereq_text": "BILD 3 and upper-division standing or consent of instructor.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "BILD 3",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "or",
+      "type": "and",
       "items": [
+       {
+        "type": "course",
+        "code": "BILD 3",
+        "concurrent": false,
+        "min_grade": null
+       },
        {
         "type": "condition",
         "kind": "standing",
         "text": "upper-division standing"
-       },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
        }
       ]
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
      }
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
    "code": "SIO 134",
    "prereq_text": "BILD 3 and upper-division standing or consent of instructor.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "BILD 3",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "or",
+      "type": "and",
       "items": [
+       {
+        "type": "course",
+        "code": "BILD 3",
+        "concurrent": false,
+        "min_grade": null
+       },
        {
         "type": "condition",
         "kind": "standing",
         "text": "upper-division standing"
-       },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
        }
       ]
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
      }
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
    "code": "SIO 135",
    "prereq_text": "undergraduate: PHYS 2A-B or PHYS 4A-B-C, or consent of instructor. Graduate: graduate-level standing or consent of instructor.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "or",
+      "type": "and",
       "items": [
        {
-        "type": "and",
+        "type": "or",
         "items": [
          {
-          "type": "course",
-          "code": "PHYS 2A",
-          "concurrent": false,
-          "min_grade": null
+          "type": "and",
+          "items": [
+           {
+            "type": "course",
+            "code": "PHYS 2A",
+            "concurrent": false,
+            "min_grade": null
+           },
+           {
+            "type": "course",
+            "code": "PHYS 2B",
+            "concurrent": false,
+            "min_grade": null
+           }
+          ]
          },
          {
-          "type": "course",
-          "code": "PHYS 2B",
-          "concurrent": false,
-          "min_grade": null
+          "type": "and",
+          "items": [
+           {
+            "type": "course",
+            "code": "PHYS 4A",
+            "concurrent": false,
+            "min_grade": null
+           },
+           {
+            "type": "course",
+            "code": "PHYS 4B",
+            "concurrent": false,
+            "min_grade": null
+           },
+           {
+            "type": "course",
+            "code": "PHYS 4C",
+            "concurrent": false,
+            "min_grade": null
+           }
+          ]
+         },
+         {
+          "type": "condition",
+          "kind": "consent",
+          "text": "consent of instructor"
          }
         ]
        },
-       {
-        "type": "and",
-        "items": [
-         {
-          "type": "course",
-          "code": "PHYS 4A",
-          "concurrent": false,
-          "min_grade": null
-         },
-         {
-          "type": "course",
-          "code": "PHYS 4B",
-          "concurrent": false,
-          "min_grade": null
-         },
-         {
-          "type": "course",
-          "code": "PHYS 4C",
-          "concurrent": false,
-          "min_grade": null
-         }
-        ]
-       },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
-       }
-      ]
-     },
-     {
-      "type": "or",
-      "items": [
        {
         "type": "condition",
         "kind": "other",
         "text": "Graduate: graduate-level standing"
-       },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
        }
       ]
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
      }
     ]
    },
@@ -87098,28 +87303,38 @@
     "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "BILD 3",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "MATH 10A",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "MATH 20A",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "CHEM 6B",
-      "concurrent": false,
-      "min_grade": null
+      "type": "and",
+      "items": [
+       {
+        "type": "course",
+        "code": "BILD 3",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "or",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 10A",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "MATH 20A",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
+       },
+       {
+        "type": "course",
+        "code": "CHEM 6B",
+        "concurrent": false,
+        "min_grade": null
+       }
+      ]
      },
      {
       "type": "condition",
@@ -87256,50 +87471,50 @@
    "code": "SIO 144",
    "prereq_text": "undergraduate: SIO 50, 102, and 120 or consent of instructor. Graduate: graduate-level standing or consent of instructor.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "SIO 50",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "SIO 102",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "or",
+      "type": "and",
       "items": [
        {
         "type": "course",
-        "code": "SIO 120",
+        "code": "SIO 50",
         "concurrent": false,
         "min_grade": null
        },
        {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
-       }
-      ]
-     },
-     {
-      "type": "or",
-      "items": [
+        "type": "course",
+        "code": "SIO 102",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "or",
+        "items": [
+         {
+          "type": "course",
+          "code": "SIO 120",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "condition",
+          "kind": "consent",
+          "text": "consent of instructor"
+         }
+        ]
+       },
        {
         "type": "condition",
         "kind": "other",
         "text": "Graduate: graduate-level standing"
-       },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
        }
       ]
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
      }
     ]
    },
@@ -87383,34 +87598,34 @@
    "code": "SIO 152",
    "prereq_text": "SIO 50 and SIO 120 or consent of instructor.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "SIO 50",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "or",
+      "type": "and",
       "items": [
+       {
+        "type": "course",
+        "code": "SIO 50",
+        "concurrent": false,
+        "min_grade": null
+       },
        {
         "type": "course",
         "code": "SIO 120",
         "concurrent": false,
         "min_grade": null
-       },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
        }
       ]
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
      }
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -87842,46 +88057,51 @@
    "code": "SIO 174",
    "prereq_text": "CHEM 6C or CHEM 6CH and MATH 20C or MATH 31BH or consent of instructor.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "or",
+      "type": "and",
       "items": [
        {
-        "type": "course",
-        "code": "CHEM 6C",
-        "concurrent": false,
-        "min_grade": null
+        "type": "or",
+        "items": [
+         {
+          "type": "course",
+          "code": "CHEM 6C",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "CHEM 6CH",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
        },
        {
-        "type": "course",
-        "code": "CHEM 6CH",
-        "concurrent": false,
-        "min_grade": null
+        "type": "or",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 20C",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "MATH 31BH",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
        }
       ]
      },
      {
-      "type": "or",
-      "items": [
-       {
-        "type": "course",
-        "code": "MATH 20C",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
-        "type": "course",
-        "code": "MATH 31BH",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
-       }
-      ]
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
      }
     ]
    },
@@ -87951,87 +88171,92 @@
    "code": "SIO 177",
    "prereq_text": "PHYS 2A and MATH 20D and MATH 20E or consent of instructor.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "PHYS 2A",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "MATH 20D",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "or",
+      "type": "and",
       "items": [
+       {
+        "type": "course",
+        "code": "PHYS 2A",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "MATH 20D",
+        "concurrent": false,
+        "min_grade": null
+       },
        {
         "type": "course",
         "code": "MATH 20E",
         "concurrent": false,
         "min_grade": null
-       },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
        }
       ]
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
      }
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
    "code": "SIO 178",
    "prereq_text": "PHYS 2C and SIO 177 and MATH 18 or MATH 20F or MATH 31AH or consent of instructor.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "PHYS 2C",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "SIO 177",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "or",
+      "type": "and",
       "items": [
        {
         "type": "course",
-        "code": "MATH 18",
+        "code": "PHYS 2C",
         "concurrent": false,
         "min_grade": null
        },
        {
         "type": "course",
-        "code": "MATH 20F",
+        "code": "SIO 177",
         "concurrent": false,
         "min_grade": null
        },
        {
-        "type": "course",
-        "code": "MATH 31AH",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
+        "type": "or",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 18",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "MATH 20F",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "MATH 31AH",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
        }
       ]
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
      }
     ]
    },
@@ -88181,35 +88406,40 @@
    "code": "SIO 185",
    "prereq_text": "BILD 1 and SIO 132 or SIO 134 or consent of instructor.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "BILD 1",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "or",
+      "type": "and",
       "items": [
        {
         "type": "course",
-        "code": "SIO 132",
+        "code": "BILD 1",
         "concurrent": false,
         "min_grade": null
        },
        {
-        "type": "course",
-        "code": "SIO 134",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
+        "type": "or",
+        "items": [
+         {
+          "type": "course",
+          "code": "SIO 132",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "SIO 134",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
        }
       ]
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
      }
     ]
    },
@@ -88323,35 +88553,40 @@
    "code": "SIO 189",
    "prereq_text": "CHEM 6C and BILD 1 or 3 or consent of instructor.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "CHEM 6C",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "or",
+      "type": "and",
       "items": [
        {
         "type": "course",
-        "code": "BILD 1",
+        "code": "CHEM 6C",
         "concurrent": false,
         "min_grade": null
        },
        {
-        "type": "course",
-        "code": "BILD 3",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
+        "type": "or",
+        "items": [
+         {
+          "type": "course",
+          "code": "BILD 1",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "BILD 3",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
        }
       ]
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
      }
     ]
    },
@@ -88805,39 +89040,28 @@
    "code": "SOCI 105",
    "prereq_text": "graduate standing or consent of instructor for SOCG 227 and SOCI for SOCI 105.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "or",
+      "type": "condition",
+      "kind": "standing",
+      "text": "graduate standing"
+     },
+     {
+      "type": "and",
       "items": [
        {
         "type": "condition",
-        "kind": "standing",
-        "text": "graduate standing"
+        "kind": "consent",
+        "text": "consent of instructor"
        },
        {
-        "type": "and",
-        "items": [
-         {
-          "type": "condition",
-          "kind": "consent",
-          "text": "consent of instructor"
-         },
-         {
-          "type": "course",
-          "code": "SOCG 227",
-          "concurrent": false,
-          "min_grade": null
-         }
-        ]
+        "type": "course",
+        "code": "SOCG 227",
+        "concurrent": false,
+        "min_grade": null
        }
       ]
-     },
-     {
-      "type": "course",
-      "code": "SOCI 105",
-      "concurrent": false,
-      "min_grade": null
      }
     ]
    },
@@ -88875,34 +89099,34 @@
    "code": "SOCI 106M",
    "prereq_text": "SOCI 60 and SOCI 178 or the consent of instructor.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "SOCI 60",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "or",
+      "type": "and",
       "items": [
+       {
+        "type": "course",
+        "code": "SOCI 60",
+        "concurrent": false,
+        "min_grade": null
+       },
        {
         "type": "course",
         "code": "SOCI 178",
         "concurrent": false,
         "min_grade": null
-       },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
        }
       ]
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
      }
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -93371,7 +93595,7 @@
      {
       "type": "condition",
       "kind": "consent",
-      "text": "consent of the instructor"
+      "text": "consent of instructor"
      }
     ]
    },
@@ -93716,56 +93940,56 @@
    "code": "USP 102",
    "prereq_text": "ECON 2 or 100A and MATH 10A or 20A and upper-division standing or consent of instructor.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "or",
+      "type": "and",
       "items": [
        {
-        "type": "course",
-        "code": "ECON 2",
-        "concurrent": false,
-        "min_grade": null
+        "type": "or",
+        "items": [
+         {
+          "type": "course",
+          "code": "ECON 2",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "ECON 100A",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
        },
        {
-        "type": "course",
-        "code": "ECON 100A",
-        "concurrent": false,
-        "min_grade": null
-       }
-      ]
-     },
-     {
-      "type": "or",
-      "items": [
-       {
-        "type": "course",
-        "code": "MATH 10A",
-        "concurrent": false,
-        "min_grade": null
+        "type": "or",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 10A",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "MATH 20A",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
        },
-       {
-        "type": "course",
-        "code": "MATH 20A",
-        "concurrent": false,
-        "min_grade": null
-       }
-      ]
-     },
-     {
-      "type": "or",
-      "items": [
        {
         "type": "condition",
         "kind": "standing",
         "text": "upper-division standing"
-       },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
        }
       ]
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
      }
     ]
    },
@@ -94285,33 +94509,33 @@
    "code": "USP 138",
    "prereq_text": "USP 15 and upper-division standing or consent of instructor.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "USP 15",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "or",
+      "type": "and",
       "items": [
+       {
+        "type": "course",
+        "code": "USP 15",
+        "concurrent": false,
+        "min_grade": null
+       },
        {
         "type": "condition",
         "kind": "standing",
         "text": "upper-division standing"
-       },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
        }
       ]
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
      }
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -94584,67 +94808,67 @@
    "code": "USP 151",
    "prereq_text": "USP 5 and upper-division standing or consent of instructor.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "USP 5",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "or",
+      "type": "and",
       "items": [
+       {
+        "type": "course",
+        "code": "USP 5",
+        "concurrent": false,
+        "min_grade": null
+       },
        {
         "type": "condition",
         "kind": "standing",
         "text": "upper-division standing"
-       },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
        }
       ]
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
      }
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
    "code": "USP 152A",
    "prereq_text": "USP 15, USP 25, and upper-division standing or consent of instructor.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "USP 15",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "USP 25",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "or",
+      "type": "and",
       "items": [
+       {
+        "type": "course",
+        "code": "USP 15",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "USP 25",
+        "concurrent": false,
+        "min_grade": null
+       },
        {
         "type": "condition",
         "kind": "standing",
         "text": "upper-division standing"
-       },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
        }
       ]
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
      }
     ]
    },
@@ -94778,33 +95002,33 @@
    "code": "USP 159B",
    "prereq_text": "USP 159A and upper-division standing or consent of instructor.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "USP 159A",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "or",
+      "type": "and",
       "items": [
+       {
+        "type": "course",
+        "code": "USP 159A",
+        "concurrent": false,
+        "min_grade": null
+       },
        {
         "type": "condition",
         "kind": "standing",
         "text": "upper-division standing"
-       },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
        }
       ]
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
      }
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -95025,33 +95249,33 @@
    "code": "USP 169",
    "prereq_text": "USP 124 and upper-division standing or consent of instructor.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "USP 124",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "or",
+      "type": "and",
       "items": [
+       {
+        "type": "course",
+        "code": "USP 124",
+        "concurrent": false,
+        "min_grade": null
+       },
        {
         "type": "condition",
         "kind": "standing",
         "text": "upper-division standing"
-       },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
        }
       ]
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
      }
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -95213,15 +95437,20 @@
     "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "USP 124",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "condition",
-      "kind": "standing",
-      "text": "upper-division standing"
+      "type": "and",
+      "items": [
+       {
+        "type": "course",
+        "code": "USP 124",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "condition",
+        "kind": "standing",
+        "text": "upper-division standing"
+       }
+      ]
      },
      {
       "type": "condition",
@@ -95718,33 +95947,33 @@
    "code": "USP 191A",
    "prereq_text": "USP 4 and upper-division standing or consent of instructor.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "USP 4",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "or",
+      "type": "and",
       "items": [
+       {
+        "type": "course",
+        "code": "USP 4",
+        "concurrent": false,
+        "min_grade": null
+       },
        {
         "type": "condition",
         "kind": "standing",
         "text": "upper-division standing"
-       },
-       {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
        }
       ]
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
      }
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -97818,9 +98047,10 @@
     "type": "and",
     "items": [
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "VIS 142; CSE 11 recommended"
+      "type": "course",
+      "code": "VIS 142",
+      "concurrent": false,
+      "min_grade": null
      },
      {
       "type": "condition",

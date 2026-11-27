@@ -57,10 +57,13 @@ EXTRA_RULES = [
 # A sentence saying the instructor can let anyone in: the whole requirement
 # becomes "(...) or consent". Removed from the text before parsing.
 CONSENT_FOR_ALL = re.compile(
-    r"\s*(?:students\s+who\s+have\s+not\s+completed\s+(?:the\s+)?listed\s+prerequisites?\s+"
+    r"\s*(?:students\s+who\s+have\s+not\s+completed\s+(?:the\s+)?(?:listed\s+)?prerequisites?\s+"
     r"may\s+enroll\s+with\s+(?:the\s+)?consent\s+of\s+(?:the\s+)?instructor|"
     r"consent\s+of\s+(?:the\s+)?instructor\s+if\s+students\s+do\s+not\s+meet\s+(?:the\s+)?prerequisites?|"
-    r"[\w ,-]*students\s+cannot\s+enroll\s+without\s+(?:the\s+)?consent\s+of\s+(?:the\s+)?instructor)\.?",
+    r"[\w ,-]*students\s+cannot\s+enroll\s+without\s+(?:the\s+)?consent\s+of\s+(?:the\s+)?instructor|"
+    # "...; MAE 143B; and MAE 170, or consent of instructor." at the very end:
+    # UCSD means consent instead of everything before it.
+    r"[,;]?\s+or\s+(?:by\s+)?(?:the\s+)?consent\s+of\s+(?:the\s+)?instructor\.?\s*$)\.?",
     re.IGNORECASE)
 
 # "one from COMM 100A, 100B, 100C" or "two of the following: ...": any of
@@ -97,11 +100,37 @@ def as_alternatives(match):
     return "(" + " or ".join(items) + ")"
 
 
-def parse(parser, prereq_text):
-    """The parser's answer for one course, with UCSD's two rewrites: choice
-    lists, and consent that stands in for everything."""
-    text, consent_for_all = CONSENT_FOR_ALL.subn("", prereq_text)
+def without_course(node, code):
+    """The tree with `code` taken out: a course can't require itself (ECE
+    190's text says "The department stamp is required to enroll in ECE 190")."""
+    if node is None:
+        return None
+    if node["type"] == "course":
+        return None if node["code"] == code else node
+    if node["type"] in ("and", "or"):
+        items = [i for i in (without_course(i, code) for i in node["items"]) if i is not None]
+        return None if not items else items[0] if len(items) == 1 else dict(node, items=items)
+    return node
+
+
+def parse(parser, prereq_text, code=None):
+    """The parser's answer for one course (`code`), with UCSD's rewrites:
+    recommendations dropped, choice lists, consent that stands in for
+    everything, and the course itself left out."""
+    # "...; MUS 4, 8–10, or 120 recommended." and "MUS 170 recommended; ...":
+    # a recommendation isn't a requirement.
+    text = re.sub(r"(?:^|;)\s*[^;.]*\brecommended(?=\s*(?:[;.]|$))", "", prereq_text).lstrip("; ")
+    # "AP Calculus AB score of 3 (or equivalent AB subscore on BC exam)": part of the exam.
+    text = re.sub(r"(score of \d)\s*\(or equivalent[^)]*\)", r"\1", text)
+    text, consent_for_all = CONSENT_FOR_ALL.subn("", text)
     text = CHOICE_LIST.sub(as_alternatives, text)
+    # "CHEM 7L or 7LM and CHEM 40A, 40AH, or 41A": the comma list after "and"
+    # is one choice -> "... and (CHEM 40A or 40AH or 41A)".
+    course = r"(?:[A-Z]{2,5}\s)?\d+[A-Z]*"
+    text = re.sub(r"\band\s+(%s(?:,\s+%s)+),?\s+or\s+(%s)" % (course, course, course),
+                  lambda m: "and (" + re.sub(r",\s+", " or ", m.group(1)) + " or " + m.group(2) + ")", text)
+    # "DSC 10/R": the course or its remote twin, DSC 10R.
+    text = re.sub(r"\b([A-Z]{2,5} \d+[A-Z]*)/R\b", r"\1 or \1R", text)
     # "MATH 20A or higher": the course named is the one the map can show.
     text = re.sub(r"(\b[A-Z]{2,5} \d+[A-Z]*) or higher\b", r"\1", text)
     # The language courses: "LIIT 1A with a grade of C– or better, or
@@ -111,6 +140,7 @@ def parse(parser, prereq_text):
     # "or by department approval" -> "or department approval"
     text = re.sub(r"\bor\s+by\s+(department|consent|permission)\b", r"or \1", text)
     parsed = parser.parse(text)
+    parsed["requires"] = without_course(parsed["requires"], code)
     if consent_for_all:
         consent = {"type": "condition", "kind": "consent", "text": "consent of instructor"}
         tree = parsed["requires"]
@@ -129,7 +159,7 @@ def main():
     parser = make_parser(courses)
     results = []
     for course in courses:
-        parsed = parse(parser, course["prereq_text"])
+        parsed = parse(parser, course["prereq_text"], course["code"])
         results.append({
             "code": course["code"],
             "prereq_text": course["prereq_text"],

@@ -60,18 +60,21 @@ def load_ucsd():
     with open(build_prereqs.INPUT, encoding="utf-8") as f:
         courses = json.load(f)["courses"]
     parser = build_prereqs.make_parser(courses)
-    return lambda text: build_prereqs.parse(parser, extract.split_prereq_text(text)[0])
+    return lambda text, code: build_prereqs.parse(parser, extract.split_prereq_text(text)[0], code)
 
 
 def without_repeats(notation):
-    """The same answer with a tag or course repeated inside one & or | written
-    once ("@consent & @consent & X" -> "@consent & X"): the meaning is the
-    same, and labels write it once."""
+    """The same answer written one way: an & inside an & (or | inside |) is
+    flattened, and a tag or course repeated inside one & or | is written once
+    ("@consent & @consent & X" -> "@consent & X"). The meaning is the same."""
     def tidy(node):
         if node is None or node["type"] not in ("and", "or"):
             return node
-        items, seen = [], set()
+        flat = []
         for item in (tidy(i) for i in node["items"]):
+            flat.extend(item["items"] if item["type"] == node["type"] else [item])
+        items, seen = [], set()
+        for item in flat:
             key = to_notation(item)
             if key not in seen:
                 seen.add(key)
@@ -96,7 +99,8 @@ def main():
         parse = load_ucsd()
         labels = "tests/ucsd_labels.json"
     else:
-        parse = load_parser().parse
+        ucsb_parser = load_parser()
+        parse = lambda text, code: ucsb_parser.parse(text)
         labels = "tests/test_labels.json"
     with open(labels, encoding="utf-8") as f:
         tests = json.load(f)["courses"]
@@ -107,7 +111,7 @@ def main():
     for test in tests:
         if only and test["group"] not in only:
             continue
-        tree = parse(test["prereq_text"])["requires"]
+        tree = parse(test["prereq_text"], test["code"])["requires"]
         got = without_repeats(to_notation(tree))
         expected = without_repeats(test["expected"])
         key = (test["group"], test["set"])
