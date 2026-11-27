@@ -49,13 +49,18 @@ EXTRA_RULES = [
                     r"with\s+(?:\w+[- ])?(?:\w+\s+)?standing))[^;.§])*"),
     ("restriction", r"\b(?:students\s+must\s+)?(?:(?:submit\s+(?:an\s+)?applications?|apply)\b[^;.§]*?\s+and\s+)?"
                     r"(?:be\s+)?accepted\s+(?:in|into|to)\s+(?:the\s+)?[^;.§]*?program\b"),
-    ("restriction", r"\b(?:formal\s+)?(?:admittance|acceptance)\s+(?:to|in|into)\s+[^;.§]*"),
+    # "admission to the major", stopping before "and a grade of C– in X" or a course.
+    ("restriction", r"\b(?:formal\s+)?(?:admittance|acceptance|admission)\s+(?:to|in|into)\s+"
+                    r"(?:(?!\band\s+(?:a\s+grade|[A-Z]{2,5}\s\d))[^;.§])*"),
+    ("restriction", r"\b(?:students\s+)?must\s+apply\s+(?:for|to)\s+[^;.§]*?\s+and\s+be\s+(?:accepted|approved)(?:\s+to\s+enroll)?"),
     ("restriction", r"\b(?:students\s+)?must\s+be\s+(?:an?\s+)?[\w ]{0,40}?(?:students?|participants\s+in\s+[^;.§]*)"),
     # Major codes: "ED25 major", "CS25, CS26, and CS27 majors"
-    ("restriction", r"\b[A-Z]{2}\d{2}(?:(?:,\s*(?:or\s+|and\s+)?|\s+or\s+|\s+and\s+)[A-Z]{2}\d{2})*\s+majors?\b"),
+    ("restriction", r"\b[A-Z]{2} ?\d{2}(?:(?:,\s*(?:or\s+|and\s+)?|\s+or\s+|\s+and\s+)[A-Z]{2} ?\d{2})*\s+majors?\b"),
     ("consent", r"\bdepartment(?:al)?\s+(?:stamp|authorization|approval)(?:\s+(?:is\s+)?required)?"),
     ("consent", r"\benrollment\s+via\s+[^;.§]*"),
     ("consent", r"\bby\s+invitation(?:\s+only)?"),
+    ("consent", r"(?i:\b(?:instructor|department)\s+and\s+(?:instructor|department)\s+(?:approval|consent|permission))"),
+    ("consent", r"\b(?:and\s+)?(?:the\s+)?director\s+of\s+[^;.§]*?program\b"),
 ]
 
 # A sentence saying the instructor can let anyone in: the whole requirement
@@ -95,7 +100,7 @@ def subject_codes(courses):
 
 
 def make_parser(courses):
-    return Parser(subject_codes(courses), SUBJECT_NAMES, EXTRA_RULES)
+    return Parser(subject_codes(courses), SUBJECT_NAMES, EXTRA_RULES, brackets=True)
 
 
 def as_alternatives(match):
@@ -148,6 +153,60 @@ def without_recommendations(text):
     return " ".join(kept).strip()
 
 
+def previous_course(code):
+    """The course before `code` in its sequence: JAPN 140B -> JAPN 140A,
+    CHIN 100BM -> CHIN 100AM. None when there's no earlier letter."""
+    match = re.match(r"^([A-Z ]+ \d+)([B-Z])([A-Z]*)$", code or "")
+    if not match:
+        return None
+    return match.group(1) + chr(ord(match.group(2)) - 1) + match.group(3)
+
+
+def subject_list(match):
+    """"POLI/ECON 5(D)" -> "(POLI 5 or POLI 5D or ECON 5 or ECON 5D)"."""
+    subjects = match.group("subjects").split("/")
+    numbers = [match.group("number")]
+    if match.group("suffix"):
+        numbers.append(match.group("number") + match.group("suffix"))
+    return "(" + " or ".join("%s %s" % (s, n) for s in subjects for n in numbers) + ")"
+
+
+def twin_sequence(match):
+    """"PHYS 2A/2AR-B-C-D" -> "((PHYS 2A or PHYS 2AR) and PHYS 2B and PHYS 2C and PHYS 2D)"."""
+    subject, number, first, twin = match.group("subject"), match.group("number"), match.group("first"), match.group("twin")
+    rest = ["%s %s%s" % (subject, number, letter) for letter in match.group("rest").strip("-").split("-")]
+    return "((%s %s%s or %s %s) and %s)" % (subject, number, first, subject, twin, " and ".join(rest))
+
+
+def expand_shorthand(text, code):
+    """UCSD's shorthand, written out so the shared parser reads it."""
+    # "(formerly MUS 161)": an old number for the same course.
+    text = re.sub(r"\s*\(formerly [^)]*\)", "", text, flags=re.IGNORECASE)
+    # "may require ... such as POLI 30": an example, not a requirement.
+    text = re.sub(r"[,;]?\s*\(?\bsuch as\b[^;.)]*\)?", "", text)
+    # "SYN 1/1R, must be taken for a letter grade to count toward ...": about grading.
+    text = re.sub(r"[,;]?\s*must be taken for a letter grade[^;.]*", "", text, flags=re.IGNORECASE)
+    # "Prerequisite courses must have been completed with a grade of C–":
+    # only the grade matters ("with a grade of C–", applied to every course).
+    text = re.sub(r"\b(?:all\s+)?(?:listed\s+)?prerequisites?(?:\s+courses?)?\s+must\s+(?:have\s+been\s+|be\s+)?completed\s+(?=with\b)",
+                  "", text, flags=re.IGNORECASE)
+    # "Must be take(n) concurrently with PSYC 199" -> "concurrent enrollment in PSYC 199"
+    text = re.sub(r"\bmust\s+be\s+taken?\s+concurrently\s+with\b", "concurrent enrollment in", text, flags=re.IGNORECASE)
+    # "PHYS 2A/2AR-B-C-D": the first course or its remote twin, then the rest of the sequence.
+    text = re.sub(r"\b(?P<subject>[A-Z]{2,5}) (?P<number>\d+)(?P<first>[A-Z])/(?P<twin>\d+[A-Z]+R)(?P<rest>(?:-[A-Z])+)\b",
+                  twin_sequence, text)
+    # "POLI/ECON 5(D)", "POLI 30(D)": either subject, with or without the letter.
+    text = re.sub(r"\b(?P<subjects>[A-Z]{2,5}(?:/[A-Z]{2,5})+) (?P<number>\d+)(?:\((?P<suffix>[A-Z]+)\))?", subject_list, text)
+    text = re.sub(r"\b([A-Z]{2,5}) (\d+)\(([A-Z]+)\)", r"(\1 \2 or \1 \2\3)", text)
+    # "EDS (20S or 30 or 31)": the subject goes inside the brackets.
+    text = re.sub(r"\b([A-Z]{2,5}) \((\d+[A-Z]*\s+(?:or|and)\s)", r"(\1 \2", text)
+    # "previous course or consent": the course before this one in its sequence.
+    before = previous_course(code)
+    if before:
+        text = re.sub(r"\bprevious\s+course\b", before, text, flags=re.IGNORECASE)
+    return text
+
+
 def parse(parser, prereq_text, code=None):
     """The parser's answer for one course (`code`), with UCSD's rewrites:
     recommendations dropped, choice lists, consent that stands in for
@@ -158,6 +217,7 @@ def parse(parser, prereq_text, code=None):
     # "...; students who have completed MATH 154 ... may not receive credit
     # for CSE 21; ...": about credit, not a requirement.
     text = re.sub(r"(?:^|;)\s*[^;.]*\b(?:may not|will not|cannot) receive (?:duplicate )?credit\b[^;.]*", "", text).lstrip("; ")
+    text = expand_shorthand(text, code)
     # "none. Open to visual arts majors": "none" is about courses; the rest still counts.
     text = re.sub(r"^\s*none\.\s*(?=\S)", "", text, flags=re.IGNORECASE)
     # "AP Calculus AB score of 3 (or equivalent AB subscore on BC exam)": part of the exam.
@@ -190,7 +250,7 @@ def parse(parser, prereq_text, code=None):
     parsed["requires"] = without_course(parsed["requires"], code)
     # "Restricted to seniors within the major", "upper-division public health
     # majors only": class standing too.
-    if re.search(r"\b(?:restricted\s+to|open\s+to)\s+(?:\w+\s+){0,2}?(?:seniors|juniors|upper-division)\b|"
+    if re.search(r"\b(?:restricted\s+to|open\s+to)\s+(?:\w+\s+){0,2}?(?:seniors?|juniors?|upper-division)\b|"
                  r"\bupper-division\s+[\w ]{0,40}majors\s+only\b", text, re.IGNORECASE):
         standing = {"type": "condition", "kind": "standing", "text": "class standing"}
         tree = parsed["requires"]

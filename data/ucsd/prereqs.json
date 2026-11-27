@@ -3543,19 +3543,24 @@
       "type": "or",
       "items": [
        {
-        "type": "course",
-        "code": "PHYS 2A",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
         "type": "and",
         "items": [
          {
-          "type": "course",
-          "code": "PHYS 2AR",
-          "concurrent": false,
-          "min_grade": null
+          "type": "or",
+          "items": [
+           {
+            "type": "course",
+            "code": "PHYS 2A",
+            "concurrent": false,
+            "min_grade": null
+           },
+           {
+            "type": "course",
+            "code": "PHYS 2AR",
+            "concurrent": false,
+            "min_grade": null
+           }
+          ]
          },
          {
           "type": "course",
@@ -3656,19 +3661,24 @@
       "type": "or",
       "items": [
        {
-        "type": "course",
-        "code": "PHYS 2A",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
         "type": "and",
         "items": [
          {
-          "type": "course",
-          "code": "PHYS 2AR",
-          "concurrent": false,
-          "min_grade": null
+          "type": "or",
+          "items": [
+           {
+            "type": "course",
+            "code": "PHYS 2A",
+            "concurrent": false,
+            "min_grade": null
+           },
+           {
+            "type": "course",
+            "code": "PHYS 2AR",
+            "concurrent": false,
+            "min_grade": null
+           }
+          ]
          },
          {
           "type": "course",
@@ -3772,19 +3782,24 @@
       "type": "or",
       "items": [
        {
-        "type": "course",
-        "code": "PHYS 2A",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
         "type": "and",
         "items": [
          {
-          "type": "course",
-          "code": "PHYS 2AR",
-          "concurrent": false,
-          "min_grade": null
+          "type": "or",
+          "items": [
+           {
+            "type": "course",
+            "code": "PHYS 2A",
+            "concurrent": false,
+            "min_grade": null
+           },
+           {
+            "type": "course",
+            "code": "PHYS 2AR",
+            "concurrent": false,
+            "min_grade": null
+           }
+          ]
          },
          {
           "type": "course",
@@ -3897,19 +3912,24 @@
       "type": "or",
       "items": [
        {
-        "type": "course",
-        "code": "PHYS 2A",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
         "type": "and",
         "items": [
          {
-          "type": "course",
-          "code": "PHYS 2AR",
-          "concurrent": false,
-          "min_grade": null
+          "type": "or",
+          "items": [
+           {
+            "type": "course",
+            "code": "PHYS 2A",
+            "concurrent": false,
+            "min_grade": null
+           },
+           {
+            "type": "course",
+            "code": "PHYS 2AR",
+            "concurrent": false,
+            "min_grade": null
+           }
+          ]
          },
          {
           "type": "course",
@@ -4000,19 +4020,24 @@
     "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "PHYS 2A",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
       "type": "and",
       "items": [
        {
-        "type": "course",
-        "code": "PHYS 2AR",
-        "concurrent": false,
-        "min_grade": null
+        "type": "or",
+        "items": [
+         {
+          "type": "course",
+          "code": "PHYS 2A",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "PHYS 2AR",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
        },
        {
         "type": "course",
@@ -4082,19 +4107,24 @@
     "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "PHYS 2A",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
       "type": "and",
       "items": [
        {
-        "type": "course",
-        "code": "PHYS 2AR",
-        "concurrent": false,
-        "min_grade": null
+        "type": "or",
+        "items": [
+         {
+          "type": "course",
+          "code": "PHYS 2A",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "PHYS 2AR",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
        },
        {
         "type": "course",
@@ -4164,19 +4194,24 @@
     "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "PHYS 2A",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
       "type": "and",
       "items": [
        {
-        "type": "course",
-        "code": "PHYS 2AR",
-        "concurrent": false,
-        "min_grade": null
+        "type": "or",
+        "items": [
+         {
+          "type": "course",
+          "code": "PHYS 2A",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "PHYS 2AR",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
        },
        {
         "type": "course",
@@ -4246,19 +4281,24 @@
     "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "PHYS 2A",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
       "type": "and",
       "items": [
        {
-        "type": "course",
-        "code": "PHYS 2AR",
-        "concurrent": false,
-        "min_grade": null
+        "type": "or",
+        "items": [
+         {
+          "type": "course",
+          "code": "PHYS 2A",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "PHYS 2AR",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
        },
        {
         "type": "course",
@@ -4328,19 +4368,24 @@
     "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "PHYS 2A",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
       "type": "and",
       "items": [
        {
-        "type": "course",
-        "code": "PHYS 2AR",
-        "concurrent": false,
-        "min_grade": null
+        "type": "or",
+        "items": [
+         {
+          "type": "course",
+          "code": "PHYS 2A",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "PHYS 2AR",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
        },
        {
         "type": "course",
@@ -4410,19 +4455,24 @@
     "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "PHYS 2A",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
       "type": "and",
       "items": [
        {
-        "type": "course",
-        "code": "PHYS 2AR",
-        "concurrent": false,
-        "min_grade": null
+        "type": "or",
+        "items": [
+         {
+          "type": "course",
+          "code": "PHYS 2A",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "PHYS 2AR",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
        },
        {
         "type": "course",
@@ -4492,19 +4542,24 @@
     "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "PHYS 2A",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
       "type": "and",
       "items": [
        {
-        "type": "course",
-        "code": "PHYS 2AR",
-        "concurrent": false,
-        "min_grade": null
+        "type": "or",
+        "items": [
+         {
+          "type": "course",
+          "code": "PHYS 2A",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "PHYS 2AR",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
        },
        {
         "type": "course",
@@ -4577,19 +4632,24 @@
       "type": "or",
       "items": [
        {
-        "type": "course",
-        "code": "PHYS 2A",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
         "type": "and",
         "items": [
          {
-          "type": "course",
-          "code": "PHYS 2AR",
-          "concurrent": false,
-          "min_grade": null
+          "type": "or",
+          "items": [
+           {
+            "type": "course",
+            "code": "PHYS 2A",
+            "concurrent": false,
+            "min_grade": null
+           },
+           {
+            "type": "course",
+            "code": "PHYS 2AR",
+            "concurrent": false,
+            "min_grade": null
+           }
+          ]
          },
          {
           "type": "course",
@@ -4727,19 +4787,24 @@
     "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "PHYS 2A",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
       "type": "and",
       "items": [
        {
-        "type": "course",
-        "code": "PHYS 2AR",
-        "concurrent": false,
-        "min_grade": null
+        "type": "or",
+        "items": [
+         {
+          "type": "course",
+          "code": "PHYS 2A",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "PHYS 2AR",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
        },
        {
         "type": "course",
@@ -4812,19 +4877,24 @@
       "type": "or",
       "items": [
        {
-        "type": "course",
-        "code": "PHYS 2A",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
         "type": "and",
         "items": [
          {
-          "type": "course",
-          "code": "PHYS 2AR",
-          "concurrent": false,
-          "min_grade": null
+          "type": "or",
+          "items": [
+           {
+            "type": "course",
+            "code": "PHYS 2A",
+            "concurrent": false,
+            "min_grade": null
+           },
+           {
+            "type": "course",
+            "code": "PHYS 2AR",
+            "concurrent": false,
+            "min_grade": null
+           }
+          ]
          },
          {
           "type": "course",
@@ -4952,19 +5022,24 @@
       "type": "or",
       "items": [
        {
-        "type": "course",
-        "code": "PHYS 2A",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
         "type": "and",
         "items": [
          {
-          "type": "course",
-          "code": "PHYS 2AR",
-          "concurrent": false,
-          "min_grade": null
+          "type": "or",
+          "items": [
+           {
+            "type": "course",
+            "code": "PHYS 2A",
+            "concurrent": false,
+            "min_grade": null
+           },
+           {
+            "type": "course",
+            "code": "PHYS 2AR",
+            "concurrent": false,
+            "min_grade": null
+           }
+          ]
          },
          {
           "type": "course",
@@ -5473,7 +5548,7 @@
   },
   {
    "code": "BENG 100",
-   "prereq_text": "MATH 18 or MATH 31AH , MATH 20C or MATH 31BH; bioengineering majors only or consent of department. (F,S,Su).",
+   "prereq_text": "MATH 18 or MATH 31AH , MATH 20C or MATH 31BH; bioengineering majors only or consent of department.",
    "requires": {
     "type": "and",
     "items": [
@@ -5525,11 +5600,6 @@
         "text": "consent of department"
        }
       ]
-     },
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "(F"
      }
     ]
    },
@@ -6065,36 +6135,41 @@
       "min_grade": null
      },
      {
-      "type": "condition",
-      "kind": "restriction",
-      "text": "bioengineering majors only"
-     },
-     {
-      "type": "course",
-      "code": "BE 25",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "BE 27",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "BE 28",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
       "type": "or",
       "items": [
        {
-        "type": "course",
-        "code": "BE 29",
-        "concurrent": false,
-        "min_grade": null
+        "type": "and",
+        "items": [
+         {
+          "type": "condition",
+          "kind": "restriction",
+          "text": "bioengineering majors only"
+         },
+         {
+          "type": "course",
+          "code": "BE 25",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "BE 27",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "BE 28",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "BE 29",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
        },
        {
         "type": "condition",
@@ -6106,7 +6181,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -7046,27 +7121,9 @@
       "type": "or",
       "items": [
        {
-        "type": "course",
-        "code": "BE 25",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
-        "type": "course",
-        "code": "BE 27",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
-        "type": "course",
-        "code": "BE 28",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
         "type": "condition",
         "kind": "restriction",
-        "text": "and BE 29 majors only"
+        "text": "BE 25, BE 27, BE 28, and BE 29 majors"
        },
        {
         "type": "condition",
@@ -7097,27 +7154,9 @@
       "type": "or",
       "items": [
        {
-        "type": "course",
-        "code": "BE 25",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
-        "type": "course",
-        "code": "BE 27",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
-        "type": "course",
-        "code": "BE 28",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
         "type": "condition",
         "kind": "restriction",
-        "text": "and BE 29 majors only"
+        "text": "BE 25, BE 27, BE 28, and BE 29 majors"
        },
        {
         "type": "condition",
@@ -7378,7 +7417,7 @@
   },
   {
    "code": "BENG 196",
-   "prereq_text": "consent of department and completion of all lower-division course requirements, including general-science requirement; laboratory experience. (F,W,S,Su).",
+   "prereq_text": "consent of department and completion of all lower-division course requirements, including general-science requirement; laboratory experience.",
    "requires": {
     "type": "and",
     "items": [
@@ -7400,7 +7439,7 @@
   },
   {
    "code": "BENG 197",
-   "prereq_text": "completion of ninety units with a 2.5 GPA and approval from a bioengineering faculty coordinator. (F,W,S,Su).",
+   "prereq_text": "completion of ninety units with a 2.5 GPA and approval from a bioengineering faculty coordinator.",
    "requires": {
     "type": "and",
     "items": [
@@ -7449,7 +7488,7 @@
   },
   {
    "code": "BENG 199",
-   "prereq_text": "upper-division standing, completion of ninety units of UC San Diego undergraduate study, a minimum UC San Diego GPA of 2.5, consent of instructor, and a completed and approved Special Studies form. (F,W,S,Su).",
+   "prereq_text": "upper-division standing, completion of ninety units of UC San Diego undergraduate study, a minimum UC San Diego GPA of 2.5, consent of instructor, and a completed and approved Special Studies form.",
    "requires": {
     "type": "and",
     "items": [
@@ -10233,71 +10272,7 @@
   {
    "code": "BIMM 185",
    "prereq_text": "two courses out of BIMM 181 or BENG 181 or CSE 181, BIMM 182 or BENG 182 or CSE 182, BENG 183, BIMM 184 or BENG 184 or CSE 184.",
-   "requires": {
-    "type": "or",
-    "items": [
-     {
-      "type": "course",
-      "code": "BIMM 181",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "BENG 181",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "CSE 181",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "BIMM 182",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "BENG 182",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "CSE 182",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "BENG 183",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "BIMM 184",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "BENG 184",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "CSE 184",
-      "concurrent": false,
-      "min_grade": null
-     }
-    ]
-   },
+   "requires": null,
    "source": "parser",
    "ambiguous": false,
    "unparsed": []
@@ -12184,25 +12159,13 @@
        {
         "type": "condition",
         "kind": "restriction",
-        "text": "admission to the major and"
-       },
-       {
-        "type": "course",
-        "code": "PHYS 2A",
-        "concurrent": false,
-        "min_grade": "C-"
-       },
-       {
-        "type": "course",
-        "code": "MATH 20D",
-        "concurrent": false,
-        "min_grade": "C-"
+        "text": "admission to the major and grades of C- or better in PHYS 2A, MATH 20D"
        },
        {
         "type": "course",
         "code": "MATH 20E",
         "concurrent": false,
-        "min_grade": "C-"
+        "min_grade": null
        }
       ]
      },
@@ -12226,7 +12189,7 @@
      {
       "type": "condition",
       "kind": "restriction",
-      "text": "admission to the major and"
+      "text": "admission to the major"
      },
      {
       "type": "course",
@@ -12244,20 +12207,9 @@
    "code": "CENG 101C",
    "prereq_text": "admission to the major and grade of C– or better in CENG 101A.",
    "requires": {
-    "type": "and",
-    "items": [
-     {
-      "type": "condition",
-      "kind": "restriction",
-      "text": "admission to the major and"
-     },
-     {
-      "type": "course",
-      "code": "CENG 101A",
-      "concurrent": false,
-      "min_grade": "C-"
-     }
-    ]
+    "type": "condition",
+    "kind": "restriction",
+    "text": "admission to the major and grade of C- or better in CENG 101A"
    },
    "source": "parser",
    "ambiguous": false,
@@ -12483,25 +12435,13 @@
      {
       "type": "condition",
       "kind": "restriction",
-      "text": "admission to the major and"
-     },
-     {
-      "type": "course",
-      "code": "CENG 100",
-      "concurrent": false,
-      "min_grade": "C-"
-     },
-     {
-      "type": "course",
-      "code": "CENG 102",
-      "concurrent": false,
-      "min_grade": "C-"
+      "text": "admission to the major and grades of C- or better in CENG 100, CENG 102"
      },
      {
       "type": "course",
       "code": "CENG 101C",
       "concurrent": false,
-      "min_grade": "C-"
+      "min_grade": null
      }
     ]
    },
@@ -12521,19 +12461,13 @@
        {
         "type": "condition",
         "kind": "restriction",
-        "text": "admission to chemical engineering major and"
-       },
-       {
-        "type": "course",
-        "code": "CENG 113",
-        "concurrent": false,
-        "min_grade": "C-"
+        "text": "admission to chemical engineering major and grades of C- or better in CENG 113"
        },
        {
         "type": "course",
         "code": "CENG 122",
         "concurrent": false,
-        "min_grade": "C-"
+        "min_grade": null
        }
       ]
      },
@@ -12552,20 +12486,9 @@
    "code": "CENG 124B",
    "prereq_text": "admission to chemical engineering major and grade of C– or better in CENG 124A.",
    "requires": {
-    "type": "and",
-    "items": [
-     {
-      "type": "condition",
-      "kind": "restriction",
-      "text": "admission to chemical engineering major and"
-     },
-     {
-      "type": "course",
-      "code": "CENG 124A",
-      "concurrent": false,
-      "min_grade": "C-"
-     }
-    ]
+    "type": "condition",
+    "kind": "restriction",
+    "text": "admission to chemical engineering major and grade of C- or better in CENG 124A"
    },
    "source": "parser",
    "ambiguous": false,
@@ -13674,19 +13597,9 @@
    "code": "CGS 198",
    "prereq_text": "consent of instructor and director of Critical Gender Studies Program and department stamp required.",
    "requires": {
-    "type": "and",
-    "items": [
-     {
-      "type": "condition",
-      "kind": "consent",
-      "text": "consent of instructor"
-     },
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "director of Critical Gender Studies Program"
-     }
-    ]
+    "type": "condition",
+    "kind": "consent",
+    "text": "consent of instructor"
    },
    "source": "parser",
    "ambiguous": false,
@@ -13696,19 +13609,9 @@
    "code": "CGS 199",
    "prereq_text": "consent of instructor and director of Critical Gender Studies Program and department stamp required.",
    "requires": {
-    "type": "and",
-    "items": [
-     {
-      "type": "condition",
-      "kind": "consent",
-      "text": "consent of instructor"
-     },
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "director of Critical Gender Studies Program"
-     }
-    ]
+    "type": "condition",
+    "kind": "consent",
+    "text": "consent of instructor"
    },
    "source": "parser",
    "ambiguous": false,
@@ -14831,7 +14734,7 @@
   },
   {
    "code": "CHEM 116",
-   "prereq_text": "CHEM 41C or CHEM 40B, and CHEM 114A. (May not be offered every year.).",
+   "prereq_text": "CHEM 41C or CHEM 40B, and CHEM 114A.",
    "requires": {
     "type": "and",
     "items": [
@@ -14857,11 +14760,6 @@
       "code": "CHEM 114A",
       "concurrent": false,
       "min_grade": null
-     },
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "(May not be offered every year.)"
      }
     ]
    },
@@ -15601,7 +15499,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -16242,7 +16140,7 @@
   },
   {
    "code": "CHEM 185",
-   "prereq_text": "CHEM 126 or 126B or 130 or 133 and MATH 20C or 31BH. (May not be offered every year.).",
+   "prereq_text": "CHEM 126 or 126B or 130 or 133 and MATH 20C or 31BH.",
    "requires": {
     "type": "and",
     "items": [
@@ -16291,11 +16189,6 @@
         "min_grade": null
        }
       ]
-     },
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "(May not be offered every year.)"
      }
     ]
    },
@@ -16637,9 +16530,20 @@
    "code": "CHIN 10BD",
    "prereq_text": "previous course or department approval through placement interview.",
    "requires": {
-    "type": "condition",
-    "kind": "consent",
-    "text": "department approval"
+    "type": "or",
+    "items": [
+     {
+      "type": "course",
+      "code": "CHIN 10AD",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "department approval"
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -16649,9 +16553,20 @@
    "code": "CHIN 10BM",
    "prereq_text": "previous course or department approval through placement interview.",
    "requires": {
-    "type": "condition",
-    "kind": "consent",
-    "text": "department approval"
+    "type": "or",
+    "items": [
+     {
+      "type": "course",
+      "code": "CHIN 10AM",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "department approval"
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -16661,9 +16576,20 @@
    "code": "CHIN 10BN",
    "prereq_text": "previous course or department approval through placement interview.",
    "requires": {
-    "type": "condition",
-    "kind": "consent",
-    "text": "department approval"
+    "type": "or",
+    "items": [
+     {
+      "type": "course",
+      "code": "CHIN 10AN",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "department approval"
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -16673,9 +16599,20 @@
    "code": "CHIN 10CD",
    "prereq_text": "previous course or department approval through placement interview.",
    "requires": {
-    "type": "condition",
-    "kind": "consent",
-    "text": "department approval"
+    "type": "or",
+    "items": [
+     {
+      "type": "course",
+      "code": "CHIN 10BD",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "department approval"
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -16685,9 +16622,20 @@
    "code": "CHIN 10CM",
    "prereq_text": "previous course or department approval through placement interview.",
    "requires": {
-    "type": "condition",
-    "kind": "consent",
-    "text": "department approval"
+    "type": "or",
+    "items": [
+     {
+      "type": "course",
+      "code": "CHIN 10BM",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "department approval"
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -16697,9 +16645,20 @@
    "code": "CHIN 10CN",
    "prereq_text": "previous course or department approval through placement interview.",
    "requires": {
-    "type": "condition",
-    "kind": "consent",
-    "text": "department approval"
+    "type": "or",
+    "items": [
+     {
+      "type": "course",
+      "code": "CHIN 10BN",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "department approval"
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -16745,9 +16704,20 @@
    "code": "CHIN 20BD",
    "prereq_text": "previous course or department approval through placement interview.",
    "requires": {
-    "type": "condition",
-    "kind": "consent",
-    "text": "department approval"
+    "type": "or",
+    "items": [
+     {
+      "type": "course",
+      "code": "CHIN 20AD",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "department approval"
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -16765,9 +16735,20 @@
    "code": "CHIN 20BN",
    "prereq_text": "previous course or department approval through placement interview.",
    "requires": {
-    "type": "condition",
-    "kind": "consent",
-    "text": "department approval"
+    "type": "or",
+    "items": [
+     {
+      "type": "course",
+      "code": "CHIN 20AN",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "department approval"
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -16777,9 +16758,20 @@
    "code": "CHIN 20CD",
    "prereq_text": "previous course or department approval through placement interview.",
    "requires": {
-    "type": "condition",
-    "kind": "consent",
-    "text": "department approval"
+    "type": "or",
+    "items": [
+     {
+      "type": "course",
+      "code": "CHIN 20BD",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "department approval"
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -16789,9 +16781,20 @@
    "code": "CHIN 20CM",
    "prereq_text": "previous course or department approval through placement interview.",
    "requires": {
-    "type": "condition",
-    "kind": "consent",
-    "text": "department approval"
+    "type": "or",
+    "items": [
+     {
+      "type": "course",
+      "code": "CHIN 20BM",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "department approval"
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -16801,9 +16804,20 @@
    "code": "CHIN 20CN",
    "prereq_text": "previous course or department approval through placement interview.",
    "requires": {
-    "type": "condition",
-    "kind": "consent",
-    "text": "department approval"
+    "type": "or",
+    "items": [
+     {
+      "type": "course",
+      "code": "CHIN 20BN",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "department approval"
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -16837,9 +16851,20 @@
    "code": "CHIN 100BM",
    "prereq_text": "previous course or department approval through placement interview.",
    "requires": {
-    "type": "condition",
-    "kind": "consent",
-    "text": "department approval"
+    "type": "or",
+    "items": [
+     {
+      "type": "course",
+      "code": "CHIN 100AM",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "department approval"
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -16849,9 +16874,20 @@
    "code": "CHIN 100BN",
    "prereq_text": "previous course or department approval through placement interview.",
    "requires": {
-    "type": "condition",
-    "kind": "consent",
-    "text": "department approval"
+    "type": "or",
+    "items": [
+     {
+      "type": "course",
+      "code": "CHIN 100AN",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "department approval"
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -16861,9 +16897,20 @@
    "code": "CHIN 100CM",
    "prereq_text": "previous course or department approval through placement interview.",
    "requires": {
-    "type": "condition",
-    "kind": "consent",
-    "text": "department approval"
+    "type": "or",
+    "items": [
+     {
+      "type": "course",
+      "code": "CHIN 100BM",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "department approval"
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -16873,9 +16920,20 @@
    "code": "CHIN 100CN",
    "prereq_text": "previous course or department approval through placement interview.",
    "requires": {
-    "type": "condition",
-    "kind": "consent",
-    "text": "department approval"
+    "type": "or",
+    "items": [
+     {
+      "type": "course",
+      "code": "CHIN 100BN",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "department approval"
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -18246,7 +18304,7 @@
   },
   {
    "code": "COGS 8",
-   "prereq_text": "freshman and sophomore standing. (No prior programming experience required.).",
+   "prereq_text": "freshman and sophomore standing.",
    "requires": {
     "type": "and",
     "items": [
@@ -20016,19 +20074,20 @@
       "min_grade": null
      },
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "EDS (20S"
-     },
-     {
       "type": "course",
-      "code": "PSYC 30",
+      "code": "EDS 20S",
       "concurrent": false,
       "min_grade": null
      },
      {
       "type": "course",
-      "code": "PSYC 31",
+      "code": "EDS 30",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "course",
+      "code": "EDS 31",
       "concurrent": false,
       "min_grade": null
      }
@@ -22910,7 +22969,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -22951,7 +23010,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -22992,7 +23051,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -23033,7 +23092,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -23074,7 +23133,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -23194,7 +23253,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -23235,7 +23294,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -23276,7 +23335,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -23359,7 +23418,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -23400,7 +23459,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -23441,7 +23500,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -23482,7 +23541,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -23523,7 +23582,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -23564,7 +23623,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -23605,7 +23664,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -23646,7 +23705,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -23687,7 +23746,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -23752,7 +23811,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -23817,7 +23876,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -23858,7 +23917,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -23899,7 +23958,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -24060,7 +24119,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -24143,7 +24202,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -24196,7 +24255,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -24237,7 +24296,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -24278,7 +24337,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -24319,7 +24378,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -24360,7 +24419,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -24401,7 +24460,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -24442,7 +24501,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -24483,7 +24542,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -24524,7 +24583,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -24565,7 +24624,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -24614,35 +24673,13 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
    "code": "COMM 172T",
    "prereq_text": "one from COMM 100A, 100B, 100C.",
-   "requires": {
-    "type": "or",
-    "items": [
-     {
-      "type": "course",
-      "code": "COMM 100A",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "COMM 100B",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "COMM 100C",
-      "concurrent": false,
-      "min_grade": null
-     }
-    ]
-   },
+   "requires": null,
    "source": "parser",
    "ambiguous": false,
    "unparsed": []
@@ -24650,29 +24687,7 @@
   {
    "code": "COMM 172TR",
    "prereq_text": "one from COMM 100A, 100B, 100C.",
-   "requires": {
-    "type": "or",
-    "items": [
-     {
-      "type": "course",
-      "code": "COMM 100A",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "COMM 100B",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "COMM 100C",
-      "concurrent": false,
-      "min_grade": null
-     }
-    ]
-   },
+   "requires": null,
    "source": "parser",
    "ambiguous": false,
    "unparsed": []
@@ -24715,7 +24730,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -24756,7 +24771,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -24797,7 +24812,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -24838,7 +24853,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -24879,7 +24894,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -24920,7 +24935,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -24961,7 +24976,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -25002,7 +25017,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -25079,7 +25094,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -25120,7 +25135,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -25161,7 +25176,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -25202,7 +25217,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -25243,7 +25258,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -25285,21 +25300,11 @@
   },
   {
    "code": "COMM 198",
-   "prereq_text": "consent of instructor. (P/NP grades only.).",
+   "prereq_text": "consent of instructor.",
    "requires": {
-    "type": "and",
-    "items": [
-     {
-      "type": "condition",
-      "kind": "consent",
-      "text": "consent of instructor"
-     },
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "(P"
-     }
-    ]
+    "type": "condition",
+    "kind": "consent",
+    "text": "consent of instructor"
    },
    "source": "parser",
    "ambiguous": false,
@@ -25307,21 +25312,11 @@
   },
   {
    "code": "COMM 199",
-   "prereq_text": "consent of instructor. (P/NP grades only.).",
+   "prereq_text": "consent of instructor.",
    "requires": {
-    "type": "and",
-    "items": [
-     {
-      "type": "condition",
-      "kind": "consent",
-      "text": "consent of instructor"
-     },
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "(P"
-     }
-    ]
+    "type": "condition",
+    "kind": "consent",
+    "text": "consent of instructor"
    },
    "source": "parser",
    "ambiguous": false,
@@ -25329,7 +25324,7 @@
   },
   {
    "code": "COMM 199H",
-   "prereq_text": "COMM 196A-B and consent of instructor. (P/NP grades only.).",
+   "prereq_text": "COMM 196A-B and consent of instructor.",
    "requires": {
     "type": "and",
     "items": [
@@ -25349,11 +25344,6 @@
       "type": "condition",
       "kind": "consent",
       "text": "consent of instructor"
-     },
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "(P"
      }
     ]
    },
@@ -25617,11 +25607,6 @@
         "min_grade": "C-"
        }
       ]
-     },
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "Prerequisite courses must have been"
      },
      {
       "type": "condition",
@@ -26639,71 +26624,7 @@
   {
    "code": "CSE 118",
    "prereq_text": "any course from the following: COGS 102C or COGS 121 or COGS 184 or COGS 184GS or CSE 131 or CSE 132B or ECE 111 or ECE 118 or ECE 191 or ECE 192.",
-   "requires": {
-    "type": "or",
-    "items": [
-     {
-      "type": "course",
-      "code": "COGS 102C",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "COGS 121",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "COGS 184",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "COGS 184GS",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "CSE 131",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "CSE 132B",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "ECE 111",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "ECE 118",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "ECE 191",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "ECE 192",
-      "concurrent": false,
-      "min_grade": null
-     }
-    ]
-   },
+   "requires": null,
    "source": "parser",
    "ambiguous": false,
    "unparsed": []
@@ -29494,6 +29415,11 @@
       "type": "condition",
       "kind": "consent",
       "text": "instructor approval"
+     },
+     {
+      "type": "condition",
+      "kind": "standing",
+      "text": "class standing"
      }
     ]
    },
@@ -30267,10 +30193,8 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
-   "unparsed": [
-    "choose (COGS 14B"
-   ]
+   "ambiguous": false,
+   "unparsed": []
   },
   {
    "code": "CSS 100",
@@ -30583,7 +30507,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -30657,7 +30581,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -30854,40 +30778,6 @@
     "type": "and",
     "items": [
      {
-      "type": "or",
-      "items": [
-       {
-        "type": "course",
-        "code": "MATH 20C",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
-        "type": "course",
-        "code": "MATH 31BH",
-        "concurrent": false,
-        "min_grade": null
-       }
-      ]
-     },
-     {
-      "type": "or",
-      "items": [
-       {
-        "type": "course",
-        "code": "MATH 18",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
-        "type": "course",
-        "code": "MATH 31AH",
-        "concurrent": false,
-        "min_grade": null
-       }
-      ]
-     },
-     {
       "type": "course",
       "code": "DSC 20",
       "concurrent": false,
@@ -31000,7 +30890,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -31078,7 +30968,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -31358,9 +31248,9 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": [
-    "MATH 31 AH)"
+    "MATH 31 AH"
    ]
   },
   {
@@ -31660,7 +31550,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -31695,7 +31585,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -31864,59 +31754,6 @@
         "min_grade": null
        }
       ]
-     },
-     {
-      "type": "or",
-      "items": [
-       {
-        "type": "course",
-        "code": "DSC 140B",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
-        "type": "course",
-        "code": "CSE 151A",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
-        "type": "course",
-        "code": "COGS 188",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
-        "type": "course",
-        "code": "CSE 158",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
-        "type": "course",
-        "code": "CSE 158R",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
-        "type": "course",
-        "code": "DSC 148",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
-        "type": "course",
-        "code": "DSC 140A",
-        "concurrent": false,
-        "min_grade": null
-       }
-      ]
-     },
-     {
-      "type": "course",
-      "code": "DSC 106",
-      "concurrent": false,
-      "min_grade": null
      },
      {
       "type": "condition",
@@ -34287,7 +34124,7 @@
   },
   {
    "code": "ECE 190",
-   "prereq_text": "students enrolling in this course must have completed all of the breadth courses and one depth course. The department stamp is required to enroll in ECE 190. (Specifications and enrollment forms are available in the undergraduate office.).",
+   "prereq_text": "students enrolling in this course must have completed all of the breadth courses and one depth course. The department stamp is required to enroll in ECE 190.",
    "requires": {
     "type": "and",
     "items": [
@@ -34873,49 +34710,49 @@
    "code": "ECON 109",
    "prereq_text": "ECON 100C or MATH 31CH or MATH 109 or (CSE 20 and MATH 20 C).",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "or",
+      "type": "course",
+      "code": "ECON 100C",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "course",
+      "code": "MATH 31CH",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "course",
+      "code": "MATH 109",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "and",
       "items": [
-       {
-        "type": "course",
-        "code": "ECON 100C",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
-        "type": "course",
-        "code": "MATH 31CH",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
-        "type": "course",
-        "code": "MATH 109",
-        "concurrent": false,
-        "min_grade": null
-       },
        {
         "type": "course",
         "code": "CSE 20",
         "concurrent": false,
         "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "MATH 20",
+        "concurrent": false,
+        "min_grade": null
        }
       ]
-     },
-     {
-      "type": "course",
-      "code": "MATH 20",
-      "concurrent": false,
-      "min_grade": null
      }
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": [
-    "MATH 20 C)"
+    "MATH 20 C"
    ]
   },
   {
@@ -35499,7 +35336,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -35664,7 +35501,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -37327,10 +37164,9 @@
     "type": "and",
     "items": [
      {
-      "type": "course",
-      "code": "ED 25",
-      "concurrent": false,
-      "min_grade": null
+      "type": "condition",
+      "kind": "restriction",
+      "text": "ED 25 major"
      },
      {
       "type": "condition",
@@ -37341,9 +37177,7 @@
    },
    "source": "parser",
    "ambiguous": false,
-   "unparsed": [
-    "ED 25 major"
-   ]
+   "unparsed": []
   },
   {
    "code": "EDS 103",
@@ -37352,10 +37186,9 @@
     "type": "and",
     "items": [
      {
-      "type": "course",
-      "code": "ED 25",
-      "concurrent": false,
-      "min_grade": null
+      "type": "condition",
+      "kind": "restriction",
+      "text": "ED 25 major"
      },
      {
       "type": "condition",
@@ -37366,9 +37199,7 @@
    },
    "source": "parser",
    "ambiguous": false,
-   "unparsed": [
-    "ED 25 major"
-   ]
+   "unparsed": []
   },
   {
    "code": "EDS 105",
@@ -47105,9 +46936,20 @@
    "code": "JAPN 10B",
    "prereq_text": "previous course or consent of instructor.",
    "requires": {
-    "type": "condition",
-    "kind": "consent",
-    "text": "consent of instructor"
+    "type": "or",
+    "items": [
+     {
+      "type": "course",
+      "code": "JAPN 10A",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -47117,9 +46959,20 @@
    "code": "JAPN 10C",
    "prereq_text": "previous course or consent of instructor.",
    "requires": {
-    "type": "condition",
-    "kind": "consent",
-    "text": "consent of instructor"
+    "type": "or",
+    "items": [
+     {
+      "type": "course",
+      "code": "JAPN 10B",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -47141,9 +46994,20 @@
    "code": "JAPN 20B",
    "prereq_text": "previous course or consent of instructor.",
    "requires": {
-    "type": "condition",
-    "kind": "consent",
-    "text": "consent of instructor"
+    "type": "or",
+    "items": [
+     {
+      "type": "course",
+      "code": "JAPN 20A",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -47153,9 +47017,20 @@
    "code": "JAPN 20C",
    "prereq_text": "previous course or consent of instructor.",
    "requires": {
-    "type": "condition",
-    "kind": "consent",
-    "text": "consent of instructor"
+    "type": "or",
+    "items": [
+     {
+      "type": "course",
+      "code": "JAPN 20B",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -47177,9 +47052,20 @@
    "code": "JAPN 130B",
    "prereq_text": "previous course or consent of instructor.",
    "requires": {
-    "type": "condition",
-    "kind": "consent",
-    "text": "consent of instructor"
+    "type": "or",
+    "items": [
+     {
+      "type": "course",
+      "code": "JAPN 130A",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -47189,9 +47075,20 @@
    "code": "JAPN 130C",
    "prereq_text": "previous course or consent of instructor.",
    "requires": {
-    "type": "condition",
-    "kind": "consent",
-    "text": "consent of instructor"
+    "type": "or",
+    "items": [
+     {
+      "type": "course",
+      "code": "JAPN 130B",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -47341,9 +47238,20 @@
    "code": "JAPN 140B",
    "prereq_text": "previous course or consent of instructor.",
    "requires": {
-    "type": "condition",
-    "kind": "consent",
-    "text": "consent of instructor"
+    "type": "or",
+    "items": [
+     {
+      "type": "course",
+      "code": "JAPN 140A",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -47353,9 +47261,20 @@
    "code": "JAPN 140C",
    "prereq_text": "previous course or consent of instructor.",
    "requires": {
-    "type": "condition",
-    "kind": "consent",
-    "text": "consent of instructor"
+    "type": "or",
+    "items": [
+     {
+      "type": "course",
+      "code": "JAPN 140B",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -47377,9 +47296,20 @@
    "code": "JAPN 150B",
    "prereq_text": "previous course or consent of instructor.",
    "requires": {
-    "type": "condition",
-    "kind": "consent",
-    "text": "consent of instructor"
+    "type": "or",
+    "items": [
+     {
+      "type": "course",
+      "code": "JAPN 150A",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -47389,9 +47319,20 @@
    "code": "JAPN 150C",
    "prereq_text": "previous course or consent of instructor.",
    "requires": {
-    "type": "condition",
-    "kind": "consent",
-    "text": "consent of instructor"
+    "type": "or",
+    "items": [
+     {
+      "type": "course",
+      "code": "JAPN 150B",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "consent of instructor"
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -48598,7 +48539,7 @@
   },
   {
    "code": "LIFR 5B",
-   "prereq_text": "none for 5A; for 5B, two or more years of French in high school or the first semester of college-level French. (Offered in Summer Session only.).",
+   "prereq_text": "none for 5A; for 5B, two or more years of French in high school or the first semester of college-level French.",
    "requires": {
     "type": "condition",
     "kind": "other",
@@ -48610,7 +48551,7 @@
   },
   {
    "code": "LIFR 5C",
-   "prereq_text": "none for 5A; for 5B, two or more years of French in high school or the first semester of college-level French. (Offered in Summer Session only.).",
+   "prereq_text": "none for 5A; for 5B, two or more years of French in high school or the first semester of college-level French.",
    "requires": {
     "type": "condition",
     "kind": "other",
@@ -48622,7 +48563,7 @@
   },
   {
    "code": "LIFR 5D",
-   "prereq_text": "none for 5A; for 5B, two or more years of French in high school or the first semester of college-level French. (Offered in Summer Session only.).",
+   "prereq_text": "none for 5A; for 5B, two or more years of French in high school or the first semester of college-level French.",
    "requires": {
     "type": "condition",
     "kind": "other",
@@ -48930,7 +48871,7 @@
   },
   {
    "code": "LIGM 5A",
-   "prereq_text": "none for 5A; for 5B, two or more years of German in high school or the first semester of college-level German. (Offered in Summer Session only.).",
+   "prereq_text": "none for 5A; for 5B, two or more years of German in high school or the first semester of college-level German.",
    "requires": {
     "type": "condition",
     "kind": "other",
@@ -48942,7 +48883,7 @@
   },
   {
    "code": "LIGM 5B",
-   "prereq_text": "none for 5A; for 5B, two or more years of German in high school or the first semester of college-level German. (Offered in Summer Session only.).",
+   "prereq_text": "none for 5A; for 5B, two or more years of German in high school or the first semester of college-level German.",
    "requires": {
     "type": "condition",
     "kind": "other",
@@ -48954,7 +48895,7 @@
   },
   {
    "code": "LIGM 5C",
-   "prereq_text": "none for 5A; for 5B, two or more years of German in high school or the first semester of college-level German. (Offered in Summer Session only.).",
+   "prereq_text": "none for 5A; for 5B, two or more years of German in high school or the first semester of college-level German.",
    "requires": {
     "type": "condition",
     "kind": "other",
@@ -48966,7 +48907,7 @@
   },
   {
    "code": "LIGM 5D",
-   "prereq_text": "none for 5A; for 5B, two or more years of German in high school or the first semester of college-level German. (Offered in Summer Session only.).",
+   "prereq_text": "none for 5A; for 5B, two or more years of German in high school or the first semester of college-level German.",
    "requires": {
     "type": "condition",
     "kind": "other",
@@ -49782,7 +49723,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -53221,7 +53162,7 @@
   },
   {
    "code": "LISL 5A",
-   "prereq_text": "none for 5A; for 5B two or more years of ASL in high school or the first semester of college-level ASL. (Offered in Summer Session only.).",
+   "prereq_text": "none for 5A; for 5B two or more years of ASL in high school or the first semester of college-level ASL.",
    "requires": {
     "type": "condition",
     "kind": "other",
@@ -53233,7 +53174,7 @@
   },
   {
    "code": "LISL 5B",
-   "prereq_text": "none for 5A; for 5B two or more years of ASL in high school or the first semester of college-level ASL. (Offered in Summer Session only.).",
+   "prereq_text": "none for 5A; for 5B two or more years of ASL in high school or the first semester of college-level ASL.",
    "requires": {
     "type": "condition",
     "kind": "other",
@@ -53245,7 +53186,7 @@
   },
   {
    "code": "LISL 5C",
-   "prereq_text": "none for 5A; for 5B two or more years of ASL in high school or the first semester of college-level ASL. (Offered in Summer Session only.).",
+   "prereq_text": "none for 5A; for 5B two or more years of ASL in high school or the first semester of college-level ASL.",
    "requires": {
     "type": "condition",
     "kind": "other",
@@ -53545,7 +53486,7 @@
   },
   {
    "code": "LISP 5A",
-   "prereq_text": "none for 5A; for 5B, two or more years of Spanish in high school or the first semester or the first quarter of college-level Spanish. (Offered in Summer Session only.).",
+   "prereq_text": "none for 5A; for 5B, two or more years of Spanish in high school or the first semester or the first quarter of college-level Spanish.",
    "requires": {
     "type": "condition",
     "kind": "other",
@@ -53557,7 +53498,7 @@
   },
   {
    "code": "LISP 5B",
-   "prereq_text": "none for 5A; for 5B, two or more years of Spanish in high school or the first semester or the first quarter of college-level Spanish. (Offered in Summer Session only.).",
+   "prereq_text": "none for 5A; for 5B, two or more years of Spanish in high school or the first semester or the first quarter of college-level Spanish.",
    "requires": {
     "type": "condition",
     "kind": "other",
@@ -53569,7 +53510,7 @@
   },
   {
    "code": "LISP 5C",
-   "prereq_text": "none for 5A; for 5B, two or more years of Spanish in high school or the first semester or the first quarter of college-level Spanish. (Offered in Summer Session only.).",
+   "prereq_text": "none for 5A; for 5B, two or more years of Spanish in high school or the first semester or the first quarter of college-level Spanish.",
    "requires": {
     "type": "condition",
     "kind": "other",
@@ -53581,7 +53522,7 @@
   },
   {
    "code": "LISP 5D",
-   "prereq_text": "none for 5A; for 5B, two or more years of Spanish in high school or the first semester or the first quarter of college-level Spanish. (Offered in Summer Session only.).",
+   "prereq_text": "none for 5A; for 5B, two or more years of Spanish in high school or the first semester or the first quarter of college-level Spanish.",
    "requires": {
     "type": "condition",
     "kind": "other",
@@ -61540,7 +61481,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -65801,7 +65742,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -66039,19 +65980,9 @@
    "code": "MATH 199H",
    "prereq_text": "admission to the Honors Program in mathematics, department stamp.",
    "requires": {
-    "type": "and",
-    "items": [
-     {
-      "type": "condition",
-      "kind": "restriction",
-      "text": "admission to the Honors Program in mathematics"
-     },
-     {
-      "type": "condition",
-      "kind": "consent",
-      "text": "department stamp"
-     }
-    ]
+    "type": "condition",
+    "kind": "restriction",
+    "text": "admission to the Honors Program in mathematics, department stamp"
    },
    "source": "parser",
    "ambiguous": false,
@@ -67798,7 +67729,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -68346,7 +68277,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -69063,7 +68994,7 @@
   },
   {
    "code": "MUIR 199",
-   "prereq_text": "upper-division status, approval by project advisor and by provost. (Letter grades only.).",
+   "prereq_text": "upper-division status, approval by project advisor and by provost.",
    "requires": {
     "type": "and",
     "items": [
@@ -69394,24 +69325,16 @@
   },
   {
    "code": "MUS 8",
-   "prereq_text": "none. (Offered in selected years.).",
-   "requires": {
-    "type": "condition",
-    "kind": "other",
-    "text": "(Offered in selected years.)"
-   },
+   "prereq_text": "none.",
+   "requires": null,
    "source": "parser",
    "ambiguous": false,
    "unparsed": []
   },
   {
    "code": "MUS 9",
-   "prereq_text": "none. (Offered in selected years.).",
-   "requires": {
-    "type": "condition",
-    "kind": "other",
-    "text": "(Offered in selected years.)"
-   },
+   "prereq_text": "none.",
+   "requires": null,
    "source": "parser",
    "ambiguous": false,
    "unparsed": []
@@ -69837,7 +69760,7 @@
      },
      {
       "type": "condition",
-      "kind": "other",
+      "kind": "restriction",
       "text": "admission into the Department of Music Honors Program in composition"
      },
      {
@@ -69877,7 +69800,7 @@
      },
      {
       "type": "condition",
-      "kind": "other",
+      "kind": "restriction",
       "text": "admission into the Department of Music Honors Program in composition"
      },
      {
@@ -69917,7 +69840,7 @@
      },
      {
       "type": "condition",
-      "kind": "other",
+      "kind": "restriction",
       "text": "admission into the Department of Music Honors Program in composition"
      },
      {
@@ -70645,7 +70568,7 @@
      },
      {
       "type": "condition",
-      "kind": "other",
+      "kind": "restriction",
       "text": "admission into the Music Department Honors Program in jazz"
      },
      {
@@ -71208,12 +71131,6 @@
         "min_grade": null
        },
        {
-        "type": "course",
-        "code": "MUS 161",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
         "type": "condition",
         "kind": "restriction",
         "text": "restricted to music, ICAM-music, and ICAM-visual arts majors and minors"
@@ -71229,9 +71146,7 @@
    },
    "source": "parser",
    "ambiguous": false,
-   "unparsed": [
-    "MUS 172 (formerly MUS 161)"
-   ]
+   "unparsed": []
   },
   {
    "code": "MUS 192",
@@ -71424,8 +71339,8 @@
      },
      {
       "type": "condition",
-      "kind": "other",
-      "text": "Priority given to NA 25 majors"
+      "kind": "restriction",
+      "text": "NA 25 majors"
      }
     ]
    },
@@ -71453,8 +71368,8 @@
      },
      {
       "type": "condition",
-      "kind": "other",
-      "text": "Priority given to NA 25 majors"
+      "kind": "restriction",
+      "text": "NA 25 majors"
      }
     ]
    },
@@ -73079,6 +72994,11 @@
       "type": "condition",
       "kind": "restriction",
       "text": "Restricted to senior public health majors only"
+     },
+     {
+      "type": "condition",
+      "kind": "standing",
+      "text": "class standing"
      }
     ]
    },
@@ -73192,6 +73112,11 @@
       "type": "condition",
       "kind": "restriction",
       "text": "Restricted to senior public health majors only"
+     },
+     {
+      "type": "condition",
+      "kind": "standing",
+      "text": "class standing"
      }
     ]
    },
@@ -73322,6 +73247,11 @@
       "type": "condition",
       "kind": "restriction",
       "text": "Restricted to senior public health majors only"
+     },
+     {
+      "type": "condition",
+      "kind": "standing",
+      "text": "class standing"
      }
     ]
    },
@@ -73452,6 +73382,11 @@
       "type": "condition",
       "kind": "restriction",
       "text": "Restricted to senior public health majors only"
+     },
+     {
+      "type": "condition",
+      "kind": "standing",
+      "text": "class standing"
      }
     ]
    },
@@ -78742,22 +78677,7 @@
   {
    "code": "POLI 28",
    "prereq_text": "PHIL/POLI 27.",
-   "requires": {
-    "type": "or",
-    "items": [
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "PHIL"
-     },
-     {
-      "type": "course",
-      "code": "POLI 27",
-      "concurrent": false,
-      "min_grade": null
-     }
-    ]
-   },
+   "requires": null,
    "source": "parser",
    "ambiguous": false,
    "unparsed": []
@@ -78765,22 +78685,7 @@
   {
    "code": "POLI 28R",
    "prereq_text": "PHIL/POLI 27.",
-   "requires": {
-    "type": "or",
-    "items": [
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "PHIL"
-     },
-     {
-      "type": "course",
-      "code": "POLI 27",
-      "concurrent": false,
-      "min_grade": null
-     }
-    ]
-   },
+   "requires": null,
    "source": "parser",
    "ambiguous": false,
    "unparsed": []
@@ -81020,32 +80925,53 @@
       "type": "or",
       "items": [
        {
-        "type": "condition",
-        "kind": "other",
-        "text": "POLI"
+        "type": "course",
+        "code": "POLI 5",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "POLI 5D",
+        "concurrent": false,
+        "min_grade": null
        },
        {
         "type": "course",
         "code": "ECON 5",
         "concurrent": false,
         "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "ECON 5D",
+        "concurrent": false,
+        "min_grade": null
        }
       ]
      },
      {
-      "type": "course",
-      "code": "POLI 30",
-      "concurrent": false,
-      "min_grade": null
+      "type": "or",
+      "items": [
+       {
+        "type": "course",
+        "code": "POLI 30",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "POLI 30D",
+        "concurrent": false,
+        "min_grade": null
+       }
+      ]
      }
     ]
    },
    "source": "parser",
    "ambiguous": false,
-   "unparsed": [
-    "ECON 5(D)",
-    "POLI 30(D)"
-   ]
+   "unparsed": []
   },
   {
    "code": "POLI 162",
@@ -81359,13 +81285,14 @@
     "type": "or",
     "items": [
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "POLI"
+      "type": "course",
+      "code": "POLI 5",
+      "concurrent": false,
+      "min_grade": null
      },
      {
       "type": "course",
-      "code": "ECON 5D",
+      "code": "ECON 5",
       "concurrent": false,
       "min_grade": null
      },
@@ -81487,20 +81414,12 @@
       "type": "condition",
       "kind": "other",
       "text": "Participants must be majors in political science with junior or senior standing and a GPA of 3.5 or higher in all political science courses taken at UC San Diego"
-     },
-     {
-      "type": "course",
-      "code": "POLI 30",
-      "concurrent": false,
-      "min_grade": null
      }
     ]
    },
    "source": "parser",
    "ambiguous": false,
-   "unparsed": [
-    "such as POLI 30"
-   ]
+   "unparsed": []
   },
   {
    "code": "POLI 194SD",
@@ -81637,20 +81556,12 @@
       "type": "condition",
       "kind": "other",
       "text": "Participants must be majors in political science with junior or senior standing and a GPA of 3.5 or higher in all political science courses taken at UC San Diego"
-     },
-     {
-      "type": "course",
-      "code": "POLI 30",
-      "concurrent": false,
-      "min_grade": null
      }
     ]
    },
    "source": "parser",
    "ambiguous": false,
-   "unparsed": [
-    "such as POLI 30"
-   ]
+   "unparsed": []
   },
   {
    "code": "POLI 199",
@@ -82375,6 +82286,12 @@
       "type": "condition",
       "kind": "consent",
       "text": "department approval"
+     },
+     {
+      "type": "course",
+      "code": "PSYC 199",
+      "concurrent": true,
+      "min_grade": null
      }
     ]
    },
@@ -82395,9 +82312,10 @@
       "min_grade": null
      },
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "Must be taken concurrently with PSYC 199"
+      "type": "course",
+      "code": "PSYC 199",
+      "concurrent": true,
+      "min_grade": null
      }
     ]
    },
@@ -82418,9 +82336,10 @@
       "min_grade": null
      },
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "Must be take concurrently with PSYC 199"
+      "type": "course",
+      "code": "PSYC 199",
+      "concurrent": true,
+      "min_grade": null
      }
     ]
    },
@@ -86625,7 +86544,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -91205,11 +91124,6 @@
         "min_grade": null
        }
       ]
-     },
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "must be taken for a letter grade to count toward Seventh College general-education requirements"
      }
     ]
    },
@@ -91244,11 +91158,6 @@
         "min_grade": null
        }
       ]
-     },
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "must be taken for a letter grade to count toward Seventh College general-education requirements"
      }
     ]
    },
@@ -91262,7 +91171,7 @@
    "requires": {
     "type": "condition",
     "kind": "restriction",
-    "text": "restricted to Seventh College students only, upper-division standing, completion of SYN 1/1R and SYN 2/2R, must be taken for a letter grade to count toward Seventh College general-education requirements"
+    "text": "restricted to Seventh College students only, upper-division standing, completion of SYN 1/1R and SYN 2/2R"
    },
    "source": "parser",
    "ambiguous": false,
@@ -91315,11 +91224,6 @@
      },
      {
       "type": "condition",
-      "kind": "other",
-      "text": "must be taken for a letter grade to count toward Seventh College general-education requirements"
-     },
-     {
-      "type": "condition",
       "kind": "restriction",
       "text": "Students must apply and be accepted to the Global Seminar Program"
      }
@@ -91335,7 +91239,7 @@
    "requires": {
     "type": "condition",
     "kind": "restriction",
-    "text": "restricted to Seventh College transfer students only, must be taken for a letter grade to count toward Seventh College high-impact requirement, cannot be taken concurrently or after SYN 100"
+    "text": "restricted to Seventh College transfer students only"
    },
    "source": "parser",
    "ambiguous": false,
@@ -91347,7 +91251,7 @@
    "requires": {
     "type": "condition",
     "kind": "restriction",
-    "text": "restricted to Seventh College transfer students only, must be taken for a letter grade to count toward Seventh College high-impact requirement, cannot be taken concurrently or after SYN 100"
+    "text": "restricted to Seventh College transfer students only"
    },
    "source": "parser",
    "ambiguous": false,
@@ -94141,8 +94045,14 @@
     "items": [
      {
       "type": "condition",
-      "kind": "other",
-      "text": "upper-division standing (ninety units) including lower-division writing requirement (DOC 2"
+      "kind": "standing",
+      "text": "upper-division standing"
+     },
+     {
+      "type": "course",
+      "code": "DOC 2",
+      "concurrent": false,
+      "min_grade": null
      },
      {
       "type": "course",
@@ -94154,6 +94064,11 @@
       "type": "condition",
       "kind": "consent",
       "text": "consent of instructor"
+     },
+     {
+      "type": "condition",
+      "kind": "other",
+      "text": "minimum overall GPA of 2.5 and consent of instructor"
      }
     ]
    },
@@ -96117,7 +96032,7 @@
   },
   {
    "code": "USP 185A",
-   "prereq_text": "USP 5, USP 15, USP 25, USP 50, USP 124, USP 151, USP 152A, and USP 153. Restricted to seniors within the Real Estate and Development major. (Only offered fall quarter.).",
+   "prereq_text": "USP 5, USP 15, USP 25, USP 50, USP 124, USP 151, USP 152A, and USP 153. Restricted to seniors within the Real Estate and Development major.",
    "requires": {
     "type": "and",
     "items": [
@@ -96176,11 +96091,6 @@
      },
      {
       "type": "condition",
-      "kind": "other",
-      "text": "(Only offered fall quarter.)"
-     },
-     {
-      "type": "condition",
       "kind": "standing",
       "text": "class standing"
      }
@@ -96192,7 +96102,7 @@
   },
   {
    "code": "USP 185B",
-   "prereq_text": "USP 185A and RED technical elective. (Only offered winter quarter.).",
+   "prereq_text": "USP 185A and RED technical elective.",
    "requires": {
     "type": "and",
     "items": [
@@ -96215,7 +96125,7 @@
   },
   {
    "code": "USP 186",
-   "prereq_text": "USP 30, USP 60, USP 124, one USP technical elective, and one USP Research Methods course. Restricted to seniors within the Urban Studies and Planning major. (Only offered fall quarter.).",
+   "prereq_text": "USP 30, USP 60, USP 124, one USP technical elective, and one USP Research Methods course. Restricted to seniors within the Urban Studies and Planning major.",
    "requires": {
     "type": "and",
     "items": [
@@ -96260,22 +96170,12 @@
   },
   {
    "code": "USP 187",
-   "prereq_text": "USP 186. (Only offered winter quarter.).",
+   "prereq_text": "USP 186.",
    "requires": {
-    "type": "and",
-    "items": [
-     {
-      "type": "course",
-      "code": "USP 186",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "(Only offered winter quarter.)"
-     }
-    ]
+    "type": "course",
+    "code": "USP 186",
+    "concurrent": false,
+    "min_grade": null
    },
    "source": "parser",
    "ambiguous": false,
@@ -99071,7 +98971,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -99763,7 +99663,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -99857,7 +99757,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -99951,7 +99851,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -100045,7 +99945,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -100139,7 +100039,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -100284,7 +100184,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -100378,7 +100278,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -100472,7 +100372,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -100571,7 +100471,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -100590,47 +100490,6 @@
       "code": "VIS 135",
       "concurrent": false,
       "min_grade": null
-     },
-     {
-      "type": "or",
-      "items": [
-       {
-        "type": "course",
-        "code": "VIS 100A",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
-        "type": "course",
-        "code": "VIS 101A",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
-        "type": "course",
-        "code": "VIS 133A",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
-        "type": "course",
-        "code": "VIS 136A",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
-        "type": "course",
-        "code": "VIS 161",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
-        "type": "course",
-        "code": "VIS 162",
-        "concurrent": false,
-        "min_grade": null
-       }
-      ]
      }
     ]
    },

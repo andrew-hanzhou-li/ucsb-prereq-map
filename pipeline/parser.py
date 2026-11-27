@@ -46,6 +46,7 @@ in it becomes a condition of kind "other" (keeping its original words), and
 leftover words next to a course are returned in the `unparsed` list.
 """
 
+import copy
 import re
 
 from notation import to_notation
@@ -316,12 +317,15 @@ PLACEHOLDER = re.compile(r"§[a-z]+§")
 
 
 class Parser:
-    def __init__(self, subject_codes, subject_names=None, extra_rules=()):
+    def __init__(self, subject_codes, subject_names=None, extra_rules=(), brackets=False):
         """subject_codes: the campus's official codes. subject_names: other
         ways its catalog writes them ({"Mathematics": "MATH"}); UCSB's by
         default. extra_rules: the campus's own condition phrasings, as
-        (kind, pattern) pairs like CONDITION_RULES."""
+        (kind, pattern) pairs like CONDITION_RULES. brackets: read
+        "(A or B) and C" with the brackets grouping (UCSD writes them;
+        UCSB's tested readings were made without it)."""
         self.subject_codes = set(subject_codes)
+        self.brackets = brackets
         self.extra_rules = list(extra_rules)
         self.subject_names = SUBJECT_NAMES if subject_names is None else subject_names
         self.subject_pattern = build_subject_pattern(subject_codes, self.subject_names)
@@ -365,6 +369,8 @@ class Parser:
                 return " or " + match.group(1) + " "
             return " " + match.group(1) + " "
         protected = re.sub(r"\(\s*(§[a-z]+§)\s*\)", exam_in_parens, protected)
+        if self.brackets:
+            protected = self.group_brackets(protected)
 
         sentences = re.split(r"\.\s+(?=[A-Z§(])|\.\s*$", protected)
 
@@ -619,7 +625,7 @@ class Parser:
         markers = []
         for token in PLACEHOLDER.findall(text):
             info = self.protector.lookup(token)
-            if info["marker"] != "condition":
+            if info["marker"] not in ("condition", "group"):
                 markers.append(info)
                 text = text.replace(token, " ", 1)
         text = re.sub(r"\s+", " ", text).strip()
@@ -707,6 +713,12 @@ class Parser:
             info = self.protector.lookup(token)
             if info["marker"] == "condition":
                 leaves.append(make_condition(info["kind"], info["text"]))
+            elif info["marker"] == "group" and info["node"] is not None:
+                leaves.append(copy.deepcopy(info["node"]))
+                # "(PHYS 2A or 2AR) ... or 4A": what follows takes the group's subject.
+                inside = all_courses(info["node"])
+                if inside:
+                    self.last_subject = subject_of(inside[-1]["code"])
 
         bare = PLACEHOLDER.sub(" ", text)
         found_course = False
@@ -783,6 +795,33 @@ class Parser:
             else:                                 # "113A-B": just the letter
                 courses.append(make_course(prefix + digits + part))
         return courses
+
+    def group_brackets(self, text):
+        """Read each innermost "( ... and/or ... )" first and put it back as
+        one placeholder ("group"), so "((A or B) and C) or D" keeps its
+        grouping. Brackets holding a sentence or clause break (". ", ";")
+        are left alone."""
+        inner = re.compile(r"\(([^()]*?\s(?:and|or)\s[^()]*?)\)")
+        start = 0
+        while True:
+            match = inner.search(text, start)
+            if not match:
+                return text
+            # A grade or "concurrent" inside needs the clause rules (parse_segment),
+            # and a clause break means it isn't a simple group: leave those as they are.
+            markers = [self.protector.lookup(t)["marker"] for t in PLACEHOLDER.findall(match.group(1))]
+            if re.search(r"[;]|\.\s", match.group(1)) or any(m not in ("condition", "group") for m in markers):
+                start = match.end()
+                continue
+            # A bare number inside ("CHEM 7L and (40A or 41A)") takes the
+            # subject written last before the bracket.
+            before = [m.group("subject") for m in self.course_pattern.finditer(PLACEHOLDER.sub(" ", text[:match.start()]))
+                      if m.group("subject")]
+            self.last_subject = before[-1] if before else None
+            node = self.parse_words(match.group(1).strip(" ,"))
+            self.last_subject = None            # the main reading starts fresh
+            token = self.protector.placeholder({"marker": "group", "node": node, "text": match.group(1)})
+            text = text[:match.start()] + token + text[match.end():]
 
     def restore(self, text):
         """Put the original words back in place of placeholders, for display."""

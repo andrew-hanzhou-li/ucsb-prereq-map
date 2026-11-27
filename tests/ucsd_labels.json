@@ -2698,8 +2698,8 @@
    "group": "final2",
    "set": "major",
    "prereq_text": "DSC 40B/R and DSC 80/R. Restricted to students with upper-division standing. Restricted to students within the data science or business data science major. All other students will be allowed as space permits.",
-   "expected": "(DSC 40B | DSC 40R) & (DSC 80 | DSC 80R) & @standing & @restriction",
-   "note": "Major restriction kept as @restriction although others may enroll 'as space permits' (that clause dropped as an enrollment note)."
+   "expected": "(DSC 40B | DSC 40BR) & (DSC 80 | DSC 80R) & @standing & @restriction",
+   "note": "Major restriction kept as @restriction although others may enroll 'as space permits' (that clause dropped as an enrollment note). Corrected after scoring: 'DSC 40B/R' is DSC 40B or DSC 40BR (the label said DSC 40R)."
   },
   {
    "code": "BIPN 118",

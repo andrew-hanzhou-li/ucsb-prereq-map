@@ -177,7 +177,7 @@ def split_units(units_text, count):
 
 def split_sentences(text):
     """Sentences, split after ". " (but not after "e.g." or initials)."""
-    return [s for s in re.split(r"(?<![A-Z]\.[A-Z])(?<!\be\.g)(?<!\bi\.e)\.\s+(?=[A-Z])", text) if s]
+    return [s for s in re.split(r"(?<![A-Z]\.[A-Z])(?<!\be\.g)(?<!\bi\.e)\.\s+(?=[A-Z(])", text) if s]
 
 
 def split_prereq_text(text):
