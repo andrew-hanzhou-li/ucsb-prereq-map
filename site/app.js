@@ -110,6 +110,7 @@ const el = {
 // ===========================================================================
 
 async function start() {
+  if (REPO_URL) el.footerRepo.innerHTML = '<a href="' + REPO_URL + '">Source code</a>';
   // No campus chosen yet, or one that isn't on the site: the campus screen
   // instead of the app. Picking a campus changes the address; reloading then
   // starts the app for that campus (campus.js).
@@ -119,6 +120,9 @@ async function start() {
     return;
   }
   rememberCampus(CAMPUS);
+  // Home links carry the campus, so a copied address works on its own.
+  document.getElementById("home-link").href = campusHash();
+  el.allLink.href = campusHash();
   // The full name, or "UCSB" on phones, where the header has one line.
   el.campusName.innerHTML = '<span class="wide-only">' + escapeHtml(campusById(CAMPUS).name) + '</span>' +
     '<span class="narrow-only">' + escapeHtml(CAMPUS.toUpperCase()) + "</span>";
@@ -151,7 +155,7 @@ async function start() {
     const button = event.target.closest("button[data-remove]");
     if (!button) return;
     const programs = currentPrograms.filter(p => p.id !== button.dataset.remove);
-    if (!programs.length) location.hash = "";
+    if (!programs.length) location.hash = campusHash();
     else location.hash = currentView === "plan" ? planHashFor(programs) : hashFor(programs, null);
   });
 
@@ -165,7 +169,6 @@ async function start() {
   window.addEventListener("hashchange", loadFromHash);
   loadFromHash();
 
-  if (REPO_URL) el.footerRepo.innerHTML = '<a href="' + REPO_URL + '">Source code</a>';
   // The single file doesn't need a link to download itself.
   if (window.EMBEDDED) el.footerDownload.hidden = true;
   // The About box's link to the one-file copy: in the copy itself, it would point at itself.
@@ -202,8 +205,12 @@ function fillBrowseLists() {
                                                  space in a course code)
 */
 function readHash() {
-  // Without the campus in front (campus.js).
-  const raw = splitCampus(decodedHash()).rest;
+  // Without the campus in front (campus.js). In the one-file copy, which
+  // is UCSB only, another campus's address or #campus opens the front page.
+  const split = splitCampus(decodedHash());
+  const otherCampus = split.campus && split.campus !== CAMPUS;
+  const campusScreen = !split.campus && split.rest.replace(/\/$/, "") === CAMPUS_SCREEN;
+  const raw = otherCampus || campusScreen ? "" : split.rest;
   // The planner's address: "plan/" in front; a shared plan adds "/" and the
   // plan itself, packed into letters (planner.js, packPlan).
   if (raw.startsWith("plan/")) {
@@ -229,6 +236,7 @@ function planHashFor(programs) {
 // for every click, and without firing "hashchange".
 function rememberInAddress() {
   if (!currentPrograms.length || currentView === "plan") return;
+  if (document.body.classList.contains("choosing-campus")) return;   // the address is #campus
   const code = selected && nodesById[selected] ? selected : null;
   const target = hashFor(currentPrograms, code);
   if (location.hash !== target) history.replaceState(null, "", target);
@@ -237,6 +245,7 @@ function rememberInAddress() {
 async function loadFromHash() {
   const campus = campusForAddress(CAMPUS);
   if (campus === CAMPUS_SCREEN) {
+    loading += 1;           // a map still loading mustn't appear over the campus screen
     showCampusScreen();
     return;
   }
@@ -1384,6 +1393,7 @@ function goBack() {
 document.addEventListener("keydown", function (event) {
   // Esc inside the About or Credit box closes the box, nothing else.
   if (event.key !== "Escape" || document.querySelector("dialog[open]")) return;
+  if (document.body.classList.contains("choosing-campus")) return;
   if (document.activeElement && document.activeElement.tagName === "INPUT") return;
   if (selected) clearSelection();
 });
@@ -1400,7 +1410,7 @@ function scrollToBox(code) {
 }
 
 el.allLink.addEventListener("click", function () {
-  // href="#" empties the address, which shows the front page (loadFromHash).
+  // Its href is the campus's front page (set in start).
   el.majorInput.value = "";
 });
 

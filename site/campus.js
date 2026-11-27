@@ -62,7 +62,7 @@ function decodedHash() {
 // No campus in front -> campus null, and rest is the whole address.
 function splitCampus(raw) {
   const slash = raw.indexOf("/");
-  const first = slash < 0 ? raw : raw.slice(0, slash);
+  const first = (slash < 0 ? raw : raw.slice(0, slash)).toLowerCase();    // "#UCSB/..." too
   if (campusById(first)) return { campus: first, rest: slash < 0 ? "" : raw.slice(slash + 1) };
   return { campus: null, rest: raw };
 }
@@ -70,7 +70,11 @@ function splitCampus(raw) {
 function rememberedCampus() {
   try {
     const id = localStorage.getItem(REMEMBERED_CAMPUS_KEY);
-    return isReady(id) ? id : null;
+    if (isReady(id)) return id;
+    // Someone who used the site before campuses were added has data under
+    // the old UCSB names: they're a UCSB student.
+    const oldUser = ["taken", "credit", "plan"].some(n => localStorage.getItem("ucsb-prereq-map." + n) !== null);
+    return oldUser ? "ucsb" : null;
   } catch (error) {
     return null;            // storage blocked (private window): nothing remembered
   }
@@ -92,9 +96,10 @@ function rememberCampus(id) {
   `current` is the campus already open, which an empty address keeps.
 */
 function campusForAddress(current) {
-  const raw = decodedHash();
+  if (window.EMBEDDED) return "ucsb";          // the one-file copy is UCSB only
+  const raw = decodedHash().replace(/\/$/, "");
   if (raw === CAMPUS_SCREEN) return CAMPUS_SCREEN;
-  if (!raw) return current || rememberedCampus() || (window.EMBEDDED ? "ucsb" : null);
+  if (!raw) return current || rememberedCampus();
   return splitCampus(raw).campus || CAMPUS_OF_OLD_LINKS;
 }
 
@@ -109,7 +114,7 @@ const CAMPUS = (function () {
 // load, and by app.js when the address changes.
 function updateOldLink() {
   const raw = decodedHash();
-  if (raw && raw !== CAMPUS_SCREEN && !splitCampus(raw).campus) {
+  if (raw && raw.replace(/\/$/, "") !== CAMPUS_SCREEN && !splitCampus(raw).campus) {
     history.replaceState(null, "", "#" + CAMPUS_OF_OLD_LINKS + "/" + location.hash.slice(1));
   }
 }
@@ -165,6 +170,7 @@ const STATUS_TEXT = { ready: "Ready", next: "Coming next", later: "" };
 function showCampusScreen(note) {
   const screen = document.getElementById("campus-screen");
   document.body.classList.add("choosing-campus");
+  document.title = SITE_NAME + " · Choose your university";
   screen.hidden = false;
   const noteBox = document.getElementById("campus-note");
   noteBox.textContent = note || "";

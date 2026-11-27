@@ -200,10 +200,53 @@ def check_campuses(p):
     page.wait_for_timeout(300)
     check("campus: 'change' shows the campus screen, with this campus marked",
           page.is_visible("#campus-screen") and page.locator(".campus-row.current").count() == 1)
+    page.evaluate("window.notReloaded = true")
     page.click("a.campus-name")
     page.wait_for_timeout(500)
     check("campus: picking the same campus goes back without a reload",
-          not page.is_visible("#campus-screen") and page.is_visible("#welcome"))
+          not page.is_visible("#campus-screen") and page.is_visible("#welcome") and
+          page.evaluate("window.notReloaded === true"))
+    check("campus: home links carry the campus",
+          page.get_attribute("#home-link", "href") == "#ucsb/" and page.get_attribute("#all-link", "href") == "#ucsb/")
+
+    # The campus screen over an open course: Esc and a slow load leave its address alone.
+    page.goto(SITE + "#ucsb/economics-ba/ECON+10A")
+    page.wait_for_function("typeof selected !== 'undefined' && selected === 'ECON 10A'", timeout=15000)
+    page.click("#campus-change")
+    page.wait_for_timeout(300)
+    page.keyboard.press("Escape")
+    page.wait_for_timeout(300)
+    check("campus: Esc on the campus screen keeps its address",
+          page.evaluate("location.hash") == "#campus" and page.is_visible("#campus-screen"))
+    page.go_back()
+    page.wait_for_function("typeof selected !== 'undefined' && selected === 'ECON 10A'", timeout=15000)
+    check("campus: Back from the campus screen returns to the course",
+          not page.is_visible("#campus-screen") and page.evaluate("location.hash") == "#ucsb/economics-ba/ECON+10A")
+    page.goto(SITE + "#ucsb/")
+    page.wait_for_function("typeof majors !== 'undefined' && majors.length > 0", timeout=15000)
+    # Make one map's download take 1.5 seconds, then leave for #campus before it arrives.
+    page.evaluate("""() => { const realFetch = window.fetch;
+        window.fetch = (url, ...rest) => String(url).includes('statistics-and-data-science-bs')
+            ? new Promise(done => setTimeout(done, 1500)).then(() => realFetch(url, ...rest))
+            : realFetch(url, ...rest); }""")
+    page.evaluate("location.hash = '#ucsb/statistics-and-data-science-bs/PSTAT+120A'")
+    page.wait_for_timeout(200)
+    page.evaluate("location.hash = '#campus'")
+    page.wait_for_timeout(2500)
+    check("campus: a map that loads late doesn't replace the campus screen",
+          page.evaluate("location.hash") == "#campus" and page.is_visible("#campus-screen"))
+
+    # "This quarter" in the plan (planner.js), on California dates.
+    quarters = page.evaluate("""() => {
+        const at = (iso, summer) => { plan.summer = summer; return currentQuarterName(new Date(iso)); };
+        const result = [at('2026-11-27T12:00:00-08:00', false), at('2026-12-20T12:00:00-08:00', false),
+                        at('2027-01-10T12:00:00-08:00', false), at('2027-04-10T12:00:00-07:00', false),
+                        at('2027-07-10T12:00:00-07:00', false), at('2027-07-10T12:00:00-07:00', true),
+                        at('2026-09-20T05:00:00Z', false)];
+        plan.summer = false;
+        return result; }""")
+    check("plan: 'This quarter' follows the UC calendar",
+          quarters == ["Fall 2026", "Winter 2027", "Winter 2027", "Spring 2027", None, "Summer 2027", None], quarters)
 
     page.goto(SITE + "#economics-ba")
     page.wait_for_function("currentView === 'map' && graph && graph.major.id === 'BAECON'", timeout=15000)
@@ -226,9 +269,19 @@ def check_campuses(p):
     old.goto(SITE + "404.html")
     old.evaluate("""() => { localStorage.clear();
         localStorage.setItem('ucsb-prereq-map.taken', '["ECON 1"]');
-        localStorage.setItem('ucsb-prereq-map.plan', '{"x":1}'); }""")
+        localStorage.setItem('ucsb-prereq-map.credit', '{"ap":{}}');
+        localStorage.setItem('ucsb-prereq-map.plan', '{"x":1}');
+        localStorage.setItem('prereq.ucsb.plan', '{"newer":1}'); }""")
+    old.goto(SITE)
+    old.wait_for_function("typeof majors !== 'undefined' && majors.length > 0", timeout=15000)
+    check("campus: someone with data from before opens UCSB, not the campus screen",
+          not old.is_visible("#campus-screen") and old.evaluate("CAMPUS") == "ucsb")
     old.goto(SITE + "#ucsb/economics-ba")
     old.wait_for_function("currentView === 'map' && graph && graph.major.id === 'BAECON'", timeout=15000)
+    check("campus: credit saved under the old name is kept",
+          old.evaluate("localStorage.getItem('prereq.ucsb.credit')") == '{"ap":{}}')
+    check("campus: a newer saved plan isn't replaced by the old one",
+          old.evaluate("localStorage.getItem('prereq.ucsb.plan')") == '{"newer":1}')
     check("campus: marks saved under the old name are kept",
           old.evaluate("localStorage.getItem('prereq.ucsb.taken')") == '["ECON 1"]' and
           old.evaluate("taken.has('ECON 1')"))
@@ -1125,6 +1178,12 @@ def main():
                   page.evaluate("majors.length") == len(listed) and
                   page.evaluate("majors.every(m => findPrograms(displayName(m.name)).some(x => x.program.id === m.id))"))
             check("single file: no download link to itself", not page.is_visible("#footer-download"))
+            check("single file: no 'change' campus link", not page.is_visible("#campus-change"))
+            for address in ("#campus", "#ucsd/"):
+                page.goto(url + address)
+                page.wait_for_timeout(400)
+                check("single file: %s opens the UCSB front page" % address,
+                      not page.is_visible("#campus-screen") and page.is_visible("#welcome"))
             # Item 23: the links to the one-file copy say how big it is.
             with open("site/index.html", encoding="utf-8") as f:
                 sizes = re.findall(r'<span class="file-size">\(([\d.]+) MB\)</span>', f.read())

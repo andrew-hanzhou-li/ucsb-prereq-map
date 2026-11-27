@@ -97,17 +97,25 @@ function yearName(year) {
 }
 
 /*
-  The quarter in session on `today` (or the next one to start, between
-  quarters), as slotName writes it ("Fall 2026"). Dates are approximate:
-  UC quarters start in late September, early January and late March.
+  The quarter in session at `now`, as slotName writes it ("Fall 2026"), or
+  null in summer when summer quarters aren't planned. After fall finals
+  (mid-December) it's the coming winter. Dates are approximate: UC quarters
+  start in late September, early January and late March. The date is
+  California's, wherever the student is.
 */
-function currentQuarterName(today) {
-  const year = today.getFullYear();
-  const monthDay = (today.getMonth() + 1) * 100 + today.getDate();
-  if (monthDay < 325) return "Winter " + year;
-  if (monthDay < 620) return "Spring " + year;
-  if (monthDay < 920 && plan.summer) return "Summer " + year;
-  return "Fall " + year;
+function currentQuarterName(now) {
+  const parts = {};
+  for (const part of new Intl.DateTimeFormat("en-US", { timeZone: "America/Los_Angeles",
+       year: "numeric", month: "numeric", day: "numeric" }).formatToParts(now)) {
+    parts[part.type] = Number(part.value);
+  }
+  const year = parts.year;
+  const monthDay = parts.month * 100 + parts.day;
+  if (monthDay >= 1215) return "Winter " + (year + 1);
+  if (monthDay >= 920) return "Fall " + year;
+  if (monthDay >= 620) return plan.summer ? "Summer " + year : null;
+  if (monthDay >= 325) return "Spring " + year;
+  return "Winter " + year;
 }
 
 // ===========================================================================

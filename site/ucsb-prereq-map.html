@@ -1136,7 +1136,7 @@ function decodedHash() {
 // No campus in front -> campus null, and rest is the whole address.
 function splitCampus(raw) {
   const slash = raw.indexOf("/");
-  const first = slash < 0 ? raw : raw.slice(0, slash);
+  const first = (slash < 0 ? raw : raw.slice(0, slash)).toLowerCase();    // "#UCSB/..." too
   if (campusById(first)) return { campus: first, rest: slash < 0 ? "" : raw.slice(slash + 1) };
   return { campus: null, rest: raw };
 }
@@ -1144,7 +1144,11 @@ function splitCampus(raw) {
 function rememberedCampus() {
   try {
     const id = localStorage.getItem(REMEMBERED_CAMPUS_KEY);
-    return isReady(id) ? id : null;
+    if (isReady(id)) return id;
+    // Someone who used the site before campuses were added has data under
+    // the old UCSB names: they're a UCSB student.
+    const oldUser = ["taken", "credit", "plan"].some(n => localStorage.getItem("ucsb-prereq-map." + n) !== null);
+    return oldUser ? "ucsb" : null;
   } catch (error) {
     return null;            // storage blocked (private window): nothing remembered
   }
@@ -1166,9 +1170,10 @@ function rememberCampus(id) {
   `current` is the campus already open, which an empty address keeps.
 */
 function campusForAddress(current) {
-  const raw = decodedHash();
+  if (window.EMBEDDED) return "ucsb";          // the one-file copy is UCSB only
+  const raw = decodedHash().replace(/\/$/, "");
   if (raw === CAMPUS_SCREEN) return CAMPUS_SCREEN;
-  if (!raw) return current || rememberedCampus() || (window.EMBEDDED ? "ucsb" : null);
+  if (!raw) return current || rememberedCampus();
   return splitCampus(raw).campus || CAMPUS_OF_OLD_LINKS;
 }
 
@@ -1183,7 +1188,7 @@ const CAMPUS = (function () {
 // load, and by app.js when the address changes.
 function updateOldLink() {
   const raw = decodedHash();
-  if (raw && raw !== CAMPUS_SCREEN && !splitCampus(raw).campus) {
+  if (raw && raw.replace(/\/$/, "") !== CAMPUS_SCREEN && !splitCampus(raw).campus) {
     history.replaceState(null, "", "#" + CAMPUS_OF_OLD_LINKS + "/" + location.hash.slice(1));
   }
 }
@@ -1239,6 +1244,7 @@ const STATUS_TEXT = { ready: "Ready", next: "Coming next", later: "" };
 function showCampusScreen(note) {
   const screen = document.getElementById("campus-screen");
   document.body.classList.add("choosing-campus");
+  document.title = SITE_NAME + " · Choose your university";
   screen.hidden = false;
   const noteBox = document.getElementById("campus-note");
   noteBox.textContent = note || "";
@@ -1835,6 +1841,7 @@ const el = {
 // ===========================================================================
 
 async function start() {
+  if (REPO_URL) el.footerRepo.innerHTML = '<a href="' + REPO_URL + '">Source code</a>';
   // No campus chosen yet, or one that isn't on the site: the campus screen
   // instead of the app. Picking a campus changes the address; reloading then
   // starts the app for that campus (campus.js).
@@ -1844,6 +1851,9 @@ async function start() {
     return;
   }
   rememberCampus(CAMPUS);
+  // Home links carry the campus, so a copied address works on its own.
+  document.getElementById("home-link").href = campusHash();
+  el.allLink.href = campusHash();
   // The full name, or "UCSB" on phones, where the header has one line.
   el.campusName.innerHTML = '<span class="wide-only">' + escapeHtml(campusById(CAMPUS).name) + '</span>' +
     '<span class="narrow-only">' + escapeHtml(CAMPUS.toUpperCase()) + "</span>";
@@ -1876,7 +1886,7 @@ async function start() {
     const button = event.target.closest("button[data-remove]");
     if (!button) return;
     const programs = currentPrograms.filter(p => p.id !== button.dataset.remove);
-    if (!programs.length) location.hash = "";
+    if (!programs.length) location.hash = campusHash();
     else location.hash = currentView === "plan" ? planHashFor(programs) : hashFor(programs, null);
   });
 
@@ -1890,7 +1900,6 @@ async function start() {
   window.addEventListener("hashchange", loadFromHash);
   loadFromHash();
 
-  if (REPO_URL) el.footerRepo.innerHTML = '<a href="' + REPO_URL + '">Source code</a>';
   // The single file doesn't need a link to download itself.
   if (window.EMBEDDED) el.footerDownload.hidden = true;
   // The About box's link to the one-file copy: in the copy itself, it would point at itself.
@@ -1927,8 +1936,12 @@ function fillBrowseLists() {
                                                  space in a course code)
 */
 function readHash() {
-  // Without the campus in front (campus.js).
-  const raw = splitCampus(decodedHash()).rest;
+  // Without the campus in front (campus.js). In the one-file copy, which
+  // is UCSB only, another campus's address or #campus opens the front page.
+  const split = splitCampus(decodedHash());
+  const otherCampus = split.campus && split.campus !== CAMPUS;
+  const campusScreen = !split.campus && split.rest.replace(/\/$/, "") === CAMPUS_SCREEN;
+  const raw = otherCampus || campusScreen ? "" : split.rest;
   // The planner's address: "plan/" in front; a shared plan adds "/" and the
   // plan itself, packed into letters (planner.js, packPlan).
   if (raw.startsWith("plan/")) {
@@ -1954,6 +1967,7 @@ function planHashFor(programs) {
 // for every click, and without firing "hashchange".
 function rememberInAddress() {
   if (!currentPrograms.length || currentView === "plan") return;
+  if (document.body.classList.contains("choosing-campus")) return;   // the address is #campus
   const code = selected && nodesById[selected] ? selected : null;
   const target = hashFor(currentPrograms, code);
   if (location.hash !== target) history.replaceState(null, "", target);
@@ -1962,6 +1976,7 @@ function rememberInAddress() {
 async function loadFromHash() {
   const campus = campusForAddress(CAMPUS);
   if (campus === CAMPUS_SCREEN) {
+    loading += 1;           // a map still loading mustn't appear over the campus screen
     showCampusScreen();
     return;
   }
@@ -3109,6 +3124,7 @@ function goBack() {
 document.addEventListener("keydown", function (event) {
   // Esc inside the About or Credit box closes the box, nothing else.
   if (event.key !== "Escape" || document.querySelector("dialog[open]")) return;
+  if (document.body.classList.contains("choosing-campus")) return;
   if (document.activeElement && document.activeElement.tagName === "INPUT") return;
   if (selected) clearSelection();
 });
@@ -3125,7 +3141,7 @@ function scrollToBox(code) {
 }
 
 el.allLink.addEventListener("click", function () {
-  // href="#" empties the address, which shows the front page (loadFromHash).
+  // Its href is the campus's front page (set in start).
   el.majorInput.value = "";
 });
 
@@ -3746,17 +3762,25 @@ function yearName(year) {
 }
 
 /*
-  The quarter in session on `today` (or the next one to start, between
-  quarters), as slotName writes it ("Fall 2026"). Dates are approximate:
-  UC quarters start in late September, early January and late March.
+  The quarter in session at `now`, as slotName writes it ("Fall 2026"), or
+  null in summer when summer quarters aren't planned. After fall finals
+  (mid-December) it's the coming winter. Dates are approximate: UC quarters
+  start in late September, early January and late March. The date is
+  California's, wherever the student is.
 */
-function currentQuarterName(today) {
-  const year = today.getFullYear();
-  const monthDay = (today.getMonth() + 1) * 100 + today.getDate();
-  if (monthDay < 325) return "Winter " + year;
-  if (monthDay < 620) return "Spring " + year;
-  if (monthDay < 920 && plan.summer) return "Summer " + year;
-  return "Fall " + year;
+function currentQuarterName(now) {
+  const parts = {};
+  for (const part of new Intl.DateTimeFormat("en-US", { timeZone: "America/Los_Angeles",
+       year: "numeric", month: "numeric", day: "numeric" }).formatToParts(now)) {
+    parts[part.type] = Number(part.value);
+  }
+  const year = parts.year;
+  const monthDay = parts.month * 100 + parts.day;
+  if (monthDay >= 1215) return "Winter " + (year + 1);
+  if (monthDay >= 920) return "Fall " + year;
+  if (monthDay >= 620) return plan.summer ? "Summer " + year : null;
+  if (monthDay >= 325) return "Spring " + year;
+  return "Winter " + year;
 }
 
 // ===========================================================================
