@@ -96,11 +96,27 @@
             "label": "One upper-division four-unit directing course",
             "items": [
               {
-                "type": "any",
-                "subject": "TDDR",
-                "level": "upper"
+                "type": "course",
+                "code": "TDDR 108"
+              },
+              {
+                "type": "course",
+                "code": "TDDR 111"
+              },
+              {
+                "type": "course",
+                "code": "TDDR 190"
+              },
+              {
+                "type": "course",
+                "code": "TDHT 115"
+              },
+              {
+                "type": "text",
+                "text": "Another upper-division four-unit directing course"
               }
-            ]
+            ],
+            "notes": "The catalog asks for \"one upper-division four-unit directing course\" without listing them; these are the directing courses in the 2026-27 course list (TDDR 101 and 102 are stage management)."
           },
           {
             "type": "choose",

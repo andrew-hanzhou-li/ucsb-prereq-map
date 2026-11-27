@@ -57612,13 +57612,16 @@
    "offered_source": "schedule"
   },
   {
-   "code": "MAE 02",
+   "code": "MAE 2",
    "subject": "MAE",
-   "number": "02",
+   "number": "2",
    "level": "lower",
    "title": "Introduction to Aerospace Engineering",
    "units": "4",
-   "offered": [],
+   "offered": [
+    "Fall",
+    "Spring"
+   ],
    "prereq_text": "none.",
    "comments": "",
    "description": "An introduction to topics in aeronautical and astronautical engineering including aerodynamics, propulsion, flight mechanics, structures, materials, orbital mechanics, design, mission planning, and environments. General topics include historical background, career opportunities, engineering ethics, and professionalism.",
@@ -57627,16 +57630,20 @@
    ],
    "cross_listed": [],
    "tags": [],
-   "url": "https://catalog.ucsd.edu/courses/MAE.html#mae2"
+   "url": "https://catalog.ucsd.edu/courses/MAE.html#mae2",
+   "offered_source": "schedule"
   },
   {
-   "code": "MAE 03",
+   "code": "MAE 3",
    "subject": "MAE",
-   "number": "03",
+   "number": "3",
    "level": "lower",
    "title": "Introduction to Mechanical Design",
    "units": "4",
-   "offered": [],
+   "offered": [
+    "Fall",
+    "Spring"
+   ],
    "prereq_text": "PHYS 2A or 4A. Enrollment restricted to BE 25, MC 25, MC 27, MC 29, and MC 30–37 majors only.",
    "comments": "",
    "description": "Introduction to design process through hands-on individual and team projects. Topics include 2D/3D CAD (drawing projections/isometrics, dimensioning), design problem identification, prototype fabrication techniques (shop skills, rapid prototyping), design process (concept generation/selection, risk reduction strategies, scheduling), learning from hardware performance (problem solving/redesign), teamwork. Use of components: fasteners, couplings, DC motors, oral/written communication with graphics. Program or materials fees may apply.",
@@ -57645,12 +57652,13 @@
    ],
    "cross_listed": [],
    "tags": [],
-   "url": "https://catalog.ucsd.edu/courses/MAE.html#mae3"
+   "url": "https://catalog.ucsd.edu/courses/MAE.html#mae3",
+   "offered_source": "schedule"
   },
   {
-   "code": "MAE 05",
+   "code": "MAE 5",
    "subject": "MAE",
-   "number": "05",
+   "number": "5",
    "level": "lower",
    "title": "Quantitative Computer Skills",
    "units": "4",
@@ -57666,9 +57674,9 @@
    "url": "https://catalog.ucsd.edu/courses/MAE.html#mae5"
   },
   {
-   "code": "MAE 07",
+   "code": "MAE 7",
    "subject": "MAE",
-   "number": "07",
+   "number": "7",
    "level": "lower",
    "title": "Spatial Visualization",
    "units": "1",
@@ -57684,13 +57692,18 @@
    "url": "https://catalog.ucsd.edu/courses/MAE.html#mae7"
   },
   {
-   "code": "MAE 08",
+   "code": "MAE 8",
    "subject": "MAE",
-   "number": "08",
+   "number": "8",
    "level": "lower",
    "title": "MATLAB Programming for Engineering Analysis",
    "units": "4",
-   "offered": [],
+   "offered": [
+    "Fall",
+    "Winter",
+    "Spring",
+    "Summer"
+   ],
    "prereq_text": "MATH 20A and 20B or consent of instructor.",
    "comments": "",
    "description": "Computer programming in MATLAB with elementary numerical analysis of engineering problems. Arithmetic and logical operations, arrays, graphical presentation of computations, symbolic mathematics, solutions of equations, and introduction to data structures.",
@@ -57699,7 +57712,8 @@
    ],
    "cross_listed": [],
    "tags": [],
-   "url": "https://catalog.ucsd.edu/courses/MAE.html#mae8"
+   "url": "https://catalog.ucsd.edu/courses/MAE.html#mae8",
+   "offered_source": "schedule"
   },
   {
    "code": "MAE 11",

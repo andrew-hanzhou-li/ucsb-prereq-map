@@ -243,6 +243,9 @@ def courses_on_page(path):
         for code, units in zip(codes, split_units(name.group("units") or "", len(codes))):
             if level_of(code) == "graduate":
                 continue
+            # The catalog writes a few numbers with a leading zero ("MAE 08");
+            # prerequisites, majors and the Schedule of Classes write "MAE 8".
+            code = re.sub(r" 0+(?=\d)", " ", code)
             subject, number = code.rsplit(" ", 1)
             courses.append({
                 "code": code, "subject": subject, "number": number, "level": level_of(code),

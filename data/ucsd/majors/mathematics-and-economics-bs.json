@@ -326,23 +326,8 @@
             "label": "One of the following sequences"
           },
           {
-            "type": "choose",
-            "count": 3,
-            "items": [
-              {
-                "type": "range",
-                "subject": "MATH",
-                "from": 100,
-                "to": 194
-              },
-              {
-                "type": "any",
-                "subject": "ECON",
-                "level": "upper"
-              }
-            ],
-            "label": "Additional upper-division courses to reach fifteen",
-            "notes": "Catalog total: fifteen upper-division courses (sixty units), at least seven from each department, including the courses above. Three more are needed when the shortest options above (twelve courses) are chosen; fewer if MATH 100A-B or a four-course statistics sequence is taken. MATH 195-199 do not count."
+            "type": "text",
+            "text": "Fifteen upper-division courses in all, at least seven in each department (MATH and ECON): add upper-division MATH or ECON courses to the ones above until you have fifteen. Catalog total: fifteen upper-division courses (sixty units), at least seven from each department, including the courses above. Three more are needed when the shortest options above (twelve courses) are chosen; fewer if MATH 100A-B or a four-course statistics sequence is taken. MATH 195-199 do not count."
           }
         ]
       }
