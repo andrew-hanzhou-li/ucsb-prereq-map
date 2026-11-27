@@ -156,6 +156,8 @@ site/
 2. **Name:** decided later. The mock-ups use a placeholder, and Andrew picks when he sees them.
 3. **Campus order:** UCSB, then UCSD, then UCLA.
 4. **Majors on new campuses:** courses and prerequisite maps first; majors later.
+5. **Design:** direction C, "Timetable" (Andrew asked for my recommendation). See `docs/design-brief.md`.
+6. **Catalog text:** publish titles and descriptions for every campus, as for UCSB today. Andrew accepted the risk under UCSD's terms (a takedown request is possible; if one comes, fall back to codes and links only).
 
 ## UCSD research (2026-11-27)
 
@@ -163,3 +165,23 @@ site/
 - **Parser differences from UCSB:** "or" binds tighter than "and" by default; bare numbers carry the subject forward ("ECON 1 or 100B"); ranges ("CHEM 6A-B-C"); enrollment comments run on after the prerequisites; new phrasings (corequisites, "none.", "two courses out of", placement exams, "with a grade of C– or better").
 - **Majors:** prose and lists, several majors per page, tag-based electives. Harder than UCSB.
 - **Blocker for Andrew:** ucsd.edu's terms forbid copying or republishing site material without explicit permission (one personal copy excepted). ucsd.edu's robots.txt disallows `/catalog/` on its main host; catalog.ucsd.edu has no robots.txt. Before UCSD ships, decide: ask UCSD for permission, or publish only prerequisite structure (codes and links, no titles or descriptions). The same check applies to UCLA.
+
+## Phase 1 work plan
+
+Decisions I made (simplest option that fits the plan):
+
+- **Addresses:** `#ucsb/economics-ba/ECON+10A` (map) and `#ucsb/plan/economics-ba/<packed plan>` (plan). An address with no campus in front is an old UCSB link: it opens as UCSB and the address is rewritten in place (no extra Back step).
+- **Campus screen:** shows for `#campus`, and for an empty address when no campus is remembered. With a remembered campus, an empty address opens that campus's home page.
+- **Changing campus** reloads the page, so no data from one campus can leak into another.
+- **Data:** `site/data/ucsb/` (was `site/data/`). The campus list is a constant in `site/campus.js` (no extra request).
+- **Storage:** keys `prereq.ucsb.taken`, `prereq.ucsb.credit`, `prereq.ucsb.plan`, and `prereq.campus`. On first load, values under the old `ucsb-prereq-map.*` keys are copied over (and left in place, so going back to an old version loses nothing).
+- **Single-file copy:** UCSB only. No campus screen and no "change" link.
+- **Pipeline:** only the output folder changes now (`site/data/ucsb/`). Splitting the code into `common/` and `campuses/ucsb/` waits for Phase 2, when a second campus shows which parts are really shared.
+- **Name:** "Prereq" is a placeholder in one place. This branch must not reach `main` until Andrew picks the name.
+
+Steps, each ending with all checks passing (`test_graph.py`, `test_site.py`, single file):
+1. Campus-aware data paths, addresses, storage and old-link handling.
+2. The campus screen (direction C).
+3. Restyle the whole site to direction C (`docs/design-brief.md`).
+4. Browser checks for the new flow: pick, switch, old links, per-campus storage, phone width.
+5. Review rounds: correctness, dead code, security, design checklist, then an independent review.
