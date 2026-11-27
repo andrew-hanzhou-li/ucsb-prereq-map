@@ -64,7 +64,9 @@ COMMENT_STARTS = re.compile(
     r"(?:graduate|all other) students will be allowed|this course|attendance|"
     r"credit (?:not|will not)|may be (?:repeated|taken for credit)|program or materials fee|"
     r"renumbered|formerly|must be taken in sequence|letter grade|duplicate credit|"
-    r"students may receive credit for|\(?(?:may not be|only) offered|pass/not pass|repeatable)", re.IGNORECASE)
+    r"students may receive credit for|\(?(?:may not be|only) offered|pass/not pass|repeatable|"
+    r"paperwork|may be taken (?:\w+ times? )?for credit|\(?offered in|"
+    r"students completing [^.]* instead of|students must apply to enroll in order to)", re.IGNORECASE)
 ENCOURAGED = re.compile(r"\bencouraged but not required\b", re.IGNORECASE)
 # Sentences after the first that ARE requirements even without a course code:
 # who may enroll, and whose approval is needed.

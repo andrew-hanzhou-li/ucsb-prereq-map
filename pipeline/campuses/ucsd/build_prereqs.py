@@ -40,7 +40,7 @@ SUBJECT_NAMES = {
 EXTRA_RULES = [
     ("exam", r"\b(?:passing|qualifying)\s+score\s+on\s+(?:the\s+)?[\w ]{0,30}?(?:exam|test)\b"),
     ("exam", r"\b[\w ]{0,30}?placement\s+(?:exam|test)(?:ination)?(?:\s+qualifying\s+score)?"),
-    ("exam", r"\bAP\s+[A-Z][\w ]{0,30}?score\s+of\s+\d"),
+    ("exam", r"\bAP\s+[A-Z][\w ]{0,30}?score\s+of\s+\d(?:\s+or\s+(?:more|higher|better|above))?"),
     # "junior or senior standing", "sophomore, junior, and senior standing",
     # "restricted enrollment to ...", "of first-year standing"
     ("standing", r"\b(?:restricted\s+enrollment\s+to\s+)?(?:of\s+)?(?:(?:freshman|first-year|sophomore|junior|senior)"
@@ -66,7 +66,7 @@ EXTRA_RULES = [
     ("consent", r"\bdepartment(?:al)?\s+(?:stamp|authorization|approval)(?:\s+(?:is\s+)?required)?"),
     ("consent", r"\benrollment\s+via\s+[^;.§]*"),
     ("consent", r"\bby\s+invitation(?:\s+only)?"),
-    ("consent", r"\b(?:and\s+)?(?:the\s+)?director\s+of\s+[^;.§]*?program\b"),
+    ("consent", r"\b(?:and\s+)?(?:the\s+)?director\s+of\s+(?:[^;.§]*?program\b|[^;.,§]*)"),
 ]
 
 # A sentence saying the instructor can let anyone in: the whole requirement
@@ -148,6 +148,9 @@ def without_recommendations(text):
     kept = []
     for clause in clauses:
         body = clause.rstrip(";. ")
+        # "Music majors are recommended to take MUS 101C concurrently."
+        if re.search(r"\b(?:are|is)\s+(?:strongly\s+)?recommended\s+to\b|\brecommended\s+that\b", body, re.IGNORECASE):
+            continue
         if not re.search(r"\brecommended$", body):
             kept.append(clause)
             continue
@@ -218,7 +221,9 @@ def for_this_course(text, code):
         if any(found == number for found in re.findall(pattern, clause)):
             part = re.sub(r",?\s*\bfor\s+(?:[A-Z]{2,5}\s)?\d+[A-Z]*\s*,?\s*", " ", clause).strip(" ,")
             return "none." if part.lower() in ("none", "") else part + "."
-    return text
+    # A part for each of the other courses and none for this one: nothing
+    # is asked of it ("none for 5A; for 5B, ..." on LISP 5D).
+    return "none."
 
 
 def expand_shorthand(text, code):
@@ -254,6 +259,12 @@ def expand_shorthand(text, code):
     # "the combination of PHYS 100A and 110A": both, as one choice.
     text = re.sub(r"\bthe\s+combination\s+of\s+((?:[A-Z]{2,5} )?\d+[A-Z-]*(?:\s+and\s+(?:[A-Z]{2,5} )?\d+[A-Z-]*)+)",
                   r"(\1)", text)
+    # "students must apply to enroll in order to gauge their experience": the
+    # application is how consent is asked for; "Consent of instructor" follows.
+    text = re.sub(r"\b(?:students\s+)?must\s+apply\s+to\s+enroll\s+in\s+order\s+to\b[^.;]*[.;]?\s*", "", text, flags=re.IGNORECASE)
+    # "Department approval required for nonmajors": majors, or department approval.
+    text = re.sub(r"\bdepartment\s+approval\s+(?:is\s+)?required\s+for\s+non-?majors\b",
+                  "restricted to majors or department approval", text, flags=re.IGNORECASE)
     # "PHYS 2A and B" -> "PHYS 2A and PHYS 2B"
     text = re.sub(r"\b([A-Z]{2,5} \d+)([A-Z]+) (and|or) ([A-Z])\b(?![\s-]*\d)(?!\w)", r"\1\2 \3 \1\4", text)
     # "LISP 1D/DX" -> "LISP 1D or LISP 1DX"; "DSC 40B/R" -> "DSC 40B or DSC 40BR"

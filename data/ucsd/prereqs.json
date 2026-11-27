@@ -11308,21 +11308,11 @@
   },
   {
    "code": "BISP 193",
-   "prereq_text": "department approval required. Enrollment is via department approval only. Paperwork for a BISP 193 must be submitted to SIS by all published deadlines as listed on the biology web page.",
+   "prereq_text": "department approval required. Enrollment is via department approval only.",
    "requires": {
-    "type": "and",
-    "items": [
-     {
-      "type": "condition",
-      "kind": "consent",
-      "text": "department approval required"
-     },
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "Paperwork for a BISP 193 must be submitted to SIS by all published deadlines as listed on the biology web page"
-     }
-    ]
+    "type": "condition",
+    "kind": "consent",
+    "text": "department approval required"
    },
    "source": "parser",
    "ambiguous": false,
@@ -11440,21 +11430,11 @@
   },
   {
    "code": "BISP 198",
-   "prereq_text": "department approval required. Enrollment is via department approval only. Paperwork for a BISP 198 must be submitted to SIS by Friday of the eighth week of the quarter preceding the quarter in which the 198 will be completed.",
+   "prereq_text": "department approval required. Enrollment is via department approval only.",
    "requires": {
-    "type": "and",
-    "items": [
-     {
-      "type": "condition",
-      "kind": "consent",
-      "text": "department approval required"
-     },
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "Paperwork for a BISP 198 must be submitted to SIS by Friday of the eighth week of the quarter preceding the quarter in which the 198 will be completed"
-     }
-    ]
+    "type": "condition",
+    "kind": "consent",
+    "text": "department approval required"
    },
    "source": "parser",
    "ambiguous": false,
@@ -33646,19 +33626,9 @@
    "code": "ECE 150",
    "prereq_text": "students must apply to enroll in order to gauge their past experience with and interest in entrepreneurship. Consent of instructor is required.",
    "requires": {
-    "type": "and",
-    "items": [
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "students must apply to enroll in order to gauge their past experience with"
-     },
-     {
-      "type": "condition",
-      "kind": "consent",
-      "text": "Consent of instructor"
-     }
-    ]
+    "type": "condition",
+    "kind": "consent",
+    "text": "Consent of instructor"
    },
    "source": "parser",
    "ambiguous": false,
@@ -39332,19 +39302,9 @@
    "code": "ENVR 199",
    "prereq_text": "consent of instructor, director of Environmental Studies. Department stamp required.",
    "requires": {
-    "type": "and",
-    "items": [
-     {
-      "type": "condition",
-      "kind": "consent",
-      "text": "consent of instructor"
-     },
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "director of Environmental Studies"
-     }
-    ]
+    "type": "condition",
+    "kind": "consent",
+    "text": "consent of instructor"
    },
    "source": "parser",
    "ambiguous": false,
@@ -48835,11 +48795,7 @@
   {
    "code": "LIFR 5C",
    "prereq_text": "none for 5A; for 5B, two or more years of French in high school or the first semester of college-level French.",
-   "requires": {
-    "type": "condition",
-    "kind": "other",
-    "text": "none for 5A"
-   },
+   "requires": null,
    "source": "parser",
    "ambiguous": false,
    "unparsed": []
@@ -48847,11 +48803,7 @@
   {
    "code": "LIFR 5D",
    "prereq_text": "none for 5A; for 5B, two or more years of French in high school or the first semester of college-level French.",
-   "requires": {
-    "type": "condition",
-    "kind": "other",
-    "text": "none for 5A"
-   },
+   "requires": null,
    "source": "parser",
    "ambiguous": false,
    "unparsed": []
@@ -49175,11 +49127,7 @@
   {
    "code": "LIGM 5C",
    "prereq_text": "none for 5A; for 5B, two or more years of German in high school or the first semester of college-level German.",
-   "requires": {
-    "type": "condition",
-    "kind": "other",
-    "text": "none for 5A"
-   },
+   "requires": null,
    "source": "parser",
    "ambiguous": false,
    "unparsed": []
@@ -49187,11 +49135,7 @@
   {
    "code": "LIGM 5D",
    "prereq_text": "none for 5A; for 5B, two or more years of German in high school or the first semester of college-level German.",
-   "requires": {
-    "type": "condition",
-    "kind": "other",
-    "text": "none for 5A"
-   },
+   "requires": null,
    "source": "parser",
    "ambiguous": false,
    "unparsed": []
@@ -53462,11 +53406,7 @@
   {
    "code": "LISL 5C",
    "prereq_text": "none for 5A; for 5B two or more years of ASL in high school or the first semester of college-level ASL.",
-   "requires": {
-    "type": "condition",
-    "kind": "other",
-    "text": "none for 5A"
-   },
+   "requires": null,
    "source": "parser",
    "ambiguous": false,
    "unparsed": []
@@ -53782,11 +53722,7 @@
   {
    "code": "LISP 5C",
    "prereq_text": "none for 5A; for 5B, two or more years of Spanish in high school or the first semester or the first quarter of college-level Spanish.",
-   "requires": {
-    "type": "condition",
-    "kind": "other",
-    "text": "none for 5A"
-   },
+   "requires": null,
    "source": "parser",
    "ambiguous": false,
    "unparsed": []
@@ -53794,11 +53730,7 @@
   {
    "code": "LISP 5D",
    "prereq_text": "none for 5A; for 5B, two or more years of Spanish in high school or the first semester or the first quarter of college-level Spanish.",
-   "requires": {
-    "type": "condition",
-    "kind": "other",
-    "text": "none for 5A"
-   },
+   "requires": null,
    "source": "parser",
    "ambiguous": false,
    "unparsed": []
@@ -63198,12 +63130,7 @@
      {
       "type": "condition",
       "kind": "exam",
-      "text": "AP Calculus AB score of 4"
-     },
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "more"
+      "text": "AP Calculus AB score of 4 or more"
      },
      {
       "type": "course",
@@ -66204,7 +66131,7 @@
   },
   {
    "code": "MATH 194",
-   "prereq_text": "MATH 20D, and either MATH 18 or MATH 20F or MATH 31AH, and MATH 180A. Students who have not completed listed prerequisites may enroll with consent of instructor. Students completing ECON 120A instead of MATH 180A must obtain consent of instructor to enroll.",
+   "prereq_text": "MATH 20D, and either MATH 18 or MATH 20F or MATH 31AH, and MATH 180A. Students who have not completed listed prerequisites may enroll with consent of instructor.",
    "requires": {
     "type": "or",
     "items": [
@@ -66245,11 +66172,6 @@
         "code": "MATH 180A",
         "concurrent": false,
         "min_grade": null
-       },
-       {
-        "type": "condition",
-        "kind": "other",
-        "text": "Students completing ECON 120A instead of MATH 180A must obtain consent of instructor to enroll"
        }
       ]
      },
@@ -70443,14 +70365,19 @@
       ]
      },
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "Music majors are recommended to take MUS 101A concurrently"
-     },
-     {
-      "type": "condition",
-      "kind": "consent",
-      "text": "Department approval required"
+      "type": "or",
+      "items": [
+       {
+        "type": "condition",
+        "kind": "restriction",
+        "text": "restricted to majors"
+       },
+       {
+        "type": "condition",
+        "kind": "consent",
+        "text": "department approval"
+       }
+      ]
      }
     ]
    },
@@ -70471,14 +70398,19 @@
       "min_grade": null
      },
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "Music majors are recommended to take MUS 101B concurrently"
-     },
-     {
-      "type": "condition",
-      "kind": "consent",
-      "text": "Department approval required"
+      "type": "or",
+      "items": [
+       {
+        "type": "condition",
+        "kind": "restriction",
+        "text": "restricted to majors"
+       },
+       {
+        "type": "condition",
+        "kind": "consent",
+        "text": "department approval"
+       }
+      ]
      }
     ]
    },
@@ -70499,14 +70431,19 @@
       "min_grade": null
      },
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "Music majors are recommended to take MUS 101C concurrently"
-     },
-     {
-      "type": "condition",
-      "kind": "consent",
-      "text": "Department approval required"
+      "type": "or",
+      "items": [
+       {
+        "type": "condition",
+        "kind": "restriction",
+        "text": "restricted to majors"
+       },
+       {
+        "type": "condition",
+        "kind": "consent",
+        "text": "department approval"
+       }
+      ]
      }
     ]
    },
