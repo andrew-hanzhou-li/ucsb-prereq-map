@@ -53,7 +53,7 @@ const CAMPUS_DETAILS = {
   ucsd: {
     catalog: "UC San Diego General Catalog", catalogHome: "https://catalog.ucsd.edu/",
     courseUrl: null,
-    program: "department", programs: "departments", apChart: false, exampleCourse: "CSE 12",
+    program: "department", programs: "departments", apChart: true, exampleCourse: "CSE 12",
     examples: [["computer-science-and-engineering", "Computer Science and Engineering"], ["mathematics", "Mathematics"],
                ["biological-sciences", "Biological Sciences"]],
   },

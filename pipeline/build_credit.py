@@ -2,6 +2,7 @@
 build_credit.py: check the AP credit table and copy it to the site.
 
     py pipeline/build_credit.py
+    py pipeline/build_credit.py --campus ucsd     (data/ucsd/ -> site/data/ucsd/)
 
 Reads   ap_credit.json          UCSB's AP chart, typed in from the catalog
         raw_courses.json        the current course list (Part 1)
@@ -37,9 +38,13 @@ def expand(code, current):
 
 def main():
     sys.stdout.reconfigure(errors="replace")
-    with open("data/ap_credit.json", encoding="utf-8") as f:
+    campus = sys.argv[sys.argv.index("--campus") + 1] if "--campus" in sys.argv[:-1] else "ucsb"
+    # UCSB's files came first, so they sit at the top of data/.
+    folder = "data" if campus == "ucsb" else os.path.join("data", campus)
+    courses_path = os.path.join(folder, "raw_courses.json")
+    with open(os.path.join(folder, "ap_credit.json"), encoding="utf-8") as f:
         table = json.load(f)
-    with open("data/raw_courses.json", encoding="utf-8") as f:
+    with open(courses_path, encoding="utf-8") as f:
         current = {c["code"] for c in json.load(f)["courses"]}
 
     missing = set()
@@ -51,17 +56,18 @@ def main():
     # Every subject code in the catalog ("ECE", "CMPSC", "ENV S"), so the
     # transcript reader (site/transcript.js) can tell a course line from
     # any other line of text.
-    with open("data/raw_courses.json", encoding="utf-8") as f:
+    with open(courses_path, encoding="utf-8") as f:
         subjects = sorted({c["subject"] for c in json.load(f)["courses"]})
     out = {"source": table["source"], "catalog_year": table["catalog_year"], "ap": table["exams"], "subjects": subjects}
-    os.makedirs(os.path.join("site", "data", "ucsb"), exist_ok=True)
-    with open(os.path.join("site", "data", "ucsb", "credit.json"), "w", encoding="utf-8") as f:
+    out_path = os.path.join("site", "data", campus, "credit.json")
+    os.makedirs(os.path.dirname(out_path), exist_ok=True)
+    with open(out_path, "w", encoding="utf-8") as f:
         json.dump(out, f, indent=1, ensure_ascii=False)
 
     print("AP exams: %d" % len(table["exams"]))
     if missing:
         print("Named in the AP chart but not in the current catalog (kept): " + ", ".join(sorted(missing)))
-    print("Wrote site/data/ucsb/credit.json")
+    print("Wrote " + out_path)
 
 
 if __name__ == "__main__":

@@ -324,8 +324,16 @@ def check_campuses(p):
           "MATH 20A" not in (ucsd.evaluate("localStorage.getItem('prereq.ucsb.plan')") or ""))
     check("ucsd: no GOLD transcript reader (it reads UCSB's format only)", not ucsd.is_visible("#plan-import"))
     ucsd.click("#credit-button")
-    check("ucsd: the Credit box says the AP chart isn't here yet, with no exam filter",
-          "isn't on the site yet" in ucsd.inner_text("#ap-list") and not ucsd.is_visible("#ap-filter"))
+    check("ucsd: the Credit box shows UCSD's AP chart, linked to its source",
+          ucsd.locator("#ap-list select").count() > 30 and ucsd.is_visible("#ap-filter") and
+          "ucsd.edu" in (ucsd.get_attribute("#ap-source", "href") or ""))
+    ucsd.select_option('select[data-exam="Calculus AB (or the AB subscore of BC)"]', "4")
+    ucsd.wait_for_timeout(200)
+    result = ucsd.inner_text(".ap-row:has(select[data-exam='Calculus AB (or the AB subscore of BC)']) .ap-result")
+    check("ucsd: a 4 on Calculus AB counts as MATH 20A", "MATH 20A" in result and "4 units" in result, result)
+    check("ucsd: the credit is saved apart from UCSB's",
+          "Calculus AB" in (ucsd.evaluate("localStorage.getItem('prereq.ucsd.credit')") or "") and
+          "Calculus AB" not in (ucsd.evaluate("localStorage.getItem('prereq.ucsb.credit')") or ""))
     check("ucsd: the example course is a UCSD one", ucsd.get_attribute("#transfer-input", "placeholder") == "e.g. CSE 12")
     ucsd.keyboard.press("Escape")
     ucsd.click("#about-button")

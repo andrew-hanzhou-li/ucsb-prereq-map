@@ -83,9 +83,11 @@ function apResult(examName) {
   if (!score) return "";
   const row = apRow(examName, score);
   if (!row) return "no credit at this score";
-  const units = row.units + " units";
-  if (row.note) return units + ". " + row.note;
-  return row.equivalents.length ? units + ", counts as " + row.equivalents.join(", ") : units + ", no specific UCSB course";
+  // units: null when the chart lists none, 0 when the exam earns no credit
+  const units = row.units === null ? "Units not listed" : row.units === 0 ? "No credit" : row.units + " units";
+  const courses = row.equivalents.length ? ", counts as " + row.equivalents.join(", ")
+                : row.units === 0 ? "" : ", no specific " + CAMPUS.toUpperCase() + " course";
+  return units + courses + (row.note ? ". " + row.note : "");
 }
 
 // After any change: save it, then redraw whatever shows credit.
