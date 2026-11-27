@@ -141,6 +141,9 @@ KNOWN_ORDER = {
         ["ECE 189A", "ECE 189B", "ECE 189C"],
         ["CMPSC 16", "CMPSC 24", "CMPSC 32"],
     ],
+    # UC San Diego (department maps)
+    "computer-science-and-engineering": [["CSE 11", "CSE 12", "CSE 100"], ["CSE 20", "CSE 21", "CSE 101"]],
+    "mathematics": [["MATH 20A", "MATH 20B", "MATH 20C"]],
 }
 
 SAME_COLUMN = {
@@ -148,10 +151,10 @@ SAME_COLUMN = {
 }
 
 
-def test_real_graphs():
-    files = [f for f in glob.glob(os.path.join("site", "data", "ucsb", "*.json"))
+def test_real_graphs(campus):
+    files = [f for f in glob.glob(os.path.join("site", "data", campus, "*.json"))
              if not f.endswith(("majors.json", "credit.json", "course-index.json"))]   # not program graphs
-    check("site/data/ucsb has graphs (run build_graph.py first)", len(files) > 0)
+    check("site/data/%s has graphs (run build_graph.py first)" % campus, len(files) > 0)
 
     for path in files:
         name = os.path.basename(path)
@@ -179,11 +182,11 @@ def test_real_graphs():
             check("%s: %s and its lab %s share a column" % (stem, a, b), column.get(a) == column.get(b))
 
 
-def test_condition_text():
+def test_condition_text(path):
     """Every condition has the catalog's words, so the site never shows a
     blank item (IMPROVEMENTS.md item 14). Hand corrections in overrides.json
     give them as @other{...}."""
-    with open("data/prereqs.json", encoding="utf-8") as f:
+    with open(path, encoding="utf-8") as f:
         courses = json.load(f)["courses"]
     empty = []
 
@@ -197,13 +200,15 @@ def test_condition_text():
 
     for course in courses:
         walk(course.get("requires"), course["code"])
-    check("no condition with empty text in prereqs.json", not empty, sorted(set(empty))[:10])
+    check("no condition with empty text in %s" % path, not empty, sorted(set(empty))[:10])
 
 
 if __name__ == "__main__":
     sys.stdout.reconfigure(errors="replace")
     test_rules()
-    test_real_graphs()
-    test_condition_text()
+    test_real_graphs("ucsb")
+    test_real_graphs("ucsd")
+    test_condition_text(os.path.join("data", "prereqs.json"))
+    test_condition_text(os.path.join("data", "ucsd", "prereqs.json"))
     print("%d checks passed, %d failed" % (passed, failed))
     sys.exit(1 if failed else 0)

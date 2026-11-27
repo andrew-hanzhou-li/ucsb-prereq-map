@@ -446,11 +446,19 @@ def sort_key(code):
 
 
 def real_cycles(cycles, prereqs):
-    """Keep only loops that include at least one non-concurrent step.
-    (A loop made only of "take together" links is a lecture/lab pair.)"""
+    """Keep only loops that include at least one non-concurrent step, and
+    where every step is required. (A loop made only of "take together" links
+    is a lecture/lab pair. A loop through a "one of" choice, like UCSD's
+    "CHIN 182A: any one of ... CHIN 182B ..." and "CHIN 182B: any one of ...
+    CHIN 182A ...", can't stop anyone: the other choices are open.)"""
     found = []
     for cycle in cycles:
         steps = list(zip(cycle, cycle[1:]))       # (course, prerequisite it needs)
+        through_choice = any(
+            all(e["type"] != "required" for e in make_edges(course, requires_of(course, prereqs)) if e["from"] == needed)
+            for course, needed in steps)
+        if through_choice:
+            continue
         concurrent_only = True
         for course, needed in steps:
             for c in all_courses(requires_of(course, prereqs)):
