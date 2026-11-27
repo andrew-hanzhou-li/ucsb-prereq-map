@@ -62,12 +62,13 @@ COMMENT_STARTS = re.compile(
     r"(?:graduate|all other) students will be allowed|this course|attendance|"
     r"credit (?:not|will not)|may be (?:repeated|taken for credit)|program or materials fee|"
     r"renumbered|formerly|must be taken in sequence|letter grade|duplicate credit|"
-    r"students may receive credit for)", re.IGNORECASE)
+    r"students may receive credit for|\(?(?:may not be|only) offered|pass/not pass|repeatable)", re.IGNORECASE)
 # Sentences after the first that ARE requirements even without a course code:
 # who may enroll, and whose approval is needed.
 REQUIREMENT_WORDS = re.compile(
     r"\b(?:restricted to|open to|majors? only|consent|approval|authorization|stamp|"
-    r"accepted into|admission|admittance|standing|may enroll|cannot enroll|enrollment via)\b", re.IGNORECASE)
+    r"accepted (?:in|into|to)|acceptance|admission|admittance|standing|may enroll|cannot enroll|"
+    r"enrollment via|invitation|must be (?:an? )?[\w ]*students?|participants)\b", re.IGNORECASE)
 # "(F,W,S)": the quarters a course is usually offered, written by a few
 # departments at the end of the description or prerequisites.
 QUARTER_MARK = re.compile(r"\s*\((?P<quarters>[FWSU](?:\s*,\s*[FWSU])*)\)\.?")

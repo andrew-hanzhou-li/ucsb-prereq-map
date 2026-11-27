@@ -1,5 +1,5 @@
 {
- "about": "AI-generated answers for 300 UC San Diego courses, in the notation explained in pipeline/notation.py, written by three separate labelers from the catalog text alone, before the parser was ever run on UCSD text. group 'tuning': may be looked at while adjusting the parser. group 'heldout': scored, then its misses may be used, so later scores are optimistic. group 'final': scored once, after the parser is frozen; this is the honest accuracy number. set 'random' = random courses with prerequisite text; set 'major' = random courses from CSE, MATH, ECON, CHEM, PHYS, COGS, ECE, DSC, MAE and biology. Sample drawn with random.Random(20261127). 'prereq_text' is everything after 'Prerequisites:' in the catalog, including notes. Conventions: 'or equivalent' is | @other; a repeated tag inside one & or | is written once.",
+ "about": "AI-generated answers for 300 UC San Diego courses, in the notation explained in pipeline/notation.py, written by three separate labelers from the catalog text alone, before the parser was ever run on UCSD text. group 'tuning': may be looked at while adjusting the parser. group 'heldout': scored, then its misses may be used, so later scores are optimistic. group 'final': scored once, after the parser is frozen; this is the honest accuracy number. set 'random' = random courses with prerequisite text; set 'major' = random courses from CSE, MATH, ECON, CHEM, PHYS, COGS, ECE, DSC, MAE and biology. Sample drawn with random.Random(20261127). 'prereq_text' is everything after 'Prerequisites:' in the catalog, including notes. Conventions: 'or equivalent' is | @other; a repeated tag inside one & or | is written once. 'restricted to seniors' or 'upper-division ... majors only' is both @restriction and @standing. Scores: the final group scored 84/100 (79% random, 94% major) on the parser frozen in commit c35e32e; its misses were then used, so a later 'final' score is optimistic.",
  "courses": [
   {
    "code": "BIPN 100R",
@@ -948,8 +948,8 @@
    "group": "heldout",
    "set": "random",
    "prereq_text": "PH 40 or FMPH 40, PH 45, PH 101 or FMPH 101, PH 102 or FMPH 102, PH 110 or FMPH 110, PH 120 or FMPH 120. Department approval required. Restricted to upper-division public health majors only.",
-   "expected": "(PH 40 | FMPH 40) & PH 45 & (PH 101 | FMPH 101) & (PH 102 | FMPH 102) & (PH 110 | FMPH 110) & (PH 120 | FMPH 120) & @consent & @restriction",
-   "note": "'Restricted to upper-division public health majors' tagged @restriction only (could also imply @standing)."
+   "expected": "(PH 40 | FMPH 40) & PH 45 & (PH 101 | FMPH 101) & (PH 102 | FMPH 102) & (PH 110 | FMPH 110) & (PH 120 | FMPH 120) & @consent & @restriction & @standing",
+   "note": "Same wording as PH 196BH (final group), labeled there as @restriction & @standing; made consistent."
   },
   {
    "code": "MGT 160R",

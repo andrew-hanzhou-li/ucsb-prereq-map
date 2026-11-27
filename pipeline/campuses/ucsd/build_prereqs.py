@@ -49,9 +49,13 @@ EXTRA_RULES = [
                     r"with\s+(?:\w+[- ])?(?:\w+\s+)?standing))[^;.§])*"),
     ("restriction", r"\b(?:students\s+must\s+)?(?:(?:submit\s+(?:an\s+)?applications?|apply)\b[^;.§]*?\s+and\s+)?"
                     r"(?:be\s+)?accepted\s+(?:in|into|to)\s+(?:the\s+)?[^;.§]*?program\b"),
-    ("restriction", r"\b(?:formal\s+)?admittance\s+to\s+[^;.§]*"),
+    ("restriction", r"\b(?:formal\s+)?(?:admittance|acceptance)\s+(?:to|in|into)\s+[^;.§]*"),
+    ("restriction", r"\b(?:students\s+)?must\s+be\s+(?:an?\s+)?[\w ]{0,40}?(?:students?|participants\s+in\s+[^;.§]*)"),
+    # Major codes: "ED25 major", "CS25, CS26, and CS27 majors"
+    ("restriction", r"\b[A-Z]{2}\d{2}(?:\s*(?:,|,?\s*or|,?\s*and)\s*[A-Z]{2}\d{2})*\s+majors?\b"),
     ("consent", r"\bdepartment(?:al)?\s+(?:stamp|authorization|approval)(?:\s+(?:is\s+)?required)?"),
     ("consent", r"\benrollment\s+via\s+[^;.§]*"),
+    ("consent", r"\bby\s+invitation(?:\s+only)?"),
 ]
 
 # A sentence saying the instructor can let anyone in: the whole requirement
@@ -70,7 +74,7 @@ CONSENT_FOR_ALL = re.compile(
 # the listed courses (the count can't be shown on the map, so "two from"
 # reads as "any of", like the catalog's own "or").
 CHOICE_LIST = re.compile(
-    r"\b(?:any\s+)?(?:one|two|three|four)(?:\s+courses?)?\s+(?:from|of|out\s+of)"
+    r"\b(?:any\s+(?:one\s+)?courses?|(?:any\s+)?(?:one|two|three|four)(?:\s+courses?)?)\s+(?:from|of|out\s+of)"
     r"(?:\s+the\s+following(?:\s+courses)?)?:?\s+(?P<items>[^;.]+)", re.IGNORECASE)
 
 # Capitalized words written before a number that are not subjects.
@@ -119,7 +123,10 @@ def parse(parser, prereq_text, code=None):
     everything, and the course itself left out."""
     # "...; MUS 4, 8–10, or 120 recommended." and "MUS 170 recommended; ...":
     # a recommendation isn't a requirement.
-    text = re.sub(r"(?:^|;)\s*[^;.]*\brecommended(?=\s*(?:[;.]|$))", "", prereq_text).lstrip("; ")
+    text = re.sub(r"(^|[;.])\s*[^;.]*\brecommended\b[^;.]*(?=[;.]|$)", r"\1", prereq_text).lstrip("; ")
+    text = re.sub(r"\.\s*\.", ".", text)
+    # "none. Open to visual arts majors": "none" is about courses; the rest still counts.
+    text = re.sub(r"^\s*none\.\s*(?=\S)", "", text, flags=re.IGNORECASE)
     # "AP Calculus AB score of 3 (or equivalent AB subscore on BC exam)": part of the exam.
     text = re.sub(r"(score of \d)\s*\(or equivalent[^)]*\)", r"\1", text)
     text, consent_for_all = CONSENT_FOR_ALL.subn("", text)
@@ -141,6 +148,18 @@ def parse(parser, prereq_text, code=None):
     text = re.sub(r"\bor\s+by\s+(department|consent|permission)\b", r"or \1", text)
     parsed = parser.parse(text)
     parsed["requires"] = without_course(parsed["requires"], code)
+    # "Restricted to seniors within the major", "upper-division public health
+    # majors only": class standing too.
+    if re.search(r"\b(?:restricted\s+to|open\s+to)\s+(?:\w+\s+){0,2}?(?:seniors|juniors|upper-division)\b|"
+                 r"\bupper-division\s+[\w ]{0,40}majors\s+only\b", text, re.IGNORECASE):
+        standing = {"type": "condition", "kind": "standing", "text": "class standing"}
+        tree = parsed["requires"]
+        if tree is None:
+            parsed["requires"] = standing
+        elif tree["type"] == "and":
+            parsed["requires"] = dict(tree, items=tree["items"] + [standing])
+        else:
+            parsed["requires"] = {"type": "and", "items": [tree, standing]}
     if consent_for_all:
         consent = {"type": "condition", "kind": "consent", "text": "consent of instructor"}
         tree = parsed["requires"]

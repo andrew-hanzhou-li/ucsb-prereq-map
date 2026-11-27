@@ -8224,11 +8224,6 @@
       "code": "BIMM 100",
       "concurrent": false,
       "min_grade": null
-     },
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "BIBC 100 recommended"
      }
     ]
    },
@@ -10516,11 +10511,6 @@
       "code": "CHEM 6C",
       "concurrent": false,
       "min_grade": null
-     },
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "BILD 3 is recommended"
      }
     ]
    },
@@ -14068,11 +14058,7 @@
   {
    "code": "CHEM 40C",
    "prereq_text": "CHEM 40B or 140B (a grade of C or higher in CHEM 40B or 140B is strongly recommended).",
-   "requires": {
-    "type": "condition",
-    "kind": "other",
-    "text": "CHEM 40B or 140B ( a grade of C or higher in CHEM 40B or 140B is strongly recommended)"
-   },
+   "requires": null,
    "source": "parser",
    "ambiguous": false,
    "unparsed": []
@@ -17895,19 +17881,9 @@
    "code": "CLAS 196A",
    "prereq_text": "acceptance into the classical studies honors program and consent of instructor.",
    "requires": {
-    "type": "and",
-    "items": [
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "acceptance into the classical studies honors program"
-     },
-     {
-      "type": "condition",
-      "kind": "consent",
-      "text": "consent of instructor"
-     }
-    ]
+    "type": "condition",
+    "kind": "restriction",
+    "text": "acceptance into the classical studies honors program and consent of instructor"
    },
    "source": "parser",
    "ambiguous": false,
@@ -17917,19 +17893,9 @@
    "code": "CLAS 196B",
    "prereq_text": "acceptance into the classical studies honors program and consent of instructor.",
    "requires": {
-    "type": "and",
-    "items": [
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "acceptance into the classical studies honors program"
-     },
-     {
-      "type": "condition",
-      "kind": "consent",
-      "text": "consent of instructor"
-     }
-    ]
+    "type": "condition",
+    "kind": "restriction",
+    "text": "acceptance into the classical studies honors program and consent of instructor"
    },
    "source": "parser",
    "ambiguous": false,
@@ -25284,34 +25250,24 @@
    "code": "CSE 5",
    "prereq_text": "none. Students may only receive credit for one of CSE 5, CSE 5R, or CSE 25.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
       "type": "condition",
       "kind": "other",
-      "text": "none"
+      "text": "Students may only receive credit for (CSE 5"
      },
      {
-      "type": "or",
-      "items": [
-       {
-        "type": "condition",
-        "kind": "other",
-        "text": "Students may only receive credit for (CSE 5"
-       },
-       {
-        "type": "course",
-        "code": "CSE 5R",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
-        "type": "course",
-        "code": "CSE 25",
-        "concurrent": false,
-        "min_grade": null
-       }
-      ]
+      "type": "course",
+      "code": "CSE 5R",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "course",
+      "code": "CSE 25",
+      "concurrent": false,
+      "min_grade": null
      }
     ]
    },
@@ -25323,28 +25279,18 @@
    "code": "CSE 5R",
    "prereq_text": "none. Students may only receive credit for one of CSE 5, CSE 5R, or CSE 25.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
       "type": "condition",
       "kind": "other",
-      "text": "none"
+      "text": "Students may only receive credit for (CSE 5"
      },
      {
-      "type": "or",
-      "items": [
-       {
-        "type": "condition",
-        "kind": "other",
-        "text": "Students may only receive credit for (CSE 5"
-       },
-       {
-        "type": "course",
-        "code": "CSE 25",
-        "concurrent": false,
-        "min_grade": null
-       }
-      ]
+      "type": "course",
+      "code": "CSE 25",
+      "concurrent": false,
+      "min_grade": null
      }
     ]
    },
@@ -26586,9 +26532,10 @@
     "type": "or",
     "items": [
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "any course from the following: COGS 102C"
+      "type": "course",
+      "code": "COGS 102C",
+      "concurrent": false,
+      "min_grade": null
      },
      {
       "type": "course",
@@ -30769,19 +30716,9 @@
    "code": "DSC 96",
    "prereq_text": "none. Restricted to students within the data science major.",
    "requires": {
-    "type": "and",
-    "items": [
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "none"
-     },
-     {
-      "type": "condition",
-      "kind": "restriction",
-      "text": "Restricted to students within the data science major"
-     }
-    ]
+    "type": "condition",
+    "kind": "restriction",
+    "text": "Restricted to students within the data science major"
    },
    "source": "parser",
    "ambiguous": false,
@@ -31070,6 +31007,11 @@
       "type": "condition",
       "kind": "standing",
       "text": "upper-division standing"
+     },
+     {
+      "type": "condition",
+      "kind": "standing",
+      "text": "class standing"
      }
     ]
    },
@@ -31098,6 +31040,11 @@
       "type": "condition",
       "kind": "standing",
       "text": "upper-division standing"
+     },
+     {
+      "type": "condition",
+      "kind": "standing",
+      "text": "class standing"
      }
     ]
    },
@@ -31126,6 +31073,11 @@
       "type": "condition",
       "kind": "standing",
       "text": "upper-division standing"
+     },
+     {
+      "type": "condition",
+      "kind": "standing",
+      "text": "class standing"
      }
     ]
    },
@@ -31165,6 +31117,11 @@
       "type": "condition",
       "kind": "standing",
       "text": "upper-division standing"
+     },
+     {
+      "type": "condition",
+      "kind": "standing",
+      "text": "class standing"
      }
     ]
    },
@@ -31238,6 +31195,11 @@
       "type": "condition",
       "kind": "standing",
       "text": "upper-division standing"
+     },
+     {
+      "type": "condition",
+      "kind": "standing",
+      "text": "class standing"
      }
     ]
    },
@@ -31405,6 +31367,11 @@
       "type": "condition",
       "kind": "standing",
       "text": "upper-division standing"
+     },
+     {
+      "type": "condition",
+      "kind": "standing",
+      "text": "class standing"
      }
     ]
    },
@@ -31728,6 +31695,11 @@
       "type": "condition",
       "kind": "standing",
       "text": "upper-division standing"
+     },
+     {
+      "type": "condition",
+      "kind": "standing",
+      "text": "class standing"
      }
     ]
    },
@@ -31872,6 +31844,11 @@
       "type": "condition",
       "kind": "standing",
       "text": "upper-division standing"
+     },
+     {
+      "type": "condition",
+      "kind": "standing",
+      "text": "class standing"
      }
     ]
    },
@@ -31905,6 +31882,11 @@
       "type": "condition",
       "kind": "standing",
       "text": "upper-division standing"
+     },
+     {
+      "type": "condition",
+      "kind": "standing",
+      "text": "class standing"
      }
     ]
    },
@@ -31937,6 +31919,11 @@
       "type": "condition",
       "kind": "standing",
       "text": "upper-division standing"
+     },
+     {
+      "type": "condition",
+      "kind": "standing",
+      "text": "class standing"
      }
     ]
    },
@@ -31969,6 +31956,11 @@
       "type": "condition",
       "kind": "other",
       "text": "to ensure that students have sufficient educational background for a given topic"
+     },
+     {
+      "type": "condition",
+      "kind": "standing",
+      "text": "class standing"
      }
     ]
    },
@@ -31996,6 +31988,11 @@
       "type": "condition",
       "kind": "consent",
       "text": "Consent of the instructor and approval of the department"
+     },
+     {
+      "type": "condition",
+      "kind": "standing",
+      "text": "class standing"
      }
     ]
    },
@@ -32023,6 +32020,11 @@
       "type": "condition",
       "kind": "consent",
       "text": "Consent of the instructor and approval of the department"
+     },
+     {
+      "type": "condition",
+      "kind": "standing",
+      "text": "class standing"
      }
     ]
    },
@@ -32050,6 +32052,11 @@
       "type": "condition",
       "kind": "consent",
       "text": "Consent of the instructor and approval of the department"
+     },
+     {
+      "type": "condition",
+      "kind": "standing",
+      "text": "class standing"
      }
     ]
    },
@@ -32581,7 +32588,7 @@
      {
       "type": "condition",
       "kind": "restriction",
-      "text": "Open to EC26, EC27, EC28, EC37, and CS25 major codes only"
+      "text": "Open to"
      }
     ]
    },
@@ -32604,7 +32611,7 @@
      {
       "type": "condition",
       "kind": "restriction",
-      "text": "Open to EC26, EC27, EC28, EC37, and CS25 major codes only"
+      "text": "Open to"
      }
     ]
    },
@@ -32755,7 +32762,7 @@
      {
       "type": "condition",
       "kind": "restriction",
-      "text": "Open to EC26, EC27, EC28, and EC37 major codes only"
+      "text": "Open to"
      }
     ]
    },
@@ -32812,7 +32819,7 @@
      {
       "type": "condition",
       "kind": "restriction",
-      "text": "Open to EC26 and CS25 major codes only"
+      "text": "Open to"
      }
     ]
    },
@@ -33085,7 +33092,7 @@
      {
       "type": "condition",
       "kind": "restriction",
-      "text": "Open to EC26, EC27, EC28, and EC37 major codes only"
+      "text": "Open to"
      }
     ]
    },
@@ -33807,20 +33814,10 @@
    "code": "ECE 164",
    "prereq_text": "ECE 102 with a grade of C– or better. ECE 163 recommended.",
    "requires": {
-    "type": "and",
-    "items": [
-     {
-      "type": "course",
-      "code": "ECE 102",
-      "concurrent": false,
-      "min_grade": "C-"
-     },
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "ECE 163 recommended"
-     }
-    ]
+    "type": "course",
+    "code": "ECE 102",
+    "concurrent": false,
+    "min_grade": "C-"
    },
    "source": "parser",
    "ambiguous": false,
@@ -33841,7 +33838,7 @@
      {
       "type": "condition",
       "kind": "restriction",
-      "text": "Open to EC27, EC28, and EC37 major codes only"
+      "text": "Open to"
      }
     ]
    },
@@ -33888,7 +33885,7 @@
      {
       "type": "condition",
       "kind": "restriction",
-      "text": "Open to EC26, EC27, EC28, and EC37 major codes only"
+      "text": "Open to"
      }
     ]
    },
@@ -33913,20 +33910,10 @@
    "code": "ECE 172A",
    "prereq_text": "ECE 101 with a grade of C– or better. ECE 109 recommended.",
    "requires": {
-    "type": "and",
-    "items": [
-     {
-      "type": "course",
-      "code": "ECE 101",
-      "concurrent": false,
-      "min_grade": "C-"
-     },
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "ECE 109 recommended"
-     }
-    ]
+    "type": "course",
+    "code": "ECE 101",
+    "concurrent": false,
+    "min_grade": "C-"
    },
    "source": "parser",
    "ambiguous": false,
@@ -36777,19 +36764,19 @@
       "min_grade": null
      },
      {
-      "type": "condition",
-      "kind": "restriction",
-      "text": "and MA33 majors only"
-     },
-     {
-      "type": "condition",
-      "kind": "consent",
-      "text": "consent of department"
-     },
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "Enrollment limited to EN25 or EN26 or EN28 or and MA33 majors only or consent of department"
+      "type": "or",
+      "items": [
+       {
+        "type": "condition",
+        "kind": "restriction",
+        "text": "EN25, EN26, EN28, and MA33 majors"
+       },
+       {
+        "type": "condition",
+        "kind": "consent",
+        "text": "consent of department"
+       }
+      ]
      }
     ]
    },
@@ -37118,13 +37105,18 @@
     "items": [
      {
       "type": "condition",
-      "kind": "other",
+      "kind": "restriction",
       "text": "students must be participants in the OASIS Learning Communities Program"
      },
      {
       "type": "condition",
       "kind": "consent",
       "text": "instructor approval"
+     },
+     {
+      "type": "condition",
+      "kind": "other",
+      "text": "Due to expenses of field experience"
      }
     ]
    },
@@ -37421,7 +37413,7 @@
   },
   {
    "code": "EDS 108GS",
-   "prereq_text": "upper-division standing and department approval.",
+   "prereq_text": "upper-division standing and department approval. Students must apply and be accepted to the Global Seminar Program in order to enroll.",
    "requires": {
     "type": "and",
     "items": [
@@ -37434,6 +37426,11 @@
       "type": "condition",
       "kind": "consent",
       "text": "department approval"
+     },
+     {
+      "type": "condition",
+      "kind": "restriction",
+      "text": "Students must apply and be accepted to the Global Seminar Program"
      }
     ]
    },
@@ -37467,11 +37464,21 @@
   },
   {
    "code": "EDS 111GS",
-   "prereq_text": "department approval.",
+   "prereq_text": "department approval. Students must apply and be accepted to the Global Seminar Program in order to enroll.",
    "requires": {
-    "type": "condition",
-    "kind": "consent",
-    "text": "department approval"
+    "type": "and",
+    "items": [
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "department approval"
+     },
+     {
+      "type": "condition",
+      "kind": "restriction",
+      "text": "Students must apply and be accepted to the Global Seminar Program"
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -37552,11 +37559,21 @@
   },
   {
    "code": "EDS 115GS",
-   "prereq_text": "department approval.",
+   "prereq_text": "department approval. Students must apply and be accepted to the Global Seminar Program in order to enroll.",
    "requires": {
-    "type": "condition",
-    "kind": "consent",
-    "text": "department approval"
+    "type": "and",
+    "items": [
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "department approval"
+     },
+     {
+      "type": "condition",
+      "kind": "restriction",
+      "text": "Students must apply and be accepted to the Global Seminar Program"
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -37588,11 +37605,21 @@
   },
   {
    "code": "EDS 117GS",
-   "prereq_text": "department approval.",
+   "prereq_text": "department approval. Students must apply and be accepted to the Global Seminar Program in order to enroll.",
    "requires": {
-    "type": "condition",
-    "kind": "consent",
-    "text": "department approval"
+    "type": "and",
+    "items": [
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "department approval"
+     },
+     {
+      "type": "condition",
+      "kind": "restriction",
+      "text": "Students must apply and be accepted to the Global Seminar Program"
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -38978,11 +39005,21 @@
   },
   {
    "code": "ENVR 142GS",
-   "prereq_text": "upper-division standing required.",
+   "prereq_text": "upper-division standing required. Must apply and be accepted to the Global Seminar Program.",
    "requires": {
-    "type": "condition",
-    "kind": "standing",
-    "text": "upper-division standing"
+    "type": "and",
+    "items": [
+     {
+      "type": "condition",
+      "kind": "standing",
+      "text": "upper-division standing"
+     },
+     {
+      "type": "condition",
+      "kind": "restriction",
+      "text": "apply and be accepted to the Global Seminar Program"
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -39227,7 +39264,7 @@
    "prereq_text": "by invitation only.",
    "requires": {
     "type": "condition",
-    "kind": "other",
+    "kind": "consent",
     "text": "by invitation only"
    },
    "source": "parser",
@@ -46600,9 +46637,19 @@
    "code": "HUM 3GS",
    "prereq_text": "satisfaction of the UC Entry Level Writing requirement and acceptance into Global Seminar Program.",
    "requires": {
-    "type": "condition",
-    "kind": "other",
-    "text": "satisfaction of the UC Entry Level Writing requirement"
+    "type": "and",
+    "items": [
+     {
+      "type": "condition",
+      "kind": "other",
+      "text": "satisfaction of the UC Entry Level Writing requirement"
+     },
+     {
+      "type": "condition",
+      "kind": "restriction",
+      "text": "acceptance into Global Seminar Program"
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -46668,9 +46715,19 @@
    "code": "HUM 4GS",
    "prereq_text": "satisfaction of the UC Entry Level Writing requirement and acceptance into Global Seminar Program.",
    "requires": {
-    "type": "condition",
-    "kind": "other",
-    "text": "satisfaction of the UC Entry Level Writing requirement"
+    "type": "and",
+    "items": [
+     {
+      "type": "condition",
+      "kind": "other",
+      "text": "satisfaction of the UC Entry Level Writing requirement"
+     },
+     {
+      "type": "condition",
+      "kind": "restriction",
+      "text": "acceptance into Global Seminar Program"
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -46724,9 +46781,19 @@
    "code": "HUM 5GS",
    "prereq_text": "satisfaction of the UC Entry Level Writing requirement and acceptance into Global Seminar Program.",
    "requires": {
-    "type": "condition",
-    "kind": "other",
-    "text": "satisfaction of the UC Entry Level Writing requirement"
+    "type": "and",
+    "items": [
+     {
+      "type": "condition",
+      "kind": "other",
+      "text": "satisfaction of the UC Entry Level Writing requirement"
+     },
+     {
+      "type": "condition",
+      "kind": "restriction",
+      "text": "acceptance into Global Seminar Program"
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -53966,11 +54033,21 @@
   },
   {
    "code": "LTCS 172GS",
-   "prereq_text": "department approval required.",
+   "prereq_text": "department approval required. Students must apply and be accepted to the Global Seminars Program.",
    "requires": {
-    "type": "condition",
-    "kind": "consent",
-    "text": "department approval required"
+    "type": "and",
+    "items": [
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "department approval required"
+     },
+     {
+      "type": "condition",
+      "kind": "restriction",
+      "text": "Students must apply and be accepted to the Global Seminars Program"
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -54501,11 +54578,21 @@
   },
   {
    "code": "LTEN 128GS",
-   "prereq_text": "department approval required.",
+   "prereq_text": "department approval required. Students must apply and be accepted to the Global Seminars Program.",
    "requires": {
-    "type": "condition",
-    "kind": "consent",
-    "text": "department approval required"
+    "type": "and",
+    "items": [
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "department approval required"
+     },
+     {
+      "type": "condition",
+      "kind": "restriction",
+      "text": "Students must apply and be accepted to the Global Seminars Program"
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -54529,11 +54616,21 @@
   },
   {
    "code": "LTEN 131GS",
-   "prereq_text": "department approval required.",
+   "prereq_text": "department approval required. Students must apply and be accepted to the Global Seminars Program.",
    "requires": {
-    "type": "condition",
-    "kind": "consent",
-    "text": "department approval required"
+    "type": "and",
+    "items": [
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "department approval required"
+     },
+     {
+      "type": "condition",
+      "kind": "restriction",
+      "text": "Students must apply and be accepted to the Global Seminars Program"
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -54581,11 +54678,21 @@
   },
   {
    "code": "LTEN 144GS",
-   "prereq_text": "department approval required.",
+   "prereq_text": "department approval required. Students must apply and be accepted to the Global Seminars Program.",
    "requires": {
-    "type": "condition",
-    "kind": "consent",
-    "text": "department approval required"
+    "type": "and",
+    "items": [
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "department approval required"
+     },
+     {
+      "type": "condition",
+      "kind": "restriction",
+      "text": "Students must apply and be accepted to the Global Seminars Program"
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -54593,11 +54700,21 @@
   },
   {
    "code": "LTEN 145GS",
-   "prereq_text": "department approval required.",
+   "prereq_text": "department approval required. Students must apply and be accepted to the Global Seminars Program.",
    "requires": {
-    "type": "condition",
-    "kind": "consent",
-    "text": "department approval required"
+    "type": "and",
+    "items": [
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "department approval required"
+     },
+     {
+      "type": "condition",
+      "kind": "restriction",
+      "text": "Students must apply and be accepted to the Global Seminars Program"
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -54805,11 +54922,21 @@
   },
   {
    "code": "LTEN 185GS",
-   "prereq_text": "department approval required.",
+   "prereq_text": "department approval required. Students must apply and be accepted to the Global Seminars Program.",
    "requires": {
-    "type": "condition",
-    "kind": "consent",
-    "text": "department approval required"
+    "type": "and",
+    "items": [
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "department approval required"
+     },
+     {
+      "type": "condition",
+      "kind": "restriction",
+      "text": "Students must apply and be accepted to the Global Seminars Program"
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -54841,11 +54968,21 @@
   },
   {
    "code": "LTEN 189GS",
-   "prereq_text": "department approval required.",
+   "prereq_text": "department approval required. Students must apply and be accepted to the Global Seminars Program.",
    "requires": {
-    "type": "condition",
-    "kind": "consent",
-    "text": "department approval required"
+    "type": "and",
+    "items": [
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "department approval required"
+     },
+     {
+      "type": "condition",
+      "kind": "restriction",
+      "text": "Students must apply and be accepted to the Global Seminars Program"
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -57190,7 +57327,7 @@
   },
   {
    "code": "LTSP 123GS",
-   "prereq_text": "LTSP 100A or LTSP 100B or 100F; department approval required.",
+   "prereq_text": "LTSP 100A or LTSP 100B or 100F; department approval required. Students must apply and be accepted to the Global Seminars Program.",
    "requires": {
     "type": "and",
     "items": [
@@ -57221,6 +57358,11 @@
       "type": "condition",
       "kind": "consent",
       "text": "department approval required"
+     },
+     {
+      "type": "condition",
+      "kind": "restriction",
+      "text": "Students must apply and be accepted to the Global Seminars Program"
      }
     ]
    },
@@ -58529,11 +58671,21 @@
   },
   {
    "code": "LTWL 172GS",
-   "prereq_text": "department approval required.",
+   "prereq_text": "department approval required. Students must apply and be accepted to the Global Seminars Program.",
    "requires": {
-    "type": "condition",
-    "kind": "consent",
-    "text": "department approval required"
+    "type": "and",
+    "items": [
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "department approval required"
+     },
+     {
+      "type": "condition",
+      "kind": "restriction",
+      "text": "Students must apply and be accepted to the Global Seminars Program"
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -58549,11 +58701,21 @@
   },
   {
    "code": "LTWL 175GS",
-   "prereq_text": "department approval required.",
+   "prereq_text": "department approval required. Students must apply and be accepted to the Global Seminars Program.",
    "requires": {
-    "type": "condition",
-    "kind": "consent",
-    "text": "department approval required"
+    "type": "and",
+    "items": [
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "department approval required"
+     },
+     {
+      "type": "condition",
+      "kind": "restriction",
+      "text": "Students must apply and be accepted to the Global Seminars Program"
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -58585,11 +58747,21 @@
   },
   {
    "code": "LTWL 180GS",
-   "prereq_text": "department approval required.",
+   "prereq_text": "department approval required. Students must apply and be accepted to the Global Seminars Program.",
    "requires": {
-    "type": "condition",
-    "kind": "consent",
-    "text": "department approval required"
+    "type": "and",
+    "items": [
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "department approval required"
+     },
+     {
+      "type": "condition",
+      "kind": "restriction",
+      "text": "Students must apply and be accepted to the Global Seminars Program"
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -68622,7 +68794,7 @@
   },
   {
    "code": "MMW 14GS",
-   "prereq_text": "MMW 12 or MMW 12R and MMW 13 or MMW 13R with a grade of D or better.",
+   "prereq_text": "MMW 12 or MMW 12R and MMW 13 or MMW 13R with a grade of D or better. Students must apply and be accepted to the Global Seminars program.",
    "requires": {
     "type": "and",
     "items": [
@@ -68659,6 +68831,11 @@
         "min_grade": "D"
        }
       ]
+     },
+     {
+      "type": "condition",
+      "kind": "restriction",
+      "text": "Students must apply and be accepted to the Global Seminars program"
      }
     ]
    },
@@ -68760,7 +68937,7 @@
   },
   {
    "code": "MMW 15GS",
-   "prereq_text": "MMW 12 or MMW 12R and MMW 13 or MMW 13R with a grade of D or better.",
+   "prereq_text": "MMW 12 or MMW 12R and MMW 13 or MMW 13R with a grade of D or better. Students must apply and be accepted to the Global Seminars program.",
    "requires": {
     "type": "and",
     "items": [
@@ -68797,6 +68974,11 @@
         "min_grade": "D"
        }
       ]
+     },
+     {
+      "type": "condition",
+      "kind": "restriction",
+      "text": "Students must apply and be accepted to the Global Seminars program"
      }
     ]
    },
@@ -69263,7 +69445,7 @@
    "requires": {
     "type": "condition",
     "kind": "other",
-    "text": "none"
+    "text": "(Offered in selected years.)"
    },
    "source": "parser",
    "ambiguous": false,
@@ -69275,7 +69457,7 @@
    "requires": {
     "type": "condition",
     "kind": "other",
-    "text": "none"
+    "text": "(Offered in selected years.)"
    },
    "source": "parser",
    "ambiguous": false,
@@ -69971,11 +70153,6 @@
       "type": "condition",
       "kind": "consent",
       "text": "Department approval required"
-     },
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "MUS 4, 8-10, or 120 recommended"
      }
     ]
    },
@@ -70079,11 +70256,6 @@
      },
      {
       "type": "condition",
-      "kind": "other",
-      "text": "Music majors are recommended to take MUS 101A concurrently"
-     },
-     {
-      "type": "condition",
       "kind": "consent",
       "text": "Department approval required"
      }
@@ -70107,11 +70279,6 @@
      },
      {
       "type": "condition",
-      "kind": "other",
-      "text": "Music majors are recommended to take MUS 101B concurrently"
-     },
-     {
-      "type": "condition",
       "kind": "consent",
       "text": "Department approval required"
      }
@@ -70132,11 +70299,6 @@
       "code": "MUS 120B",
       "concurrent": false,
       "min_grade": null
-     },
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "Music majors are recommended to take MUS 101C concurrently"
      },
      {
       "type": "condition",
@@ -73567,6 +73729,11 @@
       "type": "condition",
       "kind": "restriction",
       "text": "Restricted to upper-division public health majors only"
+     },
+     {
+      "type": "condition",
+      "kind": "standing",
+      "text": "class standing"
      }
     ]
    },
@@ -73595,6 +73762,11 @@
       "type": "condition",
       "kind": "restriction",
       "text": "Restricted to upper-division public health majors only"
+     },
+     {
+      "type": "condition",
+      "kind": "standing",
+      "text": "class standing"
      }
     ]
    },
@@ -83328,11 +83500,6 @@
       "type": "condition",
       "kind": "restriction",
       "text": "psychology majors only"
-     },
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "acceptance to the Honors Program"
      }
     ]
    },
@@ -83379,11 +83546,6 @@
       "type": "condition",
       "kind": "restriction",
       "text": "psychology majors only"
-     },
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "acceptance to the Honors program"
      }
     ]
    },
@@ -83418,11 +83580,6 @@
       "type": "condition",
       "kind": "restriction",
       "text": "psychology majors only"
-     },
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "acceptance to the Honors program"
      }
     ]
    },
@@ -84279,7 +84436,7 @@
    "prereq_text": "by invitation only.",
    "requires": {
     "type": "condition",
-    "kind": "other",
+    "kind": "consent",
     "text": "by invitation only"
    },
    "source": "parser",
@@ -84330,19 +84487,9 @@
    "code": "SE 1",
    "prereq_text": "none. Enrollment restricted to SE27, SE28, SE29, SE30, and SE31 majors only.",
    "requires": {
-    "type": "and",
-    "items": [
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "none"
-     },
-     {
-      "type": "condition",
-      "kind": "restriction",
-      "text": "restricted to SE 27, SE 28, SE 29, SE 30, and SE 31 majors only"
-     }
-    ]
+    "type": "condition",
+    "kind": "restriction",
+    "text": "restricted to SE 27, SE 28, SE 29, SE 30, and SE 31 majors only"
    },
    "source": "parser",
    "ambiguous": false,
@@ -86018,56 +86165,46 @@
    "code": "SIO 103",
    "prereq_text": "MATH 20C or MATH 31BH, and PHYS 2C, and SIO 50, or consent of instructor. SIO 160 recommended.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "or",
+      "type": "and",
       "items": [
        {
-        "type": "and",
+        "type": "or",
         "items": [
          {
-          "type": "or",
-          "items": [
-           {
-            "type": "course",
-            "code": "MATH 20C",
-            "concurrent": false,
-            "min_grade": null
-           },
-           {
-            "type": "course",
-            "code": "MATH 31BH",
-            "concurrent": false,
-            "min_grade": null
-           }
-          ]
-         },
-         {
           "type": "course",
-          "code": "PHYS 2C",
+          "code": "MATH 20C",
           "concurrent": false,
           "min_grade": null
          },
          {
           "type": "course",
-          "code": "SIO 50",
+          "code": "MATH 31BH",
           "concurrent": false,
           "min_grade": null
          }
         ]
        },
        {
-        "type": "condition",
-        "kind": "consent",
-        "text": "consent of instructor"
+        "type": "course",
+        "code": "PHYS 2C",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "SIO 50",
+        "concurrent": false,
+        "min_grade": null
        }
       ]
      },
      {
       "type": "condition",
-      "kind": "other",
-      "text": "SIO 160 recommended"
+      "kind": "consent",
+      "text": "consent of instructor"
      }
     ]
    },
@@ -86706,21 +86843,31 @@
   },
   {
    "code": "SIO 121GS",
-   "prereq_text": "SIO 10 or SIO 50.",
+   "prereq_text": "SIO 10 or SIO 50. Students must apply for and be accepted to the Global Seminars Program.",
    "requires": {
-    "type": "or",
+    "type": "and",
     "items": [
      {
-      "type": "course",
-      "code": "SIO 10",
-      "concurrent": false,
-      "min_grade": null
+      "type": "or",
+      "items": [
+       {
+        "type": "course",
+        "code": "SIO 10",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "SIO 50",
+        "concurrent": false,
+        "min_grade": null
+       }
+      ]
      },
      {
-      "type": "course",
-      "code": "SIO 50",
-      "concurrent": false,
-      "min_grade": null
+      "type": "condition",
+      "kind": "restriction",
+      "text": "Students must apply for and be accepted to the Global Seminars Program"
      }
     ]
    },
@@ -87349,12 +87496,22 @@
   },
   {
    "code": "SIO 138GS",
-   "prereq_text": "BILD 3.",
+   "prereq_text": "BILD 3. Students must apply for and be accepted to the Global Seminars Program.",
    "requires": {
-    "type": "course",
-    "code": "BILD 3",
-    "concurrent": false,
-    "min_grade": null
+    "type": "and",
+    "items": [
+     {
+      "type": "course",
+      "code": "BILD 3",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "condition",
+      "kind": "restriction",
+      "text": "Students must apply for and be accepted to the Global Seminars Program"
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -90649,7 +90806,7 @@
    "prereq_text": "acceptance into Department of Sociology Honors Program.",
    "requires": {
     "type": "condition",
-    "kind": "other",
+    "kind": "restriction",
     "text": "acceptance into Department of Sociology Honors Program"
    },
    "source": "parser",
@@ -90750,7 +90907,7 @@
    "prereq_text": "by invitation only.",
    "requires": {
     "type": "condition",
-    "kind": "other",
+    "kind": "consent",
     "text": "by invitation only"
    },
    "source": "parser",
@@ -90893,7 +91050,7 @@
   },
   {
    "code": "SYN 100GS",
-   "prereq_text": "upper-division standing, completion of SYN 1/1R and SYN 2/2R, must be taken for a letter grade to count toward Seventh College general-education requirements.",
+   "prereq_text": "upper-division standing, completion of SYN 1/1R and SYN 2/2R, must be taken for a letter grade to count toward Seventh College general-education requirements. Students must apply and be accepted to the Global Seminar Program to enroll.",
    "requires": {
     "type": "and",
     "items": [
@@ -90940,6 +91097,11 @@
       "type": "condition",
       "kind": "other",
       "text": "must be taken for a letter grade to count toward Seventh College general-education requirements"
+     },
+     {
+      "type": "condition",
+      "kind": "restriction",
+      "text": "Students must apply and be accepted to the Global Seminar Program"
      }
     ]
    },
@@ -90987,6 +91149,11 @@
       "type": "condition",
       "kind": "restriction",
       "text": "restricted to upper-division Seventh College students only, must be taken P/NP only, can be taken once for credit, a student application and departmental approval is required for enrollment, enrollment satisfies the Seventh College high-impact requirement"
+     },
+     {
+      "type": "condition",
+      "kind": "standing",
+      "text": "class standing"
      }
     ]
    },
@@ -91025,6 +91192,11 @@
       "type": "condition",
       "kind": "consent",
       "text": "department approval"
+     },
+     {
+      "type": "condition",
+      "kind": "standing",
+      "text": "class standing"
      }
     ]
    },
@@ -91063,6 +91235,11 @@
       "type": "condition",
       "kind": "consent",
       "text": "department approval is required"
+     },
+     {
+      "type": "condition",
+      "kind": "standing",
+      "text": "class standing"
      }
     ]
    },
@@ -95754,6 +95931,11 @@
       "type": "condition",
       "kind": "other",
       "text": "(Only offered fall quarter.)"
+     },
+     {
+      "type": "condition",
+      "kind": "standing",
+      "text": "class standing"
      }
     ]
    },
@@ -95817,6 +95999,11 @@
       "type": "condition",
       "kind": "restriction",
       "text": "Restricted to seniors within the Urban Studies and Planning major"
+     },
+     {
+      "type": "condition",
+      "kind": "standing",
+      "text": "class standing"
      }
     ]
    },
@@ -96232,19 +96419,9 @@
    "code": "VIS 23",
    "prereq_text": "none. Art history majors only.",
    "requires": {
-    "type": "and",
-    "items": [
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "none"
-     },
-     {
-      "type": "condition",
-      "kind": "restriction",
-      "text": "Art history majors only"
-     }
-    ]
+    "type": "condition",
+    "kind": "restriction",
+    "text": "Art history majors only"
    },
    "source": "parser",
    "ambiguous": false,
@@ -96294,19 +96471,9 @@
    "code": "VIS 60",
    "prereq_text": "none. Open to visual arts majors and minors.",
    "requires": {
-    "type": "and",
-    "items": [
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "none"
-     },
-     {
-      "type": "condition",
-      "kind": "restriction",
-      "text": "Open to visual arts majors and minors"
-     }
-    ]
+    "type": "condition",
+    "kind": "restriction",
+    "text": "Open to visual arts majors and minors"
    },
    "source": "parser",
    "ambiguous": false,
@@ -96316,19 +96483,9 @@
    "code": "VIS 70N",
    "prereq_text": "none. Open to visual arts and cinematic arts majors and minors.",
    "requires": {
-    "type": "and",
-    "items": [
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "none"
-     },
-     {
-      "type": "condition",
-      "kind": "restriction",
-      "text": "Open to visual arts and cinematic arts majors and minors"
-     }
-    ]
+    "type": "condition",
+    "kind": "restriction",
+    "text": "Open to visual arts and cinematic arts majors and minors"
    },
    "source": "parser",
    "ambiguous": false,
@@ -96362,19 +96519,9 @@
    "code": "VIS 80",
    "prereq_text": "none. Open to visual arts majors and minors.",
    "requires": {
-    "type": "and",
-    "items": [
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "none"
-     },
-     {
-      "type": "condition",
-      "kind": "restriction",
-      "text": "Open to visual arts majors and minors"
-     }
-    ]
+    "type": "condition",
+    "kind": "restriction",
+    "text": "Open to visual arts majors and minors"
    },
    "source": "parser",
    "ambiguous": false,
@@ -100388,9 +100535,19 @@
    "code": "WCWP 10A",
    "prereq_text": "satisfaction of the UC Entry Level Writing Requirement and must be a Warren College student.",
    "requires": {
-    "type": "condition",
-    "kind": "other",
-    "text": "satisfaction of the UC Entry Level Writing Requirement"
+    "type": "and",
+    "items": [
+     {
+      "type": "condition",
+      "kind": "other",
+      "text": "satisfaction of the UC Entry Level Writing Requirement"
+     },
+     {
+      "type": "condition",
+      "kind": "restriction",
+      "text": "must be a Warren College student"
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -100410,7 +100567,7 @@
      },
      {
       "type": "condition",
-      "kind": "other",
+      "kind": "restriction",
       "text": "must be a Warren College student"
      }
     ]
@@ -100444,7 +100601,7 @@
      },
      {
       "type": "condition",
-      "kind": "other",
+      "kind": "restriction",
       "text": "must be a Warren College student"
      }
     ]
