@@ -185,3 +185,18 @@ Steps, each ending with all checks passing (`test_graph.py`, `test_site.py`, sin
 3. Restyle the whole site to direction C (`docs/design-brief.md`).
 4. Browser checks for the new flow: pick, switch, old links, per-campus storage, phone width.
 5. Review rounds: correctness, dead code, security, design checklist, then an independent review.
+
+## Phase 2 work plan: UC San Diego, courses first
+
+UCSD has no majors at first (Andrew's call: courses first). So its "programs" are **departments**: one map per department, with every course in it in prerequisite order, plus the courses from other departments they need. The planner works the same way (add courses by hand); "Auto-fill" is off for departments, since a department isn't a list of requirements.
+
+Steps, each checked before the next:
+1. **Fetch** (`pipeline/campuses/ucsd/fetch.py`): the course index and every department page, saved to `data/ucsd/raw/`. One request a second, a plain user agent, and a page already saved isn't fetched again.
+2. **Extract** (`pipeline/campuses/ucsd/extract.py`): each course's code, title, units, level, description and prerequisite text, into `data/ucsd/raw_courses.json`. Cross-listed courses appear on several pages: kept once, under each code. Enrollment comments after the prerequisites ("restricted to…", "students may not receive credit…") are split off as notes.
+3. **Label first:** 300 courses chosen at random (fixed seed, spread over departments), with the correct prerequisite tree typed by hand into `tests/ucsd_labels.json`, *before* tuning the parser, so the score is honest.
+4. **Parse** with the shared parser (`pipeline/parser.py`), given UCSD's subject codes and a few UCSD rules (en-dash grades "C–", "MATH 20 C", ranges "CHEM 6A-B-C", "Corequisite(s):", "none."). Score on the labels; ship only at 95% or better. Courses the parser can't read with confidence keep the catalog's own words on screen, as at UCSB.
+5. **Build** `site/data/ucsd/`: one graph per department, the course index, and an empty credit table (UCSD's AP chart comes later).
+6. **Site:** "departments" wording where UCSB says "majors and minors"; mark UCSD "Ready" in `campus.js`.
+7. **Checks:** data checks per campus (`test_graph.py` loops over campuses), browser checks for a UCSD department map and plan, then the review rounds.
+
+The pipeline split into `pipeline/common/` and `pipeline/campuses/<id>/` happens in step 4, once it's clear which parts both campuses use.
