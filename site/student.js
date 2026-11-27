@@ -18,7 +18,7 @@
   Loaded before app.js; the Credit box (credit.js) edits it.
 */
 
-const CREDIT_KEY = "ucsb-prereq-map.credit";
+const CREDIT_KEY = storageKey("credit");   // campus.js
 
 let creditTable = null;     // data/credit.json: the AP chart, loaded at start
 let credit = loadCredit();  // { ap: { "Calculus BC": 4 }, transfer: ["CMPSC 40"] }
@@ -106,7 +106,7 @@ function hasAnyCredit() {
                                          the student; only these are ever
                                          removed automatically
 */
-const PLAN_KEY = "ucsb-prereq-map.plan";
+const PLAN_KEY = storageKey("plan");   // campus.js
 
 function emptyPlan() {
   return {

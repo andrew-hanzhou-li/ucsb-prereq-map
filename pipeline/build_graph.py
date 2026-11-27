@@ -8,8 +8,8 @@ into one ready-to-draw file per major.
 Reads   data/majors/*.json      what each major requires          (Part 3)
         prereqs.json          what each course requires         (Part 2)
         raw_courses.json      titles, units, descriptions       (Part 1)
-Writes  site/data/<major>.json   one graph per major
-        site/data/majors.json    list of majors, for the site's picker
+Writes  site/data/ucsb/<major>.json   one graph per major
+        site/data/ucsb/majors.json   list of majors, for the site's picker
 
 What's in a graph
 -----------------
@@ -66,14 +66,14 @@ import sys
 from parser import all_courses
 
 MAJORS_DIR = os.path.join("data", "majors")
-OUTPUT_DIR = os.path.join("site", "data")
+OUTPUT_DIR = os.path.join("site", "data", "ucsb")
 
 # An elective list longer than this becomes one "pool" box. Computer
 # Engineering's elective list (~70 courses) is drawn in full; "any upper-division
 # course in Letters and Science" (~3,000) is not.
 POOL_LIMIT = 100
 
-# Files in site/data written by other scripts, which the cleanup leaves alone
+# Files in site/data/ucsb written by other scripts, which the cleanup leaves alone
 # (credit.json is the AP chart, from build_credit.py).
 KEEP_IN_DATA = {"credit.json"}
 

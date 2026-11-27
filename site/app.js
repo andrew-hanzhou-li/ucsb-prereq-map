@@ -35,7 +35,7 @@
 // Settings
 // ===========================================================================
 
-const SAVE_KEY = "ucsb-prereq-map.taken";   // where "taken" marks are saved in the browser
+const SAVE_KEY = storageKey("taken");   // where "taken" marks are saved in the browser (campus.js)
 const REPO_URL = "https://github.com/andrew-hanzhou-li/ucsb-prereq-map";   // linked as "Source code" in the footer
 const BACK_LIMIT = 50;        // how many earlier courses the panel's Back button remembers
 
@@ -100,6 +100,8 @@ const el = {
   footerDownload: document.getElementById("footer-download"),
   about: document.getElementById("about"),
   top: document.querySelector(".top"),
+  campusName: document.getElementById("campus-name"),
+  campusChange: document.getElementById("campus-change"),
   optionsButton: document.getElementById("options-button"),
 };
 
@@ -108,8 +110,23 @@ const el = {
 // ===========================================================================
 
 async function start() {
+  // No campus chosen yet, or one that isn't on the site: the campus screen
+  // instead of the app. Picking a campus changes the address; reloading then
+  // starts the app for that campus (campus.js).
+  if (!CAMPUS || !isReady(CAMPUS)) {
+    showCampusScreen(CAMPUS ? campusById(CAMPUS).name + " isn't on the site yet. Pick another campus, or check back later." : "");
+    window.addEventListener("hashchange", function () { location.reload(); });
+    return;
+  }
+  rememberCampus(CAMPUS);
+  // The full name, or "UCSB" on phones, where the header has one line.
+  el.campusName.innerHTML = '<span class="wide-only">' + escapeHtml(campusById(CAMPUS).name) + '</span>' +
+    '<span class="narrow-only">' + escapeHtml(CAMPUS.toUpperCase()) + "</span>";
+  // The one-file copy is UCSB only.
+  if (window.EMBEDDED) el.campusChange.hidden = true;
+
   try {
-    majors = window.EMBEDDED ? window.EMBEDDED.majors : (await (await fetch("data/majors.json")).json()).majors;
+    majors = window.EMBEDDED ? window.EMBEDDED.majors : (await (await fetch(dataUrl("majors.json"))).json()).majors;
   } catch (error) {
     showNotice("<h2>The list of majors didn't load</h2>" +
                "<p>Check your internet connection, then refresh the page.</p>");
@@ -119,7 +136,7 @@ async function start() {
   // The AP chart, for the Credit box. Without it the site still works;
   // only AP credit can't be entered.
   try {
-    creditTable = window.EMBEDDED ? window.EMBEDDED.credit : await (await fetch("data/credit.json")).json();
+    creditTable = window.EMBEDDED ? window.EMBEDDED.credit : await (await fetch(dataUrl("credit.json"))).json();
   } catch (error) {
     creditTable = null;
   }
@@ -171,7 +188,7 @@ function fillBrowseLists() {
   el.browse.innerHTML = names.map(function (name) {
     const programs = departments[name].sort((a, b) => (a.kind === b.kind ? a.name.localeCompare(b.name) : a.kind === "major" ? -1 : 1));
     return '<section class="dept"><h3>' + escapeHtml(name) + "</h3><ul>" + programs.map(function (m) {
-      return '<li><a href="#' + escapeHtml(stem(m.file)) + '">' + escapeHtml(displayName(m.name)) + "</a></li>";
+      return '<li><a href="' + campusHash() + escapeHtml(stem(m.file)) + '">' + escapeHtml(displayName(m.name)) + "</a></li>";
     }).join("") + "</ul></section>";
   }).join("");
 }
@@ -185,12 +202,8 @@ function fillBrowseLists() {
                                                  space in a course code)
 */
 function readHash() {
-  let raw = "";
-  try {
-    raw = decodeURIComponent(location.hash.slice(1));
-  } catch (error) {
-    // A mangled link: treat it as no address.
-  }
+  // Without the campus in front (campus.js).
+  const raw = splitCampus(decodedHash()).rest;
   // The planner's address: "plan/" in front; a shared plan adds "/" and the
   // plan itself, packed into letters (planner.js, packPlan).
   if (raw.startsWith("plan/")) {
@@ -204,11 +217,11 @@ function readHash() {
 }
 
 function hashFor(programs, code) {
-  return "#" + programs.map(p => stem(p.file)).join("+") + (code ? "/" + code.replace(/ /g, "+") : "");
+  return campusHash() + programs.map(p => stem(p.file)).join("+") + (code ? "/" + code.replace(/ /g, "+") : "");
 }
 
 function planHashFor(programs) {
-  return "#plan/" + programs.map(p => stem(p.file)).join("+");
+  return campusHash() + "plan/" + programs.map(p => stem(p.file)).join("+");
 }
 
 // Keep the address bar in step with the selection, so copying it shares this
@@ -222,6 +235,17 @@ function rememberInAddress() {
 }
 
 async function loadFromHash() {
+  const campus = campusForAddress(CAMPUS);
+  if (campus === CAMPUS_SCREEN) {
+    showCampusScreen();
+    return;
+  }
+  if (campus !== CAMPUS) {
+    location.reload();      // another campus: start fresh (campus.js)
+    return;
+  }
+  hideCampusScreen();
+  updateOldLink();
   const wanted = readHash();
   if (!wanted.stems.length) {
     showHome();
@@ -314,7 +338,7 @@ function showHome() {
 
 // One major's graph: from the page itself (single file) or from data/.
 async function fetchMajor(major) {
-  if (!window.EMBEDDED) return (await fetch("data/" + major.file)).json();
+  if (!window.EMBEDDED) return (await fetch(dataUrl(major.file))).json();
   // The single file stores each course's details once (in "courses") and
   // each major's own facts about it (role, step...) separately. Put the two
   // back together into the same shape as a data/ file.

@@ -5,7 +5,7 @@ build_credit.py: check the AP credit table and copy it to the site.
 
 Reads   ap_credit.json          UCSB's AP chart, typed in from the catalog
         raw_courses.json        the current course list (Part 1)
-Writes  site/data/credit.json   the table, ready for the site's Credit box,
+Writes  site/data/ucsb/credit.json   the table, ready for the site's Credit box,
                                 plus the catalog's subject codes (for the
                                 transcript reader)
 
@@ -54,14 +54,14 @@ def main():
     with open("data/raw_courses.json", encoding="utf-8") as f:
         subjects = sorted({c["subject"] for c in json.load(f)["courses"]})
     out = {"source": table["source"], "catalog_year": table["catalog_year"], "ap": table["exams"], "subjects": subjects}
-    os.makedirs(os.path.join("site", "data"), exist_ok=True)
-    with open(os.path.join("site", "data", "credit.json"), "w", encoding="utf-8") as f:
+    os.makedirs(os.path.join("site", "data", "ucsb"), exist_ok=True)
+    with open(os.path.join("site", "data", "ucsb", "credit.json"), "w", encoding="utf-8") as f:
         json.dump(out, f, indent=1, ensure_ascii=False)
 
     print("AP exams: %d" % len(table["exams"]))
     if missing:
         print("Named in the AP chart but not in the current catalog (kept): " + ", ".join(sorted(missing)))
-    print("Wrote site/data/credit.json")
+    print("Wrote site/data/ucsb/credit.json")
 
 
 if __name__ == "__main__":

@@ -9,7 +9,7 @@ Two kinds of tests:
    later column, OR the earlier, "concurrent" adds no quarter, loops get
    reported...). If one fails, the rule it's named after is broken.
 
-2. Checks on the real graphs in site/data (run build_graph.py first):
+2. Checks on the real graphs in site/data/ucsb (run build_graph.py first):
    - every arrow for a REQUIRED prerequisite points left to right
    - every arrow starts and ends at a course in the graph
    - courses you know come in the right order (MATH 3A before 3B before 4A,
@@ -149,9 +149,9 @@ SAME_COLUMN = {
 
 
 def test_real_graphs():
-    files = [f for f in glob.glob(os.path.join("site", "data", "*.json"))
+    files = [f for f in glob.glob(os.path.join("site", "data", "ucsb", "*.json"))
              if not f.endswith(("majors.json", "credit.json", "course-index.json"))]   # not program graphs
-    check("site/data has graphs (run build_graph.py first)", len(files) > 0)
+    check("site/data/ucsb has graphs (run build_graph.py first)", len(files) > 0)
 
     for path in files:
         name = os.path.basename(path)

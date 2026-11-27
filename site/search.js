@@ -254,7 +254,7 @@ function pickCourse(item) {
 async function loadCourseIndex() {
   if (courseIndex) return;
   try {
-    courseIndex = window.EMBEDDED ? window.EMBEDDED.courseIndex : await (await fetch("data/course-index.json")).json();
+    courseIndex = window.EMBEDDED ? window.EMBEDDED.courseIndex : await (await fetch(dataUrl("course-index.json"))).json();
   } catch (error) {
     courseIndex = {};
   }

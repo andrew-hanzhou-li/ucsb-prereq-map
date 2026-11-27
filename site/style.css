@@ -96,7 +96,34 @@ kbd {
   letter-spacing: -0.01em;
 }
 .site-name a { text-decoration: none; }
-.tagline { margin-left: 12px; font-family: var(--sans); font-size: 0.95rem; font-weight: 400; letter-spacing: 0; color: var(--muted); }
+.brand { display: flex; align-items: baseline; gap: 14px; }
+.campus-label { margin: 0; color: var(--muted); white-space: nowrap; }
+.campus-label #campus-name { color: var(--ink); font-weight: 600; }
+.campus-label a[hidden] { display: none; }
+
+/* The campus screen (campus.js). While it shows, the app's parts hide. */
+.campus-screen[hidden] { display: none; }
+body.choosing-campus .layout, body.choosing-campus .sub, body.choosing-campus .campus-label,
+body.choosing-campus .mast-nav > :not(#about-button), body.choosing-campus #footer-catalog { display: none; }
+.campus-screen { max-width: 1180px; margin: 0 auto; padding: 24px; }
+.campus-heading { margin: 0 0 10px; font-size: 1rem; font-weight: 600; color: var(--muted); }
+.campus-note { margin: 0 0 12px; font-weight: 600; }
+.campus-list { list-style: none; margin: 0; padding: 0; border-top: 3px solid var(--ink); }
+.campus-row { display: grid; grid-template-columns: 2.2em 1fr 9em 8em; align-items: baseline; padding: 10px 0; border-bottom: 1px solid var(--dots); }
+.campus-number { color: var(--muted); font-weight: 600; font-variant-numeric: tabular-nums; }
+.campus-name { font-size: 2.1rem; font-weight: 800; line-height: 1.1; color: var(--ink); text-decoration: none; }
+a.campus-name:hover, a.campus-name:focus-visible { text-decoration: underline; }
+.campus-row.later .campus-name { color: #8b9099; }
+.campus-row.current .campus-number { background: #f2c230; color: var(--ink); text-align: center; margin-right: 8px; }
+.campus-terms { color: var(--muted); }
+.campus-status { text-align: right; font-weight: 600; }
+.campus-row.ready .campus-status { color: #1f7a3a; }
+.campus-hint { margin-top: 16px; color: var(--muted); font-size: 0.95rem; }
+@media (max-width: 700px) {
+  .campus-row { grid-template-columns: 1.6em 1fr auto; }
+  .campus-terms { display: none; }
+  .campus-name { font-size: 1.6rem; }
+}
 
 .mast-nav {
   margin-left: auto;

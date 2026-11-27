@@ -31,7 +31,10 @@
     <!-- The masthead. Links use "#" (not "./") so they also work in the
          single-file version, opened straight from your computer. -->
     <div class="mast">
-      <h1 class="site-name"><a href="#" id="home-link">The Prerequisite Map</a><span class="tagline"><span class="wide-only">for UC Santa Barbara</span><span class="narrow-only">UCSB</span> · unofficial</span></h1>
+      <div class="brand">
+        <h1 class="site-name"><a href="#" id="home-link">The Prerequisite Map</a></h1>
+        <p class="campus-label"><span id="campus-name"></span> <a href="#campus" id="campus-change">change</a></p>
+      </div>
       <nav class="mast-nav">
         <a href="#" id="all-link" hidden>All programs</a>
         <button type="button" class="text-button" id="credit-button" data-open-credit>Credit</button>
@@ -70,6 +73,14 @@
     </div>
   </header>
 
+  <!-- "Choose your university": the first screen, and the "change" link's (campus.js). -->
+  <main class="campus-screen" id="campus-screen" hidden>
+    <h2 class="campus-heading">Choose your university</h2>
+    <p class="campus-note" id="campus-note" hidden></p>
+    <ol class="campus-list" id="campus-list"></ol>
+    <p class="campus-hint">Press <kbd>1</kbd> to <kbd>9</kbd> to pick. Your choice is remembered on this device.</p>
+  </main>
+
   <main class="layout">
     <section class="map-area" aria-label="Prerequisite map">
       <div id="map" class="map">
@@ -89,7 +100,7 @@
           <div id="welcome">
             <h2>Choose a major or minor.</h2>
             <p>Every course in the program is listed in prerequisite order, with the courses from other departments it needs. Point at or click a course to see everything it needs and everything it unlocks.</p>
-            <p class="quick">For example: <a href="#economics-ba">Economics (B.A.)</a>, <a href="#statistics-and-data-science-bs">Statistics and Data Science (B.S.)</a>, or <a href="#computer-engineering-bs">Computer Engineering (B.S.)</a>.</p>
+            <p class="quick">For example: <a href="#ucsb/economics-ba">Economics (B.A.)</a>, <a href="#ucsb/statistics-and-data-science-bs">Statistics and Data Science (B.S.)</a>, or <a href="#ucsb/computer-engineering-bs">Computer Engineering (B.S.)</a>.</p>
           </div>
 
           <!-- Every program, grouped by department (app.js, fillBrowseLists). -->
@@ -226,6 +237,7 @@
     <p><button type="button" class="text-button" id="transcript-apply" hidden>Apply to my plan</button></p>
   </dialog>
 
+  <script src="campus.js"></script>
   <script src="student.js"></script>
   <script src="search.js"></script>
   <script src="app.js"></script>

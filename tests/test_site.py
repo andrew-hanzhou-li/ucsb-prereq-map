@@ -173,7 +173,7 @@ STEP_ORDER = """() => {
 
 def main():
     sys.stdout.reconfigure(errors="replace")
-    with open("site/data/majors.json", encoding="utf-8") as f:
+    with open("site/data/ucsb/majors.json", encoding="utf-8") as f:
         listed = json.load(f)["majors"]
     majors = [m for m in listed if m["structured"]]          # the ones with a map
 
@@ -182,7 +182,7 @@ def main():
         page = new_page(browser, viewport={"width": 1400, "height": 900})
 
         # 1. Front page
-        page.goto(SITE)
+        page.goto(SITE + "#ucsb/")
         page.wait_for_timeout(400)
         check("front page shows the 'pick a major' message", page.is_visible("#welcome"))
         check("front page hides the empty course panel", not page.is_visible("#panel"))
@@ -227,8 +227,8 @@ def main():
               found and found[0].startswith("No match for") and "Economics" in found[0], found)
         page.click(".search-list [data-guess]")
         page.wait_for_function("graph && graph.major.programs.length === 1", timeout=15000)
-        check("major search: clicking 'Did you mean' opens it", page.evaluate("location.hash").startswith("#economics"))
-        page.goto(SITE)
+        check("major search: clicking 'Did you mean' opens it", page.evaluate("location.hash").startswith("#ucsb/economics"))
+        page.goto(SITE + "#ucsb/")
         page.wait_for_timeout(300)
         page.fill("#major-input", "physics")
         page.locator("#major-input").blur()
@@ -250,16 +250,16 @@ def main():
         check("course search on the front page opens a panel listing its programs",
               page.is_visible("#panel") and page.inner_text("#panel-body h2") == "MATH 4A" and
               "Computer Engineering (B.S.)" in page.inner_text("#panel-body"))
-        page.click("#panel-body a[href='#computer-engineering-bs/MATH+4A']")
+        page.click("#panel-body a[href='#ucsb/computer-engineering-bs/MATH+4A']")
         page.wait_for_function("graph && selected === 'MATH 4A'", timeout=15000)
-        check("its program link opens that map with the course chosen", page.evaluate("location.hash") == "#computer-engineering-bs/MATH+4A")
+        check("its program link opens that map with the course chosen", page.evaluate("location.hash") == "#ucsb/computer-engineering-bs/MATH+4A")
         found = suggestions("#course-input", "ece 15")
         check("course search on a map: nickname-free codes still work", found and found[0].startswith("ECE 15A"), found[:3])
         found = suggestions("#course-input", "zzz 999")
         check("course search: no match says so", found and found[0].startswith("No match for"), found)
         page.keyboard.press("Escape")
         check("Esc closes the list", not page.is_visible(".search-list"))
-        page.goto(SITE)
+        page.goto(SITE + "#ucsb/")
         page.wait_for_timeout(300)
 
         open_major(page, SITE, "economics-ba", "BAECON")
@@ -271,15 +271,15 @@ def main():
         page.fill("#major-input", "comp eng bs")
         page.press("#major-input", "Enter")
         page.wait_for_function("graph && graph.major.programs.length === 2", timeout=15000)
-        check("adding a program puts both on the map", page.evaluate("location.hash") == "#economics-ba+computer-engineering-bs")
+        check("adding a program puts both on the map", page.evaluate("location.hash") == "#ucsb/economics-ba+computer-engineering-bs")
         page.click('#chosen button[data-remove="BAECON"]')
         page.wait_for_function("graph && graph.major.programs.length === 1", timeout=15000)
-        check("the x takes a program off the map", page.evaluate("location.hash") == "#computer-engineering-bs")
+        check("the x takes a program off the map", page.evaluate("location.hash") == "#ucsb/computer-engineering-bs")
         page.goto(SITE + "#computer-engineering-bs+statistical-science-minor")
         page.wait_for_function("graph && graph.major.programs.length === 2 && document.querySelectorAll('.box').length > 0", timeout=15000)
         both = {}
         for stem_ in ("computer-engineering-bs", "statistical-science-minor"):
-            with open("site/data/%s.json" % stem_, encoding="utf-8") as f:
+            with open("site/data/ucsb/%s.json" % stem_, encoding="utf-8") as f:
                 both[stem_] = {n["id"] for n in json.load(f)["nodes"] if n["in_major"] and n["status"] == "active"}
         expected = both["computer-engineering-bs"] | both["statistical-science-minor"]
         expected = {c for c in expected if online_base(c, expected) is None}   # twins share a card
@@ -304,7 +304,7 @@ def main():
             stem = major["file"][:-5]
             page.errors.clear()
             open_major(page, SITE, stem, major["id"])
-            with open("site/data/" + major["file"], encoding="utf-8") as f:
+            with open("site/data/ucsb/" + major["file"], encoding="utf-8") as f:
                 graph = json.load(f)
             expected = sorted(n["id"] for n in graph["nodes"] if n["status"] == "active" and n["in_major"])
             # An online twin (PSTATW 120A) shares its base course's card (item 13).
@@ -365,7 +365,7 @@ def main():
         page.keyboard.press("Escape")
         page.wait_for_timeout(100)
         check("Esc clears the selection", page.evaluate("selected") is None)
-        check("Esc puts the address back to the major", page.evaluate("location.hash") == "#computer-engineering-bs")
+        check("Esc puts the address back to the major", page.evaluate("location.hash") == "#ucsb/computer-engineering-bs")
         box(page, "ECE 10A").click()
         page.click("[data-close]")
         page.wait_for_timeout(100)
@@ -639,7 +639,7 @@ def main():
         other.goto(SITE + "#plan/economics-ba/" + packed)
         other.wait_for_function("graph && currentView === 'plan'", timeout=15000)
         check("plan: a share link opens the same plan elsewhere", other.evaluate("JSON.stringify(plan.placed)") == placed)
-        check("plan: ...and tidies the address afterwards", other.evaluate("location.hash") == "#plan/economics-ba")
+        check("plan: ...and tidies the address afterwards", other.evaluate("location.hash") == "#ucsb/plan/economics-ba")
         other.close()
         with page.expect_download() as download:
             page.click("#plan-download")
@@ -942,7 +942,7 @@ def main():
         # 6. Links and notices
         box(page, "ECON 10A").click()
         page.wait_for_timeout(100)
-        check("selecting a course puts it in the address", page.evaluate("location.hash") == "#economics-ba/ECON+10A",
+        check("selecting a course puts it in the address", page.evaluate("location.hash") == "#ucsb/economics-ba/ECON+10A",
               page.evaluate("location.hash"))
         page.goto(SITE + "404.html")
         page.goto(SITE + "#statistics-and-data-science-bs/PSTAT+120B")

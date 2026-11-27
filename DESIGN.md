@@ -26,7 +26,7 @@ flowchart TD
   C -->|build_majors.py| E[majors/*.json: requirements per program]
   D --> F[build_graph.py]
   E --> F
-  F --> G[site/data/*.json: one graph per program]
+  F --> G[site/data/ucsb/*.json: one graph per program]
   G --> H[Static site in the browser]
 ```
 
@@ -35,7 +35,7 @@ flowchart TD
 | Fetch | `fetch.py`, `fetch_programs.py` | `data/raw_*.json` | Downloads every course and program, about 40 requests |
 | Parse | `parser.py`, `build_prereqs.py` | `data/prereqs.json` | Turns each prerequisite sentence into an AND/OR tree |
 | Translate | `build_majors.py` | `data/majors/*.json` | Turns the catalog's requirement rules into five simple types |
-| Build | `build_graph.py` | `site/data/*.json` | Connects trees and requirements into one graph per program |
+| Build | `build_graph.py` | `site/data/ucsb/*.json` | Connects trees and requirements into one graph per program |
 | One-file copy | `build_single.py` | `site/ucsb-prereq-map.html` | Packs the whole site into one file that works offline |
 
 The site is one page with one plain script per job:
