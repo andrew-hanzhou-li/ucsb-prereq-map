@@ -214,3 +214,25 @@ The pipeline split into `pipeline/common/` and `pipeline/campuses/<id>/` happens
 | UCSB, for comparison | 150 | 89% random, 96% major | its own "final" group |
 
 The 95% bar is met: the latest honest score is 97% (96.9% without the four courses seen earlier). Marking UCSD "Ready" is Andrew's call. Most remaining misses are long-tail phrasings ("PHYS 2A/2AR-B-C-D", "POLI 5(D)", "previous course") and two readings where labelers differ (whether "or consent of instructor" covers only its own sentence).
+
+## UCSD completion plan: offerings, AP credit, majors (2026-11-27)
+
+"Ready" means changing UCSD's status in `site/campus.js` from "next" to "ready", so it can be picked on the campus screen without `?preview`. That's Andrew's call; nothing is public until `all-uc` is merged to `main`.
+
+### 1. When each course is offered
+- **Source:** UCSD's Schedule of Classes (act.ucsd.edu, robots.txt allows it). The catalog states quarters for only 76 courses.
+- **Method:** `pipeline/campuses/ucsd/fetch_offerings.py` searches one subject at a time for each of the last two academic years' quarters (FA24–SP26) plus summer 2025, with a 1-second pause, a plain user agent, and saved pages so it can resume. `extract_offerings.py` records each course's quarters; a course is "offered" in a quarter it ran in either year.
+- **Checks:** counts per term look plausible; spot-check 10 well-known courses (CSE 8A, MATH 20A …) by hand; the planner's "assumed" marker disappears for courses with data.
+
+### 2. AP credit chart
+- **Source:** the catalog's PDF, `_files/advanced-placement-credit-chart-2026.pdf`. Only the second column ("UC San Diego course exemptions, for use on major") matters for prerequisites; college GE columns are left out.
+- **Method:** pdftotext gives the column text; it's typed into `data/ucsd/ap_credit.json` in UCSB's format (exam, scores, units, equivalent courses), as UCSB's was. `build_credit.py --campus ucsd` checks every code against the catalog and writes `site/data/ucsd/credit.json`.
+- **Checks:** every equivalent is a real course; a second pass compares each exam row with the PDF text; browser check that the Credit box shows UCSD's chart.
+
+### 3. Majors
+- **Source:** the catalog's undergraduate program pages (`curric/<DEPT>-ug.html`), about 70 pages, several majors each, written as prose and lists.
+- **Method:** per major, translate the requirements into UCSB's requirement format (all / choose N / units / course / text), and keep the catalog's prose as notes. Each major is translated twice, independently, from the page text; differences are settled from the text. Every code must exist in the catalog; anything that can't be expressed stays as a text item, never dropped.
+- **Checks:** program file validation (codes, counts possible); data checks on the built graphs; a sample of majors compared by hand against the catalog page; browser checks for a UCSD major map and plan (with Auto-fill).
+- **Site:** UCSD lists majors (and keeps department maps for browsing courses).
+
+Order: offerings fetch runs in the background (slow but simple) while the AP chart is typed, then majors.
