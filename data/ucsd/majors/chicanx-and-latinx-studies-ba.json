@@ -1,0 +1,650 @@
+{
+  "name": "Chicanx and Latinx Studies - BA",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Chicanx and Latinx Studies",
+  "source": "https://catalog.ucsd.edu/curric/CLS.html",
+  "narrative": [
+    "All courses counting toward the major must be taken for a letter grade.",
+    "Students may take no more than three upper-division courses in any one department.",
+    "Students can only overlap a maximum of two courses (eight units) between their major and minor.",
+    "Maintain a 2.0 GPA.",
+    "Students may petition to receive credit for relevant courses not listed in the catalog. All study abroad courses must be petitioned.",
+    "The CLS major requires fifty-six units of study to complete the program (fourteen four-credit courses)."
+  ],
+  "sections": [
+    {
+      "name": "Lower-division courses",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "CLX 1"
+              },
+              {
+                "type": "course",
+                "code": "ETHN 30"
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "CLX 2"
+              },
+              {
+                "type": "course",
+                "code": "CLX 3"
+              },
+              {
+                "type": "course",
+                "code": "HILD 7C"
+              },
+              {
+                "type": "text",
+                "text": "Course from another department or university by petition."
+              }
+            ],
+            "label": "One additional course"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Upper-division core courses",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "CLX 101"
+              },
+              {
+                "type": "course",
+                "code": "AAS 170"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "CLX 102"
+          },
+          {
+            "type": "course",
+            "code": "CLX 103"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Upper-division electives",
+      "requirement": {
+        "type": "choose",
+        "count": 9,
+        "items": [
+          {
+            "type": "course",
+            "code": "ANAR 159"
+          },
+          {
+            "type": "course",
+            "code": "ANSC 104"
+          },
+          {
+            "type": "course",
+            "code": "ANSC 117"
+          },
+          {
+            "type": "course",
+            "code": "ANSC 135"
+          },
+          {
+            "type": "course",
+            "code": "AAS 170"
+          },
+          {
+            "type": "course",
+            "code": "CGS 127"
+          },
+          {
+            "type": "course",
+            "code": "CGS 137"
+          },
+          {
+            "type": "course",
+            "code": "CGS 187"
+          },
+          {
+            "type": "course",
+            "code": "COMM 111B"
+          },
+          {
+            "type": "course",
+            "code": "COMM 140"
+          },
+          {
+            "type": "course",
+            "code": "COMM 155"
+          },
+          {
+            "type": "course",
+            "code": "COMM 183"
+          },
+          {
+            "type": "course",
+            "code": "ECON 162"
+          },
+          {
+            "type": "course",
+            "code": "EDS 113"
+          },
+          {
+            "type": "course",
+            "code": "EDS 117"
+          },
+          {
+            "type": "course",
+            "code": "EDS 125"
+          },
+          {
+            "type": "course",
+            "code": "ETHN 108"
+          },
+          {
+            "type": "course",
+            "code": "ETHN 113"
+          },
+          {
+            "type": "course",
+            "code": "ETHN 116"
+          },
+          {
+            "type": "course",
+            "code": "ETHN 118"
+          },
+          {
+            "type": "course",
+            "code": "ETHN 119"
+          },
+          {
+            "type": "course",
+            "code": "ETHN 129"
+          },
+          {
+            "type": "course",
+            "code": "ETHN 130"
+          },
+          {
+            "type": "course",
+            "code": "ETHN 131"
+          },
+          {
+            "type": "course",
+            "code": "ETHN 132"
+          },
+          {
+            "type": "course",
+            "code": "ETHN 133"
+          },
+          {
+            "type": "course",
+            "code": "ETHN 134"
+          },
+          {
+            "type": "course",
+            "code": "ETHN 135A"
+          },
+          {
+            "type": "course",
+            "code": "ETHN 135B"
+          },
+          {
+            "type": "course",
+            "code": "ETHN 137"
+          },
+          {
+            "type": "course",
+            "code": "ETHN 138"
+          },
+          {
+            "type": "course",
+            "code": "ETHN 139"
+          },
+          {
+            "type": "course",
+            "code": "ETHN 143"
+          },
+          {
+            "type": "course",
+            "code": "ETHN 146A"
+          },
+          {
+            "type": "course",
+            "code": "ETHN 153"
+          },
+          {
+            "type": "course",
+            "code": "ETHN 154"
+          },
+          {
+            "type": "course",
+            "code": "ETHN 168"
+          },
+          {
+            "type": "course",
+            "code": "ETHN 180"
+          },
+          {
+            "type": "course",
+            "code": "ETHN 187"
+          },
+          {
+            "type": "course",
+            "code": "GLBH 108"
+          },
+          {
+            "type": "course",
+            "code": "GLBH 114"
+          },
+          {
+            "type": "course",
+            "code": "HILA 100"
+          },
+          {
+            "type": "course",
+            "code": "HILA 101"
+          },
+          {
+            "type": "course",
+            "code": "HILA 102"
+          },
+          {
+            "type": "course",
+            "code": "HILA 114"
+          },
+          {
+            "type": "course",
+            "code": "HILA 115"
+          },
+          {
+            "type": "course",
+            "code": "HILA 118"
+          },
+          {
+            "type": "course",
+            "code": "HILA 119"
+          },
+          {
+            "type": "course",
+            "code": "HILA 122"
+          },
+          {
+            "type": "course",
+            "code": "HILA 124A"
+          },
+          {
+            "type": "course",
+            "code": "HILA 131"
+          },
+          {
+            "type": "course",
+            "code": "HILA 132"
+          },
+          {
+            "type": "course",
+            "code": "HILA 161"
+          },
+          {
+            "type": "course",
+            "code": "HILA 167"
+          },
+          {
+            "type": "course",
+            "code": "HILA 168"
+          },
+          {
+            "type": "course",
+            "code": "HILA 169"
+          },
+          {
+            "type": "course",
+            "code": "HIUS 102"
+          },
+          {
+            "type": "course",
+            "code": "HIUS 105"
+          },
+          {
+            "type": "course",
+            "code": "HIUS 113"
+          },
+          {
+            "type": "course",
+            "code": "HIUS 136"
+          },
+          {
+            "type": "course",
+            "code": "HIUS 146"
+          },
+          {
+            "type": "course",
+            "code": "HIUS 155"
+          },
+          {
+            "type": "course",
+            "code": "HIUS 158"
+          },
+          {
+            "type": "course",
+            "code": "HIUS 159"
+          },
+          {
+            "type": "course",
+            "code": "HIUS 167"
+          },
+          {
+            "type": "course",
+            "code": "HIUS 168"
+          },
+          {
+            "type": "course",
+            "code": "HIUS 180"
+          },
+          {
+            "type": "course",
+            "code": "HITO 156"
+          },
+          {
+            "type": "course",
+            "code": "LIGN 143"
+          },
+          {
+            "type": "course",
+            "code": "LIGN 152"
+          },
+          {
+            "type": "course",
+            "code": "LIGN 178"
+          },
+          {
+            "type": "course",
+            "code": "LTAM 100"
+          },
+          {
+            "type": "course",
+            "code": "LTAM 105"
+          },
+          {
+            "type": "course",
+            "code": "LTAM 107"
+          },
+          {
+            "type": "course",
+            "code": "LTAM 108"
+          },
+          {
+            "type": "course",
+            "code": "LTAM 109"
+          },
+          {
+            "type": "course",
+            "code": "LTAM 110"
+          },
+          {
+            "type": "course",
+            "code": "LTEN 169"
+          },
+          {
+            "type": "course",
+            "code": "LTEN 171"
+          },
+          {
+            "type": "course",
+            "code": "LTEN 178"
+          },
+          {
+            "type": "course",
+            "code": "LTEN 180"
+          },
+          {
+            "type": "course",
+            "code": "LTSP 100A"
+          },
+          {
+            "type": "course",
+            "code": "LTSP 100F"
+          },
+          {
+            "type": "course",
+            "code": "LTSP 110"
+          },
+          {
+            "type": "course",
+            "code": "LTSP 116"
+          },
+          {
+            "type": "course",
+            "code": "LTSP 123"
+          },
+          {
+            "type": "course",
+            "code": "LTSP 124"
+          },
+          {
+            "type": "course",
+            "code": "LTSP 126"
+          },
+          {
+            "type": "course",
+            "code": "LTSP 128"
+          },
+          {
+            "type": "course",
+            "code": "LTSP 130A"
+          },
+          {
+            "type": "course",
+            "code": "LTSP 130B"
+          },
+          {
+            "type": "course",
+            "code": "LTSP 133"
+          },
+          {
+            "type": "course",
+            "code": "LTSP 135A"
+          },
+          {
+            "type": "course",
+            "code": "LTSP 135B"
+          },
+          {
+            "type": "course",
+            "code": "LTSP 136"
+          },
+          {
+            "type": "course",
+            "code": "LTSP 137"
+          },
+          {
+            "type": "course",
+            "code": "LTSP 138"
+          },
+          {
+            "type": "course",
+            "code": "LTSP 140"
+          },
+          {
+            "type": "course",
+            "code": "LTSP 142"
+          },
+          {
+            "type": "course",
+            "code": "LTSP 150B"
+          },
+          {
+            "type": "course",
+            "code": "LTSP 151"
+          },
+          {
+            "type": "course",
+            "code": "LTSP 154"
+          },
+          {
+            "type": "course",
+            "code": "LTSP 162"
+          },
+          {
+            "type": "course",
+            "code": "LTSP 166"
+          },
+          {
+            "type": "course",
+            "code": "LTSP 169"
+          },
+          {
+            "type": "course",
+            "code": "LTSP 171"
+          },
+          {
+            "type": "course",
+            "code": "LTSP 172"
+          },
+          {
+            "type": "course",
+            "code": "LTSP 175"
+          },
+          {
+            "type": "course",
+            "code": "LTSP 177"
+          },
+          {
+            "type": "course",
+            "code": "PHIL 155"
+          },
+          {
+            "type": "course",
+            "code": "PHIL 156"
+          },
+          {
+            "type": "course",
+            "code": "POLI 100H"
+          },
+          {
+            "type": "course",
+            "code": "POLI 100J"
+          },
+          {
+            "type": "course",
+            "code": "POLI 105A"
+          },
+          {
+            "type": "course",
+            "code": "POLI 134J"
+          },
+          {
+            "type": "course",
+            "code": "POLI 146A"
+          },
+          {
+            "type": "course",
+            "code": "POLI 150A"
+          },
+          {
+            "type": "course",
+            "code": "TDAC 120"
+          },
+          {
+            "type": "course",
+            "code": "TDHT 108"
+          },
+          {
+            "type": "course",
+            "code": "TDHT 110"
+          },
+          {
+            "type": "course",
+            "code": "TDHT 111"
+          },
+          {
+            "type": "course",
+            "code": "TDMV 142"
+          },
+          {
+            "type": "course",
+            "code": "TDMV 146"
+          },
+          {
+            "type": "course",
+            "code": "USP 104"
+          },
+          {
+            "type": "course",
+            "code": "USP 135"
+          },
+          {
+            "type": "course",
+            "code": "USP 162"
+          },
+          {
+            "type": "course",
+            "code": "USP 176"
+          },
+          {
+            "type": "course",
+            "code": "USP 188"
+          },
+          {
+            "type": "course",
+            "code": "VIS 102"
+          },
+          {
+            "type": "course",
+            "code": "VIS 126AN"
+          },
+          {
+            "type": "course",
+            "code": "VIS 126BN"
+          },
+          {
+            "type": "course",
+            "code": "VIS 126C"
+          },
+          {
+            "type": "course",
+            "code": "VIS 126D"
+          },
+          {
+            "type": "course",
+            "code": "VIS 126Q"
+          },
+          {
+            "type": "course",
+            "code": "SOCI 117"
+          },
+          {
+            "type": "course",
+            "code": "LTSP 150A"
+          },
+          {
+            "type": "course",
+            "code": "ETHN 105"
+          }
+        ],
+        "notes": "Nine upper-division elective courses chosen from the approved list of courses. Students may take no more than three upper-division courses in any one department."
+      }
+    }
+  ]
+}

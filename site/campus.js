@@ -39,8 +39,8 @@ const CAMPUSES = [
 //   courseUrl     a course's catalog page from its code, when the catalog has
 //                 one page per course; otherwise the data gives each course's
 //                 own address (UCSD: one page per department)
-//   program(s)    what a student picks: UCSB has majors and minors; UCSD,
-//                 until its majors are read, has departments
+//   program(s)    what a student picks: UCSB has majors and minors; UCSD has
+//                 majors, plus a course map for each department
 //   examples      [address, name] for the front page's "For example"
 const CAMPUS_DETAILS = {
   ucsb: {
@@ -53,9 +53,9 @@ const CAMPUS_DETAILS = {
   ucsd: {
     catalog: "UC San Diego General Catalog", catalogHome: "https://catalog.ucsd.edu/",
     courseUrl: null,
-    program: "department", programs: "departments", apChart: true, exampleCourse: "CSE 12",
-    examples: [["computer-science-and-engineering", "Computer Science and Engineering"], ["mathematics", "Mathematics"],
-               ["biological-sciences", "Biological Sciences"]],
+    program: "major or department", programs: "majors and departments", apChart: true, exampleCourse: "CSE 12",
+    examples: [["computer-science-bs", "Computer Science (B.S.)"], ["mathematics-bs", "Mathematics (B.S.)"],
+               ["general-biology-bs", "General Biology (B.S.)"]],
   },
 };
 

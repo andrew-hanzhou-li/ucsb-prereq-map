@@ -1,0 +1,425 @@
+{
+ "id": "UCSD-MAJOR-environmental-chemistry-bs",
+ "name": "Environmental Chemistry - BS",
+ "kind": "major",
+ "type": "Bachelor's Degree",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsd.edu/curric/CHEM-ug.html",
+ "sections": [
+  {
+   "name": "Lower-Division Requirements",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "CHEM 6A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 6B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 6C",
+            "status": "active"
+           }
+          ]
+         },
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "CHEM 6AH",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 6BH",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 6CH",
+            "status": "active"
+           }
+          ]
+         }
+        ],
+        "count": 1
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "CHEM 7LM",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 7L",
+          "status": "active"
+         }
+        ],
+        "count": 1
+       }
+      ],
+      "label": "General chemistry, including laboratory"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "MATH 18",
+        "status": "active"
+       }
+      ],
+      "label": "Linear algebra"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "MATH 20A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 20B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 20C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 20D",
+        "status": "active"
+       }
+      ],
+      "label": "Calculus"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "PHYS 2A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 2B",
+        "status": "active"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "PHYS 2C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYS 2D",
+          "status": "active"
+         }
+        ],
+        "count": 1
+       }
+      ],
+      "label": "Physics"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "PHYS 2CL",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 2BL",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 2DL",
+        "status": "active"
+       }
+      ],
+      "count": 1,
+      "label": "Physics laboratory",
+      "notes": "PHYS 2CL [recommended]"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 41A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 41B",
+        "status": "active"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "CHEM 43A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 43AM",
+          "status": "active"
+         }
+        ],
+        "count": 1
+       }
+      ],
+      "label": "Organic chemistry, including laboratory"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Upper-Division Requirements",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "CHEM 130",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 131",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 132",
+          "status": "active"
+         }
+        ]
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "CHEM 126",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 127",
+          "status": "inactive"
+         }
+        ]
+       }
+      ],
+      "count": 1,
+      "label": "Physical chemistry",
+      "notes": "CHEM 130, 131, and 132 recommended, or CHEM 126-127"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 100A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 100B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 105A",
+        "status": "active"
+       }
+      ],
+      "label": "Three advanced laboratory courses"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 171",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 172",
+        "status": "active"
+       }
+      ],
+      "label": "Two quarters of environmental chemistry"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 173",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 174",
+        "status": "active"
+       }
+      ],
+      "label": "Atmospheric chemistry and marine chemistry"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 114A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 120A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 41C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 143C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "BILD 1",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "BILD 2",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "BILD 3",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "BIEB 121",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "BIEB 140",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "BIEB 144",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "BIEB 176",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ESYS 101",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 50",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 101",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 102",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 103",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 144",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 183",
+        "status": "active"
+       },
+       {
+        "type": "text",
+        "text": "Other courses, including four units of CHEM 195 or 199, may be considered by petition."
+       }
+      ],
+      "count": 4,
+      "label": "Electives",
+      "notes": "Any four with at least two upper-division"
+     }
+    ]
+   }
+  }
+ ],
+ "narrative": [
+  "Lower-division units: 62; upper-division units: 52–56; total units required for the major: 114–118.",
+  "All chemistry majors (including transfer students) must complete at least forty-eight or more units of upper-division chemistry course work. This course work must be taken while officially enrolled at UC San Diego.",
+  "The minimum GPA requirement (for both the major GPA and overall UC GPA) for graduation is 2.0. The minimum passing grade in required chemistry course work is a D, although students may not graduate with more than one D grade in upper-division required major course work and must maintain a minimum 2.0 GPA in the major.",
+  "All courses for the major, except for independent research (e.g., CHEM 199) and chemistry instruction (CHEM 195), must be taken for a letter grade.",
+  "Students have an option of earning a BS in environmental chemistry with or without ACS-Certification.",
+  "For ACS Certification (optional): Increase electives by one to a total of five. For three of the electives, choose CHEM 41C, 114A, and 120A. For two of the electives, choose two labs from among CHEM 143B-C-D, 108, 109, 123, 105B.",
+  "When choosing electives, pay special attention to whether the forty-eight-unit upper-division residency requirement has been met for the major requirements."
+ ]
+}

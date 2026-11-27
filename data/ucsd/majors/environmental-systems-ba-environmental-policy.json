@@ -1,0 +1,318 @@
+{
+  "name": "Environmental Systems - BA - Environmental Policy",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Environmental Systems Program",
+  "source": "https://catalog.ucsd.edu/curric/ESYS.html",
+  "narrative": [
+    "A grade point average of 2.0 or higher in the upper-division major program is required for graduation. Students must receive a grade of C- or better in any course to be counted toward fulfillment of the major requirements. In exceptional cases, students with a grade point average in the major of 2.5 or greater may petition to have one grade of D accepted.",
+    "All courses (lower and upper division) required for the major must be taken for a letter grade.",
+    "It is suggested that the integrating sequence ESYS 101, 102, and 103 should be completed by sophomore year, if possible.",
+    "Other courses may be substituted by petition."
+  ],
+  "sections": [
+    {
+      "name": "Lower-Division Requirements",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "course",
+            "code": "BILD 3"
+          },
+          {
+            "type": "course",
+            "code": "CHEM 6A"
+          },
+          {
+            "type": "course",
+            "code": "CHEM 6B"
+          },
+          {
+            "type": "course",
+            "code": "CHEM 6C"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "PHYS 1A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 1AL"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 1B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 1BL"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 1C"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 1CL"
+                  }
+                ]
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "PHYS 2A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 2B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 2C"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 10A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 10B"
+                  }
+                ]
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 20A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 20B"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "MATH 11"
+              },
+              {
+                "type": "course",
+                "code": "ECON 120A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 183"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "ECON 1"
+          },
+          {
+            "type": "course",
+            "code": "ECON 2"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Upper-Division Core Requirements",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "course",
+            "code": "ESYS 101"
+          },
+          {
+            "type": "course",
+            "code": "ESYS 102"
+          },
+          {
+            "type": "course",
+            "code": "ESYS 103"
+          },
+          {
+            "type": "course",
+            "code": "ECON 131"
+          },
+          {
+            "type": "course",
+            "code": "POLI 160AA"
+          },
+          {
+            "type": "all",
+            "label": "Senior Internship Project and Seminar",
+            "items": [
+              {
+                "type": "course",
+                "code": "ESYS 187A"
+              },
+              {
+                "type": "course",
+                "code": "ESYS 187B"
+              },
+              {
+                "type": "course",
+                "code": "ESYS 187C"
+              }
+            ],
+            "notes": "three-quarter sequence"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Upper-Division Electives",
+      "requirement": {
+        "type": "choose",
+        "count": 5,
+        "items": [
+          {
+            "type": "course",
+            "code": "ECON 116"
+          },
+          {
+            "type": "course",
+            "code": "ECON 125"
+          },
+          {
+            "type": "course",
+            "code": "ECON 130"
+          },
+          {
+            "type": "course",
+            "code": "ECON 132"
+          },
+          {
+            "type": "course",
+            "code": "ECON 135"
+          },
+          {
+            "type": "course",
+            "code": "ECON 144"
+          },
+          {
+            "type": "course",
+            "code": "ECON 145"
+          },
+          {
+            "type": "course",
+            "code": "POLI 102L"
+          },
+          {
+            "type": "course",
+            "code": "POLI 125A"
+          },
+          {
+            "type": "course",
+            "code": "POLI 125B"
+          },
+          {
+            "type": "course",
+            "code": "POLI 150A"
+          },
+          {
+            "type": "course",
+            "code": "POLI 160AB"
+          },
+          {
+            "type": "course",
+            "code": "POLI 162"
+          },
+          {
+            "type": "course",
+            "code": "POLI 168"
+          },
+          {
+            "type": "course",
+            "code": "HISC 105"
+          },
+          {
+            "type": "course",
+            "code": "ANBI 132"
+          },
+          {
+            "type": "course",
+            "code": "COMM 171"
+          },
+          {
+            "type": "course",
+            "code": "ENVR 102"
+          },
+          {
+            "type": "course",
+            "code": "ENVR 110"
+          },
+          {
+            "type": "course",
+            "code": "ENVR 130"
+          },
+          {
+            "type": "course",
+            "code": "ENVR 140"
+          },
+          {
+            "type": "course",
+            "code": "PHIL 148"
+          },
+          {
+            "type": "course",
+            "code": "PHIL 164"
+          },
+          {
+            "type": "course",
+            "code": "SIO 110"
+          },
+          {
+            "type": "course",
+            "code": "USP 124"
+          },
+          {
+            "type": "course",
+            "code": "USP 144"
+          },
+          {
+            "type": "course",
+            "code": "USP 170"
+          },
+          {
+            "type": "course",
+            "code": "USP 171"
+          }
+        ],
+        "notes": "Students select five elective courses from the list below."
+      }
+    }
+  ]
+}

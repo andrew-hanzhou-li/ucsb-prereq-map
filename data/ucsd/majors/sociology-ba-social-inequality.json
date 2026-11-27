@@ -1,0 +1,289 @@
+{
+  "name": "Sociology - BA - Social Inequality",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Sociology",
+  "source": "https://catalog.ucsd.edu/curric/SOC-ug.html",
+  "narrative": [
+    "All students must complete four lower-division and twelve upper-division courses in sociology.",
+    "A 2.0 GPA is required in the major, and students must earn at least a C– in each course used for the major.",
+    "No courses taken to apply toward the major may be taken on a Pass/Not Pass basis except SOCI 199. Only one such special studies course (including internships) may be applied toward the major.",
+    "Eight of the twelve upper-division courses in the undergraduate program must be taken in the Department of Sociology at UC San Diego, unless students obtain special acceptance of additional courses from the chair and the faculty undergraduate adviser.",
+    "Students may graduate with a BA in one of seven concentrations by choosing at least five upper-division classes from the course offerings in that concentration, as part of the ten upper-division courses for the major. Only one major concentration is allowed.",
+    "It is recommended that students concentrating in this area take SOCI 10 or 20 as part of their lower-division requirements."
+  ],
+  "sections": [
+    {
+      "name": "Lower Division",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "course",
+            "code": "SOCI 1"
+          },
+          {
+            "type": "course",
+            "code": "SOCI 2"
+          },
+          {
+            "type": "course",
+            "code": "SOCI 60"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "SOCI 10"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 20"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 30"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 40"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 50"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 70"
+              }
+            ]
+          }
+        ],
+        "notes": "We strongly recommend you take SOCI 1 and 2 in sequence."
+      }
+    },
+    {
+      "name": "Upper Division",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "SOCI 100"
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "SOCI 102"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 103M"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 104"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 104Q"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 105"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 106"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 106M"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 108"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 109"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 109M"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 110"
+                  }
+                ],
+                "label": "Methods course"
+              }
+            ]
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "choose",
+                "count": 5,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "SOCI 114"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 116"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 117"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 118"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 119"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 122"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 125"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 126"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 127"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 129"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 130E"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 132"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 133E"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 139"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 140A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 140J"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 148"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 148E"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 151"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 152"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 153"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 163"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 168"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 170"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 178"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 180"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 182"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 183"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 184"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 188J"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 188M"
+                  }
+                ],
+                "label": "Concentration in Social Inequality",
+                "notes": "at least five of the following courses as part of the ten upper-division courses required for the major"
+              },
+              {
+                "type": "choose",
+                "count": 5,
+                "items": [
+                  {
+                    "type": "any",
+                    "subject": "SOCI",
+                    "level": "upper",
+                    "except": [
+                      "SOCI 100"
+                    ]
+                  }
+                ],
+                "notes": "remaining upper-division sociology classes not already counted; only one special studies course (including internships) may be applied toward the major"
+              }
+            ],
+            "label": "Ten additional upper-division classes"
+          }
+        ]
+      }
+    }
+  ]
+}

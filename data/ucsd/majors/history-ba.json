@@ -1,0 +1,263 @@
+{
+  "name": "History - BA",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "History",
+  "source": "https://catalog.ucsd.edu/curric/HIST-ug.html",
+  "narrative": [
+    "To declare a major in history, consult with the undergraduate student affairs coordinator on the eighth floor of RWAC.",
+    "Students majoring in history will normally take at least eight of their twelve upper-division history courses at UC San Diego.",
+    "With the exception of 199 courses, all work in the major must be taken for a letter grade. Of the twelve upper-division courses required in the major, no more than two may be History 199 credits.",
+    "Some community college courses have been preapproved to count automatically toward the lower-division requirement. Majors may petition for other courses from other schools to count toward the lower-division requirement or for AP credits to count.",
+    "Degree type (BA) is not stated on the page; assumed BA."
+  ],
+  "sections": [
+    {
+      "name": "Lower-division requirements",
+      "requirement": {
+        "type": "choose",
+        "count": 1,
+        "items": [
+          {
+            "type": "choose",
+            "count": 3,
+            "items": [
+              {
+                "type": "course",
+                "code": "HILD 2A"
+              },
+              {
+                "type": "course",
+                "code": "HILD 2B"
+              },
+              {
+                "type": "course",
+                "code": "HILD 2C"
+              },
+              {
+                "type": "course",
+                "code": "HILD 7A"
+              },
+              {
+                "type": "course",
+                "code": "HILD 7B"
+              },
+              {
+                "type": "course",
+                "code": "HILD 7C"
+              },
+              {
+                "type": "course",
+                "code": "HILD 10"
+              },
+              {
+                "type": "course",
+                "code": "HILD 11"
+              },
+              {
+                "type": "course",
+                "code": "HILD 12"
+              },
+              {
+                "type": "course",
+                "code": "HILD 14"
+              },
+              {
+                "type": "course",
+                "code": "HILD 30"
+              },
+              {
+                "type": "course",
+                "code": "HILD 40"
+              },
+              {
+                "type": "course",
+                "code": "HILD 41"
+              },
+              {
+                "type": "course",
+                "code": "HILD 42"
+              },
+              {
+                "type": "course",
+                "code": "HILD 43"
+              },
+              {
+                "type": "course",
+                "code": "HILD 50"
+              },
+              {
+                "type": "course",
+                "code": "HILD 60"
+              }
+            ],
+            "label": "Three lower-division courses in history"
+          },
+          {
+            "type": "text",
+            "text": "Majors may also satisfy the lower-division requirement by completing the Revelle College Humanities Sequence or the Eleanor Roosevelt College Sequence \"Making of the Modern World.\""
+          }
+        ]
+      }
+    },
+    {
+      "name": "Upper-division requirements",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "course",
+            "code": "HITO 100"
+          },
+          {
+            "type": "choose",
+            "count": 12,
+            "items": [
+              {
+                "type": "any",
+                "subject": "HIAF",
+                "level": "upper"
+              },
+              {
+                "type": "any",
+                "subject": "HIEA",
+                "level": "upper"
+              },
+              {
+                "type": "any",
+                "subject": "HIEU",
+                "level": "upper"
+              },
+              {
+                "type": "any",
+                "subject": "HILA",
+                "level": "upper"
+              },
+              {
+                "type": "any",
+                "subject": "HINE",
+                "level": "upper"
+              },
+              {
+                "type": "any",
+                "subject": "HISA",
+                "level": "upper"
+              },
+              {
+                "type": "any",
+                "subject": "HISC",
+                "level": "upper"
+              },
+              {
+                "type": "any",
+                "subject": "HIUS",
+                "level": "upper"
+              },
+              {
+                "type": "any",
+                "subject": "HITO",
+                "level": "upper"
+              }
+            ],
+            "label": "Twelve four-unit upper-division courses",
+            "notes": "Twelve four-unit upper-division courses (including HITO 100), distributed as below; no more than two may be History 199 credits."
+          },
+          {
+            "type": "text",
+            "text": "At least three courses in the field of emphasis."
+          },
+          {
+            "type": "text",
+            "text": "At least three courses in non-fields of emphasis within the department."
+          },
+          {
+            "type": "text",
+            "text": "Three of the twelve courses must focus on the period before 1800, indicated by the (+)."
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "range",
+                "subject": "HIAF",
+                "from": 160,
+                "to": 190
+              },
+              {
+                "type": "range",
+                "subject": "HIEA",
+                "from": 160,
+                "to": 190
+              },
+              {
+                "type": "range",
+                "subject": "HIEU",
+                "from": 160,
+                "to": 190
+              },
+              {
+                "type": "range",
+                "subject": "HILA",
+                "from": 160,
+                "to": 190
+              },
+              {
+                "type": "range",
+                "subject": "HINE",
+                "from": 160,
+                "to": 190
+              },
+              {
+                "type": "range",
+                "subject": "HISA",
+                "from": 160,
+                "to": 190
+              },
+              {
+                "type": "range",
+                "subject": "HISC",
+                "from": 160,
+                "to": 190
+              },
+              {
+                "type": "range",
+                "subject": "HIUS",
+                "from": 160,
+                "to": 190
+              },
+              {
+                "type": "range",
+                "subject": "HITO",
+                "from": 160,
+                "to": 190
+              },
+              {
+                "type": "text",
+                "text": "Colloquia are courses with numbers between 160 and 190, or others approved by the undergraduate adviser."
+              }
+            ],
+            "label": "Colloquium",
+            "notes": "At least one of the twelve courses must be a colloquium in which students write a substantial term paper. The colloquium need not be in the major field of emphasis."
+          }
+        ]
+      }
+    },
+    {
+      "name": "Fields of emphasis",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "text",
+            "text": "Fields of emphasis: Preprofessional law, business, medicine, education, and global relations; Africa (HIAF); East Asia (HIEA); Europe (HIEU); Latin America (HILA); Near East (HINE); South Asia (HISA); History of Science (HISC); United States History (HIUS); Business; Gender and Sexuality; Global and Transnational; Law; Medicine; Race, Ethnicity, and Migration; War, Revolution, and Social Change. A list of courses approved for the thematic fields is available at http://history.ucsd.edu. In special cases, upon approval of the director of undergraduate studies, students may devise a different field of emphasis."
+          },
+          {
+            "type": "text",
+            "text": "The field of emphasis in global relations requires (1) at least eight credits (two courses) earned overseas (for instance, by taking one Global Seminar or one quarter of EAP), and (2) proficiency in a second language (four quarters of study or passing a proficiency exam)."
+          }
+        ]
+      }
+    }
+  ]
+}

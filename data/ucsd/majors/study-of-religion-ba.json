@@ -1,0 +1,999 @@
+{
+  "name": "Study of Religion - BA",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Program for the Study of Religion",
+  "source": "https://catalog.ucsd.edu/curric/RELI.html",
+  "narrative": [
+    "The major in the Study of Religion consists of twelve upper-division courses, achieving a balance between courses that focus on a single religious tradition or issue and those that explore various traditions and methodologies.",
+    "Students may petition other courses, including independent study and Education Abroad Program courses when appropriate.",
+    "Students may petition to use up to three upper-division courses (taken abroad) as electives for the major.",
+    "Double major: it may be possible for up to two courses to overlap with the other major.",
+    "Single tradition designations on the approved list: (B) Buddhism, (C) Christianity, (EA) East Asian, (H) Hinduism, (I) Islam, (J) Judaism, (P) Paganism."
+  ],
+  "sections": [
+    {
+      "name": "RELI 101 Requirement",
+      "requirement": {
+        "type": "all",
+        "notes": "All majors must take RELI 101: Tools and Methods in the Study of Religion",
+        "items": [
+          {
+            "type": "course",
+            "code": "RELI 101"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Seminar Requirement",
+      "requirement": {
+        "type": "choose",
+        "count": 1,
+        "notes": "One course must be a seminar, normally RELI 189. You may use your seminar to satisfy a distribution requirement and/or the tradition requirement.",
+        "items": [
+          {
+            "type": "course",
+            "code": "RELI 189"
+          },
+          {
+            "type": "text",
+            "text": "To use a different seminar, you must petition the program’s director."
+          }
+        ]
+      }
+    },
+    {
+      "name": "Distribution Requirement",
+      "requirement": {
+        "type": "all",
+        "notes": "Four courses must satisfy distribution requirements. All majors must take at least two upper-division courses within the School of Arts and Humanities, as well as two upper-division courses within the School of Social Sciences. Courses are to be selected from the approved course list in consultation with your faculty adviser. Neither RELI 101 nor lower-division courses can be used to satisfy this requirement.",
+        "items": [
+          {
+            "type": "choose",
+            "count": 2,
+            "label": "Arts and Humanities",
+            "items": [
+              {
+                "type": "course",
+                "code": "HIEA 126"
+              },
+              {
+                "type": "course",
+                "code": "HIEA 137"
+              },
+              {
+                "type": "course",
+                "code": "HIEU 104"
+              },
+              {
+                "type": "course",
+                "code": "HIEU 105"
+              },
+              {
+                "type": "course",
+                "code": "HIEU 107"
+              },
+              {
+                "type": "course",
+                "code": "HIEU 111"
+              },
+              {
+                "type": "course",
+                "code": "HIEU 115"
+              },
+              {
+                "type": "course",
+                "code": "HIEU 125"
+              },
+              {
+                "type": "course",
+                "code": "HIEU 132"
+              },
+              {
+                "type": "course",
+                "code": "HIEU 158"
+              },
+              {
+                "type": "course",
+                "code": "HIEU 159"
+              },
+              {
+                "type": "course",
+                "code": "HIEU 163"
+              },
+              {
+                "type": "course",
+                "code": "HINE 102"
+              },
+              {
+                "type": "course",
+                "code": "HINE 103"
+              },
+              {
+                "type": "course",
+                "code": "HINE 108"
+              },
+              {
+                "type": "course",
+                "code": "HINE 112A"
+              },
+              {
+                "type": "course",
+                "code": "HINE 113"
+              },
+              {
+                "type": "course",
+                "code": "HINE 114"
+              },
+              {
+                "type": "course",
+                "code": "HINE 116"
+              },
+              {
+                "type": "course",
+                "code": "HINE 118"
+              },
+              {
+                "type": "course",
+                "code": "HINE 119"
+              },
+              {
+                "type": "course",
+                "code": "HINE 126"
+              },
+              {
+                "type": "course",
+                "code": "HINE 130"
+              },
+              {
+                "type": "course",
+                "code": "HINE 131"
+              },
+              {
+                "type": "course",
+                "code": "HINE 145"
+              },
+              {
+                "type": "course",
+                "code": "HINE 162"
+              },
+              {
+                "type": "course",
+                "code": "HINE 170"
+              },
+              {
+                "type": "course",
+                "code": "HISC 110"
+              },
+              {
+                "type": "course",
+                "code": "HISC 166"
+              },
+              {
+                "type": "course",
+                "code": "HITO 104"
+              },
+              {
+                "type": "course",
+                "code": "HITO 124"
+              },
+              {
+                "type": "course",
+                "code": "JWSP 110"
+              },
+              {
+                "type": "course",
+                "code": "JWSP 130"
+              },
+              {
+                "type": "course",
+                "code": "JWSP 131"
+              },
+              {
+                "type": "course",
+                "code": "LTEU 158"
+              },
+              {
+                "type": "course",
+                "code": "LTWL 100"
+              },
+              {
+                "type": "course",
+                "code": "LTWL 129"
+              },
+              {
+                "type": "course",
+                "code": "LTWL 135"
+              },
+              {
+                "type": "course",
+                "code": "LTWL 136"
+              },
+              {
+                "type": "course",
+                "code": "LTWL 138"
+              },
+              {
+                "type": "course",
+                "code": "LTWL 145"
+              },
+              {
+                "type": "course",
+                "code": "LTWL 157"
+              },
+              {
+                "type": "course",
+                "code": "LTWL 158A"
+              },
+              {
+                "type": "course",
+                "code": "LTWL 158B"
+              },
+              {
+                "type": "course",
+                "code": "LTWL 158C"
+              },
+              {
+                "type": "course",
+                "code": "LTWL 168"
+              },
+              {
+                "type": "course",
+                "code": "LTWL 169"
+              },
+              {
+                "type": "course",
+                "code": "PHIL 104"
+              },
+              {
+                "type": "course",
+                "code": "PHIL 185"
+              },
+              {
+                "type": "course",
+                "code": "RELI 131"
+              },
+              {
+                "type": "course",
+                "code": "RELI 132"
+              },
+              {
+                "type": "course",
+                "code": "RELI 134"
+              },
+              {
+                "type": "course",
+                "code": "RELI 141"
+              },
+              {
+                "type": "course",
+                "code": "RELI 142"
+              },
+              {
+                "type": "course",
+                "code": "RELI 143"
+              },
+              {
+                "type": "course",
+                "code": "RELI 144"
+              },
+              {
+                "type": "course",
+                "code": "RELI 145"
+              },
+              {
+                "type": "course",
+                "code": "RELI 146"
+              },
+              {
+                "type": "course",
+                "code": "RELI 147"
+              },
+              {
+                "type": "course",
+                "code": "RELI 148"
+              },
+              {
+                "type": "course",
+                "code": "RELI 149"
+              },
+              {
+                "type": "course",
+                "code": "RELI 150"
+              },
+              {
+                "type": "course",
+                "code": "RELI 151"
+              },
+              {
+                "type": "course",
+                "code": "RELI 153"
+              },
+              {
+                "type": "course",
+                "code": "RELI 154"
+              },
+              {
+                "type": "course",
+                "code": "RELI 155"
+              },
+              {
+                "type": "course",
+                "code": "RELI 156"
+              },
+              {
+                "type": "course",
+                "code": "RELI 157GS"
+              },
+              {
+                "type": "course",
+                "code": "RELI 158GS"
+              },
+              {
+                "type": "course",
+                "code": "RELI 159GS"
+              },
+              {
+                "type": "course",
+                "code": "RELI 160GS"
+              },
+              {
+                "type": "course",
+                "code": "RELI 188"
+              },
+              {
+                "type": "course",
+                "code": "RELI 189"
+              },
+              {
+                "type": "course",
+                "code": "RELI 196AH"
+              },
+              {
+                "type": "course",
+                "code": "RELI 196BH"
+              },
+              {
+                "type": "course",
+                "code": "VIS 117I"
+              },
+              {
+                "type": "course",
+                "code": "VIS 120A"
+              },
+              {
+                "type": "course",
+                "code": "VIS 120B"
+              },
+              {
+                "type": "course",
+                "code": "VIS 120C"
+              },
+              {
+                "type": "course",
+                "code": "VIS 121AN"
+              },
+              {
+                "type": "course",
+                "code": "VIS 121B"
+              },
+              {
+                "type": "course",
+                "code": "VIS 122AN"
+              },
+              {
+                "type": "course",
+                "code": "VIS 122D"
+              },
+              {
+                "type": "course",
+                "code": "VIS 124BN"
+              },
+              {
+                "type": "course",
+                "code": "VIS 126BN"
+              },
+              {
+                "type": "course",
+                "code": "VIS 126I"
+              },
+              {
+                "type": "course",
+                "code": "VIS 126K"
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 2,
+            "label": "Social Sciences",
+            "items": [
+              {
+                "type": "course",
+                "code": "ANAR 142"
+              },
+              {
+                "type": "course",
+                "code": "ANAR 143"
+              },
+              {
+                "type": "course",
+                "code": "ANAR 144"
+              },
+              {
+                "type": "course",
+                "code": "ANAR 153"
+              },
+              {
+                "type": "course",
+                "code": "ANAR 154"
+              },
+              {
+                "type": "course",
+                "code": "ANAR 158"
+              },
+              {
+                "type": "course",
+                "code": "ANSC 120"
+              },
+              {
+                "type": "course",
+                "code": "ANSC 130"
+              },
+              {
+                "type": "course",
+                "code": "ANSC 136"
+              },
+              {
+                "type": "course",
+                "code": "ANSC 137"
+              },
+              {
+                "type": "course",
+                "code": "ANSC 154"
+              },
+              {
+                "type": "course",
+                "code": "ANSC 160"
+              },
+              {
+                "type": "course",
+                "code": "COMM 176"
+              },
+              {
+                "type": "course",
+                "code": "ETHN 110"
+              },
+              {
+                "type": "course",
+                "code": "ETHN 188"
+              },
+              {
+                "type": "course",
+                "code": "POLI 110A"
+              },
+              {
+                "type": "course",
+                "code": "POLI 110B"
+              },
+              {
+                "type": "course",
+                "code": "POLI 121"
+              },
+              {
+                "type": "course",
+                "code": "POLI 121B"
+              },
+              {
+                "type": "course",
+                "code": "POLI 131"
+              },
+              {
+                "type": "course",
+                "code": "POLI 136"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 100"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 157"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 160"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 188E"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 188F"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 188G"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Electives",
+      "requirement": {
+        "type": "choose",
+        "count": 6,
+        "notes": "Six elective courses from the approved course list to be selected in consultation with your faculty adviser.",
+        "items": [
+          {
+            "type": "course",
+            "code": "HIEA 126"
+          },
+          {
+            "type": "course",
+            "code": "HIEA 137"
+          },
+          {
+            "type": "course",
+            "code": "HIEU 104"
+          },
+          {
+            "type": "course",
+            "code": "HIEU 105"
+          },
+          {
+            "type": "course",
+            "code": "HIEU 107"
+          },
+          {
+            "type": "course",
+            "code": "HIEU 111"
+          },
+          {
+            "type": "course",
+            "code": "HIEU 115"
+          },
+          {
+            "type": "course",
+            "code": "HIEU 125"
+          },
+          {
+            "type": "course",
+            "code": "HIEU 132"
+          },
+          {
+            "type": "course",
+            "code": "HIEU 158"
+          },
+          {
+            "type": "course",
+            "code": "HIEU 159"
+          },
+          {
+            "type": "course",
+            "code": "HIEU 163"
+          },
+          {
+            "type": "course",
+            "code": "HINE 102"
+          },
+          {
+            "type": "course",
+            "code": "HINE 103"
+          },
+          {
+            "type": "course",
+            "code": "HINE 108"
+          },
+          {
+            "type": "course",
+            "code": "HINE 112A"
+          },
+          {
+            "type": "course",
+            "code": "HINE 113"
+          },
+          {
+            "type": "course",
+            "code": "HINE 114"
+          },
+          {
+            "type": "course",
+            "code": "HINE 116"
+          },
+          {
+            "type": "course",
+            "code": "HINE 118"
+          },
+          {
+            "type": "course",
+            "code": "HINE 119"
+          },
+          {
+            "type": "course",
+            "code": "HINE 126"
+          },
+          {
+            "type": "course",
+            "code": "HINE 130"
+          },
+          {
+            "type": "course",
+            "code": "HINE 131"
+          },
+          {
+            "type": "course",
+            "code": "HINE 145"
+          },
+          {
+            "type": "course",
+            "code": "HINE 162"
+          },
+          {
+            "type": "course",
+            "code": "HINE 170"
+          },
+          {
+            "type": "course",
+            "code": "HISC 110"
+          },
+          {
+            "type": "course",
+            "code": "HISC 166"
+          },
+          {
+            "type": "course",
+            "code": "HITO 104"
+          },
+          {
+            "type": "course",
+            "code": "HITO 124"
+          },
+          {
+            "type": "course",
+            "code": "JWSP 110"
+          },
+          {
+            "type": "course",
+            "code": "JWSP 130"
+          },
+          {
+            "type": "course",
+            "code": "JWSP 131"
+          },
+          {
+            "type": "course",
+            "code": "LTEU 158"
+          },
+          {
+            "type": "course",
+            "code": "LTWL 100"
+          },
+          {
+            "type": "course",
+            "code": "LTWL 129"
+          },
+          {
+            "type": "course",
+            "code": "LTWL 135"
+          },
+          {
+            "type": "course",
+            "code": "LTWL 136"
+          },
+          {
+            "type": "course",
+            "code": "LTWL 138"
+          },
+          {
+            "type": "course",
+            "code": "LTWL 145"
+          },
+          {
+            "type": "course",
+            "code": "LTWL 157"
+          },
+          {
+            "type": "course",
+            "code": "LTWL 158A"
+          },
+          {
+            "type": "course",
+            "code": "LTWL 158B"
+          },
+          {
+            "type": "course",
+            "code": "LTWL 158C"
+          },
+          {
+            "type": "course",
+            "code": "LTWL 168"
+          },
+          {
+            "type": "course",
+            "code": "LTWL 169"
+          },
+          {
+            "type": "course",
+            "code": "PHIL 104"
+          },
+          {
+            "type": "course",
+            "code": "PHIL 185"
+          },
+          {
+            "type": "course",
+            "code": "RELI 131"
+          },
+          {
+            "type": "course",
+            "code": "RELI 132"
+          },
+          {
+            "type": "course",
+            "code": "RELI 134"
+          },
+          {
+            "type": "course",
+            "code": "RELI 141"
+          },
+          {
+            "type": "course",
+            "code": "RELI 142"
+          },
+          {
+            "type": "course",
+            "code": "RELI 143"
+          },
+          {
+            "type": "course",
+            "code": "RELI 144"
+          },
+          {
+            "type": "course",
+            "code": "RELI 145"
+          },
+          {
+            "type": "course",
+            "code": "RELI 146"
+          },
+          {
+            "type": "course",
+            "code": "RELI 147"
+          },
+          {
+            "type": "course",
+            "code": "RELI 148"
+          },
+          {
+            "type": "course",
+            "code": "RELI 149"
+          },
+          {
+            "type": "course",
+            "code": "RELI 150"
+          },
+          {
+            "type": "course",
+            "code": "RELI 151"
+          },
+          {
+            "type": "course",
+            "code": "RELI 153"
+          },
+          {
+            "type": "course",
+            "code": "RELI 154"
+          },
+          {
+            "type": "course",
+            "code": "RELI 155"
+          },
+          {
+            "type": "course",
+            "code": "RELI 156"
+          },
+          {
+            "type": "course",
+            "code": "RELI 157GS"
+          },
+          {
+            "type": "course",
+            "code": "RELI 158GS"
+          },
+          {
+            "type": "course",
+            "code": "RELI 159GS"
+          },
+          {
+            "type": "course",
+            "code": "RELI 160GS"
+          },
+          {
+            "type": "course",
+            "code": "RELI 188"
+          },
+          {
+            "type": "course",
+            "code": "RELI 189"
+          },
+          {
+            "type": "course",
+            "code": "RELI 196AH"
+          },
+          {
+            "type": "course",
+            "code": "RELI 196BH"
+          },
+          {
+            "type": "course",
+            "code": "VIS 117I"
+          },
+          {
+            "type": "course",
+            "code": "VIS 120A"
+          },
+          {
+            "type": "course",
+            "code": "VIS 120B"
+          },
+          {
+            "type": "course",
+            "code": "VIS 120C"
+          },
+          {
+            "type": "course",
+            "code": "VIS 121AN"
+          },
+          {
+            "type": "course",
+            "code": "VIS 121B"
+          },
+          {
+            "type": "course",
+            "code": "VIS 122AN"
+          },
+          {
+            "type": "course",
+            "code": "VIS 122D"
+          },
+          {
+            "type": "course",
+            "code": "VIS 124BN"
+          },
+          {
+            "type": "course",
+            "code": "VIS 126BN"
+          },
+          {
+            "type": "course",
+            "code": "VIS 126I"
+          },
+          {
+            "type": "course",
+            "code": "VIS 126K"
+          },
+          {
+            "type": "course",
+            "code": "ANAR 142"
+          },
+          {
+            "type": "course",
+            "code": "ANAR 143"
+          },
+          {
+            "type": "course",
+            "code": "ANAR 144"
+          },
+          {
+            "type": "course",
+            "code": "ANAR 153"
+          },
+          {
+            "type": "course",
+            "code": "ANAR 154"
+          },
+          {
+            "type": "course",
+            "code": "ANAR 158"
+          },
+          {
+            "type": "course",
+            "code": "ANSC 120"
+          },
+          {
+            "type": "course",
+            "code": "ANSC 130"
+          },
+          {
+            "type": "course",
+            "code": "ANSC 136"
+          },
+          {
+            "type": "course",
+            "code": "ANSC 137"
+          },
+          {
+            "type": "course",
+            "code": "ANSC 154"
+          },
+          {
+            "type": "course",
+            "code": "ANSC 160"
+          },
+          {
+            "type": "course",
+            "code": "COMM 176"
+          },
+          {
+            "type": "course",
+            "code": "ETHN 110"
+          },
+          {
+            "type": "course",
+            "code": "ETHN 188"
+          },
+          {
+            "type": "course",
+            "code": "POLI 110A"
+          },
+          {
+            "type": "course",
+            "code": "POLI 110B"
+          },
+          {
+            "type": "course",
+            "code": "POLI 121"
+          },
+          {
+            "type": "course",
+            "code": "POLI 121B"
+          },
+          {
+            "type": "course",
+            "code": "POLI 131"
+          },
+          {
+            "type": "course",
+            "code": "POLI 136"
+          },
+          {
+            "type": "course",
+            "code": "SOCI 100"
+          },
+          {
+            "type": "course",
+            "code": "SOCI 157"
+          },
+          {
+            "type": "course",
+            "code": "SOCI 160"
+          },
+          {
+            "type": "course",
+            "code": "SOCI 188E"
+          },
+          {
+            "type": "course",
+            "code": "SOCI 188F"
+          },
+          {
+            "type": "course",
+            "code": "SOCI 188G"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Tradition Requirement",
+      "requirement": {
+        "type": "text",
+        "text": "At least two of your twelve courses must focus on the same religious tradition. Courses that satisfy this requirement take a single religious tradition as their primary object of investigation and are marked as such on the approved course list."
+      }
+    }
+  ]
+}

@@ -40,6 +40,19 @@ def number_of(code):
     return int(match.group(1)) if match else None
 
 
+def catalog_form(code, catalog):
+    """The catalog's spelling of a code: "MAE 2" is listed as "MAE 02"."""
+    if code in catalog:
+        return code
+    match = re.match(r"(.+?) 0*(\d+)([A-Z]*)$", code)
+    if match:
+        for c in catalog:
+            other = re.match(r"(.+?) 0*(\d+)([A-Z]*)$", c)
+            if other and other.groups() == (match.group(1), match.group(2), match.group(3)):
+                return c
+    return code
+
+
 def expand(node, catalog, problems, where):
     """The node with shorthand items replaced by the courses they stand for,
     and every course given a status. Problems go into `problems`."""
@@ -48,7 +61,7 @@ def expand(node, catalog, problems, where):
         problems.append("%s: unknown node type %r" % (where, kind))
         return {"type": "text", "text": json.dumps(node)}
     if kind == "course":
-        code = re.sub(r"\s+", " ", node.get("code", "").strip())
+        code = catalog_form(re.sub(r"\s+", " ", node.get("code", "").strip()), catalog)
         if code not in catalog:
             problems.append("%s: %s isn't in the catalog" % (where, code))
         return {"type": "course", "code": code, "status": "active" if code in catalog else "inactive"}

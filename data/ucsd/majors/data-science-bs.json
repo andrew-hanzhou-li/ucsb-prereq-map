@@ -1,0 +1,665 @@
+{
+  "name": "Data Science - BS",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Data Science",
+  "major_code": "DSC-BS-001",
+  "source": "https://catalog.ucsd.edu/curric/DSC-ug.html",
+  "narrative": [
+    "The major consists of 112 units, with fifty-two units from lower-division courses and sixty units from upper-division courses.",
+    "Lower division: Students are expected to complete the following fifty-two units by the end of their sophomore year. All courses must be taken for a letter grade and passed with a minimum grade of C–.",
+    "Upper division: Students must complete sixty upper-division units. All courses must be taken for a letter grade unless offered Pass/Not Pass only. A minimum grade of C– is required.",
+    "Data science majors may not minor in data science (DSC-MN-001).",
+    "The data science and business data science majors are “selective.” Continuing students must complete the screening courses MATH 18 or MATH 31AH, MATH 20C or MATH 31BH, and DSC 10.",
+    "Students majoring or minoring in any of the computer science engineering programs (CSE-BS-001/ECE-BS-001, CSE-BS-002, CSE-BS-003, CSE-BS-004, CSE MN-001) may not double major or minor in data science or business data science. Students may not double major in data science and business data science.",
+    "Students will be expected to fulfill all prerequisites for all courses, which may entail additional course work beyond the data science major requirements."
+  ],
+  "sections": [
+    {
+      "name": "Lower Division",
+      "requirement": {
+        "type": "all",
+        "label": "Lower Division (fifty-two units)",
+        "items": [
+          {
+            "type": "all",
+            "label": "Data Science (twenty-eight units)",
+            "notes": "COGS 9, DSC 10/R, DSC 20/R, DSC 30/R, DSC 40A/R, DSC 40B/R, DSC 80/R",
+            "items": [
+              {
+                "type": "course",
+                "code": "COGS 9"
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "DSC 10"
+                  },
+                  {
+                    "type": "course",
+                    "code": "DSC 10R"
+                  }
+                ]
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "DSC 20"
+                  },
+                  {
+                    "type": "course",
+                    "code": "DSC 20R"
+                  }
+                ]
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "DSC 30"
+                  },
+                  {
+                    "type": "course",
+                    "code": "DSC 30R"
+                  }
+                ]
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "DSC 40A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "DSC 40AR"
+                  }
+                ]
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "DSC 40B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "DSC 40BR"
+                  }
+                ]
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "DSC 80"
+                  },
+                  {
+                    "type": "course",
+                    "code": "DSC 80R"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "all",
+            "label": "Mathematics (sixteen units)",
+            "items": [
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 18"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 31AH"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "MATH 20A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 20B"
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 20C"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 31BH"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "label": "Subject Domain Courses",
+            "notes": "Students must choose one of the following two-course sequences (eight units)",
+            "items": [
+              {
+                "type": "all",
+                "label": "Business Analytics and Econometrics",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "ECON 1"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ECON 3"
+                  }
+                ]
+              },
+              {
+                "type": "all",
+                "label": "Machine Learning and Artificial Intelligence",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "COGS 14A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "COGS 14B"
+                  }
+                ]
+              },
+              {
+                "type": "all",
+                "label": "Science",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "BILD 1"
+                  },
+                  {
+                    "type": "course",
+                    "code": "BILD 3"
+                  }
+                ]
+              },
+              {
+                "type": "all",
+                "label": "Social Sciences I",
+                "notes": "Catalog text: (POLI 5 or POLI 5D or ECON 5) or (POLI 30 or POLI 30D); read as a two-course sequence per the heading.",
+                "items": [
+                  {
+                    "type": "choose",
+                    "count": 1,
+                    "items": [
+                      {
+                        "type": "course",
+                        "code": "POLI 5"
+                      },
+                      {
+                        "type": "course",
+                        "code": "POLI 5D"
+                      },
+                      {
+                        "type": "course",
+                        "code": "ECON 5"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "choose",
+                    "count": 1,
+                    "items": [
+                      {
+                        "type": "course",
+                        "code": "POLI 30"
+                      },
+                      {
+                        "type": "course",
+                        "code": "POLI 30D"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "all",
+                "label": "Social Sciences II",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "SOCI 60"
+                  },
+                  {
+                    "type": "course",
+                    "code": "USP 4"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Upper Division",
+      "requirement": {
+        "type": "all",
+        "label": "Upper Division (sixty units)",
+        "items": [
+          {
+            "type": "all",
+            "label": "Core Courses (thirty-two units)",
+            "items": [
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "ECON 120A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 183"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 181A"
+                  }
+                ]
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 189"
+                  },
+                  {
+                    "type": "course",
+                    "code": "DSC 152"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "DSC 100"
+              },
+              {
+                "type": "course",
+                "code": "DSC 102"
+              },
+              {
+                "type": "course",
+                "code": "DSC 106"
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "DSC 140A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CSE 150A"
+                  }
+                ]
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "DSC 140B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CSE 151A"
+                  }
+                ]
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "DSC 148"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CSE 158"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CSE 158R"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "all",
+            "label": "Senior Project (eight units)",
+            "items": [
+              {
+                "type": "course",
+                "code": "DSC 180A"
+              },
+              {
+                "type": "course",
+                "code": "DSC 180B"
+              }
+            ]
+          },
+          {
+            "type": "units",
+            "units": 20,
+            "label": "Electives (twenty units)",
+            "notes": "Any upper-division data science course not used to fulfill other requirements with the exception of DSC 197, 198, and 199. COGS 120 is cross-listed with CSE 170; ESYS 103 with MAE 124; POLI 117 with SIO 109.",
+            "items": [
+              {
+                "type": "any",
+                "subject": "DSC",
+                "level": "upper",
+                "except": [
+                  "DSC 197",
+                  "DSC 198",
+                  "DSC 199"
+                ]
+              },
+              {
+                "type": "course",
+                "code": "BICD 100"
+              },
+              {
+                "type": "course",
+                "code": "BIEB 174"
+              },
+              {
+                "type": "course",
+                "code": "COGS 108"
+              },
+              {
+                "type": "course",
+                "code": "COGS 109"
+              },
+              {
+                "type": "course",
+                "code": "COGS 118C"
+              },
+              {
+                "type": "course",
+                "code": "COGS 118D"
+              },
+              {
+                "type": "course",
+                "code": "COGS 120"
+              },
+              {
+                "type": "course",
+                "code": "COGS 121"
+              },
+              {
+                "type": "course",
+                "code": "COGS 180"
+              },
+              {
+                "type": "course",
+                "code": "COGS 181"
+              },
+              {
+                "type": "course",
+                "code": "COGS 189"
+              },
+              {
+                "type": "course",
+                "code": "COMM 106I"
+              },
+              {
+                "type": "course",
+                "code": "CSE 106"
+              },
+              {
+                "type": "course",
+                "code": "CSE 151B"
+              },
+              {
+                "type": "course",
+                "code": "CSE 152A"
+              },
+              {
+                "type": "course",
+                "code": "CSE 152B"
+              },
+              {
+                "type": "course",
+                "code": "CSE 156"
+              },
+              {
+                "type": "course",
+                "code": "CSE 166"
+              },
+              {
+                "type": "course",
+                "code": "CSE 170"
+              },
+              {
+                "type": "course",
+                "code": "CSE 180"
+              },
+              {
+                "type": "course",
+                "code": "ECON 120B"
+              },
+              {
+                "type": "course",
+                "code": "ECON 120C"
+              },
+              {
+                "type": "course",
+                "code": "ESYS 103"
+              },
+              {
+                "type": "course",
+                "code": "LIGN 167"
+              },
+              {
+                "type": "course",
+                "code": "MAE 124"
+              },
+              {
+                "type": "course",
+                "code": "MATH 152"
+              },
+              {
+                "type": "course",
+                "code": "MATH 173A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 173B"
+              },
+              {
+                "type": "course",
+                "code": "MATH 180A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 180B"
+              },
+              {
+                "type": "course",
+                "code": "MATH 180C"
+              },
+              {
+                "type": "course",
+                "code": "MATH 181A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 181B"
+              },
+              {
+                "type": "course",
+                "code": "MATH 181C"
+              },
+              {
+                "type": "course",
+                "code": "MATH 181D"
+              },
+              {
+                "type": "course",
+                "code": "MATH 181E"
+              },
+              {
+                "type": "course",
+                "code": "MATH 181F"
+              },
+              {
+                "type": "course",
+                "code": "MATH 194"
+              },
+              {
+                "type": "course",
+                "code": "MGT 103"
+              },
+              {
+                "type": "course",
+                "code": "MGT 153"
+              },
+              {
+                "type": "course",
+                "code": "PHIL 174"
+              },
+              {
+                "type": "course",
+                "code": "POLI 117"
+              },
+              {
+                "type": "course",
+                "code": "POLI 170A"
+              },
+              {
+                "type": "course",
+                "code": "POLI 171"
+              },
+              {
+                "type": "course",
+                "code": "POLI 172"
+              },
+              {
+                "type": "course",
+                "code": "POLI 173"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 106"
+              },
+              {
+                "type": "course",
+                "code": "SIO 109"
+              },
+              {
+                "type": "course",
+                "code": "SIO 132"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 102"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 103M"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 108"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 109"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 109M"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 136"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 165"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 171"
+              },
+              {
+                "type": "course",
+                "code": "USP 122"
+              },
+              {
+                "type": "course",
+                "code": "USP 125"
+              },
+              {
+                "type": "course",
+                "code": "USP 138"
+              },
+              {
+                "type": "course",
+                "code": "USP 153"
+              },
+              {
+                "type": "course",
+                "code": "USP 172"
+              },
+              {
+                "type": "course",
+                "code": "USP 175"
+              },
+              {
+                "type": "course",
+                "code": "USP 180"
+              },
+              {
+                "type": "text",
+                "text": "Students may petition to satisfy up to eight elective units using upper-division courses not on the list above but in their subject domain."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "name": "Political Science - BA",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Political Science",
+  "source": "https://catalog.ucsd.edu/curric/POLI-ug.html",
+  "narrative": [
+    "All courses taken for a political science major must be taken for a letter grade and a grade of C- or better must be earned.",
+    "Lower-division courses POLI 27, POLI 28, POLI 40, POLI 197I, and POLI 197SD may not be used to satisfy requirements in the political science major or minor.",
+    "Students may not receive credit for both POLI 5 and POLI 5D; for both POLI 10 and POLI 10D; for both 11 and 11D; 12 and 12D; 13 and 13D; 30 and 30D.",
+    "Two upper-division courses in a field may be substituted for that field's lower-division course. However, these courses cannot also be used to satisfy the upper-division course requirements for a concentration of that field.",
+    "At least ten courses in political science must be taken in residence at UC San Diego. A total maximum of six courses may be taken elsewhere and applied toward the major.",
+    "Students must maintain an overall 2.0 GPA in the major.",
+    "Courses taken to satisfy requirements for the major may not be taken Pass/Not Pass with the exception of a maximum of two independent study courses (POLI 199).",
+    "Students who pass the Advanced Placement (AP) Tests in American or Comparative Politics may petition to be exempted from taking POLI 10 or 10D or 11 or 11D (respectively) ... students must pass with a score of 5.",
+    "Law and Society 101, Contemporary Legal Issues, may be used in fulfilling the twelve upper-division course requirement for the political science major."
+  ],
+  "sections": [
+    {
+      "name": "Lower-division requirements",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "choose",
+            "count": 3,
+            "label": "Introductory courses",
+            "items": [
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "POLI 10"
+                  },
+                  {
+                    "type": "course",
+                    "code": "POLI 10D"
+                  }
+                ]
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "POLI 11"
+                  },
+                  {
+                    "type": "course",
+                    "code": "POLI 11D"
+                  }
+                ]
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "POLI 12"
+                  },
+                  {
+                    "type": "course",
+                    "code": "POLI 12D"
+                  }
+                ]
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "POLI 13"
+                  },
+                  {
+                    "type": "course",
+                    "code": "POLI 13D"
+                  }
+                ]
+              }
+            ],
+            "notes": "Three of the four lower-division courses from POLI 10 or 10D, 11 or 11D, 12 or 12D, 13 or 13D"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "POLI 30"
+              },
+              {
+                "type": "course",
+                "code": "POLI 30D"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Upper-division requirements",
+      "requirement": {
+        "type": "choose",
+        "count": 12,
+        "items": [
+          {
+            "type": "any",
+            "subject": "POLI",
+            "level": "upper"
+          }
+        ],
+        "notes": "Any twelve upper-division political science courses"
+      }
+    }
+  ]
+}

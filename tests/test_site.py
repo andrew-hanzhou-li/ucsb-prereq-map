@@ -304,9 +304,10 @@ def check_campuses(p):
           "Preview" in ucsd.inner_text(".campus-row.preview"))
     ucsd.goto(SITE + "?preview#ucsd/")
     ucsd.wait_for_function("typeof majors !== 'undefined' && majors.length > 0", timeout=15000)
-    check("ucsd: the front page lists departments",
+    check("ucsd: the front page lists majors and department maps",
           "department course maps" in ucsd.inner_text("#browse-count") and
-          ucsd.inner_text("#welcome-title") == "Choose a department." and
+          "majors" in ucsd.inner_text("#browse-count") and
+          ucsd.inner_text("#welcome-title") == "Choose a major or department." and
           "UC San Diego General Catalog" in ucsd.inner_text("#footer-catalog"))
     check("ucsd: no one-file copy link (it's UCSB only)", not ucsd.is_visible("#footer-download"))
     ucsd.goto(SITE + "?preview#ucsd/computer-science-and-engineering/CSE+100")
@@ -344,6 +345,21 @@ def check_campuses(p):
           ucsd.evaluate("getComputedStyle(document.querySelector('#about .campus-fullname').parentElement).fontSize") and
           "UC San Diego" in ucsd.inner_text("#about") and "GOLD" not in ucsd.inner_text("#about"))
     ucsd.keyboard.press("Escape")
+    ucsd.evaluate("localStorage.removeItem('prereq.ucsd.plan')")
+    ucsd.goto(SITE + "?preview#ucsd/computer-science-bs")
+    ucsd.wait_for_function("typeof graph !== 'undefined' && graph && graph.major && graph.major.id === 'UCSD-MAJOR-computer-science-bs'",
+                           timeout=15000)
+    check("ucsd: the Computer Science major map needs CSE 12, CSE 100 and MATH 20A",
+          ucsd.evaluate("['CSE 12', 'CSE 100', 'MATH 20A'].every(c => nodesById[c] && nodesById[c].in_major)"))
+    ucsd.goto(SITE + "?preview#ucsd/plan/computer-science-bs")
+    ucsd.wait_for_function("currentView === 'plan'", timeout=15000)
+    ucsd.wait_for_timeout(300)
+    ucsd.evaluate("autoFill(true)")
+    ucsd.wait_for_timeout(300)
+    check("ucsd: a major's plan has Auto-fill, which puts CSE 12 before CSE 100",
+          not ucsd.evaluate("planEl.autofill.hidden") and
+          ucsd.evaluate("plan.placed['CSE 12'] && plan.placed['CSE 100'] && "
+                        "slotIndex(plan.placed['CSE 12']) < slotIndex(plan.placed['CSE 100'])"))
     ucsd.goto(SITE + "?preview=off#campus")
     ucsd.wait_for_timeout(400)
     check("campus: ?preview=off turns the preview off", ucsd.locator(".campus-row.preview").count() == 0)

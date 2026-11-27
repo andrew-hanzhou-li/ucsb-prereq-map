@@ -1,0 +1,222 @@
+{
+  "name": "Bioengineering - BS - Bioinformatics",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Bioengineering",
+  "source": "https://catalog.ucsd.edu/curric/BENG-ug.html",
+  "narrative": [
+    "Specific course requirements for each of the majors are outlined in tables below (four-year curriculum tables; courses listed here are the non-HSS courses in those tables).",
+    "To graduate, students must maintain an overall GPA of at least 2.0, and obtain at least a C– grade in each course required for the major. All courses required for the major must be taken for a letter grade.",
+    "Students must develop a program that includes a total of at least forty units in the arts, humanities, and social sciences (Ten HSS courses are listed in the curriculum tables; individual college requirements may be higher).",
+    "A capstone design course sequence is required for senior level students in all undergraduate majors in the department (BENG 187A-B-C-D and BENG 188A-B).",
+    "Each of the four majors in bioengineering are “selective” status.",
+    "Screening courses (continuing students): BILD 1; CHEM 6A-B; CSE 11; MATH 20A-C; PHYS 2A-B.",
+    "The bioengineering: bioinformatics (BS) program is not accredited by a commission of ABET."
+  ],
+  "sections": [
+    {
+      "name": "Lower-division courses",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "course",
+            "code": "CSE 11"
+          },
+          {
+            "type": "course",
+            "code": "CSE 12"
+          },
+          {
+            "type": "course",
+            "code": "CSE 21"
+          },
+          {
+            "type": "course",
+            "code": "PHYS 2A"
+          },
+          {
+            "type": "course",
+            "code": "PHYS 2B"
+          },
+          {
+            "type": "course",
+            "code": "PHYS 2C"
+          },
+          {
+            "type": "course",
+            "code": "CHEM 6A"
+          },
+          {
+            "type": "course",
+            "code": "CHEM 6B"
+          },
+          {
+            "type": "course",
+            "code": "BILD 1"
+          },
+          {
+            "type": "course",
+            "code": "BILD 3"
+          },
+          {
+            "type": "course",
+            "code": "BILD 4"
+          },
+          {
+            "type": "course",
+            "code": "MATH 20A"
+          },
+          {
+            "type": "course",
+            "code": "MATH 20B"
+          },
+          {
+            "type": "course",
+            "code": "MATH 20C"
+          },
+          {
+            "type": "course",
+            "code": "MATH 18"
+          },
+          {
+            "type": "course",
+            "code": "MATH 20D"
+          },
+          {
+            "type": "course",
+            "code": "MATH 20E"
+          },
+          {
+            "type": "course",
+            "code": "BENG 1"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Upper-division courses",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "course",
+            "code": "BENG 100"
+          },
+          {
+            "type": "course",
+            "code": "BENG 120"
+          },
+          {
+            "type": "course",
+            "code": "BENG 102"
+          },
+          {
+            "type": "course",
+            "code": "BENG 130"
+          },
+          {
+            "type": "course",
+            "code": "BENG 182"
+          },
+          {
+            "type": "course",
+            "code": "BENG 181"
+          },
+          {
+            "type": "course",
+            "code": "BENG 183"
+          },
+          {
+            "type": "course",
+            "code": "BENG 125"
+          },
+          {
+            "type": "course",
+            "code": "BENG 168"
+          },
+          {
+            "type": "course",
+            "code": "BIMM 185"
+          },
+          {
+            "type": "course",
+            "code": "BIMM 100"
+          },
+          {
+            "type": "course",
+            "code": "CSE 100"
+          },
+          {
+            "type": "course",
+            "code": "CSE 101"
+          },
+          {
+            "type": "course",
+            "code": "BICD 100"
+          },
+          {
+            "type": "course",
+            "code": "MATH 186"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Capstone design",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "course",
+            "code": "BENG 187A"
+          },
+          {
+            "type": "course",
+            "code": "BENG 187B"
+          },
+          {
+            "type": "course",
+            "code": "BENG 187C"
+          },
+          {
+            "type": "course",
+            "code": "BENG 187D"
+          },
+          {
+            "type": "course",
+            "code": "BENG 188A"
+          },
+          {
+            "type": "course",
+            "code": "BENG 188B"
+          }
+        ],
+        "label": "Capstone design course sequence"
+      }
+    },
+    {
+      "name": "Technical electives",
+      "requirement": {
+        "type": "choose",
+        "count": 2,
+        "items": [
+          {
+            "type": "course",
+            "code": "BENG 196"
+          },
+          {
+            "type": "course",
+            "code": "BENG 199"
+          },
+          {
+            "type": "text",
+            "text": "Technical elective (TE) courses must be selected from a departmental approved list. Consult the Student Affairs Office."
+          }
+        ],
+        "label": "Technical electives",
+        "notes": "Courses such as BENG 197 and 198 are encouraged, but do not count as upper-division technical electives. Up to four units of BENG 196 may be used toward technical elective credit. Completion of two consecutive quarters of BENG 199 will satisfy both technical elective requirements in all majors."
+      }
+    }
+  ]
+}

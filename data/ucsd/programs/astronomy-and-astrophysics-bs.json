@@ -1,0 +1,464 @@
+{
+ "id": "UCSD-MAJOR-astronomy-and-astrophysics-bs",
+ "name": "Astronomy and Astrophysics - BS",
+ "kind": "major",
+ "type": "Bachelor's Degree",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsd.edu/curric/ASTR-ug.html",
+ "sections": [
+  {
+   "name": "Lower-Division Requirements",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "PHYS 4A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYS 4B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYS 4C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYS 4D",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYS 4E",
+          "status": "active"
+         }
+        ],
+        "label": "PHYS 4A-B-C-D-E"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "PHYS 2A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYS 2B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYS 2C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYS 2D",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ASTR 18",
+          "status": "active"
+         }
+        ],
+        "label": "PHYS 2A-B-C-D and ASTR 18"
+       }
+      ],
+      "count": 1,
+      "label": "Physics"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "DSC 10",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "BILD 62",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 18",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 41",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 6R",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 8A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 11",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 15",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 08",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "NANO 15",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "NANO 15R",
+        "status": "active"
+       }
+      ],
+      "count": 1,
+      "label": "Programming"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 18",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 31AH",
+          "status": "active"
+         }
+        ],
+        "count": 1
+       },
+       {
+        "type": "course",
+        "code": "MATH 20A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 20B",
+        "status": "active"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 20C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 31BH",
+          "status": "active"
+         }
+        ],
+        "count": 1
+       },
+       {
+        "type": "course",
+        "code": "MATH 20D",
+        "status": "active"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 20E",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 31CH",
+          "status": "active"
+         }
+        ],
+        "count": 1
+       }
+      ],
+      "label": "MATH 18 and 20A-B-C-D-E",
+      "notes": "The honors math series (MATH 31AH, 31BH, 31CH) can replace the standard math courses (MATH 18, 20C, 20E, respectively)."
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "ASTR 20A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 20B",
+        "status": "active"
+       }
+      ],
+      "label": "ASTR 20A-B"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Upper-Division Requirements",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "ASTR 101",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 102",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 103",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 104",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 105",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 106",
+        "status": "active"
+       }
+      ],
+      "label": "Core: Six required specific courses"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "ASTR 120",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 122",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 123",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 124",
+        "status": "active"
+       }
+      ],
+      "count": 3,
+      "label": "Core"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "ASTR 150",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 152",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 154",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 155",
+        "status": "active"
+       }
+      ],
+      "count": 1,
+      "label": "Lab"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "ASTR 101",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 102",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 103",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 104",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 105",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 106",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 120",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 121",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 122",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 123",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 124",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 130",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 131",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 150",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 151",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 152",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 154",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 155",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 191",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 198",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 199",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 199H",
+        "status": "active"
+       },
+       {
+        "type": "text",
+        "text": "Optional: One quarter of honors thesis (four units) counts as one of the additional upper-division ASTR courses. A single four-unit ASTR 199/199H course may only be applied as an upper-division restricted elective."
+       }
+      ],
+      "count": 3,
+      "label": "Electives",
+      "notes": "Three additional (any) upper-division ASTR courses"
+     }
+    ]
+   }
+  }
+ ],
+ "narrative": [
+  "Lower-division units: 56; upper-division units: 52; total units required for the major: 108.",
+  "P/NP Grading Option: Not allowed for any courses applied to the major (the exceptions are courses completed via AP/IB/A-Level and a single four-unit ASTR 199/199H that may only be applied as an upper-division restricted elective).",
+  "A grade point average of 2.0 or higher in the upper-division major program is required for graduation. Students must receive a grade of C– or better in any course to be counted toward fulfillment of the major requirements.",
+  "At least 60 percent of the upper-division courses in the major must be taken while in residence at UC San Diego.",
+  "Students cannot pursue both the AT27 and the AT25 programs.",
+  "Programming: It is recommended that the programming requirement be completed as early as possible.",
+  "The PHYS 4 series is strongly recommended for AT25 students. AT25 students are required to take ASTR 18 if they take the PHYS 2 series."
+ ]
+}

@@ -1,0 +1,348 @@
+{
+  "name": "Public Health - BS - Biostatistics",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Herbert Wertheim School of Public Health and Human Longevity Science",
+  "source": "https://catalog.ucsd.edu/curric/PH-ug.html",
+  "narrative": [
+    "Procedures for switching into all majors within the BSPH program follow the published selective major process for continuing students. Only students who have completed the required screening courses and have a minimum 2.0 UC GPA are eligible to apply.",
+    "Each concentration within the bachelor of science in public health has specific entry requirements that must be met to be eligible to apply through the selective major process.",
+    "PH 40 must be completed at UC San Diego.",
+    "All lower-division and upper-division major courses must be taken for a letter grade, with the exception of: AIP 197, PH 88, PH 90, PH 95, PH 98, PH 99, PH 195P, PH 198, and PH 199, which may be taken P/NP only.",
+    "A minimum grade of C- is required in any course to be counted toward fulfillment of lower-division and upper-division major requirements.",
+    "No more than eight units of PH 91 may be used to meet lower-division major requirements.",
+    "No more than four units of AIP 197 may be used to meet upper-division major requirements. No more than four units of PH 195P may be used to meet upper-division major requirements.",
+    "No more than eight combined total units of PH 198 and PH 199 may be used to meet upper-division major requirements.",
+    "No more than four units of GLBH 111 may be used to meet upper-division major requirements.",
+    "No more than six units of COMM 102C may be used to meet upper-division major requirements.",
+    "No more than eight units of PH 191 may be used to meet upper-division major requirements for majors with concentrations. Topics must be different for each class."
+  ],
+  "sections": [
+    {
+      "name": "Lower-Division Requirements",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "PH 40"
+              },
+              {
+                "type": "course",
+                "code": "PH 40R"
+              }
+            ]
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "BILD 1"
+              },
+              {
+                "type": "course",
+                "code": "BILD 2"
+              },
+              {
+                "type": "course",
+                "code": "BILD 3"
+              }
+            ],
+            "label": "Biology"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "CSE 6"
+              },
+              {
+                "type": "course",
+                "code": "CSE 6R"
+              },
+              {
+                "type": "course",
+                "code": "CSE 8A"
+              },
+              {
+                "type": "course",
+                "code": "CSE 8B"
+              },
+              {
+                "type": "course",
+                "code": "CSE 11"
+              },
+              {
+                "type": "course",
+                "code": "CSE 180"
+              },
+              {
+                "type": "course",
+                "code": "CSE 180R"
+              },
+              {
+                "type": "course",
+                "code": "ECE 15"
+              }
+            ],
+            "label": "Computer Programming"
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "MATH 20A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 20B"
+              },
+              {
+                "type": "course",
+                "code": "MATH 20C"
+              },
+              {
+                "type": "course",
+                "code": "MATH 11"
+              },
+              {
+                "type": "course",
+                "code": "MATH 18"
+              }
+            ],
+            "label": "Formal Skills and Quantitative Methods"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "PH 45"
+              },
+              {
+                "type": "course",
+                "code": "PH 45R"
+              }
+            ]
+          },
+          {
+            "type": "units",
+            "units": 4,
+            "items": [
+              {
+                "type": "range",
+                "subject": "PH",
+                "from": 70,
+                "to": 85
+              }
+            ],
+            "label": "Public Health Trending Topics"
+          },
+          {
+            "type": "units",
+            "units": 4,
+            "items": [
+              {
+                "type": "range",
+                "subject": "PH",
+                "from": 50,
+                "to": 95
+              },
+              {
+                "type": "course",
+                "code": "PH 98"
+              },
+              {
+                "type": "course",
+                "code": "PH 99"
+              }
+            ],
+            "label": "Public Health Elements"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Upper-Division Requirements",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "PH 101"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PH 101R"
+                  }
+                ]
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "PH 102"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PH 102R"
+                  }
+                ]
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "PH 110"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PH 110R"
+                  }
+                ]
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "PH 120"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PH 120R"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "PH 130"
+              }
+            ],
+            "label": "Core Disciplines"
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "MATH 180A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 181A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 181B"
+              }
+            ],
+            "label": "Statistical Analysis Concentration Core",
+            "notes": "The Department of Mathematics strongly recommends that students complete MATH 109 before taking the above statistical analysis concentration core classes"
+          },
+          {
+            "type": "units",
+            "units": 8,
+            "items": [
+              {
+                "type": "range",
+                "subject": "PH",
+                "from": 140,
+                "to": 191
+              },
+              {
+                "type": "course",
+                "code": "PH 195P"
+              },
+              {
+                "type": "course",
+                "code": "PH 198"
+              },
+              {
+                "type": "course",
+                "code": "PH 199"
+              }
+            ],
+            "label": "Public Health Perspectives"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "choose",
+                    "count": 1,
+                    "items": [
+                      {
+                        "type": "course",
+                        "code": "PH 193"
+                      },
+                      {
+                        "type": "course",
+                        "code": "PH 193R"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "choose",
+                    "count": 1,
+                    "items": [
+                      {
+                        "type": "course",
+                        "code": "PH 194"
+                      },
+                      {
+                        "type": "course",
+                        "code": "PH 194R"
+                      }
+                    ]
+                  }
+                ],
+                "label": "Option 1: Capstone Experience"
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "PH 196AH"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PH 196BH"
+                  }
+                ],
+                "label": "Option 2: Honors Practicum"
+              }
+            ],
+            "label": "Capstone Experience or Honors Practicum"
+          }
+        ]
+      }
+    }
+  ]
+}

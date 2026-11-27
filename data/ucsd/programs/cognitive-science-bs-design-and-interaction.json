@@ -1,0 +1,665 @@
+{
+ "id": "UCSD-MAJOR-cognitive-science-bs-design-and-interaction",
+ "name": "Cognitive Science - BS - Design and Interaction",
+ "kind": "major",
+ "type": "Bachelor's Degree",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsd.edu/curric/COGS-ug.html",
+ "sections": [
+  {
+   "name": "Lower Division",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 10A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 10B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 10C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 18",
+          "status": "active"
+         }
+        ]
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 20A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 20B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 18",
+          "status": "active"
+         }
+        ]
+       }
+      ],
+      "count": 1,
+      "label": "Math"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "COGS 1",
+        "status": "active"
+       }
+      ],
+      "label": "Introduction"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "COGS 10",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DSGN 1",
+        "status": "active"
+       }
+      ],
+      "count": 1,
+      "label": "Design"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "COGS 13",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 14A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 14B",
+        "status": "active"
+       }
+      ],
+      "label": "Methods"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "COGS 17",
+        "status": "active"
+       }
+      ],
+      "label": "Neuroscience"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "COGS 18",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 7",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "CSE 8A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 11",
+        "status": "active"
+       }
+      ],
+      "count": 1,
+      "label": "Programming"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Upper Division: Core",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "COGS 100",
+        "status": "active"
+       }
+      ],
+      "label": "Distributed Cognition"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "COGS 101A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 101B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 101C",
+        "status": "active"
+       }
+      ],
+      "count": 2,
+      "label": "Fundamental Cognitive Phenomena (choose any two)"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "COGS 107A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 107B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 107C",
+        "status": "active"
+       }
+      ],
+      "count": 2,
+      "label": "Cognitive Neuroscience (choose any two)"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "COGS 108",
+        "status": "active"
+       }
+      ],
+      "label": "Computation"
+     }
+    ],
+    "label": "Core (six courses)"
+   }
+  },
+  {
+   "name": "Upper Division: Electives",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "text",
+      "text": "Four of the six electives must be taken from the approved specialization elective list (the lists of approved electives for each area of specialization are available in the department office and on the website). Allowed electives currently include advanced courses in cognitive science, computer science, computer engineering, and visual arts."
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "COGS 100",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 101A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 101B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 101C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 102A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 102B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 102C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 107A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 107B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 107C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 108",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 109",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 110",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 111",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 112",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 115",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 116",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 117",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 118A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 118B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 118C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 118D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 119",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 120",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 121",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 122",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 123",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 124",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 125",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 126",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 127",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 128",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 137",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 138",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 142",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 143",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 144",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 150",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 151",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 152",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 153",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 154",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 155",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 156",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 157",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 158",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 160",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 163",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 164",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 165",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 169",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 170",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 171",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 172",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 174",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 175",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 176",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 177",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 178",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 179",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 180",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 181",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 182",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 183",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 184",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 185",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 186",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 187A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 187B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 188",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 189",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 190A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 190B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 190C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 190D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 193",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 195P",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 197",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 198",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 199",
+        "status": "active"
+       },
+       {
+        "type": "text",
+        "text": "Courses outside the department from the list of approved electives or petitioned through the department; the course must deal with topics and issues that are clearly part of cognitive science, and the material must not be available in a course offered inside the department."
+       }
+      ],
+      "count": 6,
+      "label": "Electives (six courses)",
+      "notes": "A total of six electives are required, where three of the six electives must be taken within the cognitive science department. COGS 160 may only be used once for elective. One course in the Cognitive Science 19X series may be used as an elective, but only with the approval of both the instructor who supervised the course and the undergraduate adviser."
+     }
+    ],
+    "label": "Electives"
+   }
+  }
+ ],
+ "narrative": [
+  "A minimum grade point average of 2.0 is required for admittance to and graduation from the BA or BS degree program.",
+  "Students must receive a grade of C– or better in any course to be counted toward fulfillment of the major requirements.",
+  "All courses must be taken for a letter grade, with the exception of COGS 195, 198, and 199, which are taken Pass/Not Pass.",
+  "Majors must obtain departmental approval for electives taken outside of the department.",
+  "Lower Division (eleven courses, forty-four units or ten courses, forty units); Upper Division (twelve courses, forty-eight units).",
+  "To major in cognitive science with an area of specialization, the student must fulfill the requirements for the BS degree and must choose four of the required six elective courses from a list of approved electives for that area of specialization."
+ ]
+}

@@ -1,0 +1,83 @@
+{
+  "name": "Anthropology - BA - Biological Anthropology",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Anthropology",
+  "source": "https://catalog.ucsd.edu/curric/ANTH-ug.html",
+  "narrative": [
+    "A minimum of twelve four-unit upper-division courses in the Department of Anthropology must be completed.",
+    "No courses taken in fulfillment of the above requirements may be taken on a Pass/Not Pass (P/NP) basis. All courses applied toward the major must be taken for a letter grade of C– or better. [An exception is made for some courses accepted from other schools and for one independent study course (199) or one directed group study course (198). However, this exception does not extend to ANTH 101, 102, or 103, or to transfer credits accepted in lieu of them.]",
+    "For the BA degree, a minimum average GPA of 2.0 is required, both as an overall average in all anthropology courses and in the ANTH 101, 102, and 103 sequence considered separately.",
+    "At least seven of the upper-division courses submitted for the major must be taken at UC San Diego. The seven normally must include ANTH 101, 102, and 103.",
+    "The honors thesis (ANTH 196A, 196B) can count as two of the five four-unit upper-division elective courses required for a major."
+  ],
+  "sections": [
+    {
+      "name": "Core Courses",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "course",
+            "code": "ANTH 101"
+          },
+          {
+            "type": "course",
+            "code": "ANTH 102"
+          },
+          {
+            "type": "course",
+            "code": "ANTH 103"
+          }
+        ],
+        "label": "Anthropology Core Courses"
+      }
+    },
+    {
+      "name": "Concentration Courses",
+      "requirement": {
+        "type": "choose",
+        "count": 4,
+        "items": [
+          {
+            "type": "any",
+            "subject": "ANBI",
+            "level": "upper"
+          }
+        ],
+        "label": "Four four-unit upper-division courses with the prefix ANBI"
+      }
+    },
+    {
+      "name": "Upper-Division Electives",
+      "requirement": {
+        "type": "choose",
+        "count": 5,
+        "items": [
+          {
+            "type": "any",
+            "subject": "ANAR",
+            "level": "upper"
+          },
+          {
+            "type": "any",
+            "subject": "ANBI",
+            "level": "upper"
+          },
+          {
+            "type": "any",
+            "subject": "ANSC",
+            "level": "upper"
+          },
+          {
+            "type": "any",
+            "subject": "ANTH",
+            "level": "upper"
+          }
+        ],
+        "label": "Upper-division electives",
+        "notes": "four-unit, upper-division elective courses with the prefix ANAR, ANBI, ANSC, or ANTH (including ANTH 197, 198, 199, 196A–C)"
+      }
+    }
+  ]
+}

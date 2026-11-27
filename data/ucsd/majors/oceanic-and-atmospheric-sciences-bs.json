@@ -1,0 +1,317 @@
+{
+  "name": "Oceanic and Atmospheric Sciences - BS",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Scripps Institution of Oceanography",
+  "major_code": "SI30",
+  "source": "https://catalog.ucsd.edu/curric/SIO-ug.html",
+  "narrative": [
+    "Students must receive a grade of C- or better in any course to be counted toward fulfillment of the major requirements. In exceptional cases, students with a grade point average in the major of 2.5 or greater may petition to have one grade of D accepted.",
+    "All courses (lower and upper division) required for the major must be taken for a letter grade.",
+    "One quarter of SIO 199 credit (four units, P/NP) may be used as a Group C elective.",
+    "PHYS 4 series is recommended for students with research interests in physical oceanography or the physics of the atmosphere. Career-track examples are recommendations, not requirements."
+  ],
+  "sections": [
+    {
+      "name": "Lower-Division Requirements",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "MATH 20A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 20B"
+              },
+              {
+                "type": "course",
+                "code": "MATH 20C"
+              },
+              {
+                "type": "course",
+                "code": "MATH 20D"
+              },
+              {
+                "type": "course",
+                "code": "MATH 20E"
+              },
+              {
+                "type": "course",
+                "code": "MATH 18"
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "PHYS 2A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 2B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 2C"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "PHYS 4 series is also accepted (instead of the PHYS 2 series)"
+              }
+            ]
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "CHEM 6A"
+              },
+              {
+                "type": "course",
+                "code": "CHEM 6B"
+              },
+              {
+                "type": "course",
+                "code": "CHEM 6C"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "SIO 60"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Group A: Core Courses",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "course",
+            "code": "SIO 171"
+          },
+          {
+            "type": "course",
+            "code": "SIO 172"
+          },
+          {
+            "type": "course",
+            "code": "SIO 174"
+          }
+        ],
+        "label": "Group A: Core Courses",
+        "notes": "all courses required"
+      }
+    },
+    {
+      "name": "Group B: Upper-Division Restricted Electives",
+      "requirement": {
+        "type": "choose",
+        "count": 4,
+        "items": [
+          {
+            "type": "course",
+            "code": "SIO 111"
+          },
+          {
+            "type": "course",
+            "code": "SIO 117"
+          },
+          {
+            "type": "course",
+            "code": "SIO 141"
+          },
+          {
+            "type": "course",
+            "code": "SIO 143"
+          },
+          {
+            "type": "course",
+            "code": "SIO 173"
+          },
+          {
+            "type": "course",
+            "code": "SIO 175"
+          },
+          {
+            "type": "course",
+            "code": "SIO 176"
+          },
+          {
+            "type": "course",
+            "code": "SIO 177"
+          },
+          {
+            "type": "course",
+            "code": "SIO 178"
+          }
+        ],
+        "label": "Group B: Upper-Division Restricted Electives",
+        "notes": "choose at least four of the following"
+      }
+    },
+    {
+      "name": "Group C: Upper-Division Electives",
+      "requirement": {
+        "type": "choose",
+        "count": 5,
+        "items": [
+          {
+            "type": "course",
+            "code": "SIO 101"
+          },
+          {
+            "type": "course",
+            "code": "SIO 108"
+          },
+          {
+            "type": "course",
+            "code": "SIO 110"
+          },
+          {
+            "type": "course",
+            "code": "SIO 113"
+          },
+          {
+            "type": "course",
+            "code": "SIO 115"
+          },
+          {
+            "type": "course",
+            "code": "SIO 134"
+          },
+          {
+            "type": "course",
+            "code": "SIO 135"
+          },
+          {
+            "type": "course",
+            "code": "SIO 160"
+          },
+          {
+            "type": "course",
+            "code": "SIO 179"
+          },
+          {
+            "type": "course",
+            "code": "SIO 199"
+          },
+          {
+            "type": "course",
+            "code": "CHEM 130"
+          },
+          {
+            "type": "course",
+            "code": "CHEM 131"
+          },
+          {
+            "type": "course",
+            "code": "CHEM 132"
+          },
+          {
+            "type": "course",
+            "code": "CHEM 171"
+          },
+          {
+            "type": "course",
+            "code": "CHEM 173"
+          },
+          {
+            "type": "course",
+            "code": "MATH 110"
+          },
+          {
+            "type": "course",
+            "code": "MATH 120A"
+          },
+          {
+            "type": "course",
+            "code": "MATH 120B"
+          },
+          {
+            "type": "course",
+            "code": "MATH 180A"
+          },
+          {
+            "type": "course",
+            "code": "PHYS 110A"
+          },
+          {
+            "type": "course",
+            "code": "PHYS 110B"
+          },
+          {
+            "type": "course",
+            "code": "PHYS 140A"
+          },
+          {
+            "type": "course",
+            "code": "PHYS 140B"
+          },
+          {
+            "type": "course",
+            "code": "MAE 101A"
+          },
+          {
+            "type": "course",
+            "code": "CENG 101A"
+          },
+          {
+            "type": "course",
+            "code": "SIO 111"
+          },
+          {
+            "type": "course",
+            "code": "SIO 117"
+          },
+          {
+            "type": "course",
+            "code": "SIO 141"
+          },
+          {
+            "type": "course",
+            "code": "SIO 143"
+          },
+          {
+            "type": "course",
+            "code": "SIO 173"
+          },
+          {
+            "type": "course",
+            "code": "SIO 175"
+          },
+          {
+            "type": "course",
+            "code": "SIO 176"
+          },
+          {
+            "type": "course",
+            "code": "SIO 177"
+          },
+          {
+            "type": "course",
+            "code": "SIO 178"
+          }
+        ],
+        "label": "Group C: Upper-Division Electives",
+        "notes": "choose at least five of the following. Students may use any additional course(s) from the restricted electives list (Group B, above) as a Group C elective."
+      }
+    }
+  ]
+}

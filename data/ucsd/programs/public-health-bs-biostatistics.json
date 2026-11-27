@@ -1,0 +1,459 @@
+{
+ "id": "UCSD-MAJOR-public-health-bs-biostatistics",
+ "name": "Public Health - BS - Biostatistics",
+ "kind": "major",
+ "type": "Bachelor's Degree",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsd.edu/curric/PH-ug.html",
+ "sections": [
+  {
+   "name": "Lower-Division Requirements",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "PH 40",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PH 40R",
+        "status": "inactive"
+       }
+      ],
+      "count": 1
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "BILD 1",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "BILD 2",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "BILD 3",
+        "status": "active"
+       }
+      ],
+      "label": "Biology"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "CSE 6",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "CSE 6R",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 8A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 8B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "CSE 11",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 180",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 180R",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 15",
+        "status": "active"
+       }
+      ],
+      "count": 1,
+      "label": "Computer Programming"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "MATH 20A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 20B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 20C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 11",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 18",
+        "status": "active"
+       }
+      ],
+      "label": "Formal Skills and Quantitative Methods"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "PH 45",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PH 45R",
+        "status": "inactive"
+       }
+      ],
+      "count": 1
+     },
+     {
+      "type": "units",
+      "items": [
+       {
+        "type": "course",
+        "code": "PH 80",
+        "status": "active"
+       }
+      ],
+      "units": 4,
+      "label": "Public Health Trending Topics"
+     },
+     {
+      "type": "units",
+      "items": [
+       {
+        "type": "course",
+        "code": "PH 50",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PH 80",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PH 88",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PH 90",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PH 91",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PH 95",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PH 98",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PH 99",
+        "status": "active"
+       }
+      ],
+      "units": 4,
+      "label": "Public Health Elements"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Upper-Division Requirements",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "PH 101",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PH 101R",
+          "status": "inactive"
+         }
+        ],
+        "count": 1
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "PH 102",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PH 102R",
+          "status": "inactive"
+         }
+        ],
+        "count": 1
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "PH 110",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PH 110R",
+          "status": "inactive"
+         }
+        ],
+        "count": 1
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "PH 120",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PH 120R",
+          "status": "inactive"
+         }
+        ],
+        "count": 1
+       },
+       {
+        "type": "course",
+        "code": "PH 130",
+        "status": "active"
+       }
+      ],
+      "label": "Core Disciplines"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "MATH 180A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 181A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 181B",
+        "status": "active"
+       }
+      ],
+      "label": "Statistical Analysis Concentration Core",
+      "notes": "The Department of Mathematics strongly recommends that students complete MATH 109 before taking the above statistical analysis concentration core classes"
+     },
+     {
+      "type": "units",
+      "items": [
+       {
+        "type": "course",
+        "code": "PH 151",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PH 151R",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PH 155",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PH 156",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PH 157",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PH 161",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PH 162",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PH 171",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PH 172",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PH 191",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PH 195P",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PH 198",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PH 199",
+        "status": "active"
+       }
+      ],
+      "units": 8,
+      "label": "Public Health Perspectives"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "choose",
+          "items": [
+           {
+            "type": "course",
+            "code": "PH 193",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PH 193R",
+            "status": "active"
+           }
+          ],
+          "count": 1
+         },
+         {
+          "type": "choose",
+          "items": [
+           {
+            "type": "course",
+            "code": "PH 194",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PH 194R",
+            "status": "active"
+           }
+          ],
+          "count": 1
+         }
+        ],
+        "label": "Option 1: Capstone Experience"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "PH 196AH",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PH 196BH",
+          "status": "active"
+         }
+        ],
+        "label": "Option 2: Honors Practicum"
+       }
+      ],
+      "count": 1,
+      "label": "Capstone Experience or Honors Practicum"
+     }
+    ]
+   }
+  }
+ ],
+ "narrative": [
+  "Procedures for switching into all majors within the BSPH program follow the published selective major process for continuing students. Only students who have completed the required screening courses and have a minimum 2.0 UC GPA are eligible to apply.",
+  "Each concentration within the bachelor of science in public health has specific entry requirements that must be met to be eligible to apply through the selective major process.",
+  "PH 40 must be completed at UC San Diego.",
+  "All lower-division and upper-division major courses must be taken for a letter grade, with the exception of: AIP 197, PH 88, PH 90, PH 95, PH 98, PH 99, PH 195P, PH 198, and PH 199, which may be taken P/NP only.",
+  "A minimum grade of C- is required in any course to be counted toward fulfillment of lower-division and upper-division major requirements.",
+  "No more than eight units of PH 91 may be used to meet lower-division major requirements.",
+  "No more than four units of AIP 197 may be used to meet upper-division major requirements. No more than four units of PH 195P may be used to meet upper-division major requirements.",
+  "No more than eight combined total units of PH 198 and PH 199 may be used to meet upper-division major requirements.",
+  "No more than four units of GLBH 111 may be used to meet upper-division major requirements.",
+  "No more than six units of COMM 102C may be used to meet upper-division major requirements.",
+  "No more than eight units of PH 191 may be used to meet upper-division major requirements for majors with concentrations. Topics must be different for each class."
+ ]
+}

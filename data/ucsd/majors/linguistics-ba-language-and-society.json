@@ -1,0 +1,515 @@
+{
+  "name": "Linguistics - BA - Language and Society",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Linguistics",
+  "source": "https://catalog.ucsd.edu/curric/LING-ug.html",
+  "narrative": [
+    "Twelve courses. Each specialized major requires satisfaction of the undergraduate language requirement.",
+    "Every student with a specialized major must consult the faculty adviser in the Department of Linguistics to have approved an individual curricular plan.",
+    "Except for LIGN 188R, LIGN 195, LIGN 199, and LIGN 199H, no course taken on a Pass/Not Pass basis may be counted toward a linguistics major. No more than four combined units of LIGN 188R, LIGN 195, and LIGN 199 may be counted toward a linguistics major. An additional four units of LIGN 199H may be counted toward a linguistics major.",
+    "A letter grade of C– or better is required for every course counted toward a linguistics major, including courses taken to satisfy the department’s undergraduate language requirement.",
+    "LIGN 87 and LIGN 192 do not count as linguistics electives.",
+    "At least six out of the twelve upper-division linguistics courses counted toward the major must be linguistics courses taken in residence at UC San Diego."
+  ],
+  "sections": [
+    {
+      "name": "Undergraduate Language Requirement",
+      "requirement": {
+        "type": "text",
+        "text": "All linguistics majors must demonstrate proficiency in one non-English natural language by one of the following: By passing the reading proficiency examination and the oral interview administered by the Department of Linguistics in French, German, Italian, Russian, Spanish, Arabic, Farsi, Tagalog, Portuguese, Vietnamese, or American Sign Language; or By successfully completing a course given at UC San Diego representing the fourth quarter (or beyond) of instruction in any single non-English natural language with a grade of C– or better; or By scoring four or greater on the Advanced Placement (AP) exam in a non-English natural language. Students with native language competence in a language other than English may petition to have English count as satisfying the proficiency requirement."
+      }
+    },
+    {
+      "name": "Linguistic Analysis and Breadth Courses",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "course",
+            "code": "LIGN 102"
+          },
+          {
+            "type": "course",
+            "code": "LIGN 103"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "LIGN 110"
+              },
+              {
+                "type": "course",
+                "code": "LIGN 111"
+              },
+              {
+                "type": "course",
+                "code": "LIGN 120"
+              }
+            ],
+            "label": "One introductory course in phonetics, phonology, or morphology"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "LIGN 121"
+              },
+              {
+                "type": "course",
+                "code": "LIGN 130"
+              },
+              {
+                "type": "course",
+                "code": "LIGN 160"
+              }
+            ],
+            "label": "One introductory course in syntax, semantics, or pragmatics"
+          },
+          {
+            "type": "choose",
+            "count": 2,
+            "items": [
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "LIGN 117"
+                  },
+                  {
+                    "type": "course",
+                    "code": "LIGN 165"
+                  },
+                  {
+                    "type": "course",
+                    "code": "LIGN 167"
+                  },
+                  {
+                    "type": "course",
+                    "code": "LIGN 168"
+                  },
+                  {
+                    "type": "course",
+                    "code": "LIGN 169"
+                  }
+                ],
+                "label": "Computational Linguistics"
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "LIGN 108"
+                  },
+                  {
+                    "type": "course",
+                    "code": "LIGN 139"
+                  },
+                  {
+                    "type": "course",
+                    "code": "LIGN 141"
+                  },
+                  {
+                    "type": "course",
+                    "code": "LIGN 142"
+                  },
+                  {
+                    "type": "course",
+                    "code": "LIGN 143"
+                  },
+                  {
+                    "type": "course",
+                    "code": "LIGN 148"
+                  },
+                  {
+                    "type": "course",
+                    "code": "LIGN 152"
+                  },
+                  {
+                    "type": "course",
+                    "code": "LIGN 177"
+                  }
+                ],
+                "label": "Crosslinguistic Variation"
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "LIGN 119"
+                  },
+                  {
+                    "type": "course",
+                    "code": "LIGN 148"
+                  },
+                  {
+                    "type": "course",
+                    "code": "LIGN 154"
+                  },
+                  {
+                    "type": "course",
+                    "code": "LIGN 155"
+                  },
+                  {
+                    "type": "course",
+                    "code": "LIGN 170"
+                  },
+                  {
+                    "type": "course",
+                    "code": "LIGN 171"
+                  },
+                  {
+                    "type": "course",
+                    "code": "LIGN 179"
+                  },
+                  {
+                    "type": "course",
+                    "code": "LIGN 180"
+                  },
+                  {
+                    "type": "course",
+                    "code": "LIGN 181"
+                  }
+                ],
+                "label": "Language and Cognition"
+              }
+            ],
+            "label": "One course each from 2 areas",
+            "notes": "no course may count more than once"
+          }
+        ],
+        "label": "Six Linguistic Analysis and Breadth Courses"
+      }
+    },
+    {
+      "name": "Sociolinguistics",
+      "requirement": {
+        "type": "choose",
+        "count": 1,
+        "items": [
+          {
+            "type": "course",
+            "code": "LIGN 146"
+          },
+          {
+            "type": "course",
+            "code": "LIGN 174"
+          },
+          {
+            "type": "course",
+            "code": "LIGN 175"
+          },
+          {
+            "type": "course",
+            "code": "LIGN 177"
+          },
+          {
+            "type": "course",
+            "code": "LIGN 178"
+          },
+          {
+            "type": "text",
+            "text": "One course in sociolinguistics by approval of the faculty adviser may be taken in another department."
+          }
+        ],
+        "label": "One course in sociolinguistics"
+      }
+    },
+    {
+      "name": "Linguistics Electives",
+      "requirement": {
+        "type": "choose",
+        "count": 3,
+        "items": [
+          {
+            "type": "course",
+            "code": "LIGN 105"
+          },
+          {
+            "type": "course",
+            "code": "LIGN 108"
+          },
+          {
+            "type": "course",
+            "code": "LIGN 110"
+          },
+          {
+            "type": "course",
+            "code": "LIGN 111"
+          },
+          {
+            "type": "course",
+            "code": "LIGN 112"
+          },
+          {
+            "type": "course",
+            "code": "LIGN 113"
+          },
+          {
+            "type": "course",
+            "code": "LIGN 115"
+          },
+          {
+            "type": "course",
+            "code": "LIGN 117"
+          },
+          {
+            "type": "course",
+            "code": "LIGN 118"
+          },
+          {
+            "type": "course",
+            "code": "LIGN 119"
+          },
+          {
+            "type": "course",
+            "code": "LIGN 120"
+          },
+          {
+            "type": "course",
+            "code": "LIGN 121"
+          },
+          {
+            "type": "course",
+            "code": "LIGN 125"
+          },
+          {
+            "type": "course",
+            "code": "LIGN 139"
+          },
+          {
+            "type": "course",
+            "code": "LIGN 141"
+          },
+          {
+            "type": "course",
+            "code": "LIGN 142"
+          },
+          {
+            "type": "course",
+            "code": "LIGN 143"
+          },
+          {
+            "type": "course",
+            "code": "LIGN 144"
+          },
+          {
+            "type": "course",
+            "code": "LIGN 145"
+          },
+          {
+            "type": "course",
+            "code": "LIGN 146"
+          },
+          {
+            "type": "course",
+            "code": "LIGN 148"
+          },
+          {
+            "type": "course",
+            "code": "LIGN 150"
+          },
+          {
+            "type": "course",
+            "code": "LIGN 152"
+          },
+          {
+            "type": "course",
+            "code": "LIGN 154"
+          },
+          {
+            "type": "course",
+            "code": "LIGN 155"
+          },
+          {
+            "type": "course",
+            "code": "LIGN 160"
+          },
+          {
+            "type": "course",
+            "code": "LIGN 165"
+          },
+          {
+            "type": "course",
+            "code": "LIGN 167"
+          },
+          {
+            "type": "course",
+            "code": "LIGN 168"
+          },
+          {
+            "type": "course",
+            "code": "LIGN 169"
+          },
+          {
+            "type": "course",
+            "code": "LIGN 170"
+          },
+          {
+            "type": "course",
+            "code": "LIGN 171"
+          },
+          {
+            "type": "course",
+            "code": "LIGN 172"
+          },
+          {
+            "type": "course",
+            "code": "LIGN 173"
+          },
+          {
+            "type": "course",
+            "code": "LIGN 174"
+          },
+          {
+            "type": "course",
+            "code": "LIGN 175"
+          },
+          {
+            "type": "course",
+            "code": "LIGN 176"
+          },
+          {
+            "type": "course",
+            "code": "LIGN 177"
+          },
+          {
+            "type": "course",
+            "code": "LIGN 178"
+          },
+          {
+            "type": "course",
+            "code": "LIGN 179"
+          },
+          {
+            "type": "course",
+            "code": "LIGN 180"
+          },
+          {
+            "type": "course",
+            "code": "LIGN 181"
+          },
+          {
+            "type": "course",
+            "code": "LIGN 187"
+          }
+        ],
+        "label": "Three linguistics electives",
+        "notes": "Courses particularly relevant to this specialization are: LIGN 146, 174, 175, 176, 177, 178"
+      }
+    },
+    {
+      "name": "Courses in Other Departments",
+      "requirement": {
+        "type": "choose",
+        "count": 2,
+        "items": [
+          {
+            "type": "course",
+            "code": "ANSC 113"
+          },
+          {
+            "type": "course",
+            "code": "ANSC 118"
+          },
+          {
+            "type": "course",
+            "code": "ANSC 122"
+          },
+          {
+            "type": "course",
+            "code": "ANSC 131"
+          },
+          {
+            "type": "course",
+            "code": "ANSC 141"
+          },
+          {
+            "type": "course",
+            "code": "ANSC 162"
+          },
+          {
+            "type": "course",
+            "code": "ANSC 191"
+          },
+          {
+            "type": "course",
+            "code": "ANSC 194"
+          },
+          {
+            "type": "course",
+            "code": "COMM 100B"
+          },
+          {
+            "type": "course",
+            "code": "COMM 110P"
+          },
+          {
+            "type": "course",
+            "code": "COMM 110T"
+          },
+          {
+            "type": "course",
+            "code": "COMM 110X"
+          },
+          {
+            "type": "course",
+            "code": "COMM 112G"
+          },
+          {
+            "type": "course",
+            "code": "COMM 168"
+          },
+          {
+            "type": "course",
+            "code": "COMM 169"
+          },
+          {
+            "type": "course",
+            "code": "EDS 125"
+          },
+          {
+            "type": "course",
+            "code": "EDS 117"
+          },
+          {
+            "type": "course",
+            "code": "SOCI 117"
+          },
+          {
+            "type": "course",
+            "code": "ETHN 140"
+          },
+          {
+            "type": "course",
+            "code": "ETHN 141"
+          },
+          {
+            "type": "course",
+            "code": "ETHN 144"
+          },
+          {
+            "type": "course",
+            "code": "SOCI 118E"
+          },
+          {
+            "type": "course",
+            "code": "SOCI 120T"
+          }
+        ],
+        "notes": "Two appropriate upper-division courses in other departments (especially the Departments of Anthropology, Communication, Cognitive Science, or Sociology), selected in consultation with the faculty adviser for language and society."
+      }
+    }
+  ]
+}

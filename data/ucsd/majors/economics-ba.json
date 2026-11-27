@@ -1,0 +1,138 @@
+{
+  "name": "Economics - BA",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Economics",
+  "major_code": "EN25",
+  "source": "https://catalog.ucsd.edu/curric/ECON-ug.html",
+  "narrative": [
+    "To graduate with a major, a minimum GPA of 2.0 is required in upper-division courses used to satisfy major requirements. All courses must be taken for a letter grade and passed with a grade of C– (C minus), or better, with the exception of ECON 195P, ECON 198, and ECON 199, for which P/NP grading is mandatory. No more than twelve units of ECON 195P, ECON 198, and ECON 199 taken P/NP may be counted toward major requirements. ECON 195P may only be taken twice for credit (eight units).",
+    "The 100, 110, 120, 172, and 173 core courses are sequential. That is, A must be taken before B, and when applicable, B before C.",
+    "To receive a bachelor of arts degree in economics, no more than four upper-division courses taken externally from UC San Diego can be counted toward the major.",
+    "While we require economics majors to take MATH 10A-B-C, we recommend that economics students take MATH 20A-B-C."
+  ],
+  "sections": [
+    {
+      "name": "Lower-division mathematics courses",
+      "requirement": {
+        "type": "choose",
+        "count": 1,
+        "label": "Lower-division mathematics courses",
+        "notes": "MATH 10A-B-C (required) or MATH 20A-B-C (recommended).",
+        "items": [
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "MATH 10A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 10B"
+              },
+              {
+                "type": "course",
+                "code": "MATH 10C"
+              }
+            ]
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "MATH 20A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 20B"
+              },
+              {
+                "type": "course",
+                "code": "MATH 20C"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Lower-division economics courses",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "course",
+            "code": "ECON 1"
+          },
+          {
+            "type": "course",
+            "code": "ECON 3"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Upper-division economics core courses",
+      "requirement": {
+        "type": "all",
+        "notes": "ECON 100A-B (microeconomics), ECON 110A-B (macroeconomics), and ECON 120A-B-C (econometrics).",
+        "items": [
+          {
+            "type": "course",
+            "code": "ECON 100A"
+          },
+          {
+            "type": "course",
+            "code": "ECON 100B"
+          },
+          {
+            "type": "course",
+            "code": "ECON 110A"
+          },
+          {
+            "type": "course",
+            "code": "ECON 110B"
+          },
+          {
+            "type": "course",
+            "code": "ECON 120A"
+          },
+          {
+            "type": "course",
+            "code": "ECON 120B"
+          },
+          {
+            "type": "course",
+            "code": "ECON 120C"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Upper-division economics electives",
+      "requirement": {
+        "type": "choose",
+        "count": 5,
+        "notes": "Five more economics courses at the upper-division level. The economics electives are any four-unit economics course numbers 100–199. Note: Required core courses cannot be used to satisfy this category. ECON 100C can be used as an elective.",
+        "items": [
+          {
+            "type": "any",
+            "subject": "ECON",
+            "level": "upper",
+            "except": [
+              "ECON 100A",
+              "ECON 100B",
+              "ECON 110A",
+              "ECON 110B",
+              "ECON 120A",
+              "ECON 120B",
+              "ECON 120C"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

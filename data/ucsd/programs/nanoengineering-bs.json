@@ -1,0 +1,394 @@
+{
+ "id": "UCSD-MAJOR-nanoengineering-bs",
+ "name": "NanoEngineering - BS",
+ "kind": "major",
+ "type": "Bachelor's Degree",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsd.edu/curric/NANO-ug.html",
+ "sections": [
+  {
+   "name": "Basic sciences and mathematics",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "MATH 20A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MATH 20B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MATH 20C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MATH 20D",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MATH 20E",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MATH 18",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 2A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 2B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 2C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 2D",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 6A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 6B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 6C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 7L",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BILD 1",
+      "status": "active"
+     }
+    ],
+    "notes": "sixty units: twenty-four units of mathematics (MATH 20A-E and MATH 18 (formerly MATH 20F)), sixteen units of physics (PHYS 2A-D), sixteen units of chemistry (CHEM 6A-C, 7L), and four units of biology (BILD 1)"
+   }
+  },
+  {
+   "name": "Engineering preparation",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "NANO 15",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 107",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 108",
+      "status": "active"
+     }
+    ],
+    "notes": "twelve units: computer programming, circuit analysis and circuits lab"
+   }
+  },
+  {
+   "name": "NanoEngineering core",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "NANO 4",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 11",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 20L",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 102",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 104",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 110",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 111",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 112",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 115L",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 117",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 119",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 120A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 120B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 148",
+      "status": "active"
+     }
+    ],
+    "notes": "forty-seven units: a one-unit seminar (NANO 4) and nine core courses (NANO 11, 20L, 102, 104, 110, 111, 112, 115L, 117, 119, 120A, 120B, and 148)"
+   }
+  },
+  {
+   "name": "NanoEngineering electives",
+   "requirement": {
+    "type": "choose",
+    "items": [
+     {
+      "type": "course",
+      "code": "NANO 100L",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 102",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 103",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 104",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 106",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 107",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 108",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 110",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 111",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 112",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 114",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 115L",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 117",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 119",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 120A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 120B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 134",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 141A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 141B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 146",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 148",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 150",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 156",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 158",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 158L",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 159",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 161",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 164",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 168",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 174",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 174L",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 175",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 181",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 181R",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "NANO 199",
+      "status": "active"
+     },
+     {
+      "type": "text",
+      "text": "NANO 199 can be used as a NanoEngineering elective only under restrictive conditions. Two NANO 199 courses are required to fulfill the NanoEngineering elective major requirement and must be done in consecutive quarters."
+     }
+    ],
+    "count": 5,
+    "label": "NanoEngineering electives",
+    "notes": "twenty units: The five elective courses requirement must be chosen from among the upper-division NANO courses offered by the department (NANO courses numbered 100 through 199). Courses such as NANO 195, 197, and 198 are not approved to meet upper-division NanoEngineering elective major requirements."
+   }
+  }
+ ],
+ "narrative": [
+  "To graduate, students must maintain an overall GPA of at least 2.0, and the department requires at least a C- grade in each course required for the major.",
+  "Every course required for the major (except NANO 4 and NANO 199) must be taken for a letter grade, including all CENG and technical elective courses. This also includes all MATH, BILD, CHEM, and PHYS courses. All courses used to fulfill major requirements must have a grade of C- or higher.",
+  "Effective winter 2026, NanoEngineering is designated as a screened major. Screened Major Eligibility Requirements: Overall UC San Diego GPA of 2.0 or above; Letter grade of C- or above in all screening courses. Required screening courses: First-year admits: MATH 20A-C, MATH 18; CHEM 6A-C, PHYS 2A, NANO 4; Transfer students: MATH 20A-D, MATH 18; CHEM 6A-C; PHYS 2A-C; NANO 4 or NANO 11 or NANO 15.",
+  "Transfer students must take NANO 4 and NANO 11 in their first year.",
+  "Please note that there was a curriculum change and students admitted prior to fall 2020 should review previous catalog copies regarding requirements."
+ ]
+}
