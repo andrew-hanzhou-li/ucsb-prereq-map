@@ -200,3 +200,13 @@ Steps, each checked before the next:
 7. **Checks:** data checks per campus (`test_graph.py` loops over campuses), browser checks for a UCSD department map and plan, then the review rounds.
 
 The pipeline split into `pipeline/common/` and `pipeline/campuses/<id>/` happens in step 4, once it's clear which parts both campuses use.
+
+### UCSD parser scores (2026-11-27)
+
+| Group | Courses | Exactly right | Note |
+|---|---|---|---|
+| final (first honest score) | 100 | 84 | parser frozen in c35e32e; misses then used |
+| final2 (second honest score) | 100 | 85 (82% random, 91% major) | parser frozen in 6e241c7; labels kept exactly as written |
+| UCSB, for comparison | 150 | 89% random, 96% major | its own "final" group |
+
+The 95% bar isn't met yet. Most remaining misses are long-tail phrasings ("PHYS 2A/2AR-B-C-D", "POLI 5(D)", "previous course") and two readings where labelers differ (whether "or consent of instructor" covers only its own sentence).

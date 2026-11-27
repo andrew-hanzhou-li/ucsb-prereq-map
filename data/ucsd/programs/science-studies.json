@@ -1,0 +1,38 @@
+{
+ "id": "UCSD-SCIS",
+ "name": "Science Studies",
+ "kind": "department",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsd.edu/courses/SCIS.html",
+ "sections": [
+  {
+   "name": "Upper division",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "HISC 163",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "HISC 167",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "HISC 173",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "HISC 180",
+      "status": "active"
+     }
+    ]
+   }
+  }
+ ],
+ "narrative": []
+}

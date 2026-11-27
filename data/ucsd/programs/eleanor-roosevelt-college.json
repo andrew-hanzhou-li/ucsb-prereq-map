@@ -1,0 +1,81 @@
+{
+ "id": "UCSD-ERC",
+ "name": "Eleanor Roosevelt College",
+ "kind": "department",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsd.edu/courses/ERC.html",
+ "sections": [
+  {
+   "name": "Lower division",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "ERC 1",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ERC 2",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ERC 20",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ERC 88",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ERC 89",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ERC 90",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ERC 92",
+      "status": "active"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Upper division",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "ERC 188",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ERC 192A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ERC 196",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ERC 199",
+      "status": "active"
+     }
+    ]
+   }
+  }
+ ],
+ "narrative": []
+}

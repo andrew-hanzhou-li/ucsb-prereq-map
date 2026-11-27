@@ -1,0 +1,66 @@
+{
+ "id": "UCSD-TMC",
+ "name": "Thurgood Marshall College",
+ "kind": "department",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsd.edu/courses/TMC.html",
+ "sections": [
+  {
+   "name": "Lower division",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "TMC 1",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "TMC 2",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "TMC 15",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "TMC 20",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "TMC 90",
+      "status": "active"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Upper division",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "TMC 120",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "TMC 198",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "TMC 199",
+      "status": "active"
+     }
+    ]
+   }
+  }
+ ],
+ "narrative": []
+}

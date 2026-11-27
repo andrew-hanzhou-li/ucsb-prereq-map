@@ -1,0 +1,81 @@
+{
+ "id": "UCSD-MCWP",
+ "name": "Muir College Writing Program",
+ "kind": "department",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsd.edu/courses/MCWP.html",
+ "sections": [
+  {
+   "name": "Lower division",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "MCWP 40",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MCWP 40C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MCWP 40CR",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MCWP 40R",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MCWP 50",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MCWP 50R",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MUIR 1",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MUIR 2",
+      "status": "active"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Upper division",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "MCWP 125",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MCWP 125R",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MUIR 199",
+      "status": "active"
+     }
+    ]
+   }
+  }
+ ],
+ "narrative": []
+}

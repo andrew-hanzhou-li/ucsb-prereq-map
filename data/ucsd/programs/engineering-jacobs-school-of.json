@@ -1,0 +1,66 @@
+{
+ "id": "UCSD-ENG",
+ "name": "Engineering, Jacobs School of",
+ "kind": "department",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsd.edu/courses/ENG.html",
+ "sections": [
+  {
+   "name": "Lower division",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "ENG 5",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ENG 10",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ENG 15",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ENG 20",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ENG 30",
+      "status": "active"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Upper division",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "ENG 100C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ENG 100D",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ENG 100L",
+      "status": "active"
+     }
+    ]
+   }
+  }
+ ],
+ "narrative": []
+}

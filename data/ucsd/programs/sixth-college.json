@@ -1,0 +1,33 @@
+{
+ "id": "UCSD-SXTH",
+ "name": "Sixth College",
+ "kind": "department",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsd.edu/courses/SXTH.html",
+ "sections": [
+  {
+   "name": "Lower division",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "SXTH 1",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SXTH 2",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SXTH 20",
+      "status": "active"
+     }
+    ]
+   }
+  }
+ ],
+ "narrative": []
+}

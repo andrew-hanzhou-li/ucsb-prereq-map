@@ -1,0 +1,86 @@
+{
+ "id": "UCSD-DSGN",
+ "name": "Design",
+ "kind": "department",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsd.edu/courses/DSGN.html",
+ "sections": [
+  {
+   "name": "Lower division",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "DSGN 1",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "DSGN 2",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "DSGN 90",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "DSGN 99",
+      "status": "active"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Upper division",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "DSGN 100",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "DSGN 118",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "DSGN 119",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "DSGN 160",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "DSGN 161",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "DSGN 195",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "DSGN 198",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "DSGN 199",
+      "status": "active"
+     }
+    ]
+   }
+  }
+ ],
+ "narrative": []
+}

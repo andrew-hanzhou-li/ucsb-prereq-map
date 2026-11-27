@@ -1,0 +1,56 @@
+{
+ "id": "UCSD-AIP",
+ "name": "Academic Internship Program",
+ "kind": "department",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsd.edu/courses/AIP.html",
+ "sections": [
+  {
+   "name": "Lower division",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "AIP 97",
+      "status": "active"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Upper division",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "AIP 197",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "AIP 197DC",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "AIP 197EX",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "AIP 197P",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "AIP 197T",
+      "status": "active"
+     }
+    ]
+   }
+  }
+ ],
+ "narrative": []
+}

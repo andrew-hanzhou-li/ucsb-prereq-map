@@ -1,0 +1,66 @@
+{
+ "id": "UCSD-INTL",
+ "name": "International Studies",
+ "kind": "department",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsd.edu/courses/INTL.html",
+ "sections": [
+  {
+   "name": "Lower division",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "INTL 97",
+      "status": "active"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Upper division",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "INTL 100",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "INTL 101",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "INTL 102",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "INTL 190",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "INTL 190H",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "INTL 196H",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "INTL 197",
+      "status": "active"
+     }
+    ]
+   }
+  }
+ ],
+ "narrative": []
+}
