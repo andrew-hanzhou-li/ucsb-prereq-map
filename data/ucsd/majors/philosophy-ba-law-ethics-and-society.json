@@ -145,20 +145,7 @@
         "items": [
           {
             "type": "choose",
-            "count": 12,
-            "items": [
-              {
-                "type": "any",
-                "subject": "PHIL",
-                "level": "upper"
-              }
-            ],
-            "label": "Upper-division philosophy courses",
-            "notes": "At least twelve of the fifteen courses must be upper-division; core courses count. PHIL 191–199 may not be used. Up to two upper-division courses outside philosophy may count with adviser approval."
-          },
-          {
-            "type": "choose",
-            "count": 3,
+            "count": 1,
             "items": [
               {
                 "type": "any",
@@ -171,8 +158,8 @@
                 "level": "upper"
               }
             ],
-            "label": "Remaining philosophy courses",
-            "notes": "The remaining three of the fifteen philosophy courses may be lower- or upper-division; PHIL 10 counts here."
+            "label": "One more philosophy course",
+            "notes": "Fifteen philosophy courses in all, at least twelve upper-division. The nine core courses and the five Law, Ethics, and Society courses count toward the fifteen (and already give at least twelve upper-division), so one more lower- or upper-division philosophy course completes it. PHIL 191–199 may not be used. Up to two upper-division courses outside philosophy may count among the twelve with adviser approval. The catalog lets a course count for both the emphasis and a core requirement; the planner counts each course once, so it asks for five emphasis courses besides the core ones (the total is still fifteen)."
           }
         ],
         "label": "Fifteen philosophy courses"
