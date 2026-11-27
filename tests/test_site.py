@@ -31,6 +31,8 @@ What it checks:
      keeps the course visible above it.
   9. The single-file version (site/ucsb-prereq-map.html, from build_single.py)
      works when opened straight from the disk.
+ 10. Choosing a campus: the campus screen, remembering it, old links,
+     saved data under the old names, a campus that isn't ready.
 
 Needs Playwright, a browser-automation library (one-time setup):
     py -m pip install playwright
@@ -169,6 +171,79 @@ STEP_ORDER = """() => {
     }
     return wrong;
 }"""
+
+
+def check_campuses(p):
+    """10. Choosing a campus (campus.js): the campus screen, remembering the
+    choice, old links, saved data moving to the new names, and a campus
+    that isn't ready."""
+    browser = p.chromium.launch()
+    page = new_page(browser, viewport={"width": 1400, "height": 900})
+    page.goto(SITE)
+    page.wait_for_timeout(500)
+    check("campus: a first visit shows the campus screen",
+          page.is_visible("#campus-screen") and not page.is_visible(".layout"))
+    check("campus: all nine campuses are listed, and only ready ones are links",
+          page.locator(".campus-row").count() == 9 and page.locator("a.campus-name").count() == 1)
+    page.keyboard.press("1")                 # Berkeley: not ready
+    page.wait_for_timeout(300)
+    check("campus: a key for a campus that isn't ready does nothing", page.evaluate("location.hash") == "")
+    page.keyboard.press("8")                 # Santa Barbara
+    page.wait_for_function("typeof majors !== 'undefined' && majors.length > 0", timeout=15000)
+    check("campus: key 8 opens UC Santa Barbara",
+          page.evaluate("location.hash") == "#ucsb/" and page.is_visible("#welcome") and
+          "UC Santa Barbara" in page.inner_text("#campus-name"))
+    page.goto(SITE)
+    page.wait_for_function("typeof majors !== 'undefined' && majors.length > 0", timeout=15000)
+    check("campus: the choice is remembered", not page.is_visible("#campus-screen") and page.is_visible("#welcome"))
+    page.click("#campus-change")
+    page.wait_for_timeout(300)
+    check("campus: 'change' shows the campus screen, with this campus marked",
+          page.is_visible("#campus-screen") and page.locator(".campus-row.current").count() == 1)
+    page.click("a.campus-name")
+    page.wait_for_timeout(500)
+    check("campus: picking the same campus goes back without a reload",
+          not page.is_visible("#campus-screen") and page.is_visible("#welcome"))
+
+    page.goto(SITE + "#economics-ba")
+    page.wait_for_function("currentView === 'map' && graph && graph.major.id === 'BAECON'", timeout=15000)
+    check("campus: an old link opens as UCSB, and its address is updated",
+          page.evaluate("location.hash") == "#ucsb/economics-ba")
+    page.goto(SITE + "#plan/economics-ba")
+    page.wait_for_function("currentView === 'plan'", timeout=15000)
+    check("campus: an old plan link opens the plan", page.evaluate("location.hash") == "#ucsb/plan/economics-ba")
+
+    page.goto(SITE + "#ucsd/")
+    page.wait_for_timeout(800)
+    check("campus: a campus that isn't ready shows the campus screen with a note",
+          page.is_visible("#campus-screen") and "UC San Diego" in page.inner_text("#campus-note"))
+    check("campus: ...and isn't remembered", page.evaluate("localStorage.getItem('prereq.campus')") == "ucsb")
+    check("campus: no JavaScript errors", not page.errors, page.errors)
+    page.close()
+
+    # Marks, credit and plans saved before campuses were added move over.
+    old = new_page(browser, viewport={"width": 1400, "height": 900})
+    old.goto(SITE + "404.html")
+    old.evaluate("""() => { localStorage.clear();
+        localStorage.setItem('ucsb-prereq-map.taken', '["ECON 1"]');
+        localStorage.setItem('ucsb-prereq-map.plan', '{"x":1}'); }""")
+    old.goto(SITE + "#ucsb/economics-ba")
+    old.wait_for_function("currentView === 'map' && graph && graph.major.id === 'BAECON'", timeout=15000)
+    check("campus: marks saved under the old name are kept",
+          old.evaluate("localStorage.getItem('prereq.ucsb.taken')") == '["ECON 1"]' and
+          old.evaluate("taken.has('ECON 1')"))
+    check("campus: ...and the old names are left in place",
+          old.evaluate("localStorage.getItem('ucsb-prereq-map.taken')") == '["ECON 1"]')
+    old.evaluate("localStorage.clear()")
+    old.close()
+
+    phone = new_page(browser, viewport={"width": 360, "height": 740})
+    phone.goto(SITE + "#campus")
+    phone.wait_for_timeout(500)
+    check("campus: the campus screen fits a phone",
+          phone.evaluate("document.documentElement.scrollWidth") <= 360)
+    phone.close()
+    browser.close()
 
 
 def main():
@@ -1034,6 +1109,8 @@ def main():
         check("SE: no sideways scrolling", se.evaluate("document.documentElement.scrollWidth <= window.innerWidth"))
         check("SE: no JavaScript errors", not se.errors, se.errors)
         browser.close()
+
+        check_campuses(p)
 
         # 9. The single file, opened from the disk
         if not SINGLE_FILE.exists():
