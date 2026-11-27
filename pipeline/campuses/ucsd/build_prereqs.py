@@ -65,6 +65,10 @@ EXTRA_RULES = [
     ("consent", r"(?i:\b(?:approval\s+of\s+the\s+|an\s+approved\s+)?special\s+studies\s+(?:online\s+)?(?:form|application))"),
     ("consent", r"\bdepartment(?:al)?\s+(?:stamp|authorization|approval)(?:\s+(?:is\s+)?required)?"),
     ("consent", r"\benrollment\s+via\s+[^;.§]*"),
+    # "ethnic studies major or minor", "international studies major with ...", "a Regent's Scholar"
+    ("restriction", r"\b(?:[a-z]+\s){1,3}major\s+or\s+minor\b"),
+    ("restriction", r"\b(?:[a-z]+\s){1,3}major(?=\s+with\b)"),
+    ("restriction", r"\b(?:a\s+)?regent[’']?s\s+scholar\b"),
     ("consent", r"\bby\s+invitation(?:\s+only)?"),
     ("consent", r"\b(?:and\s+)?(?:the\s+)?director\s+of\s+(?:[^;.§]*?program\b|[^;.,§]*)"),
 ]
@@ -78,6 +82,7 @@ CONSENT_FOR_ALL = re.compile(
     r"[\w ,-]*students\s+cannot\s+enroll\s+without\s+(?:the\s+)?consent\s+of\s+(?:the\s+)?instructor|"
     # "...; MAE 143B; and MAE 170, or consent of instructor." at the very end:
     # UCSD means consent instead of everything before it.
+    # (Not "consent of department": after "majors only" it waives that rule alone.)
     r"[,;]?\s+or\s+(?:by\s+)?(?:the\s+)?consent\s+of\s+(?:the\s+)?instructor\.?\s*$)\.?",
     re.IGNORECASE)
 
@@ -265,6 +270,34 @@ def expand_shorthand(text, code):
     # "Department approval required for nonmajors": majors, or department approval.
     text = re.sub(r"\bdepartment\s+approval\s+(?:is\s+)?required\s+for\s+non-?majors\b",
                   "restricted to majors or department approval", text, flags=re.IGNORECASE)
+    # "ETHN 100A, ethnic studies major or minor, or consent of instructor": the
+    # course and the major, or consent.
+    text = re.sub(r"(\b[A-Z]{2,5} \d+[A-Z]*), ((?:[a-z]+ ){1,3}majors? or minors?\b)", r"\1 and \2", text)
+    # "Restricted to students with upper-division standing": standing.
+    text = re.sub(r"\brestricted\s+to\s+students\s+with\s+((?:upper|lower)-division|junior|senior|sophomore)\s+standing",
+                  r"\1 standing", text, flags=re.IGNORECASE)
+    # "approval required to monitor enrollment and to ensure ...": the reason isn't a requirement.
+    text = re.sub(r"\brequired\s+to\s+(?:monitor|ensure|confirm)\b[^.;]*", "required", text, flags=re.IGNORECASE)
+    # "CAT 2 and 3 or CCE 1 and 2 or ...": a choice of two-course pairs, each
+    # one subject. (Not "ECON 1 or 100B and 2 or 3", where the pair has no subject.)
+    text = re.sub(r"\b([A-Z]{2,5} \d+)([A-Z]+) (and|or) ([A-Z])\b(?![\s-]*\d)(?!\w)", r"\1\2 \3 \1\4", text)
+    pair_pattern = re.compile(r"(?:(?<=^)|(?<=\bor ))([A-Z]{2,5}) (\d+[A-Z]*) and (\1 )?(\d+[A-Z]*)"
+                              r"(?=\s+or\s+[A-Z]{2,5}\s\d|\s*[.;]?\s*$)")
+    pairs_in_text = len(pair_pattern.findall(text))
+
+    def pair(match):
+        subject, first, repeated, second = match.groups()
+        # With the subject written twice ("WCWP 10A and WCWP 10B"), only a
+        # lettered pair of one number, and only in a chain of pairs: alone,
+        # "COGS 14A and COGS 14B or MATH 11" is the usual or-groups-joined-by-and.
+        if repeated and (pairs_in_text < 2 or re.match(r"\d+", first).group() != re.match(r"\d+", second).group()):
+            return match.group(0)
+        return "(%s %s and %s %s)" % (subject, first, subject, second)
+    text = pair_pattern.sub(pair, text)
+    # "ANSC 121, ANSC 148, ..., or ANTH 103, department approval required, and
+    # upper-division standing": the course list is one choice.
+    text = re.sub(r"(?<!\bor )(?<!\band )(?<!, )\b((?:[A-Z]{2,5} \d+[A-Z]*, )+or [A-Z]{2,5} \d+[A-Z]*)\b(?=,\s+[a-z])",
+                  lambda m: "(" + re.sub(r",\s+(?:or\s+)?", " or ", m.group(1)) + ")", text)
     # "PHYS 2A and B" -> "PHYS 2A and PHYS 2B"
     text = re.sub(r"\b([A-Z]{2,5} \d+)([A-Z]+) (and|or) ([A-Z])\b(?![\s-]*\d)(?!\w)", r"\1\2 \3 \1\4", text)
     # "LISP 1D/DX" -> "LISP 1D or LISP 1DX"; "DSC 40B/R" -> "DSC 40B or DSC 40BR"

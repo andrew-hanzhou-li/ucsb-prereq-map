@@ -69,6 +69,8 @@ def test_notes_split():
          "ECON 100A. Enrollment limited to majors in the Department of Economics."),
         ("AP Chemistry score of 4. Recommended: a physics course. Concurrent enrollment in MATH 20A.",
          "AP Chemistry score of 4. Concurrent enrollment in MATH 20A."),
+        ("EDS 140, department approval. This form provides the instructor with information; EDS 139 must be taken "
+         "as a corequisite.", "EDS 140, department approval. EDS 139 must be taken as a corequisite."),
     ]
     for text, expected in cases:
         got = extract.split_prereq_text(text)[0]
@@ -131,6 +133,22 @@ def test_readings(parser):
          "EDS 129A | EDS 135 | EDS 136"),
         ("LIFR 5B", "none for 5A; for 5B, two or more years of French in high school.", "@other"),
         ("LIFR 5A", "none for 5A; for 5B, two or more years of French in high school.", "-"),
+        ("LISP 5D", "none for 5A; for 5B, two or more years of Spanish in high school.", "-"),
+        # Chains of two-course pairs, and the or-groups they must not swallow
+        ("LTWR 8B", "CAT 2 and 3 or CCE 1 and 2 or WARR 11A-B or WCWP 10A and WCWP 10B or SYN 1 and 2.",
+         "(CAT 2 & CAT 3) | (CCE 1 & CCE 2) | (SYN 1 & SYN 2) | (WARR 11A & WARR 11B) | (WCWP 10A & WCWP 10B)"),
+        ("COGS 150", "COGS 14A and COGS 14B or MATH 11 or PSYC 60.", "(COGS 14B | MATH 11 | PSYC 60) & COGS 14A"),
+        ("MATH 20E", "MATH 18 or MATH 31AH and MATH 20C or MATH 31BH.", "(MATH 18 | MATH 31AH) & (MATH 20C | MATH 31BH)"),
+        ("ECE 103", "ECE 65 and PHYS 2D or PHYS 4D and 4E.", "((PHYS 4D & PHYS 4E) | PHYS 2D) & ECE 65"),
+        ("ANSC 191GS", "ANSC 121, ANSC 148, or ANTH 103, department approval required, and upper-division standing.",
+         "(ANSC 121 | ANSC 148 | ANTH 103) & @consent & @standing"),
+        ("PH 101", "PH 40 or FMPH 40 and PSYC 60, HDS 60, MATH 11, or COGS 14B, and upper-division standing.",
+         "(COGS 14B | HDS 60 | MATH 11 | PSYC 60) & (FMPH 40 | PH 40) & @standing"),
+        ("ETHN 100B", "ETHN 100A, ethnic studies major or minor, or consent of instructor.", "(@restriction & ETHN 100A) | @consent"),
+        ("BENG 120", "CHEM 6A and 6B; majors only or consent of department.", "(@consent | @restriction) & CHEM 6A & CHEM 6B"),
+        ("DSC 190", "department and instructor approval required to monitor enrollment. Restricted to students with "
+                    "upper-division standing.", "@consent & @standing"),
+        ("MATH 96", "AP Calculus AB score of 4 or more, or MATH 20A.", "@exam | MATH 20A"),
     ]
     for code, text, expected in cases:
         got = to_notation(build_prereqs.parse(parser, text, code)["requires"])

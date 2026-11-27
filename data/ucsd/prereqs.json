@@ -2625,27 +2625,22 @@
         "min_grade": null
        },
        {
-        "type": "and",
-        "items": [
-         {
-          "type": "course",
-          "code": "ANSC 164",
-          "concurrent": false,
-          "min_grade": null
-         },
-         {
-          "type": "condition",
-          "kind": "consent",
-          "text": "department approval required"
-         },
-         {
-          "type": "condition",
-          "kind": "standing",
-          "text": "upper-division standing"
-         }
-        ]
+        "type": "course",
+        "code": "ANSC 164",
+        "concurrent": false,
+        "min_grade": null
        }
       ]
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "department approval required"
+     },
+     {
+      "type": "condition",
+      "kind": "standing",
+      "text": "upper-division standing"
      },
      {
       "type": "condition",
@@ -2722,27 +2717,22 @@
         "min_grade": null
        },
        {
-        "type": "and",
-        "items": [
-         {
-          "type": "course",
-          "code": "ANTH 103",
-          "concurrent": false,
-          "min_grade": null
-         },
-         {
-          "type": "condition",
-          "kind": "consent",
-          "text": "department approval required"
-         },
-         {
-          "type": "condition",
-          "kind": "standing",
-          "text": "upper-division standing"
-         }
-        ]
+        "type": "course",
+        "code": "ANTH 103",
+        "concurrent": false,
+        "min_grade": null
        }
       ]
+     },
+     {
+      "type": "condition",
+      "kind": "consent",
+      "text": "department approval required"
+     },
+     {
+      "type": "condition",
+      "kind": "standing",
+      "text": "upper-division standing"
      },
      {
       "type": "condition",
@@ -5562,7 +5552,7 @@
      },
      {
       "type": "condition",
-      "kind": "other",
+      "kind": "restriction",
       "text": "a Regents Scholar"
      },
      {
@@ -14250,7 +14240,7 @@
      },
      {
       "type": "condition",
-      "kind": "other",
+      "kind": "restriction",
       "text": "a Regent’s Scholar"
      },
      {
@@ -31224,13 +31214,13 @@
      },
      {
       "type": "condition",
-      "kind": "restriction",
-      "text": "Restricted to students"
+      "kind": "standing",
+      "text": "upper-division standing"
      },
      {
       "type": "condition",
-      "kind": "standing",
-      "text": "upper-division standing"
+      "kind": "restriction",
+      "text": "Restricted to students within the data science or business data science major"
      }
     ]
    },
@@ -31252,13 +31242,13 @@
      },
      {
       "type": "condition",
-      "kind": "restriction",
-      "text": "Restricted to students"
+      "kind": "standing",
+      "text": "upper-division standing"
      },
      {
       "type": "condition",
-      "kind": "standing",
-      "text": "upper-division standing"
+      "kind": "restriction",
+      "text": "Restricted to students within the data science major"
      }
     ]
    },
@@ -31280,13 +31270,13 @@
      },
      {
       "type": "condition",
-      "kind": "restriction",
-      "text": "Restricted to students"
+      "kind": "standing",
+      "text": "upper-division standing"
      },
      {
       "type": "condition",
-      "kind": "standing",
-      "text": "upper-division standing"
+      "kind": "restriction",
+      "text": "Restricted to students within the data science or business data science major"
      }
     ]
    },
@@ -31319,13 +31309,13 @@
      },
      {
       "type": "condition",
-      "kind": "restriction",
-      "text": "Restricted to students"
+      "kind": "standing",
+      "text": "upper-division standing"
      },
      {
       "type": "condition",
-      "kind": "standing",
-      "text": "upper-division standing"
+      "kind": "restriction",
+      "text": "Restricted to students within the data science or business data science major"
      }
     ]
    },
@@ -31392,13 +31382,13 @@
      },
      {
       "type": "condition",
-      "kind": "restriction",
-      "text": "Restricted to students"
+      "kind": "standing",
+      "text": "upper-division standing"
      },
      {
       "type": "condition",
-      "kind": "standing",
-      "text": "upper-division standing"
+      "kind": "restriction",
+      "text": "Restricted to students within the data science or business data science major"
      }
     ]
    },
@@ -31557,13 +31547,13 @@
      },
      {
       "type": "condition",
-      "kind": "restriction",
-      "text": "Restricted to students"
+      "kind": "standing",
+      "text": "upper-division standing"
      },
      {
       "type": "condition",
-      "kind": "standing",
-      "text": "upper-division standing"
+      "kind": "restriction",
+      "text": "Restricted to students within the data science or business data science major"
      }
     ]
    },
@@ -32019,13 +32009,13 @@
      },
      {
       "type": "condition",
-      "kind": "restriction",
-      "text": "Restricted to students"
+      "kind": "standing",
+      "text": "upper-division standing"
      },
      {
       "type": "condition",
-      "kind": "standing",
-      "text": "upper-division standing"
+      "kind": "restriction",
+      "text": "Restricted to students within the data science major"
      }
     ]
    },
@@ -32052,13 +32042,13 @@
      },
      {
       "type": "condition",
-      "kind": "restriction",
-      "text": "Restricted to students"
+      "kind": "standing",
+      "text": "upper-division standing"
      },
      {
       "type": "condition",
-      "kind": "standing",
-      "text": "upper-division standing"
+      "kind": "restriction",
+      "text": "Restricted to students within the data science major"
      }
     ]
    },
@@ -32079,16 +32069,6 @@
      },
      {
       "type": "condition",
-      "kind": "other",
-      "text": "to ensure that students have the sufficient educational background for a given topic"
-     },
-     {
-      "type": "condition",
-      "kind": "restriction",
-      "text": "Restricted to students"
-     },
-     {
-      "type": "condition",
       "kind": "standing",
       "text": "upper-division standing"
      }
@@ -32106,11 +32086,6 @@
     "items": [
      {
       "type": "condition",
-      "kind": "restriction",
-      "text": "restricted to students"
-     },
-     {
-      "type": "condition",
       "kind": "standing",
       "text": "upper-division standing"
      },
@@ -32118,11 +32093,6 @@
       "type": "condition",
       "kind": "consent",
       "text": "Department and instructor approval is required"
-     },
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "to ensure that students have sufficient educational background for a given topic"
      }
     ]
    },
@@ -32136,11 +32106,6 @@
    "requires": {
     "type": "and",
     "items": [
-     {
-      "type": "condition",
-      "kind": "restriction",
-      "text": "restricted to students"
-     },
      {
       "type": "condition",
       "kind": "standing",
@@ -32165,11 +32130,6 @@
     "items": [
      {
       "type": "condition",
-      "kind": "restriction",
-      "text": "restricted to students"
-     },
-     {
-      "type": "condition",
       "kind": "standing",
       "text": "upper-division standing"
      },
@@ -32190,11 +32150,6 @@
    "requires": {
     "type": "and",
     "items": [
-     {
-      "type": "condition",
-      "kind": "restriction",
-      "text": "restricted to students"
-     },
      {
       "type": "condition",
       "kind": "standing",
@@ -32817,18 +32772,23 @@
         "min_grade": null
        },
        {
-        "type": "course",
-        "code": "PHYS 4D",
-        "concurrent": false,
-        "min_grade": null
+        "type": "and",
+        "items": [
+         {
+          "type": "course",
+          "code": "PHYS 4D",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "PHYS 4E",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
        }
       ]
-     },
-     {
-      "type": "course",
-      "code": "PHYS 4E",
-      "concurrent": false,
-      "min_grade": null
      }
     ]
    },
@@ -38393,7 +38353,7 @@
   },
   {
    "code": "EDS 131",
-   "prereq_text": "department approval. Students will need to fill out a placement form prior to getting approval to enroll in EDS 131. This form provides the course instructor with information to make the appropriate field placement; EDS 139 must be taken as a corequisite.",
+   "prereq_text": "department approval. EDS 139 must be taken as a corequisite.",
    "requires": {
     "type": "and",
     "items": [
@@ -38401,11 +38361,6 @@
       "type": "condition",
       "kind": "consent",
       "text": "department approval"
-     },
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "Students will need to fill out a placement form prior to getting approval to enroll in EDS 131"
      },
      {
       "type": "course",
@@ -38514,7 +38469,7 @@
   },
   {
    "code": "EDS 140",
-   "prereq_text": "EDS 130 or EDS 131 or EDS 133 or EDS 135 or EDS 136 or EDS 137 or EDS 145 or EDS 146, department approval. Students will need to fill out a placement form prior to getting approval to enroll in EDS 140. This form provides the course instructor with information regarding student’s prior experiences with PAL, areas/topics of interest; EDS 139 must be taken as a corequisite. If students wish to continue their service-learning practicum at their host school, they can take EDS 139.",
+   "prereq_text": "EDS 130 or EDS 131 or EDS 133 or EDS 135 or EDS 136 or EDS 137 or EDS 145 or EDS 146, department approval. EDS 139 must be taken as a corequisite.",
    "requires": {
     "type": "and",
     "items": [
@@ -38577,11 +38532,6 @@
       "text": "department approval"
      },
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "Students will need to fill out a placement form prior to getting approval to enroll in EDS 140"
-     },
-     {
       "type": "course",
       "code": "EDS 139",
       "concurrent": true,
@@ -38595,7 +38545,7 @@
   },
   {
    "code": "EDS 141",
-   "prereq_text": "EDS 140, department approval. Students will need to fill out a placement form prior to getting approval to enroll in EDS 140. This form provides the course instructor with information regarding student’s prior experiences with PAL, areas/topics of interest; EDS 139 must be taken as a corequisite.",
+   "prereq_text": "EDS 140, department approval. EDS 139 must be taken as a corequisite.",
    "requires": {
     "type": "and",
     "items": [
@@ -38609,11 +38559,6 @@
       "type": "condition",
       "kind": "consent",
       "text": "department approval"
-     },
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "Students will need to fill out a placement form prior to getting approval to enroll in EDS 140"
      },
      {
       "type": "course",
@@ -39798,27 +39743,37 @@
     "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "ETHN 1",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "ETHN 2",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "ETHN 3",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "ethnic studies majors"
+      "type": "and",
+      "items": [
+       {
+        "type": "or",
+        "items": [
+         {
+          "type": "course",
+          "code": "ETHN 1",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "ETHN 2",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "ETHN 3",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
+       },
+       {
+        "type": "condition",
+        "kind": "other",
+        "text": "ethnic studies majors"
+       }
+      ]
      },
      {
       "type": "condition",
@@ -39828,7 +39783,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": false,
+   "ambiguous": true,
    "unparsed": []
   },
   {
@@ -39838,15 +39793,20 @@
     "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "ETHN 100A",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "ethnic studies major"
+      "type": "and",
+      "items": [
+       {
+        "type": "condition",
+        "kind": "restriction",
+        "text": "and ethnic studies major or minor"
+       },
+       {
+        "type": "course",
+        "code": "ETHN 100A",
+        "concurrent": false,
+        "min_grade": null
+       }
+      ]
      },
      {
       "type": "condition",
@@ -39875,15 +39835,15 @@
         "min_grade": null
        },
        {
+        "type": "condition",
+        "kind": "restriction",
+        "text": "and ethnic studies major or minor"
+       },
+       {
         "type": "course",
         "code": "ETHN 100B",
         "concurrent": false,
         "min_grade": null
-       },
-       {
-        "type": "condition",
-        "kind": "other",
-        "text": "ethnic studies major"
        }
       ]
      },
@@ -47084,8 +47044,13 @@
     "items": [
      {
       "type": "condition",
+      "kind": "restriction",
+      "text": "international studies major"
+     },
+     {
+      "type": "condition",
       "kind": "other",
-      "text": "international studies major with 3.5 major GPA"
+      "text": "department application process required"
      },
      {
       "type": "condition",
@@ -47124,8 +47089,8 @@
     "items": [
      {
       "type": "condition",
-      "kind": "other",
-      "text": "international studies major with 3.5 major GPA"
+      "kind": "restriction",
+      "text": "international studies major"
      },
      {
       "type": "condition",
@@ -54511,131 +54476,131 @@
    "code": "LTEN 30",
    "prereq_text": "CAT 2 and 3 or DOC 2 and 3 or HUM 1 and 2 or MCWP 40 and 50 or MMW 12 and 13 or WARR 11A-B or WCWP 10A-B.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "CAT 2",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "or",
+      "type": "and",
       "items": [
+       {
+        "type": "course",
+        "code": "CAT 2",
+        "concurrent": false,
+        "min_grade": null
+       },
        {
         "type": "course",
         "code": "CAT 3",
         "concurrent": false,
         "min_grade": null
-       },
+       }
+      ]
+     },
+     {
+      "type": "and",
+      "items": [
        {
         "type": "course",
         "code": "DOC 2",
         "concurrent": false,
         "min_grade": null
-       }
-      ]
-     },
-     {
-      "type": "or",
-      "items": [
+       },
        {
         "type": "course",
         "code": "DOC 3",
         "concurrent": false,
         "min_grade": null
-       },
+       }
+      ]
+     },
+     {
+      "type": "and",
+      "items": [
        {
         "type": "course",
         "code": "HUM 1",
         "concurrent": false,
         "min_grade": null
-       }
-      ]
-     },
-     {
-      "type": "or",
-      "items": [
+       },
        {
         "type": "course",
         "code": "HUM 2",
         "concurrent": false,
         "min_grade": null
-       },
+       }
+      ]
+     },
+     {
+      "type": "and",
+      "items": [
        {
         "type": "course",
         "code": "MCWP 40",
         "concurrent": false,
         "min_grade": null
-       }
-      ]
-     },
-     {
-      "type": "or",
-      "items": [
+       },
        {
         "type": "course",
         "code": "MCWP 50",
         "concurrent": false,
         "min_grade": null
-       },
+       }
+      ]
+     },
+     {
+      "type": "and",
+      "items": [
        {
         "type": "course",
         "code": "MMW 12",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "MMW 13",
         "concurrent": false,
         "min_grade": null
        }
       ]
      },
      {
-      "type": "or",
+      "type": "and",
       "items": [
        {
         "type": "course",
-        "code": "MMW 13",
+        "code": "WARR 11A",
         "concurrent": false,
         "min_grade": null
        },
        {
-        "type": "and",
-        "items": [
-         {
-          "type": "course",
-          "code": "WARR 11A",
-          "concurrent": false,
-          "min_grade": null
-         },
-         {
-          "type": "course",
-          "code": "WARR 11B",
-          "concurrent": false,
-          "min_grade": null
-         }
-        ]
+        "type": "course",
+        "code": "WARR 11B",
+        "concurrent": false,
+        "min_grade": null
+       }
+      ]
+     },
+     {
+      "type": "and",
+      "items": [
+       {
+        "type": "course",
+        "code": "WCWP 10A",
+        "concurrent": false,
+        "min_grade": null
        },
        {
-        "type": "and",
-        "items": [
-         {
-          "type": "course",
-          "code": "WCWP 10A",
-          "concurrent": false,
-          "min_grade": null
-         },
-         {
-          "type": "course",
-          "code": "WCWP 10B",
-          "concurrent": false,
-          "min_grade": null
-         }
-        ]
+        "type": "course",
+        "code": "WCWP 10B",
+        "concurrent": false,
+        "min_grade": null
        }
       ]
      }
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -59066,480 +59031,495 @@
    "code": "LTWR 8A",
    "prereq_text": "CAT 2 and 3 or CCE 1 and 2 or DOC 2 and 3 or HUM 1 and 2 or MCWP 40 and 50 or MMW 12 and 13 or WARR 11A-B or WCWP 10A-B or SYN 1 and 2.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "CAT 2",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "or",
+      "type": "and",
       "items": [
+       {
+        "type": "course",
+        "code": "CAT 2",
+        "concurrent": false,
+        "min_grade": null
+       },
        {
         "type": "course",
         "code": "CAT 3",
         "concurrent": false,
         "min_grade": null
-       },
+       }
+      ]
+     },
+     {
+      "type": "and",
+      "items": [
        {
         "type": "course",
         "code": "CCE 1",
         "concurrent": false,
         "min_grade": null
-       }
-      ]
-     },
-     {
-      "type": "or",
-      "items": [
+       },
        {
         "type": "course",
         "code": "CCE 2",
         "concurrent": false,
         "min_grade": null
-       },
+       }
+      ]
+     },
+     {
+      "type": "and",
+      "items": [
        {
         "type": "course",
         "code": "DOC 2",
         "concurrent": false,
         "min_grade": null
-       }
-      ]
-     },
-     {
-      "type": "or",
-      "items": [
+       },
        {
         "type": "course",
         "code": "DOC 3",
         "concurrent": false,
         "min_grade": null
-       },
+       }
+      ]
+     },
+     {
+      "type": "and",
+      "items": [
        {
         "type": "course",
         "code": "HUM 1",
         "concurrent": false,
         "min_grade": null
-       }
-      ]
-     },
-     {
-      "type": "or",
-      "items": [
+       },
        {
         "type": "course",
         "code": "HUM 2",
         "concurrent": false,
         "min_grade": null
-       },
+       }
+      ]
+     },
+     {
+      "type": "and",
+      "items": [
        {
         "type": "course",
         "code": "MCWP 40",
         "concurrent": false,
         "min_grade": null
-       }
-      ]
-     },
-     {
-      "type": "or",
-      "items": [
+       },
        {
         "type": "course",
         "code": "MCWP 50",
         "concurrent": false,
         "min_grade": null
-       },
+       }
+      ]
+     },
+     {
+      "type": "and",
+      "items": [
        {
         "type": "course",
         "code": "MMW 12",
         "concurrent": false,
         "min_grade": null
-       }
-      ]
-     },
-     {
-      "type": "or",
-      "items": [
+       },
        {
         "type": "course",
         "code": "MMW 13",
         "concurrent": false,
         "min_grade": null
-       },
+       }
+      ]
+     },
+     {
+      "type": "and",
+      "items": [
        {
-        "type": "and",
-        "items": [
-         {
-          "type": "course",
-          "code": "WARR 11A",
-          "concurrent": false,
-          "min_grade": null
-         },
-         {
-          "type": "course",
-          "code": "WARR 11B",
-          "concurrent": false,
-          "min_grade": null
-         }
-        ]
-       },
-       {
-        "type": "and",
-        "items": [
-         {
-          "type": "course",
-          "code": "WCWP 10A",
-          "concurrent": false,
-          "min_grade": null
-         },
-         {
-          "type": "course",
-          "code": "WCWP 10B",
-          "concurrent": false,
-          "min_grade": null
-         }
-        ]
+        "type": "course",
+        "code": "WARR 11A",
+        "concurrent": false,
+        "min_grade": null
        },
        {
         "type": "course",
-        "code": "SYN 1",
+        "code": "WARR 11B",
         "concurrent": false,
         "min_grade": null
        }
       ]
      },
      {
-      "type": "course",
-      "code": "SYN 2",
-      "concurrent": false,
-      "min_grade": null
+      "type": "and",
+      "items": [
+       {
+        "type": "course",
+        "code": "WCWP 10A",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "WCWP 10B",
+        "concurrent": false,
+        "min_grade": null
+       }
+      ]
+     },
+     {
+      "type": "and",
+      "items": [
+       {
+        "type": "course",
+        "code": "SYN 1",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "SYN 2",
+        "concurrent": false,
+        "min_grade": null
+       }
+      ]
      }
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
    "code": "LTWR 8B",
    "prereq_text": "CAT 2 and 3 or CCE 1 and 2 or DOC 2 and 3 or HUM 1 and 2 or MCWP 40 and 50 or MMW 12 and 13 or WARR 11A-B or WCWP 10A-B or SYN 1 and 2.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "CAT 2",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "or",
+      "type": "and",
       "items": [
+       {
+        "type": "course",
+        "code": "CAT 2",
+        "concurrent": false,
+        "min_grade": null
+       },
        {
         "type": "course",
         "code": "CAT 3",
         "concurrent": false,
         "min_grade": null
-       },
+       }
+      ]
+     },
+     {
+      "type": "and",
+      "items": [
        {
         "type": "course",
         "code": "CCE 1",
         "concurrent": false,
         "min_grade": null
-       }
-      ]
-     },
-     {
-      "type": "or",
-      "items": [
+       },
        {
         "type": "course",
         "code": "CCE 2",
         "concurrent": false,
         "min_grade": null
-       },
+       }
+      ]
+     },
+     {
+      "type": "and",
+      "items": [
        {
         "type": "course",
         "code": "DOC 2",
         "concurrent": false,
         "min_grade": null
-       }
-      ]
-     },
-     {
-      "type": "or",
-      "items": [
+       },
        {
         "type": "course",
         "code": "DOC 3",
         "concurrent": false,
         "min_grade": null
-       },
+       }
+      ]
+     },
+     {
+      "type": "and",
+      "items": [
        {
         "type": "course",
         "code": "HUM 1",
         "concurrent": false,
         "min_grade": null
-       }
-      ]
-     },
-     {
-      "type": "or",
-      "items": [
+       },
        {
         "type": "course",
         "code": "HUM 2",
         "concurrent": false,
         "min_grade": null
-       },
+       }
+      ]
+     },
+     {
+      "type": "and",
+      "items": [
        {
         "type": "course",
         "code": "MCWP 40",
         "concurrent": false,
         "min_grade": null
-       }
-      ]
-     },
-     {
-      "type": "or",
-      "items": [
+       },
        {
         "type": "course",
         "code": "MCWP 50",
         "concurrent": false,
         "min_grade": null
-       },
+       }
+      ]
+     },
+     {
+      "type": "and",
+      "items": [
        {
         "type": "course",
         "code": "MMW 12",
         "concurrent": false,
         "min_grade": null
-       }
-      ]
-     },
-     {
-      "type": "or",
-      "items": [
+       },
        {
         "type": "course",
         "code": "MMW 13",
         "concurrent": false,
         "min_grade": null
-       },
+       }
+      ]
+     },
+     {
+      "type": "and",
+      "items": [
        {
-        "type": "and",
-        "items": [
-         {
-          "type": "course",
-          "code": "WARR 11A",
-          "concurrent": false,
-          "min_grade": null
-         },
-         {
-          "type": "course",
-          "code": "WARR 11B",
-          "concurrent": false,
-          "min_grade": null
-         }
-        ]
-       },
-       {
-        "type": "and",
-        "items": [
-         {
-          "type": "course",
-          "code": "WCWP 10A",
-          "concurrent": false,
-          "min_grade": null
-         },
-         {
-          "type": "course",
-          "code": "WCWP 10B",
-          "concurrent": false,
-          "min_grade": null
-         }
-        ]
+        "type": "course",
+        "code": "WARR 11A",
+        "concurrent": false,
+        "min_grade": null
        },
        {
         "type": "course",
-        "code": "SYN 1",
+        "code": "WARR 11B",
         "concurrent": false,
         "min_grade": null
        }
       ]
      },
      {
-      "type": "course",
-      "code": "SYN 2",
-      "concurrent": false,
-      "min_grade": null
+      "type": "and",
+      "items": [
+       {
+        "type": "course",
+        "code": "WCWP 10A",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "WCWP 10B",
+        "concurrent": false,
+        "min_grade": null
+       }
+      ]
+     },
+     {
+      "type": "and",
+      "items": [
+       {
+        "type": "course",
+        "code": "SYN 1",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "SYN 2",
+        "concurrent": false,
+        "min_grade": null
+       }
+      ]
      }
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
    "code": "LTWR 8C",
    "prereq_text": "CAT 2 and 3 or CCE 1 and 2 or DOC 2 and 3 or HUM 1 and 2 or MCWP 40 and 50 or MMW 12 and 13 or WARR 11A-B or WCWP 10A-B or SYN 1 and 2.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "CAT 2",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "or",
+      "type": "and",
       "items": [
+       {
+        "type": "course",
+        "code": "CAT 2",
+        "concurrent": false,
+        "min_grade": null
+       },
        {
         "type": "course",
         "code": "CAT 3",
         "concurrent": false,
         "min_grade": null
-       },
+       }
+      ]
+     },
+     {
+      "type": "and",
+      "items": [
        {
         "type": "course",
         "code": "CCE 1",
         "concurrent": false,
         "min_grade": null
-       }
-      ]
-     },
-     {
-      "type": "or",
-      "items": [
+       },
        {
         "type": "course",
         "code": "CCE 2",
         "concurrent": false,
         "min_grade": null
-       },
+       }
+      ]
+     },
+     {
+      "type": "and",
+      "items": [
        {
         "type": "course",
         "code": "DOC 2",
         "concurrent": false,
         "min_grade": null
-       }
-      ]
-     },
-     {
-      "type": "or",
-      "items": [
+       },
        {
         "type": "course",
         "code": "DOC 3",
         "concurrent": false,
         "min_grade": null
-       },
+       }
+      ]
+     },
+     {
+      "type": "and",
+      "items": [
        {
         "type": "course",
         "code": "HUM 1",
         "concurrent": false,
         "min_grade": null
-       }
-      ]
-     },
-     {
-      "type": "or",
-      "items": [
+       },
        {
         "type": "course",
         "code": "HUM 2",
         "concurrent": false,
         "min_grade": null
-       },
+       }
+      ]
+     },
+     {
+      "type": "and",
+      "items": [
        {
         "type": "course",
         "code": "MCWP 40",
         "concurrent": false,
         "min_grade": null
-       }
-      ]
-     },
-     {
-      "type": "or",
-      "items": [
+       },
        {
         "type": "course",
         "code": "MCWP 50",
         "concurrent": false,
         "min_grade": null
-       },
+       }
+      ]
+     },
+     {
+      "type": "and",
+      "items": [
        {
         "type": "course",
         "code": "MMW 12",
         "concurrent": false,
         "min_grade": null
-       }
-      ]
-     },
-     {
-      "type": "or",
-      "items": [
+       },
        {
         "type": "course",
         "code": "MMW 13",
         "concurrent": false,
         "min_grade": null
-       },
+       }
+      ]
+     },
+     {
+      "type": "and",
+      "items": [
        {
-        "type": "and",
-        "items": [
-         {
-          "type": "course",
-          "code": "WARR 11A",
-          "concurrent": false,
-          "min_grade": null
-         },
-         {
-          "type": "course",
-          "code": "WARR 11B",
-          "concurrent": false,
-          "min_grade": null
-         }
-        ]
-       },
-       {
-        "type": "and",
-        "items": [
-         {
-          "type": "course",
-          "code": "WCWP 10A",
-          "concurrent": false,
-          "min_grade": null
-         },
-         {
-          "type": "course",
-          "code": "WCWP 10B",
-          "concurrent": false,
-          "min_grade": null
-         }
-        ]
+        "type": "course",
+        "code": "WARR 11A",
+        "concurrent": false,
+        "min_grade": null
        },
        {
         "type": "course",
-        "code": "SYN 1",
+        "code": "WARR 11B",
         "concurrent": false,
         "min_grade": null
        }
       ]
      },
      {
-      "type": "course",
-      "code": "SYN 2",
-      "concurrent": false,
-      "min_grade": null
+      "type": "and",
+      "items": [
+       {
+        "type": "course",
+        "code": "WCWP 10A",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "WCWP 10B",
+        "concurrent": false,
+        "min_grade": null
+       }
+      ]
+     },
+     {
+      "type": "and",
+      "items": [
+       {
+        "type": "course",
+        "code": "SYN 1",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "SYN 2",
+        "concurrent": false,
+        "min_grade": null
+       }
+      ]
      }
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -60527,7 +60507,7 @@
      },
      {
       "type": "condition",
-      "kind": "other",
+      "kind": "restriction",
       "text": "a Regent’s Scholar"
      },
      {
@@ -63157,7 +63137,7 @@
      },
      {
       "type": "condition",
-      "kind": "other",
+      "kind": "restriction",
       "text": "a Regent’s Scholar"
      }
     ]
@@ -65643,19 +65623,24 @@
     "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "MATH 181A",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
       "type": "and",
       "items": [
        {
-        "type": "course",
-        "code": "ECON 120B",
-        "concurrent": false,
-        "min_grade": null
+        "type": "or",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 181A",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "ECON 120B",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
        },
        {
         "type": "or",
@@ -73945,211 +73930,216 @@
    "code": "PHIL 27",
    "prereq_text": "CAT 2 and 3 or CAT 2CE and 3CE or CCE 1 and 2 or DOC 2 and 3 or HUM 1 and 2 or MCWP 40 and 50 or MCWP 40R and 50R or MMW 12 and 13 or WCWP 10A and B or SYN 1 and 2 or WARR 11A and 11B or SYN 1R and 2R.",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "CAT 2",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "or",
+      "type": "and",
       "items": [
+       {
+        "type": "course",
+        "code": "CAT 2",
+        "concurrent": false,
+        "min_grade": null
+       },
        {
         "type": "course",
         "code": "CAT 3",
         "concurrent": false,
         "min_grade": null
-       },
+       }
+      ]
+     },
+     {
+      "type": "and",
+      "items": [
        {
         "type": "course",
         "code": "CAT 2CE",
         "concurrent": false,
         "min_grade": null
-       }
-      ]
-     },
-     {
-      "type": "or",
-      "items": [
+       },
        {
         "type": "course",
         "code": "CAT 3CE",
         "concurrent": false,
         "min_grade": null
-       },
+       }
+      ]
+     },
+     {
+      "type": "and",
+      "items": [
        {
         "type": "course",
         "code": "CCE 1",
         "concurrent": false,
         "min_grade": null
-       }
-      ]
-     },
-     {
-      "type": "or",
-      "items": [
+       },
        {
         "type": "course",
         "code": "CCE 2",
         "concurrent": false,
         "min_grade": null
-       },
+       }
+      ]
+     },
+     {
+      "type": "and",
+      "items": [
        {
         "type": "course",
         "code": "DOC 2",
         "concurrent": false,
         "min_grade": null
-       }
-      ]
-     },
-     {
-      "type": "or",
-      "items": [
+       },
        {
         "type": "course",
         "code": "DOC 3",
         "concurrent": false,
         "min_grade": null
-       },
+       }
+      ]
+     },
+     {
+      "type": "and",
+      "items": [
        {
         "type": "course",
         "code": "HUM 1",
         "concurrent": false,
         "min_grade": null
-       }
-      ]
-     },
-     {
-      "type": "or",
-      "items": [
+       },
        {
         "type": "course",
         "code": "HUM 2",
         "concurrent": false,
         "min_grade": null
-       },
+       }
+      ]
+     },
+     {
+      "type": "and",
+      "items": [
        {
         "type": "course",
         "code": "MCWP 40",
         "concurrent": false,
         "min_grade": null
-       }
-      ]
-     },
-     {
-      "type": "or",
-      "items": [
+       },
        {
         "type": "course",
         "code": "MCWP 50",
         "concurrent": false,
         "min_grade": null
-       },
+       }
+      ]
+     },
+     {
+      "type": "and",
+      "items": [
        {
         "type": "course",
         "code": "MCWP 40R",
         "concurrent": false,
         "min_grade": null
-       }
-      ]
-     },
-     {
-      "type": "or",
-      "items": [
+       },
        {
         "type": "course",
         "code": "MCWP 50R",
         "concurrent": false,
         "min_grade": null
-       },
+       }
+      ]
+     },
+     {
+      "type": "and",
+      "items": [
        {
         "type": "course",
         "code": "MMW 12",
         "concurrent": false,
         "min_grade": null
-       }
-      ]
-     },
-     {
-      "type": "or",
-      "items": [
+       },
        {
         "type": "course",
         "code": "MMW 13",
         "concurrent": false,
         "min_grade": null
-       },
+       }
+      ]
+     },
+     {
+      "type": "and",
+      "items": [
        {
         "type": "course",
         "code": "WCWP 10A",
         "concurrent": false,
         "min_grade": null
-       }
-      ]
-     },
-     {
-      "type": "or",
-      "items": [
+       },
        {
         "type": "course",
         "code": "WCWP 10B",
         "concurrent": false,
         "min_grade": null
-       },
+       }
+      ]
+     },
+     {
+      "type": "and",
+      "items": [
        {
         "type": "course",
         "code": "SYN 1",
         "concurrent": false,
         "min_grade": null
-       }
-      ]
-     },
-     {
-      "type": "or",
-      "items": [
+       },
        {
         "type": "course",
         "code": "SYN 2",
         "concurrent": false,
         "min_grade": null
-       },
+       }
+      ]
+     },
+     {
+      "type": "and",
+      "items": [
        {
         "type": "course",
         "code": "WARR 11A",
         "concurrent": false,
         "min_grade": null
-       }
-      ]
-     },
-     {
-      "type": "or",
-      "items": [
+       },
        {
         "type": "course",
         "code": "WARR 11B",
         "concurrent": false,
         "min_grade": null
-       },
+       }
+      ]
+     },
+     {
+      "type": "and",
+      "items": [
        {
         "type": "course",
         "code": "SYN 1R",
         "concurrent": false,
         "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "SYN 2R",
+        "concurrent": false,
+        "min_grade": null
        }
       ]
-     },
-     {
-      "type": "course",
-      "code": "SYN 2R",
-      "concurrent": false,
-      "min_grade": null
      }
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -78998,6 +78988,11 @@
       "type": "condition",
       "kind": "other",
       "text": "student must be of first-year class standing"
+     },
+     {
+      "type": "condition",
+      "kind": "restriction",
+      "text": "a Regents Scholar"
      },
      {
       "type": "condition",
@@ -84948,6 +84943,11 @@
      },
      {
       "type": "condition",
+      "kind": "restriction",
+      "text": "a Regents Scholar"
+     },
+     {
+      "type": "condition",
       "kind": "consent",
       "text": "Consent of instructor"
      }
@@ -89117,9 +89117,24 @@
     "type": "and",
     "items": [
      {
+      "type": "or",
+      "items": [
+       {
+        "type": "condition",
+        "kind": "other",
+        "text": "junior"
+       },
+       {
+        "type": "condition",
+        "kind": "restriction",
+        "text": "senior earth sciences major"
+       }
+      ]
+     },
+     {
       "type": "condition",
       "kind": "other",
-      "text": "junior or senior earth sciences major with GPA of 3.0 or in the course"
+      "text": "overall GPA of 3.0 or higher"
      },
      {
       "type": "condition",
