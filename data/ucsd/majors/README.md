@@ -25,6 +25,16 @@ by following a written set of reading rules.
    CSE and ECE pages), the offering department's page is followed and the
    other page's differences are noted in `narrative`.
 
+4. **Audit.** Two random samples of 24 majors each were checked line by
+   line against the catalog by a reader who hadn't seen the translations:
+   467 of 475 requirements right in the first, 572 of 577 in the second
+   (after the fixes the first one prompted). Each error that would mislead
+   a student was fixed.
+
+The site counts each course toward one requirement (narrowest group
+first), so a group the catalog counts inside a larger total is written as
+part of it, not beside it.
+
 ## Format
 
 Same as UCSB's program files (`all` / `choose` / `units` / `course` / `text`,
