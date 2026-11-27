@@ -145,7 +145,7 @@
         "items": [
           {
             "type": "choose",
-            "count": 12,
+            "count": 1,
             "items": [
               {
                 "type": "any",
@@ -154,11 +154,11 @@
               }
             ],
             "label": "Upper-division philosophy courses",
-            "notes": "At least twelve of the fifteen courses must be upper-division; core courses count. PHIL 191–199 may not be used. Up to two upper-division courses outside philosophy may count with adviser approval."
+            "notes": "At least twelve of the fifteen courses must be upper-division; the seven upper-division core courses and the four emphasis courses count toward the twelve, so one more is needed here. PHIL 191–199 may not be used. Up to two upper-division courses outside philosophy may count with adviser approval."
           },
           {
             "type": "choose",
-            "count": 3,
+            "count": 2,
             "items": [
               {
                 "type": "any",
@@ -172,7 +172,7 @@
               }
             ],
             "label": "Remaining philosophy courses",
-            "notes": "The remaining three of the fifteen philosophy courses may be lower- or upper-division; PHIL 10 counts here."
+            "notes": "Fifteen philosophy courses in all; the eight core courses (PHIL 10 included), the four emphasis courses and the upper-division course above count toward the fifteen, so two more (lower- or upper-division) are needed here."
           }
         ],
         "label": "Fifteen philosophy courses"
@@ -182,7 +182,7 @@
       "name": "Area of Emphasis: Science, Technology, and Medicine",
       "requirement": {
         "type": "choose",
-        "count": 5,
+        "count": 4,
         "items": [
           {
             "type": "course",
@@ -230,7 +230,7 @@
           }
         ],
         "label": "Science, Technology, and Medicine",
-        "notes": "Students selecting an optional area of emphasis must take and pass five of the courses listed under that area. Courses taken to complete an area of emphasis are counted toward the fifteen courses required for the major and may also fulfill a core requirement. Areas of emphasis are not noted on transcripts or diplomas."
+        "notes": "Five emphasis courses in all; the Philosophy of Science core course (every option is on this list) counts toward the five, so four more are needed here. Students selecting an optional area of emphasis must take and pass five of the courses listed under that area. Courses taken to complete an area of emphasis are counted toward the fifteen courses required for the major and may also fulfill a core requirement. Areas of emphasis are not noted on transcripts or diplomas."
       }
     }
   ]
