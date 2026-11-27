@@ -207,6 +207,7 @@ The pipeline split into `pipeline/common/` and `pipeline/campuses/<id>/` happens
 |---|---|---|---|
 | final (first honest score) | 100 | 84 | parser frozen in c35e32e; misses then used |
 | final2 (second honest score) | 100 | 85 (82% random, 91% major) | parser frozen in 6e241c7; labels kept exactly as written |
+| final3 (third honest score) | 100 | 91 (91% random, 91% major) | double-labeled (labelers agreed on all 100); parser frozen in fb24dd6 |
 | UCSB, for comparison | 150 | 89% random, 96% major | its own "final" group |
 
 The 95% bar isn't met yet. Most remaining misses are long-tail phrasings ("PHYS 2A/2AR-B-C-D", "POLI 5(D)", "previous course") and two readings where labelers differ (whether "or consent of instructor" covers only its own sentence).
