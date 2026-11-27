@@ -805,6 +805,7 @@ function openPlan(shared) {
     }
     history.replaceState(null, "", planHashFor(currentPrograms));
   }
+  planEl.autofill.hidden = onlyDepartmentMaps();
   refreshPlan();
   showPlanSummary();
 }
@@ -954,7 +955,14 @@ function addCourse(code) {
   Auto-fill: everything required that isn't done or planned yet, in
   prerequisite order, then a slot for each elective still needed.
 */
+// A department course map lists every course a department teaches, not a
+// set of requirements, so there's nothing to fill a plan with.
+function onlyDepartmentMaps() {
+  return currentPrograms.length > 0 && currentPrograms.every(p => p.kind === "department");
+}
+
 function autoFill(quiet) {
+  if (onlyDepartmentMaps()) return;
   const needed = chooseShown({ electives: false, everyOutside: false, inactive: false, skipDone: true });
   const skip = new Set();
   // "Take one of": keep an option already done or planned, else the first

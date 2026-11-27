@@ -36,6 +36,9 @@ import os
 import re
 
 RAW_DIR = os.path.join("data", "ucsd", "raw")
+# The quarters each course ran recently (extract_offerings.py), for the
+# many courses whose catalog entry doesn't say.
+OFFERINGS = os.path.join("data", "ucsd", "offerings.json")
 OUTPUT = os.path.join("data", "ucsd", "raw_courses.json")
 
 # One piece of the code list: "CSE 100", "COM GEN 194", "CSE" (a subject
@@ -258,6 +261,10 @@ def courses_on_page(path):
 
 
 def main():
+    offerings = {}
+    if os.path.exists(OFFERINGS):
+        with open(OFFERINGS, encoding="utf-8") as f:
+            offerings = json.load(f)["courses"]
     copies, problems, page_subjects = {}, [], {}
     for path in sorted(glob.glob(os.path.join(RAW_DIR, "*.html"))):
         if os.path.basename(path) == "index.html":
@@ -276,6 +283,10 @@ def main():
         subject = found[0]["subject"]
         best = max(found, key=lambda c: page_subjects[c["departments"][0]][subject])
         best["departments"] = sorted({d for c in found for d in c["departments"]})
+        # The catalog's own "(F,W,S)" wins; otherwise the Schedule of Classes.
+        if not best["offered"] and code in offerings:
+            best["offered"] = offerings[code]
+            best["offered_source"] = "schedule"
         by_code[code] = best
     courses = sorted(by_code.values(), key=lambda c: (c["subject"], int(re.match(r"\d+", c["number"]).group()), c["number"]))
     with open(OUTPUT, "w", encoding="utf-8") as f:

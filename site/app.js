@@ -215,26 +215,31 @@ function stem(fileName) {
 }
 
 // The front page's index: every major and minor, grouped by department
-// (A to Z), majors first in each.
+// (A to Z), majors first in each. A campus that also has department course
+// maps (UCSD) lists those after, in one list.
 function fillBrowseLists() {
-  // A campus whose programs are departments (UCSD for now): one list.
-  if (majors.every(m => m.kind === "department")) {
-    el.browseCount.textContent = majors.length + " departments.";
-    el.browse.innerHTML = '<section class="dept flat"><ul>' + majors.slice().sort((a, b) => a.name.localeCompare(b.name)).map(m =>
-      '<li><a href="' + campusHash() + escapeHtml(stem(m.file)) + '">' + escapeHtml(m.name) + "</a></li>").join("") + "</ul></section>";
-    return;
-  }
+  const departmentMaps = majors.filter(m => m.kind === "department");
+  const programs = majors.filter(m => m.kind !== "department");
+  const mapList = departmentMaps.length ? '<section class="dept flat"><h3>Department course maps</h3><ul>' +
+    departmentMaps.slice().sort((a, b) => a.name.localeCompare(b.name)).map(m =>
+      '<li><a href="' + campusHash() + escapeHtml(stem(m.file)) + '">' + escapeHtml(m.name) + "</a></li>").join("") +
+    "</ul></section>" : "";
   const departments = {};
-  for (const m of majors) (departments[m.department] = departments[m.department] || []).push(m);
+  for (const m of programs) (departments[m.department] = departments[m.department] || []).push(m);
   const names = Object.keys(departments).sort((a, b) => a.localeCompare(b));
-  el.browseCount.textContent = majors.filter(m => m.kind === "major").length + " majors and " +
-    majors.filter(m => m.kind === "minor").length + " minors, in " + names.length + " departments.";
+  const counts = [];
+  const majorCount = programs.filter(m => m.kind === "major").length;
+  const minorCount = programs.filter(m => m.kind === "minor").length;
+  if (majorCount) counts.push(majorCount + " majors");
+  if (minorCount) counts.push(minorCount + " minors");
+  el.browseCount.textContent = (counts.length ? counts.join(" and ") + ", in " + names.length + " departments" : "") +
+    (departmentMaps.length ? (counts.length ? "; " : "") + departmentMaps.length + " department course maps" : "") + ".";
   el.browse.innerHTML = names.map(function (name) {
     const programs = departments[name].sort((a, b) => (a.kind === b.kind ? a.name.localeCompare(b.name) : a.kind === "major" ? -1 : 1));
     return '<section class="dept"><h3>' + escapeHtml(name) + "</h3><ul>" + programs.map(function (m) {
       return '<li><a href="' + campusHash() + escapeHtml(stem(m.file)) + '">' + escapeHtml(displayName(m.name)) + "</a></li>";
     }).join("") + "</ul></section>";
-  }).join("");
+  }).join("") + mapList;
 }
 
 /*

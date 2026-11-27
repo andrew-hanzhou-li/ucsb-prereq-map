@@ -305,7 +305,7 @@ def check_campuses(p):
     ucsd.goto(SITE + "?preview#ucsd/")
     ucsd.wait_for_function("typeof majors !== 'undefined' && majors.length > 0", timeout=15000)
     check("ucsd: the front page lists departments",
-          ucsd.inner_text("#browse-count").endswith("departments.") and
+          "department course maps" in ucsd.inner_text("#browse-count") and
           ucsd.inner_text("#welcome-title") == "Choose a department." and
           "UC San Diego General Catalog" in ucsd.inner_text("#footer-catalog"))
     check("ucsd: no one-file copy link (it's UCSB only)", not ucsd.is_visible("#footer-download"))
@@ -323,6 +323,8 @@ def check_campuses(p):
           ucsd.evaluate("localStorage.getItem('prereq.ucsd.plan')") is not None and
           "MATH 20A" not in (ucsd.evaluate("localStorage.getItem('prereq.ucsb.plan')") or ""))
     check("ucsd: no GOLD transcript reader (it reads UCSB's format only)", not ucsd.is_visible("#plan-import"))
+    check("ucsd: no Auto-fill on a department map (it isn't a list of requirements)",
+          not ucsd.is_visible("#plan-autofill") and ucsd.evaluate("autoFill(true), Object.keys(plan.placed).length") == 1)
     ucsd.click("#credit-button")
     check("ucsd: the Credit box shows UCSD's AP chart, linked to its source",
           ucsd.locator("#ap-list select").count() > 30 and ucsd.is_visible("#ap-filter") and
