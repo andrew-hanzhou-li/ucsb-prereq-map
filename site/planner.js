@@ -384,16 +384,108 @@ function placeCourse(code) {
     N units from     need N units; have = units done or planned, up to N
     text             nothing to count
 */
+/*
+  Each course counts toward one requirement. "Two lab courses" and "five
+  electives, labs included" are two groups that share courses; counted on
+  their own, two labs would fill both and the student would look done three
+  courses early. So before counting, every course done or planned is given
+  to one group:
+    - groups are a single required course, a "choose N" list (its courses),
+      or an "N units from" list (every course inside it);
+    - the narrowest group goes first (a required course before a list of
+      40), so a course lands where it's needed most;
+    - a list takes only as many courses as it needs, leaving the rest free.
+  Each program of a double major is counted on its own: a course may count
+  toward both majors.
+  The result maps a course's place in the tree ("s1.3.0") to true, and a
+  units list's place to the courses it took.
+*/
+let activeAllocation = null;    // set while drawing, so it's worked out once
+
+function allocateCourses() {
+  const sectionsByProgram = {};
+  const labels = (graph.major.programs || []).map(p => p.label);
+  graph.major.sections.forEach(function (section, i) {
+    const program = labels.length > 1 ? (labels.find(l => section.name.startsWith(l + " — ")) || "") : "";
+    (sectionsByProgram[program] = sectionsByProgram[program] || []).push(["s" + i, section.requirement]);
+  });
+  const counted = {};
+  const countedSomewhere = new Set();
+  Object.defineProperty(counted, "somewhere", { value: countedSomewhere });   // every course counted anywhere
+  for (const sections of Object.values(sectionsByProgram)) {
+    const groups = [];
+    function visit(node, key) {
+      if (!node) return;
+      if (node.type === "course") {
+        if (node.code) groups.push({ kind: "course", key: key, need: 1, options: [{ code: node.code, key: key }] });
+        return;
+      }
+      if (!node.items) return;
+      const kept = withoutTwins(node.items);
+      if (node.type === "units") {
+        const options = coursesInRequirement(node).map(code => ({ code: code, key: key }));
+        groups.push({ kind: "units", key: key, need: node.units, options: options });
+        return;
+      }
+      if (node.type === "choose") {
+        const options = [];
+        node.items.forEach(function (item, i) {
+          if (!kept.includes(item)) return;
+          if (item.type === "course") { if (item.code) options.push({ code: item.code, key: key + "." + i }); }
+          else visit(item, key + "." + i);
+        });
+        if (options.length) groups.push({ kind: "choose", key: key, need: node.count, options: options });
+        return;
+      }
+      node.items.forEach((item, i) => { if (kept.includes(item)) visit(item, key + "." + i); });
+    }
+    sections.forEach(([key, requirement]) => visit(requirement, key));
+    groups.forEach((g, order) => { g.order = order; });
+    groups.sort((a, b) => (a.options.length - b.options.length) || (a.order - b.order));
+    const used = new Set();
+    const same = code => onlineBase(code) || code;     // a course and its online twin are one course
+    for (const group of groups) {
+      let got = 0;
+      for (const option of group.options) {
+        if (got >= group.need) break;
+        if (used.has(same(option.code)) || !inPlanOrDone(option.code)) continue;
+        used.add(same(option.code));
+        countedSomewhere.add(option.code);
+        if (group.kind === "units") {
+          (counted[group.key] = counted[group.key] || []).push(option.code);
+          got += unitsOf(option.code);
+        } else {
+          counted[option.key] = true;
+          got += 1;
+        }
+      }
+    }
+  }
+  return counted;
+}
+
+// Work out who counts where once, for everything drawn inside fn.
+function withAllocation(fn) {
+  const before = activeAllocation;
+  activeAllocation = allocateCourses();
+  try { return fn(); } finally { activeAllocation = before; }
+}
+
 function progress(node, key) {
+  return progressWith(node, key, activeAllocation || allocateCourses());
+}
+
+function progressWith(node, key, counted) {
   // "have" counts done or planned; "done" counts only done (taken, credit,
   // passed), so the wording can say which.
   if (node.type === "course") {
     if (!node.code) return { have: 0, done: 0, need: 1 };
-    return { have: inPlanOrDone(node.code) ? 1 : 0, done: isDone(node.code) ? 1 : 0, need: 1 };
+    const counts = counted[key] === true;
+    return { have: counts && inPlanOrDone(node.code) ? 1 : 0, done: counts && isDone(node.code) ? 1 : 0, need: 1 };
   }
   if (node.type === "text") return { have: 0, done: 0, need: 0 };
   const kept = withoutTwins(node.items);
-  const parts = node.items.map((item, i) => progress(item, key + "." + i)).filter((p, i) => kept.includes(node.items[i]));
+  const parts = node.items.map((item, i) => progressWith(item, key + "." + i, counted)).filter((p, i) => kept.includes(node.items[i]));
   const slots = (plan.electives || []).filter(e => e.key === key).length;
   if (node.type === "all") {
     return parts.reduce((sum, p) => ({ have: sum.have + p.have, done: sum.done + p.done, need: sum.need + p.need }),
@@ -402,8 +494,8 @@ function progress(node, key) {
   if (node.type === "units") {
     let units = slots * ELECTIVE_UNITS;
     let done = 0;
-    for (const code of coursesInRequirement(node)) {
-      if (inPlanOrDone(code)) units += unitsOf(code);
+    for (const code of counted[key] || []) {
+      units += unitsOf(code);
       if (isDone(code)) done += unitsOf(code);
     }
     return { have: Math.min(node.units, units), done: Math.min(node.units, done), need: node.units };
@@ -437,7 +529,14 @@ function requirementHtml(node, key, depth, sectionName, insideChoice) {
   }
   if (node.type === "course") {
     if (!node.code) return '<li class="req-course muted">A course the catalog doesn\'t name</li>';
-    return "<li>" + requirementCourse(node.code) + "</li>";
+    // A course done or planned that counts toward a different requirement.
+    const parts = key.split(".");
+    const inUnitsAbove = parts.some((_, i) => i > 0 && activeAllocation &&
+      (activeAllocation[parts.slice(0, i).join(".")] || []).includes?.(node.code));
+    const elsewhere = activeAllocation && !activeAllocation[key] && !inUnitsAbove &&
+                      activeAllocation.somewhere.has(node.code);
+    return "<li>" + requirementCourse(node.code) +
+           (elsewhere ? ' <span class="req-elsewhere">counted under another requirement</span>' : "") + "</li>";
   }
   const p = progress(node, key);
   let rule = "";
@@ -525,6 +624,10 @@ function requirementCourse(code) {
 let openArea = null;      // which fold is open ("s0", "s1"…, "outside"); null = choose one
 
 function drawRequirements() {
+  withAllocation(drawRequirementAreas);
+}
+
+function drawRequirementAreas() {
   const areas = [];
   graph.major.sections.forEach(function (section, i) {
     const key = "s" + i;

@@ -53,9 +53,21 @@ def catalog_form(code, catalog):
     return code
 
 
-def expand(node, catalog, problems, where):
+def required_outright(node, catalog):
+    """Courses every student in the major must take: reached from a section
+    only through "all" groups, never through a choice."""
+    if node.get("type") == "course":
+        return {catalog_form(re.sub(r"\s+", " ", node.get("code", "").strip()), catalog)}
+    if node.get("type") == "all":
+        return set().union(*[required_outright(item, catalog) for item in node.get("items", [])]) if node.get("items") else set()
+    return set()
+
+
+def expand(node, catalog, problems, where, required=frozenset()):
     """The node with shorthand items replaced by the courses they stand for,
-    and every course given a status. Problems go into `problems`."""
+    and every course given a status. Problems go into `problems`.
+    A shorthand list ("any upper-division ECE course") leaves out the
+    courses the major already requires, which can't count twice."""
     kind = node.get("type")
     if kind not in NODE_TYPES:
         problems.append("%s: unknown node type %r" % (where, kind))
@@ -79,12 +91,13 @@ def expand(node, catalog, problems, where):
         else:
             codes = [c for c, info in catalog.items()
                      if info["subject"] == subject and node.get("from", 0) <= number_of(c) <= node.get("to", -1)]
+        codes = [c for c in codes if c not in required]
         if not codes:
             problems.append("%s: %s matches no course" % (where, json.dumps(node)))
         return {"type": "choose", "count": 1, "items": [{"type": "course", "code": c, "status": "active"}
                                                        for c in sorted(codes, key=lambda c: (number_of(c), c))],
                 "label": describe(node), "expanded_from": kind}
-    items = [expand(item, catalog, problems, where) for item in node.get("items", [])]
+    items = [expand(item, catalog, problems, where, required) for item in node.get("items", [])]
     # A shorthand list inside a choose/units joins that list directly.
     flat = []
     for item in items:
@@ -131,7 +144,9 @@ def main():
             major = json.load(f)
         name = major["name"]
         problems = []
-        sections = [{"name": s["name"], "requirement": expand(s["requirement"], catalog, problems, name + " / " + s["name"])}
+        required = set().union(*[required_outright(s["requirement"], catalog) for s in major.get("sections", [])])
+        sections = [{"name": s["name"], "requirement": expand(s["requirement"], catalog, problems, name + " / " + s["name"],
+                                                              frozenset(required))}
                     for s in major.get("sections", [])]
         program = {
             "id": "UCSD-MAJOR-" + slug(name),

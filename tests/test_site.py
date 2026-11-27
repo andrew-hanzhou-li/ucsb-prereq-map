@@ -360,6 +360,25 @@ def check_campuses(p):
           not ucsd.evaluate("planEl.autofill.hidden") and
           ucsd.evaluate("plan.placed['CSE 12'] && plan.placed['CSE 100'] && "
                         "slotIndex(plan.placed['CSE 12']) < slotIndex(plan.placed['CSE 100'])"))
+    # Each course counts toward one requirement: Marine Biology asks for five
+    # restricted electives, two of them labs. Two labs fill the lab group but
+    # not three of the five.
+    ucsd.evaluate("localStorage.removeItem('prereq.ucsd.plan')")
+    ucsd.goto(SITE + "?preview#ucsd/plan/marine-biology-bs")
+    ucsd.wait_for_function("currentView === 'plan' && graph.major.id === 'UCSD-MAJOR-marine-biology-bs'", timeout=15000)
+    ucsd.wait_for_timeout(300)
+    ucsd.evaluate("placeCourse('SIO 101'); placeCourse('SIO 131'); planChanged()")
+    ucsd.wait_for_timeout(300)
+    labs = ucsd.evaluate("progress(graph.major.sections[4].requirement.items[0], 's4.0')")
+    rest = ucsd.evaluate("progress(graph.major.sections[4].requirement.items[1], 's4.1')")
+    check("ucsd: two labs fill Marine Biology's lab group", labs["have"] == 2 and labs["need"] == 2, labs)
+    check("ucsd: ...and don't also count as electives (0 of 3 more)", rest["have"] == 0 and rest["need"] == 3, rest)
+    ucsd.evaluate("placeCourse('SIO 145'); planChanged()")
+    ucsd.wait_for_timeout(200)
+    rest = ucsd.evaluate("progress(graph.major.sections[4].requirement.items[1], 's4.1')")
+    check("ucsd: a third lab counts as an elective", rest["have"] == 1, rest)
+    check("ucsd: the requirement list says a course counts under another requirement",
+          ucsd.locator(".req-elsewhere").count() >= 1)
     ucsd.goto(SITE + "?preview=off#campus")
     ucsd.wait_for_timeout(400)
     check("campus: ?preview=off turns the preview off", ucsd.locator(".campus-row.preview").count() == 0)

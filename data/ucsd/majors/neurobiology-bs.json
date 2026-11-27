@@ -318,64 +318,126 @@
           {
             "type": "choose",
             "count": 1,
+            "label": "Upper-division lab and major electives",
+            "notes": "The catalog: Major electives totaling at least six or eight units depending on the lab option used for requirement eight (a total of forty-eight upper-division units is required for completion of the major).",
             "items": [
               {
-                "type": "text",
-                "text": "one upper-division lab course (at least four units) offered by the UC San Diego School of Biological Sciences"
+                "type": "all",
+                "label": "One six-unit lab",
+                "items": [
+                  {
+                    "type": "text",
+                    "text": "Complete one upper-division six-unit lab (for example BIPN 105)."
+                  },
+                  {
+                    "type": "units",
+                    "units": 6,
+                    "items": [
+                      {
+                        "type": "any",
+                        "subject": "BIBC",
+                        "level": "upper"
+                      },
+                      {
+                        "type": "any",
+                        "subject": "BICD",
+                        "level": "upper"
+                      },
+                      {
+                        "type": "any",
+                        "subject": "BIEB",
+                        "level": "upper"
+                      },
+                      {
+                        "type": "any",
+                        "subject": "BIMM",
+                        "level": "upper"
+                      },
+                      {
+                        "type": "any",
+                        "subject": "BIPN",
+                        "level": "upper"
+                      },
+                      {
+                        "type": "any",
+                        "subject": "BISP",
+                        "level": "upper"
+                      }
+                    ],
+                    "label": "Major electives",
+                    "notes": "\"Major electives totaling at least six or eight units depending on the lab option used for requirement eight (a total of forty-eight upper-division units is required for completion of the major).\" \"A major elective is defined as an upper-division biology course taken through the UC San Diego School of Biological Sciences.\""
+                  }
+                ]
               },
               {
-                "type": "course",
-                "code": "BISP 196"
-              },
-              {
-                "type": "course",
-                "code": "BISP 197"
-              },
-              {
-                "type": "course",
-                "code": "BISP 199"
+                "type": "all",
+                "label": "A four-unit lab",
+                "items": [
+                  {
+                    "type": "choose",
+                    "count": 1,
+                    "items": [
+                      {
+                        "type": "text",
+                        "text": "one upper-division lab course (at least four units) offered by the UC San Diego School of Biological Sciences"
+                      },
+                      {
+                        "type": "course",
+                        "code": "BISP 196"
+                      },
+                      {
+                        "type": "course",
+                        "code": "BISP 197"
+                      },
+                      {
+                        "type": "course",
+                        "code": "BISP 199"
+                      }
+                    ],
+                    "label": "Upper-division biology lab",
+                    "notes": "\"BISP 196/197/199 (at least four units) may count toward this requirement.\""
+                  },
+                  {
+                    "type": "units",
+                    "units": 8,
+                    "items": [
+                      {
+                        "type": "any",
+                        "subject": "BIBC",
+                        "level": "upper"
+                      },
+                      {
+                        "type": "any",
+                        "subject": "BICD",
+                        "level": "upper"
+                      },
+                      {
+                        "type": "any",
+                        "subject": "BIEB",
+                        "level": "upper"
+                      },
+                      {
+                        "type": "any",
+                        "subject": "BIMM",
+                        "level": "upper"
+                      },
+                      {
+                        "type": "any",
+                        "subject": "BIPN",
+                        "level": "upper"
+                      },
+                      {
+                        "type": "any",
+                        "subject": "BISP",
+                        "level": "upper"
+                      }
+                    ],
+                    "label": "Major electives",
+                    "notes": "\"Major electives totaling at least six or eight units depending on the lab option used for requirement eight (a total of forty-eight upper-division units is required for completion of the major).\" \"A major elective is defined as an upper-division biology course taken through the UC San Diego School of Biological Sciences.\""
+                  }
+                ]
               }
-            ],
-            "label": "Upper-division biology lab",
-            "notes": "\"BISP 196/197/199 (at least four units) may count toward this requirement.\""
-          },
-          {
-            "type": "units",
-            "units": 6,
-            "items": [
-              {
-                "type": "any",
-                "subject": "BIBC",
-                "level": "upper"
-              },
-              {
-                "type": "any",
-                "subject": "BICD",
-                "level": "upper"
-              },
-              {
-                "type": "any",
-                "subject": "BIEB",
-                "level": "upper"
-              },
-              {
-                "type": "any",
-                "subject": "BIMM",
-                "level": "upper"
-              },
-              {
-                "type": "any",
-                "subject": "BIPN",
-                "level": "upper"
-              },
-              {
-                "type": "any",
-                "subject": "BISP",
-                "level": "upper"
-              }
-            ],
-            "label": "Major electives",
-            "notes": "\"Major electives totaling at least six or eight units depending on the lab option used for requirement eight (a total of forty-eight upper-division units is required for completion of the major).\" \"A major elective is defined as an upper-division biology course taken through the UC San Diego School of Biological Sciences.\""
+            ]
           }
         ]
       }

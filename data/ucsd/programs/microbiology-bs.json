@@ -332,661 +332,1268 @@
       "type": "choose",
       "items": [
        {
-        "type": "text",
-        "text": "one upper-division lab course (at least four units) offered by the UC San Diego School of Biological Sciences"
+        "type": "all",
+        "items": [
+         {
+          "type": "text",
+          "text": "Complete one upper-division six-unit lab (for example BIPN 105)."
+         },
+         {
+          "type": "units",
+          "items": [
+           {
+            "type": "course",
+            "code": "BIBC 100",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIBC 102",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIBC 103",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIBC 104",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIBC 110",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIBC 120",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIBC 151",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIBC 194",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BICD 100R",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BICD 101",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BICD 102",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BICD 102GS",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BICD 104",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BICD 110",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BICD 110R",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BICD 112",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BICD 120",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BICD 123",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BICD 124",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BICD 130",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BICD 136",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BICD 140",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BICD 142",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BICD 145",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BICD 156",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BICD 158",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BICD 194",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIEB 102",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIEB 121",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIEB 123",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIEB 126",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIEB 128",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIEB 130",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIEB 134",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIEB 135",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIEB 136GS",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIEB 137GS",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIEB 138GS",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIEB 140",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIEB 141",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIEB 143",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIEB 146",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIEB 148",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIEB 150",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIEB 152",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIEB 154",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIEB 156",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIEB 158",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIEB 159",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIEB 164",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIEB 166",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIEB 174",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIEB 176",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIEB 182",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIEB 194",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIMM 100R",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIMM 101",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIMM 110",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIMM 112",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIMM 114",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIMM 116",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIMM 116B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIMM 116R",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIMM 118",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIMM 124",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIMM 128",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIMM 130",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIMM 132GS",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIMM 134",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIMM 140",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIMM 143",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIMM 143R",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIMM 149",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIMM 170",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIMM 172",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIMM 174",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIMM 181",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIMM 182",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIMM 185",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIMM 194",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIPN 100",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIPN 100R",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIPN 102",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIPN 102GS",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIPN 103",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIPN 104GS",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIPN 105",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIPN 106",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIPN 108",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIPN 118",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIPN 120",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIPN 134",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIPN 140",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIPN 142",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIPN 144",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIPN 145",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIPN 146",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIPN 147",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIPN 148",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIPN 150",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIPN 152",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIPN 154",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIPN 156",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIPN 160",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIPN 162",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIPN 164",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIPN 189",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIPN 194",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BISP 170",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BISP 175",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BISP 182",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BISP 191",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BISP 192",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BISP 193",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BISP 194",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BISP 195P",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BISP 196",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BISP 197",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BISP 198",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BISP 199",
+            "status": "active"
+           }
+          ],
+          "units": 6,
+          "label": "Major electives",
+          "notes": "\"Major electives totaling at least six or eight units depending on the lab course chosen for requirement eight above (a total of forty-eight upper-division units is required for completion of the major).\" \"A major elective is defined as an upper-division biology course taken through the UC San Diego School of Biological Sciences.\""
+         }
+        ],
+        "label": "One six-unit lab"
        },
        {
-        "type": "course",
-        "code": "BISP 196",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BISP 197",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BISP 199",
-        "status": "active"
+        "type": "all",
+        "items": [
+         {
+          "type": "choose",
+          "items": [
+           {
+            "type": "text",
+            "text": "one upper-division lab course (at least four units) offered by the UC San Diego School of Biological Sciences"
+           },
+           {
+            "type": "course",
+            "code": "BISP 196",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BISP 197",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BISP 199",
+            "status": "active"
+           }
+          ],
+          "count": 1,
+          "label": "Upper-division biology lab",
+          "notes": "\"BISP 196/197/199 (at least four units) may count toward this requirement.\""
+         },
+         {
+          "type": "units",
+          "items": [
+           {
+            "type": "course",
+            "code": "BIBC 100",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIBC 102",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIBC 103",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIBC 104",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIBC 110",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIBC 120",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIBC 151",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIBC 194",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BICD 100R",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BICD 101",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BICD 102",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BICD 102GS",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BICD 104",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BICD 110",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BICD 110R",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BICD 112",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BICD 120",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BICD 123",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BICD 124",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BICD 130",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BICD 136",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BICD 140",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BICD 142",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BICD 145",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BICD 156",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BICD 158",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BICD 194",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIEB 102",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIEB 121",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIEB 123",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIEB 126",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIEB 128",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIEB 130",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIEB 134",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIEB 135",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIEB 136GS",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIEB 137GS",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIEB 138GS",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIEB 140",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIEB 141",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIEB 143",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIEB 146",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIEB 148",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIEB 150",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIEB 152",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIEB 154",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIEB 156",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIEB 158",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIEB 159",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIEB 164",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIEB 166",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIEB 174",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIEB 176",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIEB 182",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIEB 194",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIMM 100R",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIMM 101",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIMM 110",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIMM 112",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIMM 114",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIMM 116",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIMM 116B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIMM 116R",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIMM 118",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIMM 124",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIMM 128",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIMM 130",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIMM 132GS",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIMM 134",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIMM 140",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIMM 143",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIMM 143R",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIMM 149",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIMM 170",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIMM 172",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIMM 174",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIMM 181",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIMM 182",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIMM 185",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIMM 194",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIPN 100",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIPN 100R",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIPN 102",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIPN 102GS",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIPN 103",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIPN 104GS",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIPN 105",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIPN 106",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIPN 108",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIPN 118",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIPN 120",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIPN 134",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIPN 140",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIPN 142",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIPN 144",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIPN 145",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIPN 146",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIPN 147",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIPN 148",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIPN 150",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIPN 152",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIPN 154",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIPN 156",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIPN 160",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIPN 162",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIPN 164",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIPN 189",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIPN 194",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BISP 170",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BISP 175",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BISP 182",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BISP 191",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BISP 192",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BISP 193",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BISP 194",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BISP 195P",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BISP 196",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BISP 197",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BISP 198",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BISP 199",
+            "status": "active"
+           }
+          ],
+          "units": 8,
+          "label": "Major electives",
+          "notes": "\"Major electives totaling at least six or eight units depending on the lab course chosen for requirement eight above (a total of forty-eight upper-division units is required for completion of the major).\" \"A major elective is defined as an upper-division biology course taken through the UC San Diego School of Biological Sciences.\""
+         }
+        ],
+        "label": "A four-unit lab"
        }
       ],
       "count": 1,
-      "label": "Upper-division biology lab",
-      "notes": "\"BISP 196/197/199 (at least four units) may count toward this requirement.\""
-     },
-     {
-      "type": "units",
-      "items": [
-       {
-        "type": "course",
-        "code": "BIBC 100",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIBC 102",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIBC 103",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIBC 104",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIBC 110",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIBC 120",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIBC 151",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIBC 194",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BICD 100",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BICD 100R",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BICD 101",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BICD 102",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BICD 102GS",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BICD 104",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BICD 110",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BICD 110R",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BICD 112",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BICD 120",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BICD 123",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BICD 124",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BICD 130",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BICD 136",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BICD 140",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BICD 142",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BICD 145",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BICD 156",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BICD 158",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BICD 194",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIEB 102",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIEB 121",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIEB 123",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIEB 126",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIEB 128",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIEB 130",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIEB 134",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIEB 135",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIEB 136GS",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIEB 137GS",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIEB 138GS",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIEB 140",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIEB 141",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIEB 143",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIEB 146",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIEB 148",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIEB 150",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIEB 152",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIEB 154",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIEB 156",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIEB 158",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIEB 159",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIEB 164",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIEB 166",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIEB 174",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIEB 176",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIEB 182",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIEB 194",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIMM 100",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIMM 100R",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIMM 101",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIMM 110",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIMM 112",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIMM 114",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIMM 116",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIMM 116B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIMM 116R",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIMM 118",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIMM 120",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIMM 121",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIMM 122",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIMM 124",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIMM 128",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIMM 130",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIMM 132GS",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIMM 134",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIMM 140",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIMM 143",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIMM 143R",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIMM 149",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIMM 170",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIMM 172",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIMM 174",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIMM 181",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIMM 182",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIMM 185",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIMM 194",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIPN 100",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIPN 100R",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIPN 102",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIPN 102GS",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIPN 103",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIPN 104GS",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIPN 105",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIPN 106",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIPN 108",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIPN 118",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIPN 120",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIPN 134",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIPN 140",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIPN 142",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIPN 144",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIPN 145",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIPN 146",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIPN 147",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIPN 148",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIPN 150",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIPN 152",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIPN 154",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIPN 156",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIPN 160",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIPN 162",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIPN 164",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIPN 189",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIPN 194",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BISP 170",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BISP 175",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BISP 182",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BISP 191",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BISP 192",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BISP 193",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BISP 194",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BISP 195P",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BISP 196",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BISP 197",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BISP 198",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BISP 199",
-        "status": "active"
-       }
-      ],
-      "units": 6,
-      "label": "Major electives",
-      "notes": "\"Major electives totaling at least six or eight units depending on the lab course chosen for requirement eight above (a total of forty-eight upper-division units is required for completion of the major).\" \"A major elective is defined as an upper-division biology course taken through the UC San Diego School of Biological Sciences.\""
+      "label": "Upper-division lab and major electives",
+      "notes": "The catalog: Major electives totaling at least six or eight units depending on the lab course chosen for requirement eight above (a total of forty-eight upper-division units is required for completion of the major)."
      }
     ]
    }
