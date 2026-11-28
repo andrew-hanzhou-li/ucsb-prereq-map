@@ -204,30 +204,82 @@ def regroup(text):
         return "(" + regroup(", ".join(parts[:-1])) + ") " + parts[-1]
     if not any(re.search(r"\band\b", p) for p in parts) and re.match(r"or\b", parts[-1]):
         return " or ".join(re.sub(r"^or\s+", "", p) for p in parts)
-    groups = [[]]
-    for part in parts:
-        if re.match(r"or\b", part) and groups[-1]:
-            groups.append([])
+    # Where an "or" reaches back to: "Physics 1A, 1B, and 1C, or 6A, 6B, and
+    # 6C" is a series against a series; "Chemistry 14B and 14BL, or 20B and
+    # 30AL, 153A, …" is one pair against another, and 153A is required
+    # either way. So an "or" after a part with its own "and" takes just that
+    # part and the one after it; otherwise it takes the whole run before it
+    # and the run after it (up to a part starting with "and").
+    items = []          # each a part, or a list of alternatives (lists of parts)
+    pending, series = [], None
+    has_and = lambda p: re.search(r"\S\s+and\s+", p)
+
+    def ends_series(at):
+        """Does a part starting with "and" come after parts[at], before the next "or"?"""
+        for later in parts[at + 1:]:
+            if re.match(r"or\b", later):
+                return False
+            if re.match(r"and\b", later):
+                return True
+        return False
+    for at, part in enumerate(parts):
+        if re.match(r"or\b", part):
             part = re.sub(r"^or\s+", "", part)
-        groups[-1].append(re.sub(r"^and\s+", "", part))
+            if series is not None:
+                alts, single_left = series, False
+            elif not pending and items and isinstance(items[-1], list):
+                alts, single_left = items.pop(), True        # "…, or C and D, or E and F"
+            elif pending and has_and(pending[-1]):
+                items.extend(pending[:-1])
+                alts, single_left, pending = [[pending[-1]]], True, []
+            elif pending:
+                alts, single_left, pending = [pending], False, []
+            else:
+                pending.append(part)
+                continue
+            alts.append([part])
+            # The alternative goes on ("or 6A, 6B, and 6C") unless it's a pair
+            # of its own, or one part against a pair ("…, or 7A, Chemistry 20A").
+            if has_and(part) or (single_left and not ends_series(at)):
+                items.append(alts)
+                series = None
+            else:
+                series = alts
+        elif series is not None:
+            series[-1].append(part)
+            if re.match(r"and\b", part):
+                items.append(series)
+                series = None
+        else:
+            pending.append(part)
+    if series is not None:
+        items.append(series)
+    items.extend(pending)
+
     def wrap(p):
         """One requirement with "or" in it, in brackets. "or" binds loosest:
         "41 or Mathematics 170E and 170S or Statistics 100A and 100B" is
         41, or 170E and 170S, or 100A and 100B."""
+        p = re.sub(r"^and\s+", "", p)
         if not re.search(r"\bor\b", p) or (p.startswith("(") and p.endswith(")")):
             return p
         options = split_words(p, "or")
         if len(options) > 1 and any(re.search(r"\band\b", o) for o in options):
             return "(" + " or ".join("(" + o + ")" if re.search(r"\band\b", o) else o for o in options) + ")"
         return "(" + p + ")"
-    joined = [" and ".join(wrap(p) for p in group) for group in groups]
-    if len(joined) == 1:
-        return joined[0]
-    for i in range(1, len(joined)):
-        before = lead(joined[i - 1])
-        if before and before.group(1) and re.match(number + r"\b", joined[i]):
-            joined[i] = before.group(1) + joined[i]
-    return " or ".join("(" + j + ")" for j in joined)
+
+    def alternatives(alts):
+        alts = [list(alt) for alt in alts]
+        for i in range(1, len(alts)):
+            before = lead(re.sub(r"^and\s+", "", alts[i - 1][0]))
+            if before and before.group(1) and re.match(number + r"\b", alts[i][0]):
+                alts[i][0] = before.group(1) + alts[i][0]
+        joined = [" and ".join(wrap(p) for p in alt) for alt in alts]
+        return " or ".join("(" + j + ")" for j in joined)
+    if len(items) == 1 and isinstance(items[0], list):
+        return alternatives(items[0])
+    return " and ".join("(" + alternatives(item) + ")" if isinstance(item, list) else wrap(item) for item in items)
+
 
 def parse(parser, names, text, code):
     subject = code.rsplit(" ", 1)[0]
