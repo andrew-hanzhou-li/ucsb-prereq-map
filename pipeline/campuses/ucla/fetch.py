@@ -1,7 +1,7 @@
 """
 fetch.py (UCLA): download the General Catalog's course and major records.
 
-    python pipeline/campuses/ucla/fetch.py [courses|majors|all]
+    python pipeline/campuses/ucla/fetch.py [subjects|courses|majors|all]
 
 Reads   https://catalog.registrar.ucla.edu/sitemap.xml        the list of pages
         https://catalog.registrar.ucla.edu/api/content/academic-item-content
@@ -10,6 +10,8 @@ Reads   https://catalog.registrar.ucla.edu/sitemap.xml        the list of pages
 Writes  data/ucla/raw/courses/<COMSCI31>.json              the records, as downloaded
         data/ucla/raw/majors/<COMPUTERSCIENCEBS>.json
         data/ucla/raw/paths.json                           the pages found
+        data/ucla/subjects.json                            subject codes and names
+                (from the Schedule of Classes' subject list: "Mathematics (MATH)")
 
 UCLA's catalog runs on CourseLoop: every course and major page loads its
 record from this JSON endpoint on the catalog's own site (no key needed;
@@ -23,6 +25,7 @@ run at a time with a pause in each, to stay gentle on the server.
 """
 
 import concurrent.futures
+import html
 import json
 import os
 import re
@@ -70,6 +73,27 @@ def catalog_paths():
     return sorted(set(found))
 
 
+SOC_HOME = "https://sa.ucla.edu/ro/public/soc"
+SUBJECT_MENU = re.compile(r"SearchPanelSetup\('(\[.*?\])'")
+
+
+def fetch_subjects():
+    """{"MATH": "Mathematics", "C&EE": "Civil and Environmental Engineering", …}
+    from the subject menu the Schedule of Classes page carries: a JSON list
+    ([{"label":"Mathematics (MATH)","value":"MATH   "}, …]), HTML-escaped,
+    passed to the page's SearchPanelSetup script."""
+    match = SUBJECT_MENU.search(download(SOC_HOME))
+    if not match:
+        raise SystemExit("The Schedule of Classes page no longer has its subject menu; check " + SOC_HOME)
+    subjects = {}
+    for entry in json.loads(html.unescape(match.group(1))):
+        code = entry["value"].strip()
+        name = re.sub(r"\s*\([^()]*\)\s*$", "", entry["label"]).strip()
+        if code and name:
+            subjects[code] = name
+    return subjects
+
+
 def fetch_one(kind, path):
     """Save one record; returns "saved", "kept" (already there) or "failed: …"."""
     name = path.rsplit("/", 1)[1]
@@ -93,6 +117,13 @@ def fetch_one(kind, path):
 
 def main():
     which = sys.argv[1] if len(sys.argv) > 1 else "all"
+    if which in ("subjects", "all"):
+        subjects = fetch_subjects()
+        with open(os.path.join("data", "ucla", "subjects.json"), "w", encoding="utf-8") as f:
+            json.dump(subjects, f, indent=1, ensure_ascii=False, sort_keys=True)
+        print("%d subjects" % len(subjects))
+        if which == "subjects":
+            return 0
     for kind in ("courses", "majors"):
         os.makedirs(os.path.join(RAW_DIR, kind), exist_ok=True)
     paths_file = os.path.join(RAW_DIR, "paths.json")
