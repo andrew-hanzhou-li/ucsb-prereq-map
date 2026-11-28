@@ -178,7 +178,7 @@ a.campus-name:hover, a.campus-name:focus-visible { text-decoration: underline; }
   border-bottom: 1px solid var(--dots);
   border-radius: 0;
 }
-#major-input { width: 240px; }
+#major-input { width: 300px; max-width: 100%; }   /* fits "Add another major or department…" */
 .picker input::placeholder { font-weight: 400; color: var(--muted); }
 .picker input:disabled { opacity: 0.6; }
 #course-input { width: 200px; }

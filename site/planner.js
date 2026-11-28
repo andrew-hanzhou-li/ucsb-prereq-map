@@ -231,6 +231,7 @@ function metAt(node, index, self, relaxed) {
     return readyBy(node.code, index, node.concurrent);
   }
   if (node.type === "and") return node.items.every(item => metAt(item, index, self, relaxed));
+  if (hasPlacementOption(node)) return true;
   // "One of": only course options count when there are some. If none of the
   // options is planned or done yet, a relaxed check lets it through.
   const options = node.items.filter(hasCourses);

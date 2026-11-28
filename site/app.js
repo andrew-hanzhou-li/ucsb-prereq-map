@@ -745,6 +745,14 @@ function mapSettings() {
   return { electives: el.showElectives.checked, everyOutside: el.showOutside.checked, inactive: el.showInactive.checked };
 }
 
+// "Math Placement Exam qualifying score, or MATH 4C or MATH 10A": most
+// students place in, so a "one of" with a placement exam among its options
+// is treated as met (not "AP", which is credit and is entered as such).
+function hasPlacementOption(node) {
+  return !!node && node.type === "or" &&
+    node.items.some(item => item.type === "condition" && /(?<!advanced )placement/i.test(item.text || ""));
+}
+
 function chooseShown(settings) {
   const result = new Set();
   for (const course of graph.nodes) {
@@ -774,9 +782,8 @@ function chooseShown(settings) {
     } else if (node.type === "and") {
       node.items.forEach(walk);
     } else if (node.type === "or") {
-      // A placement exam is the usual way in ("Math Placement Exam, or MATH
-      // 4C or MATH 10A"), so nothing needs adding for it.
-      if (node.items.some(item => item.type === "condition" && /(?<!advanced )placement/i.test(item.text || ""))) return;
+      // A placement exam is the usual way in, so nothing needs adding for it.
+      if (hasPlacementOption(node)) return;
       const options = node.items.filter(hasCourses);
       if (!options.length) return;
       const covered = options.some(option => coursesIn(option).some(code => result.has(code)));
