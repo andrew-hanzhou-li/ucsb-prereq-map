@@ -38,8 +38,10 @@
      }
     ],
     "label": "Computing Specialization",
-    "notes": "Majors in Sociology may select a specialization in Computing by satisfying all the requirements for a bachelor’s degree in the major, and completing the following requirements. Each course must be taken for a letter grade. Students graduate with a bachelor’s degree in sociology and a specialization in Computing."
-   }
+    "notes": "Majors in Sociology may select a specialization in Computing by satisfying all the requirements for a bachelor’s degree in the major, and completing the following requirements. Each course must be taken for a letter grade. Students graduate with a bachelor’s degree in sociology and a specialization in Computing.",
+    "optional": true
+   },
+   "optional": true
   },
   {
    "name": "Honors Program",
@@ -68,8 +70,10 @@
      }
     ],
     "label": "Honors Program",
-    "notes": "As preparation for the honors program, students must complete all preparation for the major courses. After acceptance into the honors program, students are required to take courses 191H, 198A, 198B, and 198C (honors thesis seminars) which may be applied as electives toward the major requirements."
-   }
+    "notes": "As preparation for the honors program, students must complete all preparation for the major courses. After acceptance into the honors program, students are required to take courses 191H, 198A, 198B, and 198C (honors thesis seminars) which may be applied as electives toward the major requirements.",
+    "optional": true
+   },
+   "optional": true
   },
   {
    "name": "The Major",
@@ -146,10 +150,10 @@
       "notes": "Select one course from:"
      },
      {
-      "type": "choose",
+      "type": "all",
       "items": [
        {
-        "type": "all",
+        "type": "choose",
         "items": [
          {
           "type": "course",
@@ -202,10 +206,11 @@
           "status": "active"
          }
         ],
+        "count": 1,
         "label": "Interactions"
        },
        {
-        "type": "all",
+        "type": "choose",
         "items": [
          {
           "type": "course",
@@ -273,10 +278,11 @@
           "status": "active"
          }
         ],
+        "count": 1,
         "label": "Institutions and Social Processes"
        },
        {
-        "type": "all",
+        "type": "choose",
         "items": [
          {
           "type": "course",
@@ -364,10 +370,10 @@
           "status": "active"
          }
         ],
+        "count": 1,
         "label": "Power and Inequality"
        }
       ],
-      "count": 1,
       "label": "Core Areas",
       "notes": "Select one course from each of the following core areas:"
      },

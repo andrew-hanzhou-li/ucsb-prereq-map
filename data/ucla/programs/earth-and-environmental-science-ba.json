@@ -28,18 +28,67 @@
           "status": "active"
          },
          {
-          "type": "all",
+          "type": "choose",
+          "count": 1,
           "items": [
            {
-            "type": "text",
-            "text": "Earth, Planetary, and Space Sciences 3 through 17"
+            "type": "course",
+            "code": "EPS SCI 3",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EPS SCI 5",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EPS SCI M7",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EPS SCI 8",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EPS SCI 9",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EPS SCI 10",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EPS SCI 13",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EPS SCI 15",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EPS SCI 16",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EPS SCI 17",
+            "status": "active"
            }
           ],
-          "label": "Earth, Planetary, and Space Sciences"
+          "label": "EPS SCI 3–17",
+          "expanded_from": "range"
          }
         ],
         "label": "Earth, Planetary, and Space Sciences 1 Substitution",
-        "notes": "Earth, Planetary, and Space Sciences 1 may be substituted with a course from the following range or listed course:"
+        "notes": "Earth, Planetary, and Space Sciences 1 may be substituted with a course from the following range or listed course:",
+        "optional": true
        }
       ],
       "label": "Earth, Planetary, and Space Sciences 1"
@@ -228,8 +277,229 @@
       "type": "choose",
       "items": [
        {
-        "type": "text",
-        "text": "Earth, Planetary, and Space Sciences 101 through 188 (excluding 187, 188SA, 188SB, 188SC), 199"
+        "type": "course",
+        "code": "EPS SCI 101",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 103A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 103B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 103C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI C106",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI C107",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI C109",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 111",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 111G",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 112",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI C113",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI CM114A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI CM114B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 116",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI M118",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 119",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 121",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 121F",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI C122",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 123",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 125",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI C126",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 133",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 136A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 136B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 136C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 137",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 139",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI M140",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI C143",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 150",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 152",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 153",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI M154",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 155",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI M156",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI C160",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI C162",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI C166",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI C167",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI M171",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI CM173",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI C179",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 188",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 199",
+        "status": "active"
        }
       ],
       "count": 5,

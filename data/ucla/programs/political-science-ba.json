@@ -12,7 +12,8 @@
     "type": "text",
     "text": "To qualify for departmental honors at graduation, students must complete a senior thesis. Highest honors are awarded at the discretion of the honors program director and are based on both cumulative grade-point average in the major and the quality of the honors thesis to students who graduate with a final GPA in the major of at least 3.85, and who complete the senior honors thesis with a letter grade of A+.",
     "optional": true
-   }
+   },
+   "optional": true
   },
   {
    "name": "Preparation for the Major",
@@ -64,18 +65,25 @@
         "type": "all",
         "items": [
          {
-          "type": "course",
-          "code": "STATS 10",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "STATS 12",
-          "status": "active"
+          "type": "choose",
+          "items": [
+           {
+            "type": "course",
+            "code": "STATS 10",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "STATS 12",
+            "status": "active"
+           }
+          ],
+          "count": 1
          }
         ],
         "label": "Substitutions",
-        "notes": "Statistics 10 or 12 may be substituted for course 6."
+        "notes": "Statistics 10 or 12 may be substituted for course 6.",
+        "optional": true
        }
       ],
       "label": "Statistics"
@@ -90,8 +98,529 @@
     "type": "choose",
     "items": [
      {
-      "type": "text",
-      "text": "Political Science M105 through 199"
+      "type": "course",
+      "code": "POL SCI 111B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 111C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI M111A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 112A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI M112B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 113A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 113B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 114A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 114B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 115B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 115D",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 115E",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 116A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 116B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 118",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 119",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 119B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI M119A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 120A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 122C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI M122B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 123A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 123B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 124A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 125A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 126",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 129",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 132A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI M132B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 134",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 137A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 139",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 140A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 140B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 140C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 141B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 141E",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI M141A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 142A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 143A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 143B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 143C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 145A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 145B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 145C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 145E",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 146E",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 147A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 147B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 147C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 149",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 150",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 151A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 151B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 151C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI M152",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 153A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 154A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 154B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 156A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 157",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 158",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 159A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 159B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 160",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 163A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 163B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 164A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 164B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 165",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 166",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 167D",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI M167C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 168",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 169",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 170A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI M170X",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 171A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 171B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 171D",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 172",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 179",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI M180A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI M180B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 181A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI M181B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI M182",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI M183",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI M184A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI M184B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 185",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 186",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 191A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 191B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 191C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 191D",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 191E",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 191F",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 191H",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI M191DC",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI M194DC",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 195CE",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI M195DC",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 198",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "POL SCI 199",
+      "status": "active"
      }
     ],
     "count": 10,

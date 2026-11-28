@@ -54,55 +54,49 @@
         "text": "Select from Mathematics 106 through 199."
        },
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "STATS 100A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "STATS 100B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "STATS 100C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "STATS 101A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "STATS 101B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "STATS 101C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "STATS 102A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "STATS 102B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "STATS 102C",
-          "status": "active"
-         }
-        ],
-        "label": "Statistics"
+        "type": "course",
+        "code": "STATS 100A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS 100B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS 100C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS 101A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS 101B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS 101C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS 102A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS 102B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS 102C",
+        "status": "active"
        }
       ],
       "count": 5,
@@ -190,8 +184,34 @@
       "type": "choose",
       "items": [
        {
-        "type": "text",
-        "text": "Mathematics 149 through 159"
+        "type": "course",
+        "code": "MATH 151A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 151AH",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 151B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 151BH",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 155",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 156",
+        "status": "active"
        }
       ],
       "count": 2,
@@ -200,8 +220,10 @@
      }
     ],
     "label": "Computing Specialization",
-    "notes": "Majors may select a specialization in Computing by (1) satisfying all the requirements for a bachelor’s degree in the specified major and (2) completing Mathematics 61 or 180, Program in Computing 10A, 10B, two courses from 10C, 15, 16A, 20A, 40A, and at least two courses from Mathematics 149 through 159, with a minimum grade of C– in each course and a combined grade-point average of at least 2.0. Students must petition for admission to this program and are advised to do so after they complete Program in Computing 10B (petitions should be filed in the Student Services Office). Students graduate with a bachelor’s degree in their major and a specialization in Computing."
-   }
+    "notes": "Majors may select a specialization in Computing by (1) satisfying all the requirements for a bachelor’s degree in the specified major and (2) completing Mathematics 61 or 180, Program in Computing 10A, 10B, two courses from 10C, 15, 16A, 20A, 40A, and at least two courses from Mathematics 149 through 159, with a minimum grade of C– in each course and a combined grade-point average of at least 2.0. Students must petition for admission to this program and are advised to do so after they complete Program in Computing 10B (petitions should be filed in the Student Services Office). Students graduate with a bachelor’s degree in their major and a specialization in Computing.",
+    "optional": true
+   },
+   "optional": true
   },
   {
    "name": "Preparation for the Major",
@@ -321,7 +343,8 @@
     "type": "text",
     "text": "The program entails taking a specified sequence of courses as part of the major requirements, completing an approved seminar offered by the Mathematics Department or submitting an original research project, and earning an overall GPA of at least 3.6 in approved upper-division and graduate mathematics courses.",
     "optional": true
-   }
+   },
+   "optional": true
   }
  ],
  "narrative": []

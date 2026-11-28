@@ -138,14 +138,20 @@
         "type": "all",
         "items": [
          {
-          "type": "course",
-          "code": "MATH 31A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MATH 31AL",
-          "status": "active"
+          "type": "choose",
+          "items": [
+           {
+            "type": "course",
+            "code": "MATH 31A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MATH 31AL",
+            "status": "active"
+           }
+          ],
+          "count": 1
          },
          {
           "type": "course",
@@ -325,18 +331,67 @@
               "status": "active"
              },
              {
-              "type": "all",
+              "type": "choose",
+              "count": 1,
               "items": [
                {
-                "type": "text",
-                "text": "Earth, Planetary, and Space Sciences 3 through 17"
+                "type": "course",
+                "code": "EPS SCI 3",
+                "status": "active"
+               },
+               {
+                "type": "course",
+                "code": "EPS SCI 5",
+                "status": "active"
+               },
+               {
+                "type": "course",
+                "code": "EPS SCI M7",
+                "status": "active"
+               },
+               {
+                "type": "course",
+                "code": "EPS SCI 8",
+                "status": "active"
+               },
+               {
+                "type": "course",
+                "code": "EPS SCI 9",
+                "status": "active"
+               },
+               {
+                "type": "course",
+                "code": "EPS SCI 10",
+                "status": "active"
+               },
+               {
+                "type": "course",
+                "code": "EPS SCI 13",
+                "status": "active"
+               },
+               {
+                "type": "course",
+                "code": "EPS SCI 15",
+                "status": "active"
+               },
+               {
+                "type": "course",
+                "code": "EPS SCI 16",
+                "status": "active"
+               },
+               {
+                "type": "course",
+                "code": "EPS SCI 17",
+                "status": "active"
                }
               ],
-              "label": "Earth, Planetary, and Space Sciences"
+              "label": "EPS SCI 3–17",
+              "expanded_from": "range"
              }
             ],
             "label": "Substitution",
-            "notes": "Earth, Planetary, and Space Sciences 1 may be substituted with a course from the following range or listed course:"
+            "notes": "Earth, Planetary, and Space Sciences 1 may be substituted with a course from the following range or listed course:",
+            "optional": true
            }
           ],
           "label": "Earth, Planetary, and Space Sciences 1"
@@ -1770,8 +1825,224 @@
         "type": "choose",
         "items": [
          {
-          "type": "text",
-          "text": "Earth, planetary, and space sciences courses (except M187, and 189 through 199)"
+          "type": "course",
+          "code": "EPS SCI 101",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI 103A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI 103B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI 103C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI C106",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI C107",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI C109",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI 111",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI 111G",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI 112",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI C113",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI CM114A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI CM114B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI 116",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI M118",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI 119",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI 121",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI 121F",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI C122",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI 123",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI 125",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI C126",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI 133",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI 136A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI 136B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI 136C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI 137",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI 139",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI M140",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI C143",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI 150",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI 152",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI 153",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI M154",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI 155",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI M156",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI C160",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI C162",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI C166",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI C167",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI M171",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI CM173",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI C179",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI 188",
+          "status": "active"
          }
         ],
         "count": 5,
@@ -1915,10 +2186,10 @@
           "notes": "Select one course from:"
          },
          {
-          "type": "choose",
+          "type": "all",
           "items": [
            {
-            "type": "all",
+            "type": "choose",
             "items": [
              {
               "type": "course",
@@ -1971,10 +2242,11 @@
               "status": "active"
              }
             ],
+            "count": 5,
             "label": "Methods"
            },
            {
-            "type": "all",
+            "type": "choose",
             "items": [
              {
               "type": "course",
@@ -2047,10 +2319,10 @@
               "status": "active"
              }
             ],
+            "count": 5,
             "label": "Topical"
            }
           ],
-          "count": 5,
           "label": "Electives"
          }
         ],
@@ -2719,8 +2991,10 @@
      }
     ],
     "label": "Honors Program",
-    "notes": "The honors program provides exceptional students an opportunity for advanced research and study, under the guidance of a faculty member, that leads to the completion of an honors thesis or research project. To qualify for graduation with honors, students must (1) complete all requirements for the major, (2) have a cumulative grade-point average of 3.5 or better in upper-division coursework in the major and an overall GPA of 3.0 or better, (3) complete at least 8 units of Environment 198 taken over at least two terms, and (4) produce a completed satisfactory honors thesis. The honors thesis or research project is in addition to the requirement of the completed practicum in environmental science project. Contact the student affairs officer for more information."
-   }
+    "notes": "The honors program provides exceptional students an opportunity for advanced research and study, under the guidance of a faculty member, that leads to the completion of an honors thesis or research project. To qualify for graduation with honors, students must (1) complete all requirements for the major, (2) have a cumulative grade-point average of 3.5 or better in upper-division coursework in the major and an overall GPA of 3.0 or better, (3) complete at least 8 units of Environment 198 taken over at least two terms, and (4) produce a completed satisfactory honors thesis. The honors thesis or research project is in addition to the requirement of the completed practicum in environmental science project. Contact the student affairs officer for more information.",
+    "optional": true
+   },
+   "optional": true
   }
  ],
  "narrative": []

@@ -9,7 +9,7 @@
   {
    "name": "Preparation for the Major",
    "requirement": {
-    "type": "all",
+    "type": "choose",
     "items": [
      {
       "type": "course",
@@ -45,6 +45,7 @@
       "notes": "Select two courses from:"
      }
     ],
+    "count": 1,
     "label": "Preparation for the Major",
     "notes": "Complete one required course and two elective courses."
    }
@@ -70,8 +71,10 @@
       "status": "active"
      }
     ],
-    "label": "Honors Program"
-   }
+    "label": "Honors Program",
+    "optional": true
+   },
+   "optional": true
   },
   {
    "name": "The Major",
@@ -310,116 +313,104 @@
         "type": "choose",
         "items": [
          {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "AF AMER M164",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ANTHRO M145Q",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ANTHRO 145S",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ASIA AM 130A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ASIA AM M130B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ASIA AM M130C",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ASIA AM 131A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ASIA AM 132A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ASIA AM 133",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ASIA AM 134",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "FILM TV 128",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "GENDER 130",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "GENDER 168",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "SOCIOL 154",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "SOCIOL 156",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "SOCIOL M162",
-            "status": "active"
-           }
-          ],
-          "label": "Ethnic/Race/Gender Relations"
+          "type": "course",
+          "code": "AF AMER M164",
+          "status": "active"
          },
          {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "ANTHRO 143",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "GEOG M126",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "HIST 135A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "SOCIOL 157",
-            "status": "active"
-           }
-          ],
-          "label": "Comparative Indigenous Studies"
+          "type": "course",
+          "code": "ANTHRO M145Q",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 145S",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ASIA AM 130A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ASIA AM M130B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ASIA AM M130C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ASIA AM 131A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ASIA AM 132A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ASIA AM 133",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ASIA AM 134",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "FILM TV 128",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GENDER 130",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GENDER 168",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SOCIOL 154",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SOCIOL 156",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SOCIOL M162",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 143",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GEOG M126",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 135A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SOCIOL 157",
+          "status": "active"
          }
         ],
         "count": 1,

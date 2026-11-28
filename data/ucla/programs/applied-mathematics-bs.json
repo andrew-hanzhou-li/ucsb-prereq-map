@@ -94,7 +94,7 @@
     "type": "all",
     "items": [
      {
-      "type": "all",
+      "type": "choose",
       "items": [
        {
         "type": "course",
@@ -122,6 +122,7 @@
         "status": "active"
        }
       ],
+      "count": 4,
       "label": "Mathematics",
       "notes": "Complete four courses. Select either Mathematics 131B or 132."
      },
@@ -207,66 +208,367 @@
       "type": "choose",
       "items": [
        {
-        "type": "all",
+        "type": "choose",
+        "count": 1,
         "items": [
          {
-          "type": "text",
-          "text": "Mathematics 105C through 199, excluding courses 188S, 189, 190."
+          "type": "course",
+          "code": "MATH 105C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 106",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 110A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 110AH",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 110B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 110BH",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 110C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 111",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 114C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 114L",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH M114S",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 115A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 115AH",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 115B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 116",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 117",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 118",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 120A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 120B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 121",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 123",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 131A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 131AH",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 131B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 131BH",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 131C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 132",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 132H",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 133",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 134",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 135",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 136",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 142",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 146",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH M148",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 151A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 151AH",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 151B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 151BH",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 155",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 156",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 164",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 167",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 168",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 170A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 170B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 170E",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 170S",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 171",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 174E",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 177",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 178A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 178B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 178C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 179",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 180",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 182",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 184",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 191",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 191H",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 197",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 199",
+          "status": "active"
          }
         ],
-        "label": "Mathematics",
-        "notes": "Select from Mathematics 105C through 199, excluding courses 188S, 189, and 190. Applied courses must have a minimum of 4 units."
+        "label": "MATH 105–199",
+        "expanded_from": "range"
        },
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "STATS 100A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "STATS 100B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "STATS 100C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "STATS 101A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "STATS 101B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "STATS 101C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "STATS 102A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "STATS 102B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "STATS 102C",
-          "status": "active"
-         }
-        ],
-        "label": "Statistics"
+        "type": "course",
+        "code": "STATS 100A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS 100B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS 100C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS 101A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS 101B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS 101C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS 102A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS 102B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS 102C",
+        "status": "active"
        }
       ],
       "count": 4,
@@ -283,7 +585,8 @@
     "type": "text",
     "text": "The program entails taking a specified sequence of courses as part of the major requirements, completing an approved seminar offered by the Mathematics Department or submitting an original research project, and earning an overall GPA of at least 3.6 in approved upper-division and graduate mathematics courses.",
     "optional": true
-   }
+   },
+   "optional": true
   },
   {
    "name": "Computing Specialization",
@@ -361,8 +664,34 @@
       "type": "choose",
       "items": [
        {
-        "type": "text",
-        "text": "Mathematics 149 through 159"
+        "type": "course",
+        "code": "MATH 151A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 151AH",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 151B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 151BH",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 155",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 156",
+        "status": "active"
        }
       ],
       "count": 2,
@@ -371,8 +700,10 @@
      }
     ],
     "label": "Computing Specialization",
-    "notes": "Majors may select a specialization in Computing by satisfying all the requirements for a bachelor’s degree in the specified major and completing the following courses, with a minimum grade of C– in each course and a combined grade-point average of at least 2.0. Students must petition for admission to this program and are advised to do so after they complete Program in Computing 10B (petitions should be filed in the Student Services Office). Students graduate with a bachelor’s degree in their major and a specialization in Computing."
-   }
+    "notes": "Majors may select a specialization in Computing by satisfying all the requirements for a bachelor’s degree in the specified major and completing the following courses, with a minimum grade of C– in each course and a combined grade-point average of at least 2.0. Students must petition for admission to this program and are advised to do so after they complete Program in Computing 10B (petitions should be filed in the Student Services Office). Students graduate with a bachelor’s degree in their major and a specialization in Computing.",
+    "optional": true
+   },
+   "optional": true
   }
  ],
  "narrative": []

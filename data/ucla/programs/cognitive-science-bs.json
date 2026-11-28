@@ -104,14 +104,20 @@
           "status": "active"
          },
          {
-          "type": "course",
-          "code": "LIFESCI 40",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "STATS 13",
-          "status": "active"
+          "type": "choose",
+          "items": [
+           {
+            "type": "course",
+            "code": "LIFESCI 40",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "STATS 13",
+            "status": "active"
+           }
+          ],
+          "count": 1
          }
         ],
         "label": "Life Sciences 30 series",
@@ -343,7 +349,8 @@
            }
           ],
           "label": "Substitution for Psychology 115",
-          "notes": "Psychology 115 may be substituted with Psychology M117A, M117B, M117C. Students who complete Psychology M117A, M117B, M117C receive equivalent credit for course 115 and two upper-division cognitive science electives. All three courses must be completed to receive cognitive science elective credit."
+          "notes": "Psychology 115 may be substituted with Psychology M117A, M117B, M117C. Students who complete Psychology M117A, M117B, M117C receive equivalent credit for course 115 and two upper-division cognitive science electives. All three courses must be completed to receive cognitive science elective credit.",
+          "optional": true
          }
         ],
         "label": "Psychology 115"
@@ -370,8 +377,54 @@
         "type": "choose",
         "items": [
          {
-          "type": "text",
-          "text": "Psychology 124"
+          "type": "course",
+          "code": "PSYCH 124A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PSYCH 124B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PSYCH 124C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PSYCH 124D",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PSYCH 124E",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PSYCH 124F",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PSYCH 124G",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PSYCH 124J",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PSYCH 124K",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PSYCH 124L",
+          "status": "active"
          }
         ],
         "count": 1,
@@ -715,34 +768,184 @@
         "notes": "One quarter of Psychology 196B may be applied if course has not been applied toward capstone requirement. Psychology 191CH may by applied only if content is approved by the undergraduate advising office and it has not been applied toward the Psychology 195B or 196B requirement. If Psychology 191CH is applied as an elective, it may not also be applied toward the fieldwork/research requirement."
        },
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "text",
-          "text": "Psychology 112"
-         }
-        ],
-        "label": "Psychology 112"
+        "type": "course",
+        "code": "PSYCH 112A",
+        "status": "active"
        },
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "text",
-          "text": "Psychology 118 through 119Y"
-         }
-        ],
-        "label": "Psychology 118 through 119Y"
+        "type": "course",
+        "code": "PSYCH 112B",
+        "status": "active"
        },
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "text",
-          "text": "Psychology 124"
-         }
-        ],
-        "label": "Psychology 124"
+        "type": "course",
+        "code": "PSYCH 112C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 112D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 112E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 118",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 119A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 119B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 119C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 119D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 119E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 119F",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 119G",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 119I",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 119J",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 119K",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 119M",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 119P",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 119Q",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 119U",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 119V",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 119Y",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH M119L",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH M119N",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH M119O",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH M119X",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 124A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 124B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 124C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 124D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 124E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 124F",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 124G",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 124J",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 124K",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 124L",
+        "status": "active"
        },
        {
         "type": "choose",
@@ -963,34 +1166,529 @@
         "notes": "rule gives no count; it is one option list under its parent requirement, count set there"
        },
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "text",
-          "text": "Linguistics 103 through 185B"
-         }
-        ],
-        "label": "Linguistics 103 through 185B"
+        "type": "course",
+        "code": "LING 103",
+        "status": "active"
        },
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "text",
-          "text": "Mathematics 110A through 171"
-         }
-        ],
-        "label": "Mathematics 110A through 171"
+        "type": "course",
+        "code": "LING C104",
+        "status": "active"
        },
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "text",
-          "text": "Philosophy 124 through 138"
-         }
-        ],
-        "label": "Philosophy 124 through 138"
+        "type": "course",
+        "code": "LING 105",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 110",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 110G",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING C111",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 114",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 115",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING M116",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 119A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 120A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 120B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 120C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 127",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING C128A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING C128B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 130",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 132",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING C135",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING C140",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING M141",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 144",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING M146",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING M150",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 160",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 161",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 165A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 165B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 165C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 170",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 175",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING M176A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING M176B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING M177",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING M178",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 180",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 185A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 185B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 185C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 110A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 110AH",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 110B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 110BH",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 110C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 111",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 114C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 114L",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH M114S",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 115A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 115AH",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 115B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 116",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 117",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 118",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 120A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 120B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 121",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 123",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 131A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 131AH",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 131B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 131BH",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 131C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 132",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 132H",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 133",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 134",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 135",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 136",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 142",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 146",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH M148",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 151A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 151AH",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 151B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 151BH",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 155",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 156",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 164",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 167",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 168",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 170A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 170B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 170E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 170S",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 171",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS M124",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 125",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 126",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS C127A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS C127B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS C127C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS C128",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 129",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 130",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 131",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 132",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 133",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 133C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS C133B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS M134",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 135",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 136",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 137",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 138",
+        "status": "active"
        }
       ],
       "count": 5,
@@ -998,7 +1696,7 @@
       "notes": "Select five upper-division elective courses (20 units) from the following list of courses or ranges:"
      },
      {
-      "type": "all",
+      "type": "choose",
       "items": [
        {
         "type": "course",
@@ -1011,8 +1709,8 @@
         "status": "active"
        }
       ],
-      "label": "Capstone",
-      "notes": "In the junior or senior year, complete one capstone term of Psychology 195B or 196B (may be fulfilled by taking any one course from 195B or 196B, provided content is approved by the Undergraduate Advising Office)."
+      "count": 1,
+      "label": "Capstone"
      }
     ],
     "label": "The Major"
@@ -1040,8 +1738,10 @@
      }
     ],
     "label": "Honors Program",
-    "notes": "Students work for one year (fall through spring quarters) with a Psychology Department faculty sponsor on a research project that is the basis of a formal honors thesis. During that year they also participate in a weekly seminar (Psychology 191AH, 191BH, 191CH) in which thesis projects are presented and discussed and other topics of interest are explored with invited faculty members and other guests. Other requirements may apply."
-   }
+    "notes": "Students work for one year (fall through spring quarters) with a Psychology Department faculty sponsor on a research project that is the basis of a formal honors thesis. During that year they also participate in a weekly seminar (Psychology 191AH, 191BH, 191CH) in which thesis projects are presented and discussed and other topics of interest are explored with invited faculty members and other guests. Other requirements may apply.",
+    "optional": true
+   },
+   "optional": true
   },
   {
    "name": "Computing Specialization",
@@ -1176,8 +1876,10 @@
      }
     ],
     "label": "Computing Specialization",
-    "notes": "Majors may select a specialization in Computing by satisfying all the requirements for a bachelor’s degree in the specified major and completing the following course requirements. A grade of C or better is required in each course. Students graduate with a bachelor’s degree in their major and a specialization in Computing. Students planning to enter this specialization should contact the Undergraduate Advising Office."
-   }
+    "notes": "Majors may select a specialization in Computing by satisfying all the requirements for a bachelor’s degree in the specified major and completing the following course requirements. A grade of C or better is required in each course. Students graduate with a bachelor’s degree in their major and a specialization in Computing. Students planning to enter this specialization should contact the Undergraduate Advising Office.",
+    "optional": true
+   },
+   "optional": true
   }
  ],
  "narrative": []

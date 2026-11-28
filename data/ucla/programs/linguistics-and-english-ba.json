@@ -9,7 +9,7 @@
   {
    "name": "Preparation for the Major",
    "requirement": {
-    "type": "all",
+    "type": "choose",
     "items": [
      {
       "type": "course",
@@ -46,6 +46,7 @@
       "text": "Complete the equivalent to the sixth level of one foreign language or the equivalent to the third level of two different foreign languages."
      }
     ],
+    "count": 5,
     "label": "Preparation for the Major",
     "notes": "Complete five courses and the foreign language requirement. Students may select English 4W or 4HW."
    }
@@ -94,15 +95,222 @@
       "notes": "Complete five courses. Only one course from Linguistics 165A or 165B may be applied."
      },
      {
-      "type": "all",
+      "type": "choose",
+      "count": 1,
       "items": [
        {
-        "type": "text",
-        "text": "Linguistics 100 through 199, minimum 4 units"
+        "type": "course",
+        "code": "LING C104",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 105",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 110",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 110G",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING C111",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 114",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 115",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING M116",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 119A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 120A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 120B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 120C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 127",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING C128A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING C128B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 130",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 132",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING C135",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING C140",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING M141",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 144",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING M146",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING M150",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 160",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 161",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 165A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 165B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 165C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 170",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 175",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING M176A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING M176B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING M177",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING M178",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 180",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 185A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 185B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 185C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 191A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 191B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 192A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 195",
+        "status": "active"
        }
       ],
-      "label": "Upper-Division Linguistics Elective",
-      "notes": "Select one upper-division elective in the Linguistics Department (minimum 4 graded units) from:"
+      "label": "LING 104–196",
+      "expanded_from": "range"
      },
      {
       "type": "choose",
@@ -176,37 +384,313 @@
         "status": "active"
        },
        {
-        "type": "all",
+        "type": "choose",
+        "count": 1,
         "items": [
          {
-          "type": "text",
-          "text": "English 150 through 159"
+          "type": "course",
+          "code": "ENGL 150A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 150B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 150C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 151",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 152",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 153",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 154",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 155",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 156",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 157",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 159",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 159R",
+          "status": "active"
          }
         ],
-        "label": "English 150 series",
-        "notes": "Only one course may apply."
+        "label": "ENGL 150–159",
+        "expanded_from": "range"
        },
        {
-        "type": "all",
+        "type": "choose",
+        "count": 1,
         "items": [
          {
-          "type": "text",
-          "text": "English 160 through 169"
+          "type": "course",
+          "code": "ENGL 160A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 160B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 161A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 161B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 161C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 162A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 162B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 163A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 163B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 163C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 164A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 164B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 164C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 164D",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 165A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 165B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 165C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 166A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 166B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 166C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 167A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 167B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 168",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 169",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 169R",
+          "status": "active"
          }
         ],
-        "label": "English 160 series",
-        "notes": "Only one course may apply."
+        "label": "ENGL 160–169",
+        "expanded_from": "range"
        },
        {
-        "type": "all",
+        "type": "choose",
+        "count": 1,
         "items": [
          {
-          "type": "text",
-          "text": "English 170 through 179"
+          "type": "course",
+          "code": "ENGL 170A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 170B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 170C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 171A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 171B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 171C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 172A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 172B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 172C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 173A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 173B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 173C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 174A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 174B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 174C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 175",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 176",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 177",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 179",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 179R",
+          "status": "active"
          }
         ],
-        "label": "English 170 series",
-        "notes": "Only one course may apply."
+        "label": "ENGL 170–179",
+        "expanded_from": "range"
        }
       ],
       "label": "Additional English Electives",
@@ -250,8 +734,10 @@
      }
     ],
     "label": "Honors Program",
-    "notes": "Departmental honors are awarded at graduation to those students who have a grade-point average of 3.6 or better in their junior and senior years and who have received a grade of A in Linguistics 198A and 198B or in 199. Qualified students may be proposed by any member of the faculty to the faculty as a whole for the award of highest honors on the basis of a piece of research in linguistics completed at UCLA."
-   }
+    "notes": "Departmental honors are awarded at graduation to those students who have a grade-point average of 3.6 or better in their junior and senior years and who have received a grade of A in Linguistics 198A and 198B or in 199. Qualified students may be proposed by any member of the faculty to the faculty as a whole for the award of highest honors on the basis of a piece of research in linguistics completed at UCLA.",
+    "optional": true
+   },
+   "optional": true
   },
   {
    "name": "Computing Specialization",
@@ -368,8 +854,10 @@
      }
     ],
     "label": "Computing Specialization",
-    "notes": "Students may select a specialization in Computing by (1) satisfying all the requirements for a bachelor’s degree in the specified major and (2) completing Program in Computing 10A and 10B and 10C (or Computer Science 31 and 32), Linguistics 185A, Mathematics 61, and one course selected from Linguistics 104, 127, 132, 165A, 165B, 165C, 180, 185B. Students graduate with a bachelor’s degree in their major and a specialization in Computing."
-   }
+    "notes": "Students may select a specialization in Computing by (1) satisfying all the requirements for a bachelor’s degree in the specified major and (2) completing Program in Computing 10A and 10B and 10C (or Computer Science 31 and 32), Linguistics 185A, Mathematics 61, and one course selected from Linguistics 104, 127, 132, 165A, 165B, 165C, 180, 185B. Students graduate with a bachelor’s degree in their major and a specialization in Computing.",
+    "optional": true
+   },
+   "optional": true
   }
  ],
  "narrative": []

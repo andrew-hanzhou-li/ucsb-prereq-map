@@ -33,7 +33,7 @@
       "label": "Musicianship"
      },
      {
-      "type": "all",
+      "type": "choose",
       "items": [
        {
         "type": "all",
@@ -78,6 +78,7 @@
         "label": "Music 21 Series"
        }
       ],
+      "count": 1,
       "label": "Theory",
       "notes": "Select one of the following series to be approved by the division chair. The courses must be completed with grades of C or better."
      },
@@ -88,8 +89,109 @@
         "type": "units",
         "items": [
          {
-          "type": "text",
-          "text": "Music 60A through 60U"
+          "type": "course",
+          "code": "MUSC 60A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MUSC 60B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MUSC 60C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MUSC 60D",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MUSC 60E",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MUSC 60F",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MUSC 60G",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MUSC 60H",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MUSC 60I",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MUSC 60J",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MUSC 60K",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MUSC 60L",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MUSC 60M",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MUSC 60N",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MUSC 60O",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MUSC 60P",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MUSC 60Q",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MUSC 60R",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MUSC 60S",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MUSC 60T",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MUSC 60U",
+          "status": "active"
          }
         ],
         "units": 12,
@@ -319,8 +421,109 @@
         "type": "units",
         "items": [
          {
-          "type": "text",
-          "text": "Music 160A through 160U"
+          "type": "course",
+          "code": "MUSC 160A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MUSC 160B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MUSC 160C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MUSC 160D",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MUSC 160E",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MUSC 160F",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MUSC 160G",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MUSC 160H",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MUSC 160I",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MUSC 160J",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MUSC 160K",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MUSC 160L",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MUSC 160M",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MUSC 160N",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MUSC 160O",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MUSC 160P",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MUSC 160Q",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MUSC 160R",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MUSC 160S",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MUSC 160T",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MUSC 160U",
+          "status": "active"
          }
         ],
         "units": 4,
@@ -352,8 +555,114 @@
       "type": "units",
       "items": [
        {
-        "type": "text",
-        "text": "Music 163A through 163V"
+        "type": "course",
+        "code": "MUSC 163A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUSC 163B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUSC 163C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUSC 163D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUSC 163E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUSC 163F",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUSC 163G",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUSC 163H",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUSC 163I",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUSC 163J",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUSC 163K",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUSC 163L",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUSC 163M",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUSC 163N",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUSC 163O",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUSC 163P",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUSC 163Q",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUSC 163R",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUSC 163S",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUSC 163T",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUSC 163U",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUSC 163V",
+        "status": "active"
        }
       ],
       "units": 2,

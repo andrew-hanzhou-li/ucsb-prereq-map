@@ -12,7 +12,7 @@
     "type": "all",
     "items": [
      {
-      "type": "all",
+      "type": "choose",
       "items": [
        {
         "type": "course",
@@ -55,6 +55,7 @@
         "status": "active"
        }
       ],
+      "count": 6,
       "label": "Mathematics",
       "notes": "Complete six courses. Select Mathematics 31A or 31AL."
      },
@@ -91,46 +92,34 @@
       "type": "choose",
       "items": [
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "CHEM 20A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CHEM 20B",
-          "status": "active"
-         }
-        ],
-        "label": "Chemistry"
+        "type": "course",
+        "code": "CHEM 20A",
+        "status": "active"
        },
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "PHYSICS 1B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PHYSICS 1C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PHYSICS 5B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PHYSICS 5C",
-          "status": "active"
-         }
-        ],
-        "label": "Physics"
+        "type": "course",
+        "code": "CHEM 20B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 1B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 1C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 5B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 5C",
+        "status": "active"
        },
        {
         "type": "text",
@@ -221,8 +210,34 @@
       "type": "choose",
       "items": [
        {
-        "type": "text",
-        "text": "Mathematics 149 through 159"
+        "type": "course",
+        "code": "MATH 151A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 151AH",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 151B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 151BH",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 155",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 156",
+        "status": "active"
        }
       ],
       "count": 2,
@@ -231,8 +246,10 @@
      }
     ],
     "label": "Computing Specialization",
-    "notes": "Majors may select a specialization in Computing by satisfying all the requirements for a bachelor’s degree in the specified major and completing the following courses with a minimum grade of C– in each course and a combined grade-point average of at least 2.0. Students must petition for admission to this program and are advised to do so after they complete Program in Computing 10B (petitions should be filed in the Student Services Office). Students graduate with a bachelor’s degree in their major and a specialization in Computing."
-   }
+    "notes": "Majors may select a specialization in Computing by satisfying all the requirements for a bachelor’s degree in the specified major and completing the following courses with a minimum grade of C– in each course and a combined grade-point average of at least 2.0. Students must petition for admission to this program and are advised to do so after they complete Program in Computing 10B (petitions should be filed in the Student Services Office). Students graduate with a bachelor’s degree in their major and a specialization in Computing.",
+    "optional": true
+   },
+   "optional": true
   },
   {
    "name": "The Major",
@@ -327,15 +344,9 @@
         "text": "Select from Mathematics 110B through 191H."
        },
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "STATS 100C",
-          "status": "active"
-         }
-        ],
-        "label": "Statistics"
+        "type": "course",
+        "code": "STATS 100C",
+        "status": "active"
        }
       ],
       "count": 1,
@@ -399,8 +410,59 @@
       "type": "choose",
       "items": [
        {
-        "type": "text",
-        "text": "Mathematics 142 through 167"
+        "type": "course",
+        "code": "MATH 142",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 146",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH M148",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 151A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 151AH",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 151B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 151BH",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 155",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 156",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 164",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 167",
+        "status": "active"
        }
       ],
       "count": 1,

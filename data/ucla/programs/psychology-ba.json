@@ -198,8 +198,549 @@
       "type": "choose",
       "items": [
        {
-        "type": "text",
-        "text": "Psychology 101 through 199"
+        "type": "course",
+        "code": "PSYCH M107",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 110",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 112A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 112B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 112C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 112D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 112E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 115",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 118",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 119A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 119B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 119C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 119D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 119E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 119F",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 119G",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 119I",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 119J",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 119K",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 119M",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 119P",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 119Q",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 119U",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 119V",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 119Y",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH M119L",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH M119N",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH M119O",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH M119X",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 120A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 120B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 124A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 124B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 124C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 124D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 124E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 124F",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 124G",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 124J",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 124K",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 124L",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 127A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 127B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 127C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 128A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 128B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 129C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 129E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 129F",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 130",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 132A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 132B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 133A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 133B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 133C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 133D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 133E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 133F",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 133G",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 133I",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 133J",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 133K",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH M133L",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 134F",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 134G",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 134I",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 134J",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 134K",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 135",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 137A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 137C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 137D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 137F",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 137I",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 137J",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH M137B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH M137E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH M137M",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH M138",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH M139",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH M140",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 142H",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH M144",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH M147A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH M149",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 150",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 152",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 155A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 155B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 156A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 161",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 162",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 164",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH M165",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH M166",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 167",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 168",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH M172",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH M174",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 175",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH M176SL",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 177",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 178",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 182A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 182B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 182C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 188A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 188B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 199B",
+        "status": "active"
        }
       ],
       "count": 4,
@@ -232,8 +773,10 @@
      }
     ],
     "label": "Honors Program",
-    "notes": "Students work for one year (fall through spring quarters) with a Psychology Department faculty sponsor on a research project that is the basis of a formal honors thesis. During that year they also participate in a weekly seminar (Psychology 191AH, 191BH, 191CH) in which thesis projects are presented and discussed and other topics of interest are explored with invited faculty members and other guests. Other requirements may apply."
-   }
+    "notes": "Students work for one year (fall through spring quarters) with a Psychology Department faculty sponsor on a research project that is the basis of a formal honors thesis. During that year they also participate in a weekly seminar (Psychology 191AH, 191BH, 191CH) in which thesis projects are presented and discussed and other topics of interest are explored with invited faculty members and other guests. Other requirements may apply.",
+    "optional": true
+   },
+   "optional": true
   },
   {
    "name": "Preparation for the Major",

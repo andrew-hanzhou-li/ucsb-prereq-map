@@ -43,14 +43,62 @@
           "status": "active"
          },
          {
-          "type": "all",
+          "type": "choose",
+          "count": 1,
           "items": [
            {
-            "type": "text",
-            "text": "Earth, Planetary, and Space Sciences 3 through 17"
+            "type": "course",
+            "code": "EPS SCI 3",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EPS SCI 5",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EPS SCI M7",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EPS SCI 8",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EPS SCI 9",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EPS SCI 10",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EPS SCI 13",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EPS SCI 15",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EPS SCI 16",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EPS SCI 17",
+            "status": "active"
            }
           ],
-          "label": "Earth, Planetary, and Space Sciences"
+          "label": "EPS SCI 3–17",
+          "expanded_from": "range"
          }
         ],
         "label": "Earth, Planetary, and Space Sciences 1 Substitution",
@@ -274,24 +322,514 @@
       "type": "choose",
       "items": [
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "text",
-          "text": " Civil and Environmental Engineering 103 to 188"
-         }
-        ],
-        "label": "Civil and Environmental Engineering"
+        "type": "course",
+        "code": "C&EE 103",
+        "status": "active"
        },
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "text",
-          "text": "Earth, Planetary, and Space Sciences 100 to 179"
-         }
-        ],
-        "label": "Earth, Planetary, and Space Sciences"
+        "type": "course",
+        "code": "C&EE C104",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE 107",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE 108",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE 108L",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE 109W",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE 110",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE C111",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE 116XP",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE 120",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE 120L",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE 121",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE 123",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE 125",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE C128",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE 129L",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE 130",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE 132",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE 135A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE 135B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE 135L",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE M135C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE 137L",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE 140L",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE 141",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE 142",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE 142L",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE 143",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE 144",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE 147",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE 148",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE 150",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE 151",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE 152",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE 153",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE 154",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE 155",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE 156A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE 156B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE 157A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE 157B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE 157C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE 157L",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE C158",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE C159",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE C164",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE M165",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE M166",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE M166L",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE 170",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE 180",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE C181",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE C182",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE C183",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE C184",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE C185",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE C186",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE 188",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE 188L",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 101",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 103A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 103B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 103C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI C106",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI C107",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI C109",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 111",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 111G",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 112",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI C113",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI CM114A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI CM114B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 116",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI M118",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 119",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 121",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 121F",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI C122",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 123",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 125",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI C126",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 133",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 136A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 136B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 136C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 137",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 139",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI M140",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI C143",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 150",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 152",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 153",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI M154",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 155",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI M156",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI C160",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI C162",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI C166",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI C167",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI M171",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI CM173",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI C179",
+        "status": "active"
        }
       ],
       "count": 1,

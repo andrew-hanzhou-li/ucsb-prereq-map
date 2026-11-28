@@ -61,24 +61,75 @@
       "type": "all",
       "items": [
        {
-        "type": "all",
+        "type": "choose",
+        "count": 1,
         "items": [
          {
-          "type": "text",
-          "text": "Physics 170 series"
+          "type": "course",
+          "code": "PHYSICS 170A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 170E",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 170N",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS C170M",
+          "status": "active"
          }
         ],
-        "label": "Physics 170 series"
+        "label": "PHYSICS 170–170",
+        "expanded_from": "range"
        },
        {
-        "type": "all",
+        "type": "choose",
+        "count": 1,
         "items": [
          {
-          "type": "text",
-          "text": "Physics 180 series"
+          "type": "course",
+          "code": "PHYSICS 180A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 180C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 180D",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 180E",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 180F",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 180Q",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS M180G",
+          "status": "active"
          }
         ],
-        "label": "Physics 180 series"
+        "label": "PHYSICS 180–180",
+        "expanded_from": "range"
        },
        {
         "type": "all",
@@ -221,7 +272,8 @@
        }
       ],
       "label": "Preparation for Graduate School",
-      "notes": "Students preparing for graduate school should take additional courses in physics and mathematics. Recommended courses are:"
+      "notes": "Students preparing for graduate school should take additional courses in physics and mathematics. Recommended courses are:",
+      "optional": true
      }
     ],
     "label": "The Major"
@@ -291,8 +343,10 @@
      }
     ],
     "label": "Honors Program",
-    "notes": "In addition to completing all courses required for the major, students must complete one of the two honors program options."
-   }
+    "notes": "In addition to completing all courses required for the major, students must complete one of the two honors program options.",
+    "optional": true
+   },
+   "optional": true
   },
   {
    "name": "Preparation for the Major",
@@ -357,7 +411,8 @@
          }
         ],
         "label": "Physics 1 Honors series",
-        "notes": "Students may substitute courses from the Physics 1 honors series for the Physics 1 series."
+        "notes": "Students may substitute courses from the Physics 1 honors series for the Physics 1 series.",
+        "optional": true
        }
       ],
       "label": "Physics"
@@ -377,14 +432,20 @@
       "type": "all",
       "items": [
        {
-        "type": "course",
-        "code": "MATH 31A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "MATH 31AL",
-        "status": "active"
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 31A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 31AL",
+          "status": "active"
+         }
+        ],
+        "count": 1
        },
        {
         "type": "course",

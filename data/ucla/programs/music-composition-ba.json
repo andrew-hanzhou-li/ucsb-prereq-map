@@ -54,15 +54,117 @@
       "label": "Theory"
      },
      {
-      "type": "all",
+      "type": "choose",
+      "count": 1,
       "items": [
        {
-        "type": "text",
-        "text": "Music 60A through 60U"
+        "type": "course",
+        "code": "MUSC 60A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUSC 60B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUSC 60C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUSC 60D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUSC 60E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUSC 60F",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUSC 60G",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUSC 60H",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUSC 60I",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUSC 60J",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUSC 60K",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUSC 60L",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUSC 60M",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUSC 60N",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUSC 60O",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUSC 60P",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUSC 60Q",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUSC 60R",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUSC 60S",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUSC 60T",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUSC 60U",
+        "status": "active"
        }
       ],
-      "label": "Instrumental Studio",
-      "notes": "Complete up to 12 units from Music 60A through 60U in one instrument, determined through a rigorous proficiency test administered by the composition faculty."
+      "label": "MUSC 60–60",
+      "expanded_from": "range"
      },
      {
       "type": "all",

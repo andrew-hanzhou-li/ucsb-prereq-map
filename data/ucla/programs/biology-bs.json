@@ -12,272 +12,266 @@
     "type": "all",
     "items": [
      {
-      "type": "all",
+      "type": "choose",
       "items": [
        {
-        "type": "choose",
+        "type": "all",
         "items": [
          {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "CHEM 14A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "CHEM 14B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "CHEM 14BL",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "CHEM 14C",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "CHEM 14D",
-            "status": "active"
-           }
-          ],
-          "label": "Chemistry 14 series"
+          "type": "course",
+          "code": "CHEM 14A",
+          "status": "active"
          },
          {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "CHEM 20A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "CHEM 20B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "CHEM 20L",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "CHEM 30A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "CHEM 30AL",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "CHEM 30B",
-            "status": "active"
-           }
-          ],
-          "label": "Chemistry 20 and 30 series"
+          "type": "course",
+          "code": "CHEM 14B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 14BL",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 14C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 14D",
+          "status": "active"
          }
         ],
-        "count": 1,
-        "label": "Chemistry",
-        "notes": "Select one series from:"
+        "label": "Chemistry 14 series"
        },
        {
         "type": "all",
         "items": [
          {
           "type": "course",
-          "code": "LIFESCI 7A",
+          "code": "CHEM 20A",
           "status": "active"
          },
          {
           "type": "course",
-          "code": "LIFESCI 7B",
+          "code": "CHEM 20B",
           "status": "active"
          },
          {
           "type": "course",
-          "code": "LIFESCI 7C",
+          "code": "CHEM 20L",
           "status": "active"
          },
          {
           "type": "course",
-          "code": "LIFESCI 7L",
+          "code": "CHEM 30A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 30AL",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 30B",
           "status": "active"
          }
         ],
-        "label": "Life Sciences"
-       },
-       {
-        "type": "choose",
-        "items": [
-         {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "LIFESCI 30A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "LIFESCI 30B",
-            "status": "active"
-           }
-          ],
-          "label": "Life Science 30 series"
-         },
-         {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "MATH 3A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "MATH 3B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "MATH 3C",
-            "status": "active"
-           }
-          ],
-          "label": "Mathematics 3 series"
-         },
-         {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "MATH 31A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "MATH 31AL",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "MATH 31B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "MATH 32A",
-            "status": "active"
-           }
-          ],
-          "label": "Mathematics 31 series"
-         }
-        ],
-        "count": 1,
-        "label": "Mathematics",
-        "notes": "Select one series from:"
-       },
-       {
-        "type": "choose",
-        "items": [
-         {
-          "type": "course",
-          "code": "LIFESCI 40",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "STATS 13",
-          "status": "active"
-         }
-        ],
-        "count": 1,
-        "label": "Statistics",
-        "notes": "Select one course from:"
-       },
-       {
-        "type": "choose",
-        "items": [
-         {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "PHYSICS 1A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "PHYSICS 1B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "PHYSICS 1C",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "PHYSICS 4AL",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "PHYSICS 4BL",
-            "status": "active"
-           }
-          ],
-          "label": "Physics 1 series"
-         },
-         {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "PHYSICS 5A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "PHYSICS 5B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "PHYSICS 5C",
-            "status": "active"
-           }
-          ],
-          "label": "Physics 5 series"
-         }
-        ],
-        "count": 1,
-        "label": "Physics",
-        "notes": "Select one series from:"
+        "label": "Chemistry 20 and 30 series"
        }
       ],
-      "label": "Life Sciences Core Curriculum"
+      "count": 1,
+      "label": "Chemistry",
+      "notes": "Select one series from:"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "LIFESCI 7A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LIFESCI 7B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LIFESCI 7C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LIFESCI 7L",
+        "status": "active"
+       }
+      ],
+      "label": "Life Sciences"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "LIFESCI 30A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LIFESCI 30B",
+          "status": "active"
+         }
+        ],
+        "label": "Life Science 30 series"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 3A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 3B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 3C",
+          "status": "active"
+         }
+        ],
+        "label": "Mathematics 3 series"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 31A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 31AL",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 31B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 32A",
+          "status": "active"
+         }
+        ],
+        "label": "Mathematics 31 series"
+       }
+      ],
+      "count": 1,
+      "label": "Mathematics",
+      "notes": "Select one series from:"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "LIFESCI 40",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS 13",
+        "status": "active"
+       }
+      ],
+      "count": 1,
+      "label": "Statistics",
+      "notes": "Select one course from:"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "PHYSICS 1A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 1B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 1C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 4AL",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 4BL",
+          "status": "active"
+         }
+        ],
+        "label": "Physics 1 series"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "PHYSICS 5A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 5B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 5C",
+          "status": "active"
+         }
+        ],
+        "label": "Physics 5 series"
+       }
+      ],
+      "count": 1,
+      "label": "Physics",
+      "notes": "Select one series from:"
      }
     ],
-    "label": "Preparation for the Major"
+    "label": "Life Sciences Core Curriculum"
    }
   },
   {
    "name": "The Major",
    "requirement": {
-    "type": "choose",
+    "type": "all",
     "items": [
      {
-      "type": "all",
+      "type": "choose",
       "items": [
        {
         "type": "course",
@@ -520,11 +514,11 @@
         "status": "active"
        }
       ],
-      "label": "Evolution and Genetics",
-      "notes": "Ecology and Evolutionary Biology 120 is not open for credit to students with credit for course 185."
+      "count": 2,
+      "label": "Evolution and Genetics"
      },
      {
-      "type": "all",
+      "type": "choose",
       "items": [
        {
         "type": "course",
@@ -1012,11 +1006,11 @@
         "status": "active"
        }
       ],
-      "label": "Information Flow",
-      "notes": "Ecology and Evolutionary Biology 120 is not open for credit to students with credit for course 185. Physiological Science 166 is not open for credit for Ecology and Evolutionary Biology 170. Microbiology, Immunology, and Molecular Genetics 100L and 101 must be taken together to satisfy requirement."
+      "count": 2,
+      "label": "Information Flow"
      },
      {
-      "type": "all",
+      "type": "choose",
       "items": [
        {
         "type": "course",
@@ -1614,11 +1608,11 @@
         "status": "active"
        }
       ],
-      "label": "Structure Function",
-      "notes": "Ecology and Evolutionary Biology 120 is not open for credit to students with credit for course 185. Physiological Science 166 is not open for credit for Ecology and Evolutionary Biology 170. Microbiology, Immunology, and Molecular Genetics 100L and 101 must be taken together to satisfy requirement."
+      "count": 2,
+      "label": "Structure Function"
      },
      {
-      "type": "all",
+      "type": "choose",
       "items": [
        {
         "type": "course",
@@ -1856,11 +1850,11 @@
         "status": "active"
        }
       ],
-      "label": "Transformations of Energy and Matter",
-      "notes": "Physiological Science 166 not open for credit for Ecology and Evolutionary Biology 170."
+      "count": 2,
+      "label": "Transformations of Energy and Matter"
      },
      {
-      "type": "all",
+      "type": "choose",
       "items": [
        {
         "type": "course",
@@ -2678,11 +2672,10 @@
         "status": "active"
        }
       ],
-      "label": "Systems",
-      "notes": "Ecology and Evolutionary Biology 120 is not open for credit to students with credit for course 185. Physiological Science 166 is not open for credit for Ecology and Evolutionary Biology 170. Microbiology, Immunology, and Molecular Genetics 100L and 101 must be taken together to satisfy requirement."
+      "count": 2,
+      "label": "Systems"
      }
     ],
-    "count": 2,
     "label": "The Major"
    }
   },
@@ -2731,7 +2724,8 @@
        }
       ],
       "label": "Field Biology Quarter (FBQ)",
-      "notes": "The Field Biology Quarter involves some combination of the following courses:"
+      "notes": "The Field Biology Quarter involves some combination of the following courses:",
+      "optional": true
      },
      {
       "type": "all",
@@ -2763,12 +2757,14 @@
        }
       ],
       "label": "Marine Biology Quarter",
-      "notes": "The Marine Biology Quarter includes some combination of the following courses:"
+      "notes": "The Marine Biology Quarter includes some combination of the following courses:",
+      "optional": true
      }
     ],
     "label": "Field Biology",
     "notes": "The department offers three quarter-long programs of advanced courses in field biology: the Field Biology Quarter (FBQ), the Marine Biology Quarter (MBQ), and the joint Field Marine Biology Quarter (FMBQ). These programs focus on the biology of organisms living in their natural environments, emphasize independent student research projects, and take place at field sites away from the UCLA campus. The course composition varies somewhat from year to year, but each program always carries 16 units of course credit. The Field and Marine Biology quarters may occur during fall, winter, or spring quarter, depending on location and faculty participation. To participate, students must enroll in all courses in the respective program. Participants in both programs are selected by personal interview. Information and applications are available in the Undergraduate Advising Office."
-   }
+   },
+   "optional": true
   },
   {
    "name": "Honors Program",
@@ -2787,8 +2783,10 @@
      }
     ],
     "label": "Honors Program",
-    "notes": "An overall grade-point average of 3.4 and a 3.4 in the major are required for graduation with honors. Highest honors are awarded to majors who have a GPA of 3.6 overall and a 3.6 in the major at graduation and who have successfully completed Ecology and Evolutionary Biology 198A and 198B. Students do not need to apply for departmental honors. All students are reviewed for honors."
-   }
+    "notes": "An overall grade-point average of 3.4 and a 3.4 in the major are required for graduation with honors. Highest honors are awarded to majors who have a GPA of 3.6 overall and a 3.6 in the major at graduation and who have successfully completed Ecology and Evolutionary Biology 198A and 198B. Students do not need to apply for departmental honors. All students are reviewed for honors.",
+    "optional": true
+   },
+   "optional": true
   },
   {
    "name": "Computing Specialization",
@@ -2841,8 +2839,10 @@
      }
     ],
     "label": "Computing Specialization",
-    "notes": "Majors may select a specialization in Computing by satisfying all the requirements for a bachelor’s degree in the specified major and completing the following courses. A grade of C– or better is required in each course, with a combined grade-point average in the specialization of at least 2.0. Students must petition for admission to the program and are advised to do so after completing Program in Computing 10B (petitions should be filed in the Undergraduate Advising Office). Students graduate with a bachelor’s degree in their major and a specialization in Computing."
-   }
+    "notes": "Majors may select a specialization in Computing by satisfying all the requirements for a bachelor’s degree in the specified major and completing the following courses. A grade of C– or better is required in each course, with a combined grade-point average in the specialization of at least 2.0. Students must petition for admission to the program and are advised to do so after completing Program in Computing 10B (petitions should be filed in the Undergraduate Advising Office). Students graduate with a bachelor’s degree in their major and a specialization in Computing.",
+    "optional": true
+   },
+   "optional": true
   }
  ],
  "narrative": []

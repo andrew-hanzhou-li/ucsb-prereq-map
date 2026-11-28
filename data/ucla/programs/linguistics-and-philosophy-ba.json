@@ -440,7 +440,7 @@
       "type": "choose",
       "items": [
        {
-        "type": "all",
+        "type": "choose",
         "items": [
          {
           "type": "course",
@@ -458,54 +458,119 @@
           "status": "active"
          }
         ],
+        "count": 2,
         "label": "Philosophy C127A, C127B, 172",
         "notes": "Select at least two of the following:"
        },
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "text",
-          "text": "Philosophy 124 through 135"
-         }
-        ],
-        "label": "Philosophy 124 through 135"
+        "type": "course",
+        "code": "PHILOS M124",
+        "status": "active"
        },
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "PHILOS 170",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PHILOS 172",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PHILOS 174",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PHILOS 180",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PHILOS 181",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PHILOS 184",
-          "status": "active"
-         }
-        ],
-        "label": "Additional Philosophy Electives"
+        "type": "course",
+        "code": "PHILOS 125",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 126",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS C127A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS C127B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS C127C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS C128",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 129",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 130",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 131",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 132",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 133",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 133C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS C133B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS M134",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 135",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 170",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 172",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 174",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 180",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 181",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 184",
+        "status": "active"
        }
       ],
       "count": 5,
@@ -550,8 +615,10 @@
      }
     ],
     "label": "Honors Program",
-    "notes": "Departmental honors are awarded at graduation to those students who have a grade-point average of 3.6 or better in their junior and senior years and who have received a grade of A in Linguistics 198A and 198B or in 199. Qualified students may be proposed by any member of the faculty to the faculty as a whole for the award of highest honors on the basis of a piece of research in linguistics completed at UCLA."
-   }
+    "notes": "Departmental honors are awarded at graduation to those students who have a grade-point average of 3.6 or better in their junior and senior years and who have received a grade of A in Linguistics 198A and 198B or in 199. Qualified students may be proposed by any member of the faculty to the faculty as a whole for the award of highest honors on the basis of a piece of research in linguistics completed at UCLA.",
+    "optional": true
+   },
+   "optional": true
   },
   {
    "name": "Computing Specialization",
@@ -669,8 +736,10 @@
      }
     ],
     "label": "Computing Specialization",
-    "notes": "Students may select a specialization in Computing by (1) satisfying all the requirements for a bachelor’s degree in the specified major and (2) completing Program in Computing 10A and 10B and 10C (or Computer Science 31 and 32), Linguistics 185A, Mathematics 61, and one course selected from Linguistics 104, 127, 132, 165A, 165B, 165C, 180, 185B. Students graduate with a bachelor’s degree in their major and a specialization in Computing."
-   }
+    "notes": "Students may select a specialization in Computing by (1) satisfying all the requirements for a bachelor’s degree in the specified major and (2) completing Program in Computing 10A and 10B and 10C (or Computer Science 31 and 32), Linguistics 185A, Mathematics 61, and one course selected from Linguistics 104, 127, 132, 165A, 165B, 165C, 180, 185B. Students graduate with a bachelor’s degree in their major and a specialization in Computing.",
+    "optional": true
+   },
+   "optional": true
   }
  ],
  "narrative": []

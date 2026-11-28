@@ -109,7 +109,8 @@
     "type": "text",
     "text": "The program entails taking a specified sequence of courses as part of the major requirements, completing an approved seminar offered by the Mathematics Department or submitting an original research project, and earning an overall GPA of at least 3.6 in approved upper-division and graduate mathematics courses.",
     "optional": true
-   }
+   },
+   "optional": true
   },
   {
    "name": "The Major",
@@ -165,55 +166,49 @@
           "text": "Select from Mathematics 106 through 199."
          },
          {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "STATS 100A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "STATS 100B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "STATS 100C",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "STATS 101A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "STATS 101B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "STATS 101C",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "STATS 102A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "STATS 102B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "STATS 102C",
-            "status": "active"
-           }
-          ],
-          "label": "Statistics"
+          "type": "course",
+          "code": "STATS 100A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "STATS 100B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "STATS 100C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "STATS 101A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "STATS 101B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "STATS 101C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "STATS 102A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "STATS 102B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "STATS 102C",
+          "status": "active"
          }
         ],
         "count": 6,

@@ -28,8 +28,10 @@
      }
     ],
     "label": "Honors Program",
-    "notes": "The core of the program consists of research culminating in a thesis from the following three courses:"
-   }
+    "notes": "The core of the program consists of research culminating in a thesis from the following three courses:",
+    "optional": true
+   },
+   "optional": true
   },
   {
    "name": "Preparation for the Major",
@@ -37,125 +39,125 @@
     "type": "all",
     "items": [
      {
-      "type": "all",
+      "type": "choose",
       "items": [
        {
-        "type": "choose",
+        "type": "all",
         "items": [
          {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "CHEM 14A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "CHEM 14B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "CHEM 14BL",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "CHEM 14C",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "CHEM 14D",
-            "status": "active"
-           }
-          ],
-          "label": "Chemistry 14 series"
+          "type": "course",
+          "code": "CHEM 14A",
+          "status": "active"
          },
          {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "CHEM 20A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "CHEM 20B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "CHEM 20L",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "CHEM 30A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "CHEM 30AL",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "CHEM 30B",
-            "status": "active"
-           }
-          ],
-          "label": "Chemistry 20 and 30 series"
+          "type": "course",
+          "code": "CHEM 14B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 14BL",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 14C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 14D",
+          "status": "active"
          }
         ],
-        "count": 1,
-        "label": "Chemistry",
-        "notes": "Select one series from:"
+        "label": "Chemistry 14 series"
        },
        {
         "type": "all",
         "items": [
          {
           "type": "course",
-          "code": "LIFESCI 7A",
+          "code": "CHEM 20A",
           "status": "active"
          },
          {
           "type": "course",
-          "code": "LIFESCI 7B",
+          "code": "CHEM 20B",
           "status": "active"
          },
          {
           "type": "course",
-          "code": "LIFESCI 7C",
+          "code": "CHEM 20L",
           "status": "active"
          },
          {
           "type": "course",
-          "code": "LIFESCI 7L",
+          "code": "CHEM 30A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 30AL",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 30B",
           "status": "active"
          }
         ],
-        "label": "Life Sciences"
+        "label": "Chemistry 20 and 30 series"
+       }
+      ],
+      "count": 1,
+      "label": "Chemistry",
+      "notes": "Select one series from:"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "LIFESCI 7A",
+        "status": "active"
        },
        {
-        "type": "choose",
+        "type": "course",
+        "code": "LIFESCI 7B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LIFESCI 7C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LIFESCI 7L",
+        "status": "active"
+       }
+      ],
+      "label": "Life Sciences"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "all",
         "items": [
          {
-          "type": "all",
+          "type": "course",
+          "code": "LIFESCI 30A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LIFESCI 30B",
+          "status": "active"
+         },
+         {
+          "type": "choose",
           "items": [
-           {
-            "type": "course",
-            "code": "LIFESCI 30A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "LIFESCI 30B",
-            "status": "active"
-           },
            {
             "type": "course",
             "code": "LIFESCI 40",
@@ -167,131 +169,131 @@
             "status": "active"
            }
           ],
-          "label": "Life Sciences 30 series",
-          "notes": "Students may select either Life Sciences 40 or Statistics 13."
-         },
-         {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "MATH 3A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "MATH 3B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "MATH 3C",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "STATS 13",
-            "status": "active"
-           }
-          ],
-          "label": "Mathematics 3 series"
-         },
-         {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "MATH 31A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "MATH 31B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "MATH 32A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "STATS 13",
-            "status": "active"
-           }
-          ],
-          "label": "Mathematics 31 series"
+          "count": 1
          }
         ],
-        "count": 1,
-        "label": "Mathematics",
-        "notes": "Select one series from:"
+        "label": "Life Sciences 30 series",
+        "notes": "Students may select either Life Sciences 40 or Statistics 13."
        },
        {
-        "type": "choose",
+        "type": "all",
         "items": [
          {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "PHYSICS 1A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "PHYSICS 1B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "PHYSICS 1C",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "PHYSICS 4AL",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "PHYSICS 4BL",
-            "status": "active"
-           }
-          ],
-          "label": "Physics 1 series"
+          "type": "course",
+          "code": "MATH 3A",
+          "status": "active"
          },
          {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "PHYSICS 5A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "PHYSICS 5B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "PHYSICS 5C",
-            "status": "active"
-           }
-          ],
-          "label": "Physics 5 series"
+          "type": "course",
+          "code": "MATH 3B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 3C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "STATS 13",
+          "status": "active"
          }
         ],
-        "count": 1,
-        "label": "Physics",
-        "notes": "Select one series from:"
+        "label": "Mathematics 3 series"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 31A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 31B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 32A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "STATS 13",
+          "status": "active"
+         }
+        ],
+        "label": "Mathematics 31 series"
        }
       ],
-      "label": "Life Sciences Core Curriculum"
+      "count": 1,
+      "label": "Mathematics",
+      "notes": "Select one series from:"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "PHYSICS 1A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 1B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 1C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 4AL",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 4BL",
+          "status": "active"
+         }
+        ],
+        "label": "Physics 1 series"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "PHYSICS 5A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 5B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 5C",
+          "status": "active"
+         }
+        ],
+        "label": "Physics 5 series"
+       }
+      ],
+      "count": 1,
+      "label": "Physics",
+      "notes": "Select one series from:"
      }
     ],
-    "label": "Preparation for the Major"
+    "label": "Life Sciences Core Curriculum"
    }
   },
   {
@@ -311,9 +313,20 @@
           "status": "active"
          },
          {
-          "type": "course",
-          "code": "CHEM 153B",
-          "status": "active"
+          "type": "choose",
+          "items": [
+           {
+            "type": "course",
+            "code": "CHEM 153B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MIMG 132",
+            "status": "active"
+           }
+          ],
+          "count": 1
          },
          {
           "type": "course",
@@ -323,11 +336,6 @@
          {
           "type": "course",
           "code": "MIMG 101",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MIMG 132",
           "status": "active"
          },
          {
@@ -342,36 +350,24 @@
         "type": "choose",
         "items": [
          {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "MIMG 103AL",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "MIMG 103BL",
-            "status": "active"
-           }
-          ],
-          "label": "Microbiology 103AL and 103BL"
+          "type": "course",
+          "code": "MIMG 103AL",
+          "status": "active"
          },
          {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "MIMG 109AL",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "MIMG 109BL",
-            "status": "active"
-           }
-          ],
-          "label": "Microbiology 109AL and 109BL"
+          "type": "course",
+          "code": "MIMG 103BL",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MIMG 109AL",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MIMG 109BL",
+          "status": "active"
          }
         ],
         "count": 2,
@@ -773,9 +769,20 @@
           "status": "active"
          },
          {
-          "type": "course",
-          "code": "CHEM 153B",
-          "status": "active"
+          "type": "choose",
+          "items": [
+           {
+            "type": "course",
+            "code": "CHEM 153B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MIMG 132",
+            "status": "active"
+           }
+          ],
+          "count": 1
          },
          {
           "type": "course",
@@ -785,11 +792,6 @@
          {
           "type": "course",
           "code": "MIMG 101",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MIMG 132",
           "status": "active"
          },
          {
@@ -804,36 +806,24 @@
         "type": "choose",
         "items": [
          {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "MIMG 196A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "MIMG 196B",
-            "status": "active"
-           }
-          ],
-          "label": "Microbiology"
+          "type": "course",
+          "code": "MIMG 196A",
+          "status": "active"
          },
          {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "MCD BIO 196A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "MCD BIO 196B",
-            "status": "active"
-           }
-          ],
-          "label": "Molecular, Cell, and Developmental Biology"
+          "type": "course",
+          "code": "MIMG 196B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MCD BIO 196A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MCD BIO 196B",
+          "status": "active"
          }
         ],
         "count": 1,
@@ -844,36 +834,24 @@
         "type": "choose",
         "items": [
          {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "MIMG 180A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "MIMG 180B",
-            "status": "active"
-           }
-          ],
-          "label": "Microbiology"
+          "type": "course",
+          "code": "MIMG 180A",
+          "status": "active"
          },
          {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "MCD BIO 180A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "MCD BIO 180B",
-            "status": "active"
-           }
-          ],
-          "label": "Molecular, Cell, and Developmental Biology"
+          "type": "course",
+          "code": "MIMG 180B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MCD BIO 180A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MCD BIO 180B",
+          "status": "active"
          }
         ],
         "count": 1,

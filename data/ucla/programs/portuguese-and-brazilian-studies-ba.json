@@ -12,7 +12,7 @@
     "type": "all",
     "items": [
      {
-      "type": "all",
+      "type": "choose",
       "items": [
        {
         "type": "course",
@@ -30,6 +30,7 @@
         "status": "active"
        }
       ],
+      "count": 1,
       "label": "Portuguese 25 or 26 or 27",
       "notes": "Select one course. Portuguese 27 is recommended."
      },
@@ -77,8 +78,10 @@
      }
     ],
     "label": "Honors Program",
-    "notes": "Portuguese 198A is a 4-unit course in which students research and prepare a draft of a thesis on a selected topic; Portuguese 198B is 2-unit course in which students complete the final thesis draft of approximately 25 to 30 pages."
-   }
+    "notes": "Portuguese 198A is a 4-unit course in which students research and prepare a draft of a thesis on a selected topic; Portuguese 198B is 2-unit course in which students complete the final thesis draft of approximately 25 to 30 pages.",
+    "optional": true
+   },
+   "optional": true
   },
   {
    "name": "The Major",
@@ -87,6 +90,142 @@
     "items": [
      {
       "type": "all",
+      "items": [
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "PORTGSE 100A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE 100B",
+          "status": "active"
+         }
+        ],
+        "count": 1
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "PORTGSE 100A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE 100B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE M122",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE 130A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE 130B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE 141A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE 141B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE 141C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE 142A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE 142B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE M142C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE 143A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE 143B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE 143C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE 143D",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE 175",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE 180",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE 191",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE 195",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE 197",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE 199",
+          "status": "active"
+         }
+        ],
+        "label": "PORTGSE 100–199",
+        "expanded_from": "range"
+       }
+      ],
+      "label": "Linguistics and Literature Core Courses",
+      "notes": "Select Portuguese 100A or 100B or another course from 100-199; one additional course from Portuguese 100-199; and two additional courses from Portuguese courses 100-199. All courses must be taken in Portuguese and be a minimum of 4 units."
+     },
+     {
+      "type": "choose",
       "items": [
        {
         "type": "course",
@@ -99,25 +238,99 @@
         "status": "active"
        },
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "text",
-          "text": "Portuguese 100-199"
-         }
-        ],
-        "label": "Upper-Division Portuguese Courses 100-199"
-       }
-      ],
-      "label": "Linguistics and Literature Core Courses",
-      "notes": "Select Portuguese 100A or 100B or another course from 100-199; one additional course from Portuguese 100-199; and two additional courses from Portuguese courses 100-199. All courses must be taken in Portuguese and be a minimum of 4 units."
-     },
-     {
-      "type": "choose",
-      "items": [
+        "type": "course",
+        "code": "PORTGSE M122",
+        "status": "active"
+       },
        {
-        "type": "text",
-        "text": "Portuguese 100-199"
+        "type": "course",
+        "code": "PORTGSE 130A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PORTGSE 130B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PORTGSE 141A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PORTGSE 141B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PORTGSE 141C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PORTGSE 142A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PORTGSE 142B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PORTGSE M142C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PORTGSE 143A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PORTGSE 143B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PORTGSE 143C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PORTGSE 143D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PORTGSE 175",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PORTGSE 180",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PORTGSE 191",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PORTGSE 195",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PORTGSE 197",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PORTGSE 199",
+        "status": "active"
        }
       ],
       "count": 6,

@@ -23,8 +23,10 @@
      }
     ],
     "label": "Honors Program",
-    "notes": "All honors students must complete their capstone requirement by taking courses 198A and 198B, in which they research, write, and present an honors thesis."
-   }
+    "notes": "All honors students must complete their capstone requirement by taking courses 198A and 198B, in which they research, write, and present an honors thesis.",
+    "optional": true
+   },
+   "optional": true
   },
   {
    "name": "The Major",
@@ -113,14 +115,184 @@
         "status": "active"
        },
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "text",
-          "text": "Disability Studies 102 through 187"
-         }
-        ],
-        "label": "Disability Studies"
+        "type": "course",
+        "code": "DIS STD 102",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DIS STD M103",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DIS STD 110",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DIS STD 111",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DIS STD M112",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DIS STD M113",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DIS STD M114",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DIS STD M115",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DIS STD 120",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DIS STD M121",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DIS STD M122",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DIS STD M125",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DIS STD 129",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DIS STD M130",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DIS STD 131",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DIS STD 137XP",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DIS STD 138XP",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DIS STD M139",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DIS STD 145",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DIS STD M148",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DIS STD M149",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DIS STD 150",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DIS STD M157",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DIS STD M161",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DIS STD M162",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DIS STD 163A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DIS STD 163B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DIS STD 164B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DIS STD M164A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DIS STD M166",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DIS STD M171",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DIS STD M172",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DIS STD M172XP",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DIS STD M183",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DIS STD 187",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DIS STD M187D",
+        "status": "active"
        }
       ],
       "count": 2,
@@ -128,467 +300,494 @@
       "notes": "Select two courses from the following. Anthropology 149 may only be applied if the topic offers an interdisciplinary perspective of disability."
      },
      {
-      "type": "choose",
+      "type": "all",
       "items": [
        {
         "type": "choose",
         "items": [
          {
-          "type": "course",
-          "code": "ANTHRO 137P",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ANTHRO 149",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ASIA AM M117",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ASIA AM M129",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ASIA AM M161",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "COM HLT 100",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "COM HLT M140",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "COM LIT 180",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "DIS STD 137XP",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "DIS STD 138XP",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "DIS STD M139",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "DIS STD M148",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "DIS STD M166",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "DIS STD M172",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "DIS STD M172XP",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "DIS STD M183",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "EDUC 132",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "HLT POL M110",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "HIST 179A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "HIST 179B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "HIST 179C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "HNRS M183",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "NURSING M172",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "NURSING M172XP",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PHILOS 173",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PUB AFF M131",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PUB AFF 134",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PSYCH M107",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PSYCH 127A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PSYCH 127B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PSYCH 127C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PSYCH M139",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "SOC GEN M166",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "SOC GEN M183",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "SOCIOL M148",
-          "status": "active"
+          "type": "choose",
+          "items": [
+           {
+            "type": "course",
+            "code": "ANTHRO 137P",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ANTHRO 149",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ASIA AM M117",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ASIA AM M129",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ASIA AM M161",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COM HLT 100",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COM HLT M140",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COM LIT 180",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "DIS STD 137XP",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "DIS STD 138XP",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "DIS STD M139",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "DIS STD M148",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "DIS STD M166",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "DIS STD M172",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "DIS STD M172XP",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "DIS STD M183",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC 132",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "HLT POL M110",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "HIST 179A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "HIST 179B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "HIST 179C",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "HNRS M183",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "NURSING M172",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "NURSING M172XP",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PHILOS 173",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PUB AFF M131",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PUB AFF 134",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PSYCH M107",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PSYCH 127A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PSYCH 127B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PSYCH 127C",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PSYCH M139",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "SOC GEN M166",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "SOC GEN M183",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "SOCIOL M148",
+            "status": "active"
+           }
+          ],
+          "count": 1,
+          "label": "Category 1: Health Humanities and Bioethics",
+          "notes": "Select one course from the following. Anthropology 149 may only be applied if the topic offers an interdisciplinary perspective of disability. Disability Studies M172 and M172XP, or Nursing M172 and M172XP, must be taken together to satisfy one course."
          }
         ],
         "count": 1,
-        "label": "Category 1: Health Humanities and Bioethics",
-        "notes": "Select one course from the following. Anthropology 149 may only be applied if the topic offers an interdisciplinary perspective of disability. Disability Studies M172 and M172XP, or Nursing M172 and M172XP, must be taken together to satisfy one course."
+        "label": "Category 1: Health Humanities and Bioethics"
        },
        {
         "type": "choose",
         "items": [
          {
-          "type": "course",
-          "code": "CESC 172XP",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "DIS STD M112",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "DIS STD 145",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "DIS STD M148",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "DIS STD M149",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "DIS STD M157",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "DIS STD M161",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "DIS STD M162",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "DIS STD M166",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "DIS STD M172",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "DIS STD M172XP",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "DESMA 171",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "EDUC 104A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "GENDER 152",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "NURSING M172",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "NURSING M172XP",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PSYCH 132A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "SOC GEN M166",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "SOCIOL M120",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "SOCIOL M148",
-          "status": "active"
+          "type": "choose",
+          "items": [
+           {
+            "type": "course",
+            "code": "CESC 172XP",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "DIS STD M112",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "DIS STD 145",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "DIS STD M148",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "DIS STD M149",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "DIS STD M157",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "DIS STD M161",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "DIS STD M162",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "DIS STD M166",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "DIS STD M172",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "DIS STD M172XP",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "DESMA 171",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC 104A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "GENDER 152",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "NURSING M172",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "NURSING M172XP",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PSYCH 132A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "SOC GEN M166",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "SOCIOL M120",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "SOCIOL M148",
+            "status": "active"
+           }
+          ],
+          "count": 1,
+          "label": "Category 2: Access and Social Change",
+          "notes": "Select one course from the following. Disability Studies M172 and M172XP, or Nursing M172 and M172XP, must be taken together to satisfy one course."
          }
         ],
         "count": 1,
-        "label": "Category 2: Access and Social Change",
-        "notes": "Select one course from the following. Disability Studies M172 and M172XP, or Nursing M172 and M172XP, must be taken together to satisfy one course."
+        "label": "Category 2: Access and Social Change"
        },
        {
         "type": "choose",
         "items": [
          {
-          "type": "course",
-          "code": "COM LIT 180",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "DIS STD M103",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "DIS STD 111",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "DIS STD M112",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "DIS STD M114",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "DIS STD M115",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "DIS STD M121",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "DIS STD M139",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "DIS STD M157",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "DIS STD M161",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "DIS STD M162",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ENGL M103",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "GENDER 104",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "GENDER M121",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PSYCH M139",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "THEATER M114",
-          "status": "active"
+          "type": "choose",
+          "items": [
+           {
+            "type": "course",
+            "code": "COM LIT 180",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "DIS STD M103",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "DIS STD 111",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "DIS STD M112",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "DIS STD M114",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "DIS STD M115",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "DIS STD M121",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "DIS STD M139",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "DIS STD M157",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "DIS STD M161",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "DIS STD M162",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL M103",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "GENDER 104",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "GENDER M121",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PSYCH M139",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "THEATER M114",
+            "status": "active"
+           }
+          ],
+          "count": 1,
+          "label": "Category 3: Representation, Embodiment, and Disability Cultures",
+          "notes": "Select one course from:"
          }
         ],
         "count": 1,
-        "label": "Category 3: Representation, Embodiment, and Disability Cultures",
-        "notes": "Select one course from:"
+        "label": "Category 3: Representation, Embodiment, and Disability Cultures"
        },
        {
         "type": "choose",
         "items": [
          {
-          "type": "course",
-          "code": "ANTHRO 137P",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ANTHRO 149",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "COM HLT 132",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "COM LIT 180",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "DIS STD M103",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "DIS STD M161",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "DIS STD M162",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ENGL M103",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "GENDER 152",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "GENDER M161",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "HIST 179A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "HIST 179B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "HIST 179C",
-          "status": "active"
+          "type": "choose",
+          "items": [
+           {
+            "type": "course",
+            "code": "ANTHRO 137P",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ANTHRO 149",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COM HLT 132",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COM LIT 180",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "DIS STD M103",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "DIS STD M161",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "DIS STD M162",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL M103",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "GENDER 152",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "GENDER M161",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "HIST 179A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "HIST 179B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "HIST 179C",
+            "status": "active"
+           }
+          ],
+          "count": 1,
+          "label": "Category 4: Global and Historical Perspectives",
+          "notes": "Select one course from the following. Anthropology 149 may only be applied if the topic offers an interdisciplinary perspective of disability."
          }
         ],
         "count": 1,
-        "label": "Category 4: Global and Historical Perspectives",
-        "notes": "Select one course from the following. Anthropology 149 may only be applied if the topic offers an interdisciplinary perspective of disability."
+        "label": "Category 4: Global and Historical Perspectives"
        }
       ],
-      "count": 1,
       "label": "Interdisciplinary Perspectives on Disability (16 units)",
       "notes": "Select one course from each of the following categories:"
      },
      {
-      "type": "all",
+      "type": "choose",
       "items": [
        {
         "type": "all",
@@ -615,6 +814,7 @@
         "notes": "Complete two quarters of Disability Studies 196."
        }
       ],
+      "count": 1,
       "label": "Internship or Research Practicum (8 units)",
       "notes": "Select one of the following options:"
      },

@@ -18,8 +18,10 @@
      }
     ],
     "label": "Honors Program",
-    "notes": "In addition to completing all courses required for the major, students must complete two terms of Astronomy 199."
-   }
+    "notes": "In addition to completing all courses required for the major, students must complete two terms of Astronomy 199.",
+    "optional": true
+   },
+   "optional": true
   },
   {
    "name": "Preparation for the Major",
@@ -95,7 +97,8 @@
          }
         ],
         "label": "Physics 1 Honors series",
-        "notes": "Students may substitute courses from the Physics 1 honors series for the Physics 1 series."
+        "notes": "Students may substitute courses from the Physics 1 honors series for the Physics 1 series.",
+        "optional": true
        }
       ],
       "label": "Physics"
@@ -104,14 +107,20 @@
       "type": "all",
       "items": [
        {
-        "type": "course",
-        "code": "MATH 31A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "MATH 31AL",
-        "status": "active"
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 31A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 31AL",
+          "status": "active"
+         }
+        ],
+        "count": 1
        },
        {
         "type": "course",
@@ -174,7 +183,8 @@
        }
       ],
       "label": "Recommended",
-      "notes": "The following course is recommended:"
+      "notes": "The following course is recommended:",
+      "optional": true
      }
     ],
     "label": "Preparation for the Major"

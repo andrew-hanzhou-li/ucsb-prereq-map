@@ -49,14 +49,72 @@
       "type": "units",
       "items": [
        {
-        "type": "all",
+        "type": "choose",
+        "count": 1,
         "items": [
          {
-          "type": "text",
-          "text": "Ethnomusicology 161A through 161Z"
+          "type": "course",
+          "code": "ETHNMUS 161A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS 161B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS 161E",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS 161G",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS 161H",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS 161J",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS 161K",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS 161L",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS 161M",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS 161N",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS 161P",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS 161Z",
+          "status": "active"
          }
         ],
-        "label": "Advanced World Music Performance Organizations"
+        "label": "ETHNMUS 161–161",
+        "expanded_from": "range"
        },
        {
         "type": "all",
@@ -70,14 +128,52 @@
         "label": "Advanced Private Instruction in Music"
        },
        {
-        "type": "all",
+        "type": "choose",
+        "count": 1,
         "items": [
          {
-          "type": "text",
-          "text": "Ethnomusicology 168A through 168Z"
+          "type": "course",
+          "code": "ETHNMUS 168A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS 168B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS 168C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS 168F",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS 168G",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS 168M",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS 168N",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS 168O",
+          "status": "active"
          }
         ],
-        "label": "Advanced World Music Specializations"
+        "label": "ETHNMUS 168–168",
+        "expanded_from": "range"
        }
       ],
       "units": 12,
@@ -489,14 +585,67 @@
       "type": "units",
       "items": [
        {
-        "type": "all",
+        "type": "choose",
+        "count": 1,
         "items": [
          {
-          "type": "text",
-          "text": "Ethnomusicology 91A through 91Z"
+          "type": "course",
+          "code": "ETHNMUS 91A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS 91B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS 91E",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS 91G",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS 91H",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS 91J",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS 91K",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS 91L",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS 91N",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS 91P",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS 91Z",
+          "status": "active"
          }
         ],
-        "label": "World Music Performance Organizations"
+        "label": "ETHNMUS 91–91",
+        "expanded_from": "range"
        },
        {
         "type": "all",
@@ -510,14 +659,52 @@
         "label": "Private Instruction in Music"
        },
        {
-        "type": "all",
+        "type": "choose",
+        "count": 1,
         "items": [
          {
-          "type": "text",
-          "text": "Ethnomusicology 68A through 68Z"
+          "type": "course",
+          "code": "ETHNMUS 68A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS 68B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS 68C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS 68F",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS 68G",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS 68M",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS 68N",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS 68O",
+          "status": "active"
          }
         ],
-        "label": "World Music Specializations"
+        "label": "ETHNMUS 68–68",
+        "expanded_from": "range"
        }
       ],
       "units": 12,

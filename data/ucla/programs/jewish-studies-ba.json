@@ -280,161 +280,149 @@
       "type": "choose",
       "items": [
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "text",
-          "text": "Hebrew or Jewish Studies Elective"
-         }
-        ],
-        "label": "Hebrew or Jewish Studies Elective",
-        "notes": "Hebrew or Jewish Studies Elective"
+        "type": "text",
+        "text": "Hebrew or Jewish Studies Elective",
+        "label": "Hebrew or Jewish Studies Elective"
        },
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "AN N EA M135",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "AN N EA M162",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "AN N EA M170",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ENGL 111A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ENGL 111C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "GERMAN 109",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "HIST C191F",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN 130",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN 131",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN 132",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN M178",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "POL SCI 132A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "POL SCI M132B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "SEMITIC 130",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "RELIGN 120",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "YIDDSH 101A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "YIDDSH 101B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "YIDDSH 101C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "YIDDSH 102A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "YIDDSH 102B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "YIDDSH 102C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "YIDDSH 121A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "YIDDSH 121B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "YIDDSH 121C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "YIDDSH 130",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "YIDDSH 131A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "YIDDSH 131B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "YIDDSH 131C",
-          "status": "active"
-         }
-        ],
-        "label": "Recommended Elective"
+        "type": "course",
+        "code": "AN N EA M135",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "AN N EA M162",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "AN N EA M170",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 111A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 111C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GERMAN 109",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST C191F",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "IRANIAN 130",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "IRANIAN 131",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "IRANIAN 132",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "IRANIAN M178",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "POL SCI 132A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "POL SCI M132B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SEMITIC 130",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "RELIGN 120",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "YIDDSH 101A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "YIDDSH 101B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "YIDDSH 101C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "YIDDSH 102A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "YIDDSH 102B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "YIDDSH 102C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "YIDDSH 121A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "YIDDSH 121B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "YIDDSH 121C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "YIDDSH 130",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "YIDDSH 131A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "YIDDSH 131B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "YIDDSH 131C",
+        "status": "active"
        }
       ],
       "count": 6,

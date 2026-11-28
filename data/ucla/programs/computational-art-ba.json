@@ -59,7 +59,7 @@
       "label": "Required Studio Courses"
      },
      {
-      "type": "all",
+      "type": "choose",
       "items": [
        {
         "type": "course",
@@ -152,6 +152,7 @@
         "status": "active"
        }
       ],
+      "count": 3,
       "label": "Elective Studio Courses",
       "notes": "Select three of the following courses:"
      },
@@ -223,7 +224,7 @@
       "label": "Required Studio Courses"
      },
      {
-      "type": "all",
+      "type": "choose",
       "items": [
        {
         "type": "course",
@@ -236,6 +237,7 @@
         "status": "active"
        }
       ],
+      "count": 1,
       "label": "Elective Studio Courses",
       "notes": "Select one of the following courses:"
      }

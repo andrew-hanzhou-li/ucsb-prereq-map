@@ -12,11 +12,877 @@
     "type": "all",
     "items": [
      {
-      "type": "choose",
+      "type": "all",
       "items": [
        {
         "type": "choose",
         "items": [
+         {
+          "type": "choose",
+          "items": [
+           {
+            "type": "course",
+            "code": "ART HIS M110A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS M110B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS M110C",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS M111",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS M112A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS M112B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS M112C",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS M112D",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS M113A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS M113B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS M114A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS M114B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS M114C",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS C114D",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS CM115A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS C115B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS 115C",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS C115D",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS 115E",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS C115F",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS C116A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS C116B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS C117A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS C117B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS M118A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS 119A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS 119B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS CM139A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS C148A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS C148B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS 154A",
+            "status": "active"
+           }
+          ],
+          "count": 1,
+          "label": "Ancient/Medieval before 1400",
+          "notes": "Select one course from:"
+         }
+        ],
+        "count": 1,
+        "label": "Ancient/Medieval before 1400"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "choose",
+          "items": [
+           {
+            "type": "course",
+            "code": "ART HIS 121A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS 121B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS 121C",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS 121D",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS 124",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS C125A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS 125B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS C126",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS C139B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS C139C",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS CM141",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS C148C",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS C148E",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS C152B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS C152C",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS 154B",
+            "status": "active"
+           }
+          ],
+          "count": 1,
+          "label": "Early Modern, 1400 to 1700",
+          "notes": "Select one course from:"
+         }
+        ],
+        "count": 1,
+        "label": "Early Modern, 1400 to 1700"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "choose",
+          "items": [
+           {
+            "type": "course",
+            "code": "ART HIS M118B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS C127A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS 127B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS M127C",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS C128A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS C128B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS C128C",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS C129A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS C129B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS C129C",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS 130",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS C131A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS C131B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS C131C",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS 132",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS C133A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS C133B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS C133C",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS 133D",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS 133E",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS CM135A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS CM135B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS C136A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS C142A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS C142B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS C145B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS C148D",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS 154D",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS C160",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ART HIS C170A",
+            "status": "active"
+           }
+          ],
+          "count": 1,
+          "label": "Modern/Contemporary, 1700 to Present",
+          "notes": "Select one course from:"
+         }
+        ],
+        "count": 1,
+        "label": "Modern/Contemporary, 1700 to Present"
+       }
+      ],
+      "label": "Historical Periods",
+      "notes": "Select one course from each of the following three historical periods:"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "ART HIS C145A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS C145B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS C146A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS C148A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS C148B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS C148C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS C148D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS C148E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS C149",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS 150A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS C150B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS C151",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS 152A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS C152B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS C152C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS C152D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS C153",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS 154A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS 154B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS C154C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS 154D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS C155",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS 156",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS C158A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS C115B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS 115C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS C115D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS 115E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS C115F",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS 121A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS 121B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS 121C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS 121D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS 124",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS C125A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS 125B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS C126",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS C127A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS 127B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS M127C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS C129A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS C129B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS C129C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS C131A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS C131B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS C131C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS C133A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS C133B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS C133C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS 133D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS 133E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS CM135A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS CM135B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS 137",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS C170A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS CM139A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS C139B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS C139C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS C140",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS CM141",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS C142A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS C142B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS 143",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS 144",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS M110A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS M110B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS M110C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS M111",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS M112A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS M112B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS M112C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS M112D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS M113A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS M113B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS M114A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS M114B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS M114C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS CM115A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS 119A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS 119B",
+        "status": "active"
+       }
+      ],
+      "count": 3,
+      "label": "Geographic Regions",
+      "notes": "Select three courses from at least three of the following five geographic regions:"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "ART HIS 196",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS 197A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS 197B",
+        "status": "active"
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "ART HIS 100",
+          "status": "active"
+         },
          {
           "type": "course",
           "code": "ART HIS M110A",
@@ -34,7 +900,17 @@
          },
          {
           "type": "course",
+          "code": "ART HIS M110D",
+          "status": "active"
+         },
+         {
+          "type": "course",
           "code": "ART HIS M111",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ART HIS M111E",
           "status": "active"
          },
          {
@@ -69,6 +945,16 @@
          },
          {
           "type": "course",
+          "code": "ART HIS M113C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ART HIS C114D",
+          "status": "active"
+         },
+         {
+          "type": "course",
           "code": "ART HIS M114A",
           "status": "active"
          },
@@ -84,27 +970,7 @@
          },
          {
           "type": "course",
-          "code": "ART HIS C114D",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS CM115A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS C115B",
-          "status": "active"
-         },
-         {
-          "type": "course",
           "code": "ART HIS 115C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS C115D",
           "status": "active"
          },
          {
@@ -114,7 +980,22 @@
          },
          {
           "type": "course",
+          "code": "ART HIS C115B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ART HIS C115D",
+          "status": "active"
+         },
+         {
+          "type": "course",
           "code": "ART HIS C115F",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ART HIS CM115A",
           "status": "active"
          },
          {
@@ -139,7 +1020,17 @@
          },
          {
           "type": "course",
+          "code": "ART HIS C118C",
+          "status": "active"
+         },
+         {
+          "type": "course",
           "code": "ART HIS M118A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ART HIS M118B",
           "status": "active"
          },
          {
@@ -154,32 +1045,19 @@
          },
          {
           "type": "course",
-          "code": "ART HIS CM139A",
+          "code": "ART HIS M119C",
           "status": "active"
          },
          {
           "type": "course",
-          "code": "ART HIS C148A",
+          "code": "ART HIS M119D",
           "status": "active"
          },
          {
           "type": "course",
-          "code": "ART HIS C148B",
+          "code": "ART HIS C120",
           "status": "active"
          },
-         {
-          "type": "course",
-          "code": "ART HIS 154A",
-          "status": "active"
-         }
-        ],
-        "count": 1,
-        "label": "Ancient/Medieval before 1400",
-        "notes": "Select one course from:"
-       },
-       {
-        "type": "choose",
-        "items": [
          {
           "type": "course",
           "code": "ART HIS 121A",
@@ -207,12 +1085,12 @@
          },
          {
           "type": "course",
-          "code": "ART HIS C125A",
+          "code": "ART HIS 125B",
           "status": "active"
          },
          {
           "type": "course",
-          "code": "ART HIS 125B",
+          "code": "ART HIS C125A",
           "status": "active"
          },
          {
@@ -222,65 +1100,12 @@
          },
          {
           "type": "course",
-          "code": "ART HIS C139B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS C139C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS CM141",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS C148C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS C148E",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS C152B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS C152C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS 154B",
-          "status": "active"
-         }
-        ],
-        "count": 1,
-        "label": "Early Modern, 1400 to 1700",
-        "notes": "Select one course from:"
-       },
-       {
-        "type": "choose",
-        "items": [
-         {
-          "type": "course",
-          "code": "ART HIS M118B",
+          "code": "ART HIS 127B",
           "status": "active"
          },
          {
           "type": "course",
           "code": "ART HIS C127A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS 127B",
           "status": "active"
          },
          {
@@ -345,6 +1170,16 @@
          },
          {
           "type": "course",
+          "code": "ART HIS 133D",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ART HIS 133E",
+          "status": "active"
+         },
+         {
+          "type": "course",
           "code": "ART HIS C133A",
           "status": "active"
          },
@@ -356,16 +1191,6 @@
          {
           "type": "course",
           "code": "ART HIS C133C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS 133D",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS 133E",
           "status": "active"
          },
          {
@@ -385,6 +1210,46 @@
          },
          {
           "type": "course",
+          "code": "ART HIS C136B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ART HIS C136D",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ART HIS 137",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ART HIS C139B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ART HIS C139C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ART HIS CM139A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ART HIS C140",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ART HIS CM141",
+          "status": "active"
+         },
+         {
+          "type": "course",
           "code": "ART HIS C142A",
           "status": "active"
          },
@@ -395,45 +1260,14 @@
          },
          {
           "type": "course",
-          "code": "ART HIS C145B",
+          "code": "ART HIS 143",
           "status": "active"
          },
          {
           "type": "course",
-          "code": "ART HIS C148D",
+          "code": "ART HIS 144",
           "status": "active"
          },
-         {
-          "type": "course",
-          "code": "ART HIS 154D",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS C160",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS C170A",
-          "status": "active"
-         }
-        ],
-        "count": 1,
-        "label": "Modern/Contemporary, 1700 to Present",
-        "notes": "Select one course from:"
-       }
-      ],
-      "count": 1,
-      "label": "Historical Periods",
-      "notes": "Select one course from each of the following three historical periods:"
-     },
-     {
-      "type": "choose",
-      "items": [
-       {
-        "type": "all",
-        "items": [
          {
           "type": "course",
           "code": "ART HIS C145A",
@@ -448,13 +1282,12 @@
           "type": "course",
           "code": "ART HIS C146A",
           "status": "active"
-         }
-        ],
-        "label": "Africa"
-       },
-       {
-        "type": "all",
-        "items": [
+         },
+         {
+          "type": "course",
+          "code": "ART HIS 147",
+          "status": "active"
+         },
          {
           "type": "course",
           "code": "ART HIS C148A",
@@ -478,6 +1311,16 @@
          {
           "type": "course",
           "code": "ART HIS C148E",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ART HIS C148F",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ART HIS C148G",
           "status": "active"
          },
          {
@@ -537,12 +1380,12 @@
          },
          {
           "type": "course",
-          "code": "ART HIS C154C",
+          "code": "ART HIS 154D",
           "status": "active"
          },
          {
           "type": "course",
-          "code": "ART HIS 154D",
+          "code": "ART HIS C154C",
           "status": "active"
          },
          {
@@ -559,340 +1402,60 @@
           "type": "course",
           "code": "ART HIS C158A",
           "status": "active"
-         }
-        ],
-        "label": "Asia"
-       },
-       {
-        "type": "all",
-        "items": [
+         },
          {
           "type": "course",
-          "code": "ART HIS C115B",
+          "code": "ART HIS C160",
           "status": "active"
          },
          {
           "type": "course",
-          "code": "ART HIS 115C",
+          "code": "ART HIS 161",
           "status": "active"
          },
          {
           "type": "course",
-          "code": "ART HIS C115D",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS 115E",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS C115F",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS 121A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS 121B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS 121C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS 121D",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS 124",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS C125A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS 125B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS C126",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS C127A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS 127B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS M127C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS C129A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS C129B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS C129C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS C131A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS C131B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS C131C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS C133A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS C133B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS C133C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS 133D",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS 133E",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS CM135A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS CM135B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS 137",
+          "code": "ART HIS C169",
           "status": "active"
          },
          {
           "type": "course",
           "code": "ART HIS C170A",
           "status": "active"
-         }
-        ],
-        "label": "Europe and U.S."
-       },
-       {
-        "type": "all",
-        "items": [
+         },
          {
           "type": "course",
-          "code": "ART HIS CM139A",
+          "code": "ART HIS C170B",
           "status": "active"
          },
          {
           "type": "course",
-          "code": "ART HIS C139B",
+          "code": "ART HIS C171",
           "status": "active"
          },
          {
           "type": "course",
-          "code": "ART HIS C139C",
+          "code": "ART HIS C172A",
           "status": "active"
          },
          {
           "type": "course",
-          "code": "ART HIS C140",
+          "code": "ART HIS C172B",
           "status": "active"
          },
          {
           "type": "course",
-          "code": "ART HIS CM141",
+          "code": "ART HIS M179",
           "status": "active"
          },
          {
           "type": "course",
-          "code": "ART HIS C142A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS C142B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS 143",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS 144",
+          "code": "ART HIS 185",
           "status": "active"
          }
         ],
-        "label": "Latin America and Caribbean"
-       },
-       {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "ART HIS M110A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS M110B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS M110C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS M111",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS M112A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS M112B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS M112C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS M112D",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS M113A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS M113B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS M114A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS M114B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS M114C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS CM115A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS 119A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS 119B",
-          "status": "active"
-         }
-        ],
-        "label": "Mediterranean, Middle East, and Near East"
-       }
-      ],
-      "count": 3,
-      "label": "Geographic Regions",
-      "notes": "Select three courses from at least three of the following five geographic regions:"
-     },
-     {
-      "type": "all",
-      "items": [
-       {
-        "type": "course",
-        "code": "ART HIS 196",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ART HIS 197A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ART HIS 197B",
-        "status": "active"
-       },
-       {
-        "type": "all",
-        "items": [
-         {
-          "type": "text",
-          "text": "Art History 100 through 185"
-         }
-        ],
-        "label": "Art History 100 through 185"
+        "label": "ART HIS 100–185",
+        "expanded_from": "range"
        }
       ],
       "label": "Art History Electives",
@@ -911,23 +1474,82 @@
   {
    "name": "Preparation for the Major",
    "requirement": {
-    "type": "all",
+    "type": "choose",
     "items": [
      {
-      "type": "choose",
-      "items": [
-       {
-        "type": "text",
-        "text": "Art History 20 through 34"
-       }
-      ],
-      "count": 4,
-      "label": "Art History 20 through 32",
-      "notes": "Select four courses from:"
+      "type": "course",
+      "code": "ART HIS 20",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ART HIS 21",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ART HIS 22",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ART HIS 23",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ART HIS 24",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ART HIS 25",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ART HIS 26",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ART HIS 27",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ART HIS 28",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ART HIS 29",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ART HIS 30",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ART HIS 31",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ART HIS 32",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ART HIS 34",
+      "status": "active"
      }
     ],
-    "label": "Preparation for the Major",
-    "notes": "Complete four courses. It is strongly recommended that the courses be taken prior to enrollment in upper-division courses. Some of these courses serve as requisites to certain upper-division courses."
+    "count": 4,
+    "label": "Art History 20 through 32",
+    "notes": "Select four courses from:"
    }
   },
   {
@@ -947,8 +1569,10 @@
      }
     ],
     "label": "Honors Program",
-    "notes": "The honors program is designed for Art History majors who are interested in carrying out an independent research project that culminates in a departmental honors thesis of approximately 30 pages. The program gives qualified students the opportunity to work closely with individual professors on an in-depth supervised research and writing project. Complete the following courses with grades of A."
-   }
+    "notes": "The honors program is designed for Art History majors who are interested in carrying out an independent research project that culminates in a departmental honors thesis of approximately 30 pages. The program gives qualified students the opportunity to work closely with individual professors on an in-depth supervised research and writing project. Complete the following courses with grades of A.",
+    "optional": true
+   },
+   "optional": true
   }
  ],
  "narrative": []

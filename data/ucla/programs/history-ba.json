@@ -183,14 +183,74 @@
         "status": "active"
        },
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "text",
-          "text": "History 97A through 97O"
-         }
-        ],
-        "label": "History 97A through 97O"
+        "type": "course",
+        "code": "HIST 97A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 97B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 97C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 97D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 97E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 97F",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 97G",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 97I",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 97J",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 97K",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 97L",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 97M",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 97N",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 97O",
+        "status": "active"
        }
       ],
       "count": 1,
@@ -198,15 +258,267 @@
       "notes": "Select one course from the following courses or History 97A through 97O."
      },
      {
-      "type": "all",
+      "type": "choose",
+      "count": 1,
       "items": [
        {
-        "type": "text",
-        "text": "Lower-Division History Courses (except History 19, 89, 89HC, 99). "
+        "type": "course",
+        "code": "HIST 1A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 1B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 1C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 2B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 2C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 3A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 3C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 3D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST M4",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 5",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 8A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 8B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 8C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 9A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 9C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 9D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 10B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST M10A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 11A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 11B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 12A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 12B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 12C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 12D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 12E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 13A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 13B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 13C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 14",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 20",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 21",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 22",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST M60",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST M60W",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 88",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 94",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 96W",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 97A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 97B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 97C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 97D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 97E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 97F",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 97G",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 97I",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 97J",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 97K",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 97L",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 97M",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 97N",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 97O",
+        "status": "active"
        }
       ],
-      "label": "Additional Lower-Division History Courses",
-      "notes": "Select three additional lower-division history courses (except History 19, 89, 89HC, 99)."
+      "label": "HIST 1–99",
+      "expanded_from": "range"
      }
     ],
     "label": "Preparation for the Major"
@@ -233,8 +545,84 @@
       "type": "choose",
       "items": [
        {
-        "type": "text",
-        "text": "History 187A through C187R"
+        "type": "course",
+        "code": "HIST 187A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 187B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 187C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 187D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 187E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 187F",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 187G",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 187I",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 187J",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 187M",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST C187K",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST C187L",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST C187N",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST C187O",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST C187P",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST C187R",
+        "status": "active"
        }
       ],
       "count": 1,
@@ -245,8 +633,94 @@
       "type": "choose",
       "items": [
        {
-        "type": "text",
-        "text": "History 191 series"
+        "type": "course",
+        "code": "HIST 191A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 191C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 191E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 191G",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 191I",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 191M",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 191Q",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST C191B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST C191D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST C191F",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST C191J",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST C191K",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST C191L",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST C191N",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST C191O",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST C191P",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST C191R",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST M191DC",
+        "status": "active"
        }
       ],
       "count": 1,
@@ -547,14 +1021,97 @@
         "status": "active"
        },
        {
-        "type": "all",
+        "type": "choose",
+        "count": 1,
         "items": [
          {
-          "type": "text",
-          "text": "History 112A through 119D"
+          "type": "course",
+          "code": "HIST 112B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 112BD",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 112D",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST M112C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST M112E",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 113A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 113B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST M113C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 114A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 114B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 115",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 116A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 116B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 119A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 119B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 119C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 119D",
+          "status": "active"
          }
         ],
-        "label": "History 112A through 119D"
+        "label": "HIST 112–119",
+        "expanded_from": "range"
        }
       ],
       "label": "History before 1700 CE",
@@ -587,8 +1144,10 @@
      }
     ],
     "label": "Honors Program",
-    "notes": "The honors thesis must be completed in three terms, on the basis of work carried out in History 198A, 198B, and 198C."
-   }
+    "notes": "The honors thesis must be completed in three terms, on the basis of work carried out in History 198A, 198B, and 198C.",
+    "optional": true
+   },
+   "optional": true
   }
  ],
  "narrative": []

@@ -46,8 +46,109 @@
         "type": "choose",
         "items": [
          {
-          "type": "text",
-          "text": "Portuguese 100-199"
+          "type": "course",
+          "code": "PORTGSE 100A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE 100B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE M122",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE 130A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE 130B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE 141A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE 141B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE 141C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE 142A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE 142B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE M142C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE 143A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE 143B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE 143C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE 143D",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE 175",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE 180",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE 191",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE 195",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE 197",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE 199",
+          "status": "active"
          }
         ],
         "count": 1,
@@ -82,8 +183,109 @@
         "type": "choose",
         "items": [
          {
-          "type": "text",
-          "text": "Portuguese 100-199"
+          "type": "course",
+          "code": "PORTGSE 100A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE 100B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE M122",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE 130A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE 130B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE 141A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE 141B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE 141C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE 142A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE 142B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE M142C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE 143A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE 143B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE 143C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE 143D",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE 175",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE 180",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE 191",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE 195",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE 197",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE 199",
+          "status": "active"
          }
         ],
         "count": 1,
@@ -97,24 +299,234 @@
       "type": "choose",
       "items": [
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "text",
-          "text": "Portuguese 100-199"
-         }
-        ],
-        "label": "Portuguese Electives"
+        "type": "course",
+        "code": "PORTGSE 100A",
+        "status": "active"
        },
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "text",
-          "text": "Spanish 100-199"
-         }
-        ],
-        "label": "Spanish Electives"
+        "type": "course",
+        "code": "PORTGSE 100B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PORTGSE M122",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PORTGSE 130A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PORTGSE 130B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PORTGSE 141A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PORTGSE 141B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PORTGSE 141C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PORTGSE 142A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PORTGSE 142B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PORTGSE M142C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PORTGSE 143A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PORTGSE 143B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PORTGSE 143C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PORTGSE 143D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PORTGSE 175",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PORTGSE 180",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PORTGSE 191",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PORTGSE 195",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PORTGSE 197",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PORTGSE 199",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SPAN 100A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SPAN 100B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SPAN 105",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SPAN 107",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SPAN 119",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SPAN 120",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SPAN M122",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SPAN 130",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SPAN 135",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SPAN 140",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SPAN 150",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SPAN 155",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SPAN 160",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SPAN M165XP",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SPAN 170",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SPAN 171",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SPAN M172XP",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SPAN 175",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SPAN 180",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SPAN 191A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SPAN 191B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SPAN 191C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SPAN 195",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SPAN 197",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SPAN 199",
+        "status": "active"
        }
       ],
       "count": 6,
@@ -261,8 +673,10 @@
      }
     ],
     "label": "Honors Program",
-    "notes": "Portuguese 198A and Spanish 198A are 4-unit courses in which students research and prepare a draft of a thesis on a selected topic; Portuguese 198B and Spanish 198B are 2-unit courses in which students complete the final thesis draft of approximately 25 to 30 pages. Approval of the honors thesis by the faculty mentor is the final requirement for departmental honors. Portuguese 198A-198B and Spanish 198A-198B may not be applied toward the majors."
-   }
+    "notes": "Portuguese 198A and Spanish 198A are 4-unit courses in which students research and prepare a draft of a thesis on a selected topic; Portuguese 198B and Spanish 198B are 2-unit courses in which students complete the final thesis draft of approximately 25 to 30 pages. Approval of the honors thesis by the faculty mentor is the final requirement for departmental honors. Portuguese 198A-198B and Spanish 198A-198B may not be applied toward the majors.",
+    "optional": true
+   },
+   "optional": true
   }
  ],
  "narrative": []

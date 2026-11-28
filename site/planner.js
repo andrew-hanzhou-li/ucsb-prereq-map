@@ -442,7 +442,7 @@ function allocateCourses() {
     // outright in two places (PSTAT 120A-B in Mathematics BA's core and its
     // statistics concentration) is taken once and counts in both.
     function visit(node, key, share, outright) {
-      if (!node) return;
+      if (!node || node.optional) return;
       share = share || !!node.may_share;
       outright = outright !== false && node.type !== "choose" && node.type !== "units";
       if (node.type === "choose" && node.count === 1) oneOf.add(key);
@@ -522,6 +522,8 @@ function progress(node, key) {
 function progressWith(node, key, counted) {
   // "have" counts done or planned; "done" counts only done (taken, credit,
   // passed), so the wording can say which.
+  // (An optional group, such as an honors program, is shown but not counted.)
+  if (node.optional) return { have: 0, done: 0, need: 0 };
   if (node.type === "course") {
     if (!node.code) return { have: 0, done: 0, need: 1 };
     const counts = counted[key] === true;
@@ -590,7 +592,7 @@ function requirementHtml(node, key, depth, sectionName, insideChoice) {
   if (node.type === "all") rule = depth > 0 ? "All of these" : "";
   // The catalog often repeats the section's name as a rule's label; skip that.
   const label = node.label && node.label.toLowerCase() !== (sectionName || "").split(" — ").pop().toLowerCase() ? node.label : "";
-  const head = [label, rule].filter(Boolean).join(": ");
+  const head = [label, rule].filter(Boolean).join(": ") + (node.optional && depth > 0 ? " (optional)" : "");
   const isChoice = node.type === "choose";
   // (Keys use each item's place in the full list, so slots stay matched.)
   const kept = withoutTwins(node.items);
@@ -679,7 +681,7 @@ function drawRequirementAreas() {
     const key = "s" + i;
     areas.push({
       key: key,
-      title: readable(section.name),
+      title: readable(section.name) + (section.optional || section.requirement.optional ? " (optional)" : ""),
       progress: progress(section.requirement, key),
       body: '<ul class="req-list">' + requirementHtml(section.requirement, key, 0, section.name, false) + "</ul>",
     });
@@ -1171,7 +1173,7 @@ function autoFill(quiet) {
   let slots = 0;
   graph.major.sections.forEach(function (section, i) {
     (function visit(node, key) {
-      if (!node.items) return;
+      if (!node.items || node.optional) return;
       // A list of courses, or of short sequences ("ECE 152A + 152B"), to choose from.
       // (A written rule in the list, such as "or another approved course",
       // doesn't stop slots: the courses listed are still the choices.)
@@ -1357,6 +1359,7 @@ function pickOneSets() {
   }
   (function visitAll(nodes, required) {
     for (const node of nodes) {
+      if (node.optional) continue;      // (an honors program isn't filled in)
       // "One of" up to four courses, or of any number of course groups
       // (Data Science: one of five two-course pairs). A longer list of
       // single courses is an elective list and gets a slot instead.

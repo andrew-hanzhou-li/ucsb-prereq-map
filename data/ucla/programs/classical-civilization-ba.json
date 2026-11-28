@@ -25,36 +25,24 @@
       "type": "choose",
       "items": [
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "GREEK 3",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "GREEK 16",
-          "status": "active"
-         }
-        ],
-        "label": "Greek"
+        "type": "course",
+        "code": "GREEK 3",
+        "status": "active"
        },
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "LATIN 3",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "LATIN 16",
-          "status": "active"
-         }
-        ],
-        "label": "Latin"
+        "type": "course",
+        "code": "GREEK 16",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LATIN 3",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LATIN 16",
+        "status": "active"
        }
       ],
       "count": 1,
@@ -131,8 +119,10 @@
      }
     ],
     "label": "Honors Program",
-    "notes": "All honors students are required to take Classics 191 (or an equivalent undergraduate seminar) in their junior year before beginning work on the honors thesis. Students must then enroll in Classics 198A and 198B in consecutive terms, in which they write the thesis under the direct supervision of a faculty member. They may take courses 198A and 198B concurrently or be exempt from course 198A only with approval of the faculty undergraduate adviser. In course 198A students submit an annotated bibliography and preliminary outline of their thesis. In course 198B, they submit at least one initial draft and the final revised version of the thesis. Only course 198B may be applied toward the upper-division classical civilization requirement for departmental majors."
-   }
+    "notes": "All honors students are required to take Classics 191 (or an equivalent undergraduate seminar) in their junior year before beginning work on the honors thesis. Students must then enroll in Classics 198A and 198B in consecutive terms, in which they write the thesis under the direct supervision of a faculty member. They may take courses 198A and 198B concurrently or be exempt from course 198A only with approval of the faculty undergraduate adviser. In course 198A students submit an annotated bibliography and preliminary outline of their thesis. In course 198B, they submit at least one initial draft and the final revised version of the thesis. Only course 198B may be applied toward the upper-division classical civilization requirement for departmental majors.",
+    "optional": true
+   },
+   "optional": true
   },
   {
    "name": "The Major",
@@ -143,13 +133,8 @@
       "type": "all",
       "items": [
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "text",
-          "text": "Greek 100 through 133 and Latin 100 through 133"
-         }
-        ],
+        "type": "text",
+        "text": "Greek 100 through 133 and Latin 100 through 133",
         "label": "Greek and Latin"
        },
        {

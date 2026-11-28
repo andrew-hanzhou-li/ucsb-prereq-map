@@ -343,347 +343,311 @@
       "type": "choose",
       "items": [
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "C&EE C104",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "C&EE C111",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "C&EE C182",
-          "status": "active"
-         },
-         {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "C&EE 108L",
-            "status": "active"
-           }
-          ],
-          "label": "Laboratory"
-         }
-        ],
-        "label": "Civil Engineering Materials"
+        "type": "course",
+        "code": "C&EE C104",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE C111",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE C182",
+        "status": "active"
        },
        {
         "type": "all",
         "items": [
          {
           "type": "course",
-          "code": "C&EE 116XP",
+          "code": "C&EE 108L",
           "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "C&EE 154",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "C&EE 155",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "C&EE C159",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "C&EE C164",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "C&EE M165",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "C&EE M166",
-          "status": "active"
-         },
-         {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "C&EE 156A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "C&EE 156B",
-            "status": "active"
-           }
-          ],
-          "label": "Laboratory"
-         },
-         {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "C&EE 157B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "C&EE 157C",
-            "status": "active"
-           }
-          ],
-          "label": "Capstone design"
          }
         ],
-        "label": "Environmental Engineering"
+        "label": "Laboratory"
+       },
+       {
+        "type": "course",
+        "code": "C&EE 116XP",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE 154",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE 155",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE C159",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE C164",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE M165",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE M166",
+        "status": "active"
        },
        {
         "type": "all",
         "items": [
          {
           "type": "course",
-          "code": "C&EE 125",
+          "code": "C&EE 156A",
           "status": "active"
          },
          {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "C&EE 120L",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "C&EE 129L",
-            "status": "active"
-           }
-          ],
-          "label": "Laboratory"
-         },
-         {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "C&EE 121",
-            "status": "active"
-           }
-          ],
-          "label": "Design"
-         },
-         {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "C&EE 123",
-            "status": "active"
-           }
-          ],
-          "label": "Capstone Design"
+          "type": "course",
+          "code": "C&EE 156B",
+          "status": "active"
          }
         ],
-        "label": "Geotechnical Engineering"
+        "label": "Laboratory"
        },
        {
         "type": "all",
         "items": [
          {
           "type": "course",
-          "code": "C&EE 157A",
+          "code": "C&EE 157B",
           "status": "active"
          },
          {
           "type": "course",
-          "code": "C&EE C158",
+          "code": "C&EE 157C",
           "status": "active"
-         },
-         {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "C&EE 129L",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "C&EE 157L",
-            "status": "active"
-           }
-          ],
-          "label": "Laboratory"
-         },
-         {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "C&EE 151",
-            "status": "active"
-           }
-          ],
-          "label": "Design"
-         },
-         {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "C&EE 152",
-            "status": "active"
-           }
-          ],
-          "label": "Capstone Design"
          }
         ],
-        "label": "Hydrology and Water Resources Engineering"
+        "label": "Capstone design"
+       },
+       {
+        "type": "course",
+        "code": "C&EE 125",
+        "status": "active"
        },
        {
         "type": "all",
         "items": [
          {
           "type": "course",
-          "code": "C&EE 125",
+          "code": "C&EE 120L",
           "status": "active"
          },
          {
           "type": "course",
-          "code": "C&EE 130",
+          "code": "C&EE 129L",
           "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "C&EE 132",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "C&EE 135B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "C&EE M135C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "C&EE 142",
-          "status": "active"
-         },
-         {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "C&EE 108L",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "C&EE 135L",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "C&EE 140L",
-            "status": "active"
-           }
-          ],
-          "label": "Laboratory"
-         },
-         {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "C&EE 141",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "C&EE 143",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "C&EE 148",
-            "status": "active"
-           }
-          ],
-          "label": "Design"
-         },
-         {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "C&EE 144",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "C&EE 147",
-            "status": "active"
-           }
-          ],
-          "label": "Capstone Design"
          }
         ],
-        "label": "Structural Engineering and Mechanics"
+        "label": "Laboratory"
        },
        {
         "type": "all",
         "items": [
          {
           "type": "course",
-          "code": "C&EE 180",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "C&EE C181",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "C&EE C182",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "C&EE C183",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "C&EE C184",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "C&EE C185",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "C&EE C186",
+          "code": "C&EE 121",
           "status": "active"
          }
         ],
-        "label": "Transportation Engineering"
+        "label": "Design"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "C&EE 123",
+          "status": "active"
+         }
+        ],
+        "label": "Capstone Design"
+       },
+       {
+        "type": "course",
+        "code": "C&EE 157A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE C158",
+        "status": "active"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "C&EE 129L",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "C&EE 157L",
+          "status": "active"
+         }
+        ],
+        "label": "Laboratory"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "C&EE 151",
+          "status": "active"
+         }
+        ],
+        "label": "Design"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "C&EE 152",
+          "status": "active"
+         }
+        ],
+        "label": "Capstone Design"
+       },
+       {
+        "type": "course",
+        "code": "C&EE 125",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE 130",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE 132",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE 135B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE M135C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE 142",
+        "status": "active"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "C&EE 108L",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "C&EE 135L",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "C&EE 140L",
+          "status": "active"
+         }
+        ],
+        "label": "Laboratory"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "C&EE 141",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "C&EE 143",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "C&EE 148",
+          "status": "active"
+         }
+        ],
+        "label": "Design"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "C&EE 144",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "C&EE 147",
+          "status": "active"
+         }
+        ],
+        "label": "Capstone Design"
+       },
+       {
+        "type": "course",
+        "code": "C&EE 180",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE C181",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE C182",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE C183",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE C184",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE C185",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE C186",
+        "status": "active"
        }
       ],
       "count": 8,

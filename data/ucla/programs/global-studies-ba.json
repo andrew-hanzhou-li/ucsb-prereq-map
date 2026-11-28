@@ -75,9 +75,20 @@
           "status": "active"
          },
          {
-          "type": "course",
-          "code": "COM LIT 1D",
-          "status": "active"
+          "type": "choose",
+          "items": [
+           {
+            "type": "course",
+            "code": "COM LIT 1D",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COM LIT 2DW",
+            "status": "active"
+           }
+          ],
+          "count": 1
          },
          {
           "type": "course",
@@ -85,19 +96,20 @@
           "status": "active"
          },
          {
-          "type": "course",
-          "code": "COM LIT 2DW",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "COM LIT 4CW",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "COM LIT 4DW",
-          "status": "active"
+          "type": "choose",
+          "items": [
+           {
+            "type": "course",
+            "code": "COM LIT 4CW",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COM LIT 4DW",
+            "status": "active"
+           }
+          ],
+          "count": 1
          },
          {
           "type": "course",
@@ -246,111 +258,99 @@
         "notes": "Only one course from each pair of Comparative Literature 1C or 2CW, 1D or 2DW, and 4CW or 4DW may be applied."
        },
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "CLUSTER 48B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "HIST 1C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "HIST 10B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "HIST 12B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "HIST 12C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "HIST 22",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "I A STD 1",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "POL SCI 10",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "POL SCI 20",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "POL SCI 50",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "SOCIOL 1",
-          "status": "active"
-         }
-        ],
-        "label": "Governance and Conflict"
+        "type": "course",
+        "code": "CLUSTER 48B",
+        "status": "active"
        },
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "CLUSTER M1A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ECON 1",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ECON 2",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ENVIRON 12",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "GEOG 4",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "GEOG 5",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PUB AFF 40",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "SOCIOL 51",
-          "status": "active"
-         }
-        ],
-        "label": "Markets and Resources"
+        "type": "course",
+        "code": "HIST 1C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 10B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 12B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 12C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 22",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "I A STD 1",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "POL SCI 10",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "POL SCI 20",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "POL SCI 50",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SOCIOL 1",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER M1A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 1",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 2",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ENVIRON 12",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GEOG 4",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GEOG 5",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PUB AFF 40",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SOCIOL 51",
+        "status": "active"
        }
       ],
       "count": 5,
@@ -382,10 +382,10 @@
       "status": "active"
      },
      {
-      "type": "choose",
+      "type": "all",
       "items": [
        {
-        "type": "all",
+        "type": "choose",
         "items": [
          {
           "type": "course",
@@ -608,10 +608,11 @@
           "status": "active"
          }
         ],
+        "count": 6,
         "label": "Culture and Society"
        },
        {
-        "type": "all",
+        "type": "choose",
         "items": [
          {
           "type": "course",
@@ -739,10 +740,11 @@
           "status": "active"
          }
         ],
+        "count": 6,
         "label": "Governance and Conflict"
        },
        {
-        "type": "all",
+        "type": "choose",
         "items": [
          {
           "type": "course",
@@ -870,10 +872,10 @@
           "status": "active"
          }
         ],
+        "count": 6,
         "label": "Markets and Resources"
        }
       ],
-      "count": 6,
       "label": "Electives",
       "notes": "Select six elective courses, two from each of the following categories:"
      },
@@ -957,14 +959,20 @@
         "status": "active"
        },
        {
-        "type": "course",
-        "code": "I A STD 195CE",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "GLBL ST 199",
-        "status": "active"
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "I A STD 195CE",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GLBL ST 199",
+          "status": "active"
+         }
+        ],
+        "count": 1
        },
        {
         "type": "course",
@@ -996,8 +1004,10 @@
      }
     ],
     "label": "Honors Program",
-    "notes": "In addition to completing all courses required for the major, students must take courses 199A and 199B, in which they research and write an honors thesis. One of these courses may also satisfy the capstone requirement."
-   }
+    "notes": "In addition to completing all courses required for the major, students must take courses 199A and 199B, in which they research and write an honors thesis. One of these courses may also satisfy the capstone requirement.",
+    "optional": true
+   },
+   "optional": true
   }
  ],
  "narrative": []

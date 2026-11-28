@@ -41,14 +41,195 @@
     "type": "all",
     "items": [
      {
-      "type": "all",
+      "type": "choose",
       "items": [
        {
         "type": "choose",
         "items": [
          {
-          "type": "text",
-          "text": "Anthropology 130 through 149"
+          "type": "course",
+          "code": "ANTHRO 130",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 131",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 132",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 133",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 134",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 135",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 135R",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 135S",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 136A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 136B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 136M",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 137P",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 137Q",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 138P",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO M138Q",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 139",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 140",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 141",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 142P",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 142Q",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 143",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 144R",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO C144M",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO C144S",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO M144P",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO M144Q",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 145P",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 145S",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO M145Q",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO M145R",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO M145T",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 146",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 146S",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 147",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 147P",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO M148",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 149",
+          "status": "active"
          }
         ],
         "count": 2,
@@ -59,8 +240,124 @@
         "type": "choose",
         "items": [
          {
-          "type": "text",
-          "text": "Anthropology 110 through 119"
+          "type": "course",
+          "code": "ANTHRO 110",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO CM110Q",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 111",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 112P",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 112Q",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 112R",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 112S",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 113P",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 113Q",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 113R",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 114P",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 114Q",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 115P",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO M115",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 116P",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 116Q",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 116S",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 116XP",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO M116R",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 117P",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO C117",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 118Q",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 118R",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 119",
+          "status": "active"
          }
         ],
         "count": 1,
@@ -71,8 +368,74 @@
         "type": "choose",
         "items": [
          {
-          "type": "text",
-          "text": "Anthropology 120 through 129"
+          "type": "course",
+          "code": "ANTHRO 120",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 124P",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 124Q",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 124S",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 124T",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 126M",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 126P",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 126Q",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO M126N",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 128P",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO M128Q",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO M128S",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO M128T",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 129",
+          "status": "active"
          }
         ],
         "count": 1,
@@ -83,8 +446,79 @@
         "type": "choose",
         "items": [
          {
-          "type": "text",
-          "text": "Anthropology 150 through 159"
+          "type": "course",
+          "code": "ANTHRO M150",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 151",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 152Q",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 152R",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO M152P",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 153",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 154P",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 154Q",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 154SL",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO M155",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO M156",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO C157P",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 158P",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO M158",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 159",
+          "status": "active"
          }
         ],
         "count": 1,
@@ -92,6 +526,7 @@
         "notes": "Select one course from:"
        }
       ],
+      "count": 2,
       "label": "Fields",
       "notes": "Select two courses in the sociocultural anthropology field and one in each of the other three fields."
      },
@@ -99,8 +534,69 @@
       "type": "choose",
       "items": [
        {
-        "type": "text",
-        "text": "Anthropology 160 through 169"
+        "type": "course",
+        "code": "ANTHRO 160A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ANTHRO 160B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ANTHRO 161",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ANTHRO 162",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ANTHRO 163P",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ANTHRO 163Q",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ANTHRO 163R",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ANTHRO 166P",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ANTHRO M166Q",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ANTHRO 167",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ANTHRO 168P",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ANTHRO M168Q",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ANTHRO 169",
+        "status": "active"
        }
       ],
       "count": 1,
@@ -840,7 +1336,8 @@
        }
       ],
       "label": "Honors Seminars",
-      "notes": "Students are strongly encouraged to enroll in 3 to 4 units of 89 and/or 189 courses to gain small seminar experience. Ideally, at least one of the units should be at the upper-division level."
+      "notes": "Students are strongly encouraged to enroll in 3 to 4 units of 89 and/or 189 courses to gain small seminar experience. Ideally, at least one of the units should be at the upper-division level.",
+      "optional": true
      }
     ],
     "label": "The Major",
@@ -874,8 +1371,10 @@
      }
     ],
     "label": "Honors Program",
-    "notes": "The honors program offers research-oriented students an opportunity to engage in original research and analysis under the close supervision of faculty members and culminates in an honors thesis. The proposal, research, analysis, and writing of the paper take place over four terms via Anthropology 191HA through 191HD. Course 191HA is taken in winter quarter and 191HB in spring quarter. Research should be done in summer, and courses 191HC and 191HD are taken in fall and winter quarters of the graduation year."
-   }
+    "notes": "The honors program offers research-oriented students an opportunity to engage in original research and analysis under the close supervision of faculty members and culminates in an honors thesis. The proposal, research, analysis, and writing of the paper take place over four terms via Anthropology 191HA through 191HD. Course 191HA is taken in winter quarter and 191HB in spring quarter. Research should be done in summer, and courses 191HC and 191HD are taken in fall and winter quarters of the graduation year.",
+    "optional": true
+   },
+   "optional": true
   }
  ],
  "narrative": []

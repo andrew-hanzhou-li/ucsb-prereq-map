@@ -12,20 +12,88 @@
     "type": "all",
     "items": [
      {
-      "type": "choose",
+      "type": "all",
       "items": [
        {
-        "type": "all",
+        "type": "choose",
         "items": [
          {
-          "type": "all",
+          "type": "choose",
+          "count": 1,
           "items": [
            {
-            "type": "text",
-            "text": "English 140A through 148"
+            "type": "course",
+            "code": "ENGL 140A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 140B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 141A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 141B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 141C",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 141R",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 142",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 142R",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 143",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 144",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 145",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 146",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 147",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 148",
+            "status": "active"
            }
           ],
-          "label": "English 140A through 148"
+          "label": "ENGL 140–148",
+          "expanded_from": "range"
          },
          {
           "type": "all",
@@ -39,21 +107,69 @@
           "label": "Indicated Sections of English 149"
          }
         ],
-        "label": "(a) Literatures in English to 1500",
-        "notes": "Select from English 140A through 148 or indicated sections of 149:"
+        "count": 4,
+        "label": "(a) Literatures in English to 1500"
        },
        {
-        "type": "all",
+        "type": "choose",
         "items": [
          {
-          "type": "all",
+          "type": "choose",
+          "count": 1,
           "items": [
            {
-            "type": "text",
-            "text": "English 150A through 157"
+            "type": "course",
+            "code": "ENGL 150A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 150B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 150C",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 151",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 152",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 153",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 154",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 155",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 156",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 157",
+            "status": "active"
            }
           ],
-          "label": "English 150A through 157"
+          "label": "ENGL 150–157",
+          "expanded_from": "range"
          },
          {
           "type": "all",
@@ -83,21 +199,104 @@
           "label": "Indicated Sections of English 159 or 159R"
          }
         ],
-        "label": "(b) Literatures in English, 1500 to 1700",
-        "notes": "Select from English 150A through 157, 166A, or indicated sections of 159 or 159R:"
+        "count": 4,
+        "label": "(b) Literatures in English, 1500 to 1700"
        },
        {
-        "type": "all",
+        "type": "choose",
         "items": [
          {
-          "type": "all",
+          "type": "choose",
+          "count": 1,
           "items": [
            {
-            "type": "text",
-            "text": "English 160A through 165C"
+            "type": "course",
+            "code": "ENGL 160A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 160B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 161A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 161B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 161C",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 162A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 162B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 163A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 163B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 163C",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 164A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 164B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 164C",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 164D",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 165A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 165B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 165C",
+            "status": "active"
            }
           ],
-          "label": "English 160A through 165C"
+          "label": "ENGL 160–165",
+          "expanded_from": "range"
          },
          {
           "type": "all",
@@ -152,11 +351,11 @@
           "label": "Indicated Sections of English 169, 169R, or 176"
          }
         ],
-        "label": "(c) Literatures in English, 1700 to 1850",
-        "notes": "Select from English 160A through 165C, 166B through 168, or indicated sections of 169 or 169R or 176:"
+        "count": 4,
+        "label": "(c) Literatures in English, 1700 to 1850"
        },
        {
-        "type": "all",
+        "type": "choose",
         "items": [
          {
           "type": "course",
@@ -360,11 +559,10 @@
           "label": "Indicated Sections of English 176"
          }
         ],
-        "label": "(d) Literatures in English, 1850 to present",
-        "notes": "Select courses from:"
+        "count": 4,
+        "label": "(d) Literatures in English, 1850 to present"
        }
       ],
-      "count": 4,
       "label": "(1) Historical Period Courses",
       "notes": "Select four historical period courses, one from each of the following four periods:"
      },
@@ -372,17 +570,135 @@
       "type": "choose",
       "items": [
        {
-        "type": "all",
+        "type": "choose",
         "items": [
          {
-          "type": "all",
+          "type": "choose",
+          "count": 1,
           "items": [
            {
-            "type": "text",
-            "text": "English 100 through 109"
+            "type": "course",
+            "code": "ENGL 100",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL M101A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL M101B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL M101C",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL M101D",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL M102A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL M102B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL M103",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL M104A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL M104B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL M104C",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL M104D",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL M104E",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL M105A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL M105B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL M105C",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL M105D",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL M105E",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL M105XP",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 106",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL M107A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL M107B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 108",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 109",
+            "status": "active"
            }
           ],
-          "label": "English 100 through 109"
+          "label": "ENGL 100–109",
+          "expanded_from": "range"
          },
          {
           "type": "all",
@@ -472,11 +788,11 @@
           "label": "Indicated Sections of 119, 139, 149, 159, 159R, 169, 169R, 179, or 179R"
          }
         ],
-        "label": "(a) Gender, Race, Ethnicity, Disability, and Sexuality Studies",
-        "notes": "Select from following groups of courses or following range:"
+        "count": 3,
+        "label": "(a) Gender, Race, Ethnicity, Disability, and Sexuality Studies"
        },
        {
-        "type": "all",
+        "type": "choose",
         "items": [
          {
           "type": "all",
@@ -631,21 +947,204 @@
           "label": "Indicated Sections of English 149, 159, 159R, 169, 169R, 179, or 179R,"
          }
         ],
-        "label": "(b) Imperial, Transnational, and Postcolonial Studies",
-        "notes": "Select from following group of courses:"
+        "count": 3,
+        "label": "(b) Imperial, Transnational, and Postcolonial Studies"
        },
        {
-        "type": "all",
+        "type": "choose",
         "items": [
          {
-          "type": "all",
+          "type": "choose",
+          "count": 1,
           "items": [
            {
-            "type": "text",
-            "text": "English 111A through 129"
+            "type": "course",
+            "code": "ENGL 111A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 111B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 111C",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 112A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 112B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 112C",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 112D",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 112E",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 113A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 113B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 114",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 115A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 115B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 115C",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 115D",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 115E",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL M115XP",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 116A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 116B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 117",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 118A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 118B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 118C",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 118E",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL M118F",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 119",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 119XP",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 120",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 121",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 122",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 123",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 124",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 125",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL M126",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 127",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 128",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 129",
+            "status": "active"
            }
           ],
-          "label": "English 111A through 129"
+          "label": "ENGL 111–129",
+          "expanded_from": "range"
          },
          {
           "type": "all",
@@ -734,14 +1233,87 @@
           "label": "Courses"
          },
          {
-          "type": "all",
+          "type": "choose",
+          "count": 1,
           "items": [
            {
-            "type": "text",
-            "text": "English 171A through 177"
+            "type": "course",
+            "code": "ENGL 171A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 171B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 171C",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 172A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 172B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 172C",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 173A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 173B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 173C",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 174A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 174B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 174C",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 175",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 176",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENGL 177",
+            "status": "active"
            }
           ],
-          "label": "English 171A through 177"
+          "label": "ENGL 171–177",
+          "expanded_from": "range"
          },
          {
           "type": "all",
@@ -785,11 +1357,11 @@
           "label": "Indicated Sections of 149, 159, 159R, 169, 169R, 179, or 179R"
          }
         ],
-        "label": "(c) Genre Studies, Interdisciplinary Studies, Critical Theory",
-        "notes": "Select from following group of courses or ranges:"
+        "count": 3,
+        "label": "(c) Genre Studies, Interdisciplinary Studies, Critical Theory"
        },
        {
-        "type": "all",
+        "type": "choose",
         "items": [
          {
           "type": "course",
@@ -817,8 +1389,8 @@
           "status": "active"
          }
         ],
-        "label": "(d) Creative Writing",
-        "notes": "Admission to creative writing workshops (courses 136, 137, M138) is by application only."
+        "count": 3,
+        "label": "(d) Creative Writing"
        }
       ],
       "count": 3,
@@ -1991,14 +2563,92 @@
       "type": "all",
       "items": [
        {
-        "type": "all",
+        "type": "choose",
+        "count": 1,
         "items": [
          {
-          "type": "text",
-          "text": "English 180 through 184"
+          "type": "course",
+          "code": "ENGL 180",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 180R",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 181A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 181B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 181C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 181D",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 182A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 182B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 182C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 182D",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 182E",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 182F",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 183A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 183B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 183C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 184",
+          "status": "active"
          }
         ],
-        "label": "English 180 through 184"
+        "label": "ENGL 180–184",
+        "expanded_from": "range"
        },
        {
         "type": "all",
@@ -2048,8 +2698,49 @@
       "type": "choose",
       "items": [
        {
-        "type": "text",
-        "text": "English 120 through 128"
+        "type": "course",
+        "code": "ENGL 120",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 121",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 122",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 123",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 124",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 125",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ENGL M126",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 127",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 128",
+        "status": "active"
        }
       ],
       "count": 1,
@@ -2075,12 +2766,15 @@
         "status": "active"
        }
       ],
-      "label": "Honors Research"
+      "label": "Honors Research",
+      "optional": true
      }
     ],
     "label": "Honors Program",
-    "notes": "Students must take one theory course from English 120 through 128 no later than winter quarter of the junior year. In spring quarter of the junior year, students must take course 191H. During fall and winter quarters of the senior year, students must take courses 198A and 198B, in which they write a thesis under the direction of a faculty member."
-   }
+    "notes": "Students must take one theory course from English 120 through 128 no later than winter quarter of the junior year. In spring quarter of the junior year, students must take course 191H. During fall and winter quarters of the senior year, students must take courses 198A and 198B, in which they write a thesis under the direction of a faculty member.",
+    "optional": true
+   },
+   "optional": true
   },
   {
    "name": "Preparation for the Major",

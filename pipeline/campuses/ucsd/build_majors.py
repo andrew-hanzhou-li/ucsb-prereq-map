@@ -139,7 +139,7 @@ def expand(node, catalog, problems, where, required=frozenset()):
             problems.append("%s: choose %d from only %d items" % (where, out["count"], len(flat)))
     if kind == "units":
         out["units"] = node.get("units", 0)
-    for key in ("label", "notes", "may_share"):
+    for key in ("label", "notes", "may_share", "optional"):
         if node.get(key):
             out[key] = node[key]
     if not flat:

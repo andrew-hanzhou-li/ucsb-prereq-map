@@ -41,12 +41,67 @@
           "type": "all",
           "items": [
            {
-            "type": "text",
-            "text": "Earth, Planetary, and Space Sciences 3 through 17"
+            "type": "choose",
+            "count": 1,
+            "items": [
+             {
+              "type": "course",
+              "code": "EPS SCI 3",
+              "status": "active"
+             },
+             {
+              "type": "course",
+              "code": "EPS SCI 5",
+              "status": "active"
+             },
+             {
+              "type": "course",
+              "code": "EPS SCI M7",
+              "status": "active"
+             },
+             {
+              "type": "course",
+              "code": "EPS SCI 8",
+              "status": "active"
+             },
+             {
+              "type": "course",
+              "code": "EPS SCI 9",
+              "status": "active"
+             },
+             {
+              "type": "course",
+              "code": "EPS SCI 10",
+              "status": "active"
+             },
+             {
+              "type": "course",
+              "code": "EPS SCI 13",
+              "status": "active"
+             },
+             {
+              "type": "course",
+              "code": "EPS SCI 15",
+              "status": "active"
+             },
+             {
+              "type": "course",
+              "code": "EPS SCI 16",
+              "status": "active"
+             },
+             {
+              "type": "course",
+              "code": "EPS SCI 17",
+              "status": "active"
+             }
+            ],
+            "label": "EPS SCI 3–17",
+            "expanded_from": "range"
            }
           ],
           "label": "Earth, Planetary, and Space Sciences 3 through 17",
-          "notes": "Any course from Earth, Planetary, and Space Sciences 3 through 17 may be substituted for Earth, Planetary, and Space Sciences 1."
+          "notes": "Any course from Earth, Planetary, and Space Sciences 3 through 17 may be substituted for Earth, Planetary, and Space Sciences 1.",
+          "optional": true
          },
          {
           "type": "all",
@@ -58,11 +113,13 @@
            }
           ],
           "label": "Cluster 70A",
-          "notes": "Cluster 70A may be substituted for Earth, Planetary, and Space Sciences 1."
+          "notes": "Cluster 70A may be substituted for Earth, Planetary, and Space Sciences 1.",
+          "optional": true
          }
         ],
         "label": "Earth, Planetary, and Space Sciences 1 Alternatives",
-        "notes": "Any course from Earth, Planetary, and Space Sciences 3 through 17 or Cluster 70A may be substituted for Earth, Planetary, and Space Sciences 1."
+        "notes": "Any course from Earth, Planetary, and Space Sciences 3 through 17 or Cluster 70A may be substituted for Earth, Planetary, and Space Sciences 1.",
+        "optional": true
        }
       ],
       "label": "Earth, Planetary, and Space Sciences"
@@ -376,8 +433,10 @@
      }
     ],
     "label": "Honors Program",
-    "notes": "The honors program in geophysics is intended to provide exceptional students an opportunity for advanced research and study under the tutorial guidance of a faculty member. Complete a minimum of two terms (8 units) of Earth, Planetary, and Space Sciences 198 leading to the preparation of a satisfactory honors thesis."
-   }
+    "notes": "The honors program in geophysics is intended to provide exceptional students an opportunity for advanced research and study under the tutorial guidance of a faculty member. Complete a minimum of two terms (8 units) of Earth, Planetary, and Space Sciences 198 leading to the preparation of a satisfactory honors thesis.",
+    "optional": true
+   },
+   "optional": true
   }
  ],
  "narrative": []

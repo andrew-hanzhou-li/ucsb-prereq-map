@@ -40,8 +40,10 @@
      }
     ],
     "label": "Honors Program",
-    "notes": "Departmental honors are awarded at graduation to those students who have a grade-point average of 3.6 or better in their junior and senior years and who have received a grade of A in Linguistics 198A and 198B or in 199. Qualified students may be proposed by any member of the faculty to the faculty as a whole for the award of highest honors on the basis of a piece of research in linguistics completed at UCLA."
-   }
+    "notes": "Departmental honors are awarded at graduation to those students who have a grade-point average of 3.6 or better in their junior and senior years and who have received a grade of A in Linguistics 198A and 198B or in 199. Qualified students may be proposed by any member of the faculty to the faculty as a whole for the award of highest honors on the basis of a piece of research in linguistics completed at UCLA.",
+    "optional": true
+   },
+   "optional": true
   },
   {
    "name": "The Major",
@@ -138,8 +140,179 @@
       "type": "choose",
       "items": [
        {
-        "type": "text",
-        "text": "Linguistics 104 through 199, minimum 4 units excluding multiple-listed courses"
+        "type": "course",
+        "code": "LING C104",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 105",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 110",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 110G",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING C111",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 114",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 115",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 119A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 120A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 120B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 120C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 127",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING C128A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING C128B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 130",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 132",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING C135",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING C140",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 144",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 160",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 161",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 165A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 165B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 165C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 170",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 175",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 180",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 185A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 185B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 185C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 191A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 191B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 192A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 195",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 198A",
+        "status": "active"
        }
       ],
       "count": 1,
@@ -176,7 +349,8 @@
        }
       ],
       "label": "Recommended Linguistics Courses",
-      "notes": "Linguistics 165A, 165B, and whichever of 130, 132, and C135 has not been used to satisfy the requirement, are strongly recommended."
+      "notes": "Linguistics 165A, 165B, and whichever of 130, 132, and C135 has not been used to satisfy the requirement, are strongly recommended.",
+      "optional": true
      },
      {
       "type": "all",
@@ -356,7 +530,8 @@
        }
       ],
       "label": "Recommended",
-      "notes": "The following course is strongly recommended:"
+      "notes": "The following course is strongly recommended:",
+      "optional": true
      }
     ],
     "label": "Preparation for the Major"
@@ -478,8 +653,10 @@
      }
     ],
     "label": "Computing Specialization",
-    "notes": "Students may select a specialization in Computing by (1) satisfying all the requirements for a bachelor’s degree in the specified major and (2) completing Program in Computing 10A and 10B and 10C (or Computer Science 31 and 32), Linguistics 185A, Mathematics 61, and one course selected from Linguistics 104, 127, 132, 165A, 165B, 165C, 180, 185B. Students graduate with a bachelor’s degree in their major and a specialization in Computing."
-   }
+    "notes": "Students may select a specialization in Computing by (1) satisfying all the requirements for a bachelor’s degree in the specified major and (2) completing Program in Computing 10A and 10B and 10C (or Computer Science 31 and 32), Linguistics 185A, Mathematics 61, and one course selected from Linguistics 104, 127, 132, 165A, 165B, 165C, 180, 185B. Students graduate with a bachelor’s degree in their major and a specialization in Computing.",
+    "optional": true
+   },
+   "optional": true
   }
  ],
  "narrative": []

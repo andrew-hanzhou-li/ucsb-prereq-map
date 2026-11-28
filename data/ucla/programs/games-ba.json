@@ -64,7 +64,7 @@
       "label": "Required Studio Courses"
      },
      {
-      "type": "all",
+      "type": "choose",
       "items": [
        {
         "type": "course",
@@ -152,6 +152,7 @@
         "status": "active"
        }
       ],
+      "count": 2,
       "label": "Elective Studio Courses",
       "notes": "Select two of the following courses:"
      },
@@ -192,7 +193,7 @@
       "label": "Required Lecture Course"
      },
      {
-      "type": "all",
+      "type": "choose",
       "items": [
        {
         "type": "course",
@@ -205,6 +206,7 @@
         "status": "active"
        }
       ],
+      "count": 1,
       "label": "Elective Lecture Courses",
       "notes": "Select one of the following courses:"
      },
@@ -235,7 +237,7 @@
       "label": "Required Studio Courses"
      },
      {
-      "type": "all",
+      "type": "choose",
       "items": [
        {
         "type": "course",
@@ -248,6 +250,7 @@
         "status": "active"
        }
       ],
+      "count": 1,
       "label": "Elective Studio Courses",
       "notes": "Select one of the following courses:"
      }

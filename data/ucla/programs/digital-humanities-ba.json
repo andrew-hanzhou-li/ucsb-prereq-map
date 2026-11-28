@@ -130,8 +130,79 @@
       "type": "choose",
       "items": [
        {
-        "type": "text",
-        "text": "Digital Humanities 102 to 186"
+        "type": "course",
+        "code": "DGT HUM 110",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DGT HUM 112",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DGT HUM 120",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DGT HUM M121",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DGT HUM 122",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DGT HUM 123",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DGT HUM 124",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DGT HUM 125",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DGT HUM C131",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DGT HUM 140",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DGT HUM M145",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DGT HUM 150",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DGT HUM 151",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DGT HUM M155",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DGT HUM C160",
+        "status": "active"
        }
       ],
       "count": 4,
@@ -330,101 +401,89 @@
         "status": "active"
        },
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "COMM 105",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "COMM 109",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "COMM 132",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "COMM 151",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "COMM 156",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "COMM 159",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "COMM 188C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "HIST M146B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MSC IND 122",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MSC IND 155",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "SOC GEN 131",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "SOCIOL 111",
-          "status": "active"
-         }
-        ],
-        "label": "Interdisciplinary Networks: Communication, Design, and Society"
+        "type": "course",
+        "code": "COMM 105",
+        "status": "active"
        },
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "GEOG 180",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "INF STD C115",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "SOCIOL 113",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "STATS 101A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "STATS 112",
-          "status": "active"
-         }
-        ],
-        "label": "Computational Networks: Information and Data Science"
+        "type": "course",
+        "code": "COMM 109",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMM 132",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMM 151",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMM 156",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMM 159",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMM 188C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST M146B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MSC IND 122",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MSC IND 155",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SOC GEN 131",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SOCIOL 111",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GEOG 180",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "INF STD C115",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SOCIOL 113",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS 101A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS 112",
+        "status": "active"
        }
       ],
       "count": 2,

@@ -7,958 +7,172 @@
  "source": "https://catalog.registrar.ucla.edu/major/2026/CHEMICALENGINEERINGBS",
  "sections": [
   {
-   "name": "Biomolecular Engineering Option",
+   "name": "Concentration",
    "requirement": {
-    "type": "all",
+    "type": "choose",
+    "count": 1,
+    "label": "One concentration",
     "items": [
      {
       "type": "all",
       "items": [
        {
-        "type": "course",
-        "code": "CH ENGR 10",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CHEM 20A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CHEM 20B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CHEM 20L",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CHEM 30A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CHEM 30AL",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CHEM 30B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "C&EE M20",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "MATH 31A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "MATH 31B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "MATH 32A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "MATH 32B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "MATH 33A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "MATH 33B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "MECH&AE M20",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "PHYSICS 1A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "PHYSICS 1B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "PHYSICS 1C",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "PHYSICS 4AL",
-        "status": "active"
-       }
-      ],
-      "label": "Preparation for the Major"
-     },
-     {
-      "type": "all",
-      "items": [
-       {
-        "type": "course",
-        "code": "CH ENGR 45",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR 100",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR 101A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR 101B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR 101C",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR 102A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR 102B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR 104A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR 104D",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR 107",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR 109",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR C115",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR C125",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR CM145",
-        "status": "active"
-       },
-       {
-        "type": "text",
-        "text": "Select three courses (12 units) from an approved list available in the Office of Academic and Student Affairs."
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "CH ENGR 10",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 20A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 20B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 20L",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 30A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 30AL",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 30B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "C&EE M20",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 31A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 31B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 32A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 32B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 33A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 33B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MECH&AE M20",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 1A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 1B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 1C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 4AL",
+          "status": "active"
+         }
+        ],
+        "label": "Preparation for the Major"
        },
        {
         "type": "all",
         "items": [
          {
           "type": "course",
-          "code": "CH ENGR 108A",
+          "code": "CH ENGR 45",
           "status": "active"
          },
          {
           "type": "course",
-          "code": "CH ENGR 108B",
-          "status": "active"
-         }
-        ],
-        "label": "Capstone Analysis and Design"
-       },
-       {
-        "type": "choose",
-        "items": [
-         {
-          "type": "course",
-          "code": "BIOENGR C105",
+          "code": "CH ENGR 100",
           "status": "active"
          },
          {
           "type": "course",
-          "code": "BIOENGR C183",
+          "code": "CH ENGR 101A",
           "status": "active"
          },
          {
           "type": "course",
-          "code": "CH ENGR C112",
+          "code": "CH ENGR 101B",
           "status": "active"
          },
          {
           "type": "course",
-          "code": "CHEM C105",
+          "code": "CH ENGR 101C",
           "status": "active"
          },
          {
           "type": "course",
-          "code": "CHEM 153A",
+          "code": "CH ENGR 102A",
           "status": "active"
          },
          {
           "type": "course",
-          "code": "CHEM C159",
-          "status": "active"
-         }
-        ],
-        "count": 1,
-        "label": "Biomolecular Elective",
-        "notes": "Select one biomolecular elective course (4 units) from the following. Another chemical engineering elective may be substituted with approval of the faculty adviser."
-       }
-      ],
-      "label": "The Major"
-     }
-    ],
-    "label": "Biomolecular Engineering Option"
-   }
-  },
-  {
-   "name": "Environmental Engineering Option",
-   "requirement": {
-    "type": "all",
-    "items": [
-     {
-      "type": "all",
-      "items": [
-       {
-        "type": "course",
-        "code": "CH ENGR 10",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CHEM 20A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CHEM 20B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CHEM 20L",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CHEM 30A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CHEM 30AL",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CHEM 30B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "C&EE M20",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "MATH 31A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "MATH 31B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "MATH 32A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "MATH 32B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "MATH 33A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "MATH 33B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "MECH&AE M20",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "PHYSICS 1A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "PHYSICS 1B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "PHYSICS 1C",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "PHYSICS 4AL",
-        "status": "active"
-       }
-      ],
-      "label": "Preparation for the Major"
-     },
-     {
-      "type": "all",
-      "items": [
-       {
-        "type": "course",
-        "code": "CH ENGR 45",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR 100",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR 101A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR 101B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR 101C",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR 102A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR 102B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR 103",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR 104A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR 104B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR 106",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR 107",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR 109",
-        "status": "active"
-       },
-       {
-        "type": "text",
-        "text": "Select three courses (12 units) from an approved list available in the Office of Academic and Student Affairs."
-       },
-       {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "CH ENGR 108A",
+          "code": "CH ENGR 102B",
           "status": "active"
          },
          {
           "type": "course",
-          "code": "CH ENGR 108B",
-          "status": "active"
-         }
-        ],
-        "label": "Capstone Analysis and Design"
-       },
-       {
-        "type": "choose",
-        "items": [
-         {
-          "type": "course",
-          "code": "CH ENGR 113",
+          "code": "CH ENGR 104A",
           "status": "active"
          },
          {
           "type": "course",
-          "code": "CH ENGR C118",
+          "code": "CH ENGR 104D",
           "status": "active"
          },
          {
           "type": "course",
-          "code": "CH ENGR C119",
+          "code": "CH ENGR 107",
           "status": "active"
          },
          {
           "type": "course",
-          "code": "CH ENGR C121",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CH ENGR C128",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CH ENGR C135",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CH ENGR C140",
-          "status": "active"
-         }
-        ],
-        "count": 2,
-        "label": "Electives",
-        "notes": "Select two elective courses (8 units) from the following. Another chemical engineering elective may be substituted with approval of the faculty adviser."
-       }
-      ],
-      "label": "The Major",
-      "notes": "Complete 13 required courses, 12 units of technical breadth, two capstone design courses, and 8 units of electives."
-     }
-    ],
-    "label": "Environmental Engineering Option"
-   }
-  },
-  {
-   "name": "Semiconductor Manufacturing Engineering Option",
-   "requirement": {
-    "type": "all",
-    "items": [
-     {
-      "type": "all",
-      "items": [
-       {
-        "type": "course",
-        "code": "CH ENGR 10",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CHEM 20A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CHEM 20B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CHEM 20L",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CHEM 30A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CHEM 30AL",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CHEM 30B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "C&EE M20",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "MATH 31A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "MATH 31B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "MATH 32A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "MATH 32B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "MATH 33A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "MATH 33B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "MECH&AE M20",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "PHYSICS 1A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "PHYSICS 1B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "PHYSICS 1C",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "PHYSICS 4AL",
-        "status": "active"
-       }
-      ],
-      "label": "Preparation for the Major"
-     },
-     {
-      "type": "all",
-      "items": [
-       {
-        "type": "course",
-        "code": "CH ENGR 45",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR 100",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR 101A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR 101B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR 101C",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR 102A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR 102B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR 103",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR 104A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR 104C",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR 104CL",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR 106",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR 107",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR 109",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR C116",
-        "status": "active"
-       },
-       {
-        "type": "text",
-        "text": "Select three courses (12 units) from an approved list available in the Office of Academic and Student Affairs."
-       },
-       {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "CH ENGR 108A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CH ENGR 108B",
-          "status": "active"
-         }
-        ],
-        "label": "Capstone Analysis and Design"
-       },
-       {
-        "type": "choose",
-        "items": [
-         {
-          "type": "course",
-          "code": "MAT SCI 104",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MAT SCI 120",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MAT SCI 121",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MAT SCI 122",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MAT SCI 150",
-          "status": "active"
-         }
-        ],
-        "count": 1,
-        "label": "Elective",
-        "notes": "Select one elective course (4 units) from chemical engineering or from the following list:"
-       }
-      ],
-      "label": "The Major"
-     }
-    ],
-    "label": "Semiconductor Manufacturing Engineering Option"
-   }
-  },
-  {
-   "name": "Chemical Engineering Core Option",
-   "requirement": {
-    "type": "all",
-    "items": [
-     {
-      "type": "all",
-      "items": [
-       {
-        "type": "course",
-        "code": "CH ENGR 10",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CHEM 20A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CHEM 20B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CHEM 20L",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CHEM 30A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CHEM 30AL",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CHEM 30B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "C&EE M20",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "MATH 31A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "MATH 31B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "MATH 32A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "MATH 32B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "MATH 33A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "MATH 33B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "MECH&AE M20",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "PHYSICS 1A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "PHYSICS 1B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "PHYSICS 1C",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "PHYSICS 4AL",
-        "status": "active"
-       }
-      ],
-      "label": "Preparation for the Major"
-     },
-     {
-      "type": "all",
-      "items": [
-       {
-        "type": "course",
-        "code": "CH ENGR 45",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR 100",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR 101A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR 101B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR 101C",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR 102A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR 102B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR 103",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR 104A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR 104B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR 106",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR 107",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR 109",
-        "status": "active"
-       },
-       {
-        "type": "text",
-        "text": "Select three courses (12 units) from an approved list available in the Office of Academic and Student Affairs."
-       },
-       {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "CH ENGR 108A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CH ENGR 108B",
-          "status": "active"
-         }
-        ],
-        "label": "Capstone Analysis and Design"
-       },
-       {
-        "type": "choose",
-        "items": [
-         {
-          "type": "course",
-          "code": "CH ENGR 110",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CH ENGR C111",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CH ENGR C112",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CH ENGR 113",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CH ENGR CM114",
+          "code": "CH ENGR 109",
           "status": "active"
          },
          {
@@ -968,298 +182,1080 @@
          },
          {
           "type": "course",
-          "code": "CH ENGR C116",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CH ENGR C118",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CH ENGR C119",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CH ENGR C121",
-          "status": "active"
-         },
-         {
-          "type": "course",
           "code": "CH ENGR C125",
           "status": "active"
          },
          {
           "type": "course",
-          "code": "CH ENGR C128",
+          "code": "CH ENGR CM145",
           "status": "active"
          },
          {
-          "type": "course",
-          "code": "CH ENGR C135",
-          "status": "active"
+          "type": "text",
+          "text": "Select three courses (12 units) from an approved list available in the Office of Academic and Student Affairs."
          },
          {
-          "type": "course",
-          "code": "CH ENGR C140",
-          "status": "active"
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "CH ENGR 108A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CH ENGR 108B",
+            "status": "active"
+           }
+          ],
+          "label": "Capstone Analysis and Design"
+         },
+         {
+          "type": "choose",
+          "items": [
+           {
+            "type": "course",
+            "code": "BIOENGR C105",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIOENGR C183",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CH ENGR C112",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM C105",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 153A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM C159",
+            "status": "active"
+           }
+          ],
+          "count": 1,
+          "label": "Biomolecular Elective",
+          "notes": "Select one biomolecular elective course (4 units) from the following. Another chemical engineering elective may be substituted with approval of the faculty adviser."
          }
         ],
-        "count": 2,
-        "label": "Chemical Engineering Electives",
-        "notes": "Select two elective courses (8 units) from:"
+        "label": "The Major"
        }
       ],
-      "label": "The Major"
-     }
-    ],
-    "label": "Chemical Engineering Core Option"
-   }
-  },
-  {
-   "name": "Biomedical Engineering Option",
-   "requirement": {
-    "type": "all",
-    "items": [
-     {
-      "type": "all",
-      "items": [
-       {
-        "type": "course",
-        "code": "CH ENGR 10",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CHEM 20A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CHEM 20B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CHEM 20L",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CHEM 30A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CHEM 30AL",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CHEM 30B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "C&EE M20",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "MATH 31A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "MATH 31B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "MATH 32A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "MATH 32B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "MATH 33A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "MATH 33B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "MECH&AE M20",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "PHYSICS 1A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "PHYSICS 1B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "PHYSICS 1C",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "PHYSICS 4AL",
-        "status": "active"
-       }
-      ],
-      "label": "Preparation for the Major"
+      "label": "Biomolecular Engineering Option"
      },
      {
       "type": "all",
       "items": [
        {
-        "type": "course",
-        "code": "CH ENGR 45",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR 100",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR 101A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR 101B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR 101C",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR 102A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR 102B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR 103",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR 104A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR 104B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR 106",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR 107",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR 109",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CH ENGR CM145",
-        "status": "active"
-       },
-       {
-        "type": "text",
-        "text": "Select three courses (12 units) from an approved list available in the Office of Academic and Student Affairs."
-       },
-       {
         "type": "all",
         "items": [
          {
           "type": "course",
-          "code": "CH ENGR 108A",
+          "code": "CH ENGR 10",
           "status": "active"
          },
          {
           "type": "course",
-          "code": "CH ENGR 108B",
+          "code": "CHEM 20A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 20B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 20L",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 30A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 30AL",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 30B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "C&EE M20",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 31A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 31B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 32A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 32B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 33A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 33B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MECH&AE M20",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 1A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 1B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 1C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 4AL",
           "status": "active"
          }
         ],
-        "label": "Capstone Analysis and Design"
+        "label": "Preparation for the Major"
        },
        {
         "type": "choose",
         "items": [
          {
           "type": "course",
-          "code": "BIOENGR C105",
+          "code": "CH ENGR 45",
           "status": "active"
          },
          {
           "type": "course",
-          "code": "BIOENGR C183",
+          "code": "CH ENGR 100",
           "status": "active"
          },
          {
           "type": "course",
-          "code": "CH ENGR C112",
+          "code": "CH ENGR 101A",
           "status": "active"
          },
          {
           "type": "course",
-          "code": "CHEM C105",
+          "code": "CH ENGR 101B",
           "status": "active"
          },
          {
           "type": "course",
-          "code": "CHEM 153A",
+          "code": "CH ENGR 101C",
           "status": "active"
          },
          {
           "type": "course",
-          "code": "CHEM C159",
+          "code": "CH ENGR 102A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CH ENGR 102B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CH ENGR 103",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CH ENGR 104A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CH ENGR 104B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CH ENGR 106",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CH ENGR 107",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CH ENGR 109",
+          "status": "active"
+         },
+         {
+          "type": "text",
+          "text": "Select three courses (12 units) from an approved list available in the Office of Academic and Student Affairs."
+         },
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "CH ENGR 108A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CH ENGR 108B",
+            "status": "active"
+           }
+          ],
+          "label": "Capstone Analysis and Design"
+         },
+         {
+          "type": "choose",
+          "items": [
+           {
+            "type": "course",
+            "code": "CH ENGR 113",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CH ENGR C118",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CH ENGR C119",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CH ENGR C121",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CH ENGR C128",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CH ENGR C135",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CH ENGR C140",
+            "status": "active"
+           }
+          ],
+          "count": 2,
+          "label": "Electives",
+          "notes": "Select two elective courses (8 units) from the following. Another chemical engineering elective may be substituted with approval of the faculty adviser."
+         }
+        ],
+        "count": 13,
+        "label": "The Major",
+        "notes": "Complete 13 required courses, 12 units of technical breadth, two capstone design courses, and 8 units of electives."
+       }
+      ],
+      "label": "Environmental Engineering Option"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "CH ENGR 10",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 20A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 20B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 20L",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 30A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 30AL",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 30B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "C&EE M20",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 31A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 31B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 32A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 32B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 33A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 33B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MECH&AE M20",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 1A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 1B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 1C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 4AL",
           "status": "active"
          }
         ],
-        "count": 1,
-        "label": "Biomedical Elective",
-        "notes": "Select one biomedical elective course (4 units) from the following. Another chemical engineering elective may be substituted with approval of the faculty adviser."
+        "label": "Preparation for the Major"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "CH ENGR 45",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CH ENGR 100",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CH ENGR 101A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CH ENGR 101B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CH ENGR 101C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CH ENGR 102A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CH ENGR 102B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CH ENGR 103",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CH ENGR 104A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CH ENGR 104C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CH ENGR 104CL",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CH ENGR 106",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CH ENGR 107",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CH ENGR 109",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CH ENGR C116",
+          "status": "active"
+         },
+         {
+          "type": "text",
+          "text": "Select three courses (12 units) from an approved list available in the Office of Academic and Student Affairs."
+         },
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "CH ENGR 108A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CH ENGR 108B",
+            "status": "active"
+           }
+          ],
+          "label": "Capstone Analysis and Design"
+         },
+         {
+          "type": "choose",
+          "items": [
+           {
+            "type": "course",
+            "code": "MAT SCI 104",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MAT SCI 120",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MAT SCI 121",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MAT SCI 122",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MAT SCI 150",
+            "status": "active"
+           }
+          ],
+          "count": 1,
+          "label": "Elective",
+          "notes": "Select one elective course (4 units) from chemical engineering or from the following list:"
+         }
+        ],
+        "label": "The Major"
        }
       ],
-      "label": "The Major"
+      "label": "Semiconductor Manufacturing Engineering Option"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "CH ENGR 10",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 20A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 20B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 20L",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 30A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 30AL",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 30B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "C&EE M20",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 31A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 31B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 32A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 32B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 33A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 33B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MECH&AE M20",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 1A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 1B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 1C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 4AL",
+          "status": "active"
+         }
+        ],
+        "label": "Preparation for the Major"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "CH ENGR 45",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CH ENGR 100",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CH ENGR 101A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CH ENGR 101B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CH ENGR 101C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CH ENGR 102A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CH ENGR 102B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CH ENGR 103",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CH ENGR 104A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CH ENGR 104B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CH ENGR 106",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CH ENGR 107",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CH ENGR 109",
+          "status": "active"
+         },
+         {
+          "type": "text",
+          "text": "Select three courses (12 units) from an approved list available in the Office of Academic and Student Affairs."
+         },
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "CH ENGR 108A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CH ENGR 108B",
+            "status": "active"
+           }
+          ],
+          "label": "Capstone Analysis and Design"
+         },
+         {
+          "type": "choose",
+          "items": [
+           {
+            "type": "course",
+            "code": "CH ENGR 110",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CH ENGR C111",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CH ENGR C112",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CH ENGR 113",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CH ENGR CM114",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CH ENGR C115",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CH ENGR C116",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CH ENGR C118",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CH ENGR C119",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CH ENGR C121",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CH ENGR C125",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CH ENGR C128",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CH ENGR C135",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CH ENGR C140",
+            "status": "active"
+           }
+          ],
+          "count": 2,
+          "label": "Chemical Engineering Electives",
+          "notes": "Select two elective courses (8 units) from:"
+         }
+        ],
+        "label": "The Major"
+       }
+      ],
+      "label": "Chemical Engineering Core Option"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "CH ENGR 10",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 20A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 20B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 20L",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 30A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 30AL",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 30B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "C&EE M20",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 31A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 31B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 32A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 32B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 33A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 33B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MECH&AE M20",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 1A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 1B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 1C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 4AL",
+          "status": "active"
+         }
+        ],
+        "label": "Preparation for the Major"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "CH ENGR 45",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CH ENGR 100",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CH ENGR 101A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CH ENGR 101B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CH ENGR 101C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CH ENGR 102A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CH ENGR 102B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CH ENGR 103",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CH ENGR 104A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CH ENGR 104B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CH ENGR 106",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CH ENGR 107",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CH ENGR 109",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CH ENGR CM145",
+          "status": "active"
+         },
+         {
+          "type": "text",
+          "text": "Select three courses (12 units) from an approved list available in the Office of Academic and Student Affairs."
+         },
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "CH ENGR 108A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CH ENGR 108B",
+            "status": "active"
+           }
+          ],
+          "label": "Capstone Analysis and Design"
+         },
+         {
+          "type": "choose",
+          "items": [
+           {
+            "type": "course",
+            "code": "BIOENGR C105",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "BIOENGR C183",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CH ENGR C112",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM C105",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 153A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM C159",
+            "status": "active"
+           }
+          ],
+          "count": 1,
+          "label": "Biomedical Elective",
+          "notes": "Select one biomedical elective course (4 units) from the following. Another chemical engineering elective may be substituted with approval of the faculty adviser."
+         }
+        ],
+        "label": "The Major"
+       }
+      ],
+      "label": "Biomedical Engineering Option"
      }
-    ],
-    "label": "Biomedical Engineering Option"
+    ]
    }
   }
  ],

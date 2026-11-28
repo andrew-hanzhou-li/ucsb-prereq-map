@@ -82,8 +82,34 @@
       "type": "choose",
       "items": [
        {
-        "type": "text",
-        "text": "Mathematics 149 through 159"
+        "type": "course",
+        "code": "MATH 151A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 151AH",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 151B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 151BH",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 155",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 156",
+        "status": "active"
        }
       ],
       "count": 2,
@@ -92,8 +118,10 @@
      }
     ],
     "label": "Computing Specialization",
-    "notes": "Majors may select a specialization in Computing by satisfying all the requirements for a bachelor’s degree in the specified major and completing the following courses, with a minimum grade of C– in each course and a combined grade-point average of at least 2.0. Students must petition for admission to this program and are advised to do so after they complete Program in Computing 10B (petitions should be filed in the Student Services Office). Students graduate with a bachelor’s degree in their major and a specialization in Computing."
-   }
+    "notes": "Majors may select a specialization in Computing by satisfying all the requirements for a bachelor’s degree in the specified major and completing the following courses, with a minimum grade of C– in each course and a combined grade-point average of at least 2.0. Students must petition for admission to this program and are advised to do so after they complete Program in Computing 10B (petitions should be filed in the Student Services Office). Students graduate with a bachelor’s degree in their major and a specialization in Computing.",
+    "optional": true
+   },
+   "optional": true
   },
   {
    "name": "The Major",
@@ -1294,15 +1322,9 @@
         "notes": "rule gives no count; it is one option list under its parent requirement, count set there"
        },
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "STATS 100C",
-          "status": "active"
-         }
-        ],
-        "label": "Statistics"
+        "type": "course",
+        "code": "STATS 100C",
+        "status": "active"
        }
       ],
       "count": 2,
@@ -1322,14 +1344,20 @@
       "type": "all",
       "items": [
        {
-        "type": "course",
-        "code": "MATH 31A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "MATH 31AL",
-        "status": "active"
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 31A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 31AL",
+          "status": "active"
+         }
+        ],
+        "count": 1
        },
        {
         "type": "course",
@@ -1421,7 +1449,7 @@
       "label": "Management"
      },
      {
-      "type": "all",
+      "type": "choose",
       "items": [
        {
         "type": "course",
@@ -1439,6 +1467,7 @@
         "status": "active"
        }
       ],
+      "count": 2,
       "label": "Program in Computing",
       "notes": "Complete two courses. Select Program in Computing 10B or 16A."
      }

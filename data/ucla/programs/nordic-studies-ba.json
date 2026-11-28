@@ -15,179 +15,149 @@
       "type": "choose",
       "items": [
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "ELTS 150",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ELTS 151",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "SCAND C131",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "SCAND C133A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "SCAND 134",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "SCAND C137",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "SCAND 138",
-          "status": "active"
-         }
-        ],
-        "label": "Early Nordic Literatures and Cultures"
+        "type": "course",
+        "code": "ELTS 150",
+        "status": "active"
        },
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "SCAND C141A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "SCAND 141C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "SCAND 142A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "SCAND 143C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "SCAND C145A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "SCAND C145B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "SCAND C146A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "SCAND 147A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "SCAND C147B",
-          "status": "active"
-         }
-        ],
-        "label": "Theory, Genres, and Authors"
+        "type": "course",
+        "code": "ELTS 151",
+        "status": "active"
        },
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "SCAND C155",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "SCAND 156",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "SCAND 157",
-          "status": "active"
-         }
-        ],
-        "label": "Literary Periods"
+        "type": "course",
+        "code": "SCAND C131",
+        "status": "active"
        },
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "SCAND 161",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "SCAND C163A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "SCAND C166A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "SCAND C166C",
-          "status": "active"
-         }
-        ],
-        "label": "Scandinavian Cinema"
+        "type": "course",
+        "code": "SCAND C133A",
+        "status": "active"
        },
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "ELTS 167",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "SCAND C171",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "SCAND 173A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "SCAND C174A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "SCAND 174B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "SCAND C180",
-          "status": "active"
-         }
-        ],
-        "label": "Cultural Studies"
+        "type": "course",
+        "code": "SCAND 134",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SCAND C137",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SCAND 138",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SCAND C141A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SCAND 141C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SCAND 142A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SCAND 143C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SCAND C145A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SCAND C145B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SCAND C146A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SCAND 147A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SCAND C147B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SCAND C155",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SCAND 156",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SCAND 157",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SCAND 161",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SCAND C163A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SCAND C166A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SCAND C166C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ELTS 167",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SCAND C171",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SCAND 173A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SCAND C174A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SCAND 174B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SCAND C180",
+        "status": "active"
        }
       ],
       "count": 9,

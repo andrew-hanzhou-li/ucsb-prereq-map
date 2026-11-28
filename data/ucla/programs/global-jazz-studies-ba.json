@@ -50,24 +50,105 @@
       "type": "units",
       "items": [
        {
-        "type": "all",
+        "type": "choose",
+        "count": 1,
         "items": [
          {
-          "type": "text",
-          "text": "Ethnomusicology 68A though 68O"
+          "type": "course",
+          "code": "ETHNMUS 68A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS 68B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS 68C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS 68F",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS 68G",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS 68M",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS 68N",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS 68O",
+          "status": "active"
          }
         ],
-        "label": "World Music Specializations"
+        "label": "ETHNMUS 68–68",
+        "expanded_from": "range"
        },
        {
-        "type": "all",
+        "type": "choose",
+        "count": 1,
         "items": [
          {
-          "type": "text",
-          "text": "Ethnomusicology 91A through 91Z (except 91E and 91P)"
+          "type": "course",
+          "code": "ETHNMUS 91A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS 91B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS 91G",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS 91H",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS 91J",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS 91K",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS 91L",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS 91N",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS 91Z",
+          "status": "active"
          }
         ],
-        "label": "World Music Performance Organizations"
+        "label": "ETHNMUS 91–91",
+        "expanded_from": "range"
        }
       ],
       "units": 4,
@@ -94,8 +175,49 @@
       "type": "units",
       "items": [
        {
-        "type": "text",
-        "text": "Global Jazz Studies 71A through 71I"
+        "type": "course",
+        "code": "GJ STDS 71A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GJ STDS 71B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GJ STDS 71C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GJ STDS 71D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GJ STDS 71E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GJ STDS 71F",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GJ STDS 71G",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GJ STDS 71H",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GJ STDS 71I",
+        "status": "active"
        }
       ],
       "units": 12,
@@ -138,8 +260,44 @@
         "type": "units",
         "items": [
          {
-          "type": "text",
-          "text": "Global Jazz Studies 171A through 171I"
+          "type": "course",
+          "code": "GJ STDS 171A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GJ STDS 171B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GJ STDS 171C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GJ STDS 171D",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GJ STDS 171E",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GJ STDS 171F",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GJ STDS 171G",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GJ STDS 171I",
+          "status": "active"
          }
         ],
         "units": 12,
@@ -163,8 +321,39 @@
         "type": "units",
         "items": [
          {
-          "type": "text",
-          "text": "Global Jazz Studies 176A through 176G"
+          "type": "course",
+          "code": "GJ STDS 176A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GJ STDS 176B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GJ STDS 176C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GJ STDS 176D",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GJ STDS 176E",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GJ STDS 176F",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GJ STDS 176G",
+          "status": "active"
          }
         ],
         "units": 8,

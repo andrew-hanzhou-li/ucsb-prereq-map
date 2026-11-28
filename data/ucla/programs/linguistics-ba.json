@@ -96,14 +96,234 @@
         "status": "active"
        },
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "text",
-          "text": "Linguistics 100 through 199, minimum of 4 units"
-         }
-        ],
-        "label": "Linguistics"
+        "type": "course",
+        "code": "LING C104",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 105",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 110",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 110G",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING C111",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 114",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 115",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING M116",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 119A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 120A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 120B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 120C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 127",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING C128A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING C128B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 130",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 132",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING C135",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING C140",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING M141",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 144",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING M146",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING M150",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 160",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 161",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 165A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 165B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 165C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 170",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 175",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING M176A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING M176B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING M177",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING M178",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 180",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 185A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 185B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 185C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 191A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 191B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 192A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 195",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 197",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 198A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 198B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 199",
+        "status": "active"
        }
       ],
       "count": 3,
@@ -148,8 +368,10 @@
      }
     ],
     "label": "Honors Program",
-    "notes": "Departmental honors are awarded at graduation to those students who have a grade-point average of 3.6 or better in their junior and senior years and who have received a grade of A in Linguistics 198A and 198B or in 199. Qualified students may be proposed by any member of the faculty to the faculty as a whole for the award of highest honors on the basis of a piece of research in linguistics completed at UCLA."
-   }
+    "notes": "Departmental honors are awarded at graduation to those students who have a grade-point average of 3.6 or better in their junior and senior years and who have received a grade of A in Linguistics 198A and 198B or in 199. Qualified students may be proposed by any member of the faculty to the faculty as a whole for the award of highest honors on the basis of a piece of research in linguistics completed at UCLA.",
+    "optional": true
+   },
+   "optional": true
   },
   {
    "name": "Computing Specialization",
@@ -267,8 +489,10 @@
      }
     ],
     "label": "Computing Specialization",
-    "notes": "Students may select a specialization in Computing by satisfying all the requirements for a bachelor’s degree in the specified major and completing the following courses. Students graduate with a bachelor’s degree in their major and a specialization in Computing."
-   }
+    "notes": "Students may select a specialization in Computing by satisfying all the requirements for a bachelor’s degree in the specified major and completing the following courses. Students graduate with a bachelor’s degree in their major and a specialization in Computing.",
+    "optional": true
+   },
+   "optional": true
   },
   {
    "name": "Preparation for the Major",

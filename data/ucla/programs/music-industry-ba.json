@@ -30,14 +30,20 @@
         "status": "active"
        },
        {
-        "type": "course",
-        "code": "MSC IND 113A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "MSC IND 113B",
-        "status": "active"
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "MSC IND 113A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MSC IND 113B",
+          "status": "active"
+         }
+        ],
+        "count": 1
        },
        {
         "type": "course",

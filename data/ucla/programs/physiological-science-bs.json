@@ -12,7 +12,8 @@
     "type": "text",
     "text": "The honors program provides exceptional students with the opportunity for individual research culminating in an honors thesis.",
     "optional": true
-   }
+   },
+   "optional": true
   },
   {
    "name": "Preparation for the Major",
@@ -20,135 +21,135 @@
     "type": "all",
     "items": [
      {
-      "type": "all",
+      "type": "choose",
       "items": [
        {
-        "type": "choose",
+        "type": "all",
         "items": [
          {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "CHEM 14A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "CHEM 14B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "CHEM 14BL",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "CHEM 14C",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "CHEM 14CL",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "CHEM 14D",
-            "status": "active"
-           }
-          ],
-          "label": "Chemistry 14 series"
+          "type": "course",
+          "code": "CHEM 14A",
+          "status": "active"
          },
          {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "CHEM 20A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "CHEM 20B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "CHEM 20L",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "CHEM 30A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "CHEM 30AL",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "CHEM 30B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "CHEM 30BL",
-            "status": "active"
-           }
-          ],
-          "label": "Chemistry 20 and 30 series"
+          "type": "course",
+          "code": "CHEM 14B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 14BL",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 14C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 14CL",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 14D",
+          "status": "active"
          }
         ],
-        "count": 1,
-        "label": "Chemistry",
-        "notes": "Select one series from:"
+        "label": "Chemistry 14 series"
        },
        {
         "type": "all",
         "items": [
          {
           "type": "course",
-          "code": "LIFESCI 7A",
+          "code": "CHEM 20A",
           "status": "active"
          },
          {
           "type": "course",
-          "code": "LIFESCI 7B",
+          "code": "CHEM 20B",
           "status": "active"
          },
          {
           "type": "course",
-          "code": "LIFESCI 7C",
+          "code": "CHEM 20L",
           "status": "active"
          },
          {
           "type": "course",
-          "code": "LIFESCI 7L",
+          "code": "CHEM 30A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 30AL",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 30B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 30BL",
           "status": "active"
          }
         ],
-        "label": "Life Sciences"
+        "label": "Chemistry 20 and 30 series"
+       }
+      ],
+      "count": 1,
+      "label": "Chemistry",
+      "notes": "Select one series from:"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "LIFESCI 7A",
+        "status": "active"
        },
        {
-        "type": "choose",
+        "type": "course",
+        "code": "LIFESCI 7B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LIFESCI 7C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LIFESCI 7L",
+        "status": "active"
+       }
+      ],
+      "label": "Life Sciences"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "all",
         "items": [
          {
-          "type": "all",
+          "type": "course",
+          "code": "LIFESCI 30A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LIFESCI 30B",
+          "status": "active"
+         },
+         {
+          "type": "choose",
           "items": [
-           {
-            "type": "course",
-            "code": "LIFESCI 30A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "LIFESCI 30B",
-            "status": "active"
-           },
            {
             "type": "course",
             "code": "LIFESCI 40",
@@ -160,121 +161,121 @@
             "status": "active"
            }
           ],
-          "label": "Life Sciences 30 series",
-          "notes": "Students may select either Life Sciences 40 or Statistics 13."
-         },
-         {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "MATH 3A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "MATH 3B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "MATH 3C",
-            "status": "active"
-           }
-          ],
-          "label": "Mathematics 3 series"
-         },
-         {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "MATH 31A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "MATH 31B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "MATH 32A",
-            "status": "active"
-           }
-          ],
-          "label": "Mathematics 31 series"
+          "count": 1
          }
         ],
-        "count": 1,
-        "label": "Mathematics",
-        "notes": "Select one series from:"
+        "label": "Life Sciences 30 series",
+        "notes": "Students may select either Life Sciences 40 or Statistics 13."
        },
        {
-        "type": "choose",
+        "type": "all",
         "items": [
          {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "PHYSICS 1A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "PHYSICS 1B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "PHYSICS 1C",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "PHYSICS 4AL",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "PHYSICS 4BL",
-            "status": "active"
-           }
-          ],
-          "label": "Physics 1 series"
+          "type": "course",
+          "code": "MATH 3A",
+          "status": "active"
          },
          {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "PHYSICS 5A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "PHYSICS 5B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "PHYSICS 5C",
-            "status": "active"
-           }
-          ],
-          "label": "Physics 5 series"
+          "type": "course",
+          "code": "MATH 3B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 3C",
+          "status": "active"
          }
         ],
-        "count": 1,
-        "label": "Physics",
-        "notes": "Select one series from:"
+        "label": "Mathematics 3 series"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 31A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 31B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 32A",
+          "status": "active"
+         }
+        ],
+        "label": "Mathematics 31 series"
        }
       ],
-      "label": "Life Sciences Core Curriculum"
+      "count": 1,
+      "label": "Mathematics",
+      "notes": "Select one series from:"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "PHYSICS 1A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 1B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 1C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 4AL",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 4BL",
+          "status": "active"
+         }
+        ],
+        "label": "Physics 1 series"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "PHYSICS 5A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 5B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 5C",
+          "status": "active"
+         }
+        ],
+        "label": "Physics 5 series"
+       }
+      ],
+      "count": 1,
+      "label": "Physics",
+      "notes": "Select one series from:"
      }
     ],
-    "label": "Preparation for the Major"
+    "label": "Life Sciences Core Curriculum"
    }
   },
   {
@@ -306,14 +307,287 @@
       "type": "all",
       "items": [
        {
-        "type": "all",
+        "type": "choose",
+        "count": 1,
         "items": [
          {
-          "type": "text",
-          "text": "Physiological Science 100 through 199, minimum 4 units"
+          "type": "course",
+          "code": "PHYSCI 100",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSCI 105",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSCI M106",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSCI 108",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSCI 109",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSCI 110",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSCI 112",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSCI 120",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSCI 121",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSCI 122",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSCI CM123",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSCI 124",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSCI 125",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSCI C126",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSCI C127",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSCI 128",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSCI C130",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSCI M135",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSCI 136",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSCI 138",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSCI 140",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSCI M141",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSCI C144",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSCI M145",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSCI 146",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSCI 147",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSCI 148",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSCI 149",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSCI C150",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSCI C152",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSCI 153",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSCI 154",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSCI 155",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSCI 156",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSCI M164",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSCI 165",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSCI 166",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSCI 167",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSCI 173",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSCI 174",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSCI 175",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSCI M176",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSCI 177",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSCI M178",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSCI M180A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSCI M180B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSCI M180C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSCI 191H",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSCI 192B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSCI 195",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSCI 196",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSCI 198A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSCI 198B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSCI 198C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSCI 199",
+          "status": "active"
          }
         ],
-        "label": "Physiological Science Courses"
+        "label": "PHYSCI 100–199",
+        "expanded_from": "range"
        },
        {
         "type": "all",
@@ -434,14 +708,112 @@
           "status": "active"
          },
          {
-          "type": "all",
+          "type": "choose",
+          "count": 1,
           "items": [
            {
-            "type": "text",
-            "text": "Psychology 119"
+            "type": "course",
+            "code": "PSYCH 119A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PSYCH 119B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PSYCH 119C",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PSYCH 119D",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PSYCH 119E",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PSYCH 119F",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PSYCH 119G",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PSYCH 119I",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PSYCH 119J",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PSYCH 119K",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PSYCH 119M",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PSYCH 119P",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PSYCH 119Q",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PSYCH 119U",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PSYCH 119V",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PSYCH 119Y",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PSYCH M119L",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PSYCH M119N",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PSYCH M119O",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PSYCH M119X",
+            "status": "active"
            }
           ],
-          "label": "Psychology 119 Series"
+          "label": "PSYCH 119–119",
+          "expanded_from": "range"
          }
         ],
         "label": "Courses in Other Departments"

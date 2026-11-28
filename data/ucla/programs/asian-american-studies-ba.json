@@ -12,54 +12,84 @@
     "type": "all",
     "items": [
      {
-      "type": "course",
-      "code": "ASIA AM 10",
-      "status": "active"
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "ASIA AM 10",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIA AM 10W",
+        "status": "active"
+       }
+      ],
+      "count": 1
      },
      {
-      "type": "course",
-      "code": "ASIA AM 10W",
-      "status": "active"
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "ASIA AM 20",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIA AM 20W",
+        "status": "active"
+       }
+      ],
+      "count": 1
      },
      {
-      "type": "course",
-      "code": "ASIA AM 20",
-      "status": "active"
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "ASIA AM 30",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIA AM 30W",
+        "status": "active"
+       }
+      ],
+      "count": 1
      },
      {
-      "type": "course",
-      "code": "ASIA AM 20W",
-      "status": "active"
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "ASIA AM 40",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIA AM 40W",
+        "status": "active"
+       }
+      ],
+      "count": 1
      },
      {
-      "type": "course",
-      "code": "ASIA AM 30",
-      "status": "active"
-     },
-     {
-      "type": "course",
-      "code": "ASIA AM 30W",
-      "status": "active"
-     },
-     {
-      "type": "course",
-      "code": "ASIA AM 40",
-      "status": "active"
-     },
-     {
-      "type": "course",
-      "code": "ASIA AM 40W",
-      "status": "active"
-     },
-     {
-      "type": "course",
-      "code": "ASIA AM 50",
-      "status": "active"
-     },
-     {
-      "type": "course",
-      "code": "ASIA AM 50W",
-      "status": "active"
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "ASIA AM 50",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIA AM 50W",
+        "status": "active"
+       }
+      ],
+      "count": 1
      }
     ],
     "label": "Preparation for the Major",
@@ -1733,8 +1763,10 @@
      }
     ],
     "label": "Honors Program",
-    "notes": "Through the Asian American Studies honors program, Asian American Studies majors undertake a year-long thesis or its equivalent with the guidance and supervision of a faculty member. Successful completion of the departmental honors program is indicated on the transcript. For additional information about the departmental honors program, contact the undergraduate academic adviser. Honors students must take the Asian American Studies 198A, 198B, and 198C sequence in which they write a thesis or its equivalent under the direction of a faculty member."
-   }
+    "notes": "Through the Asian American Studies honors program, Asian American Studies majors undertake a year-long thesis or its equivalent with the guidance and supervision of a faculty member. Successful completion of the departmental honors program is indicated on the transcript. For additional information about the departmental honors program, contact the undergraduate academic adviser. Honors students must take the Asian American Studies 198A, 198B, and 198C sequence in which they write a thesis or its equivalent under the direction of a faculty member.",
+    "optional": true
+   },
+   "optional": true
   }
  ],
  "narrative": []

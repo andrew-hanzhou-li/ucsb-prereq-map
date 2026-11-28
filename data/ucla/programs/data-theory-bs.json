@@ -262,25 +262,19 @@
       "type": "choose",
       "items": [
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "STATS 100C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "STATS 101B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "STATS 102C",
-          "status": "active"
-         }
-        ],
-        "label": "Courses"
+        "type": "course",
+        "code": "STATS 100C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS 101B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS 102C",
+        "status": "active"
        }
       ],
       "count": 1,

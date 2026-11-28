@@ -64,25 +64,139 @@
           "type": "choose",
           "items": [
            {
-            "type": "all",
-            "items": [
-             {
-              "type": "text",
-              "text": "Education 101 through 119"
-             }
-            ],
-            "label": "Education 101 through 119"
+            "type": "course",
+            "code": "EDUC 101B",
+            "status": "active"
            },
            {
-            "type": "all",
-            "items": [
-             {
-              "type": "course",
-              "code": "EDUC 179A",
-              "status": "active"
-             }
-            ],
-            "label": "Education 179A"
+            "type": "course",
+            "code": "EDUC 101C",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC M102",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC M103",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC 104A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC 105A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC 105B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC 105C",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC 105D",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC 105E",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC 106A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC 106B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC 106C",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC 107A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC 107B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC M108",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC 109A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC 109B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC 110",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC 111",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC 112",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC 113",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC M116",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC 117",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC 118",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC 119",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC 179A",
+            "status": "active"
            }
           ],
           "count": 1,
@@ -111,25 +225,194 @@
           "type": "choose",
           "items": [
            {
-            "type": "all",
-            "items": [
-             {
-              "type": "text",
-              "text": "Education 121 through 149"
-             }
-            ],
-            "label": "Education 121 through 149"
+            "type": "course",
+            "code": "EDUC M121",
+            "status": "active"
            },
            {
-            "type": "all",
-            "items": [
-             {
-              "type": "course",
-              "code": "EDUC 179BX",
-              "status": "active"
-             }
-            ],
-            "label": "Education 179BX"
+            "type": "course",
+            "code": "EDUC M122",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC 123",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC C124",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC CM125XP",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC 126",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC 127",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC 128",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC M129A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC M129BX",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC M129CX",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC 130AX",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC 130BX",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC 130CX",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC 130EX",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC M131A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC M131B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC M131C",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC 132",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC 133",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC 134",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC M135",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC M136",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC M137",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC 138",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC 139",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC 140",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC 141",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC M142",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC 143",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC 144",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC 144XP",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC 145",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC 146",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC 147",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC 148",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC 149",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC 179BX",
+            "status": "active"
            }
           ],
           "count": 1,
@@ -163,25 +446,59 @@
           "type": "choose",
           "items": [
            {
-            "type": "all",
-            "items": [
-             {
-              "type": "text",
-              "text": "Education 151 through 155, 157 through 169"
-             }
-            ],
-            "label": "Education 151 through 155, 157 through 169"
+            "type": "course",
+            "code": "EDUC 151",
+            "status": "active"
            },
            {
-            "type": "all",
-            "items": [
-             {
-              "type": "course",
-              "code": "EDUC 179C",
-              "status": "active"
-             }
-            ],
-            "label": "Education 179C"
+            "type": "course",
+            "code": "EDUC 152",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC 154A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC 154B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC 157",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC 159",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC 160",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC 165",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC 166",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC 169",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EDUC 179C",
+            "status": "active"
            }
           ],
           "count": 1,
@@ -200,25 +517,99 @@
       "type": "choose",
       "items": [
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "CESC 130",
-          "status": "active"
-         }
-        ],
-        "label": "Community Engagement and Social Change"
+        "type": "course",
+        "code": "CESC 130",
+        "status": "active"
        },
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "text",
-          "text": "Education 170 through 179"
-         }
-        ],
-        "label": "Elective Education Courses"
+        "type": "course",
+        "code": "EDUC 170",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EDUC 171",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EDUC 172",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EDUC 173",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EDUC 174A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EDUC 174B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EDUC 174C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EDUC 175A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EDUC 175B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EDUC 175C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EDUC 175D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EDUC 176",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EDUC M177",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EDUC CM178",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EDUC CM178L",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EDUC 179A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EDUC 179BX",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EDUC 179C",
+        "status": "active"
        }
       ],
       "count": 1,

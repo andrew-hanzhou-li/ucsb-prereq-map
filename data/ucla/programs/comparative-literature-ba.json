@@ -315,8 +315,10 @@
      }
     ],
     "label": "Honors Program",
-    "notes": "Departmental honors candidates must complete all requirements for the major and an honors research paper (in addition to regular course requirements) in two of the four required upper-division comparative literature courses. These two honors research papers must be completed during the quarter in which the student is enrolled in the course. Candidates must also complete a fourth course in the primary literature area and Comparative Literature 198 with a core faculty member in which they write an independent research paper of approximately 25 pages."
-   }
+    "notes": "Departmental honors candidates must complete all requirements for the major and an honors research paper (in addition to regular course requirements) in two of the four required upper-division comparative literature courses. These two honors research papers must be completed during the quarter in which the student is enrolled in the course. Candidates must also complete a fourth course in the primary literature area and Comparative Literature 198 with a core faculty member in which they write an independent research paper of approximately 25 pages.",
+    "optional": true
+   },
+   "optional": true
   },
   {
    "name": "Preparation for the Major",
@@ -327,82 +329,64 @@
       "type": "choose",
       "items": [
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "COM LIT 1A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "COM LIT 1B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "COM LIT 1C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "COM LIT 1D",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "COM LIT 1E",
-          "status": "active"
-         }
-        ],
-        "label": "Comparative Literature 1 series"
+        "type": "course",
+        "code": "COM LIT 1A",
+        "status": "active"
        },
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "COM LIT 2AW",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "COM LIT 2BW",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "COM LIT 2CW",
-          "status": "active"
-         }
-        ],
-        "label": "Comparative Literature 2 series"
+        "type": "course",
+        "code": "COM LIT 1B",
+        "status": "active"
        },
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "COM LIT 4AW",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "COM LIT 4BW",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "COM LIT 4CW",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "COM LIT 4DW",
-          "status": "active"
-         }
-        ],
-        "label": "Comparative Literature 4 series"
+        "type": "course",
+        "code": "COM LIT 1C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM LIT 1D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM LIT 1E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM LIT 2AW",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM LIT 2BW",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM LIT 2CW",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM LIT 4AW",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM LIT 4BW",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM LIT 4CW",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM LIT 4DW",
+        "status": "active"
        }
       ],
       "count": 2,

@@ -54,13 +54,17 @@
      }
     ],
     "label": "Honors Program",
-    "notes": "The core of the program consists of at least one approved undergraduate seminar course from Chemistry and Biochemistry 193A or 193B and three research courses (12 units minimum) from 196A, 196B, or 199, culminating in a thesis."
-   }
+    "notes": "The core of the program consists of at least one approved undergraduate seminar course from Chemistry and Biochemistry 193A or 193B and three research courses (12 units minimum) from 196A, 196B, or 199, culminating in a thesis.",
+    "optional": true
+   },
+   "optional": true
   },
   {
-   "name": "Physical Chemistry Concentration",
+   "name": "Concentration",
    "requirement": {
-    "type": "all",
+    "type": "choose",
+    "count": 1,
+    "label": "One concentration",
     "items": [
      {
       "type": "all",
@@ -69,163 +73,255 @@
         "type": "all",
         "items": [
          {
-          "type": "course",
-          "code": "CHEM 1",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CHEM 20A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CHEM 20B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CHEM 20L",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CHEM 30A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CHEM 30AL",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CHEM 30B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CHEM 30BL",
-          "status": "active"
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "CHEM 1",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 20A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 20B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 20L",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 30A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 30AL",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 30B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 30BL",
+            "status": "active"
+           },
+           {
+            "type": "all",
+            "items": [
+             {
+              "type": "choose",
+              "items": [
+               {
+                "type": "course",
+                "code": "CHEM 20AH",
+                "status": "active"
+               },
+               {
+                "type": "course",
+                "code": "CHEM 20BH",
+                "status": "active"
+               }
+              ],
+              "count": 1
+             }
+            ],
+            "label": "Honors",
+            "notes": "Chemistry 20AH or 20BH may be substituted for 20A or 20B respectively.",
+            "optional": true
+           }
+          ],
+          "label": "Chemistry"
          },
          {
           "type": "all",
           "items": [
            {
             "type": "course",
-            "code": "CHEM 20AH",
+            "code": "MATH 31A",
             "status": "active"
            },
            {
             "type": "course",
-            "code": "CHEM 20BH",
+            "code": "MATH 31B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MATH 32A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MATH 32B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MATH 33A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MATH 33B",
             "status": "active"
            }
           ],
-          "label": "Honors",
-          "notes": "Chemistry 20AH or 20BH may be substituted for 20A or 20B respectively."
+          "label": "Mathematics"
+         },
+         {
+          "type": "choose",
+          "items": [
+           {
+            "type": "all",
+            "items": [
+             {
+              "type": "course",
+              "code": "PHYSICS 1A",
+              "status": "active"
+             },
+             {
+              "type": "course",
+              "code": "PHYSICS 1B",
+              "status": "active"
+             },
+             {
+              "type": "course",
+              "code": "PHYSICS 1C",
+              "status": "active"
+             },
+             {
+              "type": "course",
+              "code": "PHYSICS 4BL",
+              "status": "active"
+             }
+            ],
+            "label": "Physics 1 series"
+           },
+           {
+            "type": "all",
+            "items": [
+             {
+              "type": "course",
+              "code": "PHYSICS 1AH",
+              "status": "active"
+             },
+             {
+              "type": "course",
+              "code": "PHYSICS 1BH",
+              "status": "active"
+             },
+             {
+              "type": "course",
+              "code": "PHYSICS 1CH",
+              "status": "active"
+             },
+             {
+              "type": "course",
+              "code": "PHYSICS 4BL",
+              "status": "active"
+             }
+            ],
+            "label": "Physics 1 Honors series"
+           }
+          ],
+          "count": 1,
+          "label": "Physics",
+          "notes": "Select one series from:"
          }
         ],
-        "label": "Chemistry"
+        "label": "Preparation for the Major"
        },
        {
         "type": "all",
         "items": [
          {
-          "type": "course",
-          "code": "MATH 31A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MATH 31B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MATH 32A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MATH 32B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MATH 33A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MATH 33B",
-          "status": "active"
-         }
-        ],
-        "label": "Mathematics"
-       },
-       {
-        "type": "choose",
-        "items": [
-         {
           "type": "all",
           "items": [
            {
             "type": "course",
-            "code": "PHYSICS 1A",
+            "code": "CHEM 110A",
             "status": "active"
            },
            {
             "type": "course",
-            "code": "PHYSICS 1B",
+            "code": "CHEM 110B",
             "status": "active"
            },
            {
             "type": "course",
-            "code": "PHYSICS 1C",
+            "code": "CHEM 113A",
             "status": "active"
            },
            {
             "type": "course",
-            "code": "PHYSICS 4BL",
+            "code": "CHEM C113B",
             "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 114",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 153A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 171",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM C172",
+            "status": "active"
+           },
+           {
+            "type": "all",
+            "items": [
+             {
+              "type": "course",
+              "code": "CHEM 114H",
+              "status": "active"
+             }
+            ],
+            "label": "Honors",
+            "notes": "Chemistry 114H may be substituted for 114.",
+            "optional": true
            }
           ],
-          "label": "Physics 1 series"
+          "label": "Required"
          },
          {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "PHYSICS 1AH",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "PHYSICS 1BH",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "PHYSICS 1CH",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "PHYSICS 4BL",
-            "status": "active"
-           }
-          ],
-          "label": "Physics 1 Honors series"
+          "type": "text",
+          "text": "Complete one additional upper-division chemistry, electrical engineering, or physics laboratory course."
+         },
+         {
+          "type": "text",
+          "text": "Complete three elective upper-division or graduate courses approved by the physical chemistry adviser."
+         },
+         {
+          "type": "text",
+          "text": "By the junior year, students are strongly encouraged to join a research group within the physical chemistry division to obtain firsthand experience with state-of-the-art physical chemistry research.",
+          "optional": true
          }
         ],
-        "count": 1,
-        "label": "Physics",
-        "notes": "Select one series from:"
+        "label": "The Major"
        }
       ],
-      "label": "Preparation for the Major"
+      "label": "Physical Chemistry Concentration",
+      "notes": "The physical chemistry concentration is designed primarily for students who are interested in attending graduate school in physical chemistry/physics or related areas."
      },
      {
       "type": "all",
@@ -234,79 +330,317 @@
         "type": "all",
         "items": [
          {
-          "type": "course",
-          "code": "CHEM 110A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CHEM 110B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CHEM 113A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CHEM C113B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CHEM 114",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CHEM 153A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CHEM 171",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CHEM C172",
-          "status": "active"
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "CHEM 1",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 20A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 20B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 20L",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 30A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 30AL",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 30B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 30BL",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 30C",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 30CL",
+            "status": "active"
+           },
+           {
+            "type": "all",
+            "items": [
+             {
+              "type": "choose",
+              "items": [
+               {
+                "type": "course",
+                "code": "CHEM 20AH",
+                "status": "active"
+               },
+               {
+                "type": "course",
+                "code": "CHEM 20BH",
+                "status": "active"
+               }
+              ],
+              "count": 1
+             }
+            ],
+            "label": "Honors Courses",
+            "notes": "Chemistry 20AH or 20BH may be substituted for 20A or 20B respectively.",
+            "optional": true
+           }
+          ],
+          "label": "Chemistry"
          },
          {
           "type": "all",
           "items": [
            {
             "type": "course",
-            "code": "CHEM 114H",
+            "code": "MATH 31A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MATH 31B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MATH 32A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MATH 32B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MATH 33A",
+            "status": "active"
+           },
+           {
+            "type": "all",
+            "items": [
+             {
+              "type": "course",
+              "code": "MATH 33B",
+              "status": "active"
+             }
+            ],
+            "label": "Differential Equations",
+            "notes": "Mathematics 33B is highly recommended.",
+            "optional": true
+           }
+          ],
+          "label": "Mathematics"
+         },
+         {
+          "type": "choose",
+          "items": [
+           {
+            "type": "all",
+            "items": [
+             {
+              "type": "course",
+              "code": "PHYSICS 1A",
+              "status": "active"
+             },
+             {
+              "type": "course",
+              "code": "PHYSICS 1B",
+              "status": "active"
+             },
+             {
+              "type": "course",
+              "code": "PHYSICS 1C",
+              "status": "active"
+             },
+             {
+              "type": "course",
+              "code": "PHYSICS 4BL",
+              "status": "active"
+             }
+            ],
+            "label": "Physics 1 series"
+           },
+           {
+            "type": "all",
+            "items": [
+             {
+              "type": "course",
+              "code": "PHYSICS 1AH",
+              "status": "active"
+             },
+             {
+              "type": "course",
+              "code": "PHYSICS 1BH",
+              "status": "active"
+             },
+             {
+              "type": "course",
+              "code": "PHYSICS 1CH",
+              "status": "active"
+             },
+             {
+              "type": "course",
+              "code": "PHYSICS 4BL",
+              "status": "active"
+             }
+            ],
+            "label": "Physics 1 Honors series"
+           }
+          ],
+          "count": 1,
+          "label": "Physics",
+          "notes": "Select one series from:"
+         }
+        ],
+        "label": "Preparation for the Major"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "CHEM 110A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 110B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 113A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 114",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 153A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 153L",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 171",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM C172",
+            "status": "active"
+           },
+           {
+            "type": "choose",
+            "items": [
+             {
+              "type": "course",
+              "code": "CHEM 136",
+              "status": "active"
+             },
+             {
+              "type": "course",
+              "code": "CHEM 144",
+              "status": "active"
+             }
+            ],
+            "count": 1,
+            "label": "Chemistry 136 or 144",
+            "notes": "Select one course from:"
+           },
+           {
+            "type": "all",
+            "items": [
+             {
+              "type": "course",
+              "code": "CHEM 114H",
+              "status": "active"
+             }
+            ],
+            "label": "Honors",
+            "notes": "Chemistry 114H may be substituted for 114.",
+            "optional": true
+           }
+          ],
+          "label": "Required"
+         },
+         {
+          "type": "choose",
+          "items": [
+           {
+            "type": "course",
+            "code": "CHEM 136",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 144",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 154",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM C174",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 184",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM C185",
             "status": "active"
            }
           ],
-          "label": "Honors",
-          "notes": "Chemistry 114H may be substituted for 114."
+          "count": 2,
+          "label": "Department Electives",
+          "notes": "Select two upper-division or graduate courses in the department, including at least one additional laboratory course, from:"
          }
         ],
-        "label": "Required"
-       },
-       {
-        "type": "text",
-        "text": "Complete one additional upper-division chemistry, electrical engineering, or physics laboratory course."
-       },
-       {
-        "type": "text",
-        "text": "Complete three elective upper-division or graduate courses approved by the physical chemistry adviser."
-       },
-       {
-        "type": "text",
-        "text": "By the junior year, students are strongly encouraged to join a research group within the physical chemistry division to obtain firsthand experience with state-of-the-art physical chemistry research.",
-        "optional": true
+        "label": "The Major"
        }
       ],
-      "label": "The Major"
+      "label": "Chemistry Concentration"
      }
-    ],
-    "label": "Physical Chemistry Concentration",
-    "notes": "The physical chemistry concentration is designed primarily for students who are interested in attending graduate school in physical chemistry/physics or related areas."
+    ]
    }
   },
   {
@@ -428,325 +762,10 @@
      }
     ],
     "label": "Computing Specialization",
-    "notes": "Majors may select a specialization in Computing by satisfying all the requirements for a bachelor’s degree in the specified major and completing three Program in Computing courses and two Computational Chemistry courses. Chemistry Concentration requires an additional two courses."
-   }
-  },
-  {
-   "name": "Chemistry Concentration",
-   "requirement": {
-    "type": "all",
-    "items": [
-     {
-      "type": "all",
-      "items": [
-       {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "CHEM 1",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CHEM 20A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CHEM 20B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CHEM 20L",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CHEM 30A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CHEM 30AL",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CHEM 30B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CHEM 30BL",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CHEM 30C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CHEM 30CL",
-          "status": "active"
-         },
-         {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "CHEM 20AH",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "CHEM 20BH",
-            "status": "active"
-           }
-          ],
-          "label": "Honors Courses",
-          "notes": "Chemistry 20AH or 20BH may be substituted for 20A or 20B respectively."
-         }
-        ],
-        "label": "Chemistry"
-       },
-       {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "MATH 31A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MATH 31B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MATH 32A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MATH 32B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MATH 33A",
-          "status": "active"
-         },
-         {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "MATH 33B",
-            "status": "active"
-           }
-          ],
-          "label": "Differential Equations",
-          "notes": "Mathematics 33B is highly recommended."
-         }
-        ],
-        "label": "Mathematics"
-       },
-       {
-        "type": "choose",
-        "items": [
-         {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "PHYSICS 1A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "PHYSICS 1B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "PHYSICS 1C",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "PHYSICS 4BL",
-            "status": "active"
-           }
-          ],
-          "label": "Physics 1 series"
-         },
-         {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "PHYSICS 1AH",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "PHYSICS 1BH",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "PHYSICS 1CH",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "PHYSICS 4BL",
-            "status": "active"
-           }
-          ],
-          "label": "Physics 1 Honors series"
-         }
-        ],
-        "count": 1,
-        "label": "Physics",
-        "notes": "Select one series from:"
-       }
-      ],
-      "label": "Preparation for the Major"
-     },
-     {
-      "type": "all",
-      "items": [
-       {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "CHEM 110A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CHEM 110B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CHEM 113A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CHEM 114",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CHEM 153A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CHEM 153L",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CHEM 171",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CHEM C172",
-          "status": "active"
-         },
-         {
-          "type": "choose",
-          "items": [
-           {
-            "type": "course",
-            "code": "CHEM 136",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "CHEM 144",
-            "status": "active"
-           }
-          ],
-          "count": 1,
-          "label": "Chemistry 136 or 144",
-          "notes": "Select one course from:"
-         },
-         {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "CHEM 114H",
-            "status": "active"
-           }
-          ],
-          "label": "Honors",
-          "notes": "Chemistry 114H may be substituted for 114."
-         }
-        ],
-        "label": "Required"
-       },
-       {
-        "type": "choose",
-        "items": [
-         {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "CHEM 136",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "CHEM 144",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "CHEM 154",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "CHEM C174",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "CHEM 184",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "CHEM C185",
-            "status": "active"
-           }
-          ],
-          "label": "Laboratory Courses"
-         }
-        ],
-        "count": 2,
-        "label": "Department Electives",
-        "notes": "Select two upper-division or graduate courses in the department, including at least one additional laboratory course, from:"
-       }
-      ],
-      "label": "The Major"
-     }
-    ],
-    "label": "Chemistry Concentration"
-   }
+    "notes": "Majors may select a specialization in Computing by satisfying all the requirements for a bachelor’s degree in the specified major and completing three Program in Computing courses and two Computational Chemistry courses. Chemistry Concentration requires an additional two courses.",
+    "optional": true
+   },
+   "optional": true
   }
  ],
  "narrative": []

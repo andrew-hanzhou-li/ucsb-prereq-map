@@ -102,85 +102,6 @@
       "label": "Departmental Breadth Courses"
      },
      {
-      "type": "all",
-      "items": [
-       {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "MECH&AE 150B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MECH&AE C150P",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MECH&AE 154A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MECH&AE 154S",
-          "status": "active"
-         }
-        ],
-        "label": "Aeronautics"
-       },
-       {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "MECH&AE C150R",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MECH&AE 161A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MECH&AE 161B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MECH&AE 161C",
-          "status": "active"
-         }
-        ],
-        "label": "Space"
-       }
-      ],
-      "label": "Tracks",
-      "notes": "Select one of the following tracks:"
-     },
-     {
-      "type": "text",
-      "text": "Select three technical breadth courses (12 units) from an approved list available in the Office of Academic and Student Affairs."
-     },
-     {
-      "type": "all",
-      "items": [
-       {
-        "type": "course",
-        "code": "MECH&AE 157D",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "MECH&AE 157E",
-        "status": "active"
-       }
-      ],
-      "label": "Capstone Design"
-     },
-     {
       "type": "choose",
       "items": [
        {
@@ -234,6 +155,74 @@
          }
         ],
         "label": "Space"
+       }
+      ],
+      "count": 1,
+      "label": "Tracks",
+      "notes": "Select one of the following tracks:"
+     },
+     {
+      "type": "text",
+      "text": "Select three technical breadth courses (12 units) from an approved list available in the Office of Academic and Student Affairs."
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "MECH&AE 157D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE 157E",
+        "status": "active"
+       }
+      ],
+      "label": "Capstone Design"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "MECH&AE 150B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE C150P",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE 154A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE 154S",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE C150R",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE 161A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE 161B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE 161C",
+        "status": "active"
        }
       ],
       "count": 1,

@@ -354,9 +354,20 @@
             "status": "active"
            },
            {
-            "type": "course",
-            "code": "PSYCH 135",
-            "status": "active"
+            "type": "choose",
+            "items": [
+             {
+              "type": "course",
+              "code": "PSYCH 135",
+              "status": "active"
+             },
+             {
+              "type": "course",
+              "code": "SOCIOL 132",
+              "status": "active"
+             }
+            ],
+            "count": 1
            },
            {
             "type": "course",
@@ -371,11 +382,6 @@
            {
             "type": "course",
             "code": "PSYCH 177",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "SOCIOL 132",
             "status": "active"
            },
            {
@@ -621,18 +627,24 @@
             "status": "active"
            },
            {
-            "type": "course",
-            "code": "POL SCI 141B",
-            "status": "active"
+            "type": "choose",
+            "items": [
+             {
+              "type": "course",
+              "code": "POL SCI 141B",
+              "status": "active"
+             },
+             {
+              "type": "course",
+              "code": "SOCIOL 133",
+              "status": "active"
+             }
+            ],
+            "count": 1
            },
            {
             "type": "course",
             "code": "POL SCI 141E",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "SOCIOL 133",
             "status": "active"
            }
           ],
@@ -729,8 +741,10 @@
      }
     ],
     "label": "Honors Program",
-    "notes": "The departmental honors program provides exceptional students an opportunity for advanced research and study, under the guidance of a faculty member, that leads to the completion of an honors thesis. To qualify for graduation with departmental honors, students must (1) complete all requirements for the major, (2) have a cumulative grade-point average of 3.6 or better in upper-division coursework in the major and an overall GPA of 3.3 or better in all completed UC coursework, (3) complete Communication 198A, 198B, and 198C, and (4) produce a completed satisfactory honors thesis (as determined by a recommendation of their thesis adviser and final approval by the department chair). Contact the student affairs officer for more information."
-   }
+    "notes": "The departmental honors program provides exceptional students an opportunity for advanced research and study, under the guidance of a faculty member, that leads to the completion of an honors thesis. To qualify for graduation with departmental honors, students must (1) complete all requirements for the major, (2) have a cumulative grade-point average of 3.6 or better in upper-division coursework in the major and an overall GPA of 3.3 or better in all completed UC coursework, (3) complete Communication 198A, 198B, and 198C, and (4) produce a completed satisfactory honors thesis (as determined by a recommendation of their thesis adviser and final approval by the department chair). Contact the student affairs officer for more information.",
+    "optional": true
+   },
+   "optional": true
   },
   {
    "name": "Computing Specialization",
@@ -741,36 +755,24 @@
       "type": "choose",
       "items": [
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "COMPTNG 10A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "COMPTNG 10B",
-          "status": "active"
-         }
-        ],
-        "label": "Program in Computing"
+        "type": "course",
+        "code": "COMPTNG 10A",
+        "status": "active"
        },
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "COM SCI 31",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "COM SCI 32",
-          "status": "active"
-         }
-        ],
-        "label": "Computer Science"
+        "type": "course",
+        "code": "COMPTNG 10B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM SCI 31",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM SCI 32",
+        "status": "active"
        }
       ],
       "count": 1,
@@ -847,8 +849,10 @@
      }
     ],
     "label": "Computing Specialization",
-    "notes": "Majors in Communication may select a specialization in Computing by satisfying all the requirements for a bachelor’s degree in the major and completing the following requirements:"
-   }
+    "notes": "Majors in Communication may select a specialization in Computing by satisfying all the requirements for a bachelor’s degree in the major and completing the following requirements:",
+    "optional": true
+   },
+   "optional": true
   }
  ],
  "narrative": []

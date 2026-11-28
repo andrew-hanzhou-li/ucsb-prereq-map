@@ -331,18 +331,24 @@
           "status": "active"
          },
          {
-          "type": "course",
-          "code": "WL ARTS 78",
-          "status": "active"
+          "type": "choose",
+          "items": [
+           {
+            "type": "course",
+            "code": "WL ARTS 78",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "WL ARTS 178",
+            "status": "active"
+           }
+          ],
+          "count": 1
          },
          {
           "type": "course",
           "code": "WL ARTS 80",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "WL ARTS 178",
           "status": "active"
          }
         ],

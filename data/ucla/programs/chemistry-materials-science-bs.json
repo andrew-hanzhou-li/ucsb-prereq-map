@@ -54,8 +54,10 @@
      }
     ],
     "label": "Honors Program",
-    "notes": "The core of the program consists of at least one approved undergraduate seminar course from Chemistry and Biochemistry 193A or 193B and three research courses (12 units minimum) from 196A, 196B, or 199, culminating in a thesis."
-   }
+    "notes": "The core of the program consists of at least one approved undergraduate seminar course from Chemistry and Biochemistry 193A or 193B and three research courses (12 units minimum) from 196A, 196B, or 199, culminating in a thesis.",
+    "optional": true
+   },
+   "optional": true
   },
   {
    "name": "Organic Materials Concentration",
@@ -122,18 +124,25 @@
           "type": "all",
           "items": [
            {
-            "type": "course",
-            "code": "CHEM 20AH",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "CHEM 20BH",
-            "status": "active"
+            "type": "choose",
+            "items": [
+             {
+              "type": "course",
+              "code": "CHEM 20AH",
+              "status": "active"
+             },
+             {
+              "type": "course",
+              "code": "CHEM 20BH",
+              "status": "active"
+             }
+            ],
+            "count": 1
            }
           ],
           "label": "Honors Courses",
-          "notes": "Chemistry 20AH or 20BH may be substituted for 20A or 20B respectively."
+          "notes": "Chemistry 20AH or 20BH may be substituted for 20A or 20B respectively.",
+          "optional": true
          }
         ],
         "label": "Chemistry and Biochemistry"
@@ -477,8 +486,10 @@
      }
     ],
     "label": "Computing Specialization",
-    "notes": "Majors may select a specialization in Computing by satisfying all the requirements for a bachelor’s degree in the specified major, and completing three Program in Computing courses and two Computational Chemistry courses."
-   }
+    "notes": "Majors may select a specialization in Computing by satisfying all the requirements for a bachelor’s degree in the specified major, and completing three Program in Computing courses and two Computational Chemistry courses.",
+    "optional": true
+   },
+   "optional": true
   },
   {
    "name": "Preparation for the Major",
@@ -522,18 +533,25 @@
         "type": "all",
         "items": [
          {
-          "type": "course",
-          "code": "CHEM 20AH",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CHEM 20BH",
-          "status": "active"
+          "type": "choose",
+          "items": [
+           {
+            "type": "course",
+            "code": "CHEM 20AH",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 20BH",
+            "status": "active"
+           }
+          ],
+          "count": 1
          }
         ],
         "label": "Honors Courses",
-        "notes": "Chemistry 20AH or 20BH may be substituted for 20A or 20B respectively."
+        "notes": "Chemistry 20AH or 20BH may be substituted for 20A or 20B respectively.",
+        "optional": true
        }
       ],
       "label": "Chemistry and Biochemistry"
@@ -576,7 +594,8 @@
          }
         ],
         "label": "Differential Equations",
-        "notes": "Mathematics 33B is highly recommended."
+        "notes": "Mathematics 33B is highly recommended.",
+        "optional": true
        }
       ],
       "label": "Mathematics"

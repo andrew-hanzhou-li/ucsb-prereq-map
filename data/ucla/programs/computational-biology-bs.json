@@ -40,7 +40,7 @@
           "label": "Methodology Core II -  Research Topics"
          },
          {
-          "type": "all",
+          "type": "choose",
           "items": [
            {
             "type": "all",
@@ -96,6 +96,7 @@
             "label": "Pathway II"
            }
           ],
+          "count": 1,
           "label": "Methodology Core III - Data Science and Statistics for Life Scientists",
           "notes": "Select one of the following pathways:"
          },
@@ -479,92 +480,74 @@
         "type": "choose",
         "items": [
          {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "CHEM 153A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "CHEM 153B",
-            "status": "active"
-           }
-          ],
-          "label": "Biochemistry"
+          "type": "course",
+          "code": "CHEM 153A",
+          "status": "active"
          },
          {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "EE BIOL 100",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "EE BIOL 116",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "EE BIOL 120",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "EE BIOL 129",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "EE BIOL 161",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "EE BIOL C172",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "EE BIOL C174",
-            "status": "active"
-           }
-          ],
-          "label": "Ecology"
+          "type": "course",
+          "code": "CHEM 153B",
+          "status": "active"
          },
          {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "EPIDEM 100",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "MIMG 101",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "MIMG 102",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "MIMG 168",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "MIMG 185A",
-            "status": "active"
-           }
-          ],
-          "label": "Epidemiology"
+          "type": "course",
+          "code": "EE BIOL 100",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EE BIOL 116",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EE BIOL 120",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EE BIOL 129",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EE BIOL 161",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EE BIOL C172",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EE BIOL C174",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPIDEM 100",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MIMG 101",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MIMG 102",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MIMG 168",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MIMG 185A",
+          "status": "active"
          },
          {
           "type": "all",
@@ -575,9 +558,20 @@
             "status": "active"
            },
            {
-            "type": "course",
-            "code": "MCD BIO 100",
-            "status": "active"
+            "type": "choose",
+            "items": [
+             {
+              "type": "course",
+              "code": "MCD BIO 100",
+              "status": "active"
+             },
+             {
+              "type": "course",
+              "code": "MCD BIO 165A",
+              "status": "active"
+             }
+            ],
+            "count": 1
            },
            {
             "type": "course",
@@ -593,11 +587,6 @@
             "type": "course",
             "code": "MCD BIO 144",
             "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "MCD BIO 165A",
-            "status": "active"
            }
           ],
           "label": "Genetics and Molecular Biology",
@@ -607,9 +596,20 @@
           "type": "all",
           "items": [
            {
-            "type": "course",
-            "code": "NEUROSC M101A",
-            "status": "active"
+            "type": "choose",
+            "items": [
+             {
+              "type": "course",
+              "code": "NEUROSC M101A",
+              "status": "active"
+             },
+             {
+              "type": "course",
+              "code": "PSYCH 115",
+              "status": "active"
+             }
+            ],
+            "count": 1
            },
            {
             "type": "course",
@@ -643,11 +643,6 @@
            },
            {
             "type": "course",
-            "code": "PSYCH 115",
-            "status": "active"
-           },
-           {
-            "type": "course",
             "code": "PSYCH 119M",
             "status": "active"
            }
@@ -669,18 +664,24 @@
             "status": "inactive"
            },
            {
-            "type": "course",
-            "code": "EE BIOL 170",
-            "status": "active"
+            "type": "choose",
+            "items": [
+             {
+              "type": "course",
+              "code": "EE BIOL 170",
+              "status": "active"
+             },
+             {
+              "type": "course",
+              "code": "PHYSCI 166",
+              "status": "active"
+             }
+            ],
+            "count": 1
            },
            {
             "type": "course",
             "code": "PHYSCI 149",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "PHYSCI 166",
             "status": "active"
            }
           ],
@@ -796,9 +797,20 @@
         "type": "all",
         "items": [
          {
-          "type": "course",
-          "code": "C&S BIO M32",
-          "status": "active"
+          "type": "choose",
+          "items": [
+           {
+            "type": "course",
+            "code": "C&S BIO M32",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MATH M32T",
+            "status": "active"
+           }
+          ],
+          "count": 1
          },
          {
           "type": "course",
@@ -808,11 +820,6 @@
          {
           "type": "course",
           "code": "LIFESCI 30B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MATH M32T",
           "status": "active"
          },
          {
@@ -856,14 +863,20 @@
         "type": "all",
         "items": [
          {
-          "type": "course",
-          "code": "MATH 31A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MATH 31AL",
-          "status": "active"
+          "type": "choose",
+          "items": [
+           {
+            "type": "course",
+            "code": "MATH 31A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MATH 31AL",
+            "status": "active"
+           }
+          ],
+          "count": 1
          },
          {
           "type": "course",

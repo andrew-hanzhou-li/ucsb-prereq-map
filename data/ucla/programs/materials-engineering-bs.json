@@ -7,9 +7,11 @@
  "source": "https://catalog.registrar.ucla.edu/major/2026/MATERIALSENGINEERINGBS",
  "sections": [
   {
-   "name": "Electronic Materials Option",
+   "name": "Concentration",
    "requirement": {
-    "type": "all",
+    "type": "choose",
+    "count": 1,
+    "label": "One concentration",
     "items": [
      {
       "type": "all",
@@ -18,134 +20,392 @@
         "type": "all",
         "items": [
          {
-          "type": "course",
-          "code": "CHEM 20A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CHEM 20B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CHEM 20L",
-          "status": "active"
-         }
-        ],
-        "label": "Chemistry"
-       },
-       {
-        "type": "choose",
-        "items": [
-         {
-          "type": "course",
-          "code": "C&EE M20",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "COM SCI 31",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MECH&AE M20",
-          "status": "active"
-         }
-        ],
-        "count": 1,
-        "label": "Civil Engineering or Computer Science",
-        "notes": "Select one course from:"
-       },
-       {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "MAT SCI 10",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MAT SCI 90L",
-          "status": "active"
-         }
-        ],
-        "label": "Materials Science"
-       },
-       {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "MATH 31A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MATH 31B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MATH 32A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MATH 32B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MATH 33A",
-          "status": "active"
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "CHEM 20A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 20B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 20L",
+            "status": "active"
+           }
+          ],
+          "label": "Chemistry"
          },
          {
           "type": "choose",
           "items": [
            {
             "type": "course",
-            "code": "MATH 33B",
+            "code": "C&EE M20",
             "status": "active"
            },
            {
             "type": "course",
-            "code": "MECH&AE 82",
+            "code": "COM SCI 31",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MECH&AE M20",
             "status": "active"
            }
           ],
           "count": 1,
-          "label": "Mathematics 33B or Mechanical and Aerospace Engineering 82",
+          "label": "Civil Engineering or Computer Science",
           "notes": "Select one course from:"
+         },
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "MAT SCI 10",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MAT SCI 90L",
+            "status": "active"
+           }
+          ],
+          "label": "Materials Science"
+         },
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "MATH 31A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MATH 31B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MATH 32A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MATH 32B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MATH 33A",
+            "status": "active"
+           },
+           {
+            "type": "choose",
+            "items": [
+             {
+              "type": "course",
+              "code": "MATH 33B",
+              "status": "active"
+             },
+             {
+              "type": "course",
+              "code": "MECH&AE 82",
+              "status": "active"
+             }
+            ],
+            "count": 1,
+            "label": "Mathematics 33B or Mechanical and Aerospace Engineering 82",
+            "notes": "Select one course from:"
+           }
+          ],
+          "label": "Mathematics"
+         },
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "PHYSICS 1A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PHYSICS 1B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PHYSICS 1C",
+            "status": "active"
+           }
+          ],
+          "label": "Physics"
          }
         ],
-        "label": "Mathematics"
+        "label": "Preparation for the Major"
        },
        {
         "type": "all",
         "items": [
          {
-          "type": "course",
-          "code": "PHYSICS 1A",
-          "status": "active"
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "EC ENGR 100",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EC ENGR 101A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EC ENGR 121B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MAT SCI 104",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MAT SCI 110",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MAT SCI 110L",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MAT SCI 120",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MAT SCI 121",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MAT SCI 121L",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MAT SCI 122",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MAT SCI 130",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MAT SCI 131",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MAT SCI 131L",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MAT SCI 132",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MECH&AE 101",
+            "status": "active"
+           }
+          ],
+          "label": "Required Courses"
          },
          {
-          "type": "course",
-          "code": "PHYSICS 1B",
-          "status": "active"
+          "type": "choose",
+          "items": [
+           {
+            "type": "course",
+            "code": "C&EE 103",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EC ENGR 102",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MATH 132",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MECH&AE 182B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MECH&AE 182C",
+            "status": "active"
+           }
+          ],
+          "count": 1,
+          "label": "Upper-Division Mathematics Course",
+          "notes": "Select one upper-division mathematics course from:"
          },
          {
-          "type": "course",
-          "code": "PHYSICS 1C",
-          "status": "active"
+          "type": "choose",
+          "items": [
+           {
+            "type": "course",
+            "code": "MAT SCI 150",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MAT SCI 160",
+            "status": "active"
+           }
+          ],
+          "count": 1,
+          "label": "Materials Science",
+          "notes": "Select one course from:"
+         },
+         {
+          "type": "choose",
+          "items": [
+           {
+            "type": "course",
+            "code": "EC ENGR 123A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EC ENGR 128",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MAT SCI 150",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MAT SCI 160",
+            "status": "active"
+           }
+          ],
+          "count": 1,
+          "label": "Additional Electrical and Computer Engineering or Materials Science Course",
+          "notes": "Select one course (4 units) from:"
+         },
+         {
+          "type": "choose",
+          "items": [
+           {
+            "type": "course",
+            "code": "MAT SCI 141L",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MAT SCI 161L",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MAT SCI 199",
+            "status": "active"
+           }
+          ],
+          "count": 1,
+          "label": "Laboratory",
+          "notes": "Select one course (4 units) from the following list. Up to 2 units of Material Science and Engineering 199 may be applied"
+         },
+         {
+          "type": "text",
+          "text": "Select three technical breadth courses (12 units) from an approved list available in the Office of Academic and Student Affairs."
+         },
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "MAT SCI 140A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MAT SCI 140B",
+            "status": "active"
+           }
+          ],
+          "label": "Capstone Design"
+         },
+         {
+          "type": "choose",
+          "items": [
+           {
+            "type": "course",
+            "code": "EC ENGR 110",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EC ENGR 131A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MAT SCI 105",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MAT SCI C111",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MAT SCI C112",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MAT SCI 143A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MAT SCI 162",
+            "status": "active"
+           }
+          ],
+          "count": 1,
+          "label": "Major Field Elective",
+          "notes": "Select one major field elective course (4 units) from:"
          }
         ],
-        "label": "Physics"
+        "label": "The Major"
        }
       ],
-      "label": "Preparation for the Major"
+      "label": "Electronic Materials Option"
      },
      {
       "type": "all",
@@ -154,692 +414,436 @@
         "type": "all",
         "items": [
          {
-          "type": "course",
-          "code": "EC ENGR 100",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "EC ENGR 101A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "EC ENGR 121B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MAT SCI 104",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MAT SCI 110",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MAT SCI 110L",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MAT SCI 120",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MAT SCI 121",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MAT SCI 121L",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MAT SCI 122",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MAT SCI 130",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MAT SCI 131",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MAT SCI 131L",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MAT SCI 132",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MECH&AE 101",
-          "status": "active"
-         }
-        ],
-        "label": "Required Courses"
-       },
-       {
-        "type": "choose",
-        "items": [
-         {
-          "type": "course",
-          "code": "C&EE 103",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "EC ENGR 102",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MATH 132",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MECH&AE 182B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MECH&AE 182C",
-          "status": "active"
-         }
-        ],
-        "count": 1,
-        "label": "Upper-Division Mathematics Course",
-        "notes": "Select one upper-division mathematics course from:"
-       },
-       {
-        "type": "choose",
-        "items": [
-         {
-          "type": "course",
-          "code": "MAT SCI 150",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MAT SCI 160",
-          "status": "active"
-         }
-        ],
-        "count": 1,
-        "label": "Materials Science",
-        "notes": "Select one course from:"
-       },
-       {
-        "type": "choose",
-        "items": [
-         {
-          "type": "course",
-          "code": "EC ENGR 123A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "EC ENGR 128",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MAT SCI 150",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MAT SCI 160",
-          "status": "active"
-         }
-        ],
-        "count": 1,
-        "label": "Additional Electrical and Computer Engineering or Materials Science Course",
-        "notes": "Select one course (4 units) from:"
-       },
-       {
-        "type": "choose",
-        "items": [
-         {
-          "type": "course",
-          "code": "MAT SCI 141L",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MAT SCI 161L",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MAT SCI 199",
-          "status": "active"
-         }
-        ],
-        "count": 1,
-        "label": "Laboratory",
-        "notes": "Select one course (4 units) from the following list. Up to 2 units of Material Science and Engineering 199 may be applied"
-       },
-       {
-        "type": "text",
-        "text": "Select three technical breadth courses (12 units) from an approved list available in the Office of Academic and Student Affairs."
-       },
-       {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "MAT SCI 140A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MAT SCI 140B",
-          "status": "active"
-         }
-        ],
-        "label": "Capstone Design"
-       },
-       {
-        "type": "choose",
-        "items": [
-         {
-          "type": "course",
-          "code": "EC ENGR 110",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "EC ENGR 131A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MAT SCI 105",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MAT SCI C111",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MAT SCI C112",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MAT SCI 143A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MAT SCI 162",
-          "status": "active"
-         }
-        ],
-        "count": 1,
-        "label": "Major Field Elective",
-        "notes": "Select one major field elective course (4 units) from:"
-       }
-      ],
-      "label": "The Major"
-     }
-    ],
-    "label": "Electronic Materials Option"
-   }
-  },
-  {
-   "name": "Materials Engineering Option",
-   "requirement": {
-    "type": "all",
-    "items": [
-     {
-      "type": "all",
-      "items": [
-       {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "CHEM 20A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CHEM 20B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CHEM 20L",
-          "status": "active"
-         }
-        ],
-        "label": "Chemistry"
-       },
-       {
-        "type": "choose",
-        "items": [
-         {
-          "type": "course",
-          "code": "C&EE M20",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "COM SCI 31",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MECH&AE M20",
-          "status": "active"
-         }
-        ],
-        "count": 1,
-        "label": "Civil Engineering or Computer Science",
-        "notes": "Select one course from:"
-       },
-       {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "MAT SCI 10",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MAT SCI 90L",
-          "status": "active"
-         }
-        ],
-        "label": "Materials Science and Engineering"
-       },
-       {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "MATH 31A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MATH 31B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MATH 32A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MATH 32B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MATH 33A",
-          "status": "active"
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "CHEM 20A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 20B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 20L",
+            "status": "active"
+           }
+          ],
+          "label": "Chemistry"
          },
          {
           "type": "choose",
           "items": [
            {
             "type": "course",
-            "code": "MATH 33B",
+            "code": "C&EE M20",
             "status": "active"
            },
            {
             "type": "course",
-            "code": "MECH&AE 82",
+            "code": "COM SCI 31",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MECH&AE M20",
             "status": "active"
            }
           ],
           "count": 1,
-          "label": "Mathematics 33B or Mechanical and Aerospace Engineering 82",
+          "label": "Civil Engineering or Computer Science",
           "notes": "Select one course from:"
+         },
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "MAT SCI 10",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MAT SCI 90L",
+            "status": "active"
+           }
+          ],
+          "label": "Materials Science and Engineering"
+         },
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "MATH 31A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MATH 31B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MATH 32A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MATH 32B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MATH 33A",
+            "status": "active"
+           },
+           {
+            "type": "choose",
+            "items": [
+             {
+              "type": "course",
+              "code": "MATH 33B",
+              "status": "active"
+             },
+             {
+              "type": "course",
+              "code": "MECH&AE 82",
+              "status": "active"
+             }
+            ],
+            "count": 1,
+            "label": "Mathematics 33B or Mechanical and Aerospace Engineering 82",
+            "notes": "Select one course from:"
+           }
+          ],
+          "label": "Mathematics"
+         },
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "PHYSICS 1A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PHYSICS 1B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PHYSICS 1C",
+            "status": "active"
+           }
+          ],
+          "label": "Physics"
          }
         ],
-        "label": "Mathematics"
+        "label": "Preparation for the Major"
        },
        {
         "type": "all",
         "items": [
          {
-          "type": "course",
-          "code": "PHYSICS 1A",
-          "status": "active"
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "C&EE 91",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "C&EE 108",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EC ENGR 100",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MAT SCI 104",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MAT SCI 110",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MAT SCI 110L",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MAT SCI 120",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MAT SCI 130",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MAT SCI 131",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MAT SCI 131L",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MAT SCI 132",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MAT SCI 143A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MAT SCI 150",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MAT SCI 160",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MECH&AE 101",
+            "status": "active"
+           }
+          ],
+          "label": "Required Courses"
          },
          {
-          "type": "course",
-          "code": "PHYSICS 1B",
-          "status": "active"
+          "type": "choose",
+          "items": [
+           {
+            "type": "course",
+            "code": "C&EE 103",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EC ENGR 102",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MATH 132",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MECH&AE 182B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MECH&AE 182C",
+            "status": "active"
+           }
+          ],
+          "count": 1,
+          "label": "Upper-Division Mathematics Course",
+          "notes": "Select one course from:"
          },
          {
-          "type": "course",
-          "code": "PHYSICS 1C",
-          "status": "active"
+          "type": "choose",
+          "items": [
+           {
+            "type": "course",
+            "code": "MAT SCI 111L",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MAT SCI 121L",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MAT SCI 141L",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MAT SCI 143L",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MAT SCI 161L",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MAT SCI 199",
+            "status": "active"
+           }
+          ],
+          "count": 2,
+          "label": "Laboratory",
+          "notes": "Select two laboratory courses (4 units) from the following. Up to two units of Materials Science and Engineering 199 may be applied."
+         },
+         {
+          "type": "text",
+          "text": "Select three technical breadth courses (12 units) selected from an approved list available in the Office of Academic and Student Affairs."
+         },
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "MAT SCI 140A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MAT SCI 140B",
+            "status": "active"
+           }
+          ],
+          "label": "Capstone Design"
+         },
+         {
+          "type": "choose",
+          "items": [
+           {
+            "type": "course",
+            "code": "CH ENGR CM114",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "C&EE 130",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "C&EE 135A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EC ENGR 2",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EC ENGR 123A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EC ENGR 128",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MAT SCI 105",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MAT SCI C111",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MAT SCI C112",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MAT SCI 121",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MAT SCI 122",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MAT SCI 151",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MAT SCI 161",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MAT SCI 162",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MECH&AE 166C",
+            "status": "active"
+           }
+          ],
+          "count": 2,
+          "label": "Major Field Electives",
+          "notes": "Select two major field elective courses (8 units) from:"
+         },
+         {
+          "type": "choose",
+          "items": [
+           {
+            "type": "course",
+            "code": "CHEM 30A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 30AL",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EC ENGR 131A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MATH 170A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "STATS 100A",
+            "status": "active"
+           }
+          ],
+          "count": 1,
+          "label": "Elective",
+          "notes": "Select at least one elective course (4 units) from:"
          }
         ],
-        "label": "Physics"
+        "label": "The Major"
        }
       ],
-      "label": "Preparation for the Major"
-     },
-     {
-      "type": "all",
-      "items": [
-       {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "C&EE 91",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "C&EE 108",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "EC ENGR 100",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MAT SCI 104",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MAT SCI 110",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MAT SCI 110L",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MAT SCI 120",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MAT SCI 130",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MAT SCI 131",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MAT SCI 131L",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MAT SCI 132",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MAT SCI 143A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MAT SCI 150",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MAT SCI 160",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MECH&AE 101",
-          "status": "active"
-         }
-        ],
-        "label": "Required Courses"
-       },
-       {
-        "type": "choose",
-        "items": [
-         {
-          "type": "course",
-          "code": "C&EE 103",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "EC ENGR 102",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MATH 132",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MECH&AE 182B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MECH&AE 182C",
-          "status": "active"
-         }
-        ],
-        "count": 1,
-        "label": "Upper-Division Mathematics Course",
-        "notes": "Select one course from:"
-       },
-       {
-        "type": "choose",
-        "items": [
-         {
-          "type": "course",
-          "code": "MAT SCI 111L",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MAT SCI 121L",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MAT SCI 141L",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MAT SCI 143L",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MAT SCI 161L",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MAT SCI 199",
-          "status": "active"
-         }
-        ],
-        "count": 2,
-        "label": "Laboratory",
-        "notes": "Select two laboratory courses (4 units) from the following. Up to two units of Materials Science and Engineering 199 may be applied."
-       },
-       {
-        "type": "text",
-        "text": "Select three technical breadth courses (12 units) selected from an approved list available in the Office of Academic and Student Affairs."
-       },
-       {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "MAT SCI 140A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MAT SCI 140B",
-          "status": "active"
-         }
-        ],
-        "label": "Capstone Design"
-       },
-       {
-        "type": "choose",
-        "items": [
-         {
-          "type": "course",
-          "code": "CH ENGR CM114",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "C&EE 130",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "C&EE 135A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "EC ENGR 2",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "EC ENGR 123A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "EC ENGR 128",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MAT SCI 105",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MAT SCI C111",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MAT SCI C112",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MAT SCI 121",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MAT SCI 122",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MAT SCI 151",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MAT SCI 161",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MAT SCI 162",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MECH&AE 166C",
-          "status": "active"
-         }
-        ],
-        "count": 2,
-        "label": "Major Field Electives",
-        "notes": "Select two major field elective courses (8 units) from:"
-       },
-       {
-        "type": "choose",
-        "items": [
-         {
-          "type": "course",
-          "code": "CHEM 30A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CHEM 30AL",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "EC ENGR 131A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MATH 170A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "STATS 100A",
-          "status": "active"
-         }
-        ],
-        "count": 1,
-        "label": "Elective",
-        "notes": "Select at least one elective course (4 units) from:"
-       }
-      ],
-      "label": "The Major"
+      "label": "Materials Engineering Option"
      }
-    ],
-    "label": "Materials Engineering Option"
+    ]
    }
   }
  ],

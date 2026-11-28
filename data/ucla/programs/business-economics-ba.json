@@ -22,8 +22,10 @@
       "status": "active"
      }
     ],
-    "label": "Honors Program"
-   }
+    "label": "Honors Program",
+    "optional": true
+   },
+   "optional": true
   },
   {
    "name": "The Major",
@@ -51,7 +53,7 @@
       "status": "active"
      },
      {
-      "type": "all",
+      "type": "choose",
       "items": [
        {
         "type": "all",
@@ -86,6 +88,7 @@
         "label": "Economics 109D/109DL"
        }
       ],
+      "count": 1,
       "label": "Economics 104/104L or 109D/109DL",
       "notes": "Select one of the following series:"
      },
@@ -93,8 +96,59 @@
       "type": "choose",
       "items": [
        {
-        "type": "text",
-        "text": "Economics 106 Series"
+        "type": "course",
+        "code": "ECON 106A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 106D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 106E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 106F",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 106G",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 106I",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 106M",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 106P",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 106S",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 106T",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 106V",
+        "status": "active"
        }
       ],
       "count": 2,
@@ -105,22 +159,448 @@
       "type": "choose",
       "items": [
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "text",
-          "text": "Economics 105 to 199, minimum of 4 units each"
-         }
-        ],
-        "label": "Economics"
+        "type": "course",
+        "code": "ECON 105",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 106A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 106D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 106E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 106F",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 106G",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 106I",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 106M",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 106P",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 106S",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 106T",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 106V",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 107",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 109A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 109B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 109C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 109D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 109E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 111",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 112",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON M112A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 113",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 121",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 123",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON C126A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON C126B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON C126C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 130",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 131",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 132",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 133",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 134",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 137",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 140",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 141",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 142",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 143",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 144",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 145",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON C146A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON C146B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON C146C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 147",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 148",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 149",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 150",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 151",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 152",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON C156A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON C156B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON C156C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 160",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 161",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 162",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 164",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 165",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON C166A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON C166B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON C166C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 167",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 168",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 169",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 170",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 171",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 172",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 173AX",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 173BX",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 174",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON C176A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON C176B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON C176C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 177",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 181",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 182A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 182B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 182C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 183",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON C186A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON C186B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON C186C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 187",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 191",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 198A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 198B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 199A",
+        "status": "active"
        },
        {
         "type": "all",
         "items": [
          {
-          "type": "course",
-          "code": "MATH 174E",
-          "status": "active"
+          "type": "choose",
+          "items": [
+           {
+            "type": "course",
+            "code": "MATH 174E",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "STATS C183",
+            "status": "active"
+           }
+          ],
+          "count": 1
          },
          {
           "type": "course",
@@ -231,11 +711,6 @@
           "type": "course",
           "code": "MGMT 170",
           "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "STATS C183",
-          "status": "active"
          }
         ],
         "label": "Management",
@@ -298,14 +773,20 @@
       "type": "all",
       "items": [
        {
-        "type": "course",
-        "code": "MATH 31A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "MATH 31AL",
-        "status": "active"
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 31A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 31AL",
+          "status": "active"
+         }
+        ],
+        "count": 1
        },
        {
         "type": "course",

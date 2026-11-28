@@ -28,8 +28,10 @@
      }
     ],
     "label": "Honors Program",
-    "notes": "The honors program is open to advanced junior and senior Gender Studies majors with a 3.6 grade-point average in gender studies courses and a minimum 3.4 overall GPA who have no outstanding Incomplete grades, and to majors who demonstrate ability to do honors work by submitting a paper to the department chair for approval. To qualify for honors at graduation, students must successfully complete three successive terms of honors research (courses 198A, 198B, 198C) with their faculty sponsor and receive a grade of B+ or better on their research paper/project. Course 198A may be applied toward the elective requirement; courses 198B and 198C are in addition to the minimum required courses. more information is available from the undergraduate counselor in the department office."
-   }
+    "notes": "The honors program is open to advanced junior and senior Gender Studies majors with a 3.6 grade-point average in gender studies courses and a minimum 3.4 overall GPA who have no outstanding Incomplete grades, and to majors who demonstrate ability to do honors work by submitting a paper to the department chair for approval. To qualify for honors at graduation, students must successfully complete three successive terms of honors research (courses 198A, 198B, 198C) with their faculty sponsor and receive a grade of B+ or better on their research paper/project. Course 198A may be applied toward the elective requirement; courses 198B and 198C are in addition to the minimum required courses. more information is available from the undergraduate counselor in the department office.",
+    "optional": true
+   },
+   "optional": true
   },
   {
    "name": "The Major",
@@ -61,30 +63,23 @@
       "type": "all",
       "items": [
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "GENDER 195",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "GENDER 197",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "GENDER 199",
-          "status": "active"
-         }
-        ],
-        "label": "Tutorial",
-        "notes": "One upper-division tutorial (minimum of 4 units) selected from course 195, 197, or 199 may be applied toward the elective requirement (this limit does not apply to course 198A or 198B)."
+        "type": "course",
+        "code": "GENDER 195",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GENDER 197",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GENDER 199",
+        "status": "active"
        }
       ],
-      "label": "Elective Courses",
-      "notes": "Complete seven elective courses."
+      "label": "Tutorial",
+      "notes": "One upper-division tutorial (minimum of 4 units) selected from course 195, 197, or 199 may be applied toward the elective requirement (this limit does not apply to course 198A or 198B)."
      },
      {
       "type": "all",

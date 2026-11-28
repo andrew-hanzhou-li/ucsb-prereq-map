@@ -51,8 +51,24 @@
       "type": "choose",
       "items": [
        {
-        "type": "text",
-        "text": "Statistics 10 through 15"
+        "type": "course",
+        "code": "STATS 10",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS 12",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS 13",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS 15",
+        "status": "active"
        }
       ],
       "count": 1,
@@ -123,50 +139,174 @@
       "type": "choose",
       "items": [
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "MATH 131A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MATH 131B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MATH 151A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MATH 151B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MATH 170B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MATH 171",
-          "status": "active"
-         }
-        ],
-        "label": "Mathematics"
+        "type": "course",
+        "code": "MATH 131A",
+        "status": "active"
        },
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "text",
-          "text": "Statistics 112 through 199 (except courses 147, M148, 182, 184, 186, 188S, 189, and 195)."
-         }
-        ],
-        "label": "Statistics"
+        "type": "course",
+        "code": "MATH 131B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 151A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 151B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 170B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 171",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS 112",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS 115",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS C116",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS 130",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS 131",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS 133",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS 140XP",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS 141XP",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS 143",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS C145",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS C151",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS 152",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS 153",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS M154",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS C155",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS 157",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS C160",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS C161",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS C163",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS C167",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS M169",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS 170",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS M171",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS C173",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS 175",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS C180",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS C183",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS 199",
+        "status": "active"
        }
       ],
       "count": 4,

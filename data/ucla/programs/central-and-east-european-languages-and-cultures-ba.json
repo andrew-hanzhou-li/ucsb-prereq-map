@@ -301,90 +301,78 @@
       "type": "choose",
       "items": [
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "C&EE ST M120",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "C&EE ST M125",
-          "status": "inactive"
-         },
-         {
-          "type": "course",
-          "code": "C&EE ST CM126",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CZCH 155",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "HIST 120A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "HIST 120B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "HIST 120C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "HIST 120D",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "POLSH 152A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "POLSH 152B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "POLSH 152C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ROMANIA 152",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "RUSSN CM124G",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "UKRN 152",
-          "status": "active"
-         }
-        ],
-        "label": "Courses"
+        "type": "course",
+        "code": "C&EE ST M120",
+        "status": "active"
        },
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "text",
-          "text": "Czech, Hungarian, Polish, Romanian, Serbian/Croatian, Ukrainian 187A through 187M"
-         }
-        ],
-        "label": "Czech, Hungarian, Polish, Romanian, Serbian/Croatian, Ukrainian 187A through 187M"
+        "type": "course",
+        "code": "C&EE ST M125",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "C&EE ST CM126",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CZCH 155",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 120A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 120B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 120C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 120D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "POLSH 152A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "POLSH 152B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "POLSH 152C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ROMANIA 152",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "RUSSN CM124G",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "UKRN 152",
+        "status": "active"
+       },
+       {
+        "type": "text",
+        "text": "Czech, Hungarian, Polish, Romanian, Serbian/Croatian, Ukrainian 187A through 187M"
        },
        {
         "type": "all",
@@ -481,8 +469,10 @@
      }
     ],
     "label": "Honors Program",
-    "notes": "The honors program is designed for exceptional departmental majors who wish to complete a research project that culminates in an honors thesis. The courses must be taken during senior year (fall, winter, and spring terms respectively). Students pursuing departmental honors must submit the contract for each course by the end of the tenth week of the previous quarter. The sequence culminates in the submission of a thesis. Students who enroll in the honors program are exempt from taking the standard thesis course sequence (Slavic 191TA, 191TB, 191TC)."
-   }
+    "notes": "The honors program is designed for exceptional departmental majors who wish to complete a research project that culminates in an honors thesis. The courses must be taken during senior year (fall, winter, and spring terms respectively). Students pursuing departmental honors must submit the contract for each course by the end of the tenth week of the previous quarter. The sequence culminates in the submission of a thesis. Students who enroll in the honors program are exempt from taking the standard thesis course sequence (Slavic 191TA, 191TB, 191TC).",
+    "optional": true
+   },
+   "optional": true
   },
   {
    "name": "Preparation for the Major",

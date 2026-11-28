@@ -63,8 +63,10 @@
      }
     ],
     "label": "Honors Program",
-    "notes": "Departmental honors are awarded at graduation to those students who have a grade-point average of 3.6 or better in their junior and senior years and who have received a grade of A in Linguistics 198A and 198B or in 199. Qualified students may be proposed by any member of the faculty to the faculty as a whole for the award of highest honors on the basis of a piece of research in linguistics completed at UCLA."
-   }
+    "notes": "Departmental honors are awarded at graduation to those students who have a grade-point average of 3.6 or better in their junior and senior years and who have received a grade of A in Linguistics 198A and 198B or in 199. Qualified students may be proposed by any member of the faculty to the faculty as a whole for the award of highest honors on the basis of a piece of research in linguistics completed at UCLA.",
+    "optional": true
+   },
+   "optional": true
   },
   {
    "name": "The Major",
@@ -230,63 +232,268 @@
       "type": "choose",
       "items": [
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "text",
-          "text": "Anthropology 130 through 139"
-         }
-        ],
-        "label": "Anthropology 130 series",
-        "notes": "Only one course may apply."
-       },
-       {
-        "type": "all",
-        "items": [
-         {
-          "type": "text",
-          "text": "Anthropology 150 through 159"
-         }
-        ],
-        "label": "Anthropology 150 series",
-        "notes": "Only one course may apply."
-       },
-       {
-        "type": "all",
-        "items": [
-         {
-          "type": "text",
-          "text": "Anthropology 160 through 169"
-         }
-        ],
-        "label": "Anthropology 160 series",
-        "notes": "Only one course may apply."
-       },
-       {
-        "type": "all",
+        "type": "choose",
+        "count": 1,
         "items": [
          {
           "type": "course",
-          "code": "SOCIOL CM124A",
+          "code": "ANTHRO 130",
           "status": "active"
          },
          {
           "type": "course",
-          "code": "COMM M144A",
+          "code": "ANTHRO 131",
           "status": "active"
          },
          {
           "type": "course",
-          "code": "SOCIOL CM125",
+          "code": "ANTHRO 132",
           "status": "active"
          },
          {
           "type": "course",
-          "code": "COMM M125",
+          "code": "ANTHRO 133",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 134",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 135",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 135R",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 135S",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 136A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 136B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 136M",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 137P",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 137Q",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 138P",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO M138Q",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 139",
           "status": "active"
          }
         ],
-        "label": "Sociology CM124A or CM125"
+        "label": "ANTHRO 130–139",
+        "expanded_from": "range"
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "ANTHRO M150",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 151",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 152Q",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 152R",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO M152P",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 153",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 154P",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 154Q",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 154SL",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO M155",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO M156",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO C157P",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 158P",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO M158",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 159",
+          "status": "active"
+         }
+        ],
+        "label": "ANTHRO 150–159",
+        "expanded_from": "range"
+       },
+       {
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "ANTHRO 160A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 160B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 161",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 162",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 163P",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 163Q",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 163R",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 166P",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO M166Q",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 167",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 168P",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO M168Q",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 169",
+          "status": "active"
+         }
+        ],
+        "label": "ANTHRO 160–169",
+        "expanded_from": "range"
+       },
+       {
+        "type": "course",
+        "code": "SOCIOL CM124A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMM M144A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SOCIOL CM125",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMM M125",
+        "status": "active"
        }
       ],
       "count": 3,
@@ -413,8 +620,10 @@
      }
     ],
     "label": "Computing Specialization",
-    "notes": "Students may select a specialization in Computing by (1) satisfying all the requirements for a bachelor’s degree in the specified major and (2) completing Program in Computing 10A and 10B and 10C (or Computer Science 31 and 32), Linguistics 185A, Mathematics 61, and one course selected from Linguistics 104, 127, 132, 165A, 165B, 165C, 180, 185B. Students graduate with a bachelor’s degree in their major and a specialization in Computing."
-   }
+    "notes": "Students may select a specialization in Computing by (1) satisfying all the requirements for a bachelor’s degree in the specified major and (2) completing Program in Computing 10A and 10B and 10C (or Computer Science 31 and 32), Linguistics 185A, Mathematics 61, and one course selected from Linguistics 104, 127, 132, 165A, 165B, 165C, 180, 185B. Students graduate with a bachelor’s degree in their major and a specialization in Computing.",
+    "optional": true
+   },
+   "optional": true
   }
  ],
  "narrative": []

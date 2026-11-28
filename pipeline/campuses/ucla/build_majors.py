@@ -58,8 +58,26 @@ NUMBER_WORDS = {"one": 1, "two": 2, "three": 3, "four": 4, "five": 5, "six": 6, 
                 "nine": 9, "ten": 10, "eleven": 11, "twelve": 12, "thirteen": 13, "fourteen": 14, "fifteen": 15}
 COUNT = r"(\d+|" + "|".join(NUMBER_WORDS) + r")"
 CHOOSE_RULE = re.compile(r"^(?:Select|Complete|Choose|Take)\s+(?:at least\s+|a minimum of\s+|any\s+)?" + COUNT +
-                         r"\b(?P<what>[^:]*?)\bfrom\b", re.IGNORECASE)
+                         r"\b(?P<what>[^:]*?)\b(?:from|of the following)\b", re.IGNORECASE)
+# "two courses from each of the following principles", "one course from each of three of the four areas"
+EACH_RULE = re.compile(r"\bfrom each of\s+(?:(?P<areas>\d+|" + "|".join(NUMBER_WORDS) + r")\s+of\b)?", re.IGNORECASE)
+# A rule group the catalog offers but doesn't require: honors, specializations,
+# field quarters, substitutions ("Chemistry 20AH may be substituted for 20A"),
+# petitions and recommendations.
+OPTIONAL_TITLE = re.compile(r"honors|departmental scholar|specialization$|optional|substitut|petition|"
+                            r"biology quarter|recommended", re.IGNORECASE)
+OPTIONAL_LINE = re.compile(r"\bmay be substituted\b|\bmay substitute\b|\bby petition\b|\boptional\b|"
+                           r"\bhonors (?:students|program)\b|\bfor honors\b|"
+                           r"\bmay not be applied toward the major\b", re.IGNORECASE)
+# (A line that says what to complete is a requirement, whatever else it says:
+# "Select four courses (… may be substituted for some)".)
+IMPERATIVE = re.compile(r"^(?:Complete|Select|Choose|Take|Students must)\b", re.IGNORECASE)
+# "Mathematics 33B is highly recommended" (but not "Complete four courses. It is
+# strongly recommended that they be taken early").
+RECOMMENDED_LINE = re.compile(r"^(?!(?:Complete|Select|Choose|Take)\b).*\brecommended\b", re.IGNORECASE)
 UNITS_RULE = re.compile(r"^(?:Select|Complete|Take)\s+(?:at least\s+|a minimum of\s+)?(\d+(?:\.\d+)?)\s+units?\b", re.IGNORECASE)
+COUNT_ONLY = re.compile(r"^(?:Select|Complete|Choose|Take)\s+(?:at least\s+|a minimum of\s+|any\s+)?" + COUNT +
+                        r"\s+(?:[\w-]+\s+){0,4}?courses?\b", re.IGNORECASE)
 ALL_RULE = re.compile(r"^(?:Complete|Take)\b[^:]*\b(?:as follows|the following|all)\b", re.IGNORECASE)
 
 
@@ -84,24 +102,84 @@ def subject_ids():
     return ids
 
 
-def dynamic_range(entry, ids):
-    """A stored search ("French 100 through 169") -> a range item, or None."""
+def search_terms(entry):
+    """A stored search's conditions: ([(field, value)] it must match, [(field, value)] it must not).
+    field is the last part of the name ("codeNumber"); a range gives ("codeNumber", (low, high))."""
     query = urllib.parse.parse_qs(urllib.parse.urlparse(entry.get("encodedURL", "")).query).get("appliedFilters", [""])[0]
     try:
         search = json.loads(base64.b64decode(query + "=" * (-len(query) % 4)).decode("utf-8"))
-    except (ValueError, UnicodeDecodeError):
+        bool_query = search["search"]["es"]["query"]["bool"]
+    except (ValueError, UnicodeDecodeError, KeyError, TypeError):
         return None
-    text = json.dumps(search)
-    area = re.search(r'"educationalArea"\], "query": "([0-9a-f]{32})"', text)
-    numbers = re.search(r'"codeNumber": \{"gte": "(\d+)", "lte": "(\d+)"\}', text)
-    if not area or area.group(1) not in ids or not numbers:
+
+    def terms(clauses):
+        found = []
+        for clause in clauses or []:
+            if "query_string" in clause:
+                field = clause["query_string"]["fields"][0].rsplit(".", 1)[-1]
+                found.append((field, clause["query_string"]["query"]))
+            elif "range" in clause:
+                field, bounds = next(iter(clause["range"].items()))
+                found.append((field.rsplit(".", 1)[-1], (bounds.get("gte"), bounds.get("lte"))))
+        return found
+    return terms(bool_query.get("must")), terms(bool_query.get("must_not"))
+
+
+def code_parts(code):
+    """"HIST M187A" -> ("M", 187, "A")."""
+    match = re.search(r" ([A-Z]*)(\d+)([A-Z]*)$", code)
+    return (match.group(1), int(match.group(2)), match.group(3)) if match else ("", -1, "")
+
+
+def dynamic_range(entry, ids, catalog):
+    """A stored search ("French 100 through 169", "Economics 105 to 199"
+    without the labs, "Lower-Division History Courses (except History 19,
+    89, 99)") -> a range item over the subject's numbers, with the courses
+    the search leaves out in "except"; or None."""
+    found = search_terms(entry)
+    if not found:
         return None
-    return {"type": "range", "subject": ids[area.group(1)], "from": int(numbers.group(1)), "to": int(numbers.group(2))}
+    must, must_not = found
+    subject = next((ids[v] for f, v in must if f == "educationalArea" and v in ids), None)
+    if not subject:
+        return None
+    numbers = next((v for f, v in must if f == "codeNumber" and isinstance(v, tuple)), None)
+    digits = lambda v, default: int(v) if v and str(v).isdigit() else default
+    exact = next((v for f, v in must if f == "codeNumber" and not isinstance(v, tuple) and str(v).isdigit()), None)
+    if numbers:
+        low, high = digits(numbers[0], 0), digits(numbers[1], 199)
+    elif exact:                                                        # "History 97A through 97O"
+        low = high = int(exact)
+    else:
+        words = (entry.get("description") or "").lower()
+        low, high = (1, 99) if "lower-division" in words else (100, 199) if "upper-division" in words else (0, 199)
+    suffixes = {v for f, v in must if f == "codeSuffix" and not isinstance(v, tuple)}
+    letters = next((v for f, v in must if f == "codeSuffix" and isinstance(v, tuple)), None)   # "60A through 60Z"
+    skip_codes = {re.sub(r"\s+", " ", v).strip() for f, v in must_not if f == "code"}
+    skip_numbers = {v for f, v in must_not if f == "codeNumber" and not isinstance(v, tuple)}
+    skip_suffixes = {v for f, v in must_not if f == "codeSuffix"}
+    skip_prefixes = {v for f, v in must_not if f == "codePrefix"}
+    left_out = []
+    for code, info in catalog.items():
+        if info["subject"] != subject:
+            continue
+        prefix, number, suffix = code_parts(code)
+        if not low <= number <= high:
+            continue
+        if (code in skip_codes or str(number) in skip_numbers or (suffix and suffix in skip_suffixes) or
+                (prefix and prefix in skip_prefixes) or (suffixes and suffix not in suffixes) or
+                (letters and not (letters[0] or "A") <= (suffix or "") <= (letters[1] or "Z"))):
+            left_out.append(code)
+    item = {"type": "range", "subject": subject, "from": low, "to": high}
+    if left_out:
+        item["except"] = sorted(left_out)
+    return item
 
 
 class Converter:
-    def __init__(self, ids, translated):
+    def __init__(self, ids, translated, catalog):
         self.ids = ids
+        self.catalog = catalog
         self.translated = translated
         self.prose = []          # rules with no list, for translating
 
@@ -118,11 +196,13 @@ class Converter:
             if item.get("academic_item_code"):
                 parts.append({"type": "course", "code": re.sub(r"\s+", " ", item["academic_item_code"]).strip()})
             elif item.get("encodedURL"):
-                found = dynamic_range(item, self.ids)
+                found = dynamic_range(item, self.ids, self.catalog)
                 parts.append(found or {"type": "text", "text": item.get("description") or "a course list"})
             elif "description" in item and ("container" in item or "relationship" in item):
                 node = self.group(item, major)
                 if node:
+                    node = dict(node)
+                    node["_plain"] = not plain(item.get("description"))     # a list with no rule of its own
                     parts.append(node)
         node = None
         units = UNITS_RULE.match(line)
@@ -133,11 +213,38 @@ class Converter:
                 node = {"type": "text", "text": line}
         elif units and re.search(r"\bfrom\b", line, re.IGNORECASE):
             node = {"type": "units", "units": float(units.group(1)), "items": parts}
+        elif choose and EACH_RULE.search(line) and all(p["type"] != "course" for p in parts):
+            # Each list gives N; "from each of three of the four" asks for three lists.
+            each = [{"type": "choose", "count": count_of(choose.group(1)), "items": unwrapped(p),
+                     **({"label": p["label"]} if p.get("label") else {})} for p in parts]
+            areas = EACH_RULE.search(line).group("areas")
+            node = {"type": "choose", "count": count_of(areas), "items": each} if areas else {"type": "all", "items": each}
         elif choose and (re.search(r"\bcourses?\b", choose.group("what"), re.IGNORECASE) or
                          not re.search(r"\bunits?\b", choose.group("what"), re.IGNORECASE)):
+            # "Select one course from either group": the groups' courses are
+            # one list (a group of courses isn't a single option). A list of
+            # series ("Select one of the following series") stays as options.
+            if re.search(r"\bcourses?\b", choose.group("what"), re.IGNORECASE):
+                parts = [x for p in parts for x in (unwrapped(p) if p.get("_plain") and p["type"] == "all" else [p])]
             node = {"type": "choose", "count": count_of(choose.group(1)), "items": parts}
+        elif (counted := COUNT_ONLY.match(line)) and not ALL_RULE.match(line) and count_of(counted.group(1)) < len(parts):
+            # "Select three courses:" / "Complete seven elective courses" over a longer list
+            node = {"type": "choose", "count": count_of(counted.group(1)),
+                    "items": [x for p in parts for x in (unwrapped(p) if p.get("_plain") and p["type"] == "all" else [p])]}
         else:
-            node = {"type": "all", "items": parts}
+            node = {"type": "all", "items": or_pairs(parts, line)}
+        for part in parts:
+            part.pop("_plain", None)
+        if node is not None and node["type"] in ("all", "choose", "units"):
+            # Optional groups count only where the major requires them as a whole:
+            # inside a choice, "the honors series" is one of the ways to meet it.
+            for part in node["items"]:
+                if node["type"] != "all" and part.get("optional"):
+                    del part["optional"]
+        if node is not None and node["type"] != "text" and (OPTIONAL_TITLE.search(title) or
+                                                       (not IMPERATIVE.match(line) and OPTIONAL_LINE.search(line)) or
+                                                       RECOMMENDED_LINE.search(line)):
+            node["optional"] = True
         if node is None:
             return None
         if node["type"] != "text" and title:
@@ -147,6 +254,65 @@ class Converter:
         if node["type"] == "units" and float(node["units"]).is_integer():
             node["units"] = int(node["units"])
         return node
+
+
+def pruned(node):
+    """The node without lists that match no course (Philosophy's "graduate
+    courses 201-219": graduate courses aren't in the undergraduate list), so
+    a requirement isn't left that nothing can meet. None if nothing is left."""
+    if node["type"] not in ("all", "choose", "units"):
+        return node
+    items = [kept for kept in (pruned(i) for i in node["items"]) if kept is not None]
+    if not items:
+        return None
+    if node["type"] == "all" and len(items) == 1 and not node.get("optional") and items[0]["type"] != "course":
+        # (A list holding one list: the inner one, under the outer one's name.)
+        inner = dict(items[0])
+        if node.get("label") and not inner.get("label"):
+            inner["label"] = node["label"]
+        return inner
+    return dict(node, items=items)
+
+
+def one_concentration(sections):
+    """Chemistry BS lists "Chemistry Concentration" and "Physical Chemistry
+    Concentration" as two sections; a student completes one. Two or more
+    sections named "... Concentration" (or Option, Track) become one section,
+    "Concentration", that's a "one of"."""
+    named = re.compile(r"\b(?:concentration|option|track)$", re.IGNORECASE)
+    picks = [s for s in sections if named.search(s["name"]) and not s.get("optional")]
+    if len(picks) < 2:
+        return sections
+    choice = {"type": "choose", "count": 1, "label": "One concentration",
+              "items": [dict(s["requirement"], label=s["name"]) for s in picks]}
+    at = sections.index(picks[0])
+    rest = [s for s in sections if s not in picks]
+    return rest[:at] + [{"name": "Concentration", "requirement": choice}] + rest[at:]
+
+
+def unwrapped(node):
+    """A plain "all" list's items (for joining into a list above it); else the node itself."""
+    return list(node["items"]) if node["type"] == "all" else [node]
+
+
+def or_pairs(parts, line):
+    """"Complete Mathematics 31A or 31AL and Mathematics 31B" lists all three
+    courses; the line says 31A and 31AL are one choice. Courses the line joins
+    with "or" become a "one of"."""
+    pairs = re.findall(r"\b([A-Z]{0,2}\d+[A-Z]*)\s+or\s+(?:[A-Z][a-z]+\s+)*([A-Z]{0,2}\d+[A-Z]*)\b", line)
+    by_number = {}
+    for part in parts:
+        if part["type"] == "course":
+            by_number.setdefault(part["code"].rsplit(" ", 1)[-1], part)
+    out = list(parts)
+    for left, right in pairs:
+        a, b = by_number.get(left), by_number.get(right)
+        if a is None or b is None or a is b or a not in out or b not in out:
+            continue
+        at = out.index(a)
+        out.remove(b)
+        out[at] = {"type": "choose", "count": 1, "items": [a, b]}
+    return out
 
 
 def slug(name):
@@ -160,7 +326,7 @@ def main():
     if os.path.exists(TRANSLATED):
         with open(TRANSLATED, encoding="utf-8") as f:
             translated = json.load(f)
-    converter = Converter(subject_ids(), translated)
+    converter = Converter(subject_ids(), translated, catalog)
     os.makedirs(PROGRAMS_DIR, exist_ok=True)
     for old in glob.glob(os.path.join(PROGRAMS_DIR, "*.json")):
         os.remove(old)
@@ -180,9 +346,16 @@ def main():
             if node is None:
                 continue
             here = []
-            requirement = expand(node, catalog, here, name + " / " + (top.get("title") or ""))
+            requirement = pruned(expand(node, catalog, here, name + " / " + (top.get("title") or "")))
             problems.extend(here)
-            sections.append({"name": (top.get("title") or "Requirements").strip(), "requirement": requirement})
+            if requirement is None:
+                continue
+            section = {"name": (top.get("title") or "Requirements").strip(), "requirement": requirement}
+            parts = requirement.get("items") if requirement["type"] == "all" else None
+            if requirement.get("optional") or (parts and all(p.get("optional") for p in parts)):
+                section["optional"] = True
+            sections.append(section)
+        sections = one_concentration(sections)
         page = os.path.basename(path)[:-5]
         program = {"id": "UCLA-" + page, "name": name, "kind": "major", "type": "Bachelor's Degree",
                    "catalog_year": CATALOG_YEAR, "source": SITE + "/major/2026/" + page,

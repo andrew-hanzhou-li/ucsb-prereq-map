@@ -46,7 +46,7 @@
       "label": "Anthropology"
      },
      {
-      "type": "all",
+      "type": "choose",
       "items": [
        {
         "type": "all",
@@ -91,7 +91,8 @@
            }
           ],
           "label": "Enhanced",
-          "notes": "Chemistry 14AE and 14BE may be substituted for Chemistry 14A and 14B respectively."
+          "notes": "Chemistry 14AE and 14BE may be substituted for Chemistry 14A and 14B respectively.",
+          "optional": true
          }
         ],
         "label": "Chemistry 14 Series"
@@ -133,6 +134,7 @@
         "label": "Chemistry 20 and 30 Series"
        }
       ],
+      "count": 1,
       "label": "Chemistry",
       "notes": "Select one of the following series:"
      },
@@ -163,7 +165,7 @@
       "label": "Life Sciences"
      },
      {
-      "type": "all",
+      "type": "choose",
       "items": [
        {
         "type": "all",
@@ -179,14 +181,20 @@
           "status": "active"
          },
          {
-          "type": "course",
-          "code": "LIFESCI 40",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "STATS 13",
-          "status": "active"
+          "type": "choose",
+          "items": [
+           {
+            "type": "course",
+            "code": "LIFESCI 40",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "STATS 13",
+            "status": "active"
+           }
+          ],
+          "count": 1
          }
         ],
         "label": "Life Sciences 30 Series",
@@ -211,14 +219,20 @@
           "status": "active"
          },
          {
-          "type": "course",
-          "code": "STATS 10",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "STATS 13",
-          "status": "active"
+          "type": "choose",
+          "items": [
+           {
+            "type": "course",
+            "code": "STATS 10",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "STATS 13",
+            "status": "active"
+           }
+          ],
+          "count": 1
          }
         ],
         "label": "Mathematics 3 Series",
@@ -228,14 +242,20 @@
         "type": "all",
         "items": [
          {
-          "type": "course",
-          "code": "MATH 31A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MATH 31AL",
-          "status": "active"
+          "type": "choose",
+          "items": [
+           {
+            "type": "course",
+            "code": "MATH 31A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MATH 31AL",
+            "status": "active"
+           }
+          ],
+          "count": 1
          },
          {
           "type": "course",
@@ -248,25 +268,32 @@
           "status": "active"
          },
          {
-          "type": "course",
-          "code": "STATS 10",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "STATS 13",
-          "status": "active"
+          "type": "choose",
+          "items": [
+           {
+            "type": "course",
+            "code": "STATS 10",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "STATS 13",
+            "status": "active"
+           }
+          ],
+          "count": 1
          }
         ],
         "label": "Mathematics 31 Series",
         "notes": "Select Mathematics 31A or 31AL. Select Statistics 10 or 13."
        }
       ],
+      "count": 1,
       "label": "Mathematics",
       "notes": "Select one of the following series:"
      },
      {
-      "type": "all",
+      "type": "choose",
       "items": [
        {
         "type": "all",
@@ -321,6 +348,7 @@
         "label": "Physics 5 Series"
        }
       ],
+      "count": 1,
       "label": "Physics",
       "notes": "Select one of the following series:"
      },
@@ -346,14 +374,20 @@
           "status": "active"
          },
          {
-          "type": "course",
-          "code": "ASIA AM 20",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ASIA AM 20W",
-          "status": "active"
+          "type": "choose",
+          "items": [
+           {
+            "type": "course",
+            "code": "ASIA AM 20",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ASIA AM 20W",
+            "status": "active"
+           }
+          ],
+          "count": 1
          },
          {
           "type": "course",
@@ -406,14 +440,20 @@
           "status": "active"
          },
          {
-          "type": "course",
-          "code": "PHILOS 22",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PHILOS 22W",
-          "status": "active"
+          "type": "choose",
+          "items": [
+           {
+            "type": "course",
+            "code": "PHILOS 22",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PHILOS 22W",
+            "status": "active"
+           }
+          ],
+          "count": 1
          },
          {
           "type": "course",
@@ -440,14 +480,354 @@
         "notes": "Only one course from Asian American Studies 20 or 20W may be applied. Only one course from Philosophy 22 or 22W may be applied."
        },
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "text",
-          "text": "Clusters M1A through 80CW"
-         }
-        ],
-        "label": "Clusters"
+        "type": "course",
+        "code": "CLUSTER M1A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER M1B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER M1CW",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER 2A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER 2B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER 2CW",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER 10A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER 10B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER 10CW",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER 10WX",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER 20A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER 20B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER 20CW",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER 21A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER 21B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER 21CW",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER 22A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER 22B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER 22CW",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER 23A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER 23B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER 23CW",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER M24A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER M24B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER M24CW",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER 25A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER 25B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER 25CW",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER 26A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER 26B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER 26CW",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER M27A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER M27B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER M27CW",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER 30A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER 30B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER 30CW",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER 40A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER 40B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER 40CW",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER 48A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER 48B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER 48CW",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER 55A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER 55B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER 55CW",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER 60A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER 60B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER 60CW",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER 66A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER 66B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER 66CW",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER 70A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER 70B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER 70CW",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER M71A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER M71B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER M71CW",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER M72A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER M72B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER M72CW",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER 73A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER 73B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER 73CW",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER 79A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER 79B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER 79CW",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER 80A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER 80BX",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER 80CW",
+        "status": "active"
        }
       ],
       "count": 2,
@@ -1878,7 +2258,8 @@
        }
       ],
       "label": "Optional Subfocus Areas",
-      "notes": "The subfocus options are designed and recommended for students who intend a career in medicine or allied health services or are planning to go on to graduate school in the life or health sciences. Students may optionally select any subfocus area as part of the required elective courses for the major."
+      "notes": "The subfocus options are designed and recommended for students who intend a career in medicine or allied health services or are planning to go on to graduate school in the life or health sciences. Students may optionally select any subfocus area as part of the required elective courses for the major.",
+      "optional": true
      }
     ],
     "label": "The Major"
@@ -1890,7 +2271,8 @@
     "type": "text",
     "text": "To receive departmental honors, students must take each course in the major for a letter grade and complete all upper-division courses in the major with an overall grade-point average of 3.5 or better. For highest departmental honors, students must complete a research project and receive a grade of A or better in Society and Genetics 108, 197, or 199.",
     "optional": true
-   }
+   },
+   "optional": true
   }
  ],
  "narrative": []

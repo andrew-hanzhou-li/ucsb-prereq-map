@@ -805,7 +805,8 @@
         "status": "active"
        }
       ],
-      "label": "Mathematics Honors Courses"
+      "label": "Mathematics Honors Courses",
+      "optional": true
      },
      {
       "type": "all",
@@ -822,12 +823,15 @@
        }
       ],
       "label": "Economics Honors Research",
-      "notes": "The thesis process requires enrollment in a two-term sequence for economics courses."
+      "notes": "The thesis process requires enrollment in a two-term sequence for economics courses.",
+      "optional": true
      }
     ],
     "label": "Honors Program",
-    "notes": "To qualify for honors at graduation, students must (1) complete Mathematics 115AH, 131AH, and 131BH, (2) complete Economics 198A and 198B (the thesis process requires enrollment in a two-term sequence for economics courses), (3) present the thesis in Economics 198B, and (4) complete the major requirements with a minimum 3.5 grade-point average in both the upper-division economics and mathematics courses."
-   }
+    "notes": "To qualify for honors at graduation, students must (1) complete Mathematics 115AH, 131AH, and 131BH, (2) complete Economics 198A and 198B (the thesis process requires enrollment in a two-term sequence for economics courses), (3) present the thesis in Economics 198B, and (4) complete the major requirements with a minimum 3.5 grade-point average in both the upper-division economics and mathematics courses.",
+    "optional": true
+   },
+   "optional": true
   },
   {
    "name": "Computing Specialization",
@@ -905,8 +909,34 @@
       "type": "choose",
       "items": [
        {
-        "type": "text",
-        "text": "Mathematics 149 through 159"
+        "type": "course",
+        "code": "MATH 151A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 151AH",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 151B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 151BH",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 155",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 156",
+        "status": "active"
        }
       ],
       "count": 2,
@@ -915,13 +945,15 @@
      }
     ],
     "label": "Computing Specialization",
-    "notes": "Majors in Mathematics/Economics may select a Computing specialization by satisfying all the requirements for a bachelor’s degree in the major; and completing the following courses, with a minimum grade of C– in each course and a combined grade-point average of at least 2.0. Students must petition for admission to the program and are advised to do so after they complete Program in Computing 10B (petitions should be filed in the Mathematics Department Student Services Office). Students graduate with a bachelor’s degree in mathematics/economics and a specialization in Computing."
-   }
+    "notes": "Majors in Mathematics/Economics may select a Computing specialization by satisfying all the requirements for a bachelor’s degree in the major; and completing the following courses, with a minimum grade of C– in each course and a combined grade-point average of at least 2.0. Students must petition for admission to the program and are advised to do so after they complete Program in Computing 10B (petitions should be filed in the Mathematics Department Student Services Office). Students graduate with a bachelor’s degree in mathematics/economics and a specialization in Computing.",
+    "optional": true
+   },
+   "optional": true
   },
   {
    "name": "Preparation for the Major",
    "requirement": {
-    "type": "all",
+    "type": "choose",
     "items": [
      {
       "type": "course",
@@ -988,6 +1020,7 @@
       "text": "Complete any one Writing II course."
      }
     ],
+    "count": 11,
     "label": "Preparation for the Major",
     "notes": "Complete 11 courses, and one Writing II course. Select Mathematics 31A or 31AL."
    }

@@ -69,7 +69,8 @@
          }
         ],
         "label": "Physics 1 Honors series",
-        "notes": "Students may substitute courses from the Physics 1 honors series for the Physics 1 series."
+        "notes": "Students may substitute courses from the Physics 1 honors series for the Physics 1 series.",
+        "optional": true
        }
       ],
       "label": "Physics"
@@ -105,14 +106,20 @@
       "type": "all",
       "items": [
        {
-        "type": "course",
-        "code": "MATH 31A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "MATH 31AL",
-        "status": "active"
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 31A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 31AL",
+          "status": "active"
+         }
+        ],
+        "count": 1
        },
        {
         "type": "course",
@@ -152,7 +159,8 @@
        }
       ],
       "label": "Recommended",
-      "notes": "The following course is recommended:"
+      "notes": "The following course is recommended:",
+      "optional": true
      }
     ],
     "label": "Preparation for the Major"
@@ -218,72 +226,54 @@
       "type": "choose",
       "items": [
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "NEUROSC M101A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PHYSICS 170A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PHYSICS C186",
-          "status": "active"
-         }
-        ],
-        "label": "Group A (Physics of Neuroscience)"
+        "type": "course",
+        "code": "NEUROSC M101A",
+        "status": "active"
        },
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "PHYSICS 144",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PHYSICS 170A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MECH&AE C286",
-          "status": "inactive"
-         }
-        ],
-        "label": "Group B (Biological Physics)"
+        "type": "course",
+        "code": "PHYSICS 170A",
+        "status": "active"
        },
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "CHEM 153A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CHEM 153L",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MCD BIO 100",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MCD BIO 165A",
-          "status": "active"
-         }
-        ],
-        "label": "Group C (Molecular and Cellular Biophysics)"
+        "type": "course",
+        "code": "PHYSICS C186",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 144",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 170A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE C286",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 153A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 153L",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MCD BIO 100",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MCD BIO 165A",
+        "status": "active"
        }
       ],
       "count": 3,
@@ -306,8 +296,10 @@
      }
     ],
     "label": "Honors Program",
-    "notes": "In addition to completing all courses required for the major, students must complete two 4-unit terms of Physics 199."
-   }
+    "notes": "In addition to completing all courses required for the major, students must complete two 4-unit terms of Physics 199.",
+    "optional": true
+   },
+   "optional": true
   }
  ],
  "narrative": []

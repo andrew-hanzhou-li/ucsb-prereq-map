@@ -142,7 +142,10 @@ def collect_major_courses(major):
             })
             return
 
-        if kind == "all":
+        if node.get("optional"):
+            # An honors program or substitute series: offered, not required.
+            next_role = "elective"
+        elif kind == "all":
             next_role = role
         elif kind == "choose" and node["count"] == 1 and len(items) <= 4 and role != "elective":
             next_role = "choice"
