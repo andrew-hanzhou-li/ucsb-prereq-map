@@ -22,7 +22,7 @@
       "status": "active"
      },
      {
-      "type": "choose",
+      "type": "all",
       "items": [
        {
         "type": "choose",
@@ -66,12 +66,17 @@
         "notes": "Select Greek 1, 2, and 3, or 16:"
        },
        {
-        "type": "course",
-        "code": "GREEK 20",
-        "status": "active"
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "GREEK 20",
+          "status": "active"
+         }
+        ],
+        "label": "Intermediate Greek"
        }
       ],
-      "count": 1,
       "label": "Greek",
       "notes": "Select one series in elementary Greek, and one course in intermediate Greek:"
      }

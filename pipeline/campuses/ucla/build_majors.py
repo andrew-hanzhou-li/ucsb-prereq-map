@@ -58,7 +58,7 @@ NUMBER_WORDS = {"one": 1, "two": 2, "three": 3, "four": 4, "five": 5, "six": 6, 
                 "nine": 9, "ten": 10, "eleven": 11, "twelve": 12, "thirteen": 13, "fourteen": 14, "fifteen": 15}
 COUNT = r"(\d+|" + "|".join(NUMBER_WORDS) + r")"
 CHOOSE_RULE = re.compile(r"^(?:(?:Select|Complete|Choose|Take)\s+)?(?:at least\s+|a minimum of\s+|any\s+|a total of\s+|an additional\s+)?" + COUNT +
-                         r"\b(?P<what>[^:]*?)\b(?:from|of the following)\b", re.IGNORECASE)
+                         r"\b(?P<what>[^:.]*?)\b(?:from|of the following)\b", re.IGNORECASE)
 # "two courses from each of the following principles", "one course from each of three of the four areas"
 EACH_RULE = re.compile(r"\bfrom (?:each of\s+(?:(?P<areas>\d+|" + "|".join(NUMBER_WORDS) + r")\s+of\b)?|"
                        r"(?P<some>\d+|" + "|".join(NUMBER_WORDS) + r")\s+of the following\s+(?:\w+\s+)?"
@@ -78,7 +78,7 @@ IMPERATIVE = re.compile(r"^(?:Complete|Select|Choose|Take|Students must)\b", re.
 # strongly recommended that they be taken early").
 RECOMMENDED_LINE = re.compile(r"^(?!(?:Complete|Select|Choose|Take)\b).*\brecommended\b", re.IGNORECASE)
 UNITS_RULE = re.compile(r"^(?:Select|Complete|Take)\s+(?:at least\s+|a minimum of\s+|a total of\s+)?(\d+(?:\.\d+)?|" + "|".join(NUMBER_WORDS) +
-                        r")\s+(?:additional\s+)?units?\b", re.IGNORECASE)
+                        r")\s+(?:additional\s+|[a-z]+\s+)?units?\b", re.IGNORECASE)
 COUNT_ONLY = re.compile(r"^(?:Select|Complete|Choose|Take)\s+(?:at least\s+|a minimum of\s+|any\s+|a total of\s+)?" + COUNT +
                         r"\s+(?!units?\b)(?:[\w-]+\s+){0,4}?(?:courses?|sequences?|series|options?|concentrations?)\b", re.IGNORECASE)
 # "Select eight courses total, four in one area of concentration and two in …"
@@ -313,7 +313,13 @@ class Converter:
         elif (total := TOTAL_RULE.match(line)) and count_of(total.group(1)) <= len(lists_joined(parts)):
             # (before "from each of": "eight courses total, four in one area and two from each of the others")
             node = {"type": "choose", "count": count_of(total.group(1)), "items": lists_joined(parts)}
-        elif TRACKS.search(line) and len(parts) > 1 and all(p["type"] != "course" and not p.get("_plain") for p in parts):
+        elif len(re.findall(r"\bone\s+(?:series|course|sequence)\b", line)) >= 2 and \
+                len(parts) == len(re.findall(r"\bone\s+(?:series|course|sequence)\b", line)):
+            # "Select one series in elementary Greek, and one course in intermediate Greek":
+            # one from each of the parts.
+            node = {"type": "all", "items": parts}
+        elif (TRACKS.search(line) or (not line and re.search(r"\b(?:tracks|plans|options|concentrations|pathways)$", title, re.IGNORECASE))) \
+                and len(parts) > 1 and all(p["type"] != "course" and (not p.get("_plain") or not line) for p in parts):
             node = {"type": "choose", "count": 1, "items": parts}
         elif (preferred := PREFERRED.search(line)) and count_of(preferred.group(1)) < len(parts):
             node = {"type": "choose", "count": count_of(preferred.group(1)), "items": parts}
@@ -361,8 +367,8 @@ class Converter:
                     and not re.search(r"\b(?:groups?|series|sets?|sequences?|pairs?)\b", choose.group("what"), re.IGNORECASE)):
                 # ("Select two courses from" the 1, 2 and 4 series: courses, from any of them.)
                 node["items"] = lists_joined(parts, keep_series=False)
-        elif ((counted := COUNT_ONLY.match(line)) and count_of(counted.group(1)) == len(or_pairs(parts, line))
-              and len(or_pairs(parts, line)) < len(parts)):
+        elif ((counted := COUNT_ONLY.match(line)) and len(or_pairs(parts, line)) < len(parts)
+              and count_of(counted.group(1)) == sum(1 for p in or_pairs(parts, line) if p["type"] in ("course", "choose"))):
             # "Complete four courses. Select either Mathematics 131B or 132." over five listed.
             node = {"type": "all", "items": or_pairs(parts, line)}
         elif ((counted := COUNT_ONLY.match(line)) and not ALL_RULE.match(line)
@@ -495,7 +501,7 @@ def one_concentration(sections):
     Concentration" as two sections; a student completes one. Two or more
     sections named "... Concentration" (or Option, Track) become one section,
     "Concentration", that's a "one of"."""
-    named = re.compile(r"\b(?:concentration|option|track)$", re.IGNORECASE)
+    named = re.compile(r"\b(?:concentration|option|track|plan)$", re.IGNORECASE)
     picks = [s for s in sections if named.search(s["name"]) and not s.get("optional")]
     if len(picks) < 2:
         return sections
@@ -596,7 +602,8 @@ def one_of_kind(parts, line):
         if re.search(r"\bminor$", label, re.IGNORECASE) or re.match(r"(?:For|Required for) the [^,]* minor\b", own, re.IGNORECASE) \
                 or re.match(r"Required for the .* minor", label, re.IGNORECASE):
             return "minor"
-        if re.match(r"(?:Plan|Option|Pathway)\s+(?:[IVX]+|\d+|[A-Z])\b", label):
+        if re.match(r"(?:Plan|Option|Pathway)\s+(?:[IVX]+|\d+|[A-Z])\b", label) or \
+                (not line and re.search(r"\b(?:track|plan|option|concentration)$", label, re.IGNORECASE)):
             return "plan"
         return None
     for which in ("minor", "plan"):

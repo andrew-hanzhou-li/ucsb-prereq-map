@@ -54,145 +54,180 @@
       "label": "Capstone Field Research"
      },
      {
-      "type": "choose",
+      "type": "all",
       "items": [
        {
-        "type": "course",
-        "code": "EPS SCI 136A",
-        "status": "active"
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "EPS SCI 136A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI 150",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI M171",
+          "status": "active"
+         }
+        ],
+        "label": "Computational Geosciences"
        },
        {
-        "type": "course",
-        "code": "EPS SCI 150",
-        "status": "active"
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "EPS SCI CM114A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI CM114B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI 116",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI M118",
+          "status": "active"
+         }
+        ],
+        "label": "Geobiology"
        },
        {
-        "type": "course",
-        "code": "EPS SCI M171",
-        "status": "active"
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "EPS SCI 103C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI C106",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI C107",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI C109",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI C113",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI 152",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI 153",
+          "status": "active"
+         }
+        ],
+        "label": "Geochemistry"
        },
        {
-        "type": "course",
-        "code": "EPS SCI CM114A",
-        "status": "active"
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "EPS SCI 136A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI C143",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI 155",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI C179",
+          "status": "active"
+         }
+        ],
+        "label": "Planetary Science"
        },
        {
-        "type": "course",
-        "code": "EPS SCI CM114B",
-        "status": "active"
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "EPS SCI 136A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI C143",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI 150",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI C162",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI C166",
+          "status": "active"
+         }
+        ],
+        "label": "Surface Processes"
        },
        {
-        "type": "course",
-        "code": "EPS SCI 116",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "EPS SCI M118",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "EPS SCI 103C",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "EPS SCI C106",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "EPS SCI C107",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "EPS SCI C109",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "EPS SCI C113",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "EPS SCI 152",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "EPS SCI 153",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "EPS SCI 136A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "EPS SCI C143",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "EPS SCI 155",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "EPS SCI C179",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "EPS SCI 136A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "EPS SCI C143",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "EPS SCI 150",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "EPS SCI C162",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "EPS SCI C166",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "EPS SCI 119",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "EPS SCI 133",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "EPS SCI 136A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "EPS SCI C166",
-        "status": "active"
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "EPS SCI 119",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI 133",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI 136A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI C166",
+          "status": "active"
+         }
+        ],
+        "label": "Tectonics/Structural Geology"
        }
       ],
-      "count": 5,
       "label": "Upper-Division Earth, Planetary, and Space Sciences Electives"
      }
     ],

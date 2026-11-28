@@ -299,7 +299,7 @@
       "status": "active"
      },
      {
-      "type": "choose",
+      "type": "units",
       "items": [
        {
         "type": "course",
@@ -332,7 +332,7 @@
         "status": "active"
        }
       ],
-      "count": 4,
+      "units": 4,
       "label": "Laboratory",
       "notes": "Select at least 4 laboratory units (one course) from:"
      },
@@ -568,7 +568,7 @@
       "notes": "Select at least 4 units of ecology and behavior (one course) from:"
      },
      {
-      "type": "choose",
+      "type": "units",
       "items": [
        {
         "type": "course",
@@ -681,7 +681,7 @@
         "status": "active"
        }
       ],
-      "count": 4,
+      "units": 4,
       "label": "Evolution",
       "notes": "Select at least 4 evolution units (one course) from following list. Students with credit for Ecology and Evolutionary Biology 120 cannot also take course 185. Students with credit for Life Sciences 4 cannot also take course 107."
      },

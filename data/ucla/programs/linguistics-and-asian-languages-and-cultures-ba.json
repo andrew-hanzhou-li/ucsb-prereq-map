@@ -58,7 +58,7 @@
     "type": "all",
     "items": [
      {
-      "type": "choose",
+      "type": "all",
       "items": [
        {
         "type": "course",
@@ -81,17 +81,22 @@
         "status": "active"
        },
        {
-        "type": "course",
-        "code": "LING 165A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "LING 165B",
-        "status": "active"
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "LING 165A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LING 165B",
+          "status": "active"
+         }
+        ],
+        "count": 1
        }
       ],
-      "count": 5,
       "label": "Required Linguistics Courses",
       "notes": "Complete five courses. Only one course from Linguistics 165A or 165B may be applied."
      },
@@ -379,7 +384,7 @@
       "notes": "minimum 4 graded units"
      },
      {
-      "type": "all",
+      "type": "choose",
       "items": [
        {
         "type": "all",
@@ -706,6 +711,7 @@
         "label": "Korean"
        }
       ],
+      "count": 1,
       "label": "Tracks"
      }
     ],

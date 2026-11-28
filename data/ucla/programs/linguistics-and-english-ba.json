@@ -9,7 +9,7 @@
   {
    "name": "Preparation for the Major",
    "requirement": {
-    "type": "choose",
+    "type": "all",
     "items": [
      {
       "type": "course",
@@ -17,14 +17,20 @@
       "status": "active"
      },
      {
-      "type": "course",
-      "code": "ENGL 4W",
-      "status": "active"
-     },
-     {
-      "type": "course",
-      "code": "ENGL 4HW",
-      "status": "active"
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "ENGL 4W",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 4HW",
+        "status": "active"
+       }
+      ],
+      "count": 1
      },
      {
       "type": "course",
@@ -46,7 +52,6 @@
       "text": "Complete the equivalent to the sixth level of one foreign language or the equivalent to the third level of two different foreign languages."
      }
     ],
-    "count": 5,
     "label": "Preparation for the Major",
     "notes": "Complete five courses and the foreign language requirement. Students may select English 4W or 4HW."
    }
@@ -57,7 +62,7 @@
     "type": "all",
     "items": [
      {
-      "type": "choose",
+      "type": "all",
       "items": [
        {
         "type": "course",
@@ -80,17 +85,22 @@
         "status": "active"
        },
        {
-        "type": "course",
-        "code": "LING 165A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "LING 165B",
-        "status": "active"
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "LING 165A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LING 165B",
+          "status": "active"
+         }
+        ],
+        "count": 1
        }
       ],
-      "count": 5,
       "label": "Linguistics Core",
       "notes": "Complete five courses. Only one course from Linguistics 165A or 165B may be applied."
      },
