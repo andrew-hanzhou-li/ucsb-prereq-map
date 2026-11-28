@@ -215,19 +215,24 @@
       ]
      },
      {
-      "type": "course",
-      "code": "LIFESCI 30A",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
       "type": "or",
       "items": [
        {
-        "type": "course",
-        "code": "LIFESCI 30B",
-        "concurrent": false,
-        "min_grade": null
+        "type": "and",
+        "items": [
+         {
+          "type": "course",
+          "code": "LIFESCI 30A",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "LIFESCI 30B",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
        },
        {
         "type": "and",
@@ -268,7 +273,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -425,9 +430,21 @@
    "code": "A&O SCI 104",
    "prereq_text": "Chemistry 14B or 20B",
    "requires": {
-    "type": "condition",
-    "kind": "other",
-    "text": "Chemistry 14B or 20B"
+    "type": "or",
+    "items": [
+     {
+      "type": "course",
+      "code": "CHEM 14B",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "course",
+      "code": "CHEM 20B",
+      "concurrent": false,
+      "min_grade": null
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -562,16 +579,21 @@
     "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "A&O SCI 101",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "A&O SCI 103",
-      "concurrent": false,
-      "min_grade": null
+      "type": "and",
+      "items": [
+       {
+        "type": "course",
+        "code": "A&O SCI 101",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "A&O SCI 103",
+        "concurrent": false,
+        "min_grade": null
+       }
+      ]
      },
      {
       "type": "condition",
@@ -722,9 +744,21 @@
     "type": "and",
     "items": [
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "Chemistry 14B or 20B"
+      "type": "or",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 14B",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "CHEM 20B",
+        "concurrent": false,
+        "min_grade": null
+       }
+      ]
      },
      {
       "type": "or",
@@ -10967,106 +11001,116 @@
     "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "ASIA AM 10",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "ASIA AM 10W",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "ASIA AM 20",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "ASIA AM 20W",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "ASIA AM 30",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "ASIA AM 30W",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "ASIA AM 40",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "ASIA AM 40W",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "ASIA AM 50",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "ASIA AM 50W",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "ASIA AM 123",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "ASIA AM 133",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "ASIA AM M171D",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "HIST M144C",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "FILIPNO 130A",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "FILIPNO 152",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "FILIPNO 155",
-      "concurrent": false,
-      "min_grade": null
+      "type": "and",
+      "items": [
+       {
+        "type": "or",
+        "items": [
+         {
+          "type": "course",
+          "code": "ASIA AM 10",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "ASIA AM 10W",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "ASIA AM 20",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "ASIA AM 20W",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "ASIA AM 30",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "ASIA AM 30W",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "ASIA AM 40",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "ASIA AM 40W",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "ASIA AM 50",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "ASIA AM 50W",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "ASIA AM 123",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "ASIA AM 133",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "ASIA AM M171D",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "HIST M144C",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
+       },
+       {
+        "type": "course",
+        "code": "FILIPNO 130A",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "FILIPNO 152",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "FILIPNO 155",
+        "concurrent": false,
+        "min_grade": null
+       }
+      ]
      },
      {
       "type": "condition",
@@ -13131,9 +13175,22 @@
     "type": "and",
     "items": [
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "Chemistry 20A"
+      "type": "course",
+      "code": "CHEM 20A",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "course",
+      "code": "CHEM 20B",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "course",
+      "code": "CHEM 30A",
+      "concurrent": false,
+      "min_grade": null
      },
      {
       "type": "course",
@@ -13151,9 +13208,27 @@
    "code": "BIOENGR C105",
    "prereq_text": "Chemistry 20A, 20B, 20L",
    "requires": {
-    "type": "condition",
-    "kind": "other",
-    "text": "Chemistry 20A and 20B and 20L"
+    "type": "and",
+    "items": [
+     {
+      "type": "course",
+      "code": "CHEM 20A",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "course",
+      "code": "CHEM 20B",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "course",
+      "code": "CHEM 20L",
+      "concurrent": false,
+      "min_grade": null
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -13166,9 +13241,10 @@
     "type": "and",
     "items": [
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "Chemistry 20B"
+      "type": "course",
+      "code": "CHEM 20B",
+      "concurrent": false,
+      "min_grade": null
      },
      {
       "type": "course",
@@ -13319,16 +13395,21 @@
     "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "MATH 33A",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "PHYSICS 1C",
-      "concurrent": false,
-      "min_grade": null
+      "type": "and",
+      "items": [
+       {
+        "type": "course",
+        "code": "MATH 33A",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 1C",
+        "concurrent": false,
+        "min_grade": null
+       }
+      ]
      },
      {
       "type": "condition",
@@ -13348,9 +13429,10 @@
     "type": "and",
     "items": [
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "Chemistry 20A"
+      "type": "course",
+      "code": "CHEM 20A",
+      "concurrent": false,
+      "min_grade": null
      },
      {
       "type": "course",
@@ -13563,19 +13645,20 @@
       "min_grade": null
      },
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "Chemistry 20A"
-     },
-     {
       "type": "course",
-      "code": "BIOENGR 20B",
+      "code": "CHEM 20A",
       "concurrent": false,
       "min_grade": null
      },
      {
       "type": "course",
-      "code": "BIOENGR 20L",
+      "code": "CHEM 20B",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "course",
+      "code": "CHEM 20L",
       "concurrent": false,
       "min_grade": null
      },
@@ -13598,9 +13681,10 @@
     "type": "and",
     "items": [
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "Chemistry 20A"
+      "type": "course",
+      "code": "CHEM 20A",
+      "concurrent": false,
+      "min_grade": null
      },
      {
       "type": "course",
@@ -13665,9 +13749,10 @@
    "code": "BIOENGR 167L",
    "prereq_text": "Chemistry 20L",
    "requires": {
-    "type": "condition",
-    "kind": "other",
-    "text": "Chemistry 20L"
+    "type": "course",
+    "code": "CHEM 20L",
+    "concurrent": false,
+    "min_grade": null
    },
    "source": "parser",
    "ambiguous": false,
@@ -13692,7 +13777,7 @@
       "items": [
        {
         "type": "course",
-        "code": "ENGR M20",
+        "code": "C&EE M20",
         "concurrent": false,
         "min_grade": null
        },
@@ -13726,9 +13811,7 @@
    },
    "source": "parser",
    "ambiguous": true,
-   "unparsed": [
-    "(Civil ENGR 20QQM"
-   ]
+   "unparsed": []
   },
   {
    "code": "BIOENGR 176",
@@ -13809,9 +13892,38 @@
    "code": "BIOENGR CM178",
    "prereq_text": "Chemistry 20A, 20B, and 20L, or Materials Science 104",
    "requires": {
-    "type": "condition",
-    "kind": "other",
-    "text": "Chemistry 20A and 20B and 20L"
+    "type": "or",
+    "items": [
+     {
+      "type": "and",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 20A",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "CHEM 20B",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "CHEM 20L",
+        "concurrent": false,
+        "min_grade": null
+       }
+      ]
+     },
+     {
+      "type": "course",
+      "code": "MAT SCI 104",
+      "concurrent": false,
+      "min_grade": null
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -13968,9 +14080,27 @@
    "code": "BIOENGR C183",
    "prereq_text": "Chemistry 20A, 20B, 20L",
    "requires": {
-    "type": "condition",
-    "kind": "other",
-    "text": "Chemistry 20A and 20B and 20L"
+    "type": "and",
+    "items": [
+     {
+      "type": "course",
+      "code": "CHEM 20A",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "course",
+      "code": "CHEM 20B",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "course",
+      "code": "CHEM 20L",
+      "concurrent": false,
+      "min_grade": null
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -13987,7 +14117,7 @@
       "items": [
        {
         "type": "course",
-        "code": "ENGR M20",
+        "code": "C&EE M20",
         "concurrent": false,
         "min_grade": null
        },
@@ -14038,17 +14168,50 @@
    },
    "source": "parser",
    "ambiguous": false,
-   "unparsed": [
-    "Civil ENGR 20QQM"
-   ]
+   "unparsed": []
   },
   {
    "code": "BIOENGR C185",
    "prereq_text": "course CM102 or CM202, Chemistry 20A, 20B, 20L",
    "requires": {
-    "type": "condition",
-    "kind": "other",
-    "text": "BIOENGR 102QQCM or 202QQCM and Chemistry 20A and 20B and 20L"
+    "type": "and",
+    "items": [
+     {
+      "type": "or",
+      "items": [
+       {
+        "type": "course",
+        "code": "BIOENGR CM102",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "BIOENGR CM202",
+        "concurrent": false,
+        "min_grade": null
+       }
+      ]
+     },
+     {
+      "type": "course",
+      "code": "CHEM 20A",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "course",
+      "code": "CHEM 20B",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "course",
+      "code": "CHEM 20L",
+      "concurrent": false,
+      "min_grade": null
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -15210,13 +15373,14 @@
       ]
      },
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "Chemistry 20A"
+      "type": "course",
+      "code": "CHEM 20A",
+      "concurrent": false,
+      "min_grade": null
      },
      {
       "type": "course",
-      "code": "MECH&AE 20B",
+      "code": "CHEM 20B",
       "concurrent": false,
       "min_grade": null
      },
@@ -15406,13 +15570,14 @@
       "min_grade": null
      },
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "Chemistry 20A"
+      "type": "course",
+      "code": "CHEM 20A",
+      "concurrent": false,
+      "min_grade": null
      },
      {
       "type": "course",
-      "code": "C&EE 20B",
+      "code": "CHEM 20B",
       "concurrent": false,
       "min_grade": null
      },
@@ -15631,7 +15796,7 @@
      },
      {
       "type": "course",
-      "code": "COM SCI 108",
+      "code": "C&EE 108",
       "concurrent": false,
       "min_grade": null
      }
@@ -15917,10 +16082,21 @@
       ]
      },
      {
-      "type": "course",
-      "code": "MECH&AE 103",
-      "concurrent": false,
-      "min_grade": null
+      "type": "or",
+      "items": [
+       {
+        "type": "course",
+        "code": "C&EE 107",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE 103",
+        "concurrent": false,
+        "min_grade": null
+       }
+      ]
      }
     ]
    },
@@ -15953,7 +16129,7 @@
      },
      {
       "type": "course",
-      "code": "MECH&AE 150",
+      "code": "C&EE 150",
       "concurrent": false,
       "min_grade": null
      }
@@ -16035,13 +16211,14 @@
       "min_grade": null
      },
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "Chemistry 20A"
+      "type": "course",
+      "code": "CHEM 20A",
+      "concurrent": true,
+      "min_grade": null
      },
      {
       "type": "course",
-      "code": "C&EE 20B",
+      "code": "CHEM 20B",
       "concurrent": true,
       "min_grade": null
      }
@@ -16055,9 +16232,21 @@
    "code": "C&EE 156B",
    "prereq_text": "Chemistry 20A, 20B",
    "requires": {
-    "type": "condition",
-    "kind": "other",
-    "text": "Chemistry 20A"
+    "type": "and",
+    "items": [
+     {
+      "type": "course",
+      "code": "CHEM 20A",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "course",
+      "code": "CHEM 20B",
+      "concurrent": false,
+      "min_grade": null
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -16600,19 +16789,24 @@
       ]
      },
      {
-      "type": "course",
-      "code": "LIFESCI 30A",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
       "type": "or",
       "items": [
        {
-        "type": "course",
-        "code": "LIFESCI 30B",
-        "concurrent": false,
-        "min_grade": null
+        "type": "and",
+        "items": [
+         {
+          "type": "course",
+          "code": "LIFESCI 30A",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "LIFESCI 30B",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
        },
        {
         "type": "and",
@@ -16638,24 +16832,29 @@
         ]
        },
        {
-        "type": "course",
-        "code": "MATH 31A",
-        "concurrent": false,
-        "min_grade": null
+        "type": "and",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 31A",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "MATH 31B",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "MATH 32A",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
        }
       ]
-     },
-     {
-      "type": "course",
-      "code": "MATH 31B",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "MATH 32A",
-      "concurrent": false,
-      "min_grade": null
      },
      {
       "type": "or",
@@ -16689,7 +16888,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -17056,7 +17255,7 @@
       "items": [
        {
         "type": "course",
-        "code": "ENGR M20",
+        "code": "C&EE M20",
         "concurrent": false,
         "min_grade": null
        },
@@ -17107,9 +17306,7 @@
    },
    "source": "parser",
    "ambiguous": false,
-   "unparsed": [
-    "Civil ENGR 20QQM"
-   ]
+   "unparsed": []
   },
   {
    "code": "C&S BIO 185",
@@ -19753,9 +19950,15 @@
     "type": "and",
     "items": [
      {
+      "type": "course",
+      "code": "CHEM 20B",
+      "concurrent": true,
+      "min_grade": null
+     },
+     {
       "type": "condition",
       "kind": "other",
-      "text": "Chemistry 20B"
+      "text": "20L (not enforced)"
      },
      {
       "type": "course",
@@ -20242,9 +20445,21 @@
       "min_grade": null
      },
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "102B or Materials Science 130"
+      "type": "or",
+      "items": [
+       {
+        "type": "course",
+        "code": "CH ENGR 102B",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "MAT SCI 130",
+        "concurrent": false,
+        "min_grade": null
+       }
+      ]
      }
     ]
    },
@@ -20265,9 +20480,10 @@
       "min_grade": null
      },
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "Chemistry 30A"
+      "type": "course",
+      "code": "CHEM 30A",
+      "concurrent": false,
+      "min_grade": null
      }
     ]
    },
@@ -20321,9 +20537,10 @@
         "min_grade": null
        },
        {
-        "type": "condition",
-        "kind": "other",
-        "text": "Materials Science 130"
+        "type": "course",
+        "code": "MAT SCI 130",
+        "concurrent": false,
+        "min_grade": null
        }
       ]
      }
@@ -20448,9 +20665,10 @@
    "code": "CH ENGR CM127",
    "prereq_text": "Chemistry 153A",
    "requires": {
-    "type": "condition",
-    "kind": "other",
-    "text": "Chemistry 153A"
+    "type": "course",
+    "code": "CHEM 153A",
+    "concurrent": false,
+    "min_grade": null
    },
    "source": "parser",
    "ambiguous": false,
@@ -20460,9 +20678,10 @@
    "code": "CH ENGR C128",
    "prereq_text": "Chemistry 20A",
    "requires": {
-    "type": "condition",
-    "kind": "other",
-    "text": "Chemistry 20A"
+    "type": "course",
+    "code": "CHEM 20A",
+    "concurrent": false,
+    "min_grade": null
    },
    "source": "parser",
    "ambiguous": false,
@@ -20595,9 +20814,10 @@
     "type": "and",
     "items": [
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "Chemistry 20A"
+      "type": "course",
+      "code": "CHEM 20A",
+      "concurrent": false,
+      "min_grade": null
      },
      {
       "type": "course",
@@ -21177,7 +21397,7 @@
        {
         "type": "condition",
         "kind": "other",
-        "text": "20B or 20BH) and 20L"
+        "text": "20B or 20BH and 20L"
        },
        {
         "type": "course",
@@ -21865,17 +22085,42 @@
       ]
      },
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "14B or 14BE or 20B or 20BH"
+      "type": "or",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 14B",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "CHEM 14BE",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "CHEM 20B",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "CHEM 20BH",
+        "concurrent": false,
+        "min_grade": null
+       }
+      ]
      },
      {
       "type": "or",
       "items": [
        {
-        "type": "condition",
-        "kind": "other",
-        "text": "MATH 3C (for life sciences majors)"
+        "type": "course",
+        "code": "MATH 3C",
+        "concurrent": false,
+        "min_grade": null
        },
        {
         "type": "course",
@@ -21886,73 +22131,83 @@
       ]
      },
      {
-      "type": "course",
-      "code": "PHYSICS 1A",
-      "concurrent": true,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "PHYSICS 1B",
-      "concurrent": true,
-      "min_grade": null
-     },
-     {
       "type": "or",
       "items": [
        {
-        "type": "course",
-        "code": "PHYSICS 1C",
-        "concurrent": true,
-        "min_grade": null
+        "type": "and",
+        "items": [
+         {
+          "type": "course",
+          "code": "PHYSICS 1A",
+          "concurrent": true,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 1B",
+          "concurrent": true,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 1C",
+          "concurrent": true,
+          "min_grade": null
+         }
+        ]
        },
        {
-        "type": "course",
-        "code": "PHYSICS 1AH",
-        "concurrent": true,
-        "min_grade": null
-       }
-      ]
-     },
-     {
-      "type": "course",
-      "code": "PHYSICS 1BH",
-      "concurrent": true,
-      "min_grade": null
-     },
-     {
-      "type": "or",
-      "items": [
-       {
-        "type": "course",
-        "code": "PHYSICS 1CH",
-        "concurrent": true,
-        "min_grade": null
+        "type": "and",
+        "items": [
+         {
+          "type": "course",
+          "code": "PHYSICS 1AH",
+          "concurrent": true,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 1BH",
+          "concurrent": true,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 1CH",
+          "concurrent": true,
+          "min_grade": null
+         }
+        ]
        },
        {
-        "type": "course",
-        "code": "PHYSICS 5A",
-        "concurrent": true,
-        "min_grade": null
+        "type": "and",
+        "items": [
+         {
+          "type": "course",
+          "code": "PHYSICS 5A",
+          "concurrent": true,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 5B",
+          "concurrent": true,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 5C",
+          "concurrent": true,
+          "min_grade": null
+         }
+        ]
        }
       ]
-     },
-     {
-      "type": "course",
-      "code": "PHYSICS 5B",
-      "concurrent": true,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "PHYSICS 5C",
-      "concurrent": true,
-      "min_grade": null
      }
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -29814,13 +30069,13 @@
       "items": [
        {
         "type": "course",
-        "code": "ENGR 110",
+        "code": "C&EE 110",
         "concurrent": false,
         "min_grade": null
        },
        {
         "type": "course",
-        "code": "ENGR 131A",
+        "code": "EC ENGR 131A",
         "concurrent": false,
         "min_grade": null
        },
@@ -29842,10 +30097,7 @@
    },
    "source": "parser",
    "ambiguous": false,
-   "unparsed": [
-    "Civil ENGR 110",
-    "Electrical ENGR 131A"
-   ]
+   "unparsed": []
   },
   {
    "code": "COM SCI 117",
@@ -29932,7 +30184,7 @@
    "source": "parser",
    "ambiguous": false,
    "unparsed": [
-    "one course from CQEE 110))"
+    "one course from CQEE 110"
    ]
   },
   {
@@ -30027,7 +30279,7 @@
       "items": [
        {
         "type": "course",
-        "code": "ENGR 110",
+        "code": "C&EE 110",
         "concurrent": false,
         "min_grade": "C-"
        },
@@ -30061,9 +30313,7 @@
    },
    "source": "parser",
    "ambiguous": true,
-   "unparsed": [
-    "Civil ENGR 110"
-   ]
+   "unparsed": []
   },
   {
    "code": "COM SCI C124",
@@ -30099,7 +30349,7 @@
       "items": [
        {
         "type": "course",
-        "code": "ENGR 110",
+        "code": "C&EE 110",
         "concurrent": false,
         "min_grade": "C-"
        },
@@ -30133,9 +30383,7 @@
    },
    "source": "parser",
    "ambiguous": true,
-   "unparsed": [
-    "Civil ENGR 110"
-   ]
+   "unparsed": []
   },
   {
    "code": "COM SCI 130",
@@ -30540,7 +30788,7 @@
        },
        {
         "type": "course",
-        "code": "ENGR M116C",
+        "code": "EC ENGR M116C",
         "concurrent": false,
         "min_grade": null
        }
@@ -30555,9 +30803,7 @@
    },
    "source": "parser",
    "ambiguous": false,
-   "unparsed": [
-    "Electrical ENGR 116CQQM"
-   ]
+   "unparsed": []
   },
   {
    "code": "COM SCI M152A",
@@ -31003,7 +31249,7 @@
        },
        {
         "type": "course",
-        "code": "ENGR M20",
+        "code": "C&EE M20",
         "concurrent": false,
         "min_grade": null
        },
@@ -31048,9 +31294,7 @@
    },
    "source": "parser",
    "ambiguous": false,
-   "unparsed": [
-    "Civil ENGR 20QQM"
-   ]
+   "unparsed": []
   },
   {
    "code": "COM SCI CM186",
@@ -31902,56 +32146,41 @@
    "code": "COMM 153",
    "prereq_text": "one course from Computer Science 31, 32, Program in Computing 10A, 10B with grade of C&plus; or better, or equivalent",
    "requires": {
-    "type": "or",
+    "type": "and",
     "items": [
      {
-      "type": "and",
-      "items": [
-       {
-        "type": "or",
-        "items": [
-         {
-          "type": "course",
-          "code": "COM SCI 31",
-          "concurrent": false,
-          "min_grade": "C"
-         },
-         {
-          "type": "course",
-          "code": "COM SCI 32",
-          "concurrent": false,
-          "min_grade": "C"
-         },
-         {
-          "type": "course",
-          "code": "COMPTNG 10A",
-          "concurrent": false,
-          "min_grade": "C"
-         },
-         {
-          "type": "course",
-          "code": "COMPTNG 10B",
-          "concurrent": false,
-          "min_grade": "C"
-         }
-        ]
-       },
-       {
-        "type": "condition",
-        "kind": "other",
-        "text": "plus"
-       }
-      ]
+      "type": "course",
+      "code": "COM SCI 31",
+      "concurrent": false,
+      "min_grade": "C"
+     },
+     {
+      "type": "course",
+      "code": "COM SCI 32",
+      "concurrent": false,
+      "min_grade": "C"
+     },
+     {
+      "type": "course",
+      "code": "COMPTNG 10A",
+      "concurrent": false,
+      "min_grade": "C"
+     },
+     {
+      "type": "course",
+      "code": "COMPTNG 10B",
+      "concurrent": false,
+      "min_grade": "C"
      },
      {
       "type": "condition",
       "kind": "other",
-      "text": "better"
+      "text": "plus"
      }
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": [
     "one course from COM SCI 31"
    ]
@@ -33669,7 +33898,7 @@
      {
       "type": "condition",
       "kind": "other",
-      "text": "DANCE 8 units of choreography as creative inquiry courses"
+      "text": "8 units of choreography as creative inquiry courses"
      },
      {
       "type": "condition",
@@ -36679,9 +36908,10 @@
         "min_grade": null
        },
        {
-        "type": "condition",
-        "kind": "other",
-        "text": "Materials Science 10"
+        "type": "course",
+        "code": "MAT SCI 10",
+        "concurrent": false,
+        "min_grade": null
        }
       ]
      },
@@ -36739,9 +36969,10 @@
         "min_grade": null
        },
        {
-        "type": "condition",
-        "kind": "other",
-        "text": "Materials Science 10"
+        "type": "course",
+        "code": "MAT SCI 10",
+        "concurrent": false,
+        "min_grade": null
        }
       ]
      },
@@ -37499,7 +37730,7 @@
    "source": "parser",
    "ambiguous": false,
    "unparsed": [
-    "one course from EC ENGR 131A)"
+    "one course from EC ENGR 131A"
    ]
   },
   {
@@ -37707,7 +37938,7 @@
       "items": [
        {
         "type": "course",
-        "code": "ENGR M20",
+        "code": "C&EE M20",
         "concurrent": false,
         "min_grade": null
        },
@@ -37729,9 +37960,7 @@
    },
    "source": "parser",
    "ambiguous": true,
-   "unparsed": [
-    "(Civil ENGR 20QQM"
-   ]
+   "unparsed": []
   },
   {
    "code": "EC ENGR 133B",
@@ -37980,9 +38209,10 @@
     "type": "and",
     "items": [
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "Chemistry 20A"
+      "type": "course",
+      "code": "CHEM 20A",
+      "concurrent": false,
+      "min_grade": null
      },
      {
       "type": "course",
@@ -39020,16 +39250,21 @@
       "type": "or",
       "items": [
        {
-        "type": "course",
-        "code": "ECON 1",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
-        "type": "course",
-        "code": "ECON 2",
-        "concurrent": false,
-        "min_grade": null
+        "type": "and",
+        "items": [
+         {
+          "type": "course",
+          "code": "ECON 1",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "ECON 2",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
        },
        {
         "type": "condition",
@@ -40093,28 +40328,33 @@
       "type": "or",
       "items": [
        {
-        "type": "course",
-        "code": "ECON 41",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
-        "type": "course",
-        "code": "ECON 102",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
-        "type": "course",
-        "code": "ECON 103",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
-        "type": "course",
-        "code": "ECON 103L",
-        "concurrent": false,
-        "min_grade": null
+        "type": "and",
+        "items": [
+         {
+          "type": "course",
+          "code": "ECON 41",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "ECON 102",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "ECON 103",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "ECON 103L",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
        },
        {
         "type": "condition",
@@ -40145,28 +40385,33 @@
       "type": "or",
       "items": [
        {
-        "type": "course",
-        "code": "ECON 41",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
-        "type": "course",
-        "code": "ECON 102",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
-        "type": "course",
-        "code": "ECON 103",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
-        "type": "course",
-        "code": "ECON 103L",
-        "concurrent": false,
-        "min_grade": null
+        "type": "and",
+        "items": [
+         {
+          "type": "course",
+          "code": "ECON 41",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "ECON 102",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "ECON 103",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "ECON 103L",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
        },
        {
         "type": "condition",
@@ -45832,17 +46077,54 @@
     "type": "or",
     "items": [
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "Chemistry 14A and 14B and 14BL"
+      "type": "and",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 14A",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "CHEM 14B",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "CHEM 14BL",
+        "concurrent": false,
+        "min_grade": null
+       }
+      ]
      },
      {
       "type": "and",
       "items": [
        {
-        "type": "condition",
-        "kind": "other",
-        "text": "Chemistry 20A"
+        "type": "course",
+        "code": "CHEM 20A",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "CHEM 20B",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "CHEM 20L",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "CHEM 30AL",
+        "concurrent": false,
+        "min_grade": null
        },
        {
         "type": "course",
@@ -45859,6 +46141,29 @@
        {
         "type": "course",
         "code": "LIFESCI 23L",
+        "concurrent": false,
+        "min_grade": null
+       }
+      ]
+     },
+     {
+      "type": "and",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 7A",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "CHEM 7B",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "CHEM 23L",
         "concurrent": false,
         "min_grade": null
        }
@@ -45913,9 +46218,26 @@
     "type": "and",
     "items": [
      {
+      "type": "or",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 14A",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "CHEM 20A",
+        "concurrent": false,
+        "min_grade": null
+       }
+      ]
+     },
+     {
       "type": "condition",
       "kind": "other",
-      "text": "Chemistry 14A"
+      "text": "14C"
      },
      {
       "type": "course",
@@ -46430,17 +46752,25 @@
     "type": "or",
     "items": [
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "(Chemistry 14D)"
+      "type": "course",
+      "code": "CHEM 14D",
+      "concurrent": false,
+      "min_grade": null
      },
      {
       "type": "and",
       "items": [
        {
-        "type": "condition",
-        "kind": "other",
-        "text": "Chemistry 30B"
+        "type": "course",
+        "code": "CHEM 30B",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "CHEM 30BL",
+        "concurrent": false,
+        "min_grade": null
        },
        {
         "type": "course",
@@ -46537,6 +46867,11 @@
         "min_grade": null
        }
       ]
+     },
+     {
+      "type": "condition",
+      "kind": "other",
+      "text": "5B or 6C or 6CH"
      }
     ]
    },
@@ -46592,9 +46927,43 @@
       "type": "and",
       "items": [
        {
-        "type": "condition",
-        "kind": "other",
-        "text": "Chemistry 14A"
+        "type": "or",
+        "items": [
+         {
+          "type": "and",
+          "items": [
+           {
+            "type": "course",
+            "code": "CHEM 14A",
+            "concurrent": false,
+            "min_grade": null
+           },
+           {
+            "type": "course",
+            "code": "CHEM 14B",
+            "concurrent": false,
+            "min_grade": null
+           }
+          ]
+         },
+         {
+          "type": "and",
+          "items": [
+           {
+            "type": "course",
+            "code": "CHEM 20A",
+            "concurrent": false,
+            "min_grade": null
+           },
+           {
+            "type": "course",
+            "code": "CHEM 20B",
+            "concurrent": false,
+            "min_grade": null
+           }
+          ]
+         }
+        ]
        },
        {
         "type": "course",
@@ -56831,72 +57200,87 @@
       ]
      },
      {
-      "type": "course",
-      "code": "MATH 3A",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "MATH 3B",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
       "type": "or",
       "items": [
        {
-        "type": "course",
-        "code": "MATH 3C",
-        "concurrent": false,
-        "min_grade": null
+        "type": "and",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 3A",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "MATH 3B",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "MATH 3C",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
        },
        {
-        "type": "course",
-        "code": "MATH 31A",
-        "concurrent": false,
-        "min_grade": null
+        "type": "and",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 31A",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "MATH 31B",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "MATH 32A",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
        }
       ]
      },
      {
-      "type": "course",
-      "code": "MATH 31B",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "MATH 32A",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "PHYSICS 1A",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "PHYSICS 1B",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "PHYSICS 4AL",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
       "type": "or",
       "items": [
        {
-        "type": "course",
-        "code": "PHYSICS 4BL",
-        "concurrent": false,
-        "min_grade": null
+        "type": "and",
+        "items": [
+         {
+          "type": "course",
+          "code": "PHYSICS 1A",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 1B",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 4AL",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 4BL",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
        },
        {
         "type": "and",
@@ -56920,7 +57304,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -57441,9 +57825,43 @@
       "type": "and",
       "items": [
        {
-        "type": "condition",
-        "kind": "other",
-        "text": "Chemistry 14A"
+        "type": "or",
+        "items": [
+         {
+          "type": "and",
+          "items": [
+           {
+            "type": "course",
+            "code": "CHEM 14A",
+            "concurrent": false,
+            "min_grade": null
+           },
+           {
+            "type": "course",
+            "code": "CHEM 14B",
+            "concurrent": false,
+            "min_grade": null
+           }
+          ]
+         },
+         {
+          "type": "and",
+          "items": [
+           {
+            "type": "course",
+            "code": "CHEM 20A",
+            "concurrent": false,
+            "min_grade": null
+           },
+           {
+            "type": "course",
+            "code": "CHEM 20B",
+            "concurrent": false,
+            "min_grade": null
+           }
+          ]
+         }
+        ]
        },
        {
         "type": "course",
@@ -60745,20 +61163,9 @@
    "code": "FILM TV 175A",
    "prereq_text": "185; and Limited to Film and Television majors",
    "requires": {
-    "type": "and",
-    "items": [
-     {
-      "type": "course",
-      "code": "FILM TV 185",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "condition",
-      "kind": "restriction",
-      "text": "Limited to Film and Television majors"
-     }
-    ]
+    "type": "condition",
+    "kind": "restriction",
+    "text": "Limited to Film and Television majors"
    },
    "source": "parser",
    "ambiguous": false,
@@ -61288,9 +61695,10 @@
    "code": "FOOD ST M157",
    "prereq_text": "Chemistry 153A",
    "requires": {
-    "type": "condition",
-    "kind": "other",
-    "text": "Chemistry 153A"
+    "type": "course",
+    "code": "CHEM 153A",
+    "concurrent": false,
+    "min_grade": null
    },
    "source": "parser",
    "ambiguous": false,
@@ -68244,7 +68652,7 @@
      {
       "type": "condition",
       "kind": "other",
-      "text": "(equivalent knowledge of Hebrew)"
+      "text": "equivalent knowledge of Hebrew"
      }
     ]
    },
@@ -81254,13 +81662,14 @@
       "type": "or",
       "items": [
        {
-        "type": "condition",
-        "kind": "other",
-        "text": "Chemistry 14C"
+        "type": "course",
+        "code": "CHEM 14C",
+        "concurrent": false,
+        "min_grade": null
        },
        {
         "type": "course",
-        "code": "LIFESCI 30A",
+        "code": "CHEM 30A",
         "concurrent": false,
         "min_grade": null
        }
@@ -81541,13 +81950,14 @@
       "type": "or",
       "items": [
        {
-        "type": "condition",
-        "kind": "other",
-        "text": "Chemistry 14A"
+        "type": "course",
+        "code": "CHEM 14A",
+        "concurrent": false,
+        "min_grade": null
        },
        {
         "type": "course",
-        "code": "LIFESCI 20A",
+        "code": "CHEM 20A",
         "concurrent": false,
         "min_grade": null
        }
@@ -83681,9 +84091,22 @@
     "type": "and",
     "items": [
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "Chemistry 20A"
+      "type": "course",
+      "code": "CHEM 20A",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "course",
+      "code": "CHEM 20B",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "course",
+      "code": "CHEM 20L",
+      "concurrent": false,
+      "min_grade": null
      },
      {
       "type": "course",
@@ -83710,9 +84133,16 @@
     "type": "and",
     "items": [
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "Chemistry 20A"
+      "type": "course",
+      "code": "CHEM 20A",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "course",
+      "code": "CHEM 20B",
+      "concurrent": false,
+      "min_grade": null
      },
      {
       "type": "course",
@@ -83803,9 +84233,10 @@
         "min_grade": null
        },
        {
-        "type": "condition",
-        "kind": "other",
-        "text": "Chemistry 113A"
+        "type": "course",
+        "code": "CHEM 113A",
+        "concurrent": false,
+        "min_grade": null
        }
       ]
      }
@@ -83880,9 +84311,10 @@
       "min_grade": null
      },
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "Chemistry 110A"
+      "type": "course",
+      "code": "CHEM 110A",
+      "concurrent": false,
+      "min_grade": null
      }
     ]
    },
@@ -84160,9 +84592,27 @@
       "min_grade": null
      },
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "Chemistry 20A and 20B and 20L"
+      "type": "and",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 20A",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "CHEM 20B",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "CHEM 20L",
+        "concurrent": false,
+        "min_grade": null
+       }
+      ]
      }
     ]
    },
@@ -88076,9 +88526,21 @@
       "type": "and",
       "items": [
        {
-        "type": "condition",
-        "kind": "other",
-        "text": "Chemistry 14D or 30B"
+        "type": "or",
+        "items": [
+         {
+          "type": "course",
+          "code": "CHEM 14D",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "CHEM 30B",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
        },
        {
         "type": "course",
@@ -88167,9 +88629,21 @@
     "type": "or",
     "items": [
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "Chemistry 153A"
+      "type": "and",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 153A",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "CHEM 153B",
+        "concurrent": false,
+        "min_grade": null
+       }
+      ]
      },
      {
       "type": "and",
@@ -88187,9 +88661,10 @@
         "min_grade": null
        },
        {
-        "type": "condition",
-        "kind": "other",
-        "text": "Chemistry 153L"
+        "type": "course",
+        "code": "CHEM 153L",
+        "concurrent": false,
+        "min_grade": null
        }
       ]
      }
@@ -88218,9 +88693,15 @@
       "min_grade": null
      },
      {
+      "type": "course",
+      "code": "CHEM 153B",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
       "type": "condition",
       "kind": "other",
-      "text": "Chemistry 153B"
+      "text": "Microbiology 132"
      }
     ]
    },
@@ -88374,9 +88855,21 @@
     "type": "and",
     "items": [
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "Chemistry 14C"
+      "type": "or",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 14C",
+        "concurrent": true,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "CHEM 30A",
+        "concurrent": false,
+        "min_grade": null
+       }
+      ]
      },
      {
       "type": "course",
@@ -89787,9 +90280,10 @@
     "type": "and",
     "items": [
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "Chemistry 20B"
+      "type": "course",
+      "code": "CHEM 20B",
+      "concurrent": false,
+      "min_grade": null
      },
      {
       "type": "course",
@@ -89858,13 +90352,13 @@
      },
      {
       "type": "course",
-      "code": "COM SCI 82",
+      "code": "MECH&AE 82",
       "concurrent": false,
       "min_grade": null
      },
      {
       "type": "course",
-      "code": "ENGR 100",
+      "code": "EC ENGR 100",
       "concurrent": false,
       "min_grade": null
      }
@@ -89872,9 +90366,7 @@
    },
    "source": "parser",
    "ambiguous": false,
-   "unparsed": [
-    "Electrical ENGR 100"
-   ]
+   "unparsed": []
   },
   {
    "code": "MECH&AE 131A",
@@ -89893,7 +90385,7 @@
        },
        {
         "type": "course",
-        "code": "ENGR M20",
+        "code": "C&EE M20",
         "concurrent": false,
         "min_grade": null
        },
@@ -89907,13 +90399,13 @@
      },
      {
       "type": "course",
-      "code": "COM SCI 82",
+      "code": "MECH&AE 82",
       "concurrent": false,
       "min_grade": null
      },
      {
       "type": "course",
-      "code": "COM SCI 105D",
+      "code": "MECH&AE 105D",
       "concurrent": false,
       "min_grade": null
      }
@@ -89921,9 +90413,7 @@
    },
    "source": "parser",
    "ambiguous": false,
-   "unparsed": [
-    "Civil ENGR 20QQM"
-   ]
+   "unparsed": []
   },
   {
    "code": "MECH&AE C131G",
@@ -89999,9 +90489,10 @@
       "min_grade": null
      },
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "Chemistry 20A"
+      "type": "course",
+      "code": "CHEM 20A",
+      "concurrent": false,
+      "min_grade": null
      }
     ]
    },
@@ -90556,7 +91047,7 @@
      },
      {
       "type": "course",
-      "code": "ENGR 100",
+      "code": "EC ENGR 100",
       "concurrent": false,
       "min_grade": null
      }
@@ -90564,9 +91055,7 @@
    },
    "source": "parser",
    "ambiguous": false,
-   "unparsed": [
-    "Electrical ENGR 100"
-   ]
+   "unparsed": []
   },
   {
    "code": "MECH&AE 161A",
@@ -90843,7 +91332,7 @@
      },
      {
       "type": "course",
-      "code": "ENGR 130",
+      "code": "C&EE 130",
       "concurrent": false,
       "min_grade": null
      }
@@ -90851,9 +91340,7 @@
    },
    "source": "parser",
    "ambiguous": false,
-   "unparsed": [
-    "Civil ENGR 130"
-   ]
+   "unparsed": []
   },
   {
    "code": "MECH&AE 169A",
@@ -91015,7 +91502,7 @@
        },
        {
         "type": "course",
-        "code": "ENGR M20",
+        "code": "C&EE M20",
         "concurrent": false,
         "min_grade": null
        },
@@ -91029,7 +91516,7 @@
      },
      {
       "type": "course",
-      "code": "COM SCI 82",
+      "code": "MECH&AE 82",
       "concurrent": false,
       "min_grade": null
      }
@@ -91037,17 +91524,16 @@
    },
    "source": "parser",
    "ambiguous": false,
-   "unparsed": [
-    "Civil ENGR 20QQM"
-   ]
+   "unparsed": []
   },
   {
    "code": "MECH&AE 183A",
    "prereq_text": "Materials Science 104",
    "requires": {
-    "type": "condition",
-    "kind": "other",
-    "text": "Materials Science 104"
+    "type": "course",
+    "code": "MAT SCI 104",
+    "concurrent": false,
+    "min_grade": null
    },
    "source": "parser",
    "ambiguous": false,
@@ -91073,9 +91559,10 @@
     "type": "and",
     "items": [
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "Chemistry 20A"
+      "type": "course",
+      "code": "CHEM 20A",
+      "concurrent": false,
+      "min_grade": null
      },
      {
       "type": "course",
@@ -91121,7 +91608,7 @@
      },
      {
       "type": "course",
-      "code": "ENGR M20",
+      "code": "C&EE M20",
       "concurrent": false,
       "min_grade": null
      },
@@ -91135,9 +91622,7 @@
    },
    "source": "parser",
    "ambiguous": false,
-   "unparsed": [
-    "Civil ENGR 20QQM"
-   ]
+   "unparsed": []
   },
   {
    "code": "MECH&AE C186",
@@ -92863,9 +93348,10 @@
       "min_grade": null
      },
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "Chemistry 153A"
+      "type": "course",
+      "code": "CHEM 153A",
+      "concurrent": false,
+      "min_grade": null
      }
     ]
    },
@@ -93135,9 +93621,10 @@
    "code": "MIMG 158",
    "prereq_text": "Chemistry 153A",
    "requires": {
-    "type": "condition",
-    "kind": "other",
-    "text": "Chemistry 153A"
+    "type": "course",
+    "code": "CHEM 153A",
+    "concurrent": false,
+    "min_grade": null
    },
    "source": "parser",
    "ambiguous": false,
@@ -93163,9 +93650,10 @@
     "type": "and",
     "items": [
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "Chemistry 153A"
+      "type": "course",
+      "code": "CHEM 153A",
+      "concurrent": false,
+      "min_grade": null
      },
      {
       "type": "course",
@@ -93358,9 +93846,10 @@
     "type": "and",
     "items": [
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "Chemistry 153A"
+      "type": "course",
+      "code": "CHEM 153A",
+      "concurrent": false,
+      "min_grade": null
      },
      {
       "type": "course",
@@ -96442,26 +96931,9 @@
    "code": "MUSC 124C",
    "prereq_text": "106B, 120C (accelerated section), 123C",
    "requires": {
-    "type": "and",
-    "items": [
-     {
-      "type": "course",
-      "code": "MUSC 106B",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "condition",
-      "kind": "other",
-      "text": "120C (accelerated section)"
-     },
-     {
-      "type": "course",
-      "code": "MUSC 123C",
-      "concurrent": false,
-      "min_grade": null
-     }
-    ]
+    "type": "condition",
+    "kind": "other",
+    "text": "106B and 120C (accelerated section) and 123C"
    },
    "source": "parser",
    "ambiguous": false,
@@ -98318,10 +98790,9 @@
    "code": "MUSCLG 126",
    "prereq_text": "(M6A) (may be taken concurrently)",
    "requires": {
-    "type": "course",
-    "code": "MUSCLG M6A",
-    "concurrent": true,
-    "min_grade": null
+    "type": "condition",
+    "kind": "other",
+    "text": "(6AQQM)"
    },
    "source": "parser",
    "ambiguous": false,
@@ -98331,10 +98802,9 @@
    "code": "MUSCLG 127",
    "prereq_text": "(M6A) (may be taken concurrently)",
    "requires": {
-    "type": "course",
-    "code": "MUSCLG M6A",
-    "concurrent": true,
-    "min_grade": null
+    "type": "condition",
+    "kind": "other",
+    "text": "(6AQQM)"
    },
    "source": "parser",
    "ambiguous": false,
@@ -98344,10 +98814,9 @@
    "code": "MUSCLG 128",
    "prereq_text": "(M6A) (may be taken concurrently)",
    "requires": {
-    "type": "course",
-    "code": "MUSCLG M6A",
-    "concurrent": true,
-    "min_grade": null
+    "type": "condition",
+    "kind": "other",
+    "text": "(6AQQM)"
    },
    "source": "parser",
    "ambiguous": false,
@@ -99371,9 +99840,21 @@
     "type": "and",
     "items": [
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "Chemistry 14C"
+      "type": "or",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 14C",
+        "concurrent": true,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "CHEM 30A",
+        "concurrent": false,
+        "min_grade": null
+       }
+      ]
      },
      {
       "type": "course",
@@ -99750,19 +100231,24 @@
       ]
      },
      {
-      "type": "course",
-      "code": "LIFESCI 30A",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
       "type": "or",
       "items": [
        {
-        "type": "course",
-        "code": "LIFESCI 30B",
-        "concurrent": false,
-        "min_grade": null
+        "type": "and",
+        "items": [
+         {
+          "type": "course",
+          "code": "LIFESCI 30A",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "LIFESCI 30B",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
        },
        {
         "type": "and",
@@ -99788,24 +100274,29 @@
         ]
        },
        {
-        "type": "course",
-        "code": "MATH 31A",
-        "concurrent": false,
-        "min_grade": null
+        "type": "and",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 31A",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "MATH 31B",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "MATH 32A",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
        }
       ]
-     },
-     {
-      "type": "course",
-      "code": "MATH 31B",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "MATH 32A",
-      "concurrent": false,
-      "min_grade": null
      },
      {
       "type": "or",
@@ -99839,7 +100330,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -103422,13 +103913,14 @@
       "type": "or",
       "items": [
        {
-        "type": "condition",
-        "kind": "other",
-        "text": "Chemistry 14C"
+        "type": "course",
+        "code": "CHEM 14C",
+        "concurrent": false,
+        "min_grade": null
        },
        {
         "type": "course",
-        "code": "PHYSCI 30A",
+        "code": "CHEM 30A",
         "concurrent": false,
         "min_grade": null
        }
@@ -103494,9 +103986,21 @@
       "min_grade": null
      },
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "Chemistry 14D or 30B"
+      "type": "or",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 14D",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "CHEM 30B",
+        "concurrent": false,
+        "min_grade": null
+       }
+      ]
      }
     ]
    },
@@ -103559,9 +104063,10 @@
     "type": "and",
     "items": [
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "Chemistry 153A"
+      "type": "course",
+      "code": "CHEM 153A",
+      "concurrent": false,
+      "min_grade": null
      },
      {
       "type": "course",
@@ -103778,9 +104283,10 @@
     "type": "and",
     "items": [
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "Chemistry 153A"
+      "type": "course",
+      "code": "CHEM 153A",
+      "concurrent": false,
+      "min_grade": null
      },
      {
       "type": "course",
@@ -103960,9 +104466,10 @@
           "min_grade": null
          },
          {
-          "type": "condition",
-          "kind": "other",
-          "text": "Chemistry 153A"
+          "type": "course",
+          "code": "CHEM 153A",
+          "concurrent": false,
+          "min_grade": null
          }
         ]
        },
@@ -104061,9 +104568,10 @@
       "min_grade": null
      },
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "Chemistry 153A"
+      "type": "course",
+      "code": "CHEM 153A",
+      "concurrent": false,
+      "min_grade": null
      }
     ]
    },
@@ -104437,17 +104945,42 @@
     "type": "or",
     "items": [
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "Chemistry 14B and 14BL"
+      "type": "and",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 14B",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "CHEM 14BL",
+        "concurrent": false,
+        "min_grade": null
+       }
+      ]
      },
      {
       "type": "and",
       "items": [
        {
-        "type": "condition",
-        "kind": "other",
-        "text": "Chemistry 20B"
+        "type": "course",
+        "code": "CHEM 20B",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "CHEM 30AL",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "CHEM 153A",
+        "concurrent": false,
+        "min_grade": null
        },
        {
         "type": "course",
@@ -104480,6 +105013,12 @@
         "min_grade": null
        }
       ]
+     },
+     {
+      "type": "course",
+      "code": "CHEM 5C",
+      "concurrent": false,
+      "min_grade": null
      }
     ]
    },
@@ -104494,9 +105033,67 @@
     "type": "and",
     "items": [
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "Chemistry 14A and 14B and 14C and 14D"
+      "type": "or",
+      "items": [
+       {
+        "type": "and",
+        "items": [
+         {
+          "type": "course",
+          "code": "CHEM 14A",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "CHEM 14B",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "CHEM 14C",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "CHEM 14D",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
+       },
+       {
+        "type": "and",
+        "items": [
+         {
+          "type": "course",
+          "code": "CHEM 20A",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "CHEM 20B",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "CHEM 30A",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "CHEM 30B",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
+       }
+      ]
      },
      {
       "type": "condition",
@@ -104591,9 +105188,10 @@
       "type": "and",
       "items": [
        {
-        "type": "condition",
-        "kind": "other",
-        "text": "Chemistry 153A"
+        "type": "course",
+        "code": "CHEM 153A",
+        "concurrent": false,
+        "min_grade": null
        },
        {
         "type": "course",
@@ -104625,9 +105223,28 @@
       "type": "and",
       "items": [
        {
-        "type": "condition",
-        "kind": "other",
-        "text": "Chemistry 7A"
+        "type": "course",
+        "code": "CHEM 7A",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "CHEM 7B",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "CHEM 7C",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "CHEM 23L",
+        "concurrent": false,
+        "min_grade": null
        },
        {
         "type": "course",
@@ -104650,9 +105267,27 @@
       ]
      },
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "Chemistry 6A and 6B and 6C"
+      "type": "and",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 6A",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "CHEM 6B",
+        "concurrent": false,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "CHEM 6C",
+        "concurrent": false,
+        "min_grade": null
+       }
+      ]
      }
     ]
    },
@@ -104769,9 +105404,21 @@
     "type": "and",
     "items": [
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "Chemistry 14C"
+      "type": "or",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 14C",
+        "concurrent": true,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "CHEM 30A",
+        "concurrent": false,
+        "min_grade": null
+       }
+      ]
      },
      {
       "type": "course",
@@ -106786,9 +107433,10 @@
         "min_grade": null
        },
        {
-        "type": "condition",
-        "kind": "other",
-        "text": "Chemistry 110A"
+        "type": "course",
+        "code": "CHEM 110A",
+        "concurrent": false,
+        "min_grade": null
        }
       ]
      }
@@ -107035,7 +107683,7 @@
      {
       "type": "condition",
       "kind": "other",
-      "text": "(equivalent)"
+      "text": "equivalent"
      }
     ]
    },
@@ -107228,13 +107876,14 @@
         "type": "or",
         "items": [
          {
-          "type": "condition",
-          "kind": "other",
-          "text": "Chemistry 14A"
+          "type": "course",
+          "code": "CHEM 14A",
+          "concurrent": false,
+          "min_grade": null
          },
          {
           "type": "course",
-          "code": "PHYSICS 20A",
+          "code": "CHEM 20A",
           "concurrent": false,
           "min_grade": null
          }
@@ -107297,9 +107946,10 @@
       "min_grade": null
      },
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "Chemistry 110A"
+      "type": "course",
+      "code": "CHEM 110A",
+      "concurrent": false,
+      "min_grade": null
      },
      {
       "type": "or",
@@ -107361,9 +108011,10 @@
       "min_grade": null
      },
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "Chemistry 110A"
+      "type": "course",
+      "code": "CHEM 110A",
+      "concurrent": false,
+      "min_grade": null
      },
      {
       "type": "course",
@@ -110857,9 +111508,21 @@
     "type": "and",
     "items": [
      {
-      "type": "condition",
-      "kind": "other",
-      "text": "Chemistry 14C"
+      "type": "or",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 14C",
+        "concurrent": true,
+        "min_grade": null
+       },
+       {
+        "type": "course",
+        "code": "CHEM 30A",
+        "concurrent": false,
+        "min_grade": null
+       }
+      ]
      },
      {
       "type": "course",
@@ -120442,7 +121105,7 @@
      },
      {
       "type": "course",
-      "code": "LIFESCI M102",
+      "code": "SOC GEN M102",
       "concurrent": false,
       "min_grade": null
      }
@@ -120501,7 +121164,7 @@
      },
      {
       "type": "course",
-      "code": "LIFESCI M102",
+      "code": "SOC GEN M102",
       "concurrent": false,
       "min_grade": null
      }
@@ -124614,7 +125277,7 @@
      },
      {
       "type": "course",
-      "code": "MATH 102A",
+      "code": "STATS 102A",
       "concurrent": false,
       "min_grade": null
      },
@@ -124655,7 +125318,7 @@
      },
      {
       "type": "course",
-      "code": "MATH 102A",
+      "code": "STATS 102A",
       "concurrent": false,
       "min_grade": null
      }
@@ -124679,7 +125342,7 @@
      },
      {
       "type": "course",
-      "code": "ENGR 131A",
+      "code": "EC ENGR 131A",
       "concurrent": false,
       "min_grade": null
      },
@@ -124693,9 +125356,7 @@
    },
    "source": "parser",
    "ambiguous": false,
-   "unparsed": [
-    "Electrical ENGR 131A"
-   ]
+   "unparsed": []
   },
   {
    "code": "STATS 112",
@@ -125198,13 +125859,13 @@
      },
      {
       "type": "course",
-      "code": "MATH 101A",
+      "code": "STATS 101A",
       "concurrent": false,
       "min_grade": null
      },
      {
       "type": "course",
-      "code": "MATH 101B",
+      "code": "STATS 101B",
       "concurrent": false,
       "min_grade": null
      }

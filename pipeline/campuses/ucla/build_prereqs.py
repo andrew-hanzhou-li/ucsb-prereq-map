@@ -43,6 +43,16 @@ EXTRA_RULES = [
     ("restriction", r"\b(?:enrollment\s+)?(?:restricted|limited)\s+(?:to|for)\s+(?:[^;.§]|\.(?=\d))*"),
     ("other", r"\battendance,?\s+but\s+not\s+enrollment,?\s+in\s+[^;§]*"),
 ]
+OTHER_NAMES = {
+    "Chemistry": "CHEM",
+    "Electrical Engineering": "EC ENGR",
+    "Mechanical Engineering": "MECH&AE",
+    "Civil Engineering": "C&EE",
+    "Materials Science": "MAT SCI",
+    "Atmospheric Sciences": "A&O SCI",
+    "Earth and Space Sciences": "EPS SCI",
+    "Biomedical Engineering": "BIOENGR",
+}
 PREFIX_MARK = "QQ"
 PREFIXED_NUMBER = re.compile(r"(?<![A-Za-z0-9])(CM|MC|C|M)(\d+[A-Z]*)(?![A-Za-z0-9])")
 MARKED_NUMBER = re.compile(r"^(\d+[A-Z]*?)" + PREFIX_MARK + r"([A-Z]+)$")
@@ -60,6 +70,11 @@ class Names:
         codes = set(subjects) | {c["subject"] for c in courses}
         self.real = {alias(code): code for code in codes}
         self.names = {name: alias(code) for code, name in subjects.items()}
+        # Shorter and older names the catalog still writes ("Chemistry 14A" for
+        # Chemistry and Biochemistry; "Electrical Engineering 100").
+        for name, short in OTHER_NAMES.items():
+            if short in subjects and name not in self.names:
+                self.names[name] = alias(short)
         self.codes = set(self.real)
         self.comma_names = sorted(((n, a) for n, a in self.names.items() if "," in n), key=lambda x: -len(x[0]))
 
@@ -167,6 +182,13 @@ def regroup(text):
     text = re.sub(r"\(\d\.\d+\)", "", text)                        # "grades of B (3.0) or better"
     # "Chemistry 14A (or 20A)" -> "(Chemistry 14A or 20A)"
     text = re.sub(r"((?:(?:[A-Z][A-Za-z&]*|courses?)\s+)*)(" + number + r")\s*\(or\s+(" + number + r")\)", r"( \1\2 or \3 )", text)
+    # "courses M20 (or Computer Science 31), 82": 82 is in the subject before
+    # the brackets, so it gets those words again.
+    def after_alternative(match):
+        words = match.group(1) or ""
+        return "( " + words + match.group(2) + " or " + match.group(3) + " ), " + words + match.group(4)
+    text = re.sub(r"((?:(?:[A-Z][A-Za-z&]*|courses?)\s+)*)(" + number + r")\s*\(or\s+([^()]*?\s" + number + r")\),\s*(?=(" + number + r")\b)",
+                  lambda m: after_alternative(m)[:-len(m.group(4))], text)
     # "one course from Mathematics 2, Statistics 10, or one term of calculus" is one choice
     text = re.sub(r"\b(?:one|any one)\s+(?:course\s+)?(?:from|of)\s+([^;]*?,[^;]*?\bor\b[^;,]*)",
                   lambda m: "( " + re.sub(r"^(?=(?:CM|MC|C|M)?\d)", "course ", re.sub(r",\s*(?:or\s+)?", " or ", m.group(1))) + " )",
@@ -176,6 +198,10 @@ def regroup(text):
     parts = split_outside(text)
     if len(parts) < 2:
         return text
+    # "courses 1, 2, or equivalent": the list, or something equivalent to it
+    # (not "1 or 2 or equivalent").
+    if len(parts) > 2 and re.match(r"or\s+(?:equivalent|consent|approval)\b", parts[-1]):
+        return "(" + regroup(", ".join(parts[:-1])) + ") " + parts[-1]
     if not any(re.search(r"\band\b", p) for p in parts) and re.match(r"or\b", parts[-1]):
         return " or ".join(re.sub(r"^or\s+", "", p) for p in parts)
     groups = [[]]
@@ -215,8 +241,18 @@ def parse(parser, names, text, code):
     # confuse the grouping) and 3C is marked afterwards.
     concurrent = re.findall(r"\((?:courses?\s+)?([A-Z]{0,2}\d+[A-Z]*)\s+may be taken concurrently\)", text)
     text = re.sub(r"\s*\((?:courses?\s+)?[A-Z]{0,2}\d+[A-Z]*\s+may be taken concurrently\)", "", text)
-    chunks = [re.sub(r"^(\(?)(?=(?:CM|MC|C|M)?\d)", r"\1course ", part) for part in text.split("; and ")]
-    text = "; and ".join(regroup(part) for part in chunks)
+    # "Physics 1A, 1B, and 1C (may be taken concurrently), or 1AH, …": the note
+    # is for the series before it; its courses are marked afterwards.
+    def series_note(match):
+        before = re.split(r";|,\s*or\b|\bor\b|\(", match.group(1))[-1]
+        concurrent.extend(re.findall(r"\b([A-Z]{0,2}\d+[A-Z]*)\b", before))
+        return match.group(1)
+    text = re.sub(r"([^;]*?\d[A-Z]*)\s*\(may be taken concurrently\)(?=\s*(?:,\s*or\b|;|$))", series_note, text)
+    # "(for life sciences majors)" says who an option is for; it isn't a requirement.
+    text = re.sub(r"\s*\(for [^()]*\)", "", text)
+    pieces = re.split(r"(;\s*(?:and\s+)?)", text)
+    text = "".join(piece if i % 2 else regroup(re.sub(r"^(\(?)(?=(?:CM|MC|C|M)?\d)", r"\1course ", piece) if i else piece)
+                   for i, piece in enumerate(pieces))
     parsed = parser.parse(names.to_parser(text, subject))
     parsed["requires"] = without_course(names.from_parser(parsed["requires"]), code)
     if concurrent:

@@ -223,9 +223,13 @@ function withoutTwins(items) {
 // Could this part of a prerequisite tree be met by what's done or planned?
 // "ECE 15A and (ECE 2A or ECE 10A + 10AL)" can, with 15A, 10A and 10AL
 // planned, even though ECE 2A isn't.
+function retired(code) {
+  return !isDone(code) && !!nodesById[code] && nodesById[code].status === "not_in_catalog";
+}
+
 function plannable(node) {
   if (!node || node.type === "condition") return true;
-  if (node.type === "course") return inPlanOrDone(node.code);
+  if (node.type === "course") return inPlanOrDone(node.code) || retired(node.code);
   if (node.type === "and") return node.items.every(plannable);
   return node.items.filter(hasCourses).some(plannable);
 }
@@ -241,6 +245,9 @@ function metAt(node, index, self, relaxed) {
   if (node.type === "condition") return true;
   if (node.type === "course") {
     if (node.code === self) return true;
+    // A requisite naming a course no longer in the catalog (UCLA's LIFESCI
+    // 23L, replaced by 7L) can't be planned, so it doesn't hold a course back.
+    if (retired(node.code)) return true;
     if (relaxed && !inPlanOrDone(node.code)) return true;
     return readyBy(node.code, index, node.concurrent);
   }
@@ -278,7 +285,7 @@ function missingPrereqs(code) {
   function collect(node) {
     if (!node || node.type === "condition") return;
     if (node.type === "course") {
-      if (node.code !== code && !readyBy(node.code, index, node.concurrent)) missing.push(why(node.code));
+      if (node.code !== code && !retired(node.code) && !readyBy(node.code, index, node.concurrent)) missing.push(why(node.code));
     } else if (node.type === "and") {
       node.items.forEach(collect);
     } else if (!metAt(node, index, code, false)) {
@@ -1126,7 +1133,9 @@ function autoFill(quiet) {
   // "Take one of": keep an option already done or planned, else the first
   // one the catalog still offers. A required "one of" adds that option even
   // if the map calls its courses electives.
-  for (const set of pickOneSets()) {
+  const sets = pickOneSets();
+  const choices = new Map();
+  for (const set of sets) {
     const options = set.options;
     const offered = option => option.every(code => nodesById[code] && nodesById[code].status === "active");
     // Prefer an option already started (a course done or planned); then one
@@ -1147,7 +1156,26 @@ function autoFill(quiet) {
     const ranked = options.slice().sort((a, b) => (started(b) - started(a)) || (honors(a) - honors(b)) ||
                                                   (regular(b) - regular(a)) || (toTake(a) - toTake(b)) ||
                                                   (offered(b) - offered(a)));
-    const chosen = ranked.find(offered) || ranked[0];
+    choices.set(set, ranked.find(offered) || ranked[0]);
+  }
+  // Choices that agree: if the chosen Physics 1 series needs MATH 31A-32A,
+  // the math choice takes the option with them (not Life Sciences 30A-B).
+  const requiredBefore = code => andCourses(nodesById[code] && nodesById[code].requires);
+  for (let round = 0; round < 2; round++) {
+    for (const set of sets) {
+      const needs = new Set();
+      for (const [other, option] of choices) {
+        if (other !== set) option.forEach(code => requiredBefore(code).forEach(c => needs.add(c)));
+      }
+      const fits = set.options.find(option => option !== choices.get(set) && option.some(code => needs.has(code)) &&
+                                              !choices.get(set).some(code => needs.has(code)));
+      // (An option the student already started stays.)
+      if (fits && !choices.get(set).some(code => inPlanOrDone(code))) choices.set(set, fits);
+    }
+  }
+  for (const set of sets) {
+    const options = set.options;
+    const chosen = choices.get(set);
     for (const option of options) {
       // (A course in both options, like MATH 20D, stays: the chosen one needs it.)
       // (Nor a course the major requires anyway, like CSE 151B in AI.)
@@ -1157,8 +1185,23 @@ function autoFill(quiet) {
     }
     if (set.required) chosen.forEach(code => needed.add(code));
   }
-  const list = prerequisiteOrder(Array.from(needed)
-    .filter(code => !skip.has(code) && !inPlanOrDone(code) && nodesById[code] && nodesById[code].status === "active"));
+  // An outside course is kept only if a course still wanted needs it: MATH 32B
+  // was added for the Physics 1 series, but with the Physics 5 series chosen
+  // instead nothing needs it.
+  const wanted = new Set(Array.from(needed).filter(code => !skip.has(code)));
+  const reached = new Set(Array.from(wanted).filter(code => nodesById[code] && nodesById[code].in_major));
+  const toVisit = Array.from(reached);
+  while (toVisit.length) {
+    const code = toVisit.pop();
+    for (const prereq of coursesIn(nodesById[code] && nodesById[code].requires)) {
+      if (wanted.has(prereq) && !reached.has(prereq)) {
+        reached.add(prereq);
+        toVisit.push(prereq);
+      }
+    }
+  }
+  const list = prerequisiteOrder(Array.from(reached)
+    .filter(code => !inPlanOrDone(code) && nodesById[code] && nodesById[code].status === "active"));
   let placed = 0;
   plan.auto = plan.auto || {};
   for (const code of list) {
@@ -1232,6 +1275,14 @@ function autoFill(quiet) {
   rest is filled with repeat slots of the first one (pickCourses places
   each course once first).
 */
+// The courses a requisite tree needs outright (not one option of a "one of").
+function andCourses(node) {
+  if (!node) return [];
+  if (node.type === "course") return [node.code];
+  if (node.type === "and") return node.items.flatMap(andCourses);
+  return [];
+}
+
 function repeatList(node) {
   const codes = node.items.filter(i => i.type === "course" && i.code).map(i => i.code);
   if (!codes.length || codes.length !== node.items.filter(i => i.type !== "text").length) return false;
