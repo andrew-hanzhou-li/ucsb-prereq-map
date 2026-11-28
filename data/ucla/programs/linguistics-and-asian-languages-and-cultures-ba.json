@@ -62,12 +62,12 @@
        {
         "type": "course",
         "code": "LING 185A",
-        "status": "inactive"
+        "status": "active"
        },
        {
         "type": "course",
         "code": "MATH 61",
-        "status": "inactive"
+        "status": "active"
        }
       ],
       "label": "Linguistics 185A and Mathematics 61"
@@ -78,42 +78,42 @@
        {
         "type": "course",
         "code": "LING C104",
-        "status": "inactive"
+        "status": "active"
        },
        {
         "type": "course",
         "code": "LING 127",
-        "status": "inactive"
+        "status": "active"
        },
        {
         "type": "course",
         "code": "LING 132",
-        "status": "inactive"
+        "status": "active"
        },
        {
         "type": "course",
         "code": "LING 165A",
-        "status": "inactive"
+        "status": "active"
        },
        {
         "type": "course",
         "code": "LING 165B",
-        "status": "inactive"
+        "status": "active"
        },
        {
         "type": "course",
         "code": "LING 165C",
-        "status": "inactive"
+        "status": "active"
        },
        {
         "type": "course",
         "code": "LING 180",
-        "status": "inactive"
+        "status": "active"
        },
        {
         "type": "course",
         "code": "LING 185B",
-        "status": "inactive"
+        "status": "active"
        }
       ],
       "count": 1,
@@ -138,7 +138,7 @@
      {
       "type": "course",
       "code": "LING 20",
-      "status": "inactive"
+      "status": "active"
      },
      {
       "type": "choose",
@@ -151,12 +151,12 @@
        {
         "type": "course",
         "code": "JAPAN 50",
-        "status": "inactive"
+        "status": "active"
        },
        {
         "type": "course",
         "code": "KOREA 50",
-        "status": "inactive"
+        "status": "active"
        }
       ],
       "count": 1,
@@ -182,12 +182,12 @@
        {
         "type": "course",
         "code": "LING 198A",
-        "status": "inactive"
+        "status": "active"
        },
        {
         "type": "course",
         "code": "LING 198B",
-        "status": "inactive"
+        "status": "active"
        }
       ],
       "label": "Linguistics 198A and 198B"
@@ -198,7 +198,7 @@
        {
         "type": "course",
         "code": "LING 199",
-        "status": "inactive"
+        "status": "active"
        }
       ],
       "label": "Linguistics 199"
@@ -219,32 +219,32 @@
        {
         "type": "course",
         "code": "LING 103",
-        "status": "inactive"
+        "status": "active"
        },
        {
         "type": "course",
         "code": "LING 110",
-        "status": "inactive"
+        "status": "active"
        },
        {
         "type": "course",
         "code": "LING 120A",
-        "status": "inactive"
+        "status": "active"
        },
        {
         "type": "course",
         "code": "LING 120B",
-        "status": "inactive"
+        "status": "active"
        },
        {
         "type": "course",
         "code": "LING 165A",
-        "status": "inactive"
+        "status": "active"
        },
        {
         "type": "course",
         "code": "LING 165B",
-        "status": "inactive"
+        "status": "active"
        }
       ],
       "count": 5,
@@ -253,7 +253,283 @@
      },
      {
       "type": "choose",
-      "items": [],
+      "items": [
+       {
+        "type": "course",
+        "code": "LING 102",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 103",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING C104",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 105",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 110",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 110G",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING C111",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 114",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 115",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING M116",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 119A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 120A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 120B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 120C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 127",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING C128A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING C128B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 130",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 132",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING C135",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING C140",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING M141",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 144",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING M146",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING M150",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 160",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 161",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 165A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 165B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 165C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 170",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 175",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING M176A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING M176B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING M177",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING M178",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 180",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 185A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 185B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 185C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 188SA",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 188SB",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 188SC",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 189",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 189HC",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 191A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 191B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 192A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 192B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 194",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 195",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 197",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 198A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 198B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 199",
+        "status": "active"
+       }
+      ],
       "count": 1,
       "label": "Upper-Division Elective",
       "notes": "minimum 4 graded units"
@@ -387,22 +663,22 @@
            {
             "type": "course",
             "code": "JAPAN 100A",
-            "status": "inactive"
+            "status": "active"
            },
            {
             "type": "course",
             "code": "JAPAN 100B",
-            "status": "inactive"
+            "status": "active"
            },
            {
             "type": "course",
             "code": "JAPAN 100C",
-            "status": "inactive"
+            "status": "active"
            },
            {
             "type": "course",
             "code": "JAPAN 100S",
-            "status": "inactive"
+            "status": "active"
            }
           ],
           "label": "Advanced Modern Japanese",
@@ -419,52 +695,52 @@
            {
             "type": "course",
             "code": "JAPAN 101A",
-            "status": "inactive"
+            "status": "active"
            },
            {
             "type": "course",
             "code": "JAPAN 101B",
-            "status": "inactive"
+            "status": "active"
            },
            {
             "type": "course",
             "code": "JAPAN 101C",
-            "status": "inactive"
+            "status": "active"
            },
            {
             "type": "course",
             "code": "JAPAN 110A",
-            "status": "inactive"
+            "status": "active"
            },
            {
             "type": "course",
             "code": "JAPAN 110B",
-            "status": "inactive"
+            "status": "active"
            },
            {
             "type": "course",
             "code": "JAPAN M120",
-            "status": "inactive"
+            "status": "active"
            },
            {
             "type": "course",
             "code": "JAPAN CM123",
-            "status": "inactive"
+            "status": "active"
            },
            {
             "type": "course",
             "code": "JAPAN CM127",
-            "status": "inactive"
+            "status": "active"
            },
            {
             "type": "course",
             "code": "JAPAN 130A",
-            "status": "inactive"
+            "status": "active"
            },
            {
             "type": "course",
             "code": "JAPAN 130B",
-            "status": "inactive"
+            "status": "active"
            }
           ],
           "count": 2,
@@ -483,17 +759,17 @@
            {
             "type": "course",
             "code": "KOREA 100A",
-            "status": "inactive"
+            "status": "active"
            },
            {
             "type": "course",
             "code": "KOREA 100B",
-            "status": "inactive"
+            "status": "active"
            },
            {
             "type": "course",
             "code": "KOREA 100C",
-            "status": "inactive"
+            "status": "active"
            }
           ],
           "label": "Advanced Modern Korean"
@@ -509,32 +785,32 @@
            {
             "type": "course",
             "code": "KOREA 101A",
-            "status": "inactive"
+            "status": "active"
            },
            {
             "type": "course",
             "code": "KOREA 101B",
-            "status": "inactive"
+            "status": "active"
            },
            {
             "type": "course",
             "code": "KOREA 101C",
-            "status": "inactive"
+            "status": "active"
            },
            {
             "type": "course",
             "code": "KOREA 103A",
-            "status": "inactive"
+            "status": "active"
            },
            {
             "type": "course",
             "code": "KOREA 103B",
-            "status": "inactive"
+            "status": "active"
            },
            {
             "type": "course",
             "code": "KOREA 103C",
-            "status": "inactive"
+            "status": "active"
            },
            {
             "type": "course",
@@ -554,12 +830,12 @@
            {
             "type": "course",
             "code": "KOREA CM120",
-            "status": "inactive"
+            "status": "active"
            },
            {
             "type": "course",
             "code": "KOREA CM127",
-            "status": "inactive"
+            "status": "active"
            }
           ],
           "count": 2,

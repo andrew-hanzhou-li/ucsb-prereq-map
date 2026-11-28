@@ -10,7 +10,403 @@
    "name": "The Major",
    "requirement": {
     "type": "choose",
-    "items": [],
+    "items": [
+     {
+      "type": "course",
+      "code": "GEOG 101",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG M102",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG M102L",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG M103",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 106",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 107",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 108",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 109",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG M110",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 115",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 116",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 117",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG M118",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 119",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 120",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG M125",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG M126",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG M127",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 130",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG M131",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 133",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 135",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 136",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 137",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 138",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 139B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 139C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 140",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 141",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG M142",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 143",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG M144",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 145",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 146",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 147",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 148",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 149",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 150",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 151",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG M153",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 158",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 159",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 160",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 161",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 162",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 169A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 171A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 171B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 171C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 172A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 172B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 172C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 173A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 174A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 175A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 175B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 176A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 178",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 180",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 181A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 181B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 181C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 182A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 182B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 182C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 184",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 185",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG M186",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 187",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 188SA",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 188SB",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 188SC",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 189",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 189HC",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 191",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 195",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 198A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 198B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 199",
+      "status": "active"
+     }
+    ],
     "count": 11,
     "label": "The Major",
     "notes": "44 units minimum"
@@ -24,12 +420,12 @@
      {
       "type": "course",
       "code": "GEOG 198A",
-      "status": "inactive"
+      "status": "active"
      },
      {
       "type": "course",
       "code": "GEOG 198B",
-      "status": "inactive"
+      "status": "active"
      }
     ],
     "label": "Honors Program",
@@ -47,12 +443,12 @@
        {
         "type": "course",
         "code": "GEOG 1",
-        "status": "inactive"
+        "status": "active"
        },
        {
         "type": "course",
         "code": "GEOG 2",
-        "status": "inactive"
+        "status": "active"
        }
       ],
       "count": 1,
@@ -65,17 +461,17 @@
        {
         "type": "course",
         "code": "GEOG 3",
-        "status": "inactive"
+        "status": "active"
        },
        {
         "type": "course",
         "code": "GEOG 4",
-        "status": "inactive"
+        "status": "active"
        },
        {
         "type": "course",
         "code": "GEOG 6",
-        "status": "inactive"
+        "status": "active"
        }
       ],
       "count": 1,
@@ -88,7 +484,7 @@
        {
         "type": "course",
         "code": "STATS 12",
-        "status": "inactive"
+        "status": "active"
        }
       ],
       "label": "Statistics 12"

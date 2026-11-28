@@ -63,6 +63,21 @@ def load_ucsd():
     return lambda text, code: build_prereqs.parse(parser, extract.split_prereq_text(text)[0], code)
 
 
+def load_ucla():
+    """A function parsing a label the way UCLA's pipeline does: the labels
+    hold the whole catalog description, and extract.py takes the requisite
+    sentences out of it first (so the score covers that step too)."""
+    sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "campuses", "ucla"))
+    import build_prereqs
+    import extract
+    with open(build_prereqs.INPUT, encoding="utf-8") as f:
+        courses = json.load(f)["courses"]
+    with open(build_prereqs.SUBJECTS, encoding="utf-8") as f:
+        names = build_prereqs.Names(json.load(f), courses)
+    parser = build_prereqs.make_parser(names)
+    return lambda text, code: build_prereqs.parse(parser, names, extract.split_description(text)[1], code)
+
+
 def without_repeats(notation):
     """The same answer written one way: an & inside an & (or | inside |) is
     flattened, and a tag or course repeated inside one & or | is written once
@@ -98,6 +113,9 @@ def main():
     if campus == "ucsd":
         parse = load_ucsd()
         labels = "tests/ucsd_labels.json"
+    elif campus == "ucla":
+        parse = load_ucla()
+        labels = "tests/ucla_labels.json"
     else:
         ucsb_parser = load_parser()
         parse = lambda text, code: ucsb_parser.parse(text)
@@ -111,7 +129,7 @@ def main():
     for test in tests:
         if only and test["group"] not in only:
             continue
-        tree = parse(test["prereq_text"], test["code"])["requires"]
+        tree = parse(test.get("prereq_text") or test.get("description", ""), test["code"])["requires"]
         got = without_repeats(to_notation(tree))
         expected = without_repeats(test["expected"])
         key = (test["group"], test["set"])

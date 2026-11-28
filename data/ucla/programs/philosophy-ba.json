@@ -17,22 +17,22 @@
        {
         "type": "course",
         "code": "PHILOS 7",
-        "status": "inactive"
+        "status": "active"
        },
        {
         "type": "course",
         "code": "PHILOS 21",
-        "status": "inactive"
+        "status": "active"
        },
        {
         "type": "course",
         "code": "PHILOS 22",
-        "status": "inactive"
+        "status": "active"
        },
        {
         "type": "course",
         "code": "PHILOS 31",
-        "status": "inactive"
+        "status": "active"
        }
       ],
       "label": "Required Courses",
@@ -40,7 +40,113 @@
      },
      {
       "type": "choose",
-      "items": [],
+      "items": [
+       {
+        "type": "course",
+        "code": "PHILOS 1",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 2",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 3",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 4",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 5",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 6",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 7",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 8",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 9",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 10",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 19",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 21",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 22",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 22W",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 23",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS M24",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 31",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 89",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 89HC",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 97",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 99",
+        "status": "active"
+       }
+      ],
       "count": 1,
       "label": "Elective",
       "notes": "additional lower-division philosophy course"
@@ -60,17 +166,17 @@
        {
         "type": "course",
         "code": "PHILOS 100A",
-        "status": "inactive"
+        "status": "active"
        },
        {
         "type": "course",
         "code": "PHILOS 100B",
-        "status": "inactive"
+        "status": "active"
        },
        {
         "type": "course",
         "code": "PHILOS 100C",
-        "status": "inactive"
+        "status": "active"
        }
       ],
       "label": "Required Courses"
@@ -188,7 +294,493 @@
      },
      {
       "type": "choose",
-      "items": [],
+      "items": [
+       {
+        "type": "course",
+        "code": "PHILOS 100A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 100B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 100C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS M101A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS M101B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS M102",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS M103A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS M103B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 104",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 105A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 105B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 106",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 107",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS C108",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS C109",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS C110",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS C111",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS C112",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS C114",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS C115",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 116",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 117",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 118",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS M118B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS C119",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 122",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS C123",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS M124",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 125",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 126",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS C127A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS C127B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS C127C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS C128",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 129",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 130",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 131",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 132",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 133",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 133C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS C133B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS M134",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 135",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 136",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 137",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 138",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 150",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 151A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 151C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS C151B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 152A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS M152B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 153A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS C153B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 154",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS C154B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 155A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 155B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS C156",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 157A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 157B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 158",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 159",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 161",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 166",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 167",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 168",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 169",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 170",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 171",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 172",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 173",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 174",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS M175",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 176",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 177A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 177B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 178",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 179",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 180",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 181",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 182",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 183",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 184",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 185",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 186",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS M187",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 188SA",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 188SB",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 188SC",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 189",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 189HC",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 191",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 198A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 198B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 198C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 199",
+        "status": "active"
+       }
+      ],
       "count": 3,
       "label": "Electives",
       "notes": "upper-division or graduate philosophy courses (graduate taken as 200-299)"
@@ -205,12 +797,12 @@
      {
       "type": "course",
       "code": "PHILOS 198A",
-      "status": "inactive"
+      "status": "active"
      },
      {
       "type": "course",
       "code": "PHILOS 198B",
-      "status": "inactive"
+      "status": "active"
      }
     ],
     "label": "Honors Program",
