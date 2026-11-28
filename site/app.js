@@ -191,9 +191,13 @@ function fillCampusWords() {
   document.querySelectorAll(".campus-example-course").forEach(e => { e.placeholder = "e.g. " + details.exampleCourse; });
   // Only UCSB has an AP chart and a transcript reader (GOLD's format) so far.
   if (!details.apChart) document.querySelectorAll(".ap-only").forEach(e => { e.hidden = true; });
-  if (CAMPUS !== "ucsb") {
-    document.querySelectorAll(".ucsb-only").forEach(e => { e.hidden = true; });
-    document.getElementById("plan-import").hidden = true;
+  if (CAMPUS !== "ucsb") document.querySelectorAll(".ucsb-only").forEach(e => { e.hidden = true; });
+  // The transcript reader knows GOLD (UCSB) and TritonLink's Academic History (UCSD).
+  document.getElementById("plan-import").hidden = !details.transcript;
+  if (details.transcript) {
+    document.querySelectorAll(".transcript-system").forEach(e => { e.textContent = details.transcript.system; });
+    document.querySelectorAll(".transcript-name").forEach(e => { e.textContent = details.transcript.name; });
+    document.getElementById("transcript-text").placeholder = details.transcript.sample;
   }
   document.querySelectorAll(".campus-program").forEach(e => { e.textContent = details.program; });
   document.querySelectorAll(".campus-catalog").forEach(e => { e.textContent = details.catalog; e.href = details.catalogHome; });

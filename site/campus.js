@@ -49,11 +49,13 @@ const CAMPUSES = [
 //   program(s)    what a student picks: UCSB has majors and minors; UCSD has
 //                 majors, plus a course map for each department
 //   examples      [address, name] for the front page's "For example"
+//   transcript    the student record the transcript reader understands (none: no reader)
 const CAMPUS_DETAILS = {
   ucsb: {
     catalog: "UCSB General Catalog", catalogHome: "https://catalog.ucsb.edu/",
     courseUrl: code => "https://catalog.ucsb.edu/courses/" + encodeURIComponent(code),
     program: "major or minor", programs: "majors and minors", apChart: true, exampleCourse: "CMPSC 40",
+    transcript: { system: "GOLD", name: "transcript from GOLD", sample: "Fall 2025\nCMPSC 16  PROBLEM SOLVING I  4.0  A-\n…" },
     examples: [["economics-ba", "Economics (B.A.)"], ["statistics-and-data-science-bs", "Statistics and Data Science (B.S.)"],
                ["computer-engineering-bs", "Computer Engineering (B.S.)"]],
   },
@@ -61,6 +63,8 @@ const CAMPUS_DETAILS = {
     catalog: "UC San Diego General Catalog", catalogHome: "https://catalog.ucsd.edu/",
     courseUrl: null,
     program: "major or department", programs: "majors and departments", apChart: true, exampleCourse: "CSE 12",
+    transcript: { system: "TritonLink", name: "Academic History from TritonLink",
+                  sample: "Term: Fall Qtr 2025\nCSE  12  Basic Data Struct & OO Design  4.00  A-  14.80\n…" },
     examples: [["computer-science-bs", "Computer Science (B.S.)"], ["mathematics-bs", "Mathematics (B.S.)"],
                ["general-biology-bs", "General Biology (B.S.)"]],
   },

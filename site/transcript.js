@@ -40,6 +40,31 @@
   Pasted text (copied from GOLD's page) usually has each row on one line;
   the same rules read it.
 
+  How UC San Diego's "Academic History" (TritonLink) is laid out
+  ---------------------------------------------------------------
+  (From a student-posted copy, printed to PDF; terms come newest first.)
+    Term: Fall Qtr 2024
+    Subject  Course  Course Title                    Units  Grade  Points  Repeat
+    CHIN     10AN    First-Year Chinese I            5.00   A-     18.50
+    DSC      180A    Data Science Project I          4.00   A      16.00
+             Term Credits Passed: 9.00   Term GPA: 3.833
+    ...
+    Transfer Courses
+    Subject Course Course Title        Units Grade Term Level UCSD Approx
+    AP      BI3    Biology             8.00  P     SP19 LD    BILD 10
+                   Advanced Placement Credit
+    CISC    2      Fundamentals of Comp Sci I 6.00 A WI21 LD  CSE 8A
+  Things that matter:
+    - The columns after the title are units, grade (blank while in
+      progress) and grade points, so they're read by position: "Chinese I"
+      ends in a word that looks like a grade.
+    - The term lines, the "Term Credits Passed / GPA / Honors / Academic
+      Status" lines, "page 1 of 3" and the watermark letters a PDF scatters
+      through the text all end a course and are skipped.
+    - Transfer and AP courses count as credit for their UCSD equivalent
+      (the last column), not as courses in a quarter. A row whose equivalent
+      isn't a UCSD course (BILD APC, "no credit") is listed but unticked.
+
   Everything read is shown in a table to check and correct before it's used.
 */
 
@@ -149,23 +174,38 @@ function parseTranscript(text) {
     pending = null;
   }
 
+  let transfer = false;     // in UCSD's "Transfer Courses" section
+
   for (const raw of text.split(/\r?\n/)) {
     const line = raw.replace(/\s+/g, " ").trim();
     if (!line) continue;
+    // A PDF's watermark ("Not Official Transcript") comes out as stray letters.
+    if (line.length <= 2 || /^\**\s*(this is )?not (an )?official transcript/i.test(line)) continue;
+    if (/^Transfer Courses\b/i.test(line)) {
+      finish();
+      transfer = true;
+      continue;
+    }
+    if (transfer) {
+      const credit = transferRow(line, subjects);
+      if (credit) rows.push(credit);
+      continue;
+    }
     const start = courseStart(line, subjects);
     if (start) {
       finish();
       pending = { code: start.code, text: start.rest, term: term };
       continue;
     }
-    const termMatch = line.match(/^(Fall|Winter|Spring|Summer)(?:\s+(?:Quarter|Session))?\s+(\d{4})\b/i);
-    if (termMatch && line.length < 40) {
+    // "Fall 2018" (GOLD), "Term: Fall Qtr 2024" (UCSD), "Summer Session I 2023".
+    const termMatch = line.match(/^(?:Term:\s*)?(Fall|Winter|Spring|Summer)\b(?:\s+(?:Quarter|Qtr|Session|Sess)\b)?(?:\s+(?:I{1,3}|1|2|3|Med\w*|Special))?\s+(\d{4})\b/i);
+    if (termMatch && line.length < 60) {
       finish();
       term = { quarter: termMatch[1][0].toUpperCase() + termMatch[1].slice(1).toLowerCase(), year: Number(termMatch[2]) };
       continue;
     }
     // Totals, column headings and page headers end a course.
-    if (/^(Quarter Total|Cumulative Total|Term Total|Course\b|Unit\b|Dean'?s|University of California|https?:|\d{1,2}\/\d{1,2}\/\d{2,4})/i.test(line)) {
+    if (/^(Quarter Total|Cumulative Total|Term Total|Course\b|Unit\b|Dean'?s|University of California|https?:|\d{1,2}\/\d{1,2}\/\d{2,4}|Term (Credits|GPA|Grade|Honors)|Academic (Status|History)|Subject\b|page \d+ of \d+|Transfer Credit|Entity Name|Cumulative Summary|Create Date|General Information|All credits|UCSD Undergraduate)/i.test(line)) {
       finish();
       continue;
     }
@@ -215,11 +255,40 @@ function courseStart(line, subjects) {
   return { code: subject + " " + number[1].toUpperCase(), rest: number[2] };
 }
 
+/*
+  One row of UCSD's "Transfer Courses": the course at the other school (or
+  the AP exam), then units, grade, term ("WI21"), level, and the UCSD course
+  it counts as. Becomes credit for that UCSD course.
+*/
+function transferRow(line, subjects) {
+  const match = line.match(/^(\S+)\s+(\S+)\s+(.*?)\s+(\d+\.\d\d)\s+(?:(\S{1,2})\s+)?(FA|WI|SP|S[123U]|SU)\d{2}\s+(?:LD|UD)\b\s*(.*)$/i);
+  if (!match) return null;
+  const from = match[1].toUpperCase() === "AP" ? "AP " + match[3] : match[1] + " " + match[2];
+  const equivalent = match[7].trim().toUpperCase().replace(/\s+/g, " ");
+  const subject = subjects.find(s => equivalent.startsWith(s + " "));
+  const real = subject && /^\d{1,3}[A-Z]{0,4}$/.test(equivalent.slice(subject.length + 1));
+  return {
+    code: real ? equivalent : (equivalent || "—"), title: from, term: null, transfer: true,
+    units: Number(match[4]), grade: null, use: Boolean(real),
+    note: real ? (match[1].toUpperCase() === "AP" ? "AP credit" : "transfer credit") : "no matching UCSD course",
+  };
+}
+
 // Grade, units and title from a course's text (everything after its code).
 function readCourse(code, text) {
   const words = text.trim().split(" ").filter(Boolean);
   let grade = null;
   let units = null;
+  // UCSD's columns: title, units, [grade], points, [repeat], read from the right.
+  const ucsd = text.trim().match(/^(.*?)\s*(\d+\.\d\d)\s+(?:(\S{1,2})\s+)?(\d+\.\d\d)(?:\s+(\S+))?$/);
+  if (ucsd && (!ucsd[3] || TRANSCRIPT_GRADES.includes(ucsd[3].toUpperCase()))) {
+    let ucsdGrade = (ucsd[3] || "IP").toUpperCase();
+    const withdrawn = ucsdGrade === "W";
+    const repeated = Boolean(ucsd[5]);
+    if (GRADE_ALIASES[ucsdGrade]) ucsdGrade = GRADE_ALIASES[ucsdGrade];
+    return { code: code, title: ucsd[1].trim(), units: Number(ucsd[2]), grade: withdrawn ? "IP" : ucsdGrade,
+             use: !withdrawn, note: withdrawn ? "withdrawn" : repeated ? "marked repeated" : "" };
+  }
   const numbersAt = words.findIndex(w => /^\d{5}$/.test(w));       // the EnrlCd
 
   if (numbersAt >= 0) {
@@ -276,7 +345,7 @@ function showReview() {
       '<tr><td><input type="checkbox" data-row="' + i + '" data-field="use"' + (r.use ? " checked" : "") + "></td>" +
       "<td><strong>" + escapeHtml(r.code) + '</strong> <span class="note">' + escapeHtml(r.title) +
       (r.note ? " (" + escapeHtml(r.note) + ")" : "") + "</span></td>" +
-      "<td>" + escapeHtml(termName(r.term)) + "</td>" +
+      "<td>" + escapeHtml(r.transfer ? "credit" : termName(r.term)) + "</td>" +
       '<td><input type="number" step="0.5" min="0" max="12" data-row="' + i + '" data-field="units" value="' + (r.units === null ? "" : r.units) + '"></td>' +
       '<td><select data-row="' + i + '" data-field="grade">' + gradeOptions(r.grade) + "</select></td></tr>").join("") +
     "</tbody></table>";
@@ -302,8 +371,18 @@ function slotForTerm(term) {
 }
 
 function applyTranscript() {
-  const rows = transcriptRows.filter(r => r.use && r.term);
-  if (!rows.length) return;
+  const credits = transcriptRows.filter(r => r.use && r.transfer && r.code);
+  const rows = transcriptRows.filter(r => r.use && r.term && !r.transfer);
+  if (!rows.length && !credits.length) return;
+  // AP and transfer courses (UCSD's Academic History lists them) become credit.
+  for (const r of credits) if (!credit.transfer.includes(r.code)) credit.transfer.push(r.code);
+  if (!rows.length) {
+    transcriptRows = [];
+    transcriptEl.box.close();
+    say(credits.length + " transfer and AP courses are now in your credit.");
+    creditUpdated();
+    return;
+  }
   // Start the plan at the first term on the transcript, if that's earlier.
   const firstAcademic = Math.min(...rows.map(r => (r.term.quarter === "Fall" ? r.term.year : r.term.year - 1)));
   if (firstAcademic < plan.startYear || Object.keys(plan.placed).length === 0) {
@@ -338,7 +417,10 @@ function applyTranscript() {
   rebuildAfterTranscript(new Set(rows.map(r => r.code)));
   transcriptRows = [];
   transcriptEl.box.close();
-  say(rows.length + " courses from your transcript are in your plan, with their grades. The rest of your plan now starts after them.");
+  say(rows.length + " courses from your transcript are in your plan, with their grades" +
+      (credits.length ? ", and " + credits.length + " transfer and AP courses are in your credit" : "") +
+      ". The rest of your plan now starts after them.");
+  if (credits.length) creditUpdated();
   planChanged();
   if (graph) draw();
 }

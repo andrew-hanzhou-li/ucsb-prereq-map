@@ -328,7 +328,43 @@ def check_campuses(p):
     check("ucsd: plans are saved apart from UCSB's",
           ucsd.evaluate("localStorage.getItem('prereq.ucsd.plan')") is not None and
           "MATH 20A" not in (ucsd.evaluate("localStorage.getItem('prereq.ucsb.plan')") or ""))
-    check("ucsd: no GOLD transcript reader (it reads UCSB's format only)", not ucsd.is_visible("#plan-import"))
+    check("ucsd: the transcript reader is offered, for TritonLink's Academic History",
+          ucsd.is_visible("#plan-import") and "Academic History" in ucsd.inner_text("#transcript"))
+    # Laid out like a real Academic History printed to PDF (terms newest
+    # first, watermark letters, a page break, the transfer section).
+    history = """Academic History
+***This is Not an Official Transcript***
+UCSD Undergraduate Courses by Term
+Term: Winter Qtr 2025
+Subject Course Course Title Units Grade Points Repeat
+CSE 101 Design & Analysis of Algorithm 4.00 0.00
+Term: Fall Qtr 2024
+Subject Course Course Title Units Grade Points Repeat
+CHIN 10AN First-Year Chinese I 5.00 A- 18.50
+N
+o
+MATH 20C Calculus & Analytic Geometry 4.00 P 0.00
+page 1 of 3
+CSE 100 Advanced Data Structures 4.00 W 0.00
+Term Credits Passed: 9.00 Term GPA: 3.833
+Term Grade Points: 34.50 Academic Status: Good Standing
+Transfer Credit
+Entity Name Dates Credit
+Advanced Placement Credit 05/18 - 05/20 36.00
+Transfer Courses
+Subject Course Course Title Units Grade Term Level UCSD Approx
+AP BI3 Biology 8.00 P SP19 LD BILD 10
+Advanced Placement Credit
+CISC 2 Fundamentals of Comp Sci I 6.00 A WI21 LD CSE 8A
+Transferred From
+AP EH3 English Lang & Comp 8.00 P SP19 LD BILD APC
+"""
+    rows = ucsd.evaluate("t => parseTranscript(t).map(r => [r.code, r.grade, r.units, r.use, r.transfer || false, r.term ? r.term.quarter + ' ' + r.term.year : null])", history)
+    want = [["CSE 101", "IP", 4, True, False, "Winter 2025"], ["CHIN 10AN", "A-", 5, True, False, "Fall 2024"],
+            ["MATH 20C", "P", 4, True, False, "Fall 2024"], ["CSE 100", "IP", 4, False, False, "Fall 2024"],
+            ["BILD 10", None, 8, True, True, None], ["CSE 8A", None, 6, True, True, None]]
+    check("ucsd: an Academic History is read: in-progress, a title ending in \"I\", P, W, AP and transfer rows",
+          rows[:6] == want and len(rows) == 7 and rows[6][3] is False, rows)
     check("ucsd: no Auto-fill on a department map (it isn't a list of requirements)",
           not ucsd.is_visible("#plan-autofill") and ucsd.evaluate("autoFill(true), Object.keys(plan.placed).length") == 1)
     ucsd.click("#credit-button")
