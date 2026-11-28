@@ -60,7 +60,9 @@ COUNT = r"(\d+|" + "|".join(NUMBER_WORDS) + r")"
 CHOOSE_RULE = re.compile(r"^(?:(?:Select|Complete|Choose|Take)\s+)?(?:at least\s+|a minimum of\s+|any\s+|a total of\s+)?" + COUNT +
                          r"\b(?P<what>[^:]*?)\b(?:from|of the following)\b", re.IGNORECASE)
 # "two courses from each of the following principles", "one course from each of three of the four areas"
-EACH_RULE = re.compile(r"\bfrom each of\s+(?:(?P<areas>\d+|" + "|".join(NUMBER_WORDS) + r")\s+of\b)?", re.IGNORECASE)
+EACH_RULE = re.compile(r"\bfrom (?:each of\s+(?:(?P<areas>\d+|" + "|".join(NUMBER_WORDS) + r")\s+of\b)?|"
+                       r"(?P<some>\d+|" + "|".join(NUMBER_WORDS) + r")\s+of the following\s+(?:\w+\s+)?"
+                       r"(?:areas|groups|categories|lists|tracks)\b)", re.IGNORECASE)
 # A rule group the catalog offers but doesn't require: honors, specializations,
 # field quarters, substitutions ("Chemistry 20AH may be substituted for 20A"),
 # petitions and recommendations.
@@ -274,7 +276,8 @@ class Converter:
             # Each list gives N; "from each of three of the four" asks for three lists.
             each = [{"type": "choose", "count": count_of(choose.group(1)), "items": unwrapped(p),
                      **({"label": p["label"]} if p.get("label") else {})} for p in parts]
-            areas = EACH_RULE.search(line).group("areas")
+            # ("one course from three of the following four areas": three areas, one course each)
+            areas = EACH_RULE.search(line).group("areas") or EACH_RULE.search(line).group("some")
             node = {"type": "choose", "count": count_of(areas), "items": each} if areas else {"type": "all", "items": each}
         elif choose and (re.search(r"\bcourses?\b", choose.group("what"), re.IGNORECASE) or
                          not re.search(r"\bunits?\b", choose.group("what"), re.IGNORECASE)):
