@@ -30,45 +30,6 @@
    }
   },
   {
-   "name": "Honors Program",
-   "requirement": {
-    "type": "all",
-    "items": [
-     {
-      "type": "all",
-      "items": [
-       {
-        "type": "course",
-        "code": "LING 198A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "LING 198B",
-        "status": "active"
-       }
-      ],
-      "label": "Linguistics 198A and 198B"
-     },
-     {
-      "type": "all",
-      "items": [
-       {
-        "type": "course",
-        "code": "LING 199",
-        "status": "active"
-       }
-      ],
-      "label": "Linguistics 199"
-     }
-    ],
-    "label": "Honors Program",
-    "notes": "Departmental honors are awarded at graduation to those students who have a grade-point average of 3.6 or better in their junior and senior years and who have received a grade of A in Linguistics 198A and 198B or in 199. Qualified students may be proposed by any member of the faculty to the faculty as a whole for the award of highest honors on the basis of a piece of research in linguistics completed at UCLA.",
-    "optional": true
-   },
-   "optional": true
-  },
-  {
    "name": "The Major",
    "requirement": {
     "type": "all",
@@ -233,7 +194,6 @@
       "items": [
        {
         "type": "choose",
-        "count": 1,
         "items": [
          {
           "type": "course",
@@ -316,12 +276,12 @@
           "status": "active"
          }
         ],
-        "label": "ANTHRO 130–139",
-        "expanded_from": "range"
+        "count": 1,
+        "label": "Anthropology 130 series",
+        "notes": "Only one course may apply."
        },
        {
         "type": "choose",
-        "count": 1,
         "items": [
          {
           "type": "course",
@@ -399,12 +359,12 @@
           "status": "active"
          }
         ],
-        "label": "ANTHRO 150–159",
-        "expanded_from": "range"
+        "count": 1,
+        "label": "Anthropology 150 series",
+        "notes": "Only one course may apply."
        },
        {
         "type": "choose",
-        "count": 1,
         "items": [
          {
           "type": "course",
@@ -472,8 +432,9 @@
           "status": "active"
          }
         ],
-        "label": "ANTHRO 160–169",
-        "expanded_from": "range"
+        "count": 1,
+        "label": "Anthropology 160 series",
+        "notes": "Only one course may apply."
        },
        {
         "type": "course",
@@ -503,6 +464,45 @@
     ],
     "label": "The Major"
    }
+  },
+  {
+   "name": "Honors Program",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "LING 198A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 198B",
+        "status": "active"
+       }
+      ],
+      "label": "Linguistics 198A and 198B"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "LING 199",
+        "status": "active"
+       }
+      ],
+      "label": "Linguistics 199"
+     }
+    ],
+    "label": "Honors Program",
+    "notes": "Departmental honors are awarded at graduation to those students who have a grade-point average of 3.6 or better in their junior and senior years and who have received a grade of A in Linguistics 198A and 198B or in 199. Qualified students may be proposed by any member of the faculty to the faculty as a whole for the award of highest honors on the basis of a piece of research in linguistics completed at UCLA.",
+    "optional": true
+   },
+   "optional": true
   },
   {
    "name": "Computing Specialization",

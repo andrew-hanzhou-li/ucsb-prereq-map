@@ -617,7 +617,7 @@
   {
    "name": "Honors Program",
    "requirement": {
-    "type": "all",
+    "type": "choose",
     "items": [
      {
       "type": "all",
@@ -649,10 +649,10 @@
         "status": "inactive"
        }
       ],
-      "label": "Honors Research",
-      "optional": true
+      "label": "Honors Research"
      }
     ],
+    "count": 1,
     "label": "Honors Program",
     "notes": "The honors program is designed to support exceptional students in conducting original, individual-based research with an academic or public contribution under the close mentorship of a faculty member. Complete one of the following pathways:",
     "optional": true

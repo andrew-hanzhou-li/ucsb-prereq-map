@@ -12,29 +12,54 @@
     "type": "all",
     "items": [
      {
-      "type": "all",
+      "type": "choose",
       "items": [
        {
-        "type": "course",
-        "code": "FILIPNO 6",
-        "status": "active"
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "FILIPNO 6",
+          "status": "active"
+         }
+        ],
+        "label": "FILIPNO"
        },
        {
-        "type": "course",
-        "code": "INDO 6",
-        "status": "active"
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "INDO 6",
+          "status": "active"
+         }
+        ],
+        "label": "INDO"
        },
        {
-        "type": "course",
-        "code": "THAI 6",
-        "status": "active"
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "THAI 6",
+          "status": "active"
+         }
+        ],
+        "label": "THAI"
        },
        {
-        "type": "course",
-        "code": "VIETMSE 6",
-        "status": "active"
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "VIETMSE 6",
+          "status": "active"
+         }
+        ],
+        "label": "VIETMSE"
        }
       ],
+      "count": 1,
       "label": "Intermediate Sequence in One Southeast Asian Language",
       "notes": "Select one intermediate sequence in a Southeast Asian language offered by the department (e.g., courses listed or equivalent):"
      },
@@ -50,7 +75,7 @@
       "label": "Southeast Asian Studies 50"
      },
      {
-      "type": "all",
+      "type": "choose",
       "items": [
        {
         "type": "course",
@@ -73,6 +98,7 @@
         "status": "active"
        }
       ],
+      "count": 1,
       "label": "Religion, Literature, or Culture",
       "notes": "Select one course within the department (e.g., courses listed):"
      }

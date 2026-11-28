@@ -7,27 +7,6 @@
  "source": "https://catalog.registrar.ucla.edu/major/2026/ECONOMICSBA",
  "sections": [
   {
-   "name": "Honors Program",
-   "requirement": {
-    "type": "all",
-    "items": [
-     {
-      "type": "course",
-      "code": "ECON 198A",
-      "status": "active"
-     },
-     {
-      "type": "course",
-      "code": "ECON 198B",
-      "status": "active"
-     }
-    ],
-    "label": "Honors Program",
-    "optional": true
-   },
-   "optional": true
-  },
-  {
    "name": "Preparation for the Major",
    "requirement": {
     "type": "all",
@@ -647,6 +626,27 @@
     ],
     "label": "The Major"
    }
+  },
+  {
+   "name": "Honors Program",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "ECON 198A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECON 198B",
+      "status": "active"
+     }
+    ],
+    "label": "Honors Program",
+    "optional": true
+   },
+   "optional": true
   }
  ],
  "narrative": []

@@ -259,7 +259,6 @@
      },
      {
       "type": "choose",
-      "count": 1,
       "items": [
        {
         "type": "course",
@@ -517,8 +516,9 @@
         "status": "active"
        }
       ],
-      "label": "HIST 1–99",
-      "expanded_from": "range"
+      "count": 3,
+      "label": "Additional Lower-Division History Courses",
+      "notes": "Select three additional lower-division history courses (except History 19, 89, 89HC, 99)."
      }
     ],
     "label": "Preparation for the Major"

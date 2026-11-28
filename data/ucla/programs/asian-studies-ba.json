@@ -261,54 +261,103 @@
       "notes": "Select two courses from the following. Only one course from Comparative Literature 1D, 2DW, or 4DW may be applied."
      },
      {
-      "type": "all",
+      "type": "choose",
       "items": [
        {
-        "type": "course",
-        "code": "CHIN 6",
-        "status": "active"
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "CHIN 6",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHIN 6A",
+          "status": "active"
+         }
+        ],
+        "label": "CHIN"
        },
        {
-        "type": "course",
-        "code": "CHIN 6A",
-        "status": "active"
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "FILIPNO 6",
+          "status": "active"
+         }
+        ],
+        "label": "FILIPNO"
        },
        {
-        "type": "course",
-        "code": "FILIPNO 6",
-        "status": "active"
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "HIN-URD 100C",
+          "status": "active"
+         }
+        ],
+        "label": "HIN-URD"
        },
        {
-        "type": "course",
-        "code": "HIN-URD 100C",
-        "status": "active"
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "INDO 6",
+          "status": "active"
+         }
+        ],
+        "label": "INDO"
        },
        {
-        "type": "course",
-        "code": "INDO 6",
-        "status": "active"
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "JAPAN 6",
+          "status": "active"
+         }
+        ],
+        "label": "JAPAN"
        },
        {
-        "type": "course",
-        "code": "JAPAN 6",
-        "status": "active"
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "KOREA 6",
+          "status": "active"
+         }
+        ],
+        "label": "KOREA"
        },
        {
-        "type": "course",
-        "code": "KOREA 6",
-        "status": "active"
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "THAI 6",
+          "status": "active"
+         }
+        ],
+        "label": "THAI"
        },
        {
-        "type": "course",
-        "code": "THAI 6",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "VIETMSE 6",
-        "status": "active"
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "VIETMSE 6",
+          "status": "active"
+         }
+        ],
+        "label": "VIETMSE"
        }
       ],
+      "count": 1,
       "label": "Foreign Language"
      }
     ],

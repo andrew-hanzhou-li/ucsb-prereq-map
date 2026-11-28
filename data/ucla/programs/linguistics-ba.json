@@ -335,6 +335,52 @@
    }
   },
   {
+   "name": "Preparation for the Major",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "LING 20",
+      "status": "active"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "ANTHRO 4",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 31",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 10",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 100A",
+        "status": "active"
+       }
+      ],
+      "count": 2,
+      "label": "Electives",
+      "notes": "Select two courses from the following list. Only one course from Psychology 10 or 100A may be applied."
+     },
+     {
+      "type": "text",
+      "text": "Complete the equivalent to the sixth level of one foreign language or the equivalent to the third level of two different foreign languages."
+     }
+    ],
+    "label": "Preparation for the Major"
+   }
+  },
+  {
    "name": "Honors Program",
    "requirement": {
     "type": "all",
@@ -493,52 +539,6 @@
     "optional": true
    },
    "optional": true
-  },
-  {
-   "name": "Preparation for the Major",
-   "requirement": {
-    "type": "all",
-    "items": [
-     {
-      "type": "course",
-      "code": "LING 20",
-      "status": "active"
-     },
-     {
-      "type": "choose",
-      "items": [
-       {
-        "type": "course",
-        "code": "ANTHRO 4",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "PHILOS 31",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "PSYCH 10",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "PSYCH 100A",
-        "status": "active"
-       }
-      ],
-      "count": 2,
-      "label": "Electives",
-      "notes": "Select two courses from the following list. Only one course from Psychology 10 or 100A may be applied."
-     },
-     {
-      "type": "text",
-      "text": "Complete the equivalent to the sixth level of one foreign language or the equivalent to the third level of two different foreign languages."
-     }
-    ],
-    "label": "Preparation for the Major"
-   }
   }
  ],
  "narrative": []

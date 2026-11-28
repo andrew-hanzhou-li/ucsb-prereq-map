@@ -782,6 +782,86 @@
    }
   },
   {
+   "name": "Preparation for the Major",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "MATH 31A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 31AL",
+        "status": "active"
+       }
+      ],
+      "count": 1
+     },
+     {
+      "type": "course",
+      "code": "MATH 31B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MATH 32A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MATH 32B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MATH 33A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MATH 33B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MATH 61",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECON 1",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECON 2",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECON 11",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COMPTNG 10A",
+      "status": "active"
+     },
+     {
+      "type": "text",
+      "text": "Complete any one Writing II course."
+     }
+    ],
+    "label": "Preparation for the Major",
+    "notes": "Complete 11 courses, and one Writing II course. Select Mathematics 31A or 31AL."
+   }
+  },
+  {
    "name": "Honors Program",
    "requirement": {
     "type": "all",
@@ -949,86 +1029,6 @@
     "optional": true
    },
    "optional": true
-  },
-  {
-   "name": "Preparation for the Major",
-   "requirement": {
-    "type": "all",
-    "items": [
-     {
-      "type": "choose",
-      "items": [
-       {
-        "type": "course",
-        "code": "MATH 31A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "MATH 31AL",
-        "status": "active"
-       }
-      ],
-      "count": 1
-     },
-     {
-      "type": "course",
-      "code": "MATH 31B",
-      "status": "active"
-     },
-     {
-      "type": "course",
-      "code": "MATH 32A",
-      "status": "active"
-     },
-     {
-      "type": "course",
-      "code": "MATH 32B",
-      "status": "active"
-     },
-     {
-      "type": "course",
-      "code": "MATH 33A",
-      "status": "active"
-     },
-     {
-      "type": "course",
-      "code": "MATH 33B",
-      "status": "active"
-     },
-     {
-      "type": "course",
-      "code": "MATH 61",
-      "status": "active"
-     },
-     {
-      "type": "course",
-      "code": "ECON 1",
-      "status": "active"
-     },
-     {
-      "type": "course",
-      "code": "ECON 2",
-      "status": "active"
-     },
-     {
-      "type": "course",
-      "code": "ECON 11",
-      "status": "active"
-     },
-     {
-      "type": "course",
-      "code": "COMPTNG 10A",
-      "status": "active"
-     },
-     {
-      "type": "text",
-      "text": "Complete any one Writing II course."
-     }
-    ],
-    "label": "Preparation for the Major",
-    "notes": "Complete 11 courses, and one Writing II course. Select Mathematics 31A or 31AL."
-   }
   }
  ],
  "narrative": []

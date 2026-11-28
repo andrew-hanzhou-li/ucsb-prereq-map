@@ -7,28 +7,6 @@
  "source": "https://catalog.registrar.ucla.edu/major/2026/DISABILITYSTUDIESBA",
  "sections": [
   {
-   "name": "Honors Program",
-   "requirement": {
-    "type": "all",
-    "items": [
-     {
-      "type": "course",
-      "code": "DIS STD 198A",
-      "status": "active"
-     },
-     {
-      "type": "course",
-      "code": "DIS STD 198B",
-      "status": "active"
-     }
-    ],
-    "label": "Honors Program",
-    "notes": "All honors students must complete their capstone requirement by taking courses 198A and 198B, in which they research, write, and present an honors thesis.",
-    "optional": true
-   },
-   "optional": true
-  },
-  {
    "name": "The Major",
    "requirement": {
     "type": "all",
@@ -1114,6 +1092,28 @@
     ],
     "label": "Preparation for the Major"
    }
+  },
+  {
+   "name": "Honors Program",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "DIS STD 198A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "DIS STD 198B",
+      "status": "active"
+     }
+    ],
+    "label": "Honors Program",
+    "notes": "All honors students must complete their capstone requirement by taking courses 198A and 198B, in which they research, write, and present an honors thesis.",
+    "optional": true
+   },
+   "optional": true
   }
  ],
  "narrative": []

@@ -304,23 +304,6 @@
    }
   },
   {
-   "name": "Honors Program",
-   "requirement": {
-    "type": "all",
-    "items": [
-     {
-      "type": "course",
-      "code": "COM LIT 198",
-      "status": "active"
-     }
-    ],
-    "label": "Honors Program",
-    "notes": "Departmental honors candidates must complete all requirements for the major and an honors research paper (in addition to regular course requirements) in two of the four required upper-division comparative literature courses. These two honors research papers must be completed during the quarter in which the student is enrolled in the course. Candidates must also complete a fourth course in the primary literature area and Comparative Literature 198 with a core faculty member in which they write an independent research paper of approximately 25 pages.",
-    "optional": true
-   },
-   "optional": true
-  },
-  {
    "name": "Preparation for the Major",
    "requirement": {
     "type": "all",
@@ -422,6 +405,23 @@
     ],
     "label": "Preparation for the Major"
    }
+  },
+  {
+   "name": "Honors Program",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "COM LIT 198",
+      "status": "active"
+     }
+    ],
+    "label": "Honors Program",
+    "notes": "Departmental honors candidates must complete all requirements for the major and an honors research paper (in addition to regular course requirements) in two of the four required upper-division comparative literature courses. These two honors research papers must be completed during the quarter in which the student is enrolled in the course. Candidates must also complete a fourth course in the primary literature area and Comparative Literature 198 with a core faculty member in which they write an independent research paper of approximately 25 pages.",
+    "optional": true
+   },
+   "optional": true
   }
  ],
  "narrative": []

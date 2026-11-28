@@ -161,49 +161,80 @@
       "notes": "Select two courses from the following. Only one course from Comparative Literature 1D, 2DW, or 4DW may be applied."
      },
      {
-      "type": "all",
+      "type": "choose",
       "items": [
        {
-        "type": "course",
-        "code": "ARABIC 102C",
-        "status": "active"
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "ARABIC 102C",
+          "status": "active"
+         }
+        ],
+        "label": "ARABIC"
        },
        {
-        "type": "course",
-        "code": "ARMENIA 102C",
-        "status": "active"
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "ARMENIA 102C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ARMENIA 105C",
+          "status": "active"
+         }
+        ],
+        "label": "ARMENIA"
        },
        {
-        "type": "course",
-        "code": "ARMENIA 105C",
-        "status": "active"
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "HEBREW 102C",
+          "status": "active"
+         }
+        ],
+        "label": "HEBREW"
        },
        {
-        "type": "course",
-        "code": "HEBREW 102C",
-        "status": "active"
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "IRANIAN 102C",
+          "status": "active"
+         }
+        ],
+        "label": "IRANIAN"
        },
        {
-        "type": "course",
-        "code": "IRANIAN 102C",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "TURKIC 102C",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "TURKIC 112C",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "TURKIC 116C",
-        "status": "active"
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "TURKIC 102C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "TURKIC 112C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "TURKIC 116C",
+          "status": "active"
+         }
+        ],
+        "label": "TURKIC"
        }
       ],
+      "count": 1,
       "label": "Foreign Language"
      }
     ],

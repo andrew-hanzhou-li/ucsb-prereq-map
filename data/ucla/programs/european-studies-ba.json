@@ -286,84 +286,175 @@
       "notes": "Select two courses from the following. Only one course from Comparative Literature 1D, 2DW, or 4DW may be applied."
      },
      {
-      "type": "all",
+      "type": "choose",
       "items": [
        {
-        "type": "course",
-        "code": "CZCH 102C",
-        "status": "active"
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "CZCH 102C",
+          "status": "active"
+         }
+        ],
+        "label": "CZCH"
        },
        {
-        "type": "course",
-        "code": "DUTCH 103C",
-        "status": "active"
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "DUTCH 103C",
+          "status": "active"
+         }
+        ],
+        "label": "DUTCH"
        },
        {
-        "type": "course",
-        "code": "FRNCH 6",
-        "status": "active"
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "FRNCH 6",
+          "status": "active"
+         }
+        ],
+        "label": "FRNCH"
        },
        {
-        "type": "course",
-        "code": "GERMAN 6",
-        "status": "active"
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "GERMAN 6",
+          "status": "active"
+         }
+        ],
+        "label": "GERMAN"
        },
        {
-        "type": "course",
-        "code": "HNGAR 102C",
-        "status": "active"
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "HNGAR 102C",
+          "status": "active"
+         }
+        ],
+        "label": "HNGAR"
        },
        {
-        "type": "course",
-        "code": "ITALIAN 6",
-        "status": "active"
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "ITALIAN 6",
+          "status": "active"
+         }
+        ],
+        "label": "ITALIAN"
        },
        {
-        "type": "course",
-        "code": "POLSH 102C",
-        "status": "active"
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "POLSH 102C",
+          "status": "active"
+         }
+        ],
+        "label": "POLSH"
        },
        {
-        "type": "course",
-        "code": "PORTGSE 3",
-        "status": "active"
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "PORTGSE 3",
+          "status": "active"
+         }
+        ],
+        "label": "PORTGSE"
        },
        {
-        "type": "course",
-        "code": "ROMANIA 102C",
-        "status": "active"
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "ROMANIA 102C",
+          "status": "active"
+         }
+        ],
+        "label": "ROMANIA"
        },
        {
-        "type": "course",
-        "code": "RUSSN 6",
-        "status": "active"
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "RUSSN 6",
+          "status": "active"
+         }
+        ],
+        "label": "RUSSN"
        },
        {
-        "type": "course",
-        "code": "SCAND 5",
-        "status": "active"
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "SCAND 5",
+          "status": "active"
+         }
+        ],
+        "label": "SCAND"
        },
        {
-        "type": "course",
-        "code": "SRB CRO 102C",
-        "status": "active"
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "SRB CRO 102C",
+          "status": "active"
+         }
+        ],
+        "label": "SRB CRO"
        },
        {
-        "type": "course",
-        "code": "SPAN 5",
-        "status": "active"
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "SPAN 5",
+          "status": "active"
+         }
+        ],
+        "label": "SPAN"
        },
        {
-        "type": "course",
-        "code": "UKRN 102C",
-        "status": "active"
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "UKRN 102C",
+          "status": "active"
+         }
+        ],
+        "label": "UKRN"
        },
        {
-        "type": "course",
-        "code": "YIDDSH 102C",
-        "status": "active"
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "YIDDSH 102C",
+          "status": "active"
+         }
+        ],
+        "label": "YIDDSH"
        }
       ],
+      "count": 1,
       "label": "Foreign Language"
      }
     ],

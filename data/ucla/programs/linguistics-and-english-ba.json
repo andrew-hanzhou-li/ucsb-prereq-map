@@ -385,7 +385,6 @@
        },
        {
         "type": "choose",
-        "count": 1,
         "items": [
          {
           "type": "course",
@@ -448,12 +447,12 @@
           "status": "active"
          }
         ],
-        "label": "ENGL 150–159",
-        "expanded_from": "range"
+        "count": 1,
+        "label": "English 150 series",
+        "notes": "Only one course may apply."
        },
        {
         "type": "choose",
-        "count": 1,
         "items": [
          {
           "type": "course",
@@ -581,12 +580,12 @@
           "status": "active"
          }
         ],
-        "label": "ENGL 160–169",
-        "expanded_from": "range"
+        "count": 1,
+        "label": "English 160 series",
+        "notes": "Only one course may apply."
        },
        {
         "type": "choose",
-        "count": 1,
         "items": [
          {
           "type": "course",
@@ -689,8 +688,9 @@
           "status": "active"
          }
         ],
-        "label": "ENGL 170–179",
-        "expanded_from": "range"
+        "count": 1,
+        "label": "English 170 series",
+        "notes": "Only one course may apply."
        }
       ],
       "count": 3,

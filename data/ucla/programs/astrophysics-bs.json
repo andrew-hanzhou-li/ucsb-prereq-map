@@ -7,23 +7,6 @@
  "source": "https://catalog.registrar.ucla.edu/major/2026/ASTROPHYSICSBS",
  "sections": [
   {
-   "name": "Honors Program",
-   "requirement": {
-    "type": "all",
-    "items": [
-     {
-      "type": "course",
-      "code": "ASTR 199",
-      "status": "active"
-     }
-    ],
-    "label": "Honors Program",
-    "notes": "In addition to completing all courses required for the major, students must complete two terms of Astronomy 199.",
-    "optional": true
-   },
-   "optional": true
-  },
-  {
    "name": "Preparation for the Major",
    "requirement": {
     "type": "all",
@@ -358,6 +341,23 @@
     ],
     "label": "The Major"
    }
+  },
+  {
+   "name": "Honors Program",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "ASTR 199",
+      "status": "active"
+     }
+    ],
+    "label": "Honors Program",
+    "notes": "In addition to completing all courses required for the major, students must complete two terms of Astronomy 199.",
+    "optional": true
+   },
+   "optional": true
   }
  ],
  "narrative": []

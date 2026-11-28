@@ -7,156 +7,6 @@
  "source": "https://catalog.registrar.ucla.edu/major/2026/MOLECULARCELLANDDEVELOPMENTALBIOLOGYBS",
  "sections": [
   {
-   "name": "Computing Specialization",
-   "requirement": {
-    "type": "all",
-    "items": [
-     {
-      "type": "all",
-      "items": [
-       {
-        "type": "course",
-        "code": "COMPTNG 10A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "COMPTNG 10B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "COMPTNG 10C",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "COMPTNG 16A",
-        "status": "active"
-       },
-       {
-        "type": "choose",
-        "items": [
-         {
-          "type": "course",
-          "code": "LIFESCI 40",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "STATS 13",
-          "status": "active"
-         }
-        ],
-        "count": 1
-       }
-      ],
-      "label": "Required",
-      "notes": "Students may select either Life Sciences 40 or Statistics 13"
-     },
-     {
-      "type": "choose",
-      "items": [
-       {
-        "type": "course",
-        "code": "CHEM C100",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "COM SCI C121",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "COM SCI C124",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "COM SCI CM186",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "MCD BIO 187AL",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "PHYSCI 125",
-        "status": "active"
-       }
-      ],
-      "count": 1,
-      "label": "Elective",
-      "notes": "Select one course from:"
-     }
-    ],
-    "label": "Computing Specialization",
-    "notes": "Majors in Molecular, Cell, and Developmental Biology may select a specialization in Computing by satisfying all the requirements for a bachelor’s degree in the major and completing the following course requirements. A grade of C or better is required in each course, with a combined grade-point average in the specialization of at least 2.0. Students must petition for admission to the program and are advised to do so after completing Program in Computing 10B (petitions should be filed in the Student Affairs Office). Students graduate with a bachelor’s degree in their major and a specialization in Computing.",
-    "optional": true
-   },
-   "optional": true
-  },
-  {
-   "name": "Honors Program",
-   "requirement": {
-    "type": "all",
-    "items": [
-     {
-      "type": "course",
-      "code": "MCD BIO 145",
-      "status": "active"
-     },
-     {
-      "type": "course",
-      "code": "MCD BIO 180A",
-      "status": "active"
-     },
-     {
-      "type": "course",
-      "code": "MCD BIO 180B",
-      "status": "active"
-     },
-     {
-      "type": "course",
-      "code": "MCD BIO 191",
-      "status": "active"
-     },
-     {
-      "type": "course",
-      "code": "BMD RES 193H",
-      "status": "active"
-     },
-     {
-      "type": "course",
-      "code": "BMD RES 194H",
-      "status": "active"
-     },
-     {
-      "type": "course",
-      "code": "MCD BIO 198A",
-      "status": "active"
-     },
-     {
-      "type": "course",
-      "code": "MCD BIO 198B",
-      "status": "active"
-     },
-     {
-      "type": "course",
-      "code": "MCD BIO 198C",
-      "status": "active"
-     }
-    ],
-    "label": "Honors Program",
-    "notes": "The core of the program consists of at least one approved undergraduate seminar course from Molecular, Cell, and Developmental Biology 145, 180A, 180B, 191, Biomedical Research 193H, or 194H, and three research courses (12 units minimum) from 198A, 198B, and 198C, culminating in a thesis. Biomedical Research 193H and 194H are not accepted as electives for the major.",
-    "optional": true
-   },
-   "optional": true
-  },
-  {
    "name": "Preparation for the Major",
    "requirement": {
     "type": "all",
@@ -865,6 +715,156 @@
     ],
     "label": "The Major"
    }
+  },
+  {
+   "name": "Computing Specialization",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "COMPTNG 10A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMPTNG 10B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMPTNG 10C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMPTNG 16A",
+        "status": "active"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "LIFESCI 40",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "STATS 13",
+          "status": "active"
+         }
+        ],
+        "count": 1
+       }
+      ],
+      "label": "Required",
+      "notes": "Students may select either Life Sciences 40 or Statistics 13"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM C100",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM SCI C121",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM SCI C124",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM SCI CM186",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MCD BIO 187AL",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYSCI 125",
+        "status": "active"
+       }
+      ],
+      "count": 1,
+      "label": "Elective",
+      "notes": "Select one course from:"
+     }
+    ],
+    "label": "Computing Specialization",
+    "notes": "Majors in Molecular, Cell, and Developmental Biology may select a specialization in Computing by satisfying all the requirements for a bachelor’s degree in the major and completing the following course requirements. A grade of C or better is required in each course, with a combined grade-point average in the specialization of at least 2.0. Students must petition for admission to the program and are advised to do so after completing Program in Computing 10B (petitions should be filed in the Student Affairs Office). Students graduate with a bachelor’s degree in their major and a specialization in Computing.",
+    "optional": true
+   },
+   "optional": true
+  },
+  {
+   "name": "Honors Program",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "MCD BIO 145",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MCD BIO 180A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MCD BIO 180B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MCD BIO 191",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BMD RES 193H",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BMD RES 194H",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MCD BIO 198A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MCD BIO 198B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MCD BIO 198C",
+      "status": "active"
+     }
+    ],
+    "label": "Honors Program",
+    "notes": "The core of the program consists of at least one approved undergraduate seminar course from Molecular, Cell, and Developmental Biology 145, 180A, 180B, 191, Biomedical Research 193H, or 194H, and three research courses (12 units minimum) from 198A, 198B, and 198C, culminating in a thesis. Biomedical Research 193H and 194H are not accepted as electives for the major.",
+    "optional": true
+   },
+   "optional": true
   }
  ],
  "narrative": []

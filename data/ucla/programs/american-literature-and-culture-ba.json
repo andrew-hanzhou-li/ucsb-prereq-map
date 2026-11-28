@@ -76,93 +76,6 @@
    }
   },
   {
-   "name": "Honors Program",
-   "requirement": {
-    "type": "all",
-    "items": [
-     {
-      "type": "choose",
-      "items": [
-       {
-        "type": "course",
-        "code": "ENGL 120",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ENGL 121",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ENGL 122",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ENGL 123",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ENGL 124",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ENGL 125",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ENGL M126",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ENGL 127",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ENGL 128",
-        "status": "active"
-       }
-      ],
-      "count": 1,
-      "label": "Theory",
-      "notes": "Select one course from:"
-     },
-     {
-      "type": "all",
-      "items": [
-       {
-        "type": "course",
-        "code": "ENGL 191H",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ENGL 198A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ENGL 198B",
-        "status": "active"
-       }
-      ],
-      "label": "Honors Research",
-      "optional": true
-     }
-    ],
-    "label": "Honors Program",
-    "notes": "Students must take one theory course from English 120 through 128 no later than winter quarter of the junior year. In spring quarter of the junior year, students must take course 191H. During fall and winter quarters of the senior year, they take courses 198A and 198B, in which they write a thesis under the direction of a faculty member.",
-    "optional": true
-   },
-   "optional": true
-  },
-  {
    "name": "The Major",
    "requirement": {
     "type": "all",
@@ -755,6 +668,93 @@
     ],
     "label": "The Major"
    }
+  },
+  {
+   "name": "Honors Program",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "ENGL 120",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 121",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 122",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 123",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 124",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 125",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ENGL M126",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 127",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 128",
+        "status": "active"
+       }
+      ],
+      "count": 1,
+      "label": "Theory",
+      "notes": "Select one course from:"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "ENGL 191H",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 198A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 198B",
+        "status": "active"
+       }
+      ],
+      "label": "Honors Research",
+      "optional": true
+     }
+    ],
+    "label": "Honors Program",
+    "notes": "Students must take one theory course from English 120 through 128 no later than winter quarter of the junior year. In spring quarter of the junior year, students must take course 191H. During fall and winter quarters of the senior year, they take courses 198A and 198B, in which they write a thesis under the direction of a faculty member.",
+    "optional": true
+   },
+   "optional": true
   }
  ],
  "narrative": []

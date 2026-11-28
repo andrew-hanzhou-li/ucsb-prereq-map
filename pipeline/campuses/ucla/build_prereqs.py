@@ -96,6 +96,17 @@ def without_course(node, code):
     return node
 
 
+def marked_concurrent(node, numbers):
+    """Courses whose numbers are in `numbers` may be taken at the same time."""
+    if node is None:
+        return None
+    if node.get("type") == "course" and node.get("code", "").rsplit(" ", 1)[-1] in numbers:
+        return dict(node, concurrent=True)
+    if node.get("items"):
+        return dict(node, items=[marked_concurrent(i, numbers) for i in node["items"]])
+    return node
+
+
 def make_parser(names):
     return Parser(names.codes, names.names, EXTRA_RULES, brackets=True)
 
@@ -154,6 +165,12 @@ def regroup(text):
             right[0] = words.group(1) + right[0]
         return "((" + " and ".join(left) + ") or (" + " and ".join(right) + "))"
     text = re.sub(r"\(\d\.\d+\)", "", text)                        # "grades of B (3.0) or better"
+    # "Chemistry 14A (or 20A)" -> "(Chemistry 14A or 20A)"
+    text = re.sub(r"((?:(?:[A-Z][A-Za-z&]*|courses?)\s+)*)(" + number + r")\s*\(or\s+(" + number + r")\)", r"( \1\2 or \3 )", text)
+    # "one course from Mathematics 2, Statistics 10, or one term of calculus" is one choice
+    text = re.sub(r"\b(?:one|any one)\s+(?:course\s+)?(?:from|of)\s+([^;]*?,[^;]*?\bor\b[^;,]*)",
+                  lambda m: "( " + re.sub(r"^(?=(?:CM|MC|C|M)?\d)", "course ", re.sub(r",\s*(?:or\s+)?", " or ", m.group(1))) + " )",
+                  text)
     text = re.sub(r"((?:[A-Za-z&]+\s+)*" + number + r"(?:,\s*" + number + r")+)\s*\(or\s+(" + number +
                   r"(?:,\s*" + number + r")+)\)", series, text)
     parts = split_outside(text)
@@ -194,10 +211,16 @@ def parse(parser, names, text, code):
         text = text.replace(name, short)
     # A part after "; and" that starts with a bare number ("; and (103L)")
     # is in the course's own subject, not the subject named last before it.
+    # "3C (3C may be taken concurrently)": the note is taken out (its brackets
+    # confuse the grouping) and 3C is marked afterwards.
+    concurrent = re.findall(r"\((?:courses?\s+)?([A-Z]{0,2}\d+[A-Z]*)\s+may be taken concurrently\)", text)
+    text = re.sub(r"\s*\((?:courses?\s+)?[A-Z]{0,2}\d+[A-Z]*\s+may be taken concurrently\)", "", text)
     chunks = [re.sub(r"^(\(?)(?=(?:CM|MC|C|M)?\d)", r"\1course ", part) for part in text.split("; and ")]
     text = "; and ".join(regroup(part) for part in chunks)
     parsed = parser.parse(names.to_parser(text, subject))
     parsed["requires"] = without_course(names.from_parser(parsed["requires"]), code)
+    if concurrent:
+        parsed["requires"] = marked_concurrent(parsed["requires"], set(concurrent))
     return parsed
 
 

@@ -7,59 +7,6 @@
  "source": "https://catalog.registrar.ucla.edu/major/2026/CHEMISTRYBS",
  "sections": [
   {
-   "name": "Honors Program",
-   "requirement": {
-    "type": "all",
-    "items": [
-     {
-      "type": "choose",
-      "items": [
-       {
-        "type": "course",
-        "code": "CHEM 193A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CHEM 193B",
-        "status": "active"
-       }
-      ],
-      "count": 1,
-      "label": "Undergraduate Seminar",
-      "notes": "Select one course from:"
-     },
-     {
-      "type": "units",
-      "items": [
-       {
-        "type": "course",
-        "code": "CHEM 196A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CHEM 196B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CHEM 199",
-        "status": "active"
-       }
-      ],
-      "units": 12,
-      "label": "Research",
-      "notes": "Complete 12 units minimum from:"
-     }
-    ],
-    "label": "Honors Program",
-    "notes": "The core of the program consists of at least one approved undergraduate seminar course from Chemistry and Biochemistry 193A or 193B and three research courses (12 units minimum) from 196A, 196B, or 199, culminating in a thesis.",
-    "optional": true
-   },
-   "optional": true
-  },
-  {
    "name": "Concentration",
    "requirement": {
     "type": "choose",
@@ -642,6 +589,59 @@
      }
     ]
    }
+  },
+  {
+   "name": "Honors Program",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 193A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 193B",
+        "status": "active"
+       }
+      ],
+      "count": 1,
+      "label": "Undergraduate Seminar",
+      "notes": "Select one course from:"
+     },
+     {
+      "type": "units",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 196A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 196B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 199",
+        "status": "active"
+       }
+      ],
+      "units": 12,
+      "label": "Research",
+      "notes": "Complete 12 units minimum from:"
+     }
+    ],
+    "label": "Honors Program",
+    "notes": "The core of the program consists of at least one approved undergraduate seminar course from Chemistry and Biochemistry 193A or 193B and three research courses (12 units minimum) from 196A, 196B, or 199, culminating in a thesis.",
+    "optional": true
+   },
+   "optional": true
   },
   {
    "name": "Computing Specialization",

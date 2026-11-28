@@ -280,75 +280,6 @@
    }
   },
   {
-   "name": "Honors Program",
-   "requirement": {
-    "type": "all",
-    "items": [
-     {
-      "type": "all",
-      "items": [
-       {
-        "type": "course",
-        "code": "PHYSICS 199",
-        "status": "active"
-       }
-      ],
-      "label": "Research-Based",
-      "notes": "Students must complete two 4-unit terms of Physics 199."
-     },
-     {
-      "type": "all",
-      "items": [
-       {
-        "type": "course",
-        "code": "PHYSICS 197",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "MATH 115A",
-        "status": "active"
-       },
-       {
-        "type": "choose",
-        "items": [
-         {
-          "type": "course",
-          "code": "MATH 120A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MATH 120B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PHYSICS 221A",
-          "status": "inactive"
-         },
-         {
-          "type": "course",
-          "code": "PHYSICS 221B",
-          "status": "inactive"
-         }
-        ],
-        "count": 2,
-        "label": "Elective",
-        "notes": "Select two courses from:"
-       }
-      ],
-      "label": "Course-Based",
-      "notes": "Students must take 4 units of Physics 197—an in-depth individual study of a physics topic of interest to the student under the guidance of a faculty member and resulting in a written report—and are also required to take Mathematics 115A and two courses selected from Mathematics 120A, 120B, Physics 221A, or 221B."
-     }
-    ],
-    "label": "Honors Program",
-    "notes": "In addition to completing all courses required for the major, students must complete one of the two honors program options.",
-    "optional": true
-   },
-   "optional": true
-  },
-  {
    "name": "Preparation for the Major",
    "requirement": {
     "type": "all",
@@ -501,6 +432,75 @@
     ],
     "label": "Preparation for the Major"
    }
+  },
+  {
+   "name": "Honors Program",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "PHYSICS 199",
+        "status": "active"
+       }
+      ],
+      "label": "Research-Based",
+      "notes": "Students must complete two 4-unit terms of Physics 199."
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "PHYSICS 197",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 115A",
+        "status": "active"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 120A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 120B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 221A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 221B",
+          "status": "inactive"
+         }
+        ],
+        "count": 2,
+        "label": "Elective",
+        "notes": "Select two courses from:"
+       }
+      ],
+      "label": "Course-Based",
+      "notes": "Students must take 4 units of Physics 197—an in-depth individual study of a physics topic of interest to the student under the guidance of a faculty member and resulting in a written report—and are also required to take Mathematics 115A and two courses selected from Mathematics 120A, 120B, Physics 221A, or 221B."
+     }
+    ],
+    "label": "Honors Program",
+    "notes": "In addition to completing all courses required for the major, students must complete one of the two honors program options.",
+    "optional": true
+   },
+   "optional": true
   }
  ],
  "narrative": []

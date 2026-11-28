@@ -50,32 +50,6 @@
    }
   },
   {
-   "name": "Honors Program",
-   "requirement": {
-    "type": "all",
-    "items": [
-     {
-      "type": "course",
-      "code": "AM IND 198A",
-      "status": "active"
-     },
-     {
-      "type": "course",
-      "code": "AM IND 198B",
-      "status": "active"
-     },
-     {
-      "type": "course",
-      "code": "AM IND 198C",
-      "status": "active"
-     }
-    ],
-    "label": "Honors Program",
-    "optional": true
-   },
-   "optional": true
-  },
-  {
    "name": "The Major",
    "requirement": {
     "type": "all",
@@ -456,6 +430,32 @@
     "label": "The Major",
     "notes": "Requirements are distributed according to certain categories to create a breadth of knowledge. Students are required to take a research methods course to become familiar with scholarly techniques of knowledge production and to critically regard academic research, as well as a course in either ethnic/race/gender relations or comparative indigenous studies. Additional courses are selected in the social sciences and humanities according to a distributional formula that encourages further specialization within either of these two broad areas while simultaneously adding additional breadth. Finally, American Indian Studies C122XP prioritizes the experiential dimension of involvement in Native American communities (either urban, reservation, or rancheria) through work that supplies service experience and/or supervised internship opportunities. The 13 courses must fit one of the following regional emphasis patterns: (1) Native North America—eight courses, including those mentioned below and additional electives on Native North American topics or (2) indigenous peoples of the Americas—eight courses, including at least four dealing with indigenous people in Central America and/or South America. Students must complete 13 upper-division courses (52 units) as follows, with no more than 32 units from American Indian studies courses:"
    }
+  },
+  {
+   "name": "Honors Program",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "AM IND 198A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "AM IND 198B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "AM IND 198C",
+      "status": "active"
+     }
+    ],
+    "label": "Honors Program",
+    "optional": true
+   },
+   "optional": true
   }
  ],
  "narrative": []

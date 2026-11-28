@@ -22,61 +22,42 @@
       "status": "active"
      },
      {
-      "type": "all",
+      "type": "choose",
       "items": [
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "GREEK 1",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "GREEK 2",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "GREEK 3",
-            "status": "active"
-           }
-          ],
-          "label": "Greek 1, 2, and 3"
-         },
-         {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "GREEK 16",
-            "status": "active"
-           }
-          ],
-          "label": "Greek 16",
-          "notes": "Greek 16 may be substituted for Greek 1, 2, 3.",
-          "optional": true
-         }
-        ],
-        "label": "Elementary Greek",
-        "notes": "Select Greek 1, 2, and 3, or 16:"
+        "type": "course",
+        "code": "GREEK 1",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GREEK 2",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GREEK 3",
+        "status": "active"
        },
        {
         "type": "all",
         "items": [
          {
           "type": "course",
-          "code": "GREEK 20",
+          "code": "GREEK 16",
           "status": "active"
          }
         ],
-        "label": "Intermediate Greek"
+        "label": "Greek 16",
+        "notes": "Greek 16 may be substituted for Greek 1, 2, 3."
+       },
+       {
+        "type": "course",
+        "code": "GREEK 20",
+        "status": "active"
        }
       ],
+      "count": 1,
       "label": "Greek",
       "notes": "Select one series in elementary Greek, and one course in intermediate Greek:"
      }

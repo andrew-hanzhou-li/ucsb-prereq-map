@@ -7,133 +7,6 @@
  "source": "https://catalog.registrar.ucla.edu/major/2026/BIOCHEMISTRYBS",
  "sections": [
   {
-   "name": "Computing Specialization",
-   "requirement": {
-    "type": "all",
-    "items": [
-     {
-      "type": "all",
-      "items": [
-       {
-        "type": "course",
-        "code": "COMPTNG 10A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "COMPTNG 10B",
-        "status": "active"
-       },
-       {
-        "type": "choose",
-        "items": [
-         {
-          "type": "course",
-          "code": "COMPTNG 10C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "COMPTNG 15",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "COMPTNG 20A",
-          "status": "active"
-         }
-        ],
-        "count": 1,
-        "label": "Additional Program in Computing",
-        "notes": "Select one course from:"
-       }
-      ],
-      "label": "Program in Computing"
-     },
-     {
-      "type": "choose",
-      "items": [
-       {
-        "type": "course",
-        "code": "CHEM C126A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CHEM C145",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "COM SCI C121",
-        "status": "active"
-       }
-      ],
-      "count": 2,
-      "label": "Computational Chemistry",
-      "notes": "Select two courses from:"
-     }
-    ],
-    "label": "Computing Specialization",
-    "notes": "Majors may select a specialization in Computing by satisfying all the requirements for a bachelor’s degree in the specified major, and completing three Program in Computing courses and two Computational Chemistry courses.",
-    "optional": true
-   },
-   "optional": true
-  },
-  {
-   "name": "Honors Program",
-   "requirement": {
-    "type": "all",
-    "items": [
-     {
-      "type": "choose",
-      "items": [
-       {
-        "type": "course",
-        "code": "CHEM 193A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CHEM 193B",
-        "status": "active"
-       }
-      ],
-      "count": 1,
-      "label": "Undergraduate Seminar",
-      "notes": "Select at least one seminar course from:"
-     },
-     {
-      "type": "units",
-      "items": [
-       {
-        "type": "course",
-        "code": "CHEM 196A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CHEM 196B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CHEM 199",
-        "status": "active"
-       }
-      ],
-      "units": 12,
-      "label": "Research",
-      "notes": "Complete 12 units minimum from:"
-     }
-    ],
-    "label": "Honors Program",
-    "notes": "The core of the program consists of at least one approved undergraduate seminar course from Chemistry and Biochemistry 193A or 193B and three research courses (12 units minimum) from 196A, 196B, or 199, culminating in a thesis.",
-    "optional": true
-   },
-   "optional": true
-  },
-  {
    "name": "Preparation for the Major",
    "requirement": {
     "type": "all",
@@ -150,7 +23,7 @@
       "label": "Chemistry 1"
      },
      {
-      "type": "all",
+      "type": "choose",
       "items": [
        {
         "type": "all",
@@ -274,6 +147,7 @@
         "label": "Chemistry 30 series"
        }
       ],
+      "count": 1,
       "label": "Chemistry 14 or 20 Series",
       "notes": "Select one series:"
      },
@@ -1703,6 +1577,133 @@
     ],
     "label": "The Major"
    }
+  },
+  {
+   "name": "Computing Specialization",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "COMPTNG 10A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMPTNG 10B",
+        "status": "active"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "COMPTNG 10C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COMPTNG 15",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COMPTNG 20A",
+          "status": "active"
+         }
+        ],
+        "count": 1,
+        "label": "Additional Program in Computing",
+        "notes": "Select one course from:"
+       }
+      ],
+      "label": "Program in Computing"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM C126A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM C145",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM SCI C121",
+        "status": "active"
+       }
+      ],
+      "count": 2,
+      "label": "Computational Chemistry",
+      "notes": "Select two courses from:"
+     }
+    ],
+    "label": "Computing Specialization",
+    "notes": "Majors may select a specialization in Computing by satisfying all the requirements for a bachelor’s degree in the specified major, and completing three Program in Computing courses and two Computational Chemistry courses.",
+    "optional": true
+   },
+   "optional": true
+  },
+  {
+   "name": "Honors Program",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 193A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 193B",
+        "status": "active"
+       }
+      ],
+      "count": 1,
+      "label": "Undergraduate Seminar",
+      "notes": "Select at least one seminar course from:"
+     },
+     {
+      "type": "units",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 196A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 196B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 199",
+        "status": "active"
+       }
+      ],
+      "units": 12,
+      "label": "Research",
+      "notes": "Complete 12 units minimum from:"
+     }
+    ],
+    "label": "Honors Program",
+    "notes": "The core of the program consists of at least one approved undergraduate seminar course from Chemistry and Biochemistry 193A or 193B and three research courses (12 units minimum) from 196A, 196B, or 199, culminating in a thesis.",
+    "optional": true
+   },
+   "optional": true
   }
  ],
  "narrative": []

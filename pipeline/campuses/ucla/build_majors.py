@@ -77,7 +77,12 @@ IMPERATIVE = re.compile(r"^(?:Complete|Select|Choose|Take|Students must)\b", re.
 RECOMMENDED_LINE = re.compile(r"^(?!(?:Complete|Select|Choose|Take)\b).*\brecommended\b", re.IGNORECASE)
 UNITS_RULE = re.compile(r"^(?:Select|Complete|Take)\s+(?:at least\s+|a minimum of\s+)?(\d+(?:\.\d+)?)\s+units?\b", re.IGNORECASE)
 COUNT_ONLY = re.compile(r"^(?:Select|Complete|Choose|Take)\s+(?:at least\s+|a minimum of\s+|any\s+|a total of\s+)?" + COUNT +
-                        r"\s+(?:[\w-]+\s+){0,4}?courses?\b", re.IGNORECASE)
+                        r"\s+(?!units?\b)(?:[\w-]+\s+){0,4}?(?:courses?|sequences?|series|options?|concentrations?)\b", re.IGNORECASE)
+# "Select eight courses total, four in one area of concentration and two in …"
+TOTAL_RULE = re.compile(r"^(?:Select|Complete)\s+" + COUNT + r"\s+courses\s+total\b", re.IGNORECASE)
+ONE_OF_ANYWHERE = re.compile(r"\b(?:complete|select|choose|take) one of the following\b", re.IGNORECASE)
+ONE_SEQUENCE = re.compile(r"^(?:Select|Complete)\s+one\b[^:.]*\bsequence\b", re.IGNORECASE)
+ONLY_ONE = re.compile(r"^Only one (?:course|of these courses) may (?:apply|be applied)\.?$", re.IGNORECASE)
 SPLIT_RULE = re.compile(r"^Select\b[^:]*?\b" + COUNT + r"\s+courses?\b[^:]*?\band\s+" + COUNT + r"\s+courses?\b", re.IGNORECASE)
 ALL_RULE = re.compile(r"^(?:Complete|Take)\b[^:]*\b(?:as follows|the following|all)\b", re.IGNORECASE)
 
@@ -214,6 +219,20 @@ class Converter:
                 node = {"type": "text", "text": line}
         elif units and re.search(r"\bfrom\b", line, re.IGNORECASE):
             node = {"type": "units", "units": float(units.group(1)), "items": parts}
+        elif (total := TOTAL_RULE.match(line)) and count_of(total.group(1)) <= len(lists_joined(parts)):
+            # (before "from each of": "eight courses total, four in one area and two from each of the others")
+            node = {"type": "choose", "count": count_of(total.group(1)), "items": lists_joined(parts)}
+        elif ONE_OF_ANYWHERE.search(line) and len(parts) > 1:
+            # "… Students must complete one of the following four capstone options."
+            node = {"type": "choose", "count": 1, "items": parts}
+        elif ONE_SEQUENCE.search(line) and all(p["type"] == "course" for p in parts) and len({subject_of(p) for p in parts}) > 1:
+            # "Select one intermediate sequence in one Asian language": the listed
+            # courses, one sequence per language.
+            by_subject = {}
+            for part in parts:
+                by_subject.setdefault(subject_of(part), []).append(part)
+            node = {"type": "choose", "count": 1,
+                    "items": [{"type": "all", "label": subject, "items": courses} for subject, courses in by_subject.items()]}
         elif choose and EACH_RULE.search(line) and all(p["type"] != "course" for p in parts):
             # Each list gives N; "from each of three of the four" asks for three lists.
             each = [{"type": "choose", "count": count_of(choose.group(1)), "items": unwrapped(p),
@@ -229,10 +248,14 @@ class Converter:
             # (Unless the parts have rules of their own that share the count out.)
             if re.search(r"\bcourses?\b", choose.group("what"), re.IGNORECASE) and counted_across(node)["type"] == "choose":
                 node["items"] = lists_joined(parts)
-        elif ((counted := COUNT_ONLY.match(line)) and not ALL_RULE.match(line) and count_of(counted.group(1)) < len(parts)
-              and not re.search(r",|\brequired\b", line.split(":")[0])):
+        elif ((counted := COUNT_ONLY.match(line)) and not ALL_RULE.match(line)
+              and count_of(counted.group(1)) < sum(50 if p["type"] in ("range", "any") else 1 for p in parts)
+              # (not "Complete 13 required courses, 12 units of technical breadth, …")
+              and not re.search(r"\brequired\b", counted.group(0)) and not line[counted.end():].startswith(",")):
             # "Select three courses:" / "Complete seven elective courses" over a longer list
             node = {"type": "choose", "count": count_of(counted.group(1)), "items": lists_joined(parts)}
+        elif ONLY_ONE.match(line):
+            node = {"type": "choose", "count": 1, "items": parts}
         elif (split := SPLIT_RULE.match(line)) and all(p["type"] == "all" for p in parts):
             # "Select a concentration of four courses in one area listed and two
             # courses in a second area": six courses from the areas (the spread is in the notes).
@@ -297,6 +320,10 @@ def one_concentration(sections):
     at = sections.index(picks[0])
     rest = [s for s in sections if s not in picks]
     return rest[:at] + [{"name": "Concentration", "requirement": choice}] + rest[at:]
+
+
+def subject_of(course):
+    return course["code"].rsplit(" ", 1)[0]
 
 
 def courses_needed(node):
@@ -421,6 +448,8 @@ def main():
                 section["optional"] = True
             sections.append(section)
         sections = one_concentration(sections)
+        # (Optional sections, such as an honors program, after the required ones.)
+        sections.sort(key=lambda section: bool(section.get("optional")))
         page = os.path.basename(path)[:-5]
         program = {"id": "UCLA-" + page, "name": name, "kind": "major", "type": "Bachelor's Degree",
                    "catalog_year": CATALOG_YEAR, "source": SITE + "/major/2026/" + page,

@@ -752,33 +752,6 @@
    }
   },
   {
-   "name": "Honors Program",
-   "requirement": {
-    "type": "all",
-    "items": [
-     {
-      "type": "course",
-      "code": "PSYCH 191AH",
-      "status": "active"
-     },
-     {
-      "type": "course",
-      "code": "PSYCH 191BH",
-      "status": "active"
-     },
-     {
-      "type": "course",
-      "code": "PSYCH 191CH",
-      "status": "active"
-     }
-    ],
-    "label": "Honors Program",
-    "notes": "Students work for one year (fall through spring quarters) with a Psychology Department faculty sponsor on a research project that is the basis of a formal honors thesis. During that year they also participate in a weekly seminar (Psychology 191AH, 191BH, 191CH) in which thesis projects are presented and discussed and other topics of interest are explored with invited faculty members and other guests. Other requirements may apply.",
-    "optional": true
-   },
-   "optional": true
-  },
-  {
    "name": "Preparation for the Major",
    "requirement": {
     "type": "all",
@@ -994,6 +967,33 @@
     ],
     "label": "Preparation for the Major"
    }
+  },
+  {
+   "name": "Honors Program",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "PSYCH 191AH",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PSYCH 191BH",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PSYCH 191CH",
+      "status": "active"
+     }
+    ],
+    "label": "Honors Program",
+    "notes": "Students work for one year (fall through spring quarters) with a Psychology Department faculty sponsor on a research project that is the basis of a formal honors thesis. During that year they also participate in a weekly seminar (Psychology 191AH, 191BH, 191CH) in which thesis projects are presented and discussed and other topics of interest are explored with invited faculty members and other guests. Other requirements may apply.",
+    "optional": true
+   },
+   "optional": true
   }
  ],
  "narrative": []

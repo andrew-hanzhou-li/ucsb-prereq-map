@@ -7,33 +7,6 @@
  "source": "https://catalog.registrar.ucla.edu/major/2026/MICROBIOLOGYIMMUNOLOGYANDMOLECULARGENETICSBS",
  "sections": [
   {
-   "name": "Honors Program",
-   "requirement": {
-    "type": "all",
-    "items": [
-     {
-      "type": "course",
-      "code": "MIMG 198A",
-      "status": "active"
-     },
-     {
-      "type": "course",
-      "code": "MIMG 198B",
-      "status": "active"
-     },
-     {
-      "type": "course",
-      "code": "MIMG 198C",
-      "status": "active"
-     }
-    ],
-    "label": "Honors Program",
-    "notes": "The core of the program consists of research culminating in a thesis from the following three courses:",
-    "optional": true
-   },
-   "optional": true
-  },
-  {
    "name": "Preparation for the Major",
    "requirement": {
     "type": "all",
@@ -1256,6 +1229,33 @@
     "label": "The Major",
     "notes": "Two plans are offered by the department."
    }
+  },
+  {
+   "name": "Honors Program",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "MIMG 198A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MIMG 198B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MIMG 198C",
+      "status": "active"
+     }
+    ],
+    "label": "Honors Program",
+    "notes": "The core of the program consists of research culminating in a thesis from the following three courses:",
+    "optional": true
+   },
+   "optional": true
   }
  ],
  "narrative": []

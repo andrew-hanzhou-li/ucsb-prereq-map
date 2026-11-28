@@ -2690,6 +2690,74 @@
    }
   },
   {
+   "name": "Preparation for the Major",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "ENGCOMP 3",
+        "status": "active"
+       }
+      ],
+      "label": "English Composition 3"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "ENGL 4W",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 4HW",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 4WX",
+        "status": "active"
+       }
+      ],
+      "count": 1,
+      "label": "English 4W series",
+      "notes": "Select one course from:"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "ENGL 10A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 10B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 10C",
+        "status": "active"
+       }
+      ],
+      "label": "English 10 series"
+     },
+     {
+      "type": "text",
+      "text": "Complete either (1) level five or equivalent in any one foreign language or (2) level three or equivalent in one foreign language and two additional courses in foreign language or literature in translation."
+     }
+    ],
+    "label": "Preparation for the Major"
+   }
+  },
+  {
    "name": "Honors Program",
    "requirement": {
     "type": "all",
@@ -2775,74 +2843,6 @@
     "optional": true
    },
    "optional": true
-  },
-  {
-   "name": "Preparation for the Major",
-   "requirement": {
-    "type": "all",
-    "items": [
-     {
-      "type": "all",
-      "items": [
-       {
-        "type": "course",
-        "code": "ENGCOMP 3",
-        "status": "active"
-       }
-      ],
-      "label": "English Composition 3"
-     },
-     {
-      "type": "choose",
-      "items": [
-       {
-        "type": "course",
-        "code": "ENGL 4W",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ENGL 4HW",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ENGL 4WX",
-        "status": "active"
-       }
-      ],
-      "count": 1,
-      "label": "English 4W series",
-      "notes": "Select one course from:"
-     },
-     {
-      "type": "all",
-      "items": [
-       {
-        "type": "course",
-        "code": "ENGL 10A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ENGL 10B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ENGL 10C",
-        "status": "active"
-       }
-      ],
-      "label": "English 10 series"
-     },
-     {
-      "type": "text",
-      "text": "Complete either (1) level five or equivalent in any one foreign language or (2) level three or equivalent in one foreign language and two additional courses in foreign language or literature in translation."
-     }
-    ],
-    "label": "Preparation for the Major"
-   }
   }
  ],
  "narrative": []

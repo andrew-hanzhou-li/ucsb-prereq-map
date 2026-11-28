@@ -135,123 +135,6 @@
    }
   },
   {
-   "name": "Computing Specialization",
-   "requirement": {
-    "type": "all",
-    "items": [
-     {
-      "type": "choose",
-      "items": [
-       {
-        "type": "course",
-        "code": "MATH 61",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "MATH 180",
-        "status": "active"
-       }
-      ],
-      "count": 1,
-      "label": "Mathematics 61 or 180",
-      "notes": "Select one course from:"
-     },
-     {
-      "type": "all",
-      "items": [
-       {
-        "type": "course",
-        "code": "COMPTNG 10A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "COMPTNG 10B",
-        "status": "active"
-       }
-      ],
-      "label": "Program in Computing"
-     },
-     {
-      "type": "choose",
-      "items": [
-       {
-        "type": "course",
-        "code": "COMPTNG 10C",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "COMPTNG 15",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "COMPTNG 16A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "COMPTNG 20A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "COMPTNG 40A",
-        "status": "active"
-       }
-      ],
-      "count": 2,
-      "label": "Program in Computing Elective",
-      "notes": "Select two courses from:"
-     },
-     {
-      "type": "choose",
-      "items": [
-       {
-        "type": "course",
-        "code": "MATH 151A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "MATH 151AH",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "MATH 151B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "MATH 151BH",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "MATH 155",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "MATH 156",
-        "status": "active"
-       }
-      ],
-      "count": 2,
-      "label": "Mathematics Electives",
-      "notes": "Select two courses from:"
-     }
-    ],
-    "label": "Computing Specialization",
-    "notes": "Majors may select a specialization in Computing by satisfying all the requirements for a bachelor’s degree in the specified major and completing the following courses with a minimum grade of C– in each course and a combined grade-point average of at least 2.0. Students must petition for admission to this program and are advised to do so after they complete Program in Computing 10B (petitions should be filed in the Student Services Office). Students graduate with a bachelor’s degree in their major and a specialization in Computing.",
-    "optional": true
-   },
-   "optional": true
-  },
-  {
    "name": "The Major",
    "requirement": {
     "type": "all",
@@ -493,6 +376,123 @@
     ],
     "label": "The Major"
    }
+  },
+  {
+   "name": "Computing Specialization",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "MATH 61",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 180",
+        "status": "active"
+       }
+      ],
+      "count": 1,
+      "label": "Mathematics 61 or 180",
+      "notes": "Select one course from:"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "COMPTNG 10A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMPTNG 10B",
+        "status": "active"
+       }
+      ],
+      "label": "Program in Computing"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "COMPTNG 10C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMPTNG 15",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMPTNG 16A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMPTNG 20A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMPTNG 40A",
+        "status": "active"
+       }
+      ],
+      "count": 2,
+      "label": "Program in Computing Elective",
+      "notes": "Select two courses from:"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "MATH 151A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 151AH",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 151B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 151BH",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 155",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 156",
+        "status": "active"
+       }
+      ],
+      "count": 2,
+      "label": "Mathematics Electives",
+      "notes": "Select two courses from:"
+     }
+    ],
+    "label": "Computing Specialization",
+    "notes": "Majors may select a specialization in Computing by satisfying all the requirements for a bachelor’s degree in the specified major and completing the following courses with a minimum grade of C– in each course and a combined grade-point average of at least 2.0. Students must petition for admission to this program and are advised to do so after they complete Program in Computing 10B (petitions should be filed in the Student Services Office). Students graduate with a bachelor’s degree in their major and a specialization in Computing.",
+    "optional": true
+   },
+   "optional": true
   }
  ],
  "narrative": []

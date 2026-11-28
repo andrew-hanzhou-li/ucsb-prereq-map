@@ -104,15 +104,6 @@
    }
   },
   {
-   "name": "Honors Program",
-   "requirement": {
-    "type": "text",
-    "text": "The program entails taking a specified sequence of courses as part of the major requirements, completing an approved seminar offered by the Mathematics Department or submitting an original research project, and earning an overall GPA of at least 3.6 in approved upper-division and graduate mathematics courses.",
-    "optional": true
-   },
-   "optional": true
-  },
-  {
    "name": "The Major",
    "requirement": {
     "type": "all",
@@ -484,6 +475,15 @@
     ],
     "label": "The Major"
    }
+  },
+  {
+   "name": "Honors Program",
+   "requirement": {
+    "type": "text",
+    "text": "The program entails taking a specified sequence of courses as part of the major requirements, completing an approved seminar offered by the Mathematics Department or submitting an original research project, and earning an overall GPA of at least 3.6 in approved upper-division and graduate mathematics courses.",
+    "optional": true
+   },
+   "optional": true
   }
  ],
  "narrative": []

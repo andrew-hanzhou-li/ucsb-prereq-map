@@ -413,28 +413,6 @@
    }
   },
   {
-   "name": "Honors Program",
-   "requirement": {
-    "type": "all",
-    "items": [
-     {
-      "type": "course",
-      "code": "GEOG 198A",
-      "status": "active"
-     },
-     {
-      "type": "course",
-      "code": "GEOG 198B",
-      "status": "active"
-     }
-    ],
-    "label": "Honors Program",
-    "notes": "The departmental honors program is designed for Geography majors who are interested in completing a research project that culminates in an honors thesis. To qualify for graduation with departmental honors, students must have a cumulative grade-point average (GPA) of 3.5 or better in all upper-division geography courses and a 3.0 overall GPA. They must enroll in Geography 198A and 198B in two consecutive terms and earn grades of A– or better. They may elect to work with one or two faculty sponsors. Students are awarded highest honors, honors, or no honors based on an evaluation of the thesis by the faculty sponsor(s), and meeting GPA requirements. Contact the department advising office for more information.",
-    "optional": true
-   },
-   "optional": true
-  },
-  {
    "name": "Preparation for the Major",
    "requirement": {
     "type": "all",
@@ -494,6 +472,28 @@
     ],
     "label": "Preparation for the Major"
    }
+  },
+  {
+   "name": "Honors Program",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "GEOG 198A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "GEOG 198B",
+      "status": "active"
+     }
+    ],
+    "label": "Honors Program",
+    "notes": "The departmental honors program is designed for Geography majors who are interested in completing a research project that culminates in an honors thesis. To qualify for graduation with departmental honors, students must have a cumulative grade-point average (GPA) of 3.5 or better in all upper-division geography courses and a 3.0 overall GPA. They must enroll in Geography 198A and 198B in two consecutive terms and earn grades of A– or better. They may elect to work with one or two faculty sponsors. Students are awarded highest honors, honors, or no honors based on an evaluation of the thesis by the faculty sponsor(s), and meeting GPA requirements. Contact the department advising office for more information.",
+    "optional": true
+   },
+   "optional": true
   }
  ],
  "narrative": []

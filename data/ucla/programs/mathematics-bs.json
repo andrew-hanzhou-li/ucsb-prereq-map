@@ -109,6 +109,118 @@
    }
   },
   {
+   "name": "Preparation for the Major",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "MATH 31A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MATH 31AL",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MATH 31B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MATH 32A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MATH 32B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MATH 33A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MATH 33B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COMPTNG 10A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYSICS 1A",
+      "status": "active"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 20A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 20B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 11",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LIFESCI 7A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 31",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 132",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 1B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 1C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 5B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 5C",
+        "status": "active"
+       }
+      ],
+      "count": 2,
+      "label": "Electives",
+      "notes": "Select two courses from:"
+     }
+    ],
+    "label": "Preparation for the Major"
+   }
+  },
+  {
    "name": "Computing Specialization",
    "requirement": {
     "type": "all",
@@ -224,118 +336,6 @@
     "optional": true
    },
    "optional": true
-  },
-  {
-   "name": "Preparation for the Major",
-   "requirement": {
-    "type": "all",
-    "items": [
-     {
-      "type": "course",
-      "code": "MATH 31A",
-      "status": "active"
-     },
-     {
-      "type": "course",
-      "code": "MATH 31AL",
-      "status": "active"
-     },
-     {
-      "type": "course",
-      "code": "MATH 31B",
-      "status": "active"
-     },
-     {
-      "type": "course",
-      "code": "MATH 32A",
-      "status": "active"
-     },
-     {
-      "type": "course",
-      "code": "MATH 32B",
-      "status": "active"
-     },
-     {
-      "type": "course",
-      "code": "MATH 33A",
-      "status": "active"
-     },
-     {
-      "type": "course",
-      "code": "MATH 33B",
-      "status": "active"
-     },
-     {
-      "type": "course",
-      "code": "COMPTNG 10A",
-      "status": "active"
-     },
-     {
-      "type": "course",
-      "code": "PHYSICS 1A",
-      "status": "active"
-     },
-     {
-      "type": "choose",
-      "items": [
-       {
-        "type": "course",
-        "code": "CHEM 20A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CHEM 20B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ECON 11",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "LIFESCI 7A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "PHILOS 31",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "PHILOS 132",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "PHYSICS 1B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "PHYSICS 1C",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "PHYSICS 5B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "PHYSICS 5C",
-        "status": "active"
-       }
-      ],
-      "count": 2,
-      "label": "Electives",
-      "notes": "Select two courses from:"
-     }
-    ],
-    "label": "Preparation for the Major"
-   }
   },
   {
    "name": "Honors Program",

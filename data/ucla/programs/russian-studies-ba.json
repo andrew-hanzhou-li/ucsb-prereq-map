@@ -67,33 +67,6 @@
    }
   },
   {
-   "name": "Honors Program",
-   "requirement": {
-    "type": "all",
-    "items": [
-     {
-      "type": "course",
-      "code": "SLAVC 198A",
-      "status": "active"
-     },
-     {
-      "type": "course",
-      "code": "SLAVC 198B",
-      "status": "active"
-     },
-     {
-      "type": "course",
-      "code": "SLAVC 198C",
-      "status": "active"
-     }
-    ],
-    "label": "Honors Program",
-    "notes": "The honors program is designed for exceptional departmental majors who wish to complete a research project that culminates in an honors thesis. The courses must be taken during senior year (fall, winter, and spring terms respectively). Students pursuing departmental honors must submit the contract for each course by the end of the tenth week of the previous quarter. The sequence culminates in the submission of a thesis. Students who enroll in the honors program are exempt from taking the standard thesis course sequence (Slavic 191TA, 191TB, 191TC).",
-    "optional": true
-   },
-   "optional": true
-  },
-  {
    "name": "The Major",
    "requirement": {
     "type": "all",
@@ -367,6 +340,33 @@
     ],
     "label": "The Major"
    }
+  },
+  {
+   "name": "Honors Program",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "SLAVC 198A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SLAVC 198B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SLAVC 198C",
+      "status": "active"
+     }
+    ],
+    "label": "Honors Program",
+    "notes": "The honors program is designed for exceptional departmental majors who wish to complete a research project that culminates in an honors thesis. The courses must be taken during senior year (fall, winter, and spring terms respectively). Students pursuing departmental honors must submit the contract for each course by the end of the tenth week of the previous quarter. The sequence culminates in the submission of a thesis. Students who enroll in the honors program are exempt from taking the standard thesis course sequence (Slavic 191TA, 191TB, 191TC).",
+    "optional": true
+   },
+   "optional": true
   }
  ],
  "narrative": []

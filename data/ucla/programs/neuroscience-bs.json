@@ -315,15 +315,6 @@
    }
   },
   {
-   "name": "Honors Program",
-   "requirement": {
-    "type": "text",
-    "text": "The honors program provides exceptional Neuroscience majors with the opportunity to do research culminating in an honors thesis.",
-    "optional": true
-   },
-   "optional": true
-  },
-  {
    "name": "The Major",
    "requirement": {
     "type": "all",
@@ -1071,6 +1062,15 @@
     "label": "The Major",
     "notes": "The Neuroscience major consists of 10 courses (approximately 43 units). Consult respective department or program sections for course descriptions."
    }
+  },
+  {
+   "name": "Honors Program",
+   "requirement": {
+    "type": "text",
+    "text": "The honors program provides exceptional Neuroscience majors with the opportunity to do research culminating in an honors thesis.",
+    "optional": true
+   },
+   "optional": true
   }
  ],
  "narrative": []
