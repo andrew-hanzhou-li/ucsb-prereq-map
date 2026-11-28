@@ -75,6 +75,8 @@ CAMPUS_PATHS = {
              "offering_overrides": os.path.join("data", "offering_overrides.json")},
     "ucsd": {"programs": os.path.join("data", "ucsd", "programs"), "prereqs": os.path.join("data", "ucsd", "prereqs.json"),
              "courses": os.path.join("data", "ucsd", "raw_courses.json"), "offering_overrides": None},
+    "ucla": {"programs": os.path.join("data", "ucla", "programs"), "prereqs": os.path.join("data", "ucla", "prereqs.json"),
+             "courses": os.path.join("data", "ucla", "raw_courses.json"), "offering_overrides": None},
 }
 MAJORS_DIR = CAMPUS_PATHS["ucsb"]["programs"]
 OUTPUT_DIR = os.path.join("site", "data", "ucsb")

@@ -33,7 +33,7 @@ const CAMPUSES = [
   { id: "ucb", name: "UC Berkeley", short: "Berkeley", terms: "Semesters", status: "later" },
   { id: "ucd", name: "UC Davis", short: "Davis", terms: "Quarters", status: "later" },
   { id: "uci", name: "UC Irvine", short: "Irvine", terms: "Quarters", status: "later" },
-  { id: "ucla", name: "UCLA", short: "Los Angeles", terms: "Quarters", status: "next" },
+  { id: "ucla", name: "UCLA", short: "Los Angeles", terms: "Quarters", status: "next", hasData: true },
   { id: "ucm", name: "UC Merced", short: "Merced", terms: "Semesters", status: "later" },
   { id: "ucr", name: "UC Riverside", short: "Riverside", terms: "Quarters", status: "later" },
   { id: "ucsd", name: "UC San Diego", short: "San Diego", terms: "Quarters", status: "ready", hasData: true },
@@ -67,6 +67,13 @@ const CAMPUS_DETAILS = {
                   sample: "Term: Fall Qtr 2025\nCSE  12  Basic Data Struct & OO Design  4.00  A-  14.80\n…" },
     examples: [["computer-science-bs", "Computer Science (B.S.)"], ["mathematics-bs", "Mathematics (B.S.)"],
                ["general-biology-bs", "General Biology (B.S.)"]],
+  },
+  ucla: {
+    catalog: "UCLA General Catalog", catalogHome: "https://catalog.registrar.ucla.edu/",
+    courseUrl: null,
+    program: "major", programs: "majors", apChart: true, exampleCourse: "COM SCI 31",
+    examples: [["computer-science-bs", "Computer Science (B.S.)"], ["economics-ba", "Economics (B.A.)"],
+               ["psychology-ba", "Psychology (B.A.)"]],
   },
 };
 

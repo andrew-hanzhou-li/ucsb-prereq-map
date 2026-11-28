@@ -170,7 +170,9 @@ def main():
             record = json.load(f)
         if "Undergraduate" not in json.dumps(record.get("degree_level")):
             continue
-        name = record["title"].strip()
+        # "Computer Science BS" -> "Computer Science - BS", the form the site
+        # shows as "Computer Science (B.S.)" (as UCSB's and UCSD's names).
+        name = re.sub(r"\s+(BA|BS|BFA|BM|BMus|BArch)$", r" - \1", record["title"].strip())
         department = (record.get("academic_org") or {}).get("value", "") if isinstance(record.get("academic_org"), dict) else ""
         sections = []
         for top in (record.get("curriculumStructure") or {}).get("container") or []:
