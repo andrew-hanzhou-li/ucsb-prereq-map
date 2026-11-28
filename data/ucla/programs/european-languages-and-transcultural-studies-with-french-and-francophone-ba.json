@@ -33,788 +33,624 @@
       "type": "choose",
       "items": [
        {
-        "type": "choose",
-        "items": [
-         {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "FRNCH 115",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "FRNCH 116",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "FRNCH 117",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "FRNCH 118",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "FRNCH 119",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "FRNCH 120",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "FRNCH 121",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "FRNCH 136",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "FRNCH 163",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "FRNCH 164",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "FRNCH 166",
-            "status": "active"
-           }
-          ],
-          "label": "French"
-         },
-         {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "GERMAN 110",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "GERMAN 112",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "GERMAN 158",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "GERMAN 170",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "GERMAN 173",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "GERMAN 174",
-            "status": "active"
-           }
-          ],
-          "label": "German"
-         },
-         {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "ITALIAN 103A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ITALIAN 103B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ITALIAN 110",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ITALIAN 113",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ITALIAN 114B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ITALIAN 120",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ITALIAN 140",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ITALIAN 150",
-            "status": "active"
-           }
-          ],
-          "label": "Italian"
-         },
-         {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "SCAND C133A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "SCAND 134",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "SCAND C141A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "SCAND 141C",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "SCAND 143A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "SCAND 143C",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "SCAND C145A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "SCAND C145B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "SCAND C146A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "SCAND 147A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "SCAND C147B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "SCAND 147C",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "SCAND 154",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "SCAND C155",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "SCAND 156",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "SCAND 157",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "SCAND 172A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "SCAND C180",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "SCAND C185",
-            "status": "active"
-           }
-          ],
-          "label": "Scandinavian"
-         }
-        ],
-        "count": 1,
-        "label": "European Literature"
+        "type": "course",
+        "code": "FRNCH 115",
+        "status": "active"
        },
        {
-        "type": "choose",
-        "items": [
-         {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "ELTS 112",
-            "status": "active"
-           }
-          ],
-          "label": "European Languages and Transcultural Studies"
-         },
-         {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "FRNCH 121",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "FRNCH 130",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "FRNCH 137",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "FRNCH 138",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "FRNCH 139",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "FRNCH 160",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "FRNCH 167",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "FRNCH 169",
-            "status": "active"
-           }
-          ],
-          "label": "French"
-         },
-         {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "GERMAN 102",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "GERMAN 109",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "GERMAN 113",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "GERMAN 114",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "GERMAN 115",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "GERMAN 116",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "GERMAN 117",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "GERMAN 118SL",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "GERMAN 154",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "GERMAN 155",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "GERMAN 159",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "GERMAN 175",
-            "status": "active"
-           }
-          ],
-          "label": "German"
-         },
-         {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "ITALIAN 102A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ITALIAN 102B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ITALIAN 102C",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ITALIAN 116A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ITALIAN 116B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ITALIAN 122",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ITALIAN 123",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ITALIAN 124",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ITALIAN 125",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ITALIAN 152",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ITALIAN M158",
-            "status": "active"
-           }
-          ],
-          "label": "Italian"
-         },
-         {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "SCAND C131",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "SCAND 133C",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "SCAND 134",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "SCAND C137",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "SCAND 138",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "SCAND 142A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "SCAND C171",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "SCAND 172A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "SCAND 173A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "SCAND C174A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "SCAND 174B",
-            "status": "active"
-           }
-          ],
-          "label": "Scandinavian"
-         }
-        ],
-        "count": 1,
-        "label": "European Culture"
+        "type": "course",
+        "code": "FRNCH 116",
+        "status": "active"
        },
        {
-        "type": "choose",
-        "items": [
-         {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "FRNCH 141",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "FRNCH 142",
-            "status": "active"
-           }
-          ],
-          "label": "French"
-         },
-         {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "GERMAN 103",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "GERMAN 104",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "GERMAN 157",
-            "status": "active"
-           }
-          ],
-          "label": "German"
-         },
-         {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "ITALIAN 121",
-            "status": "active"
-           }
-          ],
-          "label": "Italian"
-         },
-         {
-          "type": "choose",
-          "count": 1,
-          "items": [
-           {
-            "type": "course",
-            "code": "SCAND 161",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "SCAND C163A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "SCAND C163B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "SCAND C163C",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "SCAND 165B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "SCAND C166A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "SCAND C166C",
-            "status": "active"
-           }
-          ],
-          "label": "SCAND 161–167",
-          "expanded_from": "range"
-         }
-        ],
-        "count": 1,
-        "label": "European Film and Media"
+        "type": "course",
+        "code": "FRNCH 117",
+        "status": "active"
        },
        {
-        "type": "choose",
-        "items": [
-         {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "CESC 100XP",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "CESC 172XP",
-            "status": "active"
-           }
-          ],
-          "label": "Community Engagement and Social Change"
-         },
-         {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "COM LIT 180",
-            "status": "active"
-           }
-          ],
-          "label": "Comparative Literature"
-         },
-         {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "CLASSIC 148",
-            "status": "active"
-           }
-          ],
-          "label": "Classics"
-         },
-         {
-          "type": "choose",
-          "count": 1,
-          "items": [
-           {
-            "type": "course",
-            "code": "DGT HUM 101",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "DGT HUM 110",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "DGT HUM 112",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "DGT HUM 120",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "DGT HUM M121",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "DGT HUM 122",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "DGT HUM 123",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "DGT HUM 124",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "DGT HUM 125",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "DGT HUM C131",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "DGT HUM 140",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "DGT HUM M145",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "DGT HUM 150",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "DGT HUM 151",
-            "status": "active"
-           }
-          ],
-          "label": "DGT HUM 101–151",
-          "expanded_from": "range"
-         },
-         {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "ENGL 118E",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL M118F",
-            "status": "active"
-           }
-          ],
-          "label": "English"
-         },
-         {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "ELTS C101XP",
-            "status": "active"
-           }
-          ],
-          "label": "European Languages and Transcultural Studies"
-         },
-         {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "FOOD ST M176XP",
-            "status": "active"
-           }
-          ],
-          "label": "Food Studies"
-         },
-         {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "ITALIAN 124",
-            "status": "active"
-           }
-          ],
-          "label": "Italian"
-         },
-         {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "PUB AFF M176XP",
-            "status": "active"
-           }
-          ],
-          "label": "Public Affairs"
-         }
-        ],
-        "count": 1,
-        "label": "Experimental Humanities"
+        "type": "course",
+        "code": "FRNCH 118",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "FRNCH 119",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "FRNCH 120",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "FRNCH 121",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "FRNCH 136",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "FRNCH 163",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "FRNCH 164",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "FRNCH 166",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GERMAN 110",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GERMAN 112",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GERMAN 158",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GERMAN 170",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GERMAN 173",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GERMAN 174",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ITALIAN 103A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ITALIAN 103B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ITALIAN 110",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ITALIAN 113",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ITALIAN 114B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ITALIAN 120",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ITALIAN 140",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ITALIAN 150",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SCAND C133A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SCAND 134",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SCAND C141A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SCAND 141C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SCAND 143A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SCAND 143C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SCAND C145A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SCAND C145B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SCAND C146A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SCAND 147A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SCAND C147B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SCAND 147C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SCAND 154",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SCAND C155",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SCAND 156",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SCAND 157",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SCAND 172A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SCAND C180",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SCAND C185",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ELTS 112",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "FRNCH 121",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "FRNCH 130",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "FRNCH 137",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "FRNCH 138",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "FRNCH 139",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "FRNCH 160",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "FRNCH 167",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "FRNCH 169",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GERMAN 102",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GERMAN 109",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GERMAN 113",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GERMAN 114",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GERMAN 115",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GERMAN 116",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GERMAN 117",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GERMAN 118SL",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GERMAN 154",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GERMAN 155",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GERMAN 159",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GERMAN 175",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ITALIAN 102A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ITALIAN 102B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ITALIAN 102C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ITALIAN 116A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ITALIAN 116B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ITALIAN 122",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ITALIAN 123",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ITALIAN 124",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ITALIAN 125",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ITALIAN 152",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ITALIAN M158",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SCAND C131",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SCAND 133C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SCAND 134",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SCAND C137",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SCAND 138",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SCAND 142A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SCAND C171",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SCAND 172A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SCAND 173A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SCAND C174A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SCAND 174B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "FRNCH 141",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "FRNCH 142",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GERMAN 103",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GERMAN 104",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GERMAN 157",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ITALIAN 121",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SCAND 161",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SCAND C163A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SCAND C163B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SCAND C163C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SCAND 165B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SCAND C166A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SCAND C166C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CESC 100XP",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CESC 172XP",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM LIT 180",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLASSIC 148",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DGT HUM 101",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DGT HUM 110",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DGT HUM 112",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DGT HUM 120",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DGT HUM M121",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DGT HUM 122",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DGT HUM 123",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DGT HUM 124",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DGT HUM 125",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DGT HUM C131",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DGT HUM 140",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DGT HUM M145",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DGT HUM 150",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DGT HUM 151",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ENGL 118E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ENGL M118F",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ELTS C101XP",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "FOOD ST M176XP",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ITALIAN 124",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PUB AFF M176XP",
+        "status": "active"
        }
       ],
       "count": 3,

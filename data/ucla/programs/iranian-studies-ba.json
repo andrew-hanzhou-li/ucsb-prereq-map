@@ -12,7 +12,7 @@
     "type": "all",
     "items": [
      {
-      "type": "all",
+      "type": "choose",
       "items": [
        {
         "type": "all",
@@ -57,6 +57,7 @@
         "label": "Accelerated Elementary Persian"
        }
       ],
+      "count": 1,
       "label": "Persian",
       "notes": "Complete courses from one series below or equivalent:"
      },
@@ -157,9 +158,20 @@
         "type": "all",
         "items": [
          {
-          "type": "course",
-          "code": "AN N EA CM163",
-          "status": "active"
+          "type": "choose",
+          "count": 1,
+          "items": [
+           {
+            "type": "course",
+            "code": "AN N EA CM163",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "IRANIAN CM163",
+            "status": "active"
+           }
+          ]
          },
          {
           "type": "course",
@@ -189,11 +201,6 @@
          {
           "type": "course",
           "code": "IRANIAN 161C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN CM163",
           "status": "active"
          },
          {

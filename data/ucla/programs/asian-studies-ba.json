@@ -943,7 +943,7 @@
         "text": "Select one additional course from either group 1 or group 2."
        },
        {
-        "type": "all",
+        "type": "choose",
         "items": [
          {
           "type": "all",
@@ -1183,6 +1183,7 @@
           "label": "Social Sciences Group 2"
          }
         ],
+        "count": 1,
         "label": "Substitutions",
         "notes": "The area studies electives listed in groups 1 and 2 focus on contemporary issues of that region after 1750. Students may substitute a maximum of three upper-division courses with focus on earlier historical aspects of the region or on diasporas with origins related to the region toward the area studies electives as long the distribution between humanities and arts and social sciences is maintained. Courses may be selected from the following lists:",
         "optional": true

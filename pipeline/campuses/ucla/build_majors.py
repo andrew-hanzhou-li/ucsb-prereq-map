@@ -403,6 +403,23 @@ class Converter:
         return node
 
 
+TWINS = {}     # cross-listed course -> the codes it's also listed as (filled in main)
+
+
+def twins_as_one(items):
+    """C&EE M20 and MECH&AE M20 are one course listed by two departments:
+    both in an "all" become a "one of" them."""
+    out = []
+    for item in items:
+        twin = next((o for o in out if o["type"] == "course" and item["type"] == "course"
+                     and item.get("code") in TWINS.get(o.get("code"), ())), None)
+        if twin is not None:
+            out[out.index(twin)] = {"type": "choose", "count": 1, "items": [twin, item]}
+        else:
+            out.append(item)
+    return out
+
+
 def pruned(node):
     """The node without lists that match no course (Philosophy's "graduate
     courses 201-219": graduate courses aren't in the undergraduate list), so
@@ -412,6 +429,8 @@ def pruned(node):
     items = [kept for kept in (pruned(i) for i in node["items"]) if kept is not None]
     if not items:
         return None
+    if node["type"] == "all":
+        items = twins_as_one(items)
     if node["type"] == "choose" and node["count"] > 1:
         # "Select two courses from" a Mathematics range and an Economics range:
         # each range is a long list to pick from, not one option.
@@ -575,7 +594,7 @@ def or_pairs(parts, line):
     """"Complete Mathematics 31A or 31AL and Mathematics 31B" lists all three
     courses; the line says 31A and 31AL are one choice. Courses the line joins
     with "or" become a "one of"."""
-    pairs = re.findall(r"\b([A-Z]{0,2}\d+[A-Z]*)\s+or\s+(?:[A-Z][a-z]+\s+)*([A-Z]{0,2}\d+[A-Z]*)\b", line)
+    pairs = re.findall(r"\b([A-Z]{0,2}\d+[A-Z]*)\s+or\s+(?:(?:[A-Z][a-z]+|and)\s+)*([A-Z]{0,2}\d+[A-Z]*)\b", line)
     by_number = {}
     for part in parts:
         if part["type"] == "course":
@@ -607,6 +626,18 @@ def main():
     if os.path.exists(TRANSLATED):
         with open(TRANSLATED, encoding="utf-8") as f:
             translated = json.load(f)
+    # (UCLA marks a multiple-listed course with M: C&EE M20 and MECH&AE M20 are
+    # one course when the number and title match.)
+    listed = {}
+    for code, info in catalog.items():
+        number = code.rsplit(" ", 1)[-1]
+        if re.match(r"C?M\d", number):
+            listed.setdefault((number, info.get("title", "")), set()).add(code)
+    for codes in listed.values():
+        for code in codes:
+            TWINS[code] = codes - {code}
+    for code, info in catalog.items():
+        TWINS.setdefault(code, set()).update(info.get("cross_listed") or [])
     converter = Converter(subject_ids(), translated, catalog)
     os.makedirs(PROGRAMS_DIR, exist_ok=True)
     for old in glob.glob(os.path.join(PROGRAMS_DIR, "*.json")):

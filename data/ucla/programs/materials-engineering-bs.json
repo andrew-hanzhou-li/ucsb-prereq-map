@@ -553,9 +553,20 @@
           "type": "all",
           "items": [
            {
-            "type": "course",
-            "code": "C&EE 91",
-            "status": "active"
+            "type": "choose",
+            "items": [
+             {
+              "type": "course",
+              "code": "C&EE 91",
+              "status": "active"
+             },
+             {
+              "type": "course",
+              "code": "MECH&AE 101",
+              "status": "active"
+             }
+            ],
+            "count": 1
            },
            {
             "type": "course",
@@ -620,11 +631,6 @@
            {
             "type": "course",
             "code": "MAT SCI 160",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "MECH&AE 101",
             "status": "active"
            }
           ],

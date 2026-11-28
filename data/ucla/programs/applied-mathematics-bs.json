@@ -161,36 +161,24 @@
         "type": "choose",
         "items": [
          {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "MATH 170A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "MATH 170B",
-            "status": "active"
-           }
-          ],
-          "label": "Probability Theory"
+          "type": "course",
+          "code": "MATH 170A",
+          "status": "active"
          },
          {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "STATS 100A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "STATS 100B",
-            "status": "active"
-           }
-          ],
-          "label": "Statistics"
+          "type": "course",
+          "code": "MATH 170B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "STATS 100A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "STATS 100B",
+          "status": "active"
          }
         ],
         "count": 2,

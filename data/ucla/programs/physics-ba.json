@@ -61,75 +61,59 @@
       "type": "choose",
       "items": [
        {
-        "type": "choose",
-        "count": 1,
-        "items": [
-         {
-          "type": "course",
-          "code": "PHYSICS 170A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PHYSICS 170E",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PHYSICS 170N",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PHYSICS C170M",
-          "status": "active"
-         }
-        ],
-        "label": "PHYSICS 170–170",
-        "expanded_from": "range"
+        "type": "course",
+        "code": "PHYSICS 170A",
+        "status": "active"
        },
        {
-        "type": "choose",
-        "count": 1,
-        "items": [
-         {
-          "type": "course",
-          "code": "PHYSICS 180A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PHYSICS 180C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PHYSICS 180D",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PHYSICS 180E",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PHYSICS 180F",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PHYSICS 180Q",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PHYSICS M180G",
-          "status": "active"
-         }
-        ],
-        "label": "PHYSICS 180–180",
-        "expanded_from": "range"
+        "type": "course",
+        "code": "PHYSICS 170E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 170N",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS C170M",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 180A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 180C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 180D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 180E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 180F",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 180Q",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS M180G",
+        "status": "active"
        }
       ],
       "count": 1,

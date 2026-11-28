@@ -272,7 +272,7 @@
   {
    "name": "Honors Program",
    "requirement": {
-    "type": "all",
+    "type": "choose",
     "items": [
      {
       "type": "all",
@@ -302,6 +302,7 @@
       "label": "Linguistics 199"
      }
     ],
+    "count": 1,
     "label": "Honors Program",
     "notes": "Departmental honors are awarded at graduation to those students who have a grade-point average of 3.6 or better in their junior and senior years and who have received a grade of A in Linguistics 198A and 198B or in 199. Qualified students may be proposed by any member of the faculty to the faculty as a whole for the award of highest honors on the basis of a piece of research in linguistics completed at UCLA.",
     "optional": true

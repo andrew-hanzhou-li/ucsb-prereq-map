@@ -83,7 +83,7 @@
       "notes": "Select one of the following series approved by the area head/division chair. The courses must be completed with grades of C or better."
      },
      {
-      "type": "all",
+      "type": "choose",
       "items": [
        {
         "type": "all",
@@ -543,6 +543,7 @@
         "label": "Voice"
        }
       ],
+      "count": 1,
       "label": "Concentration",
       "notes": "Based on instrument or voice, complete one concentration selected from:"
      }
@@ -626,7 +627,7 @@
       "label": "History"
      },
      {
-      "type": "all",
+      "type": "choose",
       "items": [
        {
         "type": "all",
@@ -9094,6 +9095,7 @@
         "label": "Voice"
        }
       ],
+      "count": 1,
       "label": "Concentration",
       "notes": "Based on instrument or voice, complete one concentration selected from:"
      }

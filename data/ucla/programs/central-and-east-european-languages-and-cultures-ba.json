@@ -156,7 +156,7 @@
       "notes": "Complete one three-quarter (12 to 15 units) introductory central and east European language sequence, or one 12-unit intensive introductory central and east European language course from:"
      },
      {
-      "type": "all",
+      "type": "choose",
       "items": [
        {
         "type": "all",
@@ -331,6 +331,7 @@
         "label": "Russian Electives"
        }
       ],
+      "count": 1,
       "label": "Advanced Language Sequence"
      },
      {
@@ -407,418 +408,364 @@
         "status": "active"
        },
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "choose",
-          "count": 1,
-          "items": [
-           {
-            "type": "course",
-            "code": "HNGAR 187A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "HNGAR 187B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "HNGAR 187C",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "HNGAR 187D",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "HNGAR 187E",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "HNGAR 187F",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "HNGAR 187G",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "HNGAR 187I",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "HNGAR 187J",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "HNGAR 187K",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "HNGAR 187L",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "HNGAR 187M",
-            "status": "active"
-           }
-          ],
-          "label": "HNGAR 187–187",
-          "expanded_from": "range"
-         },
-         {
-          "type": "choose",
-          "count": 1,
-          "items": [
-           {
-            "type": "course",
-            "code": "POLSH 187A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "POLSH 187B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "POLSH 187C",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "POLSH 187D",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "POLSH 187E",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "POLSH 187F",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "POLSH 187G",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "POLSH 187I",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "POLSH 187J",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "POLSH 187K",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "POLSH 187L",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "POLSH 187M",
-            "status": "active"
-           }
-          ],
-          "label": "POLSH 187–187",
-          "expanded_from": "range"
-         },
-         {
-          "type": "choose",
-          "count": 1,
-          "items": [
-           {
-            "type": "course",
-            "code": "SRB CRO 187A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "SRB CRO 187B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "SRB CRO 187C",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "SRB CRO 187D",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "SRB CRO 187E",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "SRB CRO 187F",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "SRB CRO 187G",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "SRB CRO 187I",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "SRB CRO 187J",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "SRB CRO 187K",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "SRB CRO 187L",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "SRB CRO 187M",
-            "status": "active"
-           }
-          ],
-          "label": "SRB CRO 187–187",
-          "expanded_from": "range"
-         },
-         {
-          "type": "choose",
-          "count": 1,
-          "items": [
-           {
-            "type": "course",
-            "code": "ROMANIA 187A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ROMANIA 187B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ROMANIA 187C",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ROMANIA 187D",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ROMANIA 187E",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ROMANIA 187F",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ROMANIA 187G",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ROMANIA 187I",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ROMANIA 187J",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ROMANIA 187K",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ROMANIA 187L",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ROMANIA 187M",
-            "status": "active"
-           }
-          ],
-          "label": "ROMANIA 187–187",
-          "expanded_from": "range"
-         },
-         {
-          "type": "choose",
-          "count": 1,
-          "items": [
-           {
-            "type": "course",
-            "code": "UKRN 187A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "UKRN 187B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "UKRN 187C",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "UKRN 187D",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "UKRN 187E",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "UKRN 187F",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "UKRN 187G",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "UKRN 187I",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "UKRN 187J",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "UKRN 187K",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "UKRN 187L",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "UKRN 187M",
-            "status": "active"
-           }
-          ],
-          "label": "UKRN 187–187",
-          "expanded_from": "range"
-         },
-         {
-          "type": "choose",
-          "count": 1,
-          "items": [
-           {
-            "type": "course",
-            "code": "CZCH 187A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "CZCH 187B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "CZCH 187C",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "CZCH 187D",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "CZCH 187E",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "CZCH 187F",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "CZCH 187G",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "CZCH 187I",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "CZCH 187J",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "CZCH 187K",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "CZCH 187L",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "CZCH 187M",
-            "status": "active"
-           }
-          ],
-          "label": "CZCH 187–187",
-          "expanded_from": "range"
-         }
-        ],
-        "label": "Czech, Hungarian, Polish, Romanian, Serbian/Croatian, Ukrainian 187A through 187M"
+        "type": "course",
+        "code": "HNGAR 187A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HNGAR 187B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HNGAR 187C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HNGAR 187D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HNGAR 187E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HNGAR 187F",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HNGAR 187G",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HNGAR 187I",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HNGAR 187J",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HNGAR 187K",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HNGAR 187L",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HNGAR 187M",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "POLSH 187A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "POLSH 187B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "POLSH 187C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "POLSH 187D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "POLSH 187E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "POLSH 187F",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "POLSH 187G",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "POLSH 187I",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "POLSH 187J",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "POLSH 187K",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "POLSH 187L",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "POLSH 187M",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SRB CRO 187A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SRB CRO 187B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SRB CRO 187C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SRB CRO 187D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SRB CRO 187E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SRB CRO 187F",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SRB CRO 187G",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SRB CRO 187I",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SRB CRO 187J",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SRB CRO 187K",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SRB CRO 187L",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SRB CRO 187M",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ROMANIA 187A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ROMANIA 187B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ROMANIA 187C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ROMANIA 187D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ROMANIA 187E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ROMANIA 187F",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ROMANIA 187G",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ROMANIA 187I",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ROMANIA 187J",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ROMANIA 187K",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ROMANIA 187L",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ROMANIA 187M",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "UKRN 187A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "UKRN 187B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "UKRN 187C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "UKRN 187D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "UKRN 187E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "UKRN 187F",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "UKRN 187G",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "UKRN 187I",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "UKRN 187J",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "UKRN 187K",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "UKRN 187L",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "UKRN 187M",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CZCH 187A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CZCH 187B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CZCH 187C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CZCH 187D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CZCH 187E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CZCH 187F",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CZCH 187G",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CZCH 187I",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CZCH 187J",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CZCH 187K",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CZCH 187L",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CZCH 187M",
+        "status": "active"
        },
        {
         "type": "choose",
