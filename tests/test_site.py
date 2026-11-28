@@ -447,6 +447,28 @@ AP EH3 English Lang & Comp 8.00 P SP19 LD BILD APC
     check("ucsb: an ensemble taken six times is planned with repeats, and the plan is complete",
           all(cello[0]) and cello[1] > 0, cello)
     ucsd.evaluate("localStorage.removeItem('prereq.ucsb.plan')")
+    # UCLA (preview): its transcript, printed in two columns. Lines laid out
+    # like a real one (2021 format).
+    ucla_text = """fall quarter 2016
+FRESHMAN CS SEMINAR   COM SCI 1     1.0    4.0   A
+Term Total   5.0   5.0   20.0   4.000
+spring quarter 2018                             summer sessions 2018
+ELECTRODYNMC&OPTICS   PHYSICS 1C    5.0    0.0   I        OPERATING SYSTEMS     COM SCI 111   5.0   20.0   A
+INTERNSHIP            ENGR 195      2.0    0.0   P        MACHINE LEARNING      COM SCI M146  4.0   14.8   A-
+Honors Content
+fall quarter 2018
+ELECTRODYNMC&OPTICS   PHYSICS 1C    5.0   18.5   B+
+07/19/2018 Removal of 18S I Grade
+"""
+    ucsd.goto(SITE + "?preview#ucla/plan/computer-science-bs")
+    ucsd.wait_for_function("typeof creditTable !== 'undefined' && creditTable && currentView === 'plan'", timeout=20000)
+    got = ucsd.evaluate("t => parseTranscript(t).map(r => [r.code, r.grade, r.use, r.term ? r.term.quarter + ' ' + r.term.year : null])", ucla_text)
+    check("ucla: the transcript is read, both columns, with the Incomplete replaced by its later grade",
+          ucsd.is_visible("#plan-import") and got == [
+              ["COM SCI 1", "A", True, "Fall 2016"], ["PHYSICS 1C", "IP", False, "Spring 2018"],
+              ["COM SCI 111", "A", True, "Summer 2018"], ["ENGR 195", "P", True, "Spring 2018"],
+              ["COM SCI M146", "A-", True, "Summer 2018"], ["PHYSICS 1C", "B+", True, "Fall 2018"]], got)
+    ucsd.evaluate("localStorage.removeItem('prereq.ucla.plan')")
     ucsd.goto(SITE + "?preview=off#campus")
     ucsd.wait_for_timeout(400)
     check("campus: ?preview=off turns the preview off", ucsd.locator(".campus-row.preview").count() == 0)

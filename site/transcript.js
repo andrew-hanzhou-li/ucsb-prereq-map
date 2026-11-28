@@ -83,7 +83,7 @@ const PDFJS = {
 };
 const GRADE_WORDS = ["A+", "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "D-", "F", "P", "NP", "IP"];
 // Grades on a transcript that the plan stores differently.
-const GRADE_ALIASES = { S: "P", U: "NP", I: "IP" };
+const GRADE_ALIASES = { S: "P", U: "NP", I: "IP", DR: "IP", NR: "IP" };
 const TRANSCRIPT_GRADES = GRADE_WORDS.concat(Object.keys(GRADE_ALIASES), ["W"]);
 
 const transcriptEl = {
@@ -143,15 +143,22 @@ async function pdfText(file) {
   for (let n = 1; n <= pdf.numPages; n++) {
     const page = await pdf.getPage(n);
     const content = await page.getTextContent();
-    const rows = {};
-    for (const item of content.items) {
-      if (!item.str.trim()) continue;
-      const y = Math.round(item.transform[5] / 2) * 2;     // within 2 points counts as the same line
-      (rows[y] = rows[y] || []).push({ x: item.transform[4], text: item.str });
+    // UCLA's transcript is printed in two columns: read the left one down
+    // the page, then the right one, so a line never mixes two terms.
+    const columns = (campusDetails().transcript || {}).columns === 2 ? 2 : 1;
+    const middle = page.getViewport({ scale: 1 }).width / 2;
+    for (let column = 0; column < columns; column++) {
+      const rows = {};
+      for (const item of content.items) {
+        if (!item.str.trim()) continue;
+        if (columns === 2 && (item.transform[4] < middle) !== (column === 0)) continue;
+        const y = Math.round(item.transform[5] / 2) * 2;     // within 2 points counts as the same line
+        (rows[y] = rows[y] || []).push({ x: item.transform[4], text: item.str });
+      }
+      Object.keys(rows).map(Number).sort((a, b) => b - a).forEach(function (y) {
+        lines.push(rows[y].sort((a, b) => a.x - b.x).map(p => p.text).join(" "));
+      });
     }
-    Object.keys(rows).map(Number).sort((a, b) => b - a).forEach(function (y) {
-      lines.push(rows[y].sort((a, b) => a.x - b.x).map(p => p.text).join(" "));
-    });
   }
   return lines.join("\n");
 }
@@ -175,6 +182,8 @@ function parseTranscript(text) {
   }
 
   let transfer = false;     // in UCSD's "Transfer Courses" section
+  const ucla = (campusDetails().transcript || {}).format === "ucla";
+  let columnTerms = [];     // UCLA, pasted with both columns on one line: each column's term
 
   for (const raw of text.split(/\r?\n/)) {
     const line = raw.replace(/\s+/g, " ").trim();
@@ -191,17 +200,38 @@ function parseTranscript(text) {
       if (credit) rows.push(credit);
       continue;
     }
+    if (ucla) {
+      // Two term headings on one line: the two columns' terms.
+      const headings = Array.from(line.matchAll(TERM_HEADING));
+      if (headings.length === 2) {
+        columnTerms = headings.map(termOf);
+        term = columnTerms[0];
+        continue;
+      }
+      const found = uclaCourses(raw, subjects);
+      if (found.length) {
+        finish();
+        found.forEach(function (course, i) {
+          const right = columnTerms.length === 2 && (found.length === 2 ? i === 1 : course.at > raw.length / 2);
+          course.term = right ? columnTerms[1] : (columnTerms.length === 2 ? columnTerms[0] : term);
+          delete course.at;
+          rows.push(course);
+        });
+        continue;
+      }
+    }
     const start = courseStart(line, subjects);
     if (start) {
       finish();
       pending = { code: start.code, text: start.rest, term: term };
       continue;
     }
-    // "Fall 2018" (GOLD), "Term: Fall Qtr 2024" (UCSD), "Summer Session I 2023".
-    const termMatch = line.match(/^(?:Term:\s*)?(Fall|Winter|Spring|Summer)\b(?:\s+(?:Quarter|Qtr|Session|Sess)\b)?(?:\s+(?:I{1,3}|1|2|3|Med\w*|Special))?\s+(\d{4})\b/i);
+    // "Fall 2018" (GOLD), "Term: Fall Qtr 2024" (UCSD), "summer sessions 2018" (UCLA).
+    const termMatch = line.match(/^(?:Term:\s*)?(Fall|Winter|Spring|Summer)\b(?:\s+(?:Quarter|Qtr|Sessions?|Sess)\b)?(?:\s+(?:I{1,3}|1|2|3|Med\w*|Special))?\s+(\d{4})\b/i);
     if (termMatch && line.length < 60) {
       finish();
-      term = { quarter: termMatch[1][0].toUpperCase() + termMatch[1].slice(1).toLowerCase(), year: Number(termMatch[2]) };
+      term = termOf(termMatch);
+      columnTerms = [];
       continue;
     }
     // Totals, column headings and page headers end a course.
@@ -253,6 +283,44 @@ function courseStart(line, subjects) {
   const number = line.slice(subject.length).trim().match(/^(\d{1,3}[A-Z]{0,4})\b(.*)$/i);
   if (!number) return null;
   return { code: subject + " " + number[1].toUpperCase(), rest: number[2] };
+}
+
+const TERM_HEADING = /\b(Fall|Winter|Spring|Summer)(?:\s+(?:Quarter|Qtr|Sessions?))?\s+(\d{4})\b/gi;
+
+function termOf(match) {
+  return { quarter: match[1][0].toUpperCase() + match[1].slice(1).toLowerCase(), year: Number(match[2]) };
+}
+
+/*
+  UCLA's transcript lines: an abbreviated title, then the course, units,
+  grade points earned and the grade:
+    "MACHINE LEARNING      COM SCI M146  4.0   14.8   A-"
+    "ELECTRODYNMC&OPTICS   PHYSICS 1C    5.0    0.0   I"
+  (from a real transcript, 2021 format). Pasted from a two-column PDF, a
+  line can hold two of them, so every match is returned, with where it
+  starts (`at`).
+*/
+function uclaCourses(line, subjects) {
+  const found = [];
+  // Title and subject together, then number, units, points, grade.
+  const pattern = /(\S(?:.*?\S)?)\s+([A-Z]{0,2}\d{1,3}[A-Z]{0,3})\s+(\d{1,2}\.\d)\s+(\d{1,3}\.\d)\s+([A-Z][A-Z+\-]?)(?=\s|$)/g;
+  for (const m of line.matchAll(pattern)) {
+    const before = m[1].replace(/\s+/g, " ");
+    // The subject is the longest code the words before the number end with
+    // ("… MACHINE LEARNING COM SCI" -> COM SCI; subjects are longest first).
+    const subject = subjects.find(s => before === s || before.endsWith(" " + s));
+    if (!subject) continue;
+    let grade = m[5].toUpperCase();
+    if (!TRANSCRIPT_GRADES.concat(["DR", "NR"]).includes(grade)) continue;
+    const withdrawn = grade === "W";
+    if (GRADE_ALIASES[grade]) grade = GRADE_ALIASES[grade];
+    // With two columns on one line, the title is only the words after the
+    // gap (the raw line keeps the spacing).
+    const title = before.slice(0, before.length - subject.length).trim();
+    found.push({ code: subject + " " + m[2], title: title, units: Number(m[3]), grade: withdrawn ? "IP" : grade,
+                 use: !withdrawn, note: withdrawn ? "withdrawn" : "", at: m.index });
+  }
+  return found;
 }
 
 /*

@@ -74,6 +74,8 @@ const CAMPUS_DETAILS = {
     program: "major", programs: "majors", apChart: true, exampleCourse: "COM SCI 31",
     examples: [["computer-science-bs", "Computer Science (B.S.)"], ["economics-ba", "Economics (B.A.)"],
                ["psychology-ba", "Psychology (B.A.)"]],
+    transcript: { system: "MyUCLA", name: "transcript from MyUCLA", format: "ucla", columns: 2,
+                  sample: "fall quarter 2025\nINTRO COMPUTER SCI I   COM SCI 31   4.0  16.0  A\n…" },
   },
 };
 

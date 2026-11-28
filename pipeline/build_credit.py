@@ -57,7 +57,14 @@ def main():
     # transcript reader (site/transcript.js) can tell a course line from
     # any other line of text.
     with open(courses_path, encoding="utf-8") as f:
-        subjects = sorted({c["subject"] for c in json.load(f)["courses"]})
+        subjects = {c["subject"] for c in json.load(f)["courses"]}
+    # (A campus's full subject list, where there is one: a transcript can
+    # name a subject that has no undergraduate course this year.)
+    listed = os.path.join(folder, "subjects.json")
+    if os.path.exists(listed):
+        with open(listed, encoding="utf-8") as f:
+            subjects |= set(json.load(f))
+    subjects = sorted(subjects)
     out = {"source": table["source"], "catalog_year": table["catalog_year"], "ap": table["exams"], "subjects": subjects}
     out_path = os.path.join("site", "data", campus, "credit.json")
     os.makedirs(os.path.dirname(out_path), exist_ok=True)
