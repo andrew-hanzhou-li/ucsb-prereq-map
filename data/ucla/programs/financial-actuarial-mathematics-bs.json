@@ -1332,7 +1332,7 @@
       "label": "Management"
      },
      {
-      "type": "choose",
+      "type": "all",
       "items": [
        {
         "type": "course",
@@ -1340,17 +1340,22 @@
         "status": "active"
        },
        {
-        "type": "course",
-        "code": "COMPTNG 10B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "COMPTNG 16A",
-        "status": "active"
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "COMPTNG 10B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COMPTNG 16A",
+          "status": "active"
+         }
+        ],
+        "count": 1
        }
       ],
-      "count": 2,
       "label": "Program in Computing",
       "notes": "Complete two courses. Select Program in Computing 10B or 16A."
      }

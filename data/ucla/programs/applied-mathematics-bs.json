@@ -12,14 +12,20 @@
     "type": "all",
     "items": [
      {
-      "type": "course",
-      "code": "MATH 31A",
-      "status": "active"
-     },
-     {
-      "type": "course",
-      "code": "MATH 31AL",
-      "status": "active"
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "MATH 31A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 31AL",
+        "status": "active"
+       }
+      ],
+      "count": 1
      },
      {
       "type": "course",
@@ -94,7 +100,7 @@
     "type": "all",
     "items": [
      {
-      "type": "choose",
+      "type": "all",
       "items": [
        {
         "type": "course",
@@ -107,14 +113,20 @@
         "status": "active"
        },
        {
-        "type": "course",
-        "code": "MATH 131B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "MATH 132",
-        "status": "active"
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 131B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 132",
+          "status": "active"
+         }
+        ],
+        "count": 1
        },
        {
         "type": "course",
@@ -122,7 +134,6 @@
         "status": "active"
        }
       ],
-      "count": 4,
       "label": "Mathematics",
       "notes": "Complete four courses. Select either Mathematics 131B or 132."
      },

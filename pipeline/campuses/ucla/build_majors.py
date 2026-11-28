@@ -93,6 +93,7 @@ ONE_SEQUENCE = re.compile(r"^(?:Select|Complete)\s+one\b[^:.]*\bsequence\b", re.
 UPPER_RULE = re.compile(r"^(?:Complete|Select)\s+" + COUNT + r"\s+(?:additional\s+)?upper-division\s+([A-Za-z ,&]+?)\s+courses\b", re.IGNORECASE)
 SOME_UNITS = re.compile(r"\band\s+(\d+(?:\.\d+)?)\s+units\s+from\s+([^:]*)", re.IGNORECASE)
 UNITS_OF = re.compile(r"^Complete\b[^:]*?\(?(\d+(?:\.\d+)?)\s+units\)?\s+of\b", re.IGNORECASE)
+ONE_MUST = re.compile(r"^(?:At least )?one of the\b[^.]*\bmust\b", re.IGNORECASE)
 ONLY_ONE = re.compile(r"^Only one (?:course|of these courses) may (?:apply|be applied)\.?$", re.IGNORECASE)
 SPLIT_RULE = re.compile(r"^Select\b[^:]*?\b" + COUNT + r"\s+courses?\b[^:]*?\band\s+" + COUNT + r"\s+courses?\b", re.IGNORECASE)
 ALL_RULE = re.compile(r"^(?:Complete|Take)\b[^:]*\b(?:as follows|the following|all)\b", re.IGNORECASE)
@@ -253,6 +254,10 @@ class Converter:
                 node = {"type": "text", "text": line}
         elif units and re.search(r"\bfrom\b", line, re.IGNORECASE):
             node = {"type": "units", "units": float(units.group(1)), "items": parts}
+        elif ONE_MUST.match(line) and parts:
+            # "One of the 16 courses for the preparation and major must be in history
+            # before 1700 CE": one of these, which also counts where it's listed.
+            node = {"type": "choose", "count": 1, "items": lists_joined(parts), "may_share": True}
         elif (total := TOTAL_RULE.match(line)) and count_of(total.group(1)) <= len(lists_joined(parts)):
             # (before "from each of": "eight courses total, four in one area and two from each of the others")
             node = {"type": "choose", "count": count_of(total.group(1)), "items": lists_joined(parts)}
@@ -292,6 +297,10 @@ class Converter:
             if (re.search(r"\bcourses?\b", choose.group("what"), re.IGNORECASE) and counted_across(node)["type"] == "choose"
                     and not re.search(r"\b(?:groups?|series|sets?|sequences?|pairs?)\b", choose.group("what"), re.IGNORECASE)):
                 node["items"] = lists_joined(parts)
+        elif ((counted := COUNT_ONLY.match(line)) and count_of(counted.group(1)) == len(or_pairs(parts, line))
+              and len(or_pairs(parts, line)) < len(parts)):
+            # "Complete four courses. Select either Mathematics 131B or 132." over five listed.
+            node = {"type": "all", "items": or_pairs(parts, line)}
         elif ((counted := COUNT_ONLY.match(line)) and not ALL_RULE.match(line)
               and count_of(counted.group(1)) < sum(50 if p["type"] in ("range", "any") else 1 for p in lists_joined(parts))
               # (not "Complete 13 required courses, 12 units of technical breadth, …")
@@ -523,6 +532,11 @@ def or_pairs(parts, line):
     out = list(parts)
     for left, right in pairs:
         a, b = by_number.get(left), by_number.get(right)
+        if b is None and a is not None:
+            # (The catalog's "31A or 31L" means 31AL: the number of the left one, the right one's letter.)
+            near = [p for n, p in by_number.items() if n != left and n.startswith(re.match(r"[A-Z]*\d+", left).group(0))
+                    and n.endswith(re.sub(r"^[A-Z]*\d+", "", right) or "#")]
+            b = near[0] if len(near) == 1 else None
         if a is None or b is None or a is b or a not in out or b not in out:
             continue
         at = out.index(a)

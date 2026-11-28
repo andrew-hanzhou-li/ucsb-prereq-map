@@ -512,14 +512,20 @@
       "type": "all",
       "items": [
        {
-        "type": "course",
-        "code": "MATH 31A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "MATH 31AL",
-        "status": "active"
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 31A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 31AL",
+          "status": "active"
+         }
+        ],
+        "count": 1
        },
        {
         "type": "course",
