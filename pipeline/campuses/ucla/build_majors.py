@@ -77,7 +77,8 @@ IMPERATIVE = re.compile(r"^(?:Complete|Select|Choose|Take|Students must)\b", re.
 # "Mathematics 33B is highly recommended" (but not "Complete four courses. It is
 # strongly recommended that they be taken early").
 RECOMMENDED_LINE = re.compile(r"^(?!(?:Complete|Select|Choose|Take)\b).*\brecommended\b", re.IGNORECASE)
-UNITS_RULE = re.compile(r"^(?:Select|Complete|Take)\s+(?:at least\s+|a minimum of\s+)?(\d+(?:\.\d+)?)\s+units?\b", re.IGNORECASE)
+UNITS_RULE = re.compile(r"^(?:Select|Complete|Take)\s+(?:at least\s+|a minimum of\s+)?(\d+(?:\.\d+)?|" + "|".join(NUMBER_WORDS) +
+                        r")\s+(?:additional\s+)?units?\b", re.IGNORECASE)
 COUNT_ONLY = re.compile(r"^(?:Select|Complete|Choose|Take)\s+(?:at least\s+|a minimum of\s+|any\s+|a total of\s+)?" + COUNT +
                         r"\s+(?!units?\b)(?:[\w-]+\s+){0,4}?(?:courses?|sequences?|series|options?|concentrations?)\b", re.IGNORECASE)
 # "Select eight courses total, four in one area of concentration and two in …"
@@ -89,7 +90,7 @@ TRACKS = re.compile(r"\b(?:from|for) the following (?:tracks|concentrations|path
 PREFERRED = re.compile(r"\b" + COUNT + r"\s+(?:additional\s+)?(?:[\w-]+\s+){0,2}courses\b[^:]*\bselected from\b", re.IGNORECASE)
 # A rule given only as a range: "Select from Mathematics 106 through 199."
 RANGE_TEXT = re.compile(r"^(?:Select|Choose)\s+(?:courses\s+)?from\s+([A-Za-z ,&]+?)\s+(\d+)\s+(?:through|to)\s+(\d+)\.?$", re.IGNORECASE)
-ONE_SEQUENCE = re.compile(r"^(?:Select|Complete)\s+one\b[^:.]*\bsequence\b", re.IGNORECASE)
+ONE_SEQUENCE = re.compile(r"^(?:Select|Complete)\s+one\b[^:.]*\bsequence\b|\bin one (?:modern |foreign |modern foreign )?language\b", re.IGNORECASE)
 UPPER_RULE = re.compile(r"^(?:Complete|Select)\s+" + COUNT + r"\s+(?:additional\s+)?upper-division\s+([A-Za-z ,&]+?)\s+courses\b", re.IGNORECASE)
 SOME_UNITS = re.compile(r"\band\s+(\d+(?:\.\d+)?)\s+units\s+from\s+([^:]*)", re.IGNORECASE)
 UNITS_OF = re.compile(r"^Complete\b[^:]*?\(?(\d+(?:\.\d+)?)\s+units\)?\s+of\b", re.IGNORECASE)
@@ -161,7 +162,11 @@ def dynamic_range(entry, ids, catalog):
     subject = next((ids[v] for f, v in must if f == "educationalArea" and v in ids), None)
     if not subject:
         return None
-    numbers = next((v for f, v in must if f == "codeNumber" and isinstance(v, tuple)), None)
+    # (A range whose ends aren't numbers, "119A through 119Y", is over the letters after the number.)
+    numbers = next((v for f, v in must if f == "codeNumber" and isinstance(v, tuple)
+                    and all(x is None or str(x).isdigit() for x in v)), None)
+    letter_range = next((v for f, v in must if f == "codeNumber" and isinstance(v, tuple)
+                         and not all(x is None or str(x).isdigit() for x in v)), None)
     digits = lambda v, default: int(v) if v and str(v).isdigit() else default
     exact = next((v for f, v in must if f == "codeNumber" and not isinstance(v, tuple) and str(v).isdigit()), None)
     if numbers:
@@ -172,7 +177,7 @@ def dynamic_range(entry, ids, catalog):
         words = (entry.get("description") or "").lower()
         low, high = (1, 99) if "lower-division" in words else (100, 199) if "upper-division" in words else (0, 199)
     suffixes = {v for f, v in must if f == "codeSuffix" and not isinstance(v, tuple)}
-    letters = next((v for f, v in must if f == "codeSuffix" and isinstance(v, tuple)), None)   # "60A through 60Z"
+    letters = next((v for f, v in must if f == "codeSuffix" and isinstance(v, tuple)), None) or letter_range   # "60A through 60Z"
     skip_codes = {re.sub(r"\s+", " ", v).strip() for f, v in must_not if f == "code"}
     skip_numbers = {v for f, v in must_not if f == "codeNumber" and not isinstance(v, tuple)}
     skip_suffixes = {v for f, v in must_not if f == "codeSuffix"}
@@ -253,7 +258,8 @@ class Converter:
                 self.prose.append({"major": major, "rule_id": rule_id, "title": title, "text": line})
                 node = {"type": "text", "text": line}
         elif units and re.search(r"\bfrom\b", line, re.IGNORECASE):
-            node = {"type": "units", "units": float(units.group(1)), "items": parts}
+            node = {"type": "units", "units": float(count_of(units.group(1)) if not re.match(r"[\d.]+$", units.group(1)) else units.group(1)),
+                    "items": lists_joined(parts)}
         elif ONE_MUST.match(line) and parts:
             # "One of the 16 courses for the preparation and major must be in history
             # before 1700 CE": one of these, which also counts where it's listed.
@@ -372,6 +378,17 @@ def pruned(node):
     items = [kept for kept in (pruned(i) for i in node["items"]) if kept is not None]
     if not items:
         return None
+    if node["type"] == "choose" and node["count"] > 1:
+        # "Select two courses from" a Mathematics range and an Economics range:
+        # each range is a long list to pick from, not one option.
+        flat = []
+        for item in items:
+            if (item["type"] == "choose" and item["count"] == 1 and len(item["items"]) > 4 and not item.get("optional")
+                    and all(i["type"] == "course" for i in item["items"])):
+                flat.extend(item["items"])
+            else:
+                flat.append(item)
+        items = flat
     if node["type"] == "all" and len(items) == 1 and not node.get("optional") and items[0]["type"] != "course":
         # (A list holding one list: the inner one, under the outer one's name.)
         inner = dict(items[0])

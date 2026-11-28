@@ -401,338 +401,284 @@
       "type": "units",
       "items": [
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "choose",
-          "count": 1,
-          "items": [
-           {
-            "type": "course",
-            "code": "ETHNMUS 68A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ETHNMUS 68B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ETHNMUS 68C",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ETHNMUS 68F",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ETHNMUS 68G",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ETHNMUS 68M",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ETHNMUS 68N",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ETHNMUS 68O",
-            "status": "active"
-           }
-          ],
-          "label": "ETHNMUS 68–68",
-          "expanded_from": "range"
-         },
-         {
-          "type": "choose",
-          "count": 1,
-          "items": [
-           {
-            "type": "course",
-            "code": "ETHNMUS 91A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ETHNMUS 91B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ETHNMUS 91E",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ETHNMUS 91G",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ETHNMUS 91H",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ETHNMUS 91J",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ETHNMUS 91K",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ETHNMUS 91L",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ETHNMUS 91N",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ETHNMUS 91P",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ETHNMUS 91Z",
-            "status": "active"
-           }
-          ],
-          "label": "ETHNMUS 91–91",
-          "expanded_from": "range"
-         },
-         {
-          "type": "choose",
-          "count": 1,
-          "items": [
-           {
-            "type": "course",
-            "code": "ETHNMUS 161A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ETHNMUS 161B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ETHNMUS 161E",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ETHNMUS 161G",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ETHNMUS 161H",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ETHNMUS 161J",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ETHNMUS 161K",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ETHNMUS 161L",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ETHNMUS 161M",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ETHNMUS 161N",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ETHNMUS 161P",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ETHNMUS 161Z",
-            "status": "active"
-           }
-          ],
-          "label": "ETHNMUS 161–161",
-          "expanded_from": "range"
-         }
-        ],
-        "label": "Ethnomusicology"
+        "type": "course",
+        "code": "ETHNMUS 68A",
+        "status": "active"
        },
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "GJ STDS 176A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "GJ STDS 176B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "GJ STDS 176C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "GJ STDS 176D",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "GJ STDS 176E",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "GJ STDS 176F",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "GJ STDS 176G",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "GJ STDS 176H",
-          "status": "active"
-         }
-        ],
-        "label": "Global Jazz Studies"
+        "type": "course",
+        "code": "ETHNMUS 68B",
+        "status": "active"
        },
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "MUSC C175A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MUSC C175B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MUSC C175C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MUSC C175D",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MUSC C175E",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MUSC C175F",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MUSC C175G",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MUSC C185A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MUSC C185B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MUSC C185C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MUSC C185D",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MUSC C185E",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MUSC 185F",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MUSC C185G",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MUSC 185H",
-          "status": "active"
-         }
-        ],
-        "label": "Music"
+        "type": "course",
+        "code": "ETHNMUS 68C",
+        "status": "active"
        },
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "MUSCLG CM90T",
-          "status": "active"
-         }
-        ],
-        "label": "Musicology"
+        "type": "course",
+        "code": "ETHNMUS 68F",
+        "status": "active"
        },
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "MSC IND 111A",
-          "status": "active"
-         }
-        ],
-        "label": "Music Industry"
+        "type": "course",
+        "code": "ETHNMUS 68G",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ETHNMUS 68M",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ETHNMUS 68N",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ETHNMUS 68O",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ETHNMUS 91A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ETHNMUS 91B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ETHNMUS 91E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ETHNMUS 91G",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ETHNMUS 91H",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ETHNMUS 91J",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ETHNMUS 91K",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ETHNMUS 91L",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ETHNMUS 91N",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ETHNMUS 91P",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ETHNMUS 91Z",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ETHNMUS 161A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ETHNMUS 161B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ETHNMUS 161E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ETHNMUS 161G",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ETHNMUS 161H",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ETHNMUS 161J",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ETHNMUS 161K",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ETHNMUS 161L",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ETHNMUS 161M",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ETHNMUS 161N",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ETHNMUS 161P",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ETHNMUS 161Z",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GJ STDS 176A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GJ STDS 176B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GJ STDS 176C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GJ STDS 176D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GJ STDS 176E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GJ STDS 176F",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GJ STDS 176G",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GJ STDS 176H",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUSC C175A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUSC C175B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUSC C175C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUSC C175D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUSC C175E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUSC C175F",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUSC C175G",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUSC C185A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUSC C185B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUSC C185C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUSC C185D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUSC C185E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUSC 185F",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUSC C185G",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUSC 185H",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUSCLG CM90T",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MSC IND 111A",
+        "status": "active"
        }
       ],
       "units": 4,

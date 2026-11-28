@@ -795,42 +795,30 @@
       "text": "Complete three technical breadth courses (12 units) from an approved list available in the Office of Academic and Student Affairs."
      },
      {
-      "type": "choose",
+      "type": "units",
       "items": [
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "EC ENGR 180DA",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "EC ENGR 180DW",
-          "status": "active"
-         }
-        ],
-        "label": "Systems Design"
+        "type": "course",
+        "code": "EC ENGR 180DA",
+        "status": "active"
        },
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "EC ENGR 183DA",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "EC ENGR 183DB",
-          "status": "active"
-         }
-        ],
-        "label": "Design of Robotic Systems"
+        "type": "course",
+        "code": "EC ENGR 180DW",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EC ENGR 183DA",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EC ENGR 183DB",
+        "status": "active"
        }
       ],
-      "count": 1,
+      "units": 8,
       "label": "Capstone Design"
      }
     ],

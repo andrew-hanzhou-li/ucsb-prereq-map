@@ -18,82 +18,74 @@
         "type": "choose",
         "items": [
          {
-          "type": "choose",
-          "count": 1,
-          "items": [
-           {
-            "type": "course",
-            "code": "ENGL 140A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 140B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 141A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 141B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 141C",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 141R",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 142",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 142R",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 143",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 144",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 145",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 146",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 147",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 148",
-            "status": "active"
-           }
-          ],
-          "label": "ENGL 140–148",
-          "expanded_from": "range"
+          "type": "course",
+          "code": "ENGL 140A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 140B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 141A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 141B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 141C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 141R",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 142",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 142R",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 143",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 144",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 145",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 146",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 147",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 148",
+          "status": "active"
          },
          {
           "type": "all",
@@ -114,62 +106,54 @@
         "type": "choose",
         "items": [
          {
-          "type": "choose",
-          "count": 1,
-          "items": [
-           {
-            "type": "course",
-            "code": "ENGL 150A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 150B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 150C",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 151",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 152",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 153",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 154",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 155",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 156",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 157",
-            "status": "active"
-           }
-          ],
-          "label": "ENGL 150–157",
-          "expanded_from": "range"
+          "type": "course",
+          "code": "ENGL 150A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 150B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 150C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 151",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 152",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 153",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 154",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 155",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 156",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 157",
+          "status": "active"
          },
          {
           "type": "all",
@@ -206,97 +190,89 @@
         "type": "choose",
         "items": [
          {
-          "type": "choose",
-          "count": 1,
-          "items": [
-           {
-            "type": "course",
-            "code": "ENGL 160A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 160B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 161A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 161B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 161C",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 162A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 162B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 163A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 163B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 163C",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 164A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 164B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 164C",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 164D",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 165A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 165B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 165C",
-            "status": "active"
-           }
-          ],
-          "label": "ENGL 160–165",
-          "expanded_from": "range"
+          "type": "course",
+          "code": "ENGL 160A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 160B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 161A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 161B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 161C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 162A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 162B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 163A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 163B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 163C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 164A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 164B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 164C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 164D",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 165A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 165B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 165C",
+          "status": "active"
          },
          {
           "type": "all",
@@ -573,132 +549,124 @@
         "type": "choose",
         "items": [
          {
-          "type": "choose",
-          "count": 1,
-          "items": [
-           {
-            "type": "course",
-            "code": "ENGL 100",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL M101A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL M101B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL M101C",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL M101D",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL M102A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL M102B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL M103",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL M104A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL M104B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL M104C",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL M104D",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL M104E",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL M105A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL M105B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL M105C",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL M105D",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL M105E",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL M105XP",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 106",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL M107A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL M107B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 108",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 109",
-            "status": "active"
-           }
-          ],
-          "label": "ENGL 100–109",
-          "expanded_from": "range"
+          "type": "course",
+          "code": "ENGL 100",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL M101A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL M101B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL M101C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL M101D",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL M102A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL M102B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL M103",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL M104A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL M104B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL M104C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL M104D",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL M104E",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL M105A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL M105B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL M105C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL M105D",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL M105E",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL M105XP",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 106",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL M107A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL M107B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 108",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 109",
+          "status": "active"
          },
          {
           "type": "all",
@@ -954,197 +922,189 @@
         "type": "choose",
         "items": [
          {
-          "type": "choose",
-          "count": 1,
-          "items": [
-           {
-            "type": "course",
-            "code": "ENGL 111A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 111B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 111C",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 112A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 112B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 112C",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 112D",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 112E",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 113A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 113B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 114",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 115A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 115B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 115C",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 115D",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 115E",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL M115XP",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 116A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 116B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 117",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 118A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 118B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 118C",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 118E",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL M118F",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 119",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 119XP",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 120",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 121",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 122",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 123",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 124",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 125",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL M126",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 127",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 128",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 129",
-            "status": "active"
-           }
-          ],
-          "label": "ENGL 111–129",
-          "expanded_from": "range"
+          "type": "course",
+          "code": "ENGL 111A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 111B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 111C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 112A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 112B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 112C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 112D",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 112E",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 113A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 113B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 114",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 115A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 115B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 115C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 115D",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 115E",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL M115XP",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 116A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 116B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 117",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 118A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 118B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 118C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 118E",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL M118F",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 119",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 119XP",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 120",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 121",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 122",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 123",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 124",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 125",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL M126",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 127",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 128",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 129",
+          "status": "active"
          },
          {
           "type": "all",
@@ -1233,87 +1193,79 @@
           "label": "Courses"
          },
          {
-          "type": "choose",
-          "count": 1,
-          "items": [
-           {
-            "type": "course",
-            "code": "ENGL 171A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 171B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 171C",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 172A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 172B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 172C",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 173A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 173B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 173C",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 174A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 174B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 174C",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 175",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 176",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ENGL 177",
-            "status": "active"
-           }
-          ],
-          "label": "ENGL 171–177",
-          "expanded_from": "range"
+          "type": "course",
+          "code": "ENGL 171A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 171B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 171C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 172A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 172B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 172C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 173A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 173B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 173C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 174A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 174B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 174C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 175",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 176",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 177",
+          "status": "active"
          },
          {
           "type": "all",

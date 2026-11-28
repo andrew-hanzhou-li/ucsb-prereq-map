@@ -566,7 +566,7 @@
         "label": "Molecular, Cell, and Developmental Biology Upper-Division"
        },
        {
-        "type": "all",
+        "type": "units",
         "items": [
          {
           "type": "course",
@@ -659,27 +659,17 @@
           "status": "active"
          }
         ],
+        "units": 5,
         "label": "Additional Electives",
         "notes": "Select five additional units from the preceding list or the following list:"
        },
        {
-        "type": "all",
+        "type": "units",
         "items": [
          {
-          "type": "choose",
-          "items": [
-           {
-            "type": "course",
-            "code": "BIOSTAT 100",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "STATS 100A",
-            "status": "active"
-           }
-          ],
-          "count": 1
+          "type": "course",
+          "code": "BIOSTAT 100",
+          "status": "active"
          },
          {
           "type": "course",
@@ -705,8 +695,14 @@
           "type": "course",
           "code": "PHYSCI 166",
           "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "STATS 100A",
+          "status": "active"
          }
         ],
+        "units": 10,
         "label": "Additional Electives"
        }
       ],

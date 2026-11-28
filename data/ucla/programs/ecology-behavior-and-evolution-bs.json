@@ -278,7 +278,7 @@
     "type": "all",
     "items": [
      {
-      "type": "choose",
+      "type": "units",
       "items": [
        {
         "type": "course",
@@ -371,12 +371,12 @@
         "status": "active"
        }
       ],
-      "count": 4,
+      "units": 4,
       "label": "Morphology and Systematics",
       "notes": "Select at least four units (one course) from:"
      },
      {
-      "type": "choose",
+      "type": "units",
       "items": [
        {
         "type": "course",
@@ -414,7 +414,7 @@
         "status": "active"
        }
       ],
-      "count": 4,
+      "units": 4,
       "label": "Physiology",
       "notes": "Select at least four units (one course) from the following list. Students with credit for Ecology and Evolutionary Biology 170 cannot also take Physiological Science 166."
      },
@@ -1259,15 +1259,9 @@
       "type": "units",
       "items": [
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "ANTHRO 128P",
-          "status": "active"
-         }
-        ],
-        "label": "Anthropology"
+        "type": "course",
+        "code": "ANTHRO 128P",
+        "status": "active"
        },
        {
         "type": "choose",
@@ -2667,16 +2661,9 @@
         "notes": "rule gives no count; it is one option list under its parent requirement, count set there; except Geography 188SA through 199"
        },
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "LIFESCI 107",
-          "status": "active"
-         }
-        ],
-        "label": "Life Sciences",
-        "notes": "Students with credit for Life Sciences 4 cannot take Life Sciences 107."
+        "type": "course",
+        "code": "LIFESCI 107",
+        "status": "active"
        },
        {
         "type": "choose",
@@ -3170,15 +3157,9 @@
         "notes": "rule gives no count; it is one option list under its parent requirement, count set there; except Microbiology 193A through 199; Microbiology taken as MIMG"
        },
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "MCD BIO 172",
-          "status": "active"
-         }
-        ],
-        "label": "Molecular, Cell, and Developmental Biology"
+        "type": "course",
+        "code": "MCD BIO 172",
+        "status": "active"
        },
        {
         "type": "choose",

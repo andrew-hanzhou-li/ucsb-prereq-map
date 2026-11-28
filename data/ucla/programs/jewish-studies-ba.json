@@ -60,29 +60,48 @@
       "notes": "Select one course from:"
      },
      {
-      "type": "all",
+      "type": "choose",
       "items": [
        {
-        "type": "course",
-        "code": "ARABIC 1C",
-        "status": "active"
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "ARABIC 1C",
+          "status": "active"
+         }
+        ],
+        "label": "ARABIC"
        },
        {
-        "type": "course",
-        "code": "ARMENIA 101C",
-        "status": "active"
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "ARMENIA 101C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ARMENIA 104C",
+          "status": "active"
+         }
+        ],
+        "label": "ARMENIA"
        },
        {
-        "type": "course",
-        "code": "ARMENIA 104C",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "HEBREW 1C",
-        "status": "active"
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "HEBREW 1C",
+          "status": "active"
+         }
+        ],
+        "label": "HEBREW"
        }
       ],
+      "count": 1,
       "label": "Foreign Language",
       "notes": "Demonstrate proficiency equivalent to level 3 at UCLA in one foreign language (Arabic, Armenian, Hebrew) in consultation with the department."
      }
