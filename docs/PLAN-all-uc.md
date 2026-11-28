@@ -268,3 +268,5 @@ Fetched from here unless marked otherwise.
 - **UC Merced:** Acalog behind a WAF challenge; Banner 9 schedule.
 
 Order after UCLA: Irvine (if the Anteater data checks out against the official catalogue), then Berkeley, then Santa Cruz.
+
+Irvine check (2026-11-28): the official catalogue (catalogue.uci.edu) still refuses automated requests (503), but the Registrar's prerequisite pages (www.reg.uci.edu/cob/prrqcgi, `?dept=CBE&action=view_all`) answer, with each course's enforced prerequisites as structured AND/OR text with minimum grades. A sample of 8 Anteater courses: the 5 listed by the Registrar match exactly; 3 aren't listed there (no enforced prerequisite, or an older department code). Anteater's major records are for 2026-27. Plan for Irvine: prerequisites from the Registrar (official), course titles, units, descriptions and terms offered from Anteater, majors from Anteater's structured requirement trees.
