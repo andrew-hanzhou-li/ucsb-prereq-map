@@ -1,0 +1,398 @@
+{
+ "id": "UCLA-ARABICBA",
+ "name": "Arabic - BA",
+ "kind": "major",
+ "type": "Bachelor's Degree",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.registrar.ucla.edu/major/2026/ARABICBA",
+ "sections": [
+  {
+   "name": "Preparation for the Major",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "ARABIC 1A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ARABIC 1B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ARABIC 1C",
+        "status": "active"
+       }
+      ],
+      "label": "Language Preparation"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "HIST 9D",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "ISLM ST M20",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "M E STD M50CW",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "NR EAST M20",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "NR EAST 65",
+        "status": "inactive"
+       }
+      ],
+      "count": 1,
+      "label": "Preparation Elective",
+      "notes": "Select one course from:"
+     }
+    ],
+    "label": "Preparation for the Major"
+   }
+  },
+  {
+   "name": "The Major",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "ARABIC 102A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ARABIC 102B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ARABIC 102C",
+          "status": "active"
+         }
+        ],
+        "label": "Intermediate Standard Arabic"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "ARABIC 108",
+          "status": "active"
+         }
+        ],
+        "label": "Summer Intensive Intermediate Arabic"
+       }
+      ],
+      "count": 1,
+      "label": "Arabic",
+      "notes": "Select one option from:"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "text",
+        "text": "Arabic or Islamic Studies"
+       }
+      ],
+      "count": 2,
+      "label": "Arabic or Islamic Studies",
+      "notes": "Complete two upper-division courses from the Arabic subject area or Islamic studies subject area. Each course must be a minimum of 4 units."
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "ANTHRO M166Q",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ARABIC 103A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ARABIC 103B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ARABIC 103C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ARABIC CM106",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ARABIC M110",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ARABIC 111A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ARABIC 111B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ARABIC 111C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ARABIC 112A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ARABIC 112B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ARABIC 112C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ARABIC 115",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ARABIC 117",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ARABIC 119",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ARABIC 120",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ARABIC M123",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ARABIC 130",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ARABIC 132",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ARABIC 140",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ARABIC C141",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ARABIC 142",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ARABIC M148",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ARABIC 150",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ARABIC M151",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ARABIC M155",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ARABIC M171",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ARABIC 177",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ARABIC 178",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ARABIC 180",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ARABIC 181",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS 119A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS 119B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS C120",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM LIT 100",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 105A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 105B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 105C",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST M106",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 111B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 111C",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "ISLM ST CM107",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "ISLM ST M111",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "ISLM ST M112",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "ISLM ST CM115",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "ISLM ST 130",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "ISLM ST C151",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "POL SCI 132A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "POL SCI M132B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "POL SCI 157",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "POL SCI 165",
+        "status": "inactive"
+       }
+      ],
+      "count": 6,
+      "label": "Electives",
+      "notes": "Select six courses from:"
+     }
+    ],
+    "label": "The Major"
+   }
+  }
+ ],
+ "narrative": []
+}

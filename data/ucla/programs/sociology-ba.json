@@ -1,0 +1,432 @@
+{
+ "id": "UCLA-SOCIOLOGYBA",
+ "name": "Sociology - BA",
+ "kind": "major",
+ "type": "Bachelor's Degree",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.registrar.ucla.edu/major/2026/SOCIOLOGYBA",
+ "sections": [
+  {
+   "name": "Computing Specialization",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "COMPTNG 10A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COMPTNG 10B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COMPTNG 10C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SOCIOL 111",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "SOCIOL 113",
+      "status": "inactive"
+     }
+    ],
+    "label": "Computing Specialization",
+    "notes": "Majors in Sociology may select a specialization in Computing by satisfying all the requirements for a bachelor’s degree in the major, and completing the following requirements. Each course must be taken for a letter grade. Students graduate with a bachelor’s degree in sociology and a specialization in Computing."
+   }
+  },
+  {
+   "name": "Honors Program",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "SOCIOL 191H",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "SOCIOL 198A",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "SOCIOL 198B",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "SOCIOL 198C",
+      "status": "inactive"
+     }
+    ],
+    "label": "Honors Program",
+    "notes": "As preparation for the honors program, students must complete all preparation for the major courses. After acceptance into the honors program, students are required to take courses 191H, 198A, 198B, and 198C (honors thesis seminars) which may be applied as electives toward the major requirements."
+   }
+  },
+  {
+   "name": "The Major",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "SOCIOL 101",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOCIOL 102",
+        "status": "inactive"
+       }
+      ],
+      "label": "Theory"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "SOCIOL 106A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOCIOL 106B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOCIOL 110",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOCIOL 111",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOCIOL 112",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOCIOL 113",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOCIOL CM124A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOCIOL 191H",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "STATS 112",
+        "status": "inactive"
+       }
+      ],
+      "count": 1,
+      "label": "Methods",
+      "notes": "Select one course from:"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "SOCIOL 111",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "SOCIOL CM124A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "SOCIOL CM125",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "SOCIOL 126",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "SOCIOL 130",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "SOCIOL 132",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "SOCIOL 133",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "SOCIOL 134",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "SOCIOL 140",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "SOCIOL 152",
+          "status": "inactive"
+         }
+        ],
+        "label": "Interactions"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "SOCIOL 116",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "SOCIOL 121",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "SOCIOL M139",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "SOCIOL 140",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "SOCIOL 143",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "SOCIOL 151",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "SOCIOL 158",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "SOCIOL 172",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "SOCIOL 173",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "SOCIOL M174",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "SOCIOL M175",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "SOCIOL M176",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "SOCIOL 181B",
+          "status": "inactive"
+         }
+        ],
+        "label": "Institutions and Social Processes"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "SOCIOL M115",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "SOCIOL 122",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "SOCIOL 123",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "SOCIOL M139",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "SOCIOL 147A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "SOCIOL M155",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "SOCIOL 156",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "SOCIOL 157",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "SOCIOL M161",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "SOCIOL M162",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "SOCIOL M164",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "SOCIOL M165",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "SOCIOL 181A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "SOCIOL 182",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "SOCIOL 183",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "SOCIOL 185",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "SOCIOL 186",
+          "status": "inactive"
+         }
+        ],
+        "label": "Power and Inequality"
+       }
+      ],
+      "count": 1,
+      "label": "Core Areas",
+      "notes": "Select one course from each of the following core areas:"
+     },
+     {
+      "type": "text",
+      "text": "Complete any five upper-division sociology elective courses."
+     }
+    ],
+    "label": "The Major"
+   }
+  },
+  {
+   "name": "Preparation for the Major",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "SOCIOL 1",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOCIOL 20",
+        "status": "inactive"
+       }
+      ],
+      "label": "Sociology"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "POL SCI 6",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "STATS 10",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "STATS 13",
+        "status": "inactive"
+       }
+      ],
+      "count": 1,
+      "label": "Political Science or Statisics",
+      "notes": "Select one course from:"
+     }
+    ],
+    "label": "Preparation for the Major"
+   }
+  }
+ ],
+ "narrative": []
+}

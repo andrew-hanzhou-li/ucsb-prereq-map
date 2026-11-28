@@ -1,0 +1,103 @@
+{
+ "id": "UCLA-POLITICALSCIENCEBA",
+ "name": "Political Science - BA",
+ "kind": "major",
+ "type": "Bachelor's Degree",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.registrar.ucla.edu/major/2026/POLITICALSCIENCEBA",
+ "sections": [
+  {
+   "name": "Honors Program",
+   "requirement": {
+    "type": "text",
+    "text": "To qualify for departmental honors at graduation, students must complete a senior thesis. Highest honors are awarded at the discretion of the honors program director and are based on both cumulative grade-point average in the major and the quality of the honors thesis to students who graduate with a final GPA in the major of at least 3.85, and who complete the senior honors thesis with a letter grade of A+."
+   }
+  },
+  {
+   "name": "Preparation for the Major",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "POL SCI 10",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "POL SCI 20",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "POL SCI 30",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "POL SCI 40",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "POL SCI 50",
+        "status": "inactive"
+       }
+      ],
+      "count": 4,
+      "label": "Political Science",
+      "notes": "Select four courses from:"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "POL SCI 6",
+        "status": "inactive"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "STATS 10",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "STATS 12",
+          "status": "inactive"
+         }
+        ],
+        "label": "Substitutions",
+        "notes": "Statistics 10 or 12 may be substituted for course 6."
+       }
+      ],
+      "label": "Statistics"
+     }
+    ],
+    "label": "Preparation for the Major"
+   }
+  },
+  {
+   "name": "The Major",
+   "requirement": {
+    "type": "choose",
+    "items": [
+     {
+      "type": "text",
+      "text": "Political Science M105 through 199"
+     }
+    ],
+    "count": 10,
+    "label": "The Major",
+    "notes": "Complete 10 upper-division courses (minimum 40 units) selected from Political Science M105 through 199. Each course must be a minimum of 4 units and taken for a letter grade."
+   }
+  }
+ ],
+ "narrative": []
+}

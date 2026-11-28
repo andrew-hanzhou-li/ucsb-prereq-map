@@ -1,0 +1,1896 @@
+{
+ "id": "UCLA-HUMANBIOLOGYANDSOCIETYBS",
+ "name": "Human Biology and Society - BS",
+ "kind": "major",
+ "type": "Bachelor's Degree",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.registrar.ucla.edu/major/2026/HUMANBIOLOGYANDSOCIETYBS",
+ "sections": [
+  {
+   "name": "Preparation for the Major",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "SOC GEN 5",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOC GEN M71A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOC GEN M72A",
+        "status": "inactive"
+       }
+      ],
+      "count": 1,
+      "label": "Core Course",
+      "notes": "Select one course from:"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "ANTHRO 1",
+        "status": "active"
+       }
+      ],
+      "label": "Anthropology"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "CHEM 14A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 14B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 14BL",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 14C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 14D",
+          "status": "active"
+         },
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "CHEM 14AE",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 14BE",
+            "status": "active"
+           }
+          ],
+          "label": "Enhanced",
+          "notes": "Chemistry 14AE and 14BE may be substituted for Chemistry 14A and 14B respectively."
+         }
+        ],
+        "label": "Chemistry 14 Series"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "CHEM 20A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 20B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 20L",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 30A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 30AL",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 30B",
+          "status": "active"
+         }
+        ],
+        "label": "Chemistry 20 and 30 Series"
+       }
+      ],
+      "label": "Chemistry",
+      "notes": "Select one of the following series:"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "LIFESCI 7A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "LIFESCI 7B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "LIFESCI 7C",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "LIFESCI 7L",
+        "status": "inactive"
+       }
+      ],
+      "label": "Life Sciences"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "LIFESCI 30A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "LIFESCI 30B",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "LIFESCI 40",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "STATS 13",
+          "status": "inactive"
+         }
+        ],
+        "label": "Life Sciences 30 Series",
+        "notes": "Select Life Sciences 40 or Statistics 13."
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 3A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MATH 3B",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MATH 3C",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "STATS 10",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "STATS 13",
+          "status": "inactive"
+         }
+        ],
+        "label": "Mathematics 3 Series",
+        "notes": "Select Statistics 10 or 13."
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 31A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MATH 31AL",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MATH 31B",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MATH 32A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "STATS 10",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "STATS 13",
+          "status": "inactive"
+         }
+        ],
+        "label": "Mathematics 31 Series",
+        "notes": "Select Mathematics 31A or 31AL. Select Statistics 10 or 13."
+       }
+      ],
+      "label": "Mathematics",
+      "notes": "Select one of the following series:"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "PHYSICS 1A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 1B",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 1C",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 4AL",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 4BL",
+          "status": "inactive"
+         }
+        ],
+        "label": "Physics 1 Series"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "PHYSICS 5A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 5B",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 5C",
+          "status": "inactive"
+         }
+        ],
+        "label": "Physics 5 Series"
+       }
+      ],
+      "label": "Physics",
+      "notes": "Select one of the following series:"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "AF AMER M5",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "AM IND M10",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 3",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ASIA AM 20",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ASIA AM 20W",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CCAS 10A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CCAS 10B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GENDER 10",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "GEOG 3",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "HIST 3C",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MCD BIO 50",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MCD BIO 60",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PHILOS 4",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PHILOS 6",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PHILOS 8",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PHILOS 22",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PHILOS 22W",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PUB AFF 10",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "SOC GEN 125",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "SOCIOL 1",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "SOCIOL M5",
+          "status": "inactive"
+         }
+        ],
+        "label": "Courses",
+        "notes": "Only one course from Asian American Studies 20 or 20W may be applied. Only one course from Philosophy 22 or 22W may be applied."
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "text",
+          "text": "Clusters M1A through 80CW"
+         }
+        ],
+        "label": "Clusters"
+       }
+      ],
+      "count": 2,
+      "label": "Social Theory Courses",
+      "notes": "Select two social theory courses (minimum 8 units) from the following courses or range:"
+     }
+    ],
+    "label": "Preparation for the Major"
+   }
+  },
+  {
+   "name": "The Major",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "LIFESCI 107",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOC GEN 102",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOC GEN 105A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOC GEN 105B",
+        "status": "inactive"
+       }
+      ],
+      "label": "Required Courses"
+     },
+     {
+      "type": "units",
+      "items": [
+       {
+        "type": "course",
+        "code": "SOC GEN 195CE",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOC GEN 196",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOC GEN 199",
+        "status": "inactive"
+       }
+      ],
+      "units": 4,
+      "label": "Society and Genetics 195CE, 196, or 199"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "AN N EA M162",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "AN N EA CM163",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ANTHRO 100",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ANTHRO 110",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ANTHRO 111",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ANTHRO 124P",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ANTHRO 124Q",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ANTHRO 124S",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ANTHRO 126Q",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ANTHRO 128P",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ANTHRO M128Q",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ANTHRO M128S",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ANTHRO M128T",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ANTHRO 131",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ANTHRO 143",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ANTHRO 145P",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ANTHRO 145S",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ANTHRO M148",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ANTHRO M150",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ANTHRO M166Q",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ARABIC M171",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIA AM 113",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIA AM M117",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CCAS CM106",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CCAS M124",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMM 101",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMM 126",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMM M127",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMM 148",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM SCI C121",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM SCI C124",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DIS STD 101W",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DIS STD M121",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DIS STD M148",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DIS STD M166",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DIS STD M183",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EE BIOL 100",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "EE BIOL 116",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "EE BIOL 120",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "EE BIOL 121",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "EE BIOL C126",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "EE BIOL 129",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "EE BIOL 130",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "EE BIOL C135",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "EE BIOL M157",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "EE BIOL 176",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "ENGL M118F",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "ENVIRON M125",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "ENVIRON M133",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "ENV HLT 100",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "EPIDEM 100",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "FOOD ST M132",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "FOOD ST M136",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "GENDER M110C",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "GENDER M114",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "GENDER M121",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "GENDER 125",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "GENDER 134",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "GENDER M162",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "GENDER M164",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "GENDER M165",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "GENDER M167",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "GENDER 171A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "GENDER M180B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "GEOG M125",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "GEOG M131",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "GEOG M142",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "GLBL ST 102",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "GLBL ST 104",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST M108C",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 179A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 179B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 180A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST M180B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 180C",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST C191B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 191C",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST C191D",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 191E",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST C191F",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 191G",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 191I",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST C191J",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST C191K",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST C191L",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 191M",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST C191N",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST C191O",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HNRS M143",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HNRS M152",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HNRS 177",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HNRS M183",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HUM GEN CM113",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HUM GEN C144",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "LGBTQS M114",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "LING 110",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "LING 114",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "LING 127",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "LING 130",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "LING 132",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "LING C135",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "LING M146",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "LING M150",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "LING 170",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MED HIS M169",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MIMG 101",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MIMG 103AL",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MIMG C122",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MIMG CM156",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MIMG 158",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MIMG 168",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MIMG 185A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MCD BIO 138",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MCD BIO 144",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MCD BIO CM156",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MCD BIO 165A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MCD BIO 168",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MCD BIO 172",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "NEURBIO M169",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "NEUROSC 180",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS M124",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 125",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 129",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 130",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 137",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 150",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 153A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 154",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS C154B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 155A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 155B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS C156",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 157A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 157B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 170",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS M187",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSCI 111A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSCI 111B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSCI 140",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSCI 147",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSCI 149",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSCI 177",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH M107",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 110",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 112A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 112B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 115",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH M117A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH M117B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH M117C",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 127A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 129C",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH M140",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH M165",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PUB HLT M106",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PUB HLT C150",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOC WLF M140",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOC WLF 162",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOC GEN 108",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOC GEN M113",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOC GEN 120",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOC GEN 121",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOC GEN 130",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOC GEN M132",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOC GEN M133",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOC GEN 134",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOC GEN M136",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOC GEN 141",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOC GEN M142",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOC GEN M143",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOC GEN 146",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOC GEN M157",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOC GEN 160",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOC GEN 161",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOC GEN 162",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOC GEN 163",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOC GEN 164",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOC GEN 165",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOC GEN M166",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOC GEN 174",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOC GEN 175",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOC GEN 180",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOC GEN M183",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOC GEN 188",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOC GEN 195CE",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOC GEN 197",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOC GEN 199",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOCIOL M115",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOCIOL 130",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOCIOL 132",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOCIOL 134",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOCIOL M136",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOCIOL 138",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOCIOL 143",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOCIOL M144",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOCIOL 145",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOCIOL M148",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOCIOL 154",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOCIOL 156",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOCIOL M162",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOCIOL M164",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOCIOL 170",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "URBN PL M165",
+        "status": "inactive"
+       }
+      ],
+      "count": 6,
+      "label": "Electives",
+      "notes": "Select six courses (minimum 24 units) with at least 2 coursers (8 units) from society and genetics from:"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "MCD BIO 138",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MCD BIO 165A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MCD BIO 168",
+          "status": "inactive"
+         }
+        ],
+        "label": "Cell Development"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "ANTHRO 124P",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 124S",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 126Q",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 128P",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EE BIOL 100",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "EE BIOL 116",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "EE BIOL 120",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "EE BIOL 121",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "EE BIOL C126",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "EE BIOL 129",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "EE BIOL 130",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "EE BIOL C135",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "EE BIOL 176",
+          "status": "inactive"
+         }
+        ],
+        "count": 3,
+        "label": "Ecology and Evolutionary Biology",
+        "notes": "Select three courses from:"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "MIMG 101",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "MIMG 185A",
+            "status": "inactive"
+           }
+          ],
+          "label": "Microbiology 101 and 185A"
+         },
+         {
+          "type": "choose",
+          "items": [
+           {
+            "type": "course",
+            "code": "MIMG 103AL",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "MIMG 106",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "MIMG 107",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "MIMG 158",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "MIMG 168",
+            "status": "inactive"
+           }
+          ],
+          "count": 1,
+          "label": "Additional Courses",
+          "notes": "Select one course from:"
+         }
+        ],
+        "label": "Microbiology and Immunology"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "MCD BIO 144",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "MCD BIO 172",
+            "status": "inactive"
+           }
+          ],
+          "label": "Molecular, Cell, and Developmental Biology 144 and 172"
+         },
+         {
+          "type": "choose",
+          "items": [
+           {
+            "type": "course",
+            "code": "COM SCI C124",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "HUM GEN C144",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "MIMG C122",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "MIMG 158",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "MCD BIO CM156",
+            "status": "inactive"
+           }
+          ],
+          "count": 1,
+          "label": "Additional Courses",
+          "notes": "Select one course from:"
+         }
+        ],
+        "label": "Molecular Biology and Genomics"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "PHYSCI 111A",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "PHYSCI 111B",
+            "status": "inactive"
+           }
+          ],
+          "label": "Physiological Science 111A and 111B"
+         },
+         {
+          "type": "choose",
+          "items": [
+           {
+            "type": "course",
+            "code": "PHYSCI 147",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "PHYSCI 149",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "PHYSCI 177",
+            "status": "inactive"
+           }
+          ],
+          "count": 1,
+          "label": "Additional Coursers",
+          "notes": "Select one course from:"
+         }
+        ],
+        "label": "Physiology"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "choose",
+          "items": [
+           {
+            "type": "course",
+            "code": "COM SCI C124",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EE BIOL C135",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "SOC GEN 120",
+            "status": "inactive"
+           }
+          ],
+          "count": 2,
+          "label": "Computer Science C124, Ecology and Evolutionary Biology C135, or Society and Genetics 120",
+          "notes": "Select two courses from:"
+         },
+         {
+          "type": "choose",
+          "items": [
+           {
+            "type": "course",
+            "code": "EE BIOL 120",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "EE BIOL 121",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "HUM GEN C144",
+            "status": "inactive"
+           }
+          ],
+          "count": 1,
+          "label": "Ecology and Evolutionary Biology 120, Ecology and Evolutionary Biology 121, or Human Genetics C144",
+          "notes": "Select one course from:"
+         }
+        ],
+        "label": "Population Genetics"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "PSYCH M107",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PSYCH 112A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PSYCH 112B",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PSYCH 115",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PSYCH 127A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PSYCH 129C",
+          "status": "inactive"
+         }
+        ],
+        "count": 3,
+        "label": "Psychology and Mental Health",
+        "notes": "Select three courses from:"
+       }
+      ],
+      "label": "Optional Subfocus Areas",
+      "notes": "The subfocus options are designed and recommended for students who intend a career in medicine or allied health services or are planning to go on to graduate school in the life or health sciences. Students may optionally select any subfocus area as part of the required elective courses for the major."
+     }
+    ],
+    "label": "The Major"
+   }
+  },
+  {
+   "name": "Honors Program",
+   "requirement": {
+    "type": "text",
+    "text": "To receive departmental honors, students must take each course in the major for a letter grade and complete all upper-division courses in the major with an overall grade-point average of 3.5 or better. For highest departmental honors, students must complete a research project and receive a grade of A or better in Society and Genetics 108, 197, or 199."
+   }
+  }
+ ],
+ "narrative": []
+}

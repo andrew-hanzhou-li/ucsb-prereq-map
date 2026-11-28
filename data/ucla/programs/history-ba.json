@@ -1,0 +1,595 @@
+{
+ "id": "UCLA-HISTORYBA",
+ "name": "History - BA",
+ "kind": "major",
+ "type": "Bachelor's Degree",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.registrar.ucla.edu/major/2026/HISTORYBA",
+ "sections": [
+  {
+   "name": "Preparation for the Major",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "HIST 1A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 1B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 1C",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 2B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 2C",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 3A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 3C",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 3D",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST M4",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 5",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 8A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 8B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 8C",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 9A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 9C",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 9D",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST M10A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 10B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 11A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 11B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 12A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 12B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 12C",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 13A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 13B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 13C",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 14",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 20",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 21",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 22",
+        "status": "inactive"
+       }
+      ],
+      "count": 2,
+      "label": "History Survey",
+      "notes": "Select two history survey courses from:"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "HIST 94",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 96W",
+        "status": "inactive"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "text",
+          "text": "History 97A through 97O"
+         }
+        ],
+        "label": "History 97A through 97O"
+       }
+      ],
+      "count": 1,
+      "label": "History 94, 96W, or 97A through 97O",
+      "notes": "Select one course from the following courses or History 97A through 97O."
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "text",
+        "text": "Lower-Division History Courses (except History 19, 89, 89HC, 99). "
+       }
+      ],
+      "label": "Additional Lower-Division History Courses",
+      "notes": "Select three additional lower-division history courses (except History 19, 89, 89HC, 99)."
+     }
+    ],
+    "label": "Preparation for the Major"
+   }
+  },
+  {
+   "name": "The Major",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "text",
+      "text": "Complete two courses in U.S. history."
+     },
+     {
+      "type": "text",
+      "text": "Complete two courses in non-Western history from the same area (i.e., Latin America, Asia, Near East, Africa)."
+     },
+     {
+      "type": "text",
+      "text": "Complete two courses in European history or in history of science."
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "text",
+        "text": "History 187A through C187R"
+       }
+      ],
+      "count": 1,
+      "label": "Topics in Historiography",
+      "notes": "Select one course from 187A through C187R:"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "text",
+        "text": "History 191 series"
+       }
+      ],
+      "count": 1,
+      "label": "Capstone",
+      "notes": "Select one capstone seminar from the History 191 series:"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "HIST 1A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 1B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 2C",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 3A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 8A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 9A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 9C",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 9D",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST M10A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 11A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 11B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 14",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 20",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 21",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 102A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST M103A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST M103B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST M104A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 105A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 105B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST M106",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 107A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 107B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST M110A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST M110B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST M110C",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 111B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 121A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 121B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 122A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 122B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 122C",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 124A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 125D",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST M127A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 128A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 128B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 129A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 130",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST M133A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 135A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 136A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 157B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 162B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 164B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 167A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 167B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 169A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 170A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST M170C",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 172A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST 172B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST M174D",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST M182A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST M182B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST M185D",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST M185F",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HIST M185I",
+        "status": "inactive"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "text",
+          "text": "History 112A through 119D"
+         }
+        ],
+        "label": "History 112A through 119D"
+       }
+      ],
+      "label": "History before 1700 CE",
+      "notes": "One of the 16 courses for the preparation for the major and major must predominantly cover history before 1700 CE, selected from the following list of courses or range:"
+     }
+    ],
+    "label": "The Major",
+    "notes": "At least 10 upper-division history courses, including:"
+   }
+  },
+  {
+   "name": "Honors Program",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "HIST 198A",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "HIST 198B",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "HIST 198C",
+      "status": "inactive"
+     }
+    ],
+    "label": "Honors Program",
+    "notes": "The honors thesis must be completed in three terms, on the basis of work carried out in History 198A, 198B, and 198C."
+   }
+  }
+ ],
+ "narrative": []
+}

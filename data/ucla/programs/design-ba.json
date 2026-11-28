@@ -1,0 +1,244 @@
+{
+ "id": "UCLA-DESIGNBA",
+ "name": "Design - BA",
+ "kind": "major",
+ "type": "Bachelor's Degree",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.registrar.ucla.edu/major/2026/DESIGNBA",
+ "sections": [
+  {
+   "name": "Preparation for the Major",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "DESMA 8",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DESMA 10",
+        "status": "active"
+       }
+      ],
+      "label": "Required Lecture Courses"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "DESMA 21",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DESMA 24",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DESMA 25",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DESMA 28",
+        "status": "active"
+       }
+      ],
+      "label": "Required Studio Courses"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "DESMA 22",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DESMA 27",
+        "status": "active"
+       }
+      ],
+      "label": "Studio Elective",
+      "notes": "Select one of the following courses:"
+     }
+    ],
+    "label": "Preparation for the Major"
+   }
+  },
+  {
+   "name": "The Major",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "DESMA 104",
+        "status": "active"
+       }
+      ],
+      "label": "Required Lecture Course"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "DESMA 140",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DESMA 141",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DESMA 142",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DESMA 143",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DESMA 144",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DESMA 145",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DESMA 150",
+        "status": "active"
+       }
+      ],
+      "label": "Required Studio Courses"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "DESMA 101",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DESMA 107",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DESMA 110",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DESMA 111",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DESMA 112",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DESMA 113",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DESMA 114",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DESMA 115",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DESMA 116",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DESMA 125",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DESMA 126",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DESMA 127",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DESMA 128",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DESMA 129",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DESMA 130",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DESMA 146",
+        "status": "active"
+       }
+      ],
+      "count": 2,
+      "label": "Studio Electives",
+      "notes": "Select two courses from:"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "DESMA 159A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DESMA 159B",
+        "status": "active"
+       }
+      ],
+      "label": "Senior Project"
+     }
+    ],
+    "label": "The Major"
+   }
+  }
+ ],
+ "narrative": []
+}

@@ -1,0 +1,458 @@
+{
+ "id": "UCLA-PHYSIOLOGICALSCIENCEBS",
+ "name": "Physiological Science - BS",
+ "kind": "major",
+ "type": "Bachelor's Degree",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.registrar.ucla.edu/major/2026/PHYSIOLOGICALSCIENCEBS",
+ "sections": [
+  {
+   "name": "Honors Program",
+   "requirement": {
+    "type": "text",
+    "text": "The honors program provides exceptional students with the opportunity for individual research culminating in an honors thesis."
+   }
+  },
+  {
+   "name": "Preparation for the Major",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "CHEM 14A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 14B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 14BL",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 14C",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 14CL",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 14D",
+            "status": "active"
+           }
+          ],
+          "label": "Chemistry 14 series"
+         },
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "CHEM 20A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 20B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 20L",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 30A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 30AL",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 30B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 30BL",
+            "status": "active"
+           }
+          ],
+          "label": "Chemistry 20 and 30 series"
+         }
+        ],
+        "count": 1,
+        "label": "Chemistry",
+        "notes": "Select one series from:"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "LIFESCI 7A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "LIFESCI 7B",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "LIFESCI 7C",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "LIFESCI 7L",
+          "status": "inactive"
+         }
+        ],
+        "label": "Life Sciences"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "LIFESCI 30A",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "LIFESCI 30B",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "LIFESCI 40",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "STATS 13",
+            "status": "inactive"
+           }
+          ],
+          "label": "Life Sciences 30 series",
+          "notes": "Students may select either Life Sciences 40 or Statistics 13."
+         },
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "MATH 3A",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "MATH 3B",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "MATH 3C",
+            "status": "inactive"
+           }
+          ],
+          "label": "Mathematics 3 series"
+         },
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "MATH 31A",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "MATH 31B",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "MATH 32A",
+            "status": "inactive"
+           }
+          ],
+          "label": "Mathematics 31 series"
+         }
+        ],
+        "count": 1,
+        "label": "Mathematics",
+        "notes": "Select one series from:"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "PHYSICS 1A",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "PHYSICS 1B",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "PHYSICS 1C",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "PHYSICS 4AL",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "PHYSICS 4BL",
+            "status": "inactive"
+           }
+          ],
+          "label": "Physics 1 series"
+         },
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "PHYSICS 5A",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "PHYSICS 5B",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "PHYSICS 5C",
+            "status": "inactive"
+           }
+          ],
+          "label": "Physics 5 series"
+         }
+        ],
+        "count": 1,
+        "label": "Physics",
+        "notes": "Select one series from:"
+       }
+      ],
+      "label": "Life Sciences Core Curriculum"
+     }
+    ],
+    "label": "Preparation for the Major"
+   }
+  },
+  {
+   "name": "The Major",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "PHYSCI 107",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "PHYSCI 111A",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "PHYSCI 111B",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 153A",
+      "status": "active"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "text",
+          "text": "Physiological Science 100 through 199, minimum 4 units"
+         }
+        ],
+        "label": "Physiological Science Courses"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "BIOSTAT 100",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 153B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 153C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EE BIOL 100",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "EE BIOL 110",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "EE BIOL 111",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "EE BIOL 120",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "EE BIOL 121",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "EE BIOL 162",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "ENV HLT 100",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "LIFESCI 107",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MIMG 101",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MIMG 102",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MIMG 185A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MCD BIO 138",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MCD BIO 144",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PSYCH 110",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PSYCH 118",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PSYCH 124A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PSYCH 127A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PSYCH 127B",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PSYCH 127C",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PSYCH 152",
+          "status": "inactive"
+         },
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "text",
+            "text": "Psychology 119"
+           }
+          ],
+          "label": "Psychology 119 Series"
+         }
+        ],
+        "label": "Courses in Other Departments"
+       }
+      ],
+      "label": "Upper-Division Physiological Science Electives",
+      "notes": "Select a total of five upper-division physiological science electives from the following ranges and courses. Each course must be a minimum of 4 units. Eight units of Physiological Science 199 or 4 units each (8 units total) of courses 198A and 198B, for students in the departmental honors program, may be applied toward the elective requirement."
+     }
+    ],
+    "label": "The Major"
+   }
+  }
+ ],
+ "narrative": []
+}

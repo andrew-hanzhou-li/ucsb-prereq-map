@@ -1,0 +1,316 @@
+{
+ "id": "UCLA-DATATHEORYBS",
+ "name": "Data Theory - BS",
+ "kind": "major",
+ "type": "Bachelor's Degree",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.registrar.ucla.edu/major/2026/DATATHEORYBS",
+ "sections": [
+  {
+   "name": "Preparation for the Major",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "MATH 31A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 31B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 32A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 32B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 33A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 42",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 115A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "COMPTNG 10A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS 20",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "STATS 21",
+        "status": "inactive"
+       }
+      ],
+      "label": "Required Courses"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "STATS 10",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "STATS 12",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "STATS 13",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "STATS 15",
+        "status": "inactive"
+       }
+      ],
+      "count": 1,
+      "label": "Statistics Elective",
+      "notes": "Select one course from:"
+     }
+    ],
+    "label": "Preparation for the Major"
+   }
+  },
+  {
+   "name": "The Major",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "MATH 118",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 131A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 156",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "STATS 101A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "STATS 101C",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "STATS 102A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "STATS 102B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "STATS 147",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "STATS 184",
+        "status": "inactive"
+       }
+      ],
+      "label": "Required Courses"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 170E",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MATH 170S",
+          "status": "inactive"
+         }
+        ],
+        "label": "Mathematics 170E and 170S"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "STATS 100A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "STATS 100B",
+          "status": "inactive"
+         }
+        ],
+        "label": "Statistics 100A and 100B"
+       }
+      ],
+      "count": 1,
+      "label": "Two-Quarter Sequence",
+      "notes": "Select one two-quarter sequence from:"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "MATH 151A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 151B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 164",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 168",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 171",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 174E",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 178A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 178B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 178C",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 179",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 182",
+        "status": "inactive"
+       }
+      ],
+      "count": 1,
+      "label": "Mathematics Elective",
+      "notes": "Select one course from:"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "STATS 100C",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "STATS 101B",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "STATS 102C",
+          "status": "inactive"
+         }
+        ],
+        "label": "Courses"
+       }
+      ],
+      "count": 1,
+      "label": "Statistics Elective",
+      "notes": "Select one course from the following list of courses or range:"
+     },
+     {
+      "type": "text",
+      "text": "Select two additional electives from either of the preceding lists."
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "MATH M148",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "STATS M148",
+        "status": "inactive"
+       }
+      ],
+      "label": "Capstone"
+     }
+    ],
+    "label": "The Major"
+   }
+  }
+ ],
+ "narrative": []
+}

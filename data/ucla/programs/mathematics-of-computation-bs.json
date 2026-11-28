@@ -1,0 +1,235 @@
+{
+ "id": "UCLA-MATHEMATICSOFCOMPUTATIONBS",
+ "name": "Mathematics of Computation - BS",
+ "kind": "major",
+ "type": "Bachelor's Degree",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.registrar.ucla.edu/major/2026/MATHEMATICSOFCOMPUTATIONBS",
+ "sections": [
+  {
+   "name": "Preparation for the Major",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "MATH 31A",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "MATH 31AL",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "MATH 31B",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "MATH 32A",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "MATH 32B",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "MATH 33A",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "MATH 33B",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "MATH 61",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "PHYSICS 1A",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "PHYSICS 1B",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "COMPTNG 10A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COMPTNG 10B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COMPTNG 10C",
+      "status": "active"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 20A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 20B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 1C",
+        "status": "inactive"
+       }
+      ],
+      "count": 1,
+      "label": "Elective",
+      "notes": "Select one course from:"
+     }
+    ],
+    "label": "Preparation for the Major"
+   }
+  },
+  {
+   "name": "Honors Program",
+   "requirement": {
+    "type": "text",
+    "text": "The program entails taking a specified sequence of courses as part of the major requirements, completing an approved seminar offered by the Mathematics Department or submitting an original research project, and earning an overall GPA of at least 3.6 in approved upper-division and graduate mathematics courses."
+   }
+  },
+  {
+   "name": "The Major",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "MATH 115A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 131A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 151A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 151B",
+        "status": "inactive"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 131B",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MATH 132",
+          "status": "inactive"
+         }
+        ],
+        "count": 1,
+        "label": "Mathematics 131B or 132",
+        "notes": "Select one course from:"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "text",
+          "text": "Select from Mathematics 106 through 199."
+         },
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "STATS 100A",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "STATS 100B",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "STATS 100C",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "STATS 101A",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "STATS 101B",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "STATS 101C",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "STATS 102A",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "STATS 102B",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "STATS 102C",
+            "status": "inactive"
+           }
+          ],
+          "label": "Statistics"
+         }
+        ],
+        "count": 6,
+        "label": "Electives",
+        "notes": "Select six courses from the following groups:"
+       }
+      ],
+      "label": "Mathematics"
+     },
+     {
+      "type": "text",
+      "text": "Complete three upper-division computer science courses (12 units)."
+     }
+    ],
+    "label": "The Major"
+   }
+  }
+ ],
+ "narrative": []
+}

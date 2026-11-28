@@ -1,0 +1,196 @@
+{
+ "id": "UCLA-THEATERBA",
+ "name": "Theater - BA",
+ "kind": "major",
+ "type": "Bachelor's Degree",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.registrar.ucla.edu/major/2026/THEATERBA",
+ "sections": [
+  {
+   "name": "Preparation for the Major",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "THEATER 11",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "THEATER 12",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "THEATER 13",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "THEATER 14A",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "THEATER 14B",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "THEATER 14C",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "THEATER 50A",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "THEATER 50B",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "THEATER 50C",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "THEATER 50D",
+      "status": "inactive"
+     }
+    ],
+    "label": "Preparation for the Major"
+   }
+  },
+  {
+   "name": "The Major",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "THEATER 101A",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "THEATER 101B",
+      "status": "inactive"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "text",
+        "text": "Theater 102A through 113"
+       }
+      ],
+      "count": 1,
+      "label": "Theater 102A through 113",
+      "notes": "Select one course from:"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "THEATER 118D",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "THEATER 131C",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "THEATER 163C",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "THEATER 165",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "THEATER 167A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "THEATER 167B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "THEATER 180",
+        "status": "inactive"
+       }
+      ],
+      "count": 1,
+      "label": "Capstone Seminar",
+      "notes": "Select one course from:"
+     },
+     {
+      "type": "units",
+      "items": [
+       {
+        "type": "course",
+        "code": "THEATER 150A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "THEATER 150B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "THEATER 150C",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "THEATER 150D",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "THEATER 173A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "THEATER 173B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "THEATER 174B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "THEATER 174C",
+        "status": "inactive"
+       }
+      ],
+      "units": 4,
+      "label": "Elective",
+      "notes": "Complete 4 units from:"
+     },
+     {
+      "type": "text",
+      "text": "Complete 34 upper-division theater elective units."
+     }
+    ],
+    "label": "The Major"
+   }
+  }
+ ],
+ "narrative": []
+}

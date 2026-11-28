@@ -1,0 +1,212 @@
+{
+ "id": "UCLA-ARTBA",
+ "name": "Art - BA",
+ "kind": "major",
+ "type": "Bachelor's Degree",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.registrar.ucla.edu/major/2026/ARTBA",
+ "sections": [
+  {
+   "name": "The Major",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "ART 132",
+      "status": "active"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "ART 130",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART 130A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART 133",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART 133A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART 137",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART 137A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART 140",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART 145",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART 145A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART 147",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART 147A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART 148",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART 148A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART 149",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART 149A",
+        "status": "active"
+       }
+      ],
+      "count": 6,
+      "label": "Studio Areas",
+      "notes": "Select six courses from at least four of the following studio areas. At least one must be designated with an A."
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "ART M184",
+        "status": "active"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "text",
+          "text": "Art History M110A through 185"
+         }
+        ],
+        "label": "Art History"
+       }
+      ],
+      "count": 1,
+      "label": "Art History Elective",
+      "notes": "Select one course from the following course or range:"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "ART 150",
+        "status": "active"
+       }
+      ],
+      "label": "Capstone Senior Studio"
+     },
+     {
+      "type": "text",
+      "text": "Complete 8 units of art electives."
+     }
+    ],
+    "label": "The Major"
+   }
+  },
+  {
+   "name": "Preparation for the Major",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "ART 1A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ART 1B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ART 11A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ART 11B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ART 11D",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ART 11E",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ART 31A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ART 31B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ART 31C",
+      "status": "active"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "text",
+        "text": "Art History 20 through 31"
+       }
+      ],
+      "count": 1,
+      "label": "Art History Elective",
+      "notes": "Select one course from:"
+     }
+    ],
+    "label": "Preparation for the Major"
+   }
+  }
+ ],
+ "narrative": []
+}

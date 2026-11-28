@@ -1,0 +1,348 @@
+{
+ "id": "UCLA-MATHEMATICSECONOMICSBS",
+ "name": "Mathematics/Economics - BS",
+ "kind": "major",
+ "type": "Bachelor's Degree",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.registrar.ucla.edu/major/2026/MATHEMATICSECONOMICSBS",
+ "sections": [
+  {
+   "name": "The Major",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "MATH 115A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 131A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 131B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 164",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 170E",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 170S",
+        "status": "inactive"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 174E",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "ECON 141",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "STATS C183",
+          "status": "inactive"
+         }
+        ],
+        "count": 1,
+        "label": "Mathematics 174E or Economics 141 or Statistics C183",
+        "notes": "Select one course from:"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 134",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MATH 135",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MATH 136",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MATH 171",
+          "status": "inactive"
+         }
+        ],
+        "count": 1,
+        "label": "Mathematics Elective",
+        "notes": "Select one course from:"
+       }
+      ],
+      "label": "Mathematics"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "ECON 101",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "ECON 102",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "ECON 103",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "ECON 103L",
+        "status": "inactive"
+       },
+       {
+        "type": "text",
+        "text": "Select two courses from Economics 106E through 199B."
+       }
+      ],
+      "label": "Economics"
+     }
+    ],
+    "label": "The Major"
+   }
+  },
+  {
+   "name": "Honors Program",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "MATH 115AH",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 131AH",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 131BH",
+        "status": "inactive"
+       }
+      ],
+      "label": "Mathematics Honors Courses"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "ECON 198A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "ECON 198B",
+        "status": "inactive"
+       }
+      ],
+      "label": "Economics Honors Research",
+      "notes": "The thesis process requires enrollment in a two-term sequence for economics courses."
+     }
+    ],
+    "label": "Honors Program",
+    "notes": "To qualify for honors at graduation, students must (1) complete Mathematics 115AH, 131AH, and 131BH, (2) complete Economics 198A and 198B (the thesis process requires enrollment in a two-term sequence for economics courses), (3) present the thesis in Economics 198B, and (4) complete the major requirements with a minimum 3.5 grade-point average in both the upper-division economics and mathematics courses."
+   }
+  },
+  {
+   "name": "Computing Specialization",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "MATH 61",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 180",
+        "status": "inactive"
+       }
+      ],
+      "count": 1,
+      "label": "Mathematics 61 or 180",
+      "notes": "Select one course from:"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "COMPTNG 10A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMPTNG 10B",
+        "status": "active"
+       }
+      ],
+      "label": "Program in Computing"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "COMPTNG 10C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMPTNG 15",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMPTNG 16A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMPTNG 20A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMPTNG 40A",
+        "status": "active"
+       }
+      ],
+      "count": 2,
+      "label": "Program in Computing Electives",
+      "notes": "Select two courses from:"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "text",
+        "text": "Mathematics 149 through 159"
+       }
+      ],
+      "count": 2,
+      "label": "Mathematics Electives",
+      "notes": "Select two courses from:"
+     }
+    ],
+    "label": "Computing Specialization",
+    "notes": "Majors in Mathematics/Economics may select a Computing specialization by satisfying all the requirements for a bachelor’s degree in the major; and completing the following courses, with a minimum grade of C– in each course and a combined grade-point average of at least 2.0. Students must petition for admission to the program and are advised to do so after they complete Program in Computing 10B (petitions should be filed in the Mathematics Department Student Services Office). Students graduate with a bachelor’s degree in mathematics/economics and a specialization in Computing."
+   }
+  },
+  {
+   "name": "Preparation for the Major",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "MATH 31A",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "MATH 31AL",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "MATH 31B",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "MATH 32A",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "MATH 32B",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "MATH 33A",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "MATH 33B",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "MATH 61",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "ECON 1",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "ECON 2",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "ECON 11",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "COMPTNG 10A",
+      "status": "active"
+     },
+     {
+      "type": "text",
+      "text": "Complete any one Writing II course."
+     }
+    ],
+    "label": "Preparation for the Major",
+    "notes": "Complete 11 courses, and one Writing II course. Select Mathematics 31A or 31AL."
+   }
+  }
+ ],
+ "narrative": []
+}

@@ -1,0 +1,330 @@
+{
+ "id": "UCLA-COMPUTERENGINEERINGBS",
+ "name": "Computer Engineering - BS",
+ "kind": "major",
+ "type": "Bachelor's Degree",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.registrar.ucla.edu/major/2026/COMPUTERENGINEERINGBS",
+ "sections": [
+  {
+   "name": "The Major",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "COM SCI 111",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM SCI 180",
+        "status": "active"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "COM SCI 118",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EC ENGR 132B",
+          "status": "active"
+         }
+        ],
+        "count": 1,
+        "label": "Computer Science 118 or Electrical and Computer Engineering 132B",
+        "notes": "Select one course from:"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "COM SCI M151B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EC ENGR M116C",
+          "status": "inactive"
+         }
+        ],
+        "count": 1,
+        "label": "Computer Science M151B or Electrical and Computer Engineering M116C",
+        "notes": "Select one course from:"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "COM SCI M152A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EC ENGR M116L",
+          "status": "inactive"
+         }
+        ],
+        "count": 1,
+        "label": "Computer Science M152A or Electrical and Computer Engineering M116L",
+        "notes": "Select one course from:"
+       }
+      ],
+      "label": "Computer Science"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "EC ENGR 100",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EC ENGR 102",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EC ENGR 113",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EC ENGR 115C",
+        "status": "active"
+       }
+      ],
+      "label": "Electrical and Computer Engineering"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "C&EE 110",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EC ENGR 131A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 170A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 170E",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "STATS 100A",
+        "status": "inactive"
+       }
+      ],
+      "count": 1,
+      "label": "Probability",
+      "notes": "Select one course from:"
+     },
+     {
+      "type": "text",
+      "text": "Complete 8 units of computer science and 8 units of electrical and computer engineering upper-division electives."
+     },
+     {
+      "type": "text",
+      "text": "Complete three technical breadth courses (12 units) from an approved list available in the Office of Academic and Student Affairs."
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "EC ENGR 180DA",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EC ENGR 180DW",
+          "status": "active"
+         }
+        ],
+        "label": "Systems Design"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "EC ENGR 183DA",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EC ENGR 183DB",
+          "status": "active"
+         }
+        ],
+        "label": "Design of Robotic Systems"
+       }
+      ],
+      "label": "Capstone Design"
+     }
+    ],
+    "label": "The Major"
+   }
+  },
+  {
+   "name": "Preparation for the Major",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "COM SCI 31",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COM SCI 32",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COM SCI 33",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COM SCI 35L",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COM SCI M51A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "EC ENGR 3",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "EC ENGR M16",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "ENGR 1IT",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "MATH 31A",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "MATH 31B",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "MATH 32A",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "MATH 32B",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "MATH 33A",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "MATH 33B",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "MATH 61",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "PHYSICS 1A",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "PHYSICS 1B",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "PHYSICS 1C",
+      "status": "inactive"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "COM SCI 1",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EC ENGR 1",
+        "status": "active"
+       }
+      ],
+      "count": 1,
+      "label": "Computer Science 1 or Electrical and Computer Engineering 1",
+      "notes": "Select one course from:"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "PHYSICS 4AL",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 4BL",
+        "status": "inactive"
+       }
+      ],
+      "count": 1,
+      "label": "Physics 4AL or 4BL",
+      "notes": "Select one course from:"
+     }
+    ],
+    "label": "Preparation for the Major"
+   }
+  }
+ ],
+ "narrative": []
+}

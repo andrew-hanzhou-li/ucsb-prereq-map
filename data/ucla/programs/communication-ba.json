@@ -1,0 +1,855 @@
+{
+ "id": "UCLA-COMMUNICATIONBA",
+ "name": "Communication - BA",
+ "kind": "major",
+ "type": "Bachelor's Degree",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.registrar.ucla.edu/major/2026/COMMUNICATIONBA",
+ "sections": [
+  {
+   "name": "Preparation for the Major",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "COMM 1",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMM 10",
+        "status": "active"
+       }
+      ],
+      "label": "Communication"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "ANTHRO 4",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 1",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 23",
+        "status": "inactive"
+       }
+      ],
+      "count": 1,
+      "label": "Anthropology 4 or Linguistics 1 or Philosophy 23",
+      "notes": "Select one course from:"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "ECON 41",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "STATS 10",
+        "status": "inactive"
+       }
+      ],
+      "count": 1,
+      "label": "Economics 41 or Statistics 10",
+      "notes": "Select one course from:"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "POL SCI 40",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 10",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SOCIOL 1",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "ECON 1",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "ECON 5",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "POL SCI 30",
+        "status": "inactive"
+       }
+      ],
+      "count": 3,
+      "label": "Electives",
+      "notes": "Select three additional courses from the following. Only one course from Economics 1, 5, or Political Science 30 may be applied."
+     }
+    ],
+    "label": "Preparation for the Major"
+   }
+  },
+  {
+   "name": "The Major",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "COMM 100",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COMM 150",
+      "status": "active"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "COMM 129",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM 131",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM 151",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM 155",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM 156",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM 159",
+            "status": "active"
+           }
+          ],
+          "label": "Core"
+         },
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "COMM 157",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM 188C",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM 191C",
+            "status": "active"
+           }
+          ],
+          "label": "Electives"
+         }
+        ],
+        "label": "Communication Technology and Digital Systems"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "COMM 110",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM 111",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM 112",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM M113",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM 114",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM 115",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM 118",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM 120",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM 121",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "COMM 122",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM M123",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM 126",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM 130",
+            "status": "active"
+           }
+          ],
+          "label": "Core"
+         },
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "ANTHRO 136A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ANTHRO M150",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ANTHRO 151",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM 108",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM 109",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM M117",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM 119",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM M125",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM M127",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM 131",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM M144A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM M144B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM 188B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM 191B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "LING 103",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "LING 170",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "PHILOS 172",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "PSYCH 135",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "PSYCH 137C",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "PSYCH M165",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "PSYCH 177",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "SOCIOL 132",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "SOCIOL 134",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "SOCIOL 156",
+            "status": "inactive"
+           }
+          ],
+          "label": "Electives",
+          "notes": "Only one course of Psychology 135 or Sociology 132 may be applied."
+         }
+        ],
+        "label": "Interpersonal Communication"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "COMM 146",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM M147",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM 152",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM 186",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM 187",
+            "status": "active"
+           }
+          ],
+          "label": "Core"
+         },
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "ASIA AM 172C",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM 104",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM 105",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM 106",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM 107",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM 132",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM 141",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM 143",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM 148",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM M149",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM M165",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM 166",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM M169",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM 175",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM 179",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM 182",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM 187",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM 188A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM 191A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "FILM TV 108",
+            "status": "inactive"
+           }
+          ],
+          "label": "Electives"
+         }
+        ],
+        "label": "Mass Communication and Media Institutions"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "COMM 101",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM 160",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM 170",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM 172",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM 174",
+            "status": "active"
+           }
+          ],
+          "label": "Core"
+         },
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "COMM 102",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM 163",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM 171",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM 173",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM M176",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM 178",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM 188D",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMM 191D",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "POL SCI M141A",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "POL SCI 141B",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "POL SCI 141E",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "SOCIOL 133",
+            "status": "inactive"
+           }
+          ],
+          "label": "Electives",
+          "notes": "Only one course of Political Science 141B or Sociology 133 may be applied."
+         }
+        ],
+        "label": "Political and Legal Communication"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "COMM 101",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COMM 102",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COMM 109",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COMM 111",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COMM M117",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COMM 155",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COMM 160",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COMM M176",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COMM 188E",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COMM 191E",
+          "status": "active"
+         }
+        ],
+        "count": 1,
+        "label": "Required Practicum",
+        "notes": "Select one course from the following. If eligible, the selected course may also count toward a core or elective area requirement."
+       }
+      ],
+      "label": "Areas"
+     }
+    ],
+    "label": "The Major"
+   }
+  },
+  {
+   "name": "Honors Program",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "COMM 198A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COMM 198B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COMM 198C",
+      "status": "active"
+     }
+    ],
+    "label": "Honors Program",
+    "notes": "The departmental honors program provides exceptional students an opportunity for advanced research and study, under the guidance of a faculty member, that leads to the completion of an honors thesis. To qualify for graduation with departmental honors, students must (1) complete all requirements for the major, (2) have a cumulative grade-point average of 3.6 or better in upper-division coursework in the major and an overall GPA of 3.3 or better in all completed UC coursework, (3) complete Communication 198A, 198B, and 198C, and (4) produce a completed satisfactory honors thesis (as determined by a recommendation of their thesis adviser and final approval by the department chair). Contact the student affairs officer for more information."
+   }
+  },
+  {
+   "name": "Computing Specialization",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "COMPTNG 10A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COMPTNG 10B",
+          "status": "active"
+         }
+        ],
+        "label": "Program in Computing"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "COM SCI 31",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM SCI 32",
+          "status": "active"
+         }
+        ],
+        "label": "Computer Science"
+       }
+      ],
+      "count": 1,
+      "label": "Program in Computing or Computer Science",
+      "notes": "Select one set of courses from:"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "COMM 122",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMM 131",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMM 151",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMM 153",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMM 155",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMM 156",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMM 159",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMPTNG 10C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMPTNG 16A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMPTNG 16B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMPTNG 20A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMPTNG 40A",
+        "status": "active"
+       }
+      ],
+      "count": 4,
+      "label": "Additional Courses",
+      "notes": "Select four courses (at least one of which must be in communication) from:"
+     }
+    ],
+    "label": "Computing Specialization",
+    "notes": "Majors in Communication may select a specialization in Computing by satisfying all the requirements for a bachelor’s degree in the major and completing the following requirements:"
+   }
+  }
+ ],
+ "narrative": []
+}

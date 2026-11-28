@@ -1,0 +1,870 @@
+{
+ "id": "UCLA-CHEMISTRYMATERIALSSCIENCEBS",
+ "name": "Chemistry/Materials Science - BS",
+ "kind": "major",
+ "type": "Bachelor's Degree",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.registrar.ucla.edu/major/2026/CHEMISTRYMATERIALSSCIENCEBS",
+ "sections": [
+  {
+   "name": "Honors Program",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 193A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 193B",
+        "status": "active"
+       }
+      ],
+      "count": 1,
+      "label": "Undergraduate Seminar",
+      "notes": "Select one course from:"
+     },
+     {
+      "type": "units",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 196A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 196B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 199",
+        "status": "active"
+       }
+      ],
+      "units": 12,
+      "label": "Research",
+      "notes": "Complete 12 units minimum from:"
+     }
+    ],
+    "label": "Honors Program",
+    "notes": "The core of the program consists of at least one approved undergraduate seminar course from Chemistry and Biochemistry 193A or 193B and three research courses (12 units minimum) from 196A, 196B, or 199, culminating in a thesis."
+   }
+  },
+  {
+   "name": "Organic Materials Concentration",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "CHEM 1",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 20A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 20B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 20L",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 30A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 30AL",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 30B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 30BL",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 30C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 30CL",
+          "status": "active"
+         },
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "CHEM 20AH",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 20BH",
+            "status": "active"
+           }
+          ],
+          "label": "Honors Courses",
+          "notes": "Chemistry 20AH or 20BH may be substituted for 20A or 20B respectively."
+         }
+        ],
+        "label": "Chemistry and Biochemistry"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 31A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MATH 31B",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MATH 32A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MATH 32B",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MATH 33B",
+          "status": "inactive"
+         }
+        ],
+        "label": "Mathematics"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "PHYSICS 1A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 1B",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 1C",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 4BL",
+          "status": "inactive"
+         }
+        ],
+        "label": "Physics"
+       }
+      ],
+      "label": "Preparation for the Major"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "CHEM 110A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 113A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 136",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 171",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM C185",
+          "status": "active"
+         },
+         {
+          "type": "units",
+          "items": [
+           {
+            "type": "course",
+            "code": "CHEM 110B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM C113B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM C143A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 144",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM C172",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM C174",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM C175",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM C176",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM C180",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM C181",
+            "status": "active"
+           }
+          ],
+          "units": 4,
+          "label": "Chemistry Elective",
+          "notes": "Complete 4 units from:"
+         }
+        ],
+        "label": "Chemistry and Biochemistry"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "MAT SCI 104",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MAT SCI 110",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MAT SCI 110L",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MAT SCI 120",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MAT SCI 150",
+          "status": "inactive"
+         },
+         {
+          "type": "units",
+          "items": [
+           {
+            "type": "course",
+            "code": "MAT SCI C111",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "MAT SCI 121",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "MAT SCI 122",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "MAT SCI 131",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "MAT SCI 132",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "MAT SCI 160",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "MAT SCI 162",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "MAT SCI CM180",
+            "status": "inactive"
+           }
+          ],
+          "units": 4,
+          "label": "Materials Sciences Elective",
+          "notes": "Complete 4 units from:"
+         }
+        ],
+        "label": "Materials Science and Engineering"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "CHEM 114",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 184",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MAT SCI 121L",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MAT SCI 131L",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MAT SCI 161L",
+          "status": "inactive"
+         }
+        ],
+        "label": "Laboratory",
+        "notes": "Complete seven laboratory units from:"
+       }
+      ],
+      "label": "The Major"
+     }
+    ],
+    "label": "Organic Materials Concentration"
+   }
+  },
+  {
+   "name": "Computing Specialization",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "COMPTNG 10A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMPTNG 10B",
+        "status": "active"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "COMPTNG 10C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COMPTNG 15",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COMPTNG 20A",
+          "status": "active"
+         }
+        ],
+        "count": 1,
+        "label": "Program in Computing Elective",
+        "notes": "Select one course from:"
+       }
+      ],
+      "label": "Program in Computing"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM C126A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM C145",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM SCI C121",
+        "status": "active"
+       }
+      ],
+      "count": 2,
+      "label": "Computational Chemistry",
+      "notes": "Select two courses from:"
+     }
+    ],
+    "label": "Computing Specialization",
+    "notes": "Majors may select a specialization in Computing by satisfying all the requirements for a bachelor’s degree in the specified major, and completing three Program in Computing courses and two Computational Chemistry courses."
+   }
+  },
+  {
+   "name": "Preparation for the Major",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 1",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 20A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 20B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 20L",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 30A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 30AL",
+        "status": "active"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "CHEM 20AH",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 20BH",
+          "status": "active"
+         }
+        ],
+        "label": "Honors Courses",
+        "notes": "Chemistry 20AH or 20BH may be substituted for 20A or 20B respectively."
+       }
+      ],
+      "label": "Chemistry and Biochemistry"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "MATH 31A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 31B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 32A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 32B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 33A",
+        "status": "inactive"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 33B",
+          "status": "inactive"
+         }
+        ],
+        "label": "Differential Equations",
+        "notes": "Mathematics 33B is highly recommended."
+       }
+      ],
+      "label": "Mathematics"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "PHYSICS 1A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 1B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 1C",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 4BL",
+        "status": "inactive"
+       }
+      ],
+      "label": "Physics"
+     }
+    ],
+    "label": "Preparation for the Major"
+   }
+  },
+  {
+   "name": "The Major",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "CHEM 110A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 113A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 171",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM C185",
+          "status": "active"
+         }
+        ],
+        "label": "Required"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "CHEM C172",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM C180",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM C181",
+          "status": "active"
+         }
+        ],
+        "count": 1,
+        "label": "Chemistry C172 or C180 or C181",
+        "notes": "Select one course from:"
+       },
+       {
+        "type": "units",
+        "items": [
+         {
+          "type": "course",
+          "code": "CHEM 110B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM C113B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM C172",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM C174",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM C175",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM C176",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM C180",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM C181",
+          "status": "active"
+         }
+        ],
+        "units": 4,
+        "label": "Chemistry Elective",
+        "notes": "Complete 4 units from:"
+       }
+      ],
+      "count": 4,
+      "label": "Chemistry"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "MAT SCI 104",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MAT SCI 110",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MAT SCI 110L",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MAT SCI 120",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MAT SCI 131",
+          "status": "inactive"
+         }
+        ],
+        "label": "Required"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "MAT SCI 121",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MAT SCI 150",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MAT SCI 160",
+          "status": "inactive"
+         }
+        ],
+        "count": 1,
+        "label": "Materials Science and Engineering 121 or 150 or 160",
+        "notes": "Select one course from:"
+       },
+       {
+        "type": "units",
+        "items": [
+         {
+          "type": "course",
+          "code": "MAT SCI C111",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MAT SCI 121",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MAT SCI 122",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MAT SCI 132",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MAT SCI 150",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MAT SCI 160",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MAT SCI 162",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MAT SCI CM180",
+          "status": "inactive"
+         }
+        ],
+        "units": 8,
+        "label": "Materials Science Elective",
+        "notes": "Complete 8 units from:"
+       }
+      ],
+      "count": 5,
+      "label": "Materials Science and Engineering"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 114",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 184",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAT SCI 121L",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MAT SCI 131L",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MAT SCI 161L",
+        "status": "inactive"
+       }
+      ],
+      "label": "Laboratory",
+      "notes": "Complete seven laboratory units from:"
+     }
+    ],
+    "label": "The Major"
+   }
+  }
+ ],
+ "narrative": []
+}

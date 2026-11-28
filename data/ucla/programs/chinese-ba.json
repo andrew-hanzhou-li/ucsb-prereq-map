@@ -1,0 +1,402 @@
+{
+ "id": "UCLA-CHINESEBA",
+ "name": "Chinese - BA",
+ "kind": "major",
+ "type": "Bachelor's Degree",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.registrar.ucla.edu/major/2026/CHINESEBA",
+ "sections": [
+  {
+   "name": "Honors Program",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "ASIAN 198A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ASIAN 198B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ASIAN 198C",
+      "status": "active"
+     }
+    ],
+    "label": "Honors Program",
+    "notes": "The honors program is a three-term sequence (Asian 198A-198B-198C), taken in addition to requirements for the major, that culminates in the submission of a 40- to 60-page thesis. In most circumstances courses 198A-198B-198C are taken in the senior year (fall, winter, and spring quarters), although students also have the option of taking course 198A in spring quarter of their junior year. Students are expected to use an Asian language in their research, with the scope of language work to be determined in consultation with their faculty adviser. Highest honors, honors, or no honors are awarded as determined by the faculty thesis director and the departmental honors committee."
+   }
+  },
+  {
+   "name": "Preparation for the Major",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHIN 6",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 6A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 10",
+        "status": "active"
+       }
+      ],
+      "count": 1,
+      "label": "Intermediate Modern Chinese",
+      "notes": "Select one course from the following, or complete an equivalent course:"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "ASIAN 30",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 50",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN M60",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN M60W",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 70",
+        "status": "active"
+       }
+      ],
+      "count": 1,
+      "label": "Elective",
+      "notes": "Select one course from:"
+     }
+    ],
+    "label": "Preparation for the Major"
+   }
+  },
+  {
+   "name": "The Major",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "CHIN 100A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHIN 100B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHIN 100C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHIN 100I",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHIN 101A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHIN 101B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHIN 102A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHIN C107A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHIN C120",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHIN 130A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHIN 130B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHIN 135",
+          "status": "active"
+         }
+        ],
+        "label": "Modern Chinese",
+        "notes": "Select from:"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "CHIN 110A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHIN 110B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHIN 110C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHIN 140A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHIN 140B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHIN 140C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHIN 140D",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHIN 165",
+          "status": "active"
+         }
+        ],
+        "label": "Premodern Chinese",
+        "notes": "Select from:"
+       }
+      ],
+      "count": 5,
+      "label": "Chinese Language",
+      "notes": "Select five language courses from either modern Chinese or from premodern Chinese from the following. At least two language courses must be in the premodern language or texts."
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHIN 130A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 130B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 131",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 135",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 140A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 140B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 140C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 140D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN C150A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN C150B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 151",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 152",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN M153",
+        "status": "active"
+       }
+      ],
+      "count": 1,
+      "label": "Literature",
+      "notes": "Select one course from:"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHIN C138",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 139",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 154",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 155",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN C156",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN CM160",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 165",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 174",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN C175",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 176",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 180",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 184",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 185",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 186",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 187",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 191A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 191B",
+        "status": "active"
+       }
+      ],
+      "count": 3,
+      "label": "Elective Courses on China",
+      "notes": "Select three elective courses on China from the following list or from the Chinese language course groups not used to fulfill another requirement:"
+     },
+     {
+      "type": "text",
+      "text": "Complete two additional upper-division elective courses within the department but outside China."
+     }
+    ],
+    "label": "The Major"
+   }
+  }
+ ],
+ "narrative": []
+}

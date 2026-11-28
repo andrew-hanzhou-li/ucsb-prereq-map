@@ -1,0 +1,579 @@
+{
+ "id": "UCLA-AEROSPACEENGINEERINGBS",
+ "name": "Aerospace Engineering - BS",
+ "kind": "major",
+ "type": "Bachelor's Degree",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.registrar.ucla.edu/major/2026/AEROSPACEENGINEERINGBS",
+ "sections": [
+  {
+   "name": "The Major",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "MECH&AE 1",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE 101",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE 102",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE 103",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE 105A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE 105D",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE 107",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE 150A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE 166A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE 171A",
+        "status": "inactive"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "MECH&AE 157",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MECH&AE 157W",
+          "status": "inactive"
+         }
+        ],
+        "count": 1,
+        "label": "Mechanical and Aerospace Engineering 157 or 157W",
+        "notes": "Select one course from:"
+       }
+      ],
+      "label": "Required Courses"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "EC ENGR 100",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAT SCI 104",
+        "status": "inactive"
+       }
+      ],
+      "label": "Departmental Breadth Courses"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "MECH&AE 150B",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MECH&AE C150P",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MECH&AE 154A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MECH&AE 154S",
+          "status": "inactive"
+         }
+        ],
+        "label": "Aeronautics"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "MECH&AE C150R",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MECH&AE 161A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MECH&AE 161B",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MECH&AE 161C",
+          "status": "inactive"
+         }
+        ],
+        "label": "Space"
+       }
+      ],
+      "label": "Tracks",
+      "notes": "Select one of the following tracks:"
+     },
+     {
+      "type": "text",
+      "text": "Select three technical breadth courses (12 units) from an approved list available in the Office of Academic and Student Affairs."
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "MECH&AE 157D",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE 157E",
+        "status": "inactive"
+       }
+      ],
+      "label": "Capstone Design"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "MECH&AE 150B",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MECH&AE C150P",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MECH&AE 154A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MECH&AE 154S",
+          "status": "inactive"
+         }
+        ],
+        "label": "Aeronautics"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "MECH&AE C150R",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MECH&AE 161A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MECH&AE 161B",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MECH&AE 161C",
+          "status": "inactive"
+         }
+        ],
+        "label": "Space"
+       }
+      ],
+      "count": 1,
+      "label": "Major Field Elective",
+      "notes": "Select one major field elective course (4 units) from the track not chosen:"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "MECH&AE 94",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE 131A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE C131G",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE 133A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE C134",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE 135",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE C136",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE C137",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE C138",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE CM140",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE 150B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE 150C",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE C150G",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE C150P",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE C150R",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE 154A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE 154B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE 154S",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE 155",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE C156B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE 161A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE 161B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE 161C",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE C162A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE C162B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE C163A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE C163B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE C163C",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE 166C",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE M168",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE 169A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE C171B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE 172",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE 174",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE C175A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE 181A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE 182B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE 182C",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE 183A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE M183B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE C183C",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE 185",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE C186",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE C187L",
+        "status": "inactive"
+       }
+      ],
+      "count": 1,
+      "label": "Additional Major Field Elective",
+      "notes": "Select one major field elective course (4 units) from the following. Courses applied as a required course may not be applied."
+     }
+    ],
+    "label": "The Major"
+   }
+  },
+  {
+   "name": "Preparation for the Major",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "CHEM 20A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 20B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 20L",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MATH 31A",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "MATH 31B",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "MATH 32A",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "MATH 32B",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "MATH 33A",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "MECH&AE 82",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "PHYSICS 1A",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "PHYSICS 1B",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "PHYSICS 1C",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "PHYSICS 4AL",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "PHYSICS 4BL",
+      "status": "inactive"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "COM SCI 31",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE M20",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MECH&AE M20P",
+        "status": "inactive"
+       }
+      ],
+      "count": 1,
+      "label": "Mechanical and Aerospace Engineering M20 or 20P or Computer Science 31",
+      "notes": "Select one course from:"
+     }
+    ],
+    "label": "Preparation for the Major"
+   }
+  }
+ ],
+ "narrative": []
+}

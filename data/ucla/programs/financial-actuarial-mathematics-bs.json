@@ -1,0 +1,343 @@
+{
+ "id": "UCLA-FINANCIALACTUARIALMATHEMATICSBS",
+ "name": "Financial Actuarial Mathematics - BS",
+ "kind": "major",
+ "type": "Bachelor's Degree",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.registrar.ucla.edu/major/2026/FINANCIALACTUARIALMATHEMATICSBS",
+ "sections": [
+  {
+   "name": "Computing Specialization",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "MATH 61",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 180",
+        "status": "inactive"
+       }
+      ],
+      "count": 1,
+      "label": "Mathematics 61 or 180",
+      "notes": "Select one course from:"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "COMPTNG 10A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMPTNG 10B",
+        "status": "active"
+       }
+      ],
+      "label": "Program in Computing"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "COMPTNG 10C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMPTNG 15",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMPTNG 16A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMPTNG 20A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMPTNG 40A",
+        "status": "active"
+       }
+      ],
+      "count": 2,
+      "label": "Program in Computing Electives",
+      "notes": "Select two courses from:"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "text",
+        "text": "Mathematics 149 through 159"
+       }
+      ],
+      "count": 2,
+      "label": "Mathematics Electives",
+      "notes": "Select two courses from:"
+     }
+    ],
+    "label": "Computing Specialization",
+    "notes": "Majors may select a specialization in Computing by satisfying all the requirements for a bachelor’s degree in the specified major and completing the following courses, with a minimum grade of C– in each course and a combined grade-point average of at least 2.0. Students must petition for admission to this program and are advised to do so after they complete Program in Computing 10B (petitions should be filed in the Student Services Office). Students graduate with a bachelor’s degree in their major and a specialization in Computing."
+   }
+  },
+  {
+   "name": "The Major",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "MATH 115A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 131A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 170E",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 170S",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 177",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 178A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 178B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 178C",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 179",
+        "status": "inactive"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 174E",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "ECON 141",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "STATS C183",
+          "status": "inactive"
+         }
+        ],
+        "count": 1,
+        "label": "Mathematics 174E or Economics 141 or Statistics C183",
+        "notes": "Select one course from:"
+       }
+      ],
+      "label": "Required Courses"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "text",
+        "text": "Select from Economics 101 through 199B."
+       },
+       {
+        "type": "text",
+        "text": "Select from Mathematics 106 through 199."
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "STATS 100C",
+          "status": "inactive"
+         }
+        ],
+        "label": "Statistics"
+       }
+      ],
+      "count": 2,
+      "label": "Electives",
+      "notes": "Select two courses from:"
+     }
+    ],
+    "label": "The Major"
+   }
+  },
+  {
+   "name": "Preparation for the Major",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "MATH 31A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 31AL",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 31B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 32A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 32B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 33A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 33B",
+        "status": "inactive"
+       }
+      ],
+      "label": "Required Mathematics",
+      "notes": "Compete six courses. Select Mathematics 31A or 31AL."
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "MATH 11N",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 42",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 61",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 70",
+        "status": "inactive"
+       }
+      ],
+      "count": 1,
+      "label": "Mathematics Elective",
+      "notes": "Select one course from:"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "ECON 1",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "ECON 2",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "ECON 11",
+        "status": "inactive"
+       }
+      ],
+      "label": "Economics"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "MGMT 1A",
+        "status": "inactive"
+       }
+      ],
+      "label": "Management"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "COMPTNG 10A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMPTNG 10B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMPTNG 16A",
+        "status": "active"
+       }
+      ],
+      "label": "Program in Computing",
+      "notes": "Complete two courses. Select Program in Computing 10B or 16A."
+     }
+    ],
+    "label": "Preparation for the Major"
+   }
+  }
+ ],
+ "narrative": []
+}

@@ -1,0 +1,970 @@
+{
+ "id": "UCLA-COGNITIVESCIENCEBS",
+ "name": "Cognitive Science - BS",
+ "kind": "major",
+ "type": "Bachelor's Degree",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.registrar.ucla.edu/major/2026/COGNITIVESCIENCEBS",
+ "sections": [
+  {
+   "name": "Preparation for the Major",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 14A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 17",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 20A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 1",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "LING 20",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 1A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 5A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 10",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 11",
+        "status": "inactive"
+       }
+      ],
+      "count": 1,
+      "label": "Chemistry or Linguistics or Physics",
+      "notes": "Select one course from:"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "LIFESCI 7A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "LIFESCI 15",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSCI 3",
+        "status": "inactive"
+       }
+      ],
+      "count": 1,
+      "label": "Life Sciences or Physiological Science",
+      "notes": "Select one course from:"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "LIFESCI 30A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "LIFESCI 30B",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "LIFESCI 40",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "STATS 13",
+          "status": "inactive"
+         }
+        ],
+        "label": "Life Sciences 30 series",
+        "notes": "Students may select Life Sciences 40 or Statistics 13."
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 3A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MATH 3B",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MATH 3C",
+          "status": "inactive"
+         }
+        ],
+        "label": "Mathematics 3 series"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 31A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MATH 31AL",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MATH 31B",
+          "status": "inactive"
+         }
+        ],
+        "label": "Mathematics 31 series",
+        "notes": "Students may select Mathematics 31 or 31AL."
+       }
+      ],
+      "count": 1,
+      "label": "Mathematics",
+      "notes": "Select one series from:"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "PHILOS 7",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 8",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 9",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 23",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 31",
+        "status": "inactive"
+       }
+      ],
+      "count": 1,
+      "label": "Philosophy",
+      "notes": "Select one course from:"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "COMPTNG 10A",
+        "status": "active"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "COMPTNG 10B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COMPTNG 10C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COMPTNG 15",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COMPTNG 16A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COMPTNG 16B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COMPTNG 20A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COMPTNG 40A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PSYCH 20A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PSYCH 20B",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PSYCH 30",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "STATS 20",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "STATS 21",
+          "status": "inactive"
+         }
+        ],
+        "count": 2,
+        "label": "Additional Computing",
+        "notes": "Select two courses from:"
+       }
+      ],
+      "label": "Program in Computing"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "PSYCH 10",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 85",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 100A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 100B",
+        "status": "inactive"
+       }
+      ],
+      "label": "Psychology"
+     }
+    ],
+    "label": "Preparation for the Major"
+   }
+  },
+  {
+   "name": "The Major",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "PSYCH 115",
+          "status": "inactive"
+         },
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "PSYCH M117A",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "PSYCH M117B",
+            "status": "inactive"
+           },
+           {
+            "type": "course",
+            "code": "PSYCH M117C",
+            "status": "inactive"
+           }
+          ],
+          "label": "Substitution for Psychology 115",
+          "notes": "Psychology 115 may be substituted with Psychology M117A, M117B, M117C. Students who complete Psychology M117A, M117B, M117C receive equivalent credit for course 115 and two upper-division cognitive science electives. All three courses must be completed to receive cognitive science elective credit."
+         }
+        ],
+        "label": "Psychology 115"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "PSYCH 120A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PSYCH 120B",
+          "status": "inactive"
+         }
+        ],
+        "count": 1,
+        "label": "Psychology 120A or 120B",
+        "notes": "Select one course from:"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "text",
+          "text": "Psychology 124"
+         }
+        ],
+        "count": 1,
+        "label": "Psychology 124",
+        "notes": "Select one course from:"
+       }
+      ],
+      "label": "Required Psychology Courses"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "COM SCI 161",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 111",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH M116A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 116B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 121",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 186A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 186B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 186C",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 186D",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 186E",
+        "status": "inactive"
+       }
+      ],
+      "count": 1,
+      "label": "Additional Required Course",
+      "notes": "Select one course from:"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "PSYCH 110",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PSYCH 120A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PSYCH 120B",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PSYCH 130",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PSYCH 133B",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PSYCH 133C",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PSYCH 133E",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PSYCH 133J",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PSYCH 135",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PSYCH 137A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PSYCH M137B",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PSYCH 142H",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PSYCH 155A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PSYCH 155B",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PSYCH 156A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PSYCH 161",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PSYCH M166",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PSYCH 196B",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 124Q",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 136A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO M150",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COMM 115",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COMM 118",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COMM 119",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COMM 122",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COMM 126",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COMM M127",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COMM 130",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COMM 131",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COMM 155",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MSC IND M103",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "NEUROSC 102",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "NEUROSC M145",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "NEUROSC C177",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "NEUROSC 180",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "NEUROSC 181",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "NEUROSC 182",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PHILOS 154",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PHILOS C154B",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PHILOS 170",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PHILOS 172",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PHILOS 174",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PHILOS 180",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PHILOS 181",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PSYCTRY M182",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "STATS 100A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "STATS 100B",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "STATS 100C",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "STATS 101B",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "STATS 101C",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "STATS 115",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "STATS C161",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "STATS C180",
+          "status": "inactive"
+         }
+        ],
+        "label": "Courses",
+        "notes": "One quarter of Psychology 196B may be applied if course has not been applied toward capstone requirement. Psychology 191CH may by applied only if content is approved by the undergraduate advising office and it has not been applied toward the Psychology 195B or 196B requirement. If Psychology 191CH is applied as an elective, it may not also be applied toward the fieldwork/research requirement."
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "text",
+          "text": "Psychology 112"
+         }
+        ],
+        "label": "Psychology 112"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "text",
+          "text": "Psychology 118 through 119Y"
+         }
+        ],
+        "label": "Psychology 118 through 119Y"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "text",
+          "text": "Psychology 124"
+         }
+        ],
+        "label": "Psychology 124"
+       },
+       {
+        "type": "text",
+        "text": "Select from Computer Science 111 through CM186."
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "text",
+          "text": "Linguistics 103 through 185B"
+         }
+        ],
+        "label": "Linguistics 103 through 185B"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "text",
+          "text": "Mathematics 110A through 171"
+         }
+        ],
+        "label": "Mathematics 110A through 171"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "text",
+          "text": "Philosophy 124 through 138"
+         }
+        ],
+        "label": "Philosophy 124 through 138"
+       }
+      ],
+      "count": 5,
+      "label": "Upper-Division Electives",
+      "notes": "Select five upper-division elective courses (20 units) from the following list of courses or ranges:"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "PSYCH 195B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 196B",
+        "status": "inactive"
+       }
+      ],
+      "label": "Capstone",
+      "notes": "In the junior or senior year, complete one capstone term of Psychology 195B or 196B (may be fulfilled by taking any one course from 195B or 196B, provided content is approved by the Undergraduate Advising Office)."
+     }
+    ],
+    "label": "The Major"
+   }
+  },
+  {
+   "name": "Honors Program",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "PSYCH 191AH",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "PSYCH 191BH",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "PSYCH 191CH",
+      "status": "inactive"
+     }
+    ],
+    "label": "Honors Program",
+    "notes": "Students work for one year (fall through spring quarters) with a Psychology Department faculty sponsor on a research project that is the basis of a formal honors thesis. During that year they also participate in a weekly seminar (Psychology 191AH, 191BH, 191CH) in which thesis projects are presented and discussed and other topics of interest are explored with invited faculty members and other guests. Other requirements may apply."
+   }
+  },
+  {
+   "name": "Computing Specialization",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "COMPTNG 10A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMPTNG 10B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMPTNG 10C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMPTNG 15",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMPTNG 16A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMPTNG 16B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMPTNG 20A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMPTNG 40A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 20A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 20B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 30",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "STATS 20",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "STATS 21",
+        "status": "inactive"
+       }
+      ],
+      "count": 4,
+      "label": "Computing",
+      "notes": "Select four courses from:"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "PSYCH 85",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 119D",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 121",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 142H",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 186A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 186B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 186C",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 186D",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 186E",
+        "status": "inactive"
+       }
+      ],
+      "count": 2,
+      "label": "Psychology Elective",
+      "notes": "Select two courses from the following list. One 199 course may be substituted for one of these courses provided project has been approved by vice chair."
+     }
+    ],
+    "label": "Computing Specialization",
+    "notes": "Majors may select a specialization in Computing by satisfying all the requirements for a bachelor’s degree in the specified major and completing the following course requirements. A grade of C or better is required in each course. Students graduate with a bachelor’s degree in their major and a specialization in Computing. Students planning to enter this specialization should contact the Undergraduate Advising Office."
+   }
+  }
+ ],
+ "narrative": []
+}

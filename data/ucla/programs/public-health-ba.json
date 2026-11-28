@@ -1,0 +1,205 @@
+{
+ "id": "UCLA-PUBLICHEALTHBA",
+ "name": "Public Health - BA",
+ "kind": "major",
+ "type": "Bachelor's Degree",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.registrar.ucla.edu/major/2026/PUBLICHEALTHBA",
+ "sections": [
+  {
+   "name": "Honors Program",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "PUB HLT 198",
+      "status": "inactive"
+     }
+    ],
+    "label": "Honors Program",
+    "notes": "To receive School Honors, students must complete all upper-division courses in the major with an overall grade-point average of 3.5 or better. For highest School Honors, students must also complete a senior thesis. The senior thesis may be satisfied by completing either Public Health 198 or a departmental 198 course. The 198 course may not be counted as an elective course toward the major and must be supervised by an Academic Senate faculty member from the school. Highest honors is awarded if the faculty sponsor deems the work superior."
+   }
+  },
+  {
+   "name": "Preparation for the Major",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "PUB HLT 50A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PUB HLT 50B",
+        "status": "inactive"
+       }
+      ],
+      "label": "Introduction to Public Health"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "CHEM 3",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 14A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 17",
+          "status": "active"
+         }
+        ],
+        "count": 1,
+        "label": "Chemistry and Biochemistry",
+        "notes": "Select one course from the following. A score of 4 or 5 on the Advanced Placement Chemistry examination may satisfy requirement."
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "LIFESCI 7A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "LIFESCI 15",
+          "status": "inactive"
+         }
+        ],
+        "count": 1,
+        "label": "Life Sciences",
+        "notes": "Select one course from the following. A score of 4 or 5 on the Advanced Placement Biology examination may satisfy requirement."
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "LIFESCI 40",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "STATS 10",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "STATS 13",
+          "status": "inactive"
+         }
+        ],
+        "count": 1,
+        "label": "Statistics",
+        "notes": "Select one course from:"
+       }
+      ],
+      "label": "Principles of Scientific Knowledge"
+     },
+     {
+      "type": "text",
+      "text": "Complete one course from an approved list available on the school website."
+     },
+     {
+      "type": "text",
+      "text": "Complete one course from an approved list available on the school website."
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "COMM 1",
+        "status": "active"
+       }
+      ],
+      "label": "Communication Fundamentals"
+     }
+    ],
+    "label": "Preparation for the Major"
+   }
+  },
+  {
+   "name": "The Major",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "BIOSTAT 120",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM HLT 120",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ENV HLT 120",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "EPIDEM 120",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HLT POL 120",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PUB HLT 120",
+        "status": "inactive"
+       }
+      ],
+      "label": "Foundations of Public Health Knowledge and Practice"
+     },
+     {
+      "type": "text",
+      "text": "Complete three upper-division courses (minimum three 4-unit courses) selected from the school's undergraduate course offerings except: Biostatistics 100, Community Health Sciences 100, 179, Environmental Health Sciences 100, 101, Epidemiology 100, Health Policy and Management 100. No more than one tutorial (195-199) may be counted toward the elective requirement."
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "PUB HLT 185A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PUB HLT 185B",
+        "status": "inactive"
+       }
+      ],
+      "label": "Capstone Experience"
+     }
+    ],
+    "label": "The Major"
+   }
+  }
+ ],
+ "narrative": []
+}

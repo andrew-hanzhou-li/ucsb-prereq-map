@@ -1,0 +1,547 @@
+{
+ "id": "UCLA-APPLIEDLINGUISTICSBA",
+ "name": "Applied Linguistics - BA",
+ "kind": "major",
+ "type": "Bachelor's Degree",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.registrar.ucla.edu/major/2026/APPLIEDLINGUISTICSBA",
+ "sections": [
+  {
+   "name": "Preparation for the Major",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "LING 20",
+      "status": "inactive"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "ANTHRO 4",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 10",
+        "status": "inactive"
+       }
+      ],
+      "count": 1,
+      "label": "Anthropology 4 or Psychology 10",
+      "notes": "Select one course from:"
+     },
+     {
+      "type": "text",
+      "text": "Complete the equivalent to the sixth level of one foreign language or the equivalent to the third level of two different foreign languages."
+     }
+    ],
+    "label": "Preparation for the Major"
+   }
+  },
+  {
+   "name": "The Major",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "LING 102",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "LING 103",
+          "status": "inactive"
+         }
+        ],
+        "count": 1,
+        "label": "Linguistics 102 or 103",
+        "notes": "Select one course from:"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "LING 119A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "LING 120A",
+          "status": "inactive"
+         }
+        ],
+        "count": 1,
+        "label": "Linguistics 119A or 120A",
+        "notes": "Select one course from:"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "LING 120B",
+          "status": "inactive"
+         }
+        ],
+        "label": "Linguistics 120B"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "LING 130",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "LING C140",
+          "status": "inactive"
+         }
+        ],
+        "count": 1,
+        "label": "Linguistics 130 or C140",
+        "notes": "Select one course from:"
+       }
+      ],
+      "label": "Required Linguistics Courses"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "LING C104",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "LING 105",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "LING 115",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "LING 120C",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "LING 130",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "LING C140",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "LING M141",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "LING 144",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "LING M146",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "LING 170",
+        "status": "inactive"
+       }
+      ],
+      "count": 3,
+      "label": "Additional Linguistic Courses",
+      "notes": "Select three courses from:"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "ASL 131",
+        "status": "active"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "text",
+          "text": "Linguistics 104 through 199, minimum 4 units"
+         }
+        ],
+        "label": "Linguistics"
+       }
+      ],
+      "count": 2,
+      "label": "Upper-Division Linguistics Electives",
+      "notes": "Select two upper-division elective courses taught in the Linguistics Department (minimum 4 graded units each) from:"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "ANTHRO 151",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ANTHRO M152P",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ANTHRO 152Q",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ANTHRO 152R",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ANTHRO 153",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ANTHRO 154P",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ANTHRO 154Q",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ANTHRO M156",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ANTHRO 159",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ARABIC 180",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ARABIC 181",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ARMENIA 110",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CCAS 164XP",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CCAS M167XP",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CCAS M170XP",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMM 119",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMM M125",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMM M144A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "FRNCH 105",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "GERMAN 140",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HEBREW 180A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "HEBREW 180B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "IRANIAN 131",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "LING M116",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "LING M146",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "LING M176A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "LING M176B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "LING M177",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "LING M178",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PORTGSE 100A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PORTGSE 100B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SLAVC CM114",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SPAN 100A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SPAN 100B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SPAN 160",
+        "status": "inactive"
+       }
+      ],
+      "count": 1,
+      "label": "Additional Elective",
+      "notes": "Select one course from the following list or a linguistics-related course (minimum 4 graded units) offered by another department in consultation with the Linguistics Department undergraduate student affairs officer:"
+     }
+    ],
+    "label": "The Major"
+   }
+  },
+  {
+   "name": "Honors Program",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "LING 198A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "LING 198B",
+        "status": "inactive"
+       }
+      ],
+      "label": "Linguistics 198A and 198B"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "LING 199",
+        "status": "inactive"
+       }
+      ],
+      "label": "Linguistics 199"
+     }
+    ],
+    "label": "Honors Program",
+    "notes": "Departmental honors are awarded at graduation to those students who have a grade-point average of 3.6 or better in their junior and senior years and who have received a grade of A in Linguistics 198A and 198B or in 199. Qualified students may be proposed by any member of the faculty to the faculty as a whole for the award of highest honors on the basis of a piece of research in linguistics completed at UCLA."
+   }
+  },
+  {
+   "name": "Computing Specialization",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "COMPTNG 10A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COMPTNG 10B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COMPTNG 10C",
+          "status": "active"
+         }
+        ],
+        "label": "Program in Computing"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "COM SCI 31",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM SCI 32",
+          "status": "active"
+         }
+        ],
+        "label": "Computer Science"
+       }
+      ],
+      "count": 1,
+      "label": "Introduction to Computing",
+      "notes": "Select one series from:"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "LING 185A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 61",
+        "status": "inactive"
+       }
+      ],
+      "label": "Linguistics 185A and Mathematics 61"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "LING C104",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "LING 127",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "LING 132",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "LING 165A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "LING 165B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "LING 165C",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "LING 180",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "LING 185B",
+        "status": "inactive"
+       }
+      ],
+      "count": 1,
+      "label": "Additional Linguistics Elective",
+      "notes": "Select one course from:"
+     }
+    ],
+    "label": "Computing Specialization",
+    "notes": "Students may select a specialization in Computing by satisfying all the requirements for a bachelor’s degree in the specified major and completing the following courses. Students graduate with a bachelor’s degree in their major and a specialization in Computing."
+   }
+  }
+ ],
+ "narrative": []
+}

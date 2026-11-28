@@ -1,0 +1,499 @@
+{
+ "id": "UCLA-GENERALCHEMISTRYBS",
+ "name": "General Chemistry - BS",
+ "kind": "major",
+ "type": "Bachelor's Degree",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.registrar.ucla.edu/major/2026/GENERALCHEMISTRYBS",
+ "sections": [
+  {
+   "name": "Preparation for the Major",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 1",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 20A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 20B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 20L",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 30A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 30B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 30BL",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 30C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 30CL",
+        "status": "active"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "CHEM 20AH",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 20BH",
+          "status": "active"
+         }
+        ],
+        "label": "Honors Courses",
+        "notes": "Chemistry 20AH or 20BH may be substituted for 20A or 20B respectively."
+       }
+      ],
+      "label": "Chemistry and Biochemistry"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "LIFESCI 7A",
+        "status": "inactive"
+       }
+      ],
+      "label": "Life Sciences"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "MATH 31A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 31B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 32A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 33A",
+        "status": "inactive"
+       }
+      ],
+      "label": "Mathematics"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "PHYSICS 1A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 1B",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 1C",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 4BL",
+          "status": "inactive"
+         }
+        ],
+        "label": "Physics 1 Series"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "PHYSICS 1AH",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 1BH",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 1CH",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 4BL",
+          "status": "inactive"
+         }
+        ],
+        "label": "Physics 1 Honors Series"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "PHYSICS 5A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 5B",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 5C",
+          "status": "inactive"
+         }
+        ],
+        "label": "Physics 5 Series"
+       }
+      ],
+      "count": 1,
+      "label": "Physics",
+      "notes": "Select one series from:"
+     }
+    ],
+    "label": "Preparation for the Major"
+   }
+  },
+  {
+   "name": "The Major",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "CHEM 110A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 153A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 153L",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 171",
+      "status": "active"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 192A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 192B",
+        "status": "active"
+       }
+      ],
+      "count": 1,
+      "label": "Chemistry 192A or 192B",
+      "notes": "Select one course from:"
+     },
+     {
+      "type": "text",
+      "text": "Complete three additional upper-division courses in the department (at least one must be a laboratory course)."
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "A&O SCI 101",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "A&O SCI 102",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "A&O SCI 103",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "A&O SCI 104",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 101",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI C113",
+        "status": "inactive"
+       }
+      ],
+      "count": 1,
+      "label": "Atmospheric and Oceanic Sciences or  Earth, Planetary, and Space Sciences",
+      "notes": "Select one course from:"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "EDUC M102",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "EDUC 105B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "EDUC 106A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "EDUC 107A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "EDUC 107B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "EDUC M108",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "EDUC 111",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "EDUC 126",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "EDUC 127",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "EDUC M131A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "EDUC 132",
+        "status": "inactive"
+       }
+      ],
+      "count": 3,
+      "label": "Education",
+      "notes": "Select three courses from:"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "ENV HLT C152D",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "SCI EDU 100XP",
+        "status": "inactive"
+       }
+      ],
+      "count": 1,
+      "label": "Environmental Health Sciences or Science Education",
+      "notes": "Select one course from:"
+     }
+    ],
+    "label": "The Major"
+   }
+  },
+  {
+   "name": "Honors Program",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 193A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 193B",
+        "status": "active"
+       }
+      ],
+      "count": 1,
+      "label": "Undergraduate Seminar",
+      "notes": "Select at least one seminar course from:"
+     },
+     {
+      "type": "units",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 196A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 196B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 199",
+        "status": "active"
+       }
+      ],
+      "units": 12,
+      "label": "Research",
+      "notes": "Complete 12 units minimum from:"
+     }
+    ],
+    "label": "Honors Program",
+    "notes": "The core of the program consists of at least one approved undergraduate seminar course from Chemistry and Biochemistry 193A or 193B and three research courses (12 units minimum) from 196A, 196B, or 199, culminating in a thesis."
+   }
+  },
+  {
+   "name": "Computing Specialization",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "COMPTNG 10A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMPTNG 10B",
+        "status": "active"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "COMPTNG 10C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COMPTNG 15",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COMPTNG 20A",
+          "status": "active"
+         }
+        ],
+        "count": 1,
+        "label": "Program in Computing Elective",
+        "notes": "Select one course from:"
+       }
+      ],
+      "label": "Program in Computing"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM C126A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM C145",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM SCI C121",
+        "status": "active"
+       }
+      ],
+      "count": 2,
+      "label": "Computational Chemistry",
+      "notes": "Select two courses from:"
+     }
+    ],
+    "label": "Computing Specialization",
+    "notes": "Majors may select a specialization in Computing by (1) satisfying all the requirements for a bachelor’s degree in the specified major, and completing three Program in Computing courses and two Computational Chemistry courses."
+   }
+  }
+ ],
+ "narrative": []
+}

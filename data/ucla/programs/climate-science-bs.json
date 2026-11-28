@@ -1,0 +1,325 @@
+{
+ "id": "UCLA-CLIMATESCIENCEBS",
+ "name": "Climate Science - BS",
+ "kind": "major",
+ "type": "Bachelor's Degree",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.registrar.ucla.edu/major/2026/CLIMATESCIENCEBS",
+ "sections": [
+  {
+   "name": "The Major",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "A&O SCI 101",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "A&O SCI M105",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "A&O SCI C110",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "A&O SCI 112",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "A&O SCI 121",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "A&O SCI 123",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "A&O SCI 145",
+        "status": "active"
+       }
+      ],
+      "label": "Required Atmospheric and Oceanic Sciences"
+     },
+     {
+      "type": "text",
+      "text": "Complete two upper-division policy/solutions or quantitative courses from a preapproved list."
+     }
+    ],
+    "label": "The Major"
+   }
+  },
+  {
+   "name": "Preparation for the Major",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "A&O SCI 51",
+          "status": "active"
+         }
+        ],
+        "label": "Atmospheric and Oceanic Sciences 51"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "A&O SCI M71",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM SCI 30",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COMPTNG 10A",
+          "status": "active"
+         }
+        ],
+        "count": 1,
+        "label": "Computing",
+        "notes": "Select one course from:"
+       }
+      ],
+      "label": "Atmospheric and Oceanic Sciences"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "CHEM 14A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 14B",
+          "status": "active"
+         }
+        ],
+        "label": "Chemistry 14 series"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "CHEM 20A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 20B",
+          "status": "active"
+         }
+        ],
+        "label": "Chemistry 20 series"
+       }
+      ],
+      "count": 1,
+      "label": "Chemistry and Biochemistry",
+      "notes": "Select one series from:"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "LIFESCI 30A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "LIFESCI 30B",
+          "status": "inactive"
+         }
+        ],
+        "label": "Life Sciences 30 series"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 3A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MATH 3B",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MATH 3C",
+          "status": "inactive"
+         }
+        ],
+        "label": "Mathematics 3 series"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 31A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MATH 31B",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MATH 32A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MATH 33B",
+          "status": "inactive"
+         }
+        ],
+        "label": "Mathematics 31A to 33B"
+       }
+      ],
+      "count": 1,
+      "label": "Mathematics",
+      "notes": "Select one series from:"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "PHYSICS 1A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 1B",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 1C",
+          "status": "inactive"
+         }
+        ],
+        "label": "Physics 1 series"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "PHYSICS 1AH",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 1BH",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 1CH",
+          "status": "inactive"
+         }
+        ],
+        "label": "Physics 1 Honors series"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "PHYSICS 5A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 5B",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 5C",
+          "status": "inactive"
+         }
+        ],
+        "label": "Physics 5 series"
+       }
+      ],
+      "count": 1,
+      "label": "Physics",
+      "notes": "Select one series from:"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "A&O SCI 90",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS 10",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "STATS 12",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "STATS 13",
+        "status": "inactive"
+       }
+      ],
+      "count": 1,
+      "label": "Statistics",
+      "notes": "Select one course from:"
+     }
+    ],
+    "label": "Preparation for the Major",
+    "notes": "Students interested in pursuing graduate studies in climate sciences or other branches of science are encouraged to select the Mathematics 31A through 33B sequence and the Physics 1 sequence."
+   }
+  }
+ ],
+ "narrative": []
+}

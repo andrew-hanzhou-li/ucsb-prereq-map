@@ -1,0 +1,354 @@
+{
+ "id": "UCLA-ASTROPHYSICSBS",
+ "name": "Astrophysics - BS",
+ "kind": "major",
+ "type": "Bachelor's Degree",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.registrar.ucla.edu/major/2026/ASTROPHYSICSBS",
+ "sections": [
+  {
+   "name": "Honors Program",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "ASTR 199",
+      "status": "active"
+     }
+    ],
+    "label": "Honors Program",
+    "notes": "In addition to completing all courses required for the major, students must complete two terms of Astronomy 199."
+   }
+  },
+  {
+   "name": "Preparation for the Major",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "ASTR 81",
+        "status": "active"
+       }
+      ],
+      "label": "Astronomy"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "PHYSICS 1A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 1B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 1C",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 4AL",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 4BL",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 17",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 32",
+        "status": "inactive"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "PHYSICS 1AH",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 1BH",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 1CH",
+          "status": "inactive"
+         }
+        ],
+        "label": "Physics 1 Honors series",
+        "notes": "Students may substitute courses from the Physics 1 honors series for the Physics 1 series."
+       }
+      ],
+      "label": "Physics"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "MATH 31A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 31AL",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 31B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 32A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 32B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 33A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 33B",
+        "status": "inactive"
+       }
+      ],
+      "label": "Mathematics"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "COM SCI 30",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM SCI 31",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMPTNG 10A",
+        "status": "active"
+       }
+      ],
+      "count": 1,
+      "label": "Programming",
+      "notes": "Select one course from following list or demonstrate ability to program:"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 20A",
+        "status": "active"
+       }
+      ],
+      "label": "Recommended",
+      "notes": "The following course is recommended:"
+     }
+    ],
+    "label": "Preparation for the Major"
+   }
+  },
+  {
+   "name": "The Major",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "ASTR 115",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 117",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 127",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 180",
+        "status": "active"
+       }
+      ],
+      "label": "Astronomy"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "PHYSICS 105A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 105B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 110A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 110B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 115A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 115B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 115C",
+        "status": "inactive"
+       }
+      ],
+      "label": "Physics"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "ASTR 140",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 141",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 142",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 143",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 144",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 145",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 146",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 155",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI C179",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 108",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS M122",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 124",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 126",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 127",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 128",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 132",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS C170M",
+        "status": "inactive"
+       }
+      ],
+      "count": 3,
+      "label": "Electives",
+      "notes": "Select three additional upper-division courses, with at least one course in astronomy, from the following:"
+     }
+    ],
+    "label": "The Major"
+   }
+  }
+ ],
+ "narrative": []
+}

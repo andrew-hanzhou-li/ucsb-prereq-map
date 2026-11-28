@@ -1,0 +1,314 @@
+{
+ "id": "UCLA-BIOPHYSICSBS",
+ "name": "Biophysics - BS",
+ "kind": "major",
+ "type": "Bachelor's Degree",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.registrar.ucla.edu/major/2026/BIOPHYSICSBS",
+ "sections": [
+  {
+   "name": "Preparation for the Major",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "PHYSICS 1A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 1B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 1C",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 4AL",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 4BL",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 17",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 32",
+        "status": "inactive"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "PHYSICS 1AH",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 1BH",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 1CH",
+          "status": "inactive"
+         }
+        ],
+        "label": "Physics 1 Honors series",
+        "notes": "Students may substitute courses from the Physics 1 honors series for the Physics 1 series."
+       }
+      ],
+      "label": "Physics"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 20A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 20B",
+        "status": "active"
+       }
+      ],
+      "label": "Chemistry"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "LIFESCI 7A",
+        "status": "inactive"
+       }
+      ],
+      "label": "Life Sciences"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "MATH 31A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 31AL",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 31B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 32A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 32B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 33A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 33B",
+        "status": "inactive"
+       }
+      ],
+      "label": "Mathematics"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "PHYSICS 18L",
+        "status": "inactive"
+       }
+      ],
+      "label": "Recommended",
+      "notes": "The following course is recommended:"
+     }
+    ],
+    "label": "Preparation for the Major"
+   }
+  },
+  {
+   "name": "The Major",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "PHYSICS 105A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 110A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 110B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 112",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 115A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 115B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS M180G",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS C187A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS C187B",
+        "status": "inactive"
+       }
+      ],
+      "label": "Required Physics"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "NEUROSC M101A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 170A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS C186",
+          "status": "inactive"
+         }
+        ],
+        "label": "Group A (Physics of Neuroscience)"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "PHYSICS 144",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 170A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MECH&AE C286",
+          "status": "inactive"
+         }
+        ],
+        "label": "Group B (Biological Physics)"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "CHEM 153A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 153L",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MCD BIO 100",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MCD BIO 165A",
+          "status": "inactive"
+         }
+        ],
+        "label": "Group C (Molecular and Cellular Biophysics)"
+       }
+      ],
+      "count": 3,
+      "label": "Upper-Division Electives",
+      "notes": "Select three additional upper-division elective courses from one group or among the three groups:"
+     }
+    ],
+    "label": "The Major"
+   }
+  },
+  {
+   "name": "Honors Program",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "PHYSICS 199",
+      "status": "inactive"
+     }
+    ],
+    "label": "Honors Program",
+    "notes": "In addition to completing all courses required for the major, students must complete two 4-unit terms of Physics 199."
+   }
+  }
+ ],
+ "narrative": []
+}

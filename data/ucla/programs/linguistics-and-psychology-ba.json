@@ -1,0 +1,486 @@
+{
+ "id": "UCLA-LINGUISTICSANDPSYCHOLOGYBA",
+ "name": "Linguistics and Psychology - BA",
+ "kind": "major",
+ "type": "Bachelor's Degree",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.registrar.ucla.edu/major/2026/LINGUISTICSANDPSYCHOLOGYBA",
+ "sections": [
+  {
+   "name": "Honors Program",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "LING 198A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "LING 198B",
+        "status": "inactive"
+       }
+      ],
+      "label": "Linguistics 198A and 198B"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "LING 199",
+        "status": "inactive"
+       }
+      ],
+      "label": "Linguistics 199"
+     }
+    ],
+    "label": "Honors Program",
+    "notes": "Departmental honors are awarded at graduation to those students who have a grade-point average of 3.6 or better in their junior and senior years and who have received a grade of A in Linguistics 198A and 198B or in 199. Qualified students may be proposed by any member of the faculty to the faculty as a whole for the award of highest honors on the basis of a piece of research in linguistics completed at UCLA."
+   }
+  },
+  {
+   "name": "The Major",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "LING 102",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "LING 103",
+          "status": "inactive"
+         }
+        ],
+        "count": 1,
+        "label": "Linguistics 102 or 103",
+        "notes": "Select one course from:"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "LING 119A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "LING 120A",
+          "status": "inactive"
+         }
+        ],
+        "count": 1,
+        "label": "Linguistics 119A or 120A",
+        "notes": "Select one course from:"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "LING 120B",
+          "status": "inactive"
+         }
+        ],
+        "label": "Linguistics 120B"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "LING 115",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "LING 130",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "LING 132",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "LING C135",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "LING C140",
+          "status": "inactive"
+         }
+        ],
+        "count": 2,
+        "label": "Additional Linguistics Courses",
+        "notes": "Select two courses from:"
+       }
+      ],
+      "label": "Required Linguistics Courses"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "text",
+        "text": "Linguistics 104 through 199, minimum 4 units excluding multiple-listed courses"
+       }
+      ],
+      "count": 1,
+      "label": "Upper-Division Linguistics Elective",
+      "notes": "Select one upper-division elective course in the Linguistics Department (minimum 4 graded units; multiple-listed courses may not be applied) from:"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "LING 130",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "LING 132",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "LING C135",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "LING 165A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "LING 165B",
+        "status": "inactive"
+       }
+      ],
+      "label": "Recommended Linguistics Courses",
+      "notes": "Linguistics 165A, 165B, and whichever of 130, 132, and C135 has not been used to satisfy the requirement, are strongly recommended."
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "PSYCH 120A",
+        "status": "inactive"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "LING C104",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PSYCH 121",
+          "status": "inactive"
+         }
+        ],
+        "count": 1,
+        "label": "Experimental Course",
+        "notes": "Select one course from"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "PSYCH 130",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PSYCH 133B",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PSYCH 133E",
+          "status": "inactive"
+         }
+        ],
+        "count": 1,
+        "label": "Additional Psychology",
+        "notes": "Select one course from:"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "PSYCH 115",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PSYCH M116A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PSYCH M117C",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PSYCH 118",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PSYCH M119L",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PSYCH 124A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PSYCH 124C",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PSYCH 130",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PSYCH 133B",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PSYCH 133C",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PSYCH 133E",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PSYCH 133F",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PSYCH 186A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PSYCH 186B",
+          "status": "inactive"
+         }
+        ],
+        "count": 2,
+        "label": "Psychology Electives",
+        "notes": "Select two courses from:"
+       }
+      ],
+      "label": "Psychology"
+     }
+    ],
+    "label": "The Major"
+   }
+  },
+  {
+   "name": "Preparation for the Major",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "LING 20",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "PSYCH 10",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "PSYCH 85",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "PSYCH 100A",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "PSYCH 100B",
+      "status": "inactive"
+     },
+     {
+      "type": "text",
+      "text": "Complete the equivalent to the sixth level of one foreign language or the equivalent to the third level of two different foreign languages."
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "COMPTNG 10A",
+        "status": "active"
+       }
+      ],
+      "label": "Recommended",
+      "notes": "The following course is strongly recommended:"
+     }
+    ],
+    "label": "Preparation for the Major"
+   }
+  },
+  {
+   "name": "Computing Specialization",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "COMPTNG 10A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COMPTNG 10B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COMPTNG 10C",
+          "status": "active"
+         }
+        ],
+        "label": "Program in Computing"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "COM SCI 31",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM SCI 32",
+          "status": "active"
+         }
+        ],
+        "label": "Computer Science"
+       }
+      ],
+      "count": 1,
+      "label": "Introduction to Computing",
+      "notes": "Select one series from:"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "LING 185A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 61",
+        "status": "inactive"
+       }
+      ],
+      "label": "Linguistics 185A and Mathematics 61"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "LING C104",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "LING 127",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "LING 132",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "LING 165A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "LING 165B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "LING 165C",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "LING 180",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "LING 185B",
+        "status": "inactive"
+       }
+      ],
+      "count": 1,
+      "label": "Linguistics Elective",
+      "notes": "Select one course from:"
+     }
+    ],
+    "label": "Computing Specialization",
+    "notes": "Students may select a specialization in Computing by (1) satisfying all the requirements for a bachelor’s degree in the specified major and (2) completing Program in Computing 10A and 10B and 10C (or Computer Science 31 and 32), Linguistics 185A, Mathematics 61, and one course selected from Linguistics 104, 127, 132, 165A, 165B, 165C, 180, 185B. Students graduate with a bachelor’s degree in their major and a specialization in Computing."
+   }
+  }
+ ],
+ "narrative": []
+}

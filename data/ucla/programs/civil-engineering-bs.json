@@ -1,0 +1,699 @@
+{
+ "id": "UCLA-CIVILENGINEERINGBS",
+ "name": "Civil Engineering - BS",
+ "kind": "major",
+ "type": "Bachelor's Degree",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.registrar.ucla.edu/major/2026/CIVILENGINEERINGBS",
+ "sections": [
+  {
+   "name": "Preparation for the Major",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 20A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 20B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 20L",
+        "status": "active"
+       }
+      ],
+      "label": "Chemistry"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "C&EE 1",
+        "status": "active"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "C&EE M20",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM SCI 31",
+          "status": "active"
+         }
+        ],
+        "count": 1,
+        "label": "Civil Engineering M20 or Computer Science 31",
+        "notes": "Select one course from:"
+       }
+      ],
+      "label": "Civil Engineering"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "MATH 31A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 31B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 32A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 32B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 33A",
+        "status": "inactive"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 33B",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MECH&AE 82",
+          "status": "inactive"
+         }
+        ],
+        "count": 1,
+        "label": "Mathematics 33B or Mechanical and Aerospace Engineering 82",
+        "notes": "Select one course from:"
+       }
+      ],
+      "label": "Mathematics"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "PHYSICS 1A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 1B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 1C",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 4AL",
+        "status": "inactive"
+       }
+      ],
+      "label": "Physics"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "C&EE 58XP",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 3",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 15",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 16",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 17",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 20",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "ENVIRON 12",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "LIFESCI 7A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MIMG 6",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "NEUROSC 10",
+        "status": "inactive"
+       }
+      ],
+      "count": 1,
+      "label": "Natural Science",
+      "notes": "Select one course from:"
+     }
+    ],
+    "label": "Preparation for the Major"
+   }
+  },
+  {
+   "name": "The Major",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "C&EE 103",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE 108",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE 120",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE 135A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE 150",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE 153",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "C&EE 190",
+        "status": "active"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "CH ENGR 102A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MECH&AE 105A",
+          "status": "inactive"
+         }
+        ],
+        "count": 1,
+        "label": "Chemical Engineering 102A or Mechanical and Aerospace Engineering 105A",
+        "notes": "Select one course from:"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "C&EE 91",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MECH&AE 101",
+          "status": "inactive"
+         }
+        ],
+        "count": 1,
+        "label": "Civil Engineering 91 or Mechanical and Aerospace Engineering 101",
+        "notes": "Select one course from:"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "C&EE C104",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MAT SCI 104",
+          "status": "inactive"
+         }
+        ],
+        "count": 1,
+        "label": "Civil Engineering C104 or Materials Science and Engineering 104",
+        "notes": "Select one course from:"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "C&EE 107",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MECH&AE 103",
+          "status": "inactive"
+         }
+        ],
+        "count": 1,
+        "label": "Civil Engineering 107 or Mechanical and Aerospace Engineering 103",
+        "notes": "Select one course from:"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "C&EE 110",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "C&EE C111",
+          "status": "active"
+         }
+        ],
+        "count": 1,
+        "label": "Civil Engineering 110 or C111",
+        "notes": "Select one course from:"
+       }
+      ],
+      "label": "Required",
+      "notes": "Complete 12 courses: 7 required courses and one course from each of the five options as follows:"
+     },
+     {
+      "type": "text",
+      "text": "Complete three technical breadth courses (12 units) selected from an approved list available in the Office of Academic and Student Affairs."
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "C&EE C104",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "C&EE C111",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "C&EE C182",
+          "status": "active"
+         },
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "C&EE 108L",
+            "status": "active"
+           }
+          ],
+          "label": "Laboratory"
+         }
+        ],
+        "label": "Civil Engineering Materials"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "C&EE 116XP",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "C&EE 154",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "C&EE 155",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "C&EE C159",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "C&EE C164",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "C&EE M165",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "C&EE M166",
+          "status": "active"
+         },
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "C&EE 156A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "C&EE 156B",
+            "status": "active"
+           }
+          ],
+          "label": "Laboratory"
+         },
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "C&EE 157B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "C&EE 157C",
+            "status": "active"
+           }
+          ],
+          "label": "Capstone design"
+         }
+        ],
+        "label": "Environmental Engineering"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "C&EE 125",
+          "status": "active"
+         },
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "C&EE 120L",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "C&EE 129L",
+            "status": "active"
+           }
+          ],
+          "label": "Laboratory"
+         },
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "C&EE 121",
+            "status": "active"
+           }
+          ],
+          "label": "Design"
+         },
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "C&EE 123",
+            "status": "active"
+           }
+          ],
+          "label": "Capstone Design"
+         }
+        ],
+        "label": "Geotechnical Engineering"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "C&EE 157A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "C&EE C158",
+          "status": "active"
+         },
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "C&EE 129L",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "C&EE 157L",
+            "status": "active"
+           }
+          ],
+          "label": "Laboratory"
+         },
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "C&EE 151",
+            "status": "active"
+           }
+          ],
+          "label": "Design"
+         },
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "C&EE 152",
+            "status": "active"
+           }
+          ],
+          "label": "Capstone Design"
+         }
+        ],
+        "label": "Hydrology and Water Resources Engineering"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "C&EE 125",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "C&EE 130",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "C&EE 132",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "C&EE 135B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "C&EE M135C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "C&EE 142",
+          "status": "active"
+         },
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "C&EE 108L",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "C&EE 135L",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "C&EE 140L",
+            "status": "active"
+           }
+          ],
+          "label": "Laboratory"
+         },
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "C&EE 141",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "C&EE 143",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "C&EE 148",
+            "status": "active"
+           }
+          ],
+          "label": "Design"
+         },
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "C&EE 144",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "C&EE 147",
+            "status": "active"
+           }
+          ],
+          "label": "Capstone Design"
+         }
+        ],
+        "label": "Structural Engineering and Mechanics"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "C&EE 180",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "C&EE C181",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "C&EE C182",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "C&EE C183",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "C&EE C184",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "C&EE C185",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "C&EE C186",
+          "status": "active"
+         }
+        ],
+        "label": "Transportation Engineering"
+       }
+      ],
+      "count": 8,
+      "label": "Field Electives",
+      "notes": "Select at least eight major field elective courses (32 units) from the lists below with at least two design courses, one of which must be a capstone design course and two of which must be laboratory courses. The laboratory courses must be taken from two distinct areas (both 120L and 129L may be taken to satisfy the two-laboratory requirement). Courses applied toward the required course requirement may not also be applied toward the major field elective requirement."
+     }
+    ],
+    "label": "The Major"
+   }
+  }
+ ],
+ "narrative": []
+}

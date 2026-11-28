@@ -1,0 +1,241 @@
+{
+ "id": "UCLA-PHYSICSBA",
+ "name": "Physics - BA",
+ "kind": "major",
+ "type": "Bachelor's Degree",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.registrar.ucla.edu/major/2026/PHYSICSBA",
+ "sections": [
+  {
+   "name": "The Major",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "PHYSICS 105A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 105B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 110A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 110B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 112",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 115A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 115B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 115C",
+        "status": "inactive"
+       }
+      ],
+      "label": "Required Courses"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "text",
+          "text": "Physics 170 series"
+         }
+        ],
+        "label": "Physics 170 series"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "text",
+          "text": "Physics 180 series"
+         }
+        ],
+        "label": "Physics 180 series"
+       }
+      ],
+      "count": 1,
+      "label": "Physics 170 series and 180 series",
+      "notes": "Select one course from:"
+     }
+    ],
+    "label": "The Major"
+   }
+  },
+  {
+   "name": "Preparation for the Major",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "PHYSICS 1A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 1B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 1C",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 4AL",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 4BL",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 17",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS 32",
+        "status": "inactive"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "PHYSICS 1AH",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 1BH",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS 1CH",
+          "status": "inactive"
+         }
+        ],
+        "label": "Physics 1 Honors series",
+        "notes": "Students may substitute courses from the Physics 1 honors series for the Physics 1 series."
+       }
+      ],
+      "label": "Physics"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 20A",
+        "status": "active"
+       }
+      ],
+      "label": "Chemistry"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "MATH 31A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 31AL",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 31B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 32A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 32B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 33A",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MATH 33B",
+        "status": "inactive"
+       }
+      ],
+      "label": "Mathematics"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "COMPTNG 10A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM SCI 30",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM SCI 31",
+        "status": "active"
+       }
+      ],
+      "count": 1,
+      "label": "Program in Computing or Computer Science",
+      "notes": "Select one course from:"
+     }
+    ],
+    "label": "Preparation for the Major"
+   }
+  }
+ ],
+ "narrative": []
+}
