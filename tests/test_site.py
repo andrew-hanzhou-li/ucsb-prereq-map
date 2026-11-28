@@ -184,7 +184,7 @@ def check_campuses(p):
     check("campus: a first visit shows the campus screen",
           page.is_visible("#campus-screen") and not page.is_visible(".layout"))
     check("campus: all nine campuses are listed, and only ready ones are links",
-          page.locator(".campus-row").count() == 9 and page.locator("a.campus-name").count() == 1)
+          page.locator(".campus-row").count() == 9 and page.locator("a.campus-name").count() == 2)
     page.keyboard.press("1")                 # Berkeley: not ready
     page.wait_for_timeout(300)
     check("campus: a key for a campus that isn't ready does nothing", page.evaluate("location.hash") == "")
@@ -201,7 +201,7 @@ def check_campuses(p):
     check("campus: 'change' shows the campus screen, with this campus marked",
           page.is_visible("#campus-screen") and page.locator(".campus-row.current").count() == 1)
     page.evaluate("window.notReloaded = true")
-    page.click("a.campus-name")
+    page.click(".campus-row.current a.campus-name")
     page.wait_for_timeout(500)
     check("campus: picking the same campus goes back without a reload",
           not page.is_visible("#campus-screen") and page.is_visible("#welcome") and
@@ -256,10 +256,10 @@ def check_campuses(p):
     page.wait_for_function("currentView === 'plan'", timeout=15000)
     check("campus: an old plan link opens the plan", page.evaluate("location.hash") == "#ucsb/plan/economics-ba")
 
-    page.goto(SITE + "#ucsd/")
+    page.goto(SITE + "#ucla/")
     page.wait_for_timeout(800)
     check("campus: a campus that isn't ready shows the campus screen with a note",
-          page.is_visible("#campus-screen") and "UC San Diego" in page.inner_text("#campus-note"))
+          page.is_visible("#campus-screen") and "UCLA" in page.inner_text("#campus-note"))
     check("campus: ...and isn't remembered", page.evaluate("localStorage.getItem('prereq.campus')") == "ucsb")
     check("campus: no JavaScript errors", not page.errors, page.errors)
     page.close()
@@ -290,19 +290,21 @@ def check_campuses(p):
     old.evaluate("localStorage.clear()")
     old.close()
 
-    # UC San Diego, opened with "?preview" while it's "Coming next": its
-    # department maps, its course links and its words.
+    # UC San Diego: its majors and department maps, its course links and
+    # its words.
     ucsd = new_page(browser, viewport={"width": 1400, "height": 900})
     ucsd.goto(SITE + "#campus")
     ucsd.wait_for_timeout(400)
-    check("campus: without the preview, UC San Diego can't be picked",
-          ucsd.locator(".campus-row a.campus-name").count() == 1)
+    check("campus: UC San Diego can be picked and says Ready",
+          ucsd.locator(".campus-row a.campus-name").count() == 2 and
+          "San Diego" in ucsd.inner_text("#campus-screen") and ucsd.locator(".campus-row.preview").count() == 0)
+    # The preview switch, for the next campus with data (a stand-in here).
+    probe = "(() => { const c = campusById('ucla'); c.hasData = true; const r = isReady('ucla'); delete c.hasData; return r; })()"
+    check("campus: without ?preview, a campus that's coming next can't be picked", ucsd.evaluate(probe) is False)
     ucsd.goto(SITE + "?preview#campus")
     ucsd.wait_for_timeout(400)
-    check("campus: with ?preview, UC San Diego can be picked and says Preview",
-          ucsd.locator(".campus-row.preview a.campus-name").count() == 1 and
-          "Preview" in ucsd.inner_text(".campus-row.preview"))
-    ucsd.goto(SITE + "?preview#ucsd/")
+    check("campus: with ?preview, a coming-next campus with data can be picked", ucsd.evaluate(probe) is True)
+    ucsd.goto(SITE + "#ucsd/")
     ucsd.wait_for_function("typeof majors !== 'undefined' && majors.length > 0", timeout=15000)
     check("ucsd: the front page lists majors and department maps",
           "department course maps" in ucsd.inner_text("#browse-count") and
@@ -310,13 +312,13 @@ def check_campuses(p):
           ucsd.inner_text("#welcome-title") == "Choose a major or department." and
           "UC San Diego General Catalog" in ucsd.inner_text("#footer-catalog"))
     check("ucsd: no one-file copy link (it's UCSB only)", not ucsd.is_visible("#footer-download"))
-    ucsd.goto(SITE + "?preview#ucsd/computer-science-and-engineering/CSE+100")
+    ucsd.goto(SITE + "#ucsd/computer-science-and-engineering/CSE+100")
     ucsd.wait_for_function("typeof selected !== 'undefined' && selected === 'CSE 100'", timeout=15000)
     check("ucsd: CSE 100's panel links to its spot on the CSE page",
           ucsd.locator('#panel-body a[href="https://catalog.ucsd.edu/courses/CSE.html#cse100"]').count() == 1)
     check("ucsd: CSE 100 needs CSE 12 (an arrow on the map)",
           ucsd.evaluate("graph.edges.some(e => e.from === 'CSE 12' && e.to === 'CSE 100')"))
-    ucsd.goto(SITE + "?preview#ucsd/plan/mathematics")
+    ucsd.goto(SITE + "#ucsd/plan/mathematics")
     ucsd.wait_for_function("currentView === 'plan'", timeout=15000)
     ucsd.click('[data-plan-add="MATH 20A"]')
     check("ucsd: a course can be added to a plan", ucsd.evaluate("plan.placed['MATH 20A']") is not None)
@@ -346,12 +348,12 @@ def check_campuses(p):
           "UC San Diego" in ucsd.inner_text("#about") and "GOLD" not in ucsd.inner_text("#about"))
     ucsd.keyboard.press("Escape")
     ucsd.evaluate("localStorage.removeItem('prereq.ucsd.plan')")
-    ucsd.goto(SITE + "?preview#ucsd/computer-science-bs")
+    ucsd.goto(SITE + "#ucsd/computer-science-bs")
     ucsd.wait_for_function("typeof graph !== 'undefined' && graph && graph.major && graph.major.id === 'UCSD-MAJOR-computer-science-bs'",
                            timeout=15000)
     check("ucsd: the Computer Science major map needs CSE 12, CSE 100 and MATH 20A",
           ucsd.evaluate("['CSE 12', 'CSE 100', 'MATH 20A'].every(c => nodesById[c] && nodesById[c].in_major)"))
-    ucsd.goto(SITE + "?preview#ucsd/plan/computer-science-bs")
+    ucsd.goto(SITE + "#ucsd/plan/computer-science-bs")
     ucsd.wait_for_function("currentView === 'plan'", timeout=15000)
     ucsd.wait_for_timeout(300)
     ucsd.evaluate("autoFill(true)")
@@ -364,7 +366,7 @@ def check_campuses(p):
     # restricted electives, two of them labs. Two labs fill the lab group but
     # not three of the five.
     ucsd.evaluate("localStorage.removeItem('prereq.ucsd.plan')")
-    ucsd.goto(SITE + "?preview#ucsd/plan/marine-biology-bs")
+    ucsd.goto(SITE + "#ucsd/plan/marine-biology-bs")
     ucsd.wait_for_function("currentView === 'plan' && graph.major.id === 'UCSD-MAJOR-marine-biology-bs'", timeout=15000)
     ucsd.wait_for_timeout(300)
     ucsd.evaluate("placeCourse('SIO 101'); placeCourse('SIO 131'); planChanged()")
@@ -382,7 +384,7 @@ def check_campuses(p):
     # ...unless the catalog lets a course count twice: Healthy Aging's
     # practicum "may overlap with HDS Field Research" (HDS 191).
     ucsd.evaluate("localStorage.removeItem('prereq.ucsd.plan')")
-    ucsd.goto(SITE + "?preview#ucsd/plan/human-developmental-sciences-bs-healthy-aging")
+    ucsd.goto(SITE + "#ucsd/plan/human-developmental-sciences-bs-healthy-aging")
     ucsd.wait_for_function("currentView === 'plan' && graph.major.id === 'UCSD-MAJOR-human-developmental-sciences-bs-healthy-aging'",
                            timeout=15000)
     ucsd.wait_for_timeout(300)

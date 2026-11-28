@@ -217,7 +217,7 @@ The 95% bar is met: the latest honest score is 97% (96.9% without the four cours
 
 ## UCSD completion plan: offerings, AP credit, majors (2026-11-27)
 
-"Ready" means changing UCSD's status in `site/campus.js` from "next" to "ready", so it can be picked on the campus screen without `?preview`. That's Andrew's call; nothing is public until `all-uc` is merged to `main`.
+"Ready" means changing UCSD's status in `site/campus.js` from "next" to "ready", so it can be picked on the campus screen without `?preview`. Andrew's rule: it's ready when a review pass finds nothing left to really improve. **Marked ready on 2026-11-28** after that pass (Auto-fill completes 169 of 180 majors; the 10 left each require a course the 2026–27 catalog doesn't list; every map opens without errors). Nothing is public until `all-uc` is merged to `main`.
 
 ### 1. When each course is offered
 - **Source:** UCSD's Schedule of Classes (act.ucsd.edu, robots.txt allows it). The catalog states quarters for only 76 courses.
