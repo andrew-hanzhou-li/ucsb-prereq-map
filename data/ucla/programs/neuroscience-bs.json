@@ -980,7 +980,7 @@
         "notes": "Select one course from:"
        },
        {
-        "type": "all",
+        "type": "choose",
         "items": [
          {
           "type": "all",
@@ -1011,11 +1011,12 @@
           "label": "Project Brainstorm"
          }
         ],
+        "count": 1,
         "label": "DOPA-Team and Project Brainstorm",
         "notes": "Complete Neuroscience C177 and 192CX (for DOPA-Team) or two quarters of Neuroscience 192BX (for Project Brainstorm)."
        },
        {
-        "type": "all",
+        "type": "choose",
         "items": [
          {
           "type": "all",
@@ -1050,6 +1051,7 @@
           "label": "Neuroscience 199A and 199B"
          }
         ],
+        "count": 1,
         "label": "Neuroscience 198A and 198B, or 199A and 199B.",
         "notes": "Select Neuroscience 198A and 198B, or 199A and 199B."
        }

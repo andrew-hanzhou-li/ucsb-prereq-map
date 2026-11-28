@@ -47,7 +47,7 @@
       "type": "all",
       "items": [
        {
-        "type": "all",
+        "type": "choose",
         "items": [
          {
           "type": "all",
@@ -204,11 +204,12 @@
           "notes": "Select at least one additional course from Education 101 through 119 or 179A:"
          }
         ],
+        "count": 1,
         "label": "Histories and Philosophies of Education",
         "notes": "Complete Education 100 and at least one additional course from 101 through 119 or 179A."
        },
        {
-        "type": "all",
+        "type": "choose",
         "items": [
          {
           "type": "all",
@@ -420,11 +421,12 @@
           "notes": "Select at least one additional course from Education 121 through 149 or 179BX:"
          }
         ],
+        "count": 1,
         "label": "Contexts of Teaching, Learning, and Development",
         "notes": "Complete Education 120 and at least one additional course from 121 through 149 or 179BX."
        },
        {
-        "type": "all",
+        "type": "choose",
         "items": [
          {
           "type": "all",
@@ -506,6 +508,7 @@
           "notes": "Select at least one additional course from Education 151 through 155 or 157 through 169:"
          }
         ],
+        "count": 1,
         "label": "Inquiry and Design for Learning",
         "notes": "Complete Education 150, 156, and at least one additional course from 151 through 155, 157 through 169, or 179C."
        }

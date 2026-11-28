@@ -164,74 +164,44 @@
       "type": "choose",
       "items": [
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "ARABIC 102C",
-          "status": "active"
-         }
-        ],
-        "label": "ARABIC"
+        "type": "course",
+        "code": "ARABIC 102C",
+        "status": "active"
        },
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "ARMENIA 102C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ARMENIA 105C",
-          "status": "active"
-         }
-        ],
-        "label": "ARMENIA"
+        "type": "course",
+        "code": "ARMENIA 102C",
+        "status": "active"
        },
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "HEBREW 102C",
-          "status": "active"
-         }
-        ],
-        "label": "HEBREW"
+        "type": "course",
+        "code": "ARMENIA 105C",
+        "status": "active"
        },
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "IRANIAN 102C",
-          "status": "active"
-         }
-        ],
-        "label": "IRANIAN"
+        "type": "course",
+        "code": "HEBREW 102C",
+        "status": "active"
        },
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "TURKIC 102C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "TURKIC 112C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "TURKIC 116C",
-          "status": "active"
-         }
-        ],
-        "label": "TURKIC"
+        "type": "course",
+        "code": "IRANIAN 102C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "TURKIC 102C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "TURKIC 112C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "TURKIC 116C",
+        "status": "active"
        }
       ],
       "count": 1,

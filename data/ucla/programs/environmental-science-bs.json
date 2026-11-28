@@ -717,7 +717,7 @@
   {
    "name": "The Major",
    "requirement": {
-    "type": "all",
+    "type": "choose",
     "items": [
      {
       "type": "all",
@@ -2971,6 +2971,7 @@
       "label": "One minor"
      }
     ],
+    "count": 1,
     "label": "The Major"
    }
   },

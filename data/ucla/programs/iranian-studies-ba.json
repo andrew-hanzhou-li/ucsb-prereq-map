@@ -155,23 +155,12 @@
         "notes": "Select three courses from:"
        },
        {
-        "type": "all",
+        "type": "choose",
         "items": [
          {
-          "type": "choose",
-          "count": 1,
-          "items": [
-           {
-            "type": "course",
-            "code": "AN N EA CM163",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "IRANIAN CM163",
-            "status": "active"
-           }
-          ]
+          "type": "course",
+          "code": "AN N EA CM163",
+          "status": "active"
          },
          {
           "type": "course",
@@ -205,6 +194,11 @@
          },
          {
           "type": "course",
+          "code": "IRANIAN CM163",
+          "status": "active"
+         },
+         {
+          "type": "course",
           "code": "IRANIAN 164",
           "status": "active"
          },
@@ -219,6 +213,7 @@
           "status": "active"
          }
         ],
+        "count": 4,
         "label": "Additional Iranian Language and Civilization Courses",
         "notes": "Select an additional four courses from the following list or the required course list:"
        }
@@ -399,110 +394,104 @@
         "status": "active"
        },
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "ART HIS 119A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS 119B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ART HIS C120",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "HIST 105A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "HIST 105B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "HIST 105C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN 104",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN M105A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN M105B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN M115A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN M115B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN M115C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN 130",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN 131",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN 132",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN 150A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN 150B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN M178",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN 187",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "POL SCI 157",
-          "status": "active"
-         }
-        ],
-        "label": "Recommended Electives"
+        "type": "course",
+        "code": "ART HIS 119A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS 119B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ART HIS C120",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 105A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 105B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 105C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "IRANIAN 104",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "IRANIAN M105A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "IRANIAN M105B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "IRANIAN M115A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "IRANIAN M115B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "IRANIAN M115C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "IRANIAN 130",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "IRANIAN 131",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "IRANIAN 132",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "IRANIAN 150A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "IRANIAN 150B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "IRANIAN M178",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "IRANIAN 187",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "POL SCI 157",
+        "status": "active"
        }
       ],
       "count": 4,

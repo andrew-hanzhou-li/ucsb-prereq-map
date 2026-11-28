@@ -1385,7 +1385,7 @@
       "notes": "Select one intermediate sequence in one Asian language offered by the department (e.g., courses listed or equivalent):"
      },
      {
-      "type": "all",
+      "type": "choose",
       "items": [
        {
         "type": "all",
@@ -1505,6 +1505,7 @@
         "notes": "E.g., courses listed here."
        }
       ],
+      "count": 1,
       "label": "Asian 30, Civilization, Introduction to Religions, or Culture",
       "notes": "Select Asian 30, one civilization, introduction to religions, or culture course within the department:"
      }

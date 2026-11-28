@@ -57,7 +57,7 @@ CATALOG_YEAR = "2026-27"
 NUMBER_WORDS = {"one": 1, "two": 2, "three": 3, "four": 4, "five": 5, "six": 6, "seven": 7, "eight": 8,
                 "nine": 9, "ten": 10, "eleven": 11, "twelve": 12, "thirteen": 13, "fourteen": 14, "fifteen": 15}
 COUNT = r"(\d+|" + "|".join(NUMBER_WORDS) + r")"
-CHOOSE_RULE = re.compile(r"^(?:(?:Select|Complete|Choose|Take)\s+)?(?:at least\s+|a minimum of\s+|any\s+|a total of\s+)?" + COUNT +
+CHOOSE_RULE = re.compile(r"^(?:(?:Select|Complete|Choose|Take)\s+)?(?:at least\s+|a minimum of\s+|any\s+|a total of\s+|an additional\s+)?" + COUNT +
                          r"\b(?P<what>[^:]*?)\b(?:from|of the following)\b", re.IGNORECASE)
 # "two courses from each of the following principles", "one course from each of three of the four areas"
 EACH_RULE = re.compile(r"\bfrom (?:each of\s+(?:(?P<areas>\d+|" + "|".join(NUMBER_WORDS) + r")\s+of\b)?|"
@@ -313,6 +313,9 @@ class Converter:
                 by_subject.setdefault(subject_of(part), []).append(part)
             node = {"type": "choose", "count": 1,
                     "items": [{"type": "all", "label": subject, "items": courses} for subject, courses in by_subject.items()]}
+            if re.search(r"\bexamples?\b", line):
+                # ("… such as the following examples": each listed course ends one sequence.)
+                node["items"] = parts
         elif choose and EACH_RULE.search(line) and all(p["type"] != "course" for p in parts):
             # Each list gives N; "from each of three of the four" asks for three lists.
             each = [{"type": "choose", "count": count_of(choose.group(1)), "items": lists_joined(unwrapped(p)),
@@ -370,8 +373,9 @@ class Converter:
             # courses in a second area": six courses from the areas (the spread is in the notes).
             node = {"type": "choose", "count": count_of(split.group(1)) + count_of(split.group(2)),
                     "items": lists_joined(parts)}
-        elif (len(parts) >= 2 and all(p["type"] != "course" and p.get("_plain") for p in parts)
-              and re.search(r"\bor\b", line) and not re.search(r"\band/or\b", line)):
+        elif (len(parts) >= 2 and all(p["type"] not in ("course", "text") for p in parts)
+              and re.search(r"\bor\b", line) and not re.search(r"\band/or\b", line)
+              and (all(p.get("_plain") for p in parts) or re.match(r"(?:Select|Complete)\s+(?![\d]|" + "|".join(NUMBER_WORDS) + r")", line))):
             # "Students may take Labor Studies 10 and two lower-division courses from
             # the following list or Labor Studies M1A, M1B, M1CW": two ways, one taken.
             node = {"type": "choose", "count": 1, "items": parts}
@@ -578,7 +582,7 @@ def lists_joined(parts, keep_series=True):
     joined = []
     for part in parts:
         series = keep_series and re.search(r"series|sequence|/", part.get("label") or "", re.IGNORECASE)
-        if part["type"] == "all" and not series and not part.get("optional"):
+        if part["type"] == "all" and not series and (not part.get("optional") or part.get("_plain")):
             joined.extend(lists_joined(part["items"], keep_series))
         else:
             joined.append(part)
