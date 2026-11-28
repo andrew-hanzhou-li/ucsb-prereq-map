@@ -150,7 +150,27 @@ def code_parts(code):
     return (match.group(1), int(match.group(2)), match.group(3)) if match else ("", -1, "")
 
 
-def dynamic_range(entry, ids, catalog):
+# The catalog's ids for "lower division" and "upper division" in its searches.
+STUDY_LEVELS = {"466c6712db690110c0dc93a6f49619dd": (1, 99), "bdf7731adb690110c0dc93a6f49619ed": (100, 199)}
+
+
+def dynamic_ranges(entry, ids, catalog, names=None):
+    """dynamic_range for each subject of a search over several ("Greek 100
+    through 133 and Latin 100 through 133"): a list of range items, or None."""
+    found = search_terms(entry)
+    if not found:
+        return None
+    areas = next((v for f, v in found[0] if f == "educationalArea"), "")
+    items = []
+    for area in [a.strip() for a in areas.split(" OR ") if a.strip()]:
+        one = dict(entry, _area=area)
+        item = dynamic_range(one, ids, catalog, names)
+        if item:
+            items.append(item)
+    return items or None
+
+
+def dynamic_range(entry, ids, catalog, names=None):
     """A stored search ("French 100 through 169", "Economics 105 to 199"
     without the labs, "Lower-Division History Courses (except History 19,
     89, 99)") -> a range item over the subject's numbers, with the courses
@@ -159,7 +179,8 @@ def dynamic_range(entry, ids, catalog):
     if not found:
         return None
     must, must_not = found
-    subject = next((ids[v] for f, v in must if f == "educationalArea" and v in ids), None)
+    subject = ids.get(entry["_area"]) if entry.get("_area") else \
+        next((ids[v] for f, v in must if f == "educationalArea" and v in ids), None)
     if not subject:
         return None
     # (A range whose ends aren't numbers, "119A through 119Y", is over the letters after the number.)
@@ -176,9 +197,15 @@ def dynamic_range(entry, ids, catalog):
     else:
         words = (entry.get("description") or "").lower()
         low, high = (1, 99) if "lower-division" in words else (100, 199) if "upper-division" in words else (0, 199)
+    level = next((STUDY_LEVELS[v] for f, v in must if f == "studyLevelRef" and v in STUDY_LEVELS), None)
+    if level:
+        low, high = max(low, level[0]), min(high, level[1])
     suffixes = {v for f, v in must if f == "codeSuffix" and not isinstance(v, tuple)}
     letters = next((v for f, v in must if f == "codeSuffix" and isinstance(v, tuple)), None) or letter_range   # "60A through 60Z"
     skip_codes = {re.sub(r"\s+", " ", v).strip() for f, v in must_not if f == "code"}
+    # (Some searches name the subject in words: "Arabic 102A".)
+    for name, code in (names or {}).items():
+        skip_codes |= {code + c[len(name):] for c in list(skip_codes) if c.startswith(name + " ")}
     skip_numbers = {v for f, v in must_not if f == "codeNumber" and not isinstance(v, tuple)}
     skip_suffixes = {v for f, v in must_not if f == "codeSuffix"}
     skip_prefixes = {v for f, v in must_not if f == "codePrefix"}
@@ -240,8 +267,8 @@ class Converter:
             if item.get("academic_item_code"):
                 parts.append({"type": "course", "code": re.sub(r"\s+", " ", item["academic_item_code"]).strip()})
             elif item.get("encodedURL"):
-                found = dynamic_range(item, self.ids, self.catalog)
-                parts.append(found or {"type": "text", "text": item.get("description") or "a course list"})
+                found = dynamic_ranges(item, self.ids, self.catalog, {n: c for c, n in self.subject_names.items()})
+                parts.extend(found or [{"type": "text", "text": item.get("description") or "a course list"}])
             elif "description" in item and ("container" in item or "relationship" in item):
                 node = self.group(item, major)
                 if node:

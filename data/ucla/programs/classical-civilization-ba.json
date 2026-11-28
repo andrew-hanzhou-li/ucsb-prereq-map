@@ -111,8 +111,270 @@
       "type": "all",
       "items": [
        {
-        "type": "text",
-        "text": "Greek 100 through 133 and Latin 100 through 133",
+        "type": "all",
+        "items": [
+         {
+          "type": "choose",
+          "count": 1,
+          "items": [
+           {
+            "type": "course",
+            "code": "GREEK 100",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "GREEK 101A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "GREEK 101B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "GREEK 102",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "GREEK 103",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "GREEK 104",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "GREEK 105",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "GREEK 106",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "GREEK 107",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "GREEK 110",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "GREEK 111",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "GREEK 112",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "GREEK 113",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "GREEK 115",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "GREEK 121",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "GREEK 122",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "GREEK 123",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "GREEK 124",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "GREEK 130",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "GREEK 131",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "GREEK 132",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "GREEK 133",
+            "status": "active"
+           }
+          ],
+          "label": "GREEK 100–133",
+          "expanded_from": "range"
+         },
+         {
+          "type": "choose",
+          "count": 1,
+          "items": [
+           {
+            "type": "course",
+            "code": "LATIN 100",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "LATIN 101",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "LATIN 102",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "LATIN 103",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "LATIN 104",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "LATIN 105A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "LATIN 105B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "LATIN 106",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "LATIN 107",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "LATIN 108",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "LATIN 109",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "LATIN 110",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "LATIN 111",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "LATIN 112",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "LATIN 113",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "LATIN 114",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "LATIN 115",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "LATIN 116",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "LATIN 117",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "LATIN 118",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "LATIN 119A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "LATIN 119B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "LATIN 120",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "LATIN 121",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "LATIN 130",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "LATIN 131",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "LATIN 133",
+            "status": "active"
+           }
+          ],
+          "label": "LATIN 100–133",
+          "expanded_from": "range"
+         }
+        ],
         "label": "Greek and Latin"
        },
        {
