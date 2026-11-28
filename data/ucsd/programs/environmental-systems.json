@@ -1,0 +1,76 @@
+{
+ "id": "UCSD-ESYS",
+ "name": "Environmental Systems",
+ "kind": "department",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsd.edu/courses/ESYS.html",
+ "sections": [
+  {
+   "name": "Lower division",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "ESYS 10",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ESYS 87",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ESYS 90",
+      "status": "active"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Upper division",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "ESYS 101",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ESYS 102",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ESYS 103",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ESYS 187A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ESYS 187B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ESYS 187C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ESYS 199",
+      "status": "active"
+     }
+    ]
+   }
+  }
+ ],
+ "narrative": []
+}

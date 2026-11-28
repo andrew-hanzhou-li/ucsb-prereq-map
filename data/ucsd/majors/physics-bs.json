@@ -1,0 +1,338 @@
+{
+  "name": "Physics - BS",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Physics",
+  "major_code": "PY29",
+  "source": "https://catalog.ucsd.edu/curric/PHYS-ug.html",
+  "narrative": [
+    "The Physics 4 series is designed to prepare students for the upper-division program and is required for all physics majors.",
+    "The honors math series (MATH 31AH, 31BH, 31CH) can replace the standard math courses (MATH 18, 20C, 20E, respectively).",
+    "A course that is listed in several areas cannot count towards more than one area and can satisfy only ONE of the major requirements.",
+    "P/NP Grading Option: Not allowed for any courses applied to the major (the exceptions are courses completed via AP/IB/A-Level and a single four-unit PHYS 199/199H that may only be applied as an upper-division restricted elective).",
+    "A grade point average of 2.0 or higher in the upper-division major program is required for graduation. Students must receive a grade of C– or better in any course to be counted toward fulfillment of the major requirements.",
+    "At least 60 percent of the upper-division courses in the major must be taken while in residence at UC San Diego. All core upper-division courses must be taken while in residence at UC San Diego.",
+    "Substitutions/Exceptions: Permissible only by approved petition to the department.",
+    "Lower-division units 52; upper-division units 57; total units required for the major 109.",
+    "Programming: For students transferring into the physics program, one of the following courses is accepted via petition provided the course was completed before the transfer into physics was formalized: CENG/NANO 15; COGS 18; CSE 8A, 11, 12; ECE 15; MAE 8.",
+    "Double Majors: Approved by petition only; the equivalent of at least ten upper-division courses (forty units) must be unique to each major. A student cannot pursue two majors within the Department of Physics.",
+    "Suggested core physics electives are PHYS 100C, 105B, 110B, 130C, 140B.",
+    "While not required, students have the option of selecting an area of concentration as part of their degree program. Available concentrations are astrophysics, biophysics, computational physics, and materials physics.",
+    "Recommended (not required) lower-division courses for students interested in biophysics: BILD 1-2; CHEM 6A-B-C, 7L; for materials physics: CHEM 6A-B."
+  ],
+  "sections": [
+    {
+      "name": "Lower-Division Requirements",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "course",
+            "code": "PHYS 4A"
+          },
+          {
+            "type": "course",
+            "code": "PHYS 4B"
+          },
+          {
+            "type": "course",
+            "code": "PHYS 4C"
+          },
+          {
+            "type": "course",
+            "code": "PHYS 4D"
+          },
+          {
+            "type": "course",
+            "code": "PHYS 4E"
+          },
+          {
+            "type": "course",
+            "code": "PHYS 2CL"
+          },
+          {
+            "type": "course",
+            "code": "PHYS 2DL"
+          },
+          {
+            "type": "course",
+            "code": "PHYS 41"
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 18"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 31AH"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "MATH 20A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 20B"
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 20C"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 31BH"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "MATH 20D"
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 20E"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 31CH"
+                  }
+                ]
+              }
+            ],
+            "notes": "MATH 18 and 20A-B-C-D-E; the honors math series (MATH 31AH, 31BH, 31CH) can replace MATH 18, 20C, 20E, respectively."
+          }
+        ]
+      }
+    },
+    {
+      "name": "Upper-Division Core",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "course",
+            "code": "PHYS 100A"
+          },
+          {
+            "type": "course",
+            "code": "PHYS 100B"
+          },
+          {
+            "type": "course",
+            "code": "PHYS 105A"
+          },
+          {
+            "type": "course",
+            "code": "PHYS 110A"
+          },
+          {
+            "type": "course",
+            "code": "PHYS 120"
+          },
+          {
+            "type": "course",
+            "code": "PHYS 130A"
+          },
+          {
+            "type": "course",
+            "code": "PHYS 130B"
+          },
+          {
+            "type": "course",
+            "code": "PHYS 140A"
+          }
+        ],
+        "notes": "thirty-three units"
+      }
+    },
+    {
+      "name": "Lab",
+      "requirement": {
+        "type": "choose",
+        "count": 1,
+        "items": [
+          {
+            "type": "course",
+            "code": "PHYS 122"
+          },
+          {
+            "type": "course",
+            "code": "PHYS 124"
+          },
+          {
+            "type": "course",
+            "code": "PHYS 133"
+          },
+          {
+            "type": "course",
+            "code": "PHYS 173"
+          },
+          {
+            "type": "course",
+            "code": "ASTR 150"
+          }
+        ],
+        "notes": "four units"
+      }
+    },
+    {
+      "name": "Restricted Electives",
+      "requirement": {
+        "type": "choose",
+        "count": 5,
+        "items": [
+          {
+            "type": "range",
+            "subject": "PHYS",
+            "from": 100,
+            "to": 195
+          },
+          {
+            "type": "range",
+            "subject": "PHYS",
+            "from": 200,
+            "to": 295
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "PHYS 199"
+              },
+              {
+                "type": "course",
+                "code": "PHYS 199H"
+              }
+            ],
+            "notes": "A single four-unit PHYS 199/199H (may be P/NP) may be applied as an upper-division restricted elective."
+          },
+          {
+            "type": "course",
+            "code": "ECE 120"
+          },
+          {
+            "type": "course",
+            "code": "MAE 180"
+          },
+          {
+            "type": "course",
+            "code": "ASTR 123"
+          },
+          {
+            "type": "course",
+            "code": "ASTR 150"
+          },
+          {
+            "type": "text",
+            "text": "BI** 100–185 (Biophysics focus area; BISP courses and BIEB 176 are not accepted)"
+          },
+          {
+            "type": "range",
+            "subject": "CHEM",
+            "from": 100,
+            "to": 129
+          },
+          {
+            "type": "range",
+            "subject": "CHEM",
+            "from": 131,
+            "to": 186
+          },
+          {
+            "type": "course",
+            "code": "MATH 170A"
+          },
+          {
+            "type": "course",
+            "code": "MATH 170B"
+          },
+          {
+            "type": "course",
+            "code": "MATH 170C"
+          },
+          {
+            "type": "course",
+            "code": "MATH 179"
+          },
+          {
+            "type": "course",
+            "code": "MATH 183"
+          },
+          {
+            "type": "course",
+            "code": "CHEM 120A"
+          },
+          {
+            "type": "course",
+            "code": "CHEM 120B"
+          },
+          {
+            "type": "course",
+            "code": "ECE 103"
+          },
+          {
+            "type": "course",
+            "code": "ECE 134"
+          },
+          {
+            "type": "course",
+            "code": "ECE 135A"
+          },
+          {
+            "type": "course",
+            "code": "ECE 135B"
+          },
+          {
+            "type": "course",
+            "code": "ECE 136L"
+          },
+          {
+            "type": "course",
+            "code": "MAE 160"
+          },
+          {
+            "type": "course",
+            "code": "SIO 103"
+          },
+          {
+            "type": "course",
+            "code": "SIO 111"
+          },
+          {
+            "type": "course",
+            "code": "SIO 171"
+          },
+          {
+            "type": "course",
+            "code": "SIO 172"
+          },
+          {
+            "type": "course",
+            "code": "SIO 177"
+          }
+        ],
+        "label": "Restricted Electives",
+        "notes": "Five upper-division and/or graduate-level courses from PHYS 100–195 and 200–295 (twenty units). Students may use a maximum of two courses outside of physics to satisfy this requirement, provided they come from a single focus area and are listed (Astrophysics: ECE 120, MAE 180, ASTR 123, 150; Biophysics: BI** 100–185, CHEM 100–186, not BISP courses, BIEB 176, CHEM 130; Computational physics: MATH 170A-B-C, 179, 183; Materials physics: CHEM 120A-B, ECE 103, 134, 135A-B, 136L, MAE 160; Physics of the Earth, Oceans, and Atmosphere: SIO 103, 111, 171, 172, 177). All courses applying to the restricted electives must grant four or more units. CHEM 130 is not accepted (CHEM 100–186 is written as 100–129 and 131–186)."
+      }
+    }
+  ]
+}

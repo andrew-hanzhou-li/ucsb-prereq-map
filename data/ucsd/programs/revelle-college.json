@@ -1,0 +1,71 @@
+{
+ "id": "UCSD-REV",
+ "name": "Revelle College",
+ "kind": "department",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsd.edu/courses/REV.html",
+ "sections": [
+  {
+   "name": "Lower division",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "REV 1",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "REV 2",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "REV 12",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "REV 16",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "REV 20",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "REV 87",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "REV 88",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "REV 99H",
+      "status": "active"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Upper division",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "REV 110H",
+      "status": "active"
+     }
+    ]
+   }
+  }
+ ],
+ "narrative": []
+}

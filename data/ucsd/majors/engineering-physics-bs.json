@@ -1,0 +1,392 @@
+{
+  "name": "Engineering Physics - BS",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Electrical and Computer Engineering",
+  "source": "https://catalog.ucsd.edu/curric/ECE-ug.html",
+  "narrative": [
+    "Students must complete a total of 180 units for graduation, including the general-education requirements. Note that 146 units (excluding GER) are required.",
+    "Lower-division requirements: total of sixty-six units; upper-division: seventy-six units.",
+    "The Engineering Physics Program is conducted in cooperation with the Department of Physics.",
+    "Courses required for the major must be taken for a letter grade. All major courses must be completed with a grade of C– or better.",
+    "A GPA of 2.0 is required in all upper-division courses in the major, including technical electives. The grade of D will not be considered an adequate prerequisite for any ECE course and will not be allowed for graduation. The engineering design requirement must be completed with a grade of C– or better.",
+    "Effective fall 2015, admission to all four majors in the Department of Electrical and Computer Engineering is currently restricted as described in the section “Acceptance to Departmental Majors in the Jacobs School of Engineering.”",
+    "Screening courses for continuing students applying to the major: MATH 20A, 20B, 20C; PHYS 2A-B; ECE 35, 45.",
+    "Recommended: Students with AP math credit are strongly advised to take MATH 20B in the fall quarter, leaving room for a GER in the winter quarter."
+  ],
+  "sections": [
+    {
+      "name": "Lower-Division Requirements",
+      "requirement": {
+        "type": "all",
+        "label": "Lower-Division Requirements (total of sixty-six units)",
+        "items": [
+          {
+            "type": "all",
+            "label": "Mathematics (twenty-four units)",
+            "items": [
+              {
+                "type": "course",
+                "code": "MATH 18"
+              },
+              {
+                "type": "course",
+                "code": "MATH 20A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 20B"
+              },
+              {
+                "type": "course",
+                "code": "MATH 20C"
+              },
+              {
+                "type": "course",
+                "code": "MATH 20D"
+              },
+              {
+                "type": "course",
+                "code": "MATH 20E"
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "label": "Physics (sixteen units)",
+            "notes": "PHYS 2A-B-C-D or PHYS 4A-B-C-D-E. Those taking the Physics 4 series will take five courses (twenty units).",
+            "items": [
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "PHYS 2A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 2B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 2C"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 2D"
+                  }
+                ]
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "PHYS 4A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 4B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 4C"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 4D"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 4E"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "all",
+            "label": "Physics Lab (two units)",
+            "items": [
+              {
+                "type": "course",
+                "code": "PHYS 2DL"
+              }
+            ]
+          },
+          {
+            "type": "all",
+            "label": "Programming Course (four units)",
+            "items": [
+              {
+                "type": "course",
+                "code": "ECE 15"
+              }
+            ]
+          },
+          {
+            "type": "all",
+            "label": "Electrical engineering (twenty units)",
+            "items": [
+              {
+                "type": "course",
+                "code": "ECE 25"
+              },
+              {
+                "type": "course",
+                "code": "ECE 30"
+              },
+              {
+                "type": "course",
+                "code": "ECE 35"
+              },
+              {
+                "type": "course",
+                "code": "ECE 45"
+              },
+              {
+                "type": "course",
+                "code": "ECE 65"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Upper-Division Requirements",
+      "requirement": {
+        "type": "all",
+        "label": "Upper-Division Requirements (seventy-six units)",
+        "items": [
+          {
+            "type": "all",
+            "label": "a. Engineering Physics BREADTH Courses (twenty-four units)",
+            "notes": "Because of the scheduling of MATH 110A, PHYS 110A and 130A, they can only be taken in a specific order. For the ECE 109 requirement, credit will not be allowed for ECON 120A, MAE 108, MATH 180A-B, MATH 183, or MATH 186.",
+            "items": [
+              {
+                "type": "course",
+                "code": "ECE 100"
+              },
+              {
+                "type": "course",
+                "code": "ECE 101"
+              },
+              {
+                "type": "course",
+                "code": "ECE 102"
+              },
+              {
+                "type": "course",
+                "code": "ECE 103"
+              },
+              {
+                "type": "course",
+                "code": "ECE 107"
+              },
+              {
+                "type": "course",
+                "code": "ECE 109"
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "label": "b. Engineering Physics DESIGN Course (four units)",
+            "notes": "Students must complete one of the following courses with a grade C– or better. Graduation will not be approved until a written copy of the design project is submitted to the ECE undergraduate office. ECE 190 requires the department stamp; students who wish to take ECE 111, 118, 155B or 155C to satisfy the design requirement must fill out an enrollment form and have departmental approval for the design credit prior to taking the course.",
+            "items": [
+              {
+                "type": "course",
+                "code": "ECE 191"
+              },
+              {
+                "type": "course",
+                "code": "ECE 190"
+              },
+              {
+                "type": "course",
+                "code": "ECE 111"
+              },
+              {
+                "type": "course",
+                "code": "ECE 118"
+              },
+              {
+                "type": "course",
+                "code": "ECE 155B"
+              },
+              {
+                "type": "course",
+                "code": "ECE 155C"
+              }
+            ]
+          },
+          {
+            "type": "all",
+            "label": "c. Engineering Physics ELECTIVES (twenty units)",
+            "notes": "See \"Elective Policy for Engineering Physics Majors.\"",
+            "items": [
+              {
+                "type": "choose",
+                "count": 2,
+                "items": [
+                  {
+                    "type": "any",
+                    "subject": "ECE",
+                    "level": "upper"
+                  },
+                  {
+                    "type": "any",
+                    "subject": "MATH",
+                    "level": "upper",
+                    "except": [
+                      "MATH 180A",
+                      "MATH 183",
+                      "MATH 186",
+                      "MATH 163"
+                    ]
+                  },
+                  {
+                    "type": "any",
+                    "subject": "PHYS",
+                    "level": "upper"
+                  },
+                  {
+                    "type": "text",
+                    "text": "or another upper-division engineering course. At most one lower-division course in engineering may be used but it must receive prior approval from the ECE department. Excluded: CSE 3, 4GS, 6GS, 5A, 7, 8A-B, 11, 123A, 140, 140L (CSE 12, 20, and 21 count toward professional electives ONLY); MAE 2, 3, 5, 8, 9, 20, 105, 108, 139, 140, 143B, 170. At most four units of 195–199. All lower-division mathematics is excluded."
+                  },
+                  {
+                    "type": "text",
+                    "text": "The bioengineering series BILD 1, BILD 2, BE 100, BE 140A-B will satisfy up to five courses of the ECE elective requirements."
+                  }
+                ],
+                "label": "Technical electives: two upper-division engineering, mathematics, or physics courses",
+                "notes": "Technical electives must be upper-division engineering, math or physics courses (except for the bioengineering track). If economics is chosen for professional electives, only one technical elective is required for engineering physics majors. ECE: upper-division ECE courses that are not used to satisfy any other requirements."
+              },
+              {
+                "type": "choose",
+                "count": 3,
+                "items": [
+                  {
+                    "type": "any",
+                    "subject": "ECE",
+                    "level": "upper"
+                  },
+                  {
+                    "type": "any",
+                    "subject": "MATH",
+                    "level": "upper",
+                    "except": [
+                      "MATH 180A",
+                      "MATH 183",
+                      "MATH 186"
+                    ]
+                  },
+                  {
+                    "type": "any",
+                    "subject": "PHYS",
+                    "level": "upper"
+                  },
+                  {
+                    "type": "text",
+                    "text": "Professional electives are acceptable courses taken in one department. Normally these will be upper-division courses in engineering, mathematics, or physics. Students may also choose upper-division courses from other departments provided that they fit into a coherent professional program (must be approved by the ECE department); in such cases, a lower-division prerequisite may be included."
+                  },
+                  {
+                    "type": "text",
+                    "text": "One lower-division biology or chemistry course from BILD 1, 2, CHEM 6B-C may be counted for credit in combination with two upper-division biology or chemistry courses. Upper-division biology and chemistry courses will count toward the three professional electives. MATH 163 will only be allowed as a professional elective. CSE 12, 20, and 21 will count toward the three professional electives ONLY. ECON 120A, and 158-159 will not be allowed as professional electives."
+                  }
+                ],
+                "label": "Professional electives: three additional electives which students may use to broaden their professional goals"
+              }
+            ]
+          },
+          {
+            "type": "all",
+            "label": "d. Engineering Physics DEPTH Courses (twenty-eight units)",
+            "notes": "All BS engineering physics students are required to take PHYS 110A, 130A-B, 140A, MATH 110A, ECE 123 and 166; or ECE 135A and 135B; or ECE 182 and (181 or 183).",
+            "items": [
+              {
+                "type": "course",
+                "code": "PHYS 110A"
+              },
+              {
+                "type": "course",
+                "code": "PHYS 130A"
+              },
+              {
+                "type": "course",
+                "code": "PHYS 130B"
+              },
+              {
+                "type": "course",
+                "code": "PHYS 140A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 110A"
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "notes": "ECE 123 and 166; or ECE 135A and 135B; or ECE 182 and (181 or 183)",
+                "items": [
+                  {
+                    "type": "all",
+                    "items": [
+                      {
+                        "type": "course",
+                        "code": "ECE 123"
+                      },
+                      {
+                        "type": "course",
+                        "code": "ECE 166"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "all",
+                    "items": [
+                      {
+                        "type": "course",
+                        "code": "ECE 135A"
+                      },
+                      {
+                        "type": "course",
+                        "code": "ECE 135B"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "all",
+                    "items": [
+                      {
+                        "type": "course",
+                        "code": "ECE 182"
+                      },
+                      {
+                        "type": "choose",
+                        "count": 1,
+                        "items": [
+                          {
+                            "type": "course",
+                            "code": "ECE 181"
+                          },
+                          {
+                            "type": "course",
+                            "code": "ECE 183"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

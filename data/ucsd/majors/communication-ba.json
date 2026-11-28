@@ -1,0 +1,106 @@
+{
+  "name": "Communication - BA",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Communication",
+  "source": "https://catalog.ucsd.edu/curric/COMM-ug.html",
+  "narrative": [
+    "All courses taken to satisfy major requirements must be taken for a letter grade. A grade of C– or better is required for all courses for the major.",
+    "COMM 10, COMM 100A, 100B, 100C, and COMM 190 must be taken at UC San Diego.",
+    "Residency Requirement: Students are required to complete at least eleven classes of their overall work in the major at UC San Diego, including COMM 10, COMM 100A, 100B, 100C, COMM 190, and six upper-division communication elective courses."
+  ],
+  "sections": [
+    {
+      "name": "One Lower-Division Core Course (four units)",
+      "requirement": {
+        "type": "course",
+        "code": "COMM 10"
+      }
+    },
+    {
+      "name": "Four Upper-Division Core Courses (sixteen units)",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "course",
+            "code": "COMM 100A"
+          },
+          {
+            "type": "course",
+            "code": "COMM 100B"
+          },
+          {
+            "type": "course",
+            "code": "COMM 100C"
+          },
+          {
+            "type": "course",
+            "code": "COMM 190"
+          }
+        ],
+        "notes": "COMM 190 prerequisite: one of COMM 100A, 100B, or 100C."
+      }
+    },
+    {
+      "name": "Eight Upper-Division Elective Courses (thirty-two units minimum)",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "choose",
+            "count": 2,
+            "items": [
+              {
+                "type": "range",
+                "subject": "COMM",
+                "from": 120,
+                "to": 189
+              }
+            ],
+            "label": "Two advanced electives (courses from COMM 120–189)"
+          },
+          {
+            "type": "choose",
+            "count": 6,
+            "items": [
+              {
+                "type": "range",
+                "subject": "COMM",
+                "from": 101,
+                "to": 119
+              },
+              {
+                "type": "range",
+                "subject": "COMM",
+                "from": 120,
+                "to": 189
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "COMM 198"
+                  },
+                  {
+                    "type": "course",
+                    "code": "COMM 199"
+                  }
+                ],
+                "label": "COMM 198 or 199 (only one)"
+              },
+              {
+                "type": "course",
+                "code": "AIP 197"
+              }
+            ],
+            "label": "Six additional upper-division electives",
+            "notes": "Any combination of intermediate electives (COMM 101–119) and advanced electives (COMM 120–189) is permitted. Only ONE course of COMM 198 or 199 may be applied to satisfy an upper-division elective for the major. AIP 197 must be petitioned for approval for the major and may only be applied to satisfy an upper-division elective."
+          }
+        ]
+      }
+    }
+  ]
+}

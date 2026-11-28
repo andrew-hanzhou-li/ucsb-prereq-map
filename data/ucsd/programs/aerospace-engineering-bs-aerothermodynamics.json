@@ -1,0 +1,278 @@
+{
+ "id": "UCSD-MAJOR-aerospace-engineering-bs-aerothermodynamics",
+ "name": "Aerospace Engineering - BS - Aerothermodynamics",
+ "kind": "major",
+ "type": "Bachelor's Degree",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsd.edu/curric/MAE-ug.html",
+ "sections": [
+  {
+   "name": "Lower-division requirements",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "MATH 20A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MATH 20B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MATH 20C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 2",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 2A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 2B",
+      "status": "active"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 6A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 6AH",
+        "status": "active"
+       }
+      ],
+      "count": 1,
+      "notes": "CHEM 6AH may be taken in place of CHEM 6A."
+     },
+     {
+      "type": "course",
+      "code": "MATH 18",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MATH 20D",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MATH 20E",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 2C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 2CL",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 8",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 21",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 30A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 30B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 11",
+      "status": "active"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Upper-division requirements",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "MAE 131A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 105",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 101A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 101B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 104",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 143A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 143B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SE 160A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 170",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 107",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 142",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 155A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 155B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 113",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 175A",
+      "status": "active"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Technical electives",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "MAE 101C",
+        "status": "active"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "MAE 101D",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MAE 110",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MAE 114",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MAE 184",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MAE 185",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MAE 201",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MAE 202",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MAE 212",
+          "status": "inactive"
+         }
+        ],
+        "count": 3
+       }
+      ],
+      "label": "Four of the five technical electives must include MAE 101C and three courses from the list"
+     },
+     {
+      "type": "text",
+      "text": "The remaining (fifth) technical elective: Technical elective (TE) courses must be upper-division or graduate courses in engineering sciences, natural sciences, or mathematics selected with a prior approval of the department. See Student Affairs in MAE for a current list of preapproved TEs."
+     }
+    ],
+    "label": "Technical electives (five)"
+   }
+  }
+ ],
+ "narrative": [
+  "The BS programs require a minimum of 180 units.",
+  "Specific course requirements for each major program are outlined in tables in this section of the catalog (the 'Recommended Course Sequence'); GE/HSS slots in the tables are not listed here.",
+  "To graduate, students must maintain an overall GPA of at least 2.0.",
+  "Deviations from these programs of study must be approved by the Undergraduate Affairs Committee prior to taking alternative courses.",
+  "MAE 197 is not allowed as a technical elective in meeting the upper-division major requirements. MAE 199 and MAE 198 may be used as a technical elective only under restrictive conditions.",
+  "There is a minimum GPA requirement of 3.0 when using 199s as a TE.",
+  "Students must develop a program that includes a total of at least twenty-four units in the arts, humanities, and social sciences, not including subjects such as accounting, industrial management, finance, or personnel administration.",
+  "The degrees in mechanical and aerospace engineering are selective. Screening courses: MATH 20A, MATH 20B, MATH 20C, MATH 20D, MATH 18 or 20F, PHYS 2A, B, and C, CHEM 6A, and the highest level of introductory computer programming course offered at the community college (transfer applicants)."
+ ]
+}

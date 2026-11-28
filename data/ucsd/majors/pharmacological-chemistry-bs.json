@@ -1,0 +1,423 @@
+{
+  "name": "Pharmacological Chemistry - BS",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Biochemistry and Molecular Biophysics",
+  "major_code": "CH35",
+  "source": "https://catalog.ucsd.edu/curric/BMB-ug.html",
+  "narrative": [
+    "Unit requirements: lower-division 72, upper-division 48-50, total 120-122 units for the major.",
+    "Recommended, not required: MATH 10A-B-C (MATH 20A-B-C acceptable), CHEM 126A-B for physical chemistry, PHYS 1 series.",
+    "\"all chemistry majors (including transfer students) must complete at least forty-eight or more units of upper-division chemistry course work. This course work must be taken while officially enrolled at UC San Diego.\"",
+    "\"The minimum GPA requirement (for both the major GPA and overall UC GPA) for graduation is 2.0. The minimum passing grade in required chemistry course work is a D, although students may not graduate with more than one D grade in upper-division required major course work and must maintain a minimum 2.0 GPA in the major.\"",
+    "\"All courses for the major, except for independent research (e.g., CHEM 199) and chemistry instruction (CHEM 195), must be taken for a letter grade.\"",
+    "Optional ACS certification (not required for the degree): \"CHEM 120A and 105A are required\" plus one additional laboratory course from a listed set."
+  ],
+  "sections": [
+    {
+      "name": "Lower-division requirements",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "BILD 1"
+              },
+              {
+                "type": "course",
+                "code": "BILD 2"
+              }
+            ],
+            "label": "Biology"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "CHEM 6A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CHEM 6B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CHEM 6C"
+                  }
+                ]
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "CHEM 6AH"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CHEM 6BH"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CHEM 6CH"
+                  }
+                ]
+              }
+            ],
+            "label": "General chemistry"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "CHEM 7L"
+              },
+              {
+                "type": "course",
+                "code": "CHEM 7LM"
+              }
+            ],
+            "label": "General chemistry laboratory"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 10A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 10B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 10C"
+                  }
+                ]
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 20A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 20B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 20C"
+                  }
+                ]
+              }
+            ],
+            "label": "Calculus"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "PHYS 1A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 1B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 1C"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 1AL"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 1BL"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 1CL"
+                  }
+                ]
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "PHYS 2A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 2B"
+                  },
+                  {
+                    "type": "choose",
+                    "count": 1,
+                    "items": [
+                      {
+                        "type": "course",
+                        "code": "PHYS 2C"
+                      },
+                      {
+                        "type": "course",
+                        "code": "PHYS 2D"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "choose",
+                    "count": 1,
+                    "items": [
+                      {
+                        "type": "course",
+                        "code": "PHYS 2BL"
+                      },
+                      {
+                        "type": "course",
+                        "code": "PHYS 2CL"
+                      },
+                      {
+                        "type": "course",
+                        "code": "PHYS 2DL"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "label": "Physics, including laboratories",
+            "notes": "PHYS 1A-B-C and 1AL-BL-CL, or \"PHYS 2 series (PHYS 2A, 2B, 2C, or 2D and 2BL, 2CL, or 2DL)\"; PHYS 1 series recommended"
+          },
+          {
+            "type": "course",
+            "code": "MATH 11"
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "CHEM 41A"
+              },
+              {
+                "type": "course",
+                "code": "CHEM 41B"
+              },
+              {
+                "type": "course",
+                "code": "CHEM 41C"
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "CHEM 43A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CHEM 43AM"
+                  }
+                ]
+              }
+            ],
+            "label": "Organic chemistry, including laboratory"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Upper-division requirements",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "CHEM 126A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CHEM 126B"
+                  }
+                ]
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "CHEM 130"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CHEM 131"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CHEM 132"
+                  }
+                ]
+              }
+            ],
+            "label": "Physical chemistry",
+            "notes": "CHEM 126A-B recommended; CHEM 130, 131, and 132 acceptable"
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "CHEM 114A"
+              },
+              {
+                "type": "course",
+                "code": "CHEM 114B"
+              },
+              {
+                "type": "course",
+                "code": "CHEM 114C"
+              }
+            ],
+            "label": "Biochemistry"
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "CHEM 100A"
+              },
+              {
+                "type": "course",
+                "code": "CHEM 143B"
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "CHEM 108"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CHEM 109"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CHEM 143C"
+                  }
+                ]
+              }
+            ],
+            "label": "Three laboratory courses"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "CHEM 118"
+              },
+              {
+                "type": "course",
+                "code": "CHEM 167"
+              },
+              {
+                "type": "course",
+                "code": "CHEM 168"
+              }
+            ],
+            "label": "PHARM restricted chemistry elective"
+          },
+          {
+            "type": "choose",
+            "count": 2,
+            "items": [
+              {
+                "type": "course",
+                "code": "CHEM 118"
+              },
+              {
+                "type": "course",
+                "code": "CHEM 167"
+              },
+              {
+                "type": "course",
+                "code": "CHEM 168"
+              },
+              {
+                "type": "course",
+                "code": "BIPN 100"
+              },
+              {
+                "type": "course",
+                "code": "BIPN 102"
+              },
+              {
+                "type": "course",
+                "code": "BIMM 120"
+              },
+              {
+                "type": "course",
+                "code": "BIMM 121"
+              }
+            ],
+            "label": "Restricted electives",
+            "notes": "two courses, not already used for the PHARM restricted chemistry elective"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "any",
+                "subject": "CHEM",
+                "level": "upper"
+              },
+              {
+                "type": "text",
+                "text": "one upper-division course in the topics of physiology, anatomy, microbiology, or human behavior from the School of Biology (except nonletter graded courses). Four units of CHEM 199 may be petitioned."
+              }
+            ],
+            "label": "Chemistry elective",
+            "notes": "\"One chemistry elective course chosen from among all the upper-division courses offered by the Department of Chemistry and Biochemistry\""
+          }
+        ]
+      }
+    }
+  ]
+}

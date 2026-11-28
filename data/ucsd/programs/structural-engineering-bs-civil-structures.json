@@ -1,0 +1,366 @@
+{
+ "id": "UCSD-MAJOR-structural-engineering-bs-civil-structures",
+ "name": "Structural Engineering - BS - Civil Structures",
+ "kind": "major",
+ "type": "Bachelor's Degree",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsd.edu/curric/SE-ug.html",
+ "sections": [
+  {
+   "name": "Lower-division requirements",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "MATH 20A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 20B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 20C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 20D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 20E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 18",
+        "status": "active"
+       }
+      ],
+      "label": "Mathematics"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 6A",
+      "status": "active"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "PHYS 2A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 2B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 2BL",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 2C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 2CL",
+        "status": "active"
+       }
+      ],
+      "label": "Physics"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "SE 1",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SE 3",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SE 9",
+        "status": "active"
+       }
+      ],
+      "label": "Structural engineering"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Upper-division core",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "SE 101A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SE 101B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SE 101C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SE 102",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SE 105",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SE 110A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SE 110B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SE 115",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SE 125",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SE 130A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SE 130B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SE 131A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SE 131B",
+      "status": "active"
+     }
+    ],
+    "label": "Structural engineering core"
+   }
+  },
+  {
+   "name": "Focus sequence",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "SE 103",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SE 150A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SE 151A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SE 181",
+      "status": "active"
+     }
+    ],
+    "label": "Civil Structures Focus Sequence"
+   }
+  },
+  {
+   "name": "Capstone",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "SE 140A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SE 140B",
+      "status": "active"
+     }
+    ],
+    "label": "Civil Structures/Geotechnical Capstone"
+   }
+  },
+  {
+   "name": "Technical electives",
+   "requirement": {
+    "type": "choose",
+    "items": [
+     {
+      "type": "course",
+      "code": "SE 120",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SE 132",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SE 142",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SE 143A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SE 143B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SE 150B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SE 151B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SE 152",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SE 154",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SE 160A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SE 160B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SE 163",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SE 164",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SE 165",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SE 167",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SE 168",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SE 171",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SE 180",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SE 182",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SE 184",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SE 192",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SE 199",
+      "status": "active"
+     },
+     {
+      "type": "text",
+      "text": "Technical elective (TE) course must be an upper-division or graduate course in the engineering sciences, natural sciences, or mathematics, selected with prior approval of the department to meet ABET standards. Other engineering courses having technical depth equivalent to the level of upper-division SE courses will also be considered via petition process. Please see the preapproved technical elective list on the structural engineering website. SE 199 can be used as a technical elective only under restrictive conditions."
+     }
+    ],
+    "count": 3,
+    "label": "Technical Electives (three courses)",
+    "notes": "\"Courses such as SE 195, SE 197, and SE 198 are not allowed as technical electives\"; a course cannot be taken both as part of a focus sequence and as a TE"
+   }
+  }
+ ],
+ "narrative": [
+  "\"The BS programs require a minimum of 145 units, plus college general-education requirements in humanities and social sciences.\"",
+  "\"To graduate, students must maintain an overall GPA of at least 2.0, and the department requires at least a C- grade in each course required for the major. All courses required for the major must be taken for a letter grade. This includes all lower-division math and science courses as well as the technical electives (TE).\"",
+  "Screened major: overall UC San Diego GPA of 2.0 or above and C- or above in all screening courses (first-years: MATH 20A-B-C-D, MATH 18, PHYS 2A, SE 101A; transfers: MATH 20A-B-C-D, MATH 18, PHYS 2A-B-C, SE 101A).",
+  "\"SE 1, SE 3, and SE 9 must be taken by all students majoring in structural engineering. Transfer students who have successfully petitioned to use a course equivalent to SE 101A prior to entering UC San Diego may take an additional technical elective in place of SE 1.\"",
+  "\"A course cannot be taken both as part of a focus sequence and as a TE.\"",
+  "Course requirements are given in the department's curriculum table; GE slots in the table are college requirements and are omitted."
+ ]
+}

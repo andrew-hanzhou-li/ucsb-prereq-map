@@ -1,0 +1,86 @@
+{
+ "id": "UCSD-CLAS",
+ "name": "Classical Studies",
+ "kind": "department",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsd.edu/courses/CLAS.html",
+ "sections": [
+  {
+   "name": "Lower division",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "CLAS 87",
+      "status": "active"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Upper division",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "CLAS 109",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CLAS 110",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CLAS 119",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CLAS 120",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CLAS 121R",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CLAS 125",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CLAS 140",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CLAS 196A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CLAS 196B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CLAS 198",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CLAS 199",
+      "status": "active"
+     }
+    ]
+   }
+  }
+ ],
+ "narrative": []
+}

@@ -1,0 +1,222 @@
+{
+  "name": "Mathematics - BS",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Mathematics",
+  "major_code": "MA29",
+  "source": "https://catalog.ucsd.edu/curric/MATH-ug.html",
+  "narrative": [
+    "All majors must obtain a minimum 2.0 grade point average in the upper-division courses used to satisfy the major requirements. Further, the student must receive a grade of C– or better in any course to be counted toward fulfillment of the major requirements.",
+    "Unless otherwise stated, any mathematics course numbered 100–194 may be used as an upper-division elective. (Note: MATH 195, 196, 197, 198, 199, and 199H cannot be used toward any mathematics major.)",
+    "All courses used to fulfill the major must be taken for a letter grade. No more than three upper-division courses taken externally from UC San Diego can be counted toward any major. Special exceptions may be considered via petition.",
+    "A total of thirteen upper-division courses (totaling fifty-two units) are required, including the required courses.",
+    "As with all departmental requirements, more advanced courses on the same material may be substituted with an approved petition from mathematics faculty.",
+    "Recommended, not required: MATH 140A-B-C and MATH 100A-B-C for graduate school. Recommended: complete through at least MATH 20D and MATH 109 before the end of the sophomore year. Either MATH 140A-B or 100A-B should be taken during the junior year."
+  ],
+  "sections": [
+    {
+      "name": "Lower Division",
+      "requirement": {
+        "type": "choose",
+        "count": 1,
+        "items": [
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "MATH 18"
+              },
+              {
+                "type": "course",
+                "code": "MATH 20A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 20B"
+              },
+              {
+                "type": "course",
+                "code": "MATH 20C"
+              },
+              {
+                "type": "course",
+                "code": "MATH 20D"
+              },
+              {
+                "type": "course",
+                "code": "MATH 20E"
+              }
+            ],
+            "label": "Linear Algebra and Calculus"
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "MATH 31AH"
+              },
+              {
+                "type": "course",
+                "code": "MATH 31BH"
+              },
+              {
+                "type": "course",
+                "code": "MATH 31CH"
+              },
+              {
+                "type": "course",
+                "code": "MATH 20D"
+              }
+            ],
+            "label": "Honors Calculus"
+          }
+        ],
+        "label": "One of the following sequences"
+      }
+    },
+    {
+      "name": "Upper Division",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "MATH 109"
+              },
+              {
+                "type": "text",
+                "text": "Students completing MATH 31AH-BH-CH may substitute a four-unit upper-division mathematics elective for MATH 109."
+              }
+            ],
+            "label": "Mathematical Reasoning"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 140A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 140B"
+                  },
+                  {
+                    "type": "choose",
+                    "count": 1,
+                    "items": [
+                      {
+                        "type": "range",
+                        "subject": "MATH",
+                        "from": 100,
+                        "to": 194
+                      }
+                    ]
+                  }
+                ],
+                "label": "Foundations of Real Analysis: MATH 140A-B",
+                "notes": "The extra elective keeps the total at thirteen courses: this option has two named courses, the other three."
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 142A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 142B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 120A"
+                  }
+                ],
+                "label": "Introduction to Analysis: MATH 142A-B and MATH 120A"
+              }
+            ],
+            "label": "Analysis sequence"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 100A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 100B"
+                  },
+                  {
+                    "type": "choose",
+                    "count": 1,
+                    "items": [
+                      {
+                        "type": "range",
+                        "subject": "MATH",
+                        "from": 100,
+                        "to": 194
+                      }
+                    ]
+                  }
+                ],
+                "label": "Abstract Algebra: MATH 100A-B",
+                "notes": "The extra elective keeps the total at thirteen courses: this option has two named courses, the other three."
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 103A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 103B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 102"
+                  }
+                ],
+                "label": "Modern Applied Algebra: MATH 103A-B and MATH 102"
+              }
+            ],
+            "label": "Algebra sequence"
+          },
+          {
+            "type": "choose",
+            "count": 6,
+            "items": [
+              {
+                "type": "range",
+                "subject": "MATH",
+                "from": 100,
+                "to": 194
+              }
+            ],
+            "label": "Upper-division electives",
+            "notes": "Catalog: \"Upper-division electives to complete thirteen four-unit courses (totaling fifty-two units), chosen from any mathematics course numbered between 100 and 194 (including those taken from the requirements listed above).\" 13 = MATH 109 + 3 analysis + 3 algebra + 6 electives."
+          }
+        ],
+        "label": "A total of thirteen upper-division courses (totaling fifty-two units)"
+      }
+    }
+  ]
+}

@@ -31,6 +31,8 @@ What it checks:
      keeps the course visible above it.
   9. The single-file version (site/ucsb-prereq-map.html, from build_single.py)
      works when opened straight from the disk.
+ 10. Choosing a campus: the campus screen, remembering it, old links,
+     saved data under the old names, a campus that isn't ready.
 
 Needs Playwright, a browser-automation library (one-time setup):
     py -m pip install playwright
@@ -172,9 +174,262 @@ STEP_ORDER = """() => {
 }"""
 
 
+def check_campuses(p):
+    """10. Choosing a campus (campus.js): the campus screen, remembering the
+    choice, old links, saved data moving to the new names, and a campus
+    that isn't ready."""
+    browser = p.chromium.launch()
+    page = new_page(browser, viewport={"width": 1400, "height": 900})
+    page.goto(SITE)
+    page.wait_for_timeout(500)
+    check("campus: a first visit shows the campus screen",
+          page.is_visible("#campus-screen") and not page.is_visible(".layout"))
+    check("campus: all nine campuses are listed, and only ready ones are links",
+          page.locator(".campus-row").count() == 9 and page.locator("a.campus-name").count() == 2)
+    page.keyboard.press("1")                 # Berkeley: not ready
+    page.wait_for_timeout(300)
+    check("campus: a key for a campus that isn't ready does nothing", page.evaluate("location.hash") == "")
+    page.keyboard.press("8")                 # Santa Barbara
+    page.wait_for_function("typeof majors !== 'undefined' && majors.length > 0", timeout=15000)
+    check("campus: key 8 opens UC Santa Barbara",
+          page.evaluate("location.hash") == "#ucsb/" and page.is_visible("#welcome") and
+          "UC Santa Barbara" in page.inner_text("#campus-name"))
+    page.goto(SITE)
+    page.wait_for_function("typeof majors !== 'undefined' && majors.length > 0", timeout=15000)
+    check("campus: the choice is remembered", not page.is_visible("#campus-screen") and page.is_visible("#welcome"))
+    page.click("#campus-change")
+    page.wait_for_timeout(300)
+    check("campus: 'change' shows the campus screen, with this campus marked",
+          page.is_visible("#campus-screen") and page.locator(".campus-row.current").count() == 1)
+    page.evaluate("window.notReloaded = true")
+    page.click(".campus-row.current a.campus-name")
+    page.wait_for_timeout(500)
+    check("campus: picking the same campus goes back without a reload",
+          not page.is_visible("#campus-screen") and page.is_visible("#welcome") and
+          page.evaluate("window.notReloaded === true"))
+    check("campus: home links carry the campus",
+          page.get_attribute("#home-link", "href") == "#ucsb/" and page.get_attribute("#all-link", "href") == "#ucsb/")
+
+    # The campus screen over an open course: Esc and a slow load leave its address alone.
+    page.goto(SITE + "#ucsb/economics-ba/ECON+10A")
+    page.wait_for_function("typeof selected !== 'undefined' && selected === 'ECON 10A'", timeout=15000)
+    page.click("#campus-change")
+    page.wait_for_timeout(300)
+    page.keyboard.press("Escape")
+    page.wait_for_timeout(300)
+    check("campus: Esc on the campus screen keeps its address",
+          page.evaluate("location.hash") == "#campus" and page.is_visible("#campus-screen"))
+    page.go_back()
+    page.wait_for_function("typeof selected !== 'undefined' && selected === 'ECON 10A'", timeout=15000)
+    check("campus: Back from the campus screen returns to the course",
+          not page.is_visible("#campus-screen") and page.evaluate("location.hash") == "#ucsb/economics-ba/ECON+10A")
+    page.goto(SITE + "#ucsb/")
+    page.wait_for_function("typeof majors !== 'undefined' && majors.length > 0", timeout=15000)
+    # Make one map's download take 1.5 seconds, then leave for #campus before it arrives.
+    page.evaluate("""() => { const realFetch = window.fetch;
+        window.fetch = (url, ...rest) => String(url).includes('statistics-and-data-science-bs')
+            ? new Promise(done => setTimeout(done, 1500)).then(() => realFetch(url, ...rest))
+            : realFetch(url, ...rest); }""")
+    page.evaluate("location.hash = '#ucsb/statistics-and-data-science-bs/PSTAT+120A'")
+    page.wait_for_timeout(200)
+    page.evaluate("location.hash = '#campus'")
+    page.wait_for_timeout(2500)
+    check("campus: a map that loads late doesn't replace the campus screen",
+          page.evaluate("location.hash") == "#campus" and page.is_visible("#campus-screen"))
+
+    # "This quarter" in the plan (planner.js), on California dates.
+    quarters = page.evaluate("""() => {
+        const at = (iso, summer) => { plan.summer = summer; return currentQuarterName(new Date(iso)); };
+        const result = [at('2026-11-27T12:00:00-08:00', false), at('2026-12-20T12:00:00-08:00', false),
+                        at('2027-01-10T12:00:00-08:00', false), at('2027-04-10T12:00:00-07:00', false),
+                        at('2027-07-10T12:00:00-07:00', false), at('2027-07-10T12:00:00-07:00', true),
+                        at('2026-09-20T05:00:00Z', false)];
+        plan.summer = false;
+        return result; }""")
+    check("plan: 'This quarter' follows the UC calendar",
+          quarters == ["Fall 2026", "Winter 2027", "Winter 2027", "Spring 2027", None, "Summer 2027", None], quarters)
+
+    page.goto(SITE + "#economics-ba")
+    page.wait_for_function("currentView === 'map' && graph && graph.major.id === 'BAECON'", timeout=15000)
+    check("campus: an old link opens as UCSB, and its address is updated",
+          page.evaluate("location.hash") == "#ucsb/economics-ba")
+    page.goto(SITE + "#plan/economics-ba")
+    page.wait_for_function("currentView === 'plan'", timeout=15000)
+    check("campus: an old plan link opens the plan", page.evaluate("location.hash") == "#ucsb/plan/economics-ba")
+
+    page.goto(SITE + "#ucla/")
+    page.wait_for_timeout(800)
+    check("campus: a campus that isn't ready shows the campus screen with a note",
+          page.is_visible("#campus-screen") and "UCLA" in page.inner_text("#campus-note"))
+    check("campus: ...and isn't remembered", page.evaluate("localStorage.getItem('prereq.campus')") == "ucsb")
+    check("campus: no JavaScript errors", not page.errors, page.errors)
+    page.close()
+
+    # Marks, credit and plans saved before campuses were added move over.
+    old = new_page(browser, viewport={"width": 1400, "height": 900})
+    old.goto(SITE + "404.html")
+    old.evaluate("""() => { localStorage.clear();
+        localStorage.setItem('ucsb-prereq-map.taken', '["ECON 1"]');
+        localStorage.setItem('ucsb-prereq-map.credit', '{"ap":{}}');
+        localStorage.setItem('ucsb-prereq-map.plan', '{"x":1}');
+        localStorage.setItem('prereq.ucsb.plan', '{"newer":1}'); }""")
+    old.goto(SITE)
+    old.wait_for_function("typeof majors !== 'undefined' && majors.length > 0", timeout=15000)
+    check("campus: someone with data from before opens UCSB, not the campus screen",
+          not old.is_visible("#campus-screen") and old.evaluate("CAMPUS") == "ucsb")
+    old.goto(SITE + "#ucsb/economics-ba")
+    old.wait_for_function("currentView === 'map' && graph && graph.major.id === 'BAECON'", timeout=15000)
+    check("campus: credit saved under the old name is kept",
+          old.evaluate("localStorage.getItem('prereq.ucsb.credit')") == '{"ap":{}}')
+    check("campus: a newer saved plan isn't replaced by the old one",
+          old.evaluate("localStorage.getItem('prereq.ucsb.plan')") == '{"newer":1}')
+    check("campus: marks saved under the old name are kept",
+          old.evaluate("localStorage.getItem('prereq.ucsb.taken')") == '["ECON 1"]' and
+          old.evaluate("taken.has('ECON 1')"))
+    check("campus: ...and the old names are left in place",
+          old.evaluate("localStorage.getItem('ucsb-prereq-map.taken')") == '["ECON 1"]')
+    old.evaluate("localStorage.clear()")
+    old.close()
+
+    # UC San Diego: its majors and department maps, its course links and
+    # its words.
+    ucsd = new_page(browser, viewport={"width": 1400, "height": 900})
+    ucsd.goto(SITE + "#campus")
+    ucsd.wait_for_timeout(400)
+    check("the site is called Stepwise, with its planning line on the campus screen",
+          ucsd.inner_text("#home-link") == "Stepwise" and "Plan your degree" in ucsd.inner_text("#campus-line"))
+    check("campus: UC San Diego can be picked and says Ready",
+          ucsd.locator(".campus-row a.campus-name").count() == 2 and
+          "San Diego" in ucsd.inner_text("#campus-screen") and ucsd.locator(".campus-row.preview").count() == 0)
+    # The preview switch, for the next campus with data (a stand-in here).
+    probe = "(() => { const c = campusById('ucla'); c.hasData = true; const r = isReady('ucla'); delete c.hasData; return r; })()"
+    check("campus: without ?preview, a campus that's coming next can't be picked", ucsd.evaluate(probe) is False)
+    ucsd.goto(SITE + "?preview#campus")
+    ucsd.wait_for_timeout(400)
+    check("campus: with ?preview, a coming-next campus with data can be picked", ucsd.evaluate(probe) is True)
+    ucsd.goto(SITE + "#ucsd/")
+    ucsd.wait_for_function("typeof majors !== 'undefined' && majors.length > 0", timeout=15000)
+    check("ucsd: the front page lists majors and department maps",
+          "department course maps" in ucsd.inner_text("#browse-count") and
+          "majors" in ucsd.inner_text("#browse-count") and
+          ucsd.inner_text("#welcome-title") == "Choose a major or department." and
+          "UC San Diego General Catalog" in ucsd.inner_text("#footer-catalog"))
+    check("ucsd: no one-file copy link (it's UCSB only)", not ucsd.is_visible("#footer-download"))
+    ucsd.goto(SITE + "#ucsd/computer-science-and-engineering/CSE+100")
+    ucsd.wait_for_function("typeof selected !== 'undefined' && selected === 'CSE 100'", timeout=15000)
+    check("ucsd: CSE 100's panel links to its spot on the CSE page",
+          ucsd.locator('#panel-body a[href="https://catalog.ucsd.edu/courses/CSE.html#cse100"]').count() == 1)
+    check("ucsd: CSE 100 needs CSE 12 (an arrow on the map)",
+          ucsd.evaluate("graph.edges.some(e => e.from === 'CSE 12' && e.to === 'CSE 100')"))
+    ucsd.goto(SITE + "#ucsd/plan/mathematics")
+    ucsd.wait_for_function("currentView === 'plan'", timeout=15000)
+    ucsd.click('[data-plan-add="MATH 20A"]')
+    check("ucsd: a course can be added to a plan", ucsd.evaluate("plan.placed['MATH 20A']") is not None)
+    check("ucsd: plans are saved apart from UCSB's",
+          ucsd.evaluate("localStorage.getItem('prereq.ucsd.plan')") is not None and
+          "MATH 20A" not in (ucsd.evaluate("localStorage.getItem('prereq.ucsb.plan')") or ""))
+    check("ucsd: no GOLD transcript reader (it reads UCSB's format only)", not ucsd.is_visible("#plan-import"))
+    check("ucsd: no Auto-fill on a department map (it isn't a list of requirements)",
+          not ucsd.is_visible("#plan-autofill") and ucsd.evaluate("autoFill(true), Object.keys(plan.placed).length") == 1)
+    ucsd.click("#credit-button")
+    check("ucsd: the Credit box shows UCSD's AP chart, linked to its source",
+          ucsd.locator("#ap-list select").count() > 30 and ucsd.is_visible("#ap-filter") and
+          "ucsd.edu" in (ucsd.get_attribute("#ap-source", "href") or ""))
+    ucsd.select_option('select[data-exam="Calculus AB"]', "4")
+    ucsd.wait_for_timeout(200)
+    result = ucsd.inner_text(".ap-row:has(select[data-exam='Calculus AB']) .ap-result")
+    check("ucsd: a 4 on Calculus AB counts as MATH 20A", "MATH 20A" in result and "4 units" in result, result)
+    check("ucsd: the credit is saved apart from UCSB's",
+          "Calculus AB" in (ucsd.evaluate("localStorage.getItem('prereq.ucsd.credit')") or "") and
+          "Calculus AB" not in (ucsd.evaluate("localStorage.getItem('prereq.ucsb.credit')") or ""))
+    check("ucsd: the example course is a UCSD one", ucsd.get_attribute("#transfer-input", "placeholder") == "e.g. CSE 12")
+    ucsd.keyboard.press("Escape")
+    ucsd.click("#about-button")
+    check("ucsd: About names UC San Diego in normal-size text, and doesn't mention GOLD",
+          ucsd.evaluate("getComputedStyle(document.querySelector('#about .campus-fullname')).fontSize") ==
+          ucsd.evaluate("getComputedStyle(document.querySelector('#about .campus-fullname').parentElement).fontSize") and
+          "UC San Diego" in ucsd.inner_text("#about") and "GOLD" not in ucsd.inner_text("#about"))
+    ucsd.keyboard.press("Escape")
+    ucsd.evaluate("localStorage.removeItem('prereq.ucsd.plan')")
+    ucsd.goto(SITE + "#ucsd/computer-science-bs")
+    ucsd.wait_for_function("typeof graph !== 'undefined' && graph && graph.major && graph.major.id === 'UCSD-MAJOR-computer-science-bs'",
+                           timeout=15000)
+    check("ucsd: the Computer Science major map needs CSE 12, CSE 100 and MATH 20A",
+          ucsd.evaluate("['CSE 12', 'CSE 100', 'MATH 20A'].every(c => nodesById[c] && nodesById[c].in_major)"))
+    ucsd.goto(SITE + "#ucsd/plan/computer-science-bs")
+    ucsd.wait_for_function("currentView === 'plan'", timeout=15000)
+    ucsd.wait_for_timeout(300)
+    ucsd.evaluate("autoFill(true)")
+    ucsd.wait_for_timeout(300)
+    check("ucsd: a major's plan has Auto-fill, which puts CSE 12 before CSE 100",
+          not ucsd.evaluate("planEl.autofill.hidden") and
+          ucsd.evaluate("plan.placed['CSE 12'] && plan.placed['CSE 100'] && "
+                        "slotIndex(plan.placed['CSE 12']) < slotIndex(plan.placed['CSE 100'])"))
+    # Each course counts toward one requirement: Marine Biology asks for five
+    # restricted electives, two of them labs. Two labs fill the lab group but
+    # not three of the five.
+    ucsd.evaluate("localStorage.removeItem('prereq.ucsd.plan')")
+    ucsd.goto(SITE + "#ucsd/plan/marine-biology-bs")
+    ucsd.wait_for_function("currentView === 'plan' && graph.major.id === 'UCSD-MAJOR-marine-biology-bs'", timeout=15000)
+    ucsd.wait_for_timeout(300)
+    ucsd.evaluate("placeCourse('SIO 101'); placeCourse('SIO 131'); planChanged()")
+    ucsd.wait_for_timeout(300)
+    labs = ucsd.evaluate("progress(graph.major.sections[4].requirement.items[0], 's4.0')")
+    rest = ucsd.evaluate("progress(graph.major.sections[4].requirement.items[1], 's4.1')")
+    check("ucsd: two labs fill Marine Biology's lab group", labs["have"] == 2 and labs["need"] == 2, labs)
+    check("ucsd: ...and don't also count as electives (0 of 3 more)", rest["have"] == 0 and rest["need"] == 3, rest)
+    ucsd.evaluate("placeCourse('SIO 145'); planChanged()")
+    ucsd.wait_for_timeout(200)
+    rest = ucsd.evaluate("progress(graph.major.sections[4].requirement.items[1], 's4.1')")
+    check("ucsd: a third lab counts as an elective", rest["have"] == 1, rest)
+    check("ucsd: the requirement list says a course counts under another requirement",
+          ucsd.locator(".req-elsewhere").count() >= 1)
+    # ...unless the catalog lets a course count twice: Healthy Aging's
+    # practicum "may overlap with HDS Field Research" (HDS 191).
+    ucsd.evaluate("localStorage.removeItem('prereq.ucsd.plan')")
+    ucsd.goto(SITE + "#ucsd/plan/human-developmental-sciences-bs-healthy-aging")
+    ucsd.wait_for_function("currentView === 'plan' && graph.major.id === 'UCSD-MAJOR-human-developmental-sciences-bs-healthy-aging'",
+                           timeout=15000)
+    ucsd.wait_for_timeout(300)
+    ucsd.evaluate("placeCourse('HDS 191'); planChanged()")
+    shared = ucsd.evaluate("graph.major.sections.map((s, i) => [s.name, progress(s.requirement, 's' + i)])"
+                           ".filter(([n]) => /practicum/i.test(n)).map(([n, p]) => p.have)")
+    check("ucsd: a course the catalog lets count twice counts in both places", shared == [1], shared)
+    # UCSB plans that Auto-fill used to leave short or flood.
+    ucsd.evaluate("localStorage.removeItem('prereq.ucsb.plan')")
+    ucsd.goto(SITE + "#ucsb/plan/anthropology-ba-archaeology-emphasis")
+    ucsd.wait_for_function("currentView === 'plan' && graph.major.id.startsWith('BAANTH')", timeout=15000)
+    ucsd.wait_for_timeout(300)
+    ucsd.evaluate("plan.placed = {}; plan.electives = []; autoFill(true)")
+    anth = ucsd.evaluate("[Object.keys(plan.placed).length, graph.major.sections.every((s, i) => { const p = progress(s.requirement, 's' + i); return p.have >= p.need; })]")
+    check("ucsb: Auto-fill takes five courses from Anthropology's list, not all 84", anth[0] < 40 and anth[1], anth)
+    ucsd.goto(SITE + "#ucsb/plan/music-bm-cello-emphasis")
+    ucsd.wait_for_function("currentView === 'plan' && graph.major.name.includes('Cello')", timeout=15000)
+    ucsd.wait_for_timeout(300)
+    ucsd.evaluate("plan.placed = {}; plan.electives = []; autoFill(true)")
+    cello = ucsd.evaluate("[graph.major.sections.map((s, i) => { const p = progress(s.requirement, 's' + i); return p.have >= p.need; }), (plan.electives || []).filter(e => e.repeat).length]")
+    check("ucsb: an ensemble taken six times is planned with repeats, and the plan is complete",
+          all(cello[0]) and cello[1] > 0, cello)
+    ucsd.evaluate("localStorage.removeItem('prereq.ucsb.plan')")
+    ucsd.goto(SITE + "?preview=off#campus")
+    ucsd.wait_for_timeout(400)
+    check("campus: ?preview=off turns the preview off", ucsd.locator(".campus-row.preview").count() == 0)
+    check("ucsd: no JavaScript errors", not ucsd.errors, ucsd.errors)
+    ucsd.evaluate("localStorage.clear()")
+    ucsd.close()
+
+    phone = new_page(browser, viewport={"width": 360, "height": 740})
+    phone.goto(SITE + "#campus")
+    phone.wait_for_timeout(500)
+    check("campus: the campus screen fits a phone",
+          phone.evaluate("document.documentElement.scrollWidth") <= 360)
+    phone.close()
+    browser.close()
+
+
 def main():
     sys.stdout.reconfigure(errors="replace")
-    with open("site/data/majors.json", encoding="utf-8") as f:
+    with open("site/data/ucsb/majors.json", encoding="utf-8") as f:
         listed = json.load(f)["majors"]
     majors = [m for m in listed if m["structured"]]          # the ones with a map
 
@@ -183,7 +438,7 @@ def main():
         page = new_page(browser, viewport={"width": 1400, "height": 900})
 
         # 1. Front page
-        page.goto(SITE)
+        page.goto(SITE + "#ucsb/")
         page.wait_for_timeout(400)
         check("front page shows the 'pick a major' message", page.is_visible("#welcome"))
         check("front page hides the empty course panel", not page.is_visible("#panel"))
@@ -228,8 +483,8 @@ def main():
               found and found[0].startswith("No match for") and "Economics" in found[0], found)
         page.click(".search-list [data-guess]")
         page.wait_for_function("graph && graph.major.programs.length === 1", timeout=15000)
-        check("major search: clicking 'Did you mean' opens it", page.evaluate("location.hash").startswith("#economics"))
-        page.goto(SITE)
+        check("major search: clicking 'Did you mean' opens it", page.evaluate("location.hash").startswith("#ucsb/economics"))
+        page.goto(SITE + "#ucsb/")
         page.wait_for_timeout(300)
         page.fill("#major-input", "physics")
         page.locator("#major-input").blur()
@@ -251,16 +506,16 @@ def main():
         check("course search on the front page opens a panel listing its programs",
               page.is_visible("#panel") and page.inner_text("#panel-body h2") == "MATH 4A" and
               "Computer Engineering (B.S.)" in page.inner_text("#panel-body"))
-        page.click("#panel-body a[href='#computer-engineering-bs/MATH+4A']")
+        page.click("#panel-body a[href='#ucsb/computer-engineering-bs/MATH+4A']")
         page.wait_for_function("graph && selected === 'MATH 4A'", timeout=15000)
-        check("its program link opens that map with the course chosen", page.evaluate("location.hash") == "#computer-engineering-bs/MATH+4A")
+        check("its program link opens that map with the course chosen", page.evaluate("location.hash") == "#ucsb/computer-engineering-bs/MATH+4A")
         found = suggestions("#course-input", "ece 15")
         check("course search on a map: nickname-free codes still work", found and found[0].startswith("ECE 15A"), found[:3])
         found = suggestions("#course-input", "zzz 999")
         check("course search: no match says so", found and found[0].startswith("No match for"), found)
         page.keyboard.press("Escape")
         check("Esc closes the list", not page.is_visible(".search-list"))
-        page.goto(SITE)
+        page.goto(SITE + "#ucsb/")
         page.wait_for_timeout(300)
 
         open_major(page, SITE, "economics-ba", "BAECON")
@@ -272,15 +527,15 @@ def main():
         page.fill("#major-input", "comp eng bs")
         page.press("#major-input", "Enter")
         page.wait_for_function("graph && graph.major.programs.length === 2", timeout=15000)
-        check("adding a program puts both on the map", page.evaluate("location.hash") == "#economics-ba+computer-engineering-bs")
+        check("adding a program puts both on the map", page.evaluate("location.hash") == "#ucsb/economics-ba+computer-engineering-bs")
         page.click('#chosen button[data-remove="BAECON"]')
         page.wait_for_function("graph && graph.major.programs.length === 1", timeout=15000)
-        check("the x takes a program off the map", page.evaluate("location.hash") == "#computer-engineering-bs")
+        check("the x takes a program off the map", page.evaluate("location.hash") == "#ucsb/computer-engineering-bs")
         page.goto(SITE + "#computer-engineering-bs+statistical-science-minor")
         page.wait_for_function("graph && graph.major.programs.length === 2 && document.querySelectorAll('.box').length > 0", timeout=15000)
         both = {}
         for stem_ in ("computer-engineering-bs", "statistical-science-minor"):
-            with open("site/data/%s.json" % stem_, encoding="utf-8") as f:
+            with open("site/data/ucsb/%s.json" % stem_, encoding="utf-8") as f:
                 both[stem_] = {n["id"] for n in json.load(f)["nodes"] if n["in_major"] and n["status"] == "active"}
         expected = both["computer-engineering-bs"] | both["statistical-science-minor"]
         expected = {c for c in expected if online_base(c, expected) is None}   # twins share a card
@@ -305,7 +560,7 @@ def main():
             stem = major["file"][:-5]
             page.errors.clear()
             open_major(page, SITE, stem, major["id"])
-            with open("site/data/" + major["file"], encoding="utf-8") as f:
+            with open("site/data/ucsb/" + major["file"], encoding="utf-8") as f:
                 graph = json.load(f)
             expected = sorted(n["id"] for n in graph["nodes"] if n["status"] == "active" and n["in_major"])
             # An online twin (PSTATW 120A) shares its base course's card (item 13).
@@ -366,7 +621,7 @@ def main():
         page.keyboard.press("Escape")
         page.wait_for_timeout(100)
         check("Esc clears the selection", page.evaluate("selected") is None)
-        check("Esc puts the address back to the major", page.evaluate("location.hash") == "#computer-engineering-bs")
+        check("Esc puts the address back to the major", page.evaluate("location.hash") == "#ucsb/computer-engineering-bs")
         box(page, "ECE 10A").click()
         page.click("[data-close]")
         page.wait_for_timeout(100)
@@ -640,7 +895,7 @@ def main():
         other.goto(SITE + "#plan/economics-ba/" + packed)
         other.wait_for_function("graph && currentView === 'plan'", timeout=15000)
         check("plan: a share link opens the same plan elsewhere", other.evaluate("JSON.stringify(plan.placed)") == placed)
-        check("plan: ...and tidies the address afterwards", other.evaluate("location.hash") == "#plan/economics-ba")
+        check("plan: ...and tidies the address afterwards", other.evaluate("location.hash") == "#ucsb/plan/economics-ba")
         other.close()
         # A made-up link with a far-off start year, a broken quarter and a
         # non-text elective key: the bad parts are dropped, nothing hangs.
@@ -787,7 +1042,7 @@ def main():
         today = datetime.date.today()
         fall = today.year if today.month >= 9 else today.year - 1
         check("item 4: a fresh plan starts in the current academic year (Fall %d)" % fall,
-              page.evaluate("plan.startYear") == fall and page.locator(".plan-year").first.inner_text().startswith("Year 1 · %d" % fall))
+              page.evaluate("plan.startYear") == fall and page.locator(".plan-year").first.inner_text().startswith("Year 1, %d" % fall))
         check("item 4: the label says what the year means", "First quarter at UCSB" in page.inner_text(".plan-tools"))
         page.click("#plan-autofill")
         page.wait_for_timeout(500)
@@ -976,7 +1231,7 @@ def main():
         # 6. Links and notices
         box(page, "ECON 10A").click()
         page.wait_for_timeout(100)
-        check("selecting a course puts it in the address", page.evaluate("location.hash") == "#economics-ba/ECON+10A",
+        check("selecting a course puts it in the address", page.evaluate("location.hash") == "#ucsb/economics-ba/ECON+10A",
               page.evaluate("location.hash"))
         page.goto(SITE + "404.html")
         page.goto(SITE + "#statistics-and-data-science-bs/PSTAT+120B")
@@ -1069,6 +1324,8 @@ def main():
         check("SE: no JavaScript errors", not se.errors, se.errors)
         browser.close()
 
+        check_campuses(p)
+
         # 9. The single file, opened from the disk
         if not SINGLE_FILE.exists():
             check("single file exists (run py pipeline/build_single.py)", False)
@@ -1082,6 +1339,12 @@ def main():
                   page.evaluate("majors.length") == len(listed) and
                   page.evaluate("majors.every(m => findPrograms(displayName(m.name)).some(x => x.program.id === m.id))"))
             check("single file: no download link to itself", not page.is_visible("#footer-download"))
+            check("single file: no 'change' campus link", not page.is_visible("#campus-change"))
+            for address in ("#campus", "#ucsd/"):
+                page.goto(url + address)
+                page.wait_for_timeout(400)
+                check("single file: %s opens the UCSB front page" % address,
+                      not page.is_visible("#campus-screen") and page.is_visible("#welcome"))
             # Item 23: the links to the one-file copy say how big it is.
             with open("site/index.html", encoding="utf-8") as f:
                 sizes = re.findall(r'<span class="file-size">\(([\d.]+) MB\)</span>', f.read())

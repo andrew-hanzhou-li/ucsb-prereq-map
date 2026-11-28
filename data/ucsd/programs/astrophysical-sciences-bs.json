@@ -1,0 +1,2643 @@
+{
+ "id": "UCSD-MAJOR-astrophysical-sciences-bs",
+ "name": "Astrophysical Sciences - BS",
+ "kind": "major",
+ "type": "Bachelor's Degree",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsd.edu/curric/ASTR-ug.html",
+ "sections": [
+  {
+   "name": "Lower-Division Requirements",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "PHYS 2A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYS 2B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYS 2C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYS 2D",
+          "status": "active"
+         }
+        ],
+        "label": "PHYS 2A-B-C-D"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "PHYS 4A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYS 4B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYS 4C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYS 4D",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYS 4E",
+          "status": "active"
+         }
+        ],
+        "label": "PHYS 4A-B-C-D-E"
+       }
+      ],
+      "count": 1,
+      "label": "Physics"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "DSC 10",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "BILD 62",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 18",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 41",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 6R",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 8A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 11",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 15",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 8",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "NANO 15",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "NANO 15R",
+        "status": "active"
+       }
+      ],
+      "count": 1,
+      "label": "Programming"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 18",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 31AH",
+          "status": "active"
+         }
+        ],
+        "count": 1
+       },
+       {
+        "type": "course",
+        "code": "MATH 20A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 20B",
+        "status": "active"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 20C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 31BH",
+          "status": "active"
+         }
+        ],
+        "count": 1
+       },
+       {
+        "type": "course",
+        "code": "MATH 20D",
+        "status": "active"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 20E",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 31CH",
+          "status": "active"
+         }
+        ],
+        "count": 1
+       }
+      ],
+      "label": "MATH 18 and 20A-B-C-D-E",
+      "notes": "The honors math series (MATH 31AH, 31BH, 31CH) can replace the standard math courses (MATH 18, 20C, 20E, respectively)."
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "ASTR 20A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 20B",
+        "status": "active"
+       }
+      ],
+      "label": "ASTR 20A-B"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Upper-Division Requirements",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "ASTR 120",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 122",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 123",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 124",
+        "status": "active"
+       }
+      ],
+      "count": 3,
+      "label": "Core"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "ASTR 150",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 152",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 154",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 155",
+        "status": "active"
+       }
+      ],
+      "count": 1,
+      "label": "Lab"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "ASTR 101",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 102",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 103",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 104",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 105",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 106",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 120",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 121",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 122",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 123",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 124",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 130",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 131",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 150",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 151",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 152",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 154",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 155",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 191",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 198",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 199",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASTR 199H",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 100A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 100B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 100C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 105A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 105B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 110A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 110B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 113",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 116",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 120",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 122",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 124",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 130A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 130B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 130C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 133",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 136",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 137",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 139",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 140A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 140B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 141",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 142",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 151",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 152A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 152B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 154",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 160",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 161",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 162",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 170",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 173",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 175",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 176",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 177",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 178",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 180",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 191",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 192",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 198",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 199",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 199H",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 100",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 101",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 102",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 103",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 104",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 105",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 106",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 107",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 108",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 109",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 109R",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 110",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 111",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 112",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 113",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 114",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 115",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 116",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 116GS",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 117",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 118GS",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 119",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 120",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 121",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 121GS",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 122",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 123",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 124",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 125",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 126",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 127",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 128",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 129",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 130",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 131",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 132",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 133",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 134",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 135",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 136",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 137",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 138",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 138GS",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 139",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 141",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 143",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 144",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 145",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 146",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 147",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 152",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 153",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 155",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 156",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 160",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 161",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 162",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 164",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 166",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 167",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 170",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 170GS",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 170L",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 171",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 172",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 173",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 174",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 175",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 176",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 177",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 178",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 179",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 180",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 181",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 182",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 183",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 184",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 185",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 186",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 187",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 188",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 189",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 190",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 190L",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 192",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 194",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 195",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 196",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 197",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 197BA",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 198",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 199",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 101A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 101B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 101C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 101D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 104",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 105",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 107",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 108",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 110",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 113",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 114",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 117A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 118",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 119",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 120",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 121",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 122",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 123",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 125",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 126A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 126B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 130",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 131A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 131B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 133",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 142",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 143A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 143B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 144",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 145",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 146",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 148",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 149",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 150",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 152",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 153",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 154",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 155A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 155B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 156A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 156B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 160",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 165",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 166",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 167",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 170",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 171A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 171B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 175A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 180",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 181",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 182",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 184",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 185",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 190",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 191",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 197",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 198",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 199",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 100",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 101",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 102",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 103",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 107",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 108",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 109",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 111",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 115",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 116",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 118",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 121A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 121B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 123",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 124",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 125A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 125B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 128A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 128B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 128C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 129",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 134",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 135A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 135B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 136L",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 138L",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 139",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 140A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 140B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 141A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 141B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 143",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 144",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 145AL",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 145BL",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 145CL",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 148",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 150",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 153",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 155",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 156",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 157A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 157B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 158A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 158B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 159",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 161A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 161B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 161C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 163",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 164",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 165",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 166",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 171A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 171B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 172A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 174",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 175A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 175B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 176",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 180",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 181",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 182",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 183",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 184",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 185",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 187",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 188",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 189",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 190",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 191",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 193H",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 194",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 195",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 196",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 197",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 198",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 199",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 100A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 100B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 100C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 102",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 103A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 103B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 104A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 104B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 105",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 106",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 109",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 110",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 111A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 111B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 112A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 112B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 114",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 120A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 120B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 121A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 121B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 130",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 140A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 140B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 140C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 142A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 142B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 144",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 146",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 148",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 150A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 150B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 152",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 153",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 154",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 155A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 155B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 157",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 158",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 160A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 160B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 163",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 168A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 170A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 170B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 170C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 171A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 171B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 173A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 173B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 174",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 175",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 179",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 180A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 180B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 180C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 181A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 181B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 181C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 181D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 181E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 181F",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 182",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 183",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 184",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 185",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 186",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 187A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 187B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 188",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 189",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 190A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 190B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 191",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 193A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 193B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 194",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 196",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 197",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 199",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 199H",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DSC 100",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DSC 102",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DSC 104",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DSC 106",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DSC 120",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DSC 123A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DSC 123B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DSC 140A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DSC 140B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DSC 148",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DSC 155",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DSC 160",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DSC 161",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DSC 167",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DSC 170",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DSC 180A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DSC 180B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DSC 190",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DSC 191",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DSC 197",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DSC 198",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DSC 199",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 100A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 100B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 103",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 104",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 105A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 105B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 108",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 109",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 111",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 113",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 114A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 114AR",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 114B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 114C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 114D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 115",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 116",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 117",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 118",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 119",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 120A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 120B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 123",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 125",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 126A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 126B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 130",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 131",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 132",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 134",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 135",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 141",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 142",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 143B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 143C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 143D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 145",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 146",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 151",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 152",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 154",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 155",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 156",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 157",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 158",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 163",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 164",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 165",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 167",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 168",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 169",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 171",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 172",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 173",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 174",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 182",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 185",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 186",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 187",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 188",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 190",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 192",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 194",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 195",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 195P",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 196",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 197",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 198",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 199",
+        "status": "active"
+       },
+       {
+        "type": "text",
+        "text": "Upper-division courses from Biological Sciences"
+       },
+       {
+        "type": "text",
+        "text": "Optional: One quarter of honors thesis (four units) counts as one of the eight additional elective courses. If completing the honors thesis for one of them, the remaining courses must be at least three ASTR courses and at least three courses in other departments listed above. A single four-unit ASTR 199/199H course may only be applied as one upper-division restricted elective."
+       }
+      ],
+      "count": 8,
+      "label": "Electives",
+      "notes": "Eight upper-division courses that grant at least four units each, including at least four ASTR courses and at least three courses from other departments—Physics, Scripps Institution of Oceanography, Mechanical and Aerospace Engineering, Electrical and Computer Engineering, Mathematics, Data Science, Chemistry and Biochemistry, and Biological Sciences"
+     }
+    ]
+   }
+  }
+ ],
+ "narrative": [
+  "Lower-division units: 56; upper-division units: 48; total units required for the major: 104.",
+  "P/NP Grading Option: Not allowed for any courses applied to the major (the exceptions are courses completed via AP/IB/A-Level and a single four-unit ASTR 199/199H that may only be applied as an upper-division restricted elective).",
+  "A grade point average of 2.0 or higher in the upper-division major program is required for graduation. Students must receive a grade of C– or better in any course to be counted toward fulfillment of the major requirements.",
+  "At least 60 percent of the upper-division courses in the major must be taken while in residence at UC San Diego.",
+  "Students cannot pursue both the AT27 and the AT25 programs.",
+  "Programming: It is recommended that the programming requirement be completed as early as possible.",
+  "Students taking the PHYS 2 series are recommended, but not required, to take ASTR 18.",
+  "We recommend the 4 series."
+ ]
+}

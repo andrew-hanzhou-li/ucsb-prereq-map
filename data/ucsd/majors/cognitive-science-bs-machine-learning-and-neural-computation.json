@@ -1,0 +1,268 @@
+{
+  "name": "Cognitive Science - BS - Machine Learning and Neural Computation",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Cognitive Science",
+  "major_code": "CG35",
+  "source": "https://catalog.ucsd.edu/curric/COGS-ug.html",
+  "narrative": [
+    "A minimum grade point average of 2.0 is required for admittance to and graduation from the BA or BS degree program.",
+    "Students must receive a grade of C– or better in any course to be counted toward fulfillment of the major requirements.",
+    "All courses must be taken for a letter grade, with the exception of COGS 195, 198, and 199, which are taken Pass/Not Pass.",
+    "Majors must obtain departmental approval for electives taken outside of the department.",
+    "Lower Division (eleven courses, forty-four units or ten courses, forty units); Upper Division (twelve courses, forty-eight units).",
+    "To major in cognitive science with an area of specialization, the student must fulfill the requirements for the BS degree and must choose four of the required six elective courses from a list of approved electives for that area of specialization."
+  ],
+  "sections": [
+    {
+      "name": "Lower Division",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "choose",
+            "count": 1,
+            "label": "Math",
+            "items": [
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 10A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 10B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 10C"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 18"
+                  }
+                ]
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 20A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 20B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 18"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "all",
+            "label": "Introduction",
+            "items": [
+              {
+                "type": "course",
+                "code": "COGS 1"
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "label": "Design",
+            "items": [
+              {
+                "type": "course",
+                "code": "COGS 10"
+              },
+              {
+                "type": "course",
+                "code": "DSGN 1"
+              }
+            ]
+          },
+          {
+            "type": "all",
+            "label": "Methods",
+            "items": [
+              {
+                "type": "course",
+                "code": "COGS 13"
+              },
+              {
+                "type": "course",
+                "code": "COGS 14A"
+              },
+              {
+                "type": "course",
+                "code": "COGS 14B"
+              }
+            ]
+          },
+          {
+            "type": "all",
+            "label": "Neuroscience",
+            "items": [
+              {
+                "type": "course",
+                "code": "COGS 17"
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "label": "Programming",
+            "items": [
+              {
+                "type": "course",
+                "code": "COGS 18"
+              },
+              {
+                "type": "course",
+                "code": "CSE 7"
+              },
+              {
+                "type": "course",
+                "code": "CSE 8A"
+              },
+              {
+                "type": "course",
+                "code": "CSE 11"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Upper Division: Core",
+      "requirement": {
+        "type": "all",
+        "label": "Core (six courses)",
+        "items": [
+          {
+            "type": "all",
+            "label": "Distributed Cognition",
+            "items": [
+              {
+                "type": "course",
+                "code": "COGS 100"
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 2,
+            "label": "Fundamental Cognitive Phenomena (choose any two)",
+            "items": [
+              {
+                "type": "course",
+                "code": "COGS 101A"
+              },
+              {
+                "type": "course",
+                "code": "COGS 101B"
+              },
+              {
+                "type": "course",
+                "code": "COGS 101C"
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 2,
+            "label": "Cognitive Neuroscience (choose any two)",
+            "items": [
+              {
+                "type": "course",
+                "code": "COGS 107A"
+              },
+              {
+                "type": "course",
+                "code": "COGS 107B"
+              },
+              {
+                "type": "course",
+                "code": "COGS 107C"
+              }
+            ]
+          },
+          {
+            "type": "all",
+            "label": "Computation",
+            "items": [
+              {
+                "type": "course",
+                "code": "COGS 108"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Upper Division: Electives",
+      "requirement": {
+        "type": "all",
+        "label": "Electives",
+        "items": [
+          {
+            "type": "text",
+            "text": "Four of the six electives must be taken from the approved specialization elective list (the lists of approved electives for each area of specialization are available in the department office and on the website). Allowed electives include advanced courses in neural networks, artificial intelligence, and computer science."
+          },
+          {
+            "type": "choose",
+            "count": 2,
+            "label": "Machine learning group",
+            "notes": "For students that specialize in machine learning and neural computation, choose two from this group: COGS 118A-B-C-D.",
+            "items": [
+              {
+                "type": "course",
+                "code": "COGS 118A"
+              },
+              {
+                "type": "course",
+                "code": "COGS 118B"
+              },
+              {
+                "type": "course",
+                "code": "COGS 118C"
+              },
+              {
+                "type": "course",
+                "code": "COGS 118D"
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 4,
+            "label": "Electives (six courses)",
+            "notes": "Six electives in all; the two COGS 118 courses above count toward the six, so four more are needed here. A total of six electives are required, where three of the six electives must be taken within the cognitive science department. COGS 160 may only be used once for elective. One course in the Cognitive Science 19X series may be used as an elective, but only with the approval of both the instructor who supervised the course and the undergraduate adviser.",
+            "items": [
+              {
+                "type": "any",
+                "subject": "COGS",
+                "level": "upper"
+              },
+              {
+                "type": "text",
+                "text": "Courses outside the department from the list of approved electives or petitioned through the department; the course must deal with topics and issues that are clearly part of cognitive science, and the material must not be available in a course offered inside the department."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

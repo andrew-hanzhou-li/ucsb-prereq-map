@@ -1,0 +1,293 @@
+{
+ "id": "UCSD-MAJOR-bioengineering-bs-biotechnology",
+ "name": "Bioengineering - BS - Biotechnology",
+ "kind": "major",
+ "type": "Bachelor's Degree",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsd.edu/curric/BENG-ug.html",
+ "sections": [
+  {
+   "name": "Lower-division courses",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "MATH 20A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MATH 20B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MATH 20C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MATH 18",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MATH 20D",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MATH 20E",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 6A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 6B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 6C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 7L",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 2A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 2B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 2C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 2CL",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 1",
+      "status": "active"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 40A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 41A",
+        "status": "active"
+       }
+      ],
+      "count": 1,
+      "notes": "listed as CHEM 40A/41A"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 40B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 41B",
+        "status": "active"
+       }
+      ],
+      "count": 1,
+      "notes": "listed as CHEM 40B/41B"
+     },
+     {
+      "type": "course",
+      "code": "BILD 1",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 8",
+      "status": "active"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Upper-division courses",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "BENG 100",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 130",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 103B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 166A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 160",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 186A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 158",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "BENG 168",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 161A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 161B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 125",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 123",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 162",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CENG 101A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BICD 100",
+      "status": "active"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Capstone design",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "BENG 187A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 187B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 187C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 187D",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 188A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 188B",
+      "status": "active"
+     }
+    ],
+    "label": "Capstone design course sequence"
+   }
+  },
+  {
+   "name": "Technical electives",
+   "requirement": {
+    "type": "choose",
+    "items": [
+     {
+      "type": "course",
+      "code": "BENG 196",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BENG 199",
+      "status": "active"
+     },
+     {
+      "type": "text",
+      "text": "Technical elective (TE) courses must be selected from a departmental approved list. Consult the Student Affairs Office."
+     }
+    ],
+    "count": 2,
+    "label": "Technical electives",
+    "notes": "Courses such as BENG 197 and 198 are encouraged, but do not count as upper-division technical electives. Up to four units of BENG 196 may be used toward technical elective credit. Completion of two consecutive quarters of BENG 199 will satisfy both technical elective requirements in all majors."
+   }
+  }
+ ],
+ "narrative": [
+  "Specific course requirements for each of the majors are outlined in tables below (four-year curriculum tables; courses listed here are the non-HSS courses in those tables).",
+  "To graduate, students must maintain an overall GPA of at least 2.0, and obtain at least a C– grade in each course required for the major. All courses required for the major must be taken for a letter grade.",
+  "Students must develop a program that includes a total of at least forty units in the arts, humanities, and social sciences (Ten HSS courses are listed in the curriculum tables; individual college requirements may be higher).",
+  "A capstone design course sequence is required for senior level students in all undergraduate majors in the department (BENG 187A-B-C-D and BENG 188A-B).",
+  "Each of the four majors in bioengineering are “selective” status.",
+  "Screening courses (continuing students): BILD 1; CHEM 6A-B; MAE 8; MATH 20A-C; PHYS 2A-B.",
+  "CHEM 7L may be taken concurrently with Chem 6C or in any quarter within the first two years after completion of CHEM 6B."
+ ]
+}

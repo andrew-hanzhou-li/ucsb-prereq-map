@@ -1,0 +1,808 @@
+{
+ "id": "UCSD-MAJOR-physics-bs",
+ "name": "Physics - BS",
+ "kind": "major",
+ "type": "Bachelor's Degree",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsd.edu/curric/PHYS-ug.html",
+ "sections": [
+  {
+   "name": "Lower-Division Requirements",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "PHYS 4A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 4B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 4C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 4D",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 4E",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 2CL",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 2DL",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 41",
+      "status": "active"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 18",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 31AH",
+          "status": "active"
+         }
+        ],
+        "count": 1
+       },
+       {
+        "type": "course",
+        "code": "MATH 20A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 20B",
+        "status": "active"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 20C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 31BH",
+          "status": "active"
+         }
+        ],
+        "count": 1
+       },
+       {
+        "type": "course",
+        "code": "MATH 20D",
+        "status": "active"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 20E",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 31CH",
+          "status": "active"
+         }
+        ],
+        "count": 1
+       }
+      ],
+      "notes": "MATH 18 and 20A-B-C-D-E; the honors math series (MATH 31AH, 31BH, 31CH) can replace MATH 18, 20C, 20E, respectively."
+     }
+    ]
+   }
+  },
+  {
+   "name": "Upper-Division Core",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "PHYS 100A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 100B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 105A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 110A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 120",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 130A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 130B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 140A",
+      "status": "active"
+     }
+    ],
+    "notes": "thirty-three units"
+   }
+  },
+  {
+   "name": "Lab",
+   "requirement": {
+    "type": "choose",
+    "items": [
+     {
+      "type": "course",
+      "code": "PHYS 122",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 124",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 133",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 173",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ASTR 150",
+      "status": "active"
+     }
+    ],
+    "count": 1,
+    "notes": "four units"
+   }
+  },
+  {
+   "name": "Restricted Electives",
+   "requirement": {
+    "type": "choose",
+    "items": [
+     {
+      "type": "course",
+      "code": "PHYS 100C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 105B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 110B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 113",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 116",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 122",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 124",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 130C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 133",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 136",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 137",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 139",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 140B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 141",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 142",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 151",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 152A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 152B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 154",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 160",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 161",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 162",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 170",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 173",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 175",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 176",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 177",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 178",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 180",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 191",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 192",
+      "status": "active"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "PHYS 199",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 199H",
+        "status": "active"
+       }
+      ],
+      "count": 1,
+      "notes": "A single four-unit PHYS 199/199H (may be P/NP) may be applied as an upper-division restricted elective."
+     },
+     {
+      "type": "course",
+      "code": "ECE 120",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "MAE 180",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ASTR 123",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ASTR 150",
+      "status": "active"
+     },
+     {
+      "type": "text",
+      "text": "BI** 100–185 (Biophysics focus area; BISP courses and BIEB 176 are not accepted)"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 100A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 100B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 103",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 104",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 105A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 105B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 108",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 109",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 111",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 113",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 114A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 114AR",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 114B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 114C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 114D",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 115",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 116",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 117",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 118",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 119",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 120A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 120B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 123",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 125",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 126A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 126B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 131",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 132",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 134",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 135",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 141",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 142",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 143B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 143C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 143D",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 145",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 146",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 151",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 152",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 154",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 155",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 156",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 157",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 158",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 163",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 164",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 165",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 167",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 168",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 169",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 171",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 172",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 173",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 174",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 182",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 185",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 186",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MATH 170A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MATH 170B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MATH 170C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MATH 179",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MATH 183",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 120A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 120B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 103",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 134",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 135A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 135B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECE 136L",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 160",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SIO 103",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SIO 111",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SIO 171",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SIO 172",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SIO 177",
+      "status": "active"
+     }
+    ],
+    "count": 5,
+    "label": "Restricted Electives",
+    "notes": "Five upper-division and/or graduate-level courses from PHYS 100–195 and 200–295 (twenty units). Students may use a maximum of two courses outside of physics to satisfy this requirement, provided they come from a single focus area and are listed (Astrophysics: ECE 120, MAE 180, ASTR 123, 150; Biophysics: BI** 100–185, CHEM 100–186, not BISP courses, BIEB 176, CHEM 130; Computational physics: MATH 170A-B-C, 179, 183; Materials physics: CHEM 120A-B, ECE 103, 134, 135A-B, 136L, MAE 160; Physics of the Earth, Oceans, and Atmosphere: SIO 103, 111, 171, 172, 177). All courses applying to the restricted electives must grant four or more units. CHEM 130 is not accepted (CHEM 100–186 is written as 100–129 and 131–186)."
+   }
+  }
+ ],
+ "narrative": [
+  "The Physics 4 series is designed to prepare students for the upper-division program and is required for all physics majors.",
+  "The honors math series (MATH 31AH, 31BH, 31CH) can replace the standard math courses (MATH 18, 20C, 20E, respectively).",
+  "A course that is listed in several areas cannot count towards more than one area and can satisfy only ONE of the major requirements.",
+  "P/NP Grading Option: Not allowed for any courses applied to the major (the exceptions are courses completed via AP/IB/A-Level and a single four-unit PHYS 199/199H that may only be applied as an upper-division restricted elective).",
+  "A grade point average of 2.0 or higher in the upper-division major program is required for graduation. Students must receive a grade of C– or better in any course to be counted toward fulfillment of the major requirements.",
+  "At least 60 percent of the upper-division courses in the major must be taken while in residence at UC San Diego. All core upper-division courses must be taken while in residence at UC San Diego.",
+  "Substitutions/Exceptions: Permissible only by approved petition to the department.",
+  "Lower-division units 52; upper-division units 57; total units required for the major 109.",
+  "Programming: For students transferring into the physics program, one of the following courses is accepted via petition provided the course was completed before the transfer into physics was formalized: CENG/NANO 15; COGS 18; CSE 8A, 11, 12; ECE 15; MAE 8.",
+  "Double Majors: Approved by petition only; the equivalent of at least ten upper-division courses (forty units) must be unique to each major. A student cannot pursue two majors within the Department of Physics.",
+  "Suggested core physics electives are PHYS 100C, 105B, 110B, 130C, 140B.",
+  "While not required, students have the option of selecting an area of concentration as part of their degree program. Available concentrations are astrophysics, biophysics, computational physics, and materials physics.",
+  "Recommended (not required) lower-division courses for students interested in biophysics: BILD 1-2; CHEM 6A-B-C, 7L; for materials physics: CHEM 6A-B."
+ ]
+}

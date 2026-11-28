@@ -1,0 +1,376 @@
+{
+ "id": "UCSD-MAJOR-oceanic-and-atmospheric-sciences-bs",
+ "name": "Oceanic and Atmospheric Sciences - BS",
+ "kind": "major",
+ "type": "Bachelor's Degree",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsd.edu/curric/SIO-ug.html",
+ "sections": [
+  {
+   "name": "Lower-Division Requirements",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "MATH 20A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 20B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 20C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 20D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 20E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 18",
+        "status": "active"
+       }
+      ]
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "PHYS 2A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYS 2B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYS 2C",
+          "status": "active"
+         }
+        ]
+       },
+       {
+        "type": "text",
+        "text": "PHYS 4 series is also accepted (instead of the PHYS 2 series)"
+       }
+      ],
+      "count": 1
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 6A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 6B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 6C",
+        "status": "active"
+       }
+      ]
+     },
+     {
+      "type": "course",
+      "code": "SIO 60",
+      "status": "active"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Group A: Core Courses",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "SIO 171",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SIO 172",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SIO 174",
+      "status": "active"
+     }
+    ],
+    "label": "Group A: Core Courses",
+    "notes": "all courses required"
+   }
+  },
+  {
+   "name": "Group B: Upper-Division Restricted Electives",
+   "requirement": {
+    "type": "choose",
+    "items": [
+     {
+      "type": "course",
+      "code": "SIO 111",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SIO 117",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SIO 141",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SIO 143",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SIO 173",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SIO 175",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SIO 176",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SIO 177",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SIO 178",
+      "status": "active"
+     }
+    ],
+    "count": 4,
+    "label": "Group B: Upper-Division Restricted Electives",
+    "notes": "choose at least four of the following"
+   }
+  },
+  {
+   "name": "Group C: Upper-Division Electives",
+   "requirement": {
+    "type": "choose",
+    "items": [
+     {
+      "type": "course",
+      "code": "SIO 101",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SIO 108",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SIO 110",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SIO 113",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SIO 115",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SIO 134",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SIO 135",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SIO 160",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SIO 179",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SIO 199",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 130",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 131",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 132",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 171",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CHEM 173",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MATH 110",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MATH 120A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MATH 120B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MATH 180A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 110A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 110B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 140A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 140B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MAE 101A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "CENG 101A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SIO 111",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SIO 117",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SIO 141",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SIO 143",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SIO 173",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SIO 175",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SIO 176",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SIO 177",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SIO 178",
+      "status": "active"
+     }
+    ],
+    "count": 5,
+    "label": "Group C: Upper-Division Electives",
+    "notes": "choose at least five of the following. Students may use any additional course(s) from the restricted electives list (Group B, above) as a Group C elective."
+   }
+  }
+ ],
+ "narrative": [
+  "Students must receive a grade of C- or better in any course to be counted toward fulfillment of the major requirements. In exceptional cases, students with a grade point average in the major of 2.5 or greater may petition to have one grade of D accepted.",
+  "All courses (lower and upper division) required for the major must be taken for a letter grade.",
+  "One quarter of SIO 199 credit (four units, P/NP) may be used as a Group C elective.",
+  "PHYS 4 series is recommended for students with research interests in physical oceanography or the physics of the atmosphere. Career-track examples are recommendations, not requirements."
+ ]
+}

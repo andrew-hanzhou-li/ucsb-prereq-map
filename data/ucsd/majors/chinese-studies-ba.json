@@ -1,0 +1,517 @@
+{
+  "name": "Chinese Studies - BA",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Chinese Studies Program",
+  "source": "https://catalog.ucsd.edu/curric/CHIN.html",
+  "narrative": [
+    "The page says the major leads to \"a bachelor's degree\" without naming BA or BS; recorded here as BA.",
+    "\"Courses must be taken from at least three different departments or programs.\"",
+    "\"No more than six of those upper-division courses may be Chinese language acquisition courses.\"",
+    "\"A minimum of six upper-division courses must be taken at UC San Diego. Only six upper-division courses may be taken abroad (or at another institution) and only three taken outside of UC San Diego may be Chinese language acquisition courses.\"",
+    "\"All courses must be taken and completed for a letter grade for both the major and minor. Exceptions are granted for CHIN 198 and CHIN 199.\"",
+    "Lower-division courses listed on the page (HILD 10, 11, 12; LTWL 4C; MUS 13AS; GSS 23) \"count only toward the minor\".",
+    "\"Courses not listed here that are related to Chinese studies may be counted toward the Chinese studies major or minor by petition.\""
+  ],
+  "sections": [
+    {
+      "name": "Language requirement",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "CHIN 10AN"
+              },
+              {
+                "type": "course",
+                "code": "CHIN 10AM"
+              },
+              {
+                "type": "course",
+                "code": "CHIN 10AD"
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "CHIN 10BN"
+              },
+              {
+                "type": "course",
+                "code": "CHIN 10BM"
+              },
+              {
+                "type": "course",
+                "code": "CHIN 10BD"
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "CHIN 10CN"
+              },
+              {
+                "type": "course",
+                "code": "CHIN 10CM"
+              },
+              {
+                "type": "course",
+                "code": "CHIN 10CD"
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "CHIN 20AN"
+              },
+              {
+                "type": "course",
+                "code": "CHIN 20AM"
+              },
+              {
+                "type": "course",
+                "code": "CHIN 20AD"
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "CHIN 20BN"
+              },
+              {
+                "type": "course",
+                "code": "CHIN 20BM"
+              },
+              {
+                "type": "course",
+                "code": "CHIN 20BD"
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "CHIN 20CN"
+              },
+              {
+                "type": "course",
+                "code": "CHIN 20CM"
+              },
+              {
+                "type": "course",
+                "code": "CHIN 20CD"
+              }
+            ]
+          }
+        ],
+        "label": "Two years of Mandarin Chinese",
+        "notes": "\"Two years of Mandarin Chinese (CHIN 10 A-B-C and 20 A-B-C or equivalent) or equivalent Chinese language knowledge.\" The catalog writes CHIN 10A-B-C and 20A-B-C; each level is taught in three tracks: N (no Chinese background), M (Mandarin speakers), D (dialect speakers)."
+      }
+    },
+    {
+      "name": "Upper-division requirements",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "choose",
+            "count": 9,
+            "items": [
+              {
+                "type": "course",
+                "code": "ANSC 136"
+              },
+              {
+                "type": "course",
+                "code": "ANSC 137"
+              },
+              {
+                "type": "course",
+                "code": "HIEA 122"
+              },
+              {
+                "type": "course",
+                "code": "HIEA 123"
+              },
+              {
+                "type": "course",
+                "code": "HIEA 124"
+              },
+              {
+                "type": "course",
+                "code": "HIEA 125"
+              },
+              {
+                "type": "course",
+                "code": "HIEA 126"
+              },
+              {
+                "type": "course",
+                "code": "HIEA 129"
+              },
+              {
+                "type": "course",
+                "code": "HIEA 130"
+              },
+              {
+                "type": "course",
+                "code": "HIEA 131"
+              },
+              {
+                "type": "course",
+                "code": "HIEA 132"
+              },
+              {
+                "type": "course",
+                "code": "HIEA 133"
+              },
+              {
+                "type": "course",
+                "code": "HIEA 134"
+              },
+              {
+                "type": "course",
+                "code": "HIEA 137"
+              },
+              {
+                "type": "course",
+                "code": "HIEA 138"
+              },
+              {
+                "type": "course",
+                "code": "HIEA 140"
+              },
+              {
+                "type": "course",
+                "code": "HIEA 155"
+              },
+              {
+                "type": "course",
+                "code": "HIEA 164"
+              },
+              {
+                "type": "course",
+                "code": "HIEA 166"
+              },
+              {
+                "type": "course",
+                "code": "HIEA 168"
+              },
+              {
+                "type": "course",
+                "code": "HIEA 171"
+              },
+              {
+                "type": "course",
+                "code": "LTCH 101"
+              },
+              {
+                "type": "course",
+                "code": "LTEA 100A"
+              },
+              {
+                "type": "course",
+                "code": "LTEA 100B"
+              },
+              {
+                "type": "course",
+                "code": "LTEA 100C"
+              },
+              {
+                "type": "course",
+                "code": "LTEA 110A"
+              },
+              {
+                "type": "course",
+                "code": "LTEA 110B"
+              },
+              {
+                "type": "course",
+                "code": "LTEA 110C"
+              },
+              {
+                "type": "course",
+                "code": "LTEA 120A"
+              },
+              {
+                "type": "course",
+                "code": "LTEA 120B"
+              },
+              {
+                "type": "course",
+                "code": "LTEA 120C"
+              },
+              {
+                "type": "course",
+                "code": "LTWL 138"
+              },
+              {
+                "type": "course",
+                "code": "LTWR 113"
+              },
+              {
+                "type": "course",
+                "code": "MUS 111"
+              },
+              {
+                "type": "course",
+                "code": "GPPS 400"
+              },
+              {
+                "type": "course",
+                "code": "GPPS 403"
+              },
+              {
+                "type": "course",
+                "code": "GPPS 404"
+              },
+              {
+                "type": "course",
+                "code": "GPPS 405"
+              },
+              {
+                "type": "course",
+                "code": "GPPS 406"
+              },
+              {
+                "type": "course",
+                "code": "GPPS 407"
+              },
+              {
+                "type": "course",
+                "code": "GPIM 455"
+              },
+              {
+                "type": "course",
+                "code": "GPIM 461"
+              },
+              {
+                "type": "course",
+                "code": "GPPA 467"
+              },
+              {
+                "type": "course",
+                "code": "GPPS 476"
+              },
+              {
+                "type": "course",
+                "code": "GPEC 486"
+              },
+              {
+                "type": "course",
+                "code": "PHIL 158"
+              },
+              {
+                "type": "course",
+                "code": "POLI 113A"
+              },
+              {
+                "type": "course",
+                "code": "POLI 113B"
+              },
+              {
+                "type": "course",
+                "code": "POLI 113BR"
+              },
+              {
+                "type": "course",
+                "code": "POLI 113C"
+              },
+              {
+                "type": "course",
+                "code": "POLI 113CR"
+              },
+              {
+                "type": "course",
+                "code": "POLI 130B"
+              },
+              {
+                "type": "course",
+                "code": "POLI 131C"
+              },
+              {
+                "type": "course",
+                "code": "POLI 131CR"
+              },
+              {
+                "type": "course",
+                "code": "POLI 132"
+              },
+              {
+                "type": "course",
+                "code": "POLI 132R"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 140K"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 188G"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 189"
+              },
+              {
+                "type": "course",
+                "code": "VIS 105D"
+              },
+              {
+                "type": "course",
+                "code": "VIS 105E"
+              },
+              {
+                "type": "course",
+                "code": "VIS 127B"
+              },
+              {
+                "type": "course",
+                "code": "VIS 127C"
+              },
+              {
+                "type": "course",
+                "code": "VIS 127D"
+              },
+              {
+                "type": "course",
+                "code": "VIS 127E"
+              },
+              {
+                "type": "course",
+                "code": "VIS 127G"
+              },
+              {
+                "type": "course",
+                "code": "VIS 127N"
+              },
+              {
+                "type": "course",
+                "code": "VIS 129E"
+              },
+              {
+                "type": "any",
+                "subject": "CHIN",
+                "level": "upper"
+              },
+              {
+                "type": "text",
+                "text": "Upper-division Chinese language acquisition courses (no more than six). Courses not listed that are related to Chinese studies may be counted by petition; courses with variable content count only when content relates primarily to China (e.g. MUS 111: \"Topic must be music of China or Taiwan\")."
+              }
+            ],
+            "label": "Twelve upper-division four-unit courses in Chinese studies topics",
+            "notes": "Twelve courses in all; the three Chinese history courses below count toward the twelve, so nine more are needed here. Courses must be taken from at least three different departments or programs; no more than six may be Chinese language acquisition courses."
+          },
+          {
+            "type": "choose",
+            "count": 3,
+            "items": [
+              {
+                "type": "course",
+                "code": "HIEA 122"
+              },
+              {
+                "type": "course",
+                "code": "HIEA 123"
+              },
+              {
+                "type": "course",
+                "code": "HIEA 124"
+              },
+              {
+                "type": "course",
+                "code": "HIEA 125"
+              },
+              {
+                "type": "course",
+                "code": "HIEA 126"
+              },
+              {
+                "type": "course",
+                "code": "HIEA 129"
+              },
+              {
+                "type": "course",
+                "code": "HIEA 130"
+              },
+              {
+                "type": "course",
+                "code": "HIEA 131"
+              },
+              {
+                "type": "course",
+                "code": "HIEA 132"
+              },
+              {
+                "type": "course",
+                "code": "HIEA 133"
+              },
+              {
+                "type": "course",
+                "code": "HIEA 134"
+              },
+              {
+                "type": "course",
+                "code": "HIEA 137"
+              },
+              {
+                "type": "course",
+                "code": "HIEA 138"
+              },
+              {
+                "type": "course",
+                "code": "HIEA 140"
+              },
+              {
+                "type": "course",
+                "code": "HIEA 155"
+              },
+              {
+                "type": "course",
+                "code": "HIEA 164"
+              },
+              {
+                "type": "course",
+                "code": "HIEA 166"
+              },
+              {
+                "type": "course",
+                "code": "HIEA 168"
+              },
+              {
+                "type": "course",
+                "code": "HIEA 171"
+              }
+            ],
+            "label": "Upper-division Chinese history",
+            "notes": "\"Three of the twelve courses must be upper-division Chinese history.\" (counted within the twelve)"
+          }
+        ]
+      }
+    }
+  ]
+}

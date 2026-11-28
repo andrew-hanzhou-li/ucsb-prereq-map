@@ -1,0 +1,232 @@
+{
+  "name": "Structural Engineering - BS - Civil Structures",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Structural Engineering",
+  "major_code": "SE-BS-004",
+  "source": "https://catalog.ucsd.edu/curric/SE-ug.html",
+  "narrative": [
+    "\"The BS programs require a minimum of 145 units, plus college general-education requirements in humanities and social sciences.\"",
+    "\"To graduate, students must maintain an overall GPA of at least 2.0, and the department requires at least a C- grade in each course required for the major. All courses required for the major must be taken for a letter grade. This includes all lower-division math and science courses as well as the technical electives (TE).\"",
+    "Screened major: overall UC San Diego GPA of 2.0 or above and C- or above in all screening courses (first-years: MATH 20A-B-C-D, MATH 18, PHYS 2A, SE 101A; transfers: MATH 20A-B-C-D, MATH 18, PHYS 2A-B-C, SE 101A).",
+    "\"SE 1, SE 3, and SE 9 must be taken by all students majoring in structural engineering. Transfer students who have successfully petitioned to use a course equivalent to SE 101A prior to entering UC San Diego may take an additional technical elective in place of SE 1.\"",
+    "\"A course cannot be taken both as part of a focus sequence and as a TE.\"",
+    "Course requirements are given in the department's curriculum table; GE slots in the table are college requirements and are omitted."
+  ],
+  "sections": [
+    {
+      "name": "Lower-division requirements",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "MATH 20A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 20B"
+              },
+              {
+                "type": "course",
+                "code": "MATH 20C"
+              },
+              {
+                "type": "course",
+                "code": "MATH 20D"
+              },
+              {
+                "type": "course",
+                "code": "MATH 20E"
+              },
+              {
+                "type": "course",
+                "code": "MATH 18"
+              }
+            ],
+            "label": "Mathematics"
+          },
+          {
+            "type": "course",
+            "code": "CHEM 6A"
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "PHYS 2A"
+              },
+              {
+                "type": "course",
+                "code": "PHYS 2B"
+              },
+              {
+                "type": "course",
+                "code": "PHYS 2BL"
+              },
+              {
+                "type": "course",
+                "code": "PHYS 2C"
+              },
+              {
+                "type": "course",
+                "code": "PHYS 2CL"
+              }
+            ],
+            "label": "Physics"
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "SE 1"
+              },
+              {
+                "type": "course",
+                "code": "SE 3"
+              },
+              {
+                "type": "course",
+                "code": "SE 9"
+              }
+            ],
+            "label": "Structural engineering"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Upper-division core",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "course",
+            "code": "SE 101A"
+          },
+          {
+            "type": "course",
+            "code": "SE 101B"
+          },
+          {
+            "type": "course",
+            "code": "SE 101C"
+          },
+          {
+            "type": "course",
+            "code": "SE 102"
+          },
+          {
+            "type": "course",
+            "code": "SE 105"
+          },
+          {
+            "type": "course",
+            "code": "SE 110A"
+          },
+          {
+            "type": "course",
+            "code": "SE 110B"
+          },
+          {
+            "type": "course",
+            "code": "SE 115"
+          },
+          {
+            "type": "course",
+            "code": "SE 125"
+          },
+          {
+            "type": "course",
+            "code": "SE 130A"
+          },
+          {
+            "type": "course",
+            "code": "SE 130B"
+          },
+          {
+            "type": "course",
+            "code": "SE 131A"
+          },
+          {
+            "type": "course",
+            "code": "SE 131B"
+          }
+        ],
+        "label": "Structural engineering core"
+      }
+    },
+    {
+      "name": "Focus sequence",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "course",
+            "code": "SE 103"
+          },
+          {
+            "type": "course",
+            "code": "SE 150A"
+          },
+          {
+            "type": "course",
+            "code": "SE 151A"
+          },
+          {
+            "type": "course",
+            "code": "SE 181"
+          }
+        ],
+        "label": "Civil Structures Focus Sequence"
+      }
+    },
+    {
+      "name": "Capstone",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "course",
+            "code": "SE 140A"
+          },
+          {
+            "type": "course",
+            "code": "SE 140B"
+          }
+        ],
+        "label": "Civil Structures/Geotechnical Capstone"
+      }
+    },
+    {
+      "name": "Technical electives",
+      "requirement": {
+        "type": "choose",
+        "count": 3,
+        "items": [
+          {
+            "type": "any",
+            "subject": "SE",
+            "level": "upper",
+            "except": [
+              "SE 195",
+              "SE 197",
+              "SE 198"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "Technical elective (TE) course must be an upper-division or graduate course in the engineering sciences, natural sciences, or mathematics, selected with prior approval of the department to meet ABET standards. Other engineering courses having technical depth equivalent to the level of upper-division SE courses will also be considered via petition process. Please see the preapproved technical elective list on the structural engineering website. SE 199 can be used as a technical elective only under restrictive conditions."
+          }
+        ],
+        "label": "Technical Electives (three courses)",
+        "notes": "\"Courses such as SE 195, SE 197, and SE 198 are not allowed as technical electives\"; a course cannot be taken both as part of a focus sequence and as a TE"
+      }
+    }
+  ]
+}

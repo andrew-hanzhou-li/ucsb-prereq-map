@@ -1,0 +1,296 @@
+{
+ "id": "UCSD-MAJOR-dance-ba",
+ "name": "Dance - BA",
+ "kind": "major",
+ "type": "Bachelor's Degree",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsd.edu/curric/THEA-ug.html",
+ "sections": [
+  {
+   "name": "Lower-Division Requirements",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "TDTR 10",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "TDHD 20",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "TDGE 40",
+        "status": "active"
+       }
+      ],
+      "count": 2,
+      "label": "Studies (two courses)",
+      "notes": "Two of the three listed"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "TDPR 6",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "TDDM 1",
+        "status": "active"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "TDMV 1",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "TDMV 2",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "TDMV 3",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "TDMV 11",
+          "status": "active"
+         }
+        ],
+        "count": 1,
+        "label": "One from the following"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "TDMV 38",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "TDMV 43",
+          "status": "active"
+         }
+        ],
+        "count": 1,
+        "label": "One from the following"
+       }
+      ],
+      "label": "Practice (four courses)"
+     }
+    ],
+    "label": "Six Lower-Division Courses"
+   }
+  },
+  {
+   "name": "Upper-Division Requirements",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "TDTR 115",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "TDTR 120",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "TDTR 104",
+          "status": "active"
+         }
+        ],
+        "count": 1,
+        "label": "Somatic Research (One of the three listed)"
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "TDHD 175",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "TDHD 176",
+          "status": "active"
+         }
+        ],
+        "label": "Theorizing Dance (Both of the two listed)"
+       }
+      ],
+      "label": "Studies (three courses)"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "TDPF 160",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "TDPF 161",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "TDPF 163",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "TDPF 164",
+          "status": "inactive"
+         }
+        ],
+        "count": 1,
+        "label": "One from the following"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "TDDM 100",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "TDDM 101",
+          "status": "active"
+         }
+        ],
+        "count": 1,
+        "label": "One from the following"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "TDMV 110",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "TDMV 111",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "TDMV 112",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "TDMV 120",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "TDMV 122",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "TDMV 123",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "TDMV 130",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "TDMV 133",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "TDMV 140",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "TDMV 141",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "TDMV 142",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "TDMV 144",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "TDMV 146",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "TDMV 148",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "TDMV 149",
+          "status": "active"
+         }
+        ],
+        "count": 7,
+        "label": "Seven from the following",
+        "notes": "each course can be taken no more than twice to count toward the major"
+       }
+      ],
+      "label": "Practice (nine courses)"
+     }
+    ],
+    "label": "Twelve Upper-Division Courses"
+   }
+  }
+ ],
+ "narrative": [
+  "Fifty percent of all course work required for the theatre or dance major (including both upper- and lower-division courses) must be taken at UC San Diego, regardless of approved transfer work and petitions.",
+  "Theatre practicum (TDPR) classes completed elsewhere do not satisfy the theatre and dance department’s requirements unless they have been formally petitioned and approved. Only one practicum class from another institution may be petitioned.",
+  "All courses required for the major or minor must be taken for a letter grade and for a minimum of four units. A theatre and dance department course for which a student earns a grade lower than C– will not satisfy any of the department’s graduation requirements.",
+  "Courses taken outside the Department of Theatre and Dance will not satisfy core or elective major requirements.",
+  "All lower-division courses should be satisfied before starting upper-division course work in the respective areas.",
+  "The major requirements are those published in the catalog in effect for the first quarter that a first-year student or transfer student attends UC San Diego."
+ ]
+}

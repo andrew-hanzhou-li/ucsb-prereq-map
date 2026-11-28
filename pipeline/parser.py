@@ -46,6 +46,7 @@ in it becomes a condition of kind "other" (keeping its original words), and
 leftover words next to a course are returned in the `unparsed` list.
 """
 
+import copy
 import re
 
 from notation import to_notation
@@ -122,9 +123,11 @@ def all_courses(node):
     return found
 
 
-def set_grade(node, grade):
+def set_grade(node, grade, codes=None):
+    """Give courses a minimum grade (all of them, or only `codes`), unless
+    they already have one."""
     for course in all_courses(node):
-        if course["min_grade"] is None:
+        if course["min_grade"] is None and (codes is None or course["code"] in codes):
             course["min_grade"] = grade
 
 
@@ -240,7 +243,7 @@ class Protector:
         return re.sub(pattern, swap, text, flags=flags)
 
 
-def build_subject_pattern(subject_codes):
+def build_subject_pattern(subject_codes, subject_names):
     """One regular expression that finds a department (code or name) followed by a number.
 
     Official codes must match exactly (uppercase); names ignore case. All are
@@ -250,14 +253,14 @@ def build_subject_pattern(subject_codes):
     choices = []
     for code in subject_codes:
         choices.append((code, re.escape(code)))
-    for name in SUBJECT_NAMES:
+    for name in subject_names:
         choices.append((name, "(?i:" + re.escape(name) + ")"))
     choices.sort(key=lambda pair: len(pair[0]), reverse=True)
     alternatives = "|".join(pattern for _, pattern in choices)
     return re.compile(r"(?<![A-Za-z])(" + alternatives + r")\s*(?=(?:W\s?)?\d)")
 
 
-def protect(text, subject_pattern, protector):
+def protect(text, subject_pattern, protector, subject_names, extra_rules=()):
     """Pass 1: clean the text and swap fragile phrases for placeholders."""
     text = text.replace("�", " ").replace("–", "-").replace("—", "-")
     text = text.replace("&", " and ")
@@ -269,7 +272,7 @@ def protect(text, subject_pattern, protector):
     # Department names -> codes ("Mathematics 3A" -> "MATH 3A")
     def to_code(match):
         written = match.group(1)
-        for name, code in SUBJECT_NAMES.items():
+        for name, code in subject_names.items():
             if name.lower() == written.lower():
                 return code + " "
         return written + " "
@@ -278,6 +281,10 @@ def protect(text, subject_pattern, protector):
     text = re.sub(r"\bOR\b", "or", text)
     text = re.sub(r"\bAND\b", "and", text)
 
+    # A campus's own phrasings (kind, pattern), tried before the shared rules.
+    for kind, rule in extra_rules:
+        text = protector.replace(rule, text, lambda m, kind=kind: {
+            "marker": "condition", "kind": kind, "text": m.group(0)})
     for rule in EXAM_RULES:
         text = protector.replace(rule, text, lambda m: {"marker": "condition", "kind": "exam",
                                                         "text": m.group(0)})
@@ -310,9 +317,18 @@ PLACEHOLDER = re.compile(r"§[a-z]+§")
 
 
 class Parser:
-    def __init__(self, subject_codes):
+    def __init__(self, subject_codes, subject_names=None, extra_rules=(), brackets=False):
+        """subject_codes: the campus's official codes. subject_names: other
+        ways its catalog writes them ({"Mathematics": "MATH"}); UCSB's by
+        default. extra_rules: the campus's own condition phrasings, as
+        (kind, pattern) pairs like CONDITION_RULES. brackets: read
+        "(A or B) and C" with the brackets grouping (UCSD writes them;
+        UCSB's tested readings were made without it)."""
         self.subject_codes = set(subject_codes)
-        self.subject_pattern = build_subject_pattern(subject_codes)
+        self.brackets = brackets
+        self.extra_rules = list(extra_rules)
+        self.subject_names = SUBJECT_NAMES if subject_names is None else subject_names
+        self.subject_pattern = build_subject_pattern(subject_codes, self.subject_names)
         codes = sorted(subject_codes, key=len, reverse=True)
         subjects = "|".join(re.escape(code) for code in codes)
         # A course reference: optional subject, optional W, a number with an
@@ -341,7 +357,7 @@ class Parser:
         if re.fullmatch(r"(?i)\s*(none|n/a|no prerequisites?)\.?\s*", cleaned) or not cleaned:
             return {"requires": None, "unparsed": [], "ambiguous": False}
 
-        protected = protect(cleaned, self.subject_pattern, self.protector)
+        protected = protect(cleaned, self.subject_pattern, self.protector, self.subject_names, self.extra_rules)
 
         # "ECE or CMPSC 181" -> "ECE 181 or CMPSC 181"
         protected = self.shared_number.sub(r"\1 \4 \2 \3 \4", protected)
@@ -353,6 +369,8 @@ class Parser:
                 return " or " + match.group(1) + " "
             return " " + match.group(1) + " "
         protected = re.sub(r"\(\s*(§[a-z]+§)\s*\)", exam_in_parens, protected)
+        if self.brackets:
+            protected = self.group_brackets(protected)
 
         sentences = re.split(r"\.\s+(?=[A-Z§(])|\.\s*$", protected)
 
@@ -499,7 +517,7 @@ class Parser:
             without = PLACEHOLDER.sub("", segment[1]).strip()
             tokens = PLACEHOLDER.findall(segment[1])
             infos = [self.protector.lookup(t) for t in tokens]
-            if not without and infos and all(i["marker"] != "condition" for i in infos):
+            if not without and infos and all(i["marker"] not in ("condition", "group") for i in infos):
                 for info in infos:
                     if info["marker"] == "grade" and info["each"]:
                         each_grade = info["grade"]
@@ -580,10 +598,34 @@ class Parser:
           - plain grade in an earlier segment    -> this segment only
           - concurrency                          -> this segment only
         """
+        # Two or more plain grades in one piece ("A with a grade of C- and B
+        # with a grade of D"): each covers the courses written before it,
+        # back to the previous grade.
+        grade_targets = []
+        plain_grades = [m for m in PLACEHOLDER.finditer(text)
+                        if self.protector.lookup(m.group())["marker"] == "grade"
+                        and not self.protector.lookup(m.group())["each"]]
+        if len(plain_grades) >= 2:
+            # A trial parse of each stretch, to see which courses it names.
+            # parse_words remembers the last subject and collects leftover
+            # words; put both back, so the real parse below starts clean.
+            saved = (getattr(self, "last_subject", None), list(self.unparsed), self.ambiguous)
+            start = 0
+            for match in plain_grades:
+                before = PLACEHOLDER.sub(" ", text[start:match.start()])
+                codes = {c["code"] for c in all_courses(self.parse_words(before))}
+                grade_targets.append((self.protector.lookup(match.group()), codes))
+                start = match.end()
+            self.last_subject, self.unparsed, self.ambiguous = saved
+            # A grade written before its course ("C or better in A and a B-
+            # in B") has no course before it: keep the old rule for this piece.
+            if any(not codes for _, codes in grade_targets):
+                grade_targets = []
+
         markers = []
         for token in PLACEHOLDER.findall(text):
             info = self.protector.lookup(token)
-            if info["marker"] != "condition":
+            if info["marker"] not in ("condition", "group"):
                 markers.append(info)
                 text = text.replace(token, " ", 1)
         text = re.sub(r"\s+", " ", text).strip()
@@ -591,9 +633,13 @@ class Parser:
         node = self.parse_words(text)
 
         each_grade = None
+        for info, codes in grade_targets:
+            set_grade(node, info["grade"], codes)
         for info in markers:
             if info["marker"] == "grade" and info["each"]:
                 each_grade = info["grade"]
+            elif info["marker"] == "grade" and grade_targets:
+                continue                            # placed above, course by course
             elif info["marker"] == "grade" and is_last:
                 clause_markers.append(info)
             else:
@@ -667,6 +713,12 @@ class Parser:
             info = self.protector.lookup(token)
             if info["marker"] == "condition":
                 leaves.append(make_condition(info["kind"], info["text"]))
+            elif info["marker"] == "group" and info["node"] is not None:
+                leaves.append(copy.deepcopy(info["node"]))
+                # "(PHYS 2A or 2AR) ... or 4A": what follows takes the group's subject.
+                inside = all_courses(info["node"])
+                if inside:
+                    self.last_subject = subject_of(inside[-1]["code"])
 
         bare = PLACEHOLDER.sub(" ", text)
         found_course = False
@@ -743,6 +795,33 @@ class Parser:
             else:                                 # "113A-B": just the letter
                 courses.append(make_course(prefix + digits + part))
         return courses
+
+    def group_brackets(self, text):
+        """Read each innermost "( ... and/or ... )" first and put it back as
+        one placeholder ("group"), so "((A or B) and C) or D" keeps its
+        grouping. Brackets holding a sentence or clause break (". ", ";")
+        are left alone."""
+        inner = re.compile(r"\(([^()]*?\s(?:and|or)\s[^()]*?)\)")
+        start = 0
+        while True:
+            match = inner.search(text, start)
+            if not match:
+                return text
+            # A grade or "concurrent" inside needs the clause rules (parse_segment),
+            # and a clause break means it isn't a simple group: leave those as they are.
+            markers = [self.protector.lookup(t)["marker"] for t in PLACEHOLDER.findall(match.group(1))]
+            if re.search(r"[;]|\.\s", match.group(1)) or any(m not in ("condition", "group") for m in markers):
+                start = match.end()
+                continue
+            # A bare number inside ("CHEM 7L and (40A or 41A)") takes the
+            # subject written last before the bracket.
+            before = [m.group("subject") for m in self.course_pattern.finditer(PLACEHOLDER.sub(" ", text[:match.start()]))
+                      if m.group("subject")]
+            self.last_subject = before[-1] if before else None
+            node = self.parse_words(match.group(1).strip(" ,"))
+            self.last_subject = None            # the main reading starts fresh
+            token = self.protector.placeholder({"marker": "group", "node": node, "text": match.group(1)})
+            text = text[:match.start()] + token + text[match.end():]
 
     def restore(self, text):
         """Put the original words back in place of placeholders, for display."""

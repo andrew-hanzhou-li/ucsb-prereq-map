@@ -1,0 +1,360 @@
+{
+  "name": "Environmental Systems - BS - Ecology, Behavior, and Evolution",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Environmental Systems Program",
+  "source": "https://catalog.ucsd.edu/curric/ESYS.html",
+  "narrative": [
+    "A grade point average of 2.0 or higher in the upper-division major program is required for graduation.",
+    "Students must receive a grade of C– or better in any course to be counted toward fulfillment of the major requirements. In exceptional cases, students with a grade point average in the major of 2.5 or greater may petition to have one grade of D accepted.",
+    "All courses (lower and upper division) required for the major must be taken for a letter grade.",
+    "It is suggested that the integrating sequence ESYS 101, 102, and 103 should be completed by sophomore year, if possible.",
+    "Other courses may be substituted by petition."
+  ],
+  "sections": [
+    {
+      "name": "Lower-Division Requirements",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "course",
+            "code": "BILD 1"
+          },
+          {
+            "type": "course",
+            "code": "BILD 3"
+          },
+          {
+            "type": "course",
+            "code": "CHEM 6A"
+          },
+          {
+            "type": "course",
+            "code": "CHEM 6B"
+          },
+          {
+            "type": "course",
+            "code": "CHEM 6C"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "PHYS 1A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 1AL"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 1B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 1BL"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 1C"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 1CL"
+                  }
+                ]
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "PHYS 2A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 2B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 2C"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 10A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 10B"
+                  }
+                ]
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 20A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 20B"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "MATH 11"
+          },
+          {
+            "type": "course",
+            "code": "ECON 1"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Upper-Division Core Requirements",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "course",
+            "code": "ESYS 101"
+          },
+          {
+            "type": "course",
+            "code": "ESYS 102"
+          },
+          {
+            "type": "course",
+            "code": "ESYS 103"
+          },
+          {
+            "type": "course",
+            "code": "ECON 131"
+          },
+          {
+            "type": "course",
+            "code": "POLI 160AA"
+          },
+          {
+            "type": "course",
+            "code": "BICD 100"
+          },
+          {
+            "type": "all",
+            "label": "Senior Internship Project and Seminar",
+            "items": [
+              {
+                "type": "course",
+                "code": "ESYS 187A"
+              },
+              {
+                "type": "course",
+                "code": "ESYS 187B"
+              },
+              {
+                "type": "course",
+                "code": "ESYS 187C"
+              }
+            ],
+            "notes": "three-quarter sequence"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Upper-Division Electives",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "BIEB 121"
+              },
+              {
+                "type": "course",
+                "code": "BIEB 123"
+              },
+              {
+                "type": "course",
+                "code": "BIEB 131"
+              },
+              {
+                "type": "course",
+                "code": "BIEB 135"
+              },
+              {
+                "type": "course",
+                "code": "SIO 147"
+              },
+              {
+                "type": "course",
+                "code": "SIO 183"
+              },
+              {
+                "type": "course",
+                "code": "SIO 184"
+              },
+              {
+                "type": "course",
+                "code": "SIO 188"
+              }
+            ],
+            "label": "Laboratory course",
+            "notes": "At least one of the five courses must be a laboratory course (courses marked 'lab course' or titled 'Lab'/'Laboratory' in the list)."
+          },
+          {
+            "type": "choose",
+            "count": 4,
+            "items": [
+              {
+                "type": "course",
+                "code": "BIEB 102"
+              },
+              {
+                "type": "course",
+                "code": "BIEB 121"
+              },
+              {
+                "type": "course",
+                "code": "BIEB 123"
+              },
+              {
+                "type": "course",
+                "code": "BIEB 126"
+              },
+              {
+                "type": "course",
+                "code": "BIEB 128"
+              },
+              {
+                "type": "course",
+                "code": "BIEB 130"
+              },
+              {
+                "type": "course",
+                "code": "BIEB 131"
+              },
+              {
+                "type": "course",
+                "code": "BIEB 135"
+              },
+              {
+                "type": "course",
+                "code": "BIEB 140"
+              },
+              {
+                "type": "course",
+                "code": "BIEB 150"
+              },
+              {
+                "type": "course",
+                "code": "BIEB 152"
+              },
+              {
+                "type": "course",
+                "code": "BIEB 166"
+              },
+              {
+                "type": "course",
+                "code": "BIEB 174"
+              },
+              {
+                "type": "course",
+                "code": "BIEB 176"
+              },
+              {
+                "type": "course",
+                "code": "ENVR 120"
+              },
+              {
+                "type": "course",
+                "code": "SIO 101"
+              },
+              {
+                "type": "course",
+                "code": "SIO 125"
+              },
+              {
+                "type": "course",
+                "code": "SIO 128"
+              },
+              {
+                "type": "course",
+                "code": "SIO 132"
+              },
+              {
+                "type": "course",
+                "code": "SIO 133"
+              },
+              {
+                "type": "course",
+                "code": "SIO 134"
+              },
+              {
+                "type": "course",
+                "code": "SIO 138"
+              },
+              {
+                "type": "course",
+                "code": "SIO 143"
+              },
+              {
+                "type": "course",
+                "code": "SIO 147"
+              },
+              {
+                "type": "course",
+                "code": "SIO 183"
+              },
+              {
+                "type": "course",
+                "code": "SIO 184"
+              },
+              {
+                "type": "course",
+                "code": "SIO 187"
+              },
+              {
+                "type": "course",
+                "code": "SIO 188"
+              },
+              {
+                "type": "course",
+                "code": "SIO 189"
+              }
+            ],
+            "notes": "The remaining four of the five; laboratory courses count here too."
+          }
+        ],
+        "label": "Students select five courses from the list below",
+        "notes": "Students may also use the quarter-long UC-Natural Reserve System California Ecology and Conservation course to satisfy up to three upper-division electives in the major, one of which could count as an upper-division lab course."
+      }
+    }
+  ]
+}

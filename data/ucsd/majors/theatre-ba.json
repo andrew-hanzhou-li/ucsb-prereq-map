@@ -1,0 +1,228 @@
+{
+  "name": "Theatre - BA",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Theatre and Dance",
+  "source": "https://catalog.ucsd.edu/curric/THEA-ug.html",
+  "narrative": [
+    "Fifty percent of all course work required for the theatre or dance major (including both upper- and lower-division courses) must be taken at UC San Diego, regardless of approved transfer work and petitions.",
+    "Theatre practicum (TDPR) classes completed elsewhere do not satisfy the theatre and dance department’s requirements unless they have been formally petitioned and approved. Only one practicum class from another institution may be petitioned.",
+    "All courses required for the major or minor must be taken for a letter grade and for a minimum of four units. A theatre and dance department course for which a student earns a grade lower than C– will not satisfy any of the department’s graduation requirements.",
+    "Courses taken outside the Department of Theatre and Dance will not satisfy core or elective major requirements.",
+    "Four units of Instructional Assistance (TDGE 195, P/NP credit) may be used as an upper-division elective for the theatre major, double major, or minor.",
+    "All lower-division courses should be satisfied before starting upper-division course work in the respective areas.",
+    "The major requirements are those published in the catalog in effect for the first quarter that a first-year student or transfer student attends UC San Diego."
+  ],
+  "sections": [
+    {
+      "name": "Lower-Division Requirements",
+      "requirement": {
+        "type": "all",
+        "label": "Ten Lower-Division Courses",
+        "items": [
+          {
+            "type": "choose",
+            "count": 2,
+            "label": "Two courses selected from",
+            "notes": "You may take any of the above options twice, or take two options once each to fulfill this requirement.",
+            "items": [
+              {
+                "type": "course",
+                "code": "TDPR 6"
+              },
+              {
+                "type": "course",
+                "code": "TDPR 102"
+              },
+              {
+                "type": "course",
+                "code": "TDPR 104"
+              }
+            ]
+          },
+          {
+            "type": "all",
+            "label": "Each of the following",
+            "items": [
+              {
+                "type": "course",
+                "code": "TDHT 10"
+              },
+              {
+                "type": "course",
+                "code": "TDHT 21"
+              },
+              {
+                "type": "course",
+                "code": "TDHT 22"
+              },
+              {
+                "type": "course",
+                "code": "TDHT 23"
+              },
+              {
+                "type": "course",
+                "code": "TDGE 1"
+              }
+            ]
+          },
+          {
+            "type": "all",
+            "label": "Each of the area threshold classes",
+            "notes": "The threshold classes listed above must be completed before taking upper-division courses in their respective areas.",
+            "items": [
+              {
+                "type": "course",
+                "code": "TDAC 1"
+              },
+              {
+                "type": "course",
+                "code": "TDDE 1"
+              },
+              {
+                "type": "course",
+                "code": "TDPW 1"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Upper-Division Requirements",
+      "requirement": {
+        "type": "all",
+        "label": "Twelve Upper-Division Courses",
+        "items": [
+          {
+            "type": "choose",
+            "count": 1,
+            "label": "One upper-division four-unit acting course",
+            "items": [
+              {
+                "type": "any",
+                "subject": "TDAC",
+                "level": "upper"
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "label": "One upper-division four-unit design course",
+            "items": [
+              {
+                "type": "any",
+                "subject": "TDDE",
+                "level": "upper"
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "label": "One upper-division four-unit directing course",
+            "items": [
+              {
+                "type": "course",
+                "code": "TDDR 108"
+              },
+              {
+                "type": "course",
+                "code": "TDDR 111"
+              },
+              {
+                "type": "course",
+                "code": "TDDR 190"
+              },
+              {
+                "type": "course",
+                "code": "TDHT 115"
+              },
+              {
+                "type": "text",
+                "text": "Another upper-division four-unit directing course"
+              }
+            ],
+            "notes": "The catalog asks for \"one upper-division four-unit directing course\" without listing them; these are the directing courses in the 2026-27 course list (TDDR 101 and 102 are stage management)."
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "label": "One upper-division four-unit playwriting course",
+            "items": [
+              {
+                "type": "any",
+                "subject": "TDPW",
+                "level": "upper"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "One upper-division four-unit stage management course"
+          },
+          {
+            "type": "choose",
+            "count": 3,
+            "label": "Three upper-division four-unit theatre history courses",
+            "items": [
+              {
+                "type": "any",
+                "subject": "TDHT",
+                "level": "upper"
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 4,
+            "label": "Four upper-division four-unit theatre electives",
+            "notes": "TDGE 197 and 199 may not be used as upper-division electives by theatre majors unless approved by petition. Four units of Instructional Assistance (TDGE 195, P/NP credit) may be used as an upper-division elective for the theatre major, double major, or minor.",
+            "items": [
+              {
+                "type": "any",
+                "subject": "TDAC",
+                "level": "upper"
+              },
+              {
+                "type": "any",
+                "subject": "TDDE",
+                "level": "upper"
+              },
+              {
+                "type": "any",
+                "subject": "TDDR",
+                "level": "upper"
+              },
+              {
+                "type": "any",
+                "subject": "TDGE",
+                "level": "upper",
+                "except": [
+                  "TDGE 197",
+                  "TDGE 199"
+                ]
+              },
+              {
+                "type": "any",
+                "subject": "TDHT",
+                "level": "upper"
+              },
+              {
+                "type": "any",
+                "subject": "TDPR",
+                "level": "upper"
+              },
+              {
+                "type": "any",
+                "subject": "TDPW",
+                "level": "upper"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

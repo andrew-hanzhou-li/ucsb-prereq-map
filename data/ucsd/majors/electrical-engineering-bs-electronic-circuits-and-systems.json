@@ -1,0 +1,334 @@
+{
+  "name": "Electrical Engineering - BS - Electronic Circuits and Systems",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Electrical and Computer Engineering",
+  "source": "https://catalog.ucsd.edu/curric/ECE-ug.html",
+  "narrative": [
+    "Students must complete 180 units for graduation, including the general-education requirements (GER). Note that 136 units (excluding GER) are required for the major.",
+    "Lower-division requirements: total of sixty-eight units; upper-division depth: sixty-eight units.",
+    "Students must select an engineering depth to provide a focus for their studies. Students may choose one of the approved depth sequences listed below or propose another with the approval of the department.",
+    "Only the Electrical Engineering (BS) program is accredited by the Engineering Accreditation Commission of ABET.",
+    "Courses required for the major must be taken for a letter grade. All major courses must be completed with a grade of C– or better.",
+    "A GPA of 2.0 is required in all upper-division courses in the major, including technical electives. The grade of D will not be considered an adequate prerequisite for any ECE course and will not be allowed for graduation. The engineering design requirement must be completed with a grade of C– or better.",
+    "Effective fall 2015, admission to all four majors in the Department of Electrical and Computer Engineering is currently restricted as described in the section “Acceptance to Departmental Majors in the Jacobs School of Engineering.”",
+    "Screening courses for continuing students applying to the major: MATH 20A, 20B, 20C; PHYS 2A-B; ECE 35, 45.",
+    "Recommended: Students with AP Math credit are strongly advised to take MATH 20B in the fall quarter, leaving room for a GER in the winter quarter."
+  ],
+  "sections": [
+    {
+      "name": "Lower-Division Requirements",
+      "requirement": {
+        "type": "all",
+        "label": "Lower-Division Requirements (total of sixty-eight units)",
+        "items": [
+          {
+            "type": "all",
+            "label": "Electrical Engineering (twenty-four units)",
+            "items": [
+              {
+                "type": "course",
+                "code": "ECE 5"
+              },
+              {
+                "type": "course",
+                "code": "ECE 25"
+              },
+              {
+                "type": "course",
+                "code": "ECE 30"
+              },
+              {
+                "type": "course",
+                "code": "ECE 35"
+              },
+              {
+                "type": "course",
+                "code": "ECE 45"
+              },
+              {
+                "type": "course",
+                "code": "ECE 65"
+              }
+            ]
+          },
+          {
+            "type": "all",
+            "label": "Programming course (four units for electronic circuits and systems, electronic devices and materials, photonics, and power engineering depths)",
+            "items": [
+              {
+                "type": "course",
+                "code": "ECE 15"
+              }
+            ]
+          },
+          {
+            "type": "all",
+            "label": "Mathematics (twenty-four units)",
+            "items": [
+              {
+                "type": "course",
+                "code": "MATH 18"
+              },
+              {
+                "type": "course",
+                "code": "MATH 20A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 20B"
+              },
+              {
+                "type": "course",
+                "code": "MATH 20C"
+              },
+              {
+                "type": "course",
+                "code": "MATH 20D"
+              },
+              {
+                "type": "course",
+                "code": "MATH 20E"
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "label": "Physics (sixteen units for electronic circuits and systems, electronic devices and materials, photonics, and power engineering depths)",
+            "notes": "PHYS 2A-B-C-D or PHYS 4A-B-C-D-E",
+            "items": [
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "PHYS 2A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 2B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 2C"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 2D"
+                  }
+                ]
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "PHYS 4A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 4B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 4C"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 4D"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 4E"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Upper-Division Requirements",
+      "requirement": {
+        "type": "all",
+        "label": "Electronic Circuits and Systems (sixty-eight units)",
+        "notes": "In order to fulfill the design requirement, students must complete ECE 111, 115, 140B, 190, or 191 with a grade of C– or better. Graduation will not be approved until a written copy of the design project is submitted to the ECE undergraduate office.",
+        "items": [
+          {
+            "type": "all",
+            "label": "Breadth Courses",
+            "items": [
+              {
+                "type": "course",
+                "code": "ECE 100"
+              },
+              {
+                "type": "course",
+                "code": "ECE 101"
+              },
+              {
+                "type": "course",
+                "code": "ECE 102"
+              },
+              {
+                "type": "course",
+                "code": "ECE 103"
+              },
+              {
+                "type": "course",
+                "code": "ECE 107"
+              },
+              {
+                "type": "course",
+                "code": "ECE 109"
+              }
+            ]
+          },
+          {
+            "type": "all",
+            "label": "Depth Courses",
+            "items": [
+              {
+                "type": "course",
+                "code": "ECE 164"
+              },
+              {
+                "type": "course",
+                "code": "ECE 165"
+              },
+              {
+                "type": "course",
+                "code": "ECE 166"
+              }
+            ]
+          },
+          {
+            "type": "all",
+            "label": "Technical Electives",
+            "notes": "Three upper-division engineering, math, or physics courses AND two upper-division or lower-division engineering, math, physics, chemistry, and biology courses. A list of approved technical electives can be found in the ECE undergraduate office.",
+            "items": [
+              {
+                "type": "choose",
+                "count": 3,
+                "items": [
+                  {
+                    "type": "any",
+                    "subject": "ECE",
+                    "level": "upper"
+                  },
+                  {
+                    "type": "any",
+                    "subject": "MATH",
+                    "level": "upper"
+                  },
+                  {
+                    "type": "any",
+                    "subject": "PHYS",
+                    "level": "upper"
+                  },
+                  {
+                    "type": "text",
+                    "text": "or another upper-division engineering course (a list of approved technical electives can be found in the ECE undergraduate office)"
+                  }
+                ],
+                "label": "Technical electives: upper-division engineering, math, or physics"
+              },
+              {
+                "type": "choose",
+                "count": 2,
+                "items": [
+                  {
+                    "type": "any",
+                    "subject": "ECE",
+                    "level": "upper"
+                  },
+                  {
+                    "type": "any",
+                    "subject": "ECE",
+                    "level": "lower"
+                  },
+                  {
+                    "type": "any",
+                    "subject": "MATH",
+                    "level": "upper"
+                  },
+                  {
+                    "type": "any",
+                    "subject": "MATH",
+                    "level": "lower"
+                  },
+                  {
+                    "type": "any",
+                    "subject": "PHYS",
+                    "level": "upper"
+                  },
+                  {
+                    "type": "any",
+                    "subject": "PHYS",
+                    "level": "lower"
+                  },
+                  {
+                    "type": "any",
+                    "subject": "CHEM",
+                    "level": "upper"
+                  },
+                  {
+                    "type": "any",
+                    "subject": "CHEM",
+                    "level": "lower"
+                  },
+                  {
+                    "type": "text",
+                    "text": "or another upper-division or lower-division engineering or biology course (a list of approved technical electives can be found in the ECE undergraduate office)"
+                  }
+                ],
+                "label": "Technical electives: upper-division or lower-division engineering, math, physics, chemistry, and biology"
+              }
+            ]
+          },
+          {
+            "type": "all",
+            "label": "Professional Electives",
+            "notes": "A list of approved technical electives and professional electives can be found in the ECE undergraduate office.",
+            "items": [
+              {
+                "type": "text",
+                "text": "Professional Electives: two upper-division courses"
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "label": "Design Course",
+            "notes": "In order to fulfill the design requirement, students must complete ECE 111, 115, 140B, 190, or 191 with a grade of C– or better. Graduation will not be approved until a written copy of the design project is submitted to the ECE undergraduate office.",
+            "items": [
+              {
+                "type": "course",
+                "code": "ECE 111"
+              },
+              {
+                "type": "course",
+                "code": "ECE 115"
+              },
+              {
+                "type": "course",
+                "code": "ECE 140B"
+              },
+              {
+                "type": "course",
+                "code": "ECE 190"
+              },
+              {
+                "type": "course",
+                "code": "ECE 191"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,358 @@
+{
+  "name": "Applied Mathematics - BS",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Mathematics",
+  "major_code": "MA27",
+  "source": "https://catalog.ucsd.edu/curric/MATH-ug.html",
+  "narrative": [
+    "All majors must obtain a minimum 2.0 grade point average in the upper-division courses used to satisfy the major requirements. Further, the student must receive a grade of C– or better in any course to be counted toward fulfillment of the major requirements.",
+    "Unless otherwise stated, any mathematics course numbered 100–194 may be used as an upper-division elective. (Note: MATH 195, 196, 197, 198, 199, and 199H cannot be used toward any mathematics major.)",
+    "All courses used to fulfill the major must be taken for a letter grade. No more than three upper-division courses taken externally from UC San Diego can be counted toward any major. Special exceptions may be considered via petition.",
+    "A total of thirteen upper-division courses (totaling fifty-two units) are required, including the required courses.",
+    "MAE 107, ECON 120A-B-C, and MATH 195-199 cannot be counted toward the thirteen required courses.",
+    "Note that MATH 183 is not a prerequisite for MATH 181A; duplication of credit exists between MATH 180A/183 and ECON 120A.",
+    "Recommended: complete through at least MATH 20D and MATH 109 before the end of the sophomore year."
+  ],
+  "sections": [
+    {
+      "name": "Lower Division",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 18"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 20A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 20B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 20C"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 20D"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 20E"
+                  }
+                ],
+                "label": "Linear Algebra and Calculus"
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 31AH"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 31BH"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 31CH"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 20D"
+                  }
+                ],
+                "label": "Honors Calculus"
+              }
+            ],
+            "label": "One of the following sequences"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "CSE 11"
+              },
+              {
+                "type": "course",
+                "code": "ECE 15"
+              },
+              {
+                "type": "course",
+                "code": "DSC 20"
+              }
+            ],
+            "label": "Programming"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Upper Division",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "MATH 109"
+              },
+              {
+                "type": "text",
+                "text": "Students completing MATH 31AH-BH-CH may substitute a four-unit upper-division mathematics elective for MATH 109."
+              }
+            ],
+            "label": "Mathematical Reasoning"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "MATH 102"
+              },
+              {
+                "type": "course",
+                "code": "MATH 170A"
+              }
+            ],
+            "label": "Linear Algebra"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 140A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 140B"
+                  }
+                ]
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 142A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 142B"
+                  }
+                ]
+              }
+            ],
+            "label": "Analysis"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "MATH 180A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 183"
+              }
+            ],
+            "label": "Probability or Statistical Methods"
+          },
+          {
+            "type": "choose",
+            "count": 2,
+            "items": [
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "choose",
+                    "count": 1,
+                    "items": [
+                      {
+                        "type": "course",
+                        "code": "MATH 154"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MATH 158"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "choose",
+                    "count": 1,
+                    "items": [
+                      {
+                        "type": "course",
+                        "code": "MATH 184"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MATH 188"
+                      }
+                    ]
+                  }
+                ],
+                "label": "Combinatorics"
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 110"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 130"
+                  }
+                ],
+                "label": "Differential Equations"
+              },
+              {
+                "type": "choose",
+                "count": 2,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 170B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 170C"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 175"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 179"
+                  }
+                ],
+                "label": "Numerical Methods"
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 171A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 171B"
+                  }
+                ],
+                "label": "Optimization"
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 180B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 180C"
+                  }
+                ],
+                "label": "Probability"
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "all",
+                    "items": [
+                      {
+                        "type": "course",
+                        "code": "MATH 181A"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MATH 181B"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "choose",
+                    "count": 2,
+                    "items": [
+                      {
+                        "type": "course",
+                        "code": "MATH 181D"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MATH 181F"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MATH 185"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MATH 189"
+                      }
+                    ]
+                  }
+                ],
+                "label": "Statistics"
+              }
+            ],
+            "label": "Two of the following sequences"
+          },
+          {
+            "type": "choose",
+            "count": 4,
+            "items": [
+              {
+                "type": "range",
+                "subject": "MATH",
+                "from": 100,
+                "to": 194
+              },
+              {
+                "type": "text",
+                "text": "Up to three upper-division courses (twelve units) may be taken from outside the department in an approved applied mathematical area. A petition specifying the courses to be used must be approved by applied mathematics faculty."
+              }
+            ],
+            "label": "Upper-division electives",
+            "notes": "Catalog: \"Upper-division electives to complete at least thirteen four-unit courses (totaling fifty-two units) ... (including those taken from the requirements listed above).\" 13 = 9 required courses above + 4 electives. MAE 107, ECON 120A-B-C, and MATH 195-199 cannot be counted."
+          }
+        ],
+        "label": "A total of thirteen upper-division courses (totaling fifty-two units)"
+      }
+    }
+  ]
+}

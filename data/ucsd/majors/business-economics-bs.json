@@ -1,0 +1,294 @@
+{
+  "name": "Business Economics - BS",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Economics",
+  "source": "https://catalog.ucsd.edu/curric/ECON-ug.html",
+  "narrative": [
+    "The business economics major is a collaborative, interdisciplinary degree program between the Rady School of Management and the Department of Economics.",
+    "While we require business economics majors to take MATH 10A-B-C, we recommend that business economics students take MATH 20A-B-C.",
+    "To receive a bachelor of science degree in business economics, no more than one upper-division economics course and one upper-division Rady School of Management course may be taken externally from UC San Diego and be counted toward the major.",
+    "To graduate with a major, a minimum GPA of 2.0 is required in upper-division courses used to satisfy major requirements.",
+    "All courses must be taken for a letter grade and passed with a grade of C– (C minus), or better, with the exception of ECON 195P, ECON 198, and ECON 199, for which P/NP grading is mandatory.",
+    "No more than twelve units of ECON 195P, ECON 198, and ECON 199 taken P/NP may be counted toward major requirements. ECON 195P may only be taken twice for credit (eight units).",
+    "Also described on the Rady School of Management page (https://catalog.ucsd.edu/curric/MGT-ug.html, \"The Business Economics Major (BSc)\"), which lists the finance core course as \"MGT 180/180R\" rather than MGT 180 and omits the ECON P/NP exceptions from its grade rules."
+  ],
+  "sections": [
+    {
+      "name": "Lower division (nine classes, thirty-six units)",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 10A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 10B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 10C"
+                  }
+                ]
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 20A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 20B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 20C"
+                  }
+                ]
+              }
+            ],
+            "label": "Lower-division mathematics courses",
+            "notes": "MATH 10A-B-C (required) or MATH 20A-B-C (recommended)."
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "ECON 1"
+              },
+              {
+                "type": "course",
+                "code": "ECON 3"
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "ECON 5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "POLI 5"
+                  }
+                ]
+              }
+            ],
+            "label": "Lower-division economics courses"
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MGT 45"
+                  },
+                  {
+                    "type": "all",
+                    "items": [
+                      {
+                        "type": "choose",
+                        "count": 1,
+                        "items": [
+                          {
+                            "type": "course",
+                            "code": "ECON 4"
+                          },
+                          {
+                            "type": "course",
+                            "code": "MGT 4"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "course",
+                        "code": "MGT 5"
+                      }
+                    ]
+                  }
+                ],
+                "notes": "MGT 45 (principles of accounting or both ECON/MGT 4 and MGT 5)"
+              },
+              {
+                "type": "course",
+                "code": "MGT 16"
+              },
+              {
+                "type": "course",
+                "code": "MGT 71"
+              }
+            ],
+            "label": "Lower-division Rady School of Management courses"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Upper-Division Core (ten classes, forty units)",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "ECON 100A"
+              },
+              {
+                "type": "course",
+                "code": "ECON 100B"
+              },
+              {
+                "type": "course",
+                "code": "ECON 110B"
+              },
+              {
+                "type": "course",
+                "code": "ECON 120A"
+              },
+              {
+                "type": "course",
+                "code": "ECON 120B"
+              }
+            ],
+            "label": "Upper-division economics core courses"
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "MGT 100"
+              },
+              {
+                "type": "course",
+                "code": "MGT 160"
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MGT 162"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MGT 162R"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "MGT 164"
+              },
+              {
+                "type": "course",
+                "code": "MGT 180"
+              }
+            ],
+            "label": "Upper-division Rady School of Management core courses"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Upper-Division Electives (three classes, twelve units)",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "any",
+                "subject": "ECON",
+                "level": "upper",
+                "except": [
+                  "ECON 100A",
+                  "ECON 100B",
+                  "ECON 110B",
+                  "ECON 120A",
+                  "ECON 120B"
+                ]
+              }
+            ],
+            "label": "Economics elective"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "any",
+                "subject": "MGT",
+                "level": "upper",
+                "except": [
+                  "MGT 100",
+                  "MGT 160",
+                  "MGT 162",
+                  "MGT 162R",
+                  "MGT 164",
+                  "MGT 180"
+                ]
+              }
+            ],
+            "label": "Rady School of Management elective"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "any",
+                "subject": "ECON",
+                "level": "upper",
+                "except": [
+                  "ECON 100A",
+                  "ECON 100B",
+                  "ECON 110B",
+                  "ECON 120A",
+                  "ECON 120B"
+                ]
+              },
+              {
+                "type": "any",
+                "subject": "MGT",
+                "level": "upper",
+                "except": [
+                  "MGT 100",
+                  "MGT 160",
+                  "MGT 162",
+                  "MGT 162R",
+                  "MGT 164",
+                  "MGT 180"
+                ]
+              }
+            ],
+            "label": "Economics or Rady School of Management elective"
+          }
+        ],
+        "notes": "three upper-division courses, at least one of which must be from economics and at least one of which must be from the Rady School of Management."
+      }
+    }
+  ]
+}

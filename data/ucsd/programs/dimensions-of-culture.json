@@ -1,0 +1,46 @@
+{
+ "id": "UCSD-DOC",
+ "name": "Dimensions of Culture",
+ "kind": "department",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsd.edu/courses/DOC.html",
+ "sections": [
+  {
+   "name": "Lower division",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "DOC 1",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "DOC 2",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "DOC 3",
+      "status": "active"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Upper division",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "DOC 100D",
+      "status": "active"
+     }
+    ]
+   }
+  }
+ ],
+ "narrative": []
+}

@@ -1,0 +1,459 @@
+{
+  "name": "Public Health - BS - Health Policy and Management Sciences",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Herbert Wertheim School of Public Health and Human Longevity Science",
+  "source": "https://catalog.ucsd.edu/curric/PH-ug.html",
+  "narrative": [
+    "Selective major: only students who have completed the required screening courses and have a minimum 2.0 UC GPA are eligible to apply. Each concentration has specific entry requirements.",
+    "PH 40 must be completed at UC San Diego.",
+    "All lower-division and upper-division major courses must be taken for a letter grade, with the exception of: AIP 197, PH 88, PH 90, PH 95, PH 98, PH 99, PH 195P, PH 198, and PH 199, which may be taken P/NP only.",
+    "A minimum grade of C– is required in any course to be counted toward fulfillment of lower-division and upper-division major requirements.",
+    "No more than eight units of PH 91 may be used to meet lower-division major requirements.",
+    "No more than eight units of PH 191 may be used to meet upper-division major requirements for majors with concentrations. Topics must be different for each class.",
+    "No more than four units of AIP 197 may be used to meet upper-division major requirements. No more than four units of PH 195P may be used to meet upper-division major requirements.",
+    "No more than eight combined total units of PH 198 and PH 199 may be used to meet upper-division major requirements.",
+    "No more than four units of GLBH 111 may be used to meet upper-division major requirements.",
+    "No more than six units of COMM 102C may be used to meet upper-division major requirements.",
+    "Lower-division requirements (thirty-two or thirty-three units); upper-division requirements (forty-eight units).",
+    "Sections follow the catalog subheadings: Public Health Sciences through Public Health Elements are lower-division; Core Disciplines onward are upper-division."
+  ],
+  "sections": [
+    {
+      "name": "Public Health Sciences",
+      "requirement": {
+        "type": "choose",
+        "count": 1,
+        "items": [
+          {
+            "type": "course",
+            "code": "PH 40"
+          },
+          {
+            "type": "course",
+            "code": "PH 40R"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Biology",
+      "requirement": {
+        "type": "choose",
+        "count": 3,
+        "items": [
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "BILD 1"
+              },
+              {
+                "type": "course",
+                "code": "BILD 10"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "BILD 2"
+          },
+          {
+            "type": "course",
+            "code": "BILD 3"
+          },
+          {
+            "type": "course",
+            "code": "BILD 12"
+          },
+          {
+            "type": "course",
+            "code": "BILD 18"
+          },
+          {
+            "type": "course",
+            "code": "BILD 20"
+          },
+          {
+            "type": "course",
+            "code": "BILD 22"
+          },
+          {
+            "type": "course",
+            "code": "BILD 26"
+          },
+          {
+            "type": "course",
+            "code": "BILD 28"
+          },
+          {
+            "type": "course",
+            "code": "BILD 30"
+          },
+          {
+            "type": "course",
+            "code": "BILD 32"
+          },
+          {
+            "type": "course",
+            "code": "BILD 36"
+          },
+          {
+            "type": "course",
+            "code": "BILD 38"
+          },
+          {
+            "type": "course",
+            "code": "BILD 44"
+          },
+          {
+            "type": "course",
+            "code": "BILD 60"
+          },
+          {
+            "type": "course",
+            "code": "BILD 61"
+          }
+        ],
+        "label": "Select three of the following",
+        "notes": "Students who have completed a LD anatomy with lab and/or microbiology with lab at a community college or another university may petition to use the course(s) towards their biology area."
+      }
+    },
+    {
+      "name": "Quantitative Methods",
+      "requirement": {
+        "type": "choose",
+        "count": 1,
+        "items": [
+          {
+            "type": "course",
+            "code": "MATH 11"
+          },
+          {
+            "type": "course",
+            "code": "PSYC 60"
+          },
+          {
+            "type": "course",
+            "code": "COGS 14B"
+          },
+          {
+            "type": "course",
+            "code": "HDS 60"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Research Methods",
+      "requirement": {
+        "type": "choose",
+        "count": 1,
+        "items": [
+          {
+            "type": "course",
+            "code": "PH 45"
+          },
+          {
+            "type": "course",
+            "code": "PH 45R"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Public Health Trending Topics",
+      "requirement": {
+        "type": "units",
+        "units": 4,
+        "items": [
+          {
+            "type": "range",
+            "subject": "PH",
+            "from": 70,
+            "to": 85
+          }
+        ],
+        "notes": "total of four units required"
+      }
+    },
+    {
+      "name": "Public Health Elements",
+      "requirement": {
+        "type": "units",
+        "units": 4,
+        "items": [
+          {
+            "type": "range",
+            "subject": "PH",
+            "from": 50,
+            "to": 95
+          },
+          {
+            "type": "course",
+            "code": "PH 98"
+          },
+          {
+            "type": "course",
+            "code": "PH 99"
+          }
+        ],
+        "notes": "total of four units required"
+      }
+    },
+    {
+      "name": "Core Disciplines",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "course",
+            "code": "PH 101"
+          },
+          {
+            "type": "course",
+            "code": "PH 102"
+          },
+          {
+            "type": "course",
+            "code": "PH 110"
+          },
+          {
+            "type": "course",
+            "code": "PH 120"
+          },
+          {
+            "type": "course",
+            "code": "PH 130"
+          }
+        ],
+        "notes": "five courses, twenty units"
+      }
+    },
+    {
+      "name": "Public Health Perspectives",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "course",
+            "code": "PH 141"
+          },
+          {
+            "type": "course",
+            "code": "PH 156"
+          },
+          {
+            "type": "units",
+            "units": 4,
+            "items": [
+              {
+                "type": "range",
+                "subject": "PH",
+                "from": 140,
+                "to": 191
+              },
+              {
+                "type": "course",
+                "code": "PH 195P"
+              },
+              {
+                "type": "course",
+                "code": "PH 198"
+              },
+              {
+                "type": "course",
+                "code": "PH 199"
+              }
+            ],
+            "label": "Select from the following"
+          }
+        ],
+        "notes": "total of 12 units required"
+      }
+    },
+    {
+      "name": "Health Policy and Management Sciences Electives",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "course",
+            "code": "USP 143"
+          },
+          {
+            "type": "units",
+            "units": 4,
+            "items": [
+              {
+                "type": "course",
+                "code": "ANSC 105"
+              },
+              {
+                "type": "course",
+                "code": "ANSC 105GS"
+              },
+              {
+                "type": "course",
+                "code": "CCS 123"
+              },
+              {
+                "type": "course",
+                "code": "CGS 123"
+              },
+              {
+                "type": "course",
+                "code": "ECON 130"
+              },
+              {
+                "type": "course",
+                "code": "ECON 131"
+              },
+              {
+                "type": "course",
+                "code": "ECON 138"
+              },
+              {
+                "type": "course",
+                "code": "ECON 140"
+              },
+              {
+                "type": "course",
+                "code": "ECON 141"
+              },
+              {
+                "type": "course",
+                "code": "ENVR 110"
+              },
+              {
+                "type": "course",
+                "code": "GLBH 105"
+              },
+              {
+                "type": "course",
+                "code": "HISC 180"
+              },
+              {
+                "type": "course",
+                "code": "MGT 108R"
+              },
+              {
+                "type": "course",
+                "code": "MGT 173"
+              },
+              {
+                "type": "course",
+                "code": "POLI 117"
+              },
+              {
+                "type": "course",
+                "code": "POLI 117R"
+              },
+              {
+                "type": "course",
+                "code": "POLI 160AA"
+              },
+              {
+                "type": "course",
+                "code": "POLI 168"
+              },
+              {
+                "type": "course",
+                "code": "SIO 109"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 109R"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 152"
+              },
+              {
+                "type": "course",
+                "code": "USP 101"
+              },
+              {
+                "type": "course",
+                "code": "USP 133"
+              },
+              {
+                "type": "course",
+                "code": "USP 142A"
+              },
+              {
+                "type": "course",
+                "code": "USP 142B"
+              },
+              {
+                "type": "course",
+                "code": "USP 147"
+              }
+            ],
+            "notes": "Catalog prints sequences in this list as e.g. 'USP 128A-B'; each course is listed separately. 'SOCI 109R' kept as printed; it follows SIO 109 and may be a misprint of SIO 109R."
+          }
+        ],
+        "notes": "total of eight units required. Students may petition to use AIP 197, UCCS/UCDC, or a Study Abroad experience (must be an upper-division four-unit course and have been preapproved by the program)."
+      }
+    },
+    {
+      "name": "Capstone Experience or Honors Practicum",
+      "requirement": {
+        "type": "choose",
+        "count": 1,
+        "items": [
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "PH 193"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PH 193R"
+                  }
+                ]
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "PH 194"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PH 194R"
+                  }
+                ]
+              }
+            ],
+            "label": "Option 1: Capstone Experience (two courses, eight units)"
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "PH 196AH"
+              },
+              {
+                "type": "course",
+                "code": "PH 196BH"
+              }
+            ],
+            "label": "Option 2: Honors Practicum (two courses, twelve units)"
+          }
+        ]
+      }
+    }
+  ]
+}

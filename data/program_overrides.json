@@ -1,5 +1,5 @@
 {
- "about": "Hand corrections to the catalog's structured major requirements. The catalog sometimes states a rule only in a note (\"ECON 191AA-ZZ\", \"These courses will NOT apply to the major\"), which the structured data can't express. Each correction names the rule it changes by the rule's catalog id, says why, and quotes the catalog note it comes from. build_majors.py warns if a rule id no longer exists.",
+ "about": "Hand corrections to the catalog's structured major requirements. The catalog sometimes states a rule only in a note (\"ECON 191AA-ZZ\", \"These courses will NOT apply to the major\"), which the structured data can't express. Each correction names the rule it changes by the rule's catalog id, says why, and quotes the catalog note it comes from. build_majors.py warns if a rule id no longer exists. \"count\" turns a \"complete all\" rule over a long list into \"choose N\".",
  "programs": {
   "BAECON": {
    "add": {
@@ -72,6 +72,20 @@
      "PSTAT 193"
     ],
     "why": "Area C's note: \"These courses will NOT apply to the major: PSTAT 109, PSTAT 182T (or PSTAT W 182T), PSTAT 188, PSTAT 190, PSTAT 193\". The catalog's 'Upper Division Statistics Courses' list includes some of them anyway."
+   }
+  },
+  "BAGEOGGEOGISCI": {
+   "count": {
+    "dgiNovoS": {
+     "count": 1,
+     "note": "The catalog says \"Complete all\" for this list; read here as at least one course (see Area D). Confirm with the Geography department.",
+     "why": "The catalog marks Areas C (20 courses) and E (15 courses) \"Complete all\", which no student does: Area B over a similar list is \"Complete at least 1\", and Area D (\"4 additional Units from either Area B or Area C\") only makes sense if B and C each ask for a set amount. Each is read as at least one course; confirm with the department."
+    },
+    "MozAUEyb": {
+     "count": 1,
+     "note": "The catalog says \"Complete all\" for this list; read here as at least one course (see Area D). Confirm with the Geography department.",
+     "why": "The catalog marks Areas C (20 courses) and E (15 courses) \"Complete all\", which no student does: Area B over a similar list is \"Complete at least 1\", and Area D (\"4 additional Units from either Area B or Area C\") only makes sense if B and C each ask for a set amount. Each is read as at least one course; confirm with the department."
+    }
    }
   }
  }

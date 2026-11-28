@@ -1,0 +1,302 @@
+{
+  "name": "Economics - BS",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Economics",
+  "source": "https://catalog.ucsd.edu/curric/ECON-ug.html",
+  "narrative": [
+    "To graduate with a major, a minimum GPA of 2.0 is required in upper-division courses used to satisfy major requirements. All courses must be taken for a letter grade and passed with a grade of C– (C minus), or better, with the exception of ECON 195P, ECON 198, and ECON 199, for which P/NP grading is mandatory. No more than twelve units of ECON 195P, ECON 198, and ECON 199 taken P/NP may be counted toward major requirements. ECON 195P may only be taken twice for credit (eight units).",
+    "The 100, 110, 120, 172, and 173 core courses are sequential. That is, A must be taken before B, and when applicable, B before C.",
+    "Note that the prerequisites for advanced economics electives are the completion of core courses. Therefore, BS economics majors are strongly encouraged to take ECON 100A-B-C and ECON 120A-B-C in their sophomore year.",
+    "While we require economics majors to take MATH 10A-B-C, we recommend that economics students take MATH 20A-B-C."
+  ],
+  "sections": [
+    {
+      "name": "Lower-division mathematics courses",
+      "requirement": {
+        "type": "choose",
+        "count": 1,
+        "label": "Lower-division mathematics courses",
+        "notes": "MATH 10A-B-C (required) or MATH 20A-B-C (recommended).",
+        "items": [
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "MATH 10A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 10B"
+              },
+              {
+                "type": "course",
+                "code": "MATH 10C"
+              }
+            ]
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "MATH 20A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 20B"
+              },
+              {
+                "type": "course",
+                "code": "MATH 20C"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Lower-division economics courses",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "course",
+            "code": "ECON 1"
+          },
+          {
+            "type": "course",
+            "code": "ECON 3"
+          },
+          {
+            "type": "course",
+            "code": "ECON 5"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Upper-division economics core courses",
+      "requirement": {
+        "type": "all",
+        "notes": "ECON 100A-B-C (microeconomics), ECON 110A-B (macroeconomics), and ECON 120A-B-C (econometrics).",
+        "items": [
+          {
+            "type": "course",
+            "code": "ECON 100A"
+          },
+          {
+            "type": "course",
+            "code": "ECON 100B"
+          },
+          {
+            "type": "course",
+            "code": "ECON 100C"
+          },
+          {
+            "type": "course",
+            "code": "ECON 110A"
+          },
+          {
+            "type": "course",
+            "code": "ECON 110B"
+          },
+          {
+            "type": "course",
+            "code": "ECON 120A"
+          },
+          {
+            "type": "course",
+            "code": "ECON 120B"
+          },
+          {
+            "type": "course",
+            "code": "ECON 120C"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Upper-division economics electives",
+      "requirement": {
+        "type": "all",
+        "label": "Five more economics courses at the upper-division level",
+        "notes": "Five more economics courses at the upper-division level. At least two of these elective courses must be advanced electives.",
+        "items": [
+          {
+            "type": "choose",
+            "count": 2,
+            "label": "BS economics advanced electives",
+            "notes": "At least two of these elective courses must be advanced electives. MATH 194: refer to course description for enforced prerequisite list.",
+            "items": [
+              {
+                "type": "course",
+                "code": "ECON 101"
+              },
+              {
+                "type": "course",
+                "code": "ECON 103"
+              },
+              {
+                "type": "course",
+                "code": "ECON 105"
+              },
+              {
+                "type": "course",
+                "code": "ECON 106"
+              },
+              {
+                "type": "course",
+                "code": "ECON 109"
+              },
+              {
+                "type": "course",
+                "code": "ECON 111"
+              },
+              {
+                "type": "course",
+                "code": "ECON 112"
+              },
+              {
+                "type": "course",
+                "code": "ECON 113"
+              },
+              {
+                "type": "course",
+                "code": "ECON 117"
+              },
+              {
+                "type": "course",
+                "code": "ECON 121"
+              },
+              {
+                "type": "course",
+                "code": "ECON 122"
+              },
+              {
+                "type": "course",
+                "code": "ECON 125"
+              },
+              {
+                "type": "course",
+                "code": "ECON 129"
+              },
+              {
+                "type": "course",
+                "code": "ECON 134"
+              },
+              {
+                "type": "course",
+                "code": "ECON 136"
+              },
+              {
+                "type": "course",
+                "code": "ECON 137"
+              },
+              {
+                "type": "course",
+                "code": "ECON 141"
+              },
+              {
+                "type": "course",
+                "code": "ECON 142"
+              },
+              {
+                "type": "course",
+                "code": "ECON 143"
+              },
+              {
+                "type": "course",
+                "code": "ECON 146"
+              },
+              {
+                "type": "course",
+                "code": "ECON 150"
+              },
+              {
+                "type": "course",
+                "code": "ECON 151"
+              },
+              {
+                "type": "course",
+                "code": "ECON 152"
+              },
+              {
+                "type": "course",
+                "code": "ECON 171"
+              },
+              {
+                "type": "course",
+                "code": "ECON 172A"
+              },
+              {
+                "type": "course",
+                "code": "ECON 172B"
+              },
+              {
+                "type": "course",
+                "code": "ECON 173A"
+              },
+              {
+                "type": "course",
+                "code": "ECON 173B"
+              },
+              {
+                "type": "course",
+                "code": "ECON 174"
+              },
+              {
+                "type": "course",
+                "code": "ECON 176"
+              },
+              {
+                "type": "course",
+                "code": "ECON 178"
+              },
+              {
+                "type": "course",
+                "code": "ECON 182"
+              },
+              {
+                "type": "course",
+                "code": "ECON 183"
+              },
+              {
+                "type": "course",
+                "code": "MATH 194"
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 3,
+            "label": "Remaining upper-division economics electives",
+            "items": [
+              {
+                "type": "any",
+                "subject": "ECON",
+                "level": "upper",
+                "except": [
+                  "ECON 100A",
+                  "ECON 100B",
+                  "ECON 100C",
+                  "ECON 110A",
+                  "ECON 110B",
+                  "ECON 120A",
+                  "ECON 120B",
+                  "ECON 120C"
+                ]
+              },
+              {
+                "type": "course",
+                "code": "MATH 194"
+              }
+            ],
+            "notes": "Five upper-division economics electives in all, at least two of them advanced electives; further advanced electives (including MATH 194) also count here. Required core courses don't count."
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,295 @@
+{
+  "name": "Critical Gender Studies - BA",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Critical Gender Studies Program",
+  "source": "https://catalog.ucsd.edu/curric/CGS-ug.html",
+  "narrative": [
+    "To complete a major, students are required to take fourteen courses, comprising four courses in the introductory sequence (2A, 2B, 100A, 100B), and ten upper-division courses.",
+    "Critical gender studies will accept up to two upper-division courses as overlap requirements for the two majors [double major].",
+    "Directed Group Study (198), Independent Study (199), internships can be taken only with a P/NP grade option; the number of such courses to be applied to the major should be carefully discussed with a critical gender studies adviser.",
+    "The page does not state the degree type; BA assumed."
+  ],
+  "sections": [
+    {
+      "name": "Preparation for the Major",
+      "requirement": {
+        "type": "all",
+        "label": "Introduction to Critical Gender Studies sequence",
+        "items": [
+          {
+            "type": "course",
+            "code": "CGS 2A"
+          },
+          {
+            "type": "course",
+            "code": "CGS 2B"
+          },
+          {
+            "type": "course",
+            "code": "CGS 100A"
+          },
+          {
+            "type": "course",
+            "code": "CGS 100B"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Upper-Division CGS Courses",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "choose",
+            "count": 6,
+            "label": "Six upper-division CGS courses",
+            "items": [
+              {
+                "type": "any",
+                "subject": "CGS",
+                "level": "upper",
+                "except": [
+                  "CGS 100A",
+                  "CGS 100B"
+                ]
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "at least three courses from the intermediate category and at least three courses from the advanced category"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CGS Applicable Electives",
+      "requirement": {
+        "type": "choose",
+        "count": 4,
+        "label": "Four applicable electives",
+        "notes": "The other four courses will be drawn from among the CGS applicable electives taught within the Schools of Social Sciences and Arts and Humanities.",
+        "items": [
+          {
+            "type": "course",
+            "code": "ANSC 125"
+          },
+          {
+            "type": "course",
+            "code": "COMM 108G"
+          },
+          {
+            "type": "course",
+            "code": "COMM 111P"
+          },
+          {
+            "type": "course",
+            "code": "COMM 114E"
+          },
+          {
+            "type": "course",
+            "code": "COMM 114G"
+          },
+          {
+            "type": "course",
+            "code": "COMM 137"
+          },
+          {
+            "type": "course",
+            "code": "COMM 138"
+          },
+          {
+            "type": "course",
+            "code": "ETHN 128"
+          },
+          {
+            "type": "course",
+            "code": "ETHN 129"
+          },
+          {
+            "type": "course",
+            "code": "LIGN 174"
+          },
+          {
+            "type": "course",
+            "code": "POLI 104M"
+          },
+          {
+            "type": "course",
+            "code": "POLI 115A"
+          },
+          {
+            "type": "course",
+            "code": "POLI 116A"
+          },
+          {
+            "type": "course",
+            "code": "PSYC 134"
+          },
+          {
+            "type": "course",
+            "code": "PSYC 172"
+          },
+          {
+            "type": "course",
+            "code": "SOCI 113"
+          },
+          {
+            "type": "course",
+            "code": "SOCI 116"
+          },
+          {
+            "type": "course",
+            "code": "SOCI 118"
+          },
+          {
+            "type": "course",
+            "code": "SOCI 119"
+          },
+          {
+            "type": "course",
+            "code": "SOCI 129"
+          },
+          {
+            "type": "course",
+            "code": "SOCI 132"
+          },
+          {
+            "type": "course",
+            "code": "SOCI 139"
+          },
+          {
+            "type": "course",
+            "code": "SOCI 184"
+          },
+          {
+            "type": "course",
+            "code": "HIEA 125"
+          },
+          {
+            "type": "course",
+            "code": "HIEA 137"
+          },
+          {
+            "type": "course",
+            "code": "HILA 124A"
+          },
+          {
+            "type": "course",
+            "code": "HILA 161"
+          },
+          {
+            "type": "course",
+            "code": "HILA 164"
+          },
+          {
+            "type": "course",
+            "code": "HISC 103"
+          },
+          {
+            "type": "course",
+            "code": "HISC 118"
+          },
+          {
+            "type": "course",
+            "code": "HISC 167"
+          },
+          {
+            "type": "course",
+            "code": "HITO 106"
+          },
+          {
+            "type": "course",
+            "code": "HIUS 115"
+          },
+          {
+            "type": "course",
+            "code": "HIUS 130"
+          },
+          {
+            "type": "course",
+            "code": "HIUS 131"
+          },
+          {
+            "type": "course",
+            "code": "HIUS 156"
+          },
+          {
+            "type": "course",
+            "code": "HIUS 157"
+          },
+          {
+            "type": "course",
+            "code": "HIUS 176"
+          },
+          {
+            "type": "course",
+            "code": "LTAM 105"
+          },
+          {
+            "type": "course",
+            "code": "LTAM 106"
+          },
+          {
+            "type": "course",
+            "code": "LTCS 130"
+          },
+          {
+            "type": "course",
+            "code": "LTCS 131"
+          },
+          {
+            "type": "course",
+            "code": "LTCS 132"
+          },
+          {
+            "type": "course",
+            "code": "LTCS 135"
+          },
+          {
+            "type": "course",
+            "code": "LTCS 172"
+          },
+          {
+            "type": "course",
+            "code": "LTEA 143"
+          },
+          {
+            "type": "course",
+            "code": "LTEN 150"
+          },
+          {
+            "type": "course",
+            "code": "LTEN 185"
+          },
+          {
+            "type": "course",
+            "code": "LTEU 147"
+          },
+          {
+            "type": "course",
+            "code": "LTSP 175"
+          },
+          {
+            "type": "course",
+            "code": "LTWL 155"
+          },
+          {
+            "type": "course",
+            "code": "LTWL 160"
+          },
+          {
+            "type": "course",
+            "code": "MUSIC 115"
+          },
+          {
+            "type": "text",
+            "text": "Petitionable courses (new or topics courses) may be approved by petition during the quarters in which they appear in the CGS quarterly lists."
+          }
+        ]
+      }
+    }
+  ]
+}

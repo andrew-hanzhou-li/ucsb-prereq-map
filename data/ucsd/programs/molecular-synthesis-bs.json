@@ -1,0 +1,395 @@
+{
+ "id": "UCSD-MAJOR-molecular-synthesis-bs",
+ "name": "Molecular Synthesis - BS",
+ "kind": "major",
+ "type": "Bachelor's Degree",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsd.edu/curric/CHEM-ug.html",
+ "sections": [
+  {
+   "name": "Lower-Division Requirements",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "CHEM 6A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 6B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 6C",
+            "status": "active"
+           }
+          ]
+         },
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "CHEM 6AH",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 6BH",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 6CH",
+            "status": "active"
+           }
+          ]
+         }
+        ],
+        "count": 1
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "CHEM 7LM",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 7L",
+          "status": "active"
+         }
+        ],
+        "count": 1
+       }
+      ],
+      "label": "General chemistry, including laboratory"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "MATH 18",
+        "status": "active"
+       }
+      ],
+      "label": "Linear algebra"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "MATH 20A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 20B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 20C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 20D",
+        "status": "active"
+       }
+      ],
+      "label": "Calculus"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "PHYS 2A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 2B",
+        "status": "active"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "PHYS 2C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYS 2D",
+          "status": "active"
+         }
+        ],
+        "count": 1
+       }
+      ],
+      "label": "Physics"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "PHYS 2CL",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 2BL",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 2DL",
+        "status": "active"
+       }
+      ],
+      "count": 1,
+      "label": "Physics laboratory",
+      "notes": "PHYS 2CL [recommended]"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 41A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 41B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 41C",
+        "status": "active"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "CHEM 43A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 43AM",
+          "status": "active"
+         }
+        ],
+        "count": 1
+       }
+      ],
+      "label": "Organic chemistry, including laboratory"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Upper-Division Requirements",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 126B",
+        "status": "active",
+        "was": "CHEM 126"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 126A",
+        "status": "active",
+        "was": "CHEM 127"
+       }
+      ],
+      "label": "Two quarters of physical chemistry"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 120A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 120B",
+        "status": "active"
+       }
+      ],
+      "label": "Two quarters of inorganic chemistry"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 114A",
+        "status": "active"
+       }
+      ],
+      "label": "One quarter of biochemistry"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 100A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 143B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 105A",
+        "status": "active"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "CHEM 143C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 143D",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 123",
+          "status": "active"
+         }
+        ],
+        "count": 2
+       }
+      ],
+      "label": "Five advanced laboratory courses"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 152",
+        "status": "active"
+       }
+      ],
+      "label": "Synthetic methods"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 154",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 156",
+        "status": "active"
+       }
+      ],
+      "count": 1,
+      "label": "Structural or mechanistic organic chemistry"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 125",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 157",
+        "status": "active"
+       }
+      ],
+      "count": 1,
+      "label": "Bioorganic or bioinorganic chemistry"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 114B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 114C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 155",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 185",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 199",
+        "status": "active"
+       }
+      ],
+      "count": 1,
+      "label": "One additional restricted elective",
+      "notes": "CHEM 199 (by petition)"
+     }
+    ]
+   }
+  }
+ ],
+ "narrative": [
+  "Lower-division units: 66; upper-division units: 56–60; total units required for the major: 122–126.",
+  "All chemistry majors (including transfer students) must complete at least forty-eight or more units of upper-division chemistry course work. This course work must be taken while officially enrolled at UC San Diego.",
+  "The minimum GPA requirement (for both the major GPA and overall UC GPA) for graduation is 2.0. The minimum passing grade in required chemistry course work is a D, although students may not graduate with more than one D grade in upper-division required major course work and must maintain a minimum 2.0 GPA in the major.",
+  "All courses for the major, except for independent research (e.g., CHEM 199) and chemistry instruction (CHEM 195), must be taken for a letter grade.",
+  "Students completing their degree with a major in chemistry (CH25) or molecular synthesis (CH36) are automatically granted certification by the American Chemical Society."
+ ]
+}

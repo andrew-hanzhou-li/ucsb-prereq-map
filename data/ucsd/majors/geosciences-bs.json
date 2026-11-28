@@ -1,0 +1,523 @@
+{
+  "name": "Geosciences - BS",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Scripps Institution of Oceanography",
+  "source": "https://catalog.ucsd.edu/curric/SIO-ug.html",
+  "narrative": [
+    "A grade point average of 2.0 or higher in the upper-division major program is required for graduation.",
+    "Students must receive a grade of C– or better in any course to be counted toward fulfillment of the major requirements. In exceptional cases, students with a grade point average in the major of 2.5 or greater may petition to have one grade of D accepted.",
+    "All courses (lower and upper division) required for the major must be taken for a letter grade.",
+    "One quarter of SIO 199 studies may be counted toward the geosciences major electives.",
+    "Ideally lower-division course requirements and SIO 100 and SIO 102 should be taken before the junior year."
+  ],
+  "sections": [
+    {
+      "name": "Lower-Division Requirements",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "MATH 20A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 20B"
+              },
+              {
+                "type": "course",
+                "code": "MATH 20C"
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "PHYS 2A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 2B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 2C"
+                  }
+                ]
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "PHYS 4A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 4B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 4C"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "CHEM 6A"
+              },
+              {
+                "type": "course",
+                "code": "CHEM 6B"
+              },
+              {
+                "type": "course",
+                "code": "CHEM 6C"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "SIO 50"
+          },
+          {
+            "type": "course",
+            "code": "SIO 65"
+          },
+          {
+            "type": "course",
+            "code": "SIO 75"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Upper-Division Core Requirements",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "course",
+            "code": "SIO 100"
+          },
+          {
+            "type": "course",
+            "code": "SIO 102"
+          },
+          {
+            "type": "course",
+            "code": "SIO 103"
+          },
+          {
+            "type": "course",
+            "code": "SIO 113"
+          },
+          {
+            "type": "course",
+            "code": "SIO 120"
+          }
+        ],
+        "notes": "All courses are required."
+      }
+    },
+    {
+      "name": "Upper-Division Electives: Area of Concentration",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "choose",
+                "count": 4,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "SIO 104"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SIO 105"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SIO 106"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SIO 110"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SIO 121GS"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SIO 144"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SIO 152"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SIO 153"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SIO 155"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SIO 160"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SIO 161"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SIO 162"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SIO 170"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SIO 199"
+                  }
+                ],
+                "label": "Geology"
+              },
+              {
+                "type": "choose",
+                "count": 4,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "SIO 101"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SIO 111"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SIO 117"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SIO 119"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SIO 135"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SIO 138"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SIO 141"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SIO 143"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SIO 144"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SIO 160"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SIO 171"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SIO 199"
+                  }
+                ],
+                "label": "Geological Oceanography"
+              },
+              {
+                "type": "choose",
+                "count": 4,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "SIO 106"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SIO 107"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SIO 108"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SIO 110"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SIO 115"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SIO 135"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SIO 144"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SIO 153"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SIO 162"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SIO 164"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SIO 166"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SIO 167"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SIO 182"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SIO 199"
+                  }
+                ],
+                "label": "Environmental Geology"
+              },
+              {
+                "type": "choose",
+                "count": 4,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "SIO 110"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SIO 112"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SIO 115"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SIO 135"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SIO 152"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SIO 155"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SIO 160"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SIO 161"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SIO 162"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SIO 170"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SIO 182"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SIO 199"
+                  }
+                ],
+                "label": "Geophysics"
+              }
+            ],
+            "label": "A minimum of four of the seven courses must be taken from a single area of concentration"
+          },
+          {
+            "type": "choose",
+            "count": 3,
+            "items": [
+              {
+                "type": "course",
+                "code": "SIO 104"
+              },
+              {
+                "type": "course",
+                "code": "SIO 105"
+              },
+              {
+                "type": "course",
+                "code": "SIO 106"
+              },
+              {
+                "type": "course",
+                "code": "SIO 110"
+              },
+              {
+                "type": "course",
+                "code": "SIO 121GS"
+              },
+              {
+                "type": "course",
+                "code": "SIO 144"
+              },
+              {
+                "type": "course",
+                "code": "SIO 152"
+              },
+              {
+                "type": "course",
+                "code": "SIO 153"
+              },
+              {
+                "type": "course",
+                "code": "SIO 155"
+              },
+              {
+                "type": "course",
+                "code": "SIO 160"
+              },
+              {
+                "type": "course",
+                "code": "SIO 161"
+              },
+              {
+                "type": "course",
+                "code": "SIO 162"
+              },
+              {
+                "type": "course",
+                "code": "SIO 170"
+              },
+              {
+                "type": "course",
+                "code": "SIO 199"
+              },
+              {
+                "type": "course",
+                "code": "SIO 101"
+              },
+              {
+                "type": "course",
+                "code": "SIO 111"
+              },
+              {
+                "type": "course",
+                "code": "SIO 117"
+              },
+              {
+                "type": "course",
+                "code": "SIO 119"
+              },
+              {
+                "type": "course",
+                "code": "SIO 135"
+              },
+              {
+                "type": "course",
+                "code": "SIO 138"
+              },
+              {
+                "type": "course",
+                "code": "SIO 141"
+              },
+              {
+                "type": "course",
+                "code": "SIO 143"
+              },
+              {
+                "type": "course",
+                "code": "SIO 171"
+              },
+              {
+                "type": "course",
+                "code": "SIO 107"
+              },
+              {
+                "type": "course",
+                "code": "SIO 108"
+              },
+              {
+                "type": "course",
+                "code": "SIO 115"
+              },
+              {
+                "type": "course",
+                "code": "SIO 164"
+              },
+              {
+                "type": "course",
+                "code": "SIO 166"
+              },
+              {
+                "type": "course",
+                "code": "SIO 167"
+              },
+              {
+                "type": "course",
+                "code": "SIO 182"
+              },
+              {
+                "type": "course",
+                "code": "SIO 112"
+              }
+            ],
+            "notes": "remaining courses from any area of concentration, not used above"
+          }
+        ],
+        "label": "Upper-Division Electives: Area of Concentration",
+        "notes": "Choose a total of seven classes from the areas of concentration. A minimum of four of the seven courses must be taken from a single area of concentration."
+      }
+    }
+  ]
+}

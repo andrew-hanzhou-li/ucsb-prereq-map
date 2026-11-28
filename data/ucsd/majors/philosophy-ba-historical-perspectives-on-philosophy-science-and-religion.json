@@ -1,0 +1,237 @@
+{
+  "name": "Philosophy - BA - Historical Perspectives on Philosophy, Science, and Religion",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Philosophy",
+  "source": "https://catalog.ucsd.edu/curric/PHIL-ug.html",
+  "narrative": [
+    "A major in philosophy requires a total of fifteen philosophy courses, at least twelve of which must be upper-division (courses numbered 100 and above).",
+    "Up to two upper-division courses outside of philosophy can count among the twelve required for the major if they are drawn from a related field and contribute to the major's philosophical program; such credit must be approved by the undergraduate adviser.",
+    "Honors and directed study courses (PHIL 191–199) may not be used to satisfy the major requirement of fifteen philosophy courses.",
+    "Seven of the twelve upper-division courses in the major must be taken in the Department of Philosophy at UC San Diego. Courses taken at other institutions may be applied toward the major by petition only.",
+    "All courses applied toward the major must be taken for a letter grade and completed with a grade of C– or better. A GPA of 2.0 must be maintained in courses applied toward the major."
+  ],
+  "sections": [
+    {
+      "name": "Core Requirements for the Major",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "PHIL 110"
+              },
+              {
+                "type": "course",
+                "code": "PHIL 111"
+              },
+              {
+                "type": "course",
+                "code": "PHIL 112"
+              }
+            ],
+            "label": "History of Philosophy",
+            "notes": "These courses must be taken in order."
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "PHIL 10"
+              },
+              {
+                "type": "course",
+                "code": "PHIL 120"
+              }
+            ],
+            "label": "Logic"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "PHIL 160"
+              },
+              {
+                "type": "course",
+                "code": "PHIL 161"
+              },
+              {
+                "type": "course",
+                "code": "PHIL 166"
+              },
+              {
+                "type": "course",
+                "code": "PHIL 167"
+              }
+            ],
+            "label": "Moral and Political Philosophy"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "PHIL 130"
+              },
+              {
+                "type": "course",
+                "code": "PHIL 131"
+              },
+              {
+                "type": "course",
+                "code": "PHIL 132"
+              },
+              {
+                "type": "course",
+                "code": "PHIL 134"
+              },
+              {
+                "type": "course",
+                "code": "PHIL 136"
+              }
+            ],
+            "label": "Metaphysics and Epistemology"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "PHIL 145"
+              },
+              {
+                "type": "course",
+                "code": "PHIL 146"
+              },
+              {
+                "type": "course",
+                "code": "PHIL 147"
+              },
+              {
+                "type": "course",
+                "code": "PHIL 149"
+              },
+              {
+                "type": "course",
+                "code": "PHIL 150"
+              },
+              {
+                "type": "course",
+                "code": "PHIL 151"
+              },
+              {
+                "type": "course",
+                "code": "PHIL 152"
+              }
+            ],
+            "label": "Philosophy of Science"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Total course requirement",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "choose",
+            "count": 2,
+            "items": [
+              {
+                "type": "any",
+                "subject": "PHIL",
+                "level": "lower"
+              },
+              {
+                "type": "any",
+                "subject": "PHIL",
+                "level": "upper"
+              }
+            ],
+            "label": "Remaining philosophy courses",
+            "notes": "The remaining courses of the fifteen may be lower- or upper-division; PHIL 10 (core, above) is one of them, so two more are needed here."
+          }
+        ],
+        "label": "Fifteen philosophy courses",
+        "notes": "Fifteen philosophy courses in all, at least twelve upper-division (PHIL 191–199 may not be used; up to two upper-division courses outside philosophy may count with adviser approval). The eight core courses and the five area-of-emphasis courses count toward the fifteen (\"Courses taken to complete an area of emphasis are counted toward the fifteen courses required for the major\"), and their twelve upper-division courses meet the upper-division minimum, so only two more courses are needed. The catalog lets a course count for both the emphasis and a core requirement (PHIL 161 or 166); counted once here, the emphasis asks for five courses besides the core, but a student who uses PHIL 161 or 166 for both may take any other philosophy course in place of one of the five."
+      }
+    },
+    {
+      "name": "Area of Emphasis: Historical Perspectives on Philosophy, Science, and Religion",
+      "requirement": {
+        "type": "choose",
+        "count": 5,
+        "items": [
+          {
+            "type": "course",
+            "code": "PHIL 100"
+          },
+          {
+            "type": "course",
+            "code": "PHIL 101"
+          },
+          {
+            "type": "course",
+            "code": "PHIL 102"
+          },
+          {
+            "type": "course",
+            "code": "PHIL 104"
+          },
+          {
+            "type": "course",
+            "code": "PHIL 105"
+          },
+          {
+            "type": "course",
+            "code": "PHIL 106"
+          },
+          {
+            "type": "course",
+            "code": "PHIL 107"
+          },
+          {
+            "type": "course",
+            "code": "PHIL 108"
+          },
+          {
+            "type": "course",
+            "code": "PHIL 109"
+          },
+          {
+            "type": "course",
+            "code": "PHIL 161"
+          },
+          {
+            "type": "course",
+            "code": "PHIL 166"
+          },
+          {
+            "type": "course",
+            "code": "PHIL 180"
+          },
+          {
+            "type": "course",
+            "code": "PHIL 181"
+          },
+          {
+            "type": "course",
+            "code": "PHIL 183"
+          }
+        ],
+        "label": "Historical Perspectives on Philosophy, Science, and Religion",
+        "notes": "Students selecting an optional area of emphasis must take and pass five of the courses listed under that area. Courses taken to complete an area of emphasis are counted toward the fifteen courses required for the major and may also fulfill a core requirement. Areas of emphasis are not noted on transcripts or diplomas."
+      }
+    }
+  ]
+}

@@ -1,0 +1,853 @@
+{
+ "id": "UCSD-MAJOR-psychology-ba-clinical-psychology",
+ "name": "Psychology - BA - Clinical Psychology",
+ "kind": "major",
+ "type": "Bachelor's Degree",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsd.edu/curric/PSYC-ug.html",
+ "sections": [
+  {
+   "name": "Lower-Division Requirements",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "BILD 1",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "BILD 2",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "BILD 3",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "BILD 10",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "BILD 12",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "BILD 20",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "BILD 26",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 4",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 6A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 6B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 6C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 11",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 12",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 13",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 17",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 1A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 1B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 1C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 2A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 2B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 2C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 10",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 11",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 2",
+        "status": "active"
+       }
+      ],
+      "count": 2,
+      "label": "Two Natural Science Courses",
+      "notes": "BILD 22 is NOT accepted. Only one of CHEM 4 or 11 can be taken for credit. Only one of BILD 12, COGS 17, or PSYC 2 may be counted toward this requirement."
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 10A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 20A",
+          "status": "active"
+         }
+        ],
+        "count": 1
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 10B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 20B",
+          "status": "active"
+         }
+        ],
+        "count": 1
+       },
+       {
+        "type": "course",
+        "code": "MATH 18",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 10",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 12",
+        "status": "active"
+       }
+      ],
+      "count": 1,
+      "label": "One Formal Skills Course"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "COGS 18",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 6R",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 8A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 8B",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "CSE 11",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSE 12",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CSS 1",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DSC 10",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECE 15",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 5",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MAE 8",
+        "status": "active"
+       }
+      ],
+      "count": 1,
+      "label": "One Computer Programming Course"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "PSYC 60",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "BENG 100",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "BIEB 100",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "COGS 14B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 120A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 11",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 181A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 183",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 186",
+        "status": "active"
+       }
+      ],
+      "count": 1,
+      "label": "One Statistics Course",
+      "notes": "PSYC 60 (preferred)"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "PSYC 70",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COGS 14A",
+        "status": "active"
+       }
+      ],
+      "count": 1,
+      "label": "One Research Methods Course",
+      "notes": "PSYC 70 (preferred)"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Upper-Division Requirements",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "PSYC 100",
+        "status": "active"
+       }
+      ],
+      "label": "One Psychology Core Course in Specialization"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "PSYC 101",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 102",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 104",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 105",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 106",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 108",
+        "status": "active"
+       }
+      ],
+      "count": 3,
+      "label": "Three Additional Psychology Core Courses"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "PSYC 116A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 116B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 116C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 124",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 125",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 127",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 132",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 133",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 134",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 143",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 151",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 154",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 155",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 168",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 172",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 175",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 184",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 188",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 190",
+        "status": "active"
+       }
+      ],
+      "count": 3,
+      "label": "Three Upper-Division Psychology Courses in Specialization"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "PSYC 101",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 102",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 104",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 105",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 106",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 108",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 110",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 111A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 111B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 122",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 124",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 125",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 126",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 127",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 131",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 132",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 133",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 133R",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 134",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 135",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 136",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 137",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 138",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 141",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 142",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 143",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 144",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 145",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 146",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 147",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 148",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 149",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 150",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 151",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 153",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 154",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 155",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 156",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 158",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 160",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 161",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 162",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 164",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 166",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 167",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 168",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 169",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 171",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 172",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 174",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 175",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 176",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 178",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 179",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 180",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 181",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 182",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 184",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 185",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 186",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 186GS",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 187",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 188",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 189",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 190",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 191",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 192",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 193",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 193L",
+        "status": "active"
+       }
+      ],
+      "count": 5,
+      "label": "Five Additional Upper-Division Psychology Courses",
+      "notes": "PSYC 100–111, 122–193"
+     }
+    ]
+   }
+  }
+ ],
+ "narrative": [
+  "All courses taken for the major must be letter-graded and completed with a C– or better. Exceptions for PSYC 195P and AIP 197 which are only offered on a P/NP grading option and major lower-division natural science, formal skills, computer programming, and research methods.",
+  "A course may only fulfill one major course requirement.",
+  "Excluded from credit toward the major are graduate seminars (2XX).",
+  "A maximum of three upper-division psychology courses may be taken outside UC San Diego.",
+  "A grade point average of at least 2.0 in the upper-division major courses is required for graduation.",
+  "Students majoring in psychology must have departmental approval for electives taken outside the department.",
+  "Lower-Division Requirements (twenty-four units); Upper-Division Requirements (forty-eight units)."
+ ]
+}

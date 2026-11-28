@@ -5,7 +5,7 @@ browser, even offline, by double-clicking it.
     py pipeline/build_single.py
 
 Reads   site/index.html, site/style.css, site/app.js, site/favicon.svg
-        site/data/majors.json and every major's graph in site/data/
+        site/data/ucsb/majors.json and every graph in site/data/ucsb/
 Writes  site/ucsb-prereq-map.html     (published with the site, so the
                                       footer's download link works)
 
@@ -60,7 +60,7 @@ def replace_once(text, old, new):
 
 def main():
     sys.stdout.reconfigure(errors="replace")
-    with open(os.path.join(SITE, "data", "majors.json"), encoding="utf-8") as f:
+    with open(os.path.join(SITE, "data", "ucsb", "majors.json"), encoding="utf-8") as f:
         majors = json.load(f)["majors"]
 
     courses = {}
@@ -68,7 +68,7 @@ def main():
     for major in majors:
         if not major["structured"]:
             continue
-        with open(os.path.join(SITE, "data", major["file"]), encoding="utf-8") as f:
+        with open(os.path.join(SITE, "data", "ucsb", major["file"]), encoding="utf-8") as f:
             graph = json.load(f)
         for node in graph["nodes"]:
             courses.setdefault(node["id"], {key: node[key] for key in SHARED})
@@ -80,10 +80,10 @@ def main():
         }
 
     # The AP chart for the Credit box (build_credit.py).
-    with open(os.path.join(SITE, "data", "credit.json"), encoding="utf-8") as f:
+    with open(os.path.join(SITE, "data", "ucsb", "credit.json"), encoding="utf-8") as f:
         credit_table = json.load(f)
 
-    with open(os.path.join(SITE, "data", "course-index.json"), encoding="utf-8") as f:
+    with open(os.path.join(SITE, "data", "ucsb", "course-index.json"), encoding="utf-8") as f:
         course_index = json.load(f)
     embedded = {"majors": majors, "courses": courses, "programs": programs, "credit": credit_table,
                 "courseIndex": course_index}

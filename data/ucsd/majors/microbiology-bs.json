@@ -1,0 +1,421 @@
+{
+  "name": "Microbiology - BS",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "School of Biological Sciences",
+  "source": "https://catalog.ucsd.edu/curric/BIOL-ug.html",
+  "narrative": [
+    "Lower-division requirements sixty-seven or sixty-eight units total; upper-division requirements forty-eight units total.",
+    "\"All courses required and used toward any biology major requirements must be taken for a letter grade of C- or better.\" Exceptions only for P/NP-only courses (BISP 193, 195P, 196, 197, and 199).",
+    "\"The minimum GPA requirement (for both the major and overall UC) for graduation is 2.0.\"",
+    "Residency: \"all students, including transfer students, must complete at least forty-eight or more units of upper-division course work within the major\" and \"at least twenty units of upper-division course work in the School of Biological Sciences with a grade of C- or better\" while enrolled at UC San Diego.",
+    "Satisfactory progress: if the GPA in biology courses falls below 2.0 the student is placed on probation and may be dropped from the major.",
+    "Special studies: \"One quarter of BISP 195P may apply as an upper-division elective\"; \"One quarter of BISP 193, 196, 197, or 199 may count toward the upper-division elective requirement\"; 194 Advanced Topics courses may apply to major electives if topics differ and taken for a letter grade of C- or better.",
+    "\"Course work taken outside of the School of Biological Sciences may be applicable toward the major, assuming the course has been previously reviewed and approved and meets minimum criteria. Nonreviewed course work must be petitioned.\""
+  ],
+  "sections": [
+    {
+      "name": "Lower-division requirements",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "BILD 1"
+              },
+              {
+                "type": "course",
+                "code": "BILD 3"
+              },
+              {
+                "type": "course",
+                "code": "BILD 4"
+              },
+              {
+                "type": "course",
+                "code": "BILD 5"
+              }
+            ],
+            "label": "Biology"
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "CHEM 6A"
+              },
+              {
+                "type": "course",
+                "code": "CHEM 6B"
+              },
+              {
+                "type": "course",
+                "code": "CHEM 6C"
+              },
+              {
+                "type": "course",
+                "code": "CHEM 7L"
+              }
+            ],
+            "label": "General Chemistry"
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "CHEM 40A"
+              },
+              {
+                "type": "course",
+                "code": "CHEM 40B"
+              }
+            ],
+            "label": "Organic Chemistry"
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "all",
+                    "items": [
+                      {
+                        "type": "course",
+                        "code": "MATH 10A"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MATH 10B"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "all",
+                    "items": [
+                      {
+                        "type": "course",
+                        "code": "MATH 20A"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MATH 20B"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "MATH 11"
+              }
+            ],
+            "label": "Mathematics",
+            "notes": "MATH 10A-B and 11 OR 20A-B and 11"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "PHYS 1A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 1AL"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 1B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 1BL"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 1C"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 1CL"
+                  }
+                ]
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "PHYS 2A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 2B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 2C"
+                  },
+                  {
+                    "type": "choose",
+                    "count": 1,
+                    "items": [
+                      {
+                        "type": "course",
+                        "code": "PHYS 2BL"
+                      },
+                      {
+                        "type": "course",
+                        "code": "PHYS 2CL"
+                      },
+                      {
+                        "type": "course",
+                        "code": "PHYS 2DL"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "label": "Physics",
+            "notes": "PHYS 1A/1AL, 1B/1BL, and 1C/1CL OR 2A-B-C, and 2BL or 2CL or 2DL"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Upper-division requirements",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "BIBC 100"
+              },
+              {
+                "type": "course",
+                "code": "CHEM 114A"
+              },
+              {
+                "type": "course",
+                "code": "BIBC 102"
+              },
+              {
+                "type": "course",
+                "code": "CHEM 114B"
+              }
+            ],
+            "label": "Biochemistry"
+          },
+          {
+            "type": "course",
+            "code": "BICD 100"
+          },
+          {
+            "type": "course",
+            "code": "BIMM 100"
+          },
+          {
+            "type": "course",
+            "code": "BIMM 120"
+          },
+          {
+            "type": "course",
+            "code": "BIMM 121"
+          },
+          {
+            "type": "course",
+            "code": "BIMM 122"
+          },
+          {
+            "type": "choose",
+            "count": 3,
+            "items": [
+              {
+                "type": "course",
+                "code": "BICD 140"
+              },
+              {
+                "type": "course",
+                "code": "BIEB 146"
+              },
+              {
+                "type": "course",
+                "code": "BIEB 150"
+              },
+              {
+                "type": "course",
+                "code": "BIEB 152"
+              },
+              {
+                "type": "course",
+                "code": "BIEB 158"
+              },
+              {
+                "type": "course",
+                "code": "BIMM 114"
+              },
+              {
+                "type": "course",
+                "code": "BIMM 124"
+              },
+              {
+                "type": "course",
+                "code": "BIMM 172"
+              },
+              {
+                "type": "course",
+                "code": "CSE 180"
+              },
+              {
+                "type": "course",
+                "code": "SIO 126"
+              }
+            ],
+            "label": "Core electives"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "label": "Upper-division lab and major electives",
+            "notes": "The catalog: Major electives totaling at least six or eight units depending on the lab course chosen for requirement eight above (a total of forty-eight upper-division units is required for completion of the major).",
+            "items": [
+              {
+                "type": "all",
+                "label": "One six-unit lab",
+                "items": [
+                  {
+                    "type": "text",
+                    "text": "Complete one upper-division six-unit lab (for example BIPN 105)."
+                  },
+                  {
+                    "type": "units",
+                    "units": 6,
+                    "items": [
+                      {
+                        "type": "any",
+                        "subject": "BIBC",
+                        "level": "upper"
+                      },
+                      {
+                        "type": "any",
+                        "subject": "BICD",
+                        "level": "upper"
+                      },
+                      {
+                        "type": "any",
+                        "subject": "BIEB",
+                        "level": "upper"
+                      },
+                      {
+                        "type": "any",
+                        "subject": "BIMM",
+                        "level": "upper"
+                      },
+                      {
+                        "type": "any",
+                        "subject": "BIPN",
+                        "level": "upper"
+                      },
+                      {
+                        "type": "any",
+                        "subject": "BISP",
+                        "level": "upper"
+                      }
+                    ],
+                    "label": "Major electives",
+                    "notes": "\"Major electives totaling at least six or eight units depending on the lab course chosen for requirement eight above (a total of forty-eight upper-division units is required for completion of the major).\" \"A major elective is defined as an upper-division biology course taken through the UC San Diego School of Biological Sciences.\""
+                  }
+                ]
+              },
+              {
+                "type": "all",
+                "label": "A four-unit lab",
+                "items": [
+                  {
+                    "type": "choose",
+                    "count": 1,
+                    "items": [
+                      {
+                        "type": "text",
+                        "text": "one upper-division lab course (at least four units) offered by the UC San Diego School of Biological Sciences"
+                      },
+                      {
+                        "type": "course",
+                        "code": "BISP 196"
+                      },
+                      {
+                        "type": "course",
+                        "code": "BISP 197"
+                      },
+                      {
+                        "type": "course",
+                        "code": "BISP 199"
+                      }
+                    ],
+                    "label": "Upper-division biology lab",
+                    "notes": "\"BISP 196/197/199 (at least four units) may count toward this requirement.\""
+                  },
+                  {
+                    "type": "units",
+                    "units": 8,
+                    "items": [
+                      {
+                        "type": "any",
+                        "subject": "BIBC",
+                        "level": "upper"
+                      },
+                      {
+                        "type": "any",
+                        "subject": "BICD",
+                        "level": "upper"
+                      },
+                      {
+                        "type": "any",
+                        "subject": "BIEB",
+                        "level": "upper"
+                      },
+                      {
+                        "type": "any",
+                        "subject": "BIMM",
+                        "level": "upper"
+                      },
+                      {
+                        "type": "any",
+                        "subject": "BIPN",
+                        "level": "upper"
+                      },
+                      {
+                        "type": "any",
+                        "subject": "BISP",
+                        "level": "upper"
+                      }
+                    ],
+                    "label": "Major electives",
+                    "notes": "\"Major electives totaling at least six or eight units depending on the lab course chosen for requirement eight above (a total of forty-eight upper-division units is required for completion of the major).\" \"A major elective is defined as an upper-division biology course taken through the UC San Diego School of Biological Sciences.\""
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

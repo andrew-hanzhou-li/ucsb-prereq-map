@@ -1,0 +1,296 @@
+{
+  "name": "Mathematics—Secondary Education - BA",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Mathematics",
+  "major_code": "MA32",
+  "source": "https://catalog.ucsd.edu/curric/MATH-ug.html",
+  "narrative": [
+    "All majors must obtain a minimum 2.0 grade point average in the upper-division courses used to satisfy the major requirements. Further, the student must receive a grade of C– or better in any course to be counted toward fulfillment of the major requirements.",
+    "Unless otherwise stated, any mathematics course numbered 100–194 may be used as an upper-division elective. (Note: MATH 195, 196, 197, 198, 199, and 199H cannot be used toward any mathematics major.)",
+    "All courses used to fulfill the major must be taken for a letter grade. No more than three upper-division courses taken externally from UC San Diego can be counted toward any major. Special exceptions may be considered via petition.",
+    "A total of thirteen upper-division courses (totaling fifty-two units) are required, including the required courses.",
+    "Recommended, not required: one of CSE 11, ECE 15, or DSC 20.",
+    "Students interested in earning a California teaching credential from UC San Diego should contact the Education Studies Program (EDS)."
+  ],
+  "sections": [
+    {
+      "name": "Lower Division",
+      "requirement": {
+        "type": "choose",
+        "count": 1,
+        "items": [
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "MATH 18"
+              },
+              {
+                "type": "course",
+                "code": "MATH 20A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 20B"
+              },
+              {
+                "type": "course",
+                "code": "MATH 20C"
+              },
+              {
+                "type": "course",
+                "code": "MATH 20D"
+              },
+              {
+                "type": "course",
+                "code": "MATH 20E"
+              }
+            ],
+            "label": "Linear Algebra and Calculus"
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "MATH 31AH"
+              },
+              {
+                "type": "course",
+                "code": "MATH 31BH"
+              },
+              {
+                "type": "course",
+                "code": "MATH 31CH"
+              },
+              {
+                "type": "course",
+                "code": "MATH 20D"
+              }
+            ],
+            "label": "Honors Calculus"
+          }
+        ],
+        "label": "One of the following sequences"
+      }
+    },
+    {
+      "name": "Upper Division",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "MATH 109"
+              },
+              {
+                "type": "text",
+                "text": "Students completing MATH 31AH-BH-CH may substitute a four-unit upper-division mathematics elective for MATH 109."
+              }
+            ],
+            "label": "Mathematical Reasoning"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "MATH 104A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 105"
+              }
+            ],
+            "label": "Number Theory"
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "MATH 163"
+              }
+            ],
+            "label": "History of Mathematics"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "choose",
+                    "count": 1,
+                    "items": [
+                      {
+                        "type": "course",
+                        "code": "EDS 129A"
+                      },
+                      {
+                        "type": "all",
+                        "items": [
+                          {
+                            "type": "course",
+                            "code": "EDS 136"
+                          },
+                          {
+                            "type": "course",
+                            "code": "EDS 138"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "course",
+                    "code": "EDS 129B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "EDS 129C"
+                  }
+                ],
+                "label": "K–12 mathematics teaching: EDS 129A-B-C (can use EDS 136 and EDS 138 instead of EDS 129A)"
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "EDS 136"
+                  },
+                  {
+                    "type": "course",
+                    "code": "EDS 140"
+                  },
+                  {
+                    "type": "course",
+                    "code": "EDS 141"
+                  }
+                ],
+                "label": "K–12 mathematics research: EDS 136-140-141"
+              }
+            ],
+            "label": "Practicum in Learning/Research"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "MATH 155A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 170A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 187A"
+              }
+            ],
+            "label": "Computer Graphics, Numerical Linear Algebra, or Intro. to Cryptography"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "MATH 180A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 183"
+              }
+            ],
+            "label": "Intro. to Probability or Statistical Methods"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "MATH 150A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 153"
+              },
+              {
+                "type": "course",
+                "code": "MATH 190A"
+              }
+            ],
+            "label": "Geometry/Topology"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "MATH 100A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 102"
+              },
+              {
+                "type": "course",
+                "code": "MATH 103A"
+              }
+            ],
+            "label": "Algebra"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "MATH 140A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 142A"
+              }
+            ],
+            "label": "Analysis"
+          },
+          {
+            "type": "choose",
+            "count": 2,
+            "items": [
+              {
+                "type": "range",
+                "subject": "MATH",
+                "from": 100,
+                "to": 194
+              }
+            ],
+            "label": "Upper-division electives",
+            "notes": "Catalog: \"Upper-division courses must total thirteen four-unit courses (totaling fifty-two units).\" 13 = 11 required courses above (counting the three EDS practicum courses) + 2 electives; a student using EDS 136 and EDS 138 in place of EDS 129A takes one more course in the practicum."
+          },
+          {
+            "type": "text",
+            "text": "Upper-division courses must include at least one two-quarter sequence from the following list: MATH 100A-B; 103A-B, 103A-102; 104A-B; 110-120A; 110-130; 112A-B; 120A-B; 120A-130; 121A-B; 140A-B; 142A-B; 150A-B; 154-184; 154-188; 155A-B; 158-184; 158-188; 160A-B; 170A-B; 170A-175; 170A-171A; 170A-179; 171A-B; 173A-B; 180A-B; 180A-181A; 190A-B; 193A-B. (The sequence may use courses counted above.)"
+          }
+        ],
+        "label": "A total of thirteen upper-division courses (totaling fifty-two units)"
+      }
+    }
+  ]
+}

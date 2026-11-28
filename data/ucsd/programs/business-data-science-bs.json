@@ -1,0 +1,425 @@
+{
+ "id": "UCSD-MAJOR-business-data-science-bs",
+ "name": "Business Data Science - BS",
+ "kind": "major",
+ "type": "Bachelor's Degree",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsd.edu/curric/DSC-ug.html",
+ "sections": [
+  {
+   "name": "Lower Division",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "DSC 10",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DSC 20",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DSC 40A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DSC 80",
+        "status": "active"
+       }
+      ],
+      "label": "Data Science (sixteen units)"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 18",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 31AH",
+          "status": "active"
+         }
+        ],
+        "count": 1
+       },
+       {
+        "type": "course",
+        "code": "MATH 20A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 20B",
+        "status": "active"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 20C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 31BH",
+          "status": "active"
+         }
+        ],
+        "count": 1
+       }
+      ],
+      "label": "Mathematics (sixteen units)"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "DSC 31",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MGT 45",
+        "status": "active"
+       }
+      ],
+      "label": "Subject Domain Courses (eight units)"
+     }
+    ],
+    "label": "Lower Division (forty units)"
+   }
+  },
+  {
+   "name": "Upper Division",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "MATH 183",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DSC 100",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "DSC 140A",
+        "status": "active"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "DSC 148",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 189",
+          "status": "active"
+         }
+        ],
+        "count": 1
+       },
+       {
+        "type": "course",
+        "code": "MGT 100",
+        "status": "active"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "MGT 127",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MGT 127R",
+          "status": "active"
+         }
+        ],
+        "count": 1
+       },
+       {
+        "type": "course",
+        "code": "MGT 160",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 168",
+        "status": "inactive"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "MGT 180",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MGT 180R",
+          "status": "active"
+         }
+        ],
+        "count": 1
+       }
+      ],
+      "label": "Core Courses (thirty-six units)"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "DSC 181",
+        "status": "inactive"
+       },
+       {
+        "type": "course",
+        "code": "MGT 191",
+        "status": "inactive"
+       }
+      ],
+      "count": 1,
+      "label": "Senior Project (four units)",
+      "notes": "DSC 181/MGT 191"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "DSC 102",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "DSC 104",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "DSC 106",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "DSC 120",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "DSC 123A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "DSC 123B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "DSC 140B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "DSC 148",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "DSC 155",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "DSC 160",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "DSC 161",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "DSC 167",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "DSC 170",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "DSC 190",
+          "status": "active"
+         }
+        ],
+        "count": 2,
+        "label": "Two UD DSC courses",
+        "notes": "Any other DSC course numbered 100-170 or DSC 190 (not one used for the core)."
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "MGT 104",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MGT 108R",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MGT 112",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MGT 120",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MGT 137",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MGT 153",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MGT 155",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MGT 159T",
+          "status": "active"
+         },
+         {
+          "type": "choose",
+          "items": [
+           {
+            "type": "course",
+            "code": "MGT 162",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MGT 162R",
+            "status": "active"
+           }
+          ],
+          "count": 1
+         },
+         {
+          "type": "choose",
+          "items": [
+           {
+            "type": "course",
+            "code": "MGT 171",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MGT 171R",
+            "status": "active"
+           }
+          ],
+          "count": 1
+         },
+         {
+          "type": "choose",
+          "items": [
+           {
+            "type": "course",
+            "code": "MGT 172",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MGT 172R",
+            "status": "active"
+           }
+          ],
+          "count": 1
+         },
+         {
+          "type": "course",
+          "code": "MGT 175",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MGT 186",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "MGT 188",
+          "status": "active"
+         }
+        ],
+        "count": 2,
+        "label": "Two UD MGT courses from list below"
+       }
+      ],
+      "label": "Electives (sixteen units)"
+     }
+    ],
+    "label": "Upper Division (fifty-six units)"
+   }
+  }
+ ],
+ "narrative": [
+  "The major consists of ninety-six units, with forty units from lower-division courses and fifty-six units from upper-division courses.",
+  "Lower division: All courses must be taken for a letter grade and passed with a minimum grade of C–.",
+  "Upper division: Students must complete fifty-six upper-division units. All courses must be taken for a letter grade unless offered Pass/Not Pass only. A minimum grade of C– is required.",
+  "Students may not combine business data science with a minor in business (RSM-MN-002) or data science (DSC-MN-001).",
+  "Recommended: students take the capstone as near as possible to graduation.",
+  "The data science and business data science majors are “selective.” Continuing students must complete the screening courses MATH 18 or MATH 31AH, MATH 20C or MATH 31BH, and DSC 10.",
+  "Students majoring or minoring in any of the computer science engineering programs (CSE-BS-001/ECE-BS-001, CSE-BS-002, CSE-BS-003, CSE-BS-004, CSE MN-001) may not double major or minor in data science or business data science. Students may not double major in data science and business data science.",
+  "Students will be expected to fulfill all prerequisites for all courses, which may entail additional course work beyond the data science major requirements.",
+  "Also described on the Rady School of Management page (MGT-ug), which lists DSC 10/R and DSC 20/R (allowing DSC 10R, DSC 20R) where the Data Science page lists DSC 10 and DSC 20, and adds that the major cannot be paired with the computer science minor."
+ ]
+}

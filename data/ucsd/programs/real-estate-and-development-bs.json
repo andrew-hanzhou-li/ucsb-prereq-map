@@ -1,0 +1,438 @@
+{
+ "id": "UCSD-MAJOR-real-estate-and-development-bs",
+ "name": "Real Estate and Development - BS",
+ "kind": "major",
+ "type": "Bachelor's Degree",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsd.edu/curric/USP.html",
+ "sections": [
+  {
+   "name": "Lower-Division Requirements",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "USP 1",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "USP 2",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "USP 6",
+        "status": "active"
+       }
+      ],
+      "count": 1
+     },
+     {
+      "type": "course",
+      "code": "USP 5",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "USP 15",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "USP 25",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "USP 50",
+      "status": "active"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "MATH 10A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 20A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGT 3",
+        "status": "active"
+       }
+      ],
+      "count": 1
+     },
+     {
+      "type": "course",
+      "code": "ECON 1",
+      "status": "active"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "choose",
+          "items": [
+           {
+            "type": "course",
+            "code": "ECON 4",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MGT 4",
+            "status": "active"
+           }
+          ],
+          "count": 1
+         },
+         {
+          "type": "course",
+          "code": "MGT 5",
+          "status": "active"
+         }
+        ]
+       },
+       {
+        "type": "course",
+        "code": "MGT 45",
+        "status": "active"
+       }
+      ],
+      "count": 1,
+      "notes": "ECON 4/MGT 4 and MGT 5 may be replaced with MGT 45"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Foundation Courses",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "USP 124",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "USP 150",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "USP 151",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "USP 152A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "USP 153",
+      "status": "active"
+     }
+    ],
+    "notes": "twenty units"
+   }
+  },
+  {
+   "name": "Technical Elective",
+   "requirement": {
+    "type": "choose",
+    "items": [
+     {
+      "type": "course",
+      "code": "USP 172",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "USP 175",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "USP 177A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "USP 183GS",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "USP 191A",
+      "status": "active"
+     }
+    ],
+    "count": 1
+   }
+  },
+  {
+   "name": "Sustainable Planning/Sustainable Development Elective",
+   "requirement": {
+    "type": "choose",
+    "items": [
+     {
+      "type": "course",
+      "code": "USP 119",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "USP 169",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "USP 170",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "USP 171",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "USP 171GS",
+      "status": "active"
+     }
+    ],
+    "count": 1
+   }
+  },
+  {
+   "name": "Upper-Division Electives",
+   "requirement": {
+    "type": "choose",
+    "items": [
+     {
+      "type": "course",
+      "code": "ECON 116",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECON 125",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECON 131",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "USP 120",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "USP 137",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "USP 138",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "USP 152B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "USP 155",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "USP 158A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "USP 159A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "USP 165B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "USP 169",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "USP 170",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "USP 171",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "USP 171GS",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "USP 172",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "USP 173",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "USP 175",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "USP 177A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "USP 177B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "USP 179",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "USP 180",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "USP 181",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "USP 183GS",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "USP 190",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "USP 191A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "USP 191B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MGT 112",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MGT 153",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MGT 157",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MGT 158",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MGT 162",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MGT 164",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MGT 166",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MGT 172",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MGT 181",
+      "status": "active"
+     }
+    ],
+    "count": 3,
+    "notes": "Students are to choose three courses (or twelve units)"
+   }
+  },
+  {
+   "name": "Real Estate and Development Capstone Studio",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "USP 185A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "USP 185B",
+      "status": "active"
+     }
+    ],
+    "notes": "USP 185A in fall, and USP 185B in winter. These courses must be taken in order."
+   }
+  }
+ ],
+ "narrative": [
+  "The undergraduate RED major requires eight or nine lower-division courses, ten upper-division courses, and the required two-quarter Capstone Studio Sequence.",
+  "Students must complete USP 5, USP 15, USP 25, USP 50, USP 124, USP 151, USP 152A, and USP 153 prior to enrolling in USP 185A. USP 185A and the technical elective requirement are prerequisites for USP 185B."
+ ]
+}

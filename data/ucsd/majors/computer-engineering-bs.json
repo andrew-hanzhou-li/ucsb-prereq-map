@@ -1,0 +1,612 @@
+{
+  "name": "Computer Engineering - BS",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Computer Science and Engineering",
+  "major_code": "CS25",
+  "source": "https://catalog.ucsd.edu/curric/CSE-ug.html",
+  "narrative": [
+    "All major requirements for each degree program must be completed with a C– or better, except for courses offered Pass/No Pass only.",
+    "All major requirements and upper-division electives except CSE 91, 95, 109, 197, 198, or 199 must be taken for a letter grade.",
+    "To graduate, a minimum grade point average of 2.0 will be required in upper-division courses in the major, including upper-division electives.",
+    "At most four units of CSE 197 may be used toward technical elective requirements.",
+    "CSE 195 cannot be used toward course requirements.",
+    "Students may not get duplicate credit for equivalent courses.",
+    "Selective major: admission for continuing students is by selective major application (screening courses: CSE 8B or 11, CSE 12, CSE 29 or ECE 15 or CSE 15L, CSE 20, CSE 21, CSE 30 or ECE 30, CSE 100 (R), and CSE 101 for applicants after second year).",
+    "The BS computer engineering program requires a total of 132 units (not including the general-education requirements).",
+    "The BS computer engineering program is jointly administered by the Departments of Computer Science and Engineering and Electrical and Computer Engineering.",
+    "Students must complete sixty-four upper-division units: eight units of CSE core courses, twelve units of ECE core courses, four CSE or ECE project course units, and forty units of elective courses.",
+    "All courses must be taken for a letter grade unless they are offered P/NP only.",
+    "The ECE page (catalog.ucsd.edu/curric/ECE-ug.html) describes the same curriculum with differences: it prints 'required to take CSE 140, CSE 141, or CSE 142' with a 68-unit upper-division total, lists MATH 18 and 20A-B-C-D without the MATH 31AH/31BH alternatives, and allows a maximum of four units of P/NP courses (CSE 198, 199, 199H, ECE 191, 193H, 196, 198, 199). This file follows the CSE page, whose unit breakdown (8 units of CSE core, 64 upper-division units, 132 total) fits CSE 140 plus one of CSE 141/142."
+  ],
+  "sections": [
+    {
+      "name": "Lower-Division Requirements",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "all",
+            "label": "Computer Science and Engineering",
+            "items": [
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "CSE 8B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CSE 11"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "CSE 12"
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "CSE 29"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ECE 15"
+                  }
+                ]
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "CSE 30"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ECE 30"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "all",
+            "label": "Mathematics",
+            "items": [
+              {
+                "type": "course",
+                "code": "MATH 20A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 20B"
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 20C"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 31BH"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "MATH 20D"
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 18"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 31AH"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "label": "Physics",
+            "notes": "PHYS 2A, PHYS 2B, PHYS 2C (twelve units). Students who received high grades in both calculus and physics in high school may substitute the major's sequence, PHYS 4A-B-C, for PHYS 2A-B-C.",
+            "items": [
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "PHYS 2A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 2B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 2C"
+                  }
+                ]
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "PHYS 4A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 4B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 4C"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "label": "Probability and Statistics",
+            "items": [
+              {
+                "type": "course",
+                "code": "MATH 11"
+              },
+              {
+                "type": "course",
+                "code": "ECE 109"
+              }
+            ]
+          },
+          {
+            "type": "all",
+            "label": "Electrical Engineering",
+            "items": [
+              {
+                "type": "course",
+                "code": "ECE 35"
+              },
+              {
+                "type": "course",
+                "code": "ECE 45"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Upper-Division Requirements",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "all",
+            "label": "Core CSE Courses",
+            "items": [
+              {
+                "type": "course",
+                "code": "CSE 140"
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "CSE 141"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CSE 142"
+                  }
+                ]
+              }
+            ],
+            "notes": "Core CSE Courses: CSE 140 and (CSE 141 or CSE 142) (eight units)."
+          },
+          {
+            "type": "all",
+            "label": "Core ECE Courses",
+            "items": [
+              {
+                "type": "course",
+                "code": "ECE 101"
+              },
+              {
+                "type": "course",
+                "code": "ECE 108"
+              },
+              {
+                "type": "course",
+                "code": "ECE 111"
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "label": "CSE or ECE Project Course",
+            "items": [
+              {
+                "type": "course",
+                "code": "CSE 118"
+              },
+              {
+                "type": "course",
+                "code": "CSE 145"
+              },
+              {
+                "type": "course",
+                "code": "CSE 147"
+              },
+              {
+                "type": "course",
+                "code": "CSE 148"
+              },
+              {
+                "type": "course",
+                "code": "CSE 170"
+              },
+              {
+                "type": "course",
+                "code": "CSE 176A"
+              },
+              {
+                "type": "course",
+                "code": "CSE 176E"
+              },
+              {
+                "type": "course",
+                "code": "ECE 115"
+              },
+              {
+                "type": "course",
+                "code": "ECE 140B"
+              },
+              {
+                "type": "course",
+                "code": "ECE 144"
+              },
+              {
+                "type": "course",
+                "code": "ECE 191"
+              },
+              {
+                "type": "course",
+                "code": "ECE 196"
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 10,
+            "label": "Electives",
+            "notes": "Ten courses (forty units). At least forty units of upper-division (or graduate) CSE and ECE courses need to be taken as electives, which includes CSE 100–299 and ECE 100–299. A maximum of two courses (eight units) of CSE or ECE electives or technical elective courses from departments outside of CSE or ECE may be used to fulfill the major requirements. Technical electives: MATH upper-division 100–194 except MATH 168A, 184 (CS25 computer engineering majors only: MATH 183 is not allowed); MAE 100–189 four-unit courses except MAE 140 (only CS26 majors may take MAE 140); ECE technical electives are four-unit ECE 100–189 and ECE 196. A maximum of eight units of P/NP courses may count, chosen from: a maximum of four units of CSE 198, CSE 199, CSE 199H, ECE 198, ECE 199; a maximum of four units of CSE 197 or ECE 197.",
+            "items": [
+              {
+                "type": "range",
+                "subject": "CSE",
+                "from": 100,
+                "to": 299
+              },
+              {
+                "type": "range",
+                "subject": "ECE",
+                "from": 100,
+                "to": 299
+              },
+              {
+                "type": "range",
+                "subject": "COGS",
+                "from": 100,
+                "to": 189
+              },
+              {
+                "type": "course",
+                "code": "COMM 105G"
+              },
+              {
+                "type": "course",
+                "code": "COMM 106I"
+              },
+              {
+                "type": "course",
+                "code": "DSC 102"
+              },
+              {
+                "type": "course",
+                "code": "DSC 120"
+              },
+              {
+                "type": "course",
+                "code": "ECON 100A"
+              },
+              {
+                "type": "course",
+                "code": "ECON 100B"
+              },
+              {
+                "type": "course",
+                "code": "ECON 109"
+              },
+              {
+                "type": "course",
+                "code": "ECON 110A"
+              },
+              {
+                "type": "course",
+                "code": "ECON 110B"
+              },
+              {
+                "type": "course",
+                "code": "ECON 113"
+              },
+              {
+                "type": "course",
+                "code": "ECON 120A"
+              },
+              {
+                "type": "course",
+                "code": "ECON 120B"
+              },
+              {
+                "type": "course",
+                "code": "ECON 120C"
+              },
+              {
+                "type": "course",
+                "code": "ECON 121"
+              },
+              {
+                "type": "course",
+                "code": "ECON 171"
+              },
+              {
+                "type": "course",
+                "code": "ECON 172A"
+              },
+              {
+                "type": "course",
+                "code": "ECON 172B"
+              },
+              {
+                "type": "course",
+                "code": "ECON 178"
+              },
+              {
+                "type": "course",
+                "code": "EDS 124AR"
+              },
+              {
+                "type": "course",
+                "code": "EDS 124BR"
+              },
+              {
+                "type": "course",
+                "code": "ENG 100D"
+              },
+              {
+                "type": "course",
+                "code": "ENG 100L"
+              },
+              {
+                "type": "course",
+                "code": "LIGN 110"
+              },
+              {
+                "type": "course",
+                "code": "LIGN 111"
+              },
+              {
+                "type": "course",
+                "code": "LIGN 120"
+              },
+              {
+                "type": "course",
+                "code": "LIGN 121"
+              },
+              {
+                "type": "course",
+                "code": "LIGN 130"
+              },
+              {
+                "type": "course",
+                "code": "LIGN 160"
+              },
+              {
+                "type": "course",
+                "code": "LIGN 165"
+              },
+              {
+                "type": "course",
+                "code": "LIGN 167"
+              },
+              {
+                "type": "course",
+                "code": "LIGN 170"
+              },
+              {
+                "type": "course",
+                "code": "LIGN 175"
+              },
+              {
+                "type": "range",
+                "subject": "MATH",
+                "from": 100,
+                "to": 194
+              },
+              {
+                "type": "range",
+                "subject": "MAE",
+                "from": 100,
+                "to": 189
+              },
+              {
+                "type": "course",
+                "code": "MUS 170"
+              },
+              {
+                "type": "course",
+                "code": "MUS 171"
+              },
+              {
+                "type": "course",
+                "code": "MUS 172"
+              },
+              {
+                "type": "course",
+                "code": "MUS 173"
+              },
+              {
+                "type": "course",
+                "code": "MUS 177"
+              },
+              {
+                "type": "course",
+                "code": "PHYS 105A"
+              },
+              {
+                "type": "course",
+                "code": "PHYS 105B"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 161"
+              },
+              {
+                "type": "course",
+                "code": "MGT 103"
+              },
+              {
+                "type": "course",
+                "code": "MGT 110"
+              },
+              {
+                "type": "course",
+                "code": "MGT 121A"
+              },
+              {
+                "type": "course",
+                "code": "MGT 127"
+              },
+              {
+                "type": "course",
+                "code": "MGT 164"
+              },
+              {
+                "type": "course",
+                "code": "MGT 164GS"
+              },
+              {
+                "type": "course",
+                "code": "MGT 166"
+              },
+              {
+                "type": "course",
+                "code": "MGT 167"
+              },
+              {
+                "type": "course",
+                "code": "MGT 171"
+              },
+              {
+                "type": "course",
+                "code": "MGT 172"
+              },
+              {
+                "type": "course",
+                "code": "MGT 175"
+              },
+              {
+                "type": "course",
+                "code": "MGT 176"
+              },
+              {
+                "type": "course",
+                "code": "MGT 181"
+              },
+              {
+                "type": "course",
+                "code": "VIS 141A"
+              },
+              {
+                "type": "course",
+                "code": "VIS 141B"
+              },
+              {
+                "type": "course",
+                "code": "VIS 142"
+              },
+              {
+                "type": "course",
+                "code": "VIS 143"
+              },
+              {
+                "type": "course",
+                "code": "VIS 147A"
+              },
+              {
+                "type": "course",
+                "code": "VIS 147B"
+              },
+              {
+                "type": "course",
+                "code": "WCWP 160"
+              },
+              {
+                "type": "text",
+                "text": "A maximum of two courses (eight units) of CSE or ECE electives or technical elective courses from departments outside of CSE or ECE may be used to fulfill the major requirements (see 'Technical Electives for all CSE Majors')."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Open Electives",
+      "requirement": {
+        "type": "units",
+        "units": 8,
+        "label": "Open Electives",
+        "notes": "Students must complete at most eight units of either lower- or upper-division CSE or ECE courses, which includes courses taken for a letter grade among courses CSE 3–199 and/or ECE 5–199. Read as eight required units: 60 lower-division + 64 upper-division + 8 open-elective units = the stated 132-unit total.",
+        "items": [
+          {
+            "type": "range",
+            "subject": "CSE",
+            "from": 3,
+            "to": 199
+          },
+          {
+            "type": "range",
+            "subject": "ECE",
+            "from": 5,
+            "to": 199
+          }
+        ]
+      }
+    }
+  ]
+}

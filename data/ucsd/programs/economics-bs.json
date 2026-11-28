@@ -1,0 +1,755 @@
+{
+ "id": "UCSD-MAJOR-economics-bs",
+ "name": "Economics - BS",
+ "kind": "major",
+ "type": "Bachelor's Degree",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsd.edu/curric/ECON-ug.html",
+ "sections": [
+  {
+   "name": "Lower-division mathematics courses",
+   "requirement": {
+    "type": "choose",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "MATH 10A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 10B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 10C",
+        "status": "active"
+       }
+      ]
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "MATH 20A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 20B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 20C",
+        "status": "active"
+       }
+      ]
+     }
+    ],
+    "count": 1,
+    "label": "Lower-division mathematics courses",
+    "notes": "MATH 10A-B-C (required) or MATH 20A-B-C (recommended)."
+   }
+  },
+  {
+   "name": "Lower-division economics courses",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "ECON 1",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECON 3",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECON 5",
+      "status": "active"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Upper-division economics core courses",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "ECON 100A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECON 100B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECON 100C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECON 110A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECON 110B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECON 120A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECON 120B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ECON 120C",
+      "status": "active"
+     }
+    ],
+    "notes": "ECON 100A-B-C (microeconomics), ECON 110A-B (macroeconomics), and ECON 120A-B-C (econometrics)."
+   }
+  },
+  {
+   "name": "Upper-division economics electives",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "ECON 101",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 103",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 105",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 106",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 109",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 111",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 112",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 113",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 117",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 121",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 122",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 125",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 129",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 134",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 136",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 137",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 141",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 142",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 143",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 146",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 150",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 151",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 152",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 171",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 172A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 172B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 173A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 173B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 174",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 176",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 178",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 182",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 183",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 194",
+        "status": "active"
+       }
+      ],
+      "count": 2,
+      "label": "BS economics advanced electives",
+      "notes": "At least two of these elective courses must be advanced electives. MATH 194: refer to course description for enforced prerequisite list."
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "ECON 100AH",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 100BH",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 100CH",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 101",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 102",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 102T",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 103",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 104",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 105",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 106",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 107",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 109",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 109T",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 110AH",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 110BH",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 111",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 112",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 113",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 116",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 117",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 118",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 119",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 120AH",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 120BH",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 120CH",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 121",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 122",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 125",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 129",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 130",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 131",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 132",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 132T",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 134",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 135",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 136",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 137",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 138",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 139",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 140",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 141",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 142",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 143",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 144",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 145",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 146",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 147",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 149",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 150",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 151",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 152",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 152T",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 158",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 159",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 162",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 164",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 164T",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 165",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 165T",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 167",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 168",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 169",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 171",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 172A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 172B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 173A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 173B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 174",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 175",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 176",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 178",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 181",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 182",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 183",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 184",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 185",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 186",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 190",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 191A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 191B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 195P",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 198",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 199",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 194",
+        "status": "active"
+       }
+      ],
+      "count": 3,
+      "label": "Remaining upper-division economics electives",
+      "notes": "Five upper-division economics electives in all, at least two of them advanced electives; further advanced electives (including MATH 194) also count here. Required core courses don't count."
+     }
+    ],
+    "label": "Five more economics courses at the upper-division level",
+    "notes": "Five more economics courses at the upper-division level. At least two of these elective courses must be advanced electives."
+   }
+  }
+ ],
+ "narrative": [
+  "To graduate with a major, a minimum GPA of 2.0 is required in upper-division courses used to satisfy major requirements. All courses must be taken for a letter grade and passed with a grade of C– (C minus), or better, with the exception of ECON 195P, ECON 198, and ECON 199, for which P/NP grading is mandatory. No more than twelve units of ECON 195P, ECON 198, and ECON 199 taken P/NP may be counted toward major requirements. ECON 195P may only be taken twice for credit (eight units).",
+  "The 100, 110, 120, 172, and 173 core courses are sequential. That is, A must be taken before B, and when applicable, B before C.",
+  "Note that the prerequisites for advanced economics electives are the completion of core courses. Therefore, BS economics majors are strongly encouraged to take ECON 100A-B-C and ECON 120A-B-C in their sophomore year.",
+  "While we require economics majors to take MATH 10A-B-C, we recommend that economics students take MATH 20A-B-C."
+ ]
+}

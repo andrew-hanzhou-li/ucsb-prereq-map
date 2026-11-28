@@ -1,0 +1,292 @@
+{
+  "name": "Mechanical Engineering - BS - Materials Science and Engineering",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Mechanical and Aerospace Engineering",
+  "source": "https://catalog.ucsd.edu/curric/MAE-ug.html",
+  "narrative": [
+    "The BS programs require a minimum of 180 units.",
+    "Specific course requirements for each major program are outlined in tables in this section of the catalog (the 'Recommended Course Sequence'); GE/HSS slots in the tables are not listed here.",
+    "To graduate, students must maintain an overall GPA of at least 2.0.",
+    "Deviations from these programs of study must be approved by the Undergraduate Affairs Committee prior to taking alternative courses.",
+    "MAE 197 is not allowed as a technical elective in meeting the upper-division major requirements. MAE 199 and MAE 198 may be used as a technical elective only under restrictive conditions.",
+    "There is a minimum GPA requirement of 3.0 when using 199s as a TE.",
+    "Students must develop a program that includes a total of at least twenty-four units in the arts, humanities, and social sciences, not including subjects such as accounting, industrial management, finance, or personnel administration.",
+    "The degrees in mechanical and aerospace engineering are selective. Screening courses: MATH 20A, MATH 20B, MATH 20C, MATH 20D, MATH 18 or 20F, PHYS 2A, B, and C, CHEM 6A, and the highest level of introductory computer programming course offered at the community college (transfer applicants)."
+  ],
+  "sections": [
+    {
+      "name": "Lower-division requirements",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "course",
+            "code": "MATH 20A"
+          },
+          {
+            "type": "course",
+            "code": "MATH 20B"
+          },
+          {
+            "type": "course",
+            "code": "MATH 20C"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "CHEM 6A"
+              },
+              {
+                "type": "course",
+                "code": "CHEM 6AH"
+              }
+            ],
+            "notes": "CHEM 6AH may be taken in place of CHEM 6A."
+          },
+          {
+            "type": "course",
+            "code": "PHYS 2A"
+          },
+          {
+            "type": "course",
+            "code": "PHYS 2B"
+          },
+          {
+            "type": "course",
+            "code": "PHYS 2C"
+          },
+          {
+            "type": "course",
+            "code": "MAE 3"
+          },
+          {
+            "type": "course",
+            "code": "MATH 18"
+          },
+          {
+            "type": "course",
+            "code": "MATH 20D"
+          },
+          {
+            "type": "course",
+            "code": "MATH 20E"
+          },
+          {
+            "type": "course",
+            "code": "MAE 8"
+          },
+          {
+            "type": "course",
+            "code": "MAE 20"
+          },
+          {
+            "type": "course",
+            "code": "MAE 30A"
+          },
+          {
+            "type": "course",
+            "code": "MAE 30B"
+          },
+          {
+            "type": "course",
+            "code": "MAE 11"
+          },
+          {
+            "type": "course",
+            "code": "MAE 40"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Upper-division requirements",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "course",
+            "code": "MAE 131A"
+          },
+          {
+            "type": "course",
+            "code": "MAE 101A"
+          },
+          {
+            "type": "course",
+            "code": "MAE 101B"
+          },
+          {
+            "type": "course",
+            "code": "MAE 105"
+          },
+          {
+            "type": "course",
+            "code": "MAE 143A"
+          },
+          {
+            "type": "course",
+            "code": "MAE 143B"
+          },
+          {
+            "type": "course",
+            "code": "MAE 170"
+          },
+          {
+            "type": "course",
+            "code": "MAE 107"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "MAE 160"
+              },
+              {
+                "type": "course",
+                "code": "MAE 131B"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "MAE 101C"
+          },
+          {
+            "type": "course",
+            "code": "MAE 171A"
+          },
+          {
+            "type": "course",
+            "code": "MAE 156A"
+          },
+          {
+            "type": "course",
+            "code": "MAE 156B"
+          },
+          {
+            "type": "course",
+            "code": "MAE 150"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Technical electives",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "choose",
+            "count": 4,
+            "items": [
+              {
+                "type": "course",
+                "code": "MAE 130"
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MAE 131B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAE 160"
+                  }
+                ],
+                "notes": "MAE 131B (if MAE 160 is used to satisfy ME major requirement) or MAE 160 (if MAE 131B is used to satisfy ME major requirement)"
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MAE 133"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SE 131A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SE 131B"
+                  }
+                ],
+                "notes": "Only one of the courses marked with an asterisk (*) will be accepted for the specialization"
+              },
+              {
+                "type": "course",
+                "code": "MAE 165"
+              },
+              {
+                "type": "course",
+                "code": "MAE 166"
+              },
+              {
+                "type": "course",
+                "code": "MAE 190"
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "NANO 134"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATS 257"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "NANO 148"
+              },
+              {
+                "type": "course",
+                "code": "NANO 158"
+              },
+              {
+                "type": "course",
+                "code": "NANO 158L"
+              },
+              {
+                "type": "course",
+                "code": "NANO 161"
+              },
+              {
+                "type": "course",
+                "code": "NANO 174L"
+              },
+              {
+                "type": "course",
+                "code": "SE 142"
+              },
+              {
+                "type": "course",
+                "code": "SE 163"
+              }
+            ],
+            "label": "Four of the five technical electives from the specialization list"
+          },
+          {
+            "type": "text",
+            "text": "The remaining (fifth) technical elective: Technical elective (TE) courses must be upper-division or graduate courses in engineering sciences, natural sciences, or mathematics selected with a prior approval of the department. See Student Affairs in MAE for a current list of preapproved TEs."
+          }
+        ],
+        "label": "Technical electives (five)"
+      }
+    }
+  ]
+}

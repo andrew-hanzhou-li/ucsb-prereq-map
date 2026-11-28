@@ -1,0 +1,81 @@
+{
+ "id": "UCSD-SYN",
+ "name": "Synthesis Program",
+ "kind": "department",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsd.edu/courses/SYN.html",
+ "sections": [
+  {
+   "name": "Lower division",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "SYN 1",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SYN 1R",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SYN 2",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SYN 2R",
+      "status": "active"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Upper division",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "SYN 100",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SYN 100GS",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SYN 150",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SYN 150R",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SYN 195",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SYN 198",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SYN 199",
+      "status": "active"
+     }
+    ]
+   }
+  }
+ ],
+ "narrative": []
+}

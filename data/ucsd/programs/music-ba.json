@@ -1,0 +1,561 @@
+{
+ "id": "UCSD-MAJOR-music-ba",
+ "name": "Music - BA",
+ "kind": "major",
+ "type": "Bachelor's Degree",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsd.edu/curric/MUS-ug.html",
+ "sections": [
+  {
+   "name": "Musicianship",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "MUS 2A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MUS 2B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MUS 2C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MUS 2AK",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MUS 2BK",
+      "status": "active"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "MUS 2CK",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUS 2JK",
+        "status": "active"
+       }
+      ],
+      "count": 1
+     }
+    ],
+    "label": "Musicianship",
+    "notes": "Lower-division prerequisites; Jazz emphasis students take MUS 2JK in lieu of 2CK"
+   }
+  },
+  {
+   "name": "Ensemble performance",
+   "requirement": {
+    "type": "choose",
+    "items": [
+     {
+      "type": "text",
+      "text": "MUS 95B-W (any ensemble in the MUS 95B through 95W series)"
+     },
+     {
+      "type": "course",
+      "code": "MUS 130",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MUS 131",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MUS 133",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MUS 134",
+      "status": "active"
+     }
+    ],
+    "count": 3,
+    "label": "Ensemble performance",
+    "notes": "Any three of MUS 95B-W, 130, 131, 133, or 134 (One of these may be repeated for credit)"
+   }
+  },
+  {
+   "name": "Music Theory",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "MUS 101A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MUS 101B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MUS 101C",
+      "status": "active"
+     }
+    ],
+    "label": "Music Theory"
+   }
+  },
+  {
+   "name": "Music History",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "MUS 120A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MUS 120B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MUS 120C",
+      "status": "active"
+     }
+    ],
+    "label": "Music History"
+   }
+  },
+  {
+   "name": "Theory/History/Literature electives",
+   "requirement": {
+    "type": "choose",
+    "items": [
+     {
+      "type": "course",
+      "code": "MUS 102",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MUS 106",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MUS 107",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MUS 110",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MUS 111",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MUS 112",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MUS 113",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MUS 114",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MUS 115",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MUS 116",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MUS 126",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MUS 127",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MUS 137A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MUS 137B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MUS 137C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MUS 150",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MUS 151",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MUS 152",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MUS 153",
+      "status": "active"
+     }
+    ],
+    "count": 3,
+    "label": "Theory/History/Literature electives"
+   }
+  },
+  {
+   "name": "Area of Emphasis",
+   "requirement": {
+    "type": "choose",
+    "items": [
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "MUS 103A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUS 103B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUS 103C",
+        "status": "active"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "MUS 33A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MUS 33B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MUS 33C",
+            "status": "active"
+           }
+          ]
+         },
+         {
+          "type": "text",
+          "text": "or take a proficiency exam for the three-quarter sequence course"
+         }
+        ],
+        "count": 1,
+        "label": "Introduction to Composition I, II, and III",
+        "notes": "Composition emphasis students must take Music 33A-B-C, Introduction to Composition I, II, and III, or take a proficiency exam for the three-quarter sequence course."
+       }
+      ],
+      "label": "Composition",
+      "notes": "MUS 103A-B-C (Prerequisite: MUS 33A-B-C)"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "MUS 132",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUS 132V",
+        "status": "active"
+       },
+       {
+        "type": "text",
+        "text": "a repeat of MUS 132 or MUS 132V (May be repeated for credit)"
+       }
+      ],
+      "count": 3,
+      "label": "Performance",
+      "notes": "MUS 132, 132V (May be repeated for credit); three courses in all, counting repeats."
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "MUS 105",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUS 126",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUS 127",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUS 150",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUS 151",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUS 152",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUS 153",
+        "status": "active"
+       }
+      ],
+      "count": 3,
+      "label": "Jazz and the African Diaspora"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "MUS 170",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUS 171",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUS 172",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUS 173A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUS 173B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUS 173A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUS 173B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUS 174A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUS 174B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUS 174C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUS 175",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUS 176",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUS 177",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYC 138",
+        "status": "active"
+       }
+      ],
+      "count": 3,
+      "label": "Technology",
+      "notes": "MUS 170-173A-B, 174A-B-C, 175, 176, 177, PSYCH 138. The catalog prints 'PSYCH 138' here; the ICAM list on the same page spells it PSYC 138."
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "MUS 107",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUS 110",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUS 111",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUS 112",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUS 113",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUS 114",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUS 115",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUS 116",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUS 126",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUS 127",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUS 150",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUS 151",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUS 152",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MUS 153",
+        "status": "active"
+       }
+      ],
+      "count": 3,
+      "label": "Literature"
+     }
+    ],
+    "count": 1,
+    "label": "Area of Emphasis",
+    "notes": "Any three courses from one of the following areas"
+   }
+  },
+  {
+   "name": "Department Seminar",
+   "requirement": {
+    "type": "choose",
+    "items": [
+     {
+      "type": "course",
+      "code": "MUS 43",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "MUS 143",
+      "status": "active"
+     }
+    ],
+    "count": 1,
+    "label": "Department Seminar",
+    "notes": "MUS 43/143 (Every quarter registered as a music major)"
+   }
+  }
+ ],
+ "narrative": [
+  "To continue within the major, all students must pass Music 2C or an equivalent proficiency exam.",
+  "All required music major courses must be taken for a letter grade, with the exception of MUS 143, which is taken on a Pass/Not Pass basis. All courses to be counted toward satisfying the major requirements must be passed with a grade of C or better.",
+  "Jazz emphasis students take MUS 2JK in lieu of 2CK.",
+  "All transfer students must pass a proficiency examination in MUS 2C. Basic Musicianship, and MUS 2CK. Basic Keyboard, or take the two sequence courses.",
+  "Area of Emphasis: 'Any three courses from the following' areas (Composition, Performance, Jazz and the African Diaspora, Technology, Literature); read as three courses within one area."
+ ]
+}

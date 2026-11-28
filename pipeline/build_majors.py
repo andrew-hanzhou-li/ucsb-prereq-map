@@ -86,10 +86,11 @@ def clean_text(text):
 
 
 class Converter:
-    def __init__(self, data, active_codes, overrides):
+    def __init__(self, data, active_codes, overrides, units=None):
         self.course_sets = data["course_sets"]
         self.group_ids = data["course_group_ids"]
         self.active = active_codes
+        self.units = units or {}          # code -> fewest units it can be taken for
         self.overrides = overrides
 
     # ------------------------------------------------------------- courses
@@ -165,7 +166,9 @@ class Converter:
             node = {"type": "text", "text": clean_text(rule.get("description")) or "See the catalog."}
         else:
             items = self.value_items(value)
-            if condition == "completedAllOf":
+            if condition == "completedAllOf" and whole_list(items):
+                node = self.list_rule(items, rule)
+            elif condition == "completedAllOf":
                 node = {"type": "all", "items": items}
             elif condition == "completedAnyOf":
                 node = {"type": "choose", "count": 1, "items": items}
@@ -181,6 +184,13 @@ class Converter:
             else:
                 node = {"type": "text", "text": "Unrecognized rule type: %s" % condition}
 
+        # "4 of" a single "any one of these 38" entry means 4 of the 38: the
+        # list is unwrapped, or no plan could ever show the rule met.
+        if node["type"] == "choose" and (node.get("count") or 1) > 1:
+            inner = [i for i in node["items"] if i["type"] != "text"]
+            if len(inner) == 1 and inner[0]["type"] == "choose" and inner[0].get("count", 1) == 1:
+                node["items"] = inner[0]["items"] + [i for i in node["items"] if i["type"] == "text"]
+
         # Units on an all/choose node (e.g. "anyOf ... credits: 40") are kept as a note.
         if units and node["type"] in ("all", "choose") and "units" not in node:
             node["units"] = units
@@ -193,6 +203,57 @@ class Converter:
             if text:
                 node[key] = text
         return node
+
+    def list_rule(self, items, rule):
+        """A catalog list under "complete all of" ("Upper Division Music - All",
+        90 courses) can't mean every course on it. The rule's words say how many:
+          "Five courses from full Anthropology curriculum"   -> choose 5
+          "Electives ... to bring the total UD units to at least 71"
+                -> units from the list: 71 minus what the rest of the section
+                   asks for (worked out in fill_totals, once the section is built)
+        With neither, it asks for one course and says the catalog gives no number."""
+        words = " ".join(clean_text(rule.get(k)) or "" for k in ("name", "description"))
+        count = re.search(r"\b(%s|\d+)\s+(?:upper[- ]division\s+)?(?:courses|classes)\b" % "|".join(NUMBER_WORDS),
+                          words, flags=re.IGNORECASE)
+        total = re.search(r"\b(?:bring|total)\b[^.]*?\bto\s+(?:at least\s+)?(\d+)\b", words, flags=re.IGNORECASE)
+        if count:
+            word = count.group(1).lower()
+            return {"type": "choose", "count": NUMBER_WORDS.get(word) or int(word), "items": items}
+        if total:
+            return {"type": "units", "units": None, "to_total": int(total.group(1)), "items": items}
+        return {"type": "choose", "count": 1, "items": items,
+                "list_note": "The catalog lists these courses without saying how many to take; ask the department."}
+
+    def fill_totals(self, sections):
+        """Units for "to bring the total to N units" lists: N minus the fewest
+        units the section's other requirements can be met with."""
+        for section in sections:
+            top = section["requirement"]
+            parts = top["items"] if top["type"] == "all" else [top]
+            for node in parts:
+                if "to_total" not in node:
+                    continue
+                others = sum(self.fewest_units(other) for other in parts if other is not node)
+                needed = max(4, node["to_total"] - others)
+                node["units"] = int(needed) if float(needed).is_integer() else needed
+                others = int(others) if float(others).is_integer() else others
+                note = ("The catalog: electives to bring the total to %d units. The rest of this section "
+                        "comes to at least %g units, so this list needs %g." % (node["to_total"], others, node["units"]))
+                node["list_note"] = note
+                del node["to_total"]
+
+    def fewest_units(self, node):
+        kind = node.get("type")
+        if kind == "course":
+            return self.units.get(node.get("code"), 4)
+        if kind == "all":
+            return sum(self.fewest_units(i) for i in node["items"])
+        if kind == "units":
+            return node.get("units") or 0
+        if kind == "choose":
+            options = sorted(self.fewest_units(i) for i in node["items"] if i.get("type") != "text")
+            return sum(options[:node.get("count") or 1])
+        return 0
 
     # ------------------------------------------------------------ program
     def program(self, program):
@@ -213,6 +274,9 @@ class Converter:
                 entry["notes"] = notes
             sections.append(entry)
 
+        self.fill_totals(sections)
+        for section in sections:
+            merge_list_notes(section["requirement"])
         result = {
             "id": program["programGroupId"],
             "name": program["name"],
@@ -259,6 +323,18 @@ class Converter:
         # The groups are taken out of the rule and put back as one
         # "choose 1" of them, so the map shows "one of" and the planner
         # schedules one.
+        # "count": a rule the catalog marks "complete all" over a list nobody
+        # takes whole; it becomes "choose N", with the reason as a note.
+        for rule_id, change in (fix.get("count") or {}).items():
+            node = find_rule(result, rule_id)
+            if node is None:
+                print("WARNING: %s: override rule %s not found; catalog changed?" % (result["id"], rule_id))
+                continue
+            node["type"] = "choose"
+            node["count"] = change["count"]
+            node["notes"] = ((node.get("notes") or "") + " " + change["note"]).strip()
+            result["overrides_applied"].append(change["why"])
+
         for rule_id, choice in (fix.get("choose") or {}).items():
             node = find_rule(result, rule_id)
             wanted = [sorted(group) for group in choice["groups"]]
@@ -276,6 +352,26 @@ class Converter:
 # =========================================================================
 # Small helpers
 # =========================================================================
+
+NUMBER_WORDS = {"one": 1, "two": 2, "three": 3, "four": 4, "five": 5, "six": 6, "seven": 7,
+                "eight": 8, "nine": 9, "ten": 10, "eleven": 11, "twelve": 12}
+
+
+def merge_list_notes(node):
+    """Put a list rule's explanation after the catalog's own notes."""
+    if node.get("list_note"):
+        before = (node.get("notes") or "").strip()
+        if before and not before.endswith((".", "!", "?")):
+            before += "."
+        node["notes"] = (before + " " + node.pop("list_note")).strip()
+    for item in node.get("items") or []:
+        merge_list_notes(item)
+
+
+def whole_list(items):
+    """Is this a whole catalog list (six or more courses from a named list)?"""
+    return sum(1 for i in items if i.get("from_list")) >= 6
+
 
 def sort_key(code):
     """'MATH 3A' before 'MATH 108A' (number order, not text order)."""
@@ -362,11 +458,17 @@ def main():
     with open("data/raw_programs.json", encoding="utf-8") as f:
         data = json.load(f)
     with open("data/raw_courses.json", encoding="utf-8") as f:
-        active = {c["code"] for c in json.load(f)["courses"]}
+        courses = json.load(f)["courses"]
+    active = {c["code"] for c in courses}
+    units = {}
+    for c in courses:
+        numbers = [float(n) for n in re.findall(r"\d+(?:\.\d+)?", str(c.get("units") or ""))]
+        if numbers:
+            units[c["code"]] = min(numbers)
     with open("data/program_overrides.json", encoding="utf-8") as f:
         overrides = json.load(f)["programs"]
 
-    converter = Converter(data, active, overrides)
+    converter = Converter(data, active, overrides, units)
     dept_names = data.get("department_names") or {}
     os.makedirs(OUTPUT_DIR, exist_ok=True)
 

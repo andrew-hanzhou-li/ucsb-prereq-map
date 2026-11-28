@@ -26,7 +26,8 @@ jobs:
           {
             python tests/test_graph.py &&
             python tests/test_parser.py &&
-            python tests/test_pipeline.py
+            python tests/test_pipeline.py &&
+            python tests/test_ucsd.py
           } 2>&1 | tee test-output.txt
 
       - name: Post the test summary

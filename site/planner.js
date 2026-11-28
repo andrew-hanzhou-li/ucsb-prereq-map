@@ -46,6 +46,20 @@ const QUARTERS = [
 const MAX_YEARS = 8;
 const ELECTIVE_UNITS = 4;     // units assumed for an elective slot
 
+/*
+  An elective slot is { id, key, slot }: a course still to choose from the
+  list at `key`, in quarter `slot`. A repeat slot also has `repeat`, a
+  course the catalog asks for more than once (six quarters of the MUS A 42
+  ensemble): it counts that course's units, and needs no choosing.
+*/
+function slotUnits(e) {
+  return e.repeat ? unitsOf(e.repeat) : ELECTIVE_UNITS;
+}
+
+function slotTitle(e) {
+  return e.repeat ? e.repeat + " again" : electiveLabel(e.key);
+}
+
 const planEl = {
   area: document.getElementById("plan-area"),
   reqs: document.getElementById("plan-reqs"),
@@ -93,7 +107,29 @@ function slotName(id) {
 
 function yearName(year) {
   const first = plan.startYear + (year - plan.firstYear);
-  return "Year " + year + " · " + first + "–" + String(first + 1).slice(2);
+  return "Year " + year + ", " + first + "–" + String(first + 1).slice(2);
+}
+
+/*
+  The quarter in session at `now`, as slotName writes it ("Fall 2026"), or
+  null in summer when summer quarters aren't planned. After fall finals
+  (mid-December) it's the coming winter. Dates are approximate: UC quarters
+  start in late September, early January and late March. The date is
+  California's, wherever the student is.
+*/
+function currentQuarterName(now) {
+  const parts = {};
+  for (const part of new Intl.DateTimeFormat("en-US", { timeZone: "America/Los_Angeles",
+       year: "numeric", month: "numeric", day: "numeric" }).formatToParts(now)) {
+    parts[part.type] = Number(part.value);
+  }
+  const year = parts.year;
+  const monthDay = parts.month * 100 + parts.day;
+  if (monthDay >= 1215) return "Winter " + (year + 1);
+  if (monthDay >= 920) return "Fall " + year;
+  if (monthDay >= 620) return plan.summer ? "Summer " + year : null;
+  if (monthDay >= 325) return "Spring " + year;
+  return "Winter " + year;
 }
 
 // ===========================================================================
@@ -158,7 +194,7 @@ function quarterUnits(slotId, except) {
     if (plan.placed[code] === slotId && code !== except) total += unitsOf(code);
   }
   for (const slot of plan.electives || []) {
-    if (slot.slot === slotId && slot.id !== except) total += ELECTIVE_UNITS;
+    if (slot.slot === slotId && slot.id !== except) total += slotUnits(slot);
   }
   return total;
 }
@@ -209,6 +245,7 @@ function metAt(node, index, self, relaxed) {
     return readyBy(node.code, index, node.concurrent);
   }
   if (node.type === "and") return node.items.every(item => metAt(item, index, self, relaxed));
+  if (hasPlacementOption(node)) return true;
   // "One of": only course options count when there are some. If none of the
   // options is planned or done yet, a relaxed check lets it through.
   const options = node.items.filter(hasCourses);
@@ -368,26 +405,142 @@ function placeCourse(code) {
     N units from     need N units; have = units done or planned, up to N
     text             nothing to count
 */
+/*
+  Each course counts toward one requirement. "Two lab courses" and "five
+  electives, labs included" are two groups that share courses; counted on
+  their own, two labs would fill both and the student would look done three
+  courses early. So before counting, every course done or planned is given
+  to one group:
+    - groups are a single required course, a "choose N" list (its courses),
+      or an "N units from" list (every course inside it);
+    - the narrowest group goes first (a required course before a list of
+      40), so a course lands where it's needed most;
+    - a list takes only as many courses as it needs, leaving the rest free.
+  Each program of a double major is counted on its own: a course may count
+  toward both majors.
+  The result maps a course's place in the tree ("s1.3.0") to true, and a
+  units list's place to the courses it took.
+*/
+let activeAllocation = null;    // set while drawing, so it's worked out once
+
+function allocateCourses() {
+  const sectionsByProgram = {};
+  const labels = (graph.major.programs || []).map(p => p.label);
+  graph.major.sections.forEach(function (section, i) {
+    const program = labels.length > 1 ? (labels.find(l => section.name.startsWith(l + " — ")) || "") : "";
+    (sectionsByProgram[program] = sectionsByProgram[program] || []).push(["s" + i, section.requirement]);
+  });
+  const counted = {};
+  const countedSomewhere = new Set();
+  Object.defineProperty(counted, "somewhere", { value: countedSomewhere });   // every course counted anywhere
+  for (const sections of Object.values(sectionsByProgram)) {
+    const groups = [];
+    const oneOf = new Set();      // places of "one of" choices: their options never meet
+    // A requirement marked may_share ("the practicum may be the same course
+    // as Field Research") counts its courses without using them up.
+    // `outright`: reached only through "all of" groups. A course required
+    // outright in two places (PSTAT 120A-B in Mathematics BA's core and its
+    // statistics concentration) is taken once and counts in both.
+    function visit(node, key, share, outright) {
+      if (!node) return;
+      share = share || !!node.may_share;
+      outright = outright !== false && node.type !== "choose" && node.type !== "units";
+      if (node.type === "choose" && node.count === 1) oneOf.add(key);
+      if (node.type === "course") {
+        if (node.code) groups.push({ kind: "course", key: key, need: 1, share: share, outright: outright,
+                                     options: [{ code: node.code, key: key }] });
+        return;
+      }
+      if (!node.items) return;
+      const kept = withoutTwins(node.items);
+      if (node.type === "units") {
+        const options = coursesInRequirement(node).map(code => ({ code: code, key: key }));
+        groups.push({ kind: "units", key: key, need: node.units, share: share, options: options });
+        return;
+      }
+      if (node.type === "choose") {
+        const options = [];
+        node.items.forEach(function (item, i) {
+          if (!kept.includes(item)) return;
+          if (item.type === "course") { if (item.code) options.push({ code: item.code, key: key + "." + i }); }
+          else visit(item, key + "." + i, share, false);
+        });
+        if (options.length) groups.push({ kind: "choose", key: key, need: node.count, share: share, options: options });
+        return;
+      }
+      node.items.forEach((item, i) => { if (kept.includes(item)) visit(item, key + "." + i, share, outright); });
+    }
+    sections.forEach(([key, requirement]) => visit(requirement, key, false));
+    groups.forEach((g, order) => { g.order = order; });
+    groups.sort((a, b) => (a.options.length - b.options.length) || (a.order - b.order));
+    const usedAt = {};      // course -> the places it already counts
+    const same = code => onlineBase(code) || code;     // a course and its online twin are one course
+    // Two places in different options of one "one of" choice can share a
+    // course: MATH 20D is in both "MATH 20A-E" and "honors MATH 31AH-CH +
+    // 20D", and a student takes only one of the two.
+    function apart(a, b) {
+      const x = a.split("."), y = b.split(".");
+      let i = 0;
+      while (i < x.length && i < y.length && x[i] === y[i]) i += 1;
+      return i < x.length && i < y.length && oneOf.has(x.slice(0, i).join("."));
+    }
+    const outrightAt = new Set();
+    const free = (code, key, outright) => (usedAt[same(code)] || []).every(other =>
+      apart(other, key) || (outright && outrightAt.has(other)));
+    for (const group of groups) {
+      let got = 0;
+      for (const option of group.options) {
+        if (got >= group.need) break;
+        if (!inPlanOrDone(option.code) || (!group.share && !free(option.code, option.key, group.outright))) continue;
+        if (group.outright) outrightAt.add(option.key);
+        if (!group.share) (usedAt[same(option.code)] = usedAt[same(option.code)] || []).push(option.key);
+        countedSomewhere.add(option.code);
+        if (group.kind === "units") {
+          (counted[group.key] = counted[group.key] || []).push(option.code);
+          got += unitsOf(option.code);
+        } else {
+          counted[option.key] = true;
+          got += 1;
+        }
+      }
+    }
+  }
+  return counted;
+}
+
+// Work out who counts where once, for everything drawn inside fn.
+function withAllocation(fn) {
+  const before = activeAllocation;
+  activeAllocation = allocateCourses();
+  try { return fn(); } finally { activeAllocation = before; }
+}
+
 function progress(node, key) {
+  return progressWith(node, key, activeAllocation || allocateCourses());
+}
+
+function progressWith(node, key, counted) {
   // "have" counts done or planned; "done" counts only done (taken, credit,
   // passed), so the wording can say which.
   if (node.type === "course") {
     if (!node.code) return { have: 0, done: 0, need: 1 };
-    return { have: inPlanOrDone(node.code) ? 1 : 0, done: isDone(node.code) ? 1 : 0, need: 1 };
+    const counts = counted[key] === true;
+    return { have: counts && inPlanOrDone(node.code) ? 1 : 0, done: counts && isDone(node.code) ? 1 : 0, need: 1 };
   }
   if (node.type === "text") return { have: 0, done: 0, need: 0 };
   const kept = withoutTwins(node.items);
-  const parts = node.items.map((item, i) => progress(item, key + "." + i)).filter((p, i) => kept.includes(node.items[i]));
-  const slots = (plan.electives || []).filter(e => e.key === key).length;
+  const parts = node.items.map((item, i) => progressWith(item, key + "." + i, counted)).filter((p, i) => kept.includes(node.items[i]));
+  const keySlots = (plan.electives || []).filter(e => e.key === key);
+  const slots = keySlots.length;
   if (node.type === "all") {
     return parts.reduce((sum, p) => ({ have: sum.have + p.have, done: sum.done + p.done, need: sum.need + p.need }),
                         { have: 0, done: 0, need: 0 });
   }
   if (node.type === "units") {
-    let units = slots * ELECTIVE_UNITS;
+    let units = keySlots.reduce((sum, e) => sum + slotUnits(e), 0);
     let done = 0;
-    for (const code of coursesInRequirement(node)) {
-      if (inPlanOrDone(code)) units += unitsOf(code);
+    for (const code of counted[key] || []) {
+      units += unitsOf(code);
       if (isDone(code)) done += unitsOf(code);
     }
     return { have: Math.min(node.units, units), done: Math.min(node.units, done), need: node.units };
@@ -421,7 +574,14 @@ function requirementHtml(node, key, depth, sectionName, insideChoice) {
   }
   if (node.type === "course") {
     if (!node.code) return '<li class="req-course muted">A course the catalog doesn\'t name</li>';
-    return "<li>" + requirementCourse(node.code) + "</li>";
+    // A course done or planned that counts toward a different requirement.
+    const parts = key.split(".");
+    const inUnitsAbove = parts.some((_, i) => i > 0 && activeAllocation &&
+      (activeAllocation[parts.slice(0, i).join(".")] || []).includes?.(node.code));
+    const elsewhere = activeAllocation && !activeAllocation[key] && !inUnitsAbove &&
+                      activeAllocation.somewhere.has(node.code);
+    return "<li>" + requirementCourse(node.code) +
+           (elsewhere ? ' <span class="req-elsewhere">counted under another requirement</span>' : "") + "</li>";
   }
   const p = progress(node, key);
   let rule = "";
@@ -439,7 +599,8 @@ function requirementHtml(node, key, depth, sectionName, insideChoice) {
   // missing when the student simply took the other option, so it's left off.
   const showProgress = depth > 0 && !insideChoice;
   const canSlot = (node.type === "choose" || node.type === "units") && p.have < p.need &&
-                  node.items.every(i => i.type === "course") && slotsAllowed(sectionName);
+                  node.items.some(i => i.type === "course") &&
+                  node.items.every(i => i.type === "course" || i.type === "text") && slotsAllowed(sectionName);
   const slotButton = canSlot
     ? ' <button type="button" class="text-button" data-plan-elective="' + escapeHtml(key) + '">add a slot</button>'
     : "";
@@ -509,6 +670,10 @@ function requirementCourse(code) {
 let openArea = null;      // which fold is open ("s0", "s1"…, "outside"); null = choose one
 
 function drawRequirements() {
+  withAllocation(drawRequirementAreas);
+}
+
+function drawRequirementAreas() {
   const areas = [];
   graph.major.sections.forEach(function (section, i) {
     const key = "s" + i;
@@ -618,6 +783,7 @@ function electiveLabel(key) {
 
 function drawGrid() {
   const quarters = QUARTERS.filter(q => q.key !== "U" || plan.summer);
+  const now = currentQuarterName(new Date());
   let html = '<table class="plan-table"><thead><tr><th></th>' +
              quarters.map(q => "<th>" + q.name + "</th>").join("") + "</tr></thead><tbody>";
   for (let year = plan.firstYear; year < plan.firstYear + plan.years; year++) {
@@ -627,8 +793,10 @@ function drawGrid() {
       const codes = Object.keys(plan.placed).filter(c => plan.placed[c] === slotId).sort(bySortKey);
       const slots = (plan.electives || []).filter(e => e.slot === slotId);
       const units = quarterUnits(slotId);
-      html += '<td class="plan-cell' + (units > plan.cap ? " over" : "") + '" data-plan-slot="' + slotId + '">' +
+      const isNow = slotName(slotId) === now;
+      html += '<td class="plan-cell' + (units > plan.cap ? " over" : "") + (isNow ? " now" : "") + '" data-plan-slot="' + slotId + '">' +
               '<span class="cell-name">' + escapeHtml(slotName(slotId)) + "</span>" +
+              (isNow ? '<span class="cell-now">This quarter</span>' : "") +
               codes.map(chipHtml).join("") + slots.map(electiveChipHtml).join("") +
               (units ? '<span class="cell-units">' + units + " units</span>" : "") + "</td>";
     }
@@ -636,7 +804,7 @@ function drawGrid() {
   }
   html += "</tbody></table>";
   html += '<p class="plan-years"><button type="button" class="text-button" data-plan-years="1">add a year</button>' +
-          (plan.years > 1 ? ' · <button type="button" class="text-button" data-plan-years="-1">remove the last year</button>' : "") + "</p>";
+          (plan.years > 1 ? ' <button type="button" class="text-button" data-plan-years="-1">remove the last year</button>' : "") + "</p>";
   planEl.grid.innerHTML = html;
 }
 
@@ -661,8 +829,8 @@ function chipHtml(code) {
 function electiveChipHtml(slot) {
   return '<button type="button" class="chip elective-slot' + (slot.id === planSelected ? " selected" : "") +
          '" draggable="true" data-plan-show="' + escapeHtml(slot.id) + '" data-plan-drag="' + escapeHtml(slot.id) + '">' +
-         '<span class="chip-code">' + escapeHtml(electiveLabel(slot.key)) + "</span>" +
-         '<span class="chip-units">' + ELECTIVE_UNITS + "</span></button>";
+         '<span class="chip-code">' + escapeHtml(slotTitle(slot)) + "</span>" +
+         '<span class="chip-units">' + slotUnits(slot) + "</span></button>";
 }
 
 // ===========================================================================
@@ -713,7 +881,7 @@ function showPlanCourse(code) {
   } else if (!isDone(code)) {
     html += '<p class="plan-actions"><button type="button" class="text-button" data-plan-add="' + escapeHtml(code) + '">add to plan</button></p>';
   }
-  html += '<p><a href="https://catalog.ucsb.edu/courses/' + encodeURIComponent(code) + '" target="_blank" rel="noopener">This course in the UCSB catalog</a></p>';
+  html += "<p>" + catalogLinkFor(code, info.url) + "</p>";
   if (typeof gradeHtml === "function") html += gradeHtml(code);
   setPanel(html, code + "  " + (info.title || ""));
   openSheet();
@@ -726,9 +894,13 @@ function showElectiveSlot(id) {
   const slot = plan.electives.find(e => e.id === id);
   const node = nodeForKey(slot.key);
   let html = '<div class="panel-nav"><button type="button" class="nav-button" data-plan-close>close</button></div>';
-  html += "<h2>" + escapeHtml(electiveLabel(slot.key)) + "</h2>";
-  html += '<p class="facts">' + escapeHtml(slotName(slot.slot)) + " · " + ELECTIVE_UNITS + " units assumed</p>";
-  if (node && node.items) {
+  html += "<h2>" + escapeHtml(slotTitle(slot)) + "</h2>";
+  html += '<p class="facts">' + escapeHtml(slotName(slot.slot)) + " · " + slotUnits(slot) +
+          (slot.repeat ? " units</p>" : " units assumed</p>");
+  if (slot.repeat) {
+    html += "<p>Another quarter of " + escapeHtml(slot.repeat) + ": " + escapeHtml(electiveLabel(slot.key)) +
+            " asks for it more than once.</p>";
+  } else if (node && node.items) {
     const options = node.items.filter(i => i.type === "course" && i.code && !inPlanOrDone(i.code) &&
                                            (nodesById[i.code] || {}).status !== "inactive");
     html += "<p>Choose the course for this slot:</p><ul class=\"pick-list\">" + options.map(i =>
@@ -738,7 +910,7 @@ function showElectiveSlot(id) {
   html += '<p class="plan-actions"><button type="button" class="text-button" data-plan-move="-1">earlier</button> · ' +
           '<button type="button" class="text-button" data-plan-move="1">later</button> · ' +
           '<button type="button" class="text-button" data-plan-remove>remove this slot</button></p>';
-  setPanel(html, electiveLabel(slot.key));
+  setPanel(html, slotTitle(slot));
   openSheet();
   drawGrid();
 }
@@ -747,7 +919,7 @@ function showPlanSummary() {
   planSelected = null;
   let total = 0;
   for (const code of Object.keys(plan.placed)) total += unitsOf(code);
-  total += (plan.electives || []).length * ELECTIVE_UNITS;
+  total += (plan.electives || []).reduce((sum, e) => sum + slotUnits(e), 0);
   const flagged = Object.keys(plan.placed).filter(c => missingPrereqs(c).length);
   let html = "<h2>Your plan</h2>";
   html += '<p class="facts">' + escapeHtml(graph.major.name) + "</p>";
@@ -760,8 +932,9 @@ function showPlanSummary() {
   }
   html += "<p>Click a course on the left to add it. It goes in the first quarter after its prerequisites, " +
           "when it's usually offered, under " + plan.cap + " units. Drag courses to move them, or click one for its details.</p>";
-  html += '<p class="note">When a course is offered is known for only about 120 UCSB courses (the catalog, plus hand corrections). ' +
-          "The rest are assumed Fall, Winter and Spring and marked with a faint ? in the plan. Check the Schedule of Classes on GOLD before you enroll.</p>";
+  html += '<p class="note">When a course is offered is known for only some courses (from the catalog' +
+          (CAMPUS === "ucsb" ? ", plus hand corrections" : "") + "). " +
+          "The rest are assumed Fall, Winter and Spring and marked with a faint ? in the plan. Check the Schedule of Classes before you enroll.</p>";
   if (typeof gpaSummaryHtml === "function") html += gpaSummaryHtml() + goalHtml();
   html += '<p class="note">Unofficial student project. Requirements change; confirm your plan with a department advisor.</p>';
   setPanel(html, "Your plan");
@@ -785,6 +958,7 @@ function openPlan(shared) {
     }
     history.replaceState(null, "", planHashFor(currentPrograms));
   }
+  planEl.autofill.hidden = onlyDepartmentMaps();
   refreshPlan();
   showPlanSummary();
 }
@@ -937,7 +1111,14 @@ function addCourse(code) {
   Auto-fill: everything required that isn't done or planned yet, in
   prerequisite order, then a slot for each elective still needed.
 */
+// A department course map lists every course a department teaches, not a
+// set of requirements, so there's nothing to fill a plan with.
+function onlyDepartmentMaps() {
+  return currentPrograms.length > 0 && currentPrograms.every(p => p.kind === "department");
+}
+
 function autoFill(quiet) {
+  if (onlyDepartmentMaps()) return;
   const needed = chooseShown({ electives: false, everyOutside: false, inactive: false, skipDone: true });
   const skip = new Set();
   // "Take one of": keep an option already done or planned, else the first
@@ -946,14 +1127,31 @@ function autoFill(quiet) {
   for (const set of pickOneSets()) {
     const options = set.options;
     const offered = option => option.every(code => nodesById[code] && nodesById[code].status === "active");
-    // Prefer an option already done or planned; then the one with the
-    // fewest courses still to take (with AP Calculus AB, MATH 2A-B or 3A-B
-    // each need one more); then one the catalog still offers.
+    // Prefer an option already started (a course done or planned); then one
+    // that isn't honors; then the one with the fewest courses still to take
+    // (with AP Calculus AB, MATH 2A-B or 3A-B each need one more); then one
+    // the catalog still offers.
     const toTake = option => option.filter(code => !inPlanOrDone(code)).length;
-    const ranked = options.slice().sort((a, b) => (toTake(a) - toTake(b)) || (offered(b) - offered(a)));
+    // (An honors sequence such as MATH 31AH-BH-CH is shorter than the
+    // regular one but isn't what most students take.)
+    const started = option => option.some(code => inPlanOrDone(code));
+    const honors = option => option.filter(code => /honors/i.test((nodesById[code] || {}).title || "")).length;
+    // (And one taught in Fall, Winter or Spring: UCSD's POLI 30 ran only in
+    // summer lately, while POLI 30D runs all year.)
+    const regular = option => option.every(code => {
+      const quarters = (nodesById[code] || {}).offered || [];
+      return !quarters.length || quarters.some(q => q !== "Summer");
+    });
+    const ranked = options.slice().sort((a, b) => (started(b) - started(a)) || (honors(a) - honors(b)) ||
+                                                  (regular(b) - regular(a)) || (toTake(a) - toTake(b)) ||
+                                                  (offered(b) - offered(a)));
     const chosen = ranked.find(offered) || ranked[0];
     for (const option of options) {
-      if (option !== chosen) option.forEach(code => skip.add(code));
+      // (A course in both options, like MATH 20D, stays: the chosen one needs it.)
+      // (Nor a course the major requires anyway, like CSE 151B in AI.)
+      if (option !== chosen) option.forEach(code => {
+        if (!chosen.includes(code) && !(nodesById[code] && nodesById[code].role === "required")) skip.add(code);
+      });
     }
     if (set.required) chosen.forEach(code => needed.add(code));
   }
@@ -975,10 +1173,18 @@ function autoFill(quiet) {
     (function visit(node, key) {
       if (!node.items) return;
       // A list of courses, or of short sequences ("ECE 152A + 152B"), to choose from.
+      // (A written rule in the list, such as "or another approved course",
+      // doesn't stop slots: the courses listed are still the choices.)
       const leafList = (node.type === "choose" || node.type === "units") &&
-        node.items.every(item => item.type === "course" || (item.items && item.items.every(c => c.type === "course")));
-      if (leafList && !(node.type === "choose" && node.count === 1 && node.items.length <= 4)) {
-        if (!slotsAllowed(section.name)) return;
+        node.items.some(item => item.type !== "text") &&
+        node.items.every(item => item.type === "course" || item.type === "text" ||
+                                 ((item.type === "all" || item.count === 1) && item.items.every(c => c.type === "course")));
+      // (A choice between lists, "one of two 6-course concentrations", isn't
+      // a list itself: its first list is filled instead.)
+      const met = () => { const p = progress(node, key); return p.have >= p.need; };
+      if (met()) return;
+      const shortOneOf = node.type === "choose" && node.count === 1 && node.items.length <= 4;
+      if (leafList && !shortOneOf && slotsAllowed(section.name) && !repeatList(node)) {
         let p = progress(node, key);
         while (p.have < p.need && slots < 60) {
           if (!addElectiveSlot(key)) return;
@@ -987,11 +1193,101 @@ function autoFill(quiet) {
         }
         return;
       }
-      node.items.forEach((item, j) => visit(item, key + "." + j));
+      // Where slots don't fit (a short "one of", or a list in "Preparation
+      // for the major", which belongs in the first years), pick courses.
+      if (leafList) {
+        placed += pickCourses(node, key);
+        slots += repeatSlots(node, key);
+        return;
+      }
+      // Fill a choice's parts only until the choice is met, so "one of two
+      // tracks" doesn't get both.
+      for (let j = 0; j < node.items.length; j++) {
+        if (node.type === "choose" && met()) break;
+        visit(node.items[j], key + "." + j);
+      }
     })(section.requirement, "s" + i);
   });
+  if (placed) repairOrder();
   if (!quiet) say("Auto-fill placed " + placed + " courses and " + slots + " elective slots. Electives start in year 3; click a slot to choose its course.");
   planChanged();
+}
+
+/*
+  A list asking for more than its courses can give once: "6 of" MUS A 42,
+  or 6 units from two 1-unit ensembles. The courses are taken again, so the
+  rest is filled with repeat slots of the first one (pickCourses places
+  each course once first).
+*/
+function repeatList(node) {
+  const codes = node.items.filter(i => i.type === "course" && i.code).map(i => i.code);
+  if (!codes.length || codes.length !== node.items.filter(i => i.type !== "text").length) return false;
+  if (node.type === "choose") return node.count > codes.length;
+  if (node.type === "units") return node.units > codes.reduce((sum, code) => sum + unitsOf(code), 0);
+  return false;
+}
+
+function repeatSlots(node, key) {
+  if (!repeatList(node)) return 0;
+  const course = node.items.find(i => i.type === "course" && nodesById[i.code] && nodesById[i.code].status === "active");
+  if (!course) return 0;
+  let added = 0;
+  let p = progress(node, key);
+  while (p.have < p.need && added < 12) {
+    if (!addElectiveSlot(key, course.code)) break;
+    added += 1;
+    p = progress(node, key);
+  }
+  return added;
+}
+
+/*
+  Courses for a list that doesn't take elective slots, until it's met. The
+  best choices first:
+    - one already done or planned (it may count here);
+    - one taught in Fall, Winter or Spring;
+    - one whose prerequisites are done or planned already (so the plan
+      doesn't grow a chain of courses just for this);
+    - then the catalog's order.
+  An option that is a short sequence ("ECE 152A + 152B") is placed whole.
+  Returns how many courses were placed.
+*/
+function pickCourses(node, key) {
+  // Each course is an option; so is each course of a "one of" inside the
+  // list; a group ("all of") is one option, taken whole.
+  const options = node.items.flatMap(function (item) {
+    if (item.type === "course") return item.code ? [[item.code]] : [];
+    if (item.type === "choose") return item.items.filter(c => c.type === "course" && c.code).map(c => [c.code]);
+    if (item.type === "all") return [item.items.map(c => c.code)];
+    return [];
+  });
+  const usable = options.filter(option => option.every(code => nodesById[code] && nodesById[code].status === "active"));
+  const regular = option => option.every(code => {
+    const quarters = (nodesById[code] || {}).offered || [];
+    return !quarters.length || quarters.some(q => q !== "Summer");
+  });
+  const missing = option => option.reduce((n, code) => {
+    const requires = (nodesById[code] || {}).requires;
+    if (!requires || hasPlacementOption(requires) || plannable(requires)) return n;
+    return n + 1;
+  }, 0);
+  const ranked = usable.slice().sort((a, b) =>
+    (b.every(inPlanOrDone) - a.every(inPlanOrDone)) || (regular(b) - regular(a)) || (missing(a) - missing(b)));
+  let placed = 0;
+  for (const option of ranked) {
+    const before = progress(node, key);
+    if (before.have >= before.need) break;
+    if (option.every(inPlanOrDone)) continue;
+    const added = prerequisiteOrder(option.filter(code => !inPlanOrDone(code))).filter(code => placeCourse(code));
+    added.forEach(code => { plan.auto[code] = true; });
+    placed += added.length;
+    // A course that only counts elsewhere doesn't help this list: take it back.
+    if (progress(node, key).have <= before.have) {
+      added.forEach(code => { delete plan.placed[code]; delete plan.auto[code]; });
+      placed -= added.length;
+    }
+  }
+  return placed;
 }
 
 /*
@@ -1041,14 +1337,31 @@ function repairOrder() {
 */
 function pickOneSets() {
   const sets = [];
+  // An option's courses: one course, or a group of them; inside a group, a
+  // "one of" list counts as its first course still offered ("POLI 5 or
+  // POLI 5D or ECON 5" -> POLI 5).
   function codesOf(item) {
     if (item.type === "course") return item.code ? [item.code] : null;
-    if (item.type === "all" && item.items.every(i => i.type === "course" && i.code)) return item.items.map(i => i.code);
+    if (item.type === "all") {
+      const parts = item.items.map(function (i) {
+        if (i.type === "course") return i.code ? [i.code] : null;
+        if (i.type === "choose" && i.count === 1 && i.items.every(c => c.type === "course" && c.code)) {
+          const first = i.items.find(c => nodesById[c.code] && nodesById[c.code].status === "active") || i.items[0];
+          return [first.code];
+        }
+        return null;
+      });
+      return parts.every(Boolean) ? parts.flat() : null;
+    }
     return null;
   }
   (function visitAll(nodes, required) {
     for (const node of nodes) {
-      if (node.type === "choose" && node.count === 1 && node.items.length >= 2 && node.items.length <= 4) {
+      // "One of" up to four courses, or of any number of course groups
+      // (Data Science: one of five two-course pairs). A longer list of
+      // single courses is an elective list and gets a slot instead.
+      const groups = node.items && node.items.every(i => i.type === "all");
+      if (node.type === "choose" && node.count === 1 && node.items.length >= 2 && (node.items.length <= 4 || groups)) {
         const options = node.items.map(codesOf);
         if (options.every(Boolean)) {
           sets.push({ options: options, required: required });
@@ -1068,20 +1381,24 @@ function pickOneSets() {
   Spring nearly empty; this spreads them out. A year is added only when
   no quarter has room.
 */
-function addElectiveSlot(key) {
+function addElectiveSlot(key, repeat) {
   plan.electives = plan.electives || [];
   const slots = planSlots();
-  let from = Math.max(0, slots.findIndex(s => s.year >= 3), firstOpenIndex());
+  const units = repeat ? unitsOf(repeat) : ELECTIVE_UNITS;
+  // (A repeated course, like an ensemble, goes from the first year.)
+  let from = repeat ? firstOpenIndex() : Math.max(0, slots.findIndex(s => s.year >= 3), firstOpenIndex());
   for (;;) {
     const list = planSlots();
     let best = null;
     for (let i = from; i < list.length; i++) {
       if (list[i].q === "U") continue;
-      const units = quarterUnits(list[i].id);
-      if (units + ELECTIVE_UNITS <= plan.cap && (best === null || units < quarterUnits(best.id))) best = list[i];
+      const used = quarterUnits(list[i].id);
+      if (used + units <= plan.cap && (best === null || used < quarterUnits(best.id))) best = list[i];
     }
     if (best) {
-      plan.electives.push({ id: "e" + Date.now().toString(36) + Math.random().toString(36).slice(2, 6), key: key, slot: best.id });
+      const entry = { id: "e" + Date.now().toString(36) + Math.random().toString(36).slice(2, 6), key: key, slot: best.id };
+      if (repeat) entry.repeat = repeat;
+      plan.electives.push(entry);
       return true;
     }
     if (plan.years + plan.firstYear - 1 >= MAX_YEARS) return false;
@@ -1141,7 +1458,7 @@ function removeSelected() {
 function packPlan() {
   const data = {
     f: plan.firstYear, y: plan.years, s: plan.startYear, u: plan.summer ? 1 : 0, c: plan.cap,
-    p: plan.placed, v: plan.units, e: (plan.electives || []).map(e => [e.key, e.slot]),
+    p: plan.placed, v: plan.units, e: (plan.electives || []).map(e => e.repeat ? [e.key, e.slot, e.repeat] : [e.key, e.slot]),
   };
   return btoa(JSON.stringify(data)).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
 }
@@ -1172,7 +1489,9 @@ function unpackPlan(text) {
       cap: Number(data.c) || 16,
       placed: placed,
       units: units,
-      electives: electives.map((e, i) => ({ id: "e" + i, key: e[0], slot: e[1] })),
+      // (A third entry is a repeated course: [key, slot, "MUS A 42"].)
+      electives: electives.map((e, i) => Object.assign({ id: "e" + i, key: e[0], slot: e[1] },
+                                                       typeof e[2] === "string" && e[2] ? { repeat: e[2] } : {})),
     };
   } catch (error) {
     return null;
@@ -1199,7 +1518,7 @@ function downloadPlan() {
       rows.push([slot.year, slotName(slot.id), code, courseInfo(code).title || "", unitsOf(code), plan.grades[code] || ""]);
     }
     for (const e of (plan.electives || []).filter(e => e.slot === slot.id)) {
-      rows.push([slot.year, slotName(slot.id), electiveLabel(e.key), "", ELECTIVE_UNITS, ""]);
+      rows.push([slot.year, slotName(slot.id), slotTitle(e), "", slotUnits(e), ""]);
     }
   }
   // A cell starting with = + - or @ is a formula to a spreadsheet; a course

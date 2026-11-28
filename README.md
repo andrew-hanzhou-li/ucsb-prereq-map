@@ -1,8 +1,10 @@
-# UCSB Prereq Planner
+# Stepwise
+
+**Plan your degree quarter by quarter, in the order your courses unlock.**
 
 ![The Computer Engineering (B.S.) map, with CMPSC 16 selected: what it needs in red, what it unlocks in blue](docs/screenshot.png)
 
-Prerequisite maps for every UCSB major and minor, built from the official General Catalog, plus a quarter-by-quarter planner and a GPA calculator.
+A quarter-by-quarter degree planner for UC Santa Barbara and UC San Diego. Pick your major: Auto-fill lays out a plan with each course after its prerequisites and in a quarter it's usually offered, tracks every requirement, and counts your AP and transfer credit. Behind it is a prerequisite map of every major (and minor, at UCSB), built from each campus's official General Catalog, plus a GPA calculator.
 
 **Live at https://andrew-hanzhou-li.github.io/ucsb-prereq-map/**
 
@@ -10,7 +12,7 @@ Prerequisite maps for every UCSB major and minor, built from the official Genera
 
 - **Fetch** the 2026-27 catalog from its Coursedog API, the same requests catalog.ucsb.edu makes (`pipeline/fetch.py`, `pipeline/fetch_programs.py`).
 - **Parse** each course's prerequisite English into an AND/OR tree. On 150 test courses, labeled after the parser was frozen and scored once, 90% (135 of 150) came out exactly right (`pipeline/parser.py`, scored by `pipeline/measure.py`).
-- **Build** one graph per major or minor, with courses grouped into prerequisite steps (`pipeline/build_graph.py` writes `site/data/`).
+- **Build** one graph per major or minor, with courses grouped into prerequisite steps (`pipeline/build_graph.py` writes `site/data/ucsb/`).
 - **Serve** a static site from `site/`, deployed to GitHub Pages by GitHub Actions on every push to `main`.
 
 ## Tech
@@ -19,7 +21,7 @@ Python (standard library only for the data pipeline; Playwright for the browser 
 
 ## Design
 
-How it's designed: [DESIGN.md](DESIGN.md).
+How it's built: [DESIGN.md](DESIGN.md). How it looks, and why: [docs/design-brief.md](docs/design-brief.md). The plan for every UC campus: [docs/PLAN-all-uc.md](docs/PLAN-all-uc.md).
 
 ## Run it locally
 

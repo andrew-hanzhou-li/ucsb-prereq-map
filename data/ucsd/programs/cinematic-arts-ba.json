@@ -1,0 +1,1203 @@
+{
+ "id": "UCSD-MAJOR-cinematic-arts-ba",
+ "name": "Cinematic Arts - BA",
+ "kind": "major",
+ "type": "Bachelor's Degree",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsd.edu/curric/CIN.html",
+ "sections": [
+  {
+   "name": "Lower-Division Foundational Courses",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "FILM 71",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 71",
+        "status": "active"
+       }
+      ],
+      "count": 1
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "FILM 72",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 72",
+        "status": "active"
+       }
+      ],
+      "count": 1
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "FILM 73",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 73",
+        "status": "active"
+       }
+      ],
+      "count": 1
+     },
+     {
+      "type": "course",
+      "code": "VIS 84",
+      "status": "active"
+     }
+    ],
+    "label": "Lower-Division Foundational Courses",
+    "notes": "All four courses are required"
+   }
+  },
+  {
+   "name": "Lower-Division Electives",
+   "requirement": {
+    "type": "choose",
+    "items": [
+     {
+      "type": "course",
+      "code": "COMM 10",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COMM 20",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COMM 30",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "HILD 14",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "TDGE 10",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "TDGE 11",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "TDGE 12",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "TDTR 20",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "VIS 6",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 7",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 70N",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 84B",
+      "status": "active"
+     }
+    ],
+    "count": 3,
+    "label": "Lower-Division Electives"
+   }
+  },
+  {
+   "name": "Studies and History Courses",
+   "requirement": {
+    "type": "choose",
+    "items": [
+     {
+      "type": "course",
+      "code": "ANSC 156",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ANSC 166",
+      "status": "active"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "CGS 119",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LTCS 119",
+        "status": "active"
+       }
+      ],
+      "count": 1
+     },
+     {
+      "type": "course",
+      "code": "COMM 103D",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COMM 106F",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COMM 107",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COMM 118A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COMM 118T",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COMM 135",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COMM 137",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COMM 139",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COMM 140",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COMM 141",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "COMM 142",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COMM 143",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COMM 149",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ETHN 101",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ETHN 101TV",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ETHN 143",
+      "status": "active"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "ETHN 163F",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "TDGE 131",
+        "status": "active"
+       }
+      ],
+      "count": 1
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "ETHN 163FR",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "TDGE 131R",
+        "status": "active"
+       }
+      ],
+      "count": 1
+     },
+     {
+      "type": "course",
+      "code": "HIEA 154",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "HIUS 122",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LTAF 120",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LTAF 120GS",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LTCS 172",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LTCS 172GS",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LTEA 120A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LTEA 120B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LTEA 120C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LTEA 138",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LTEA 142",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LTSP 180",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LTWL 157",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LTWL 180",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LTWL 180GS",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LTWL 181",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LTWL 183",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LTWL 184",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHIL 184",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "RELI 150",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SOCI 105",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SOCI 150",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SOCI 172",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SOCI 184",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SOCI 187",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "TDGE 124",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "TDGE 125",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "TDGE 127",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "TDTR 120",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "USP 164",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 150",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 150A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 151",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 151A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 152",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 152D",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 155",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 156",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 157",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 157D",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 194S",
+      "status": "active"
+     }
+    ],
+    "count": 5,
+    "label": "Studies and History Courses",
+    "notes": "Choose any five courses. The following courses frequently cover topics related to cinematic arts. Students should check the departments' quarterly course descriptions and yearly course spreads for their applicability to the program and discuss if a petition is needed in advance with the adviser: HIEA 133, HIEA 153, LTCS 111, LTCS 150, LTWL 120."
+   }
+  },
+  {
+   "name": "Production Courses",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "LTWR 110W",
+        "status": "active",
+        "was": "LTWR 110"
+       },
+       {
+        "type": "course",
+        "code": "LTWR 110C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LTWR 110W",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "TDPW 104",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 177",
+        "status": "active"
+       }
+      ],
+      "count": 1,
+      "label": "Screen Writing"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "LTWR 110W",
+        "status": "active",
+        "was": "LTWR 110"
+       },
+       {
+        "type": "course",
+        "code": "LTWR 110C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LTWR 110W",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "TDPW 104",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 177",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMM 101",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMM 101T",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 174",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMM 101D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMM 101K",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMM 101N",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 175",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 178",
+        "status": "active"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "FILM 179",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "VIS 173",
+          "status": "active"
+         }
+        ],
+        "count": 1
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "FILM 180",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "VIS 180",
+          "status": "active"
+         }
+        ],
+        "count": 1
+       },
+       {
+        "type": "course",
+        "code": "TDGE 126",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 172",
+        "status": "active"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "FILM 182",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "VIS 183",
+          "status": "active"
+         }
+        ],
+        "count": 1
+       },
+       {
+        "type": "course",
+        "code": "TDAC 110",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 171",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 176",
+        "status": "active"
+       }
+      ],
+      "count": 3,
+      "label": "Production Courses (remaining three)"
+     }
+    ],
+    "label": "Production Courses",
+    "notes": "Choose four courses, one of which must be a screen writing course"
+   }
+  },
+  {
+   "name": "Elective",
+   "requirement": {
+    "type": "choose",
+    "items": [
+     {
+      "type": "course",
+      "code": "ANSC 156",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ANSC 166",
+      "status": "active"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "CGS 119",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LTCS 119",
+        "status": "active"
+       }
+      ],
+      "count": 1
+     },
+     {
+      "type": "course",
+      "code": "COMM 103D",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COMM 106F",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COMM 107",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COMM 118A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COMM 118T",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COMM 135",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COMM 137",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COMM 139",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COMM 140",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COMM 141",
+      "status": "inactive"
+     },
+     {
+      "type": "course",
+      "code": "COMM 142",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COMM 143",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COMM 149",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ETHN 101",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ETHN 101TV",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ETHN 143",
+      "status": "active"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "ETHN 163F",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "TDGE 131",
+        "status": "active"
+       }
+      ],
+      "count": 1
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "ETHN 163FR",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "TDGE 131R",
+        "status": "active"
+       }
+      ],
+      "count": 1
+     },
+     {
+      "type": "course",
+      "code": "HIEA 154",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "HIUS 122",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LTAF 120",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LTAF 120GS",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LTCS 172",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LTCS 172GS",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LTEA 120A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LTEA 120B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LTEA 120C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LTEA 138",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LTEA 142",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LTSP 180",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LTWL 157",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LTWL 180",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LTWL 180GS",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LTWL 181",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LTWL 183",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LTWL 184",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHIL 184",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "RELI 150",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SOCI 105",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SOCI 150",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SOCI 172",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SOCI 184",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SOCI 187",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "TDGE 124",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "TDGE 125",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "TDGE 127",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "TDTR 120",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "USP 164",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 150",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 150A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 151",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 151A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 152",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 152D",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 155",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 156",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 157",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 157D",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 194S",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LTWR 110W",
+      "status": "active",
+      "was": "LTWR 110"
+     },
+     {
+      "type": "course",
+      "code": "LTWR 110C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "LTWR 110W",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "TDPW 104",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 177",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COMM 101",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COMM 101T",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 174",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COMM 101D",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COMM 101K",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "COMM 101N",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 175",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 178",
+      "status": "active"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "FILM 179",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 173",
+        "status": "active"
+       }
+      ],
+      "count": 1
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "FILM 180",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 180",
+        "status": "active"
+       }
+      ],
+      "count": 1
+     },
+     {
+      "type": "course",
+      "code": "TDGE 126",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 172",
+      "status": "active"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "FILM 182",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "VIS 183",
+        "status": "active"
+       }
+      ],
+      "count": 1
+     },
+     {
+      "type": "course",
+      "code": "TDAC 110",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 171",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "VIS 176",
+      "status": "active"
+     },
+     {
+      "type": "text",
+      "text": "an independent study"
+     }
+    ],
+    "count": 1,
+    "label": "Upper-division elective",
+    "notes": "Students must take one upper-division elective of four or more units chosen from studies and history courses, the production courses, or an independent study."
+   }
+  },
+  {
+   "name": "Practicum",
+   "requirement": {
+    "type": "course",
+    "code": "FILM 170",
+    "status": "active"
+   }
+  },
+  {
+   "name": "Capstone",
+   "requirement": {
+    "type": "course",
+    "code": "CINE 185",
+    "status": "active"
+   }
+  }
+ ],
+ "narrative": [
+  "The major in cinematic arts consists of seven lower-division courses and twelve upper-division courses.",
+  "All courses taken to satisfy major requirements must be taken for a letter grade, and only grades of C- or better will be accepted in the cinematic arts major."
+ ]
+}

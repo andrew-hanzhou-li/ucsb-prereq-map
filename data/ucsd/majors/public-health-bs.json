@@ -1,0 +1,897 @@
+{
+  "name": "Public Health - BS",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Herbert Wertheim School of Public Health and Human Longevity Science",
+  "source": "https://catalog.ucsd.edu/curric/PH-ug.html",
+  "narrative": [
+    "Selective major: only students who have completed the required screening courses and have a minimum 2.0 UC GPA are eligible to apply. Each concentration has specific entry requirements.",
+    "PH 40 must be completed at UC San Diego.",
+    "All lower-division and upper-division major courses must be taken for a letter grade, with the exception of: AIP 197, PH 88, PH 90, PH 95, PH 98, PH 99, PH 195P, PH 198, and PH 199, which may be taken P/NP only.",
+    "A minimum grade of C– is required in any course to be counted toward fulfillment of lower-division and upper-division major requirements.",
+    "No more than eight units of PH 91 may be used to meet lower-division major requirements.",
+    "No more than twelve units of PH 191 or GLBH 100 may be used to meet upper-division major requirements for the general BSPH.",
+    "No more than four units of AIP 197 may be used to meet upper-division major requirements. No more than four units of PH 195P may be used to meet upper-division major requirements.",
+    "No more than eight combined total units of PH 198 and PH 199 may be used to meet upper-division major requirements.",
+    "No more than four units of GLBH 111 may be used to meet upper-division major requirements.",
+    "No more than six units of COMM 102C may be used to meet upper-division major requirements.",
+    "Lower-division requirements (thirty-two or thirty-three units); upper-division requirements (forty-eight units).",
+    "Sections follow the catalog subheadings: Public Health Sciences through Public Health Elements are lower-division; Core Disciplines onward are upper-division."
+  ],
+  "sections": [
+    {
+      "name": "Public Health Sciences",
+      "requirement": {
+        "type": "choose",
+        "count": 1,
+        "items": [
+          {
+            "type": "course",
+            "code": "PH 40"
+          },
+          {
+            "type": "course",
+            "code": "PH 40R"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Biology",
+      "requirement": {
+        "type": "choose",
+        "count": 3,
+        "items": [
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "BILD 1"
+              },
+              {
+                "type": "course",
+                "code": "BILD 10"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "BILD 2"
+          },
+          {
+            "type": "course",
+            "code": "BILD 3"
+          },
+          {
+            "type": "course",
+            "code": "BILD 12"
+          },
+          {
+            "type": "course",
+            "code": "BILD 18"
+          },
+          {
+            "type": "course",
+            "code": "BILD 20"
+          },
+          {
+            "type": "course",
+            "code": "BILD 22"
+          },
+          {
+            "type": "course",
+            "code": "BILD 26"
+          },
+          {
+            "type": "course",
+            "code": "BILD 28"
+          },
+          {
+            "type": "course",
+            "code": "BILD 30"
+          },
+          {
+            "type": "course",
+            "code": "BILD 32"
+          },
+          {
+            "type": "course",
+            "code": "BILD 36"
+          },
+          {
+            "type": "course",
+            "code": "BILD 38"
+          },
+          {
+            "type": "course",
+            "code": "BILD 44"
+          },
+          {
+            "type": "course",
+            "code": "BILD 60"
+          },
+          {
+            "type": "course",
+            "code": "BILD 61"
+          }
+        ],
+        "label": "Select three of the following",
+        "notes": "Students who have completed a LD anatomy with lab and/or microbiology with lab at a community college or another university may petition to use the course(s) towards their biology area."
+      }
+    },
+    {
+      "name": "Quantitative Methods",
+      "requirement": {
+        "type": "choose",
+        "count": 1,
+        "items": [
+          {
+            "type": "course",
+            "code": "MATH 11"
+          },
+          {
+            "type": "course",
+            "code": "PSYC 60"
+          },
+          {
+            "type": "course",
+            "code": "COGS 14B"
+          },
+          {
+            "type": "course",
+            "code": "HDS 60"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Research Methods",
+      "requirement": {
+        "type": "choose",
+        "count": 1,
+        "items": [
+          {
+            "type": "course",
+            "code": "PH 45"
+          },
+          {
+            "type": "course",
+            "code": "PH 45R"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Public Health Trending Topics",
+      "requirement": {
+        "type": "choose",
+        "count": 1,
+        "items": [
+          {
+            "type": "course",
+            "code": "PH 71"
+          },
+          {
+            "type": "course",
+            "code": "PH 71R"
+          }
+        ],
+        "notes": "total of four units required"
+      }
+    },
+    {
+      "name": "Public Health Elements",
+      "requirement": {
+        "type": "units",
+        "units": 4,
+        "items": [
+          {
+            "type": "range",
+            "subject": "PH",
+            "from": 50,
+            "to": 95
+          },
+          {
+            "type": "course",
+            "code": "PH 98"
+          },
+          {
+            "type": "course",
+            "code": "PH 99"
+          }
+        ],
+        "notes": "total of four units required"
+      }
+    },
+    {
+      "name": "Core Disciplines",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "PH 101"
+              },
+              {
+                "type": "course",
+                "code": "PH 101R"
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "PH 102"
+              },
+              {
+                "type": "course",
+                "code": "PH 102R"
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "PH 110"
+              },
+              {
+                "type": "course",
+                "code": "PH 110R"
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "PH 120"
+              },
+              {
+                "type": "course",
+                "code": "PH 120R"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "PH 130"
+          }
+        ],
+        "notes": "five courses, twenty units"
+      }
+    },
+    {
+      "name": "Public Health Perspectives",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "course",
+            "code": "PH 157"
+          },
+          {
+            "type": "course",
+            "code": "PH 180"
+          },
+          {
+            "type": "units",
+            "units": 4,
+            "items": [
+              {
+                "type": "range",
+                "subject": "PH",
+                "from": 140,
+                "to": 191
+              },
+              {
+                "type": "course",
+                "code": "PH 195P"
+              },
+              {
+                "type": "course",
+                "code": "PH 198"
+              },
+              {
+                "type": "course",
+                "code": "PH 199"
+              }
+            ],
+            "label": "Select from the following"
+          }
+        ],
+        "notes": "total of 12 units required"
+      }
+    },
+    {
+      "name": "Public Health Electives",
+      "requirement": {
+        "type": "units",
+        "units": 8,
+        "items": [
+          {
+            "type": "range",
+            "subject": "PH",
+            "from": 140,
+            "to": 191
+          },
+          {
+            "type": "course",
+            "code": "PH 195P"
+          },
+          {
+            "type": "course",
+            "code": "PH 198"
+          },
+          {
+            "type": "course",
+            "code": "PH 199"
+          },
+          {
+            "type": "course",
+            "code": "ANBI 130"
+          },
+          {
+            "type": "course",
+            "code": "ANSC 101"
+          },
+          {
+            "type": "course",
+            "code": "ANSC 105"
+          },
+          {
+            "type": "course",
+            "code": "ANSC 105GS"
+          },
+          {
+            "type": "course",
+            "code": "ANSC 106"
+          },
+          {
+            "type": "course",
+            "code": "ANSC 106GS"
+          },
+          {
+            "type": "course",
+            "code": "ANSC 143"
+          },
+          {
+            "type": "course",
+            "code": "ANSC 144"
+          },
+          {
+            "type": "course",
+            "code": "ANSC 146"
+          },
+          {
+            "type": "course",
+            "code": "ANSC 147"
+          },
+          {
+            "type": "course",
+            "code": "ANSC 148"
+          },
+          {
+            "type": "course",
+            "code": "ANSC 150"
+          },
+          {
+            "type": "course",
+            "code": "ANSC 164"
+          },
+          {
+            "type": "course",
+            "code": "ANSC 190GS"
+          },
+          {
+            "type": "course",
+            "code": "ANTH 128A"
+          },
+          {
+            "type": "course",
+            "code": "ANTH 128B"
+          },
+          {
+            "type": "course",
+            "code": "BIBC 100"
+          },
+          {
+            "type": "course",
+            "code": "BIBC 102"
+          },
+          {
+            "type": "course",
+            "code": "BIBC 120"
+          },
+          {
+            "type": "course",
+            "code": "BICD 100"
+          },
+          {
+            "type": "course",
+            "code": "BICD 110"
+          },
+          {
+            "type": "course",
+            "code": "BICD 136"
+          },
+          {
+            "type": "course",
+            "code": "BICD 140"
+          },
+          {
+            "type": "course",
+            "code": "BIEB 152"
+          },
+          {
+            "type": "course",
+            "code": "BIMM 100"
+          },
+          {
+            "type": "course",
+            "code": "BIMM 110"
+          },
+          {
+            "type": "course",
+            "code": "BIMM 120"
+          },
+          {
+            "type": "course",
+            "code": "BIMM 124"
+          },
+          {
+            "type": "course",
+            "code": "BIMM 134"
+          },
+          {
+            "type": "course",
+            "code": "BIPN 100"
+          },
+          {
+            "type": "course",
+            "code": "BIPN 108"
+          },
+          {
+            "type": "course",
+            "code": "BIPN 134"
+          },
+          {
+            "type": "course",
+            "code": "CCS 123"
+          },
+          {
+            "type": "course",
+            "code": "CGS 123"
+          },
+          {
+            "type": "course",
+            "code": "COGS 174"
+          },
+          {
+            "type": "course",
+            "code": "COGS 174GS"
+          },
+          {
+            "type": "course",
+            "code": "COMM 102C"
+          },
+          {
+            "type": "course",
+            "code": "ECON 125"
+          },
+          {
+            "type": "course",
+            "code": "ECON 130"
+          },
+          {
+            "type": "course",
+            "code": "ECON 131"
+          },
+          {
+            "type": "course",
+            "code": "ECON 138"
+          },
+          {
+            "type": "course",
+            "code": "ECON 140"
+          },
+          {
+            "type": "course",
+            "code": "ECON 141"
+          },
+          {
+            "type": "course",
+            "code": "ENVR 110"
+          },
+          {
+            "type": "course",
+            "code": "ESYS 101"
+          },
+          {
+            "type": "course",
+            "code": "ESYS 103"
+          },
+          {
+            "type": "course",
+            "code": "ETHN 103"
+          },
+          {
+            "type": "course",
+            "code": "ETHN 142"
+          },
+          {
+            "type": "course",
+            "code": "ETHN 157"
+          },
+          {
+            "type": "course",
+            "code": "ETHN 190"
+          },
+          {
+            "type": "course",
+            "code": "GLBH 100"
+          },
+          {
+            "type": "course",
+            "code": "GLBH 101"
+          },
+          {
+            "type": "course",
+            "code": "GLBH 105"
+          },
+          {
+            "type": "course",
+            "code": "GLBH 110"
+          },
+          {
+            "type": "course",
+            "code": "GLBH 111"
+          },
+          {
+            "type": "course",
+            "code": "GLBH 113"
+          },
+          {
+            "type": "course",
+            "code": "GLBH 142"
+          },
+          {
+            "type": "course",
+            "code": "GLBH 146"
+          },
+          {
+            "type": "course",
+            "code": "GLBH 147"
+          },
+          {
+            "type": "course",
+            "code": "GLBH 148"
+          },
+          {
+            "type": "course",
+            "code": "GLBH 150"
+          },
+          {
+            "type": "course",
+            "code": "GLBH 181"
+          },
+          {
+            "type": "course",
+            "code": "HISC 115"
+          },
+          {
+            "type": "course",
+            "code": "HISC 116"
+          },
+          {
+            "type": "course",
+            "code": "HISC 180"
+          },
+          {
+            "type": "course",
+            "code": "LTCS 165"
+          },
+          {
+            "type": "course",
+            "code": "MATH 180A"
+          },
+          {
+            "type": "course",
+            "code": "MATH 181A"
+          },
+          {
+            "type": "course",
+            "code": "MATH 181B"
+          },
+          {
+            "type": "course",
+            "code": "MGT 108R"
+          },
+          {
+            "type": "course",
+            "code": "MGT 173"
+          },
+          {
+            "type": "course",
+            "code": "PHIL 163"
+          },
+          {
+            "type": "course",
+            "code": "POLI 117"
+          },
+          {
+            "type": "course",
+            "code": "POLI 117R"
+          },
+          {
+            "type": "course",
+            "code": "POLI 125B"
+          },
+          {
+            "type": "course",
+            "code": "POLI 160AA"
+          },
+          {
+            "type": "course",
+            "code": "POLI 168"
+          },
+          {
+            "type": "course",
+            "code": "PSYC 101"
+          },
+          {
+            "type": "course",
+            "code": "PSYC 104"
+          },
+          {
+            "type": "course",
+            "code": "PSYC 134"
+          },
+          {
+            "type": "course",
+            "code": "PSYC 155"
+          },
+          {
+            "type": "course",
+            "code": "PSYC 168"
+          },
+          {
+            "type": "course",
+            "code": "PSYC 179"
+          },
+          {
+            "type": "course",
+            "code": "PSYC 181"
+          },
+          {
+            "type": "course",
+            "code": "PSYC 181GS"
+          },
+          {
+            "type": "course",
+            "code": "PSYC 188"
+          },
+          {
+            "type": "course",
+            "code": "REV 160GS"
+          },
+          {
+            "type": "course",
+            "code": "REV 165GS"
+          },
+          {
+            "type": "course",
+            "code": "SIO 109"
+          },
+          {
+            "type": "course",
+            "code": "SIO 109R"
+          },
+          {
+            "type": "course",
+            "code": "SIO 116"
+          },
+          {
+            "type": "course",
+            "code": "SIO 116GS"
+          },
+          {
+            "type": "course",
+            "code": "SIO 118GS"
+          },
+          {
+            "type": "course",
+            "code": "SIO 187"
+          },
+          {
+            "type": "course",
+            "code": "SIO 189"
+          },
+          {
+            "type": "course",
+            "code": "SOCI 102"
+          },
+          {
+            "type": "course",
+            "code": "SOCI 104Q"
+          },
+          {
+            "type": "course",
+            "code": "SOCI 107"
+          },
+          {
+            "type": "course",
+            "code": "SOCI 108"
+          },
+          {
+            "type": "course",
+            "code": "SOCI 113"
+          },
+          {
+            "type": "course",
+            "code": "SOCI 134"
+          },
+          {
+            "type": "course",
+            "code": "SOCI 135"
+          },
+          {
+            "type": "course",
+            "code": "SOCI 136F"
+          },
+          {
+            "type": "course",
+            "code": "SOCI 137"
+          },
+          {
+            "type": "course",
+            "code": "SOCI 138"
+          },
+          {
+            "type": "course",
+            "code": "SOCI 152"
+          },
+          {
+            "type": "course",
+            "code": "SOCI 173"
+          },
+          {
+            "type": "course",
+            "code": "USP 101"
+          },
+          {
+            "type": "course",
+            "code": "USP 128A"
+          },
+          {
+            "type": "course",
+            "code": "USP 128B"
+          },
+          {
+            "type": "course",
+            "code": "USP 129"
+          },
+          {
+            "type": "course",
+            "code": "USP 133"
+          },
+          {
+            "type": "course",
+            "code": "USP 136"
+          },
+          {
+            "type": "course",
+            "code": "USP 141A"
+          },
+          {
+            "type": "course",
+            "code": "USP 141B"
+          },
+          {
+            "type": "course",
+            "code": "USP 142A"
+          },
+          {
+            "type": "course",
+            "code": "USP 142B"
+          },
+          {
+            "type": "course",
+            "code": "USP 144"
+          },
+          {
+            "type": "course",
+            "code": "USP 145"
+          },
+          {
+            "type": "course",
+            "code": "USP 146"
+          },
+          {
+            "type": "course",
+            "code": "USP 147"
+          },
+          {
+            "type": "course",
+            "code": "USP 149"
+          },
+          {
+            "type": "course",
+            "code": "USP 171"
+          }
+        ],
+        "notes": "Eight additional units from either additional public health perspectives listed above or courses listed below. Students may petition to use AIP 197, UCCS/UCDC, or a Study Abroad experience (must be an upper-division four-unit course and have been preapproved by the program). Catalog prints sequences in this list as e.g. 'USP 128A-B'; each course is listed separately."
+      }
+    },
+    {
+      "name": "Capstone Experience or Honors Practicum",
+      "requirement": {
+        "type": "choose",
+        "count": 1,
+        "items": [
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "PH 193"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PH 193R"
+                  }
+                ]
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "PH 194"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PH 194R"
+                  }
+                ]
+              }
+            ],
+            "label": "Option 1: Capstone Experience (two courses, eight units)"
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "PH 196AH"
+              },
+              {
+                "type": "course",
+                "code": "PH 196BH"
+              }
+            ],
+            "label": "Option 2: Honors Practicum (two courses, twelve units)"
+          }
+        ]
+      }
+    }
+  ]
+}

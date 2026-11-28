@@ -1,0 +1,337 @@
+{
+  "name": "Speculative Design - BA",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Visual Arts",
+  "major_code": "VA30",
+  "source": "https://catalog.ucsd.edu/curric/VIS-ug.html",
+  "narrative": [
+    "All courses taken to satisfy major requirements must be taken for a letter grade, and only grades of C– or better will be accepted in the visual arts major.",
+    "A minimum of two-thirds of the course work completed for the major must be taken at UC San Diego.",
+    "Double majors within the department (art history/theory/criticism paired with studio, speculative design, media, or ICAM) must have at least ten upper-division courses that are unique to each departmental major.",
+    "Degree type (BA) is not stated on the page; assumed BA."
+  ],
+  "sections": [
+    {
+      "name": "Lower Division: Foundation Level",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "course",
+            "code": "VIS 11"
+          },
+          {
+            "type": "course",
+            "code": "VIS 30"
+          },
+          {
+            "type": "course",
+            "code": "VIS 41"
+          },
+          {
+            "type": "choose",
+            "count": 2,
+            "items": [
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "VIS 1"
+                  },
+                  {
+                    "type": "course",
+                    "code": "VIS 2"
+                  },
+                  {
+                    "type": "course",
+                    "code": "VIS 3"
+                  }
+                ],
+                "label": "VIS 1 or 2 or 3"
+              },
+              {
+                "type": "course",
+                "code": "VIS 42"
+              },
+              {
+                "type": "course",
+                "code": "VIS 60"
+              },
+              {
+                "type": "course",
+                "code": "VIS 70N"
+              },
+              {
+                "type": "course",
+                "code": "VIS 80"
+              },
+              {
+                "type": "course",
+                "code": "COGS 10"
+              },
+              {
+                "type": "course",
+                "code": "USP 1"
+              },
+              {
+                "type": "course",
+                "code": "USP 2"
+              },
+              {
+                "type": "course",
+                "code": "USP 3"
+              }
+            ],
+            "label": "Breadth electives"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "VIS 10"
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "VIS 22"
+                  },
+                  {
+                    "type": "course",
+                    "code": "VIS 22R"
+                  }
+                ],
+                "label": "VIS 22/22R"
+              },
+              {
+                "type": "course",
+                "code": "VIS 31"
+              },
+              {
+                "type": "course",
+                "code": "VIS 32"
+              }
+            ],
+            "label": "History"
+          }
+        ],
+        "notes": "Six courses required."
+      }
+    },
+    {
+      "name": "Upper Division: Required",
+      "requirement": {
+        "type": "course",
+        "code": "VIS 135"
+      }
+    },
+    {
+      "name": "Upper Division: Intermediate Level",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "choose",
+            "count": 3,
+            "items": [
+              {
+                "type": "course",
+                "code": "VIS 100"
+              },
+              {
+                "type": "course",
+                "code": "VIS 101"
+              },
+              {
+                "type": "course",
+                "code": "VIS 102"
+              },
+              {
+                "type": "course",
+                "code": "VIS 133"
+              },
+              {
+                "type": "course",
+                "code": "VIS 134"
+              },
+              {
+                "type": "course",
+                "code": "VIS 142"
+              },
+              {
+                "type": "course",
+                "code": "VIS 163"
+              }
+            ],
+            "label": "Lecture courses"
+          },
+          {
+            "type": "choose",
+            "count": 2,
+            "items": [
+              {
+                "type": "course",
+                "code": "VIS 100A"
+              },
+              {
+                "type": "course",
+                "code": "VIS 101A"
+              },
+              {
+                "type": "course",
+                "code": "VIS 133A"
+              },
+              {
+                "type": "course",
+                "code": "VIS 136A"
+              },
+              {
+                "type": "course",
+                "code": "VIS 161"
+              },
+              {
+                "type": "course",
+                "code": "VIS 162"
+              }
+            ],
+            "label": "Studio courses"
+          }
+        ],
+        "notes": "Catalog heading: six courses required (VIS 135 is listed as required just above)."
+      }
+    },
+    {
+      "name": "History and Theory",
+      "requirement": {
+        "type": "choose",
+        "count": 2,
+        "items": [
+          {
+            "type": "course",
+            "code": "VIS 103"
+          },
+          {
+            "type": "course",
+            "code": "VIS 103A"
+          },
+          {
+            "type": "course",
+            "code": "VIS 103B"
+          },
+          {
+            "type": "course",
+            "code": "VIS 103C"
+          },
+          {
+            "type": "course",
+            "code": "VIS 103D"
+          },
+          {
+            "type": "course",
+            "code": "VIS 159"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Advanced Electives",
+      "requirement": {
+        "type": "choose",
+        "count": 3,
+        "items": [
+          {
+            "type": "course",
+            "code": "VIS 100A"
+          },
+          {
+            "type": "course",
+            "code": "VIS 101A"
+          },
+          {
+            "type": "course",
+            "code": "VIS 133A"
+          },
+          {
+            "type": "course",
+            "code": "VIS 136A"
+          },
+          {
+            "type": "course",
+            "code": "VIS 141A"
+          },
+          {
+            "type": "course",
+            "code": "VIS 141B"
+          },
+          {
+            "type": "course",
+            "code": "VIS 143A"
+          },
+          {
+            "type": "course",
+            "code": "VIS 143B"
+          },
+          {
+            "type": "course",
+            "code": "VIS 145A"
+          },
+          {
+            "type": "course",
+            "code": "VIS 145B"
+          },
+          {
+            "type": "course",
+            "code": "VIS 146A"
+          },
+          {
+            "type": "course",
+            "code": "VIS 146B"
+          },
+          {
+            "type": "course",
+            "code": "VIS 147A"
+          },
+          {
+            "type": "course",
+            "code": "VIS 147B"
+          },
+          {
+            "type": "course",
+            "code": "VIS 149"
+          },
+          {
+            "type": "course",
+            "code": "VIS 161"
+          },
+          {
+            "type": "course",
+            "code": "VIS 162"
+          },
+          {
+            "type": "course",
+            "code": "VIS 174"
+          },
+          {
+            "type": "course",
+            "code": "VIS 178"
+          }
+        ],
+        "notes": "Courses may not overlap between intermediate and advanced requirements."
+      }
+    },
+    {
+      "name": "Design Master Studio (one course required, eight units)",
+      "requirement": {
+        "type": "course",
+        "code": "VIS 190"
+      }
+    }
+  ]
+}

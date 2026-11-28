@@ -1,0 +1,319 @@
+{
+  "name": "Astrophysical Sciences - BS",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Astronomy and Astrophysics",
+  "major_code": "AT27",
+  "source": "https://catalog.ucsd.edu/curric/ASTR-ug.html",
+  "narrative": [
+    "Lower-division units: 56; upper-division units: 48; total units required for the major: 104.",
+    "P/NP Grading Option: Not allowed for any courses applied to the major (the exceptions are courses completed via AP/IB/A-Level and a single four-unit ASTR 199/199H that may only be applied as an upper-division restricted elective).",
+    "A grade point average of 2.0 or higher in the upper-division major program is required for graduation. Students must receive a grade of C– or better in any course to be counted toward fulfillment of the major requirements.",
+    "At least 60 percent of the upper-division courses in the major must be taken while in residence at UC San Diego.",
+    "Students cannot pursue both the AT27 and the AT25 programs.",
+    "Programming: It is recommended that the programming requirement be completed as early as possible.",
+    "Students taking the PHYS 2 series are recommended, but not required, to take ASTR 18.",
+    "We recommend the 4 series."
+  ],
+  "sections": [
+    {
+      "name": "Lower-Division Requirements",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "PHYS 2A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 2B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 2C"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 2D"
+                  }
+                ],
+                "label": "PHYS 2A-B-C-D"
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "PHYS 4A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 4B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 4C"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 4D"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 4E"
+                  }
+                ],
+                "label": "PHYS 4A-B-C-D-E"
+              }
+            ],
+            "label": "Physics"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "DSC 10"
+              },
+              {
+                "type": "course",
+                "code": "BILD 62"
+              },
+              {
+                "type": "course",
+                "code": "COGS 18"
+              },
+              {
+                "type": "course",
+                "code": "PHYS 41"
+              },
+              {
+                "type": "course",
+                "code": "CSE 6R"
+              },
+              {
+                "type": "course",
+                "code": "CSE 8A"
+              },
+              {
+                "type": "course",
+                "code": "CSE 11"
+              },
+              {
+                "type": "course",
+                "code": "ECE 15"
+              },
+              {
+                "type": "course",
+                "code": "MAE 8"
+              },
+              {
+                "type": "course",
+                "code": "NANO 15"
+              },
+              {
+                "type": "course",
+                "code": "NANO 15R"
+              }
+            ],
+            "label": "Programming"
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 18"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 31AH"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "MATH 20A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 20B"
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 20C"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 31BH"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "MATH 20D"
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 20E"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 31CH"
+                  }
+                ]
+              }
+            ],
+            "label": "MATH 18 and 20A-B-C-D-E",
+            "notes": "The honors math series (MATH 31AH, 31BH, 31CH) can replace the standard math courses (MATH 18, 20C, 20E, respectively)."
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "ASTR 20A"
+              },
+              {
+                "type": "course",
+                "code": "ASTR 20B"
+              }
+            ],
+            "label": "ASTR 20A-B"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Upper-Division Requirements",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "choose",
+            "count": 3,
+            "items": [
+              {
+                "type": "course",
+                "code": "ASTR 120"
+              },
+              {
+                "type": "course",
+                "code": "ASTR 122"
+              },
+              {
+                "type": "course",
+                "code": "ASTR 123"
+              },
+              {
+                "type": "course",
+                "code": "ASTR 124"
+              }
+            ],
+            "label": "Core"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "ASTR 150"
+              },
+              {
+                "type": "course",
+                "code": "ASTR 152"
+              },
+              {
+                "type": "course",
+                "code": "ASTR 154"
+              },
+              {
+                "type": "course",
+                "code": "ASTR 155"
+              }
+            ],
+            "label": "Lab"
+          },
+          {
+            "type": "choose",
+            "count": 8,
+            "items": [
+              {
+                "type": "any",
+                "subject": "ASTR",
+                "level": "upper"
+              },
+              {
+                "type": "any",
+                "subject": "PHYS",
+                "level": "upper"
+              },
+              {
+                "type": "any",
+                "subject": "SIO",
+                "level": "upper"
+              },
+              {
+                "type": "any",
+                "subject": "MAE",
+                "level": "upper"
+              },
+              {
+                "type": "any",
+                "subject": "ECE",
+                "level": "upper"
+              },
+              {
+                "type": "any",
+                "subject": "MATH",
+                "level": "upper"
+              },
+              {
+                "type": "any",
+                "subject": "DSC",
+                "level": "upper"
+              },
+              {
+                "type": "any",
+                "subject": "CHEM",
+                "level": "upper"
+              },
+              {
+                "type": "text",
+                "text": "Upper-division courses from Biological Sciences"
+              },
+              {
+                "type": "text",
+                "text": "Optional: One quarter of honors thesis (four units) counts as one of the eight additional elective courses. If completing the honors thesis for one of them, the remaining courses must be at least three ASTR courses and at least three courses in other departments listed above. A single four-unit ASTR 199/199H course may only be applied as one upper-division restricted elective."
+              }
+            ],
+            "label": "Electives",
+            "notes": "Eight upper-division courses that grant at least four units each, including at least four ASTR courses and at least three courses from other departments—Physics, Scripps Institution of Oceanography, Mechanical and Aerospace Engineering, Electrical and Computer Engineering, Mathematics, Data Science, Chemistry and Biochemistry, and Biological Sciences"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,487 @@
+{
+ "id": "UCSD-MAJOR-marine-biology-bs",
+ "name": "Marine Biology - BS",
+ "kind": "major",
+ "type": "Bachelor's Degree",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsd.edu/curric/SIO-ug.html",
+ "sections": [
+  {
+   "name": "Lower-Division Requirements",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 10A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 10B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 10C",
+          "status": "active"
+         }
+        ]
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 20A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 20B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 20C",
+          "status": "active"
+         }
+        ]
+       }
+      ],
+      "count": 1
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "course",
+        "code": "CHEM 6A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 6B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 6C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 7L",
+        "status": "active"
+       }
+      ]
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "PHYS 1A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYS 1AL",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYS 1B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYS 1BL",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYS 1C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYS 1CL",
+          "status": "active"
+         }
+        ]
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "PHYS 2A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYS 2B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYS 2C",
+          "status": "active"
+         }
+        ]
+       }
+      ],
+      "count": 1
+     },
+     {
+      "type": "course",
+      "code": "BILD 1",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BILD 2",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BILD 3",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SIO 90",
+      "status": "active"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Marine Biology Core",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "SIO 132",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SIO 134",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SIO 181",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SIO 136",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "SIO 139",
+      "status": "active"
+     }
+    ],
+    "notes": "all courses required"
+   }
+  },
+  {
+   "name": "Biology Core Courses",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "SIO 187",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "BICD 100",
+      "status": "active"
+     }
+    ],
+    "notes": "all courses required"
+   }
+  },
+  {
+   "name": "Oceans Physics and Chemistry Requirement",
+   "requirement": {
+    "type": "course",
+    "code": "SIO 119",
+    "status": "active"
+   }
+  },
+  {
+   "name": "Restricted Electives",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "SIO 101",
+        "status": "active"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "SIO 104",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SIO 148",
+          "status": "inactive"
+         }
+        ],
+        "count": 1
+       },
+       {
+        "type": "course",
+        "code": "SIO 131",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 145",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 146",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 147",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 183",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 184",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 185",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 186",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 188",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "BIBC 103",
+        "status": "active"
+       }
+      ],
+      "count": 2,
+      "label": "Laboratory courses",
+      "notes": "two of the five must be indicated as laboratory courses"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "SIO 101",
+        "status": "active"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "SIO 104",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SIO 148",
+          "status": "inactive"
+         }
+        ],
+        "count": 1
+       },
+       {
+        "type": "course",
+        "code": "SIO 121",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 122",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 123",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 124",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 125",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 126",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 127",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 128",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 129",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 131",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 133",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 137",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 138",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 145",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 146",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 147",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 183",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 184",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 185",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 186",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 188",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 189",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "BIBC 103",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "BIBC 102",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "BIEB 102",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "BIEB 150",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SIO 199",
+        "status": "active"
+       }
+      ],
+      "count": 3,
+      "notes": "the remaining three restricted electives (lab courses count too); one quarter of SIO 199 (four units) may be used"
+     }
+    ],
+    "label": "Restricted Electives",
+    "notes": "at least five of the following; two must be indicated as laboratory courses. SIO 199 (one quarter) does not satisfy a laboratory course requirement."
+   }
+  }
+ ],
+ "narrative": [
+  "Students must receive a grade of C– or higher in any course to be counted toward fulfillment of the major requirements (with the exception of SIO 90 and SIO 139, which are only offered on a P/NP basis).",
+  "One quarter of SIO 199 credit (four units) may be used as a restricted elective but does not satisfy a laboratory course requirement."
+ ]
+}

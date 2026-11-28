@@ -1,0 +1,346 @@
+{
+  "name": "Environmental Systems - BS - Earth Sciences",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Environmental Systems Program",
+  "source": "https://catalog.ucsd.edu/curric/ESYS.html",
+  "narrative": [
+    "A grade point average of 2.0 or higher in the upper-division major program is required for graduation. Students must receive a grade of C- or better in any course to be counted toward fulfillment of the major requirements. In exceptional cases, students with a grade point average in the major of 2.5 or greater may petition to have one grade of D accepted.",
+    "All courses (lower and upper division) required for the major must be taken for a letter grade.",
+    "It is suggested that the integrating sequence ESYS 101, 102, and 103 should be completed by sophomore year, if possible.",
+    "Other courses may be substituted by petition."
+  ],
+  "sections": [
+    {
+      "name": "Lower-Division Requirements",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "course",
+            "code": "BILD 3"
+          },
+          {
+            "type": "course",
+            "code": "CHEM 6A"
+          },
+          {
+            "type": "course",
+            "code": "CHEM 6B"
+          },
+          {
+            "type": "course",
+            "code": "CHEM 6C"
+          },
+          {
+            "type": "course",
+            "code": "PHYS 2A"
+          },
+          {
+            "type": "course",
+            "code": "PHYS 2B"
+          },
+          {
+            "type": "course",
+            "code": "PHYS 2C"
+          },
+          {
+            "type": "course",
+            "code": "MATH 20A"
+          },
+          {
+            "type": "course",
+            "code": "MATH 20B"
+          },
+          {
+            "type": "course",
+            "code": "MATH 20C"
+          },
+          {
+            "type": "course",
+            "code": "MATH 20D"
+          },
+          {
+            "type": "course",
+            "code": "SIO 50"
+          },
+          {
+            "type": "course",
+            "code": "ECON 1"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Upper-Division Core Requirements",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "course",
+            "code": "ESYS 101"
+          },
+          {
+            "type": "course",
+            "code": "ESYS 102"
+          },
+          {
+            "type": "course",
+            "code": "ESYS 103"
+          },
+          {
+            "type": "course",
+            "code": "ECON 131"
+          },
+          {
+            "type": "course",
+            "code": "POLI 160AA"
+          },
+          {
+            "type": "course",
+            "code": "SIO 102"
+          },
+          {
+            "type": "all",
+            "label": "Senior Internship Project and Seminar",
+            "items": [
+              {
+                "type": "course",
+                "code": "ESYS 187A"
+              },
+              {
+                "type": "course",
+                "code": "ESYS 187B"
+              },
+              {
+                "type": "course",
+                "code": "ESYS 187C"
+              }
+            ],
+            "notes": "three-quarter sequence"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Upper-Division Earth Sciences Restricted Electives (list 1)",
+      "requirement": {
+        "type": "choose",
+        "count": 3,
+        "items": [
+          {
+            "type": "course",
+            "code": "SIO 100"
+          },
+          {
+            "type": "course",
+            "code": "SIO 103"
+          },
+          {
+            "type": "course",
+            "code": "SIO 104"
+          },
+          {
+            "type": "course",
+            "code": "SIO 105"
+          },
+          {
+            "type": "course",
+            "code": "SIO 106"
+          },
+          {
+            "type": "course",
+            "code": "SIO 110"
+          },
+          {
+            "type": "course",
+            "code": "SIO 120"
+          },
+          {
+            "type": "course",
+            "code": "SIO 135"
+          },
+          {
+            "type": "course",
+            "code": "SIO 144"
+          },
+          {
+            "type": "course",
+            "code": "SIO 150"
+          },
+          {
+            "type": "course",
+            "code": "SIO 152"
+          },
+          {
+            "type": "course",
+            "code": "SIO 160"
+          },
+          {
+            "type": "course",
+            "code": "SIO 162"
+          }
+        ],
+        "notes": "Students select three elective courses from the list below."
+      }
+    },
+    {
+      "name": "Upper-Division Earth Sciences Restricted Electives (list 2)",
+      "requirement": {
+        "type": "choose",
+        "count": 2,
+        "items": [
+          {
+            "type": "course",
+            "code": "SIO 101"
+          },
+          {
+            "type": "course",
+            "code": "SIO 108"
+          },
+          {
+            "type": "course",
+            "code": "SIO 109"
+          },
+          {
+            "type": "course",
+            "code": "SIO 109R"
+          },
+          {
+            "type": "course",
+            "code": "SIO 111"
+          },
+          {
+            "type": "course",
+            "code": "SIO 113"
+          },
+          {
+            "type": "course",
+            "code": "SIO 115"
+          },
+          {
+            "type": "course",
+            "code": "SIO 117"
+          },
+          {
+            "type": "course",
+            "code": "SIO 119"
+          },
+          {
+            "type": "course",
+            "code": "SIO 138"
+          },
+          {
+            "type": "course",
+            "code": "SIO 141"
+          },
+          {
+            "type": "course",
+            "code": "CHEM 174"
+          },
+          {
+            "type": "course",
+            "code": "SIO 143"
+          },
+          {
+            "type": "course",
+            "code": "SIO 164"
+          },
+          {
+            "type": "course",
+            "code": "ANTH 164"
+          },
+          {
+            "type": "course",
+            "code": "SIO 166"
+          },
+          {
+            "type": "course",
+            "code": "ANTH 166"
+          },
+          {
+            "type": "course",
+            "code": "SIO 170"
+          },
+          {
+            "type": "course",
+            "code": "SIO 171"
+          },
+          {
+            "type": "course",
+            "code": "SIO 172"
+          },
+          {
+            "type": "course",
+            "code": "SIO 182"
+          },
+          {
+            "type": "course",
+            "code": "CHEM 171"
+          },
+          {
+            "type": "course",
+            "code": "CHEM 172"
+          },
+          {
+            "type": "course",
+            "code": "CHEM 173"
+          },
+          {
+            "type": "course",
+            "code": "SIO 100"
+          },
+          {
+            "type": "course",
+            "code": "SIO 103"
+          },
+          {
+            "type": "course",
+            "code": "SIO 104"
+          },
+          {
+            "type": "course",
+            "code": "SIO 105"
+          },
+          {
+            "type": "course",
+            "code": "SIO 106"
+          },
+          {
+            "type": "course",
+            "code": "SIO 110"
+          },
+          {
+            "type": "course",
+            "code": "SIO 120"
+          },
+          {
+            "type": "course",
+            "code": "SIO 135"
+          },
+          {
+            "type": "course",
+            "code": "SIO 144"
+          },
+          {
+            "type": "course",
+            "code": "SIO 150"
+          },
+          {
+            "type": "course",
+            "code": "SIO 152"
+          },
+          {
+            "type": "course",
+            "code": "SIO 160"
+          },
+          {
+            "type": "course",
+            "code": "SIO 162"
+          }
+        ],
+        "notes": "Students select two electives from the list below (or from the list above, if the course is not already used as a restrictive elective)."
+      }
+    }
+  ]
+}

@@ -1,0 +1,245 @@
+{
+  "name": "Biology - BS - Bioinformatics",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "School of Biological Sciences",
+  "source": "https://catalog.ucsd.edu/curric/BIOL-ug.html",
+  "narrative": [
+    "Bachelor of science degree in biology with a specialization in bioinformatics.",
+    "Lower-division requirements seventy-two units total; upper-division requirements forty-eight units total.",
+    "Recommended, not required: BIEB 146, BIMM 172 and CSE 180 as major electives.",
+    "\"All courses required and used toward any biology major requirements must be taken for a letter grade of C- or better.\" Exceptions only for P/NP-only courses (BISP 193, 195P, 196, 197, and 199).",
+    "\"The minimum GPA requirement (for both the major and overall UC) for graduation is 2.0.\"",
+    "Residency: \"all students, including transfer students, must complete at least forty-eight or more units of upper-division course work within the major\" and \"at least twenty units of upper-division course work in the School of Biological Sciences with a grade of C- or better\" while enrolled at UC San Diego.",
+    "Satisfactory progress: if the GPA in biology courses falls below 2.0 the student is placed on probation and may be dropped from the major.",
+    "Special studies: \"One quarter of BISP 195P may apply as an upper-division elective\"; \"One quarter of BISP 193, 196, 197, or 199 may count toward the upper-division elective requirement\"; 194 Advanced Topics courses may apply to major electives if topics differ and taken for a letter grade of C- or better.",
+    "\"Course work taken outside of the School of Biological Sciences may be applicable toward the major, assuming the course has been previously reviewed and approved and meets minimum criteria. Nonreviewed course work must be petitioned.\""
+  ],
+  "sections": [
+    {
+      "name": "Lower-division requirements",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "MATH 18"
+              },
+              {
+                "type": "course",
+                "code": "MATH 20A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 20B"
+              },
+              {
+                "type": "course",
+                "code": "MATH 20C"
+              }
+            ],
+            "label": "Mathematics"
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "CHEM 6A"
+              },
+              {
+                "type": "course",
+                "code": "CHEM 6B"
+              }
+            ],
+            "label": "General Chemistry"
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "CHEM 40A"
+              },
+              {
+                "type": "course",
+                "code": "CHEM 40B"
+              }
+            ],
+            "label": "Organic Chemistry"
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "PHYS 2A"
+              },
+              {
+                "type": "course",
+                "code": "PHYS 2B"
+              },
+              {
+                "type": "course",
+                "code": "PHYS 2C"
+              }
+            ],
+            "label": "Physics"
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "BILD 1"
+              },
+              {
+                "type": "course",
+                "code": "BILD 3"
+              },
+              {
+                "type": "course",
+                "code": "BILD 4"
+              },
+              {
+                "type": "course",
+                "code": "BILD 5"
+              }
+            ],
+            "label": "Biology"
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "course",
+                "code": "CSE 11"
+              },
+              {
+                "type": "course",
+                "code": "CSE 12"
+              },
+              {
+                "type": "course",
+                "code": "CSE 21"
+              }
+            ],
+            "label": "Computer Science"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Upper-division requirements",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "course",
+            "code": "CSE 100"
+          },
+          {
+            "type": "course",
+            "code": "CSE 101"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "BIBC 100"
+              },
+              {
+                "type": "course",
+                "code": "CHEM 114A"
+              },
+              {
+                "type": "course",
+                "code": "BIBC 102"
+              },
+              {
+                "type": "course",
+                "code": "CHEM 114B"
+              }
+            ],
+            "label": "Biochemistry"
+          },
+          {
+            "type": "course",
+            "code": "BICD 100"
+          },
+          {
+            "type": "course",
+            "code": "BIMM 100"
+          },
+          {
+            "type": "course",
+            "code": "BIMM 181"
+          },
+          {
+            "type": "course",
+            "code": "BIMM 182"
+          },
+          {
+            "type": "course",
+            "code": "BENG 183"
+          },
+          {
+            "type": "course",
+            "code": "CSE 185"
+          },
+          {
+            "type": "course",
+            "code": "MATH 186"
+          },
+          {
+            "type": "units",
+            "units": 8,
+            "items": [
+              {
+                "type": "any",
+                "subject": "BIBC",
+                "level": "upper"
+              },
+              {
+                "type": "any",
+                "subject": "BICD",
+                "level": "upper"
+              },
+              {
+                "type": "any",
+                "subject": "BIEB",
+                "level": "upper"
+              },
+              {
+                "type": "any",
+                "subject": "BIMM",
+                "level": "upper"
+              },
+              {
+                "type": "any",
+                "subject": "BIPN",
+                "level": "upper"
+              },
+              {
+                "type": "any",
+                "subject": "BISP",
+                "level": "upper"
+              },
+              {
+                "type": "course",
+                "code": "CSE 180"
+              }
+            ],
+            "label": "Major electives",
+            "notes": "Major electives totaling at least eight units. \"By exception, Biology Meets Computing (CSE 180) may be applied to the major elective requirement.\" \"A major elective is defined as an upper-division biology course taken through the UC San Diego School of Biological Sciences.\""
+          }
+        ]
+      }
+    }
+  ]
+}

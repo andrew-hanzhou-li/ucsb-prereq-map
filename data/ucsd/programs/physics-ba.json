@@ -1,0 +1,573 @@
+{
+ "id": "UCSD-MAJOR-physics-ba",
+ "name": "Physics - BA",
+ "kind": "major",
+ "type": "Bachelor's Degree",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsd.edu/curric/PHYS-ug.html",
+ "sections": [
+  {
+   "name": "Lower-Division Requirements",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "PHYS 4A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 4B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 4C",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 4D",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 4E",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 2CL",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 2DL",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 41",
+      "status": "active"
+     },
+     {
+      "type": "all",
+      "items": [
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 18",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 31AH",
+          "status": "active"
+         }
+        ],
+        "count": 1
+       },
+       {
+        "type": "course",
+        "code": "MATH 20A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 20B",
+        "status": "active"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 20C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 31BH",
+          "status": "active"
+         }
+        ],
+        "count": 1
+       },
+       {
+        "type": "course",
+        "code": "MATH 20D",
+        "status": "active"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 20E",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 31CH",
+          "status": "active"
+         }
+        ],
+        "count": 1
+       }
+      ],
+      "notes": "MATH 18 and 20A-B-C-D-E; the honors math series (MATH 31AH, 31BH, 31CH) can replace MATH 18, 20C, 20E, respectively."
+     }
+    ]
+   }
+  },
+  {
+   "name": "Upper-Division Core",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "PHYS 100A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 100B",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 110A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 120",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "PHYS 130A",
+      "status": "active"
+     }
+    ],
+    "notes": "twenty-one units"
+   }
+  },
+  {
+   "name": "Restricted Electives",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "units",
+      "items": [
+       {
+        "type": "course",
+        "code": "PHYS 100C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 105A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 105B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 110B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 113",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 116",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 122",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 124",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 130B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 130C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 133",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 136",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 137",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 139",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 140A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 140B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 141",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 142",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 151",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 152A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 152B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 154",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 160",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 161",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 162",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 170",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 173",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 175",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 176",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 177",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 178",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 180",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 191",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 192",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 198",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 199",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 199H",
+        "status": "active"
+       }
+      ],
+      "units": 12,
+      "label": "Physics",
+      "notes": "at least twelve units from upper-division or graduate-level physics"
+     },
+     {
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "PHYS 100C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 105A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 105B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 110B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 113",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 116",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 122",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 124",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 130B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 130C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 133",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 136",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 137",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 139",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 140A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 140B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 141",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 142",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 151",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 152A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 152B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 154",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 160",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 161",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 162",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 170",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 173",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 175",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 176",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 177",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 178",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 180",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 191",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 192",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 198",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 199",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 199H",
+        "status": "active"
+       },
+       {
+        "type": "text",
+        "text": "any four-unit upper-division course from the sciences and engineering"
+       }
+      ],
+      "count": 4,
+      "notes": "Remaining four-unit upper-division courses from the sciences and engineering; physics courses count too. A single four-unit PHYS 199/199H (may be P/NP) may be applied."
+     }
+    ],
+    "label": "Restricted Electives",
+    "notes": "Seven four-unit upper-division courses from the sciences and engineering, with at least twelve units from upper-division or graduate-level physics (twenty-eight units)"
+   }
+  }
+ ],
+ "narrative": [
+  "The Physics 4 series is designed to prepare students for the upper-division program and is required for all physics majors.",
+  "The honors math series (MATH 31AH, 31BH, 31CH) can replace the standard math courses (MATH 18, 20C, 20E, respectively).",
+  "A course that is listed in several areas cannot count towards more than one area and can satisfy only ONE of the major requirements.",
+  "P/NP Grading Option: Not allowed for any courses applied to the major (the exceptions are courses completed via AP/IB/A-Level and a single four-unit PHYS 199/199H that may only be applied as an upper-division restricted elective).",
+  "A grade point average of 2.0 or higher in the upper-division major program is required for graduation. Students must receive a grade of C– or better in any course to be counted toward fulfillment of the major requirements.",
+  "At least 60 percent of the upper-division courses in the major must be taken while in residence at UC San Diego. All core upper-division courses must be taken while in residence at UC San Diego.",
+  "Substitutions/Exceptions: Permissible only by approved petition to the department.",
+  "Lower-division units 52; upper-division units 49; total units required for the major 101.",
+  "Programming: For students transferring into the physics program, one of the following courses is accepted via petition provided the course was completed before the transfer into physics was formalized: CENG/NANO 15; COGS 18; CSE 8A, 11, 12; ECE 15; MAE 8.",
+  "Double Majors: Approved by petition only; the equivalent of at least ten upper-division courses (forty units) must be unique to each major. A student cannot pursue two majors within the Department of Physics.",
+  "To broaden preparation in the sciences, the following courses are recommended but not required: BILD 1, 2, 3; CHEM 6A-B-C, CSE 30, MAE 03."
+ ]
+}

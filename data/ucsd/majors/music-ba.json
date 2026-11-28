@@ -1,0 +1,387 @@
+{
+  "name": "Music - BA",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Music",
+  "source": "https://catalog.ucsd.edu/curric/MUS-ug.html",
+  "narrative": [
+    "To continue within the major, all students must pass Music 2C or an equivalent proficiency exam.",
+    "All required music major courses must be taken for a letter grade, with the exception of MUS 143, which is taken on a Pass/Not Pass basis. All courses to be counted toward satisfying the major requirements must be passed with a grade of C or better.",
+    "Jazz emphasis students take MUS 2JK in lieu of 2CK.",
+    "All transfer students must pass a proficiency examination in MUS 2C. Basic Musicianship, and MUS 2CK. Basic Keyboard, or take the two sequence courses.",
+    "Area of Emphasis: 'Any three courses from the following' areas (Composition, Performance, Jazz and the African Diaspora, Technology, Literature); read as three courses within one area."
+  ],
+  "sections": [
+    {
+      "name": "Musicianship",
+      "requirement": {
+        "type": "all",
+        "label": "Musicianship",
+        "items": [
+          {
+            "type": "course",
+            "code": "MUS 2A"
+          },
+          {
+            "type": "course",
+            "code": "MUS 2B"
+          },
+          {
+            "type": "course",
+            "code": "MUS 2C"
+          },
+          {
+            "type": "course",
+            "code": "MUS 2AK"
+          },
+          {
+            "type": "course",
+            "code": "MUS 2BK"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "MUS 2CK"
+              },
+              {
+                "type": "course",
+                "code": "MUS 2JK"
+              }
+            ]
+          }
+        ],
+        "notes": "Lower-division prerequisites; Jazz emphasis students take MUS 2JK in lieu of 2CK"
+      }
+    },
+    {
+      "name": "Ensemble performance",
+      "requirement": {
+        "type": "choose",
+        "count": 3,
+        "label": "Ensemble performance",
+        "items": [
+          {
+            "type": "text",
+            "text": "MUS 95B-W (any ensemble in the MUS 95B through 95W series)"
+          },
+          {
+            "type": "course",
+            "code": "MUS 130"
+          },
+          {
+            "type": "course",
+            "code": "MUS 131"
+          },
+          {
+            "type": "course",
+            "code": "MUS 133"
+          },
+          {
+            "type": "course",
+            "code": "MUS 134"
+          }
+        ],
+        "notes": "Any three of MUS 95B-W, 130, 131, 133, or 134 (One of these may be repeated for credit)"
+      }
+    },
+    {
+      "name": "Music Theory",
+      "requirement": {
+        "type": "all",
+        "label": "Music Theory",
+        "items": [
+          {
+            "type": "course",
+            "code": "MUS 101A"
+          },
+          {
+            "type": "course",
+            "code": "MUS 101B"
+          },
+          {
+            "type": "course",
+            "code": "MUS 101C"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Music History",
+      "requirement": {
+        "type": "all",
+        "label": "Music History",
+        "items": [
+          {
+            "type": "course",
+            "code": "MUS 120A"
+          },
+          {
+            "type": "course",
+            "code": "MUS 120B"
+          },
+          {
+            "type": "course",
+            "code": "MUS 120C"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Theory/History/Literature electives",
+      "requirement": {
+        "type": "choose",
+        "count": 3,
+        "label": "Theory/History/Literature electives",
+        "items": [
+          {
+            "type": "course",
+            "code": "MUS 102"
+          },
+          {
+            "type": "course",
+            "code": "MUS 106"
+          },
+          {
+            "type": "course",
+            "code": "MUS 107"
+          },
+          {
+            "type": "range",
+            "subject": "MUS",
+            "from": 110,
+            "to": 116
+          },
+          {
+            "type": "course",
+            "code": "MUS 126"
+          },
+          {
+            "type": "course",
+            "code": "MUS 127"
+          },
+          {
+            "type": "course",
+            "code": "MUS 137A"
+          },
+          {
+            "type": "course",
+            "code": "MUS 137B"
+          },
+          {
+            "type": "course",
+            "code": "MUS 137C"
+          },
+          {
+            "type": "range",
+            "subject": "MUS",
+            "from": 150,
+            "to": 153
+          }
+        ]
+      }
+    },
+    {
+      "name": "Area of Emphasis",
+      "requirement": {
+        "type": "choose",
+        "count": 1,
+        "label": "Area of Emphasis",
+        "items": [
+          {
+            "type": "all",
+            "label": "Composition",
+            "notes": "MUS 103A-B-C (Prerequisite: MUS 33A-B-C)",
+            "items": [
+              {
+                "type": "course",
+                "code": "MUS 103A"
+              },
+              {
+                "type": "course",
+                "code": "MUS 103B"
+              },
+              {
+                "type": "course",
+                "code": "MUS 103C"
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "label": "Introduction to Composition I, II, and III",
+                "notes": "Composition emphasis students must take Music 33A-B-C, Introduction to Composition I, II, and III, or take a proficiency exam for the three-quarter sequence course.",
+                "items": [
+                  {
+                    "type": "all",
+                    "items": [
+                      {
+                        "type": "course",
+                        "code": "MUS 33A"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MUS 33B"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MUS 33C"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "or take a proficiency exam for the three-quarter sequence course"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 3,
+            "label": "Performance",
+            "items": [
+              {
+                "type": "course",
+                "code": "MUS 132"
+              },
+              {
+                "type": "course",
+                "code": "MUS 132V"
+              },
+              {
+                "type": "text",
+                "text": "a repeat of MUS 132 or MUS 132V (May be repeated for credit)"
+              }
+            ],
+            "notes": "MUS 132, 132V (May be repeated for credit); three courses in all, counting repeats."
+          },
+          {
+            "type": "choose",
+            "count": 3,
+            "label": "Jazz and the African Diaspora",
+            "items": [
+              {
+                "type": "course",
+                "code": "MUS 105"
+              },
+              {
+                "type": "course",
+                "code": "MUS 126"
+              },
+              {
+                "type": "course",
+                "code": "MUS 127"
+              },
+              {
+                "type": "range",
+                "subject": "MUS",
+                "from": 150,
+                "to": 153
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 3,
+            "label": "Technology",
+            "items": [
+              {
+                "type": "range",
+                "subject": "MUS",
+                "from": 170,
+                "to": 173
+              },
+              {
+                "type": "course",
+                "code": "MUS 173A"
+              },
+              {
+                "type": "course",
+                "code": "MUS 173B"
+              },
+              {
+                "type": "course",
+                "code": "MUS 174A"
+              },
+              {
+                "type": "course",
+                "code": "MUS 174B"
+              },
+              {
+                "type": "course",
+                "code": "MUS 174C"
+              },
+              {
+                "type": "course",
+                "code": "MUS 175"
+              },
+              {
+                "type": "course",
+                "code": "MUS 176"
+              },
+              {
+                "type": "course",
+                "code": "MUS 177"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 138"
+              }
+            ],
+            "notes": "MUS 170-173A-B, 174A-B-C, 175, 176, 177, PSYCH 138. The catalog prints 'PSYCH 138' here; the ICAM list on the same page spells it PSYC 138."
+          },
+          {
+            "type": "choose",
+            "count": 3,
+            "label": "Literature",
+            "items": [
+              {
+                "type": "range",
+                "subject": "MUS",
+                "from": 107,
+                "to": 116
+              },
+              {
+                "type": "course",
+                "code": "MUS 126"
+              },
+              {
+                "type": "course",
+                "code": "MUS 127"
+              },
+              {
+                "type": "range",
+                "subject": "MUS",
+                "from": 150,
+                "to": 153
+              }
+            ]
+          }
+        ],
+        "notes": "Any three courses from one of the following areas"
+      }
+    },
+    {
+      "name": "Department Seminar",
+      "requirement": {
+        "type": "choose",
+        "count": 1,
+        "label": "Department Seminar",
+        "items": [
+          {
+            "type": "course",
+            "code": "MUS 43"
+          },
+          {
+            "type": "course",
+            "code": "MUS 143"
+          }
+        ],
+        "notes": "MUS 43/143 (Every quarter registered as a music major)"
+      }
+    }
+  ]
+}

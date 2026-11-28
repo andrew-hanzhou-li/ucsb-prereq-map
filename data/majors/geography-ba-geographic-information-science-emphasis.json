@@ -466,7 +466,7 @@
       "label": "B:  Physical Geography"
      },
      {
-      "type": "all",
+      "type": "choose",
       "items": [
        {
         "type": "course",
@@ -570,7 +570,9 @@
        }
       ],
       "catalog_rule_id": "dgiNovoS",
-      "label": "C:  Human Geography"
+      "label": "C:  Human Geography",
+      "count": 1,
+      "notes": "The catalog says \"Complete all\" for this list; read here as at least one course (see Area D). Confirm with the Geography department."
      },
      {
       "type": "text",
@@ -579,7 +581,7 @@
       "label": "D."
      },
      {
-      "type": "all",
+      "type": "choose",
       "items": [
        {
         "type": "course",
@@ -658,12 +660,18 @@
        }
       ],
       "catalog_rule_id": "MozAUEyb",
-      "label": "E:  Integrative and Regional Geography"
+      "label": "E:  Integrative and Regional Geography",
+      "count": 1,
+      "notes": "The catalog says \"Complete all\" for this list; read here as at least one course (see Area D). Confirm with the Geography department."
      }
     ]
    },
    "notes": "Geography 193, 198, 199, 199RA can be applied to any UD area by petition, depending on the subject matter, up to a maximum of 5 units. A maximum of 8 UD units from related fields may be applied to the major, if (a) they are selected from the approved list of related courses, or (b) are approved by petition. The list of related courses is available in the department office and on the department web site."
   }
+ ],
+ "overrides_applied": [
+  "The catalog marks Areas C (20 courses) and E (15 courses) \"Complete all\", which no student does: Area B over a similar list is \"Complete at least 1\", and Area D (\"4 additional Units from either Area B or Area C\") only makes sense if B and C each ask for a set amount. Each is read as at least one course; confirm with the department.",
+  "The catalog marks Areas C (20 courses) and E (15 courses) \"Complete all\", which no student does: Area B over a similar list is \"Complete at least 1\", and Area D (\"4 additional Units from either Area B or Area C\") only makes sense if B and C each ask for a set amount. Each is read as at least one course; confirm with the department."
  ],
  "courses": [
   {

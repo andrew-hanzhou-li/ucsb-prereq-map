@@ -1,0 +1,66 @@
+{
+ "id": "UCSD-WARR",
+ "name": "Warren College",
+ "kind": "department",
+ "catalog_year": "2026-27",
+ "source": "https://catalog.ucsd.edu/courses/WARR.html",
+ "sections": [
+  {
+   "name": "Lower division",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "WARR 1",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "WARR 2",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "WCWP 10A",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "WCWP 10B",
+      "status": "active"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Upper division",
+   "requirement": {
+    "type": "all",
+    "items": [
+     {
+      "type": "course",
+      "code": "WARR 189",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "WCWP 100",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "WCWP 160",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "WCWP 198",
+      "status": "active"
+     }
+    ]
+   }
+  }
+ ],
+ "narrative": []
+}

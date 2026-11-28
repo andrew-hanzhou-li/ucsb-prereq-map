@@ -1,0 +1,1011 @@
+{
+  "name": "Human Developmental Sciences - BA",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Human Developmental Sciences Program",
+  "source": "https://catalog.ucsd.edu/curric/HDS.html",
+  "narrative": [
+    "A minimum grade point average of 2.0 is required in the major.",
+    "Students must receive a grade of C– or better in any course counted toward fulfillment of the major requirements.",
+    "All courses taken to satisfy the program’s lower and upper-division requirements must be taken for a letter grade.",
+    "HDS 1, HDS 150, HDS 181, and HDS 191 must be taken in residence. No substitutions will be approved."
+  ],
+  "sections": [
+    {
+      "name": "Lower-Division Requirements for the Bachelor of Arts",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "all",
+            "label": "Introduction to Human Developmental Sciences",
+            "items": [
+              {
+                "type": "course",
+                "code": "HDS 1"
+              }
+            ]
+          },
+          {
+            "type": "all",
+            "label": "One statistics course",
+            "items": [
+              {
+                "type": "course",
+                "code": "HDS 60"
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "label": "One formal skills course",
+            "items": [
+              {
+                "type": "course",
+                "code": "CSS 1"
+              },
+              {
+                "type": "course",
+                "code": "PHIL 10"
+              },
+              {
+                "type": "course",
+                "code": "PHIL 12"
+              },
+              {
+                "type": "course",
+                "code": "LIGN 17"
+              },
+              {
+                "type": "text",
+                "text": "one course from the MATH 10 sequence or MATH 20 sequence"
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 2,
+            "label": "Two biological sciences courses",
+            "items": [
+              {
+                "type": "course",
+                "code": "ANTH 2"
+              },
+              {
+                "type": "course",
+                "code": "BILD 1"
+              },
+              {
+                "type": "course",
+                "code": "BILD 2"
+              },
+              {
+                "type": "course",
+                "code": "BILD 3"
+              },
+              {
+                "type": "course",
+                "code": "BILD 7"
+              },
+              {
+                "type": "course",
+                "code": "BILD 10"
+              },
+              {
+                "type": "course",
+                "code": "BILD 12"
+              },
+              {
+                "type": "course",
+                "code": "BILD 18"
+              },
+              {
+                "type": "course",
+                "code": "BILD 20"
+              },
+              {
+                "type": "course",
+                "code": "BILD 26"
+              },
+              {
+                "type": "course",
+                "code": "BILD 38"
+              },
+              {
+                "type": "course",
+                "code": "COGS 11"
+              },
+              {
+                "type": "course",
+                "code": "COGS 17"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 2"
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 2,
+            "label": "Two social sciences courses",
+            "notes": "one course from the HILD 7A, B, or C sequence (only one allowed)",
+            "items": [
+              {
+                "type": "course",
+                "code": "ANTH 1"
+              },
+              {
+                "type": "course",
+                "code": "ANTH 3"
+              },
+              {
+                "type": "course",
+                "code": "CAT 1"
+              },
+              {
+                "type": "course",
+                "code": "CAT 2"
+              },
+              {
+                "type": "course",
+                "code": "COMM 10"
+              },
+              {
+                "type": "course",
+                "code": "COGS 1"
+              },
+              {
+                "type": "course",
+                "code": "PH 40"
+              },
+              {
+                "type": "course",
+                "code": "PH 50"
+              },
+              {
+                "type": "course",
+                "code": "HILD 7A"
+              },
+              {
+                "type": "course",
+                "code": "HILD 7B"
+              },
+              {
+                "type": "course",
+                "code": "HILD 7C"
+              },
+              {
+                "type": "course",
+                "code": "LIGN 4"
+              },
+              {
+                "type": "course",
+                "code": "LIGN 7"
+              },
+              {
+                "type": "course",
+                "code": "LIGN 8"
+              },
+              {
+                "type": "course",
+                "code": "LIGN 101"
+              },
+              {
+                "type": "course",
+                "code": "MMW 11"
+              },
+              {
+                "type": "course",
+                "code": "MMW 12"
+              },
+              {
+                "type": "course",
+                "code": "MMW 121"
+              },
+              {
+                "type": "course",
+                "code": "MMW 122"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 1"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 3"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 6"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 7"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 1"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 20"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 40"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 70"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "A. Methods Courses",
+      "requirement": {
+        "type": "all",
+        "label": "Two Methods courses",
+        "items": [
+          {
+            "type": "all",
+            "label": "Quantitative Methods",
+            "items": [
+              {
+                "type": "course",
+                "code": "HDS 181"
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "label": "Qualitative Methods",
+            "notes": "HDS Individual Projects in HDS 193 or 194B (subject to project approval)",
+            "items": [
+              {
+                "type": "course",
+                "code": "HDS 191"
+              },
+              {
+                "type": "course",
+                "code": "ANSC 173"
+              },
+              {
+                "type": "course",
+                "code": "COMM 102C"
+              },
+              {
+                "type": "course",
+                "code": "EDS 130"
+              },
+              {
+                "type": "course",
+                "code": "EDS 131"
+              },
+              {
+                "type": "course",
+                "code": "EDS 133"
+              },
+              {
+                "type": "course",
+                "code": "EDS 136"
+              },
+              {
+                "type": "course",
+                "code": "PH 155"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 104"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 104Q"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 110"
+              },
+              {
+                "type": "course",
+                "code": "HDS 193"
+              },
+              {
+                "type": "course",
+                "code": "HDS 194B"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "B. Core Series Courses",
+      "requirement": {
+        "type": "all",
+        "label": "Core Series Courses",
+        "notes": "Four courses selected from the approved list required, at least one from each domain; Domain 2 requires two courses, one from each area.",
+        "items": [
+          {
+            "type": "choose",
+            "count": 1,
+            "label": "Domain 1: The biological basis of human development",
+            "items": [
+              {
+                "type": "course",
+                "code": "HDS 110"
+              },
+              {
+                "type": "course",
+                "code": "HDS 111"
+              },
+              {
+                "type": "course",
+                "code": "ANBI 111"
+              },
+              {
+                "type": "course",
+                "code": "BIPN 144"
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "label": "Domain 2A: Social-Cognitive Development",
+            "items": [
+              {
+                "type": "course",
+                "code": "COGS 110"
+              },
+              {
+                "type": "course",
+                "code": "HDS 122"
+              },
+              {
+                "type": "course",
+                "code": "HDS 124"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 187"
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "label": "Domain 2B: Language Development",
+            "items": [
+              {
+                "type": "course",
+                "code": "HDS 120"
+              },
+              {
+                "type": "course",
+                "code": "COGS 156"
+              },
+              {
+                "type": "course",
+                "code": "LIGN 171"
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "label": "Domain 3: The sociocultural basis of human development",
+            "items": [
+              {
+                "type": "course",
+                "code": "HDS 133"
+              },
+              {
+                "type": "course",
+                "code": "ANSC 126"
+              },
+              {
+                "type": "course",
+                "code": "ANSC 168"
+              },
+              {
+                "type": "course",
+                "code": "COMM 112C"
+              },
+              {
+                "type": "course",
+                "code": "HITO 126"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "C. Development Series Courses",
+      "requirement": {
+        "type": "all",
+        "label": "Development Series Courses",
+        "notes": "Five courses required: one from each domain, and two electives",
+        "items": [
+          {
+            "type": "choose",
+            "count": 1,
+            "label": "Domain 1: Biological Development",
+            "items": [
+              {
+                "type": "course",
+                "code": "ANBI 116"
+              },
+              {
+                "type": "course",
+                "code": "ANBI 130"
+              },
+              {
+                "type": "course",
+                "code": "ANBI 140"
+              },
+              {
+                "type": "course",
+                "code": "ANBI 159"
+              },
+              {
+                "type": "course",
+                "code": "ANBI 173"
+              },
+              {
+                "type": "course",
+                "code": "ANTH 102"
+              },
+              {
+                "type": "course",
+                "code": "BICD 100"
+              },
+              {
+                "type": "course",
+                "code": "BICD 112"
+              },
+              {
+                "type": "course",
+                "code": "BICD 130"
+              },
+              {
+                "type": "course",
+                "code": "BIMM 128"
+              },
+              {
+                "type": "course",
+                "code": "BIPN 134"
+              },
+              {
+                "type": "course",
+                "code": "BIPN 144"
+              },
+              {
+                "type": "course",
+                "code": "BIPN 148"
+              },
+              {
+                "type": "course",
+                "code": "COGS 115"
+              },
+              {
+                "type": "course",
+                "code": "COGS 184"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 132"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 168"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 171"
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "label": "Domain 2: Cognitive and Language Development",
+            "items": [
+              {
+                "type": "course",
+                "code": "COGS 154"
+              },
+              {
+                "type": "course",
+                "code": "COMM 100A"
+              },
+              {
+                "type": "course",
+                "code": "COMM 168"
+              },
+              {
+                "type": "course",
+                "code": "EDS 119"
+              },
+              {
+                "type": "course",
+                "code": "LIGN 119"
+              },
+              {
+                "type": "course",
+                "code": "LIGN 179"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 101"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 130"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 136"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 141"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 146"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 156"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 168"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 172"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 173"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 180"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 190"
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "label": "Domain 3: Sociocultural Development",
+            "notes": "SOCI 159 only when the topic is approved for the HDS major. Cross-listed pairs (EDS 119/LIGN 119, EDS 117/SOCI 117, SOCI 116/LIGN 174) count once.",
+            "items": [
+              {
+                "type": "course",
+                "code": "ANBI 159"
+              },
+              {
+                "type": "course",
+                "code": "ANSC 101"
+              },
+              {
+                "type": "course",
+                "code": "ANSC 125"
+              },
+              {
+                "type": "course",
+                "code": "ANSC 126"
+              },
+              {
+                "type": "course",
+                "code": "ANSC 127"
+              },
+              {
+                "type": "course",
+                "code": "COMM 102C"
+              },
+              {
+                "type": "course",
+                "code": "COMM 126"
+              },
+              {
+                "type": "course",
+                "code": "EDS 115"
+              },
+              {
+                "type": "course",
+                "code": "EDS 117"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 117"
+              },
+              {
+                "type": "course",
+                "code": "EDS 118"
+              },
+              {
+                "type": "course",
+                "code": "FMPH 110"
+              },
+              {
+                "type": "course",
+                "code": "FMPH 120"
+              },
+              {
+                "type": "course",
+                "code": "HDS 171"
+              },
+              {
+                "type": "course",
+                "code": "HDS 173"
+              },
+              {
+                "type": "course",
+                "code": "HDS 175"
+              },
+              {
+                "type": "course",
+                "code": "HDS 177"
+              },
+              {
+                "type": "course",
+                "code": "LTWL 114"
+              },
+              {
+                "type": "course",
+                "code": "LTWL 116"
+              },
+              {
+                "type": "course",
+                "code": "LTWL 177"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 180"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 190"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 116"
+              },
+              {
+                "type": "course",
+                "code": "LIGN 174"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 129"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 131"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 143"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 159"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 161"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 184"
+              },
+              {
+                "type": "course",
+                "code": "USP 134"
+              },
+              {
+                "type": "course",
+                "code": "USP 145"
+              },
+              {
+                "type": "course",
+                "code": "USP 147"
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 2,
+            "label": "Two development electives",
+            "notes": "Two additional Development Series courses from any domain",
+            "items": [
+              {
+                "type": "course",
+                "code": "ANBI 116"
+              },
+              {
+                "type": "course",
+                "code": "ANBI 130"
+              },
+              {
+                "type": "course",
+                "code": "ANBI 140"
+              },
+              {
+                "type": "course",
+                "code": "ANBI 159"
+              },
+              {
+                "type": "course",
+                "code": "ANBI 173"
+              },
+              {
+                "type": "course",
+                "code": "ANTH 102"
+              },
+              {
+                "type": "course",
+                "code": "BICD 100"
+              },
+              {
+                "type": "course",
+                "code": "BICD 112"
+              },
+              {
+                "type": "course",
+                "code": "BICD 130"
+              },
+              {
+                "type": "course",
+                "code": "BIMM 128"
+              },
+              {
+                "type": "course",
+                "code": "BIPN 134"
+              },
+              {
+                "type": "course",
+                "code": "BIPN 144"
+              },
+              {
+                "type": "course",
+                "code": "BIPN 148"
+              },
+              {
+                "type": "course",
+                "code": "COGS 115"
+              },
+              {
+                "type": "course",
+                "code": "COGS 184"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 132"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 168"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 171"
+              },
+              {
+                "type": "course",
+                "code": "COGS 154"
+              },
+              {
+                "type": "course",
+                "code": "COMM 100A"
+              },
+              {
+                "type": "course",
+                "code": "COMM 168"
+              },
+              {
+                "type": "course",
+                "code": "EDS 119"
+              },
+              {
+                "type": "course",
+                "code": "LIGN 119"
+              },
+              {
+                "type": "course",
+                "code": "LIGN 179"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 101"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 130"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 136"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 141"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 146"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 156"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 172"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 173"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 180"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 190"
+              },
+              {
+                "type": "course",
+                "code": "ANSC 101"
+              },
+              {
+                "type": "course",
+                "code": "ANSC 125"
+              },
+              {
+                "type": "course",
+                "code": "ANSC 126"
+              },
+              {
+                "type": "course",
+                "code": "ANSC 127"
+              },
+              {
+                "type": "course",
+                "code": "COMM 102C"
+              },
+              {
+                "type": "course",
+                "code": "COMM 126"
+              },
+              {
+                "type": "course",
+                "code": "EDS 115"
+              },
+              {
+                "type": "course",
+                "code": "EDS 117"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 117"
+              },
+              {
+                "type": "course",
+                "code": "EDS 118"
+              },
+              {
+                "type": "course",
+                "code": "FMPH 110"
+              },
+              {
+                "type": "course",
+                "code": "FMPH 120"
+              },
+              {
+                "type": "course",
+                "code": "HDS 171"
+              },
+              {
+                "type": "course",
+                "code": "HDS 173"
+              },
+              {
+                "type": "course",
+                "code": "HDS 175"
+              },
+              {
+                "type": "course",
+                "code": "HDS 177"
+              },
+              {
+                "type": "course",
+                "code": "LTWL 114"
+              },
+              {
+                "type": "course",
+                "code": "LTWL 116"
+              },
+              {
+                "type": "course",
+                "code": "LTWL 177"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 116"
+              },
+              {
+                "type": "course",
+                "code": "LIGN 174"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 129"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 131"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 143"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 159"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 161"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 184"
+              },
+              {
+                "type": "course",
+                "code": "USP 134"
+              },
+              {
+                "type": "course",
+                "code": "USP 145"
+              },
+              {
+                "type": "course",
+                "code": "USP 147"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "D. HDS 150. Senior Seminar",
+      "requirement": {
+        "type": "all",
+        "label": "HDS 150. Senior Seminar",
+        "items": [
+          {
+            "type": "course",
+            "code": "HDS 150"
+          }
+        ]
+      }
+    }
+  ]
+}

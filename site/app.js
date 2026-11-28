@@ -1,5 +1,5 @@
 /*
-  app.js: the Prerequisite Map website (UCSB).
+  app.js: the prerequisite map and the app around it.
 
   What happens, in order:
     1. Load the list of majors and minors into the picker and the lists on
@@ -35,7 +35,7 @@
 // Settings
 // ===========================================================================
 
-const SAVE_KEY = "ucsb-prereq-map.taken";   // where "taken" marks are saved in the browser
+const SAVE_KEY = storageKey("taken");   // where "taken" marks are saved in the browser (campus.js)
 const REPO_URL = "https://github.com/andrew-hanzhou-li/ucsb-prereq-map";   // linked as "Source code" in the footer
 const BACK_LIMIT = 50;        // how many earlier courses the panel's Back button remembers
 
@@ -100,6 +100,8 @@ const el = {
   footerDownload: document.getElementById("footer-download"),
   about: document.getElementById("about"),
   top: document.querySelector(".top"),
+  campusName: document.getElementById("campus-name"),
+  campusChange: document.getElementById("campus-change"),
   optionsButton: document.getElementById("options-button"),
 };
 
@@ -108,8 +110,28 @@ const el = {
 // ===========================================================================
 
 async function start() {
+  if (REPO_URL) el.footerRepo.innerHTML = '<a href="' + REPO_URL + '">Source code</a>';
+  // No campus chosen yet, or one that isn't on the site: the campus screen
+  // instead of the app. Picking a campus changes the address; reloading then
+  // starts the app for that campus (campus.js).
+  if (!CAMPUS || !isReady(CAMPUS)) {
+    showCampusScreen(CAMPUS ? campusById(CAMPUS).name + " isn't on the site yet. Pick another campus, or check back later." : "");
+    window.addEventListener("hashchange", function () { location.reload(); });
+    return;
+  }
+  rememberCampus(CAMPUS);
+  // Home links carry the campus, so a copied address works on its own.
+  document.getElementById("home-link").href = campusHash();
+  el.allLink.href = campusHash();
+  // The full name, or "UCSB" on phones, where the header has one line.
+  el.campusName.innerHTML = '<span class="wide-only">' + escapeHtml(campusById(CAMPUS).name) + '</span>' +
+    '<span class="narrow-only">' + escapeHtml(CAMPUS.toUpperCase()) + "</span>";
+  // The one-file copy is UCSB only.
+  if (window.EMBEDDED) el.campusChange.hidden = true;
+  fillCampusWords();
+
   try {
-    majors = window.EMBEDDED ? window.EMBEDDED.majors : (await (await fetch("data/majors.json")).json()).majors;
+    majors = window.EMBEDDED ? window.EMBEDDED.majors : (await (await fetch(dataUrl("majors.json"))).json()).majors;
   } catch (error) {
     showNotice("<h2>The list of majors didn't load</h2>" +
                "<p>Check your internet connection, then refresh the page.</p>");
@@ -119,7 +141,8 @@ async function start() {
   // The AP chart, for the Credit box. Without it the site still works;
   // only AP credit can't be entered.
   try {
-    creditTable = window.EMBEDDED ? window.EMBEDDED.credit : await (await fetch("data/credit.json")).json();
+    if (!campusDetails().apChart) throw new Error("no AP chart for this campus yet");
+    creditTable = window.EMBEDDED ? window.EMBEDDED.credit : await (await fetch(dataUrl("credit.json"))).json();
   } catch (error) {
     creditTable = null;
   }
@@ -134,7 +157,7 @@ async function start() {
     const button = event.target.closest("button[data-remove]");
     if (!button) return;
     const programs = currentPrograms.filter(p => p.id !== button.dataset.remove);
-    if (!programs.length) location.hash = "";
+    if (!programs.length) location.hash = campusHash();
     else location.hash = currentView === "plan" ? planHashFor(programs) : hashFor(programs, null);
   });
 
@@ -148,7 +171,6 @@ async function start() {
   window.addEventListener("hashchange", loadFromHash);
   loadFromHash();
 
-  if (REPO_URL) el.footerRepo.innerHTML = '<a href="' + REPO_URL + '">Source code</a>';
   // The single file doesn't need a link to download itself.
   if (window.EMBEDDED) el.footerDownload.hidden = true;
   // The About box's link to the one-file copy: in the copy itself, it would point at itself.
@@ -156,24 +178,70 @@ async function start() {
   updateTakenStatus();
 }
 
+// The words on the page that name the campus, its catalog and what a
+// student picks there (campus.js, CAMPUS_DETAILS).
+function fillCampusWords() {
+  const details = campusDetails();
+  const campus = campusById(CAMPUS);
+  document.querySelectorAll(".campus-short").forEach(e => { e.textContent = CAMPUS.toUpperCase(); });
+  document.querySelectorAll(".campus-fullname").forEach(e => { e.textContent = campus.name; });
+  document.querySelectorAll(".campus-program-label").forEach(e => {
+    e.textContent = details.program.charAt(0).toUpperCase() + details.program.slice(1);
+  });
+  document.querySelectorAll(".campus-example-course").forEach(e => { e.placeholder = "e.g. " + details.exampleCourse; });
+  // Only UCSB has an AP chart and a transcript reader (GOLD's format) so far.
+  if (!details.apChart) document.querySelectorAll(".ap-only").forEach(e => { e.hidden = true; });
+  if (CAMPUS !== "ucsb") {
+    document.querySelectorAll(".ucsb-only").forEach(e => { e.hidden = true; });
+    document.getElementById("plan-import").hidden = true;
+  }
+  document.querySelectorAll(".campus-program").forEach(e => { e.textContent = details.program; });
+  document.querySelectorAll(".campus-catalog").forEach(e => { e.textContent = details.catalog; e.href = details.catalogHome; });
+  document.getElementById("welcome-title").textContent = "Choose a " + details.program + ".";
+  document.getElementById("welcome-line").textContent = siteLine(campus);
+  document.querySelectorAll(".term-word").forEach(e => { e.textContent = (campus.terms || "Quarters").toLowerCase(); });
+  const examples = details.examples.map(([address, name]) =>
+    '<a href="' + campusHash() + escapeHtml(address) + '">' + escapeHtml(name) + "</a>");
+  document.getElementById("welcome-examples").innerHTML = "For example: " +
+    examples.slice(0, -1).join(", ") + ", or " + examples[examples.length - 1] + ".";
+  el.majorInput.placeholder = "Choose a " + details.program + "…";
+  // The one-file copy holds UCSB only, so other campuses don't offer it.
+  if (CAMPUS !== "ucsb") {
+    el.footerDownload.hidden = true;
+    document.querySelectorAll(".download-link").forEach(a => { a.closest("p").hidden = true; });
+  }
+}
+
 function stem(fileName) {
   return fileName.replace(/\.json$/, "");
 }
 
 // The front page's index: every major and minor, grouped by department
-// (A to Z), majors first in each.
+// (A to Z), majors first in each. A campus that also has department course
+// maps (UCSD) lists those after, in one list.
 function fillBrowseLists() {
+  const departmentMaps = majors.filter(m => m.kind === "department");
+  const programs = majors.filter(m => m.kind !== "department");
+  const mapList = departmentMaps.length ? '<section class="dept flat"><h3>Department course maps</h3><ul>' +
+    departmentMaps.slice().sort((a, b) => a.name.localeCompare(b.name)).map(m =>
+      '<li><a href="' + campusHash() + escapeHtml(stem(m.file)) + '">' + escapeHtml(m.name) + "</a></li>").join("") +
+    "</ul></section>" : "";
   const departments = {};
-  for (const m of majors) (departments[m.department] = departments[m.department] || []).push(m);
+  for (const m of programs) (departments[m.department] = departments[m.department] || []).push(m);
   const names = Object.keys(departments).sort((a, b) => a.localeCompare(b));
-  el.browseCount.textContent = majors.filter(m => m.kind === "major").length + " majors and " +
-    majors.filter(m => m.kind === "minor").length + " minors, in " + names.length + " departments.";
+  const counts = [];
+  const majorCount = programs.filter(m => m.kind === "major").length;
+  const minorCount = programs.filter(m => m.kind === "minor").length;
+  if (majorCount) counts.push(majorCount + " majors");
+  if (minorCount) counts.push(minorCount + " minors");
+  el.browseCount.textContent = (counts.length ? counts.join(" and ") + ", in " + names.length + " departments" : "") +
+    (departmentMaps.length ? (counts.length ? "; " : "") + departmentMaps.length + " department course maps" : "") + ".";
   el.browse.innerHTML = names.map(function (name) {
     const programs = departments[name].sort((a, b) => (a.kind === b.kind ? a.name.localeCompare(b.name) : a.kind === "major" ? -1 : 1));
     return '<section class="dept"><h3>' + escapeHtml(name) + "</h3><ul>" + programs.map(function (m) {
-      return '<li><a href="#' + escapeHtml(stem(m.file)) + '">' + escapeHtml(displayName(m.name)) + "</a></li>";
+      return '<li><a href="' + campusHash() + escapeHtml(stem(m.file)) + '">' + escapeHtml(displayName(m.name)) + "</a></li>";
     }).join("") + "</ul></section>";
-  }).join("");
+  }).join("") + mapList;
 }
 
 /*
@@ -185,12 +253,12 @@ function fillBrowseLists() {
                                                  space in a course code)
 */
 function readHash() {
-  let raw = "";
-  try {
-    raw = decodeURIComponent(location.hash.slice(1));
-  } catch (error) {
-    // A mangled link: treat it as no address.
-  }
+  // Without the campus in front (campus.js). In the one-file copy, which
+  // is UCSB only, another campus's address or #campus opens the front page.
+  const split = splitCampus(decodedHash());
+  const otherCampus = split.campus && split.campus !== CAMPUS;
+  const campusScreen = !split.campus && split.rest.replace(/\/$/, "") === CAMPUS_SCREEN;
+  const raw = otherCampus || campusScreen ? "" : split.rest;
   // The planner's address: "plan/" in front; a shared plan adds "/" and the
   // plan itself, packed into letters (planner.js, packPlan).
   if (raw.startsWith("plan/")) {
@@ -204,11 +272,11 @@ function readHash() {
 }
 
 function hashFor(programs, code) {
-  return "#" + programs.map(p => stem(p.file)).join("+") + (code ? "/" + code.replace(/ /g, "+") : "");
+  return campusHash() + programs.map(p => stem(p.file)).join("+") + (code ? "/" + code.replace(/ /g, "+") : "");
 }
 
 function planHashFor(programs) {
-  return "#plan/" + programs.map(p => stem(p.file)).join("+");
+  return campusHash() + "plan/" + programs.map(p => stem(p.file)).join("+");
 }
 
 // Keep the address bar in step with the selection, so copying it shares this
@@ -216,12 +284,25 @@ function planHashFor(programs) {
 // for every click, and without firing "hashchange".
 function rememberInAddress() {
   if (!currentPrograms.length || currentView === "plan") return;
+  if (document.body.classList.contains("choosing-campus")) return;   // the address is #campus
   const code = selected && nodesById[selected] ? selected : null;
   const target = hashFor(currentPrograms, code);
   if (location.hash !== target) history.replaceState(null, "", target);
 }
 
 async function loadFromHash() {
+  const campus = campusForAddress(CAMPUS);
+  if (campus === CAMPUS_SCREEN) {
+    loading += 1;           // a map still loading mustn't appear over the campus screen
+    showCampusScreen();
+    return;
+  }
+  if (campus !== CAMPUS) {
+    location.reload();      // another campus: start fresh (campus.js)
+    return;
+  }
+  hideCampusScreen();
+  updateOldLink();
   const wanted = readHash();
   if (!wanted.stems.length) {
     showHome();
@@ -231,7 +312,7 @@ async function loadFromHash() {
   if (programs.some(p => !p)) {
     showHome();
     showNotice("<h2>No map at that address</h2>" +
-               "<p>That link doesn't match a current major or minor. The program may have been renamed or " +
+               "<p>That link doesn't match a current " + campusDetails().program + ". It may have been renamed or " +
                "retired from the catalog. Pick one from the lists below.</p>");
     return;
   }
@@ -305,8 +386,8 @@ function showHome() {
   el.toggles.hidden = true;             // nothing to show or hide until a program is open
   el.courseInput.parentElement.hidden = false;
   el.courseInput.disabled = false;      // course search works from the front page too
-  el.footerCatalog.textContent = "Built from the UCSB General Catalog.";
-  document.title = "The Prerequisite Map · UCSB";
+  el.footerCatalog.textContent = "Built from the " + campusDetails().catalog + ".";
+  document.title = SITE_NAME + " · " + campusById(CAMPUS).name;
   el.panel.hidden = true;           // nothing to show until a map is open
   el.top.classList.remove("compact");
   closeSheet();
@@ -314,7 +395,7 @@ function showHome() {
 
 // One major's graph: from the page itself (single file) or from data/.
 async function fetchMajor(major) {
-  if (!window.EMBEDDED) return (await fetch("data/" + major.file)).json();
+  if (!window.EMBEDDED) return (await fetch(dataUrl(major.file))).json();
   // The single file stores each course's details once (in "courses") and
   // each major's own facts about it (role, step...) separately. Put the two
   // back together into the same shape as a data/ file.
@@ -413,7 +494,8 @@ function showChosen() {
     '<span class="chosen-item">' + escapeHtml(displayName(p.name)) +
     ' <button type="button" class="remove" data-remove="' + escapeHtml(p.id) + '" aria-label="Remove ' +
     escapeHtml(displayName(p.name)) + '">×</button></span>').join('<span class="plus">+</span>');
-  el.majorInput.placeholder = currentPrograms.length ? "Add another major or minor…" : "Choose a major or minor…";
+  const program = campusDetails().program;
+  el.majorInput.placeholder = currentPrograms.length ? "Add another " + program + "…" : "Choose a " + program + "…";
 }
 
 // Load the programs' graphs, put them together and draw the map.
@@ -448,7 +530,8 @@ async function loadPrograms(programs) {
   el.allLink.hidden = false;
   el.toggles.hidden = currentView !== "map";
   el.courseInput.disabled = false;
-  el.footerCatalog.textContent = "Built from the " + graph.major.catalog_year + " UCSB General Catalog. Official requirements: ";
+  el.footerCatalog.textContent = "Built from the " + graph.major.catalog_year + " " + campusDetails().catalog +
+    (graph.major.kind === "department" ? ". Its courses: " : ". Official requirements: ");
   graph.major.programs.forEach(function (program, i) {
     const source = document.createElement("a");
     source.href = program.source;
@@ -456,7 +539,7 @@ async function loadPrograms(programs) {
     if (i) el.footerCatalog.appendChild(document.createTextNode(", "));
     el.footerCatalog.appendChild(source);
   });
-  document.title = graph.major.name + " · The Prerequisite Map";
+  document.title = graph.major.name + " · " + SITE_NAME;
 
   draw();
   el.map.scrollTo(0, 0);
@@ -664,6 +747,14 @@ function mapSettings() {
   return { electives: el.showElectives.checked, everyOutside: el.showOutside.checked, inactive: el.showInactive.checked };
 }
 
+// "Math Placement Exam qualifying score, or MATH 4C or MATH 10A": most
+// students place in, so a "one of" with a placement exam among its options
+// is treated as met (not "AP", which is credit and is entered as such).
+function hasPlacementOption(node) {
+  return !!node && node.type === "or" &&
+    node.items.some(item => item.type === "condition" && /(?<!advanced )placement/i.test(item.text || ""));
+}
+
 function chooseShown(settings) {
   const result = new Set();
   for (const course of graph.nodes) {
@@ -693,6 +784,8 @@ function chooseShown(settings) {
     } else if (node.type === "and") {
       node.items.forEach(walk);
     } else if (node.type === "or") {
+      // A placement exam is the usual way in, so nothing needs adding for it.
+      if (hasPlacementOption(node)) return;
       const options = node.items.filter(hasCourses);
       if (!options.length) return;
       const covered = options.some(option => coursesIn(option).some(code => result.has(code)));
@@ -1360,6 +1453,7 @@ function goBack() {
 document.addEventListener("keydown", function (event) {
   // Esc inside the About or Credit box closes the box, nothing else.
   if (event.key !== "Escape" || document.querySelector("dialog[open]")) return;
+  if (document.body.classList.contains("choosing-campus")) return;
   if (document.activeElement && document.activeElement.tagName === "INPUT") return;
   if (selected) clearSelection();
 });
@@ -1376,7 +1470,7 @@ function scrollToBox(code) {
 }
 
 el.allLink.addEventListener("click", function () {
-  // href="#" empties the address, which shows the front page (loadFromHash).
+  // Its href is the campus's front page (set in start).
   el.majorInput.value = "";
 });
 
@@ -1417,6 +1511,7 @@ function cssEscape(text) {
 function thisProgram() {
   if (!graph) return "this major";
   if (graph.major.programs.length > 1) return "these programs";
+  if (graph.major.kind === "department") return "this department";
   return graph.major.kind === "minor" ? "this minor" : "this major";
 }
 
@@ -1549,8 +1644,7 @@ function showCourse(course) {
 
   html += "<h3>More</h3><ul>";
   html += '<li><button type="button" class="text-button" data-copy-link>Copy a link to this course</button></li>';
-  html += '<li><a href="https://catalog.ucsb.edu/courses/' + encodeURIComponent(course.id) +
-          '" target="_blank" rel="noopener">This course in the UCSB catalog</a></li>';
+  html += "<li>" + catalogLinkFor(course.id, course.url) + "</li>";
   if (course.level === "lower") {
     html += '<li><a href="https://assist.org/" target="_blank" rel="noopener">Community college equivalents on ASSIST</a></li>';
   }
@@ -1596,9 +1690,10 @@ function showMajorSummary() {
     html += "<details><summary>Notes from the catalog</summary>" +
             graph.major.narrative.map(t => '<p class="note">' + escapeHtml(t) + "</p>").join("") + "</details>";
   }
-  html += '<p class="note">Unofficial student project, built from the ' + escapeHtml(graph.major.catalog_year) +
-          ' UCSB General Catalog. Requirements change; confirm your plan with a department advisor. <a href="' +
-          escapeHtml(graph.major.source) + '" target="_blank" rel="noopener">Official requirements</a></p>';
+  html += '<p class="note">Unofficial student project, built from the ' + escapeHtml(graph.major.catalog_year) + " " +
+          escapeHtml(campusDetails().catalog) + '. Requirements change; confirm your plan with a department advisor. <a href="' +
+          escapeHtml(graph.major.source) + '" target="_blank" rel="noopener">' +
+          (graph.major.kind === "department" ? "The department's courses" : "Official requirements") + "</a></p>";
   setPanel(html, graph.major.name);
 }
 

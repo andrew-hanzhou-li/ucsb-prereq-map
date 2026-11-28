@@ -1,0 +1,322 @@
+{
+  "name": "Business Data Science - BS",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Data Science",
+  "major_code": "DSC-BS-002",
+  "source": "https://catalog.ucsd.edu/curric/DSC-ug.html",
+  "narrative": [
+    "The major consists of ninety-six units, with forty units from lower-division courses and fifty-six units from upper-division courses.",
+    "Lower division: All courses must be taken for a letter grade and passed with a minimum grade of C–.",
+    "Upper division: Students must complete fifty-six upper-division units. All courses must be taken for a letter grade unless offered Pass/Not Pass only. A minimum grade of C– is required.",
+    "Students may not combine business data science with a minor in business (RSM-MN-002) or data science (DSC-MN-001).",
+    "Recommended: students take the capstone as near as possible to graduation.",
+    "The data science and business data science majors are “selective.” Continuing students must complete the screening courses MATH 18 or MATH 31AH, MATH 20C or MATH 31BH, and DSC 10.",
+    "Students majoring or minoring in any of the computer science engineering programs (CSE-BS-001/ECE-BS-001, CSE-BS-002, CSE-BS-003, CSE-BS-004, CSE MN-001) may not double major or minor in data science or business data science. Students may not double major in data science and business data science.",
+    "Students will be expected to fulfill all prerequisites for all courses, which may entail additional course work beyond the data science major requirements.",
+    "Also described on the Rady School of Management page (MGT-ug), which lists DSC 10/R and DSC 20/R (allowing DSC 10R, DSC 20R) where the Data Science page lists DSC 10 and DSC 20, and adds that the major cannot be paired with the computer science minor."
+  ],
+  "sections": [
+    {
+      "name": "Lower Division",
+      "requirement": {
+        "type": "all",
+        "label": "Lower Division (forty units)",
+        "items": [
+          {
+            "type": "all",
+            "label": "Data Science (sixteen units)",
+            "items": [
+              {
+                "type": "course",
+                "code": "DSC 10"
+              },
+              {
+                "type": "course",
+                "code": "DSC 20"
+              },
+              {
+                "type": "course",
+                "code": "DSC 40A"
+              },
+              {
+                "type": "course",
+                "code": "DSC 80"
+              }
+            ]
+          },
+          {
+            "type": "all",
+            "label": "Mathematics (sixteen units)",
+            "items": [
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 18"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 31AH"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "MATH 20A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 20B"
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 20C"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 31BH"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "all",
+            "label": "Subject Domain Courses (eight units)",
+            "items": [
+              {
+                "type": "course",
+                "code": "DSC 31"
+              },
+              {
+                "type": "course",
+                "code": "MGT 45"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Upper Division",
+      "requirement": {
+        "type": "all",
+        "label": "Upper Division (fifty-six units)",
+        "items": [
+          {
+            "type": "all",
+            "label": "Core Courses (thirty-six units)",
+            "items": [
+              {
+                "type": "course",
+                "code": "MATH 183"
+              },
+              {
+                "type": "course",
+                "code": "DSC 100"
+              },
+              {
+                "type": "course",
+                "code": "DSC 140A"
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "DSC 148"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MATH 189"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "MGT 100"
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MGT 127"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MGT 127R"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "MGT 160"
+              },
+              {
+                "type": "course",
+                "code": "MGT 168"
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MGT 180"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MGT 180R"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "label": "Senior Project (four units)",
+            "notes": "DSC 181/MGT 191",
+            "items": [
+              {
+                "type": "course",
+                "code": "DSC 181"
+              },
+              {
+                "type": "course",
+                "code": "MGT 191"
+              }
+            ]
+          },
+          {
+            "type": "all",
+            "label": "Electives (sixteen units)",
+            "items": [
+              {
+                "type": "choose",
+                "count": 2,
+                "label": "Two UD DSC courses",
+                "notes": "Any other DSC course numbered 100-170 or DSC 190 (not one used for the core).",
+                "items": [
+                  {
+                    "type": "range",
+                    "subject": "DSC",
+                    "from": 100,
+                    "to": 170
+                  },
+                  {
+                    "type": "course",
+                    "code": "DSC 190"
+                  }
+                ]
+              },
+              {
+                "type": "choose",
+                "count": 2,
+                "label": "Two UD MGT courses from list below",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MGT 104"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MGT 108R"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MGT 112"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MGT 120"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MGT 137"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MGT 153"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MGT 155"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MGT 159T"
+                  },
+                  {
+                    "type": "choose",
+                    "count": 1,
+                    "items": [
+                      {
+                        "type": "course",
+                        "code": "MGT 162"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MGT 162R"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "choose",
+                    "count": 1,
+                    "items": [
+                      {
+                        "type": "course",
+                        "code": "MGT 171"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MGT 171R"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "choose",
+                    "count": 1,
+                    "items": [
+                      {
+                        "type": "course",
+                        "code": "MGT 172"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MGT 172R"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "course",
+                    "code": "MGT 175"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MGT 186"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MGT 188"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

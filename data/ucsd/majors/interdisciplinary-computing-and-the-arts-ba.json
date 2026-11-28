@@ -1,0 +1,592 @@
+{
+  "name": "Interdisciplinary Computing and the Arts - BA",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Visual Arts",
+  "major_code": "VA29",
+  "source": "https://catalog.ucsd.edu/curric/VIS-ug.html",
+  "narrative": [
+    "All courses taken to satisfy major requirements must be taken for a letter grade, and only grades of C– or better will be accepted in the visual arts major.",
+    "A minimum of two-thirds of the course work completed for the major must be taken at UC San Diego.",
+    "Double majors within the department (art history/theory/criticism paired with studio, speculative design, media, or ICAM) must have at least ten upper-division courses that are unique to each departmental major.",
+    "Degree: the Music page says the department offers 'a bachelor of arts in music, music humanities, and ICAM'.",
+    "The interdisciplinary computing and the arts major is in the Departments of Music and Visual Arts.",
+    "Overlapping courses may be taken for the intermediate or advanced level, but not both.",
+    "The Music page (catalog.ucsd.edu/curric/MUS-ug.html) also describes ICAM, with an older-looking list (VIS 41 and MUS 4/6/7/13/14, math MATH 20A-B or 10A-B-C or 15A or CSE 20, CSE 11 or VIS 42, four quarters of MUS 43 or VIS 10, three of MUS 170, 171, VIS 142, 145A, practice/advanced practice/theory electives, senior project MUS 160A-B); this file follows the Visual Arts page, which gives the major code VA29."
+  ],
+  "sections": [
+    {
+      "name": "Lower Division: Foundation Level",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "course",
+            "code": "VIS 10"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "VIS 22"
+              },
+              {
+                "type": "course",
+                "code": "VIS 22R"
+              }
+            ],
+            "label": "VIS 22/22R"
+          },
+          {
+            "type": "course",
+            "code": "VIS 41"
+          },
+          {
+            "type": "course",
+            "code": "VIS 70N"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "VIS 42"
+              },
+              {
+                "type": "course",
+                "code": "CSE 6R"
+              },
+              {
+                "type": "course",
+                "code": "CSE 11"
+              },
+              {
+                "type": "course",
+                "code": "CSE 8A"
+              },
+              {
+                "type": "course",
+                "code": "COGS 18"
+              },
+              {
+                "type": "course",
+                "code": "DSC 20"
+              },
+              {
+                "type": "course",
+                "code": "BILD 62"
+              }
+            ],
+            "label": "Computer science sequence"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "MATH 3C"
+              },
+              {
+                "type": "course",
+                "code": "MATH 4C"
+              },
+              {
+                "type": "course",
+                "code": "MATH 10A"
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MATH 15A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CSE 20"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "MATH 18"
+              },
+              {
+                "type": "course",
+                "code": "MATH 20A"
+              },
+              {
+                "type": "course",
+                "code": "PSYC 60"
+              }
+            ],
+            "label": "Mathematics",
+            "notes": "Catalog prints MATH 10A as \"MATCH 10A\"."
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "VIS 1"
+              },
+              {
+                "type": "course",
+                "code": "VIS 2"
+              },
+              {
+                "type": "course",
+                "code": "VIS 3"
+              },
+              {
+                "type": "course",
+                "code": "VIS 60"
+              },
+              {
+                "type": "course",
+                "code": "VIS 80"
+              }
+            ],
+            "label": "Art making"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "VIS 30"
+              },
+              {
+                "type": "course",
+                "code": "VIS 31"
+              },
+              {
+                "type": "course",
+                "code": "VIS 32"
+              },
+              {
+                "type": "course",
+                "code": "COGS 3"
+              },
+              {
+                "type": "course",
+                "code": "COGS 9"
+              },
+              {
+                "type": "course",
+                "code": "COGS 10"
+              },
+              {
+                "type": "course",
+                "code": "DSGN 1"
+              },
+              {
+                "type": "course",
+                "code": "MUS 4"
+              }
+            ],
+            "label": "Interdisciplinary"
+          }
+        ],
+        "notes": "Eight to nine courses."
+      }
+    },
+    {
+      "name": "Upper Division: Intermediate Level",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "course",
+            "code": "VIS 142"
+          },
+          {
+            "type": "course",
+            "code": "VIS 145A"
+          },
+          {
+            "type": "choose",
+            "count": 2,
+            "items": [
+              {
+                "type": "course",
+                "code": "VIS 141A"
+              },
+              {
+                "type": "course",
+                "code": "VIS 143A"
+              },
+              {
+                "type": "course",
+                "code": "VIS 146A"
+              },
+              {
+                "type": "course",
+                "code": "VIS 147A"
+              }
+            ],
+            "label": "Computing in the arts"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "VIS 104A"
+              },
+              {
+                "type": "course",
+                "code": "VIS 105A"
+              },
+              {
+                "type": "course",
+                "code": "VIS 106A"
+              },
+              {
+                "type": "course",
+                "code": "VIS 107A"
+              },
+              {
+                "type": "course",
+                "code": "VIS 164"
+              },
+              {
+                "type": "course",
+                "code": "VIS 165"
+              },
+              {
+                "type": "course",
+                "code": "VIS 165A"
+              },
+              {
+                "type": "course",
+                "code": "VIS 165B"
+              },
+              {
+                "type": "course",
+                "code": "VIS 174"
+              }
+            ],
+            "label": "Art making"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "VIS 100"
+              },
+              {
+                "type": "course",
+                "code": "VIS 101"
+              },
+              {
+                "type": "course",
+                "code": "VIS 102"
+              },
+              {
+                "type": "course",
+                "code": "VIS 133"
+              },
+              {
+                "type": "course",
+                "code": "VIS 134"
+              },
+              {
+                "type": "course",
+                "code": "VIS 135"
+              },
+              {
+                "type": "course",
+                "code": "VIS 163"
+              },
+              {
+                "type": "course",
+                "code": "COGS 108"
+              },
+              {
+                "type": "course",
+                "code": "COGS 120"
+              },
+              {
+                "type": "course",
+                "code": "COGS 187A"
+              },
+              {
+                "type": "course",
+                "code": "MUS 170"
+              },
+              {
+                "type": "course",
+                "code": "MUS 171"
+              },
+              {
+                "type": "course",
+                "code": "MUS 172"
+              },
+              {
+                "type": "course",
+                "code": "MUS 173A"
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MUS 174A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MUS 174B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MUS 174C"
+                  }
+                ],
+                "label": "MUS 174A-C"
+              }
+            ],
+            "label": "Interdisciplinary"
+          }
+        ],
+        "notes": "Six courses."
+      }
+    },
+    {
+      "name": "History and Theory",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "course",
+            "code": "VIS 159"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "VIS 103"
+              },
+              {
+                "type": "course",
+                "code": "VIS 103A"
+              },
+              {
+                "type": "course",
+                "code": "VIS 103B"
+              },
+              {
+                "type": "course",
+                "code": "VIS 103C"
+              },
+              {
+                "type": "course",
+                "code": "VIS 103D"
+              },
+              {
+                "type": "range",
+                "subject": "VIS",
+                "from": 120,
+                "to": 129
+              },
+              {
+                "type": "range",
+                "subject": "VIS",
+                "from": 150,
+                "to": 158
+              },
+              {
+                "type": "course",
+                "code": "VIS 194S"
+              }
+            ],
+            "notes": "Any upper-division speculative design history course: VIS 103, 103A-D; any upper-division art history course: VIS 120–129; any upper-division media history course: VIS 150–158, 194S."
+          }
+        ],
+        "notes": "Two courses."
+      }
+    },
+    {
+      "name": "Upper Division: Advanced Level",
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "choose",
+            "count": 2,
+            "items": [
+              {
+                "type": "course",
+                "code": "VIS 141B"
+              },
+              {
+                "type": "course",
+                "code": "VIS 143B"
+              },
+              {
+                "type": "course",
+                "code": "VIS 145B"
+              },
+              {
+                "type": "course",
+                "code": "VIS 146B"
+              },
+              {
+                "type": "course",
+                "code": "VIS 147B"
+              },
+              {
+                "type": "course",
+                "code": "VIS 160B"
+              }
+            ],
+            "label": "Computing in the arts"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "VIS 160"
+              },
+              {
+                "type": "course",
+                "code": "VIS 160A"
+              }
+            ],
+            "label": "Senior project"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "VIS 100A"
+              },
+              {
+                "type": "course",
+                "code": "VIS 101A"
+              },
+              {
+                "type": "course",
+                "code": "VIS 107B"
+              },
+              {
+                "type": "course",
+                "code": "VIS 108"
+              },
+              {
+                "type": "text",
+                "text": "VIS 110A–K. Advanced—Various Topics"
+              },
+              {
+                "type": "course",
+                "code": "VIS 130"
+              },
+              {
+                "type": "course",
+                "code": "VIS 132"
+              },
+              {
+                "type": "course",
+                "code": "VIS 133A"
+              },
+              {
+                "type": "course",
+                "code": "VIS 141A"
+              },
+              {
+                "type": "course",
+                "code": "VIS 141B"
+              },
+              {
+                "type": "course",
+                "code": "VIS 143A"
+              },
+              {
+                "type": "course",
+                "code": "VIS 143B"
+              },
+              {
+                "type": "course",
+                "code": "VIS 145B"
+              },
+              {
+                "type": "course",
+                "code": "VIS 146A"
+              },
+              {
+                "type": "course",
+                "code": "VIS 146B"
+              },
+              {
+                "type": "course",
+                "code": "VIS 147A"
+              },
+              {
+                "type": "course",
+                "code": "VIS 147B"
+              },
+              {
+                "type": "course",
+                "code": "VIS 149"
+              },
+              {
+                "type": "course",
+                "code": "VIS 161"
+              },
+              {
+                "type": "course",
+                "code": "VIS 162"
+              },
+              {
+                "type": "course",
+                "code": "VIS 167"
+              },
+              {
+                "type": "course",
+                "code": "VIS 168"
+              },
+              {
+                "type": "course",
+                "code": "VIS 169A"
+              },
+              {
+                "type": "course",
+                "code": "VIS 169B"
+              },
+              {
+                "type": "course",
+                "code": "VIS 198"
+              },
+              {
+                "type": "course",
+                "code": "VIS 199"
+              },
+              {
+                "type": "course",
+                "code": "AIP 197"
+              }
+            ],
+            "label": "Interdisciplinary"
+          }
+        ],
+        "notes": "Four courses. Overlapping courses may be taken for the intermediate or advanced level, but not both."
+      }
+    }
+  ]
+}

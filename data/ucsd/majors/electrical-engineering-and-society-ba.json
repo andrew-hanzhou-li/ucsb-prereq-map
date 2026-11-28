@@ -1,0 +1,1457 @@
+{
+  "name": "Electrical Engineering and Society - BA",
+  "kind": "major",
+  "type": "Bachelor's Degree",
+  "department": "Electrical and Computer Engineering",
+  "source": "https://catalog.ucsd.edu/curric/ECE-ug.html",
+  "narrative": [
+    "Students must complete a total of 180 units for graduation, including the general-education requirements (GER). Note that 140 units (excluding GER) are required.",
+    "Lower-division requirements: total of seventy-two units; upper-division: total of sixty-eight units.",
+    "Courses required for the major must be taken for a letter grade. All major courses must be completed with a grade of C– or better.",
+    "A GPA of 2.0 is required in all upper-division courses in the major, including technical electives. The grade of D will not be considered an adequate prerequisite for any ECE course and will not be allowed for graduation. The engineering design requirement must be completed with a grade of C– or better.",
+    "Effective fall 2015, admission to all four majors in the Department of Electrical and Computer Engineering is currently restricted as described in the section “Acceptance to Departmental Majors in the Jacobs School of Engineering.”",
+    "Screening courses for continuing students applying to the major: MATH 20A, 20B, 20C; PHYS 2A-B; ECE 35, 45.",
+    "Other courses in social sciences/humanities will be available after an agreement between ECE and the respective departments/programs are established and approved.",
+    "Recommended: Students with AP math credit are strongly advised to take MATH 20B in the fall quarter, leaving room for a GER in the winter quarter."
+  ],
+  "sections": [
+    {
+      "name": "Lower-Division Requirements",
+      "requirement": {
+        "type": "all",
+        "label": "Lower-Division Requirements (total of seventy-two units)",
+        "items": [
+          {
+            "type": "all",
+            "label": "Mathematics (twenty-four units)",
+            "items": [
+              {
+                "type": "course",
+                "code": "MATH 18"
+              },
+              {
+                "type": "course",
+                "code": "MATH 20A"
+              },
+              {
+                "type": "course",
+                "code": "MATH 20B"
+              },
+              {
+                "type": "course",
+                "code": "MATH 20C"
+              },
+              {
+                "type": "course",
+                "code": "MATH 20D"
+              },
+              {
+                "type": "course",
+                "code": "MATH 20E"
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "label": "Physics (sixteen units)",
+            "notes": "PHYS 2A-B-C-D or PHYS 4A-B-C-D-E. Those taking the PHYS 4 series will take five courses (twenty units).",
+            "items": [
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "PHYS 2A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 2B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 2C"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 2D"
+                  }
+                ]
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "PHYS 4A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 4B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 4C"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 4D"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHYS 4E"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "all",
+            "label": "Programming Course (four units)",
+            "items": [
+              {
+                "type": "course",
+                "code": "ECE 15"
+              }
+            ]
+          },
+          {
+            "type": "all",
+            "label": "Electrical Engineering (twenty units)",
+            "items": [
+              {
+                "type": "course",
+                "code": "ECE 25"
+              },
+              {
+                "type": "course",
+                "code": "ECE 30"
+              },
+              {
+                "type": "course",
+                "code": "ECE 35"
+              },
+              {
+                "type": "course",
+                "code": "ECE 45"
+              },
+              {
+                "type": "course",
+                "code": "ECE 65"
+              }
+            ]
+          },
+          {
+            "type": "units",
+            "units": 8,
+            "label": "Elective Courses in Social Sciences and Humanities Studies (eight units)",
+            "notes": "These can be prerequisite courses for the upper-division depth sequence in social sciences/humanities. At least one lower-division course should have a writing component. For sociology studies, students will choose two lower-division courses from SOCI 1, 2, and 30. Other courses in social sciences/humanities will be available after an agreement between ECE and the respective departments/programs are established and approved.",
+            "items": [
+              {
+                "type": "range",
+                "subject": "HILD",
+                "from": 2,
+                "to": 2
+              },
+              {
+                "type": "range",
+                "subject": "HILD",
+                "from": 7,
+                "to": 7
+              },
+              {
+                "type": "range",
+                "subject": "HILD",
+                "from": 10,
+                "to": 12
+              },
+              {
+                "type": "course",
+                "code": "ECON 1"
+              },
+              {
+                "type": "course",
+                "code": "ECON 4"
+              },
+              {
+                "type": "course",
+                "code": "POLI 10"
+              },
+              {
+                "type": "course",
+                "code": "POLI 11"
+              },
+              {
+                "type": "course",
+                "code": "POLI 12"
+              },
+              {
+                "type": "course",
+                "code": "POLI 13"
+              },
+              {
+                "type": "course",
+                "code": "POLI 30"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 1"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 2"
+              },
+              {
+                "type": "course",
+                "code": "SOCI 30"
+              },
+              {
+                "type": "text",
+                "text": "Historically oriented HUM, MMW, and CAT courses would count as well."
+              },
+              {
+                "type": "text",
+                "text": "For economics studies, this can be two lower-division courses (ECON 1, and ECON 4 for the finance track); or one lower-division course (ECON 1) plus one upper-division course for the data analysis track."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Upper-Division Requirements",
+      "requirement": {
+        "type": "all",
+        "label": "Upper-Division Requirements (total of sixty-eight units)",
+        "items": [
+          {
+            "type": "all",
+            "label": "a. Electrical Engineering BREADTH Courses (twenty-four units)",
+            "items": [
+              {
+                "type": "course",
+                "code": "ECE 100"
+              },
+              {
+                "type": "course",
+                "code": "ECE 101"
+              },
+              {
+                "type": "course",
+                "code": "ECE 102"
+              },
+              {
+                "type": "course",
+                "code": "ECE 103"
+              },
+              {
+                "type": "course",
+                "code": "ECE 107"
+              },
+              {
+                "type": "course",
+                "code": "ECE 109"
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "label": "b. Electrical Engineering DESIGN Course (four units)",
+            "notes": "Students must complete one of the following courses with a grade C– or better. Graduation will not be approved until a written copy of the design project is submitted to the ECE undergraduate office. Students who wish to take ECE 111, 118, 155B or 155C to satisfy the design requirement must fill out an enrollment form and have departmental approval for the design credit prior to taking the course.",
+            "items": [
+              {
+                "type": "course",
+                "code": "ECE 191"
+              },
+              {
+                "type": "course",
+                "code": "ECE 190"
+              },
+              {
+                "type": "course",
+                "code": "ECE 111"
+              },
+              {
+                "type": "course",
+                "code": "ECE 118"
+              },
+              {
+                "type": "course",
+                "code": "ECE 155B"
+              },
+              {
+                "type": "course",
+                "code": "ECE 155C"
+              }
+            ]
+          },
+          {
+            "type": "all",
+            "label": "c. Electrical Engineering ELECTIVES (sixteen units)",
+            "notes": "Two upper-division engineering, mathematics, or physics courses AND two upper-division or lower-division engineering, math, physics, chemistry, and biology courses.",
+            "items": [
+              {
+                "type": "choose",
+                "count": 2,
+                "items": [
+                  {
+                    "type": "any",
+                    "subject": "ECE",
+                    "level": "upper"
+                  },
+                  {
+                    "type": "any",
+                    "subject": "MATH",
+                    "level": "upper"
+                  },
+                  {
+                    "type": "any",
+                    "subject": "PHYS",
+                    "level": "upper"
+                  },
+                  {
+                    "type": "text",
+                    "text": "or another upper-division engineering course (a list of approved technical electives can be found in the ECE undergraduate office)"
+                  }
+                ],
+                "label": "Technical electives: upper-division engineering, math, or physics"
+              },
+              {
+                "type": "choose",
+                "count": 2,
+                "items": [
+                  {
+                    "type": "any",
+                    "subject": "ECE",
+                    "level": "upper"
+                  },
+                  {
+                    "type": "any",
+                    "subject": "ECE",
+                    "level": "lower"
+                  },
+                  {
+                    "type": "any",
+                    "subject": "MATH",
+                    "level": "upper"
+                  },
+                  {
+                    "type": "any",
+                    "subject": "MATH",
+                    "level": "lower"
+                  },
+                  {
+                    "type": "any",
+                    "subject": "PHYS",
+                    "level": "upper"
+                  },
+                  {
+                    "type": "any",
+                    "subject": "PHYS",
+                    "level": "lower"
+                  },
+                  {
+                    "type": "any",
+                    "subject": "CHEM",
+                    "level": "upper"
+                  },
+                  {
+                    "type": "any",
+                    "subject": "CHEM",
+                    "level": "lower"
+                  },
+                  {
+                    "type": "text",
+                    "text": "or another upper-division or lower-division engineering or biology course (a list of approved technical electives can be found in the ECE undergraduate office)"
+                  }
+                ],
+                "label": "Technical electives: upper-division or lower-division engineering, math, physics, chemistry, and biology"
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "label": "d. Social Sciences/Humanities Studies Depth Requirement (twenty-four units)",
+            "notes": "Students must complete a depth requirement of at least six quarter courses to provide a focus for their studies.",
+            "items": [
+              {
+                "type": "choose",
+                "count": 6,
+                "label": "History Studies (six courses, twenty-four units)",
+                "notes": "At least four of these should belong to the specific field the student is pursuing (e.g., History of: East Asia, United States, Europe, Science, etc.). At least one course should be in the field of history of science and technology. At least one course should be a colloquium (i.e., a small course, with an emphasis on essay writing). HISC 173/273.",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "HISC 105"
+                  },
+                  {
+                    "type": "course",
+                    "code": "HISC 106"
+                  },
+                  {
+                    "type": "course",
+                    "code": "HISC 107"
+                  },
+                  {
+                    "type": "course",
+                    "code": "HISC 108"
+                  },
+                  {
+                    "type": "course",
+                    "code": "HISC 111"
+                  },
+                  {
+                    "type": "course",
+                    "code": "HISC 115"
+                  },
+                  {
+                    "type": "course",
+                    "code": "HISC 131"
+                  },
+                  {
+                    "type": "choose",
+                    "count": 1,
+                    "notes": "HISC 173/273 (cross-listed)",
+                    "items": [
+                      {
+                        "type": "course",
+                        "code": "HISC 173"
+                      },
+                      {
+                        "type": "course",
+                        "code": "HISC 273"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "course",
+                    "code": "HILD 2A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "HILD 7A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "HILD 10"
+                  },
+                  {
+                    "type": "course",
+                    "code": "HILD 11"
+                  },
+                  {
+                    "type": "course",
+                    "code": "HILD 12"
+                  },
+                  {
+                    "type": "course",
+                    "code": "HIUS 140"
+                  },
+                  {
+                    "type": "course",
+                    "code": "HIUS 151"
+                  },
+                  {
+                    "type": "course",
+                    "code": "HIUS 187"
+                  },
+                  {
+                    "type": "course",
+                    "code": "HIUS 148"
+                  },
+                  {
+                    "type": "course",
+                    "code": "HIEU 143"
+                  },
+                  {
+                    "type": "course",
+                    "code": "HIGR 222"
+                  },
+                  {
+                    "type": "course",
+                    "code": "HILA 102"
+                  }
+                ]
+              },
+              {
+                "type": "all",
+                "label": "Economics Studies Track A: Finance (six courses, twenty-four units)",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "ECON 100A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ECON 100B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ECON 100C"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ECON 173A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ECON 173B"
+                  },
+                  {
+                    "type": "choose",
+                    "count": 1,
+                    "label": "One elective course",
+                    "items": [
+                      {
+                        "type": "course",
+                        "code": "ECON 104"
+                      },
+                      {
+                        "type": "course",
+                        "code": "ECON 105"
+                      },
+                      {
+                        "type": "course",
+                        "code": "ECON 109"
+                      },
+                      {
+                        "type": "course",
+                        "code": "ECON 113"
+                      },
+                      {
+                        "type": "course",
+                        "code": "ECON 119"
+                      },
+                      {
+                        "type": "course",
+                        "code": "ECON 120B"
+                      },
+                      {
+                        "type": "course",
+                        "code": "ECON 141"
+                      },
+                      {
+                        "type": "course",
+                        "code": "ECON 142"
+                      },
+                      {
+                        "type": "course",
+                        "code": "ECON 143"
+                      },
+                      {
+                        "type": "course",
+                        "code": "ECON 147"
+                      },
+                      {
+                        "type": "course",
+                        "code": "ECON 150"
+                      },
+                      {
+                        "type": "course",
+                        "code": "ECON 151"
+                      },
+                      {
+                        "type": "course",
+                        "code": "ECON 155"
+                      },
+                      {
+                        "type": "course",
+                        "code": "ECON 171"
+                      },
+                      {
+                        "type": "course",
+                        "code": "ECON 172A"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "all",
+                "label": "Economics Studies Track B: Data Analysis (seven courses, twenty-eight units)",
+                "notes": "seven courses, twenty-eight units, one of them can be taken during lower-division years",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "ECON 100A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ECON 100B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ECON 100C"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ECON 120B"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ECON 120C"
+                  },
+                  {
+                    "type": "choose",
+                    "count": 2,
+                    "label": "Two elective courses",
+                    "items": [
+                      {
+                        "type": "course",
+                        "code": "ECON 104"
+                      },
+                      {
+                        "type": "course",
+                        "code": "ECON 105"
+                      },
+                      {
+                        "type": "course",
+                        "code": "ECON 109"
+                      },
+                      {
+                        "type": "course",
+                        "code": "ECON 119"
+                      },
+                      {
+                        "type": "course",
+                        "code": "ECON 121"
+                      },
+                      {
+                        "type": "course",
+                        "code": "ECON 125"
+                      },
+                      {
+                        "type": "course",
+                        "code": "ECON 150"
+                      },
+                      {
+                        "type": "course",
+                        "code": "ECON 151"
+                      },
+                      {
+                        "type": "course",
+                        "code": "ECON 152"
+                      },
+                      {
+                        "type": "course",
+                        "code": "ECON 155"
+                      },
+                      {
+                        "type": "course",
+                        "code": "ECON 173A"
+                      },
+                      {
+                        "type": "course",
+                        "code": "ECON 173B"
+                      },
+                      {
+                        "type": "course",
+                        "code": "ECON 174"
+                      },
+                      {
+                        "type": "course",
+                        "code": "ECON 176"
+                      },
+                      {
+                        "type": "course",
+                        "code": "ECON 178"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "all",
+                "label": "Political Science Studies: Policy Analysis (six courses, twenty-four units)",
+                "items": [
+                  {
+                    "type": "choose",
+                    "count": 4,
+                    "notes": "At least four courses from",
+                    "items": [
+                      {
+                        "type": "course",
+                        "code": "POLI 160AA"
+                      },
+                      {
+                        "type": "course",
+                        "code": "POLI 160AB"
+                      },
+                      {
+                        "type": "course",
+                        "code": "POLI 162"
+                      },
+                      {
+                        "type": "course",
+                        "code": "POLI 163"
+                      },
+                      {
+                        "type": "course",
+                        "code": "POLI 165"
+                      },
+                      {
+                        "type": "course",
+                        "code": "POLI 168"
+                      },
+                      {
+                        "type": "course",
+                        "code": "POLI 170A"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "choose",
+                    "count": 2,
+                    "notes": "and at least two courses from",
+                    "items": [
+                      {
+                        "type": "course",
+                        "code": "POLI 100H"
+                      },
+                      {
+                        "type": "course",
+                        "code": "POLI 102J"
+                      },
+                      {
+                        "type": "course",
+                        "code": "POLI 103A"
+                      },
+                      {
+                        "type": "course",
+                        "code": "POLI 103B"
+                      },
+                      {
+                        "type": "course",
+                        "code": "POLI 103C"
+                      },
+                      {
+                        "type": "course",
+                        "code": "POLI 125A"
+                      },
+                      {
+                        "type": "course",
+                        "code": "POLI 126AA"
+                      },
+                      {
+                        "type": "course",
+                        "code": "POLI 142A"
+                      },
+                      {
+                        "type": "course",
+                        "code": "POLI 142J"
+                      },
+                      {
+                        "type": "course",
+                        "code": "POLI 142M"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "choose",
+                "label": "Sociology Studies: Concentration in Science and Medicine (six upper-division courses)",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "SOCI 113"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 134A"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 135"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 136E"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 136F"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 138"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 149"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 167"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 168E"
+                  }
+                ],
+                "notes": "Sociology Studies (six courses, twenty-four units). The catalog describes each track as eight courses: two lower-division (SOCI 1, 2, 30; 30 highly recommended) and six upper-division; the two lower-division SOCI courses are taken as the lower-division Elective Courses in Social Sciences and Humanities Studies, so only the six upper-division courses are listed here.",
+                "count": 6
+              },
+              {
+                "type": "choose",
+                "label": "Sociology Studies: Concentration in Law and Society (six upper-division courses)",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "SOCI 112"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 142"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 143"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 160E"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 140"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 140F"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 141"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 147"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 159"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 163"
+                  }
+                ],
+                "notes": "Sociology Studies (six courses, twenty-four units). The catalog describes each track as eight courses: two lower-division (SOCI 1, 2, 30; 30 highly recommended) and six upper-division; the two lower-division SOCI courses are taken as the lower-division Elective Courses in Social Sciences and Humanities Studies, so only the six upper-division courses are listed here.",
+                "count": 6
+              },
+              {
+                "type": "choose",
+                "label": "Sociology Studies: Concentration in Economy and Society (six upper-division courses)",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "SOCI 125"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 137"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 121"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 132"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 139"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 140F"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 148E"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 152"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 163"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 167"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 185"
+                  }
+                ],
+                "notes": "Sociology Studies (six courses, twenty-four units). The catalog describes each track as eight courses: two lower-division (SOCI 1, 2, 30; 30 highly recommended) and six upper-division; the two lower-division SOCI courses are taken as the lower-division Elective Courses in Social Sciences and Humanities Studies, so only the six upper-division courses are listed here.",
+                "count": 6
+              },
+              {
+                "type": "choose",
+                "label": "Sociology Studies: Concentration in International Studies (six upper-division courses)",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "SOCI 130"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 145"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 151"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 148"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 153"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 157"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 158"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 169"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 176"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 177"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 178"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 179"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 180"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 181"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 182"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 185"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 187"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 188E"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 188G"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 188F"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 188D"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 188J"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SOCI 189"
+                  }
+                ],
+                "notes": "Sociology Studies (six courses, twenty-four units). The catalog describes each track as eight courses: two lower-division (SOCI 1, 2, 30; 30 highly recommended) and six upper-division; the two lower-division SOCI courses are taken as the lower-division Elective Courses in Social Sciences and Humanities Studies, so only the six upper-division courses are listed here.",
+                "count": 6
+              },
+              {
+                "type": "all",
+                "label": "Sociology Studies: General Sociology (six upper-division courses)",
+                "notes": "Sociology Studies (six courses, twenty-four units). The catalog describes each track as eight courses: two lower-division (SOCI 1, 2, 30; 30 highly recommended) and six upper-division; the two lower-division SOCI courses are taken as the lower-division Elective Courses in Social Sciences and Humanities Studies, so only the six upper-division courses are listed here. Six upper-division courses, including one from EACH of the four concentrations.",
+                "items": [
+                  {
+                    "type": "choose",
+                    "count": 1,
+                    "label": "Science and Medicine",
+                    "items": [
+                      {
+                        "type": "course",
+                        "code": "SOCI 113"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 134A"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 135"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 136E"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 136F"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 138"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 149"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 167"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 168E"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "choose",
+                    "count": 1,
+                    "label": "Law and Society",
+                    "items": [
+                      {
+                        "type": "course",
+                        "code": "SOCI 112"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 142"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 143"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 160E"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 140"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 140F"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 141"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 147"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 159"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 163"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "choose",
+                    "count": 1,
+                    "label": "Economy and Society",
+                    "items": [
+                      {
+                        "type": "course",
+                        "code": "SOCI 125"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 137"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 121"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 132"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 139"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 140F"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 148E"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 152"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 163"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 167"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 185"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "choose",
+                    "count": 1,
+                    "label": "International Studies",
+                    "items": [
+                      {
+                        "type": "course",
+                        "code": "SOCI 130"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 145"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 151"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 148"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 153"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 157"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 158"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 169"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 176"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 177"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 178"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 179"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 180"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 181"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 182"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 185"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 187"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 188E"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 188G"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 188F"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 188D"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 188J"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 189"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "choose",
+                    "count": 2,
+                    "label": "Remaining upper-division courses",
+                    "items": [
+                      {
+                        "type": "course",
+                        "code": "SOCI 113"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 134A"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 135"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 136E"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 136F"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 138"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 149"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 167"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 168E"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 112"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 142"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 143"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 160E"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 140"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 140F"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 141"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 147"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 159"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 163"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 125"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 137"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 121"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 132"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 139"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 148E"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 152"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 185"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 130"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 145"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 151"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 148"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 153"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 157"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 158"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 169"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 176"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 177"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 178"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 179"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 180"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 181"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 182"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 187"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 188E"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 188G"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 188F"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 188D"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 188J"
+                      },
+                      {
+                        "type": "course",
+                        "code": "SOCI 189"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "Students may choose this demonstrated sequence or they may propose another with the approval of their faculty coadviser from the respective social sciences/humanities department."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
