@@ -68,7 +68,7 @@ EACH_RULE = re.compile(r"\bfrom (?:each of\s+(?:(?P<areas>\d+|" + "|".join(NUMBE
 # petitions and recommendations.
 OPTIONAL_TITLE = re.compile(r"honors|departmental scholar|specialization$|optional|substitut|petition|"
                             r"biology quarter|recommended", re.IGNORECASE)
-OPTIONAL_LINE = re.compile(r"\bmay be substituted\b|\bmay substitute\b|\bby petition\b|\boptional\b|"
+OPTIONAL_LINE = re.compile(r"\bmay participate\b|\bmay be substituted\b|\bmay substitute\b|\bby petition\b|\boptional\b|"
                            r"\bhonors (?:students|program)\b|\bfor honors\b|"
                            r"\bmay not be applied toward the major\b", re.IGNORECASE)
 # (A line that says what to complete is a requirement, whatever else it says:
@@ -77,7 +77,7 @@ IMPERATIVE = re.compile(r"^(?:Complete|Select|Choose|Take|Students must)\b", re.
 # "Mathematics 33B is highly recommended" (but not "Complete four courses. It is
 # strongly recommended that they be taken early").
 RECOMMENDED_LINE = re.compile(r"^(?!(?:Complete|Select|Choose|Take)\b).*\brecommended\b", re.IGNORECASE)
-UNITS_RULE = re.compile(r"^(?:Select|Complete|Take)\s+(?:at least\s+|a minimum of\s+)?(\d+(?:\.\d+)?|" + "|".join(NUMBER_WORDS) +
+UNITS_RULE = re.compile(r"^(?:Select|Complete|Take)\s+(?:at least\s+|a minimum of\s+|a total of\s+)?(\d+(?:\.\d+)?|" + "|".join(NUMBER_WORDS) +
                         r")\s+(?:additional\s+)?units?\b", re.IGNORECASE)
 COUNT_ONLY = re.compile(r"^(?:Select|Complete|Choose|Take)\s+(?:at least\s+|a minimum of\s+|any\s+|a total of\s+)?" + COUNT +
                         r"\s+(?!units?\b)(?:[\w-]+\s+){0,4}?(?:courses?|sequences?|series|options?|concentrations?)\b", re.IGNORECASE)
@@ -96,6 +96,10 @@ UPPER_RULE = re.compile(r"^(?:Complete|Select)\s+" + COUNT + r"\s+(?:additional\
 SOME_UNITS = re.compile(r"\band\s+(\d+(?:\.\d+)?)\s+units\s+from\s+([^:]*)", re.IGNORECASE)
 UNITS_OF = re.compile(r"^Complete\b[^:]*?\(?(\d+(?:\.\d+)?)\s+units\)?\s+of\b", re.IGNORECASE)
 ONE_MUST = re.compile(r"^(?:At least )?one of the\b[^.]*\bmust\b", re.IGNORECASE)
+# "Select 30 of the total 40 units from the following", "Ten of the total 40 units may be selected"
+PART_UNITS = re.compile(r"^(?:Select\s+)?(\d+|" + "|".join(NUMBER_WORDS) + r")\s+of the total\s+\d+\s+units\b", re.IGNORECASE)
+# "Additional art history electives selected from courses 100 through 185 (20 units minimum)"
+UNITS_MINIMUM = re.compile(r"\((\d+)\s+units\s+minimum\)", re.IGNORECASE)
 ONLY_ONE = re.compile(r"^Only one (?:course|of these courses) may (?:apply|be applied)\.?$", re.IGNORECASE)
 SPLIT_RULE = re.compile(r"^Select\b[^:]*?\b" + COUNT + r"\s+courses?\b[^:]*?\band\s+" + COUNT + r"\s+courses?\b", re.IGNORECASE)
 ALL_RULE = re.compile(r"^(?:Complete|Take)\b[^:]*\b(?:as follows|the following|all)\b", re.IGNORECASE)
@@ -316,6 +320,10 @@ class Converter:
             if re.search(r"\bexamples?\b", line):
                 # ("… such as the following examples": each listed course ends one sequence.)
                 node["items"] = parts
+        elif choose and re.search(r"\bfrom either\b", line) and not EACH_RULE.search(line):
+            # "Select five language courses from either modern Chinese or from premodern Chinese"
+            node = {"type": "choose", "count": count_of(choose.group(1)),
+                    "items": [dict(c) for c in courses_in({"type": "all", "items": parts})]}
         elif choose and EACH_RULE.search(line) and all(p["type"] != "course" for p in parts):
             # Each list gives N; "from each of three of the four" asks for three lists.
             each = [{"type": "choose", "count": count_of(choose.group(1)), "items": lists_joined(unwrapped(p)),
@@ -366,6 +374,8 @@ class Converter:
                 and not COUNT_ONLY.match(line):
             # "Complete two years (12 units) of performance organizations": 12 units of the listed ones.
             node = {"type": "units", "units": whole(float(years.group(1))), "items": parts}
+        elif (share := PART_UNITS.match(line)) and parts:
+            node = {"type": "units", "units": count_of(share.group(1)), "items": lists_joined(parts)}
         elif ONLY_ONE.match(line):
             node = {"type": "choose", "count": 1, "items": parts}
         elif (split := SPLIT_RULE.match(line)) and all(p["type"] == "all" for p in parts):
@@ -379,6 +389,9 @@ class Converter:
             # "Students may take Labor Studies 10 and two lower-division courses from
             # the following list or Labor Studies M1A, M1B, M1CW": two ways, one taken.
             node = {"type": "choose", "count": 1, "items": parts}
+        elif (minimum := UNITS_MINIMUM.search(line)) and not ALL_RULE.match(line) and len(parts) > 1 \
+                and re.match(r"(?:Additional|Select|Electives?)\b", line, re.IGNORECASE):
+            node = {"type": "units", "units": int(minimum.group(1)), "items": lists_joined(parts)}
         else:
             node = {"type": "all", "items": or_pairs(parts, line)}
         if node is not None and node["type"] == "choose":
