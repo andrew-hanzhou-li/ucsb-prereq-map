@@ -238,3 +238,21 @@ The 95% bar is met: the latest honest score is 97% (96.9% without the four cours
 Order: offerings fetch runs in the background (slow but simple) while the AP chart is typed, then majors.
 
 **Done (2026-11-27):** AP chart (40 exams); offerings from the Schedule of Classes (3,128 of 4,655 courses have quarters); 180 majors, each translated twice and the 90 that differed reconciled from the page text (see data/ucsd/majors/README.md, which lists the questions a person should check). The map now treats "placement exam, or MATH 4C" as a course you can start with, so calculus is in the first step. What's left before "Ready": Andrew's call.
+
+## UCLA plan (2026-11-28)
+
+Sources (surveyed and fetched 2026-11-28; robots.txt allows the catalog):
+- **Catalog:** CourseLoop, with an open JSON endpoint on the catalog's own site (`/api/content/academic-item-content?siteId=ucla-prod-pres&path=/course/2026/COMSCI31&siteYear=current`). The sitemap lists every course and major page. `pipeline/campuses/ucla/fetch.py` saves each record (gitignored raw folder).
+- **Prerequisites:** prose inside each course description ("Enforced requisite: course 31", "Requisites: Mathematics 31B, 32A"): "course 31" means the same subject, other subjects are spelled out ("Mathematics"), mapped to codes from the Schedule of Classes' subject list.
+- **Majors:** 145 undergraduate majors, each a tree of rule groups with a verb line ("Select one course from", "Complete 12 courses") and a course list. 2,587 groups; 320 are prose only ("seven courses from Computer Science 100 through CM187 except …").
+- **When offered:** Schedule of Classes (`sa.ucla.edu/ro/Public/SOC/Results?t=25F&sBy=subject&subj=COM+SCI`), past terms answer too; HTML only.
+- **AP credit:** one HTML table set per school (The College, Engineering, Arts and Architecture, Nursing, Theater Film and Television); they differ.
+
+Steps:
+1. Fetch courses and majors. *(running)*
+2. Extract undergraduate courses (`course_level` lower/upper division); requisite text out of the description.
+3. Prerequisite parser rules for UCLA's wording; measure on a labeled sample (same method as UCSD: tuning set, then held-out sets double-labeled; bar 95%).
+4. Majors: convert the rule groups directly; translate the 320 prose groups (two passes, compared, reconciled, as for UCSD); audit a random sample.
+5. When offered: Schedule of Classes for the last two years.
+6. AP chart: The College's table as the default; where Engineering's differs, its majors use Engineering's.
+7. Site: campus details, transcript (UCLA's MyUCLA "Academic History" if a sample exists), checks; Auto-fill sweep; review pass until nothing is left to improve; then ready.
