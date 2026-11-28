@@ -355,9 +355,16 @@
       "type": "all",
       "items": [
        {
-        "type": "course",
-        "code": "MSC IND 1",
-        "status": "active"
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "MSC IND 1",
+          "status": "active"
+         }
+        ],
+        "count": 3,
+        "notes": "taken three times"
        },
        {
         "type": "course",

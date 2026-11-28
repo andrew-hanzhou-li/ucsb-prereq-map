@@ -285,6 +285,8 @@ class Converter:
                     node["_line"] = plain(item.get("description"))
                     parts.append(node)
         parts = one_of_kind(parts, line)
+        parts = with_preceding(parts)
+        parts = repeated(parts, line)
         node = None
         units = UNITS_RULE.match(line)
         choose = CHOOSE_RULE.match(line)
@@ -630,6 +632,36 @@ def one_of_kind(parts, line):
         parts = [p for p in parts if p not in picked]
         parts.insert(at, choice)
     return parts
+
+
+def with_preceding(parts):
+    """"Complete 10 additional units from the preceding two course lists or from
+    the following": the lists before it count too."""
+    out = []
+    for at, part in enumerate(parts):
+        own = part.get("_line") or ""
+        if part["type"] in ("units", "choose") and re.search(r"\bpreceding\b(?:\s+\w+){0,2}\s+lists?\b", own):
+            named = {c.get("code") for c in courses_in(part)}
+            earlier = [dict(c) for q in parts[:at] if q["type"] in ("units", "choose")
+                       for c in courses_in(q) if c["type"] == "course" and c.get("code") not in named]
+            part = dict(part, items=part["items"] + earlier)
+        out.append(part)
+    return out
+
+
+def repeated(parts, line):
+    """"Complete Music Industry 1 three times and the following six courses":
+    that course three times (a "choose 3" of the one course, filled by repeats)."""
+    found = re.search(r"\b([A-Z]{0,2}\d+[A-Z]*)\s+(two|three|four|five|six)\s+times\b", line)
+    if not found:
+        return parts
+    out = []
+    for part in parts:
+        if part["type"] == "course" and part["code"].rsplit(" ", 1)[-1] == found.group(1):
+            part = {"type": "choose", "count": count_of(found.group(2)), "items": [part],
+                    "notes": "taken " + found.group(2) + " times"}
+        out.append(part)
+    return out
 
 
 def lists_joined(parts, keep_series=True):
