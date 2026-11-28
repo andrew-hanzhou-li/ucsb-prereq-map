@@ -100,6 +100,8 @@ ONE_MUST = re.compile(r"^(?:At least )?one of the\b[^.]*\bmust\b", re.IGNORECASE
 PART_UNITS = re.compile(r"^(?:Select\s+)?(\d+|" + "|".join(NUMBER_WORDS) + r")\s+of the total\s+\d+\s+units\b", re.IGNORECASE)
 # "Additional art history electives selected from courses 100 through 185 (20 units minimum)"
 UNITS_MINIMUM = re.compile(r"\((\d+)\s+units\s+minimum\)", re.IGNORECASE)
+FIELD_SPLIT = re.compile(COUNT + r"\s+courses?\s+in\s+the\s+([^.]*?)\s+field\s+and\s+" + COUNT +
+                         r"\s+in\s+each\s+of\s+the\s+other\b", re.IGNORECASE)
 ONLY_ONE = re.compile(r"^Only one (?:course|of these courses) may (?:apply|be applied)\.?$", re.IGNORECASE)
 SPLIT_RULE = re.compile(r"^Select\b[^:]*?\b" + COUNT + r"\s+courses?\b[^:]*?\band\s+" + COUNT + r"\s+courses?\b", re.IGNORECASE)
 ALL_RULE = re.compile(r"^(?:Complete|Take)\b[^:]*\b(?:as follows|the following|all)\b", re.IGNORECASE)
@@ -292,6 +294,18 @@ class Converter:
         elif units and re.search(r"\bfrom\b", line, re.IGNORECASE):
             node = {"type": "units", "units": float(count_of(units.group(1)) if not re.match(r"[\d.]+$", units.group(1)) else units.group(1)),
                     "items": lists_joined(parts)}
+        elif (fields := FIELD_SPLIT.search(line)) and len(parts) > 1 and all(p["type"] != "course" for p in parts):
+            # "Select two courses in the sociocultural anthropology field and one in
+            # each of the other three fields"
+            named = set(re.findall(r"[a-z]+", fields.group(2).lower())) - {"the", "and", "field"}
+            # (The field named is the part whose name shares the most words with it.)
+            overlap = [len(named & set(re.findall(r"[a-z]+", (p.get("label") or "").lower()))) for p in parts]
+            best = overlap.index(max(overlap))
+
+            def field_count(part):
+                return count_of(fields.group(1)) if parts.index(part) == best else count_of(fields.group(3))
+            node = {"type": "all", "items": [{"type": "choose", "count": field_count(p), "items": lists_joined(unwrapped(p)),
+                                              **({"label": p["label"]} if p.get("label") else {})} for p in parts]}
         elif ONE_MUST.match(line) and parts:
             # "One of the 16 courses for the preparation and major must be in history
             # before 1700 CE": one of these, which also counts where it's listed.
@@ -326,7 +340,11 @@ class Converter:
                     "items": [dict(c) for c in courses_in({"type": "all", "items": parts})]}
         elif choose and EACH_RULE.search(line) and all(p["type"] != "course" for p in parts):
             # Each list gives N; "from each of three of the four" asks for three lists.
-            each = [{"type": "choose", "count": count_of(choose.group(1)), "items": lists_joined(unwrapped(p)),
+            # ("Select four … courses, one from each of the following four periods":
+            # four in all, one from each.)
+            per = re.search(COUNT + r"\s+(?:courses?\s+)?(?:from|in)\s+each\b", line, re.IGNORECASE)
+            each_count = count_of(per.group(1)) if per else count_of(choose.group(1))
+            each = [{"type": "choose", "count": each_count, "items": lists_joined(unwrapped(p)),
                      **({"label": p["label"]} if p.get("label") else {})} for p in parts]
             # ("one course from three of the following four areas": three areas, one course each)
             areas = EACH_RULE.search(line).group("areas") or EACH_RULE.search(line).group("some")
@@ -420,6 +438,7 @@ class Converter:
         return node
 
 
+SUBJECT_NAMES = set()     # "Mathematics", "Economics", … (filled in main)
 TWINS = {}     # cross-listed course -> the codes it's also listed as (filled in main)
 
 
@@ -453,7 +472,10 @@ def pruned(node):
         # each range is a long list to pick from, not one option.
         flat = []
         for item in items:
-            if (item["type"] == "choose" and item["count"] == 1 and len(item["items"]) > 4 and not item.get("optional")
+            # (A list named for a subject, "Mathematics", or made from a range; not an
+            # area such as "(b) Imperial, Transnational, and Postcolonial Studies".)
+            subject_list = item.get("expanded_from") or (item.get("label") or "").strip() in SUBJECT_NAMES
+            if (item["type"] == "choose" and item["count"] == 1 and subject_list and not item.get("optional")
                     and all(i["type"] == "course" for i in item["items"])):
                 flat.extend(item["items"])
             else:
@@ -619,6 +641,11 @@ def or_pairs(parts, line):
     out = list(parts)
     for left, right in pairs:
         a, b = by_number.get(left), by_number.get(right)
+        if a is None and b is not None:
+            # (And "31 or 31AL": the left one is 31A, the one with that number and one more letter.)
+            near = [p for n, p in by_number.items() if n != right and re.fullmatch(re.escape(left) + r"[A-Z]", n)]
+            near = [p for p in near if right.startswith(p["code"].rsplit(" ", 1)[-1])] or near
+            a = near[0] if len(near) == 1 else None
         if b is None and a is not None:
             # (The catalog's "31A or 31L" means 31AL: the number of the left one, the right one's letter.)
             near = [p for n, p in by_number.items() if n != left and n.startswith(re.match(r"[A-Z]*\d+", left).group(0))
@@ -655,6 +682,8 @@ def main():
             TWINS[code] = codes - {code}
     for code, info in catalog.items():
         TWINS.setdefault(code, set()).update(info.get("cross_listed") or [])
+    with open(os.path.join("data", "ucla", "subjects.json"), encoding="utf-8") as f:
+        SUBJECT_NAMES.update(json.load(f).values())
     converter = Converter(subject_ids(), translated, catalog)
     os.makedirs(PROGRAMS_DIR, exist_ok=True)
     for old in glob.glob(os.path.join(PROGRAMS_DIR, "*.json")):

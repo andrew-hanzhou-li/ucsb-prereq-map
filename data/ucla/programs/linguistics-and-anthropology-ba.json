@@ -193,224 +193,248 @@
       "type": "choose",
       "items": [
        {
-        "type": "course",
-        "code": "ANTHRO 130",
-        "status": "active"
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "ANTHRO 130",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 131",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 132",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 133",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 134",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 135",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 135R",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 135S",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 136A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 136B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 136M",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 137P",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 137Q",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 138P",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO M138Q",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 139",
+          "status": "active"
+         }
+        ],
+        "count": 1,
+        "label": "Anthropology 130 series",
+        "notes": "Only one course may apply."
        },
        {
-        "type": "course",
-        "code": "ANTHRO 131",
-        "status": "active"
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "ANTHRO M150",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 151",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 152Q",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 152R",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO M152P",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 153",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 154P",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 154Q",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 154SL",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO M155",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO M156",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO C157P",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 158P",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO M158",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 159",
+          "status": "active"
+         }
+        ],
+        "count": 1,
+        "label": "Anthropology 150 series",
+        "notes": "Only one course may apply."
        },
        {
-        "type": "course",
-        "code": "ANTHRO 132",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ANTHRO 133",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ANTHRO 134",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ANTHRO 135",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ANTHRO 135R",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ANTHRO 135S",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ANTHRO 136A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ANTHRO 136B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ANTHRO 136M",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ANTHRO 137P",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ANTHRO 137Q",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ANTHRO 138P",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ANTHRO M138Q",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ANTHRO 139",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ANTHRO M150",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ANTHRO 151",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ANTHRO 152Q",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ANTHRO 152R",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ANTHRO M152P",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ANTHRO 153",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ANTHRO 154P",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ANTHRO 154Q",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ANTHRO 154SL",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ANTHRO M155",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ANTHRO M156",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ANTHRO C157P",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ANTHRO 158P",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ANTHRO M158",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ANTHRO 159",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ANTHRO 160A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ANTHRO 160B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ANTHRO 161",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ANTHRO 162",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ANTHRO 163P",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ANTHRO 163Q",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ANTHRO 163R",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ANTHRO 166P",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ANTHRO M166Q",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ANTHRO 167",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ANTHRO 168P",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ANTHRO M168Q",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ANTHRO 169",
-        "status": "active"
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "ANTHRO 160A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 160B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 161",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 162",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 163P",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 163Q",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 163R",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 166P",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO M166Q",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 167",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 168P",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO M168Q",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 169",
+          "status": "active"
+         }
+        ],
+        "count": 1,
+        "label": "Anthropology 160 series",
+        "notes": "Only one course may apply."
        },
        {
         "type": "course",

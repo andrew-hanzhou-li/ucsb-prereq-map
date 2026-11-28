@@ -581,54 +581,62 @@
         "status": "active"
        },
        {
-        "type": "course",
-        "code": "COMM 101",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "COMM 102",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "COMM 109",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "COMM 111",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "COMM M117",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "COMM 155",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "COMM 160",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "COMM M176",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "COMM 188E",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "COMM 191E",
-        "status": "active"
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "COMM 101",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COMM 102",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COMM 109",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COMM 111",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COMM M117",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COMM 155",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COMM 160",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COMM M176",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COMM 188E",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COMM 191E",
+          "status": "active"
+         }
+        ],
+        "count": 1,
+        "label": "Required Practicum",
+        "notes": "Select one course from the following. If eligible, the selected course may also count toward a core or elective area requirement."
        }
       ],
       "count": 8,
