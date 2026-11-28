@@ -774,6 +774,9 @@ function chooseShown(settings) {
     } else if (node.type === "and") {
       node.items.forEach(walk);
     } else if (node.type === "or") {
+      // A placement exam is the usual way in ("Math Placement Exam, or MATH
+      // 4C or MATH 10A"), so nothing needs adding for it.
+      if (node.items.some(item => item.type === "condition" && /(?<!advanced )placement/i.test(item.text || ""))) return;
       const options = node.items.filter(hasCourses);
       if (!options.length) return;
       const covered = options.some(option => coursesIn(option).some(code => result.has(code)));

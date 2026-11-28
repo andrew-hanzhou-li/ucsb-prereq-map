@@ -20,32 +20,116 @@
         "type": "all",
         "items": [
           {
-            "type": "course",
-            "code": "CHIN 10A"
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "CHIN 10AN"
+              },
+              {
+                "type": "course",
+                "code": "CHIN 10AM"
+              },
+              {
+                "type": "course",
+                "code": "CHIN 10AD"
+              }
+            ]
           },
           {
-            "type": "course",
-            "code": "CHIN 10B"
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "CHIN 10BN"
+              },
+              {
+                "type": "course",
+                "code": "CHIN 10BM"
+              },
+              {
+                "type": "course",
+                "code": "CHIN 10BD"
+              }
+            ]
           },
           {
-            "type": "course",
-            "code": "CHIN 10C"
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "CHIN 10CN"
+              },
+              {
+                "type": "course",
+                "code": "CHIN 10CM"
+              },
+              {
+                "type": "course",
+                "code": "CHIN 10CD"
+              }
+            ]
           },
           {
-            "type": "course",
-            "code": "CHIN 20A"
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "CHIN 20AN"
+              },
+              {
+                "type": "course",
+                "code": "CHIN 20AM"
+              },
+              {
+                "type": "course",
+                "code": "CHIN 20AD"
+              }
+            ]
           },
           {
-            "type": "course",
-            "code": "CHIN 20B"
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "CHIN 20BN"
+              },
+              {
+                "type": "course",
+                "code": "CHIN 20BM"
+              },
+              {
+                "type": "course",
+                "code": "CHIN 20BD"
+              }
+            ]
           },
           {
-            "type": "course",
-            "code": "CHIN 20C"
+            "type": "choose",
+            "count": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "CHIN 20CN"
+              },
+              {
+                "type": "course",
+                "code": "CHIN 20CM"
+              },
+              {
+                "type": "course",
+                "code": "CHIN 20CD"
+              }
+            ]
           }
         ],
         "label": "Two years of Mandarin Chinese",
-        "notes": "\"Two years of Mandarin Chinese (CHIN 10 A-B-C and 20 A-B-C or equivalent) or equivalent Chinese language knowledge.\""
+        "notes": "\"Two years of Mandarin Chinese (CHIN 10 A-B-C and 20 A-B-C or equivalent) or equivalent Chinese language knowledge.\" The catalog writes CHIN 10A-B-C and 20A-B-C; each level is taught in three tracks: N (no Chinese background), M (Mandarin speakers), D (dialect speakers)."
       }
     },
     {

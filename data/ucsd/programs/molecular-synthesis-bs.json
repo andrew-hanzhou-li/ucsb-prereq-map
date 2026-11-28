@@ -221,13 +221,15 @@
       "items": [
        {
         "type": "course",
-        "code": "CHEM 126",
-        "status": "inactive"
+        "code": "CHEM 126B",
+        "status": "active",
+        "was": "CHEM 126"
        },
        {
         "type": "course",
-        "code": "CHEM 127",
-        "status": "inactive"
+        "code": "CHEM 126A",
+        "status": "active",
+        "was": "CHEM 127"
        }
       ],
       "label": "Two quarters of physical chemistry"

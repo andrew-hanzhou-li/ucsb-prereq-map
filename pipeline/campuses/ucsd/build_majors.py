@@ -32,6 +32,7 @@ MAJORS_DIR = os.path.join("data", "ucsd", "majors")
 COURSES = os.path.join("data", "ucsd", "raw_courses.json")
 PROGRAMS_DIR = os.path.join("data", "ucsd", "programs")
 CATALOG_YEAR = "2026-27"
+RENUMBERED_TO = {}         # filled in main(): old code -> new code
 NODE_TYPES = {"course", "all", "choose", "units", "text", "tagged", "any", "range"}
 
 
@@ -51,6 +52,26 @@ def catalog_form(code, catalog):
             if other and other.groups() == (match.group(1), match.group(2), match.group(3)):
                 return c
     return code
+
+
+RENUMBERED = re.compile(r"(?:Renumbered from|Formerly(?: numbered)?) ((?:[A-Z]{2,5} ?)?\d+[A-Z]*(?:(?:,| and| or|/) ?(?:[A-Z]{2,5} )?\d+[A-Z]*)*)")
+
+
+def renumbered_courses(catalog):
+    """Old code -> new code, from the catalog's "Renumbered from CSE 154." and
+    "Formerly MATH 110A." notes. Majors pages still print some old numbers."""
+    found = {}
+    for code, info in catalog.items():
+        text = " ".join(info.get(k) or "" for k in ("description", "comments", "prereq_text"))
+        for match in RENUMBERED.finditer(text):
+            for part in re.split(r",| and| or|/", match.group(1)):
+                part = part.strip()
+                if not part:
+                    continue
+                if not re.match(r"[A-Z]", part):
+                    part = info["subject"] + " " + part
+                found.setdefault(re.sub(r"^([A-Z]+)(\d)", r"\1 \2", part), set()).add(code)
+    return {old: new.pop() for old, new in found.items() if len(new) == 1 and old not in catalog}
 
 
 def required_outright(node, catalog):
@@ -74,6 +95,8 @@ def expand(node, catalog, problems, where, required=frozenset()):
         return {"type": "text", "text": json.dumps(node)}
     if kind == "course":
         code = catalog_form(re.sub(r"\s+", " ", node.get("code", "").strip()), catalog)
+        if code not in catalog and code in RENUMBERED_TO:
+            return {"type": "course", "code": RENUMBERED_TO[code], "status": "active", "was": code}
         if code not in catalog:
             problems.append("%s: %s isn't in the catalog" % (where, code))
         return {"type": "course", "code": code, "status": "active" if code in catalog else "inactive"}
@@ -112,7 +135,7 @@ def expand(node, catalog, problems, where, required=frozenset()):
             problems.append("%s: choose %d from only %d items" % (where, out["count"], len(flat)))
     if kind == "units":
         out["units"] = node.get("units", 0)
-    for key in ("label", "notes"):
+    for key in ("label", "notes", "may_share"):
         if node.get(key):
             out[key] = node[key]
     if not flat:
@@ -135,6 +158,7 @@ def slug(name):
 def main():
     with open(COURSES, encoding="utf-8") as f:
         catalog = {c["code"]: c for c in json.load(f)["courses"]}
+    RENUMBERED_TO.update(renumbered_courses(catalog))
     index_path = os.path.join(PROGRAMS_DIR, "index.json")
     with open(index_path, encoding="utf-8") as f:
         listing = [m for m in json.load(f)["majors"] if m["kind"] != "major"]

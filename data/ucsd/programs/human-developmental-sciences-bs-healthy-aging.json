@@ -742,13 +742,15 @@
        },
        {
         "type": "course",
-        "code": "FMPH 110",
-        "status": "inactive"
+        "code": "PH 110",
+        "status": "active",
+        "was": "FMPH 110"
        },
        {
         "type": "course",
-        "code": "FMPH 120",
-        "status": "inactive"
+        "code": "PH 120",
+        "status": "active",
+        "was": "FMPH 120"
        },
        {
         "type": "course",
@@ -916,7 +918,8 @@
     ],
     "count": 1,
     "label": "Healthy Aging Project Practicum",
-    "notes": "A healthy aging project must be completed within one of the following BS practicum courses (note that the healthy aging project practicum may overlap with HDS Field Research or the methods elective)"
+    "notes": "A healthy aging project must be completed within one of the following BS practicum courses (note that the healthy aging project practicum may overlap with HDS Field Research or the methods elective)",
+    "may_share": true
    }
   },
   {

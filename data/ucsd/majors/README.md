@@ -45,6 +45,10 @@ expands from the course list:
     {"type": "any", "subject": "CSE", "level": "upper", "except": ["CSE 195"]}
     {"type": "range", "subject": "COGS", "from": 120, "to": 127}
 
+A requirement whose courses the catalog lets count elsewhere too ("the
+practicum may overlap with HDS Field Research") carries `"may_share": true`:
+the planner counts those courses there without using them up.
+
 ## Known limits
 
 - Rules that can't be written as nodes ("at least two different
@@ -70,4 +74,3 @@ Where the catalog page itself is unclear or contradicts itself. Each file follow
 - Math-Econ: ECON vs MATH pages disagree on the extra UD courses (followed MATH, MA33). Anthro: can MATH 10 and 20 series mix? Env Anthro: Field/Lab Experience required? LATI: ESD 119, UPS 130, ANAR 156-XL kept as printed.
 - USP: SOCI 153 vs 153C; USP 128B cross-listed with ANTH 128A (prob. 128B). Business Psych: PSYC/MGT pages differ on MGT 174, MGT 162 units. Math-Sec Ed: do EDS practicum courses count toward 13? Media Industries: can practice courses also count as electives?
 - Philosophy (all five files): the catalog lets an emphasis course also fill a core requirement. The planner counts each course once, so the files ask for the emphasis courses besides the core ones; the total is still fifteen.
-- Jewish Studies, Track 1: JWSP 101–104 "may be applied toward the elective course requirement". Counting each course once, a Track 1 student may be asked for up to three more courses than they need.

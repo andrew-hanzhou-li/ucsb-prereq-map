@@ -379,6 +379,17 @@ def check_campuses(p):
     check("ucsd: a third lab counts as an elective", rest["have"] == 1, rest)
     check("ucsd: the requirement list says a course counts under another requirement",
           ucsd.locator(".req-elsewhere").count() >= 1)
+    # ...unless the catalog lets a course count twice: Healthy Aging's
+    # practicum "may overlap with HDS Field Research" (HDS 191).
+    ucsd.evaluate("localStorage.removeItem('prereq.ucsd.plan')")
+    ucsd.goto(SITE + "?preview#ucsd/plan/human-developmental-sciences-bs-healthy-aging")
+    ucsd.wait_for_function("currentView === 'plan' && graph.major.id === 'UCSD-MAJOR-human-developmental-sciences-bs-healthy-aging'",
+                           timeout=15000)
+    ucsd.wait_for_timeout(300)
+    ucsd.evaluate("placeCourse('HDS 191'); planChanged()")
+    shared = ucsd.evaluate("graph.major.sections.map((s, i) => [s.name, progress(s.requirement, 's' + i)])"
+                           ".filter(([n]) => /practicum/i.test(n)).map(([n, p]) => p.have)")
+    check("ucsd: a course the catalog lets count twice counts in both places", shared == [1], shared)
     ucsd.goto(SITE + "?preview=off#campus")
     ucsd.wait_for_timeout(400)
     check("campus: ?preview=off turns the preview off", ucsd.locator(".campus-row.preview").count() == 0)

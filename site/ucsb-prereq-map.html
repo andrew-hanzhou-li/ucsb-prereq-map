@@ -2567,6 +2567,9 @@ function chooseShown(settings) {
     } else if (node.type === "and") {
       node.items.forEach(walk);
     } else if (node.type === "or") {
+      // A placement exam is the usual way in ("Math Placement Exam, or MATH
+      // 4C or MATH 10A"), so nothing needs adding for it.
+      if (node.items.some(item => item.type === "condition" && /(?<!advanced )placement/i.test(item.text || ""))) return;
       const options = node.items.filter(hasCourses);
       if (!options.length) return;
       const covered = options.some(option => coursesIn(option).some(code => result.has(code)));
@@ -4194,17 +4197,22 @@ function allocateCourses() {
   Object.defineProperty(counted, "somewhere", { value: countedSomewhere });   // every course counted anywhere
   for (const sections of Object.values(sectionsByProgram)) {
     const groups = [];
-    function visit(node, key) {
+    const oneOf = new Set();      // places of "one of" choices: their options never meet
+    // A requirement marked may_share ("the practicum may be the same course
+    // as Field Research") counts its courses without using them up.
+    function visit(node, key, share) {
       if (!node) return;
+      share = share || !!node.may_share;
+      if (node.type === "choose" && node.count === 1) oneOf.add(key);
       if (node.type === "course") {
-        if (node.code) groups.push({ kind: "course", key: key, need: 1, options: [{ code: node.code, key: key }] });
+        if (node.code) groups.push({ kind: "course", key: key, need: 1, share: share, options: [{ code: node.code, key: key }] });
         return;
       }
       if (!node.items) return;
       const kept = withoutTwins(node.items);
       if (node.type === "units") {
         const options = coursesInRequirement(node).map(code => ({ code: code, key: key }));
-        groups.push({ kind: "units", key: key, need: node.units, options: options });
+        groups.push({ kind: "units", key: key, need: node.units, share: share, options: options });
         return;
       }
       if (node.type === "choose") {
@@ -4212,24 +4220,34 @@ function allocateCourses() {
         node.items.forEach(function (item, i) {
           if (!kept.includes(item)) return;
           if (item.type === "course") { if (item.code) options.push({ code: item.code, key: key + "." + i }); }
-          else visit(item, key + "." + i);
+          else visit(item, key + "." + i, share);
         });
-        if (options.length) groups.push({ kind: "choose", key: key, need: node.count, options: options });
+        if (options.length) groups.push({ kind: "choose", key: key, need: node.count, share: share, options: options });
         return;
       }
-      node.items.forEach((item, i) => { if (kept.includes(item)) visit(item, key + "." + i); });
+      node.items.forEach((item, i) => { if (kept.includes(item)) visit(item, key + "." + i, share); });
     }
-    sections.forEach(([key, requirement]) => visit(requirement, key));
+    sections.forEach(([key, requirement]) => visit(requirement, key, false));
     groups.forEach((g, order) => { g.order = order; });
     groups.sort((a, b) => (a.options.length - b.options.length) || (a.order - b.order));
-    const used = new Set();
+    const usedAt = {};      // course -> the places it already counts
     const same = code => onlineBase(code) || code;     // a course and its online twin are one course
+    // Two places in different options of one "one of" choice can share a
+    // course: MATH 20D is in both "MATH 20A-E" and "honors MATH 31AH-CH +
+    // 20D", and a student takes only one of the two.
+    function apart(a, b) {
+      const x = a.split("."), y = b.split(".");
+      let i = 0;
+      while (i < x.length && i < y.length && x[i] === y[i]) i += 1;
+      return i < x.length && i < y.length && oneOf.has(x.slice(0, i).join("."));
+    }
+    const free = (code, key) => (usedAt[same(code)] || []).every(other => apart(other, key));
     for (const group of groups) {
       let got = 0;
       for (const option of group.options) {
         if (got >= group.need) break;
-        if (used.has(same(option.code)) || !inPlanOrDone(option.code)) continue;
-        used.add(same(option.code));
+        if (!inPlanOrDone(option.code) || (!group.share && !free(option.code, option.key))) continue;
+        if (!group.share) (usedAt[same(option.code)] = usedAt[same(option.code)] || []).push(option.key);
         countedSomewhere.add(option.code);
         if (group.kind === "units") {
           (counted[group.key] = counted[group.key] || []).push(option.code);
@@ -4334,7 +4352,8 @@ function requirementHtml(node, key, depth, sectionName, insideChoice) {
   // missing when the student simply took the other option, so it's left off.
   const showProgress = depth > 0 && !insideChoice;
   const canSlot = (node.type === "choose" || node.type === "units") && p.have < p.need &&
-                  node.items.every(i => i.type === "course") && slotsAllowed(sectionName);
+                  node.items.some(i => i.type === "course") &&
+                  node.items.every(i => i.type === "course" || i.type === "text") && slotsAllowed(sectionName);
   const slotButton = canSlot
     ? ' <button type="button" class="text-button" data-plan-elective="' + escapeHtml(key) + '">add a slot</button>'
     : "";
@@ -4854,14 +4873,31 @@ function autoFill(quiet) {
   for (const set of pickOneSets()) {
     const options = set.options;
     const offered = option => option.every(code => nodesById[code] && nodesById[code].status === "active");
-    // Prefer an option already done or planned; then the one with the
-    // fewest courses still to take (with AP Calculus AB, MATH 2A-B or 3A-B
-    // each need one more); then one the catalog still offers.
+    // Prefer an option already started (a course done or planned); then one
+    // that isn't honors; then the one with the fewest courses still to take
+    // (with AP Calculus AB, MATH 2A-B or 3A-B each need one more); then one
+    // the catalog still offers.
     const toTake = option => option.filter(code => !inPlanOrDone(code)).length;
-    const ranked = options.slice().sort((a, b) => (toTake(a) - toTake(b)) || (offered(b) - offered(a)));
+    // (An honors sequence such as MATH 31AH-BH-CH is shorter than the
+    // regular one but isn't what most students take.)
+    const started = option => option.some(code => inPlanOrDone(code));
+    const honors = option => option.filter(code => /honors/i.test((nodesById[code] || {}).title || "")).length;
+    // (And one taught in Fall, Winter or Spring: UCSD's POLI 30 ran only in
+    // summer lately, while POLI 30D runs all year.)
+    const regular = option => option.every(code => {
+      const quarters = (nodesById[code] || {}).offered || [];
+      return !quarters.length || quarters.some(q => q !== "Summer");
+    });
+    const ranked = options.slice().sort((a, b) => (started(b) - started(a)) || (honors(a) - honors(b)) ||
+                                                  (regular(b) - regular(a)) || (toTake(a) - toTake(b)) ||
+                                                  (offered(b) - offered(a)));
     const chosen = ranked.find(offered) || ranked[0];
     for (const option of options) {
-      if (option !== chosen) option.forEach(code => skip.add(code));
+      // (A course in both options, like MATH 20D, stays: the chosen one needs it.)
+      // (Nor a course the major requires anyway, like CSE 151B in AI.)
+      if (option !== chosen) option.forEach(code => {
+        if (!chosen.includes(code) && !(nodesById[code] && nodesById[code].role === "required")) skip.add(code);
+      });
     }
     if (set.required) chosen.forEach(code => needed.add(code));
   }
@@ -4883,8 +4919,12 @@ function autoFill(quiet) {
     (function visit(node, key) {
       if (!node.items) return;
       // A list of courses, or of short sequences ("ECE 152A + 152B"), to choose from.
+      // (A written rule in the list, such as "or another approved course",
+      // doesn't stop slots: the courses listed are still the choices.)
       const leafList = (node.type === "choose" || node.type === "units") &&
-        node.items.every(item => item.type === "course" || (item.items && item.items.every(c => c.type === "course")));
+        node.items.some(item => item.type !== "text") &&
+        node.items.every(item => item.type === "course" || item.type === "text" ||
+                                 (item.items && item.items.every(c => c.type === "course")));
       if (leafList && !(node.type === "choose" && node.count === 1 && node.items.length <= 4)) {
         if (!slotsAllowed(section.name)) return;
         let p = progress(node, key);
@@ -4949,14 +4989,31 @@ function repairOrder() {
 */
 function pickOneSets() {
   const sets = [];
+  // An option's courses: one course, or a group of them; inside a group, a
+  // "one of" list counts as its first course still offered ("POLI 5 or
+  // POLI 5D or ECON 5" -> POLI 5).
   function codesOf(item) {
     if (item.type === "course") return item.code ? [item.code] : null;
-    if (item.type === "all" && item.items.every(i => i.type === "course" && i.code)) return item.items.map(i => i.code);
+    if (item.type === "all") {
+      const parts = item.items.map(function (i) {
+        if (i.type === "course") return i.code ? [i.code] : null;
+        if (i.type === "choose" && i.count === 1 && i.items.every(c => c.type === "course" && c.code)) {
+          const first = i.items.find(c => nodesById[c.code] && nodesById[c.code].status === "active") || i.items[0];
+          return [first.code];
+        }
+        return null;
+      });
+      return parts.every(Boolean) ? parts.flat() : null;
+    }
     return null;
   }
   (function visitAll(nodes, required) {
     for (const node of nodes) {
-      if (node.type === "choose" && node.count === 1 && node.items.length >= 2 && node.items.length <= 4) {
+      // "One of" up to four courses, or of any number of course groups
+      // (Data Science: one of five two-course pairs). A longer list of
+      // single courses is an elective list and gets a slot instead.
+      const groups = node.items && node.items.every(i => i.type === "all");
+      if (node.type === "choose" && node.count === 1 && node.items.length >= 2 && (node.items.length <= 4 || groups)) {
         const options = node.items.map(codesOf);
         if (options.every(Boolean)) {
           sets.push({ options: options, required: required });
