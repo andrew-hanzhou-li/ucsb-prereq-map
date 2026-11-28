@@ -83,7 +83,8 @@ COUNT_ONLY = re.compile(r"^(?:Select|Complete|Choose|Take)\s+(?:at least\s+|a mi
                         r"\s+(?!units?\b)(?:[\w-]+\s+){0,4}?(?:courses?|sequences?|series|options?|concentrations?)\b", re.IGNORECASE)
 # "Select eight courses total, four in one area of concentration and two in …"
 TOTAL_RULE = re.compile(r"^(?:Select|Complete)\s+" + COUNT + r"\s+courses\s+total\b", re.IGNORECASE)
-ONE_OF_ANYWHERE = re.compile(r"\b(?:(?:complete|select|choose|take)\s+|from\s+)one of the following\b", re.IGNORECASE)
+ONE_OF_ANYWHERE = re.compile(r"\b(?:(?:complete|select|choose|take)\s+|from\s+)one of the following\b|"
+                             r"\b(?:by|may)\s+(?:selecting|taking|completing|select|take|complete)\s+one\b", re.IGNORECASE)
 # "Complete a minimum of five courses from the following tracks": one track.
 TRACKS = re.compile(r"\b(?:from|for) the following (?:tracks|concentrations|pathways)\b", re.IGNORECASE)
 # "It is preferred that the three additional upper-division courses … are selected from:"
@@ -314,7 +315,7 @@ class Converter:
                     "items": [{"type": "all", "label": subject, "items": courses} for subject, courses in by_subject.items()]}
         elif choose and EACH_RULE.search(line) and all(p["type"] != "course" for p in parts):
             # Each list gives N; "from each of three of the four" asks for three lists.
-            each = [{"type": "choose", "count": count_of(choose.group(1)), "items": unwrapped(p),
+            each = [{"type": "choose", "count": count_of(choose.group(1)), "items": lists_joined(unwrapped(p)),
                      **({"label": p["label"]} if p.get("label") else {})} for p in parts]
             # ("one course from three of the following four areas": three areas, one course each)
             areas = EACH_RULE.search(line).group("areas") or EACH_RULE.search(line).group("some")
@@ -329,7 +330,8 @@ class Converter:
             # ("Select one group of courses from:" chooses a group, not a course.)
             if (re.search(r"\b(?:courses?|electives?)\b", choose.group("what"), re.IGNORECASE) and counted_across(node)["type"] == "choose"
                     and not re.search(r"\b(?:groups?|series|sets?|sequences?|pairs?)\b", choose.group("what"), re.IGNORECASE)):
-                node["items"] = lists_joined(parts)
+                # ("Select two courses from" the 1, 2 and 4 series: courses, from any of them.)
+                node["items"] = lists_joined(parts, keep_series=False)
         elif ((counted := COUNT_ONLY.match(line)) and count_of(counted.group(1)) == len(or_pairs(parts, line))
               and len(or_pairs(parts, line)) < len(parts)):
             # "Complete four courses. Select either Mathematics 131B or 132." over five listed.
@@ -368,6 +370,11 @@ class Converter:
             # courses in a second area": six courses from the areas (the spread is in the notes).
             node = {"type": "choose", "count": count_of(split.group(1)) + count_of(split.group(2)),
                     "items": lists_joined(parts)}
+        elif (len(parts) >= 2 and all(p["type"] != "course" and p.get("_plain") for p in parts)
+              and re.search(r"\bor\b", line) and not re.search(r"\band/or\b", line)):
+            # "Students may take Labor Studies 10 and two lower-division courses from
+            # the following list or Labor Studies M1A, M1B, M1CW": two ways, one taken.
+            node = {"type": "choose", "count": 1, "items": parts}
         else:
             node = {"type": "all", "items": or_pairs(parts, line)}
         if node is not None and node["type"] == "choose":
@@ -545,15 +552,15 @@ def one_of_kind(parts, line):
     return parts
 
 
-def lists_joined(parts):
+def lists_joined(parts, keep_series=True):
     """For "N courses from" these lists: the courses of every plain list
     (an "all" that isn't a series), as one list. "Economics 104/104L" or
     "Physics 1 series" stay whole: one of them is one choice."""
     joined = []
     for part in parts:
-        series = re.search(r"series|sequence|/", part.get("label") or "", re.IGNORECASE)
+        series = keep_series and re.search(r"series|sequence|/", part.get("label") or "", re.IGNORECASE)
         if part["type"] == "all" and not series and not part.get("optional"):
-            joined.extend(lists_joined(part["items"]))
+            joined.extend(lists_joined(part["items"], keep_series))
         else:
             joined.append(part)
     return joined
