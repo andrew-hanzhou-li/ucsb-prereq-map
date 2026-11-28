@@ -96,7 +96,6 @@
      },
      {
       "type": "choose",
-      "count": 1,
       "items": [
        {
         "type": "course",
@@ -309,8 +308,9 @@
         "status": "active"
        }
       ],
-      "label": "LING 104–196",
-      "expanded_from": "range"
+      "count": 1,
+      "label": "Upper-Division Linguistics Elective",
+      "notes": "Select one upper-division elective in the Linguistics Department (minimum 4 graded units) from:"
      },
      {
       "type": "choose",

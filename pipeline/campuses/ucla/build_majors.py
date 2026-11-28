@@ -286,7 +286,7 @@ class Converter:
             # ("one course from three of the following four areas": three areas, one course each)
             areas = EACH_RULE.search(line).group("areas") or EACH_RULE.search(line).group("some")
             node = {"type": "choose", "count": count_of(areas), "items": each} if areas else {"type": "all", "items": each}
-        elif choose and (re.search(r"\bcourses?\b", choose.group("what"), re.IGNORECASE) or
+        elif choose and (re.search(r"\b(?:courses?|electives?)\b", choose.group("what"), re.IGNORECASE) or
                          not re.search(r"\bunits?\b", choose.group("what"), re.IGNORECASE)):
             # "Select one course from either group": the groups' courses are
             # one list (a group of courses isn't a single option). A list of
@@ -294,7 +294,7 @@ class Converter:
             node = {"type": "choose", "count": count_of(choose.group(1)), "items": parts}
             # (Unless the parts have rules of their own that share the count out.)
             # ("Select one group of courses from:" chooses a group, not a course.)
-            if (re.search(r"\bcourses?\b", choose.group("what"), re.IGNORECASE) and counted_across(node)["type"] == "choose"
+            if (re.search(r"\b(?:courses?|electives?)\b", choose.group("what"), re.IGNORECASE) and counted_across(node)["type"] == "choose"
                     and not re.search(r"\b(?:groups?|series|sets?|sequences?|pairs?)\b", choose.group("what"), re.IGNORECASE)):
                 node["items"] = lists_joined(parts)
         elif ((counted := COUNT_ONLY.match(line)) and count_of(counted.group(1)) == len(or_pairs(parts, line))
