@@ -24,6 +24,7 @@ The requisites are sentences inside the description:
     "Enforced corequisite: Mathematics 32B."    before or in the same quarter
     "Recommended requisite: course 1."          advice only: kept as a comment
     "Recommended preparation: …"                advice only: kept as a comment
+    "Limited to junior/senior majors."          a restriction: kept with the requisites
     "M7A is requisite to M7B, …"                about a later course: a comment
 They're taken out of the description into prereq_text (the required ones,
 corequisites marked "(may be taken concurrently)") and comments (the rest).
@@ -50,6 +51,8 @@ QUARTER_ORDER = ["Fall", "Winter", "Spring", "Summer"]
 REQUISITE = re.compile(
     r"(?P<label>(?:Enforced\s+|Recommended\s+)?(?:co)?requisites?|Recommended\s+preparation|Prerequisites?)\s*:\s*"
     r"(?P<text>(?:[^.]|\.(?=\d))*)\.", re.IGNORECASE)
+# "Limited to junior/senior Neuroscience majors with grades of B (3.0) or better."
+LIMITED = re.compile(r"\bLimited\s+to\s+(?:[^.]|\.(?=\d))*\.", re.IGNORECASE)
 SEQUENCE_NOTE = re.compile(r"(?:[A-Z]{0,2}\d+[A-Z]*\s+is\s+)?requisite\s+to\s+(?:[^.]|\.(?=\d))*\.", re.IGNORECASE)
 
 
@@ -85,6 +88,9 @@ def split_description(text):
         return " "
 
     body = REQUISITE.sub(take, text)
+    # "Limited to seniors." is a restriction on who may enroll: kept with
+    # the requisites, as UCSB's and UCSD's "restricted to" are.
+    body = LIMITED.sub(lambda m: required.append(m.group(0).rstrip(".")) or " ", body)
     body = SEQUENCE_NOTE.sub(lambda m: comments.append(m.group(0).strip()) or " ", body)
     prereq = "; and ".join(r for r in required if r)
     return re.sub(r"\s+", " ", body).strip(), prereq, " ".join(comments)

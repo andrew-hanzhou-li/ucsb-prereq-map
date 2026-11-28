@@ -75,7 +75,9 @@ def from_notation(text):
     text = text.strip()
     if text == "-":
         return None
-    tokens = re.findall(r"\(|\)|&|\||[^()&|]+", text)
+    # "&" between two capital letters is part of a code (UCLA's "C&EE 110",
+    # "MECH&AE 101"); anywhere else it joins items.
+    tokens = re.findall(r"\(|\)|\||(?<![A-Z])&|&(?![A-Z])|(?:[^()&|]|(?<=[A-Z])&(?=[A-Z]))+", text)
     tokens = [t.strip() for t in tokens if t.strip()]
     node, position = _read_group(tokens, 0)
     if position != len(tokens):

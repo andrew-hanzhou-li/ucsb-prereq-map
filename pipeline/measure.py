@@ -143,7 +143,7 @@ def main():
     if not quiet:
         for test, expected, got in misses:
             print("%s  [%s/%s]" % (test["code"], test["group"], test["set"]))
-            print("  text:     " + test["prereq_text"])
+            print("  text:     " + (test.get("prereq_text") or test.get("description", ""))[:400])
             print("  expected: " + expected)
             print("  got:      " + got)
             print()
