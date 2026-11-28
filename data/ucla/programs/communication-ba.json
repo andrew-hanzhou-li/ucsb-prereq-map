@@ -682,24 +682,36 @@
       "type": "choose",
       "items": [
        {
-        "type": "course",
-        "code": "COMPTNG 10A",
-        "status": "active"
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "COMPTNG 10A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COMPTNG 10B",
+          "status": "active"
+         }
+        ],
+        "label": "Program in Computing"
        },
        {
-        "type": "course",
-        "code": "COMPTNG 10B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "COM SCI 31",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "COM SCI 32",
-        "status": "active"
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "COM SCI 31",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM SCI 32",
+          "status": "active"
+         }
+        ],
+        "label": "Computer Science"
        }
       ],
       "count": 1,

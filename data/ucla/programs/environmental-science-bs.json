@@ -231,223 +231,10 @@
       "notes": "Select one course from:"
      },
      {
-      "type": "all",
-      "items": [
-       {
-        "type": "course",
-        "code": "CHEM 14C",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CHEM 30A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "MATH 3C",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "MATH 32A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "PHYSICS 1C",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "PHYSICS 5B",
-        "status": "active"
-       }
-      ],
-      "label": "Atmospheric and Oceanic Sciences Minor",
-      "notes": "For the Atmospheric and Oceanic Sciences minor, one course selected from the following is also required:"
-     },
-     {
-      "type": "choose",
-      "items": [
-       {
-        "type": "choose",
-        "items": [
-         {
-          "type": "course",
-          "code": "CHEM 14C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CHEM 30A",
-          "status": "active"
-         }
-        ],
-        "count": 1,
-        "label": "Chemistry 14C or 30A",
-        "notes": "Select one course from:"
-       },
-       {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "LIFESCI 7C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "LIFESCI 7L",
-          "status": "active"
-         }
-        ],
-        "label": "Life Sciences 7C and 23L"
-       }
-      ],
-      "count": 1,
-      "label": "Conservation Biology Minor",
-      "notes": "For the Conservation Biology minor, one or two courses from one of the following options is also required:"
-     },
-     {
       "type": "choose",
       "items": [
        {
         "type": "all",
-        "items": [
-         {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "EPS SCI 1",
-            "status": "active"
-           },
-           {
-            "type": "all",
-            "items": [
-             {
-              "type": "course",
-              "code": "CLUSTER 70A",
-              "status": "active"
-             },
-             {
-              "type": "choose",
-              "count": 1,
-              "items": [
-               {
-                "type": "course",
-                "code": "EPS SCI 3",
-                "status": "active"
-               },
-               {
-                "type": "course",
-                "code": "EPS SCI 5",
-                "status": "active"
-               },
-               {
-                "type": "course",
-                "code": "EPS SCI M7",
-                "status": "active"
-               },
-               {
-                "type": "course",
-                "code": "EPS SCI 8",
-                "status": "active"
-               },
-               {
-                "type": "course",
-                "code": "EPS SCI 9",
-                "status": "active"
-               },
-               {
-                "type": "course",
-                "code": "EPS SCI 10",
-                "status": "active"
-               },
-               {
-                "type": "course",
-                "code": "EPS SCI 13",
-                "status": "active"
-               },
-               {
-                "type": "course",
-                "code": "EPS SCI 15",
-                "status": "active"
-               },
-               {
-                "type": "course",
-                "code": "EPS SCI 16",
-                "status": "active"
-               },
-               {
-                "type": "course",
-                "code": "EPS SCI 17",
-                "status": "active"
-               }
-              ],
-              "label": "EPS SCI 3–17",
-              "expanded_from": "range"
-             }
-            ],
-            "label": "Substitution",
-            "notes": "Earth, Planetary, and Space Sciences 1 may be substituted with a course from the following range or listed course:",
-            "optional": true
-           }
-          ],
-          "label": "Earth, Planetary, and Space Sciences 1"
-         },
-         {
-          "type": "choose",
-          "items": [
-           {
-            "type": "course",
-            "code": "EPS SCI 51",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "EPS SCI 61",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "EPS SCI M71",
-            "status": "active"
-           }
-          ],
-          "count": 1,
-          "label": "Earth, Planetary, and Space Sciences 51, 61, or M71",
-          "notes": "Select one course from:"
-         }
-        ],
-        "label": "Option 1"
-       },
-       {
-        "type": "choose",
-        "items": [
-         {
-          "type": "course",
-          "code": "EPS SCI 51",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "EPS SCI 61",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "EPS SCI M71",
-          "status": "active"
-         }
-        ],
-        "count": 2,
-        "label": "Option 2",
-        "notes": "Select two courses from:"
-       },
-       {
-        "type": "choose",
         "items": [
          {
           "type": "course",
@@ -480,172 +267,295 @@
           "status": "active"
          }
         ],
+        "label": "Atmospheric and Oceanic Sciences Minor",
+        "notes": "For the Atmospheric and Oceanic Sciences minor, one course selected from the following is also required:"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "choose",
+          "items": [
+           {
+            "type": "course",
+            "code": "CHEM 14C",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 30A",
+            "status": "active"
+           }
+          ],
+          "count": 1,
+          "label": "Chemistry 14C or 30A",
+          "notes": "Select one course from:"
+         },
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "LIFESCI 7C",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "LIFESCI 7L",
+            "status": "active"
+           }
+          ],
+          "label": "Life Sciences 7C and 23L"
+         }
+        ],
         "count": 1,
-        "label": "Additional Course",
-        "notes": "Select one course from:"
-       }
-      ],
-      "count": 1,
-      "label": "Earth and Environmental Science Minor",
-      "notes": "For the Earth and Environmental Science minor, complete one of the following two options and one additional course."
-     },
-     {
-      "type": "all",
-      "items": [
-       {
-        "type": "course",
-        "code": "MATH 3C",
-        "status": "active"
+        "label": "Conservation Biology Minor",
+        "notes": "For the Conservation Biology minor, one or two courses from one of the following options is also required:"
        },
        {
-        "type": "course",
-        "code": "MATH 32A",
-        "status": "active"
-       }
-      ],
-      "label": "Environmental Engineering Minor",
-      "notes": "For the Environmental Engineering minor, one additional course from the following is also required:"
-     },
-     {
-      "type": "choose",
-      "items": [
-       {
-        "type": "course",
-        "code": "PUB HLT 50A",
-        "status": "active"
+        "type": "choose",
+        "items": [
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "all",
+            "items": [
+             {
+              "type": "course",
+              "code": "EPS SCI 1",
+              "status": "active"
+             },
+             {
+              "type": "all",
+              "items": [
+               {
+                "type": "course",
+                "code": "CLUSTER 70A",
+                "status": "active"
+               },
+               {
+                "type": "choose",
+                "count": 1,
+                "items": [
+                 {
+                  "type": "course",
+                  "code": "EPS SCI 3",
+                  "status": "active"
+                 },
+                 {
+                  "type": "course",
+                  "code": "EPS SCI 5",
+                  "status": "active"
+                 },
+                 {
+                  "type": "course",
+                  "code": "EPS SCI M7",
+                  "status": "active"
+                 },
+                 {
+                  "type": "course",
+                  "code": "EPS SCI 8",
+                  "status": "active"
+                 },
+                 {
+                  "type": "course",
+                  "code": "EPS SCI 9",
+                  "status": "active"
+                 },
+                 {
+                  "type": "course",
+                  "code": "EPS SCI 10",
+                  "status": "active"
+                 },
+                 {
+                  "type": "course",
+                  "code": "EPS SCI 13",
+                  "status": "active"
+                 },
+                 {
+                  "type": "course",
+                  "code": "EPS SCI 15",
+                  "status": "active"
+                 },
+                 {
+                  "type": "course",
+                  "code": "EPS SCI 16",
+                  "status": "active"
+                 },
+                 {
+                  "type": "course",
+                  "code": "EPS SCI 17",
+                  "status": "active"
+                 }
+                ],
+                "label": "EPS SCI 3–17",
+                "expanded_from": "range"
+               }
+              ],
+              "label": "Substitution",
+              "notes": "Earth, Planetary, and Space Sciences 1 may be substituted with a course from the following range or listed course:",
+              "optional": true
+             }
+            ],
+            "label": "Earth, Planetary, and Space Sciences 1"
+           },
+           {
+            "type": "choose",
+            "items": [
+             {
+              "type": "course",
+              "code": "EPS SCI 51",
+              "status": "active"
+             },
+             {
+              "type": "course",
+              "code": "EPS SCI 61",
+              "status": "active"
+             },
+             {
+              "type": "course",
+              "code": "EPS SCI M71",
+              "status": "active"
+             }
+            ],
+            "count": 1,
+            "label": "Earth, Planetary, and Space Sciences 51, 61, or M71",
+            "notes": "Select one course from:"
+           }
+          ],
+          "label": "Option 1"
+         },
+         {
+          "type": "choose",
+          "items": [
+           {
+            "type": "course",
+            "code": "EPS SCI 51",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EPS SCI 61",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EPS SCI M71",
+            "status": "active"
+           }
+          ],
+          "count": 2,
+          "label": "Option 2",
+          "notes": "Select two courses from:"
+         },
+         {
+          "type": "choose",
+          "items": [
+           {
+            "type": "course",
+            "code": "CHEM 14C",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 30A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MATH 3C",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MATH 32A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PHYSICS 1C",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PHYSICS 5B",
+            "status": "active"
+           }
+          ],
+          "count": 1,
+          "label": "Additional Course",
+          "notes": "Select one course from:"
+         }
+        ],
+        "count": 1,
+        "label": "Earth and Environmental Science Minor",
+        "notes": "For the Earth and Environmental Science minor, complete one of the following two options and one additional course."
        },
        {
-        "type": "course",
-        "code": "PUB HLT C150",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CHEM 14C",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CHEM 30A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "LIFESCI 7C",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "LIFESCI 7L",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "MATH 3C",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "MATH 32A",
-        "status": "active"
-       }
-      ],
-      "count": 1,
-      "label": "Environmental Health Science Minor",
-      "notes": "Select one course from the following and complete one additional course."
-     },
-     {
-      "type": "all",
-      "items": [
-       {
-        "type": "course",
-        "code": "CHEM 14C",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CHEM 30A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "EPS SCI 1",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "LIFESCI 7C",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "LIFESCI 7L",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "MATH 3C",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "MATH 32A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "PHYSICS 1C",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "PHYSICS 5B",
-        "status": "active"
-       }
-      ],
-      "label": "Required for the Environmental Systems and Society Minor",
-      "notes": "For the Environmental Systems and Society minor, one course from the following is also required. Students selecting Life Sciences 7C must also complete 23L."
-     },
-     {
-      "type": "all",
-      "items": [
-       {
-        "type": "course",
-        "code": "GEOG 5",
-        "status": "active"
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 3C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 32A",
+          "status": "active"
+         }
+        ],
+        "label": "Environmental Engineering Minor",
+        "notes": "For the Environmental Engineering minor, one additional course from the following is also required:"
        },
        {
         "type": "choose",
         "items": [
          {
           "type": "course",
-          "code": "GEOG 1",
+          "code": "PUB HLT 50A",
           "status": "active"
          },
          {
           "type": "course",
-          "code": "GEOG 2",
+          "code": "PUB HLT C150",
           "status": "active"
          },
          {
           "type": "course",
-          "code": "GEOG 3",
+          "code": "CHEM 14C",
           "status": "active"
          },
          {
           "type": "course",
-          "code": "GEOG 4",
+          "code": "CHEM 30A",
           "status": "active"
          },
          {
           "type": "course",
-          "code": "GEOG 6",
+          "code": "LIFESCI 7C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LIFESCI 7L",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 3C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MATH 32A",
           "status": "active"
          }
         ],
         "count": 1,
-        "label": "Geography Elective",
-        "notes": "Select one course from:"
+        "label": "Environmental Health Science Minor",
+        "notes": "Select one course from the following and complete one additional course."
        },
        {
         "type": "all",
@@ -696,12 +606,109 @@
           "status": "active"
          }
         ],
-        "label": "Additional Course",
-        "notes": "Students selecting Life Sciences 7C must also complete 23L."
+        "label": "Required for the Environmental Systems and Society Minor",
+        "notes": "For the Environmental Systems and Society minor, one course from the following is also required. Students selecting Life Sciences 7C must also complete 23L."
+       },
+       {
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "GEOG 5",
+          "status": "active"
+         },
+         {
+          "type": "choose",
+          "items": [
+           {
+            "type": "course",
+            "code": "GEOG 1",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "GEOG 2",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "GEOG 3",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "GEOG 4",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "GEOG 6",
+            "status": "active"
+           }
+          ],
+          "count": 1,
+          "label": "Geography Elective",
+          "notes": "Select one course from:"
+         },
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "CHEM 14C",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 30A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EPS SCI 1",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "LIFESCI 7C",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "LIFESCI 7L",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MATH 3C",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MATH 32A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PHYSICS 1C",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PHYSICS 5B",
+            "status": "active"
+           }
+          ],
+          "label": "Additional Course",
+          "notes": "Students selecting Life Sciences 7C must also complete 23L."
+         }
+        ],
+        "label": "Geography/Environmental Studies Minor",
+        "notes": "For the Geography/Environmental Studies minor, three courses as follows are also required. Students should take these courses before enrolling in upper-division courses."
        }
       ],
-      "label": "Geography/Environmental Studies Minor",
-      "notes": "For the Geography/Environmental Studies minor, three courses as follows are also required. Students should take these courses before enrolling in upper-division courses."
+      "count": 1,
+      "label": "One minor"
      }
     ],
     "label": "Preparation for the Major"
@@ -1187,7 +1194,7 @@
       "label": "Practicum/Sustainability Talks Requirements"
      },
      {
-      "type": "all",
+      "type": "choose",
       "items": [
        {
         "type": "all",
@@ -2960,8 +2967,8 @@
         "notes": "Complete three required courses and two additional upper-division geography courses."
        }
       ],
-      "label": "Minor and Concentration Requirements",
-      "notes": "A minimum of 20 units applied toward the minor requirements must be in addition to units applied toward major requirements or another minor. Successful completion of a minor is indicated on the transcript and diploma."
+      "count": 1,
+      "label": "One minor"
      }
     ],
     "label": "The Major"

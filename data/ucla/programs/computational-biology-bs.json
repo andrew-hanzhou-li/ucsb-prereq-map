@@ -43,57 +43,64 @@
           "type": "choose",
           "items": [
            {
-            "type": "all",
+            "type": "choose",
             "items": [
              {
-              "type": "course",
-              "code": "C&S BIO 100",
-              "status": "active"
-             }
-            ],
-            "label": "Pathway I"
-           },
-           {
-            "type": "all",
-            "items": [
-             {
-              "type": "choose",
+              "type": "all",
               "items": [
                {
                 "type": "course",
-                "code": "STATS 100A",
-                "status": "active"
-               },
-               {
-                "type": "course",
-                "code": "MATH 170E",
+                "code": "C&S BIO 100",
                 "status": "active"
                }
               ],
-              "count": 1,
-              "label": "Probability",
-              "notes": "Select one course from:"
+              "label": "Pathway I"
              },
              {
-              "type": "choose",
+              "type": "all",
               "items": [
                {
-                "type": "course",
-                "code": "STATS 100B",
-                "status": "active"
+                "type": "choose",
+                "items": [
+                 {
+                  "type": "course",
+                  "code": "STATS 100A",
+                  "status": "active"
+                 },
+                 {
+                  "type": "course",
+                  "code": "MATH 170E",
+                  "status": "active"
+                 }
+                ],
+                "count": 1,
+                "label": "Probability",
+                "notes": "Select one course from:"
                },
                {
-                "type": "course",
-                "code": "MATH 170S",
-                "status": "active"
+                "type": "choose",
+                "items": [
+                 {
+                  "type": "course",
+                  "code": "STATS 100B",
+                  "status": "active"
+                 },
+                 {
+                  "type": "course",
+                  "code": "MATH 170S",
+                  "status": "active"
+                 }
+                ],
+                "count": 1,
+                "label": "Statistics",
+                "notes": "Select one course from:"
                }
               ],
-              "count": 1,
-              "label": "Statistics",
-              "notes": "Select one course from:"
+              "label": "Pathway II"
              }
             ],
-            "label": "Pathway II"
+            "count": 1,
+            "label": "One plan"
            }
           ],
           "count": 1,

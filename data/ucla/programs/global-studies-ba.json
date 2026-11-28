@@ -874,7 +874,7 @@
       "notes": "Select six elective courses, two from each of the following categories:"
      },
      {
-      "type": "all",
+      "type": "choose",
       "items": [
        {
         "type": "all",
@@ -941,8 +941,8 @@
         "label": "Option 4"
        }
       ],
-      "label": "Required Summer Global Learning Institute",
-      "notes": "After successful completion of two courses from Global Studies 102, 103, 104, students are expected to attend a summer Global Learning Institute at one of several locations around the world in which they enroll in one of the following options:"
+      "count": 1,
+      "label": "One plan"
      },
      {
       "type": "all",

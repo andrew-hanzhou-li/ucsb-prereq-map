@@ -130,7 +130,7 @@
       "type": "choose",
       "items": [
        {
-        "type": "all",
+        "type": "choose",
         "items": [
          {
           "type": "course",
@@ -143,10 +143,11 @@
           "status": "active"
          }
         ],
+        "count": 2,
         "label": "Numerical Analysis"
        },
        {
-        "type": "all",
+        "type": "choose",
         "items": [
          {
           "type": "all",
@@ -181,10 +182,11 @@
           "label": "Statistics"
          }
         ],
+        "count": 2,
         "label": "Probability and Statistics"
        },
        {
-        "type": "all",
+        "type": "choose",
         "items": [
          {
           "type": "course",
@@ -197,6 +199,7 @@
           "status": "active"
          }
         ],
+        "count": 2,
         "label": "Differential Equations"
        }
       ],

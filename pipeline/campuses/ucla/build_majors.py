@@ -241,7 +241,9 @@ class Converter:
                 if node:
                     node = dict(node)
                     node["_plain"] = not plain(item.get("description"))     # a list with no rule of its own
+                    node["_line"] = plain(item.get("description"))
                     parts.append(node)
+        parts = one_of_kind(parts, line)
         node = None
         units = UNITS_RULE.match(line)
         choose = CHOOSE_RULE.match(line)
@@ -286,7 +288,9 @@ class Converter:
             # series ("Select one of the following series") stays as options.
             node = {"type": "choose", "count": count_of(choose.group(1)), "items": parts}
             # (Unless the parts have rules of their own that share the count out.)
-            if re.search(r"\bcourses?\b", choose.group("what"), re.IGNORECASE) and counted_across(node)["type"] == "choose":
+            # ("Select one group of courses from:" chooses a group, not a course.)
+            if (re.search(r"\bcourses?\b", choose.group("what"), re.IGNORECASE) and counted_across(node)["type"] == "choose"
+                    and not re.search(r"\b(?:groups?|series|sets?|sequences?|pairs?)\b", choose.group("what"), re.IGNORECASE)):
                 node["items"] = lists_joined(parts)
         elif ((counted := COUNT_ONLY.match(line)) and not ALL_RULE.match(line)
               and count_of(counted.group(1)) < sum(50 if p["type"] in ("range", "any") else 1 for p in lists_joined(parts))
@@ -295,7 +299,8 @@ class Converter:
             # "Select three courses:" / "Complete seven elective courses" over a longer list
             node = {"type": "choose", "count": count_of(counted.group(1)), "items": lists_joined(parts)}
         elif (upper := UPPER_RULE.match(line)) and self.subject_code(upper.group(2)) and \
-                count_of(upper.group(1)) > sum(1 for p in parts if p["type"] == "course"):
+                count_of(upper.group(1)) > sum(1 for p in parts if p["type"] == "course") and \
+                not any(p["type"] in ("all", "choose", "units") and not p.get("optional") for p in parts):
             # "Complete seven upper-division Latin courses, including course 110":
             # the courses named, and the rest from any upper-division Latin course.
             named = [p for p in parts if p["type"] == "course"]
@@ -327,6 +332,7 @@ class Converter:
             node = counted_across(node)
         for part in parts:
             part.pop("_plain", None)
+            part.pop("_line", None)
         if node is not None and node["type"] in ("all", "choose", "units"):
             # Optional groups count only where the major requires them as a whole:
             # inside a choice, "the honors series" is one of the ways to meet it.
@@ -460,6 +466,30 @@ def counted_across(node):
     out = {k: v for k, v in dict(node, type="all").items() if k != "count"}
     out["items"] = node["items"] + [extra]
     return out
+
+
+def one_of_kind(parts, line):
+    """A student completes one minor, one plan: "For the Conservation Biology
+    minor, … is also required", "Plan I—Research Immersion" and "Plan II—
+    Advanced Independent Research". Two or more such parts become one "one of"."""
+    def kind(part):
+        label = (part.get("label") or "").strip()
+        own = part.get("_line") or ""
+        if re.search(r"\bminor$", label, re.IGNORECASE) or re.match(r"(?:For|Required for) the [^,]* minor\b", own, re.IGNORECASE) \
+                or re.match(r"Required for the .* minor", label, re.IGNORECASE):
+            return "minor"
+        if re.match(r"(?:Plan|Option|Pathway)\s+(?:[IVX]+|\d+|[A-Z])\b", label):
+            return "plan"
+        return None
+    for which in ("minor", "plan"):
+        picked = [p for p in parts if p["type"] != "course" and not p.get("optional") and kind(p) == which]
+        if len(picked) < 2 or (which == "plan" and len(picked) != len([p for p in parts if p["type"] != "text"])):
+            continue
+        choice = {"type": "choose", "count": 1, "label": "One " + which, "items": picked}
+        at = parts.index(picked[0])
+        parts = [p for p in parts if p not in picked]
+        parts.insert(at, choice)
+    return parts
 
 
 def lists_joined(parts):

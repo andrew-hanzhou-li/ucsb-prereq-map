@@ -768,28 +768,35 @@
       "type": "choose",
       "items": [
        {
-        "type": "all",
+        "type": "choose",
         "items": [
          {
-          "type": "course",
-          "code": "DIS STD 195CE",
-          "status": "active"
-         }
-        ],
-        "label": "Option 1",
-        "notes": "Complete two quarters of Disability Studies 195CE."
-       },
-       {
-        "type": "all",
-        "items": [
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "DIS STD 195CE",
+            "status": "active"
+           }
+          ],
+          "label": "Option 1",
+          "notes": "Complete two quarters of Disability Studies 195CE."
+         },
          {
-          "type": "course",
-          "code": "DIS STD 196",
-          "status": "active"
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "DIS STD 196",
+            "status": "active"
+           }
+          ],
+          "label": "Option 2",
+          "notes": "Complete two quarters of Disability Studies 196."
          }
         ],
-        "label": "Option 2",
-        "notes": "Complete two quarters of Disability Studies 196."
+        "count": 1,
+        "label": "One plan"
        }
       ],
       "count": 1,

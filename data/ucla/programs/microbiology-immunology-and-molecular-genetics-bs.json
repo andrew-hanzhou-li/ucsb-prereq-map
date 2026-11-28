@@ -272,7 +272,7 @@
   {
    "name": "The Major",
    "requirement": {
-    "type": "all",
+    "type": "choose",
     "items": [
      {
       "type": "all",
@@ -791,24 +791,36 @@
         "type": "choose",
         "items": [
          {
-          "type": "course",
-          "code": "MIMG 196A",
-          "status": "active"
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "MIMG 196A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MIMG 196B",
+            "status": "active"
+           }
+          ],
+          "label": "Microbiology"
          },
          {
-          "type": "course",
-          "code": "MIMG 196B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MCD BIO 196A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MCD BIO 196B",
-          "status": "active"
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "MCD BIO 196A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MCD BIO 196B",
+            "status": "active"
+           }
+          ],
+          "label": "Molecular, Cell, and Developmental Biology"
          }
         ],
         "count": 1,
@@ -819,24 +831,36 @@
         "type": "choose",
         "items": [
          {
-          "type": "course",
-          "code": "MIMG 180A",
-          "status": "active"
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "MIMG 180A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MIMG 180B",
+            "status": "active"
+           }
+          ],
+          "label": "Microbiology"
          },
          {
-          "type": "course",
-          "code": "MIMG 180B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MCD BIO 180A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MCD BIO 180B",
-          "status": "active"
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "MCD BIO 180A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MCD BIO 180B",
+            "status": "active"
+           }
+          ],
+          "label": "Molecular, Cell, and Developmental Biology"
          }
         ],
         "count": 1,
@@ -1238,8 +1262,8 @@
       "label": "Plan II—Advanced Independent Research"
      }
     ],
-    "label": "The Major",
-    "notes": "Two plans are offered by the department."
+    "count": 1,
+    "label": "One plan"
    }
   },
   {

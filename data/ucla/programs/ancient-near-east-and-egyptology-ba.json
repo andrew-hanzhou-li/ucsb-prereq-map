@@ -81,232 +81,267 @@
       "type": "choose",
       "items": [
        {
-        "type": "course",
-        "code": "AN N EA CM101A",
-        "status": "active"
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "AN N EA CM101A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "AN N EA CM101B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "AN N EA M101C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "AN N EA M105",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "AN N EA 160",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "AN N EA 161",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "AN N EA M162",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "AN N EA CM163",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "AN N EA M164",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "AN N EA C165",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "AN N EA M166",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "AN N EA CM169",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ISLM ST M111",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ISLM ST M112",
+          "status": "active"
+         }
+        ],
+        "count": 1,
+        "label": "Archaeology and Art"
        },
        {
-        "type": "course",
-        "code": "AN N EA CM101B",
-        "status": "active"
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "AN N EA M103A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "AN N EA M103B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "AN N EA M104A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "AN N EA C106A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "AN N EA M110A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "AN N EA M110B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "AN N EA M110C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "JEWISH M182A",
+          "status": "active"
+         }
+        ],
+        "count": 1,
+        "label": "History"
        },
        {
-        "type": "course",
-        "code": "AN N EA M101C",
-        "status": "active"
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "AN N EA 120A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "AN N EA 120B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "AN N EA 120C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "AN N EA 140A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "AN N EA 140B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "AN N EA 140C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "AN N EA M168A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HEBREW 110A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HEBREW 110B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HEBREW 110C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SEMITIC M140A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SEMITIC 140B",
+          "status": "active"
+         }
+        ],
+        "count": 1,
+        "label": "Languages"
        },
        {
-        "type": "course",
-        "code": "AN N EA M105",
-        "status": "active"
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "AN N EA M150A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "AN N EA 150B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "JEWISH M150A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "JEWISH 170",
+          "status": "active"
+         }
+        ],
+        "count": 1,
+        "label": "Literature"
        },
        {
-        "type": "course",
-        "code": "AN N EA 160",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "AN N EA 161",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "AN N EA M162",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "AN N EA CM163",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "AN N EA M164",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "AN N EA C165",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "AN N EA M166",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "AN N EA CM169",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ISLM ST M111",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ISLM ST M112",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "AN N EA M103A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "AN N EA M103B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "AN N EA M104A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "AN N EA C106A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "AN N EA M110A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "AN N EA M110B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "AN N EA M110C",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "JEWISH M182A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "AN N EA 120A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "AN N EA 120B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "AN N EA 120C",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "AN N EA 140A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "AN N EA 140B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "AN N EA 140C",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "AN N EA M168A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "HEBREW 110A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "HEBREW 110B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "HEBREW 110C",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "SEMITIC M140A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "SEMITIC 140B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "AN N EA M150A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "AN N EA 150B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "JEWISH M150A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "JEWISH 170",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "AN N EA M130",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "AN N EA M135",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "AN N EA M167",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "AN N EA M170",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "AN N EA M185D",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "IRANIAN 170",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "JEWISH M155",
-        "status": "active"
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "AN N EA M130",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "AN N EA M135",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "AN N EA M167",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "AN N EA M170",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "AN N EA M185D",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "IRANIAN 170",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "JEWISH M155",
+          "status": "active"
+         }
+        ],
+        "count": 1,
+        "label": "Religion"
        }
       ],
-      "count": 1,
+      "count": 4,
       "label": "Required Core Courses:",
       "notes": "Select one course from four of the following five areas (total of four courses):"
      },
