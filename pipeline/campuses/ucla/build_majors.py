@@ -102,6 +102,7 @@ PART_UNITS = re.compile(r"^(?:Select\s+)?(\d+|" + "|".join(NUMBER_WORDS) + r")\s
 UNITS_MINIMUM = re.compile(r"\((\d+)\s+units\s+minimum\)", re.IGNORECASE)
 FIELD_SPLIT = re.compile(COUNT + r"\s+courses?\s+in\s+the\s+([^.]*?)\s+field\s+and\s+" + COUNT +
                          r"\s+in\s+each\s+of\s+the\s+other\b", re.IGNORECASE)
+SOME_FROM = re.compile(r"\b" + COUNT + r"\s+(?:additional\s+)?courses?\s+(?:selected\s+)?from\s+the\s+following\b", re.IGNORECASE)
 ONLY_ONE = re.compile(r"^Only one (?:course|of these courses) may (?:apply|be applied)\.?$", re.IGNORECASE)
 SPLIT_RULE = re.compile(r"^Select\b[^:]*?\b" + COUNT + r"\s+courses?\b[^:]*?\band\s+" + COUNT + r"\s+courses?\b", re.IGNORECASE)
 ALL_RULE = re.compile(r"^(?:Complete|Take)\b[^:]*\b(?:as follows|the following|all)\b", re.IGNORECASE)
@@ -306,6 +307,11 @@ class Converter:
                 return count_of(fields.group(1)) if parts.index(part) == best else count_of(fields.group(3))
             node = {"type": "all", "items": [{"type": "choose", "count": field_count(p), "items": lists_joined(unwrapped(p)),
                                               **({"label": p["label"]} if p.get("label") else {})} for p in parts]}
+        elif re.search(r",\s*and\s+" + COUNT + r"\s+(?:[\w-]+\s+){0,2}courses?\b", line) and \
+                all(p["type"] not in ("course", "range", "any") for p in parts):
+            # "Complete one course from EHS 100 or 120, and five elective courses …":
+            # each part has its own count; all of them.
+            node = {"type": "all", "items": parts}
         elif ONE_MUST.match(line) and parts:
             # "One of the 16 courses for the preparation and major must be in history
             # before 1700 CE": one of these, which also counts where it's listed.
@@ -355,7 +361,7 @@ class Converter:
             # ("one course from three of the following four areas": three areas, one course each)
             areas = EACH_RULE.search(line).group("areas") or EACH_RULE.search(line).group("some")
             node = {"type": "choose", "count": count_of(areas), "items": each} if areas else {"type": "all", "items": each}
-        elif choose and (re.search(r"\b(?:courses?|electives?)\b", choose.group("what"), re.IGNORECASE) or
+        elif choose and not re.search(r",\s*and\s+" + COUNT + r"\b", line) and (re.search(r"\b(?:courses?|electives?)\b", choose.group("what"), re.IGNORECASE) or
                          not re.search(r"\bunits?\b", choose.group("what"), re.IGNORECASE)):
             # "Select one course from either group": the groups' courses are
             # one list (a group of courses isn't a single option). A list of
@@ -409,6 +415,8 @@ class Converter:
                     "items": lists_joined(parts)}
         elif (len(parts) >= 2 and all(p["type"] not in ("course", "text") for p in parts)
               and re.search(r"\bor\b", line) and not re.search(r"\band/or\b", line)
+              # (not "Complete the four requirements—…, and minor or concentration, as follows")
+              and not ALL_RULE.match(line) and not re.search(r"\brequirements\b", line)
               and (all(p.get("_plain") for p in parts) or re.match(r"(?:Select|Complete)\s+(?![\d]|" + "|".join(NUMBER_WORDS) + r")", line))):
             # "Students may take Labor Studies 10 and two lower-division courses from
             # the following list or Labor Studies M1A, M1B, M1CW": two ways, one taken.
@@ -419,6 +427,10 @@ class Converter:
         elif (minimum := UNITS_MINIMUM.search(line)) and not ALL_RULE.match(line) and len(parts) > 1 \
                 and re.match(r"(?:Additional|Select|Electives?)\b", line, re.IGNORECASE):
             node = {"type": "units", "units": int(minimum.group(1)), "items": lists_joined(parts)}
+        elif (some_from := SOME_FROM.search(line)) and count_of(some_from.group(1)) < len(lists_joined(parts)):
+            # "For the Atmospheric and Oceanic Sciences minor, one course selected from
+            # the following is also required"
+            node = {"type": "choose", "count": count_of(some_from.group(1)), "items": lists_joined(parts)}
         else:
             node = {"type": "all", "items": or_pairs(parts, line)}
         if node is not None and node["type"] == "choose":
