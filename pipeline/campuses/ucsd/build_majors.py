@@ -101,7 +101,8 @@ def expand(node, catalog, problems, where, required=frozenset()):
             problems.append("%s: %s isn't in the catalog" % (where, code))
         return {"type": "course", "code": code, "status": "active" if code in catalog else "inactive"}
     if kind == "text":
-        return {"type": "text", "text": node.get("text", "")}
+        # (optional: shown, not counted, like an honors program.)
+        return dict({"type": "text", "text": node.get("text", "")}, **({"optional": True} if node.get("optional") else {}))
     if kind in ("tagged", "any", "range"):
         subject = node.get("subject", "")
         if kind == "tagged":
@@ -110,10 +111,12 @@ def expand(node, catalog, problems, where, required=frozenset()):
             low, high = (1, 99) if node.get("level") == "lower" else (100, 199)
             skip = set(node.get("except", []))
             codes = [c for c, info in catalog.items()
-                     if info["subject"] == subject and low <= number_of(c) <= high and c not in skip]
+                     if info["subject"] == subject and low <= (number_of(c) or -1) <= high and c not in skip]
         else:
+            skip = set(node.get("except", []))
             codes = [c for c, info in catalog.items()
-                     if info["subject"] == subject and node.get("from", 0) <= number_of(c) <= node.get("to", -1)]
+                     if info["subject"] == subject and node.get("from", 0) <= (number_of(c) or -1) <= node.get("to", -1)
+                     and c not in skip]
         codes = [c for c in codes if c not in required]
         if not codes:
             problems.append("%s: %s matches no course" % (where, json.dumps(node)))
