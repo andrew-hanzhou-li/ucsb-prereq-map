@@ -256,3 +256,15 @@ Steps:
 5. When offered: Schedule of Classes for the last two years.
 6. AP chart: The College's table as the default; where Engineering's differs, its majors use Engineering's.
 7. Site: campus details, transcript (UCLA's MyUCLA "Academic History" if a sample exists), checks; Auto-fill sweep; review pass until nothing is left to improve; then ready.
+
+## Next campuses: survey (2026-11-28)
+
+Fetched from here unless marked otherwise.
+- **UC Irvine:** official catalogue (CourseLeaf) reset connections from here. The student-run Anteater API (anteaterapi.com) serves prerequisite text and trees, structured major trees (some dated 2023-24), terms offered back to 2006, and an AP table. Risk: third-party; cross-check against the official catalogue.
+- **UC Berkeley:** Coursedog, like UCSB, with structured requisites and major rules; listing every course needs the same headers UCSB's fetcher sends (untested); schedule (classes.berkeley.edu) blocked from here and disallows /search/ in robots.txt; AP fragmented; semesters.
+- **UC Santa Cruz:** SmartCatalog (HTML, with a JSON page tree of the whole catalog); majors as "All of the following / one of the following" tables; class search back to 2004 (HTML form); AP tables on degreeprogress.ucsc.edu.
+- **UC Riverside:** catalog and majors only as a 653-page PDF; Banner 9 JSON schedule with structured prerequisites.
+- **UC Davis:** nothing reachable from here (connection resets, 403).
+- **UC Merced:** Acalog behind a WAF challenge; Banner 9 schedule.
+
+Order after UCLA: Irvine (if the Anteater data checks out against the official catalogue), then Berkeley, then Santa Cruz.
