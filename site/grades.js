@@ -127,7 +127,7 @@ function targetFor(goal, year) {
   }
   for (const e of plan.electives || []) {
     const index = slotIndex(e.slot);
-    if (index >= 0 && index <= last) remaining += ELECTIVE_UNITS;
+    if (index >= 0 && index <= last) remaining += slotUnits(e);
   }
   if (!remaining) return { needed: null, remaining: 0, sofar: sofar };
   const needed = (goal * (sofar.units + remaining) - sofar.points) / remaining;

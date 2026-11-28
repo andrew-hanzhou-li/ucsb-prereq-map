@@ -162,200 +162,194 @@
       "count": 4,
       "items": [
        {
-        "type": "choose",
-        "count": 1,
-        "items": [
-         {
-          "type": "course",
-          "code": "ANTH 2",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ANTH 5",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ANTH 7",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CHEM 1C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CMPSC 8",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CMPSC 16",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "EARTH 2",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "EARTH 3",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ECON 1",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ECON 2",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ECON 9",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "EEMB 3",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ENV S 1",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ENV S 2",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ENV S 3",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "GEOG 5",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "LING 20",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "LING 50",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "LING 70",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MCDB 1B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MCDB 20",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MATH 4A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MATH 4B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MATH 34B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MATH 2B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MATH 3B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PHIL 3",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PHIL 4",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PHYS 1",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PHYS 2",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PHYS 3",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PHYS 6A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PHYS 6B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PHYS 6C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PHYS 7A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PHYS 7B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PHYS 21",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "POL S 1",
-          "status": "active"
-         }
-        ]
+        "type": "course",
+        "code": "ANTH 2",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ANTH 5",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ANTH 7",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 1C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CMPSC 8",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CMPSC 16",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EARTH 2",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EARTH 3",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 1",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 2",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ECON 9",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EEMB 3",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ENV S 1",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ENV S 2",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ENV S 3",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GEOG 5",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 20",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 50",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LING 70",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 1B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MCDB 20",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 4A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 4B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 34B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 2B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 3B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 3",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHIL 4",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 1",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 2",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 3",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 6A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 6B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 6C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 7A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 7B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYS 21",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "POL S 1",
+        "status": "active"
        }
       ],
       "catalog_rule_id": "w12FNboM",

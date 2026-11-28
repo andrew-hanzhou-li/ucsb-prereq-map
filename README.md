@@ -1,8 +1,10 @@
-# UCSB Prereq Planner
+# Stepwise
+
+**Plan your degree quarter by quarter, in the order your courses unlock.**
 
 ![The Computer Engineering (B.S.) map, with CMPSC 16 selected: what it needs in red, what it unlocks in blue](docs/screenshot.png)
 
-Prerequisite maps for every UCSB major and minor, built from the official General Catalog, plus a quarter-by-quarter planner and a GPA calculator.
+A quarter-by-quarter degree planner for UC Santa Barbara and UC San Diego. Pick your major: Auto-fill lays out a plan with each course after its prerequisites and in a quarter it's usually offered, tracks every requirement, and counts your AP and transfer credit. Behind it is a prerequisite map of every major (and minor, at UCSB), built from each campus's official General Catalog, plus a GPA calculator.
 
 **Live at https://andrew-hanzhou-li.github.io/ucsb-prereq-map/**
 

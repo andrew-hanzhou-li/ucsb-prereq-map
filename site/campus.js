@@ -18,7 +18,14 @@
 
 // The site's name. A placeholder until Andrew picks one; it's also written
 // in index.html and 404.html.
-const SITE_NAME = "Prereq";
+const SITE_NAME = "Stepwise";
+
+// The line under the name. Planning comes first: the map shows the order,
+// the plan puts it into quarters (or semesters) you can actually take.
+function siteLine(campus) {
+  const term = campus && campus.terms === "Semesters" ? "semester" : campus ? "quarter" : "term";
+  return "Plan your degree " + term + " by " + term + ", in the order your courses unlock.";
+}
 
 // UC's own order. "ready": its data is on the site. "next": being built
 // (hasData: its data is on the site, for the preview). "later": not started.

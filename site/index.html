@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Prereq · UCSB</title>
-  <meta name="description" content="Pick a UCSB major or minor and see every course in it, in prerequisite order, with the full prerequisites of each one.">
+  <title>Stepwise · UCSB</title>
+  <meta name="description" content="Stepwise plans your degree quarter by quarter: pick your major and get every course in the order you can take it, a plan that fills in the rest, and your progress toward each requirement.">
   <meta name="theme-color" content="#fcfcfb">
   <!-- How the link looks when shared in a text or on social media -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Prereq · UCSB">
-  <meta property="og:description" content="Pick a UCSB major or minor and see every course in it, in prerequisite order, with the full prerequisites of each one.">
+  <meta property="og:title" content="Stepwise">
+  <meta property="og:description" content="Stepwise plans your degree quarter by quarter: pick your major and get every course in the order you can take it, a plan that fills in the rest, and your progress toward each requirement.">
   <!-- The picture shown under a shared link (made by build_preview.py).
        Absolute addresses, because Reddit and Discord fetch it from the site. -->
   <meta property="og:url" content="https://ucsbplanner.duckdns.org/">
@@ -32,14 +32,14 @@
          single-file version, opened straight from your computer. -->
     <div class="mast">
       <div class="brand">
-        <h1 class="site-name"><a href="#" id="home-link">Prereq</a></h1>
+        <h1 class="site-name"><a href="#" id="home-link">Stepwise</a></h1>
         <p class="campus-label"><span id="campus-name"></span> <a href="#campus" id="campus-change">change</a></p>
       </div>
       <nav class="mast-nav">
         <a href="#" id="all-link" hidden>All programs</a>
         <button type="button" class="text-button" id="credit-button" data-open-credit>Credit</button>
         <button type="button" class="text-button" id="about-button">About</button>
-        <a href="ucsb-prereq-map.html" id="footer-download" download>One-file copy <span class="file-size">(8.7 MB)</span></a>
+        <a href="ucsb-prereq-map.html" id="footer-download" download>One-file copy <span class="file-size">(8.6 MB)</span></a>
         <button type="button" class="text-button options-button" id="options-button" aria-expanded="false" aria-controls="more-options">Options</button>
       </nav>
     </div>
@@ -75,6 +75,7 @@
 
   <!-- "Choose your university": the first screen, and the "change" link's (campus.js). -->
   <main class="campus-screen" id="campus-screen" hidden>
+    <p class="site-line" id="campus-line">Plan your degree term by term, in the order your courses unlock.</p>
     <h2 class="campus-heading">Choose your university</h2>
     <p class="campus-note" id="campus-note" hidden></p>
     <ol class="campus-list" id="campus-list"></ol>
@@ -98,8 +99,9 @@
           <div class="notice" id="notice" hidden></div>
 
           <div id="welcome">
+            <p class="site-line" id="welcome-line">Plan your degree quarter by quarter, in the order your courses unlock.</p>
             <h2 id="welcome-title">Choose a major or minor.</h2>
-            <p>Every course in the program is listed in prerequisite order, with the courses from other departments it needs. Point at or click a course to see everything it needs and everything it unlocks.</p>
+            <p>You get every course in it in the order you can take it, then a plan: Auto-fill lays out your remaining <span class="term-word">quarters</span>, each course after its prerequisites and when it's usually offered, and shows what's left for each requirement. Point at or click a course to see everything it needs and everything it unlocks.</p>
             <p class="quick" id="welcome-examples">For example: <a href="#ucsb/economics-ba">Economics (B.A.)</a>, <a href="#ucsb/statistics-and-data-science-bs">Statistics and Data Science (B.S.)</a>, or <a href="#ucsb/computer-engineering-bs">Computer Engineering (B.S.)</a>.</p>
           </div>
 
@@ -185,7 +187,7 @@
     <p>Courses you mark as taken are saved in your browser on this device only. They're never sent anywhere, and the site has no accounts and no analytics. Clearing your browser's data, or using a private window, removes the marks.</p>
 
     <h3>Sharing and saving</h3>
-    <p>The address bar names the program and the course you've chosen, so you can copy it and send it. There is also a <a href="ucsb-prereq-map.html" class="download-link" download>one-file copy</a> of the whole site <span class="file-size">(8.7 MB)</span> that opens in any browser, even offline. It's large for a phone, so it's best saved on a computer.</p>
+    <p>The address bar names the program and the course you've chosen, so you can copy it and send it. There is also a <a href="ucsb-prereq-map.html" class="download-link" download>one-file copy</a> of the whole site <span class="file-size">(8.6 MB)</span> that opens in any browser, even offline. It's large for a phone, so it's best saved on a computer.</p>
 
     <h3>Where the data comes from</h3>
     <p>Everything comes from the <a href="https://catalog.ucsb.edu/" target="_blank" rel="noopener" class="campus-catalog">UCSB General Catalog</a>: the course list, each course's prerequisites, and each program's requirements. Course prerequisites are written in plain English in the catalog, so a program reads them into "all of" and "one of" rules. Program requirements are copied from the catalog's structured lists.</p>

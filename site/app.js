@@ -198,6 +198,8 @@ function fillCampusWords() {
   document.querySelectorAll(".campus-program").forEach(e => { e.textContent = details.program; });
   document.querySelectorAll(".campus-catalog").forEach(e => { e.textContent = details.catalog; e.href = details.catalogHome; });
   document.getElementById("welcome-title").textContent = "Choose a " + details.program + ".";
+  document.getElementById("welcome-line").textContent = siteLine(campus);
+  document.querySelectorAll(".term-word").forEach(e => { e.textContent = (campus.terms || "Quarters").toLowerCase(); });
   const examples = details.examples.map(([address, name]) =>
     '<a href="' + campusHash() + escapeHtml(address) + '">' + escapeHtml(name) + "</a>");
   document.getElementById("welcome-examples").innerHTML = "For example: " +

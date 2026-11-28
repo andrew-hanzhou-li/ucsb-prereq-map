@@ -295,6 +295,8 @@ def check_campuses(p):
     ucsd = new_page(browser, viewport={"width": 1400, "height": 900})
     ucsd.goto(SITE + "#campus")
     ucsd.wait_for_timeout(400)
+    check("the site is called Stepwise, with its planning line on the campus screen",
+          ucsd.inner_text("#home-link") == "Stepwise" and "Plan your degree" in ucsd.inner_text("#campus-line"))
     check("campus: UC San Diego can be picked and says Ready",
           ucsd.locator(".campus-row a.campus-name").count() == 2 and
           "San Diego" in ucsd.inner_text("#campus-screen") and ucsd.locator(".campus-row.preview").count() == 0)
@@ -392,6 +394,22 @@ def check_campuses(p):
     shared = ucsd.evaluate("graph.major.sections.map((s, i) => [s.name, progress(s.requirement, 's' + i)])"
                            ".filter(([n]) => /practicum/i.test(n)).map(([n, p]) => p.have)")
     check("ucsd: a course the catalog lets count twice counts in both places", shared == [1], shared)
+    # UCSB plans that Auto-fill used to leave short or flood.
+    ucsd.evaluate("localStorage.removeItem('prereq.ucsb.plan')")
+    ucsd.goto(SITE + "#ucsb/plan/anthropology-ba-archaeology-emphasis")
+    ucsd.wait_for_function("currentView === 'plan' && graph.major.id.startsWith('BAANTH')", timeout=15000)
+    ucsd.wait_for_timeout(300)
+    ucsd.evaluate("plan.placed = {}; plan.electives = []; autoFill(true)")
+    anth = ucsd.evaluate("[Object.keys(plan.placed).length, graph.major.sections.every((s, i) => { const p = progress(s.requirement, 's' + i); return p.have >= p.need; })]")
+    check("ucsb: Auto-fill takes five courses from Anthropology's list, not all 84", anth[0] < 40 and anth[1], anth)
+    ucsd.goto(SITE + "#ucsb/plan/music-bm-cello-emphasis")
+    ucsd.wait_for_function("currentView === 'plan' && graph.major.name.includes('Cello')", timeout=15000)
+    ucsd.wait_for_timeout(300)
+    ucsd.evaluate("plan.placed = {}; plan.electives = []; autoFill(true)")
+    cello = ucsd.evaluate("[graph.major.sections.map((s, i) => { const p = progress(s.requirement, 's' + i); return p.have >= p.need; }), (plan.electives || []).filter(e => e.repeat).length]")
+    check("ucsb: an ensemble taken six times is planned with repeats, and the plan is complete",
+          all(cello[0]) and cello[1] > 0, cello)
+    ucsd.evaluate("localStorage.removeItem('prereq.ucsb.plan')")
     ucsd.goto(SITE + "?preview=off#campus")
     ucsd.wait_for_timeout(400)
     check("campus: ?preview=off turns the preview off", ucsd.locator(".campus-row.preview").count() == 0)
