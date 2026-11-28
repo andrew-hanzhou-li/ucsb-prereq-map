@@ -115,44 +115,75 @@
       "notes": "Select two courses from:"
      },
      {
-      "type": "all",
+      "type": "choose",
       "items": [
        {
-        "type": "course",
-        "code": "ARABIC 1C",
-        "status": "active"
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "ARABIC 1C",
+          "status": "active"
+         }
+        ],
+        "label": "ARABIC"
        },
        {
-        "type": "course",
-        "code": "ARMENIA 101C",
-        "status": "active"
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "ARMENIA 101C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ARMENIA 104C",
+          "status": "active"
+         }
+        ],
+        "label": "ARMENIA"
        },
        {
-        "type": "course",
-        "code": "ARMENIA 104C",
-        "status": "active"
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "HEBREW 1C",
+          "status": "active"
+         }
+        ],
+        "label": "HEBREW"
        },
        {
-        "type": "course",
-        "code": "HEBREW 1C",
-        "status": "active"
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "IRANIAN 1C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "IRANIAN 20C",
+          "status": "active"
+         }
+        ],
+        "label": "IRANIAN"
        },
        {
-        "type": "course",
-        "code": "IRANIAN 1C",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "IRANIAN 20C",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "TURKIC 101C",
-        "status": "active"
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "TURKIC 101C",
+          "status": "active"
+         }
+        ],
+        "label": "TURKIC"
        }
       ],
+      "count": 1,
       "label": "Middle Eastern Language",
       "notes": "Demonstrate proficiency equivalent to level 3 at UCLA in one modern Middle Eastern language (Arabic, Armenian, Hebrew, Persian, Turkish) or through a departmental language placement examination. Students selecting ancient languages (including Akkadian, Aramaic, Coptic, Egyptian, Old or Middle Iranian, Sumerian, Syriac) are not required to take a modern elementary Middle Eastern language."
      }
@@ -312,7 +343,7 @@
           "status": "active"
          }
         ],
-        "count": 6,
+        "count": 2,
         "label": "History"
        },
        {
@@ -614,7 +645,7 @@
           "status": "active"
          }
         ],
-        "count": 6,
+        "count": 2,
         "label": "Language"
        },
        {
@@ -766,7 +797,7 @@
           "status": "active"
          }
         ],
-        "count": 6,
+        "count": 2,
         "label": "Literature"
        },
        {
@@ -833,7 +864,7 @@
           "status": "active"
          }
         ],
-        "count": 6,
+        "count": 2,
         "label": "Religion"
        }
       ],

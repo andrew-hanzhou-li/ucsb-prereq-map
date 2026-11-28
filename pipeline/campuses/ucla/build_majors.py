@@ -68,7 +68,7 @@ EACH_RULE = re.compile(r"\bfrom (?:each of\s+(?:(?P<areas>\d+|" + "|".join(NUMBE
 # petitions and recommendations.
 OPTIONAL_TITLE = re.compile(r"honors|departmental scholar|specialization$|optional|substitut|petition|"
                             r"biology quarter|recommended", re.IGNORECASE)
-OPTIONAL_LINE = re.compile(r"\bmay participate\b|\bmay be substituted\b|\bmay substitute\b|\bby petition\b|\boptional\b|"
+OPTIONAL_LINE = re.compile(r"\bmay also be required\b|\bmay participate\b|\bmay be substituted\b|\bmay substitute\b|\bby petition\b|\boptional\b|"
                            r"\bhonors (?:students|program)\b|\bfor honors\b|"
                            r"\bmay not be applied toward the major\b", re.IGNORECASE)
 # (A line that says what to complete is a requirement, whatever else it says:
@@ -91,7 +91,7 @@ TRACKS = re.compile(r"\b(?:from|for) the following (?:tracks|concentrations|path
 PREFERRED = re.compile(r"\b" + COUNT + r"\s+(?:additional\s+)?(?:[\w-]+\s+){0,2}courses\b[^:]*\bselected from\b", re.IGNORECASE)
 # A rule given only as a range: "Select from Mathematics 106 through 199."
 RANGE_TEXT = re.compile(r"^(?:Select|Choose)\s+(?:courses\s+)?from\s+([A-Za-z ,&]+?)\s+(\d+)\s+(?:through|to)\s+(\d+)\.?$", re.IGNORECASE)
-ONE_SEQUENCE = re.compile(r"^(?:Select|Complete)\s+one\b[^:.]*\bsequence\b|\bin one (?:modern |foreign |modern foreign )?language\b", re.IGNORECASE)
+ONE_SEQUENCE = re.compile(r"^(?:Select|Complete)\s+one\b[^:.]*\bsequence\b|\bin one\b(?:\s+[\w-]+){0,3}\s+language\b", re.IGNORECASE)
 UPPER_RULE = re.compile(r"^(?:Complete|Select)\s+" + COUNT + r"\s+(?:additional\s+)?upper-division\s+([A-Za-z ,&]+?)\s+courses\b", re.IGNORECASE)
 SOME_UNITS = re.compile(r"\band\s+(\d+(?:\.\d+)?)\s+units\s+from\s+([^:]*)", re.IGNORECASE)
 UNITS_OF = re.compile(r"^Complete\b[^:]*?\(?(\d+(?:\.\d+)?)\s+units\)?\s+of\b", re.IGNORECASE)
@@ -348,7 +348,7 @@ class Converter:
             # Each list gives N; "from each of three of the four" asks for three lists.
             # ("Select four … courses, one from each of the following four periods":
             # four in all, one from each.)
-            per = re.search(COUNT + r"\s+(?:courses?\s+)?(?:from|in)\s+each\b", line, re.IGNORECASE)
+            per = re.search(COUNT + r"\s+(?:courses?\s+)?(?:from|in)\s+(?:each\b|" + COUNT + r"\s+of\b)", line, re.IGNORECASE)
             each_count = count_of(per.group(1)) if per else count_of(choose.group(1))
             each = [{"type": "choose", "count": each_count, "items": lists_joined(unwrapped(p)),
                      **({"label": p["label"]} if p.get("label") else {})} for p in parts]
@@ -413,6 +413,9 @@ class Converter:
             # "Students may take Labor Studies 10 and two lower-division courses from
             # the following list or Labor Studies M1A, M1B, M1CW": two ways, one taken.
             node = {"type": "choose", "count": 1, "items": parts}
+            if re.search(r"\bor one\b[^:.]*\bcourse\b", line):
+                # ("Select Asian 30 or one civilization, religions, or culture course": one course.)
+                node["items"] = lists_joined(parts, keep_series=False)
         elif (minimum := UNITS_MINIMUM.search(line)) and not ALL_RULE.match(line) and len(parts) > 1 \
                 and re.match(r"(?:Additional|Select|Electives?)\b", line, re.IGNORECASE):
             node = {"type": "units", "units": int(minimum.group(1)), "items": lists_joined(parts)}
