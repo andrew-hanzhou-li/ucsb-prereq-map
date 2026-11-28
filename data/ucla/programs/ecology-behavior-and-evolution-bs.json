@@ -703,8 +703,11 @@
         "notes": "Complete one research project-based upper-division ecology and evolutionary biology course to be determined by the undergraduate curriculum committee, combined with at least 4 units of faculty-mentored undergraduate research (Ecology and Evolutionary Biology 199), culminating in a formal paper or report. The 199 units may be completed in one or two quarters. Students must formally present their work at Ecology and Evolutionary Biology Research Day or UCLA Undergraduate Research Week."
        },
        {
-        "type": "text",
-        "text": "Complete three additional upper-division ecology and evolutionary biology courses (minimum 12 units). Students expand their knowledge of the field. Specific course options are determined by the undergraduate curriculum committee through a course plan petition completed and submitted by the student."
+        "type": "choose",
+        "items": [],
+        "count": 3,
+        "label": "Coursework",
+        "notes": "minimum 12 units; specific options set by course plan petition to the undergraduate curriculum committee"
        }
       ],
       "label": "Culminating Experience Requirement",
@@ -725,20 +728,368 @@
         "label": "Anthropology"
        },
        {
-        "type": "text",
-        "text": "Upper-division chemistry (except Chemistry 188SA through 199; Chemistry 153A and 153L are strongly recommended)."
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "CHEM C100",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 101",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 103",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM C105",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM C107",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM C108",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 110A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 110B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 113A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM C113B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 114",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 114H",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM C115A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM C115B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM C115C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM M117",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 118",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM M120",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 121",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM C122",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM C123A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM C123B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM M124",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM C125",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM C126A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM CM127",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM C132A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 136",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM C138",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM C140",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM C142",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM C143A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM C143B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 144",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM C145",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 147",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM C150",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 151",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 153A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 153AH",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 153B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 153BH",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 153C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 153CH",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 153D",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 153L",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 154",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM C155",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 156",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM M157",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM C159",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM C164",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM C165",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 166",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM CM170",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 171",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM C172",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM C173",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM C174",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM C175",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM C176",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM C179",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM C180",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM C181",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 184",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM C185",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHEM M186",
+          "status": "active"
+         }
+        ],
+        "count": 1,
+        "label": "Chemistry",
+        "notes": "rule gives no count; it is one option list under its parent requirement, count set there; except Chemistry 188SA through 199; Chemistry 153A and 153L strongly recommended"
        },
        {
-        "type": "text",
-        "text": "Upper-division Earth, planetary, and space sciences (geology only; except Earth, Planetary, and Space Sciences 188 through 199)."
+        "type": "choose",
+        "items": [],
+        "count": 1,
+        "label": "Earth, Planetary, and Space Sciences",
+        "notes": "rule gives no count; it is one option list under its parent requirement, count set there; geology only; except 188 through 199"
        },
        {
-        "type": "text",
-        "text": "Upper-division ecology and evolutionary biology (except Ecology and Evolutionary Biology 188SA through 196)."
+        "type": "choose",
+        "items": [],
+        "count": 1,
+        "label": "Ecology and Evolutionary Biology",
+        "notes": "rule gives no count; it is one option list under its parent requirement, count set there; except Ecology and Evolutionary Biology 188SA through 196"
        },
        {
-        "type": "text",
-        "text": "Upper-division geography (except Geography 188SA through 199)."
+        "type": "choose",
+        "items": [],
+        "count": 1,
+        "label": "Geography",
+        "notes": "rule gives no count; it is one option list under its parent requirement, count set there; except Geography 188SA through 199"
        },
        {
         "type": "all",
@@ -753,12 +1104,18 @@
         "notes": "Students with credit for Life Sciences 4 cannot take Life Sciences 107."
        },
        {
-        "type": "text",
-        "text": "Upper-division mathematics (except Mathematics 105A, 105B, 105C, 106, 188SA through 199)."
+        "type": "choose",
+        "items": [],
+        "count": 1,
+        "label": "Mathematics",
+        "notes": "rule gives no count; it is one option list under its parent requirement, count set there; except Mathematics 105A, 105B, 105C, 106, 188SA through 199"
        },
        {
-        "type": "text",
-        "text": "Upper-division microbiology (except Microbiology 193A through 199)."
+        "type": "choose",
+        "items": [],
+        "count": 1,
+        "label": "Microbiology",
+        "notes": "rule gives no count; it is one option list under its parent requirement, count set there; except Microbiology 193A through 199; Microbiology taken as MIMG"
        },
        {
         "type": "all",
@@ -772,8 +1129,11 @@
         "label": "Molecular, Cell, and Developmental Biology"
        },
        {
-        "type": "text",
-        "text": "Upper-division physics (except Physics 188SA through 199)."
+        "type": "choose",
+        "items": [],
+        "count": 1,
+        "label": "Physics",
+        "notes": "rule gives no count; it is one option list under its parent requirement, count set there; except Physics 188SA through 199"
        },
        {
         "type": "all",

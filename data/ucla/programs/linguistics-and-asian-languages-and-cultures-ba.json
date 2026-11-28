@@ -252,8 +252,11 @@
       "notes": "Complete five courses. Only one course from Linguistics 165A or 165B may be applied."
      },
      {
-      "type": "text",
-      "text": "Complete one upper-division elective course in the Linguistics Department (minimum 4 graded units)."
+      "type": "choose",
+      "items": [],
+      "count": 1,
+      "label": "Upper-Division Elective",
+      "notes": "minimum 4 graded units"
      },
      {
       "type": "all",

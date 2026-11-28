@@ -39,8 +39,11 @@
       "notes": "Select Philosophy 7 or 21."
      },
      {
-      "type": "text",
-      "text": "Complete one additional lower-division philosophy course."
+      "type": "choose",
+      "items": [],
+      "count": 1,
+      "label": "Elective",
+      "notes": "additional lower-division philosophy course"
      }
     ],
     "label": "Preparation for the Major"
@@ -184,8 +187,11 @@
       "notes": "Select seven courses distributed among the following groups as follows: two courses in each of three of the groups and one course in the remaining group."
      },
      {
-      "type": "text",
-      "text": "Complete three additional upper-division or graduate philosophy courses."
+      "type": "choose",
+      "items": [],
+      "count": 3,
+      "label": "Electives",
+      "notes": "upper-division or graduate philosophy courses (graduate taken as 200-299)"
      }
     ],
     "label": "The Major"

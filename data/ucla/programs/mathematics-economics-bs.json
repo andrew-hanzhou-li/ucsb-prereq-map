@@ -122,8 +122,11 @@
         "status": "inactive"
        },
        {
-        "type": "text",
-        "text": "Select two courses from Economics 106E through 199B."
+        "type": "choose",
+        "items": [],
+        "count": 2,
+        "label": "Economics Electives",
+        "notes": "Economics 106E through 199B"
        }
       ],
       "label": "Economics"

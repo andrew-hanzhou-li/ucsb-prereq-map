@@ -390,8 +390,177 @@
       "notes": "Select three elective courses on China from the following list or from the Chinese language course groups not used to fulfill another requirement:"
      },
      {
-      "type": "text",
-      "text": "Complete two additional upper-division elective courses within the department but outside China."
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "ASIAN 100",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN 104",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN 120FL",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN 121",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN CM124",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN 130",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN 135",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN 140",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN 151",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN 152",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN 155",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN 158",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN 161",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN 162",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN 163",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN 164",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN C170",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN 184",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN 188SA",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN 188SB",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN 188SC",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN 189",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN 189HC",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN 190",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN 191A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN 191B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN 191H",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN 193",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN 195",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN 198A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN 198B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN 198C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN 199",
+        "status": "active"
+       }
+      ],
+      "count": 2,
+      "label": "Additional Upper-Division Elective Courses within the Department (Outside China).",
+      "notes": "within the department but outside China; department subjects taken as ASIAN, CHIN, JAPAN, KOREA, S ASIAN, SEASIAN (the areas the department lists) minus CHIN"
      }
     ],
     "label": "The Major"

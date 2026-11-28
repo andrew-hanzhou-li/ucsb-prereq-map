@@ -132,12 +132,500 @@
       "label": "Capstone Design"
      },
      {
-      "type": "text",
-      "text": "Complete a minimum of 4 units and one elective course from Electrical and Computer Engineering 101A through M185."
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "EC ENGR 101A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EC ENGR 101B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EC ENGR 102",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EC ENGR 110",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EC ENGR 110H",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EC ENGR 110L",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EC ENGR 111L",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EC ENGR 112",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EC ENGR 113",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EC ENGR 113DA",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EC ENGR 113DW",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EC ENGR 114",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EC ENGR 115A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EC ENGR 115AL",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EC ENGR 115B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EC ENGR 115C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EC ENGR 115DA",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EC ENGR 115DW",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EC ENGR 115E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EC ENGR 121B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EC ENGR 121DA",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EC ENGR 121DW",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EC ENGR 123A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EC ENGR 123B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EC ENGR 128",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EC ENGR 131A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EC ENGR 132A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EC ENGR 132B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EC ENGR 133A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EC ENGR 133B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EC ENGR 134",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EC ENGR 141",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EC ENGR 142",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EC ENGR 162A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EC ENGR 163A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EC ENGR 163C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EC ENGR 163DA",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EC ENGR 163DB",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EC ENGR 170A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EC ENGR 170B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EC ENGR 170C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EC ENGR 173DA",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EC ENGR 173DB",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EC ENGR 176",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EC ENGR 180DA",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EC ENGR 180DW",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EC ENGR 181DA",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EC ENGR 181DB",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EC ENGR 183DA",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EC ENGR 183DB",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EC ENGR 184DA",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EC ENGR 184DB",
+        "status": "active"
+       }
+      ],
+      "count": 1,
+      "label": "Electrical and Computer Engineering Elective",
+      "notes": "minimum of 4 units"
      },
      {
-      "type": "text",
-      "text": "Complete a minimum of 12 units and three elective courses from Computer Science 111 through CM187, and up to 8 units of Computer Science 188."
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "COM SCI 111",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM SCI 112",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM SCI 117",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM SCI 118",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM SCI M119",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM SCI C121",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM SCI C122",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM SCI C124",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM SCI 130",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM SCI 131",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM SCI 132",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM SCI 133",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM SCI 134",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM SCI 136",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM SCI C137A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM SCI C137B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM SCI M138",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM SCI 143",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM SCI 144",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM SCI 145",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM SCI M146",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM SCI M148",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM SCI M151B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM SCI 152B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM SCI M152A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM SCI C160F",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM SCI 161",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM SCI 162",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM SCI 163",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM SCI 168",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM SCI 170A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM SCI M171L",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM SCI 172",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM SCI 174A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM SCI 174B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM SCI C174C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM SCI 180",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM SCI 181",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM SCI M182",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM SCI 183",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM SCI M184",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM SCI CM186",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM SCI CM187",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM SCI 188",
+        "status": "active"
+       }
+      ],
+      "count": 3,
+      "label": "Computer Science Elective",
+      "notes": "minimum of 12 units; up to 8 units of Computer Science 188"
      },
      {
       "type": "text",

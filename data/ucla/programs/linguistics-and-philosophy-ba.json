@@ -154,8 +154,11 @@
       "label": "Required Linguistics Courses"
      },
      {
-      "type": "text",
-      "text": "Complete one upper-division elective in the Linguistics Department (minimum 4 graded units)."
+      "type": "choose",
+      "items": [],
+      "count": 1,
+      "label": "Upper-Division Linguistics Elective",
+      "notes": "minimum 4 graded units"
      },
      {
       "type": "choose",

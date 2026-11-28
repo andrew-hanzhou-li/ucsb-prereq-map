@@ -84,8 +84,11 @@
       "label": "Required Courses"
      },
      {
-      "type": "text",
-      "text": "Complete two additional upper-division music industry elective courses."
+      "type": "choose",
+      "items": [],
+      "count": 2,
+      "label": "Upper-Division Music Industry Electives",
+      "notes": "additional upper-division music industry elective courses"
      },
      {
       "type": "all",
@@ -351,8 +354,11 @@
       "label": "Performance Organizations"
      },
      {
-      "type": "text",
-      "text": "Complete one lower-division musicology or music industry elective (minimum of 4 units)."
+      "type": "choose",
+      "items": [],
+      "count": 1,
+      "label": "Lower-Division Elective",
+      "notes": "minimum of 4 units"
      }
     ],
     "label": "Preparation for the Major"

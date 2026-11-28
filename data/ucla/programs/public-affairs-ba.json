@@ -150,8 +150,11 @@
       "label": "Capstone Sequence"
      },
      {
-      "type": "text",
-      "text": "Complete three additional upper-division public affairs courses."
+      "type": "choose",
+      "items": [],
+      "count": 3,
+      "label": "Upper-Division Electives",
+      "notes": "additional upper-division public affairs courses"
      }
     ],
     "label": "The Major"

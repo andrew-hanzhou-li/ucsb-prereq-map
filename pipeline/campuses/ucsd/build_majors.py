@@ -108,7 +108,8 @@ def expand(node, catalog, problems, where, required=frozenset()):
         if kind == "tagged":
             codes = [c for c, info in catalog.items() if info["subject"] == subject and node.get("tag") in info.get("tags", [])]
         elif kind == "any":
-            low, high = (1, 99) if node.get("level") == "lower" else (100, 199)
+            # (No level: any undergraduate course of the subject.)
+            low, high = {"lower": (1, 99), "upper": (100, 199)}.get(node.get("level"), (0, 199))
             skip = set(node.get("except", []))
             codes = [c for c, info in catalog.items()
                      if info["subject"] == subject and low <= (number_of(c) or -1) <= high and c not in skip]
@@ -150,7 +151,8 @@ def describe(node):
     if node["type"] == "tagged":
         return "%s courses tagged %s" % (node.get("subject"), node.get("tag"))
     if node["type"] == "any":
-        return "any %s-division %s course" % (node.get("level", "upper"), node.get("subject"))
+        level = node.get("level")
+        return "any %s%s course" % (level + "-division " if level else "", node.get("subject"))
     return "%s %s–%s" % (node.get("subject"), node.get("from"), node.get("to"))
 
 

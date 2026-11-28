@@ -90,8 +90,11 @@
       "label": "Required Courses"
      },
      {
-      "type": "text",
-      "text": "Select 25 units from any World Arts and Cultures elective courses, or other upper-division courses with faculty approval."
+      "type": "units",
+      "items": [],
+      "units": 25,
+      "label": "Electives",
+      "notes": "any World Arts and Cultures elective courses (no level stated), or other upper-division courses with faculty approval"
      },
      {
       "type": "all",

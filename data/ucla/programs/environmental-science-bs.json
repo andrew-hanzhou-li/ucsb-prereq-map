@@ -2313,8 +2313,11 @@
           "notes": "Select three courses from:"
          },
          {
-          "type": "text",
-          "text": "Complete any two additional upper-division geography courses (except those from the preceding list and courses 194 through 199)."
+          "type": "choose",
+          "items": [],
+          "count": 2,
+          "label": "Additional Geography Courses",
+          "notes": "except courses from the preceding list and courses 194 through 199"
          }
         ],
         "label": "Geography/Environmental Studies  Minor",

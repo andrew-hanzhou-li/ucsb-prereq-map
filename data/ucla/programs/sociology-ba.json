@@ -372,8 +372,10 @@
       "notes": "Select one course from each of the following core areas:"
      },
      {
-      "type": "text",
-      "text": "Complete any five upper-division sociology elective courses."
+      "type": "choose",
+      "items": [],
+      "count": 5,
+      "label": "Upper-Division Sociology Electives"
      }
     ],
     "label": "The Major"

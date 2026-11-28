@@ -20,8 +20,271 @@
         "status": "active"
        },
        {
-        "type": "text",
-        "text": "Select four courses from Comparative Literature M101 through 197."
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "COM LIT M101",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM LIT 102",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM LIT 104",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM LIT 108",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM LIT M110",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM LIT 112",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM LIT 113",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM LIT M119",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM LIT M120",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM LIT M123",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM LIT M132",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM LIT M142",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM LIT M148",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM LIT 150",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM LIT C152",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM LIT C153",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM LIT 154",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM LIT C156",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM LIT C160",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM LIT C161",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM LIT M162",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM LIT C163",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM LIT C164",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM LIT M165",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM LIT M166",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM LIT M167",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM LIT 168",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM LIT 169",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM LIT CM170",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM LIT M171",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM LIT M175",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM LIT M176",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM LIT C178",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM LIT M179SL",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM LIT 180",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM LIT 180A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM LIT 181",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM LIT 182",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM LIT 183",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM LIT 184",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM LIT 185",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM LIT 186",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM LIT 187",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM LIT 188SA",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM LIT 188SB",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM LIT 188SC",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM LIT 189",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM LIT 189HC",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM LIT 190",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM LIT 191",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM LIT M191P",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM LIT 197",
+          "status": "active"
+         }
+        ],
+        "count": 4,
+        "label": "Comparative Literature 101 through 197"
        }
       ],
       "label": "Comparative Literature",

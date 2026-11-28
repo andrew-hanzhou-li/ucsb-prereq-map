@@ -536,7 +536,7 @@
          },
          {
           "type": "text",
-          "text": "Complete one college year—or at least one course at level three—of French, German, Italian, or Spanish, which may be used to fulfill the school language requirement."
+          "text": "Complete one college year-or at least one course at level three-of French, German, Italian, or Spanish, which may be used to fulfill the school language requirement."
          }
         ],
         "label": "Voice"
@@ -764,8 +764,10 @@
           "notes": "Complete 12 units from:"
          },
          {
-          "type": "text",
-          "text": "Complete at least 8 units of upper-division electives from ethnomusicology, global jazz studies, music, music industry, or musicology."
+          "type": "units",
+          "items": [],
+          "units": 8,
+          "label": "Electives"
          },
          {
           "type": "choose",
@@ -955,8 +957,10 @@
           "notes": "Complete 6 units from:"
          },
          {
-          "type": "text",
-          "text": "Complete at least 12 units of upper-division electives from ethnomusicology, global jazz studies, music, music industry, or musicology."
+          "type": "units",
+          "items": [],
+          "units": 12,
+          "label": "Electives"
          },
          {
           "type": "choose",
@@ -1096,8 +1100,10 @@
           "notes": "Complete 12 units from:"
          },
          {
-          "type": "text",
-          "text": "Complete at least 8 units of upper-division electives from ethnomusicology, global jazz studies, music, music industry, or musicology."
+          "type": "units",
+          "items": [],
+          "units": 8,
+          "label": "Electives"
          },
          {
           "type": "choose",
@@ -1237,8 +1243,10 @@
           "notes": "Complete 12 units from:"
          },
          {
-          "type": "text",
-          "text": "Complete at least 4 units of upper-division electives from ethnomusicology, global jazz studies, music, music industry, or musicology."
+          "type": "units",
+          "items": [],
+          "units": 4,
+          "label": "Electives"
          },
          {
           "type": "all",

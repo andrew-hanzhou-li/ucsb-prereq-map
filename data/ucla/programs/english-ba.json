@@ -825,8 +825,11 @@
       "label": "(2) Breadth Courses"
      },
      {
-      "type": "text",
-      "text": "Complete two elective courses (English 195CE is not applicable)."
+      "type": "choose",
+      "items": [],
+      "count": 2,
+      "label": "(3) Elective Courses",
+      "notes": "level not stated; English 195CE is not applicable"
      },
      {
       "type": "all",

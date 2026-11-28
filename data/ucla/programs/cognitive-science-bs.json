@@ -745,8 +745,222 @@
         "label": "Psychology 124"
        },
        {
-        "type": "text",
-        "text": "Select from Computer Science 111 through CM186."
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "COM SCI 111",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM SCI 112",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM SCI 117",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM SCI 118",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM SCI M119",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM SCI C121",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM SCI C122",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM SCI C124",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM SCI 130",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM SCI 131",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM SCI 132",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM SCI 133",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM SCI 134",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM SCI 136",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM SCI C137A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM SCI C137B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM SCI M138",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM SCI 143",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM SCI 144",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM SCI 145",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM SCI M146",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM SCI M148",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM SCI M151B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM SCI 152B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM SCI M152A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM SCI C160F",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM SCI 161",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM SCI 162",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM SCI 163",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM SCI 168",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM SCI 170A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM SCI M171L",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM SCI 172",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM SCI 174A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM SCI 174B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM SCI C174C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM SCI 180",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM SCI 181",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM SCI M182",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM SCI 183",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM SCI M184",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM SCI CM186",
+          "status": "active"
+         }
+        ],
+        "count": 1,
+        "label": "Computer Science 111 through CM186",
+        "notes": "rule gives no count; it is one option list under its parent requirement, count set there"
        },
        {
         "type": "all",

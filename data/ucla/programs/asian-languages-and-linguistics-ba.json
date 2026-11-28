@@ -323,8 +323,507 @@
       "notes": "Select two Asian linguistics courses from:"
      },
      {
-      "type": "text",
-      "text": "Complete two upper-division electives within the department or from the Linguistics Department."
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "ASIAN 100",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN 104",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN 120FL",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN 121",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN CM124",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN 130",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN 135",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN 140",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN 151",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN 152",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN 155",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN 158",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN 161",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN 162",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN 163",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN 164",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN C170",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN 184",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN 188SA",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN 188SB",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN 188SC",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN 189",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN 189HC",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN 190",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN 191A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN 191B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN 191H",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN 193",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN 195",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN 198A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN 198B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN 198C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIAN 199",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 100A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 100B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 100C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 100D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 100E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 100F",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 100I",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 101A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 101B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 101C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 102A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 102B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 102I",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 103",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 105A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 105B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN C107A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN C107B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 108FL",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 109",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 110A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 110B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 110C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN C120",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 124",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 125",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 130A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 130B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 131",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 135",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN C137",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN C138",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 139",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 140A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 140B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 140C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 140D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN C144",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN C150A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN C150B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 151",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 152",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN M153",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 154",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 155",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN C156",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 157",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 159",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN CM160",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 165",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 174",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 175SL",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN C175",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 176",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 180",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 182",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN M183",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 184",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 185",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 186",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 187",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 189",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 189HC",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 191A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 191B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHIN 197",
+        "status": "active"
+       }
+      ],
+      "count": 2,
+      "label": "Upper-Division Electives",
+      "notes": "within the department or Linguistics; department subjects taken as ASIAN, CHIN, JAPAN, KOREA, S ASIAN, SEASIAN (the areas the department lists)"
      }
     ],
     "label": "The Major",

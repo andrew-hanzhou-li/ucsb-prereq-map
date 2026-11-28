@@ -178,12 +178,18 @@
       "type": "choose",
       "items": [
        {
-        "type": "text",
-        "text": "Select from Economics 101 through 199B."
+        "type": "choose",
+        "items": [],
+        "count": 1,
+        "label": "Economics",
+        "notes": "rule gives no count; it is one option list under its parent requirement, count set there; range ends at 199B"
        },
        {
-        "type": "text",
-        "text": "Select from Mathematics 106 through 199."
+        "type": "choose",
+        "items": [],
+        "count": 1,
+        "label": "Mathematics",
+        "notes": "rule gives no count; it is one option list under its parent requirement, count set there"
        },
        {
         "type": "all",

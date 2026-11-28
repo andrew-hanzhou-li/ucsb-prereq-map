@@ -9,8 +9,11 @@
   {
    "name": "The Major",
    "requirement": {
-    "type": "text",
-    "text": "Complete 11 upper-division geography courses (44 units minimum)."
+    "type": "choose",
+    "items": [],
+    "count": 11,
+    "label": "The Major",
+    "notes": "44 units minimum"
    }
   },
   {

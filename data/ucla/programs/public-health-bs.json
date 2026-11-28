@@ -332,8 +332,132 @@
       "label": "Foundations of Public Health Knowledge and Practice"
      },
      {
-      "type": "text",
-      "text": "Complete three upper-division courses (minimum three 4-unit courses) selected from the school's undergraduate course offerings except: Biostatistics 100, Community Health Sciences 100, 179, Environmental Health Sciences 100, 101, Epidemiology 100, Health Policy and Management 100. No more than one tutorial (195-199) may be counted toward the elective requirement."
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "BIOSTAT 120",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "BIOSTAT 121",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "BIOSTAT 125",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM HLT 110",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM HLT 111XP",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM HLT 120",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM HLT 130",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM HLT 131",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM HLT 132",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM HLT M140",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM HLT 151",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM HLT 160",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM HLT CM170",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM HLT 171",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM HLT 171XP",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM HLT 187A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM HLT 187B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM HLT 188A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM HLT 188B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM HLT 188SA",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM HLT 188SB",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM HLT 188SC",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM HLT 189",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COM HLT 189HC",
+        "status": "active"
+       }
+      ],
+      "count": 3,
+      "label": "Public Health Electives",
+      "notes": "minimum three 4-unit courses; no more than one tutorial (195-199) may be counted; subjects taken as the school's departments (Biostatistics, Community Health Sciences, Environmental Health Sciences, Epidemiology, Health Policy and Management, Public Health)"
      },
      {
       "type": "all",

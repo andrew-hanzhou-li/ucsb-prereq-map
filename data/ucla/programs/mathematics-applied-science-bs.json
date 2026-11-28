@@ -62,8 +62,10 @@
     "type": "all",
     "items": [
      {
-      "type": "text",
-      "text": "Select seven Mathematics Department courses from Mathematics 106 through 199."
+      "type": "choose",
+      "items": [],
+      "count": 7,
+      "label": "Mathematics"
      },
      {
       "type": "text",
@@ -185,8 +187,11 @@
           "status": "inactive"
          },
          {
-          "type": "text",
-          "text": "Select three courses from Mathematics 110A through 199."
+          "type": "choose",
+          "items": [],
+          "count": 3,
+          "label": "Mathematics Electives",
+          "notes": "Mathematics 110A through 199"
          }
         ],
         "label": "Mathematics"

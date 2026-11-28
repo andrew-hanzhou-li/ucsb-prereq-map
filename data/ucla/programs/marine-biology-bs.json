@@ -728,8 +728,11 @@
         "notes": "Complete one research project-based upper-division ecology and evolutionary biology course to be determined by the undergraduate curriculum committee, and at least 4 units of faculty-mentored undergraduate research (Ecology and Evolutionary Biology 199), culminating in a formal paper or report. The 199 units may be completed in one or two quarters. Students must formally present their work at Ecology and Evolutionary Biology Research Day or UCLA Undergraduate Research Week."
        },
        {
-        "type": "text",
-        "text": "Complete three additional upper-division ecology and evolutionary biology courses (minimum 12 units). Students expand their knowledge of the field. Specific course options are determined by the undergraduate curriculum committee via a course plan petition completed and submitted by the student."
+        "type": "choose",
+        "items": [],
+        "count": 3,
+        "label": "Coursework",
+        "notes": "minimum 12 units; specific options determined by the undergraduate curriculum committee via a course plan petition"
        }
       ],
       "label": "Culminating Experience Requirements",
