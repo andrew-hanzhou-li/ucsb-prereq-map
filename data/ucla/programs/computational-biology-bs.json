@@ -174,7 +174,7 @@
       "label": "Methodology Core"
      },
      {
-      "type": "all",
+      "type": "choose",
       "items": [
        {
         "type": "all",
@@ -673,6 +673,7 @@
         "notes": "Select any two courses from the subareas. Courses may be chosen from different subareas."
        }
       ],
+      "count": 1,
       "label": "Tracks"
      }
     ],
@@ -769,7 +770,7 @@
       "label": "Life Sciences"
      },
      {
-      "type": "all",
+      "type": "choose",
       "items": [
        {
         "type": "all",
@@ -899,6 +900,7 @@
         "notes": "Students may select Mathematics 31A or 31AL."
        }
       ],
+      "count": 1,
       "label": "Mathematics"
      },
      {
@@ -973,10 +975,10 @@
       "notes": "Select one series from:"
      },
      {
-      "type": "all",
+      "type": "choose",
       "items": [
        {
-        "type": "all",
+        "type": "choose",
         "items": [
          {
           "type": "course",
@@ -984,16 +986,22 @@
           "status": "active"
          },
          {
-          "type": "course",
-          "code": "COMPTNG 10B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "COMPTNG 10C",
-          "status": "active"
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "COMPTNG 10B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COMPTNG 10C",
+            "status": "active"
+           }
+          ]
          }
         ],
+        "count": 1,
         "label": "Bioinformatics",
         "notes": "Select Computer Science 32, or Programs in Computing 10B and 10C:"
        },
@@ -1009,6 +1017,7 @@
         "label": "Biological Data Science"
        }
       ],
+      "count": 1,
       "label": "Additional Courses by Track",
       "notes": "Additional preparation for the major courses are required for the following tracks:"
      }

@@ -219,17 +219,22 @@
       "text": "Complete three technical breadth courses (12 units) selected from an approved list available in the Office of Academic and Student Affairs."
      },
      {
-      "type": "all",
+      "type": "choose",
       "items": [
        {
-        "type": "course",
-        "code": "BIOENGR 177A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "BIOENGR 177B",
-        "status": "active"
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "BIOENGR 177A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "BIOENGR 177B",
+          "status": "active"
+         }
+        ]
        },
        {
         "type": "course",
@@ -237,6 +242,7 @@
         "status": "active"
        }
       ],
+      "count": 1,
       "label": "Capstone Design",
       "notes": "Select Bioengineering 177A and 177B (8 units) or Bioengineering 177C (12 units)."
      },
@@ -404,7 +410,7 @@
       "notes": "Select six additional major field elective courses (24 units) from following list. A maximum of 8 units of course 199 may be applied. Students completing the Capstone Design requirement with Bioengineering 177C instead select five additional major field elective courses (20 units) from following list. A maximum of 4 units of course 199 may be applied."
      },
      {
-      "type": "all",
+      "type": "choose",
       "items": [
        {
         "type": "all",
@@ -541,6 +547,7 @@
         "notes": "The electrical and computer engineering or mechanical and aerospace engineering courses listed may be used to satisfy the technical breadth requirement."
        }
       ],
+      "count": 1,
       "label": "Alternative Elective and Technical Breadth",
       "notes": "Three of the major field elective courses and the three technical breadth courses may also be selected from one of the following tracks. Bioengineering majors cannot take bioengineering technical breadth courses to fulfill the technical breadth requirement. For Bioengineering 199 to fulfill a track requirement, the research project must fit within the scope of the track field, and the research report must be approved by the supervisor and vice chair. A maximum of 8 units of course 199 may be applied."
      }

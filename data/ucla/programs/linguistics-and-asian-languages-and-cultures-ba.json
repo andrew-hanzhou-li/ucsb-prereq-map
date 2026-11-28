@@ -388,34 +388,44 @@
           "type": "choose",
           "items": [
            {
-            "type": "course",
-            "code": "CHIN 100A",
-            "status": "active"
+            "type": "all",
+            "items": [
+             {
+              "type": "course",
+              "code": "CHIN 100A",
+              "status": "active"
+             },
+             {
+              "type": "course",
+              "code": "CHIN 100B",
+              "status": "active"
+             },
+             {
+              "type": "course",
+              "code": "CHIN 100C",
+              "status": "active"
+             }
+            ]
            },
            {
-            "type": "course",
-            "code": "CHIN 100B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "CHIN 100C",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "CHIN 100D",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "CHIN 100E",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "CHIN 100F",
-            "status": "active"
+            "type": "all",
+            "items": [
+             {
+              "type": "course",
+              "code": "CHIN 100D",
+              "status": "active"
+             },
+             {
+              "type": "course",
+              "code": "CHIN 100E",
+              "status": "active"
+             },
+             {
+              "type": "course",
+              "code": "CHIN 100F",
+              "status": "active"
+             }
+            ]
            },
            {
             "type": "course",
@@ -502,22 +512,27 @@
         "type": "all",
         "items": [
          {
-          "type": "all",
+          "type": "choose",
           "items": [
            {
-            "type": "course",
-            "code": "JAPAN 100A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "JAPAN 100B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "JAPAN 100C",
-            "status": "active"
+            "type": "all",
+            "items": [
+             {
+              "type": "course",
+              "code": "JAPAN 100A",
+              "status": "active"
+             },
+             {
+              "type": "course",
+              "code": "JAPAN 100B",
+              "status": "active"
+             },
+             {
+              "type": "course",
+              "code": "JAPAN 100C",
+              "status": "active"
+             }
+            ]
            },
            {
             "type": "course",
@@ -525,6 +540,7 @@
             "status": "active"
            }
           ],
+          "count": 1,
           "label": "Advanced Modern Japanese",
           "notes": "Select Japanese 100A, 100B, and 100C, or 100S:"
          },

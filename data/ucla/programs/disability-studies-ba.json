@@ -797,7 +797,7 @@
       "notes": "Select one of the following options:"
      },
      {
-      "type": "all",
+      "type": "choose",
       "items": [
        {
         "type": "course",
@@ -805,26 +805,37 @@
         "status": "active"
        },
        {
-        "type": "course",
-        "code": "DIS STD 198A",
-        "status": "active"
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "DIS STD 198A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "DIS STD 198B",
+          "status": "active"
+         }
+        ]
        },
        {
-        "type": "course",
-        "code": "DIS STD 198B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "DIS STD 199A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "DIS STD 199B",
-        "status": "active"
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "DIS STD 199A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "DIS STD 199B",
+          "status": "active"
+         }
+        ]
        }
       ],
+      "count": 1,
       "label": "Capstone (5 or 6 units)",
       "notes": "Select course 191 (5 units), or two courses (6 units) from 198A and 198B, or 199A and 199B."
      }

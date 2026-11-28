@@ -1021,92 +1021,100 @@
         "status": "active"
        },
        {
-        "type": "course",
-        "code": "HIST 112B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "HIST 112BD",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "HIST 112D",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "HIST M112C",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "HIST M112E",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "HIST 113A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "HIST 113B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "HIST M113C",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "HIST 114A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "HIST 114B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "HIST 115",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "HIST 116A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "HIST 116B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "HIST 119A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "HIST 119B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "HIST 119C",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "HIST 119D",
-        "status": "active"
+        "type": "choose",
+        "count": 1,
+        "items": [
+         {
+          "type": "course",
+          "code": "HIST 112B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 112BD",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 112D",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST M112C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST M112E",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 113A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 113B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST M113C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 114A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 114B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 115",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 116A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 116B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 119A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 119B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 119C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 119D",
+          "status": "active"
+         }
+        ],
+        "label": "HIST 112–119",
+        "expanded_from": "range"
        }
       ],
-      "count": 1,
+      "count": 16,
       "label": "History before 1700 CE",
       "notes": "One of the 16 courses for the preparation for the major and major must predominantly cover history before 1700 CE, selected from the following list of courses or range:"
      }

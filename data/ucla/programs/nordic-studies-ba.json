@@ -9,7 +9,7 @@
   {
    "name": "The Major",
    "requirement": {
-    "type": "all",
+    "type": "choose",
     "items": [
      {
       "type": "choose",
@@ -176,6 +176,7 @@
       "label": "Capstone"
      }
     ],
+    "count": 1,
     "label": "The Major"
    }
   }

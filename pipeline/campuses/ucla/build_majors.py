@@ -80,7 +80,13 @@ COUNT_ONLY = re.compile(r"^(?:Select|Complete|Choose|Take)\s+(?:at least\s+|a mi
                         r"\s+(?!units?\b)(?:[\w-]+\s+){0,4}?(?:courses?|sequences?|series|options?|concentrations?)\b", re.IGNORECASE)
 # "Select eight courses total, four in one area of concentration and two in …"
 TOTAL_RULE = re.compile(r"^(?:Select|Complete)\s+" + COUNT + r"\s+courses\s+total\b", re.IGNORECASE)
-ONE_OF_ANYWHERE = re.compile(r"\b(?:complete|select|choose|take) one of the following\b", re.IGNORECASE)
+ONE_OF_ANYWHERE = re.compile(r"\b(?:(?:complete|select|choose|take)\s+|from\s+)one of the following\b", re.IGNORECASE)
+# "Complete a minimum of five courses from the following tracks": one track.
+TRACKS = re.compile(r"\b(?:from|for) the following (?:tracks|concentrations|pathways)\b", re.IGNORECASE)
+# "It is preferred that the three additional upper-division courses … are selected from:"
+PREFERRED = re.compile(r"\b" + COUNT + r"\s+(?:additional\s+)?(?:[\w-]+\s+){0,2}courses\b[^:]*\bselected from\b", re.IGNORECASE)
+# A rule given only as a range: "Select from Mathematics 106 through 199."
+RANGE_TEXT = re.compile(r"^(?:Select|Choose)\s+(?:courses\s+)?from\s+([A-Za-z ,&]+?)\s+(\d+)\s+(?:through|to)\s+(\d+)\.?$", re.IGNORECASE)
 ONE_SEQUENCE = re.compile(r"^(?:Select|Complete)\s+one\b[^:.]*\bsequence\b", re.IGNORECASE)
 UPPER_RULE = re.compile(r"^(?:Complete|Select)\s+" + COUNT + r"\s+(?:additional\s+)?upper-division\s+([A-Za-z ,&]+?)\s+courses\b", re.IGNORECASE)
 SOME_UNITS = re.compile(r"\band\s+(\d+(?:\.\d+)?)\s+units\s+from\s+([^:]*)", re.IGNORECASE)
@@ -194,6 +200,14 @@ class Converter:
         self.translated = translated
         self.prose = []          # rules with no list, for translating
 
+    def text_range(self, text):
+        """"Select from Mathematics 106 through 199." -> a range item, or None."""
+        found = RANGE_TEXT.match(text.strip())
+        if not found or not self.subject_code(found.group(1)):
+            return None
+        return {"type": "range", "subject": self.subject_code(found.group(1)),
+                "from": int(found.group(2)), "to": int(found.group(3))}
+
     def subject_code(self, words):
         """"Latin" -> "LATIN" (a subject's name, any case), or None."""
         words = words.strip().lower()
@@ -206,7 +220,10 @@ class Converter:
         """One rule group -> a node (UCSD's format, shorthand allowed)."""
         rule_id = container.get("cl_id")
         if rule_id in self.translated:
-            return self.translated[rule_id]["node"]
+            node = self.translated[rule_id]["node"]
+            if node["type"] == "text" and (ranged := self.text_range(node.get("text", ""))):
+                return dict(ranged, label=node.get("label") or (container.get("title") or "").strip())
+            return node
         line = plain(container.get("description"))
         title = (container.get("title") or "").strip()
         parts = []
@@ -235,6 +252,13 @@ class Converter:
         elif (total := TOTAL_RULE.match(line)) and count_of(total.group(1)) <= len(lists_joined(parts)):
             # (before "from each of": "eight courses total, four in one area and two from each of the others")
             node = {"type": "choose", "count": count_of(total.group(1)), "items": lists_joined(parts)}
+        elif TRACKS.search(line) and len(parts) > 1 and all(p["type"] != "course" and not p.get("_plain") for p in parts):
+            node = {"type": "choose", "count": 1, "items": parts}
+        elif (preferred := PREFERRED.search(line)) and count_of(preferred.group(1)) < len(parts):
+            node = {"type": "choose", "count": count_of(preferred.group(1)), "items": parts}
+        elif (alternatives := line_alternatives(parts, line)):
+            # "Select Bioengineering 177A and 177B (8 units) or Bioengineering 177C (12 units)."
+            node = {"type": "choose", "count": 1, "items": alternatives}
         elif ONE_OF_ANYWHERE.search(line) and len(parts) > 1:
             # "… Students must complete one of the following four capstone options."
             node = {"type": "choose", "count": 1, "items": parts}
@@ -358,6 +382,29 @@ def one_concentration(sections):
 def whole(number):
     """12.0 -> 12; 2.5 stays."""
     return int(number) if float(number).is_integer() else number
+
+
+def line_alternatives(parts, line):
+    """"Select course 191, or two courses from 198A and 198B, or 199A and 199B":
+    the listed courses as options (each a course or an "all"), if the line's
+    "or" splits them cleanly (every course in exactly one option); else None."""
+    if len(parts) < 2 or any(p["type"] != "course" for p in parts) or not re.search(r"\bor\b", line):
+        return None
+    words = re.sub(r"\([^)]*\)", "", line.split(":")[0])
+    chunks = re.split(r",?\s+or\s+", words)
+    # ("Mathematics 31A or 31AL and Mathematics 31B" is a pair and a course:
+    # or_pairs. Here the "or" must be the loosest: after a comma, or after an "and".)
+    if len(chunks) < 2 or not (re.search(r",\s+or\b", words) or re.search(r"\band\b", chunks[0])):
+        return None
+    by_number = {p["code"].rsplit(" ", 1)[-1]: p for p in parts}
+    options, used = [], set()
+    for chunk in chunks:
+        found = [by_number[n] for n in re.findall(r"\b([A-Z]{0,2}\d+[A-Z]*)\b", chunk) if n in by_number]
+        if not found or any(p["code"] in used for p in found):
+            return None
+        used.update(p["code"] for p in found)
+        options.append(found[0] if len(found) == 1 else {"type": "all", "items": found})
+    return options if len(used) == len(parts) else None
 
 
 def numbered(parts, words):

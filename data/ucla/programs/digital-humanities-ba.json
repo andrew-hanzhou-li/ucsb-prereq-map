@@ -401,89 +401,101 @@
         "status": "active"
        },
        {
-        "type": "course",
-        "code": "COMM 105",
-        "status": "active"
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "COMM 105",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COMM 109",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COMM 132",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COMM 151",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COMM 156",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COMM 159",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COMM 188C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST M146B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MSC IND 122",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MSC IND 155",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SOC GEN 131",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SOCIOL 111",
+          "status": "active"
+         }
+        ],
+        "label": "Interdisciplinary Networks: Communication, Design, and Society"
        },
        {
-        "type": "course",
-        "code": "COMM 109",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "COMM 132",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "COMM 151",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "COMM 156",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "COMM 159",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "COMM 188C",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "HIST M146B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "MSC IND 122",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "MSC IND 155",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "SOC GEN 131",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "SOCIOL 111",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "GEOG 180",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "INF STD C115",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "SOCIOL 113",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "STATS 101A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "STATS 112",
-        "status": "active"
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "GEOG 180",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "INF STD C115",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SOCIOL 113",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "STATS 101A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "STATS 112",
+          "status": "active"
+         }
+        ],
+        "label": "Computational Networks: Information and Data Science"
        }
       ],
       "count": 2,

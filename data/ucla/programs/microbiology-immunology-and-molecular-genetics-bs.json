@@ -323,27 +323,39 @@
         "type": "choose",
         "items": [
          {
-          "type": "course",
-          "code": "MIMG 103AL",
-          "status": "active"
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "MIMG 103AL",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MIMG 103BL",
+            "status": "active"
+           }
+          ],
+          "label": "Microbiology 103AL and 103BL"
          },
          {
-          "type": "course",
-          "code": "MIMG 103BL",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MIMG 109AL",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MIMG 109BL",
-          "status": "active"
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "MIMG 109AL",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MIMG 109BL",
+            "status": "active"
+           }
+          ],
+          "label": "Microbiology 109AL and 109BL"
          }
         ],
-        "count": 2,
+        "count": 1,
         "label": "Microbiology Research"
        },
        {

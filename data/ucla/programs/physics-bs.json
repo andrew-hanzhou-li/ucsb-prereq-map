@@ -132,7 +132,7 @@
         "expanded_from": "range"
        },
        {
-        "type": "all",
+        "type": "choose",
         "items": [
          {
           "type": "course",
@@ -215,6 +215,7 @@
           "status": "active"
          }
         ],
+        "count": 3,
         "label": "Upper-Division Electives",
         "notes": "It is preferred that the three additional upper-division courses for the plan are selected from:"
        }
@@ -451,7 +452,7 @@
       "notes": "Students must complete two 4-unit terms of Physics 199."
      },
      {
-      "type": "all",
+      "type": "choose",
       "items": [
        {
         "type": "course",
@@ -492,6 +493,7 @@
         "notes": "Select two courses from:"
        }
       ],
+      "count": 2,
       "label": "Course-Based",
       "notes": "Students must take 4 units of Physics 197—an in-depth individual study of a physics topic of interest to the student under the guidance of a faculty member and resulting in a written report—and are also required to take Mathematics 115A and two courses selected from Mathematics 120A, 120B, Physics 221A, or 221B."
      }
