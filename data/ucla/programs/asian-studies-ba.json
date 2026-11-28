@@ -321,7 +321,7 @@
     "type": "all",
     "items": [
      {
-      "type": "choose",
+      "type": "all",
       "items": [
        {
         "type": "choose",
@@ -1135,15 +1135,797 @@
          }
         ],
         "label": "Substitutions",
-        "notes": "The area studies electives listed in groups 1 and 2 focus on contemporary issues of that region after 1750. Students may substitute a maximum of three upper-division courses with focus on earlier historical aspects of the region or on diasporas with origins related to the region toward the area studies electives as long the distribution between humanities and arts and social sciences is maintained. Courses may be selected from the following lists:"
+        "notes": "The area studies electives listed in groups 1 and 2 focus on contemporary issues of that region after 1750. Students may substitute a maximum of three upper-division courses with focus on earlier historical aspects of the region or on diasporas with origins related to the region toward the area studies electives as long the distribution between humanities and arts and social sciences is maintained. Courses may be selected from the following lists:",
+        "optional": true
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "ART HIS C148D",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ART HIS C148E",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ART HIS C150B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ART HIS C154C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ART HIS 154D",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ASIAN 151",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ASIAN 161",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ASIAN 162",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHIN C120",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHIN 124",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHIN 125",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHIN 130B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHIN 131",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHIN 139",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHIN C144",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHIN C150A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHIN C150B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHIN 151",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHIN 152",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHIN 155",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHIN C156",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHIN CM160",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHIN 165",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHIN 174",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHIN 176",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHIN 180",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHIN 185",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHIN 191B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM LIT M176",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM LIT C178",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS 146",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS 147",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS C150",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS C156A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS 157",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS C159",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS 160",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS 161B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "FILIPNO 155",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "FILIPNO 170",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "JAPAN 124",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "JAPAN CM127",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "JAPAN 130A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "JAPAN 130B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "JAPAN 130C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "JAPAN 151",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "JAPAN 154",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "JAPAN 155",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "JAPAN M156",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "JAPAN CM160",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "JAPAN 161",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "JAPAN 170",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "JAPAN C182",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "JAPAN 191B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "KOREA C105A",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "KOREA C105B",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "KOREA C105C",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "KOREA CM127",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "KOREA 148A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "KOREA C151",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "KOREA 153",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "KOREA 154",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "KOREA 155",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "KOREA CM160",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "KOREA 172",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "KOREA C177",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "KOREA 179",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "KOREA 180C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "KOREA 182",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "KOREA 183",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "KOREA 184B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "KOREA 185",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "KOREA M186",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "KOREA 187",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "KOREA 191B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "S ASIAN 155",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SEASIAN 130",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SEASIAN 135",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SEASIAN C140",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SEASIAN C150",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "THEATER 102A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "VIETMSE CM155",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "VIETMSE 180B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "VIETMSE M186",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO M145T",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 163P",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 163Q",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 163R",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ASIA AM 171A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ASIA AM 171B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ASIA AM 171C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ASIA AM M171D",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ASIA AM 171E",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GENDER M164A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GENDER M170C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GEOG 175A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GEOG 175B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GEOG 176A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 170B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 170D",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 172C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 175A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 175C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 176B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "POL SCI 158",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "POL SCI 159A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "POL SCI 159B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "POL SCI 160",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SOCIOL 181A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SOCIOL 181B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ART HIS C148A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ART HIS C148B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ART HIS C148C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ART HIS 150A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ART HIS 152A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ART HIS C152B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ART HIS C152C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ART HIS C152D",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ART HIS 154A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ART HIS 154B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ART HIS 156",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHIN C175",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHIN M183",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHIN 186",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CHIN 191A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "JAPAN 165",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "JAPAN 172",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "JAPAN 174",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "KOREA C150",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "KOREA 165",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "KOREA 180A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "KOREA 180B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "KOREA 184A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "KOREA 191A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "S ASIAN CM160",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 116P",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 116Q",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ASIA AM 111",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ASIA AM 113",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ASIA AM 121",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ASIA AM 122B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ASIA AM 130A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ASIA AM M130C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ASIA AM 131A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ASIA AM 131B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ASIA AM 131C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ASIA AM 132A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ASIA AM 133",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ASIA AM 134",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 152",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 169A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 170A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 172A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 172B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST M174D",
+          "status": "active"
+         }
+        ],
+        "count": 1,
+        "label": "Additional courses"
        }
       ],
-      "count": 7,
       "label": "Area Studies",
       "notes": "Select seven courses from the humanities and arts and social sciences groups as follows:"
      },
      {
-      "type": "choose",
+      "type": "all",
       "items": [
        {
         "type": "choose",
@@ -1417,7 +2199,6 @@
         "notes": "Select two courses from:"
        }
       ],
-      "count": 4,
       "label": "International Themes",
       "notes": "Select four courses from international politics and markets and international societies and cultures as follows:"
      },

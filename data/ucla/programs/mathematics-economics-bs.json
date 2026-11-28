@@ -953,17 +953,23 @@
   {
    "name": "Preparation for the Major",
    "requirement": {
-    "type": "choose",
+    "type": "all",
     "items": [
      {
-      "type": "course",
-      "code": "MATH 31A",
-      "status": "active"
-     },
-     {
-      "type": "course",
-      "code": "MATH 31AL",
-      "status": "active"
+      "type": "choose",
+      "items": [
+       {
+        "type": "course",
+        "code": "MATH 31A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 31AL",
+        "status": "active"
+       }
+      ],
+      "count": 1
      },
      {
       "type": "course",
@@ -1020,7 +1026,6 @@
       "text": "Complete any one Writing II course."
      }
     ],
-    "count": 11,
     "label": "Preparation for the Major",
     "notes": "Complete 11 courses, and one Writing II course. Select Mathematics 31A or 31AL."
    }

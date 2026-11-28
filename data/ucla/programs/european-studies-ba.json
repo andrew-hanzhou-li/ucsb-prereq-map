@@ -376,7 +376,7 @@
     "type": "all",
     "items": [
      {
-      "type": "choose",
+      "type": "all",
       "items": [
        {
         "type": "choose",
@@ -1035,15 +1035,642 @@
          }
         ],
         "label": "Substitutions",
-        "notes": "The area studies electives listed in groups 1 and 2 focus on contemporary issues of that region after 1750. Students may substitute a maximum of three upper-division courses with focus on earlier historical aspects of the region or on diasporas with origins related to the region toward the area studies electives as long the distribution between humanities and arts and social sciences is maintained. Courses may be selected from the following lists:"
+        "notes": "The area studies electives listed in groups 1 and 2 focus on contemporary issues of that region after 1750. Students may substitute a maximum of three upper-division courses with focus on earlier historical aspects of the region or on diasporas with origins related to the region toward the area studies electives as long the distribution between humanities and arts and social sciences is maintained. Courses may be selected from the following lists:",
+        "optional": true
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "ART HIS 127B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ART HIS M127C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "C&EE ST M125",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "C&EE ST CM126",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM LIT C163",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM LIT C164",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "DUTCH 113",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "DUTCH 131",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 115B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 164A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 164B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ENGL 164C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "FILM TV 106B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "FRNCH 114C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "FRNCH 119",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "FRNCH 120",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "FRNCH 138",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "FRNCH 139",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "FRNCH 141",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GERMAN 102",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GERMAN 103",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GERMAN 104",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GERMAN 110",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GERMAN 112",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GERMAN 173",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GERMAN 174",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ITALIAN 102C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ITALIAN 120",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ITALIAN 121",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ITALIAN 150",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ITALIAN M158",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "POLSH 152B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "POLSH 152C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RUSSN 107B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RUSSN 120",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RUSSN 121",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RUSSN 122",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RUSSN 125",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RUSSN 126",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RUSSN M127",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RUSSN 128",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RUSSN 130A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RUSSN 130B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RUSSN 130C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RUSSN C131",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RUSSN M132",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RUSSN 140A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RUSSN 140B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RUSSN 140C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RUSSN 140D",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RUSSN 150",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SCAND C141A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SCAND 141C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SCAND C155",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SCAND 156",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SCAND 157",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SCAND 161",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SCAND C163A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SCAND C163B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SCAND C163C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SCAND 173A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SCAND C174A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SCAND 174B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SCAND C180",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "YIDDSH 131A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "YIDDSH 131B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ECON 181",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GEOG 173A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GEOG 174A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 120A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 120B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 120C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 121D",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 121E",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 121F",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 122F",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 123C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 124B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 124C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 125B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 125C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 125D",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 127B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 127C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 127D",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 135C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 136B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HNRS 173A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "POL SCI 153A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "POL SCI 156A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "FRNCH 114A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "FRNCH 114B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "FRNCH 115",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "FRNCH 116",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "FRNCH 117",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "FRNCH 118",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "FRNCH 169",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GERMAN 170",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ITALIAN 102A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ITALIAN 102B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ITALIAN 103A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ITALIAN 103B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ITALIAN 110",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ITALIAN 113",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ITALIAN 114B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ITALIAN 116A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ITALIAN 116B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ITALIAN 140",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RUSSN C124C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RUSSN C124D",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RUSSN CM124G",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RUSSN C124N",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RUSSN C124P",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RUSSN C124T",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SCAND 142A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SCAND 143C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SCAND 154",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 121A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 121B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 121C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 122A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 122B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 122C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "POL SCI 111C",
+          "status": "active"
+         }
+        ],
+        "count": 1,
+        "label": "Additional courses"
        }
       ],
-      "count": 7,
       "label": "Area Studies",
       "notes": "Select seven courses from the humanities and arts and social sciences groups as follows:"
      },
      {
-      "type": "choose",
+      "type": "all",
       "items": [
        {
         "type": "choose",
@@ -1317,7 +1944,6 @@
         "notes": "Select two courses from:"
        }
       ],
-      "count": 4,
       "label": "International Themes",
       "notes": "Select four courses from international politics and markets and international societies and cultures as follows:"
      },

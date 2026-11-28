@@ -1172,7 +1172,7 @@ function autoFill(quiet) {
   // Elective slots, for lists of courses still short.
   let slots = 0;
   graph.major.sections.forEach(function (section, i) {
-    (function visit(node, key) {
+    (function visit(node, key, insideChoice) {
       if (!node.items || node.optional) return;
       // A list of courses, or of short sequences ("ECE 152A + 152B"), to choose from.
       // (A written rule in the list, such as "or another approved course",
@@ -1202,13 +1202,24 @@ function autoFill(quiet) {
         slots += repeatSlots(node, key);
         return;
       }
+      // A list of required courses inside a choice (one concentration of
+      // five): the map calls them electives, so they're placed here.
+      if (node.type === "all" && insideChoice) {
+        for (const item of node.items) {
+          if (item.type !== "course" || !item.code || inPlanOrDone(item.code)) continue;
+          if (nodesById[item.code] && nodesById[item.code].status === "active" && placeCourse(item.code)) {
+            plan.auto[item.code] = true;
+            placed += 1;
+          }
+        }
+      }
       // Fill a choice's parts only until the choice is met, so "one of two
       // tracks" doesn't get both.
       for (let j = 0; j < node.items.length; j++) {
         if (node.type === "choose" && met()) break;
-        visit(node.items[j], key + "." + j);
+        visit(node.items[j], key + "." + j, insideChoice || node.type === "choose");
       }
-    })(section.requirement, "s" + i);
+    })(section.requirement, "s" + i, false);
   });
   if (placed) repairOrder();
   if (!quiet) say("Auto-fill placed " + placed + " courses and " + slots + " elective slots. Electives start in year 3; click a slot to choose its course.");

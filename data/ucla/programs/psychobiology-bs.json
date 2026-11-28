@@ -1389,7 +1389,7 @@
   {
    "name": "Preparation for the Major",
    "requirement": {
-    "type": "choose",
+    "type": "all",
     "items": [
      {
       "type": "course",
@@ -1407,263 +1407,268 @@
       "status": "active"
      },
      {
-      "type": "choose",
-      "items": [
-       {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "CHEM 14A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CHEM 14B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CHEM 14BL",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CHEM 14C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CHEM 14D",
-          "status": "active"
-         }
-        ],
-        "label": "Chemistry 14 series"
-       },
-       {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "CHEM 20A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CHEM 20B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CHEM 20L",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CHEM 30A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CHEM 30AL",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CHEM 30B",
-          "status": "active"
-         }
-        ],
-        "label": "Chemistry 20 and 30 series"
-       }
-      ],
-      "count": 1,
-      "label": "Chemistry",
-      "notes": "Select one series from:"
-     },
-     {
       "type": "all",
       "items": [
        {
-        "type": "course",
-        "code": "LIFESCI 7A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "LIFESCI 7B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "LIFESCI 7C",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "LIFESCI 7L",
-        "status": "active"
-       }
-      ],
-      "label": "Life Sciences"
-     },
-     {
-      "type": "choose",
-      "items": [
-       {
-        "type": "all",
+        "type": "choose",
         "items": [
          {
-          "type": "course",
-          "code": "LIFESCI 30A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "LIFESCI 30B",
-          "status": "active"
-         },
-         {
-          "type": "choose",
+          "type": "all",
           "items": [
            {
             "type": "course",
-            "code": "LIFESCI 40",
+            "code": "CHEM 14A",
             "status": "active"
            },
            {
             "type": "course",
-            "code": "STATS 13",
-            "status": "active"
-           }
-          ],
-          "count": 1
-         }
-        ],
-        "label": "Life Sciences 30 series",
-        "notes": "Students may select Life Sciences 40 or Statistics 13."
-       },
-       {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "MATH 3A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MATH 3B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MATH 3C",
-          "status": "active"
-         }
-        ],
-        "label": "Mathematics 3 series"
-       },
-       {
-        "type": "all",
-        "items": [
-         {
-          "type": "choose",
-          "items": [
-           {
-            "type": "course",
-            "code": "MATH 31A",
+            "code": "CHEM 14B",
             "status": "active"
            },
            {
             "type": "course",
-            "code": "MATH 31AL",
+            "code": "CHEM 14BL",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 14C",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 14D",
             "status": "active"
            }
           ],
-          "count": 1
+          "label": "Chemistry 14 series"
          },
          {
-          "type": "course",
-          "code": "MATH 31B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MATH 32A",
-          "status": "active"
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "CHEM 20A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 20B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 20L",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 30A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 30AL",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 30B",
+            "status": "active"
+           }
+          ],
+          "label": "Chemistry 20 and 30 series"
          }
         ],
-        "label": "Mathematics 31 series",
-        "notes": "Students may select Mathematics 31A or 31AL."
-       }
-      ],
-      "count": 1,
-      "label": "Mathematics",
-      "notes": "Select one series from:"
-     },
-     {
-      "type": "choose",
-      "items": [
-       {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "PHYSICS 1A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PHYSICS 1B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PHYSICS 1C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PHYSICS 4AL",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PHYSICS 4BL",
-          "status": "active"
-         }
-        ],
-        "label": "Physics 1 series"
+        "count": 1,
+        "label": "Chemistry",
+        "notes": "Select one series from:"
        },
        {
         "type": "all",
         "items": [
          {
           "type": "course",
-          "code": "PHYSICS 5A",
+          "code": "LIFESCI 7A",
           "status": "active"
          },
          {
           "type": "course",
-          "code": "PHYSICS 5B",
+          "code": "LIFESCI 7B",
           "status": "active"
          },
          {
           "type": "course",
-          "code": "PHYSICS 5C",
+          "code": "LIFESCI 7C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LIFESCI 7L",
           "status": "active"
          }
         ],
-        "label": "Physics 5 series"
+        "label": "Life Sciences"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "LIFESCI 30A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "LIFESCI 30B",
+            "status": "active"
+           },
+           {
+            "type": "choose",
+            "items": [
+             {
+              "type": "course",
+              "code": "LIFESCI 40",
+              "status": "active"
+             },
+             {
+              "type": "course",
+              "code": "STATS 13",
+              "status": "active"
+             }
+            ],
+            "count": 1
+           }
+          ],
+          "label": "Life Sciences 30 series",
+          "notes": "Students may select Life Sciences 40 or Statistics 13."
+         },
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "MATH 3A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MATH 3B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MATH 3C",
+            "status": "active"
+           }
+          ],
+          "label": "Mathematics 3 series"
+         },
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "choose",
+            "items": [
+             {
+              "type": "course",
+              "code": "MATH 31A",
+              "status": "active"
+             },
+             {
+              "type": "course",
+              "code": "MATH 31AL",
+              "status": "active"
+             }
+            ],
+            "count": 1
+           },
+           {
+            "type": "course",
+            "code": "MATH 31B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "MATH 32A",
+            "status": "active"
+           }
+          ],
+          "label": "Mathematics 31 series",
+          "notes": "Students may select Mathematics 31A or 31AL."
+         }
+        ],
+        "count": 1,
+        "label": "Mathematics",
+        "notes": "Select one series from:"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "PHYSICS 1A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PHYSICS 1B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PHYSICS 1C",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PHYSICS 4AL",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PHYSICS 4BL",
+            "status": "active"
+           }
+          ],
+          "label": "Physics 1 series"
+         },
+         {
+          "type": "all",
+          "items": [
+           {
+            "type": "course",
+            "code": "PHYSICS 5A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PHYSICS 5B",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PHYSICS 5C",
+            "status": "active"
+           }
+          ],
+          "label": "Physics 5 series"
+         }
+        ],
+        "count": 1,
+        "label": "Physics",
+        "notes": "Select one series from:"
        }
       ],
-      "count": 1,
-      "label": "Physics",
-      "notes": "Select one series from:"
+      "label": "Life Sciences Core Curriculum"
      }
     ],
-    "count": 3,
     "label": "Preparation for the Major",
     "notes": "Complete three required psychology courses and the Life Sciences Core Curriculum."
    }

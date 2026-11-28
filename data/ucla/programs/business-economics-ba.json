@@ -584,137 +584,130 @@
         "status": "active"
        },
        {
-        "type": "all",
+        "type": "choose",
         "items": [
          {
-          "type": "choose",
-          "items": [
-           {
-            "type": "course",
-            "code": "MATH 174E",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "STATS C183",
-            "status": "active"
-           }
-          ],
-          "count": 1
-         },
-         {
           "type": "course",
-          "code": "MGMT 108",
+          "code": "MATH 174E",
           "status": "active"
          },
          {
           "type": "course",
-          "code": "MGMT 109",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MGMT 120A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MGMT 120B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MGMT 122",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MGMT 123",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MGMT 124",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MGMT 126",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MGMT 127A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MGMT 127B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MGMT 127C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MGMT 130A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MGMT 159",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MGMT 160",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MGMT 161",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MGMT 162",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MGMT 163",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MGMT 164",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MGMT 165",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MGMT 167",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MGMT 168",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MGMT 170",
+          "code": "STATS C183",
           "status": "active"
          }
         ],
-        "label": "Management",
-        "notes": "No more than three management courses may be applied. Only one from Mathematics 174E or Statistics C183 may be applied. Management 130A is not open for credit to students with credit for Economics 106F. Economics 106F is not open for credit to students with credit for Management 130A."
+        "count": 1
+       },
+       {
+        "type": "course",
+        "code": "MGMT 108",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGMT 109",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGMT 120A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGMT 120B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGMT 122",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGMT 123",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGMT 124",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGMT 126",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGMT 127A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGMT 127B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGMT 127C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGMT 130A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGMT 159",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGMT 160",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGMT 161",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGMT 162",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGMT 163",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGMT 164",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGMT 165",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGMT 167",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGMT 168",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGMT 170",
+        "status": "active"
        }
       ],
       "count": 5,

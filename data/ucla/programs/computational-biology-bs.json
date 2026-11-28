@@ -174,7 +174,7 @@
       "label": "Methodology Core"
      },
      {
-      "type": "choose",
+      "type": "all",
       "items": [
        {
         "type": "all",
@@ -550,143 +550,122 @@
           "status": "active"
          },
          {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "LIFESCI 107",
-            "status": "active"
-           },
-           {
-            "type": "choose",
-            "items": [
-             {
-              "type": "course",
-              "code": "MCD BIO 100",
-              "status": "active"
-             },
-             {
-              "type": "course",
-              "code": "MCD BIO 165A",
-              "status": "active"
-             }
-            ],
-            "count": 1
-           },
-           {
-            "type": "course",
-            "code": "MCD BIO 138",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "MCD BIO M140",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "MCD BIO 144",
-            "status": "active"
-           }
-          ],
-          "label": "Genetics and Molecular Biology",
-          "notes": "Only one course from Molecular, Cell, and Developmental Biology 100 or 165A may be applied."
+          "type": "course",
+          "code": "LIFESCI 107",
+          "status": "active"
          },
          {
-          "type": "all",
+          "type": "choose",
           "items": [
            {
-            "type": "choose",
-            "items": [
-             {
-              "type": "course",
-              "code": "NEUROSC M101A",
-              "status": "active"
-             },
-             {
-              "type": "course",
-              "code": "PSYCH 115",
-              "status": "active"
-             }
-            ],
-            "count": 1
-           },
-           {
             "type": "course",
-            "code": "NEUROSC M101B",
+            "code": "MCD BIO 100",
             "status": "active"
            },
            {
             "type": "course",
-            "code": "NEUROSC 102",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "NEURO 205",
-            "status": "inactive"
-           },
-           {
-            "type": "course",
-            "code": "NEURO 260",
-            "status": "inactive"
-           },
-           {
-            "type": "course",
-            "code": "PHYSCI C144",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "PHYSICS C186",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "PSYCH 119M",
+            "code": "MCD BIO 165A",
             "status": "active"
            }
           ],
-          "label": "Neurosystems",
-          "notes": "Only one course from Neuroscience M101A or Psychology 115 may be applied."
+          "count": 1
          },
          {
-          "type": "all",
+          "type": "course",
+          "code": "MCD BIO 138",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MCD BIO M140",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MCD BIO 144",
+          "status": "active"
+         },
+         {
+          "type": "choose",
           "items": [
            {
             "type": "course",
-            "code": "BIOENGR C102",
+            "code": "NEUROSC M101A",
             "status": "active"
            },
            {
             "type": "course",
-            "code": "BIOMATH 206",
-            "status": "inactive"
-           },
-           {
-            "type": "choose",
-            "items": [
-             {
-              "type": "course",
-              "code": "EE BIOL 170",
-              "status": "active"
-             },
-             {
-              "type": "course",
-              "code": "PHYSCI 166",
-              "status": "active"
-             }
-            ],
-            "count": 1
-           },
-           {
-            "type": "course",
-            "code": "PHYSCI 149",
+            "code": "PSYCH 115",
             "status": "active"
            }
           ],
-          "label": "Physiology",
-          "notes": "Only one course from Ecology and Evolutionary Biology 170 or Physiological Sciences 166 may be applied."
+          "count": 1
+         },
+         {
+          "type": "course",
+          "code": "NEUROSC M101B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "NEUROSC 102",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "NEURO 205",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "NEURO 260",
+          "status": "inactive"
+         },
+         {
+          "type": "course",
+          "code": "PHYSCI C144",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHYSICS C186",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PSYCH 119M",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "BIOENGR C102",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "BIOMATH 206",
+          "status": "inactive"
+         },
+         {
+          "type": "choose",
+          "items": [
+           {
+            "type": "course",
+            "code": "EE BIOL 170",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PHYSCI 166",
+            "status": "active"
+           }
+          ],
+          "count": 1
+         },
+         {
+          "type": "course",
+          "code": "PHYSCI 149",
+          "status": "active"
          }
         ],
         "count": 2,
@@ -694,7 +673,6 @@
         "notes": "Select any two courses from the subareas. Courses may be chosen from different subareas."
        }
       ],
-      "count": 5,
       "label": "Tracks"
      }
     ],
@@ -791,7 +769,7 @@
       "label": "Life Sciences"
      },
      {
-      "type": "choose",
+      "type": "all",
       "items": [
        {
         "type": "all",
@@ -921,7 +899,6 @@
         "notes": "Students may select Mathematics 31A or 31AL."
        }
       ],
-      "count": 5,
       "label": "Mathematics"
      },
      {

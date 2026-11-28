@@ -100,7 +100,7 @@
     "type": "all",
     "items": [
      {
-      "type": "choose",
+      "type": "all",
       "items": [
        {
         "type": "course",
@@ -108,14 +108,20 @@
         "status": "active"
        },
        {
-        "type": "course",
-        "code": "FILM TV 106B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "FILM TV 106C",
-        "status": "active"
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "FILM TV 106B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "FILM TV 106C",
+          "status": "active"
+         }
+        ],
+        "count": 1
        },
        {
         "type": "course",
@@ -143,7 +149,6 @@
         "status": "active"
        }
       ],
-      "count": 7,
       "label": "Required Courses",
       "notes": "Complete seven courses, including either Film and Television 106B or 106C."
      },

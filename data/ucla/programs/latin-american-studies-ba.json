@@ -201,7 +201,7 @@
     "type": "all",
     "items": [
      {
-      "type": "choose",
+      "type": "all",
       "items": [
        {
         "type": "choose",
@@ -520,15 +520,302 @@
          }
         ],
         "label": "Substitutions",
-        "notes": "The area studies electives listed in groups 1 and 2 focus on contemporary issues of that region after 1750. Students may substitute a maximum of three upper-division courses with focus on earlier historical aspects of the region or on diasporas with origins related to the region toward the area studies electives as long the distribution between humanities and arts and social sciences is maintained. Courses may be selected from the following lists:"
+        "notes": "The area studies electives listed in groups 1 and 2 focus on contemporary issues of that region after 1750. Students may substitute a maximum of three upper-division courses with focus on earlier historical aspects of the region or on diasporas with origins related to the region toward the area studies electives as long the distribution between humanities and arts and social sciences is maintained. Courses may be selected from the following lists:",
+        "optional": true
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "ART HIS C142A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ART HIS C142B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ART HIS 144",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS M108A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS 108B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS 113",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS 161K",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "FILM TV 106C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "MUSC M131",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE 130A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE 130B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE 141B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE 142A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE 142B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SPAN 120",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "WL ARTS C139",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "AF AMER M154C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "AF AMER M178",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 161",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 162",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CCAS 111",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CCAS 117",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CCAS M132",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CCAS C141",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CCAS 143",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CCAS 151",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CCAS 169",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM HLT 132",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GENDER M147C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GEOG 135",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GEOG 172A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GEOG 172C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 162A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LBR STD M125",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LBR STD M144",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "POL SCI 154A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "POL SCI 154B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PUB HLT M106",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SOCIOL 186",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SOCIOL 191J",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ART HIS CM139A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ART HIS C139B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ART HIS CM141",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CCAS M105D",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CCAS M105E",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CCAS 109",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CCAS 142",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ETHNMUS M116",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PORTGSE 143A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 114P",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ANTHRO 114Q",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CCAS M119",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CCAS M159B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CCAS 184",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CCAS M187",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 157B",
+          "status": "active"
+         }
+        ],
+        "count": 1,
+        "label": "Additional courses"
        }
       ],
-      "count": 7,
       "label": "Area Studies",
       "notes": "Select seven courses from the humanities and arts and social sciences groups as follows:"
      },
      {
-      "type": "choose",
+      "type": "all",
       "items": [
        {
         "type": "choose",
@@ -802,7 +1089,6 @@
         "notes": "Select two courses from:"
        }
       ],
-      "count": 4,
       "label": "International Themes",
       "notes": "Select four courses from international politics and markets and international societies and cultures as follows:"
      },

@@ -62,200 +62,186 @@
       "type": "choose",
       "items": [
        {
-        "type": "all",
+        "type": "course",
+        "code": "ANTHRO 3",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ANTHRO 4",
+        "status": "active"
+       },
+       {
+        "type": "choose",
         "items": [
          {
           "type": "course",
-          "code": "ANTHRO 3",
+          "code": "COM LIT 1D",
           "status": "active"
          },
          {
           "type": "course",
-          "code": "ANTHRO 4",
+          "code": "COM LIT 2DW",
           "status": "active"
-         },
-         {
-          "type": "choose",
-          "items": [
-           {
-            "type": "course",
-            "code": "COM LIT 1D",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "COM LIT 2DW",
-            "status": "active"
-           }
-          ],
-          "count": 1
-         },
-         {
-          "type": "course",
-          "code": "COM LIT 2CW",
-          "status": "active"
-         },
-         {
-          "type": "choose",
-          "items": [
-           {
-            "type": "course",
-            "code": "COM LIT 4CW",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "COM LIT 4DW",
-            "status": "active"
-           }
-          ],
-          "count": 1
-         },
-         {
-          "type": "course",
-          "code": "ETHNMUS M25",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "GENDER 10",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "GEOG 3",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "GEOG 6",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "INTL DV 1",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "WL ARTS 20",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "WL ARTS 33",
-          "status": "active"
-         },
-         {
-          "type": "all",
-          "items": [
-           {
-            "type": "course",
-            "code": "ASIA AM 10",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ASIA AM 20",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ASIA AM 20W",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "CCAS 10B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "CLUSTER M27B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "FRNCH 14",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "FRNCH 14W",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "HIST 8A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "I A STD 31",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "I A STD 33",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "I A STD 50",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ITALIAN 42A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ITALIAN 42B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ITALIAN 46",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "M E STD M50CW",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "RUSSN 90A",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "RUSSN 90B",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "RUSSN 90BW",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "SPAN 42",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "SPAN 44",
-            "status": "active"
-           }
-          ],
-          "label": "Additional Culture and Society Courses",
-          "notes": "One course from the following list may be applied toward the culture and society category:"
          }
         ],
-        "label": "Culture and Society",
-        "notes": "Only one course from each pair of Comparative Literature 1C or 2CW, 1D or 2DW, and 4CW or 4DW may be applied."
+        "count": 1
+       },
+       {
+        "type": "course",
+        "code": "COM LIT 2CW",
+        "status": "active"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "COM LIT 4CW",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "COM LIT 4DW",
+          "status": "active"
+         }
+        ],
+        "count": 1
+       },
+       {
+        "type": "course",
+        "code": "ETHNMUS M25",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GENDER 10",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GEOG 3",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GEOG 6",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "INTL DV 1",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "WL ARTS 20",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "WL ARTS 33",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIA AM 10",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIA AM 20",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ASIA AM 20W",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CCAS 10B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CLUSTER M27B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "FRNCH 14",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "FRNCH 14W",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 8A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "I A STD 31",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "I A STD 33",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "I A STD 50",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ITALIAN 42A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ITALIAN 42B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ITALIAN 46",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "M E STD M50CW",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "RUSSN 90A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "RUSSN 90B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "RUSSN 90BW",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SPAN 42",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SPAN 44",
+        "status": "active"
        },
        {
         "type": "course",

@@ -341,7 +341,7 @@
       "notes": "Select two courses from:"
      },
      {
-      "type": "all",
+      "type": "choose",
       "items": [
        {
         "type": "course",
@@ -693,6 +693,7 @@
         "expanded_from": "range"
        }
       ],
+      "count": 3,
       "label": "Additional English Electives",
       "notes": "Select a total of three courses from the following list or from the series or courses:"
      }

@@ -594,57 +594,50 @@
         "status": "active"
        },
        {
-        "type": "all",
+        "type": "choose",
         "items": [
          {
-          "type": "choose",
-          "items": [
-           {
-            "type": "course",
-            "code": "MATH 174E",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "STATS C183",
-            "status": "active"
-           }
-          ],
-          "count": 1
-         },
-         {
           "type": "course",
-          "code": "MGMT 120A",
+          "code": "MATH 174E",
           "status": "active"
          },
          {
           "type": "course",
-          "code": "MGMT 120B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MGMT 122",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MGMT 127A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MGMT 130A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MGMT 170",
+          "code": "STATS C183",
           "status": "active"
          }
         ],
-        "label": "Management",
-        "notes": "No more than two management courses may be applied. Only one course from Mathematics 174E or Statistics C183 may be applied. Management 130A is not open for credit to students with credit for Economics 106F. Economics 106F is not open for credit to students with credit for Management 130A."
+        "count": 1
+       },
+       {
+        "type": "course",
+        "code": "MGMT 120A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGMT 120B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGMT 122",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGMT 127A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGMT 130A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MGMT 170",
+        "status": "active"
        }
       ],
       "count": 6,

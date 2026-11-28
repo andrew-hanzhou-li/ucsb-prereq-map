@@ -518,41 +518,34 @@
         "status": "active"
        },
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "CHEM 14C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CHEM 30A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "LIFESCI 7C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "LIFESCI 7L",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MATH 3C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MATH 32A",
-          "status": "active"
-         }
-        ],
-        "label": "Additional Course",
-        "notes": "For the Environmental Health Science minor, one additional course from the following is also required. Students selecting Life Sciences 7C must also complete 7L."
+        "type": "course",
+        "code": "CHEM 14C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CHEM 30A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LIFESCI 7C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LIFESCI 7L",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 3C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MATH 32A",
+        "status": "active"
        }
       ],
       "count": 1,
@@ -1195,7 +1188,7 @@
       "type": "all",
       "items": [
        {
-        "type": "choose",
+        "type": "all",
         "items": [
          {
           "type": "choose",
@@ -1518,7 +1511,6 @@
           "label": "Additional Courses"
          }
         ],
-        "count": 7,
         "label": "Atmospheric and Oceanic Sciences Minor"
        },
        {
@@ -2186,144 +2178,138 @@
           "notes": "Select one course from:"
          },
          {
-          "type": "all",
+          "type": "choose",
           "items": [
            {
-            "type": "choose",
-            "items": [
-             {
-              "type": "course",
-              "code": "BIOSTAT 121",
-              "status": "active"
-             },
-             {
-              "type": "course",
-              "code": "BIOSTAT 125",
-              "status": "active"
-             },
-             {
-              "type": "course",
-              "code": "CHEM 153A",
-              "status": "active"
-             },
-             {
-              "type": "course",
-              "code": "ENV HLT 112",
-              "status": "active"
-             },
-             {
-              "type": "course",
-              "code": "ENV HLT C140",
-              "status": "active"
-             },
-             {
-              "type": "course",
-              "code": "ENV HLT C152D",
-              "status": "active"
-             },
-             {
-              "type": "course",
-              "code": "ENV HLT C157",
-              "status": "active"
-             },
-             {
-              "type": "course",
-              "code": "EPIDEM 100",
-              "status": "active"
-             },
-             {
-              "type": "course",
-              "code": "EPIDEM 120",
-              "status": "active"
-             },
-             {
-              "type": "course",
-              "code": "GEOG 181A",
-              "status": "active"
-             }
-            ],
-            "count": 5,
-            "label": "Methods"
+            "type": "course",
+            "code": "BIOSTAT 121",
+            "status": "active"
            },
            {
-            "type": "choose",
-            "items": [
-             {
-              "type": "course",
-              "code": "A&O SCI 104",
-              "status": "active"
-             },
-             {
-              "type": "course",
-              "code": "COM HLT 131",
-              "status": "active"
-             },
-             {
-              "type": "course",
-              "code": "COM HLT CM170",
-              "status": "active"
-             },
-             {
-              "type": "course",
-              "code": "ENVIRON 140",
-              "status": "active"
-             },
-             {
-              "type": "course",
-              "code": "ENVIRON M167",
-              "status": "active"
-             },
-             {
-              "type": "course",
-              "code": "ENVIRON 168",
-              "status": "active"
-             },
-             {
-              "type": "course",
-              "code": "ENV HLT 110",
-              "status": "active"
-             },
-             {
-              "type": "course",
-              "code": "ENV HLT C125",
-              "status": "active"
-             },
-             {
-              "type": "course",
-              "code": "ENV HLT 151",
-              "status": "active"
-             },
-             {
-              "type": "course",
-              "code": "ENV HLT 170",
-              "status": "active"
-             },
-             {
-              "type": "course",
-              "code": "ENV HLT M171",
-              "status": "active"
-             },
-             {
-              "type": "course",
-              "code": "GEOG 136",
-              "status": "active"
-             },
-             {
-              "type": "course",
-              "code": "GEOG 146",
-              "status": "active"
-             },
-             {
-              "type": "course",
-              "code": "PUB AFF 158XP",
-              "status": "active"
-             }
-            ],
-            "count": 5,
-            "label": "Topical"
+            "type": "course",
+            "code": "BIOSTAT 125",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "CHEM 153A",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENV HLT 112",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENV HLT C140",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENV HLT C152D",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENV HLT C157",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EPIDEM 100",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "EPIDEM 120",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "GEOG 181A",
+            "status": "active"
            }
           ],
-          "label": "Electives"
+          "count": 5,
+          "label": "Methods"
+         },
+         {
+          "type": "choose",
+          "items": [
+           {
+            "type": "course",
+            "code": "A&O SCI 104",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COM HLT 131",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "COM HLT CM170",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENVIRON 140",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENVIRON M167",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENVIRON 168",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENV HLT 110",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENV HLT C125",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENV HLT 151",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENV HLT 170",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "ENV HLT M171",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "GEOG 136",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "GEOG 146",
+            "status": "active"
+           },
+           {
+            "type": "course",
+            "code": "PUB AFF 158XP",
+            "status": "active"
+           }
+          ],
+          "count": 5,
+          "label": "Topical"
          }
         ],
         "count": 1,

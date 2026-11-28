@@ -172,24 +172,30 @@
         "status": "active"
        },
        {
-        "type": "course",
-        "code": "EPS SCI 119",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "EPS SCI 133",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "EPS SCI 136A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "EPS SCI C166",
-        "status": "active"
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "EPS SCI 119",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI 133",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI 136A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "EPS SCI C166",
+          "status": "active"
+         }
+        ],
+        "label": "Tectonics/Structural Geology"
        }
       ],
       "count": 5,

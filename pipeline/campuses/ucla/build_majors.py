@@ -57,7 +57,7 @@ CATALOG_YEAR = "2026-27"
 NUMBER_WORDS = {"one": 1, "two": 2, "three": 3, "four": 4, "five": 5, "six": 6, "seven": 7, "eight": 8,
                 "nine": 9, "ten": 10, "eleven": 11, "twelve": 12, "thirteen": 13, "fourteen": 14, "fifteen": 15}
 COUNT = r"(\d+|" + "|".join(NUMBER_WORDS) + r")"
-CHOOSE_RULE = re.compile(r"^(?:Select|Complete|Choose|Take)\s+(?:at least\s+|a minimum of\s+|any\s+)?" + COUNT +
+CHOOSE_RULE = re.compile(r"^(?:Select|Complete|Choose|Take)\s+(?:at least\s+|a minimum of\s+|any\s+|a total of\s+)?" + COUNT +
                          r"\b(?P<what>[^:]*?)\b(?:from|of the following)\b", re.IGNORECASE)
 # "two courses from each of the following principles", "one course from each of three of the four areas"
 EACH_RULE = re.compile(r"\bfrom each of\s+(?:(?P<areas>\d+|" + "|".join(NUMBER_WORDS) + r")\s+of\b)?", re.IGNORECASE)
@@ -76,8 +76,9 @@ IMPERATIVE = re.compile(r"^(?:Complete|Select|Choose|Take|Students must)\b", re.
 # strongly recommended that they be taken early").
 RECOMMENDED_LINE = re.compile(r"^(?!(?:Complete|Select|Choose|Take)\b).*\brecommended\b", re.IGNORECASE)
 UNITS_RULE = re.compile(r"^(?:Select|Complete|Take)\s+(?:at least\s+|a minimum of\s+)?(\d+(?:\.\d+)?)\s+units?\b", re.IGNORECASE)
-COUNT_ONLY = re.compile(r"^(?:Select|Complete|Choose|Take)\s+(?:at least\s+|a minimum of\s+|any\s+)?" + COUNT +
+COUNT_ONLY = re.compile(r"^(?:Select|Complete|Choose|Take)\s+(?:at least\s+|a minimum of\s+|any\s+|a total of\s+)?" + COUNT +
                         r"\s+(?:[\w-]+\s+){0,4}?courses?\b", re.IGNORECASE)
+SPLIT_RULE = re.compile(r"^Select\b[^:]*?\b" + COUNT + r"\s+courses?\b[^:]*?\band\s+" + COUNT + r"\s+courses?\b", re.IGNORECASE)
 ALL_RULE = re.compile(r"^(?:Complete|Take)\b[^:]*\b(?:as follows|the following|all)\b", re.IGNORECASE)
 
 
@@ -224,15 +225,23 @@ class Converter:
             # "Select one course from either group": the groups' courses are
             # one list (a group of courses isn't a single option). A list of
             # series ("Select one of the following series") stays as options.
-            if re.search(r"\bcourses?\b", choose.group("what"), re.IGNORECASE):
-                parts = [x for p in parts for x in (unwrapped(p) if p.get("_plain") and p["type"] == "all" else [p])]
             node = {"type": "choose", "count": count_of(choose.group(1)), "items": parts}
-        elif (counted := COUNT_ONLY.match(line)) and not ALL_RULE.match(line) and count_of(counted.group(1)) < len(parts):
+            # (Unless the parts have rules of their own that share the count out.)
+            if re.search(r"\bcourses?\b", choose.group("what"), re.IGNORECASE) and counted_across(node)["type"] == "choose":
+                node["items"] = lists_joined(parts)
+        elif ((counted := COUNT_ONLY.match(line)) and not ALL_RULE.match(line) and count_of(counted.group(1)) < len(parts)
+              and not re.search(r",|\brequired\b", line.split(":")[0])):
             # "Select three courses:" / "Complete seven elective courses" over a longer list
-            node = {"type": "choose", "count": count_of(counted.group(1)),
-                    "items": [x for p in parts for x in (unwrapped(p) if p.get("_plain") and p["type"] == "all" else [p])]}
+            node = {"type": "choose", "count": count_of(counted.group(1)), "items": lists_joined(parts)}
+        elif (split := SPLIT_RULE.match(line)) and all(p["type"] == "all" for p in parts):
+            # "Select a concentration of four courses in one area listed and two
+            # courses in a second area": six courses from the areas (the spread is in the notes).
+            node = {"type": "choose", "count": count_of(split.group(1)) + count_of(split.group(2)),
+                    "items": lists_joined(parts)}
         else:
             node = {"type": "all", "items": or_pairs(parts, line)}
+        if node is not None and node["type"] == "choose":
+            node = counted_across(node)
         for part in parts:
             part.pop("_plain", None)
         if node is not None and node["type"] in ("all", "choose", "units"):
@@ -288,6 +297,62 @@ def one_concentration(sections):
     at = sections.index(picks[0])
     rest = [s for s in sections if s not in picks]
     return rest[:at] + [{"name": "Concentration", "requirement": choice}] + rest[at:]
+
+
+def courses_needed(node):
+    """About how many courses a node asks for (units at 4 a course)."""
+    if node["type"] in ("course", "range", "any"):
+        return 1
+    if node["type"] == "text" or node.get("optional") or "items" not in node:
+        return 0
+    if node["type"] == "choose":
+        return node["count"]
+    if node["type"] == "units":
+        return max(1, round(node["units"] / 4))
+    return sum(courses_needed(i) for i in node["items"])
+
+
+def courses_in(node):
+    """Every course (or course range) inside a node."""
+    if node["type"] in ("course", "range", "any"):
+        return [node]
+    return [c for i in node.get("items", []) for c in courses_in(i)]
+
+
+def counted_across(node):
+    """"Complete nine courses from the following tracks and one capstone",
+    "Select seven courses" over "three from group 1" and "three from group 2":
+    the count is spread over parts that each have a rule of their own. A
+    "choose" counts whole parts, so that could never be met. If the parts
+    ask for the count between them, all of them are needed; if they ask for
+    fewer, all of them plus the rest from any of their courses."""
+    parts = [p for p in node["items"] if p["type"] != "text"]
+    # (Lists with no rule of their own are one list, not parts with counts: see lists_joined.)
+    if (not parts or any(p["type"] in ("course", "range", "any") or p.get("_plain") for p in parts)
+            or node["count"] <= len(parts)):
+        return node
+    asked = sum(courses_needed(p) for p in parts)
+    if asked >= node["count"]:
+        return {k: v for k, v in dict(node, type="all").items() if k != "count"}
+    extra = {"type": "choose", "count": node["count"] - asked, "label": "Additional courses",
+             "items": [dict(c) for c in courses_in({"type": "all", "items": parts})]}
+    out = {k: v for k, v in dict(node, type="all").items() if k != "count"}
+    out["items"] = node["items"] + [extra]
+    return out
+
+
+def lists_joined(parts):
+    """For "N courses from" these lists: the courses of every plain list
+    (an "all" that isn't a series), as one list. "Economics 104/104L" or
+    "Physics 1 series" stay whole: one of them is one choice."""
+    joined = []
+    for part in parts:
+        series = re.search(r"series|sequence|/", part.get("label") or "", re.IGNORECASE)
+        if part["type"] == "all" and not series and not part.get("optional"):
+            joined.extend(lists_joined(part["items"]))
+        else:
+            joined.append(part)
+    return joined
 
 
 def unwrapped(node):

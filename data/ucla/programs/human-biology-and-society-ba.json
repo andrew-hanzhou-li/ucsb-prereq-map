@@ -112,281 +112,274 @@
       "type": "choose",
       "items": [
        {
-        "type": "all",
+        "type": "course",
+        "code": "AF AMER 1",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "AF AMER M5",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "AF AMER 6",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "AM IND M10",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ANTHRO 3",
+        "status": "active"
+       },
+       {
+        "type": "choose",
         "items": [
          {
           "type": "course",
-          "code": "AF AMER 1",
+          "code": "ASIA AM 10",
           "status": "active"
          },
          {
           "type": "course",
-          "code": "AF AMER M5",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "AF AMER 6",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "AM IND M10",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ANTHRO 3",
-          "status": "active"
-         },
-         {
-          "type": "choose",
-          "items": [
-           {
-            "type": "course",
-            "code": "ASIA AM 10",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ASIA AM 10W",
-            "status": "active"
-           }
-          ],
-          "count": 1
-         },
-         {
-          "type": "choose",
-          "items": [
-           {
-            "type": "course",
-            "code": "ASIA AM 20",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ASIA AM 20W",
-            "status": "active"
-           }
-          ],
-          "count": 1
-         },
-         {
-          "type": "choose",
-          "items": [
-           {
-            "type": "course",
-            "code": "ASIA AM 40",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ASIA AM 40W",
-            "status": "active"
-           }
-          ],
-          "count": 1
-         },
-         {
-          "type": "choose",
-          "items": [
-           {
-            "type": "course",
-            "code": "ASIA AM 50",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ASIA AM 50W",
-            "status": "active"
-           }
-          ],
-          "count": 1
-         },
-         {
-          "type": "course",
-          "code": "CCAS 10A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CCAS 10B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ENGL M30",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ENVIRON M30",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "GENDER 10",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "GEOG 3",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "HIST 3A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "HIST 3C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "HIST 3D",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "HIST 12A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "HIST 12B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "HIST 12C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "HNRS 70A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "LBR STD M1A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "LBR STD M1B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "LBR STD M1CW",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "LBR STD 10",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MCD BIO 50",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MCD BIO 60",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PHILOS 3",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PHILOS 4",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PHILOS 6",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PHILOS 7",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PHILOS 8",
-          "status": "active"
-         },
-         {
-          "type": "choose",
-          "items": [
-           {
-            "type": "course",
-            "code": "PHILOS 22",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "PHILOS 22W",
-            "status": "active"
-           }
-          ],
-          "count": 1
-         },
-         {
-          "type": "course",
-          "code": "POL SCI 10",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "POL SCI 40",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PUB AFF 10",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PUB AFF 20",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PUB AFF 30",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PUB AFF 80",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "SOC GEN 125",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "SOCIOL 1",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "SOCIOL M5",
+          "code": "ASIA AM 10W",
           "status": "active"
          }
         ],
-        "label": "Courses",
-        "notes": "Only one course from Asian American Studies 10 or 10W may be applied. Only one course from Asian American Studies 20 or 20W may be applied. Only one course from Asian American Studies 40 or 40W may be applied. Only one course from Asian American Studies 50 or 50W may be applied. Only one course from Philosophy 22 or 22W may be applied."
+        "count": 1
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "ASIA AM 20",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ASIA AM 20W",
+          "status": "active"
+         }
+        ],
+        "count": 1
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "ASIA AM 40",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ASIA AM 40W",
+          "status": "active"
+         }
+        ],
+        "count": 1
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "ASIA AM 50",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ASIA AM 50W",
+          "status": "active"
+         }
+        ],
+        "count": 1
+       },
+       {
+        "type": "course",
+        "code": "CCAS 10A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CCAS 10B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ENGL M30",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ENVIRON M30",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GENDER 10",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GEOG 3",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 3A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 3C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 3D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 12A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 12B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 12C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HNRS 70A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LBR STD M1A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LBR STD M1B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LBR STD M1CW",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "LBR STD 10",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MCD BIO 50",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MCD BIO 60",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 3",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 4",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 6",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 7",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 8",
+        "status": "active"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "PHILOS 22",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHILOS 22W",
+          "status": "active"
+         }
+        ],
+        "count": 1
+       },
+       {
+        "type": "course",
+        "code": "POL SCI 10",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "POL SCI 40",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PUB AFF 10",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PUB AFF 20",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PUB AFF 30",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PUB AFF 80",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SOC GEN 125",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SOCIOL 1",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SOCIOL M5",
+        "status": "active"
        },
        {
         "type": "course",

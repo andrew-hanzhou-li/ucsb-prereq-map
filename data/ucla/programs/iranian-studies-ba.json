@@ -222,286 +222,108 @@
       "type": "choose",
       "items": [
        {
-        "type": "choose",
-        "count": 1,
-        "items": [
-         {
-          "type": "course",
-          "code": "IRANIAN 1A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN 1B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN 1C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN 8",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN 19",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN 20A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN 20B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN 20C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN 35",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN 55",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN M60",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN M60W",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN 89",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN 89HC",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN 99",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN 102A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN 102B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN 102C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN 103A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN 103B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN 103C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN 104",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN M105A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN M105B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN M105C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN M110A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN M110B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN M110C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN M115A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN M115B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN M115C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN 120",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN 130",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN 131",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN 132",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN 140",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN 141",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN 142",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN 150A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN 150B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN 161A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN 161B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN 161C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN CM163",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN 164",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN 169",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN 170",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN M178",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "IRANIAN 187",
-          "status": "active"
-         }
-        ],
-        "label": "IRANIAN 0–187",
-        "expanded_from": "range"
-       },
-       {
         "type": "course",
-        "code": "ART HIS 119A",
+        "code": "IRANIAN 1A",
         "status": "active"
        },
        {
         "type": "course",
-        "code": "ART HIS 119B",
+        "code": "IRANIAN 1B",
         "status": "active"
        },
        {
         "type": "course",
-        "code": "ART HIS C120",
+        "code": "IRANIAN 1C",
         "status": "active"
        },
        {
         "type": "course",
-        "code": "HIST 105A",
+        "code": "IRANIAN 8",
         "status": "active"
        },
        {
         "type": "course",
-        "code": "HIST 105B",
+        "code": "IRANIAN 19",
         "status": "active"
        },
        {
         "type": "course",
-        "code": "HIST 105C",
+        "code": "IRANIAN 20A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "IRANIAN 20B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "IRANIAN 20C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "IRANIAN 35",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "IRANIAN 55",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "IRANIAN M60",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "IRANIAN M60W",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "IRANIAN 89",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "IRANIAN 89HC",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "IRANIAN 99",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "IRANIAN 102A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "IRANIAN 102B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "IRANIAN 102C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "IRANIAN 103A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "IRANIAN 103B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "IRANIAN 103C",
         "status": "active"
        },
        {
@@ -521,6 +343,26 @@
        },
        {
         "type": "course",
+        "code": "IRANIAN M105C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "IRANIAN M110A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "IRANIAN M110B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "IRANIAN M110C",
+        "status": "active"
+       },
+       {
+        "type": "course",
         "code": "IRANIAN M115A",
         "status": "active"
        },
@@ -532,6 +374,11 @@
        {
         "type": "course",
         "code": "IRANIAN M115C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "IRANIAN 120",
         "status": "active"
        },
        {
@@ -551,12 +398,62 @@
        },
        {
         "type": "course",
+        "code": "IRANIAN 140",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "IRANIAN 141",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "IRANIAN 142",
+        "status": "active"
+       },
+       {
+        "type": "course",
         "code": "IRANIAN 150A",
         "status": "active"
        },
        {
         "type": "course",
         "code": "IRANIAN 150B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "IRANIAN 161A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "IRANIAN 161B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "IRANIAN 161C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "IRANIAN CM163",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "IRANIAN 164",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "IRANIAN 169",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "IRANIAN 170",
         "status": "active"
        },
        {
@@ -570,9 +467,110 @@
         "status": "active"
        },
        {
-        "type": "course",
-        "code": "POL SCI 157",
-        "status": "active"
+        "type": "all",
+        "items": [
+         {
+          "type": "course",
+          "code": "ART HIS 119A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ART HIS 119B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ART HIS C120",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 105A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 105B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 105C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "IRANIAN 104",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "IRANIAN M105A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "IRANIAN M105B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "IRANIAN M115A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "IRANIAN M115B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "IRANIAN M115C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "IRANIAN 130",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "IRANIAN 131",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "IRANIAN 132",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "IRANIAN 150A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "IRANIAN 150B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "IRANIAN M178",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "IRANIAN 187",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "POL SCI 157",
+          "status": "active"
+         }
+        ],
+        "label": "Recommended Electives"
        }
       ],
       "count": 4,

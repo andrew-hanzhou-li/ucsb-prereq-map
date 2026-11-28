@@ -356,128 +356,121 @@
       "type": "choose",
       "items": [
        {
-        "type": "all",
+        "type": "course",
+        "code": "AF AMER M5",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "AM IND M10",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ANTHRO 3",
+        "status": "active"
+       },
+       {
+        "type": "choose",
         "items": [
          {
           "type": "course",
-          "code": "AF AMER M5",
+          "code": "ASIA AM 20",
           "status": "active"
          },
          {
           "type": "course",
-          "code": "AM IND M10",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ANTHRO 3",
-          "status": "active"
-         },
-         {
-          "type": "choose",
-          "items": [
-           {
-            "type": "course",
-            "code": "ASIA AM 20",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "ASIA AM 20W",
-            "status": "active"
-           }
-          ],
-          "count": 1
-         },
-         {
-          "type": "course",
-          "code": "CCAS 10A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "CCAS 10B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "GENDER 10",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "GEOG 3",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "HIST 3C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MCD BIO 50",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MCD BIO 60",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PHILOS 4",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PHILOS 6",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PHILOS 8",
-          "status": "active"
-         },
-         {
-          "type": "choose",
-          "items": [
-           {
-            "type": "course",
-            "code": "PHILOS 22",
-            "status": "active"
-           },
-           {
-            "type": "course",
-            "code": "PHILOS 22W",
-            "status": "active"
-           }
-          ],
-          "count": 1
-         },
-         {
-          "type": "course",
-          "code": "PUB AFF 10",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "SOC GEN 125",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "SOCIOL 1",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "SOCIOL M5",
+          "code": "ASIA AM 20W",
           "status": "active"
          }
         ],
-        "label": "Courses",
-        "notes": "Only one course from Asian American Studies 20 or 20W may be applied. Only one course from Philosophy 22 or 22W may be applied."
+        "count": 1
+       },
+       {
+        "type": "course",
+        "code": "CCAS 10A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "CCAS 10B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GENDER 10",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "GEOG 3",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 3C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MCD BIO 50",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MCD BIO 60",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 4",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 6",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 8",
+        "status": "active"
+       },
+       {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "PHILOS 22",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "PHILOS 22W",
+          "status": "active"
+         }
+        ],
+        "count": 1
+       },
+       {
+        "type": "course",
+        "code": "PUB AFF 10",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SOC GEN 125",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SOCIOL 1",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "SOCIOL M5",
+        "status": "active"
        },
        {
         "type": "course",

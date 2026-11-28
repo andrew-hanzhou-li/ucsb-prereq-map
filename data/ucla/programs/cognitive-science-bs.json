@@ -496,276 +496,269 @@
       "type": "choose",
       "items": [
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "PSYCH 110",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PSYCH 120A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PSYCH 120B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PSYCH 130",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PSYCH 133B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PSYCH 133C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PSYCH 133E",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PSYCH 133J",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PSYCH 135",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PSYCH 137A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PSYCH M137B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PSYCH 142H",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PSYCH 155A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PSYCH 155B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PSYCH 156A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PSYCH 161",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PSYCH M166",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PSYCH 196B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ANTHRO 124Q",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ANTHRO 136A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "ANTHRO M150",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "COMM 115",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "COMM 118",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "COMM 119",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "COMM 122",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "COMM 126",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "COMM M127",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "COMM 130",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "COMM 131",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "COMM 155",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "MSC IND M103",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "NEUROSC 102",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "NEUROSC M145",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "NEUROSC C177",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "NEUROSC 180",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "NEUROSC 181",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "NEUROSC 182",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PHILOS 154",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PHILOS C154B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PHILOS 170",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PHILOS 172",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PHILOS 174",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PHILOS 180",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PHILOS 181",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PSYCTRY M182",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "STATS 100A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "STATS 100B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "STATS 100C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "STATS 101B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "STATS 101C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "STATS 115",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "STATS C161",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "STATS C180",
-          "status": "active"
-         }
-        ],
-        "label": "Courses",
-        "notes": "One quarter of Psychology 196B may be applied if course has not been applied toward capstone requirement. Psychology 191CH may by applied only if content is approved by the undergraduate advising office and it has not been applied toward the Psychology 195B or 196B requirement. If Psychology 191CH is applied as an elective, it may not also be applied toward the fieldwork/research requirement."
+        "type": "course",
+        "code": "PSYCH 110",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 120A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 120B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 130",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 133B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 133C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 133E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 133J",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 135",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 137A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH M137B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 142H",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 155A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 155B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 156A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 161",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH M166",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCH 196B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ANTHRO 124Q",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ANTHRO 136A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "ANTHRO M150",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMM 115",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMM 118",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMM 119",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMM 122",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMM 126",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMM M127",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMM 130",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMM 131",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "COMM 155",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "MSC IND M103",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "NEUROSC 102",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "NEUROSC M145",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "NEUROSC C177",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "NEUROSC 180",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "NEUROSC 181",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "NEUROSC 182",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 154",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS C154B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 170",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 172",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 174",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 180",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHILOS 181",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PSYCTRY M182",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS 100A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS 100B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS 100C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS 101B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS 101C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS 115",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS C161",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "STATS C180",
+        "status": "active"
        },
        {
         "type": "course",
