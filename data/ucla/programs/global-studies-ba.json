@@ -144,104 +144,112 @@
         "status": "active"
        },
        {
-        "type": "course",
-        "code": "ASIA AM 10",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ASIA AM 20",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ASIA AM 20W",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CCAS 10B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "CLUSTER M27B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "FRNCH 14",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "FRNCH 14W",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "HIST 8A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "I A STD 31",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "I A STD 33",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "I A STD 50",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ITALIAN 42A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ITALIAN 42B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ITALIAN 46",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "M E STD M50CW",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "RUSSN 90A",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "RUSSN 90B",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "RUSSN 90BW",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "SPAN 42",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "SPAN 44",
-        "status": "active"
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "ASIA AM 10",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ASIA AM 20",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ASIA AM 20W",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CCAS 10B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "CLUSTER M27B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "FRNCH 14",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "FRNCH 14W",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "HIST 8A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "I A STD 31",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "I A STD 33",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "I A STD 50",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ITALIAN 42A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ITALIAN 42B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "ITALIAN 46",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "M E STD M50CW",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RUSSN 90A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RUSSN 90B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RUSSN 90BW",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SPAN 42",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "SPAN 44",
+          "status": "active"
+         }
+        ],
+        "count": 1,
+        "label": "Additional Culture and Society Courses",
+        "notes": "One course from the following list may be applied toward the culture and society category:"
        },
        {
         "type": "course",

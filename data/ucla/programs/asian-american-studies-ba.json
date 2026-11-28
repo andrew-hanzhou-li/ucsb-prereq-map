@@ -9,89 +9,60 @@
   {
    "name": "Preparation for the Major",
    "requirement": {
-    "type": "all",
+    "type": "choose",
     "items": [
      {
-      "type": "choose",
-      "items": [
-       {
-        "type": "course",
-        "code": "ASIA AM 10",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ASIA AM 10W",
-        "status": "active"
-       }
-      ],
-      "count": 1
+      "type": "course",
+      "code": "ASIA AM 10",
+      "status": "active"
      },
      {
-      "type": "choose",
-      "items": [
-       {
-        "type": "course",
-        "code": "ASIA AM 20",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ASIA AM 20W",
-        "status": "active"
-       }
-      ],
-      "count": 1
+      "type": "course",
+      "code": "ASIA AM 10W",
+      "status": "active"
      },
      {
-      "type": "choose",
-      "items": [
-       {
-        "type": "course",
-        "code": "ASIA AM 30",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ASIA AM 30W",
-        "status": "active"
-       }
-      ],
-      "count": 1
+      "type": "course",
+      "code": "ASIA AM 20",
+      "status": "active"
      },
      {
-      "type": "choose",
-      "items": [
-       {
-        "type": "course",
-        "code": "ASIA AM 40",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ASIA AM 40W",
-        "status": "active"
-       }
-      ],
-      "count": 1
+      "type": "course",
+      "code": "ASIA AM 20W",
+      "status": "active"
      },
      {
-      "type": "choose",
-      "items": [
-       {
-        "type": "course",
-        "code": "ASIA AM 50",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "ASIA AM 50W",
-        "status": "active"
-       }
-      ],
-      "count": 1
+      "type": "course",
+      "code": "ASIA AM 30",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ASIA AM 30W",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ASIA AM 40",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ASIA AM 40W",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ASIA AM 50",
+      "status": "active"
+     },
+     {
+      "type": "course",
+      "code": "ASIA AM 50W",
+      "status": "active"
      }
     ],
+    "count": 2,
     "label": "Preparation for the Major",
     "notes": "Two courses from Asian American Studies 10 or 10W, 20 or 20W, 30 or 30W, 40 or 40W, 50 or 50W:"
    }

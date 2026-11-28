@@ -292,128 +292,105 @@
       "label": "Required Core"
      },
      {
-      "type": "all",
+      "type": "choose",
       "items": [
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "EPS SCI 111",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "EPS SCI 112",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "EPS SCI C122",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "EPS SCI 136B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "EPS SCI 150",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "EPS SCI 152",
-          "status": "active"
-         }
-        ],
-        "label": "Applied Geophysics"
+        "type": "course",
+        "code": "EPS SCI 111",
+        "status": "active"
        },
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "EPS SCI 150",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "EPS SCI 153",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "EPS SCI 155",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "EPS SCI M156",
-          "status": "active"
-         }
-        ],
-        "label": "Earth and Planetary Exploration"
+        "type": "course",
+        "code": "EPS SCI 112",
+        "status": "active"
        },
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "EPS SCI 119",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "EPS SCI C122",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "EPS SCI 136B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "EPS SCI 150",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "EPS SCI 152",
-          "status": "active"
-         }
-        ],
-        "label": "Physics of the Earth"
+        "type": "course",
+        "code": "EPS SCI C122",
+        "status": "active"
        },
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "EPS SCI 136B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "EPS SCI 155",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "EPS SCI M156",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "PHYSICS M122",
-          "status": "active"
-         }
-        ],
-        "label": "Space Physics"
+        "type": "course",
+        "code": "EPS SCI 136B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 150",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 152",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 150",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 153",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 155",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI M156",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 119",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI C122",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 136B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 150",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 152",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 136B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI 155",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "EPS SCI M156",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "PHYSICS M122",
+        "status": "active"
        }
       ],
+      "count": 3,
       "label": "Area Requirement",
       "notes": "Three additional 100-level Earth, Planetary, and Space Sciences courses are required from below, other than M187, 189-199. Students may opt for one of the suggested grouped courses below"
      }

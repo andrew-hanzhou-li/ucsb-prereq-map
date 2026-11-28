@@ -57,7 +57,7 @@ CATALOG_YEAR = "2026-27"
 NUMBER_WORDS = {"one": 1, "two": 2, "three": 3, "four": 4, "five": 5, "six": 6, "seven": 7, "eight": 8,
                 "nine": 9, "ten": 10, "eleven": 11, "twelve": 12, "thirteen": 13, "fourteen": 14, "fifteen": 15}
 COUNT = r"(\d+|" + "|".join(NUMBER_WORDS) + r")"
-CHOOSE_RULE = re.compile(r"^(?:Select|Complete|Choose|Take)\s+(?:at least\s+|a minimum of\s+|any\s+|a total of\s+)?" + COUNT +
+CHOOSE_RULE = re.compile(r"^(?:(?:Select|Complete|Choose|Take)\s+)?(?:at least\s+|a minimum of\s+|any\s+|a total of\s+)?" + COUNT +
                          r"\b(?P<what>[^:]*?)\b(?:from|of the following)\b", re.IGNORECASE)
 # "two courses from each of the following principles", "one course from each of three of the four areas"
 EACH_RULE = re.compile(r"\bfrom each of\s+(?:(?P<areas>\d+|" + "|".join(NUMBER_WORDS) + r")\s+of\b)?", re.IGNORECASE)
@@ -82,6 +82,9 @@ COUNT_ONLY = re.compile(r"^(?:Select|Complete|Choose|Take)\s+(?:at least\s+|a mi
 TOTAL_RULE = re.compile(r"^(?:Select|Complete)\s+" + COUNT + r"\s+courses\s+total\b", re.IGNORECASE)
 ONE_OF_ANYWHERE = re.compile(r"\b(?:complete|select|choose|take) one of the following\b", re.IGNORECASE)
 ONE_SEQUENCE = re.compile(r"^(?:Select|Complete)\s+one\b[^:.]*\bsequence\b", re.IGNORECASE)
+UPPER_RULE = re.compile(r"^(?:Complete|Select)\s+" + COUNT + r"\s+(?:additional\s+)?upper-division\s+([A-Za-z ,&]+?)\s+courses\b", re.IGNORECASE)
+SOME_UNITS = re.compile(r"\band\s+(\d+(?:\.\d+)?)\s+units\s+from\s+([^:]*)", re.IGNORECASE)
+UNITS_OF = re.compile(r"^Complete\b[^:]*?\(?(\d+(?:\.\d+)?)\s+units\)?\s+of\b", re.IGNORECASE)
 ONLY_ONE = re.compile(r"^Only one (?:course|of these courses) may (?:apply|be applied)\.?$", re.IGNORECASE)
 SPLIT_RULE = re.compile(r"^Select\b[^:]*?\b" + COUNT + r"\s+courses?\b[^:]*?\band\s+" + COUNT + r"\s+courses?\b", re.IGNORECASE)
 ALL_RULE = re.compile(r"^(?:Complete|Take)\b[^:]*\b(?:as follows|the following|all)\b", re.IGNORECASE)
@@ -186,8 +189,18 @@ class Converter:
     def __init__(self, ids, translated, catalog):
         self.ids = ids
         self.catalog = catalog
+        with open(os.path.join("data", "ucla", "subjects.json"), encoding="utf-8") as f:
+            self.subject_names = json.load(f)
         self.translated = translated
         self.prose = []          # rules with no list, for translating
+
+    def subject_code(self, words):
+        """"Latin" -> "LATIN" (a subject's name, any case), or None."""
+        words = words.strip().lower()
+        for code, name in self.subject_names.items():
+            if name.lower() == words:
+                return code
+        return None
 
     def group(self, container, major):
         """One rule group -> a node (UCSD's format, shorthand allowed)."""
@@ -249,11 +262,31 @@ class Converter:
             if re.search(r"\bcourses?\b", choose.group("what"), re.IGNORECASE) and counted_across(node)["type"] == "choose":
                 node["items"] = lists_joined(parts)
         elif ((counted := COUNT_ONLY.match(line)) and not ALL_RULE.match(line)
-              and count_of(counted.group(1)) < sum(50 if p["type"] in ("range", "any") else 1 for p in parts)
+              and count_of(counted.group(1)) < sum(50 if p["type"] in ("range", "any") else 1 for p in lists_joined(parts))
               # (not "Complete 13 required courses, 12 units of technical breadth, …")
               and not re.search(r"\brequired\b", counted.group(0)) and not line[counted.end():].startswith(",")):
             # "Select three courses:" / "Complete seven elective courses" over a longer list
             node = {"type": "choose", "count": count_of(counted.group(1)), "items": lists_joined(parts)}
+        elif (upper := UPPER_RULE.match(line)) and self.subject_code(upper.group(2)) and \
+                count_of(upper.group(1)) > sum(1 for p in parts if p["type"] == "course"):
+            # "Complete seven upper-division Latin courses, including course 110":
+            # the courses named, and the rest from any upper-division Latin course.
+            named = [p for p in parts if p["type"] == "course"]
+            subject = self.subject_code(upper.group(2))
+            rest = {"type": "choose", "count": count_of(upper.group(1)) - len(named), "label": "Other upper-division courses",
+                    "items": [{"type": "any", "subject": subject, "level": "upper", "except": [p["code"] for p in named]}]}
+            node = {"type": "all", "items": named + [rest] + [p for p in parts if p["type"] != "course"]}
+        elif (some := SOME_UNITS.search(line)) and all(p["type"] == "course" for p in parts) and \
+                len(numbered(parts, some.group(2))) >= 2:
+            # "Complete the following six required courses and 4 units from
+            # Theater 50A, 50B, 50C, or 50D": the six, and 4 units of the four.
+            pool = numbered(parts, some.group(2))
+            node = {"type": "all", "items": [p for p in parts if p not in pool] +
+                    [{"type": "units", "units": whole(float(some.group(1))), "items": pool}]}
+        elif (years := UNITS_OF.search(line)) and all(p["type"] == "course" for p in parts) and len(parts) > 1 \
+                and not COUNT_ONLY.match(line):
+            # "Complete two years (12 units) of performance organizations": 12 units of the listed ones.
+            node = {"type": "units", "units": whole(float(years.group(1))), "items": parts}
         elif ONLY_ONE.match(line):
             node = {"type": "choose", "count": 1, "items": parts}
         elif (split := SPLIT_RULE.match(line)) and all(p["type"] == "all" for p in parts):
@@ -320,6 +353,17 @@ def one_concentration(sections):
     at = sections.index(picks[0])
     rest = [s for s in sections if s not in picks]
     return rest[:at] + [{"name": "Concentration", "requirement": choice}] + rest[at:]
+
+
+def whole(number):
+    """12.0 -> 12; 2.5 stays."""
+    return int(number) if float(number).is_integer() else number
+
+
+def numbered(parts, words):
+    """The courses in `parts` whose numbers the words name ("Theater 50A, 50B, or 50D")."""
+    numbers = set(re.findall(r"\b([A-Z]{0,2}\d+[A-Z]*)\b", words))
+    return [p for p in parts if p["type"] == "course" and p["code"].rsplit(" ", 1)[-1] in numbers]
 
 
 def subject_of(course):

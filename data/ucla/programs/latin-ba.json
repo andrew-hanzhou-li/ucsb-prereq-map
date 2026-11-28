@@ -72,6 +72,163 @@
         "status": "active"
        },
        {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "LATIN 100",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LATIN 101",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LATIN 102",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LATIN 103",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LATIN 104",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LATIN 105A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LATIN 105B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LATIN 106",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LATIN 107",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LATIN 108",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LATIN 109",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LATIN 111",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LATIN 112",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LATIN 113",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LATIN 114",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LATIN 115",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LATIN 116",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LATIN 117",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LATIN 118",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LATIN 119A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LATIN 119B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LATIN 120",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LATIN 121",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LATIN 130",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LATIN 131",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LATIN 133",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LATIN 189",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LATIN 189HC",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LATIN 197",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "LATIN 199",
+          "status": "active"
+         }
+        ],
+        "count": 6,
+        "label": "Other upper-division courses"
+       },
+       {
         "type": "all",
         "items": [
          {
@@ -94,64 +251,59 @@
       "notes": "Complete seven upper-division Latin courses, including course 110."
      },
      {
-      "type": "all",
+      "type": "choose",
       "items": [
        {
         "type": "text",
         "text": "Upper-division courses in classical civilization."
        },
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "HIST 112B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "HIST M112C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "HIST 112D",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "HIST M112E",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "HIST 113A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "HIST 113B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "HIST 114A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "HIST 114B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "HIST 115",
-          "status": "active"
-         }
-        ],
-        "label": "Ancient History"
+        "type": "course",
+        "code": "HIST 112B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST M112C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 112D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST M112E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 113A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 113B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 114A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 114B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 115",
+        "status": "active"
        }
       ],
+      "count": 3,
       "label": "Upper-Division Classical Civilization and/or Ancient History Courses",
       "notes": "Select three upper-division courses in classical civilization and/or ancient history:"
      },

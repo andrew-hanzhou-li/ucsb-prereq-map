@@ -42,24 +42,30 @@
       "status": "active"
      },
      {
-      "type": "course",
-      "code": "THEATER 50A",
-      "status": "active"
-     },
-     {
-      "type": "course",
-      "code": "THEATER 50B",
-      "status": "active"
-     },
-     {
-      "type": "course",
-      "code": "THEATER 50C",
-      "status": "active"
-     },
-     {
-      "type": "course",
-      "code": "THEATER 50D",
-      "status": "active"
+      "type": "units",
+      "items": [
+       {
+        "type": "course",
+        "code": "THEATER 50A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "THEATER 50B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "THEATER 50C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "THEATER 50D",
+        "status": "active"
+       }
+      ],
+      "units": 4
      }
     ],
     "label": "Preparation for the Major"

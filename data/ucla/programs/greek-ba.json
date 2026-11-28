@@ -80,6 +80,143 @@
         "status": "active"
        },
        {
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "GREEK 100",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GREEK 101A",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GREEK 101B",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GREEK 102",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GREEK 103",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GREEK 104",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GREEK 105",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GREEK 106",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GREEK 107",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GREEK 111",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GREEK 112",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GREEK 113",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GREEK 115",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GREEK 121",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GREEK 122",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GREEK 123",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GREEK 124",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GREEK 130",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GREEK 131",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GREEK 132",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GREEK 133",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GREEK 140",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GREEK 189",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GREEK 189HC",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GREEK 197",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "GREEK 199",
+          "status": "active"
+         }
+        ],
+        "count": 6,
+        "label": "Other upper-division courses"
+       },
+       {
         "type": "all",
         "items": [
          {
@@ -102,64 +239,59 @@
       "notes": "Complete seven upper-division Greek courses, including course 110."
      },
      {
-      "type": "all",
+      "type": "choose",
       "items": [
        {
         "type": "text",
         "text": "Upper-division courses in classical civilization."
        },
        {
-        "type": "all",
-        "items": [
-         {
-          "type": "course",
-          "code": "HIST 112B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "HIST M112C",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "HIST 112D",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "HIST M112E",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "HIST 113A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "HIST 113B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "HIST 114A",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "HIST 114B",
-          "status": "active"
-         },
-         {
-          "type": "course",
-          "code": "HIST 115",
-          "status": "active"
-         }
-        ],
-        "label": "Ancient History"
+        "type": "course",
+        "code": "HIST 112B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST M112C",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 112D",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST M112E",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 113A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 113B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 114A",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 114B",
+        "status": "active"
+       },
+       {
+        "type": "course",
+        "code": "HIST 115",
+        "status": "active"
        }
       ],
+      "count": 3,
       "label": "Upper-Division Classical Civilization and/or Ancient History Courses",
       "notes": "Select three upper-division courses in classical civilization and/or ancient history:"
      },

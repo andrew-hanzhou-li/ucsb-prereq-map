@@ -412,39 +412,47 @@
         "label": "Czech, Hungarian, Polish, Romanian, Serbian/Croatian, Ukrainian 187A through 187M"
        },
        {
-        "type": "course",
-        "code": "RUSSN M118",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "RUSSN 119",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "RUSSN 120",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "RUSSN C124C",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "RUSSN C124D",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "RUSSN C124N",
-        "status": "active"
-       },
-       {
-        "type": "course",
-        "code": "RUSSN C124T",
-        "status": "active"
+        "type": "choose",
+        "items": [
+         {
+          "type": "course",
+          "code": "RUSSN M118",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RUSSN 119",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RUSSN 120",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RUSSN C124C",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RUSSN C124D",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RUSSN C124N",
+          "status": "active"
+         },
+         {
+          "type": "course",
+          "code": "RUSSN C124T",
+          "status": "active"
+         }
+        ],
+        "count": 1,
+        "label": "Additional Russian Electives",
+        "notes": "One of the three courses may be selected from:"
        }
       ],
       "count": 3,
