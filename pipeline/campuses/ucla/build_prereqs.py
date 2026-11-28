@@ -113,6 +113,21 @@ def split_outside(text, sep=","):
     return [p.strip() for p in parts if p.strip()]
 
 
+def split_words(text, word):
+    """Split at a word ("or") where it isn't inside brackets."""
+    parts, depth, start = [], 0, 0
+    for match in re.finditer(r"\(|\)|\b" + word + r"\b", text):
+        if match.group(0) == "(":
+            depth += 1
+        elif match.group(0) == ")":
+            depth -= 1
+        elif depth == 0:
+            parts.append(text[start:match.start()])
+            start = match.end()
+    parts.append(text[start:])
+    return [p.strip() for p in parts if p.strip()]
+
+
 def regroup(text):
     """UCLA's lists, in the bracketed form the parser reads:
         "Life Sciences 1 or 7B, course 100"   -> "(Life Sciences 1 or 7B) and course 100"
@@ -152,7 +167,16 @@ def regroup(text):
             groups.append([])
             part = re.sub(r"^or\s+", "", part)
         groups[-1].append(re.sub(r"^and\s+", "", part))
-    wrap = lambda p: "(" + p + ")" if re.search(r"\bor\b", p) and not (p.startswith("(") and p.endswith(")")) else p
+    def wrap(p):
+        """One requirement with "or" in it, in brackets. "or" binds loosest:
+        "41 or Mathematics 170E and 170S or Statistics 100A and 100B" is
+        41, or 170E and 170S, or 100A and 100B."""
+        if not re.search(r"\bor\b", p) or (p.startswith("(") and p.endswith(")")):
+            return p
+        options = split_words(p, "or")
+        if len(options) > 1 and any(re.search(r"\band\b", o) for o in options):
+            return "(" + " or ".join("(" + o + ")" if re.search(r"\band\b", o) else o for o in options) + ")"
+        return "(" + p + ")"
     joined = [" and ".join(wrap(p) for p in group) for group in groups]
     if len(joined) == 1:
         return joined[0]
@@ -168,7 +192,10 @@ def parse(parser, names, text, code):
     # and Queer Studies") become their codes first, so lists aren't split there.
     for name, short in names.comma_names:
         text = text.replace(name, short)
-    text = "; and ".join(regroup(part) for part in text.split("; and "))
+    # A part after "; and" that starts with a bare number ("; and (103L)")
+    # is in the course's own subject, not the subject named last before it.
+    chunks = [re.sub(r"^(\(?)(?=(?:CM|MC|C|M)?\d)", r"\1course ", part) for part in text.split("; and ")]
+    text = "; and ".join(regroup(part) for part in chunks)
     parsed = parser.parse(names.to_parser(text, subject))
     parsed["requires"] = without_course(names.from_parser(parsed["requires"]), code)
     return parsed

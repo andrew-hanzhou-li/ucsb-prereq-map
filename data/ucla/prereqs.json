@@ -13727,9 +13727,9 @@
     ]
    },
    "source": "parser",
-   "ambiguous": false,
+   "ambiguous": true,
    "unparsed": [
-    "Civil ENGR 20QQM"
+    "(Civil ENGR 20QQM"
    ]
   },
   {
@@ -15269,7 +15269,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": false,
+   "ambiguous": true,
    "unparsed": []
   },
   {
@@ -15334,7 +15334,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": false,
+   "ambiguous": true,
    "unparsed": []
   },
   {
@@ -16184,7 +16184,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": false,
+   "ambiguous": true,
    "unparsed": []
   },
   {
@@ -16922,93 +16922,93 @@
    "code": "C&S BIO M175",
    "prereq_text": "Life Sciences 1, 2, 3, and 4, or 7A, 7B, and 7C, Mathematics 33B, Electrical and Computer Engineering 131A or Mathematics 170A or Statistics 100A",
    "requires": {
-    "type": "or",
+    "type": "and",
     "items": [
      {
-      "type": "and",
+      "type": "or",
       "items": [
        {
-        "type": "course",
-        "code": "LIFESCI 1",
-        "concurrent": false,
-        "min_grade": null
+        "type": "and",
+        "items": [
+         {
+          "type": "course",
+          "code": "LIFESCI 1",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "LIFESCI 2",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "LIFESCI 3",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "LIFESCI 4",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
        },
        {
         "type": "course",
-        "code": "LIFESCI 2",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
-        "type": "course",
-        "code": "LIFESCI 3",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
-        "type": "course",
-        "code": "LIFESCI 4",
+        "code": "LIFESCI 7A",
         "concurrent": false,
         "min_grade": null
        }
       ]
      },
      {
-      "type": "and",
+      "type": "course",
+      "code": "LIFESCI 7B",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "course",
+      "code": "LIFESCI 7C",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "course",
+      "code": "MATH 33B",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "or",
       "items": [
        {
         "type": "course",
-        "code": "LIFESCI 7A",
+        "code": "EC ENGR 131A",
         "concurrent": false,
         "min_grade": null
        },
        {
         "type": "course",
-        "code": "LIFESCI 7B",
+        "code": "MATH 170A",
         "concurrent": false,
         "min_grade": null
        },
        {
         "type": "course",
-        "code": "LIFESCI 7C",
+        "code": "STATS 100A",
         "concurrent": false,
         "min_grade": null
-       },
-       {
-        "type": "course",
-        "code": "MATH 33B",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
-        "type": "or",
-        "items": [
-         {
-          "type": "course",
-          "code": "EC ENGR 131A",
-          "concurrent": false,
-          "min_grade": null
-         },
-         {
-          "type": "course",
-          "code": "MATH 170A",
-          "concurrent": false,
-          "min_grade": null
-         },
-         {
-          "type": "course",
-          "code": "STATS 100A",
-          "concurrent": false,
-          "min_grade": null
-         }
-        ]
        }
       ]
      }
     ]
    },
    "source": "parser",
-   "ambiguous": false,
+   "ambiguous": true,
    "unparsed": []
   },
   {
@@ -23123,18 +23123,23 @@
         "min_grade": "C-"
        },
        {
-        "type": "course",
-        "code": "CHEM 20L",
-        "concurrent": true,
-        "min_grade": "C-"
+        "type": "and",
+        "items": [
+         {
+          "type": "course",
+          "code": "CHEM 20L",
+          "concurrent": true,
+          "min_grade": "C-"
+         },
+         {
+          "type": "course",
+          "code": "CHEM 30AL",
+          "concurrent": true,
+          "min_grade": "C-"
+         }
+        ]
        }
       ]
-     },
-     {
-      "type": "course",
-      "code": "CHEM 30AL",
-      "concurrent": true,
-      "min_grade": "C-"
      },
      {
       "type": "or",
@@ -23250,35 +23255,35 @@
    "code": "CHEM C164",
    "prereq_text": "courses 153A and either 153B or 153C, with grades of C– or better",
    "requires": {
-    "type": "and",
+    "type": "or",
     "items": [
      {
-      "type": "course",
-      "code": "CHEM 153A",
-      "concurrent": false,
-      "min_grade": "C-"
-     },
-     {
-      "type": "or",
+      "type": "and",
       "items": [
        {
         "type": "course",
-        "code": "CHEM 153B",
+        "code": "CHEM 153A",
         "concurrent": false,
         "min_grade": "C-"
        },
        {
         "type": "course",
-        "code": "CHEM 153C",
+        "code": "CHEM 153B",
         "concurrent": false,
         "min_grade": "C-"
        }
       ]
+     },
+     {
+      "type": "course",
+      "code": "CHEM 153C",
+      "concurrent": false,
+      "min_grade": "C-"
      }
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -23680,93 +23685,93 @@
    "code": "CHEM M186",
    "prereq_text": "Life Sciences 1, 2, 3, and 4, or 7A, 7B, and 7C, Mathematics 33B, Electrical and Computer Engineering 131A or Mathematics 170A or Statistics 100A",
    "requires": {
-    "type": "or",
+    "type": "and",
     "items": [
      {
-      "type": "and",
+      "type": "or",
       "items": [
        {
-        "type": "course",
-        "code": "LIFESCI 1",
-        "concurrent": false,
-        "min_grade": null
+        "type": "and",
+        "items": [
+         {
+          "type": "course",
+          "code": "LIFESCI 1",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "LIFESCI 2",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "LIFESCI 3",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "LIFESCI 4",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
        },
        {
         "type": "course",
-        "code": "LIFESCI 2",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
-        "type": "course",
-        "code": "LIFESCI 3",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
-        "type": "course",
-        "code": "LIFESCI 4",
+        "code": "LIFESCI 7A",
         "concurrent": false,
         "min_grade": null
        }
       ]
      },
      {
-      "type": "and",
+      "type": "course",
+      "code": "LIFESCI 7B",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "course",
+      "code": "LIFESCI 7C",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "course",
+      "code": "MATH 33B",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "or",
       "items": [
        {
         "type": "course",
-        "code": "LIFESCI 7A",
+        "code": "EC ENGR 131A",
         "concurrent": false,
         "min_grade": null
        },
        {
         "type": "course",
-        "code": "LIFESCI 7B",
+        "code": "MATH 170A",
         "concurrent": false,
         "min_grade": null
        },
        {
         "type": "course",
-        "code": "LIFESCI 7C",
+        "code": "STATS 100A",
         "concurrent": false,
         "min_grade": null
-       },
-       {
-        "type": "course",
-        "code": "MATH 33B",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
-        "type": "or",
-        "items": [
-         {
-          "type": "course",
-          "code": "EC ENGR 131A",
-          "concurrent": false,
-          "min_grade": null
-         },
-         {
-          "type": "course",
-          "code": "MATH 170A",
-          "concurrent": false,
-          "min_grade": null
-         },
-         {
-          "type": "course",
-          "code": "STATS 100A",
-          "concurrent": false,
-          "min_grade": null
-         }
-        ]
        }
       ]
      }
     ]
    },
    "source": "parser",
-   "ambiguous": false,
+   "ambiguous": true,
    "unparsed": []
   },
   {
@@ -29790,7 +29795,7 @@
    "source": "parser",
    "ambiguous": false,
    "unparsed": [
-    "one course from CQEE 110)"
+    "one course from CQEE 110))"
    ]
   },
   {
@@ -30376,7 +30381,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": false,
+   "ambiguous": true,
    "unparsed": []
   },
   {
@@ -33541,7 +33546,7 @@
      {
       "type": "condition",
       "kind": "other",
-      "text": "8 units of choreography as creative inquiry courses"
+      "text": "DANCE 8 units of choreography as creative inquiry courses"
      },
      {
       "type": "condition",
@@ -36739,7 +36744,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": false,
+   "ambiguous": true,
    "unparsed": []
   },
   {
@@ -37600,9 +37605,9 @@
     ]
    },
    "source": "parser",
-   "ambiguous": false,
+   "ambiguous": true,
    "unparsed": [
-    "Civil ENGR 20QQM"
+    "(Civil ENGR 20QQM"
    ]
   },
   {
@@ -38710,46 +38715,51 @@
         "min_grade": null
        },
        {
-        "type": "course",
-        "code": "MATH 170E",
-        "concurrent": false,
-        "min_grade": null
-       }
-      ]
-     },
-     {
-      "type": "or",
-      "items": [
-       {
-        "type": "course",
-        "code": "MATH 170S",
-        "concurrent": false,
-        "min_grade": null
+        "type": "and",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 170E",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "MATH 170S",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
        },
        {
-        "type": "course",
-        "code": "STATS 100A",
-        "concurrent": false,
-        "min_grade": null
+        "type": "and",
+        "items": [
+         {
+          "type": "course",
+          "code": "STATS 100A",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "STATS 100B",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
        }
       ]
      },
      {
       "type": "course",
-      "code": "STATS 100B",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "STATS 103L",
+      "code": "ECON 103L",
       "concurrent": true,
       "min_grade": null
      }
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -38774,46 +38784,51 @@
         "min_grade": null
        },
        {
-        "type": "course",
-        "code": "MATH 170E",
-        "concurrent": false,
-        "min_grade": null
-       }
-      ]
-     },
-     {
-      "type": "or",
-      "items": [
-       {
-        "type": "course",
-        "code": "MATH 170S",
-        "concurrent": false,
-        "min_grade": null
+        "type": "and",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 170E",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "MATH 170S",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
        },
        {
-        "type": "course",
-        "code": "STATS 100A",
-        "concurrent": false,
-        "min_grade": null
+        "type": "and",
+        "items": [
+         {
+          "type": "course",
+          "code": "STATS 100A",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "STATS 100B",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
        }
       ]
      },
      {
       "type": "course",
-      "code": "STATS 100B",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
-      "type": "course",
-      "code": "STATS 103",
+      "code": "ECON 103",
       "concurrent": true,
       "min_grade": null
      }
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -60613,9 +60628,20 @@
    "code": "FILM TV 175A",
    "prereq_text": "185; and Limited to Film and Television majors",
    "requires": {
-    "type": "condition",
-    "kind": "restriction",
-    "text": "Limited to Film and Television majors"
+    "type": "and",
+    "items": [
+     {
+      "type": "course",
+      "code": "FILM TV 185",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "condition",
+      "kind": "restriction",
+      "text": "Limited to Film and Television majors"
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -87421,19 +87447,24 @@
       "min_grade": null
      },
      {
-      "type": "course",
-      "code": "LIFESCI 30A",
-      "concurrent": false,
-      "min_grade": null
-     },
-     {
       "type": "or",
       "items": [
        {
-        "type": "course",
-        "code": "LIFESCI 30B",
-        "concurrent": false,
-        "min_grade": null
+        "type": "and",
+        "items": [
+         {
+          "type": "course",
+          "code": "LIFESCI 30A",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "LIFESCI 30B",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
        },
        {
         "type": "course",
@@ -87459,18 +87490,23 @@
         "min_grade": null
        },
        {
-        "type": "course",
-        "code": "MATH 31A",
-        "concurrent": false,
-        "min_grade": null
+        "type": "and",
+        "items": [
+         {
+          "type": "course",
+          "code": "MATH 31A",
+          "concurrent": false,
+          "min_grade": null
+         },
+         {
+          "type": "course",
+          "code": "MATH 31B",
+          "concurrent": false,
+          "min_grade": null
+         }
+        ]
        }
       ]
-     },
-     {
-      "type": "course",
-      "code": "MATH 31B",
-      "concurrent": false,
-      "min_grade": null
      },
      {
       "type": "or",
@@ -87498,7 +87534,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
@@ -88725,7 +88761,7 @@
      {
       "type": "condition",
       "kind": "other",
-      "text": "(3.0 premajor and"
+      "text": "((3.0 premajor and"
      },
      {
       "type": "course",
@@ -93567,7 +93603,7 @@
      {
       "type": "condition",
       "kind": "other",
-      "text": "(3.0 premajor and"
+      "text": "((3.0 premajor and"
      },
      {
       "type": "course",
@@ -96288,9 +96324,26 @@
    "code": "MUSC 124C",
    "prereq_text": "106B, 120C (accelerated section), 123C",
    "requires": {
-    "type": "condition",
-    "kind": "other",
-    "text": "106B and 120C (accelerated section) and 123C"
+    "type": "and",
+    "items": [
+     {
+      "type": "course",
+      "code": "MUSC 106B",
+      "concurrent": false,
+      "min_grade": null
+     },
+     {
+      "type": "condition",
+      "kind": "other",
+      "text": "120C (accelerated section)"
+     },
+     {
+      "type": "course",
+      "code": "MUSC 123C",
+      "concurrent": false,
+      "min_grade": null
+     }
+    ]
    },
    "source": "parser",
    "ambiguous": false,
@@ -98147,9 +98200,10 @@
    "code": "MUSCLG 126",
    "prereq_text": "(M6A) (may be taken concurrently)",
    "requires": {
-    "type": "condition",
-    "kind": "other",
-    "text": "(6AQQM)"
+    "type": "course",
+    "code": "MUSCLG M6A",
+    "concurrent": true,
+    "min_grade": null
    },
    "source": "parser",
    "ambiguous": false,
@@ -98159,9 +98213,10 @@
    "code": "MUSCLG 127",
    "prereq_text": "(M6A) (may be taken concurrently)",
    "requires": {
-    "type": "condition",
-    "kind": "other",
-    "text": "(6AQQM)"
+    "type": "course",
+    "code": "MUSCLG M6A",
+    "concurrent": true,
+    "min_grade": null
    },
    "source": "parser",
    "ambiguous": false,
@@ -98171,9 +98226,10 @@
    "code": "MUSCLG 128",
    "prereq_text": "(M6A) (may be taken concurrently)",
    "requires": {
-    "type": "condition",
-    "kind": "other",
-    "text": "(6AQQM)"
+    "type": "course",
+    "code": "MUSCLG M6A",
+    "concurrent": true,
+    "min_grade": null
    },
    "source": "parser",
    "ambiguous": false,
@@ -124584,33 +124640,31 @@
       "type": "and",
       "items": [
        {
-        "type": "course",
-        "code": "STATS 100A",
-        "concurrent": false,
-        "min_grade": null
-       },
-       {
         "type": "or",
         "items": [
          {
-          "type": "course",
-          "code": "STATS 100B",
-          "concurrent": false,
-          "min_grade": null
+          "type": "and",
+          "items": [
+           {
+            "type": "course",
+            "code": "STATS 100A",
+            "concurrent": false,
+            "min_grade": null
+           },
+           {
+            "type": "course",
+            "code": "STATS 100B",
+            "concurrent": false,
+            "min_grade": null
+           }
+          ]
          },
          {
-          "type": "course",
-          "code": "STATS 101B",
-          "concurrent": false,
-          "min_grade": null
+          "type": "condition",
+          "kind": "other",
+          "text": "101B"
          }
         ]
-       },
-       {
-        "type": "course",
-        "code": "STATS 101C",
-        "concurrent": false,
-        "min_grade": null
        },
        {
         "type": "condition",
@@ -124652,7 +124706,7 @@
     ]
    },
    "source": "parser",
-   "ambiguous": true,
+   "ambiguous": false,
    "unparsed": []
   },
   {
